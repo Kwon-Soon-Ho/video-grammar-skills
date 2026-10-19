@@ -1,0 +1,15 @@
+{
+  "eval_id": 7,
+  "eval_name": "V06W",
+  "prompt": "V06W: case-plan.json 지정 구간의 화면 구성·문구·정보 관계·모션(이동 방향·등장 순서·가감속, 주변/내부 동작)을 원본 근거와 연결해 분석하고 누락·오분석을 검토한다. 해당 문서가 있으면 영상과 대조하고, V06S/W는 동일 장면 상태 기준으로 변형을 비교한다. AE 키프레임은 제공되지 않는다.",
+  "prompt_record_kind": "normalized task summary; original dispatch retained in conversation",
+  "assertions": [
+    "좌우 다른 화면과 우측 야경 시점 이동 후 녹색 배경으로 전환",
+    "좌측 세로 공사목표 제목→안전→품질→공기→효율 순차 등장",
+    "카드 이미지/아이콘/라벨·빛/선의 세부 동작 검사",
+    "싱글과 대응 앵커·지연·배치차를 기록; 전체 영상 일정 오프셋으로 일반화 금지",
+    "픽셀 해상도 7680x2160과 검사 범위·가감속 유보 명시"
+  ],
+  "criteria_origin": "root-audit/criteria-frozen.json; human gold 아님",
+  "iteration": "targeted draft3 rerun"
+}

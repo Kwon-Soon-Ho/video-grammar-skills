@@ -1,0 +1,1488 @@
+{
+  "phase": "A2 neutral first-pass raw observations; before grading",
+  "language": "ko",
+  "new_skill_used": false,
+  "saved_at_utc": "2026-10-16T05:53:54.678840+00:00",
+  "method": "할당 구간의 개요 보드를 시간 순서로 보고, 정착 화면을 역추적한 뒤 원본 폭 PNG의 대상별 크롭과 표본 좌표·픽셀 차이를 비교했다. 관측과 구현 추정을 분리했다.",
+  "tools_used": [
+    "functions.exec orchestration",
+    "exec_command / PowerShell",
+    "view_image (including detail=original for native crop sequences)",
+    "apply_patch (own scripts only)",
+    "provided inspect_more.py bounded extraction using supplied Python -B -X utf8",
+    "Python Pillow and NumPy for crops, simple thresholds, edge estimates, frame differences"
+  ],
+  "not_performed": [
+    "외부 AI API 호출",
+    "AE 또는 CU 조작",
+    "이전 분석·정답·채점 파일 열람",
+    "오디오 청취/전사",
+    "구간 밖 미디어 시각 검사",
+    "스킬 생성"
+  ],
+  "measurement_cautions": [
+    "픽셀 좌표는 제공 raster에서의 근사값이며 SAR가 0/1로 보고되어 실제 디스플레이의 정밀 길이로 주장하지 않는다.",
+    "RGB 변환의 범위 정확도는 추출 로그에서 미검증이다. 밝기 수치는 상대 비교다.",
+    "밝기 임계값과 1행 edge 검출은 글자 경계·텍스처·압축의 영향을 받는다. 특히 T01 5.3초 top-bar edge 검출 x=1584는 내부 도면선을 잡은 이상값으로 외곽 이동의 근거에서 제외했다.",
+    "정지 판정은 검사 표본에서 위치·형태 변화가 보이지 않는다는 뜻이며 모든 프레임이 완전히 동일하다는 뜻은 아니다."
+  ],
+  "implementation_hypotheses_policy": "레이어 수, 마스크/핸들, 표현식, 키프레임 보간, 프리셋은 렌더 영상만으로 확정하지 않았다. 아래 구현 가설은 관측과 별개이며 검증되지 않았다.",
+  "case_id": "T04",
+  "asset_id": "자료005",
+  "allowed_window_seconds": [
+    6,
+    18
+  ],
+  "actual_inspected_start_seconds": 6,
+  "actual_inspected_end_seconds": 18,
+  "frame_sampling": [
+    {
+      "log_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\실행기록.json",
+      "complete_target_selection": true,
+      "timing_status": "all_decoded_frame_pts_match_reconstructed_sample_tables_in_this_window",
+      "frames": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00180_006.000.png",
+          "actual_time_fraction": "6",
+          "actual_time_seconds": 6.0,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00190_006.333.png",
+          "actual_time_fraction": "19/3",
+          "actual_time_seconds": 6.333333333333333,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00200_006.667.png",
+          "actual_time_fraction": "20/3",
+          "actual_time_seconds": 6.666666666666667,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00210_007.000.png",
+          "actual_time_fraction": "7",
+          "actual_time_seconds": 7.0,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00220_007.333.png",
+          "actual_time_fraction": "22/3",
+          "actual_time_seconds": 7.333333333333333,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00230_007.667.png",
+          "actual_time_fraction": "23/3",
+          "actual_time_seconds": 7.666666666666667,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00240_008.000.png",
+          "actual_time_fraction": "8",
+          "actual_time_seconds": 8.0,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00250_008.333.png",
+          "actual_time_fraction": "25/3",
+          "actual_time_seconds": 8.333333333333334,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00260_008.667.png",
+          "actual_time_fraction": "26/3",
+          "actual_time_seconds": 8.666666666666666,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00270_009.000.png",
+          "actual_time_fraction": "9",
+          "actual_time_seconds": 9.0,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00280_009.333.png",
+          "actual_time_fraction": "28/3",
+          "actual_time_seconds": 9.333333333333334,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00290_009.667.png",
+          "actual_time_fraction": "29/3",
+          "actual_time_seconds": 9.666666666666666,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00300_010.000.png",
+          "actual_time_fraction": "10",
+          "actual_time_seconds": 10.0,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00310_010.333.png",
+          "actual_time_fraction": "31/3",
+          "actual_time_seconds": 10.333333333333334,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00320_010.667.png",
+          "actual_time_fraction": "32/3",
+          "actual_time_seconds": 10.666666666666666,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00330_011.000.png",
+          "actual_time_fraction": "11",
+          "actual_time_seconds": 11.0,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00340_011.333.png",
+          "actual_time_fraction": "34/3",
+          "actual_time_seconds": 11.333333333333334,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00350_011.667.png",
+          "actual_time_fraction": "35/3",
+          "actual_time_seconds": 11.666666666666666,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00360_012.000.png",
+          "actual_time_fraction": "12",
+          "actual_time_seconds": 12.0,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00370_012.333.png",
+          "actual_time_fraction": "37/3",
+          "actual_time_seconds": 12.333333333333334,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00380_012.667.png",
+          "actual_time_fraction": "38/3",
+          "actual_time_seconds": 12.666666666666666,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00390_013.000.png",
+          "actual_time_fraction": "13",
+          "actual_time_seconds": 13.0,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00400_013.333.png",
+          "actual_time_fraction": "40/3",
+          "actual_time_seconds": 13.333333333333334,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00410_013.667.png",
+          "actual_time_fraction": "41/3",
+          "actual_time_seconds": 13.666666666666666,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00420_014.000.png",
+          "actual_time_fraction": "14",
+          "actual_time_seconds": 14.0,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00430_014.333.png",
+          "actual_time_fraction": "43/3",
+          "actual_time_seconds": 14.333333333333334,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00440_014.667.png",
+          "actual_time_fraction": "44/3",
+          "actual_time_seconds": 14.666666666666666,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00450_015.000.png",
+          "actual_time_fraction": "15",
+          "actual_time_seconds": 15.0,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00460_015.333.png",
+          "actual_time_fraction": "46/3",
+          "actual_time_seconds": 15.333333333333334,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00470_015.667.png",
+          "actual_time_fraction": "47/3",
+          "actual_time_seconds": 15.666666666666666,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00480_016.000.png",
+          "actual_time_fraction": "16",
+          "actual_time_seconds": 16.0,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00490_016.333.png",
+          "actual_time_fraction": "49/3",
+          "actual_time_seconds": 16.333333333333332,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00500_016.667.png",
+          "actual_time_fraction": "50/3",
+          "actual_time_seconds": 16.666666666666668,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00510_017.000.png",
+          "actual_time_fraction": "17",
+          "actual_time_seconds": 17.0,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00520_017.333.png",
+          "actual_time_fraction": "52/3",
+          "actual_time_seconds": 17.333333333333332,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00530_017.667.png",
+          "actual_time_fraction": "53/3",
+          "actual_time_seconds": 17.666666666666668,
+          "derived_size": [
+            1920,
+            540
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00540_018.000.png",
+          "actual_time_fraction": "18",
+          "actual_time_seconds": 18.0,
+          "derived_size": [
+            1920,
+            540
+          ]
+        }
+      ],
+      "audio_status": "track_metadata_only_not_decoded_not_listened_not_transcribed",
+      "sar_status": "unknown",
+      "color_range_accuracy_validated": false
+    },
+    {
+      "log_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\실행기록.json",
+      "complete_target_selection": true,
+      "timing_status": "all_decoded_frame_pts_match_reconstructed_sample_tables_in_this_window",
+      "frames": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00180_006.000.png",
+          "actual_time_fraction": "6",
+          "actual_time_seconds": 6.0,
+          "derived_size": [
+            3840,
+            1080
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00183_006.100.png",
+          "actual_time_fraction": "61/10",
+          "actual_time_seconds": 6.1,
+          "derived_size": [
+            3840,
+            1080
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00186_006.200.png",
+          "actual_time_fraction": "31/5",
+          "actual_time_seconds": 6.2,
+          "derived_size": [
+            3840,
+            1080
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00189_006.300.png",
+          "actual_time_fraction": "63/10",
+          "actual_time_seconds": 6.3,
+          "derived_size": [
+            3840,
+            1080
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00192_006.400.png",
+          "actual_time_fraction": "32/5",
+          "actual_time_seconds": 6.4,
+          "derived_size": [
+            3840,
+            1080
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00195_006.500.png",
+          "actual_time_fraction": "13/2",
+          "actual_time_seconds": 6.5,
+          "derived_size": [
+            3840,
+            1080
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00234_007.800.png",
+          "actual_time_fraction": "39/5",
+          "actual_time_seconds": 7.8,
+          "derived_size": [
+            3840,
+            1080
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00240_008.000.png",
+          "actual_time_fraction": "8",
+          "actual_time_seconds": 8.0,
+          "derived_size": [
+            3840,
+            1080
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00243_008.100.png",
+          "actual_time_fraction": "81/10",
+          "actual_time_seconds": 8.1,
+          "derived_size": [
+            3840,
+            1080
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00246_008.200.png",
+          "actual_time_fraction": "41/5",
+          "actual_time_seconds": 8.2,
+          "derived_size": [
+            3840,
+            1080
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00252_008.400.png",
+          "actual_time_fraction": "42/5",
+          "actual_time_seconds": 8.4,
+          "derived_size": [
+            3840,
+            1080
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00258_008.600.png",
+          "actual_time_fraction": "43/5",
+          "actual_time_seconds": 8.6,
+          "derived_size": [
+            3840,
+            1080
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00264_008.800.png",
+          "actual_time_fraction": "44/5",
+          "actual_time_seconds": 8.8,
+          "derived_size": [
+            3840,
+            1080
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00270_009.000.png",
+          "actual_time_fraction": "9",
+          "actual_time_seconds": 9.0,
+          "derived_size": [
+            3840,
+            1080
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00276_009.200.png",
+          "actual_time_fraction": "46/5",
+          "actual_time_seconds": 9.2,
+          "derived_size": [
+            3840,
+            1080
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00444_014.800.png",
+          "actual_time_fraction": "74/5",
+          "actual_time_seconds": 14.8,
+          "derived_size": [
+            3840,
+            1080
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00450_015.000.png",
+          "actual_time_fraction": "15",
+          "actual_time_seconds": 15.0,
+          "derived_size": [
+            3840,
+            1080
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00456_015.200.png",
+          "actual_time_fraction": "76/5",
+          "actual_time_seconds": 15.2,
+          "derived_size": [
+            3840,
+            1080
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00462_015.400.png",
+          "actual_time_fraction": "77/5",
+          "actual_time_seconds": 15.4,
+          "derived_size": [
+            3840,
+            1080
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00468_015.600.png",
+          "actual_time_fraction": "78/5",
+          "actual_time_seconds": 15.6,
+          "derived_size": [
+            3840,
+            1080
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00474_015.800.png",
+          "actual_time_fraction": "79/5",
+          "actual_time_seconds": 15.8,
+          "derived_size": [
+            3840,
+            1080
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00480_016.000.png",
+          "actual_time_fraction": "16",
+          "actual_time_seconds": 16.0,
+          "derived_size": [
+            3840,
+            1080
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00486_016.200.png",
+          "actual_time_fraction": "81/5",
+          "actual_time_seconds": 16.2,
+          "derived_size": [
+            3840,
+            1080
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00492_016.400.png",
+          "actual_time_fraction": "82/5",
+          "actual_time_seconds": 16.4,
+          "derived_size": [
+            3840,
+            1080
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00498_016.600.png",
+          "actual_time_fraction": "83/5",
+          "actual_time_seconds": 16.6,
+          "derived_size": [
+            3840,
+            1080
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00504_016.800.png",
+          "actual_time_fraction": "84/5",
+          "actual_time_seconds": 16.8,
+          "derived_size": [
+            3840,
+            1080
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00510_017.000.png",
+          "actual_time_fraction": "17",
+          "actual_time_seconds": 17.0,
+          "derived_size": [
+            3840,
+            1080
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00516_017.200.png",
+          "actual_time_fraction": "86/5",
+          "actual_time_seconds": 17.2,
+          "derived_size": [
+            3840,
+            1080
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00522_017.400.png",
+          "actual_time_fraction": "87/5",
+          "actual_time_seconds": 17.4,
+          "derived_size": [
+            3840,
+            1080
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00528_017.600.png",
+          "actual_time_fraction": "88/5",
+          "actual_time_seconds": 17.6,
+          "derived_size": [
+            3840,
+            1080
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00534_017.800.png",
+          "actual_time_fraction": "89/5",
+          "actual_time_seconds": 17.8,
+          "derived_size": [
+            3840,
+            1080
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00540_018.000.png",
+          "actual_time_fraction": "18",
+          "actual_time_seconds": 18.0,
+          "derived_size": [
+            3840,
+            1080
+          ]
+        }
+      ],
+      "audio_status": "track_metadata_only_not_decoded_not_listened_not_transcribed",
+      "sar_status": "unknown",
+      "color_range_accuracy_validated": false
+    }
+  ],
+  "extra_evidence_requested": {
+    "helper": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\inspect_more.py",
+    "tag": "extra1",
+    "width": 3840,
+    "requested_times": [
+      "6",
+      "6.1",
+      "6.2",
+      "6.3",
+      "6.4",
+      "6.5",
+      "7.8",
+      "8",
+      "8.1",
+      "8.2",
+      "8.4",
+      "8.6",
+      "8.8",
+      "9",
+      "9.2",
+      "14.8",
+      "15",
+      "15.2",
+      "15.4",
+      "15.6",
+      "15.8",
+      "16",
+      "16.2",
+      "16.4",
+      "16.6",
+      "16.8",
+      "17",
+      "17.2",
+      "17.4",
+      "17.6",
+      "17.8",
+      "18"
+    ],
+    "purpose": "축소 기본 프레임을 원본 폭으로 보완하고 dissolve·카드 내부·유지 배경을 비교"
+  },
+  "observations": [
+    {
+      "object_id": "T04-transition",
+      "subject": "교량 표지 화면에서 실적 및 계획 화면으로의 전환",
+      "time_seconds": [
+        6,
+        6.5
+      ],
+      "position_direction": "6.0초는 교량·케이블/주탑·강과 하늘, 전경의 콘크리트 제품·긴 어두운 관/철근 묶음, 왼쪽 로고와 2026년 경영현황 보고가 보인다. 6.1~6.3초 이 내용이 옅어지는 동안 새 화면의 로고·제목·세 카드·도시 수변 배경이 같은 자리에서 짙어진다. 6.4~6.5초에는 새 화면만 읽힌다.",
+      "scale_shape_orientation": "양쪽 화면의 대표 모서리/문자 위치에 이동이 확인되지 않는다. 두 화면이 겹친 상태이며 슬라이드나 확대 증거는 없다.",
+      "visibility_color_brightness": "이전 화면의 가시성 감소와 새 화면의 가시성 증가가 동시에 진행. 전체 영상은 파란 하늘·강의 밝은 톤 유지.",
+      "internal_change": "교량과 전경 제품은 형태가 바뀌는 대신 사라지고, 도시·세 카드가 나타난다.",
+      "overlap_order": "6.1~6.3초에 이전 표지 문구/로고와 새 실적 문구/로고가 서로 다른 위치에서 동시에 보이고 교량은 카드 안쪽 뒤로 비친다. 새 카드 세 개의 명확한 순차 등장 증거는 없다.",
+      "easing": "6.0과 6.5초를 양 끝으로 둔 단순 RGB 혼합계수 근사: 6.1초 0.524,6.2초 0.824,6.3초 0.959,6.4초 0.993. 새 화면 쪽 변화량이 후반 작아지는 감속형 가시성 전환을 지지한다. 감마/색 변환과 동시 변화가 있어 실제 opacity 또는 특정 곡선을 확정하지 않는다.",
+      "evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00180_006.000.png",
+          "actual_frame_time_seconds": 6.0,
+          "actual_frame_time_fraction": "6",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00183_006.100.png",
+          "actual_frame_time_seconds": 6.1,
+          "actual_frame_time_fraction": "61/10",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00186_006.200.png",
+          "actual_frame_time_seconds": 6.2,
+          "actual_frame_time_fraction": "31/5",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00189_006.300.png",
+          "actual_frame_time_seconds": 6.3,
+          "actual_frame_time_fraction": "63/10",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00192_006.400.png",
+          "actual_frame_time_seconds": 6.4,
+          "actual_frame_time_fraction": "32/5",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00195_006.500.png",
+          "actual_frame_time_seconds": 6.5,
+          "actual_frame_time_fraction": "13/2",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\T04_transition_sequence.png",
+          "actual_frame_times_seconds": [
+            6,
+            6.1,
+            6.2,
+            6.3,
+            6.4,
+            6.5
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\T04_transition_mix_exploratory.json"
+        }
+      ]
+    },
+    {
+      "object_id": "T04-bg",
+      "subject": "새 화면의 하늘·흰 곡선 다발·산/도시 스카이라인·다리·강과 반사, 밝은 왼쪽 그라데이션",
+      "time_seconds": [
+        6.4,
+        18
+      ],
+      "position_direction": "하늘과 화면 위쪽의 여러 가는 흰 곡선, 하단의 산/도시/수변 구조와 반사는 같은 좌표에 유지. 공통 pan/zoom이나 물결의 이동을 확인하지 못했다.",
+      "scale_shape_orientation": "흰 곡선과 배경 구조의 형태·크기가 유지. 중앙 근처의 가는 수직 경계도 유지된다.",
+      "visibility_color_brightness": "밝은 하늘색/흰 배경. 도시와 수면은 하단 띠에 보인다. 지속적인 발광 파동은 식별하지 못했다.",
+      "internal_change": "8→9.2초 배경 하늘 평균 절대 RGB 차이 약0.009, 도시/수면 약0.058이며 채널 차이10 초과 픽셀 없음. 14.8→15.2초 이들 영역은 비교상 동일. 9.2→14.8초의 약0.24/0.72 차이는 주로 아주 작은 RGB 차이이며 구조 이동 근거로 부족하다.",
+      "overlap_order": "밝은 카드들이 도시 위쪽 하늘 공간 앞에 놓이고 도시/수면은 카드 아래에서 계속 읽힌다.",
+      "easing": "위치·형태 변화가 보이지 않아 위치/크기 가감속 비적용. 아주 작은 RGB 차이를 별도 밝기 애니메이션으로 분류하지 않았다.",
+      "evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00240_008.000.png",
+          "actual_frame_time_seconds": 8.0,
+          "actual_frame_time_fraction": "8",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00276_009.200.png",
+          "actual_frame_time_seconds": 9.2,
+          "actual_frame_time_fraction": "46/5",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00444_014.800.png",
+          "actual_frame_time_seconds": 14.8,
+          "actual_frame_time_fraction": "74/5",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00456_015.200.png",
+          "actual_frame_time_seconds": 15.2,
+          "actual_frame_time_fraction": "76/5",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00540_018.000.png",
+          "actual_frame_time_seconds": 18.0,
+          "actual_frame_time_fraction": "18",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\T04_hold_diff_exploratory.json"
+        }
+      ]
+    },
+    {
+      "object_id": "T04-left-type",
+      "subject": "왼쪽 회사 로고, 빨간 01, 실적 및 계획, 2026년 1~8월 누적 실적, 빨간 짧은 밑줄, 회색 작은 문장",
+      "time_seconds": [
+        6.4,
+        18
+      ],
+      "position_direction": "상단 왼쪽부터 세로로 정렬된 위치를 유지. 작은 문장은 ‘더 나은 내일을 위한 지속 가능한 성장을 만들어가겠습니다.’로 읽힌다.",
+      "scale_shape_orientation": "문자와 로고 크기·수평/수직 정렬 유지. 빨간 밑줄은 같은 길이에 머물며 독립된 선 그리기 진행은 보이지 않는다.",
+      "visibility_color_brightness": "로고 빨강/파랑, 01과 밑줄 빨강, 제목·부제 남색, 작은 문장 회색을 유지. 도입 dissolve 이후 독립적 점멸/색 교체 없음.",
+      "internal_change": "문구 변경 없음. 8→9.2초 좌측 영역의 평균 절대 RGB 차이0.009,16.8→18초0.00055로 관측상 유지.",
+      "overlap_order": "상단 흰 곡선·밝은 배경 앞. 세 카드보다 왼쪽에 분리되어 배치.",
+      "easing": "6.4초 이후 위치/크기 변화가 없어 비적용. 도입 가시성은 T04-transition에 기록.",
+      "evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00195_006.500.png",
+          "actual_frame_time_seconds": 6.5,
+          "actual_frame_time_fraction": "13/2",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00276_009.200.png",
+          "actual_frame_time_seconds": 9.2,
+          "actual_frame_time_fraction": "46/5",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00540_018.000.png",
+          "actual_frame_time_seconds": 18.0,
+          "actual_frame_time_fraction": "18",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\T04_left_detail_native.png",
+          "actual_frame_time_seconds": 6.5
+        }
+      ]
+    },
+    {
+      "object_id": "T04-card-shells",
+      "subject": "세 개의 밝은 둥근 사각 카드, 흰 외곽선/옅은 그림자, 큰 연파랑 01/02/03, 수주/매출/영업이익 제목, 가로 구분선·작은 라벨",
+      "time_seconds": [
+        6.4,
+        18
+      ],
+      "position_direction": "수주-매출-영업이익이 왼쪽에서 오른쪽 순서로 나란하며 카드 외곽·제목·구분선 위치가 유지.",
+      "scale_shape_orientation": "라운드 사각형, 일정한 카드 크기와 수평 배열 유지. 각 카드의 목표/실적 막대 바닥선과 원형 중심도 고정.",
+      "visibility_color_brightness": "흰/매우 옅은 하늘색 카드, 연파랑 번호와 가는 선, 남색 제목/라벨을 유지.",
+      "internal_change": "각 카드에 2026년 목표,1~8월 실적,달성률 라벨이 처음부터 보인다. 실적 내용만 차례로 활성화되며 카드 자체는 이동하지 않는다.",
+      "overlap_order": "독립 카드 사이에 작은 간격. 그래프는 카드 안쪽에 유지되며 인접 카드 침범 없음.",
+      "easing": "도입 이후 외곽 위치·크기 가감속 비적용. 카드 고정만으로 내부 정지 판정을 하지 않았다.",
+      "evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00195_006.500.png",
+          "actual_frame_time_seconds": 6.5,
+          "actual_frame_time_fraction": "13/2",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00240_008.000.png",
+          "actual_frame_time_seconds": 8.0,
+          "actual_frame_time_fraction": "8",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00480_016.000.png",
+          "actual_frame_time_seconds": 16.0,
+          "actual_frame_time_fraction": "16",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00540_018.000.png",
+          "actual_frame_time_seconds": 18.0,
+          "actual_frame_time_fraction": "18",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\T04_card1_native_sequence.png"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\T04_card2_native_sequence.png"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\T04_card3_native_sequence.png"
+        }
+      ]
+    },
+    {
+      "object_id": "T04-goal-rings",
+      "subject": "각 카드의 회청색 목표 막대·60억/64억/7억 및 연회색 빈 도넛 링",
+      "time_seconds": [
+        6.4,
+        18
+      ],
+      "position_direction": "각 목표 막대는 같은 고정 바닥선과 높이, x위치에 유지. 세 카드 목표값은 서로 다르지만 목표 막대 높이는 비슷하다.",
+      "scale_shape_orientation": "목표 막대 폭·높이와 도넛 원의 전체 크기 유지. 회색 링은 이후 파란 호가 차지하지 않은 부분에 남는다.",
+      "visibility_color_brightness": "목표 막대와 목표값은 도입부터 표시. 파란 실적이 활성화되기 전까지는 실적 막대/값 및 도넛 중앙 %가 비어 있다.",
+      "internal_change": "수주 빈 상태는8.0까지, 매출은15.4까지, 영업이익은16.666667의 기본 표본까지 보인다. 그래프별로 회색 배경을 유지하는 시간이 다르다.",
+      "overlap_order": "파란 호가 회색 링을 시계 방향으로 차지하며 회색의 가시 각도가 줄어든다. 목표 막대와 실적 막대는 별도 x에서 나란히 비교된다.",
+      "easing": "목표 막대의 높이 변화는 관측되지 않아 비적용. 회색 호의 가시 범위 변화는 파란 호 이벤트와 함께 기록.",
+      "evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00240_008.000.png",
+          "actual_frame_time_seconds": 8.0,
+          "actual_frame_time_fraction": "8",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00462_015.400.png",
+          "actual_frame_time_seconds": 15.4,
+          "actual_frame_time_fraction": "77/5",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00500_016.667.png",
+          "actual_frame_time_seconds": 16.666666666666668,
+          "actual_frame_time_fraction": "50/3",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00540_018.000.png",
+          "actual_frame_time_seconds": 18.0,
+          "actual_frame_time_fraction": "18",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "object_id": "T04-orders",
+      "subject": "수주 카드 내부의 파란 실적 막대·실적 숫자·파란 도넛 호·중앙 달성률 숫자",
+      "time_seconds": [
+        8,
+        9.2
+      ],
+      "position_direction": "막대는 고정된 바닥선에서 위쪽으로 높아지고 폭과 x는 유지. 숫자 라벨은 막대 상단을 따라 위로 올라간다. 도넛은 고정 중심·반지름에서 12시를 시작으로 시계 방향의 파란 호가 늘어난다. 중앙 %는 같은 자리에 있다.",
+      "scale_shape_orientation": "막대 높이와 호의 각도 범위가 증가. 막대 상단의 둥근 모서리 유지. 도넛 전체가 회전/확대되는 움직임은 보이지 않는다.",
+      "visibility_color_brightness": "활성 전에는 파란 막대·실적 값·중앙 %가 안 보이고 연회색 도넛만 있다. 활성 후 밝은 파랑이 나타나며 짙은 남색 숫자가 증가. 회색 목표 막대와 목표 60억은 유지.",
+      "internal_change": {
+        "observed_samples": [
+          {
+            "time": 8,
+            "actual": null,
+            "percent": null
+          },
+          {
+            "time": 8.1,
+            "actual": "12억",
+            "percent": 20
+          },
+          {
+            "time": 8.2,
+            "actual": "22억",
+            "percent": 37
+          },
+          {
+            "time": 8.333333333333334,
+            "actual": "33억",
+            "percent": 56
+          },
+          {
+            "time": 8.4,
+            "actual": "38억",
+            "percent": 63
+          },
+          {
+            "time": 8.6,
+            "actual": "47억",
+            "percent": 79
+          },
+          {
+            "time": 8.8,
+            "actual": "52억",
+            "percent": 88
+          },
+          {
+            "time": 9,
+            "actual": "55억",
+            "percent": 91
+          },
+          {
+            "time": 9.2,
+            "actual": "55억",
+            "percent": 92
+          }
+        ],
+        "final_observed": {
+          "actual": "55억",
+          "percent": 92
+        },
+        "held_after_seconds": [
+          9.2,
+          18
+        ],
+        "note": "표시 정수는 반올림 차이가 있을 수 있다. 막대·호·숫자가 함께 증가한다는 관측이며 동일한 내부 계산식을 쓴다고 확정하지 않는다."
+      },
+      "overlap_order": "파란 호가 기존 연회색 링의 일부를 채우고 나머지 회색 호는 계속 보인다. 중앙의 흰 공간과 숫자에 파란 호가 겹치지 않는다. 다른 카드의 완성 그래프는 유지된다.",
+      "easing": "후반의 동일 시간 간격 증가량이 작아져 감속 정착하는 경향이 명확하다. 최초 활성 시점이 표본 사이에 있으므로 극초반의 가속 구간/정확한 보간 함수는 미분류. overshoot·되감기는 표본에서 관측되지 않았다.",
+      "evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00240_008.000.png",
+          "actual_frame_time_seconds": 8.0,
+          "actual_frame_time_fraction": "8",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00243_008.100.png",
+          "actual_frame_time_seconds": 8.1,
+          "actual_frame_time_fraction": "81/10",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00246_008.200.png",
+          "actual_frame_time_seconds": 8.2,
+          "actual_frame_time_fraction": "41/5",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00250_008.333.png",
+          "actual_frame_time_seconds": 8.333333333333334,
+          "actual_frame_time_fraction": "25/3",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00258_008.600.png",
+          "actual_frame_time_seconds": 8.6,
+          "actual_frame_time_fraction": "43/5",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00270_009.000.png",
+          "actual_frame_time_seconds": 9.0,
+          "actual_frame_time_fraction": "9",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00276_009.200.png",
+          "actual_frame_time_seconds": 9.2,
+          "actual_frame_time_fraction": "46/5",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\T04_card1_native_sequence.png",
+          "actual_frame_times_seconds": [
+            7.8,
+            8,
+            8.1,
+            8.2,
+            8.4,
+            8.6,
+            8.8,
+            9,
+            9.2
+          ]
+        }
+      ]
+    },
+    {
+      "object_id": "T04-sales",
+      "subject": "매출 카드 내부의 파란 실적 막대·실적 숫자·파란 도넛 호·중앙 달성률 숫자",
+      "time_seconds": [
+        15.4,
+        16.6
+      ],
+      "position_direction": "막대는 고정된 바닥선에서 위쪽으로 높아지고 폭과 x는 유지. 숫자 라벨은 막대 상단을 따라 위로 올라간다. 도넛은 고정 중심·반지름에서 12시를 시작으로 시계 방향의 파란 호가 늘어난다. 중앙 %는 같은 자리에 있다.",
+      "scale_shape_orientation": "막대 높이와 호의 각도 범위가 증가. 막대 상단의 둥근 모서리 유지. 도넛 전체가 회전/확대되는 움직임은 보이지 않는다.",
+      "visibility_color_brightness": "활성 전에는 파란 막대·실적 값·중앙 %가 안 보이고 연회색 도넛만 있다. 활성 후 밝은 파랑이 나타나며 짙은 남색 숫자가 증가. 회색 목표 막대와 목표 64억은 유지.",
+      "internal_change": {
+        "observed_samples": [
+          {
+            "time": 15.4,
+            "actual": null,
+            "percent": null
+          },
+          {
+            "time": 15.6,
+            "actual": "9억",
+            "percent": 14
+          },
+          {
+            "time": 15.666666666666666,
+            "actual": "14억",
+            "percent": 21
+          },
+          {
+            "time": 15.8,
+            "actual": "22억",
+            "percent": 34
+          },
+          {
+            "time": 16,
+            "actual": "31억",
+            "percent": 48
+          },
+          {
+            "time": 16.2,
+            "actual": "36억",
+            "percent": 56
+          },
+          {
+            "time": 16.4,
+            "actual": "38억",
+            "percent": 60
+          },
+          {
+            "time": 16.6,
+            "actual": "39억",
+            "percent": 61
+          }
+        ],
+        "final_observed": {
+          "actual": "39억",
+          "percent": 61
+        },
+        "held_after_seconds": [
+          16.6,
+          18
+        ],
+        "note": "표시 정수는 반올림 차이가 있을 수 있다. 막대·호·숫자가 함께 증가한다는 관측이며 동일한 내부 계산식을 쓴다고 확정하지 않는다."
+      },
+      "overlap_order": "파란 호가 기존 연회색 링의 일부를 채우고 나머지 회색 호는 계속 보인다. 중앙의 흰 공간과 숫자에 파란 호가 겹치지 않는다. 다른 카드의 완성 그래프는 유지된다.",
+      "easing": "후반의 동일 시간 간격 증가량이 작아져 감속 정착하는 경향이 명확하다. 최초 활성 시점이 표본 사이에 있으므로 극초반의 가속 구간/정확한 보간 함수는 미분류. overshoot·되감기는 표본에서 관측되지 않았다.",
+      "evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00462_015.400.png",
+          "actual_frame_time_seconds": 15.4,
+          "actual_frame_time_fraction": "77/5",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00468_015.600.png",
+          "actual_frame_time_seconds": 15.6,
+          "actual_frame_time_fraction": "78/5",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00474_015.800.png",
+          "actual_frame_time_seconds": 15.8,
+          "actual_frame_time_fraction": "79/5",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00480_016.000.png",
+          "actual_frame_time_seconds": 16.0,
+          "actual_frame_time_fraction": "16",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00486_016.200.png",
+          "actual_frame_time_seconds": 16.2,
+          "actual_frame_time_fraction": "81/5",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00498_016.600.png",
+          "actual_frame_time_seconds": 16.6,
+          "actual_frame_time_fraction": "83/5",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\T04_card2_native_sequence.png",
+          "actual_frame_times_seconds": [
+            14.8,
+            15,
+            15.2,
+            15.4,
+            15.6,
+            15.8,
+            16,
+            16.2,
+            16.4,
+            16.6,
+            16.8
+          ]
+        }
+      ]
+    },
+    {
+      "object_id": "T04-profit",
+      "subject": "영업이익 카드 내부의 파란 실적 막대·실적 숫자·파란 도넛 호·중앙 달성률 숫자",
+      "time_seconds": [
+        16.666666666666668,
+        17.6
+      ],
+      "position_direction": "막대는 고정된 바닥선에서 위쪽으로 높아지고 폭과 x는 유지. 숫자 라벨은 막대 상단을 따라 위로 올라간다. 도넛은 고정 중심·반지름에서 12시를 시작으로 시계 방향의 파란 호가 늘어난다. 중앙 %는 같은 자리에 있다.",
+      "scale_shape_orientation": "막대 높이와 호의 각도 범위가 증가. 막대 상단의 둥근 모서리 유지. 도넛 전체가 회전/확대되는 움직임은 보이지 않는다.",
+      "visibility_color_brightness": "활성 전에는 파란 막대·실적 값·중앙 %가 안 보이고 연회색 도넛만 있다. 활성 후 밝은 파랑이 나타나며 짙은 남색 숫자가 증가. 회색 목표 막대와 목표 7억은 유지.",
+      "internal_change": {
+        "observed_samples": [
+          {
+            "time": 16.666666666666668,
+            "actual": null,
+            "percent": null
+          },
+          {
+            "time": 16.8,
+            "actual": "1억",
+            "percent": 7
+          },
+          {
+            "time": 17,
+            "actual": "3억",
+            "percent": 41
+          },
+          {
+            "time": 17.2,
+            "actual": "4억",
+            "percent": 60
+          },
+          {
+            "time": 17.4,
+            "actual": "5억",
+            "percent": 68
+          },
+          {
+            "time": 17.6,
+            "actual": "5억",
+            "percent": 71
+          },
+          {
+            "time": 17.8,
+            "actual": "5억",
+            "percent": 71
+          },
+          {
+            "time": 18,
+            "actual": "5억",
+            "percent": 71
+          }
+        ],
+        "final_observed": {
+          "actual": "5억",
+          "percent": 71
+        },
+        "held_after_seconds": [
+          17.6,
+          18
+        ],
+        "note": "표시 정수는 반올림 차이가 있을 수 있다. 막대·호·숫자가 함께 증가한다는 관측이며 동일한 내부 계산식을 쓴다고 확정하지 않는다."
+      },
+      "overlap_order": "파란 호가 기존 연회색 링의 일부를 채우고 나머지 회색 호는 계속 보인다. 중앙의 흰 공간과 숫자에 파란 호가 겹치지 않는다. 다른 카드의 완성 그래프는 유지된다.",
+      "easing": "후반의 동일 시간 간격 증가량이 작아져 감속 정착하는 경향이 명확하다. 최초 활성 시점이 표본 사이에 있으므로 극초반의 가속 구간/정확한 보간 함수는 미분류. overshoot·되감기는 표본에서 관측되지 않았다.",
+      "evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\f_00500_016.667.png",
+          "actual_frame_time_seconds": 16.666666666666668,
+          "actual_frame_time_fraction": "50/3",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00504_016.800.png",
+          "actual_frame_time_seconds": 16.8,
+          "actual_frame_time_fraction": "84/5",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00510_017.000.png",
+          "actual_frame_time_seconds": 17.0,
+          "actual_frame_time_fraction": "17",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00516_017.200.png",
+          "actual_frame_time_seconds": 17.2,
+          "actual_frame_time_fraction": "86/5",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00522_017.400.png",
+          "actual_frame_time_seconds": 17.4,
+          "actual_frame_time_fraction": "87/5",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00528_017.600.png",
+          "actual_frame_time_seconds": 17.6,
+          "actual_frame_time_fraction": "88/5",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00540_018.000.png",
+          "actual_frame_time_seconds": 18.0,
+          "actual_frame_time_fraction": "18",
+          "note": ""
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\T04_card3_native_sequence.png",
+          "actual_frame_times_seconds": [
+            16.4,
+            16.6,
+            16.8,
+            17,
+            17.2,
+            17.4,
+            17.6,
+            17.8,
+            18
+          ]
+        }
+      ]
+    }
+  ],
+  "temporal_order": [
+    {
+      "time_window": [
+        6,
+        6.4
+      ],
+      "event": "표지에서 실적 화면으로 겹쳐 사라짐/나타남"
+    },
+    {
+      "time_window": [
+        6.4,
+        8
+      ],
+      "event": "세 카드와 회색 목표/링 상태 유지"
+    },
+    {
+      "time_window": [
+        8,
+        9.2
+      ],
+      "event": "수주 실적과 달성률 증가"
+    },
+    {
+      "time_window": [
+        9.2,
+        15.4
+      ],
+      "event": "수주 완성 상태·나머지 빈 실적을 오래 유지"
+    },
+    {
+      "time_window": [
+        15.4,
+        16.6
+      ],
+      "event": "매출 증가"
+    },
+    {
+      "time_window": [
+        16.666666666666668,
+        17.6
+      ],
+      "event": "영업이익 증가"
+    },
+    {
+      "time_window": [
+        17.6,
+        18
+      ],
+      "event": "세 그래프 최종값 유지; 구간 안에서 퇴장 없음"
+    }
+  ],
+  "implementation_hypotheses": [
+    {
+      "hypothesis": "처음의 두 화면을 가시성 혼합으로 전환했을 수 있다.",
+      "basis": "고정된 두 화면 내용의 중첩과 단조로운 가시성 변화",
+      "not_established": "실제 opacity keyframe, gamma, easing 함수 또는 편집 효과"
+    },
+    {
+      "hypothesis": "막대 높이, 도넛 호의 가시 각도, 숫자 표시를 각 카드의 공통 진행도에 연결했을 수 있다.",
+      "basis": "한 카드 안의 세 표현이 동시 증가하고 같은 최종 상태에 도달",
+      "not_established": "레이어 수, scaleY 대 path 변화 대 마스크, trim path 사용, 숫자 표현식, 반올림 규칙"
+    }
+  ],
+  "uncertainty_summary": [
+    "활성 시작은 수주8.0~8.1초, 매출15.4~15.6초, 영업이익16.666667~16.8초 사이이며 더 촘촘한 전 프레임 검사는 하지 않았다.",
+    "숫자의 각 중간 단계는 표본값이며 매 프레임 증감 규칙과 정확한 종료 프레임은 확정하지 않았다.",
+    "감속 경향은 긍정적으로 관측되나 정확한 curve·초기 가속·키프레임 함수는 미분류.",
+    "새 배경 수면·하늘의 독립 움직임은 표본 비교에서 확인되지 않았으며 움직인다고 추정하지 않았다."
+  ],
+  "extraction_issues": [
+    "기본 제공 T04 PNG는 로그상 1920×540으로 원본3840×1080의 절반 크기였다. 이에 원본 폭3840으로 32개 추가 프레임을 bounded helper로 성공 추출했다.",
+    "추가 추출 로그는 목표 선택 완료·PTS 매핑 일치를 보고한다.",
+    "오디오 미분석, SAR 불명 및 색 범위 검증 미완료."
+  ],
+  "files_read": {
+    "manual_input_text": [
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\PROCEDURE.md",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases.json",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\inspect_more.py",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\실행기록.json",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\실행기록.json"
+    ],
+    "manual_overview_images": [
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\board_1.jpg",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\board_2.jpg",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\board_3.jpg",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T04\\board_4.jpg"
+    ],
+    "source_pngs_read_for_visualization_or_measurement": [
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00180_006.000.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00183_006.100.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00186_006.200.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00189_006.300.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00192_006.400.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00195_006.500.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00234_007.800.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00240_008.000.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00243_008.100.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00246_008.200.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00252_008.400.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00258_008.600.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00264_008.800.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00270_009.000.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00276_009.200.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00444_014.800.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00450_015.000.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00456_015.200.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00462_015.400.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00468_015.600.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00474_015.800.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00480_016.000.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00486_016.200.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00492_016.400.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00498_016.600.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00504_016.800.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00510_017.000.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00516_017.200.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00522_017.400.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00528_017.600.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00534_017.800.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\cases\\자료005\\extra1\\f_00540_018.000.png"
+    ],
+    "own_derived_files_read": [
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\T04_transition_sequence.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\T04_card1_native_sequence.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\T04_card2_native_sequence.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\T04_card3_native_sequence.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\T04_left_detail_native.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\explore_reads.json",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\explore2_reads.json",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\explore3_reads.json",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\T04_hold_diff_exploratory.json"
+    ],
+    "own_scripts_executed": [
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\explore.py",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\explore2.py",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\explore3.py",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_a\\save_first_pass.py"
+    ],
+    "bounded_helper_indirect_reads": {
+      "media_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\한맥 영상\\00_26년 가족사 경영보고 영상\\장헌\\장헌_최종.mp4",
+      "helper_dependencies": [
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\bounded_base.py",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2\\prepare.py",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2\\입력고정과_컨테이너사전점검.json"
+      ],
+      "note": "승인된 inspect_more.py 실행이 내부적으로 사용한 경로다. 이 의존 파일들의 본문을 분석 목적으로 직접 열람하지 않았다. Python/Pillow/NumPy/PyAV의 시스템·라이브러리 파일은 이 작업 자료 열람 목록에서 제외."
+    }
+  },
+  "first_pass_preservation": "이 JSON과 대응 .md는 exclusive-create 모드로 최초 한 번 저장했다. 이후 보완은 별도 파일명으로만 수행해야 한다."
+}

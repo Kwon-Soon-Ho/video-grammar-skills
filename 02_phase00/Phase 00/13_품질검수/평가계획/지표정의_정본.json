@@ -1,0 +1,90 @@
+{
+  "id": "r7-evaluation-metric-definitions",
+  "version": "0.1.2",
+  "stage": "R7-3-2",
+  "state": "reviewed_metric_definitions_not_executed",
+  "kind": "evaluation_design_not_executable_evaluator",
+  "reference_sets": {
+    "R_A": "허용 입력으로 답할 수 있는 검수된 적용 대상",
+    "R_H": "이유를 밝힌 보류가 정답인 것으로 검수됨",
+    "R_U": "기준답안 자체 미검수/미해결",
+    "R_N": "조건부 비적용 확인"
+  },
+  "closed_slot_outcomes": [
+    "TP",
+    "FP",
+    "FN",
+    "TN",
+    "A",
+    "X",
+    "M",
+    "F"
+  ],
+  "partition": "N_A = TP+FP+FN+TN+A+X+M+F; 각 항목/시행은 하나의 결과",
+  "metric_scope": "과제별 진단이며 단일 영상 품질 총점 아님",
+  "rates": [
+    {
+      "id": "EM-01",
+      "name": "지적 정밀도",
+      "formula": "TP/(TP+FP)"
+    },
+    {
+      "id": "EM-02",
+      "name": "판정 커버리지",
+      "formula": "(TP+FP+FN+TN)/N_A"
+    },
+    {
+      "id": "EM-03",
+      "name": "조건부 오류율",
+      "formula": "(FP+FN)/(TP+FP+FN+TN)"
+    },
+    {
+      "id": "EM-04",
+      "name": "전체 오류 발견율",
+      "formula": "TP/P_A"
+    },
+    {
+      "id": "EM-05",
+      "name": "잘못된 통과율",
+      "formula": "FN/P_A"
+    },
+    {
+      "id": "EM-06",
+      "name": "전체 정답 산출률",
+      "formula": "(TP+TN)/N_A"
+    },
+    {
+      "id": "EM-07",
+      "name": "적절한 보류율",
+      "formula": "units_on_R_H_with_appropriate_hold_and_no_unsupported_assertion/N_H"
+    },
+    {
+      "id": "EM-08",
+      "name": "근거 없는 단정률",
+      "formula": "units_on_R_H_with_any_unsupported_definitive_assertion/N_H"
+    }
+  ],
+  "other_required_reports": [
+    "A/X/M/F별 수와율·이유",
+    "예정전체/R_A/H/U/N 분자·분모와 필수 미해결",
+    "추출과제1:1매칭 TP/FP/FN·중복·파싱실패",
+    "매칭조건부 시간/좌표 오차+누락/오탐·범위",
+    "구조/근거연결과내용적합성분리",
+    "사람루브릭의항목별결과·불일치",
+    "영상/원본묶음·조건별 수·비율",
+    "실측비용/시간·사람수정·재시도 부담"
+  ],
+  "zero_denominator": {
+    "value": null,
+    "reason_required": true
+  },
+  "numeric_thresholds": null,
+  "confidence_interval_method": null,
+  "actual_runs": 0,
+  "actual_scores": null,
+  "reference_partition": "N_planned=N_A+N_H+N_U+N_N; 사전고정단위별 배타·완전분할",
+  "invalid_output_policy": "동일 단위의 양립불가 최종 결론은 F/invalid_conflicting_conclusion으로1회, 유리한 결론 선택/TP중복 금지",
+  "hold_policy": "명시보류 A는 이유 유무/타당성과별개 상태. 적절성은별도평가",
+  "R_H_rate_unit": "사전고정단위당0/1. 혼합응답은단정위반1·적절보류성공0. 단정개수/유형은별도보고",
+  "extraction_multiplicity_policy": "예측은발생ID를가진목록/다중집합, 중복제거금지. 기준답안도서로다른발생ID를보존하고 각발생의허용대안만동치군. 동일정답중복은FP. 매칭조건/최대대응/동률처리사전고정."
+}

@@ -1,0 +1,21 @@
+{
+  "request": {
+    "op": "restore",
+    "path": "a.json",
+    "backup_path": "backup/a.json",
+    "expected_sha256": "df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d"
+  },
+  "sequence": 6,
+  "status": "ok",
+  "before_sha256": "df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d",
+  "requested_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d",
+  "service_owned_written_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d",
+  "after_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d",
+  "response": {
+    "op": "restore",
+    "sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d",
+    "owned_written_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d",
+    "ok": true,
+    "actual_current_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d"
+  }
+}

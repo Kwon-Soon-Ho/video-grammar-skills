@@ -1,0 +1,61 @@
+{
+  "actual_model_runs": 24,
+  "cohorts": {
+    "new_requests": 3,
+    "original_real_write_fault": 5,
+    "post_first_correction": 11,
+    "sequential_handoff": 2,
+    "post_second_path_correction": 3
+  },
+  "prepared_unexecuted_2b": 2,
+  "actual_video_runs": 0,
+  "scores": {
+    "original": {
+      "passed": 38,
+      "failed": 0,
+      "total": 38,
+      "pass_rate": 1.0
+    },
+    "post1": {
+      "passed": 42,
+      "failed": 1,
+      "total": 43,
+      "pass_rate": 0.9767441860465116
+    },
+    "handoff": {
+      "passed": 8,
+      "failed": 0,
+      "total": 8,
+      "pass_rate": 1.0
+    },
+    "post2": {
+      "passed": 12,
+      "failed": 0,
+      "total": 12,
+      "pass_rate": 1.0
+    }
+  },
+  "candidate_versions": {
+    "video-knowledge-curator": "0.2.0-draft.3",
+    "video-record-steward": "0.2.0-draft.5",
+    "video-guidance-reviewer": "0.2.0-draft.4"
+  },
+  "candidate_hashes": {
+    "06_맞춤스킬/재구성후보/video-guidance-reviewer/SKILL.md": "1885f3166d405d6519615f418351eb8b6092219e06c5e5ec558409b6c039dd6b",
+    "06_맞춤스킬/재구성후보/video-knowledge-curator/SKILL.md": "8287c1eff5e55547dfdcde4e6ae8be37d546b6e9d7df86f831ee4e0d39c9411a",
+    "06_맞춤스킬/재구성후보/video-record-steward/SKILL.md": "451bbfd215cb22bf5efa85c63cff2bedcf5ef50dae5fe60e62127c6f05868334",
+    "06_맞춤스킬/재구성후보/video-guidance-reviewer/references/근거찾기와적용조건.md": "cc8985460df26bb9e223eb5747f2694c6703df38921ecee7ce2bf76f6fe7c1b8",
+    "06_맞춤스킬/재구성후보/video-guidance-reviewer/references/판정과사람검수.md": "86617f5d2c9ee44d876cf76c3a697c3413e493874df4600b10e67503be059f86",
+    "06_맞춤스킬/재구성후보/video-knowledge-curator/references/작업기준.md": "97338ff41bb1133d107c44989bbae0c7fd3edea14ab6c882025a9d13262fe41c",
+    "06_맞춤스킬/재구성후보/video-knowledge-curator/references/출력지침.md": "61fc05cba69677f574500c10791e2746b7db90ed43270cb5e9043462d310a2a2",
+    "06_맞춤스킬/재구성후보/video-record-steward/references/기록연결기준.md": "413f84662e7e452f3e86119c25d2effbab544c88dd8f8248c264dd9deb759592",
+    "06_맞춤스킬/재구성후보/video-record-steward/references/보고지침.md": "c1092ee7077f38e7d8918e525fc0054fc1cc8044797a518320ad9a63371d4583",
+    "06_맞춤스킬/재구성후보/video-record-steward/references/수정과복구.md": "7b14bb63d1b69a568871e1aab76c217f661832c30a57f58871a440705c33ac70",
+    "06_맞춤스킬/재구성후보/video-record-steward/scripts/판본대조.py": "b5eadb2d9f42ebb3e6d02dbd5a87448e558e78ef9bc7ffeb1807b79f507d03e7"
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": null
+  },
+  "not_old_new_comparison_or_generalization_proof": true
+}

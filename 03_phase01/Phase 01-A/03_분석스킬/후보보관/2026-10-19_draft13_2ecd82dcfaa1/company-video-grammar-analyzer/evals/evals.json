@@ -1,0 +1,68 @@
+{
+  "skill_name": "company-video-grammar-analyzer",
+  "evals": [
+    {
+      "id": 1,
+      "name": "static-knowledge-use-review",
+      "prompt": "134·172초 두 화면의 원본과 기존 수집 기록을 확인하고, Phase 00 지식과 연결한 DB 수집 기록 및 조회 색인을 만들어줘. 다음에 업무 이미지 묶음·건물/기단·역할판 구성을 찾아 어느 내용에 쓰였고 현재 무엇이 다른지 근거까지 돌아갈 수 있게 해줘. 관련 지식과 실제 검토 결과를 구분하고, 기존 상세와 번호를 보존해. 새 화면 제작은 필요 없어.",
+      "files": [
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\input.md",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\static\\00_사례요약.md",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\static\\01_부품과조합.md",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\static\\02_전체상세.md",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\static\\03_근거와검수.md",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\static\\04_모션조사.md",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\static\\evidence\\134.png",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\static\\evidence\\172.png"
+      ],
+      "expected_output": "원본/기존 상세와 의미를 보존한 Markdown 수집 기록, 현재 사용처/근거/차이를 찾는 작동 조회, 관련 지식과 실제 판정의 분리",
+      "assertions": [
+        "134초 파랑 요청 좌→우와 초록 지원 우→좌, 두 역할판·로고8개 2열×4행·모니터3대 업무 묶음을 보존한다. 172초23.7억원–회사열–건물/기단과 지원4라벨의 귀속을 바꾸지 않는다.",
+        "전체/하위 정보관계 레이아웃과 기하 격자를 구별하고, 두 역할판을 공통 지표 비교로 강제하지 않는다. 134 격자와172 원근열/HALLA·피티씨 순서 차이를 보존한다.",
+        "색/타입/형태·재질·공간의 역할과 조합을 기록해 표현 언어로 찾을 수 있다. 값/픽셀 목록이나 고급스럽다는 평가만으로 대체하지 않고 미상/조건·변형을 남긴다.",
+        "업무 이미지 묶음과 건물/기단을 독립 조회하고 소품은 하위 구성, 지원 명찰은 별도 단위로 연결한다. 단일 관측/반복/동일자산/정본 등록을 구별한다.",
+        "정지 두 표본에 없는 화살표/수치/로고 이동·이징·음성/읽기시간을 관측된 모션으로 색인하지 않는다.",
+        "원본 관측/기존 기록 재사용/기능 해석/새 제안을 구분하고 실제 회사 규칙·원본 제작법·새 원본 관측이나 전편 완료를 근거 없이 만들지 않는다.",
+        "사례 요약→전체 상세→근거를 읽을 수 있고 기존 상세/정확한 원본 파일·시각·해시·관측 방식/한계를 보존하거나 실제 원문으로 연결한다.",
+        "기존 정의 ID/판본 또는 유일한 별칭을 유지하며 정의와 현재 사례/사용처·근거·차이·미검증을 왕복할 수 있다.",
+        "필요한 Phase00 지식을 실제 정본/심화의 정확ID·출처 위치/판본과 연결한다. 미분류는 이유와 남기며 원칙/용어를 가짜로 만들지 않는다.",
+        "개념/유형 분류, 재사용 정의, 개별 사용처, 검토 관련 원칙과 실제 판정을 구별한다. 원칙 태그만으로 효과/승인을 선언하지 않는다.",
+        "실제 조회 명령/결과가 있고 요청한 단위/사례를 반환하며 반환에서 현재 내용·시각·근거·차이/미검증으로 이동할 수 있다. 파일 존재만으로 통과하지 않는다.",
+        "선택한 실제 검토 항목에는 대상·판정·이유·근거·검토 주체/범위가 있고 미검수/보류에는 다음 확인이 있다. 아직 안 본 것을 비적용/통과로 바꾸지 않는다."
+      ]
+    },
+    {
+      "id": 2,
+      "name": "motion-knowledge-use-review",
+      "prompt": "계약·프로젝트 지원의 기존 모션6개 관측 창을 00 지식과 연결해 수집 기록과 조회 색인으로 정리해줘. 전체 흐름·독립 동작·시간 관계를 보존하고, 수치와 도상이 끝나는 시점이 다른 사례를 찾아 어떤 내용에 쓰였는지와 원래 근거까지 조회할 수 있게 해줘. 관련 원칙과 실제 검토/보류를 구분해. 기존 기록 재검토 범위이며 새 원본 연속 관측이나 화면 제작은 하지 않아.",
+      "files": [
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\input.md",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\motion\\01_계약_수집기록.md",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\motion\\02_프로젝트지원_수집기록.md",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\motion\\03_재사용단위_색인.md",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\motion\\05_근거와_실행기록.md",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\motion\\evidence\\contract-reflow.jpg",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\motion\\evidence\\contract-panel.jpg",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\motion\\evidence\\contract-number.jpg",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\motion\\evidence\\project-reflow.jpg",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\motion\\evidence\\project-wipe.jpg",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\motion\\evidence\\project-panel.jpg"
+      ],
+      "expected_output": "원본/기존 상세와 의미를 보존한 Markdown 수집 기록, 현재 사용처/근거/차이를 찾는 작동 조회, 관련 지식과 실제 판정의 분리",
+      "assertions": [
+        "기존6개 표본 창 A-M1/A-M2/A-M3/B-M1/B-M2/B-M3을 내용/시각/근거와 연결하고 새 전편/원본 연속 관측으로 확대하지 않는다.",
+        "A-M3의0.8→10.8→12.9억원과끝값 가시경계(110,110.5]초, 도상111/112초 후속을 구별한다. B-M3의44→64→82%와끝값 경계(148.5,149]초 및149.5초 후속 카드/도넛/막대를 보존한다.",
+        "전체 흐름과 독립 세부 동작을 연결하고 대상별 선후/중첩/유지·수치 정착 이후 변화가 조회 가능한 형태다. 수치와 모든 도상의 동시 완료를 만들지 않는다.",
+        "관측 속성/시간 관계·기능 분류·관련 원칙을 구별하며 정확 AE 키프레임/마스크/원본 곡선·시청 효과를 근거 없이 확정하지 않는다. 미관측/음성 미검수는 분리한다.",
+        "숫자와 도상의 시차를 조회하면 해당 실제 관측 사례를 반환한다. 원본 관측이 아닌 VC-MOTION-03 가족사별→업무별 교체 제안을 관측 패턴으로 섞지 않는다.",
+        "원본 관측/기존 기록 재사용/기능 해석/새 제안을 구분하고 실제 회사 규칙·원본 제작법·새 원본 관측이나 전편 완료를 근거 없이 만들지 않는다.",
+        "사례 요약→전체 상세→근거를 읽을 수 있고 기존 상세/정확한 원본 파일·시각·해시·관측 방식/한계를 보존하거나 실제 원문으로 연결한다.",
+        "기존 정의 ID/판본 또는 유일한 별칭을 유지하며 정의와 현재 사례/사용처·근거·차이·미검증을 왕복할 수 있다.",
+        "필요한 Phase00 지식을 실제 정본/심화의 정확ID·출처 위치/판본과 연결한다. 미분류는 이유와 남기며 원칙/용어를 가짜로 만들지 않는다.",
+        "개념/유형 분류, 재사용 정의, 개별 사용처, 검토 관련 원칙과 실제 판정을 구별한다. 원칙 태그만으로 효과/승인을 선언하지 않는다.",
+        "실제 조회 명령/결과가 있고 요청한 단위/사례를 반환하며 반환에서 현재 내용·시각·근거·차이/미검증으로 이동할 수 있다. 파일 존재만으로 통과하지 않는다.",
+        "선택한 실제 검토 항목에는 대상·판정·이유·근거·검토 주체/범위가 있고 미검수/보류에는 다음 확인이 있다. 아직 안 본 것을 비적용/통과로 바꾸지 않는다."
+      ]
+    }
+  ]
+}

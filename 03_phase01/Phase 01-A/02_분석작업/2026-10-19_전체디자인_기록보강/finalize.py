@@ -1,0 +1,45 @@
+from pathlib import Path
+import hashlib,json
+OUT=Path(__file__).resolve().parent;ROOT=OUT.parent
+def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+def save(p,x):p.write_text(json.dumps(x,ensure_ascii=False,indent=2),encoding='utf-8')
+qa=json.loads((OUT/'report-qa.json').read_text(encoding='utf-8'));assert qa['pages']==4
+qa['visual_review']={'state':'passed','method':'render all4 pages via PDFium, inspect full pages for Korean glyphs/legibility/cropping/overlap; compare displayed ROI and claims to source observations','content_limit':'same AI context, no independent or company acceptance'};save(OUT/'report-qa.json',qa)
+old=ROOT/'case-benchmarks-20261019/adoption-trace-draft8.json'
+save(OUT/'adoption-delta.json',{'base_path':str(old),'base_sha256':sha(old),'scope':'draft9 adds whole-design density and coordinate/provenance consistency. No new upstream repository audit or wholesale skill adoption.',
+ 'status_counts_unchanged':{'guideline_or_format':10,'partial_code':21,'unimplemented':4,'excluded_direct_transplant_or_eval_reference':6},'whole_upstream_skills_adopted':0,
+ 'new_local_guidance_used':[{'path':str(Path('C:/Users/User/.codex/skills/pixel/reference')/p),'sha256':sha(Path('C:/Users/User/.codex/skills/pixel/reference')/p)} for p in ['design-extraction.md','precision-spec.md']],
+ 'adaptation':'native geometry and role/ratio extraction adapted; web grid/16px defaults, opacity inference and treating screenshot spec as ground truth not adopted. Visible font height separated from original font size.'})
+overview='''# 전체 디자인 기록 보강 / draft.9 개발 작업본
+
+사용자 선택 ①: 현재 분류를 유지하고 글자 크기 관계·영역 비율·여백·프레임/선/배경층을 보강. 재사용에 중요한 수치만 측정한다.
+
+## 이번 결과
+
+- 기존 두 기준 사례의 보강 JSON/읽기용 MD를 records/NEW-N, records/NEW-P에 작성. 보강 내용은 design-details.json/MD, 기존 전체 관측에 연결한 판본은 observations.json/MD.
+- 기존 패턴18개와 두 사례 연결 번호/정의 해시 유지. 새 패턴 번호 없음. 원본 관측·라이브러리·조사 판본은 덮어쓰지 않음.
+- 노듈러177초: 제목/양 라벨/자막 가시 글자 높이58/75/76/92px. 양 라벨 정착 띠 폭은1474/1473px로 유사. 문구 길이와 띠 폭을 구분. 굵기 구간·사선 로고 리본·배경 점/망/곡선·모델 면/바깥 화살표 기록.
+- PG47초: 외곽 선틀·색 L자 모서리·안쪽 판·흰 모서리·정책 띠·분리 꺾쇠·세로 무늬선·원 접점·카드/로고 분리. 패널-카드 간격약171px, 폭 비율은 경찰1.35/강원1.23.
+- 새 발견: 강원 정책 패널은47→53초 약804×502→681×426px(약85%)로 작아짐. 카드652×234→653×234px는 유사. 묶음 오른쪽 이동 관측은 유지하고 하위 패널 크기 변화를 보강. 정확 축소 타이밍/가감속은 새로운 열린 쟁점.
+- 스킬 draft.9 후보: 디자인 밀도 지침, 혼합 정밀도 상세 파일 연결과 검사 추가. 스키마0.4 유지. draft8은 역사 판본으로 읽되 현재 통과로 자동 승격하지 않음.
+- 52개 구조·출처·좌표/비율 일관성·시드 오류 거부·보존 검사 통과. 독립 영상 정확도 평가가 아님. PDF4쪽 전체 렌더 시각 확인.
+
+## 정밀도와 한계
+
+가시 경계의 손 판독은 estimated, 픽셀 임계값 글자 높이는 measured, 원본 폰트 크기/효과/opacity/레이어 원본값은 unknown. 제작 의도/구현 제안은 inferred로 분리한다. 수치를 찍은 시점/좌표/오차/재사용 이유를 함께 남긴다. 53초는 PG 창 경계 문맥 화면이며 새 연속 분석 시간에 가산하지 않는다.
+
+상세 기록 창은 여전히 노듈러166~181초15초+PG40~53초13초=28초. 원본 두 편 총630.272초 중 창 밖602.272초(약10분2초). 기준 사례가 전수 검수·회사 승인·재제작 성공 상태는 아니다.
+
+현재 특정 후속 쟁점은 기존 노듈러 화살표 정확 강도 곡선/원본 동기화1묶음+새 PG 축소 타이밍/가감속1묶음. 서체/원본 설정 등 일반 미상도 보존했다. 외부41개 정적 검토 항목의10지침/21일부코드/4미구현/6직접이식제외·참고 상태를 전체 적용으로 바꾸지 않았다.
+
+## 다음 선택
+
+1. 보강 기록을 사용자 검토 후 기준 조정(추천). PDF1~3쪽의 빠진 구성·관계·밀도를 확인. 다른 장면 확장은 보류.
+2. PG51~53초 축소 변화부터 보완. 하위 패널·글자·카드의 변환을 분리해 새 쟁점을 줄임. 전체 영상 확장은 보류.
+3. 다른 사내 장면2~3개로 기록 방식 적용성을 검증. 두 사례 밖의 누락/과잉 측정 여부 점검. 기존 원본 전편 분석은 이후.
+4. 전문가 판단 설계 검토. 기존 외부 조사 채택/보류·대안 비교·비평을 큰 구조로 점검. 영상 확대는 보류.
+
+사용자 선택에 의존하는 다음 묶음은 답변 후 진행한다. 중요한 분기점 PDF는 지정 보관함/제출보고서에 기록한다.
+'''
+(OUT/'00_전체디자인_보강결과와_현재위치.md').write_text(overview,encoding='utf-8')
+print('report QA and readable status finalized')

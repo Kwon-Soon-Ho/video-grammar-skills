@@ -1,0 +1,409 @@
+{
+  "reuse_map": null,
+  "schema_version": "video-observation-0.2",
+  "skill_version": "0.1.0-draft.4",
+  "case_id": "SYNTHETIC-CHECK-ONLY",
+  "source": {
+    "path": "synthetic-not-a-source-video",
+    "sha256": "786e900ac768e43e546d6b979c31d3e33fbf5046902fe0174ef30156045fd8cc"
+  },
+  "window_seconds": [
+    12.0,
+    12.9
+  ],
+  "method": "합성 레코드로 구조 검사; 기존 PNG는 파일 연결 확인에만 사용",
+  "document_mode": "none",
+  "audio_reviewed": false,
+  "files_read": [],
+  "evidence": [
+    {
+      "id": "f0",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-A\\H02\\f_00720_012.000.png",
+      "actual_seconds": "12",
+      "role": "within"
+    },
+    {
+      "id": "f1",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-A\\H02\\f_00744_012.400.png",
+      "actual_seconds": "62/5",
+      "role": "within"
+    },
+    {
+      "id": "f2",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-A\\H02\\f_00768_012.800.png",
+      "actual_seconds": "64/5",
+      "role": "within"
+    }
+  ],
+  "objects": [
+    {
+      "id": "o1",
+      "name": "합성 대상",
+      "parent": null,
+      "shape_description": "합성 테스트용 묘사",
+      "required_properties": [
+        "identity",
+        "size",
+        "position"
+      ],
+      "excluded_properties": {
+        "internal_state": "합성 최소 사례에서 해당 없음",
+        "shape": "합성 최소 사례에서 해당 없음",
+        "text": "합성 최소 사례에서 해당 없음",
+        "color": "합성 최소 사례에서 해당 없음",
+        "visibility": "합성 최소 사례에서 해당 없음",
+        "relation": "합성 최소 사례에서 해당 없음"
+      },
+      "identity": {
+        "status": "reviewed",
+        "label": "합성 대상",
+        "candidates": [],
+        "claim_ids": [
+          "c1"
+        ]
+      }
+    }
+  ],
+  "observation_rows": [
+    {
+      "id": "r-identity",
+      "object_id": "o1",
+      "property": "identity",
+      "time_seconds": [
+        12.0,
+        12.9
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f0",
+        "f1",
+        "f2"
+      ],
+      "claim_ids": [
+        "c1"
+      ],
+      "unknown_ids": [],
+      "reason": ""
+    },
+    {
+      "id": "r-size",
+      "object_id": "o1",
+      "property": "size",
+      "time_seconds": [
+        12.0,
+        12.9
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "f0",
+        "f1",
+        "f2"
+      ],
+      "claim_ids": [
+        "c2",
+        "c3"
+      ],
+      "unknown_ids": [],
+      "reason": ""
+    },
+    {
+      "id": "r-position",
+      "object_id": "o1",
+      "property": "position",
+      "time_seconds": [
+        12.0,
+        12.9
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "f0",
+        "f1",
+        "f2"
+      ],
+      "claim_ids": [
+        "c4"
+      ],
+      "unknown_ids": [],
+      "reason": ""
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "object_id": "o1",
+      "property": "identity",
+      "facet": "identity",
+      "time_seconds": [
+        12.0,
+        12.9
+      ],
+      "statement": "합성 검사 문장 c1; 실제 영상 사실 아님",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f0",
+        "f1",
+        "f2"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c2",
+      "object_id": "o1",
+      "property": "size",
+      "facet": "value",
+      "time_seconds": [
+        12.0,
+        12.9
+      ],
+      "statement": "합성 검사 문장 c2; 실제 영상 사실 아님",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f0",
+        "f1",
+        "f2"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c3",
+      "object_id": "o1",
+      "property": "size",
+      "facet": "easing",
+      "time_seconds": [
+        12.0,
+        12.9
+      ],
+      "statement": "합성 검사 문장 c3; 실제 영상 사실 아님",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f0",
+        "f1",
+        "f2"
+      ],
+      "content_review": "supported",
+      "easing": {
+        "classification": "decelerate",
+        "basis_evidence_ids": [
+          "f0",
+          "f1",
+          "f2"
+        ],
+        "method": "합성 검사 조건",
+        "limitation": "실제 시각 판독 결과 아님"
+      }
+    },
+    {
+      "id": "c4",
+      "object_id": "o1",
+      "property": "position",
+      "facet": "direction",
+      "time_seconds": [
+        12.0,
+        12.9
+      ],
+      "statement": "합성 검사 문장 c4; 실제 영상 사실 아님",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f0",
+        "f1",
+        "f2"
+      ],
+      "content_review": "supported"
+    }
+  ],
+  "unknowns": [],
+  "discovery": {
+    "forward_evidence_ids": [
+      "f0",
+      "f1",
+      "f2"
+    ],
+    "reverse_evidence_ids": [
+      "f0",
+      "f1",
+      "f2"
+    ],
+    "unresolved_ids": []
+  },
+  "layout": {
+    "canvas": {
+      "aspect_ratio": "16:9",
+      "coordinate_system": "native raster"
+    },
+    "states": [
+      {
+        "id": "s1",
+        "time_seconds": [
+          12.0,
+          12.9
+        ],
+        "evidence_ids": [
+          "f0",
+          "f1",
+          "f2"
+        ],
+        "composition": "합성 레이아웃 검사",
+        "element_object_ids": [
+          "o1"
+        ],
+        "claim_ids": [
+          "c1",
+          "c2"
+        ],
+        "design_spec": {
+          "hierarchy": {
+            "description": "합성 디자인 치수",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c1"
+            ]
+          },
+          "alignment": {
+            "description": "합성 디자인 치수",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c1"
+            ]
+          },
+          "spacing": {
+            "description": "합성 디자인 치수",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c1"
+            ]
+          },
+          "typography": {
+            "description": "합성 디자인 치수",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c1"
+            ]
+          },
+          "color": {
+            "description": "합성 디자인 치수",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c1"
+            ]
+          },
+          "background": {
+            "description": "합성 디자인 치수",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c1"
+            ]
+          },
+          "shapes": {
+            "description": "합성 디자인 치수",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c1"
+            ]
+          }
+        },
+        "unresolved_ids": []
+      }
+    ],
+    "unresolved_ids": []
+  },
+  "motion_groups": [
+    {
+      "id": "flow1",
+      "level": "flow",
+      "name": "합성 전체 흐름",
+      "time_seconds": [
+        12.0,
+        12.9
+      ],
+      "object_ids": [
+        "o1"
+      ],
+      "claim_ids": [
+        "c2",
+        "c4"
+      ],
+      "pattern_occurrence_ids": []
+    },
+    {
+      "id": "detail1",
+      "level": "detail",
+      "name": "합성 세부 모션",
+      "time_seconds": [
+        12.0,
+        12.9
+      ],
+      "object_ids": [
+        "o1"
+      ],
+      "claim_ids": [
+        "c3"
+      ],
+      "pattern_occurrence_ids": []
+    }
+  ],
+  "pattern_refs": [],
+  "review": {
+    "content_reviewed_claim_ids": [
+      "c1",
+      "c2",
+      "c3",
+      "c4"
+    ],
+    "claim_denominator_complete": true,
+    "remaining_scope": [
+      "합성 검사이며 실제 관측·회사 승인 아님"
+    ]
+  },
+  "handoff": {
+    "purpose": {
+      "text": "합성 목적 가설",
+      "basis_kind": "inferred",
+      "claim_ids": [
+        "c1"
+      ]
+    },
+    "information_relation": null,
+    "observed_claim_ids": [
+      "c1",
+      "c2"
+    ],
+    "preserve_claim_ids": [
+      "c1"
+    ],
+    "open_unknown_ids": [],
+    "condition_candidates": [
+      {
+        "condition": "합성 조건",
+        "reason": "검사기 확인",
+        "claim_ids": [
+          "c1"
+        ],
+        "counterexample": null,
+        "validation_state": "untested"
+      }
+    ],
+    "implementation_options": [
+      {
+        "proposal": "합성 구현 제안",
+        "basis_kind": "inferred",
+        "claim_ids": [
+          "c2"
+        ],
+        "verification_needed": "실제 렌더 확인"
+      }
+    ]
+  },
+  "limitations": [
+    "합성 검사 입력; 실제 영상 재분석 결과나 패턴 지식으로 사용 금지"
+  ]
+}

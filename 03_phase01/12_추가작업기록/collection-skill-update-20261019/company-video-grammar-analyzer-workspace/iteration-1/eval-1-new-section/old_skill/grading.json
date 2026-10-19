@@ -1,0 +1,136 @@
+{
+  "expectations": [
+    {
+      "text": "수집 기록이 192/204/216초의 서로 다른 근거 상태를 연결하고 표본 범위를 전편 관찰로 확대하지 않는다.",
+      "passed": true,
+      "evidence": "서두에 ‘세 시각의 화면을 수집했으며 192–216초를 연속 정밀 검수한 기록이 아니다’라고 명시한다. FLOW-LOCAL-01이 E192 총액→E204 상세/두 사례와 중첩→E216 안내·사용 장면을 연결하며 U07에 0–192초·216–434.4초·표본 사이 미관측을 남겼다. 실제 세 PNG의 상태와 맞는다."
+    },
+    {
+      "text": "왼쪽 SW 목록·중앙 연결 허브·오른쪽 설명/수치판의 배치와 역할을 원본에 맞게 연결한다.",
+      "passed": true,
+      "evidence": "O03/O04/O05는 192초의 왼쪽 3×2 목록판, 중앙 청록 구름/연결선, 오른쪽 설명·수치·동전 도상을 분리하고 ‘솔루션 묶음과 중앙 연결 허브가 비용절감 총액 설명과 같은 화면에 배치된다(관측)’고 관계를 적었다. 원본과 부합한다. O06과 O10은 뒤 표본의 상세판/안내판으로 연결된다. GAIA 세부 문구 전사 오류는 별도 claims에 남긴다."
+    },
+    {
+      "text": "192초 11.5억원과 216초 객관적 금액 산정 기준 부족/이번 산정 미반영의 의미를 원본과 맞게 보존한다.",
+      "passed": true,
+      "evidence": "E192 절은 ‘금년 9월까지 객관적으로 산정 가능한 비용절감효과’와 ‘총 11.5억 원입니다’를 보존한다. E216 표는 ‘객관적인 금액 산정 기준이 부족해, 이번 산정에는 반영하지 않았습니다’ 및 누적 실적 후 추가 반영 가능을 기록한다. 원본 두 화면에서 확인된다. ‘11.5억에 모든 S/W의 가치가 포함’ 또는 두 하단 사례가 바로 제외 대상이라는 확정을 경계한다."
+    },
+    {
+      "text": "204초의 반투명 중첩 등 중간 상태를 정착 디자인으로 확정하거나 표본 사이 정확 모션/곡선을 만들어내지 않는다.",
+      "passed": true,
+      "evidence": "E204 절은 ‘하단에는 반투명 인물·모니터·솔루션 카드 이미지가 기존 목록과 겹친다’와 ‘하나의 중간 표본으로 크로스페이드·슬라이드·마스크·레이어 이동 또는 가감속을 확정하지 않는다’를 함께 적는다. 실제 하단 중첩과 맞는다. DETAIL 묶음은 미확인 속성을 남기며 정확한 곡선/지속시간을 제시하지 않는다."
+    },
+    {
+      "text": "관측과 기능 해석을 구분하고 정확 폰트·효과·3D 제작법·회사 규칙을 확인 없이 확정하지 않는다.",
+      "passed": true,
+      "evidence": "E192 정보 관계에서 관측과 ‘솔루션 서비스 활용의 절감 성과를 설명하려는 구성’이라는 추론을 구분한다. O08은 사진의 촬영/생성 방식 미상, U04는 정확 글꼴/색/외곽선 미확정을 기록한다. ‘회사 공통 규칙·제작 의도·회사 승인으로 등록하지 않았다’고 제한하며 실제 3D 제작법이나 회사 규칙을 확정하지 않는다."
+    },
+    {
+      "text": "사용자 산출물은 Markdown이며 새 디자인·영상·PDF나 불필요한 기계 출력이 생성되지 않는다.",
+      "passed": true,
+      "evidence": "검토 시 old_skill/outputs에는 collection.md와 execution.md 두 Markdown만 있다. run 루트 timing.json은 평가용 측정 메타데이터이며 사용자에게 새로 제출한 기계 수집 DB와 다르다. 실제 collection은 원본 수집 기록이다. execution의 ‘JSON ... PDF를 생성하지 않았다’는 자기 보고와 모순되는 사용자 산출물은 발견하지 못했다. 전체 실행의 무생성/무네트워크를 독립 입증한 것은 아니다."
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 207000,
+    "total_duration_seconds": 207,
+    "executor_start": "2026-10-19T04:58:23+00:00",
+    "executor_end": "2026-10-19T05:01:50+00:00",
+    "measurement_source": "executor execution.md, clock observations; not host notification telemetry",
+    "limitations": "elapsed time includes tool waits/shared resource contention; tokens not exposed; no speed/cost conclusion"
+  },
+  "claims": [
+    {
+      "claim": "192초에는 총 11.5억 원, 204초에는 이지빔 Drawer 721Copy/5.4억원 및 공간정보제공서비스 79회/5.9억원이 표시된다.",
+      "type": "factual",
+      "verified": true,
+      "evidence": "평가자가 192초와 204초 원본 PNG를 시각 확인했다. 두 카드의 사용량·금액 소속은 양쪽 기록 모두 맞다. 이 사실은 회사의 실효 절감액 자체를 외부 검증했다는 뜻은 아니다."
+    },
+    {
+      "claim": "216초 안내는 기준 부족으로 이번 산정 미반영, 실적 누적 시 추가 반영 가능, 현재 보수적 산정을 구별한다.",
+      "type": "factual",
+      "verified": true,
+      "evidence": "216초 원본 오른쪽 세 본문 영역과 대조했다. ‘반영하지 않았습니다’의 부정 및 ‘누적되면 ... 가능합니다’의 조건이 실제로 보인다."
+    },
+    {
+      "claim": "세 PNG 파일 SHA-256은 input.md 제공값과 일치한다.",
+      "type": "factual",
+      "verified": true,
+      "evidence": "평가자가 Get-FileHash로 세 입력 PNG를 별도 계산했다. b17df931...499f6 / b3d898c6...23b42 / 745b7244...620d6가 제공 전체 값과 각각 일치했다. 실행자가 당시 직접 해시를 계산했다는 과정까지 입증하지는 않는다."
+    },
+    {
+      "claim": "세 정지 표본만으로 정확 전환·이징·연속 정지를 확정할 수 없다.",
+      "type": "quality",
+      "verified": true,
+      "evidence": "입력은 192/204/216초 세 PNG뿐이다. 양쪽 모두 구체 경로/가감속을 미확인으로 남기고 이 제약을 넘는 레시피를 쓰지 않았다."
+    },
+    {
+      "claim": "보고된 이미지 열람·역대조/ROI 수행, 스킬 참조 열람과 시계 확인이 실제 실행에서 이루어졌다.",
+      "type": "process",
+      "verified": false,
+      "evidence": "execution.md는 실행자 자기 보고이고 전체 도구 transcript/호스트 telemetry는 제공되지 않았다. 기록된 방법의 존재는 확인했지만 그 실행 사실은 독립 검증 불가이며, 거짓으로 판정한 것은 아니다."
+    },
+    {
+      "claim": "GAIA 카드의 한글 문구는 ‘지주조사의 디지털 혁신’이다.",
+      "type": "factual",
+      "verified": false,
+      "evidence": "E192 카드 표의 ‘지주조사의 디지털 혁신’은 원본 192초 상단 카드 ROI (1070,780,3100,1300)의 ‘시추조사의 디지털 혁신’과 다르다. 제품 기능을 찾는 DB 검색어로 쓰이면 다른 의미를 줄 수 있는 전사 오류다."
+    },
+    {
+      "claim": "216초 모니터에는 표와 항공 지도·길쭉한 청록 영역이 있고 주변에 여섯 제품 타일이 있다.",
+      "type": "factual",
+      "verified": true,
+      "evidence": "216초 전체 PNG에서 표/지도와 청록 구역, 여섯 제품 타일이 확인된다. 작은 지명·수치·프로그램 작동의 진실성은 이 확인 범위가 아니며 기록도 보류했다."
+    },
+    {
+      "claim": "192초 중앙 우하단 작은 타일은 별 표시 구름이다.",
+      "type": "factual",
+      "verified": true,
+      "evidence": "O04의 ‘별 표시 구름’이 원본 192초 ROI (4200,1400,4620,1730)에 보이는 구름+반짝임 형상과 맞는다."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [
+      "별도 user_notes.md는 없었다. U01–U07에 전환 경계, 주변 효과·내부 UI, 총액/세부액 집계 및 제외 대상의 불확실성이 기록돼 있다."
+    ],
+    "needs_review": [
+      "GAIA 카드 한글 문구의 ‘지주조사’를 원본 ‘시추조사’로 수정할 필요가 있다.",
+      "제품 첫 로고는 도안화돼 TCVA/TOVA 전사 차이가 있다. 공식 철자 단정 대신 로고와 풀네임 원본 근거를 함께 조회할 수 있어야 한다."
+    ],
+    "workarounds": [
+      "무배율 ROI를 확인하지 못했음을 기록하고 작은 문구·색·수치를 미확정으로 남겼다. 이 작업 방법은 execution 자기 보고다."
+    ]
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "assertion": "왼쪽 SW 목록·중앙 연결 허브·오른쪽 설명/수치판의 배치와 역할을 원본에 맞게 연결한다.",
+        "reason": "현재 문장은 큰 좌우 구조만 확인해도 통과할 수 있어 GAIA ‘시추조사의 디지털 혁신’을 ‘지주조사의 디지털 혁신’으로 적은 전사 오류, 구름+별을 사람/그룹으로 적은 아이콘 오독을 구별하지 못한다. 제품명·기능 문구와 중요 보조 도상의 올바른 연결을 원본 ROI로 대조하는 별도 기준을 추가할 가치가 있다."
+      },
+      {
+        "reason": "204초 두 카드의 721Copy→5.4억원, 79회→5.9억원 소속, 그리고 192초 11.5억과의 집계 관계를 확정하지 않는지를 독립 기준으로 두면 단위/귀속 혼동을 검출한다. 이번에는 양쪽 모두 보존했지만 기존 192/216초 의미 기준만으로는 이 오류를 충분히 잡지 못한다."
+      },
+      {
+        "reason": "DB에서 다시 찾는 목적에 맞춰 전체 사례→레이아웃→흐름→반복 부품의 근거/차이/미시험 조건을 실제로 추적할 수 있는지 확인하면 재사용 링크의 실질성을 비교할 수 있다. 단순 ID/표 존재를 통과 조건으로 두면 안 된다."
+      },
+      {
+        "assertion": "사용자 산출물은 Markdown이며 새 디자인·영상·PDF나 불필요한 기계 출력이 생성되지 않는다.",
+        "reason": "Markdown 산출물 여부는 폴더와 내용으로 확인되지만 ‘생성되지 않는다’ 전체 과정은 실행자 자기 보고만으로 독립 증명할 수 없다. 산출물 범위 검사와 프로세스 검증을 나누고 후자는 호스트 도구 이력이 있을 때만 판정해야 한다."
+      }
+    ],
+    "overall": "6개 기준은 중요한 의미 보존·관측 범위·모션 과장 방지를 검사한다. 이번에는 둘 다 실질 통과하므로 6/6 동률은 개선 효과를 입증하지 않는다. 세부 전사/아이콘 정확도와 재사용 관계의 실제 조회 가능성에는 검사 공백이 있다."
+  },
+  "review_scope": {
+    "review_type": "fresh-context AI output review; version labels visible; not human approval or a blind comparison",
+    "sources": "input.md, all three raw PNGs, eval_metadata.json, both complete collection.md and execution.md, run file inventories; no prior analyses/skill source/other evals read",
+    "limitations": "Full execution transcripts, token counts and host telemetry unavailable. Process assertions are not inferred from executor self-report. No universal style score assigned."
+  }
+}
+

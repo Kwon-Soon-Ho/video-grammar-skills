@@ -1,0 +1,555 @@
+# 실제 작업 transcript
+
+작업 순서: 지정 자료/스킬 읽기 → 원문 bytes/SHA/ID/판본 보존 → 후보와 허용필드 diff → 작업 전/후보 검사 → R4 백업 → R5 백업 → 두 파일 원문 SHA 재확인 → R4 저장 → 저장 bytes 및 환경/구조 확인 → R5 저장 실패 → 부분 파일 보존 및 환경/구조 확인 → 서비스 소유 SHA 대조 → R5 복구 → R4 복구 → 정확 복원 대조 → 최종 환경/구조/바이트 차이 확인.
+
+초기 candidate/자료 경로 읽기는 파일 없음으로 실패한 뒤 task 지정 DB 루트의 자료 폴더를 읽었습니다. 초기 읽기 원문은 초기읽기원문로그.json에 보존했습니다.
+
+Python 호출은 지정 Python -B -X utf8이며, 작업수행.py의 subprocess도 같은 Python과 UTF8 및 PYTHONDONTWRITEBYTECODE=1을 사용했습니다. 환경/DB mutation은 시험IO.py만 사용했습니다.
+
+## 1. 01-작업전구조-R4
+
+실제 argv (JSON 배열):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+exit: 0
+
+stdout 원문: 01-작업전구조-R4.stdout.txt
+stderr 원문: 01-작업전구조-R4.stderr.txt
+
+stdout:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 2. 01-작업전구조-R5
+
+실제 argv (JSON 배열):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+exit: 0
+
+stdout 원문: 01-작업전구조-R5.stdout.txt
+stderr 원문: 01-작업전구조-R5.stderr.txt
+
+stdout:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 3. 02-R4후보구조
+
+실제 argv (JSON 배열):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+exit: 0
+
+stdout 원문: 02-R4후보구조.stdout.txt
+stderr 원문: 02-R4후보구조.stderr.txt
+
+stdout:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 4. 03-R4후보판본
+
+실제 argv (JSON 배열):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+exit: 0
+
+stdout 원문: 03-R4후보판본.stdout.txt
+stderr 원문: 03-R4후보판본.stderr.txt
+
+stdout:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 5. 03-R5후보판본
+
+실제 argv (JSON 배열):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+exit: 0
+
+stdout 원문: 03-R5후보판본.stdout.txt
+stderr 원문: 03-R5후보판본.stderr.txt
+
+stdout:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 6. 04-R4백업
+
+실제 argv (JSON 배열):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+exit: 0
+
+stdout 원문: 04-R4백업.stdout.txt
+stderr 원문: 04-R4백업.stderr.txt
+
+stdout:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 7. 04-R5백업
+
+실제 argv (JSON 배열):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+exit: 0
+
+stdout 원문: 04-R5백업.stdout.txt
+stderr 원문: 04-R5백업.stderr.txt
+
+stdout:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 8. 05-R4저장
+
+실제 argv (JSON 배열):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+exit: 0
+
+stdout 원문: 05-R4저장.stdout.txt
+stderr 원문: 05-R4저장.stderr.txt
+
+stdout:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 9. 07-R4저장후환경
+
+실제 argv (JSON 배열):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+exit: 0
+
+stdout 원문: 07-R4저장후환경.stdout.txt
+stderr 원문: 07-R4저장후환경.stderr.txt
+
+stdout:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 10. 08-R4저장후구조-R4
+
+실제 argv (JSON 배열):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+exit: 0
+
+stdout 원문: 08-R4저장후구조-R4.stdout.txt
+stderr 원문: 08-R4저장후구조-R4.stderr.txt
+
+stdout:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 11. 08-R4저장후구조-R5
+
+실제 argv (JSON 배열):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+exit: 0
+
+stdout 원문: 08-R4저장후구조-R5.stdout.txt
+stderr 원문: 08-R4저장후구조-R5.stderr.txt
+
+stdout:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 12. 09-R5저장
+
+실제 argv (JSON 배열):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+exit: 2
+
+stdout 원문: 09-R5저장.stdout.txt
+stderr 원문: 09-R5저장.stderr.txt
+
+stdout:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 13. 11-두파일환경
+
+실제 argv (JSON 배열):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+exit: 2
+
+stdout 원문: 11-두파일환경.stdout.txt
+stderr 원문: 11-두파일환경.stderr.txt
+
+stdout:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 14. 12-두파일구조-R4
+
+실제 argv (JSON 배열):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+exit: 0
+
+stdout 원문: 12-두파일구조-R4.stdout.txt
+stderr 원문: 12-두파일구조-R4.stderr.txt
+
+stdout:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 15. 12-두파일구조-R5
+
+실제 argv (JSON 배열):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+exit: 1
+
+stdout 원문: 12-두파일구조-R5.stdout.txt
+stderr 원문: 12-두파일구조-R5.stderr.txt
+
+stdout:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 16. 14-R5복구
+
+실제 argv (JSON 배열):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+exit: 0
+
+stdout 원문: 14-R5복구.stdout.txt
+stderr 원문: 14-R5복구.stderr.txt
+
+stdout:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 17. 14-R5복구정확판본
+
+실제 argv (JSON 배열):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+exit: 0
+
+stdout 원문: 14-R5복구정확판본.stdout.txt
+stderr 원문: 14-R5복구정확판본.stderr.txt
+
+stdout:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 18. 14-R4복구
+
+실제 argv (JSON 배열):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+exit: 0
+
+stdout 원문: 14-R4복구.stdout.txt
+stderr 원문: 14-R4복구.stderr.txt
+
+stdout:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 19. 14-R4복구정확판본
+
+실제 argv (JSON 배열):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+exit: 0
+
+stdout 원문: 14-R4복구정확판본.stdout.txt
+stderr 원문: 14-R4복구정확판본.stderr.txt
+
+stdout:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 20. 15-복구후환경
+
+실제 argv (JSON 배열):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+exit: 0
+
+stdout 원문: 15-복구후환경.stdout.txt
+stderr 원문: 15-복구후환경.stderr.txt
+
+stdout:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 21. 16-복구후구조-R4
+
+실제 argv (JSON 배열):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+exit: 0
+
+stdout 원문: 16-복구후구조-R4.stdout.txt
+stderr 원문: 16-복구후구조-R4.stderr.txt
+
+stdout:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 22. 16-복구후구조-R5
+
+실제 argv (JSON 배열):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+exit: 0
+
+stdout 원문: 16-복구후구조-R5.stdout.txt
+stderr 원문: 16-복구후구조-R5.stderr.txt
+
+stdout:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 23. 18-R4실제저장판본
+
+실제 argv (JSON 배열):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+exit: 0
+
+stdout 원문: 18-R4실제저장판본.stdout.txt
+stderr 원문: 18-R4실제저장판본.stderr.txt
+
+stdout:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 24. 18-R5실제저장판본
+
+실제 argv (JSON 배열):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+exit: 1
+
+stdout 원문: 18-R5실제저장판본.stdout.txt
+stderr 원문: 18-R5실제저장판본.stderr.txt
+
+stdout:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 확인한 최종 상태
+
+[
+  {
+    "path": "12_통합기록/작업초안.json",
+    "sha256": "c5d0295783c3ce02b650a72a1f62c5c558caef6f7d9d7ea45580c72fc3876ddc",
+    "byte_length": 29357,
+    "json_parseable": true,
+    "version": "0.1.0",
+    "notes": "새 합성 실패 확인용 초안. 실제 관측/사내 승인 아님.",
+    "linked_r4_record": null
+  },
+  {
+    "path": "작업초안/디자인연결.json",
+    "sha256": "94524a9c69fcc0972288c4522538b67d95cec937cf1e3274ef5a0cac658e99ca",
+    "byte_length": 2782,
+    "json_parseable": true,
+    "version": "0.1.0",
+    "notes": null,
+    "linked_r4_record": {
+      "path": "12_통합기록/작업초안.json",
+      "record_id": "R8-FAULT-NEW-3",
+      "version": "0.1.0",
+      "sha256": "c5d0295783c3ce02b650a72a1f62c5c558caef6f7d9d7ea45580c72fc3876ddc"
+    }
+  }
+]
+
+두 활성 대상은 원문 bytes와 일치. 요청 변경은 미반영. 미복구 없음. 후보/부분 실패본/작업 스크립트/로그는 증거 및 미반영 자료로 outputs에 보존. 시간/token은 미수집(null).
+
+## 산출물 목록
+
+- 00-작업전-R4.bin (29357 bytes)
+- 00-작업전-R5.bin (2782 bytes)
+- 00-작업전.json (828 bytes)
+- 01-작업전구조-R4.command.json (13420 bytes)
+- 01-작업전구조-R4.stderr.txt (0 bytes)
+- 01-작업전구조-R4.stdout.txt (10668 bytes)
+- 01-작업전구조-R5.command.json (2996 bytes)
+- 01-작업전구조-R5.stderr.txt (0 bytes)
+- 01-작업전구조-R5.stdout.txt (1741 bytes)
+- 02-R4후보구조.command.json (13388 bytes)
+- 02-R4후보구조.stderr.txt (0 bytes)
+- 02-R4후보구조.stdout.txt (10668 bytes)
+- 03-R4후보판본.command.json (1894 bytes)
+- 03-R4후보판본.stderr.txt (0 bytes)
+- 03-R4후보판본.stdout.txt (650 bytes)
+- 03-R5후보판본.command.json (1894 bytes)
+- 03-R5후보판본.stderr.txt (0 bytes)
+- 03-R5후보판본.stdout.txt (650 bytes)
+- 04-R4백업.command.json (1429 bytes)
+- 04-R4백업.request.json (221 bytes)
+- 04-R4백업.stderr.txt (0 bytes)
+- 04-R4백업.stdout.txt (349 bytes)
+- 04-R5백업.command.json (1429 bytes)
+- 04-R5백업.request.json (221 bytes)
+- 04-R5백업.stderr.txt (0 bytes)
+- 04-R5백업.stdout.txt (349 bytes)
+- 05-R4저장.command.json (1368 bytes)
+- 05-R4저장.request.json (208 bytes)
+- 05-R4저장.stderr.txt (0 bytes)
+- 05-R4저장.stdout.txt (292 bytes)
+- 06-R4저장후-R4.bin (28374 bytes)
+- 06-R4저장후-R5.bin (2782 bytes)
+- 06-R4저장후.json (816 bytes)
+- 07-R4저장후환경.command.json (1283 bytes)
+- 07-R4저장후환경.request.json (87 bytes)
+- 07-R4저장후환경.stderr.txt (0 bytes)
+- 07-R4저장후환경.stdout.txt (189 bytes)
+- 08-R4저장후구조-R4.command.json (13422 bytes)
+- 08-R4저장후구조-R4.stderr.txt (0 bytes)
+- 08-R4저장후구조-R4.stdout.txt (10668 bytes)
+- 08-R4저장후구조-R5.command.json (2970 bytes)
+- 08-R4저장후구조-R5.stderr.txt (0 bytes)
+- 08-R4저장후구조-R5.stdout.txt (1741 bytes)
+- 09-R5저장.command.json (1306 bytes)
+- 09-R5저장.request.json (208 bytes)
+- 09-R5저장.stderr.txt (0 bytes)
+- 09-R5저장.stdout.txt (230 bytes)
+- 10-R5저장후-R4.bin (28374 bytes)
+- 10-R5저장후-R5.bin (927 bytes)
+- 10-R5저장후.json (608 bytes)
+- 11-두파일환경.command.json (1591 bytes)
+- 11-두파일환경.request.json (129 bytes)
+- 11-두파일환경.stderr.txt (0 bytes)
+- 11-두파일환경.stdout.txt (479 bytes)
+- 12-두파일구조-R4.command.json (13420 bytes)
+- 12-두파일구조-R4.stderr.txt (0 bytes)
+- 12-두파일구조-R4.stdout.txt (10668 bytes)
+- 12-두파일구조-R5.command.json (1598 bytes)
+- 12-두파일구조-R5.stderr.txt (0 bytes)
+- 12-두파일구조-R5.stdout.txt (562 bytes)
+- 13-복구전실패본-R4.bin (28374 bytes)
+- 13-복구전실패본-R5.bin (927 bytes)
+- 13-복구전실패본.json (608 bytes)
+- 14-R4복구.command.json (1370 bytes)
+- 14-R4복구.request.json (222 bytes)
+- 14-R4복구.stderr.txt (0 bytes)
+- 14-R4복구.stdout.txt (294 bytes)
+- 14-R4복구정확판본.command.json (2296 bytes)
+- 14-R4복구정확판본.stderr.txt (0 bytes)
+- 14-R4복구정확판본.stdout.txt (614 bytes)
+- 14-R4복구후-R4.bin (29357 bytes)
+- 14-R4복구후-R5.bin (2782 bytes)
+- 14-R4복구후.json (828 bytes)
+- 14-R5복구.command.json (1370 bytes)
+- 14-R5복구.request.json (222 bytes)
+- 14-R5복구.stderr.txt (0 bytes)
+- 14-R5복구.stdout.txt (294 bytes)
+- 14-R5복구정확판본.command.json (2296 bytes)
+- 14-R5복구정확판본.stderr.txt (0 bytes)
+- 14-R5복구정확판본.stdout.txt (614 bytes)
+- 14-R5복구후-R4.bin (28374 bytes)
+- 14-R5복구후-R5.bin (2782 bytes)
+- 14-R5복구후.json (816 bytes)
+- 15-복구후환경.command.json (1434 bytes)
+- 15-복구후환경.request.json (129 bytes)
+- 15-복구후환경.stderr.txt (0 bytes)
+- 15-복구후환경.stdout.txt (334 bytes)
+- 16-복구후구조-R4.command.json (13420 bytes)
+- 16-복구후구조-R4.stderr.txt (0 bytes)
+- 16-복구후구조-R4.stdout.txt (10668 bytes)
+- 16-복구후구조-R5.command.json (2996 bytes)
+- 16-복구후구조-R5.stderr.txt (0 bytes)
+- 16-복구후구조-R5.stdout.txt (1741 bytes)
+- 17-최종상태-R4.bin (29357 bytes)
+- 17-최종상태-R5.bin (2782 bytes)
+- 17-최종상태.json (828 bytes)
+- 18-R4실제저장판본.command.json (1940 bytes)
+- 18-R4실제저장판본.stderr.txt (0 bytes)
+- 18-R4실제저장판본.stdout.txt (650 bytes)
+- 18-R5실제저장판본.command.json (1952 bytes)
+- 18-R5실제저장판본.stderr.txt (0 bytes)
+- 18-R5실제저장판본.stdout.txt (668 bytes)
+- commands.jsonl (100918 bytes)
+- R4_원문.json (29357 bytes)
+- R4_최종차이.json (4 bytes)
+- R4_후보.json (28374 bytes)
+- R4_후보차이.diff (620 bytes)
+- R4_후보차이.json (287 bytes)
+- R5_원문.json (2782 bytes)
+- R5_최종차이.json (4 bytes)
+- R5_후보.json (2782 bytes)
+- R5_후보차이.diff (821 bytes)
+- R5_후보차이.json (402 bytes)
+- 결과.json (68413 bytes)
+- 결과.md (2953 bytes)
+- 보고작성.py (8651 bytes)
+- 서비스이벤트-001.json (861 bytes)
+- 서비스이벤트-002.json (861 bytes)
+- 서비스이벤트-003.json (980 bytes)
+- 서비스이벤트-004.json (427 bytes)
+- 서비스이벤트-005.json (1006 bytes)
+- 서비스이벤트-006.json (870 bytes)
+- 서비스이벤트-007.json (996 bytes)
+- 서비스이벤트-008.json (996 bytes)
+- 서비스이벤트-009.json (659 bytes)
+- 작업범위기록.json (1312 bytes)
+- 작업수행.py (7698 bytes)
+- 초기읽기원문로그.json (84841 bytes)
+
+보고작성.py 첫 실행은 import된 작업수행.py의 argv 부족으로 IndexError, exit 1. 보고작성.py에서 report argv를 보완한 뒤 재실행 exit 0. DB 변경은 없었으며 로그는 보고작성실패로그.json 및 보고작성재실행로그.json에 보존.
+

@@ -1,0 +1,78 @@
+{
+  "definition_version": "video-pattern-definition-0.2",
+  "category": "CARD",
+  "name": "UI 이동·확대·정착과 축소 회수",
+  "source": {
+    "case_id": "DEV-H02-PARTS-20261019",
+    "source_sha256": "786e900ac768e43e546d6b979c31d3e33fbf5046902fe0174ef30156045fd8cc",
+    "observation_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\development\\H02\\observations-first-detail.json",
+    "observation_sha256": "4ef3bffb62a8996daaaa8139c68f87367251abf938d3b080e48541c9cdc9741d",
+    "claim_ids": [
+      "c014",
+      "c015",
+      "c016",
+      "c018"
+    ],
+    "unknown_ids": [
+      "u01"
+    ]
+  },
+  "definition": {
+    "summary": "직사각형 UI의 위치·크기 동작. 열차·노란 테두리·기능 문구는 필수 구성 아님.",
+    "target_role": "주요 직사각형 기능 UI",
+    "phases": [
+      {
+        "name": "진입",
+        "property": "position",
+        "observed_change": "좌상단 쪽에서 오른쪽·아래로 이동해 왼 중앙 정착",
+        "claim_ids": [
+          "c014"
+        ]
+      },
+      {
+        "name": "크기 변화",
+        "property": "size",
+        "observed_change": "확대 후 증가량 감소를 보이며 정착하는 감속 성격",
+        "claim_ids": [
+          "c015",
+          "c016"
+        ]
+      },
+      {
+        "name": "회수",
+        "property": "visibility",
+        "observed_change": "오른쪽·아래로 가며 축소 후 소실 표본",
+        "claim_ids": [
+          "c018"
+        ]
+      }
+    ],
+    "parameters": [
+      {
+        "name": "크기 곡선",
+        "status": "observed",
+        "value": "정성 감속",
+        "unit_or_type": "관측 분류; AE 함수 아님"
+      },
+      {
+        "name": "정확 확대율·시간 경계",
+        "status": "unknown",
+        "value": null,
+        "unit_or_type": "ratio / seconds"
+      }
+    ],
+    "preserve_constraints": [
+      "위치·크기 곡선을 별도로 검토",
+      "새 UI의 가독성과 읽기 시간을 재검증"
+    ]
+  },
+  "applicability": "원본 한 사례에서 정리한 재사용 후보. 새 문구·화면비·정보 관계·시간 조건에서 재검증한다.",
+  "counterexamples": [
+    "다른 장면의 실제 적용·가독성·제작 결과는 미시험"
+  ],
+  "status": "draft",
+  "supersedes": null,
+  "derived_from": [
+    "PAT-CARD-0001"
+  ]
+}

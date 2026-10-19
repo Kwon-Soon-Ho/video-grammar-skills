@@ -1,0 +1,382 @@
+{
+  "matches": [],
+  "uses": [
+    {
+      "record_id": "RC-STATIC-134-172-KNOWLEDGE",
+      "record_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-1-static-knowledge-use-review\\with_skill\\outputs\\knowledge-links.json",
+      "unit": {
+        "id": "RC-COMP-002@v1",
+        "kind": "component",
+        "title": "회사 로고 타일",
+        "observation_status": "observed_static",
+        "definition_version": "v1",
+        "summary": "흰 유광 둥근판+고유색 로고/회사명. E1 가로형2×4와 E2 세로형 원근8가로열을 같은 외형 가족 후보로 연결. 컨테이너는 가변; 동일 자산 미확정.",
+        "status": "local candidate; not canonical",
+        "definition_reference": "prior/01_부품과조합.md"
+      },
+      "use": {
+        "id": "U-C3",
+        "definition_id": "RC-COMP-002@v1",
+        "case_unit_id": "RC-CASE-001",
+        "time": {
+          "start": 134,
+          "end": 134
+        },
+        "evidence_ids": [
+          "e1_logos"
+        ],
+        "claim_ids": [
+          "C7"
+        ],
+        "differences": [
+          "가로형2×4;5피티씨6HALLA"
+        ],
+        "unverified": [
+          "법인정식명/공식 자산/모션"
+        ],
+        "conditions": [
+          {
+            "text": "로고식별성·명칭과 컨테이너를 구별",
+            "validation": "observed_case_only"
+          }
+        ],
+        "definition_version": "v1",
+        "content_context": "가족사 프로젝트 지원: 가족사 사업의 프로젝트 요청과 기술개발센터 전문인력 지원",
+        "detail_path": "02_전체상세.md",
+        "definition_path": "01_정의와사용처.md",
+        "composition_context": [
+          {
+            "from": "RC-LAYOUT-001@v1",
+            "to": "RC-COMP-002@v1",
+            "relation": "contains",
+            "basis_kind": "observed",
+            "claim_ids": [
+              "C2",
+              "C3"
+            ]
+          },
+          {
+            "from": "RC-LAYOUT-002@v1",
+            "to": "RC-COMP-002@v1",
+            "relation": "contains",
+            "basis_kind": "observed",
+            "claim_ids": [
+              "C4",
+              "C5",
+              "C6",
+              "C7"
+            ]
+          }
+        ]
+      },
+      "knowledge_links": [],
+      "reviews": [
+        {
+          "id": "RV7",
+          "unit_id": "RC-COMP-002@v1",
+          "criterion_id": "MR-03",
+          "status": "hold",
+          "reason": "같은8개 핵심로고와순서변화는 확인; 실제전환 구간이 없어 타일동일자산/연속이동은 보류.",
+          "evidence_ids": [
+            "e1_logos",
+            "e2_logos"
+          ],
+          "claim_ids": [
+            "C7"
+          ],
+          "reviewer": "이번 실행 분석 에이전트(자기 재대조)",
+          "scope": "정지표본2장 대조만. 전환/이동 미검수.",
+          "next_probe": "원본 전환창에서 타일/가림/로고를 추적"
+        },
+        {
+          "id": "RV8",
+          "unit_id": "RC-COMP-002@v1",
+          "criterion_id": "Q-BRAND-01",
+          "status": "not_reviewed",
+          "reason": "회사자료목록은 문맥만조회. 공식 원형/사용형·화면이미지와 자산의 픽셀/권한 대조는 수행하지 않음.",
+          "evidence_ids": [
+            "e1_logos",
+            "e2_logos"
+          ],
+          "claim_ids": [
+            "C7"
+          ],
+          "reviewer": "이번 실행 분석 에이전트(자기 재대조)",
+          "scope": "CI/공식자산 대조 미검수; 핵심명칭 관측은 유지.",
+          "next_probe": "R1/R5의 실제 자산버전·사용규칙과 화면로고 별도 대조"
+        },
+        {
+          "id": "RV9",
+          "unit_id": "RC-CASE-001",
+          "criterion_id": "Q-MOTION-01",
+          "status": "hold",
+          "reason": "한시점 PNG는 완성시점/유지시간을 보여주지 않아 읽기 충분성을 판정할 수 없음.",
+          "evidence_ids": [
+            "E1"
+          ],
+          "claim_ids": [
+            "C1",
+            "C2"
+          ],
+          "reviewer": "이번 실행 분석 에이전트(자기 재대조)",
+          "scope": "시간가독성 보류. 정적내용 누락 대조와 별도.",
+          "next_probe": "원본 연속구간·발화·표시환경 확보 후 등장/완성/가림/유지/퇴장 대조"
+        },
+        {
+          "id": "RV10",
+          "unit_id": "RC-CASE-001",
+          "criterion_id": "Q-TRUST-01",
+          "status": "pass",
+          "reason": "현재PNG 파일해시/크롭원좌표/문서판본을 pin하고 주요주장을 해당PNG/ROI로 재대조.",
+          "evidence_ids": [
+            "E1"
+          ],
+          "claim_ids": [
+            "C1",
+            "C2"
+          ],
+          "reviewer": "이번 실행 분석 에이전트(자기 재대조)",
+          "scope": "제공PNG-기록 대응과 이번크롭 변환/해시만. MP4진위/PTS추출로그는 미확인.",
+          "next_probe": "원본확보시 제공시각/메타데이터를 추출로그와 확인"
+        },
+        {
+          "id": "RV11",
+          "unit_id": "RC-CASE-001",
+          "criterion_id": "Q-TRUST-02",
+          "status": "pass",
+          "reason": "관측/기능해석/미관측을 구분하고 정지2장을 모션/회사규칙/의도/동일자산으로 확대하지 않음.",
+          "evidence_ids": [
+            "E1"
+          ],
+          "claim_ids": [
+            "C1",
+            "C2"
+          ],
+          "reviewer": "이번 실행 분석 에이전트(자기 재대조)",
+          "scope": "이번 기록의 주장범위 자기 점검; 회사승인·독립검수 아님.",
+          "next_probe": "새 근거가오면 영향받는 주장범위만 별도이력으로 보강"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "e1_logos",
+          "path": "evidence/e1_logos.png",
+          "sha256": "28e5f0d5a8519701c2165d86d93f1b2484f9eb2055bdf8e8567099a9b0137de3",
+          "time": {
+            "start": 134,
+            "end": 134
+          },
+          "kind": "crop",
+          "parent_id": "E1",
+          "box_ltrb_exclusive": [
+            1000,
+            1000,
+            2750,
+            1910
+          ],
+          "transform": "crop only; no resize/recolor/rotation"
+        }
+      ],
+      "limitations": [
+        "실제관측: 제공7680×2160 PNG2장(전체보기2048×576)과 원본픽셀크롭8개를 original detail로 열람. OCR·원본MP4재생·재추출·음성청취 안함.",
+        "134/172초는 제공 메타데이터에 따른 시각. 자체PTS검증 아님. 38초를 연속관측시간으로 계산하지 않는다.",
+        "prior는 기존분석r2이며 이번실행의독립원본이아님. 기존상세/번호/근거원문은 바이트보존; 이번내용확인은 PNG/ROI 범위.",
+        "단일묶음후보/정지외형반복/동일원자산확인/정본등록/회사승인은 서로다름. 두레이아웃을 같은패턴으로 합치지않음.",
+        "모든모션조사는unobserved. 시간정지·이징·동시발생·퇴장·원제작의도/효과/회사규칙을 만들지않음.",
+        "Phase00지식은 분류/검토질문의 참고. 모든65원칙일괄적용안함. 스킬/정본/R4변경·등록/새화면/영상/PDF/외부스킬실행 없음.",
+        "일반화/다른원본/새스타일활용시험 아님. SHA/연결검사통과는 내용정확성·회사승인을대신하지않음."
+      ]
+    },
+    {
+      "record_id": "RC-STATIC-134-172-KNOWLEDGE",
+      "record_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-1-static-knowledge-use-review\\with_skill\\outputs\\knowledge-links.json",
+      "unit": {
+        "id": "RC-COMP-002@v1",
+        "kind": "component",
+        "title": "회사 로고 타일",
+        "observation_status": "observed_static",
+        "definition_version": "v1",
+        "summary": "흰 유광 둥근판+고유색 로고/회사명. E1 가로형2×4와 E2 세로형 원근8가로열을 같은 외형 가족 후보로 연결. 컨테이너는 가변; 동일 자산 미확정.",
+        "status": "local candidate; not canonical",
+        "definition_reference": "prior/01_부품과조합.md"
+      },
+      "use": {
+        "id": "U-C4",
+        "definition_id": "RC-COMP-002@v1",
+        "case_unit_id": "RC-CASE-002",
+        "time": {
+          "start": 172,
+          "end": 172
+        },
+        "evidence_ids": [
+          "e2_logos"
+        ],
+        "claim_ids": [
+          "C7"
+        ],
+        "differences": [
+          "세로형원근8가로열;5HALLA6피티씨"
+        ],
+        "unverified": [
+          "일부 영문부속글자·같은타일자산·이동"
+        ],
+        "conditions": [
+          {
+            "text": "E1전사를 E2독립판독으로 쓰지 않기",
+            "validation": "observed_case_only"
+          }
+        ],
+        "definition_version": "v1",
+        "content_context": "실제 투입한 인력·비용 기준 23.7억원 가치창출성과와 관련 회사/기관 지원범주",
+        "detail_path": "02_전체상세.md",
+        "definition_path": "01_정의와사용처.md",
+        "composition_context": [
+          {
+            "from": "RC-LAYOUT-001@v1",
+            "to": "RC-COMP-002@v1",
+            "relation": "contains",
+            "basis_kind": "observed",
+            "claim_ids": [
+              "C2",
+              "C3"
+            ]
+          },
+          {
+            "from": "RC-LAYOUT-002@v1",
+            "to": "RC-COMP-002@v1",
+            "relation": "contains",
+            "basis_kind": "observed",
+            "claim_ids": [
+              "C4",
+              "C5",
+              "C6",
+              "C7"
+            ]
+          }
+        ]
+      },
+      "knowledge_links": [],
+      "reviews": [
+        {
+          "id": "RV7",
+          "unit_id": "RC-COMP-002@v1",
+          "criterion_id": "MR-03",
+          "status": "hold",
+          "reason": "같은8개 핵심로고와순서변화는 확인; 실제전환 구간이 없어 타일동일자산/연속이동은 보류.",
+          "evidence_ids": [
+            "e1_logos",
+            "e2_logos"
+          ],
+          "claim_ids": [
+            "C7"
+          ],
+          "reviewer": "이번 실행 분석 에이전트(자기 재대조)",
+          "scope": "정지표본2장 대조만. 전환/이동 미검수.",
+          "next_probe": "원본 전환창에서 타일/가림/로고를 추적"
+        },
+        {
+          "id": "RV8",
+          "unit_id": "RC-COMP-002@v1",
+          "criterion_id": "Q-BRAND-01",
+          "status": "not_reviewed",
+          "reason": "회사자료목록은 문맥만조회. 공식 원형/사용형·화면이미지와 자산의 픽셀/권한 대조는 수행하지 않음.",
+          "evidence_ids": [
+            "e1_logos",
+            "e2_logos"
+          ],
+          "claim_ids": [
+            "C7"
+          ],
+          "reviewer": "이번 실행 분석 에이전트(자기 재대조)",
+          "scope": "CI/공식자산 대조 미검수; 핵심명칭 관측은 유지.",
+          "next_probe": "R1/R5의 실제 자산버전·사용규칙과 화면로고 별도 대조"
+        },
+        {
+          "id": "RV12",
+          "unit_id": "RC-CASE-002",
+          "criterion_id": "Q-MOTION-01",
+          "status": "hold",
+          "reason": "한시점 PNG는 완성시점/유지시간을 보여주지 않아 읽기 충분성을 판정할 수 없음.",
+          "evidence_ids": [
+            "E2"
+          ],
+          "claim_ids": [
+            "C4",
+            "C5",
+            "C6"
+          ],
+          "reviewer": "이번 실행 분석 에이전트(자기 재대조)",
+          "scope": "시간가독성 보류. 정적내용 누락 대조와 별도.",
+          "next_probe": "원본 연속구간·발화·표시환경 확보 후 등장/완성/가림/유지/퇴장 대조"
+        },
+        {
+          "id": "RV13",
+          "unit_id": "RC-CASE-002",
+          "criterion_id": "Q-TRUST-01",
+          "status": "pass",
+          "reason": "현재PNG 파일해시/크롭원좌표/문서판본을 pin하고 주요주장을 해당PNG/ROI로 재대조.",
+          "evidence_ids": [
+            "E2"
+          ],
+          "claim_ids": [
+            "C4",
+            "C5",
+            "C6"
+          ],
+          "reviewer": "이번 실행 분석 에이전트(자기 재대조)",
+          "scope": "제공PNG-기록 대응과 이번크롭 변환/해시만. MP4진위/PTS추출로그는 미확인.",
+          "next_probe": "원본확보시 제공시각/메타데이터를 추출로그와 확인"
+        },
+        {
+          "id": "RV14",
+          "unit_id": "RC-CASE-002",
+          "criterion_id": "Q-TRUST-02",
+          "status": "pass",
+          "reason": "관측/기능해석/미관측을 구분하고 정지2장을 모션/회사규칙/의도/동일자산으로 확대하지 않음.",
+          "evidence_ids": [
+            "E2"
+          ],
+          "claim_ids": [
+            "C4",
+            "C5",
+            "C6"
+          ],
+          "reviewer": "이번 실행 분석 에이전트(자기 재대조)",
+          "scope": "이번 기록의 주장범위 자기 점검; 회사승인·독립검수 아님.",
+          "next_probe": "새 근거가오면 영향받는 주장범위만 별도이력으로 보강"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "e2_logos",
+          "path": "evidence/e2_logos.png",
+          "sha256": "be46708f5dc7d67266003952f8d28bcd1f4bdc0c45138a05f55c7e5ac6eeff64",
+          "time": {
+            "start": 172,
+            "end": 172
+          },
+          "kind": "crop",
+          "parent_id": "E2",
+          "box_ltrb_exclusive": [
+            2500,
+            910,
+            4800,
+            1510
+          ],
+          "transform": "crop only; no resize/recolor/rotation"
+        }
+      ],
+      "limitations": [
+        "실제관측: 제공7680×2160 PNG2장(전체보기2048×576)과 원본픽셀크롭8개를 original detail로 열람. OCR·원본MP4재생·재추출·음성청취 안함.",
+        "134/172초는 제공 메타데이터에 따른 시각. 자체PTS검증 아님. 38초를 연속관측시간으로 계산하지 않는다.",
+        "prior는 기존분석r2이며 이번실행의독립원본이아님. 기존상세/번호/근거원문은 바이트보존; 이번내용확인은 PNG/ROI 범위.",
+        "단일묶음후보/정지외형반복/동일원자산확인/정본등록/회사승인은 서로다름. 두레이아웃을 같은패턴으로 합치지않음.",
+        "모든모션조사는unobserved. 시간정지·이징·동시발생·퇴장·원제작의도/효과/회사규칙을 만들지않음.",
+        "Phase00지식은 분류/검토질문의 참고. 모든65원칙일괄적용안함. 스킬/정본/R4변경·등록/새화면/영상/PDF/외부스킬실행 없음.",
+        "일반화/다른원본/새스타일활용시험 아님. SHA/연결검사통과는 내용정확성·회사승인을대신하지않음."
+      ]
+    }
+  ],
+  "method": "exact ID or explicit substring; classification inference/review relevance are not effect approval",
+  "company_approved": false
+}

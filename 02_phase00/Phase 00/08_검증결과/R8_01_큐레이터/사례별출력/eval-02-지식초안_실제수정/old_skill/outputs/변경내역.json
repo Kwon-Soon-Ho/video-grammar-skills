@@ -1,0 +1,69 @@
+{
+  "scope": "요청한 초안 문구 정제. 운영 정본 반영 없음.",
+  "draft_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-knowledge-curator-workspace\\iteration-2\\eval-02-지식초안_실제수정\\old_skill\\run-1\\inputs\\Phase00\\작업초안\\레이아웃지식_초안.json",
+  "backup_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-knowledge-curator-workspace\\iteration-2\\eval-02-지식초안_실제수정\\old_skill\\run-1\\backup\\2026-10-15_초안문구수정\\레이아웃지식_초안_v0.1.1.json",
+  "new_revision_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-knowledge-curator-workspace\\iteration-2\\eval-02-지식초안_실제수정\\old_skill\\run-1\\outputs\\레이아웃지식_초안_v0.1.2-draft.1.json",
+  "before_sha256": "0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306",
+  "after_sha256": "e22e3ed9936b73db448134586b016f71b26c921196ce4f96e4f8b25f2ea1160b",
+  "versions": {
+    "before": "0.1.1",
+    "after": "0.1.2-draft.1"
+  },
+  "changes": [
+    {
+      "path": "/layouts/0/limits",
+      "before": "반드시 중앙 배치 아님",
+      "after": "단일 초점이 반드시 중앙 배치를 뜻하는 것은 아님"
+    },
+    {
+      "path": "/layouts/0/version",
+      "before": "0.1.1",
+      "after": "0.1.2-draft.1"
+    },
+    {
+      "path": "/version",
+      "before": "0.1.1",
+      "after": "0.1.2-draft.1"
+    }
+  ],
+  "other_layouts_unchanged": true,
+  "status_policy": "초안 파일로 관리하며 기존 레코드 status와 나머지 항목은 유지. 승인 또는 회사 필수화 아님.",
+  "meaning_review": "핵심 하나를 중심으로 구성한다는 정의를 유지하고, 중앙 배치가 필수라는 오해를 막는 동일 의미의 문구 정제.",
+  "source_check": {
+    "level": "로컬 용어·출처목록과 연결만 확인. 외부 원문 재검토·이론 신규 도입 없음.",
+    "term": {
+      "id": "LAYOUT-SINGLE-FOCUS",
+      "axis": "layout",
+      "name_ko": "단일 초점",
+      "definition": "핵심 대상·문장 중심의 구성",
+      "status": "draft",
+      "replaced_by": null,
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ]
+    },
+    "sources": [
+      {
+        "id": "SRC-PROJECT-TAXONOMY",
+        "kind": "project_design",
+        "title": "회사 영상 공통 분류 설계와 사용자 요구",
+        "url": null,
+        "locator": "backup/2026-10-14_기반정리전/02_지식DB_설계.md",
+        "review_status": null,
+        "limits": null
+      },
+      {
+        "id": "SRC-IMPECCABLE",
+        "kind": "external_principle",
+        "title": "Impeccable 레이아웃·타입",
+        "url": "https://github.com/pbakaus/impeccable",
+        "locator": "추가스킬확보목록의고정커밋layout/typeset/operate 읽기",
+        "review_status": null,
+        "limits": null
+      }
+    ]
+  },
+  "new_records": [],
+  "deferred_records": [],
+  "review_questions": []
+}

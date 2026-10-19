@@ -1,0 +1,1576 @@
+01_공통용어/공통용어사전.json /terms/27 {
+  "id": "LAYOUT-PROCESS-LINE",
+  "axis": "layout",
+  "name_ko": "선형 프로세스",
+  "name_en": "Linear process",
+  "definition": "단계를 선·방향으로 연결한 구성",
+  "aliases": [
+    "수평 프로세스",
+    "수직 프로세스"
+  ],
+  "include_when": "순서 있는 단계",
+  "exclude_or_limit": "행태별 방향 속성은 별도",
+  "parent_id": null,
+  "related_ids": [],
+  "source_refs": [
+    "SRC-PROJECT-TAXONOMY"
+  ],
+  "status": "draft",
+  "version": "0.1.0",
+  "replaced_by": null
+}
+01_공통용어/공통용어사전.json /terms/37 {
+  "id": "FUNCTION-FOCUS",
+  "axis": "motion_function",
+  "name_ko": "주목 이동",
+  "name_en": "Shift focus",
+  "definition": "현재 설명 대상으로 주목을 이동",
+  "aliases": [
+    "포커스 전환"
+  ],
+  "include_when": "핵심 단계 설명",
+  "exclude_or_limit": "실제 시선 효과는 검토 필요",
+  "parent_id": null,
+  "related_ids": [],
+  "source_refs": [
+    "SRC-PROJECT-TAXONOMY"
+  ],
+  "status": "draft",
+  "version": "0.1.0",
+  "replaced_by": null
+}
+01_공통용어/공통용어사전.json /terms/47 {
+  "id": "PROPERTY-VISIBILITY",
+  "axis": "motion_property",
+  "name_ko": "가시성 변화",
+  "name_en": "Visibility change",
+  "definition": "보이는 범위·강도가 달라짐",
+  "aliases": [
+    "페이드인",
+    "페이드아웃",
+    "Fade in",
+    "Fade out"
+  ],
+  "include_when": "등장·퇴장 관측",
+  "exclude_or_limit": "오퍼시티·마스크·합성 원인 미확정 가능",
+  "parent_id": null,
+  "related_ids": [],
+  "source_refs": [
+    "SRC-PROJECT-TAXONOMY"
+  ],
+  "status": "draft",
+  "version": "0.1.0",
+  "replaced_by": null
+}
+01_공통용어/공통용어사전.json /terms/48 {
+  "id": "PROPERTY-OPACITY",
+  "axis": "motion_property",
+  "name_ko": "오퍼시티 변화 추정",
+  "name_en": "Opacity estimate",
+  "definition": "합성 조건 또는 원본 근거로 추정한 opacity 변화",
+  "aliases": [
+    "Opacity In",
+    "투명도 등장"
+  ],
+  "include_when": "조건부 수치 추정",
+  "exclude_or_limit": "가시성만으로 정확한 opacity 확정 금지",
+  "parent_id": null,
+  "related_ids": [],
+  "source_refs": [
+    "SRC-PROJECT-TAXONOMY"
+  ],
+  "status": "draft",
+  "version": "0.1.0",
+  "replaced_by": null
+}
+01_공통용어/용어판정기준.json /guides/27 {
+  "term_id": "LAYOUT-PROCESS-LINE",
+  "axis": "layout",
+  "name_ko": "선형 프로세스",
+  "record_version": "0.1.1",
+  "status": "project_draft",
+  "units": [
+    "state"
+  ],
+  "minimum_evidence": "visible_scope",
+  "positive_example": "실행단계를 방향 있는 선으로 연결한 구성.",
+  "negative_example": "가로 카드나 연도축을 무조건 프로세스로 분류.",
+  "abstain_when": "순서/연결 의미와 실제시간축 여부를 구분.",
+  "source_refs": [
+    "R2-PROJECT"
+  ],
+  "example_origin": "synthetic_example",
+  "company_approved": false,
+  "claim_scope_note": "관측태그와구현/원인/의도/출처주장을분리한다. 구현만불명이어도충분한관측태그는유지; 이항목의정의에필수인증거가부족하면기권."
+}
+01_공통용어/용어판정기준.json /guides/37 {
+  "term_id": "FUNCTION-FOCUS",
+  "axis": "motion_function",
+  "name_ko": "주목 이동",
+  "record_version": "0.1.1",
+  "status": "project_draft",
+  "units": [
+    "beat"
+  ],
+  "minimum_evidence": "temporal_change_plus_message_context",
+  "positive_example": "기존정보 사이 강조표식이 다음 설명대상으로 이동.",
+  "negative_example": "모든이동을 주목이동 기능으로 기록.",
+  "abstain_when": "어떤대상으로 초점이 바뀌었는지 근거 부족 시 후보.",
+  "source_refs": [
+    "R2-PROJECT"
+  ],
+  "example_origin": "synthetic_example",
+  "company_approved": false,
+  "claim_scope_note": "관측태그와구현/원인/의도/출처주장을분리한다. 구현만불명이어도충분한관측태그는유지; 이항목의정의에필수인증거가부족하면기권."
+}
+01_공통용어/용어판정기준.json /guides/47 {
+  "term_id": "PROPERTY-VISIBILITY",
+  "axis": "motion_property",
+  "name_ko": "가시성 변화",
+  "record_version": "0.1.1",
+  "status": "project_draft",
+  "units": [
+    "beat"
+  ],
+  "minimum_evidence": "tracked_target_and_temporal_scope",
+  "positive_example": "문자가 서서히 보이거나 가려졌다가 드러남.",
+  "negative_example": "흰배경과 섞여보이므로 Opacity0→100 확정.",
+  "abstain_when": "밝기/가림/합성/배경변화의 원인은 미확정.",
+  "source_refs": [
+    "R2-PROJECT",
+    "R2-W3C-OPACITY"
+  ],
+  "example_origin": "synthetic_example",
+  "company_approved": false,
+  "claim_scope_note": "관측태그와구현/원인/의도/출처주장을분리한다. 구현만불명이어도충분한관측태그는유지; 이항목의정의에필수인증거가부족하면기권."
+}
+01_공통용어/용어판정기준.json /guides/48 {
+  "term_id": "PROPERTY-OPACITY",
+  "axis": "motion_property",
+  "name_ko": "오퍼시티 변화 추정",
+  "record_version": "0.1.1",
+  "status": "project_draft",
+  "units": [
+    "beat"
+  ],
+  "minimum_evidence": "source_value_or_conditioned_opacity_estimate",
+  "positive_example": "원본 속성자료 또는 합성조건을 적은 추정으로 opacity변화를 제시.",
+  "negative_example": "렌더에서흐려보인다는 이유로 opacity수치 확정.",
+  "abstain_when": "원본/배경색/합성조건이 없으면 가시성만 관측.",
+  "source_refs": [
+    "R2-PROJECT",
+    "R2-W3C-OPACITY"
+  ],
+  "example_origin": "synthetic_example",
+  "company_approved": false,
+  "claim_scope_note": "관측태그와구현/원인/의도/출처주장을분리한다. 구현만불명이어도충분한관측태그는유지; 이항목의정의에필수인증거가부족하면기권."
+}
+02_원칙과레이아웃/레이아웃지식.json /layouts/3 {
+  "id": "KNOW-LAYOUT-PROCESS-LINE",
+  "term_id": "LAYOUT-PROCESS-LINE",
+  "name_ko": "선형 프로세스",
+  "definition": "단계를 선·방향으로 연결한 구성",
+  "fit_conditions": "순서 있는 단계",
+  "limits": "행태별 방향 속성은 별도",
+  "variant_dimensions": [
+    "요소 수",
+    "문구 길이",
+    "출력 비율",
+    "정보 관계",
+    "읽기·유지 시간"
+  ],
+  "source_refs": [
+    "SRC-PROJECT-TAXONOMY"
+  ],
+  "related_ids": [
+    "SCREEN-HIERARCHY",
+    "SCREEN-TYPE-KO",
+    "SCREEN-TIME-READ"
+  ],
+  "company_examples": [],
+  "status": "reference",
+  "version": "0.1.1",
+  "application_reference_refs": [
+    "SRC-IMPECCABLE"
+  ]
+}
+02_원칙과레이아웃/레이아웃_심화지식.json /layout_cards/3 {
+  "id": "KNOW-LAYOUT-PROCESS-LINE",
+  "term_id": "LAYOUT-PROCESS-LINE",
+  "name_ko": "선형 프로세스",
+  "status": "draft",
+  "company_approved": false,
+  "definition_origin": "SRC-PROJECT-TAXONOMY",
+  "definition": "단계를 선·방향으로 연결한 구성",
+  "application_origin": "project_synthetic_transfer_not_source_example",
+  "fit_relation_ids": [
+    "REL-ORDER"
+  ],
+  "relation_policy": "조건부 선택 후보. 모양만으로 정보 관계를 자동 부여하지 않음.",
+  "fit_when": "업무·공정 단계의 순서가 의미를 가지며 분기가 주요 내용이 아닐 때",
+  "reading_order": "시작 조건→단계와 연결 방향→종료·산출물",
+  "composition_decisions": "단계 이름과 화살표가 실제 절차를 표현하게 하고 현재 단계와 전체 진행 위치를 구분한다.",
+  "positive_example": "접수→검토→승인 흐름을 단계 이름·방향과 함께 표현한다.",
+  "counterexample": "자료 공개 순서만 보고 실제 업무가 그 순서라고 연결하거나 분기·회귀를 숨긴다.",
+  "acceptable_variation": "한 방향 선은 순서일 수 있으나 반드시 시간 길이를 나타내지는 않는다.",
+  "alternative_when": "실제 기간이면 시간축, 조건 분기가 중요하면 연결 구성·확장 후보를 검토한다.",
+  "korean_text_adjustment": "긴 단계명을 축약할 때 의미를 검토하고 작은 단위 설명은 현재 단계에 가까이 둔다.",
+  "landscape_adjustment": "내용 역할을 나눈 영역의 폭을 조절한다. 화면 전체를 꽉 채울 의무는 없다. 핵심·단위·출처가 읽히는 완성 상태를 확인한다.",
+  "portrait_adjustment": "수직 재배열 시 단계 번호·방향을 유지한다. 폭이 좁다고 순서를 뒤집지 않는다.",
+  "square_adjustment": "필수 내용·관계·비례를 잃는 중앙 크롭만으로 해결하지 않는다. 손실 없는 크롭·영역 재배치·구간 분절도 후보로 비교하고 실제 문구와 표시 조건을 확인한다.",
+  "temporal_conditions": "정보가 완성된 상태와 유지 시간을 별도로 확인한다. 읽기 가능한 대비·가림·배치가 유지되는 구간인지 보고 모션 자체의 길이로 대체하지 않는다.",
+  "abstain_when": "시나리오의 선후·분기 근거가 없으면 절차 순서를 확정하지 않는다.",
+  "minimum_inputs": [
+    "설명 목적·핵심 주장",
+    "정보 항목·대응 관계와 출처",
+    "대상 시청자·시청 환경",
+    "출력 화면비·해상도·배포 UI",
+    "실제 문구·숫자·단위·자산"
+  ],
+  "source_refs": [
+    "SRC-L2-CARBON-GRID",
+    "SRC-L2-NNG-VISUAL",
+    "SRC-L2-NNG-PROXIMITY"
+  ],
+  "source_locator_refs": [
+    {
+      "source_id": "SRC-L2-CARBON-GRID",
+      "locator": "Contrast / Style models / Adaptive aspect ratios"
+    },
+    {
+      "source_id": "SRC-L2-NNG-VISUAL",
+      "locator": "2. Visual Hierarchy / 3. Balance"
+    },
+    {
+      "source_id": "SRC-L2-NNG-PROXIMITY",
+      "locator": "Place Related Elements near Each Other / Proximity May Shift in Responsive Designs"
+    }
+  ],
+  "numeric_default": null,
+  "case_kind": "synthetic_not_company_video",
+  "auto_relation_assignment": false
+}
+C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\시범운영_20261016\실행\eval-03-적용성검토자\candidate\inputs\Phase00\02_원칙과레이아웃\07_레이아웃별_선택조건과반례.md
+1: # 레이아웃별 선택 조건과 반례
+2: 
+3: 기존14개 ID·정의를 유지했다. 선택 조건·예·반례는 프로젝트가 작성한 설명용 지식이다. 실제 회사 영상·국제표준 분류·검증된 성과가 아니다.
+4: 
+5: 심화지식 v0.1.2 / SHA256 `5d6378eb954b6b75f94be2a0988254a1406f6dacc8a6c44060c6a05ff56aa14c`.
+6: 
+7: ## 단일 초점 · LAYOUT-SINGLE-FOCUS
+8: 
+9: 핵심 대상·문장 중심의 구성 — 기존 프로젝트 정의.
+10: 
+11: 관련 정보 관계 후보: 입력 관계에 따라 달라짐 · 모양만으로 자동 부여하지 않음.
+12: 
+13: - 선택 조건: 핵심 메시지가 하나이며 나머지는 근거·맥락일 때
+14: - 읽는 순서 후보: 요점→대표 대상→필요한 근거
+15: - 구성할 때 판단: 대표 대상, 요점 문장, 보조 설명을 역할로 구분한다. 초점 위치는 중앙·삼분할 모두 후보다.
+16: - 적용 예: 침투수의 주요 경로를 하나의 단면도와 짧은 요점으로 설명한다.
+73: ## 선형 프로세스 · LAYOUT-PROCESS-LINE
+74: 
+75: 단계를 선·방향으로 연결한 구성 — 기존 프로젝트 정의.
+76: 
+77: 관련 정보 관계 후보: REL-ORDER · 모양만으로 자동 부여하지 않음.
+78: 
+79: - 선택 조건: 업무·공정 단계의 순서가 의미를 가지며 분기가 주요 내용이 아닐 때
+80: - 읽는 순서 후보: 시작 조건→단계와 연결 방향→종료·산출물
+81: - 구성할 때 판단: 단계 이름과 화살표가 실제 절차를 표현하게 하고 현재 단계와 전체 진행 위치를 구분한다.
+82: - 적용 예: 접수→검토→승인 흐름을 단계 이름·방향과 함께 표현한다.
+83: - 오용 반례: 자료 공개 순서만 보고 실제 업무가 그 순서라고 연결하거나 분기·회귀를 숨긴다.
+84: - 허용되는 변형·복합: 한 방향 선은 순서일 수 있으나 반드시 시간 길이를 나타내지는 않는다.
+85: - 다른 구조를 검토할 때: 실제 기간이면 시간축, 조건 분기가 중요하면 연결 구성·확장 후보를 검토한다.
+86: - 한국어·문구 조정: 긴 단계명을 축약할 때 의미를 검토하고 작은 단위 설명은 현재 단계에 가까이 둔다.
+87: - 가로 화면: 내용 역할을 나눈 영역의 폭을 조절한다. 화면 전체를 꽉 채울 의무는 없다. 핵심·단위·출처가 읽히는 완성 상태를 확인한다.
+88: - 세로 화면: 수직 재배열 시 단계 번호·방향을 유지한다. 폭이 좁다고 순서를 뒤집지 않는다.
+89: - 정사각 화면: 필수 내용·관계·비례를 잃는 중앙 크롭만으로 해결하지 않는다. 손실 없는 크롭·영역 재배치·구간 분절도 후보로 비교하고 실제 문구와 표시 조건을 확인한다.
+90: - 시간·가림 조건: 정보가 완성된 상태와 유지 시간을 별도로 확인한다. 읽기 가능한 대비·가림·배치가 유지되는 구간인지 보고 모션 자체의 길이로 대체하지 않는다.
+91: - 기권 조건: 시나리오의 선후·분기 근거가 없으면 절차 순서를 확정하지 않는다.
+92: 
+93: 적용 참고: [Carbon 2x Grid Guidelines](https://www.carbondesignsystem.com/building-blocks/foundations/2x-grid/guidelines), [NN/G 시각 디자인 5관점](https://www.nngroup.com/articles/principles-visual-design/), [NN/G 근접성 적용 지침](https://www.nngroup.com/articles/gestalt-proximity/). 기존 명칭의 정의 출처는 프로젝트 사전이며 외부 지침이 이14개 명칭을 표준화했다는 뜻은 아니다.
+94: 
+{"path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\03_한맥디자인\\회사별_디자인연결_현황.json", "exists": true, "scope": "semantic_full_file", "sha256": "f5a2913c38dc5651e714d48467a558565051bc878ac07b943cfddf48ae7a15ec", "bytes": 42906, "lines": 1250, "read_range": "entire file"}
+{
+  "id": "company-design-links",
+  "version": "0.1.0",
+  "date": "2026-10-15",
+  "source_pins": {
+    "companies": {
+      "path": "10_공용자산/회사목록.json",
+      "version": "0.3.1",
+      "sha256": "0b011a9c2962459a3b42067c3f7120602cde9e541c466647fa880a0a298dda2a"
+    },
+    "assets": {
+      "path": "10_공용자산/자산목록.json",
+      "version": "0.3.1",
+      "sha256": "5f4cc581df387e8948bc3071aa9f93bd34fb88a2ffc406aaf72de9f3e8e940a0"
+    },
+    "colors": {
+      "path": "10_공용자산/CI색상목록.json",
+      "version": "0.3.1",
+      "sha256": "c95a79a81a422fc23f4275a8dd878016f209fdaff171d73f44d3cff7387b7097"
+    },
+    "hanmac": {
+      "path": "03_한맥디자인/한맥디자인정본.json",
+      "version": "0.1.0",
+      "sha256": "dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed"
+    },
+    "policy": {
+      "path": "05_출처와검토/R5_적용정책_결정.json",
+      "version": "A@2026-10-15",
+      "sha256": "d8666f2212ae4e434d7d1209f0b64bdded4f0d562df9600a1bda74d136dd9da3"
+    }
+  },
+  "state": "reference_inventory_not_design_approval",
+  "companies": [
+    {
+      "company_id": "hanmac",
+      "name_ko": "한맥기술",
+      "ci_asset_refs": [
+        {
+          "asset_id": "CI-SOURCE-013",
+          "record_version": "0.1.0",
+          "sha256": "8bf20af63dbec973ee5da65fb4da5c6fdd818c63d3a45611665c077ac44f2585"
+        },
+        {
+          "asset_id": "CI-SOURCE-001",
+          "record_version": "0.1.0",
+          "sha256": "0fff2e59a72eaaf42d2bd7875c9044e85fcf5e310bd8ee6a73b271b0a6b6e79e"
+        },
+        {
+          "asset_id": "CI-SOURCE-002",
+          "record_version": "0.1.0",
+          "sha256": "f9506608e532cf0e17e4458957a947dd4cec57c9149fbf68427feae2a44abd96"
+        },
+        {
+          "asset_id": "CI-SOURCE-003",
+          "record_version": "0.1.0",
+          "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+        },
+        {
+          "asset_id": "CI-SOURCE-004",
+          "record_version": "0.1.0",
+          "sha256": "458268a7f5cb6fa2569fe1f7ab4112f47a976c5aab83599b0aab77949e3af743"
+        },
+        {
+          "asset_id": "CI-COLLECTION-049",
+          "record_version": "0.1.0",
+          "sha256": "21992dc5751bf6e720dcff1dec52a7ba0464fe97c07d4af7a8680189ea0a349a"
+        },
+        {
+          "asset_id": "CI-COLLECTION-050",
+          "record_version": "0.1.0",
+          "sha256": "7be61e01e795e65ad8e394bc1e7d7c2ee24b3a3b49cee4ab78f273b3609a7493"
+        },
+        {
+          "asset_id": "CI-COLLECTION-051",
+          "record_version": "0.1.0",
+          "sha256": "871d1aa4f47717d96373dd3bfb012d9343b6392a8568634d88c56426012d9adf"
+        },
+        {
+          "asset_id": "CI-COLLECTION-052",
+          "record_version": "0.1.0",
+          "sha256": "0b756d553167fb08083e0f5d723f59b2eaa360a582dd6229dd3700e385082211"
+        },
+        {
+          "asset_id": "CI-COLLECTION-053",
+          "record_version": "0.1.0",
+          "sha256": "8e96546b74c1b9c9ffc8c74802f9d8e649781c398160d3b1532d87f5382e2e0e"
+        },
+        {
+          "asset_id": "CI-COLLECTION-054",
+          "record_version": "0.1.0",
+          "sha256": "f8b7f28b6b5f4672ec8b492395d793bb59b863eb35f33fb5d9b7bce28cae506b"
+        }
+      ],
+      "color_refs": [
+        {
+          "color_id": "ci.observed.raster.1",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        },
+        {
+          "color_id": "ci.observed.raster.2",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        },
+        {
+          "color_id": "ci.observed.vector.1",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.2",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.3",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        }
+      ],
+      "default_roles": {},
+      "selected_logo": null,
+      "shared_library": "explicit_opt_in_only",
+      "status": "reference_inventory_only",
+      "unresolved": [
+        "공식 최신판/사용범위",
+        "국영문/가로세로/단색·반전형의 맥락별 선택",
+        "보호공간/최소크기/배경",
+        "CI색의 역할 선택·가독성·디자이너 검수"
+      ]
+    },
+    {
+      "company_id": "saman",
+      "name_ko": "삼안",
+      "ci_asset_refs": [
+        {
+          "asset_id": "CI-SOURCE-009",
+          "record_version": "0.1.0",
+          "sha256": "d895fbd63173648ba1ff4be885439fbdae1492803217650ebba388f72e4117fd"
+        },
+        {
+          "asset_id": "CI-SOURCE-001",
+          "record_version": "0.1.0",
+          "sha256": "0fff2e59a72eaaf42d2bd7875c9044e85fcf5e310bd8ee6a73b271b0a6b6e79e"
+        },
+        {
+          "asset_id": "CI-SOURCE-002",
+          "record_version": "0.1.0",
+          "sha256": "f9506608e532cf0e17e4458957a947dd4cec57c9149fbf68427feae2a44abd96"
+        },
+        {
+          "asset_id": "CI-SOURCE-003",
+          "record_version": "0.1.0",
+          "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+        },
+        {
+          "asset_id": "CI-SOURCE-004",
+          "record_version": "0.1.0",
+          "sha256": "458268a7f5cb6fa2569fe1f7ab4112f47a976c5aab83599b0aab77949e3af743"
+        },
+        {
+          "asset_id": "CI-COLLECTION-024",
+          "record_version": "0.1.0",
+          "sha256": "725fa7abbbecf1a16498b5d4010db7a04c72d860bb7e24e5f06af90f219db8a1"
+        },
+        {
+          "asset_id": "CI-COLLECTION-025",
+          "record_version": "0.1.0",
+          "sha256": "b2581f5685ff308f8ec0aa7ca180bb6b4b1a8b757272463a0412b4843151e8bb"
+        },
+        {
+          "asset_id": "CI-COLLECTION-026",
+          "record_version": "0.1.0",
+          "sha256": "f8ed9fd71e21b349a7dc71ba9f62978974886785cddb234ccb36f46537effee5"
+        },
+        {
+          "asset_id": "CI-COLLECTION-027",
+          "record_version": "0.1.0",
+          "sha256": "c00af30816a225203b79dd64077430d0561207b1826a9fc8140d89d68b165960"
+        },
+        {
+          "asset_id": "CI-COLLECTION-028",
+          "record_version": "0.1.0",
+          "sha256": "a52ad33f20bafe1a78eecc46f83e18be658c7d0d20de77a29c4174c0122916e6"
+        },
+        {
+          "asset_id": "CI-COLLECTION-029",
+          "record_version": "0.1.0",
+          "sha256": "b2581f5685ff308f8ec0aa7ca180bb6b4b1a8b757272463a0412b4843151e8bb"
+        },
+        {
+          "asset_id": "CI-COLLECTION-030",
+          "record_version": "0.1.0",
+          "sha256": "5362dc5574d2c64e1c51d1fe86b207cdddb1c372da9c49c4503f250ca0318cd7"
+        }
+      ],
+      "color_refs": [
+        {
+          "color_id": "ci.observed.raster.1",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        },
+        {
+          "color_id": "ci.observed.raster.2",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        },
+        {
+          "color_id": "ci.observed.raster.3",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        },
+        {
+          "color_id": "ci.observed.vector.1",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.2",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.declared.draft.gray.hex",
+          "record_version": "0.1.0",
+          "source_level": "official_declared",
+          "verification": "draft",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.declared.draft.orange.hex",
+          "record_version": "0.1.0",
+          "source_level": "official_declared",
+          "verification": "draft",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.declared.draft.gray.pantone",
+          "record_version": "0.1.0",
+          "source_level": "official_declared",
+          "verification": "draft",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.declared.draft.orange.pantone",
+          "record_version": "0.1.0",
+          "source_level": "official_declared",
+          "verification": "draft",
+          "screen_value_available": false
+        }
+      ],
+      "default_roles": {},
+      "selected_logo": null,
+      "shared_library": "explicit_opt_in_only",
+      "status": "reference_inventory_only",
+      "unresolved": [
+        "공식 최신판/사용범위",
+        "국영문/가로세로/단색·반전형의 맥락별 선택",
+        "보호공간/최소크기/배경",
+        "CI색의 역할 선택·가독성·디자이너 검수"
+      ]
+    },
+    {
+      "company_id": "jangheon-industry",
+      "name_ko": "장헌산업",
+      "ci_asset_refs": [
+        {
+          "asset_id": "CI-SOURCE-010",
+          "record_version": "0.1.0",
+          "sha256": "fd8cd342a5701248c1f04274ed8a94e087f0bd417302aec6743bedb61ef5aa95"
+        },
+        {
+          "asset_id": "CI-SOURCE-001",
+          "record_version": "0.1.0",
+          "sha256": "0fff2e59a72eaaf42d2bd7875c9044e85fcf5e310bd8ee6a73b271b0a6b6e79e"
+        },
+        {
+          "asset_id": "CI-SOURCE-002",
+          "record_version": "0.1.0",
+          "sha256": "f9506608e532cf0e17e4458957a947dd4cec57c9149fbf68427feae2a44abd96"
+        },
+        {
+          "asset_id": "CI-SOURCE-003",
+          "record_version": "0.1.0",
+          "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+        },
+        {
+          "asset_id": "CI-SOURCE-004",
+          "record_version": "0.1.0",
+          "sha256": "458268a7f5cb6fa2569fe1f7ab4112f47a976c5aab83599b0aab77949e3af743"
+        },
+        {
+          "asset_id": "CI-COLLECTION-032",
+          "record_version": "0.1.0",
+          "sha256": "380dac3ada856a084153deb31734ae1cb34423f56567b49bc429bb1797a04458"
+        },
+        {
+          "asset_id": "CI-COLLECTION-033",
+          "record_version": "0.1.0",
+          "sha256": "4faffcf8b01f8624401ecd50c7a24b8eed0c1a33bddd4b8e55778b29986d499d"
+        },
+        {
+          "asset_id": "CI-COLLECTION-034",
+          "record_version": "0.1.0",
+          "sha256": "4a2d1471876228f6c07467693a5ccf581d9e5a2043020b96f614ab1844c98a57"
+        },
+        {
+          "asset_id": "CI-COLLECTION-035",
+          "record_version": "0.1.0",
+          "sha256": "0bdeea356bbf011e220290797b6871e5c79073464e978cee16bcbd872cc9c3d3"
+        },
+        {
+          "asset_id": "CI-COLLECTION-036",
+          "record_version": "0.1.0",
+          "sha256": "933bfb38950d69c9c0450e83125988525b3dc2333e181ff10aecc1202af9d4d3"
+        },
+        {
+          "asset_id": "CI-COLLECTION-037",
+          "record_version": "0.1.0",
+          "sha256": "d5cad9b352e977dc065d80197e21d0681c6f6be1f0f29727409fcfcd7f04c891"
+        },
+        {
+          "asset_id": "CI-COLLECTION-038",
+          "record_version": "0.1.0",
+          "sha256": "7b640d39d7632b9136fd226469484d19cf06a0f0f38a5b0e65630ce6d4345de2"
+        },
+        {
+          "asset_id": "CI-COLLECTION-039",
+          "record_version": "0.1.0",
+          "sha256": "e43e023733c4fb386f38f1e9ceed0707ff9d426bf467534939dda4ad256b8258"
+        }
+      ],
+      "color_refs": [
+        {
+          "color_id": "ci.observed.raster.1",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        },
+        {
+          "color_id": "ci.observed.raster.2",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        },
+        {
+          "color_id": "ci.observed.vector.1",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.2",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.3",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.4",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        }
+      ],
+      "default_roles": {},
+      "selected_logo": null,
+      "shared_library": "explicit_opt_in_only",
+      "status": "reference_inventory_only",
+      "unresolved": [
+        "공식 최신판/사용범위",
+        "국영문/가로세로/단색·반전형의 맥락별 선택",
+        "보호공간/최소크기/배경",
+        "CI색의 역할 선택·가독성·디자이너 검수"
+      ]
+    },
+    {
+      "company_id": "ptc",
+      "name_ko": "피티씨",
+      "ci_asset_refs": [
+        {
+          "asset_id": "CI-SOURCE-011",
+          "record_version": "0.1.0",
+          "sha256": "6ca1dc896e47d59ec8771e57375d79ab61addbab5f5ecf09674e6d4644ae193f"
+        },
+        {
+          "asset_id": "CI-SOURCE-001",
+          "record_version": "0.1.0",
+          "sha256": "0fff2e59a72eaaf42d2bd7875c9044e85fcf5e310bd8ee6a73b271b0a6b6e79e"
+        },
+        {
+          "asset_id": "CI-SOURCE-002",
+          "record_version": "0.1.0",
+          "sha256": "f9506608e532cf0e17e4458957a947dd4cec57c9149fbf68427feae2a44abd96"
+        },
+        {
+          "asset_id": "CI-SOURCE-003",
+          "record_version": "0.1.0",
+          "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+        },
+        {
+          "asset_id": "CI-SOURCE-004",
+          "record_version": "0.1.0",
+          "sha256": "458268a7f5cb6fa2569fe1f7ab4112f47a976c5aab83599b0aab77949e3af743"
+        },
+        {
+          "asset_id": "CI-COLLECTION-010",
+          "record_version": "0.1.0",
+          "sha256": "eda743f400b26e19efab73997b61239f839082cb91a7ca45c056ec08b1ffe8db"
+        },
+        {
+          "asset_id": "CI-COLLECTION-011",
+          "record_version": "0.1.0",
+          "sha256": "1fa0c29259983b3526bc9e4d8eab0c651d8c0ec0c69683be6ac43581618a2837"
+        },
+        {
+          "asset_id": "CI-COLLECTION-012",
+          "record_version": "0.1.0",
+          "sha256": "49f7c6a499427a32d32f9583798d8be0d737f3ce9aa1398742d7bc1c7404e853"
+        },
+        {
+          "asset_id": "CI-COLLECTION-013",
+          "record_version": "0.1.0",
+          "sha256": "14859982623b7af070bc9b9f558482a02472b84ccb2d01269e90b568e7954423"
+        },
+        {
+          "asset_id": "CI-COLLECTION-014",
+          "record_version": "0.1.0",
+          "sha256": "ba7eabccca2a77d6f0c2dd55c479f885f4bb0f5d4d3369a44c4baa72efbb684b"
+        },
+        {
+          "asset_id": "CI-COLLECTION-015",
+          "record_version": "0.1.0",
+          "sha256": "be1b08d79469af775ad159ed473d913676cb559467dbdc6d9b72760e2fa7e193"
+        },
+        {
+          "asset_id": "CI-COLLECTION-016",
+          "record_version": "0.1.0",
+          "sha256": "98b4af000a74b549f9847ac512ef876a7e319e18a6c345e06ae555bc27cd2d79"
+        }
+      ],
+      "color_refs": [
+        {
+          "color_id": "ci.observed.raster.1",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        },
+        {
+          "color_id": "ci.observed.raster.2",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        },
+        {
+          "color_id": "ci.observed.raster.3",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        },
+        {
+          "color_id": "ci.observed.vector.1",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.2",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.3",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        }
+      ],
+      "default_roles": {},
+      "selected_logo": null,
+      "shared_library": "explicit_opt_in_only",
+      "status": "reference_inventory_only",
+      "unresolved": [
+        "공식 최신판/사용범위",
+        "국영문/가로세로/단색·반전형의 맥락별 선택",
+        "보호공간/최소크기/배경",
+        "CI색의 역할 선택·가독성·디자이너 검수"
+      ]
+    },
+    {
+      "company_id": "halla",
+      "name_ko": "한라산업개발",
+      "ci_asset_refs": [
+        {
+          "asset_id": "CI-SOURCE-012",
+          "record_version": "0.1.0",
+          "sha256": "9eb8e43cb84c379821ed3e019120d43503a397bedd25085856d6db3ee4ef1c1f"
+        },
+        {
+          "asset_id": "CI-SOURCE-001",
+          "record_version": "0.1.0",
+          "sha256": "0fff2e59a72eaaf42d2bd7875c9044e85fcf5e310bd8ee6a73b271b0a6b6e79e"
+        },
+        {
+          "asset_id": "CI-SOURCE-002",
+          "record_version": "0.1.0",
+          "sha256": "f9506608e532cf0e17e4458957a947dd4cec57c9149fbf68427feae2a44abd96"
+        },
+        {
+          "asset_id": "CI-SOURCE-003",
+          "record_version": "0.1.0",
+          "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+        },
+        {
+          "asset_id": "CI-SOURCE-004",
+          "record_version": "0.1.0",
+          "sha256": "458268a7f5cb6fa2569fe1f7ab4112f47a976c5aab83599b0aab77949e3af743"
+        },
+        {
+          "asset_id": "CI-COLLECTION-041",
+          "record_version": "0.1.0",
+          "sha256": "cc43f00b163944356fa907a61b1932f93996c4024949b17c1b58dfb1f0677f2b"
+        },
+        {
+          "asset_id": "CI-COLLECTION-042",
+          "record_version": "0.1.0",
+          "sha256": "590e4d95cec07a026cf0a8b8e37dbe6b7bb523dd9c734782d7f951d1ba984b03"
+        },
+        {
+          "asset_id": "CI-COLLECTION-043",
+          "record_version": "0.1.0",
+          "sha256": "b7212add13b1615c3b3c7532340cfd2c505b38f730b0a2273045b7922c392496"
+        },
+        {
+          "asset_id": "CI-COLLECTION-044",
+          "record_version": "0.1.0",
+          "sha256": "c22b711554bfbe91517e567a9e708ef2eb4d8a77f0c91ab7aee17bdeea73e4a3"
+        },
+        {
+          "asset_id": "CI-COLLECTION-045",
+          "record_version": "0.1.0",
+          "sha256": "5efada740fe67546d410f42a82dcc2886b859c163d3d2f42ade5ce6aa2d28836"
+        },
+        {
+          "asset_id": "CI-COLLECTION-046",
+          "record_version": "0.1.0",
+          "sha256": "f8fa755898d77e72e0f724fc915615c14bb49f104d18dcb47e7cd99db462cfe0"
+        },
+        {
+          "asset_id": "CI-COLLECTION-047",
+          "record_version": "0.1.0",
+          "sha256": "01c856abcc6c36d27f9bc5ccee504ba43ec0238f763068ec13ab4065bc19daa6"
+        }
+      ],
+      "color_refs": [
+        {
+          "color_id": "ci.observed.raster.1",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        },
+        {
+          "color_id": "ci.observed.vector.1",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.2",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        }
+      ],
+      "default_roles": {},
+      "selected_logo": null,
+      "shared_library": "explicit_opt_in_only",
+      "status": "reference_inventory_only",
+      "unresolved": [
+        "공식 최신판/사용범위",
+        "국영문/가로세로/단색·반전형의 맥락별 선택",
+        "보호공간/최소크기/배경",
+        "CI색의 역할 선택·가독성·디자이너 검수"
+      ]
+    },
+    {
+      "company_id": "baron",
+      "name_ko": "바론컨설턴트",
+      "ci_asset_refs": [
+        {
+          "asset_id": "CI-SOURCE-007",
+          "record_version": "0.1.0",
+          "sha256": "478ea643756e040e384c6be277e1805d8223b300bdd3caf2984340b24668e40a"
+        },
+        {
+          "asset_id": "CI-SOURCE-001",
+          "record_version": "0.1.0",
+          "sha256": "0fff2e59a72eaaf42d2bd7875c9044e85fcf5e310bd8ee6a73b271b0a6b6e79e"
+        },
+        {
+          "asset_id": "CI-SOURCE-002",
+          "record_version": "0.1.0",
+          "sha256": "f9506608e532cf0e17e4458957a947dd4cec57c9149fbf68427feae2a44abd96"
+        },
+        {
+          "asset_id": "CI-SOURCE-003",
+          "record_version": "0.1.0",
+          "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+        },
+        {
+          "asset_id": "CI-SOURCE-004",
+          "record_version": "0.1.0",
+          "sha256": "458268a7f5cb6fa2569fe1f7ab4112f47a976c5aab83599b0aab77949e3af743"
+        },
+        {
+          "asset_id": "CI-COLLECTION-018",
+          "record_version": "0.1.0",
+          "sha256": "7c14748b2857b920b9a68194611297ecd6356f0ac78e7560da2c2ed5d5d7162f"
+        },
+        {
+          "asset_id": "CI-COLLECTION-019",
+          "record_version": "0.1.0",
+          "sha256": "dc790926157474682cf5d461a8b2fea7ac98485d87b102edf880e55f7426d572"
+        },
+        {
+          "asset_id": "CI-COLLECTION-020",
+          "record_version": "0.1.0",
+          "sha256": "9d100418ce3cec896fc12a55afb8d6f970f690947b3aa0d711d319c4b02ba263"
+        },
+        {
+          "asset_id": "CI-COLLECTION-021",
+          "record_version": "0.1.0",
+          "sha256": "90cdefd9c0d8b5567d4ac89a25d4569ca80aea3b63bef04b41f79913e18f2069"
+        },
+        {
+          "asset_id": "CI-COLLECTION-022",
+          "record_version": "0.1.0",
+          "sha256": "96d87205e913020b35eb6f8ae02411878653d68a5e21c66f43a6dc12390c89e7"
+        }
+      ],
+      "color_refs": [
+        {
+          "color_id": "ci.observed.raster.1",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        },
+        {
+          "color_id": "ci.observed.vector.1",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        }
+      ],
+      "default_roles": {},
+      "selected_logo": null,
+      "shared_library": "explicit_opt_in_only",
+      "status": "reference_inventory_only",
+      "unresolved": [
+        "공식 최신판/사용범위",
+        "국영문/가로세로/단색·반전형의 맥락별 선택",
+        "보호공간/최소크기/배경",
+        "CI색의 역할 선택·가독성·디자이너 검수"
+      ]
+    },
+    {
+      "company_id": "sanha",
+      "name_ko": "산하종합기술",
+      "ci_asset_refs": [
+        {
+          "asset_id": "CI-SOURCE-008",
+          "record_version": "0.1.0",
+          "sha256": "8827e5bf48a958b1e0ec73ddbf2647238b2bebd71d9afe4676241c887e3d50c1"
+        }
+      ],
+      "color_refs": [
+        {
+          "color_id": "ci.observed.raster.1",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        },
+        {
+          "color_id": "ci.observed.raster.2",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        }
+      ],
+      "default_roles": {},
+      "selected_logo": null,
+      "shared_library": "explicit_opt_in_only",
+      "status": "reference_inventory_only",
+      "unresolved": [
+        "공식 최신판/사용범위",
+        "국영문/가로세로/단색·반전형의 맥락별 선택",
+        "보호공간/최소크기/배경",
+        "CI색의 역할 선택·가독성·디자이너 검수"
+      ]
+    },
+    {
+      "company_id": "jangheon",
+      "name_ko": "㈜장헌",
+      "ci_asset_refs": [
+        {
+          "asset_id": "CI-SOURCE-006",
+          "record_version": "0.1.0",
+          "sha256": "45fb1233b5700bd06951c61c728adad7ec7abbcc9f1b9d33a1a28e5ef962d4e4"
+        },
+        {
+          "asset_id": "CI-SOURCE-005",
+          "record_version": "0.1.0",
+          "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+        },
+        {
+          "asset_id": "CI-COLLECTION-001",
+          "record_version": "0.1.0",
+          "sha256": "e08b5a3c44e4028cda6c1e8282a8efd5c741a4d6c4ba22c2cb1c6d49cf0a9fbc"
+        },
+        {
+          "asset_id": "CI-COLLECTION-002",
+          "record_version": "0.1.0",
+          "sha256": "d2046a474233bac44ab50b449a36bcc8cce411bc41e42ce43ca29203de1fdc99"
+        },
+        {
+          "asset_id": "CI-COLLECTION-003",
+          "record_version": "0.1.0",
+          "sha256": "ae3d86316c2d94ee36e8173bb77dbe4fb5f6550241818aae350df81d903abdf6"
+        },
+        {
+          "asset_id": "CI-COLLECTION-004",
+          "record_version": "0.1.0",
+          "sha256": "38f041750b0f8edc21a97d0c14518f0601553f20e323c3acc0ecfeeda71d7536"
+        },
+        {
+          "asset_id": "CI-COLLECTION-005",
+          "record_version": "0.1.0",
+          "sha256": "ac24cc919fa3025828e95696643f63b371ad4e9144aedb7d6e77062639bcbaa8"
+        },
+        {
+          "asset_id": "CI-COLLECTION-006",
+          "record_version": "0.1.0",
+          "sha256": "0d5790a7bba3e9635c184177067721e58681128636d5b79818d88f1bbfaec934"
+        },
+        {
+          "asset_id": "CI-COLLECTION-007",
+          "record_version": "0.1.0",
+          "sha256": "b2eb87870f52c625de16fba39963bd095b595528d955da234b62a43f79f76c4a"
+        },
+        {
+          "asset_id": "CI-COLLECTION-008",
+          "record_version": "0.1.0",
+          "sha256": "a4cf820835543cbe7bd8a1b98f7362df3857ab665b0e5ca93ceca6bef8b5eb9d"
+        }
+      ],
+      "color_refs": [
+        {
+          "color_id": "ci.observed.raster.1",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        },
+        {
+          "color_id": "ci.observed.raster.2",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        },
+        {
+          "color_id": "ci.observed.raster.3",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        },
+        {
+          "color_id": "ci.observed.vector.1",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.2",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.3",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.4",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.5",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.6",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.7",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.8",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.9",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.10",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.11",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.12",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.13",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.14",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.15",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.16",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.17",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.18",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.19",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.20",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.21",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.22",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.23",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.24",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.25",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.26",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.27",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.28",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.29",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.30",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.31",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.32",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.33",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.34",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.35",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.36",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.37",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.38",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.39",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.40",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.41",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.42",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.43",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.44",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.45",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.46",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.47",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.48",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.49",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.50",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.51",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.52",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.53",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.54",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.55",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.56",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.57",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.58",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.59",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        }
+      ],
+      "default_roles": {},
+      "selected_logo": null,
+      "shared_library": "explicit_opt_in_only",
+      "status": "reference_inventory_only",
+      "unresolved": [
+        "공식 최신판/사용범위",
+        "국영문/가로세로/단색·반전형의 맥락별 선택",
+        "보호공간/최소크기/배경",
+        "CI색의 역할 선택·가독성·디자이너 검수"
+      ]
+    }
+  ],
+  "boundary": "8회사 참조 현황. 역할 자동 선택/새 CI 생성/회사 승인 없음."
+}
+
+{"path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\05_출처와검토\\검수와사용범위\\07_한맥디자인과_CI_확인현황.md", "exists": true, "scope": "semantic_full_file", "sha256": "872b4cf10790af7142a6438252f0da6206cd25233823050d3fafd8f412bbc226", "bytes": 2244, "lines": 16, "read_range": "entire file"}
+# 한맥 디자인과 가족사 CI 확인 현황
+
+2026-10-15. **한맥 웹 디자인 정제본은 이미 연결돼 있고, 8회사 CI 최신 자료 여부는 이번 사용자 답변으로 확인했다.** 기존 한맥/가족사 자산과 색값을 다시 만들거나 변경하지 않았다.
+
+| 구분 | 현재 확보·확인 범위 | 남은 범위 |
+|---|---|---|
+| 한맥 공통 디자인 | 웹을 보고 정제한 hanmac-video@0.1.0. 원래 작업 폴더 JSON과 Phase00 정본 SHA256 동일 | 10/14 조회 범위의 정제본. 현재 웹 전체 재조사/모든 규격을 검증한 것은 아님 |
+| 한맥 컬러·UI 정책 | 브랜드·명암 Storybook, 강조·중립 Vercel. 전역 컬러는 공통 라이브러리. UI·표면은 선택 참고 | 개별 영상의 화면·가독성·모션 수치는 실제 조건에서 판단 |
+| 8회사 CI 자료 | 사용자가 ‘8개 모두 제공한 자료가 최신’이라고 확인 | 파일에 없는 CI 보호공간/최소크기/허용형·색 프로필 등을 임의로 채우지 않음 |
+| 산하종합기술 | 사용자가 ‘원래 Illustrator 파일 없음’이라고 확인 | 보유 PNG 등의 원문과 출처를 유지. AI원본을 필수 누락으로 반복 요청하거나 임의 생성하지 않음 |
+
+이번 회신은 제공 자료의 최신성8건을 포함하는 부분 확인이다. CI 세부 사용 가이드까지 모두 확인됐다는 답변은 아니므로 해당 범위는 미확인으로 남겼다. **한맥 웹 디자인 시스템이 없다는 뜻이 아니다.** 이미 확보된 컬러/선택UI 참고·기존 관측색 초안 정책은 계속 사용할 수 있다. CI 역할/표시값과 실제 납품 시안의 검수는 구분한다.
+
+사용자 답변은 [원문](사람답변원문/2026-10-15_8회사CI_최신자료와산하AI부재.json)과 [접수 대장](사람검수_접수대장.json)에 연결했다. 원질문0.1.0의 파일/내용hash는 회신 전 backup과 일치한다. 회신 뒤 보완한 구조화 범위·참조 대화의 연결 문맥을 사용자가 새로 검수한 것으로 기록하지 않았다.
+
+[한맥 참조 대화 근거](한맥디자인_대화근거.json) · [기존 한맥 정본](../../03_한맥디자인/한맥디자인정본.json)
+
+{"path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\14_스킬재구성\\사람피드백\\R8-3_적용성검토자_검토답변.json", "exists": true, "scope": "semantic_full_file", "sha256": "e7906857aa075179a0947489a8dfa3fba267145df035c177972c76f20f788a1d", "bytes": 1181, "lines": 13, "read_range": "entire file"}
+{
+  "version": "0.1.0",
+  "question_item_id": "[\"request_user_input_async\",\"call_6d8fafccba6b411381c36a153491672d\",0]",
+  "question": "R8-3 적용성 검토자의 실제 출력을 검토해 주세요. `Phase 00/08_검증결과/R8_03_적용성검토자/00_결과안내.md`와 `적용성검토자_출력검토.html`에 결과를 저장했습니다. 근거에 따른 유지·수정·부분 보류, 사람 검수 질문과 설명 분량이 실무에 맞나요? 기존·개정 모두 21/21 조건을 충족했으며 성능 우위나 전체 완료를 뜻하지 않습니다. 이번 질문은 출력 피드백입니다.",
+  "answer": "A. 현재 구성·분량 유지하고 R8-4로 진행 — 새 사례·실제 쓰기 실패·동시 수정·스킬 연결 검증 필수 (추천)",
+  "scope": "R8-3 현재 구성·분량 유지와 R8-4 진행. 후보 기본전환/회사 승인/전체 완료 아님.",
+  "target_report": {
+    "path": "08_검증결과/R8_03_적용성검토자/00_결과안내.md",
+    "sha256_before_feedback_append": "a1b90f5d38839027e45b6576800631a8228ff100f245b3e1f414e7a4ce183406"
+  },
+  "source": "actual user reply in this conversation",
+  "date": "2026-10-15"
+}
+

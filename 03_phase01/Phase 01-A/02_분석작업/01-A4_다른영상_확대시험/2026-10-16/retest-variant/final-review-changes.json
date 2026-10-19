@@ -1,0 +1,38 @@
+{
+  "changes": [
+    {
+      "case_id": "V06S",
+      "target": "schedule_document.position",
+      "before": {
+        "property": "position",
+        "classification": "decelerate",
+        "basis": "문서 자체 239.2/239.3/239.4/239.6초 y잔량15/6/0/0px; 0.1초 변화9/6px, 이후 정지. 최소2px 오차. 해당 대상 측정 기록 참조."
+      },
+      "after": {
+        "property": "position",
+        "classification": "unknown",
+        "basis": "239.2/239.3/239.4/239.6초 y잔량15/6/0/0px. 진행 중 두 0.1초 구간의 변위9/6px은 있으나 차이3px이 위치추적 최소2px 오차 및 혼합 변화에 비해 작다. 상방 이동과 정착은 확인하되 감속을 분리 입증하기 부족하다."
+      }
+    },
+    {
+      "case_id": "V06W",
+      "target": "schedule_document.position",
+      "before": {
+        "property": "position",
+        "classification": "decelerate",
+        "basis": "W 문서 자체244.2/244.4/244.6초 y잔량15/0/0px; 초기 한 이동구간과 정지만 확인되어 후반 감속 성격에 한정. 정확한 곡선과 초기 가속 미상. 최소2px 오차. 해당 대상 측정 기록 참조."
+      },
+      "after": {
+        "property": "position",
+        "classification": "unknown",
+        "basis": "244.2/244.4/244.6초 y잔량15/0/0px. 이동 중 유효 변화율은 첫0.2초 구간 하나뿐이며 이후는 정지다. 일정속도 후 정지와 진행 중 감속을 구별할 수 없다. 상방 이동 및 정착만 확인한다. 최소2px 위치오차."
+      }
+    }
+  ],
+  "additional": [
+    "W title 249.5 within versus 250 context_after explicitly separated",
+    "Uncertain speech-bubble adjective no longer transcribed as exact text",
+    "Three directly viewed W card native crops linked"
+  ],
+  "scope": "Existing independent evidence only; no additional extraction; no full rerun"
+}

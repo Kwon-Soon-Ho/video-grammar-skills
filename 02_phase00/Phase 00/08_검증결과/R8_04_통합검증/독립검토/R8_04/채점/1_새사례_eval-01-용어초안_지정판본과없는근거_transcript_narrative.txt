@@ -1,0 +1,88 @@
+# 실제 수행 transcript
+
+범위: 지정 candidate/task.txt 및 inputs/Phase00만. outputs 외에는 허용된 작업초안/연결설명_지식초안.json 한 파일만 수정했다. 다른 run·평가자료·부모대화·다른 스킬·운영 D DB는 읽지 않았다. 지정 D Python 실행파일만 -B -X utf8로 사용했다.
+
+## 초기 읽기·명령
+
+초기 도구 호출의 원문은 실제 읽었으며, 별도 원시 로그 파일 저장을 시작하기 전이다. 아래는 실행한 명령과 실제 도구 종료코드 기록이다. 초기 stdout/stderr를 사후 완전 원시 로그로 꾸미지 않는다. 원문 파일 식별은 입력 전후 SHA 목록에 보존했다.
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+종료코드: 0; 실제 원문 stdout 열람. 공통 경고: `Attempting to perform the InitializeDefaultDrives operation on the 'FileSystem' provider failed.`
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+종료코드: 0; 실제 원문 stdout 열람. 공통 경고: `Attempting to perform the InitializeDefaultDrives operation on the 'FileSystem' provider failed.`
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+종료코드: 0; 실제 원문 stdout 열람. 공통 경고: `Attempting to perform the InitializeDefaultDrives operation on the 'FileSystem' provider failed.`
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+종료코드: 0; 실제 원문 stdout 열람. 공통 경고: `Attempting to perform the InitializeDefaultDrives operation on the 'FileSystem' provider failed.`
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+종료코드: 0; 실제 원문 stdout 열람. 공통 경고: `Attempting to perform the InitializeDefaultDrives operation on the 'FileSystem' provider failed.`
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+종료코드: 0; 실제 원문 stdout 열람. 공통 경고: `Attempting to perform the InitializeDefaultDrives operation on the 'FileSystem' provider failed.`
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+종료코드: 0; 실제 원문 stdout 열람. 공통 경고: `Attempting to perform the InitializeDefaultDrives operation on the 'FileSystem' provider failed.`
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+종료코드: 0; 실제 원문 stdout 열람. 공통 경고: `Attempting to perform the InitializeDefaultDrives operation on the 'FileSystem' provider failed.`
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+종료코드: 0; 실제 원문 stdout 열람. 공통 경고: `Attempting to perform the InitializeDefaultDrives operation on the 'FileSystem' provider failed.`
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+종료코드: 0; 실제 원문 stdout 열람. 공통 경고: `Attempting to perform the InitializeDefaultDrives operation on the 'FileSystem' provider failed.`
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+종료코드: 0; 실제 원문 stdout 열람. 공통 경고: `Attempting to perform the InitializeDefaultDrives operation on the 'FileSystem' provider failed.`
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+종료코드: 0; 제공 파일 경로 목록 열람. 다른 스킬/다른 run 내용 열람 안 함.
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+종료코드: 0; 실제 출력은 1048줄/약 60081 tokens로 도구에서 잘림. 완전 출력으로 간주하지 않고 inspect.py의 관련 객체 추출 결과로 확인 범위를 재확인했다. 초기 잘린 원시 출력 파일 없음.
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+종료코드: 0; C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\1_새사례\eval-01-용어초안_지정판본과없는근거\candidate\outputs
+
+## Python 실제 실행과 종료
+
+각 단계의 전체 도구 반환값은 command_records.json에 보존했다. 각 프로세스 stdout/stderr는 별도 원시 파일이며 PowerShell 출력 리디렉션 인코딩을 유지했다. Python의 문자열 처리와 실행은 UTF8, 바이트코드 생성은 -B로 차단했다.
+
+### inspect
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+실제 종료코드: 0. 원시 로그: inspect.stdout.txt, inspect.stderr.txt; 종료코드 파일: inspect.exit.txt.
+
+### edit
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+실제 종료코드: 0. 원시 로그: edit.stdout.txt, edit.stderr.txt; 종료코드 파일: edit.exit.txt.
+
+### verify
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+실제 종료코드: 0. 원시 로그: verify.stdout.txt, verify.stderr.txt; 종료코드 파일: verify.exit.txt.
+
+## 실제 읽기와 쓰기
+
+inspection.json의 reads에는 내용 열람 경로·원문 SHA·바이트 수가 기록되어 있고 findings에는 확인한 원문/관련 카드가 보존되어 있다. 입력 전체 SHA 수집은 보존 검사용 바이트 읽기이며 모든 파일을 내용상 검토했다는 뜻이 아니다. curate.py stdout의 READ/WRITE는 실제 수행한 경로다. 검사 이후 최종 파일 목록 확인과 이 로그 작성만 추가 수행한다.
+
+apply_patch 실제 수행: outputs/inspect.py, outputs/curate.py 생성; curate.py의 실행 전 불필요 임시 대입을 제거; outputs/별도검토메모.md 생성; outputs/command_records.json 및 transcript.md 생성. 해당 도구 반환은 오류 없이 완료되었다. 변경 전 원본은 backup/note-loop_0.1.0_to_0.1.1/연결설명_지식초안.json에 원문 바이트로 보존했고 SHA 일치·객체 밖 원문 보존을 확인했다. 수정후_후보.json은 실제 수정 파일과 일치한다.
+
+실제 생성물: input_manifest_before.json, inspection.json, input_manifest_after.json, 근거확인.json, backup, 수정후_후보.json, 변경.diff, 검사결과.json, 결과.md, 결과.json, 별도검토메모.md, command_records.json, transcript.md, inspect/edit/verify.stdout.txt·stderr.txt·exit.txt, inspect.py, curate.py. 마지막 파일목록 확인용 final_check.py·final_check.ps1도 apply_patch로 생성했다. 최종 실제 실행 명령은 아래이며, 원시 로그와 실제 종료코드는 final.stdout.txt·final.stderr.txt·final.exit.txt에 남긴다(완료 여부는 해당 종료코드 참조).
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+스크립트는 지정 Python에 -B -X utf8을 전달해 결과.json을 읽고 outputs 목록을 출력한다. 추가 DB 변경이나 재검사는 없다.
+
+## 실패·보류·미실시
+
+실질 수정/검사 실패 없음. 직접 검사 14개 모두 통과, 실제 Python 종료코드 모두 0. 초기/실행 PowerShell 도구 응답에 FileSystem 공급자 InitializeDefaultDrives 경고가 반복되었으나 파일 읽기·쓰기 및 Python은 성공했다. 최초 rg 조회 stdout이 도구에서 잘렸으므로 완전 확인으로 기록하지 않았고, 뒤에 관련 카드 추출을 실제 실행하여 보완했다. 초기 원시 로그 전체 미보존이라는 기록 한계도 유지한다.
+
+07_실행도구의 기존 검사기는 제공 파일 목록에 없다. R4 통합 영상 검사·R6/R7 고정 기반 전체 감사는 실행하지 않았다. 정본 고정 SHA를 재생성하지 않았다. 직접 검사는 파싱·원래 자료형·ID+판본·허용diff·읽은 관련 정본 SHA·입력 보존 범위에 한정한다. 지식 해석의 실증적 진실성·회사 승인·실제 영상 품질 전체 통과를 뜻하지 않는다.
+
+신규 병합/정식 분류·27% 효과·승인 주장은 별도검토메모.md에 격리. 사람 질문은 메모만 작성, 발송·답변 접수 없음. 실제 영상/키프레임/실측·외부 출처·네트워크·CU·AE·API·추가 에이전트 사용 없음. 미등록 초안의 정본 등록/기본 전환·공식 내용 검토는 미실시. 모델 시간/token 정보 미제공이므로 추정하지 않았다.

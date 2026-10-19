@@ -1,0 +1,163 @@
+{
+  "grader": {
+    "type": "AI_independent_artifact_grader",
+    "human_reviewer": false,
+    "scope": "iteration-2 해당 run의 task/입력메모/fixture/transcript/실제 outputs 및 로컬 근거 대조"
+  },
+  "expectations": [
+    {
+      "text": "지정된 기존 초안 파일 자체에 KNOW-LAYOUT-SINGLE-FOCUS.limits를 요청 문구로 실제 수정한다. 제안문만 남기거나 다른 파일만 만들고 원래 초안을 그대로 두지 않는다.",
+      "passed": true,
+      "evidence": "지정 실제 입력 inputs/Phase00/작업초안/레이아웃지식_초안.json을 직접 다시 읽었다. layouts[0].id=KNOW-LAYOUT-SINGLE-FOCUS이고 limits='단일 초점이 반드시 중앙 배치를 뜻하는 것은 아님'이다. fixture와 달라진 파일도 이 한 파일뿐이다. 출력 복사본만 수정한 것이 아니다."
+    },
+    {
+      "text": "나머지13항목과 해당항목의 limits/version 외 필드는 유지한다. 숫자/ID/회사예·분류·source_refs를 임의 개선하지 않는다.",
+      "passed": true,
+      "evidence": "fixture SHA와 일치하는 실제 변경 전 backup을 읽어 현재 지정 초안과 재귀 객체 대조했다. 변경은 /version, /layouts/0/limits, /layouts/0/version 정확히 3개다. 나머지13항목과 대상의 ID·숫자·분류·company_examples·status·source_refs·related_ids 등 모든 다른 필드는 동일하다."
+    },
+    {
+      "text": "내용이 바뀐 해당 항목과 초안 목록의 버전을 이전과 구분하고 같은ID/같은버전의 다른내용을 새 정본처럼 제시하지 않는다.",
+      "passed": true,
+      "evidence": "backup의 목록/대상 버전0.1.1에서 현재 목록/대상 버전0.1.2로 모두 바뀌었다. 실제 변경 후 SHA=b3ce2109c82c28e9267cb87908ef692d189ec0f32c766a2c33567087db90ee0c; 같은ID/같은버전의 다른내용을 새 정본처럼 제시하지 않는다. 별도 초안이며 운영 미반영 설명도 유지한다."
+    },
+    {
+      "text": "실제 변경 전 초안의 바이트 사본을 보존하고 그 SHA가 시험 전 파일과 일치한다.",
+      "passed": true,
+      "evidence": "실제 backup 파일의 SHA256=0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306이며 fixture_before의 시험 전 작업초안 SHA와 일치한다. 변경 전 사본을 읽은 객체/바이트 근거로 판정했으며 파일 존재만으로 통과시키지 않았다."
+    },
+    {
+      "text": "부모 정본 경로/판본/SHA·변경 이유/허용 범위·변경 전후 버전/해시·구체 diff를 검토할 수 있게 기록한다.",
+      "passed": true,
+      "evidence": "outputs/실제결과.json은 parent의 경로 02_원칙과레이아웃/레이아웃지식.json, version0.1.1, SHA0225...를 명시한다. 실제 부모/입력메모/등록목록과 대조 일치한다. 요청된 주어 명시로 의미 유지, 변경 전후0.1.1→0.1.2와 해시, 3개 필드 changes 및 변경.diff가 있다. diff는 줄바꿈 표기로 주변 줄도 +/-에 포함되지만 실제 byte 역치환/객체 대조는 허용 3변경뿐이다."
+    },
+    {
+      "text": "파싱·ID/참조·허용 변경 등 실제 파일로 확인 가능한 검사 근거를 남기며 검사 종류와 남은 한계를 분리한다. 명령 계획만 실행 통과로 쓰지 않는다.",
+      "passed": true,
+      "evidence": "수정과검사.py의 strict 파싱·기존 검사 함수 호출/후보 메모리 대입·스키마·허용객체/저장후 대조 코드를 직접 읽고 실제결과.json·stdout·exitcode0·빈stderr와 대조했다. 독립 읽기대조에서도 파싱·3필드diff·백업/판본복사·전체 입력 보존과 레이아웃 스키마 오류0을 확인했다. 실행 명령과 시간은 보존 self-reported 기록의 한계가 있고 전체 원문/내용/회사/실영상 검증과 분리된다."
+    },
+    {
+      "text": "이미 명시된 작은 draft 수정은 수행하고 동일 범위의 새 승인을 작업 선행조건으로 요구하지 않는다.",
+      "passed": true,
+      "evidence": "task.txt의 작은 초안 수정 범위를 실제 지정 파일에 수행했다. transcript 및 결과에는 동일 범위 새 승인을 선행조건으로 요청한 내용이 없고 미응답 사용자 질문으로 작업을 막지 않았다."
+    },
+    {
+      "text": "운영 정본/고정목록/회사값·다른 입력을 바꾸지 않는다. R7 현재성 확인을 새 지식 초안의 내용/회사/실영상 통과로 전용하지 않는다.",
+      "passed": true,
+      "evidence": "독립 전체 입력 비교에서 304개 중 지정 작업초안1개만 변경됐고 나머지는 바이트 동일하며 추가/삭제0개다. 운영 정본·등록/고정목록·회사값은 불변. 설명/검사 한계는 R6 전체 원문·자산/R7/회사 승인/실영상 효과 미수행을 구분하며 현재성으로 새 초안 내용을 통과시키지 않는다."
+    }
+  ],
+  "summary": {
+    "passed": 8,
+    "failed": 0,
+    "total": 8,
+    "pass_rate": 1.0
+  },
+  "independent_verification": {
+    "run": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-knowledge-curator-workspace\\iteration-2\\eval-02-지식초안_실제수정\\new_skill\\run-1",
+    "fixture_count": 304,
+    "current_count": 304,
+    "changed_inputs": {
+      "작업초안/레이아웃지식_초안.json": {
+        "before": "0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306",
+        "after": "b3ce2109c82c28e9267cb87908ef692d189ec0f32c766a2c33567087db90ee0c"
+      }
+    },
+    "added_inputs": [],
+    "json_outputs_parse_errors": [],
+    "timing": {
+      "total_tokens": null,
+      "duration_ms": null,
+      "total_duration_seconds": null,
+      "collection": "runtime completion telemetry unavailable; do not substitute output length"
+    },
+    "backup_comparisons": [
+      {
+        "path": "outputs\\backup\\지식문구수정_01\\레이아웃지식_초안_v0.1.1.json",
+        "sha256": "0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306",
+        "fixture_matching_paths": [
+          "작업초안/레이아웃지식_초안.json"
+        ]
+      }
+    ],
+    "draft_changes": [
+      {
+        "path": "/layouts/0/limits",
+        "before": "반드시 중앙 배치 아님",
+        "after": "단일 초점이 반드시 중앙 배치를 뜻하는 것은 아님"
+      },
+      {
+        "path": "/layouts/0/version",
+        "before": "0.1.1",
+        "after": "0.1.2"
+      },
+      {
+        "path": "/version",
+        "before": "0.1.1",
+        "after": "0.1.2"
+      }
+    ],
+    "backup_fixture_match": true,
+    "draft_sha256": "b3ce2109c82c28e9267cb87908ef692d189ec0f32c766a2c33567087db90ee0c",
+    "draft_version": "0.1.2",
+    "other_13_identical": true,
+    "output_copy_identical": true,
+    "layout_schema_errors": [],
+    "parent": {
+      "path": "02_원칙과레이아웃/레이아웃지식.json",
+      "version": "0.1.1",
+      "sha256": "0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306"
+    },
+    "parent_actual_hash": "0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306"
+  },
+  "execution_metrics": null,
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": null,
+    "total_duration_seconds": null,
+    "collection": "runtime completion telemetry unavailable; do not substitute output length"
+  },
+  "claims": [
+    {
+      "claim": "입력/운영 정본 보존 또는 사례2의 지정 허용변경",
+      "type": "factual",
+      "verified": true,
+      "evidence": "fixture_before 전체파일 SHA와 사후 입력 read_bytes 대조. 사례1/3 변화0; 사례2 지정초안1개 및 허용3필드만 변경."
+    },
+    {
+      "claim": "기존 검사/조회 명령이 실행됐다는 과정 주장",
+      "type": "process",
+      "verified": false,
+      "evidence": "transcript·코드·보존 결과/로그와 실제 파일은 일관되나 독립 이벤트 로그로 원 실행을 인증하지 못했다. 파일에서 관찰 가능한 검사 결과와 과정 인증을 분리한다."
+    },
+    {
+      "claim": "새 결과가 회사 승인·실영상 효과 통과를 의미한다",
+      "type": "quality",
+      "verified": false,
+      "evidence": "실행 결과도 이를 주장하지 않고 미수행/보류로 구분한다. 본 채점은 그런 인증을 부여하지 않는다."
+    }
+  ],
+  "limitations": [
+    "이 평가는 AI 독립 채점자의 파일/텍스트·바이트 대조이며 사람 내용 검수/회사 승인/실영상 효과 인증이 아니다.",
+    "실행자 transcript·코드·보존 stdout/exitcode는 self-reported 산출물이다. 서로 일치하는지 확인했지만 원래 명령이 해당 시점에 실제 실행됐다는 독립 이벤트 로그 인증은 없다. grader는 실행자 쓰기 스크립트를 재실행하지 않았다.",
+    "fixture_before와 사후 전체 입력 바이트 일치는 최종상태의 변경/추가/삭제를 확인한다. 실행 중 일시 변경 후 원복 여부나 fixture 자체의 이전 계보는 이 자료만으로 확정할 수 없다.",
+    "외부 네트워크/API/AE/CU, 실제 D 프로젝트 데이터, iteration1/다른 과제 결과/부모 레드팀 결론은 채점에 사용하지 않았다. 지정 D Python 실행파일만 대조 계산에 사용했다.",
+    "token/duration 수집이 없어 null을 유지한다. 출력 길이·파일 수·도구 사용을 토큰/성능/실행시간으로 대체하지 않는다."
+  ],
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "assertion": "지정된 기존 초안 파일 자체에 KNOW-LAYOUT-SINGLE-FOCUS.limits를 요청 문구로 실제 수정한다. 제안문만 남기거나 다른 파일만 만들고 원래 초안을 그대로 두지 않는다.",
+        "reason": "outputs 복사본만 검사하면 실제 지정 초안 미수정이 통과할 수 있다. 반드시 inputs 실제 파일과 fixture_before/바이트 backup을 대조해야 한다. 이번 두 조건 모두 실제 수정됨을 확인했다."
+      },
+      {
+        "assertion": "부모 정본 경로/판본/SHA·변경 이유/허용 범위·변경 전후 버전/해시·구체 diff를 검토할 수 있게 기록한다.",
+        "reason": "부모 메타데이터를 단일 객체에 요구하는지 여러 결과·입력메모의 명시 연결도 허용하는지 사전 정의가 필요하다. 이번에는 old의 source_parent_hash_matches_input_memo 연결과 실제 동일 부모 SHA/판본을 인정해 형식 차이로 벌점 주지 않았다."
+      },
+      {
+        "assertion": "파싱·ID/참조·허용 변경 등 실제 파일로 확인 가능한 검사 근거를 남기며 검사 종류와 남은 한계를 분리한다. 명령 계획만 실행 통과로 쓰지 않는다.",
+        "reason": "self-reported 명령·오류0을 독립 실행 인증으로 오인하기 쉽다. 평가 하네스가 stdout/exitcode/시각/파일diff를 외부에서 수집하면 수행 주장과 산출물 증거를 분리할 수 있다."
+      }
+    ],
+    "overall": "두 조건 모두 실제 허용3필드 변경과 입력보존을 달성했다. 실행자 검사 수의 차이를 품질점수로 환산하지 않았다."
+  }
+}

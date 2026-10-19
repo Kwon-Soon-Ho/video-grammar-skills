@@ -1,0 +1,9 @@
+import json
+from pathlib import Path
+O=Path(__file__).parent
+sources=[
+ {'url':'https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents','title':'Demystifying evals for AI agents','read_scope':'The structure of an evaluation; grader strengths/limits; Step2 unambiguous tasks; Step4 isolated environment; Step5 valid variants/Unknown; 일부관련해설','checked_claim':'task와trial·grader/assertion구분,여러유효해결책·판정불명확성·깨끗한시행환경·전문가보정의필요를확인.','project_transfer_limit':'실제정답상태/사람접수·원본묶음/로그운영은프로젝트설계. 글의20~50과제나사례성적을표본수/합격점으로채택하지않음. API/SDK/벤치마크·원논문을실행/열람했다고하지않음.','fulltext_or_cited_papers_reviewed':False},
+ {'url':'https://scikit-learn.org/stable/common_pitfalls.html#data-leakage','title':'Common pitfalls 12.2 Data leakage (열람페이지1.9.1)','read_scope':'12.2~12.2.1 및전처리누출예의설명부분;코드실행없음','checked_claim':'평가때알수없는정보를개발선택에사용하면낙관편향가능,분할을전처리/선택보다먼저하는원칙확인.','project_transfer_limit':'학습기fit/전처리문맥의원리를프롬프트·검색·정답노출에조건부이식. sklearn설치/교차검증/동일독립성효과를실증하지않음.','fulltext_or_cited_papers_reviewed':False},
+ {'url':'https://scikit-learn.org/stable/modules/cross_validation.html#cross-validation-iterators-for-grouped-data','title':'Cross-validation grouped-data section (열람페이지1.9.1)','read_scope':'도입의튜닝/holdout설명,3.1.2.4 domain-specific grouping/GroupKFold와그룹미중복설명','checked_claim':'동일생성과정의종속표본·그룹관계는도메인별로정의하고같은그룹을양쪽에두지않는취지확인.','project_transfer_limit':'프로젝트source_family/공통로고예외/도전파생물노출은별도설계. 실제그룹/분할·라이브러리실행·통계독립성검증없음.','fulltext_or_cited_papers_reviewed':False}]
+d={'stage':'R7-3-1 독립 공개원문 부분대조','checked_on':'2026-10-15','source_count':3,'sources':sources,'all_external_research_completed':False,'authors_original_reading_authenticated':False,'raw_fulltext_archived':False,'remote_content_hash':None,'actual_evaluation_run':False}
+(O/'R7_03_1_공개원문_독립대조.json').write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')

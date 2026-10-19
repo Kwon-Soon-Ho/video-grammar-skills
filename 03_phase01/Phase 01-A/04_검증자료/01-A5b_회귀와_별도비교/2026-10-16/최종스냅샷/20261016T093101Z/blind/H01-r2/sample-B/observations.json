@@ -1,0 +1,1280 @@
+{
+  "schema_version": "a3-observation-0.1",
+  "case_id": "H01",
+  "source": {
+    "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 [condition-masked] 체계 개발 및 검증\\한맥 영상\\SW 홈페이지 영상\\TOVA\\01_(T).mp4",
+    "sha256": "ac83de770d91d1ce9d484e7f74c7b4c3b579db9b68c1e6b5775a3ec2e543de5c",
+    "verification": "원본 bytes 직접 SHA256 재계산; 기본/추가 두 추출 로그의 입력 전후 해시와 일치"
+  },
+  "window_seconds": [
+    0,
+    8
+  ],
+  "method": "기본21개 표본의 보드2장으로 전후 흐름 탐색; 허용 추출기로추가1차24장/2차16장. 총 보드6장 탐색. 원본 PNG23장 직접 시각 열람, RGB native 무배율크롭28개 생성·전부 열람. 크롭 픽셀 좌표와 부모 PNG 매핑 보존. 선택 표본 비교와 T·풀네임·지도 T 경계의 native pixel 추적으로 관측. 연속 영상 재생/오디오 분석 없음. 8초는context_after.",
+  "document_mode": "none",
+  "audio_reviewed": false,
+  "evidence": [
+    {
+      "id": "f_0",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-001.png",
+      "actual_seconds": "0",
+      "role": "within"
+    },
+    {
+      "id": "f_0_4",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-002.png",
+      "actual_seconds": "2/5",
+      "role": "within"
+    },
+    {
+      "id": "f_0_8",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-003.png",
+      "actual_seconds": "4/5",
+      "role": "within"
+    },
+    {
+      "id": "f_3_2",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-004.png",
+      "actual_seconds": "16/5",
+      "role": "within"
+    },
+    {
+      "id": "f_6_4",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-005.png",
+      "actual_seconds": "32/5",
+      "role": "within"
+    },
+    {
+      "id": "f_8",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-006.png",
+      "actual_seconds": "8",
+      "role": "context_after"
+    },
+    {
+      "id": "f_3_5",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-007.png",
+      "actual_seconds": "7/2",
+      "role": "within"
+    },
+    {
+      "id": "f_3_7",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-008.png",
+      "actual_seconds": "37/10",
+      "role": "within"
+    },
+    {
+      "id": "f_4_4",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-009.png",
+      "actual_seconds": "22/5",
+      "role": "within"
+    },
+    {
+      "id": "f_4_8",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-010.png",
+      "actual_seconds": "24/5",
+      "role": "within"
+    },
+    {
+      "id": "f_6_6",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-011.png",
+      "actual_seconds": "33/5",
+      "role": "within"
+    },
+    {
+      "id": "f_6_7",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-012.png",
+      "actual_seconds": "67/10",
+      "role": "within"
+    },
+    {
+      "id": "f_6_8",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-013.png",
+      "actual_seconds": "34/5",
+      "role": "within"
+    },
+    {
+      "id": "f_6_9",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-014.png",
+      "actual_seconds": "69/10",
+      "role": "within"
+    },
+    {
+      "id": "f_7",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-015.png",
+      "actual_seconds": "7",
+      "role": "within"
+    },
+    {
+      "id": "f_7_1",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-016.png",
+      "actual_seconds": "71/10",
+      "role": "within"
+    },
+    {
+      "id": "f_7_4",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-017.png",
+      "actual_seconds": "37/5",
+      "role": "within"
+    },
+    {
+      "id": "f_0_2",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-018.png",
+      "actual_seconds": "1/5",
+      "role": "within"
+    },
+    {
+      "id": "f_0_6",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-019.png",
+      "actual_seconds": "3/5",
+      "role": "within"
+    },
+    {
+      "id": "f_1_2",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-020.png",
+      "actual_seconds": "6/5",
+      "role": "within"
+    },
+    {
+      "id": "f_7_2",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-021.png",
+      "actual_seconds": "36/5",
+      "role": "within"
+    },
+    {
+      "id": "f_7_3",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-022.png",
+      "actual_seconds": "73/10",
+      "role": "within"
+    },
+    {
+      "id": "f_7_6",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-023.png",
+      "actual_seconds": "38/5",
+      "role": "within"
+    },
+    {
+      "id": "c01",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-024.png",
+      "actual_seconds": "7/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\sample-B-extra1\\f_00042_001.400.png",
+      "crop_xyxy_native_pixels": [
+        250,
+        850,
+        1950,
+        1620
+      ]
+    },
+    {
+      "id": "c02",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-025.png",
+      "actual_seconds": "9/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\sample-B-extra1\\f_00054_001.800.png",
+      "crop_xyxy_native_pixels": [
+        250,
+        850,
+        1950,
+        1620
+      ]
+    },
+    {
+      "id": "c03",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-026.png",
+      "actual_seconds": "11/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\sample-B-extra1\\f_00066_002.200.png",
+      "crop_xyxy_native_pixels": [
+        250,
+        850,
+        1950,
+        1620
+      ]
+    },
+    {
+      "id": "c04",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-027.png",
+      "actual_seconds": "13/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\sample-B-extra1\\f_00078_002.600.png",
+      "crop_xyxy_native_pixels": [
+        250,
+        850,
+        1950,
+        1620
+      ]
+    },
+    {
+      "id": "c05",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-028.png",
+      "actual_seconds": "3",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\sample-B-extra1\\f_00090_003.000.png",
+      "crop_xyxy_native_pixels": [
+        250,
+        850,
+        1950,
+        1620
+      ]
+    },
+    {
+      "id": "c06",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-029.png",
+      "actual_seconds": "16/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-004.png",
+      "crop_xyxy_native_pixels": [
+        250,
+        850,
+        1950,
+        1620
+      ]
+    },
+    {
+      "id": "c07",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-030.png",
+      "actual_seconds": "17/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\sample-B-extra1\\f_00102_003.400.png",
+      "crop_xyxy_native_pixels": [
+        1830,
+        1170,
+        3350,
+        1670
+      ]
+    },
+    {
+      "id": "c08",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-031.png",
+      "actual_seconds": "18/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00108_003.600.png",
+      "crop_xyxy_native_pixels": [
+        1830,
+        1170,
+        3350,
+        1670
+      ]
+    },
+    {
+      "id": "c09",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-032.png",
+      "actual_seconds": "19/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\sample-B-extra1\\f_00114_003.800.png",
+      "crop_xyxy_native_pixels": [
+        1830,
+        1170,
+        3350,
+        1670
+      ]
+    },
+    {
+      "id": "c10",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-033.png",
+      "actual_seconds": "4",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00120_004.000.png",
+      "crop_xyxy_native_pixels": [
+        1830,
+        1170,
+        3350,
+        1670
+      ]
+    },
+    {
+      "id": "c11",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-034.png",
+      "actual_seconds": "23/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\sample-B-extra1\\f_00138_004.600.png",
+      "crop_xyxy_native_pixels": [
+        1830,
+        1170,
+        3350,
+        1670
+      ]
+    },
+    {
+      "id": "c12",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-035.png",
+      "actual_seconds": "27/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\sample-B-extra1\\f_00162_005.400.png",
+      "crop_xyxy_native_pixels": [
+        1900,
+        1370,
+        3350,
+        1760
+      ]
+    },
+    {
+      "id": "c13",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-036.png",
+      "actual_seconds": "29/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\sample-B-extra1\\f_00174_005.800.png",
+      "crop_xyxy_native_pixels": [
+        1900,
+        1370,
+        3350,
+        1760
+      ]
+    },
+    {
+      "id": "c14",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-037.png",
+      "actual_seconds": "32/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-005.png",
+      "crop_xyxy_native_pixels": [
+        1900,
+        1370,
+        3350,
+        1760
+      ]
+    },
+    {
+      "id": "c15",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-038.png",
+      "actual_seconds": "36/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-021.png",
+      "crop_xyxy_native_pixels": [
+        1200,
+        0,
+        2800,
+        1650
+      ]
+    },
+    {
+      "id": "c16",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-039.png",
+      "actual_seconds": "38/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-023.png",
+      "crop_xyxy_native_pixels": [
+        1200,
+        0,
+        2800,
+        1650
+      ]
+    },
+    {
+      "id": "c17",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-040.png",
+      "actual_seconds": "43/10",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\sample-B-extra2\\f_00129_004.300.png",
+      "crop_xyxy_native_pixels": [
+        1830,
+        1170,
+        3350,
+        1670
+      ]
+    },
+    {
+      "id": "c18",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-041.png",
+      "actual_seconds": "9/2",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\sample-B-extra2\\f_00135_004.500.png",
+      "crop_xyxy_native_pixels": [
+        1830,
+        1170,
+        3350,
+        1670
+      ]
+    },
+    {
+      "id": "c19",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-042.png",
+      "actual_seconds": "47/10",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\sample-B-extra2\\f_00141_004.700.png",
+      "crop_xyxy_native_pixels": [
+        1830,
+        1170,
+        3350,
+        1670
+      ]
+    },
+    {
+      "id": "c20",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-043.png",
+      "actual_seconds": "49/10",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\sample-B-extra2\\f_00147_004.900.png",
+      "crop_xyxy_native_pixels": [
+        1830,
+        1170,
+        3350,
+        1670
+      ]
+    },
+    {
+      "id": "c21",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-044.png",
+      "actual_seconds": "7",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-015.png",
+      "crop_xyxy_native_pixels": [
+        280,
+        1150,
+        1900,
+        1580
+      ]
+    },
+    {
+      "id": "c22",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-045.png",
+      "actual_seconds": "71/10",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-016.png",
+      "crop_xyxy_native_pixels": [
+        280,
+        1150,
+        1900,
+        1580
+      ]
+    },
+    {
+      "id": "c23",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-046.png",
+      "actual_seconds": "73/10",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-022.png",
+      "crop_xyxy_native_pixels": [
+        280,
+        1150,
+        1900,
+        1580
+      ]
+    },
+    {
+      "id": "c24",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-047.png",
+      "actual_seconds": "37/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-017.png",
+      "crop_xyxy_native_pixels": [
+        280,
+        1150,
+        1900,
+        1580
+      ]
+    },
+    {
+      "id": "c25",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-048.png",
+      "actual_seconds": "15/2",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\sample-B-extra2\\f_00225_007.500.png",
+      "crop_xyxy_native_pixels": [
+        280,
+        1150,
+        1900,
+        1580
+      ]
+    },
+    {
+      "id": "c26",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-049.png",
+      "actual_seconds": "77/10",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\sample-B-extra2\\f_00231_007.700.png",
+      "crop_xyxy_native_pixels": [
+        280,
+        1150,
+        1900,
+        1580
+      ]
+    },
+    {
+      "id": "c27",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-050.png",
+      "actual_seconds": "28/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00168_005.600.png",
+      "crop_xyxy_native_pixels": [
+        1900,
+        1370,
+        3350,
+        1760
+      ]
+    },
+    {
+      "id": "c28",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\sample-B\\evidence\\evidence-051.png",
+      "actual_seconds": "6",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00180_006.000.png",
+      "crop_xyxy_native_pixels": [
+        1900,
+        1370,
+        3350,
+        1760
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "id": "bg",
+      "name": "남색·청록 사선 띠 배경",
+      "parent": null,
+      "events": [
+        {
+          "description": "시작은 짙은 남색 면이 대부분이며 좌상단 청록 모서리와 우하단 사선 면이 보인다. 0.2~0.6초에는 상부 파랑 띠의 수평 끝선은 아래로, 하부 청록 띠의 수평 시작선은 위로 진행한다. 0.8~1.2초에는 평행한 사선 띠들로 화면이 채워진다.",
+          "properties": [
+            "reveal_boundary_position",
+            "visible_area"
+          ],
+          "time_seconds": [
+            0,
+            1.2
+          ],
+          "evidence_ids": [
+            "f_0",
+            "f_0_2",
+            "f_0_4",
+            "f_0_6",
+            "f_0_8",
+            "f_1_2"
+          ],
+          "direction_order": "위 파랑 띠: 위→아래 / 아래 청록 띠: 아래→위, 시간상 겹침",
+          "easing": {
+            "property": "reveal_boundary_position",
+            "classification": "unknown",
+            "basis": "선택 표본에서 방향/변화는 보이나 같은 속성의 진행 중 변화율을 충분히 비교하지 않아 가감속 미확정."
+          },
+          "status": "observed",
+          "limitations": [
+            "띠의 실제 레이어 이동과 마스크/성장 리빌을 렌더만으로 분리하지 못했다. 대각선의 방향을 곧바로 실제 이동 벡터로 쓰지 않았다."
+          ]
+        },
+        {
+          "description": "좌상단 청록 면의 낮은 수평 끝이 시작보다 아래로 내려와 정착한다. 이후 오른쪽 위의 넓은 청록 광택, 중앙 어두운 그라데이션, 우하단 어두운 사선은 제목과 로고의 공통 바탕으로 유지된다.",
+          "properties": [
+            "position",
+            "brightness"
+          ],
+          "time_seconds": [
+            0,
+            6.4
+          ],
+          "evidence_ids": [
+            "f_0",
+            "f_0_2",
+            "f_0_4",
+            "f_0_8",
+            "f_1_2",
+            "f_3_2",
+            "f_6_4"
+          ],
+          "direction_order": "좌상단 면 끝: 하향; 넓은 광택/그림자는 띠 형성과 함께 노출",
+          "easing": {
+            "property": "position",
+            "classification": "unknown",
+            "basis": "선택 표본에서 방향/변화는 보이나 같은 속성의 진행 중 변화율을 충분히 비교하지 않아 가감속 미확정."
+          },
+          "status": "observed",
+          "limitations": [
+            "작은 광택의 독립 이동 경로/밝기 곡선은 추적하지 않았다. 배경 전체가 픽셀 단위로 완전히 정지했다는 판정은 아니다."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "headline",
+      "name": "왼쪽 대형 문구 Value of",
+      "parent": null,
+      "events": [
+        {
+          "description": "1.2초에 작은 꺾인 획, 1.4초에 V의 하부 조각이 보인다. 1.8초에는 V와 다음 글자들의 어두운 휘어진 면, 2.2초에는 Val 쪽이 밝고 평평해진다. 2.6초에는 Value가 거의 펴지고 다음 부분이 위로 말린 채 남는다. 3.0초에 Value of의 정면 글자가 읽히며 위쪽 어두운 뒤면 조각은 3.2초에도 잔존하고 3.5초 표본에서는 보이지 않는다.",
+          "properties": [
+            "shape_deformation",
+            "reveal",
+            "brightness"
+          ],
+          "time_seconds": [
+            1.2,
+            3.5
+          ],
+          "evidence_ids": [
+            "f_1_2",
+            "c01",
+            "c02",
+            "c03",
+            "c04",
+            "c05",
+            "f_3_2",
+            "f_3_5"
+          ],
+          "direction_order": "V→a/l→u/e→o/f, 왼쪽에서 오른쪽으로 진행하는 말림/펴짐; 진행 경계 위에 어두운 글자 면이 남음",
+          "easing": {
+            "property": "shape_deformation",
+            "classification": "unknown",
+            "basis": "선택 표본에서 방향/변화는 보이나 같은 속성의 진행 중 변화율을 충분히 비교하지 않아 가감속 미확정."
+          },
+          "status": "observed",
+          "limitations": [
+            "종이처럼 휘는 투영 형태는 관측했지만 3D 회전축·페이지컬 효과 종류·각도·실제 두께는 미확정. 단순 위치 이동/확대라고 단정하지 않는다."
+          ]
+        },
+        {
+          "description": "완성된 Value of는 왼쪽 아래 같은 위치에서 밝은 흰색에서 낮은 대비의 회청색으로 약해진다. 3.2초보다 3.5~3.7초가 어둡고 4.4초에는 낮은 대비로 남는다. 작은 로고가 밝아지는 동안 큰 문구는 배경 수준으로 약화된다.",
+          "properties": [
+            "brightness",
+            "visibility"
+          ],
+          "time_seconds": [
+            3.2,
+            4.8
+          ],
+          "evidence_ids": [
+            "f_3_2",
+            "f_3_5",
+            "f_3_7",
+            "f_4_4",
+            "f_4_8"
+          ],
+          "direction_order": "위치 유지하며 밝기 감소; 완전 소실 아님",
+          "easing": {
+            "property": "brightness",
+            "classification": "unknown",
+            "basis": "선택 표본에서 방향/변화는 보이나 같은 속성의 진행 중 변화율을 충분히 비교하지 않아 가감속 미확정."
+          },
+          "status": "observed",
+          "limitations": [
+            "픽셀 밝기 변화와 실제 opacity/색 애니메이션을 구분하지 못했다. 밝기 변화율은 미측정."
+          ]
+        },
+        {
+          "description": "지도 T가 왼쪽으로 지나오면서 큰 문구의 오른쪽부터 덮인다. 7.1초에는 문구 전체가 남고 7.2초에는 지도 위에 of의 옅은 형상이 겹쳐 보이며 7.3초에는 오른쪽 글자들이 지도에 가려진다. 7.4~7.7초와 8초 문맥에서는 왼쪽 Valu 부근만 남는다.",
+          "properties": [
+            "occlusion",
+            "visible_area"
+          ],
+          "time_seconds": [
+            7,
+            8
+          ],
+          "evidence_ids": [
+            "c21",
+            "c22",
+            "f_7_2",
+            "c23",
+            "c24",
+            "c25",
+            "c26",
+            "f_8"
+          ],
+          "direction_order": "가림 경계가 오른쪽→왼쪽; 오른쪽 부분 소실, 왼쪽 잔존",
+          "easing": {
+            "property": "occlusion",
+            "classification": "not_applicable",
+            "basis": "가림 관계의 변화이며 큰 문구 자체의 이동 속도로 해석하지 않는다."
+          },
+          "status": "observed",
+          "limitations": [
+            "7.2초의 투과/겹침이 실제 알파·혼합·효과 중 무엇인지 미확정. 문구 전체의 페이드아웃으로 기록하지 않음."
+          ]
+        }
+      ],
+      "text": "Value of"
+    },
+    {
+      "id": "logo",
+      "name": "오른쪽 아래 TOVA 워드마크",
+      "parent": null,
+      "events": [
+        {
+          "description": "3.4초에 작은 흰 사선 띠가 나타난 뒤 T, O, V, A가 왼쪽부터 시간차를 두고 같은 하단 경계에서 위로 올라와 조립된다. 4.0초에는 전체가 읽히지만 A의 하단은 아직 부드럽고 4.3초에는 단단한 흰색 외곽으로 정착한다.",
+          "properties": [
+            "position",
+            "reveal",
+            "edge_softness"
+          ],
+          "time_seconds": [
+            3.2,
+            4.3
+          ],
+          "evidence_ids": [
+            "f_3_2",
+            "c07",
+            "f_3_5",
+            "c08",
+            "f_3_7",
+            "c09",
+            "c10",
+            "c17"
+          ],
+          "direction_order": "T→O→V→A의 상향 등장, 서로 중첩",
+          "easing": {
+            "property": "position",
+            "classification": "unknown",
+            "basis": "선택 표본에서 방향/변화는 보이나 같은 속성의 진행 중 변화율을 충분히 비교하지 않아 가감속 미확정."
+          },
+          "status": "observed",
+          "limitations": [
+            "같은 하단 부근에서 잘리는 리빌이 관측되지만 실제 AE 매트/레이어 설정은 알 수 없다."
+          ]
+        },
+        {
+          "description": "4.3초 이후 워드마크의 외곽과 크기는 관측 표본에서 유지된다. 7.0~7.3초 지도 T가 뒤를 통과할 때에도 작은 로고는 밝고 선명하게 앞에 남는다.",
+          "properties": [
+            "position",
+            "scale",
+            "occlusion"
+          ],
+          "time_seconds": [
+            4.3,
+            8
+          ],
+          "evidence_ids": [
+            "c17",
+            "f_4_8",
+            "f_6_4",
+            "f_7",
+            "f_7_1",
+            "f_7_2",
+            "f_7_3",
+            "f_7_6",
+            "f_8"
+          ],
+          "direction_order": "작은 로고 정착→지도 T가 뒤로 통과→작은 로고 유지",
+          "easing": {
+            "property": "position",
+            "classification": "not_applicable",
+            "basis": "정착/앞뒤 관계 관측이며 진행 중 속도 분류의 대상이 아니다."
+          },
+          "status": "observed",
+          "limitations": []
+        }
+      ],
+      "text": "TOVA",
+      "information_relation": "Value of의 수식 대상이며 영문 약어 풀네임과 한국어 정의문이 바로 아래에 종속된다."
+    },
+    {
+      "id": "logo_t",
+      "name": "워드마크 첫 글자 T",
+      "parent": "logo",
+      "events": [
+        {
+          "description": "T의 흰 상단 모서리가 위로 올라오며 감속해 정착한다. 다른 글자의 수치가 아닌 T 자체의 흰 상단을 추적했다.",
+          "properties": [
+            "position_y"
+          ],
+          "time_seconds": [
+            3.4,
+            4
+          ],
+          "evidence_ids": [
+            "c07",
+            "f_3_5",
+            "c08",
+            "f_3_7",
+            "c09",
+            "c10"
+          ],
+          "direction_order": "상향→감속→정착",
+          "easing": {
+            "property": "position_y",
+            "classification": "decelerate",
+            "basis": "0.1초 간격 T 상단 y가 1482,1388,1320,1293,1286px; 이동량 절댓값 94,68,27,7px로 감소한다. 4.0초에도1286px.",
+            "measurement": {
+              "samples_time_seconds": [
+                3.4,
+                3.5,
+                3.6,
+                3.7,
+                3.8,
+                4.0
+              ],
+              "samples_y_native_pixels": [
+                1482,
+                1388,
+                1320,
+                1293,
+                1286,
+                1286
+              ],
+              "roi_xyxy_native_pixels": [
+                1930,
+                1100,
+                2230,
+                1540
+              ],
+              "method": "minRGB>200인 T 흰면의 최소 y, RGB 원본 추출 PNG",
+              "units": "원본 raster pixel, second",
+              "uncertainty": "블러·압축·문턱값에 따른 약2~8px. 하단의 리빌은 별도이며 상단 특징만 비교.",
+              "limits": "AE 속도/Influence나 정확한 보간 함수 복원 아님; 첫 가속구간은 미확인."
+            }
+          },
+          "status": "observed",
+          "limitations": []
+        }
+      ]
+    },
+    {
+      "id": "logo_o",
+      "name": "워드마크 O",
+      "parent": "logo",
+      "events": [
+        {
+          "description": "3.5초 낮은 흰 곡선 조각이 나타나고 3.6~3.8초 위로 올라와 열린 원형 외곽이 완성된다.",
+          "properties": [
+            "position_y",
+            "reveal"
+          ],
+          "time_seconds": [
+            3.5,
+            4
+          ],
+          "evidence_ids": [
+            "f_3_5",
+            "c08",
+            "f_3_7",
+            "c09",
+            "c10"
+          ],
+          "direction_order": "T보다 뒤에 시작해 위로 상승",
+          "easing": {
+            "property": "position_y",
+            "classification": "unknown",
+            "basis": "선택 표본에서 방향/변화는 보이나 같은 속성의 진행 중 변화율을 충분히 비교하지 않아 가감속 미확정."
+          },
+          "status": "observed",
+          "limitations": [
+            "O 자체의 연속 위치 수치를 추적하지 않아 T의 감속 판정을 복사하지 않았다."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "logo_v",
+      "name": "워드마크 V",
+      "parent": "logo",
+      "events": [
+        {
+          "description": "3.6초에는 낮은 세로 조각과 오른쪽 사선 조각으로 보이고 3.8초에는 V의 두 팔이 올라와 읽힌다. 4.0초에는 정착한 로고 일부로 남는다.",
+          "properties": [
+            "position_y",
+            "reveal"
+          ],
+          "time_seconds": [
+            3.5,
+            4
+          ],
+          "evidence_ids": [
+            "f_3_5",
+            "c08",
+            "f_3_7",
+            "c09",
+            "c10"
+          ],
+          "direction_order": "O와 겹치면서 그 뒤에 상향 등장",
+          "easing": {
+            "property": "position_y",
+            "classification": "unknown",
+            "basis": "선택 표본에서 방향/변화는 보이나 같은 속성의 진행 중 변화율을 충분히 비교하지 않아 가감속 미확정."
+          },
+          "status": "observed",
+          "limitations": [
+            "V 자체의 위치 변화율과 정확한 시작 프레임은 미확정."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "logo_a",
+      "name": "워드마크 A",
+      "parent": "logo",
+      "events": [
+        {
+          "description": "3.7초 우측에 낮은 흰 조각, 3.8초 부분 A가 보이고 4.0초에는 글자가 거의 올라와 하단의 부드러운 잔여 경계가 남는다. 4.3초에는 흰 A 전체가 정착한다.",
+          "properties": [
+            "position_y",
+            "reveal",
+            "edge_softness"
+          ],
+          "time_seconds": [
+            3.7,
+            4.3
+          ],
+          "evidence_ids": [
+            "f_3_7",
+            "c09",
+            "c10",
+            "c17"
+          ],
+          "direction_order": "네 글자 중 마지막으로 위로 올라와 정착",
+          "easing": {
+            "property": "position_y",
+            "classification": "unknown",
+            "basis": "선택 표본에서 방향/변화는 보이나 같은 속성의 진행 중 변화율을 충분히 비교하지 않아 가감속 미확정."
+          },
+          "status": "observed",
+          "limitations": [
+            "A 자체의 변화율 미측정, 원본 키프레임 미제공."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "logo_accents",
+      "name": "O 안쪽과 A 오른쪽의 노란 사선 세 줄",
+      "parent": "logo",
+      "events": [
+        {
+          "description": "O 안의 노란 사선은 3.6초 부분 노출되고 3.8초에는 세 줄이 선명하다. A 오른쪽 세 줄은 그보다 늦게 3.8초 하단에 옅은 조각으로 보이고 4.0~4.3초에는 선명한 노랑으로 완성된다. 이후 지도 T 앞에서도 유지된다.",
+          "properties": [
+            "reveal",
+            "brightness",
+            "position_y"
+          ],
+          "time_seconds": [
+            3.6,
+            8
+          ],
+          "evidence_ids": [
+            "c08",
+            "c09",
+            "c10",
+            "c17",
+            "f_6_4",
+            "f_7_2",
+            "f_8"
+          ],
+          "direction_order": "O 안쪽 세 줄→A 오른쪽 세 줄, 각 글자 등장에 종속",
+          "easing": {
+            "property": "reveal",
+            "classification": "unknown",
+            "basis": "선택 표본에서 방향/변화는 보이나 같은 속성의 진행 중 변화율을 충분히 비교하지 않아 가감속 미확정."
+          },
+          "status": "observed",
+          "limitations": [
+            "세 줄 개별 속도/광량 곡선과 독립 움직임 여부는 미확정. 장식선을 별도 데이터/커서로 해석하지 않는다."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tagline",
+      "name": "영문 풀네임 TOtal Vehicle Assignment",
+      "parent": "logo",
+      "events": [
+        {
+          "description": "4.3초 A 하단 우측에 끝 글자의 작은 일부가 나오고 4.4~4.6초에는 …nment→…icle Assignment→…otal Vehicle Assignment처럼 앞부분이 가려진 상태로 오른쪽으로 밀려 나온다. 4.7초 전체 문구가 읽히고 4.8~4.9초 정착한다. TO, V, A가 노란색이고 나머지는 흰색이다.",
+          "properties": [
+            "position_x",
+            "reveal"
+          ],
+          "time_seconds": [
+            4.3,
+            5
+          ],
+          "evidence_ids": [
+            "c17",
+            "f_4_4",
+            "c18",
+            "c11",
+            "c19",
+            "f_4_8",
+            "c20"
+          ],
+          "direction_order": "A 뒤쪽/하단 가림 경계에서 오른쪽으로 나옴; 보이는 문구는 뒤쪽 단어부터 전체로 확장",
+          "easing": {
+            "property": "position_x",
+            "classification": "in_out",
+            "basis": "문구 오른쪽 끝 x가 4.3~4.8초에 2821,2918,3094,3220,3272,3284px. 0.1초 이동량97→176→126→52→12px로 관측된 진행 중 가속 후 감속.",
+            "measurement": {
+              "samples_time_seconds": [
+                4.3,
+                4.4,
+                4.5,
+                4.6,
+                4.7,
+                4.8,
+                4.9
+              ],
+              "samples_right_x_native_pixels": [
+                2821,
+                2918,
+                3094,
+                3220,
+                3272,
+                3284,
+                3284
+              ],
+              "roi_xyxy_native_pixels": [
+                2810,
+                1490,
+                3330,
+                1540
+              ],
+              "method": "maxRGB>180인 영문 끝의 최대x. A의 고정 끝보다 오른쪽에 있는 마지막 t를 추적.",
+              "units": "원본 raster pixel, second",
+              "uncertainty": "약2~8px;4.3초는 아주 작은 잔여 획이라 더 불확실.",
+              "limits": "가려진 시작 전체 곡선은 불명; 보이는 구간의 가속-감속 성격만 판정."
+            }
+          },
+          "status": "observed",
+          "limitations": []
+        },
+        {
+          "description": "정착한 풀네임은 로고 오른쪽 아래에 붙어 한국어 설명보다 위에 남고 지도 진입 동안에도 유지된다.",
+          "properties": [
+            "position",
+            "visibility"
+          ],
+          "time_seconds": [
+            5,
+            8
+          ],
+          "evidence_ids": [
+            "f_6_4",
+            "f_7_1",
+            "f_7_3",
+            "f_8"
+          ],
+          "direction_order": "풀네임 정착→국문 정의문 등장→지도 뒤 통과",
+          "easing": {
+            "property": "position",
+            "classification": "not_applicable",
+            "basis": "유지 상태의 관측."
+          },
+          "status": "observed",
+          "limitations": []
+        }
+      ],
+      "text": "TOtal Vehicle Assignment"
+    },
+    {
+      "id": "definition",
+      "name": "로고 아래 두 줄 한국어 정의문",
+      "parent": "logo",
+      "events": [
+        {
+          "description": "5.4초 첫 줄 전체가 낮은 대비로 읽힌다. 이어 둘째 줄이 왼쪽부터 길어져 5.6초에는 분석하는 한국형, 5.8초에는 한국형 통합 교통 수 부근까지, 6.0초에는 프로그램까지 보이고 6.4초에는 입니다.까지 완성된다. 같은 동안 이미 보이는 첫 줄과 둘째 줄의 밝기도 증가한다.",
+          "properties": [
+            "text_reveal",
+            "brightness"
+          ],
+          "time_seconds": [
+            5.4,
+            6.4
+          ],
+          "evidence_ids": [
+            "c12",
+            "c27",
+            "c13",
+            "c28",
+            "c14"
+          ],
+          "direction_order": "첫 줄 노출→둘째 줄 왼쪽→오른쪽 순차 노출, 밝아짐과 중첩",
+          "easing": {
+            "property": "text_reveal",
+            "classification": "unknown",
+            "basis": "선택 표본에서 방향/변화는 보이나 같은 속성의 진행 중 변화율을 충분히 비교하지 않아 가감속 미확정."
+          },
+          "status": "observed",
+          "limitations": [
+            "첫 줄 시작/개별 글자 경계는5.4초보다 앞의 세밀 표본으로 검증하지 않았다. 타입라이터 구현/알파 순차 방식은 미확정. 밝기 곡선과 리빌 속도 수치는 미측정."
+          ]
+        },
+        {
+          "description": "완성문은 로고 아래 왼쪽 정렬 두 줄이다. 한국형 통합 교통 수요분석 프로그램만 굵은 노랑, 나머지는 연한 회백색이며 지도 T가 통과할 때도 로고와 함께 앞에 남는다.",
+          "properties": [
+            "text",
+            "color",
+            "occlusion"
+          ],
+          "time_seconds": [
+            6.4,
+            8
+          ],
+          "evidence_ids": [
+            "c14",
+            "f_6_4",
+            "f_7_1",
+            "f_7_2",
+            "f_7_3",
+            "f_8"
+          ],
+          "direction_order": "다중 교통수단 열거→한국형 통합 분석 프로그램 정의; 내용 교체 없이 유지",
+          "easing": {
+            "property": "text",
+            "classification": "not_applicable",
+            "basis": "문구/정보 관계와 유지 상태의 관측."
+          },
+          "status": "observed",
+          "limitations": []
+        }
+      ],
+      "text_lines": [
+        "TOVA는 도로, 버스, 도시철도, 지역간 철도, 항공 및 해운 여객교통수요를 통합적으로",
+        "분석하는 한국형 통합 교통 수요분석 프로그램 입니다."
+      ],
+      "information_relation": "도로·버스·도시철도·지역간 철도·항공·해운의 여객교통수요를 통합 분석하는 프로그램이라는 정의. 영상에서 보이는 주장으로 기록하며 실제 기능 검증 아님."
+    },
+    {
+      "id": "map_t",
+      "name": "화면을 크게 가로지르는 지도 질감 T",
+      "parent": null,
+      "events": [
+        {
+          "description": "6.4초에는 없고 6.6초 오른쪽 위에 가는 흰 사선이 나타난다. 6.7~6.9초에는 흰 사선 면이 왼쪽으로 넓게 진입하며 7.0~7.1초 중앙 세로 기둥이 보여 큰 T 형태가 된다. 상부 가로획의 아래선 높이는 대체로 일정하고 T 전체가 왼쪽으로 이동해 7.6초 무렵 정착한다.",
+          "properties": [
+            "position_x",
+            "visible_area"
+          ],
+          "time_seconds": [
+            6.4,
+            8
+          ],
+          "evidence_ids": [
+            "f_6_4",
+            "f_6_6",
+            "f_6_7",
+            "f_6_8",
+            "f_6_9",
+            "f_7",
+            "f_7_1",
+            "f_7_2",
+            "f_7_3",
+            "f_7_4",
+            "f_7_6",
+            "f_8"
+          ],
+          "direction_order": "화면 오른쪽→왼쪽, 처음 가속 후 감속하여 왼쪽 절반에 정착",
+          "easing": {
+            "property": "position_x",
+            "classification": "in_out",
+            "basis": "y=700px에서 지도 T의 왼쪽 경계x:6.6~7.4초에3366,3226,2866,2246,1526,848,362,128,34. 0.1초 이동량140→360→620→720→678→486→234→94px. y=1000px 기둥 왼쪽 경계도7.0~7.6초2558→1876→1392→1154→1066→1038→1034px로 감속.",
+            "measurement": {
+              "samples_time_seconds": [
+                6.6,
+                6.7,
+                6.8,
+                6.9,
+                7.0,
+                7.1,
+                7.2,
+                7.3,
+                7.4
+              ],
+              "samples_left_x_at_y700_native_pixels": [
+                3366,
+                3226,
+                2866,
+                2246,
+                1526,
+                848,
+                362,
+                128,
+                34
+              ],
+              "method": "고정 원본 y=700 행에서 minRGB>130,채널차<12인 첫 픽셀. y=1000 기둥은 화면가장자리 클리핑을 피한 보조 추적. support/measurements.json 참조.",
+              "units": "원본 raster pixel, second",
+              "uncertainty": "약2~8px 및 블러/명암에 따른 경계 문턱값 오차. 진행 중 수백px 변화보다 작음.",
+              "limits": "정착 후 y700 경계는 화면 왼쪽에 근접해 클리핑 영향. 크기/내부 지도 변형 곡선과 분리하며 AE 정확 곡선 복원 아님."
+            }
+          },
+          "status": "observed",
+          "limitations": []
+        },
+        {
+          "description": "처음 흰 T 면 내부 지도 선은 거의 안 읽히는 흐림이다. 7.0~7.2초에는 흐린 도로망이 보이고 7.3초에는 촘촘한 회색 지도선이 선명해진다. 7.6초에는 지도선의 내용이 정착 T 내부에 남고 8초 문맥에서도 유지된다. T의 아래쪽은 어두운 명암 그라데이션을 띤다.",
+          "properties": [
+            "internal_detail_sharpness",
+            "internal_content",
+            "brightness"
+          ],
+          "time_seconds": [
+            6.8,
+            8
+          ],
+          "evidence_ids": [
+            "f_6_8",
+            "f_6_9",
+            "f_7",
+            "f_7_1",
+            "c15",
+            "f_7_3",
+            "c16",
+            "f_8"
+          ],
+          "direction_order": "바깥 T의 좌향 이동과 동시에 내부 지도 흐림→선명",
+          "easing": {
+            "property": "internal_detail_sharpness",
+            "classification": "unknown",
+            "basis": "선택 표본에서 방향/변화는 보이나 같은 속성의 진행 중 변화율을 충분히 비교하지 않아 가감속 미확정."
+          },
+          "status": "observed",
+          "limitations": [
+            "원본 효과의 blur 반경·초점·내부 지도 자체의 독립 줌/이동은 미확정. 지도 지역명/수치/교통 결과 UI는 판독하지 못했다. 외곽이 정착했다고 내부 모든 픽셀이 정지한다고 확정하지 않는다."
+          ]
+        },
+        {
+          "description": "큰 지도 T는 Value of의 오른쪽을 덮지만 작은 TOVA 로고·영문 풀네임·정의문 뒤로 지나간다. 7.2초의 겹침에서는 옅은 큰 문구가 지도에 비쳐 보이고 7.3초에는 지도 쪽이 우세해진다. 8초 경계에서도 왼쪽 문구 잔존, 큰 지도 T, 오른쪽 작은 로고와 정의문이 공존한다.",
+          "properties": [
+            "occlusion",
+            "layer_relation"
+          ],
+          "time_seconds": [
+            7.1,
+            8
+          ],
+          "evidence_ids": [
+            "f_7_1",
+            "f_7_2",
+            "f_7_3",
+            "f_7_6",
+            "f_8"
+          ],
+          "direction_order": "배경/큰 문구보다 앞, 작은 로고/설명보다 뒤에 놓인 겹침",
+          "easing": {
+            "property": "occlusion",
+            "classification": "not_applicable",
+            "basis": "앞뒤 관계의 관측이며 별도의 위치 속도 분류 아님."
+          },
+          "status": "observed",
+          "limitations": []
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "overview": "[0,8) 대상. 배경 형성→말린 Value of의 순차 펼침→밝기 약화와 TOVA의 글자별 상향 조립→영문 풀네임 우향 등장→국문 정의문 순차 노출→지도 T 좌향 진입/정착. 정착 상태에서 역추적해 보강했으며 정확한 프레임 단위 이벤트 경계는 표본 간 범위로만 기록.",
+    "secondary_details": "좌상단 청록 모서리, 띠의 수평 끝선, 부드러운 광택/그림자, 타이포의 어두운 말린 면과 밝은 가장자리, 로고 글자별 흐린 하단, O/A의 노란 세 줄, 영문 노란 약어 글자, 지도와 큰 제목의 일시 겹침 및 왼쪽 문구 잔존을 검사.",
+    "internal_content": "이 구간은 브랜딩 타이틀/프로그램 정의이며 소프트웨어 창·버튼·선택 상태·커서·수치 그래프는 열람 표본에서 보이지 않는다. T 내부는 흐린 도로망에서 선명한 도로망으로 변한다. 국문 두 줄과 영문 풀네임 판독 완료; 도시/지도 지명과 실제 교통 데이터 값은 확인하지 않았다.",
+    "unresolved": [
+      "배경 띠의 실제 이동과 마스크/성장 구분, 정확한 방향 벡터/개별 가감속",
+      "Value of 말림의 3D축·형태 보간·밝기 곡선",
+      "O/V/A 및 노란 장식선 각자의 속도곡선",
+      "국문 첫 줄의 정확한 최초 시작, 순차 리빌과 밝기 증가의 구현 분리",
+      "지도 내부 독립 줌/이동 여부와 흐림 효과 설정",
+      "8초 이후의 완결/퇴장 상태는 범위 밖"
+    ]
+  },
+  "hypotheses": [],
+  "limitations": [
+    "음성·싱크 미검수. 제작 문서 없음, 정상 무문서 분석.",
+    "선택 프레임 관측이며 연속 재생/모든 프레임 검수가 아니다. 보드는 탐색용이고 직접 근거는 열람한 PNG/무배율 크롭에만 연결.",
+    "추출 로그의 playback mapping/PTS 일치와 원본 해시는 확인. SAR 미상·RGB 변환 색범위 정확성 미검증을 유지하며 색을 공식 CI/AE 값으로 환산하지 않음.",
+    "이징 분류는 렌더 관측량의 변화율 성격이며 AE키프레임·정확한 함수·Influence를 복원하지 않음.",
+    "회사 공통 문법·승인·제작 의도·실제 소프트웨어 기능/조작으로 확대하지 않음. 8초 경계는 이후 문맥이며 영상 전체 최종 상태를 뜻하지 않음."
+  ],
+  "measurement_support_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\trials\\sample-B\\support\\measurements.json",
+  "review_record": {
+    "claim_evidence_reverse_check": "각 대상의 현재 특징이 해당 ROI에 포함되는지, T 수치를 O/V/A에 복사하지 않았는지, 제목 가림을 이동으로 쓰지 않았는지 저장 전 역대조 완료.",
+    "source_time_connection": "원본 해시 직접 재계산, 로그 actual_playback_seconds 사용. 요청시각과 actual이 이번 표본에서는 일치.",
+    "human_intervention": "none",
+    "ai_model": "parent inherited exact host ID unavailable",
+    "source_raster": [
+      3840,
+      2160
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "자료005",
+  "phase": "initial",
+  "input_sha256": "e866f805853b2d50fe7b03b3dc8567a1bf977274e94aaa46f5bdc34d62986827",
+  "limits": {
+    "wall_seconds_per_worker": 45,
+    "max_read_bytes": 268435456,
+    "max_seeks": 20000,
+    "max_packets": 4000,
+    "max_frames": 1600,
+    "max_pixels": 8294400,
+    "max_output_images": 40,
+    "memory_process_bytes": 1610612736
+  },
+  "tool": {
+    "av": "19.0.1",
+    "libraries": "{'libavutil': (61, 1, 102), 'libavcodec': (63, 1, 102), 'libavformat': (63, 1, 102), 'libavdevice': (63, 1, 102), 'libavfilter': (12, 1, 102), 'libswscale': (10, 1, 102), 'libswresample': (7, 1, 102)}"
+  },
+  "frames": [],
+  "audio_status": "track_metadata_only_not_decoded_not_listened_not_transcribed",
+  "separate_api_calls": 0,
+  "genpts_disabled": true,
+  "timing_status": "reported_values_until_sample_table_crosscheck",
+  "ai_model_id": "host_not_exposed",
+  "ai_internal_resize": "unknown",
+  "container": {
+    "start_time": 0,
+    "duration": 90000000,
+    "time_unit": "microseconds",
+    "format": "mov",
+    "metadata": {
+      "major_brand": "isom",
+      "minor_version": "512",
+      "compatible_brands": "isomiso2avc1mp41",
+      "encoder": "Lavf60.16.100"
+    },
+    "flags": 2097280
+  },
+  "streams": [
+    {
+      "index": 0,
+      "type": "video",
+      "codec": "h264",
+      "time_base": "1/15360",
+      "start_time": "0",
+      "duration": "1382400",
+      "frames_reported": 2700,
+      "metadata": {
+        "language": "und",
+        "handler_name": "VideoHandler",
+        "encoder": "Lavc60.31.102 libx264"
+      },
+      "width": 3840,
+      "height": 1080,
+      "sample_aspect_ratio": "0/1",
+      "average_rate": "30/1",
+      "has_b_frames": true,
+      "format": "<av.VideoFormat yuv420p, 3840x1080>",
+      "color_range": "1",
+      "colorspace": "1"
+    },
+    {
+      "index": 1,
+      "type": "audio",
+      "codec": "aac",
+      "time_base": "1/44100",
+      "start_time": "0",
+      "duration": "3969000",
+      "frames_reported": 3877,
+      "metadata": {
+        "language": "und",
+        "handler_name": "SoundHandler"
+      },
+      "sample_rate": 44100,
+      "layout": "<av.AudioLayout 'mono'>"
+    }
+  ]
+}

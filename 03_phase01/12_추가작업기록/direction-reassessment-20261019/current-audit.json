@@ -1,0 +1,127 @@
+{
+  "utc": "2026-10-19T04:08:28.000376+00:00",
+  "method": "planning and data inspection; no new video decoding, upstream tests, user comprehension test, renderer or skill runtime mutation",
+  "handoff_is_null": {
+    "NEW-N": true,
+    "NEW-P": true
+  },
+  "library_entries": 18,
+  "latest12_unique_applicability_strings": 1,
+  "latest12_counterexamples": [
+    "원본 구현 설정·원제작 의도는 영상만으로 확정하지 않음.",
+    "새 영상·새 문구로 재제작/렌더 검증하지 않음."
+  ],
+  "findings": [
+    "두 최신 사례의 판단 인계값이null이다. 원본 관측과 목적/조건을 연결하는 실제 기록이 채워지지 않았다.",
+    "최신12개 패턴의applicability가 같은 일반 문장이다. 반례 칸은 미시험/미확정 안내이며 구체적인 부적합 입력이 아니다.",
+    "현재 지침은 인계를 요청받으면 judgment-handoff를 읽도록 해 목적 연결이 기본 산출물에서 빠질 수 있다.",
+    "패턴 검색은 정의/이름/조건의 단순 키워드 교집합이다. 정보 관계·사용 제약에 따른 적합/부적합 필터를 구현한 것이 아니다.",
+    "근거/해시/구간 검사와 디자인 밀도 검사는 유용하나 새 내용의 표현 선택 성공을 판정하지 않는다.",
+    "노듈러LAYOUT-0002의 비교 배치라는 이름은 동일 대상의 복수 시점/기능 설명과 서로 다른 제품의 우열 비교를 구분해 주지 못한다. 해석을 확인할 필요가 있다."
+  ],
+  "root_cause": "식별·누락 실패를 고치며 근거 원자화와 수치 보강이 계속 늘었다. 분석→재사용 문법→새 목적의 선택을 실제 최소 사례로 연결하는 검증이 늦어졌고, 조건·반례가 형식 칸으로 남았다.",
+  "not_claimed": [
+    "모든 관측이 무가치/오답",
+    "모든 원본 재현 가능",
+    "전체 외부 스킬 전수분해 완료",
+    "최신12개 정의의 회사승인",
+    "전체 원본 정밀 분석이 파일럿 종료 조건"
+  ],
+  "protected_active_files": [
+    {
+      "relative": "SKILL.md",
+      "sha256": "20456aeff91f715c65bfa454c69683a85788fbb9fd95c50128cb09d6c02301b8"
+    },
+    {
+      "relative": "agents/openai.yaml",
+      "sha256": "38256f18ecb1eb10175fafa10dcd37400a42a8934bdf88ff70d79c12b9445b53"
+    },
+    {
+      "relative": "references/design-and-patterns.md",
+      "sha256": "a97d4920a5eb5b6d5c94583ce3c9332eea7354c181ef0dd1b4a7bf5a79a25cf7"
+    },
+    {
+      "relative": "references/design-density.md",
+      "sha256": "9f44e206f181d1e0860d333c032f7eaecfb03a0bc1c8c995c083a2289c73665b"
+    },
+    {
+      "relative": "references/evidence-and-records.md",
+      "sha256": "ed093b9616b49466f85362672c12f24a909ce577f4af542eec0f92f3f97d9ac5"
+    },
+    {
+      "relative": "references/judgment-handoff.md",
+      "sha256": "afe495b0a2524f18e55293270161514cf33a822369f3dc47c4237ad12ac1cf5b"
+    },
+    {
+      "relative": "references/motion-review.md",
+      "sha256": "d14a68424a8a7265f68bd6aa037a76965729e8cbf8124140eb1772221f50814d"
+    },
+    {
+      "relative": "references/output-contract.md",
+      "sha256": "4541948a4843dc2109905966943f7fed701191d3f2af45281496c79947db6072"
+    },
+    {
+      "relative": "references/pattern-composition.md",
+      "sha256": "1895f5b7f3ee294019e16df94db7d20ca2065d912e4801adac24240daccecfc5"
+    },
+    {
+      "relative": "references/review-ledger.md",
+      "sha256": "6819a590eddf91d5ee73e3d45b5a6f8b719d13c611b8dc7bf2722961b4065421"
+    },
+    {
+      "relative": "references/source-coverage.md",
+      "sha256": "92ecb1730278ffa0781bf6d0c3fc3caa4f94738eacbfbce9c683dfee476e44d2"
+    },
+    {
+      "relative": "scripts/check_design_details.py",
+      "sha256": "5651555ca34cdf6befcd23a7a4cd15299084ef8e7dcae03ed1be5842e3169c47"
+    },
+    {
+      "relative": "scripts/check_record.py",
+      "sha256": "525856ae648340c5c2fe70755c131348ac4b12bb53ab8c36dbbfa5cbf1aec1fa"
+    },
+    {
+      "relative": "scripts/evidence_catalog.py",
+      "sha256": "c550df61b4f69ef475d4c9245e3cbf98a07b5cb91f2333aa0d65e6a750b82ab3"
+    },
+    {
+      "relative": "scripts/pattern_library.py",
+      "sha256": "a4f63a35c6f589f63e4d5305db450ad7d375e1007f81c76ca7095b57663015db"
+    },
+    {
+      "relative": "scripts/render_observations.py",
+      "sha256": "64464453e6a5c0f9e91ecf2ddff51a3b2577111aabcff4cb76aa554261890f75"
+    },
+    {
+      "relative": "scripts/reuse_map.py",
+      "sha256": "3e79f60870890479776449f928acab8a2c8cf5073cdb7438e008d8c7d47b41ea"
+    },
+    {
+      "relative": "scripts/review_ledger.py",
+      "sha256": "5168f898893955a977a80c5a10d4caeac26b72e70ff2316061325490989fc271"
+    },
+    {
+      "relative": "scripts/source_coverage.py",
+      "sha256": "36950fea3d297981c0376e86fa6b5b3bfe49afbc7938c81def07e519fb64c18e"
+    }
+  ],
+  "active_skill": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\03_분석스킬\\company-video-grammar-analyzer",
+  "protected_publication": {
+    "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\publication-receipt.json",
+    "sha256": "2dae29600af590a1062ea7870c25c99bc47fb5e92f315c088c039f1bd339b462"
+  },
+  "record_pins": [
+    {
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\records\\NEW-N\\observations.json",
+      "sha256": "ab478c533ce83010b16ff6704786b56f7d77942d58a847d0c7a32c77ec0bcbe9"
+    },
+    {
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\records\\NEW-P\\observations.json",
+      "sha256": "509d52d1b28367b4110b9f95fbdecaafc93d2fe3651abd661df5ba26239d7548"
+    }
+  ],
+  "library_pin": {
+    "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\knowledge\\pattern-library.json",
+    "sha256": "83fe63bf52a8bf5caff59c3697c6c3f638280d23c483442a3143497de225991b"
+  }
+}

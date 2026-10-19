@@ -1,0 +1,105 @@
+{
+  "version": "0.1.0",
+  "date": "2026-10-15",
+  "user_decision": "A + 사람이 필요한 내용은 반드시 검수 대기로 전달; 검수 전 확인된 주장으로 이행 금지",
+  "scope": "선택 공식 본문의 관련 절 정독. PROV/Annotation 전체 구현 또는 계측 표준 전문 검토가 아님.",
+  "sources": [
+    {
+      "id": "R4-PROV",
+      "url": "https://www.w3.org/TR/prov-dm/",
+      "read_depth": "개요·2.1·5.2 파생/개정/인용의 관련 본문",
+      "verified": [
+        "자료·활동·책임 주체 구분",
+        "개정/인용은 파생 관계"
+      ],
+      "project_adaptation": [
+        "원본과 파생 snapshot pin",
+        "같은 패키지 변경 후 주장별 재검수"
+      ],
+      "unreviewed": [
+        "전체 PROV 제약/온톨로지 구현"
+      ]
+    },
+    {
+      "id": "R4-ANNOTATION",
+      "url": "https://www.w3.org/TR/annotation-model/",
+      "read_depth": "4.2.1·4.2.4·4.2.5·4.3 관련 본문",
+      "verified": [
+        "주석 내용과 대상 자원/선택 부분 구분",
+        "정확 인용·문자 위치",
+        "Unicode code point 기준",
+        "변화하는 원문의 특정 표현/버전 필요"
+      ],
+      "project_adaptation": [
+        "일반 JSON의 material/target/selector",
+        "고정한 plain-text 표현에서 시작포함/끝제외 인용 검사",
+        "JSON-LD 호환 표준 준수라고 주장하지 않음"
+      ],
+      "unreviewed": [
+        "전체 선택기/프로토콜",
+        "외부 웹 스냅샷 수집 구현"
+      ]
+    },
+    {
+      "id": "R4-NIST-BASIC",
+      "url": "https://physics.nist.gov/cuu/Uncertainty/basic.html",
+      "read_depth": "측정량·측정식·표준 불확실성 관련 본문",
+      "verified": [
+        "결과는 입력 추정값과 측정과정에 의존",
+        "표준 불확실성은 표준편차 성격"
+      ],
+      "project_adaptation": [
+        "방법/입력 표본/결과 단위/가정 분리",
+        "절대 상한과 표준 불확실성 종류 구분"
+      ],
+      "unreviewed": [
+        "TN1297 전문",
+        "ISO/GUM 전문",
+        "영상 측정의 실제 오차 평가"
+      ]
+    },
+    {
+      "id": "R4-NIST-COMBINE",
+      "url": "https://physics.nist.gov/cuu/Uncertainty/combination.html",
+      "read_depth": "오차 전파와 불확실성 의미 관련 본문",
+      "verified": [
+        "결합 불확실성에는 입력 변동·공분산 가정 등 고려 필요"
+      ],
+      "project_adaptation": [
+        "전파 수식 구현 보류",
+        "0오차/AI신뢰점수를 불확실성으로 임의 대입 금지"
+      ],
+      "unreviewed": [
+        "수식 구현/표본 통계 실행"
+      ]
+    },
+    {
+      "id": "R4-LOCAL-TIME",
+      "path": "04_기록규격/시간프레임_스키마.json",
+      "sha256": "aa440e4e69ed9287c25ba51f0b8051bc92da7162af553b2535d381b7ca0a6efb",
+      "read_depth": "규격·검사기·예시·기존R2 인계 전체",
+      "verified": [
+        "재생0초 기준",
+        "정확 분수·원본PTS·미상",
+        "half-open 시간/표본 참조"
+      ],
+      "project_adaptation": [
+        "공식 표준이 아닌 우리 승인 전 계약의 재사용"
+      ]
+    }
+  ],
+  "not_implemented": [
+    "실영상 추출/OCR/추적/측정",
+    "파일 존재/hash 실제 확인",
+    "웹페이지 다운로드/스냅샷",
+    "자연어 의미 판정",
+    "사람 정체성 인증",
+    "회사 규칙 승인"
+  ],
+  "remaining": [
+    "좌표 공간 실제 참조 R4-3",
+    "기존DB 통합·이관 R4-4",
+    "운영 검수권한 확인 R6",
+    "추출/실측 정확성01-A·회사 문법01-B"
+  ]
+}

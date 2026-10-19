@@ -1,0 +1,69 @@
+{
+  "executed": true,
+  "queries": {
+    "등속": [
+      {
+        "kind": "term",
+        "matched_query": "등속",
+        "qualifiers": {
+          "direction": "unknown"
+        },
+        "data": {
+          "id": "CURVE-LINEAR",
+          "axis": "timing",
+          "name_ko": "등속",
+          "name_en": "Linear",
+          "definition": "일정한 변화율",
+          "aliases": [
+            "Linear",
+            "선형"
+          ],
+          "include_when": "관측 궤적",
+          "exclude_or_limit": "루프 외에도 의미상 적합 가능",
+          "parent_id": null,
+          "related_ids": [],
+          "source_refs": [
+            "SRC-PROJECT-TAXONOMY"
+          ],
+          "status": "draft",
+          "version": "0.1.1",
+          "replaced_by": null
+        }
+      }
+    ],
+    "IP-10": [
+      {
+        "kind": "reference_knowledge",
+        "data": {
+          "id": "IP-10",
+          "family": "information",
+          "name_ko": "숙련도별 설명 조정",
+          "definition": "시청자의 지식에 따라 지원을 조정한다",
+          "consider_when": "입력·인터뷰·검토 자료 등으로 시청자의 해당 주제 사전 지식이 확인될 때 설명 지원의 깊이를 비교한다.",
+          "avoid_or_adjust_when": "직급·부서명만으로 숙련도를 결정하지 않는다. 정보 정확성·필수 고지·접근성 정보를 숙련도 이유로 삭제하지 않는다.",
+          "analysis_observables": "시청자의 사전 지식은 제공 근거가 있을 때만 기록. 화면에는 개념 소개·요약의 분량과 순서를 관측하며 학습 효과는 별도 평가한다.",
+          "planning_decisions": "초보자 개념 소개와 숙련자 요약을 조건부 후보로 비교한다. 숙련도 근거가 없으면 조정 판단을 보류한다.",
+          "review_questions": [
+            "시청자의 해당 주제 사전 지식 근거가 있는가? 공식 요약 수준의 참고를 효과 보장·회사 의무 규칙으로 확장하지 않았는가?"
+          ],
+          "source_refs": [
+            "SRC-R3-EXPERTISE-SUMMARY"
+          ],
+          "related_ids": [],
+          "case_refs": [],
+          "scope": "공개 학술 Summary에 근거한 조건부 참고 / 프로젝트 적용 해석",
+          "status": "reference",
+          "version": "0.1.2",
+          "numeric_defaults": null,
+          "interpretation_origin": "2021 공식 Summary 정의를 짧게 확인하고 프로젝트 적용·기권 조건을 자체 작성. 학술 장 전체·진단도구·회사 영상 효과 미검토.",
+          "unknown_policy": "해당 주제 사전 지식 근거가 없으면 숙련도 unknown과 설명 조정 보류를 기록한다. 직무만으로 낮거나 높다고 단정하지 않는다.",
+          "interpretation_source_refs": [
+            "SRC-PROJECT-GUIDANCE"
+          ]
+        }
+      }
+    ],
+    "LAYOUT-CAND-TABLE": []
+  },
+  "limit": "검색은 이름/정의 중심이며 확장후보는 조회 대상이 아님. 빈 결과는 개념 부재 증거가 아니다."
+}

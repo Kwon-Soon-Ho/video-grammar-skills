@@ -1,0 +1,97 @@
+{
+  "review_type": "pre_dispatch_static_fairness_check_not_model_trial",
+  "criteria_hash": "3edf88ae666533fb864c2ad59477f0bbed0256640d2bb93ed45c62a9f0e814f1",
+  "criteria_hash_matches_freeze": true,
+  "evals_file": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-guidance-reviewer\\evals\\evals.json",
+  "evals_hash_matches_freeze": true,
+  "included_source_files_checked": 70,
+  "included_source_mismatches": [],
+  "pairs": [
+    {
+      "case": "eval-01-한국어_수치_무음과_부분판정",
+      "common_old_count": 75,
+      "common_new_count": 75,
+      "common_mismatches": [],
+      "copied_source_mismatches": [],
+      "normalized_task_equal": true,
+      "old_skill_files": [
+        "실행스킬/video-guidance-reviewer/references/작업기준.md",
+        "실행스킬/video-guidance-reviewer/SKILL.md"
+      ],
+      "new_skill_files": [
+        "실행스킬/video-guidance-reviewer/references/근거찾기와적용조건.md",
+        "실행스킬/video-guidance-reviewer/references/판정과사람검수.md",
+        "실행스킬/video-guidance-reviewer/SKILL.md"
+      ],
+      "fixture_mismatches": [],
+      "preparation_errors": [],
+      "assertions_count": 7,
+      "metadata_assertions_equal": true
+    },
+    {
+      "case": "eval-02-회사CI_회신범위와_사용조건",
+      "common_old_count": 73,
+      "common_new_count": 73,
+      "common_mismatches": [],
+      "copied_source_mismatches": [],
+      "normalized_task_equal": true,
+      "old_skill_files": [
+        "실행스킬/video-guidance-reviewer/references/작업기준.md",
+        "실행스킬/video-guidance-reviewer/SKILL.md"
+      ],
+      "new_skill_files": [
+        "실행스킬/video-guidance-reviewer/references/근거찾기와적용조건.md",
+        "실행스킬/video-guidance-reviewer/references/판정과사람검수.md",
+        "실행스킬/video-guidance-reviewer/SKILL.md"
+      ],
+      "fixture_mismatches": [],
+      "preparation_errors": [],
+      "assertions_count": 7,
+      "metadata_assertions_equal": true
+    },
+    {
+      "case": "eval-03-외부지침_과잉일반화와_출처충돌",
+      "common_old_count": 75,
+      "common_new_count": 75,
+      "common_mismatches": [],
+      "copied_source_mismatches": [],
+      "normalized_task_equal": true,
+      "old_skill_files": [
+        "실행스킬/video-guidance-reviewer/references/작업기준.md",
+        "실행스킬/video-guidance-reviewer/SKILL.md"
+      ],
+      "new_skill_files": [
+        "실행스킬/video-guidance-reviewer/references/근거찾기와적용조건.md",
+        "실행스킬/video-guidance-reviewer/references/판정과사람검수.md",
+        "실행스킬/video-guidance-reviewer/SKILL.md"
+      ],
+      "fixture_mismatches": [],
+      "preparation_errors": [],
+      "assertions_count": 7,
+      "metadata_assertions_equal": true
+    }
+  ],
+  "source_excerpt_checks": [
+    {
+      "source": "05_출처와검토/스킬심층검토/02_원문과참조_검토결과.md",
+      "source_hash_matches": true,
+      "output_hash_matches": true,
+      "expected_heading_count": 5,
+      "actual_headings": [
+        "Taste / design-taste-frontend",
+        "Impeccable 선택 참조",
+        "LottieFiles motion-design",
+        "visual-qa",
+        "Presentations (호스트 제공)"
+      ],
+      "selected_original_sections_present": true,
+      "creator_section_present": false
+    }
+  ],
+  "actual_model_trials_executed_by_this_audit": 0,
+  "limits": [
+    "instruction-based isolation only",
+    "generic evaluation references remain in original knowledge/index text",
+    "knowledge-assisted development comparison, not unseen generalization or isolated skill effect"
+  ]
+}

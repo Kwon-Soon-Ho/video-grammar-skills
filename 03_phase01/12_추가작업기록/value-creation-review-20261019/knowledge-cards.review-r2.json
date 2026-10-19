@@ -1,0 +1,530 @@
+{
+  "common": {
+    "status": "pilot proposal; not canonical pattern registration or company approval",
+    "source_video": {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\한맥 영상\\00_26년 가치창출 영상\\가치창출성과 영상_260923_v3.mp4",
+      "sha256": "be78fc4f2f94c6b3cbd31339a1a1ccc84b91613d56c0e485d5dd1296839f56fa",
+      "bytes": 1685296235,
+      "duration_seconds": 434.4,
+      "start_time": 0,
+      "streams": [
+        {
+          "type": "audio",
+          "codec": "aac",
+          "width": null,
+          "height": null,
+          "rate": "None",
+          "time_base": "1/48000",
+          "start_time": 0,
+          "duration_ticks": 20851200,
+          "frames": 20365
+        },
+        {
+          "type": "video",
+          "codec": "h264",
+          "width": 7680,
+          "height": 2160,
+          "rate": "30/1",
+          "time_base": "1/30000",
+          "start_time": 0,
+          "duration_ticks": 13032000,
+          "frames": 13032
+        }
+      ]
+    },
+    "target_scenario": {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\한맥 영상\\00_26년 가치창출 영상\\가치창출 시나리오_v1(260916).pdf",
+      "sha256": "08c9ccc45b5f71da8e445cc96757b40fd972ea08dc6681cdc0836259c621bfb1",
+      "pages": 6,
+      "visually_reviewed_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "canonical_mapping": {
+      "Case": "source case + evidence",
+      "Pattern": "LAY/FLOW/MOTION candidate",
+      "CasePatternLink": "order, co-occurrence and variant",
+      "DesignRule": "fit, protected/variable and negative input",
+      "Review": "proof, unresolved and user judgment"
+    },
+    "epistemic_rule": "관측 사실·기능 해석·새 설계 제안을 분리한다. 원제작 의도·제작 방법·미관측 곡선은 단정하지 않는다.",
+    "source_visual_language": {
+      "whole": "32:9의 넓은 화면. 밝은 여백과 상단 장 제목을 공통 골격으로 두고 장별 강조색, 입체적으로 보이는 업무 아이콘, 얇은 프레임의 정보면, 실적 사진을 결합한다.",
+      "roles": [
+        "상단 장 라벨=현재 위치",
+        "큰 숫자=핵심 주장",
+        "밝은 정보면·가는 선=항목 묶음",
+        "실경·업무 이미지=맥락과 사례",
+        "입체적 아이콘=기술·경제활동 연상",
+        "장별 색=구분과 연속성"
+      ],
+      "limits": "원본 폰트·3D 제작법·AE 효과·키프레임 원값은 미확인. 외형을 제작 방법으로 단정하지 않는다."
+    },
+    "precision_policy": "전체 구성·요소 역할·상태와 전후 관계부터 기록한다. 정밀 측정은 차트 의미와 재사용 조건에 필요한 곳에 한정한다.",
+    "migration": "기존 DB로 옮길 때의 대응안이다. 이번 ID는 로컬 후보이며 기존 패턴 18개를 등록·덮어쓰지 않았다."
+  },
+  "cases": [
+    {
+      "id": "VC-CASE-A",
+      "title": "계약: 산정에 쓰는 값과 참고값 구분",
+      "evidence_window": [
+        78,
+        116
+      ],
+      "evidence": [
+        {
+          "source_seconds": 78,
+          "frame": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\value-creation-pilot-20261019\\extraction\\cases\\VALUE\\contract\\f_02340_078.000.png",
+          "sha256": "35c0275de0d6b3c79f74044066d1cb01a45370180243d3b5a7aeb569501cacb7",
+          "sampling_interval_seconds": 2
+        },
+        {
+          "source_seconds": 84,
+          "frame": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\value-creation-pilot-20261019\\extraction\\cases\\VALUE\\contract\\f_02520_084.000.png",
+          "sha256": "86dab07445376efa5633f8d9b0499cbf4af7091f666fe300094918645e39d695",
+          "sampling_interval_seconds": 2
+        },
+        {
+          "source_seconds": 96,
+          "frame": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\value-creation-pilot-20261019\\extraction\\cases\\VALUE\\contract\\f_02880_096.000.png",
+          "sha256": "21c933d3700c7c181e66527587b937a06348eb5a6164b093a374c62d7239dd1c",
+          "sampling_interval_seconds": 2
+        },
+        {
+          "source_seconds": 102,
+          "frame": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\value-creation-pilot-20261019\\extraction\\cases\\VALUE\\contract\\f_03060_102.000.png",
+          "sha256": "98a1ec59c3f067ec9fd22900263b31d7ca8c7203c18119ffdd3e38ac3a375c45",
+          "sampling_interval_seconds": 2
+        },
+        {
+          "source_seconds": 110,
+          "frame": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\value-creation-pilot-20261019\\extraction\\cases\\VALUE\\contract\\f_03300_110.000.png",
+          "sha256": "1de359dde742a05798d4e72e896e69ac64c02e5672cd7155afa8b323c7a58733",
+          "sampling_interval_seconds": 2
+        },
+        {
+          "source_seconds": 112,
+          "frame": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\value-creation-pilot-20261019\\extraction\\cases\\VALUE\\contract\\f_03360_112.000.png",
+          "sha256": "03df45acfa4d8539b06511984c16e72e1802afafd34b5d29c72850d9cb3884f3",
+          "sampling_interval_seconds": 2
+        },
+        {
+          "source_seconds": 116,
+          "frame": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\value-creation-pilot-20261019\\extraction\\cases\\VALUE\\contract\\f_03480_116.000.png",
+          "sha256": "103aba2f38cc9ccdb6db2b40f7b936f0effdf90eb6bf220d15e6550ac1d5250d",
+          "sampling_interval_seconds": 2
+        }
+      ],
+      "observed": [
+        "78~84초 표본: 수주·매출 막대와 금액, 문서·동전 계열 아이콘이 함께 나타난다. 원본 수주 17.5, 매출 12.9.",
+        "86~96초 표본: 실경 배경 위 수주 구성 패널, 측량·R&D 도넛과 수치가 순차로 보강된다.",
+        "98~112초 표본: 수주 정보가 왼쪽으로 정리되고 비용, 실제 매출 패널이 추가된다. 비용 100초 0.7→102초 8.7; 매출 110초 10.8→112초 12.9.",
+        "112초 최종 표본: 수주·투입비용·실제 매출 세 묶음, 수주·매출 중복 제외 문구. 114초 이후 다음 BIM 맥락으로 전환."
+      ],
+      "design_inventory": {
+        "layout": "초기 좌우 비교에서 정보 패널의 가로 확장으로 진행. 상단 장 제목, 가운데 주요 수치·구성, 배경 실경과 장식 아이콘의 층을 분리.",
+        "typography": "제목/지표 이름/큰 금액/구성 비율/설명 문구의 위계. 원본 서체명·정확한 크기는 미확인.",
+        "color_material": "녹색 장 강조, 흰 정보 패널, 얇은 프레임, 부드러운 입체 아이콘과 실경의 결합. 주황 계열 매출 막대도 관측.",
+        "components": [
+          "장 라벨",
+          "금액+단위",
+          "수주 구성 도넛",
+          "비용 정보면",
+          "매출 정보면",
+          "중복 제외 문구",
+          "실경 배경",
+          "입체적 문서/동전/상승 화살표"
+        ],
+        "spacing": "초광폭의 가로 여백을 정보 묶음 사이 경계로 사용. 세로 화면에서는 같은 가로 배열을 축소하지 않고 위계를 다시 배치해야 한다."
+      },
+      "functional_interpretation": "금액을 늘어놓는 것보다 무엇을 성과로 셌는지 설명하는 장면으로 해석한다. 원제작 의도 확인이 아닌 새 설계를 위한 가설.",
+      "links": [
+        {
+          "id": "VC-LAY-01",
+          "role": "주요 산정값과 참고값의 위계 분리",
+          "review_scope": "source role/flow interpretation and/or proposed adaptation; not an approved production template"
+        },
+        {
+          "id": "VC-FLOW-01",
+          "role": "맥락→주장→산정 기준→한계 설명",
+          "review_scope": "source role/flow interpretation and/or proposed adaptation; not an approved production template"
+        },
+        {
+          "id": "VC-MOTION-01",
+          "role": "숫자와 해당 시각 요소를 같은 의미 단위로 변화",
+          "review_scope": "source role/flow interpretation and/or proposed adaptation; not an approved production template"
+        },
+        {
+          "id": "VC-MOTION-02",
+          "role": "기존 핵심을 남기고 보조 정보 추가",
+          "review_scope": "source role/flow interpretation and/or proposed adaptation; not an approved production template"
+        }
+      ],
+      "protected": [
+        "매출·수주·비용의 서로 다른 의미",
+        "실제 매출을 산정에 반영한다는 기준",
+        "금액의 단위·기간",
+        "합산·순이익 계산으로 읽히지 않는 관계"
+      ],
+      "variable": [
+        "가로/세로 배치",
+        "색과 재질",
+        "아이콘·사진 사용 여부",
+        "도넛/막대/문장 중 적합한 수단",
+        "현재 과제에 불필요한 구성 내역 생략"
+      ],
+      "target_brief": {
+        "format": "16:9",
+        "task": "계약 부문 산정 기준 요약 한 화면. 원본 전체 계약 시퀀스의 대체 완성본은 아니다.",
+        "values": {
+          "revenue": 12.9,
+          "orders_reference": 17.6,
+          "cost_separate": 8.4
+        },
+        "decision": "실제 매출을 크게, 수주와 비용을 보조로 배치. 원본 녹색 계열과 밝은 정보면은 유지하되 입체 아이콘·실경·도넛은 이 요약안에서 유보."
+      },
+      "alternatives": [
+        {
+          "candidate": "원본의 가로 3구역을 16:9에 재사용",
+          "decision": "이전 시범에서 미선택; 일반적인 부적합 판정은 철회",
+          "reason": "원본도 매출을 주황색으로 강조하고 구역 너비/정보량이 다르다. 현재의 새 요약안과 전달 우열은 미검증."
+        },
+        {
+          "candidate": "수주→비용→매출 화살표",
+          "decision": "제외",
+          "reason": "산식·변환·차감 관계로 오해할 여지. 이 자료는 손익 산정이 아님."
+        },
+        {
+          "candidate": "매출 중심+보조 지표",
+          "decision": "시범 선택",
+          "reason": "산정 역할을 위계로 드러냄. 숫자 정확성만으로 전달 성공을 입증하지는 못함."
+        }
+      ],
+      "unresolved": [
+        {
+          "issue": "매출 구성 6.2+6.5=12.7인데 본문 총매출 12.9",
+          "blocks": "구성비 도넛의 확정 제작",
+          "action": "총액은 변경안 그대로 사용. 임의의 기타 0.2를 만들지 않고 이번 요약에서는 구성 도넛 유보."
+        },
+        {
+          "issue": "정확한 가감속·등장 시작 프레임 미확인",
+          "blocks": "원본 동작 복원",
+          "action": "이번은 의미 순서 기반 새 동작 제안. 필요 시 해당 짧은 구간만 추가 관측."
+        }
+      ],
+      "review_note": "원본에 없던 매출 중심 위계라고 말하지 않는다. 새 배치는 원본의 위계를 다른 화면비와 요약 목적에 맞춰 바꾼 제안이다.",
+      "source_grammar_links": [
+        "VC-GRAMMAR-01",
+        "VC-GRAMMAR-02",
+        "VC-GRAMMAR-03",
+        "VC-GRAMMAR-04",
+        "VC-GRAMMAR-05"
+      ],
+      "style_transfer_status": "원본의 구성·시각 언어를 수집하되 이후 활용 스타일을 강제하지 않음. 새 화면 제작은 현재 수집 범위에서 제외.",
+      "proof_use": "이전 시범의 설계 가설 기록. DB 수집 완료/원본 분석 정확도의 증거로 사용하지 않음."
+    },
+    {
+      "id": "VC-CASE-B",
+      "title": "프로젝트 지원: 같은 총액의 다른 분류",
+      "evidence_window": [
+        126,
+        174
+      ],
+      "evidence": [
+        {
+          "source_seconds": 130,
+          "frame": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\value-creation-pilot-20261019\\extraction\\cases\\VALUE\\project\\f_03900_130.000.png",
+          "sha256": "1e2069753147a1d1450fc2588ac5a905823db204bd1e23097a22311a0af353e3",
+          "sampling_interval_seconds": 2
+        },
+        {
+          "source_seconds": 134,
+          "frame": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\value-creation-pilot-20261019\\extraction\\cases\\VALUE\\project\\f_04020_134.000.png",
+          "sha256": "e1fe065b8d9f9ad8ce819266389a8326d58ecb886fe85b53eb6e18a701f3f2f8",
+          "sampling_interval_seconds": 2
+        },
+        {
+          "source_seconds": 140,
+          "frame": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\value-creation-pilot-20261019\\extraction\\cases\\VALUE\\project\\f_04200_140.000.png",
+          "sha256": "13b1f3128d2c64c5f695c94474a75551e4cb8001f8bfe8dbb07e4c793aa4c84a",
+          "sampling_interval_seconds": 2
+        },
+        {
+          "source_seconds": 146,
+          "frame": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\value-creation-pilot-20261019\\extraction\\cases\\VALUE\\project\\f_04380_146.000.png",
+          "sha256": "52e4c19d32ca7886883cdfdde95bc0e1483658840fbfddfb13c523eb1dc88df6",
+          "sampling_interval_seconds": 2
+        },
+        {
+          "source_seconds": 150,
+          "frame": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\value-creation-pilot-20261019\\extraction\\cases\\VALUE\\project\\f_04500_150.000.png",
+          "sha256": "104badec06b82828c80821ca03d0d95e0b3860c3f3b3627a7232a13149233bf4",
+          "sampling_interval_seconds": 2
+        },
+        {
+          "source_seconds": 160,
+          "frame": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\value-creation-pilot-20261019\\extraction\\cases\\VALUE\\project\\f_04800_160.000.png",
+          "sha256": "0776b30c3e7bdbbe5e37db2d46a09d83741bacf8ccd45c19512a4d52429e1109",
+          "sampling_interval_seconds": 2
+        },
+        {
+          "source_seconds": 172,
+          "frame": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\value-creation-pilot-20261019\\extraction\\cases\\VALUE\\project\\f_05160_172.000.png",
+          "sha256": "44a26a91328863dd335f9b950780afb96929888f8475b45b2298035250a1771a",
+          "sampling_interval_seconds": 2
+        }
+      ],
+      "observed": [
+        "128~136초 표본: 장 도입 뒤 가족사 로고, 프로젝트 요청/전문인력 지원 방향 화살표, 기술개발센터 업무 이미지가 연결된다.",
+        "138~142초 표본: 큰 23.7억원·26건 수치 화면으로 바뀐다.",
+        "144~154초 표본: 대각 분할 전환 뒤 왼쪽 업무 실경, 오른쪽 유형별 금액·건수와 BIM 설계 82% 도넛이 구성된다.",
+        "156~174초 표본: 별도 매출이 아닌 비용절감 맥락을 사진과 문장으로 설명한 뒤 가족사·건축 이미지와 23.7억원을 다시 제시한다."
+      ],
+      "design_inventory": {
+        "layout": "넓은 참가자 관계도→단일 큰 수치→사진/분류 정보의 분할→설명/실적 사진→요약. 장면의 역할이 바뀔 때 배치도 바뀜.",
+        "typography": "큰 총액을 기준점으로 두고 분류 라벨·금액·건수를 구별. 건수와 금액은 다른 단위.",
+        "color_material": "동색/구리색 장 강조, 밝은 바탕, 입체적으로 보이는 업무·건축 아이콘, 실제 프로젝트 사진, 얇은 정보 경계.",
+        "components": [
+          "가족사 로고",
+          "요청/지원 연결 화살표",
+          "센터 업무 이미지",
+          "총액·건수",
+          "실적 사진",
+          "유형별 행과 막대",
+          "비중 도넛",
+          "비용절감 설명"
+        ],
+        "spacing": "넓은 화면에서 실적 사진과 수치를 동시에 보여줌. 세로안은 총액 위치를 고정하고 분류를 순서대로 교체해 밀집을 줄임."
+      },
+      "functional_interpretation": "누가 무엇을 지원했는지 맥락을 만든 뒤 총량, 구성, 산정의 의미를 설명하는 흐름으로 해석. 가족사별 분류는 변경 시나리오에서 새로 요구된 축.",
+      "links": [
+        {
+          "id": "VC-LAY-02",
+          "role": "총액을 고정하고 하위 분류를 교체하는 새 변형",
+          "review_scope": "source role/flow interpretation and/or proposed adaptation; not an approved production template"
+        },
+        {
+          "id": "VC-FLOW-01",
+          "role": "맥락→주장→구성 근거→한계 설명",
+          "review_scope": "source role/flow interpretation and/or proposed adaptation; not an approved production template"
+        },
+        {
+          "id": "VC-MOTION-01",
+          "role": "금액/막대를 같은 의미 단위로 변화",
+          "review_scope": "source role/flow interpretation and/or proposed adaptation; not an approved production template"
+        },
+        {
+          "id": "VC-MOTION-03",
+          "role": "분류 기준이 바뀔 때 제목과 내용 동시 교체; 새 설계 제안",
+          "review_scope": "source role/flow interpretation and/or proposed adaptation; not an approved production template"
+        }
+      ],
+      "protected": [
+        "총액 22.2억원과 27건은 다른 단위",
+        "가족사별과 업무유형별은 같은 총액의 두 분류",
+        "직접 매출이 아닌 실제 투입비용/외부 대체비용 관점",
+        "막대 비교의 공통 기준"
+      ],
+      "variable": [
+        "한 번에 보여줄 분류 수",
+        "화면비와 패널 방향",
+        "사진·입체 아이콘 사용",
+        "장 색의 변형",
+        "세부 행 등장 간격"
+      ],
+      "target_brief": {
+        "format": "9:16",
+        "task": "수정된 총액과 두 분류를 작은 화면에서 순서대로 설명. 원본 32:9 단순 축소가 아니다.",
+        "values": {
+          "total": 22.2,
+          "count": 27,
+          "companies": [
+            15.5,
+            6.7
+          ],
+          "types": [
+            18.2,
+            1.5,
+            1.2,
+            1.3
+          ],
+          "type_counts": [
+            5,
+            7,
+            1,
+            14
+          ]
+        },
+        "decision": "총액·단위를 고정하고 아래에서 가족사별→유형별 분류로 전환. 구리색 장 분위기와 명확한 수치 위계는 유지."
+      },
+      "alternatives": [
+        {
+          "candidate": "가족사·업무유형 6행 한 번에 배치",
+          "decision": "이번 세로안에서 제외",
+          "reason": "서로 다른 분류를 한 목록으로 오해하거나 작은 글자가 될 위험."
+        },
+        {
+          "candidate": "각 분류마다 총액을 새로 크게 등장",
+          "decision": "제외",
+          "reason": "서로 다른 성과가 추가되는 인상을 줄 수 있음."
+        },
+        {
+          "candidate": "총액 고정+분류 교체",
+          "decision": "시범 선택",
+          "reason": "같은 값의 관점 변경을 공간적 연속성으로 설명. 실제 재생과 이해도는 미시험."
+        }
+      ],
+      "unresolved": [
+        {
+          "issue": "두 분류 전환이 실제 재생에서 명료한지",
+          "blocks": "이해도 검증 완료 판정",
+          "action": "정지 스토리보드 검토 후 짧은 모션으로 확인."
+        },
+        {
+          "issue": "원본 전환·곡선의 정확한 타이밍",
+          "blocks": "원본 모션 복원",
+          "action": "현재 2초 표본으로는 단정하지 않는다."
+        }
+      ],
+      "review_note": "원본의 BIM 설계 약82% 강조를 별도로 보존한다. 현재 평면 4행안은 전체 내역 열람에 치우쳤으며 핵심 강조 전이는 미검증이다.",
+      "source_grammar_links": [
+        "VC-GRAMMAR-01",
+        "VC-GRAMMAR-02",
+        "VC-GRAMMAR-03",
+        "VC-GRAMMAR-04",
+        "VC-GRAMMAR-05"
+      ],
+      "style_transfer_status": "원본의 구성·시각 언어를 수집하되 이후 활용 스타일을 강제하지 않음. 새 화면 제작은 현재 수집 범위에서 제외.",
+      "proof_use": "이전 시범의 설계 가설 기록. DB 수집 완료/원본 분석 정확도의 증거로 사용하지 않음."
+    }
+  ],
+  "pattern_candidates": [
+    {
+      "id": "VC-LAY-01",
+      "category": "layout",
+      "origin": "source-derived role, transformed layout",
+      "rule": "산정에 반영한 값을 중심에 두고 참고/별도값은 구역과 크기로 분리",
+      "fit": "동일 단위여도 산정 역할이 다른 지표 요약",
+      "negative_input": "매출·비용으로 순이익을 계산하는 공식 설명",
+      "negative_decision": "이 배치만 재사용하면 관계를 숨김. 명시적 산식/연결 구조를 새로 선택.",
+      "readiness": "기록 후보. 사용 조건과 의미 관계의 논리 검토이며 자동 선택/실모션 재현 검증은 미완료."
+    },
+    {
+      "id": "VC-LAY-02",
+      "category": "layout",
+      "origin": "new adaptation to revised script",
+      "rule": "같은 총액은 고정, 분류 패널만 교체",
+      "fit": "상호 다른 축으로 동일 집계를 설명",
+      "negative_input": "한맥 1~6월과 삼안 1~9월처럼 기간/모집단이 다름",
+      "negative_decision": "동일 총액 패턴 적용 거절. 기간/모집단을 먼저 분리.",
+      "readiness": "기록 후보. 사용 조건과 의미 관계의 논리 검토이며 자동 선택/실모션 재현 검증은 미완료."
+    },
+    {
+      "id": "VC-FLOW-01",
+      "category": "overall_flow",
+      "origin": "source sequence interpreted",
+      "rule": "맥락→주장→근거/구성→산정 한계→요약",
+      "fit": "성과 수치가 무슨 의미인지 설명하는 보고 장면",
+      "negative_input": "긴급 공지나 한 줄 슬로건만 전달하는 3초 장면",
+      "negative_decision": "모든 단계를 강제하지 않고 핵심 메시지 중심 흐름 선택.",
+      "readiness": "기록 후보. 사용 조건과 의미 관계의 논리 검토이며 자동 선택/실모션 재현 검증은 미완료."
+    },
+    {
+      "id": "VC-MOTION-01",
+      "category": "detail_motion",
+      "origin": "source samples show changing numbers and chart states",
+      "rule": "수치와 막대/비율/라벨을 같은 의미 상태로 맞춤",
+      "fit": "누적 변화나 구성 비중을 설명할 때",
+      "negative_input": "계약번호 0017 또는 날짜 2026-09-30",
+      "negative_decision": "중간 숫자가 거짓 의미를 만듦. 카운트업 제외, 확정 문자열로 등장.",
+      "readiness": "기록 후보. 사용 조건과 의미 관계의 논리 검토이며 자동 선택/실모션 재현 검증은 미완료."
+    },
+    {
+      "id": "VC-MOTION-02",
+      "category": "detail_motion",
+      "origin": "source panel addition; adapted semantic anchor",
+      "rule": "핵심 정보는 남기고 별도 정보가 들어오는 자리를 마련",
+      "fit": "동일 맥락에서 설명이 누적될 때",
+      "negative_input": "기간이 바뀌는데 이전 총액을 같은 위치에 계속 둠",
+      "negative_decision": "핵심값 고정 거절. 기간과 값의 교체를 함께 표시.",
+      "readiness": "기록 후보. 사용 조건과 의미 관계의 논리 검토이며 자동 선택/실모션 재현 검증은 미완료.",
+      "variant_distinction": {
+        "source_observed": "원본 계약의 정보 구역 재배치와 보조 패널 추가",
+        "new_proposal": "핵심 매출의 위치 고정과 보조 카드 추가",
+        "not_equated": "같은 좌표/타이밍/곡선의 반복으로 검증하지 않음"
+      }
+    },
+    {
+      "id": "VC-MOTION-03",
+      "category": "detail_motion",
+      "origin": "new proposal, not source-observed",
+      "rule": "분류 제목과 그 분류에 속한 행을 함께 교체하고 총액 유지",
+      "fit": "동일 집계의 분류 기준을 바꾸는 새 세로안",
+      "negative_input": "가족사 합계와 유형 합계가 다른 자료",
+      "negative_decision": "제작 보류. 누락/범위 차이 확인 전 같은 총액으로 전환하지 않음.",
+      "readiness": "기록 후보. 사용 조건과 의미 관계의 논리 검토이며 자동 선택/실모션 재현 검증은 미완료."
+    }
+  ],
+  "negative_case_status": "위 반례는 구체적 입력을 작성해 적용/거절을 논리 검토한 것. 실제 영상·독립 모델·사용자 시험은 미실행.",
+  "review_revision": {
+    "id": "review-r2",
+    "parent_sha256": "1398620cdfa586cc9f433fb80212ee3dd3d6ac453c09a7f426b9439969fef25e",
+    "status": "DB 수집 범위 보정안; 실제 스킬/정본 반영 아님",
+    "source_grammar_candidates": [
+      {
+        "id": "VC-GRAMMAR-01",
+        "topic": "장 식별 체계",
+        "observed": "상단 왼쪽 번호/TDC 육각 배지와 짧은 장 제목 띠. 계약 녹색, 프로젝트 지원 구리색 계열.",
+        "role_hypothesis": "현재 장과 연속성을 알려준다.",
+        "variation_rule_proposed": "화면비가 달라도 장의 위치/번호/명칭을 일관되게 인식할 수 있게 조합. 배지의 정확한 좌표는 공통 원리가 아니다.",
+        "omission_cost": "색만 남기면 시리즈 표식이 약해질 수 있음."
+      },
+      {
+        "id": "VC-GRAMMAR-02",
+        "topic": "실경과 정보면의 층",
+        "observed": "계약은 연한 도시 실경을 배경층으로, 지원은 왼쪽 도로/지도 업무 영상과 오른쪽 정보판으로 사용.",
+        "role_hypothesis": "실적·업무 맥락과 수치 설명을 연결한다. 장면에 따라 배경과 주증거의 역할이 다르다.",
+        "variation_rule_proposed": "역할을 먼저 선택해 배경형/분할형/순차 노출형으로 변형. 실제 프로젝트 이미지는 새 내용과 맞는 것을 사용.",
+        "omission_cost": "전부 삭제하면 어느 업무의 성과인지 보여주는 구체성이 약해질 수 있음."
+      },
+      {
+        "id": "VC-GRAMMAR-03",
+        "topic": "프레임·재질의 묶음",
+        "observed": "계약의 밝은 둥근 정보면·가는 경계·은은한 그림자·일부 헤더 띠. 지원의 아이보리 정보판·갈색 경계·점무늬와 도시 실루엣.",
+        "role_hypothesis": "정보를 묶으면서 장의 분위기를 구별한다.",
+        "variation_rule_proposed": "정보판의 바탕/경계/헤더/배경 모티프를 함께 선택하고 글자와 충돌하면 약화. 모든 장에 같은 평면 카드를 강제하지 않음.",
+        "omission_cost": "색만 바꾼 공통 카드로는 장별 시각 언어가 소실될 수 있음."
+      },
+      {
+        "id": "VC-GRAMMAR-04",
+        "topic": "핵심 수치와 차트 강조",
+        "observed": "계약 매출은 주황색으로 구별. 지원은 BIM 설계의 큰 구획과 약82% 도넛을 함께 강조.",
+        "role_hypothesis": "한 장면에서 기억할 핵심과 나머지 내역을 구분한다.",
+        "variation_rule_proposed": "금액 총량/구성 우세/산정 기준 중 현재 장면의 주장을 먼저 정하고 면적·색·차트를 함께 조절. 차트 종류를 무조건 고정하지 않음.",
+        "omission_cost": "동일 크기의 행 목록은 핵심 구성 비중을 약하게 만들 수 있음."
+      },
+      {
+        "id": "VC-GRAMMAR-05",
+        "topic": "입체적 도상과 수치",
+        "observed": "계약의 동전·문서·상승 막대/화살표와 윤곽·명암이 있는 큰 금액. 실제 3D 제작 여부는 모름.",
+        "role_hypothesis": "경제성과·계약업무를 빠르게 연상시키고 밝은 기술 홍보 분위기를 만든다.",
+        "variation_rule_proposed": "의미에 맞는 도상과 일관된 입체감/명암을 선택. 수치를 가리거나 과장하는 위치는 피함. 원본 제작법을 확인 없이 지정하지 않음.",
+        "omission_cost": "평면 숫자만 남기면 정보는 남아도 원본의 시각적 성격은 달라짐."
+      }
+    ],
+    "pending_design_language_choice": false,
+    "preservation_policy": "원본 디자인 언어와 구성/모션은 충실히 수집한다. 이후 활용은 원본 언어 유지 또는 새 스타일로의 변형 모두 가능하도록 조건을 기록한다. 모든 디자인 요소를 회사 공통 강제 규칙으로 등록하지 않는다.",
+    "collection_completion_excludes": [
+      "새 화면 이미지 생성",
+      "원본 재구축",
+      "다른 주제 새 브리프 제작",
+      "AE 제작·모션 렌더",
+      "새 시안 사용자 승인"
+    ]
+  }
+}

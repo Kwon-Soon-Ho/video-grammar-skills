@@ -1,0 +1,31 @@
+{
+  "recorded_at": "2026-10-16T15:03:45+09:00",
+  "record_structure_check": "performed",
+  "content_counterexample_diagnostic": "performed: three false motion statements still pass old structure checker",
+  "neutral_cases_and_reference": "prepared and version-pinned",
+  "new_procedure_behavior_replay": "performed_new_outputs_sealed_before_grading",
+  "content_grading": "performed; all six known-case requirements satisfied",
+  "independent_or_unseen_validation": "not_run",
+  "A3_authoring_ready": true,
+  "skill_created": false,
+  "A3_started": false,
+  "reason": "Known-case content gate satisfied. Limited A3 draft recommended; user decides whether to begin. No overall or unseen-source accuracy claim.",
+  "next_action": "A3 limited skill draft plus these six regression cases and separate internal-UI-selection case, only after user stage decision",
+  "A3_authoring_ready_scope": "only the six frozen A2 known-case requirements; recommendation to author a limited draft, not approval to start or overall motion accuracy",
+  "result": "Phase 01-A/02_분석작업/01-A2_스킬작성전_재시험/2026-10-16_첫실행/재시험_결과.json",
+  "coverage_gaps": [
+    {
+      "window": "EG-BIM 8.2~10.4s",
+      "event": "UI table selection row / thumbnail selection changes",
+      "status": "not_in_this_six_case_run",
+      "reference_status": "prior_AI_candidate_not_human_gold",
+      "action": "add a separate case when designing A3 tests; do not claim this run validated it"
+    },
+    {
+      "event": "장헌0~5.9초 도입의 정지 대조 시험 및 전체 영상",
+      "status": "not_separately_retested_in_this_run; T05 only5.9~6.6s",
+      "action": "preserve current scope; whole-video/audio and expansion tests remain deferred"
+    }
+  ],
+  "user_stage_decision": "pending"
+}

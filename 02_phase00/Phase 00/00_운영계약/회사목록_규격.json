@@ -1,0 +1,168 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "회사목록 등록 계약",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.2.0"
+    },
+    "record_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "expected_company_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "list_status": {
+      "enum": [
+        "awaiting_confirmation",
+        "confirmed"
+      ]
+    },
+    "companies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "company_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "name_ko": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "name_en": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "membership_source": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "enum": [
+                  "provided_file",
+                  "official_page",
+                  "project_record",
+                  "user_declaration",
+                  "synthetic_example"
+                ]
+              },
+              "locator": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "url": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "retrieved_on": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "format": "date"
+              },
+              "notes": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              }
+            },
+            "required": [
+              "kind",
+              "locator",
+              "url",
+              "retrieved_on",
+              "notes"
+            ],
+            "additionalProperties": false
+          },
+          "status": {
+            "enum": [
+              "user_confirmed",
+              "official_source_confirmed",
+              "candidate"
+            ]
+          },
+          "official_site": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ci_asset_refs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "asset_id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "record_version": {
+                  "type": "string",
+                  "pattern": "^\\d+\\.\\d+\\.\\d+$"
+                },
+                "sha256": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "pattern": "^[0-9a-f]{64}$"
+                }
+              },
+              "required": [
+                "asset_id",
+                "record_version",
+                "sha256"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "notes": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          }
+        },
+        "required": [
+          "company_id",
+          "name_ko",
+          "name_en",
+          "membership_source",
+          "status",
+          "official_site",
+          "ci_asset_refs",
+          "notes"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "notes": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    }
+  },
+  "required": [
+    "schema_version",
+    "record_version",
+    "expected_company_count",
+    "list_status",
+    "companies",
+    "notes"
+  ],
+  "additionalProperties": false,
+  "x-contract-version": "0.2.0",
+  "$id": "urn:hanmac:phase00:r1:companies:0.2.0"
+}

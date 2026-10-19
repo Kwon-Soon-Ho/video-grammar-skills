@@ -1,0 +1,156 @@
+{
+  "id": "r3-motion-conflict-cases",
+  "version": "0.1.1",
+  "status": "draft",
+  "company_approved": false,
+  "actual_video_test": false,
+  "cases": [
+    {
+      "id": "MC-01",
+      "task": "등속 운동 설명",
+      "input_conditions": "실측 이동의 속도와 경로를 보여준다. 장식 패널의 이동과 구분한다.",
+      "principle_refs": [
+        "AP-06",
+        "MP-02"
+      ],
+      "source_refs": [
+        "SRC-ADOBE-12",
+        "SRC-CARBON-OVERVIEW"
+      ],
+      "expected_project_decision": "측정 대상은 제공 시간·경로를 보존하고 장식 패널만 이징 후보를 검토한다.",
+      "failure_counterexample": "전부 이징을 넣으면 속도 변화에 관한 설명이 달라진다.",
+      "abstain_when": "실측 데이터와 시간 대응이 없으면 실제 운동이라는 판정을 보류한다.",
+      "acceptable_nonuse": "등속 유지가 의도와 데이터에 맞으면 이징 미사용 자체를 실패로 보지 않는다.",
+      "origin": "project_synthetic_transfer"
+    },
+    {
+      "id": "MC-02",
+      "task": "비교 항목 동시 유지",
+      "input_conditions": "A/B 공법의 같은 항목을 비교한다.",
+      "principle_refs": [
+        "MR-04",
+        "IP-09"
+      ],
+      "source_refs": [
+        "SRC-CARBON-CHOREO",
+        "SRC-CAM-TRANSIENT"
+      ],
+      "expected_project_decision": "등장은 순차여도 비교할 때는 두 항목을 함께 유지한다.",
+      "failure_counterexample": "항상 stagger를 써서 A를 지운 뒤 B를 보여주면 기억 부담을 키울 수 있다.",
+      "abstain_when": "비교 대상과 대응 항목의 출처가 없으면 비교 적합성을 확정하지 않는다.",
+      "acceptable_nonuse": "동시 공개가 내용 관계에 맞으면 순차 등장 미사용은 실패가 아니다.",
+      "origin": "project_synthetic_transfer"
+    },
+    {
+      "id": "MC-03",
+      "task": "무음·자막 필요",
+      "input_conditions": "무음 회의실에서 도표 설명을 본다.",
+      "principle_refs": [
+        "IP-03",
+        "IP-08"
+      ],
+      "source_refs": [
+        "SRC-CAM-EXTRANEOUS",
+        "SRC-CAM-ESSENTIAL"
+      ],
+      "expected_project_decision": "음성 중심의 중복 감소 원칙을 자동 적용하지 않고 자막·핵심 용어·단위를 유지한다.",
+      "failure_counterexample": "발화와 중복이라는 이유만으로 모든 글자를 삭제하면 정보를 잃는다.",
+      "abstain_when": "배포 환경과 자막 요구가 없으면 삭제가 아니라 확인을 제안한다.",
+      "acceptable_nonuse": "필요한 중복을 유지했다는 이유만으로 실패를 주지 않는다.",
+      "origin": "project_synthetic_transfer"
+    },
+    {
+      "id": "MC-04",
+      "task": "장식 카운트와 실적",
+      "input_conditions": "최종 실적 값만 제공되고 연도별 중간값은 없다.",
+      "principle_refs": [
+        "MR-08",
+        "AP-10"
+      ],
+      "source_refs": [
+        "SRC-UX-MOTION",
+        "SRC-ADOBE-12"
+      ],
+      "expected_project_decision": "최종값과 단위를 고정하고 카운트 중간값은 연출값으로 표시·분리한다.",
+      "failure_counterexample": "중간 숫자를 관측 연도의 실제 실적으로 저장하면 허위 시계열이 된다.",
+      "abstain_when": "값의 종류가 불분명하면 보이는 숫자는 기록하되 실측 주장만 보류한다.",
+      "acceptable_nonuse": "정지 최종값으로 정확히 전달할 수 있으면 카운트 미사용을 실패로 보지 않는다.",
+      "origin": "project_synthetic_transfer"
+    },
+    {
+      "id": "MC-05",
+      "task": "부품과 라벨 공동 이동",
+      "input_conditions": "렌더 MP4만 있고 원본 AE는 없다.",
+      "principle_refs": [
+        "MR-07",
+        "MR-03"
+      ],
+      "source_refs": [
+        "SRC-UX-MOTION",
+        "SRC-CARBON-CHOREO"
+      ],
+      "expected_project_decision": "대상과 라벨의 시간상 연동은 관측하고 AE parent·인과 관계는 따로 미확인으로 둔다.",
+      "failure_counterexample": "같이 움직였으니 parent로 제작했고 실제 인과도 있다는 기록은 근거를 넘는다.",
+      "abstain_when": "전체 공동 이동만으로 대상을 분리 추적하지 못하면 연동 관측의 확신도도 낮춘다.",
+      "acceptable_nonuse": "구현을 확인하지 못해도 충분한 화면 관측은 지우지 않는다.",
+      "origin": "project_synthetic_transfer"
+    },
+    {
+      "id": "MC-06",
+      "task": "정지 구조도와 동적 공정",
+      "input_conditions": "한 화면은 부품 위치를, 다른 화면은 회전·정지 시점을 설명한다.",
+      "principle_refs": [
+        "AP-09",
+        "IP-09",
+        "MR-06"
+      ],
+      "source_refs": [
+        "SRC-R3-CHANGE-STUDY",
+        "SRC-R3-APM"
+      ],
+      "expected_project_decision": "위치 읽기는 정지 상태·누적 그림, 시간 관계 설명은 동작 후보로 나눠 비교한다.",
+      "failure_counterexample": "모든 정보를 계속 움직이거나 모든 동작을 정지로 바꾸는 것은 서로 다른 과제를 혼동한다.",
+      "abstain_when": "참고 연구의 과제·표본은 회사 영상과 다르므로 효과를 보장하거나 수치를 전용하지 않는다.",
+      "acceptable_nonuse": "도형이 정지한 동안 자막이 유지되는 것도 정상 시간 사건이다.",
+      "origin": "project_synthetic_transfer"
+    },
+    {
+      "id": "MC-07",
+      "task": "같은 정보·다른 시청자",
+      "input_conditions": "초보자와 숙련자의 사전 지식이 입력으로 확인돼 있다.",
+      "principle_refs": [
+        "IP-07",
+        "IP-10"
+      ],
+      "source_refs": [
+        "SRC-CAM-ESSENTIAL",
+        "SRC-R3-EXPERTISE-SUMMARY"
+      ],
+      "expected_project_decision": "초보자에 개념 소개, 숙련자에 짧은 요약을 조건부 참고로 제안한다. 사용자 A는 참고 사용 범위 선택이며 회사 영상 효과·규칙 승인으로 취급하지 않는다.",
+      "failure_counterexample": "부서나 직급만으로 설명 수준을 자동 축소·확대한다.",
+      "abstain_when": "동일 직무라도 주제별 지식이 다를 수 있으므로 사전 지식 근거가 없으면 unknown이다.",
+      "acceptable_nonuse": "숙련자에게 기본 설명이 꼭 필요하다는 근거가 있으면 간단 소개를 유지할 수 있다.",
+      "origin": "project_synthetic_transfer"
+    },
+    {
+      "id": "MC-08",
+      "task": "고정 영상과 웹 플레이어",
+      "input_conditions": "자동재생 영상 옆에 문서가 있고 확대 버튼이 있는 배포 환경을 가정한다.",
+      "principle_refs": [
+        "ACC-01",
+        "ACC-02",
+        "ACC-03"
+      ],
+      "source_refs": [
+        "SRC-W3C-FLASH",
+        "SRC-W3C-PAUSE",
+        "SRC-W3C-INTERACTION"
+      ],
+      "expected_project_decision": "콘텐츠 플래시, 자동 움직임·업데이트 제어, 클릭 확대의 감소 모션을 각각 다른 조건으로 검토한다.",
+      "failure_counterexample": "MP4가 5초 넘는다는 이유만으로 자체 버튼 누락 실패를 주거나 정지 버튼만으로 플래시 안전을 판정한다.",
+      "abstain_when": "페이지 환경·시간·필수성·실제 검사 근거가 없으면 적용/안전 모두 보류한다.",
+      "acceptable_nonuse": "특정 조건 비적용과 실제 미검사는 다르며 WCAG 전체 적합을 선언하지 않는다.",
+      "origin": "project_synthetic_transfer"
+    }
+  ]
+}

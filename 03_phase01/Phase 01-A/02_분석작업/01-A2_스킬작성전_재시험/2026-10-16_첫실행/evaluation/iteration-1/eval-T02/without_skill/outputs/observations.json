@@ -1,0 +1,1092 @@
+{
+  "analysis_stage": "A2 baseline first pass; no grading feedback received",
+  "procedure": "Generic neutral observation procedure; no new skill used",
+  "coordinate_convention": "Source raster coordinates: x rightward, y downward; coordinates are approximate visual/measurement proxies, not display-aspect claims.",
+  "separation": {
+    "observable": "Rendered appearance and pixel/frame comparisons only.",
+    "implementation_hypotheses": "No AE layer structure, keyframes, presets, handle values or exact easing curve are identified from the render."
+  },
+  "tools_used": [
+    {
+      "tool": "functions.exec / exec_command",
+      "usage": "Read only PROCEDURE.md, cases.json and assigned case logs/board lists; enumerate assigned folders and own run output; run bundled Python with -B -X utf8."
+    },
+    {
+      "tool": "functions.exec / view_image",
+      "usage": "View assigned overview boards, selected original PNGs, and own derived crops; some host views were resized, so native crops were also inspected."
+    },
+    {
+      "tool": "functions.exec / apply_patch",
+      "usage": "Create local exploratory/measurement scripts and this one-time result writer within runs/retest_b."
+    },
+    {
+      "tool": "Python Pillow, NumPy",
+      "usage": "Read assigned PNGs, crop, raise crop brightness 2x for low-contrast T02 inspection, frame differences, grid period autocorrelation, edge/axis proxies and endpoint mix regression."
+    },
+    {
+      "tool": "inspect_more.py",
+      "usage": "One allowed request, T05 extra1, 10 times within 5.9–6.6, width 3840; generated source is not manually inspected and no outside-window images were requested."
+    },
+    {
+      "tool": "collaboration.send_message",
+      "usage": "Status report to the assigning parent agent only; no app thread messages or subagents."
+    }
+  ],
+  "technical_limits": [
+    "Execution logs report unknown sample aspect ratio and unvalidated exact color range; spatial/color figures concern the decoded raw raster.",
+    "No audio was listened to or transcribed; source audio metadata does not support sound-event claims.",
+    "SciPy was unavailable on the first measurement attempt. A dependency-free NumPy replacement was used; noisy candidate peaks are exploratory and are not all accepted as object tracks.",
+    "Image enhancement was for seeing low-contrast details only. All numeric color and motion proxies use unenhanced source PNGs.",
+    "No hidden expected answers, other case media, prior analysis reports or grading files were read."
+  ],
+  "source_access_audit": {
+    "direct_shared_input_files": [
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\PROCEDURE.md",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases.json",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\inspect_more.py"
+    ],
+    "direct_assigned_media_and_log_files": [
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T05\\board_1.jpg",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T05\\board_2.jpg",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T05\\boards.json",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T05\\f_00177_005.900.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T05\\f_00178_005.933.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T05\\f_00179_005.967.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T05\\f_00180_006.000.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T05\\f_00181_006.033.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T05\\f_00182_006.067.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T05\\f_00183_006.100.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T05\\f_00184_006.133.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T05\\f_00185_006.167.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T05\\f_00186_006.200.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T05\\f_00187_006.233.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T05\\f_00188_006.267.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T05\\f_00189_006.300.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T05\\f_00190_006.333.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T05\\f_00191_006.367.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T05\\f_00192_006.400.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T05\\f_00193_006.433.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T05\\f_00194_006.467.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T05\\f_00195_006.500.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T05\\f_00196_006.533.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T05\\f_00197_006.567.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T05\\f_00198_006.600.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료005\\T05\\실행기록.json",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\board_1.jpg",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\board_2.jpg",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\board_3.jpg",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\boards.json",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00000_000.000.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00003_000.050.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00006_000.100.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00009_000.150.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00012_000.200.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00015_000.250.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00018_000.300.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00021_000.350.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00024_000.400.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00027_000.450.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00030_000.500.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00033_000.550.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00036_000.600.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00039_000.650.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00042_000.700.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00045_000.750.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00048_000.800.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00051_000.850.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00054_000.900.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00057_000.950.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00060_001.000.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00063_001.050.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00066_001.100.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00069_001.150.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00072_001.200.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00075_001.250.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00078_001.300.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00081_001.350.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00084_001.400.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\실행기록.json",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_b\\cases\\자료005\\extra1\\f_00177_005.900.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_b\\cases\\자료005\\extra1\\f_00180_006.000.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_b\\cases\\자료005\\extra1\\f_00181_006.033.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_b\\cases\\자료005\\extra1\\f_00182_006.067.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_b\\cases\\자료005\\extra1\\f_00183_006.100.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_b\\cases\\자료005\\extra1\\f_00186_006.200.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_b\\cases\\자료005\\extra1\\f_00189_006.300.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_b\\cases\\자료005\\extra1\\f_00192_006.400.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_b\\cases\\자료005\\extra1\\f_00195_006.500.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_b\\cases\\자료005\\extra1\\f_00198_006.600.png",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_b\\cases\\자료005\\extra1\\실행기록.json"
+    ],
+    "own_artifacts_read": [
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_b\\explore.py",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_b\\measure.py",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_b\\measure_v2.py",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_b\\measure_clean.py",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_b\\final_measurements.py",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_b\\save_first_pass.py",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_b\\exploration_files_read.json",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_b\\exploration_metrics.json",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_b\\tracking_measurements.json",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_b\\clean_measurements.json",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_b\\final_measurement_evidence.json",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_b\\crops\\T02_top_progress.jpg",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_b\\crops\\T02_lower_progress.jpg",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_b\\crops\\T02_axes_native.jpg",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_b\\crops\\T02_grid_native.jpg",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_b\\crops\\T05_title_progress.jpg",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_b\\crops\\T05_card1_native.jpg",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_b\\crops\\T05_card3_native.jpg"
+    ],
+    "automated_helper_access_not_manual_report_reading": {
+      "scope": "The provided inspect_more helper generated T05_extra1.py and decoded only the 10 requested times in the assigned T05 window.",
+      "source_video": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\한맥 영상\\00_26년 가족사 경영보고 영상\\장헌\\장헌_최종.mp4",
+      "helper_references_visible_in_helper_source": [
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\bounded_base.py",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2\\prepare.py",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2\\입력고정과_컨테이너사전점검.json",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임"
+      ],
+      "note": "Runtime modules, codec and Python standard-library dependency reads are not expanded into individual library files. No contents of prior analysis/grading reports were returned to or manually read by the analyzer."
+    }
+  },
+  "case_id": "T02",
+  "asset_id": "자료013",
+  "allowed_window_seconds": [
+    0,
+    1.4
+  ],
+  "examined_time_window_seconds": [
+    0,
+    1.4
+  ],
+  "sampling": {
+    "supplied_count": 29,
+    "supplied_interval_seconds": 0.05,
+    "native_raster": [
+      3840,
+      2160
+    ],
+    "native_size_confirmed": true,
+    "extra_timestamps": []
+  },
+  "scene_summary": "검녹색 비네트 배경에서 반투명 직사각형, 얇은 선과 격자, 수평 광선, 좌상단의 적색·녹색 십자 표시가 차례로 드러난다. 이 구간에 읽을 수 있는 문구·인물·제품·별도 디스플레이 화면은 보이지 않는다.",
+  "objects_events": [
+    {
+      "id": "background",
+      "subject": "전체 검녹색 배경과 중심 광량",
+      "window_seconds": [
+        0,
+        1.4
+      ],
+      "observable": {
+        "position": "화면 전체. 밝은 중심과 어두운 주변의 구조가 유지된다.",
+        "direction": "중심 광점의 명확한 이동은 식별하지 못함.",
+        "scale_shape": "중앙이 퍼진 타원형/방사형 명암, 가장자리 비네트.",
+        "visibility": "0초부터 전면 존재.",
+        "color_brightness": "중심 부근 RGB 중앙값은 0–0.95초 약 [21,70,54], 1.0–1.4초 약 [22,71,57]. 우하 귀퉁이 (3700,2100) 패치는 [2,21,14]에서 [1,3,3]으로 어두워져 완전한 정지색 배경으로 단정하지 않는다.",
+        "internal_changes": "후속 도형·격자가 위에 중첩된다. 배경 명암 변화와 전경 합성을 완전히 분리할 수 없다.",
+        "overlap": "모든 선·패널 뒤.",
+        "observable_acceleration": "추적 가능한 배경 위치 없음; 이동 가감속 비적용."
+      },
+      "evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00000_000.000.png",
+          "playback_seconds": 0.0,
+          "description": "중심 명암과 어두운 귀퉁이"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00057_000.950.png",
+          "playback_seconds": 0.95,
+          "description": "격자 및 전경이 중첩된 상태"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00084_001.400.png",
+          "playback_seconds": 1.4,
+          "description": "귀퉁이는 더 어둡고 중심색은 거의 동일"
+        }
+      ],
+      "uncertainty": "배경 자체 밝기 애니메이션인지 전경/비네트 합성의 영향인지 렌더만으로 미분리."
+    },
+    {
+      "id": "upper_translucent_panel",
+      "subject": "상단의 긴 어두운 반투명 직사각형",
+      "window_seconds": [
+        0.2,
+        1.4
+      ],
+      "observable": {
+        "direction": "왼쪽 밖에서 오른쪽으로 보이는 범위와 우측 끝이 늘어난다. 후반에는 왼쪽 끝도 화면 안으로 들어온다.",
+        "position": "초기 좌상부에 희미한 일부가 보이고, 1.4초에는 대략 x365–2600, y70–505 부근의 긴 패널로 보인다.",
+        "scale_shape": "가로로 긴 직사각형을 유지. 전체 경계의 y 위치/보이는 높이도 변해 완전한 수평 강체 이동만으로 확정하지 않는다.",
+        "visibility": "0.2–0.3초 어둡게 식별되기 시작, 점차 대비 증가.",
+        "color_brightness": "검은색에 가까운 녹색, 내부로 격자가 비쳐 보인다.",
+        "internal_changes": "패널 내부에 독립 문구/영상 없음. 내부의 격자는 패널과 별도로 위치·간격이 변한다.",
+        "overlap": "상단 광선과 격자에 겹침.",
+        "observable_acceleration": "우측 진행은 후반에 완만해진다. 경계 후보 x 약2431(1.05),2537(1.2),2591(1.35)로 0.15초마다 약106→54px. 초반 어두운 경계는 자동 검출이 불안정해 정확한 전체 속도곡선은 보류."
+      },
+      "evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00015_000.250.png",
+          "playback_seconds": 0.25,
+          "description": "왼쪽 상단에 패널 일부"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00027_000.450.png",
+          "playback_seconds": 0.45,
+          "description": "우측 끝이 더 오른쪽으로 이동"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00063_001.050.png",
+          "playback_seconds": 1.05,
+          "description": "상단 패널 우측 경계"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00072_001.200.png",
+          "playback_seconds": 1.2,
+          "description": "후반 진행량 축소"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00084_001.400.png",
+          "playback_seconds": 1.4,
+          "description": "양 끝과 긴 형태 확인"
+        }
+      ],
+      "uncertainty": "가시성 증가·화면 밖 잘림·주변 격자와의 중첩으로 초기 크기 및 수직 경로는 정밀 분리 불가. 우향 감속이라는 관측이 특정 프리셋의 증거는 아니다."
+    },
+    {
+      "id": "lower_bright_panel",
+      "subject": "하단 좌측에서 들어오는 큰 반투명 직사각형",
+      "window_seconds": [
+        0.25,
+        1.4
+      ],
+      "observable": {
+        "direction": "좌측 밖에서 우향.",
+        "position": "0.3초 우측 끝 약447px, .45초1543, .6초1952, .75초2135, .9초2217, 1.05초2241. 1.2–1.4초에는 약2237→2234로 소폭 왼쪽.",
+        "scale_shape": "넓고 낮은 사각형. 하단/우측에 어두운 가는 테두리 또는 그림자가 따른다. 경계의 높이도 조금 바뀌며 보이는 폭은 처음 화면 밖 잘림의 영향을 받는다.",
+        "visibility": "초기 작고 흐린 일부에서 선명한 큰 패널로 변화.",
+        "color_brightness": "주변보다 밝은 녹색 반투명.",
+        "internal_changes": "격자가 비치고, 내부 별도 내용 교체는 보이지 않음.",
+        "overlap": "더 아래의 어두운 직사각형·광선과 겹치며, 격자와도 중첩.",
+        "observable_acceleration": "등시간 .15초 우측 끝 증가량 1096→409→183→82→24px로 감소. 후반 약7px 안쪽 이동도 보이므로 화면 좌표는 단순 등속이 아니다."
+      },
+      "evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00018_000.300.png",
+          "playback_seconds": 0.3,
+          "description": "큰 패널의 일부가 좌측에 나타남"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00027_000.450.png",
+          "playback_seconds": 0.45,
+          "description": "우향 큰 진행"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00036_000.600.png",
+          "playback_seconds": 0.6,
+          "description": "우측 끝 약1952"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00054_000.900.png",
+          "playback_seconds": 0.9,
+          "description": "우향 증가량 작아짐"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00063_001.050.png",
+          "playback_seconds": 1.05,
+          "description": "우측 끝 최대 부근"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00084_001.400.png",
+          "playback_seconds": 1.4,
+          "description": "후반 위치 유지/아주 작은 안쪽 이동"
+        }
+      ],
+      "uncertainty": "후반 가장자리의 작은 후퇴는 위치 오버슈트일 수도 있고 크기 변화·상위 변환과 결합했을 수도 있다. 실제 오버슈트 키프레임/스프링은 구현 가설로만 남긴다."
+    },
+    {
+      "id": "middle_left_panels",
+      "subject": "좌중부의 작은 밝은 사각형과 길고 낮은 반투명 띠",
+      "window_seconds": [
+        0.45,
+        1.4
+      ],
+      "observable": {
+        "direction": "작은 사각형은 좌측 밖에서 우향하여 .75초 우측 끝 약375, .9초583,1.05초688,1.2초746,1.35초775px. 아래의 낮은 띠도 좌측에서 오른쪽으로 드러난다.",
+        "scale_shape": "작은 사각형은 가로보다 세로가 약간 긴 부분이 보이다가 더 넓게 드러남. 띠는 매우 낮고 길다. 원래 폭과 스케일은 잘림 때문에 확정 불가.",
+        "visibility": "큰 하단 패널 뒤에 늦게 명확해진다.",
+        "color_brightness": "녹색 밝은 면과 밝은 얇은 하단 가장자리.",
+        "internal_changes": "내용/문구 없음; 격자와 밝은 띠가 내부로 비침.",
+        "overlap": "작은 사각형 아래쪽이 낮은 띠와 겹치는 영역에서 더 밝다.",
+        "observable_acceleration": "작은 사각형의 .15초 우향 변화량 약208→105→58→29px로 줄어 감속이 관측됨. 띠의 곡선은 별도 정량화하지 못함."
+      },
+      "evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00027_000.450.png",
+          "playback_seconds": 0.45,
+          "description": "좌측 중하부의 낮은 띠"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00045_000.750.png",
+          "playback_seconds": 0.75,
+          "description": "좌중부 작은 사각형"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00054_000.900.png",
+          "playback_seconds": 0.9,
+          "description": "작은 사각형 우측 끝"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00072_001.200.png",
+          "playback_seconds": 1.2,
+          "description": "후반 진행량 감소"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00084_001.400.png",
+          "playback_seconds": 1.4,
+          "description": "작은 패널과 낮은 띠의 중첩"
+        }
+      ],
+      "uncertainty": "띠의 독립 이동과 사각형 하단 밝기 효과는 일부 구간에서 겹쳐 분리하기 어렵다."
+    },
+    {
+      "id": "dark_lower_rectangle_and_strokes",
+      "subject": "더 아래의 어두운 직사각형/가는 검은 수평선",
+      "window_seconds": [
+        0.45,
+        1.4
+      ],
+      "observable": {
+        "direction": "낮은 어두운 면과 수평선의 우측 끝이 초기보다 오른쪽으로 나타난다.",
+        "scale_shape": "밝은 큰 패널보다 아래로 내려앉은 어두운 직사각형이 부분적으로 겹친다. 가는 긴 수평선이 그 위/아래에 보이고 일부 우측 세로 테두리가 확인된다.",
+        "visibility": "밝은 큰 패널보다 낮은 대비. .6–.9초부터 더 뚜렷.",
+        "color_brightness": "거의 검은 녹색 선/면.",
+        "internal_changes": "패턴 변화 없이 다른 패널·격자·광선이 겹침.",
+        "overlap": "큰 밝은 패널 하단을 가로지르고 아래로 이어진다.",
+        "observable_acceleration": "전체적으로 진행이 완만해 보이지만 정확한 동일 경계 추적은 미확정, 별도 easing 분류 보류."
+      },
+      "evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00036_000.600.png",
+          "playback_seconds": 0.6,
+          "description": "큰 패널 아래쪽의 낮은 어두운 면"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00054_000.900.png",
+          "playback_seconds": 0.9,
+          "description": "긴 어두운 수평선과 우측 세로 경계"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00084_001.400.png",
+          "playback_seconds": 1.4,
+          "description": "최종 중첩 형태와 선"
+        }
+      ],
+      "uncertainty": "선이 별도 그래픽인지 같은 패널의 외곽/그림자인지 구현 수준으로 분리할 수 없다."
+    },
+    {
+      "id": "grid_and_frame",
+      "subject": "화면을 넓게 덮는 격자 및 바깥 이중 테두리",
+      "window_seconds": [
+        0.15,
+        1.4
+      ],
+      "observable": {
+        "direction": "격자가 드러나면서 우상단 모서리는 안쪽(좌하 방향)으로 이동하고 셀 간격은 줄어든다.",
+        "scale_shape": "가로·세로 직선 격자, 뒤틀림이나 회전은 확인되지 않음. 0.6→1.35초 우측 깨끗한 영역의 수평 주기 약120→107px로 작아져 실제 격자 축소가 관측된다.",
+        "position": "상단 격자선의 같은 밝은 띠는 y약264(.6),292(.75),312(.9),327(1.05),339(1.2),347(1.35).",
+        "visibility": "0.15–.3초 매우 희미한 선, .6초 선명해지고 1.4초까지 대비 증가.",
+        "color_brightness": "회녹색/청록색 얇은 선. 오른쪽·중앙이 더 잘 보이고 테두리 바깥은 어둡다.",
+        "internal_changes": "격자 셀 내용 변화는 없고 간격/전체 보이는 범위/밝기가 바뀐다.",
+        "overlap": "반투명 패널 내부에서도 보이며 패널마다 대비가 달라진다. 광선은 격자 위에 밝게 중첩.",
+        "observable_acceleration": "기간 후반의 간격 축소 및 상단선 아래 이동량이 줄어드는 경향. y 증가가 28→20→15→12→8px/.15초로 줄어, 정속 이동/축소는 아님."
+      },
+      "evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00018_000.300.png",
+          "playback_seconds": 0.3,
+          "description": "희미한 격자"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00036_000.600.png",
+          "playback_seconds": 0.6,
+          "description": "측정 가능한 격자 주기와 상단선"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00054_000.900.png",
+          "playback_seconds": 0.9,
+          "description": "상단선 더 아래, 셀 간격 작아짐"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00081_001.350.png",
+          "playback_seconds": 1.35,
+          "description": "주기 약107, 상단선 y347"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00084_001.400.png",
+          "playback_seconds": 1.4,
+          "description": "이중 테두리와 격자 지속"
+        }
+      ],
+      "uncertainty": "상단선·격자주기는 proxy이고 밝기/압축 영향으로 수 px 오차 가능. 정확한 스케일 중심·카메라 줌·레이어 부모는 알 수 없다. 초기 .6초 이전 자동 peak 후보는 잡음이 많아 채택하지 않았다."
+    },
+    {
+      "id": "horizontal_glints",
+      "subject": "상단·하단의 길고 부드러운 청록색 광선",
+      "window_seconds": [
+        0.3,
+        1.4
+      ],
+      "observable": {
+        "direction": "상단 광선의 밝은 중심/띠가 좌측 부근에서 오른쪽으로 퍼지고 이동한다. 하단 광선도 뒤이어 좌측에서 우향하며, 가장 아래쪽/오른쪽에는 별도의 흐린 빛이 늦게 보인다.",
+        "position": "상단 약 y300 부근, 하단 약 y1800 부근. 마지막에는 아래쪽 우측에도 흐린 청록색 광점.",
+        "scale_shape": "가로로 길고 끝이 부드럽게 흐려지는 빛; 회전/날카로운 형태변화는 보이지 않음.",
+        "visibility": "상단 .3–.45초부터, 하단 .6–.7초부터 뚜렷. 아래 우측 빛은 .9–1.4초에서 확인.",
+        "color_brightness": "청록색 광량 증가 후 긴 잔광처럼 퍼짐.",
+        "internal_changes": "밝은 중심과 꼬리의 분포가 변화하므로 고정된 선의 단순 fade로만 설명하지 않는다.",
+        "overlap": "격자/패널을 가로지르는 밝은 띠.",
+        "observable_acceleration": "이동과 밝기분포/퍼짐이 동시에 변해 단일 중심점의 속도곡선은 신뢰성 있게 분리하지 못했다."
+      },
+      "evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00018_000.300.png",
+          "playback_seconds": 0.3,
+          "description": "초기 상단 빛"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00036_000.600.png",
+          "playback_seconds": 0.6,
+          "description": "상단 빛의 우향 분포와 하단 빛 출현"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00054_000.900.png",
+          "playback_seconds": 0.9,
+          "description": "하단 광선이 길게 뻗음"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00084_001.400.png",
+          "playback_seconds": 1.4,
+          "description": "3개 높이대의 빛 분포 확인"
+        }
+      ],
+      "uncertainty": "glow 폭 변화·노출과 위치 이동이 결합함. 정확한 광선 개수/효과 종류는 렌더에 기반한 시각적 묶음이다."
+    },
+    {
+      "id": "red_green_cross",
+      "subject": "좌상단 적색 수평축·녹색 수직축과 중앙의 작은 적색 사각형",
+      "window_seconds": [
+        0.85,
+        1.4
+      ],
+      "observable": {
+        "direction": "늦게 희미하게 드러난 뒤 우하향.",
+        "position": "교점 proxy는 .95초(166,232),1.0(176,254),1.1(204,314),1.2(252,382),1.3(316,448),1.4(398,496).",
+        "scale_shape": "적색 가로선과 녹색 세로선은 서로 직각을 유지하며 최종 길이는 각 약600px. 초기 좌측/상단은 프레임 밖 잘림. 교점에 작은 속 빈 적색 정사각형이 뒤에 더 뚜렷해진다.",
+        "visibility": "녹색이 .9초에 분명히 검출되고 적색은 .95초 이후 분명. .85–.9초 부근은 아주 희미하여 첫 발현 프레임을 확정하지 않음.",
+        "color_brightness": "적색·녹색 선의 대비가 증가.",
+        "internal_changes": "작은 중심 사각형이 교점과 함께 이동. 선의 길이 증가처럼 보이는 초반은 잘림/광량으로 설명 가능하여 스케일 증가로 단정하지 않는다.",
+        "overlap": "격자와 패널 위에 놓여 보임.",
+        "observable_acceleration": "x는 등시간 .1초 변화량28→48→64→82px(1.0 이후)로 증가하므로 우향 성분 가속이 관측된다. y는60→68→66→48px로 중간에 가장 빠르고 마지막에 감소한다. 전체 경로를 한 개의 일정한 ease 이름으로 환원하지 않는다."
+      },
+      "evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00054_000.900.png",
+          "playback_seconds": 0.9,
+          "description": "희미한 녹색 세로선과 십자 형태"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00060_001.000.png",
+          "playback_seconds": 1.0,
+          "description": "교점(176,254) 부근"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00066_001.100.png",
+          "playback_seconds": 1.1,
+          "description": "중앙 작은 사각형과 교점"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00072_001.200.png",
+          "playback_seconds": 1.2,
+          "description": "우하향"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00084_001.400.png",
+          "playback_seconds": 1.4,
+          "description": "우향 증가량 확대 및 가로세로 약600px"
+        }
+      ],
+      "uncertainty": "색차 기반 교점 오차 약2–5px, 매우 희미한 시점은 더 큼. 두 축/사각형이 하나의 레이어인지 알 수 없다."
+    }
+  ],
+  "temporal_order": [
+    {
+      "window": [
+        0,
+        0.15
+      ],
+      "event": "검녹색 중심 명암이 먼저 존재."
+    },
+    {
+      "window": [
+        0.15,
+        0.35
+      ],
+      "event": "격자/긴 패널들이 매우 희미하게 드러남."
+    },
+    {
+      "window": [
+        0.3,
+        0.65
+      ],
+      "event": "상단 광선과 큰 하단 패널의 우향 진행이 뚜렷해짐."
+    },
+    {
+      "window": [
+        0.6,
+        0.9
+      ],
+      "event": "하단 광선과 작은 좌중부 사각형/띠가 뒤따르고 격자는 축소하며 대비 증가."
+    },
+    {
+      "window": [
+        0.85,
+        1.4
+      ],
+      "event": "십자축·작은 중앙 사각형이 뒤늦게 나타나 우하향, 패널 우향은 감속하며 유지 상태로 접근."
+    }
+  ],
+  "implementation_hypotheses": [
+    {
+      "hypothesis": "직사각형들은 이동과 opacity, 격자는 축소와 opacity를 조합했을 가능성.",
+      "status": "가설; 실제 속성/부모/키프레임/효과는 미확인."
+    },
+    {
+      "hypothesis": "큰 하단 패널의 후기 경계 후퇴는 작은 overshoot일 수 있음.",
+      "status": "가설; 격자와 다른 화면 크기 변화가 결합했을 가능성과 구분 불가."
+    },
+    {
+      "hypothesis": "십자표시는 위치 경로와 밝기 변화가 결합됐을 가능성.",
+      "status": "가설; 정확한 곡선/구현 미확인."
+    }
+  ],
+  "measurement_evidence": {
+    "accepted_axis_samples": [
+      {
+        "t": 0.95,
+        "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00057_000.950.png",
+        "axis_intersection_proxy_xy": [
+          166,
+          232
+        ],
+        "red_row_weight": 2742.0,
+        "green_col_weight": 10588.0
+      },
+      {
+        "t": 1.0,
+        "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00060_001.000.png",
+        "axis_intersection_proxy_xy": [
+          176,
+          254
+        ],
+        "red_row_weight": 5256.0,
+        "green_col_weight": 15782.0
+      },
+      {
+        "t": 1.05,
+        "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00063_001.050.png",
+        "axis_intersection_proxy_xy": [
+          188,
+          282
+        ],
+        "red_row_weight": 4664.0,
+        "green_col_weight": 14254.0
+      },
+      {
+        "t": 1.1,
+        "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00066_001.100.png",
+        "axis_intersection_proxy_xy": [
+          204,
+          314
+        ],
+        "red_row_weight": 6462.0,
+        "green_col_weight": 23162.0
+      },
+      {
+        "t": 1.15,
+        "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00069_001.150.png",
+        "axis_intersection_proxy_xy": [
+          226,
+          348
+        ],
+        "red_row_weight": 12330.0,
+        "green_col_weight": 15223.0
+      },
+      {
+        "t": 1.2,
+        "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00072_001.200.png",
+        "axis_intersection_proxy_xy": [
+          252,
+          382
+        ],
+        "red_row_weight": 15200.0,
+        "green_col_weight": 20504.0
+      },
+      {
+        "t": 1.25,
+        "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00075_001.250.png",
+        "axis_intersection_proxy_xy": [
+          283,
+          418
+        ],
+        "red_row_weight": 21198.0,
+        "green_col_weight": 20062.0
+      },
+      {
+        "t": 1.3,
+        "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00078_001.300.png",
+        "axis_intersection_proxy_xy": [
+          316,
+          448
+        ],
+        "red_row_weight": 32848.0,
+        "green_col_weight": 14208.0
+      },
+      {
+        "t": 1.35,
+        "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00081_001.350.png",
+        "axis_intersection_proxy_xy": [
+          356,
+          474
+        ],
+        "red_row_weight": 41120.0,
+        "green_col_weight": 22534.0
+      },
+      {
+        "t": 1.4,
+        "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00084_001.400.png",
+        "axis_intersection_proxy_xy": [
+          398,
+          496
+        ],
+        "red_row_weight": 63986.0,
+        "green_col_weight": 29760.0
+      }
+    ],
+    "grid_period_and_top_samples": [
+      {
+        "t": 0.6,
+        "upper_right": [
+          {
+            "p": 2684,
+            "v": 0.423
+          },
+          {
+            "p": 436,
+            "v": 0.418
+          },
+          {
+            "p": 2568,
+            "v": 0.396
+          }
+        ],
+        "upper_y_edges": [
+          {
+            "p": 619,
+            "v": 0.78
+          },
+          {
+            "p": 258,
+            "v": 0.617
+          },
+          {
+            "p": 502,
+            "v": 0.53
+          },
+          {
+            "p": 737,
+            "v": 0.51
+          },
+          {
+            "p": 144,
+            "v": 0.493
+          },
+          {
+            "p": 384,
+            "v": 0.49
+          }
+        ],
+        "grid_top": [
+          {
+            "p": 264,
+            "v": 2.713
+          },
+          {
+            "p": 208,
+            "v": 2.319
+          },
+          {
+            "p": 387,
+            "v": 1.471
+          }
+        ],
+        "grid_period_candidates": [
+          {
+            "p": 120,
+            "v": 111.623
+          },
+          {
+            "p": 94,
+            "v": -0.608
+          }
+        ]
+      },
+      {
+        "t": 0.75,
+        "upper_right": [
+          {
+            "p": 2778,
+            "v": 0.627
+          },
+          {
+            "p": 2544,
+            "v": 0.462
+          },
+          {
+            "p": 2658,
+            "v": 0.461
+          }
+        ],
+        "upper_y_edges": [
+          {
+            "p": 297,
+            "v": 1.08
+          },
+          {
+            "p": 871,
+            "v": 0.68
+          },
+          {
+            "p": 637,
+            "v": 0.67
+          },
+          {
+            "p": 125,
+            "v": 0.627
+          },
+          {
+            "p": 232,
+            "v": 0.583
+          },
+          {
+            "p": 757,
+            "v": 0.543
+          }
+        ],
+        "grid_top": [
+          {
+            "p": 292,
+            "v": 3.613
+          },
+          {
+            "p": 247,
+            "v": 3.386
+          },
+          {
+            "p": 352,
+            "v": 0.293
+          }
+        ],
+        "grid_period_candidates": [
+          {
+            "p": 114,
+            "v": 157.127
+          },
+          {
+            "p": 105,
+            "v": -0.186
+          }
+        ]
+      },
+      {
+        "t": 0.9,
+        "upper_right": [
+          {
+            "p": 2639,
+            "v": 0.98
+          },
+          {
+            "p": 2757,
+            "v": 0.863
+          },
+          {
+            "p": 2528,
+            "v": 0.711
+          }
+        ],
+        "upper_y_edges": [
+          {
+            "p": 655,
+            "v": 1.27
+          },
+          {
+            "p": 306,
+            "v": 1.01
+          },
+          {
+            "p": 426,
+            "v": 0.963
+          },
+          {
+            "p": 870,
+            "v": 0.867
+          },
+          {
+            "p": 152,
+            "v": 0.793
+          },
+          {
+            "p": 535,
+            "v": 0.747
+          }
+        ],
+        "grid_top": [
+          {
+            "p": 312,
+            "v": 6.222
+          },
+          {
+            "p": 263,
+            "v": 4.087
+          },
+          {
+            "p": 208,
+            "v": 0.515
+          }
+        ],
+        "grid_period_candidates": [
+          {
+            "p": 111,
+            "v": 427.538
+          },
+          {
+            "p": 120,
+            "v": 9.469
+          }
+        ]
+      },
+      {
+        "t": 1.05,
+        "upper_right": [
+          {
+            "p": 2738,
+            "v": 1.529
+          },
+          {
+            "p": 2626,
+            "v": 1.121
+          },
+          {
+            "p": 2298,
+            "v": 0.993
+          }
+        ],
+        "upper_y_edges": [
+          {
+            "p": 547,
+            "v": 1.813
+          },
+          {
+            "p": 169,
+            "v": 1.6
+          },
+          {
+            "p": 321,
+            "v": 1.477
+          },
+          {
+            "p": 655,
+            "v": 1.403
+          },
+          {
+            "p": 874,
+            "v": 1.357
+          },
+          {
+            "p": 437,
+            "v": 1.147
+          }
+        ],
+        "grid_top": [
+          {
+            "p": 327,
+            "v": 7.322
+          },
+          {
+            "p": 275,
+            "v": 5.167
+          },
+          {
+            "p": 208,
+            "v": 0.38
+          }
+        ],
+        "grid_period_candidates": [
+          {
+            "p": 109,
+            "v": 694.889
+          },
+          {
+            "p": 118,
+            "v": -45.964
+          }
+        ]
+      },
+      {
+        "t": 1.2,
+        "upper_right": [
+          {
+            "p": 2615,
+            "v": 1.279
+          },
+          {
+            "p": 2726,
+            "v": 1.195
+          },
+          {
+            "p": 2292,
+            "v": 1.159
+          }
+        ],
+        "upper_y_edges": [
+          {
+            "p": 555,
+            "v": 1.767
+          },
+          {
+            "p": 283,
+            "v": 1.507
+          },
+          {
+            "p": 776,
+            "v": 1.403
+          },
+          {
+            "p": 184,
+            "v": 1.39
+          },
+          {
+            "p": 661,
+            "v": 1.383
+          },
+          {
+            "p": 446,
+            "v": 1.37
+          }
+        ],
+        "grid_top": [
+          {
+            "p": 339,
+            "v": 7.116
+          },
+          {
+            "p": 288,
+            "v": 5.496
+          },
+          {
+            "p": 368,
+            "v": 0.25
+          }
+        ],
+        "grid_period_candidates": [
+          {
+            "p": 108,
+            "v": 786.557
+          },
+          {
+            "p": 134,
+            "v": -78.336
+          }
+        ]
+      },
+      {
+        "t": 1.35,
+        "upper_right": [
+          {
+            "p": 361,
+            "v": 6.893
+          },
+          {
+            "p": 2588,
+            "v": 1.284
+          },
+          {
+            "p": 2719,
+            "v": 1.177
+          }
+        ],
+        "upper_y_edges": [
+          {
+            "p": 735,
+            "v": 4.013
+          },
+          {
+            "p": 476,
+            "v": 2.043
+          },
+          {
+            "p": 560,
+            "v": 1.083
+          },
+          {
+            "p": 667,
+            "v": 0.953
+          },
+          {
+            "p": 886,
+            "v": 0.877
+          },
+          {
+            "p": 349,
+            "v": 0.817
+          }
+        ],
+        "grid_top": [
+          {
+            "p": 347,
+            "v": 6.975
+          },
+          {
+            "p": 297,
+            "v": 5.448
+          },
+          {
+            "p": 200,
+            "v": 0.449
+          }
+        ],
+        "grid_period_candidates": [
+          {
+            "p": 107,
+            "v": 887.15
+          },
+          {
+            "p": 134,
+            "v": -9.606
+          }
+        ]
+      }
+    ],
+    "raw_measurement_files": [
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_b\\tracking_measurements.json",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_b\\clean_measurements.json",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\runs\\retest_b\\final_measurement_evidence.json"
+    ]
+  },
+  "unresolved": [
+    "초기 어두운 상단 패널의 정밀 수직 경로와 크기 변화",
+    "광선의 광량 변화와 위치 이동의 정확한 분리",
+    "아래 어두운 면/선의 별도 오브젝트 여부",
+    "1.4초 이후 정착/퇴장 여부는 지정 구간 밖이므로 판단하지 않음"
+  ]
+}

@@ -1,0 +1,89 @@
+# T07 관측 기록
+
+허용 구간: 8.2–10.4초
+
+8.2–10.4초: EG-BIM 소개 레이아웃은 유지되고, 왼쪽 소프트웨어 창 내부의 선택 표시가 목록 첫째 행/첫째 썸네일에서 둘째, 셋째, 넷째로 차례로 이동한다.
+
+## 관측
+
+### T07-O1
+
+녹색 격자와 큰 갈색 E 형태 배경, 오른쪽 흰 EG-BIM 및 Engineering Graphicer for BIM 부제, 한국어 설명 문단, 왼쪽 위 노란 외곽선 소프트웨어 창이 보인다. 8.2–10.4초 전체 구성과 창의 외곽 위치는 대체로 고정되어 있다.
+
+근거: 8.200000초 — `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\setup\cases\자료013\T07\f_00492_008.200.png`; 8.800000초 — `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\setup\cases\자료013\T07\f_00528_008.800.png`; 9.400000초 — `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\setup\cases\자료013\T07\f_00564_009.400.png`; 10.300000초 — `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\setup\cases\자료013\T07\f_00618_010.300.png`
+
+### T07-O2
+
+창 안은 왼쪽 폴더/탐색 트리, 위쪽 도면 목록 표, 아래쪽 검은 CAD 썸네일 그리드로 구성된다. 8.200초 목록 첫째 행의 주황색 가로 강조와 썸네일 첫 줄 첫째 칸의 주황 테두리/아래 라벨 강조가 함께 보인다.
+
+근거: 8.200000초 — `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\setup\cases\자료013\T07\f_00492_008.200.png`
+
+### T07-O3
+
+8.300–8.400초에 첫째 강조가 옅어지는 동안 둘째 목록 행과 첫 줄 둘째 썸네일의 주황색이 강해진다. 8.600–8.900초에는 둘째 행/둘째 썸네일 선택이 분명하다. 선택이 이동해도 목록과 썸네일의 위치는 그대로다.
+
+근거: 8.300000초 — `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\setup\cases\자료013\T07\f_00498_008.300.png`; 8.400000초 — `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\setup\cases\자료013\T07\f_00504_008.400.png`; 8.600000초 — `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\setup\cases\자료013\T07\f_00516_008.600.png`; 8.900000초 — `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\setup\cases\자료013\T07\f_00534_008.900.png`
+
+### T07-O4
+
+9.100–9.200초에는 둘째/셋째 선택이 겹쳐 보이는 중간 상태가 나타나고, 9.300초에는 셋째 행 및 첫 줄 셋째 썸네일이 강조된다. 9.900초까지 셋째 선택이 유지된다.
+
+근거: 9.100000초 — `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\setup\cases\자료013\T07\f_00546_009.100.png`; 9.200000초 — `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\setup\cases\자료013\T07\f_00552_009.200.png`; 9.300000초 — `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\setup\cases\자료013\T07\f_00558_009.300.png`; 9.900000초 — `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\setup\cases\자료013\T07\f_00594_009.900.png`
+
+### T07-O5
+
+10.000초에는 셋째와 넷째 행/썸네일 강조가 겹쳐 보이고, 10.100초에는 넷째 선택이 우세하다. 10.400초에는 넷째 목록 행과 첫 줄 넷째 썸네일이 선명하게 강조된다. 목록 강조의 아래 방향 진행과 썸네일 강조의 오른쪽 진행이 서로 대응한다.
+
+근거: 10.000000초 — `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\setup\cases\자료013\T07\f_00600_010.000.png`; 10.100000초 — `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\setup\cases\자료013\T07\f_00606_010.100.png`; 10.400000초 — `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\setup\cases\자료013\T07\f_00624_010.400.png`
+
+## 구현 추정
+
+- 선택 상태가 다른 UI 이미지를 순차로 교체하거나 짧게 디졸브하는 방식으로 관측 결과를 재현할 수 있다. 실제 화면 녹화인지 개별 스틸 합성인지는 미확인이다.
+
+## 불확실성과 범위
+
+- 보이는 선택 강조 변화만으로 실제 마우스 클릭, 사용자 입력, 프로그램 동작 녹화 여부는 판정할 수 없다. 커서 동작을 근거로 클릭을 주장하지 않는다.
+
+- 0.1초 표본 간격이므로 전환 시작과 종료는 표본 사이일 수 있다. 중간 프레임의 두 선택 동시 표시가 애플리케이션 자체 효과인지 편집 디졸브인지 확정 불가.
+
+- 세부 도면 파일명은 작은 글자여서 전체를 정확히 전사하지 않았다.
+
+Provided chronological boards visually inspected; extraction logs used for actual playback times. T06/T07 additionally inspected crops from supplied native PNGs. No audio analysis or source modification. No external APIs.
+
+## 읽은 파일
+
+- `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\analysis_input\cases.json`
+
+- `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\setup\cases\자료013\T07\실행기록.json`
+
+- `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\setup\cases\자료013\T07\overview.jpg`
+
+- `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\setup\cases\자료013\T07\ui-detail.jpg`
+
+- `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\setup\cases\자료013\T07\f_00492_008.200.png`
+
+- `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\setup\cases\자료013\T07\f_00498_008.300.png`
+
+- `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\setup\cases\자료013\T07\f_00504_008.400.png`
+
+- `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\setup\cases\자료013\T07\f_00516_008.600.png`
+
+- `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\setup\cases\자료013\T07\f_00546_009.100.png`
+
+- `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\setup\cases\자료013\T07\f_00552_009.200.png`
+
+- `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\setup\cases\자료013\T07\f_00558_009.300.png`
+
+- `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\setup\cases\자료013\T07\f_00594_009.900.png`
+
+- `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\setup\cases\자료013\T07\f_00600_010.000.png`
+
+- `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\setup\cases\자료013\T07\f_00606_010.100.png`
+
+- `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\setup\cases\자료013\T07\f_00624_010.400.png`
+
+- `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\without_b\T07-native-detail-1.jpg`
+
+- `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\without_b\T07-native-detail-2.jpg`
+
+- `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase01a-a3\runs\without_b\T07-native-detail-3.jpg`

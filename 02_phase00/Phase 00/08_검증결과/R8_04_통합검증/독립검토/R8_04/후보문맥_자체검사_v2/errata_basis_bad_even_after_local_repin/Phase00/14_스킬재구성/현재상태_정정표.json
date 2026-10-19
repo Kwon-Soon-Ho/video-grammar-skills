@@ -1,0 +1,116 @@
+{
+  "id": "r8-current-stage-errata",
+  "version": "0.1.1",
+  "status": "draft_current_use_guidance",
+  "source_pin_policy": "R6/R7 originals unchanged; explicit separate correction scope only",
+  "records": [
+    {
+      "id": "ST-R4",
+      "source": {
+        "path": "04_기록규격/06_통합최소기록_규격_v0.2.md",
+        "sha256": "3c301c7f874921a3bd7bc3e5922ca8cb7c16ddc950f78ecc9850251b9474df74"
+      },
+      "historical_statement": "R4-4 후보/2단계 후보·기본도구 전환 후속",
+      "current_interpretation": "R4 통합 v0.2는 현재 기본 기록 계약이다. 이 파일의 당시 후보/후속 단계 표시는 역사 상태이며 현재 미채택을 뜻하지 않는다.",
+      "basis": [
+        {
+          "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "path": "07_실행도구/자료검증.py",
+          "sha256": "0abd4cba7f1ba3a69011ef67758dbcc6f5c9599785aa0ae5ed5fd6cd0e434ec4"
+        }
+      ],
+      "scope": "단계 상태 표시만 정정. 필드 의미·규격·숫자는 그대로",
+      "semantic_contract_changed": false,
+      "if_source_hash_changes": "hold_this_correction_and_review; never repin automatically",
+      "if_source_or_basis_hash_changes": "hold_only_this_correction_on_missing_or_mismatched_source_or_basis; never automatically repin"
+    },
+    {
+      "id": "ST-R2",
+      "source": {
+        "path": "01_공통용어/02_기록단위와분류축.md",
+        "sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a"
+      },
+      "historical_statement": "현재 asset/segments/frames/beats·별도state필드없음·R4에서연결",
+      "current_interpretation": "당시 R2 상태다. 현재 R4 v0.2는 /spatial_contract/evidence_contract/targets의 unit=screen_state와 /units의 target_ref·related_state_refs로 연결한다. beat의 parent는 segment이고 screen_state는 관련 참조여서 배타 자식이 아니다.",
+      "basis": [
+        {
+          "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+          "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37"
+        },
+        {
+          "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+          "sha256": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac"
+        }
+      ],
+      "scope": "기존 R2/R4 계약의 현재 연결을 설명. 새 필드나 계층을 발급하지 않음",
+      "semantic_contract_changed": false,
+      "if_source_hash_changes": "hold_this_correction_and_review; never repin automatically",
+      "if_source_or_basis_hash_changes": "hold_only_this_correction_on_missing_or_mismatched_source_or_basis; never automatically repin"
+    },
+    {
+      "id": "ST-R2-JSON",
+      "source": {
+        "path": "01_공통용어/분류운영규칙.json",
+        "sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d"
+      },
+      "historical_statement": "existing_field/mapping_boundary의 R4 이전 상태 표기",
+      "current_interpretation": "existing_field 등은 당시 이관 설명이다. 현행 저장 규격은 R4 v0.2를 따르고 의미 기준/분류축은 이 운영규칙을 참조한다.",
+      "basis": [
+        {
+          "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+          "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37"
+        }
+      ],
+      "scope": "상태/저장위치 해석만 정정. 분류 의미 변경 없음",
+      "semantic_contract_changed": false,
+      "if_source_hash_changes": "hold_this_correction_and_review; never repin automatically",
+      "if_source_or_basis_hash_changes": "hold_only_this_correction_on_missing_or_mismatched_source_or_basis; never automatically repin"
+    },
+    {
+      "id": "ST-HANDOFF",
+      "source": {
+        "path": "09_다음단계인계/R7_01-A_구현전_인계.md",
+        "sha256": "438dc5bb19e7a4356436869aa67704712e5e2257084d89cd15fc3bbfe8d2f0b4"
+      },
+      "historical_statement": "영상→설명구간→화면상태→짧은동작",
+      "current_interpretation": "네 의미 단위의 소개 순서이지 엄격한 4층 트리가 아니다. screen_state와 beat는 segment에 연결하며 동작은 관련 상태를 가로지를 수 있다.",
+      "basis": [
+        {
+          "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+          "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37"
+        },
+        {
+          "path": "01_공통용어/02_기록단위와분류축.md",
+          "sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a"
+        }
+      ],
+      "scope": "기존 계약의 비배타 관계를 명확히 함. 01-A 구현 미착수",
+      "semantic_contract_changed": false,
+      "if_source_hash_changes": "hold_this_correction_and_review; never repin automatically",
+      "if_source_or_basis_hash_changes": "hold_only_this_correction_on_missing_or_mismatched_source_or_basis; never automatically repin"
+    },
+    {
+      "id": "ST-R7-R8",
+      "source": {
+        "path": "09_다음단계인계/R7_R8_스킬재구성_인계.md",
+        "sha256": "7d7abac31fc1501c48fd17d2e1df0fff368057bedbf90bbb270e47baf12872ac"
+      },
+      "historical_statement": "스킬 수정·재평가는 아직 하지 않았다",
+      "current_interpretation": "R7 종료 시점의 계획 인계다. 현재는 R8-1/2/3 후보 개발비교와 구성·분량 유지 회신이 완료되고 R8-4 및 전체 재검수 후속 검증을 진행한다. 최신 단계/후보상태는 R8 현재사용안내와 진행상태를 읽는다.",
+      "basis": [
+        {
+          "path": "14_스킬재구성/사람피드백/R8-3_적용성검토자_검토답변.json",
+          "sha256": "e7906857aa075179a0947489a8dfa3fba267145df035c177972c76f20f788a1d"
+        }
+      ],
+      "scope": "과거 인계의 단계 상태만 현재 맥락으로 연결. 기존 pin/권한/회사 승인/01-A 범위 변경 없음.",
+      "semantic_contract_changed": false,
+      "if_source_or_basis_hash_changes": "hold_only_this_correction_on_missing_or_mismatched_source_or_basis; never automatically repin"
+    }
+  ],
+  "company_approved": false,
+  "operational_release": false
+}

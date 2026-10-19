@@ -1,0 +1,67 @@
+{
+  "reviewed_at": "2026-10-14",
+  "reviewer": "독립 R2 레드팀 / r_audit_data",
+  "review_kind": "파일 독해·메모리 내 대조와 설명용 반례 검토",
+  "d_files_modified": false,
+  "taxonomy_ref": "company-video-taxonomy@0.1.1",
+  "taxonomy_sha256": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+  "excluded": [
+    "D 파일 수정",
+    "외부 웹 재탐색·원문 재확인",
+    "신규 스킬 실행",
+    "R4 스키마 변경",
+    "R3 품질 규칙 설계",
+    "01-A 분석 구현",
+    "실제 영상 판정·회사 승인"
+  ],
+  "stage": "R2-1",
+  "decision": "pass_with_scope_limit",
+  "targets": [
+    "05_출처와검토/R2_조사기록.json",
+    "05_출처와검토/R2_현황과출처.md",
+    "08_검증결과/R2_01_현황점검.json"
+  ],
+  "coverage": {
+    "taxonomy_terms_read": 76,
+    "current_terms": 75,
+    "deprecated_terms": 1,
+    "source_registry_rows_read": 6,
+    "external_sources": 5,
+    "project_sources": 1,
+    "gap_rows_read": 7,
+    "verified": "현재 사전 해시, 8축과 현재/폐기 개수, 명시된 외부/자체설계 구분, 세 문서 사이 범위와 단계 일치",
+    "not_verified": "외부 웹의 각 절을 이 감사에서 직접 다시 읽지 않았다. 이번 결과는 조사기록의 내부 정합성 검토이며 외부 원문 5개의 사실성 재인증이 아니다."
+  },
+  "checks": [
+    {
+      "id": "taxonomy_preserved",
+      "passed": true,
+      "evidence": "사전 SHA256 직접 계산 결과 기존 고정 해시와 일치. ID·정의 파일의 변경 없음."
+    },
+    {
+      "id": "counts",
+      "passed": true,
+      "evidence": "76=75 현재+STYLE-PIP 폐기1. art_direction 6은 폐기1을 포함한 전체 개수이며 현재 가이드는5."
+    },
+    {
+      "id": "source_scope",
+      "passed": true,
+      "evidence": "AWS/Adobe는 촬영·검출 문맥, W3C 주석모델은 대상 범위, easing은 진행 함수, SVG 합성은 opacity/구현 한계로 제한. 4단위·75개 명칭은 R2-PROJECT의 자체설계."
+    },
+    {
+      "id": "w3c_state_boundary",
+      "passed": true,
+      "evidence": "W3C State와 프로젝트 화면 상태의 의미가 다르다고 JSON/MD 모두 명시."
+    },
+    {
+      "id": "gap_register",
+      "passed": true,
+      "evidence": "G1~G7은 현황 기준과 후속 수정 단계를 제시. 아직 후속 구현이 끝났다고 주장하지 않음."
+    }
+  ],
+  "findings": [],
+  "notes": [
+    "읽었다는 기록과 이 감사자가 외부 원문을 독립적으로 확인한 사실을 구분해야 한다.",
+    "R2-2/3의 개별 판정 결함은 해당 레드팀 결과에서 다룬다. 본 단계 통과를 R2 전체 종료로 합산하지 않는다."
+  ]
+}

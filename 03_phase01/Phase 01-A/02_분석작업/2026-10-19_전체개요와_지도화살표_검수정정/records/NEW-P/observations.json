@@ -1,0 +1,3411 @@
+{
+  "schema_version": "video-observation-0.4",
+  "skill_version": "0.1.0-draft.8",
+  "case_id": "DEV-NEW-P-FIRST-20261019",
+  "source": {
+    "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\한맥 영상\\PG 착공식_자율주행영상\\250609-1_PG착공식_A-combineAll.mp4",
+    "sha256": "8d5bf71b3d739c6bf3e758da1c1d7db51becbab4dd77eab4389ee9d0a48a04c3"
+  },
+  "window_seconds": [
+    40,
+    48
+  ],
+  "method": "사전에 고정한 새 사내 영상 구간을 0.5초 간격 표본 17장으로 추출. 개요 시트를 시간순·정착 상태 역추적으로 확인하고 선택 native 및 검증된 좌우 분할을 대조했다. 기존 정답/원고는 읽지 않음. 동일 AI 개발 실행, 독립 평가 아님. 끝 경계 프레임은 문맥 근거. 동일 문맥의 후속 정밀 검토에서 0.1초 간격 81개 추가 표본을 만들고, N의 오른쪽 설명 영역 또는 P의 지역 카드·프레임 영역을 전 시간순 ROI 시트로 대조했다. 추가 표본 81장을 모두 전체 화면 native로 읽은 것은 아니다. 후속 대상×속성 재대조에서 요약 행의 change를 주장 facet만으로 정하지 않고 실제 시간 변화·미확정에 맞춰 보완했다. 추가로 전체 개요 5초 표본과 지정 ROI, PG 연결선의 30fps 연속 10프레임을 검토했다. 지도 정합은 실제 native ROI와 별도 수치 진단을 대조했다. 동일 AI 후속 검수이며 정밀 검수 완료 아님.",
+  "document_mode": "none",
+  "audio_reviewed": false,
+  "files_read": [
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\window\\실행기록.json",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\selection-plan.json"
+  ],
+  "evidence": [
+    {
+      "id": "f00",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\window\\f_01200_040.000.png",
+      "actual_seconds": "40",
+      "role": "within"
+    },
+    {
+      "id": "f01",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\window\\f_01215_040.500.png",
+      "actual_seconds": "81/2",
+      "role": "within"
+    },
+    {
+      "id": "f02",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\window\\f_01230_041.000.png",
+      "actual_seconds": "41",
+      "role": "within"
+    },
+    {
+      "id": "f03",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\window\\f_01245_041.500.png",
+      "actual_seconds": "83/2",
+      "role": "within"
+    },
+    {
+      "id": "f04",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\window\\f_01260_042.000.png",
+      "actual_seconds": "42",
+      "role": "within"
+    },
+    {
+      "id": "f05",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\window\\f_01275_042.500.png",
+      "actual_seconds": "85/2",
+      "role": "within"
+    },
+    {
+      "id": "f06",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\window\\f_01290_043.000.png",
+      "actual_seconds": "43",
+      "role": "within"
+    },
+    {
+      "id": "f07",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\window\\f_01305_043.500.png",
+      "actual_seconds": "87/2",
+      "role": "within"
+    },
+    {
+      "id": "f08",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\window\\f_01320_044.000.png",
+      "actual_seconds": "44",
+      "role": "within"
+    },
+    {
+      "id": "f09",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\window\\f_01335_044.500.png",
+      "actual_seconds": "89/2",
+      "role": "within"
+    },
+    {
+      "id": "f10",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\window\\f_01350_045.000.png",
+      "actual_seconds": "45",
+      "role": "within"
+    },
+    {
+      "id": "f11",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\window\\f_01365_045.500.png",
+      "actual_seconds": "91/2",
+      "role": "within"
+    },
+    {
+      "id": "f12",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\window\\f_01380_046.000.png",
+      "actual_seconds": "46",
+      "role": "within"
+    },
+    {
+      "id": "f13",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\window\\f_01395_046.500.png",
+      "actual_seconds": "93/2",
+      "role": "within"
+    },
+    {
+      "id": "f14",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\window\\f_01410_047.000.png",
+      "actual_seconds": "47",
+      "role": "within"
+    },
+    {
+      "id": "f15",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\window\\f_01425_047.500.png",
+      "actual_seconds": "95/2",
+      "role": "within"
+    },
+    {
+      "id": "f16",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\window\\f_01440_048.000.png",
+      "actual_seconds": "48",
+      "role": "context_after"
+    },
+    {
+      "id": "x017",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail1\\f_01200_040.000.png",
+      "actual_seconds": "40",
+      "role": "within"
+    },
+    {
+      "id": "x018",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail1\\f_01203_040.100.png",
+      "actual_seconds": "401/10",
+      "role": "within"
+    },
+    {
+      "id": "x019",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail1\\f_01206_040.200.png",
+      "actual_seconds": "201/5",
+      "role": "within"
+    },
+    {
+      "id": "x020",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail1\\f_01209_040.300.png",
+      "actual_seconds": "403/10",
+      "role": "within"
+    },
+    {
+      "id": "x021",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail1\\f_01212_040.400.png",
+      "actual_seconds": "202/5",
+      "role": "within"
+    },
+    {
+      "id": "x022",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail1\\f_01215_040.500.png",
+      "actual_seconds": "81/2",
+      "role": "within"
+    },
+    {
+      "id": "x023",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail1\\f_01218_040.600.png",
+      "actual_seconds": "203/5",
+      "role": "within"
+    },
+    {
+      "id": "x024",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail1\\f_01221_040.700.png",
+      "actual_seconds": "407/10",
+      "role": "within"
+    },
+    {
+      "id": "x025",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail1\\f_01224_040.800.png",
+      "actual_seconds": "204/5",
+      "role": "within"
+    },
+    {
+      "id": "x026",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail1\\f_01227_040.900.png",
+      "actual_seconds": "409/10",
+      "role": "within"
+    },
+    {
+      "id": "x027",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail1\\f_01230_041.000.png",
+      "actual_seconds": "41",
+      "role": "within"
+    },
+    {
+      "id": "x028",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail1\\f_01233_041.100.png",
+      "actual_seconds": "411/10",
+      "role": "within"
+    },
+    {
+      "id": "x029",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail1\\f_01236_041.200.png",
+      "actual_seconds": "206/5",
+      "role": "within"
+    },
+    {
+      "id": "x030",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail1\\f_01239_041.300.png",
+      "actual_seconds": "413/10",
+      "role": "within"
+    },
+    {
+      "id": "x031",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail1\\f_01242_041.400.png",
+      "actual_seconds": "207/5",
+      "role": "within"
+    },
+    {
+      "id": "x032",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail1\\f_01245_041.500.png",
+      "actual_seconds": "83/2",
+      "role": "within"
+    },
+    {
+      "id": "x033",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail1\\f_01248_041.600.png",
+      "actual_seconds": "208/5",
+      "role": "within"
+    },
+    {
+      "id": "x034",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail1\\f_01251_041.700.png",
+      "actual_seconds": "417/10",
+      "role": "within"
+    },
+    {
+      "id": "x035",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail1\\f_01254_041.800.png",
+      "actual_seconds": "209/5",
+      "role": "within"
+    },
+    {
+      "id": "x036",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail1\\f_01257_041.900.png",
+      "actual_seconds": "419/10",
+      "role": "within"
+    },
+    {
+      "id": "x037",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail1\\f_01260_042.000.png",
+      "actual_seconds": "42",
+      "role": "within"
+    },
+    {
+      "id": "x038",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail1\\f_01263_042.100.png",
+      "actual_seconds": "421/10",
+      "role": "within"
+    },
+    {
+      "id": "x039",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail1\\f_01266_042.200.png",
+      "actual_seconds": "211/5",
+      "role": "within"
+    },
+    {
+      "id": "x040",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail1\\f_01269_042.300.png",
+      "actual_seconds": "423/10",
+      "role": "within"
+    },
+    {
+      "id": "x041",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail1\\f_01272_042.400.png",
+      "actual_seconds": "212/5",
+      "role": "within"
+    },
+    {
+      "id": "x042",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail1\\f_01275_042.500.png",
+      "actual_seconds": "85/2",
+      "role": "within"
+    },
+    {
+      "id": "x043",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail1\\f_01278_042.600.png",
+      "actual_seconds": "213/5",
+      "role": "within"
+    },
+    {
+      "id": "x044",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail2\\f_01281_042.700.png",
+      "actual_seconds": "427/10",
+      "role": "within"
+    },
+    {
+      "id": "x045",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail2\\f_01284_042.800.png",
+      "actual_seconds": "214/5",
+      "role": "within"
+    },
+    {
+      "id": "x046",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail2\\f_01287_042.900.png",
+      "actual_seconds": "429/10",
+      "role": "within"
+    },
+    {
+      "id": "x047",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail2\\f_01290_043.000.png",
+      "actual_seconds": "43",
+      "role": "within"
+    },
+    {
+      "id": "x048",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail2\\f_01293_043.100.png",
+      "actual_seconds": "431/10",
+      "role": "within"
+    },
+    {
+      "id": "x049",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail2\\f_01296_043.200.png",
+      "actual_seconds": "216/5",
+      "role": "within"
+    },
+    {
+      "id": "x050",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail2\\f_01299_043.300.png",
+      "actual_seconds": "433/10",
+      "role": "within"
+    },
+    {
+      "id": "x051",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail2\\f_01302_043.400.png",
+      "actual_seconds": "217/5",
+      "role": "within"
+    },
+    {
+      "id": "x052",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail2\\f_01305_043.500.png",
+      "actual_seconds": "87/2",
+      "role": "within"
+    },
+    {
+      "id": "x053",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail2\\f_01308_043.600.png",
+      "actual_seconds": "218/5",
+      "role": "within"
+    },
+    {
+      "id": "x054",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail2\\f_01311_043.700.png",
+      "actual_seconds": "437/10",
+      "role": "within"
+    },
+    {
+      "id": "x055",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail2\\f_01314_043.800.png",
+      "actual_seconds": "219/5",
+      "role": "within"
+    },
+    {
+      "id": "x056",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail2\\f_01317_043.900.png",
+      "actual_seconds": "439/10",
+      "role": "within"
+    },
+    {
+      "id": "x057",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail2\\f_01320_044.000.png",
+      "actual_seconds": "44",
+      "role": "within"
+    },
+    {
+      "id": "x058",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail2\\f_01323_044.100.png",
+      "actual_seconds": "441/10",
+      "role": "within"
+    },
+    {
+      "id": "x059",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail2\\f_01326_044.200.png",
+      "actual_seconds": "221/5",
+      "role": "within"
+    },
+    {
+      "id": "x060",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail2\\f_01329_044.300.png",
+      "actual_seconds": "443/10",
+      "role": "within"
+    },
+    {
+      "id": "x061",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail2\\f_01332_044.400.png",
+      "actual_seconds": "222/5",
+      "role": "within"
+    },
+    {
+      "id": "x062",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail2\\f_01335_044.500.png",
+      "actual_seconds": "89/2",
+      "role": "within"
+    },
+    {
+      "id": "x063",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail2\\f_01338_044.600.png",
+      "actual_seconds": "223/5",
+      "role": "within"
+    },
+    {
+      "id": "x064",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail2\\f_01341_044.700.png",
+      "actual_seconds": "447/10",
+      "role": "within"
+    },
+    {
+      "id": "x065",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail2\\f_01344_044.800.png",
+      "actual_seconds": "224/5",
+      "role": "within"
+    },
+    {
+      "id": "x066",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail2\\f_01347_044.900.png",
+      "actual_seconds": "449/10",
+      "role": "within"
+    },
+    {
+      "id": "x067",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail2\\f_01350_045.000.png",
+      "actual_seconds": "45",
+      "role": "within"
+    },
+    {
+      "id": "x068",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail2\\f_01353_045.100.png",
+      "actual_seconds": "451/10",
+      "role": "within"
+    },
+    {
+      "id": "x069",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail2\\f_01356_045.200.png",
+      "actual_seconds": "226/5",
+      "role": "within"
+    },
+    {
+      "id": "x070",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail2\\f_01359_045.300.png",
+      "actual_seconds": "453/10",
+      "role": "within"
+    },
+    {
+      "id": "x071",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail3\\f_01362_045.400.png",
+      "actual_seconds": "227/5",
+      "role": "within"
+    },
+    {
+      "id": "x072",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail3\\f_01365_045.500.png",
+      "actual_seconds": "91/2",
+      "role": "within"
+    },
+    {
+      "id": "x073",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail3\\f_01368_045.600.png",
+      "actual_seconds": "228/5",
+      "role": "within"
+    },
+    {
+      "id": "x074",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail3\\f_01371_045.700.png",
+      "actual_seconds": "457/10",
+      "role": "within"
+    },
+    {
+      "id": "x075",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail3\\f_01374_045.800.png",
+      "actual_seconds": "229/5",
+      "role": "within"
+    },
+    {
+      "id": "x076",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail3\\f_01377_045.900.png",
+      "actual_seconds": "459/10",
+      "role": "within"
+    },
+    {
+      "id": "x077",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail3\\f_01380_046.000.png",
+      "actual_seconds": "46",
+      "role": "within"
+    },
+    {
+      "id": "x078",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail3\\f_01383_046.100.png",
+      "actual_seconds": "461/10",
+      "role": "within"
+    },
+    {
+      "id": "x079",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail3\\f_01386_046.200.png",
+      "actual_seconds": "231/5",
+      "role": "within"
+    },
+    {
+      "id": "x080",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail3\\f_01389_046.300.png",
+      "actual_seconds": "463/10",
+      "role": "within"
+    },
+    {
+      "id": "x081",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail3\\f_01392_046.400.png",
+      "actual_seconds": "232/5",
+      "role": "within"
+    },
+    {
+      "id": "x082",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail3\\f_01395_046.500.png",
+      "actual_seconds": "93/2",
+      "role": "within"
+    },
+    {
+      "id": "x083",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail3\\f_01398_046.600.png",
+      "actual_seconds": "233/5",
+      "role": "within"
+    },
+    {
+      "id": "x084",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail3\\f_01401_046.700.png",
+      "actual_seconds": "467/10",
+      "role": "within"
+    },
+    {
+      "id": "x085",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail3\\f_01404_046.800.png",
+      "actual_seconds": "234/5",
+      "role": "within"
+    },
+    {
+      "id": "x086",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail3\\f_01407_046.900.png",
+      "actual_seconds": "469/10",
+      "role": "within"
+    },
+    {
+      "id": "x087",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail3\\f_01410_047.000.png",
+      "actual_seconds": "47",
+      "role": "within"
+    },
+    {
+      "id": "x088",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail3\\f_01413_047.100.png",
+      "actual_seconds": "471/10",
+      "role": "within"
+    },
+    {
+      "id": "x089",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail3\\f_01416_047.200.png",
+      "actual_seconds": "236/5",
+      "role": "within"
+    },
+    {
+      "id": "x090",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail3\\f_01419_047.300.png",
+      "actual_seconds": "473/10",
+      "role": "within"
+    },
+    {
+      "id": "x091",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail3\\f_01422_047.400.png",
+      "actual_seconds": "237/5",
+      "role": "within"
+    },
+    {
+      "id": "x092",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail3\\f_01425_047.500.png",
+      "actual_seconds": "95/2",
+      "role": "within"
+    },
+    {
+      "id": "x093",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail3\\f_01428_047.600.png",
+      "actual_seconds": "238/5",
+      "role": "within"
+    },
+    {
+      "id": "x094",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail3\\f_01431_047.700.png",
+      "actual_seconds": "477/10",
+      "role": "within"
+    },
+    {
+      "id": "x095",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail3\\f_01434_047.800.png",
+      "actual_seconds": "239/5",
+      "role": "within"
+    },
+    {
+      "id": "x096",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail3\\f_01437_047.900.png",
+      "actual_seconds": "479/10",
+      "role": "within"
+    },
+    {
+      "id": "x097",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\detail3\\f_01440_048.000.png",
+      "actual_seconds": "48",
+      "role": "context_after"
+    },
+    {
+      "id": "p098",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\line-frame-0.png",
+      "actual_seconds": "44",
+      "role": "within"
+    },
+    {
+      "id": "p099",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\line-frame-1.png",
+      "actual_seconds": "1321/30",
+      "role": "within"
+    },
+    {
+      "id": "p100",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\line-frame-2.png",
+      "actual_seconds": "661/15",
+      "role": "within"
+    },
+    {
+      "id": "p101",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\line-frame-3.png",
+      "actual_seconds": "441/10",
+      "role": "within"
+    },
+    {
+      "id": "p102",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\line-frame-4.png",
+      "actual_seconds": "662/15",
+      "role": "within"
+    },
+    {
+      "id": "p103",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\line-frame-5.png",
+      "actual_seconds": "265/6",
+      "role": "within"
+    },
+    {
+      "id": "p104",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\line-frame-6.png",
+      "actual_seconds": "221/5",
+      "role": "within"
+    },
+    {
+      "id": "p105",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\line-frame-7.png",
+      "actual_seconds": "1327/30",
+      "role": "within"
+    },
+    {
+      "id": "p106",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\line-frame-8.png",
+      "actual_seconds": "664/15",
+      "role": "within"
+    },
+    {
+      "id": "p107",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\line-frame-9.png",
+      "actual_seconds": "443/10",
+      "role": "within"
+    },
+    {
+      "id": "p108",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\P-connector-43.8.png",
+      "actual_seconds": "219/5",
+      "role": "within"
+    },
+    {
+      "id": "p109",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\P-connector-43.9.png",
+      "actual_seconds": "439/10",
+      "role": "within"
+    },
+    {
+      "id": "p110",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\P-connector-44.0.png",
+      "actual_seconds": "44",
+      "role": "within"
+    },
+    {
+      "id": "p111",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\P-connector-44.1.png",
+      "actual_seconds": "441/10",
+      "role": "within"
+    },
+    {
+      "id": "p112",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\P-connector-44.2.png",
+      "actual_seconds": "221/5",
+      "role": "within"
+    },
+    {
+      "id": "p113",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\P-connector-44.3.png",
+      "actual_seconds": "443/10",
+      "role": "within"
+    },
+    {
+      "id": "p114",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\P-connector-44.4.png",
+      "actual_seconds": "222/5",
+      "role": "within"
+    },
+    {
+      "id": "p115",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\P-connector-44.5.png",
+      "actual_seconds": "89/2",
+      "role": "within"
+    },
+    {
+      "id": "p116",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\P-connector-45.0.png",
+      "actual_seconds": "45",
+      "role": "within"
+    },
+    {
+      "id": "p117",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\P-connector-45.1.png",
+      "actual_seconds": "451/10",
+      "role": "within"
+    },
+    {
+      "id": "p118",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\P-connector-45.2.png",
+      "actual_seconds": "226/5",
+      "role": "within"
+    },
+    {
+      "id": "p119",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\P-connector-45.3.png",
+      "actual_seconds": "453/10",
+      "role": "within"
+    }
+  ],
+  "objects": [
+    {
+      "id": "map",
+      "name": "지역 지도 배경",
+      "parent": null,
+      "shape_description": "어두운 위성 지형, 경계선과 회색 지명, 오른쪽 바다",
+      "required_properties": [
+        "identity",
+        "size"
+      ],
+      "excluded_properties": {
+        "visibility": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "text": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "shape": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "relation": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "color": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "internal_state": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "position": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님."
+      },
+      "identity": {
+        "status": "reviewed",
+        "label": "지역 지도 배경",
+        "candidates": [],
+        "claim_ids": [
+          "c001"
+        ]
+      }
+    },
+    {
+      "id": "region",
+      "name": "횡성 강조 영역",
+      "parent": "map",
+      "shape_description": "청록색 면과 밝은 외곽·흰 횡성 글자",
+      "required_properties": [
+        "identity",
+        "text",
+        "color"
+      ],
+      "excluded_properties": {
+        "visibility": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "size": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "shape": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "relation": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "internal_state": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "position": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님."
+      },
+      "identity": {
+        "status": "reviewed",
+        "label": "횡성 강조 영역",
+        "candidates": [],
+        "claim_ids": [
+          "c003"
+        ]
+      }
+    },
+    {
+      "id": "police",
+      "name": "왼쪽 경찰청 로고 카드",
+      "parent": null,
+      "shape_description": "노란 독수리 문양·파란 경찰청 글자, 밝은 사각 면과 가는 모서리 선",
+      "required_properties": [
+        "identity",
+        "text",
+        "visibility"
+      ],
+      "excluded_properties": {
+        "size": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "shape": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "relation": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "color": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "internal_state": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "position": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님."
+      },
+      "identity": {
+        "status": "reviewed",
+        "label": "왼쪽 경찰청 로고 카드",
+        "candidates": [],
+        "claim_ids": [
+          "c006"
+        ]
+      }
+    },
+    {
+      "id": "policy-panel",
+      "name": "왼쪽 정책 설명 패널",
+      "parent": null,
+      "shape_description": "노랑·연두 가로 화살촉 띠 두 줄, 반투명 사각 면과 바깥 모서리 선",
+      "required_properties": [
+        "identity",
+        "text",
+        "color"
+      ],
+      "excluded_properties": {
+        "visibility": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "size": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "shape": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "relation": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "internal_state": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "position": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님."
+      },
+      "identity": {
+        "status": "reviewed",
+        "label": "왼쪽 정책 설명 패널",
+        "candidates": [],
+        "claim_ids": [
+          "c009"
+        ]
+      }
+    },
+    {
+      "id": "police-link",
+      "name": "왼쪽 연결선",
+      "parent": null,
+      "shape_description": "기관 카드와 위 패널을 잇는 가는 노란 세로선·반복 화살 모양과 원형 접점",
+      "required_properties": [
+        "identity",
+        "relation"
+      ],
+      "excluded_properties": {
+        "visibility": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "text": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "size": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "shape": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "color": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "internal_state": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "position": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님."
+      },
+      "identity": {
+        "status": "reviewed",
+        "label": "왼쪽 연결선",
+        "candidates": [],
+        "claim_ids": [
+          "c013"
+        ]
+      }
+    },
+    {
+      "id": "gangwon",
+      "name": "중앙 강원특별자치도 카드",
+      "parent": null,
+      "shape_description": "분홍·회색 로고 글자와 밝은 사각 면·모서리 선",
+      "required_properties": [
+        "identity",
+        "text",
+        "visibility"
+      ],
+      "excluded_properties": {
+        "size": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "shape": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "relation": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "color": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "internal_state": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "position": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님."
+      },
+      "identity": {
+        "status": "reviewed",
+        "label": "중앙 강원특별자치도 카드",
+        "candidates": [],
+        "claim_ids": [
+          "c015"
+        ]
+      }
+    },
+    {
+      "id": "regional-frame",
+      "name": "오른쪽 지역 설명 프레임",
+      "parent": null,
+      "shape_description": "분홍 가는 외곽 모서리, 반투명 사각 면과 붉은 가로 띠",
+      "required_properties": [
+        "identity",
+        "visibility",
+        "size"
+      ],
+      "excluded_properties": {
+        "text": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "shape": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "relation": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "color": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "internal_state": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "position": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님."
+      },
+      "identity": {
+        "status": "reviewed",
+        "label": "오른쪽 지역 설명 프레임",
+        "candidates": [],
+        "claim_ids": [
+          "c018"
+        ]
+      }
+    },
+    {
+      "id": "regional-row1",
+      "name": "지역 설명 첫 줄",
+      "parent": "regional-frame",
+      "shape_description": "붉은 가로 화살촉 띠와 흰 한글",
+      "required_properties": [
+        "identity",
+        "text",
+        "visibility",
+        "color"
+      ],
+      "excluded_properties": {
+        "size": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "shape": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "relation": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "internal_state": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "position": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님."
+      },
+      "identity": {
+        "status": "reviewed",
+        "label": "지역 설명 첫 줄",
+        "candidates": [],
+        "claim_ids": [
+          "c021"
+        ]
+      }
+    },
+    {
+      "id": "regional-row2",
+      "name": "지역 설명 둘째 줄",
+      "parent": "regional-frame",
+      "shape_description": "첫 줄 아래의 분홍 가로 화살촉 띠와 흰 한글",
+      "required_properties": [
+        "identity",
+        "text",
+        "visibility",
+        "color"
+      ],
+      "excluded_properties": {
+        "size": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "shape": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "relation": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "internal_state": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "position": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님."
+      },
+      "identity": {
+        "status": "reviewed",
+        "label": "지역 설명 둘째 줄",
+        "candidates": [],
+        "claim_ids": [
+          "c025"
+        ]
+      }
+    },
+    {
+      "id": "regional-link",
+      "name": "지역 기관과 설명 연결선",
+      "parent": null,
+      "shape_description": "분홍 세로 화살 모양 선·흰 원형 접점",
+      "required_properties": [
+        "identity",
+        "visibility",
+        "relation",
+        "internal_state",
+        "position"
+      ],
+      "excluded_properties": {
+        "text": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "size": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "shape": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "color": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님."
+      },
+      "identity": {
+        "status": "reviewed",
+        "label": "지역 기관과 설명 연결선",
+        "candidates": [],
+        "claim_ids": [
+          "c029"
+        ]
+      }
+    },
+    {
+      "id": "caption",
+      "name": "하단 진행 자막",
+      "parent": null,
+      "shape_description": "검은 반투명 가로 면, 회색 문구 중 일부가 흰색으로 밝아짐",
+      "required_properties": [
+        "identity",
+        "text",
+        "color",
+        "visibility"
+      ],
+      "excluded_properties": {
+        "size": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "shape": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "relation": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "internal_state": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "position": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님."
+      },
+      "identity": {
+        "status": "reviewed",
+        "label": "하단 진행 자막",
+        "candidates": [],
+        "claim_ids": [
+          "c032"
+        ]
+      }
+    },
+    {
+      "id": "gangwon-face",
+      "name": "강원 카드의 밝은 배경 면",
+      "parent": "gangwon",
+      "shape_description": "로고 뒤에 나중에 펼쳐지는 흰색·연분홍 직사각 면과 가는 모서리 선",
+      "required_properties": [
+        "identity",
+        "visibility",
+        "size"
+      ],
+      "excluded_properties": {
+        "text": "이번 독립 관측은 면의 형태·출현·가로 전개. 다른 외관은 기존 전체 디자인에 연결.",
+        "internal_state": "이번 독립 관측은 면의 형태·출현·가로 전개. 다른 외관은 기존 전체 디자인에 연결.",
+        "relation": "이번 독립 관측은 면의 형태·출현·가로 전개. 다른 외관은 기존 전체 디자인에 연결.",
+        "shape": "이번 독립 관측은 면의 형태·출현·가로 전개. 다른 외관은 기존 전체 디자인에 연결.",
+        "color": "이번 독립 관측은 면의 형태·출현·가로 전개. 다른 외관은 기존 전체 디자인에 연결.",
+        "position": "이번 독립 관측은 면의 형태·출현·가로 전개. 다른 외관은 기존 전체 디자인에 연결."
+      },
+      "identity": {
+        "status": "reviewed",
+        "label": "강원 카드의 밝은 배경 면",
+        "candidates": [],
+        "claim_ids": [
+          "c038"
+        ]
+      }
+    }
+  ],
+  "observation_rows": [
+    {
+      "id": "map-identity",
+      "object_id": "map",
+      "property": "identity",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f00"
+      ],
+      "claim_ids": [
+        "c001"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "map-size",
+      "object_id": "map",
+      "property": "size",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f00",
+        "f06",
+        "f16",
+        "f01",
+        "f02",
+        "f03",
+        "f04",
+        "f05",
+        "f07",
+        "f08",
+        "f09",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f15"
+      ],
+      "claim_ids": [
+        "c002",
+        "c041",
+        "c042"
+      ],
+      "unknown_ids": [],
+      "reason": "c002는 기각된 이전 추정. 현재 결론은 c041/c042의 분리된 고정 기준점 비교에 근거."
+    },
+    {
+      "id": "region-identity",
+      "object_id": "region",
+      "property": "identity",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f00"
+      ],
+      "claim_ids": [
+        "c003"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "region-text",
+      "object_id": "region",
+      "property": "text",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f00",
+        "f06",
+        "f14"
+      ],
+      "claim_ids": [
+        "c004"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "region-color",
+      "object_id": "region",
+      "property": "color",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f00",
+        "f06",
+        "f14"
+      ],
+      "claim_ids": [
+        "c005"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "police-identity",
+      "object_id": "police",
+      "property": "identity",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f00"
+      ],
+      "claim_ids": [
+        "c006"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "police-text",
+      "object_id": "police",
+      "property": "text",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f00",
+        "f06"
+      ],
+      "claim_ids": [
+        "c007"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "police-visibility",
+      "object_id": "police",
+      "property": "visibility",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f00",
+        "f06",
+        "f14"
+      ],
+      "claim_ids": [
+        "c008"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "policy-panel-identity",
+      "object_id": "policy-panel",
+      "property": "identity",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f00"
+      ],
+      "claim_ids": [
+        "c009"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "policy-panel-text",
+      "object_id": "policy-panel",
+      "property": "text",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f00",
+        "f06"
+      ],
+      "claim_ids": [
+        "c010",
+        "c011"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "policy-panel-color",
+      "object_id": "policy-panel",
+      "property": "color",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "f00",
+        "f06",
+        "f14"
+      ],
+      "claim_ids": [
+        "c012"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "police-link-identity",
+      "object_id": "police-link",
+      "property": "identity",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f06"
+      ],
+      "claim_ids": [
+        "c013"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "police-link-relation",
+      "object_id": "police-link",
+      "property": "relation",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f06",
+        "f14"
+      ],
+      "claim_ids": [
+        "c014"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "gangwon-identity",
+      "object_id": "gangwon",
+      "property": "identity",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f06"
+      ],
+      "claim_ids": [
+        "c015"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "gangwon-text",
+      "object_id": "gangwon",
+      "property": "text",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f06",
+        "f14"
+      ],
+      "claim_ids": [
+        "c016"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "gangwon-visibility",
+      "object_id": "gangwon",
+      "property": "visibility",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "x030",
+        "x031",
+        "x032",
+        "x033",
+        "x040",
+        "x041",
+        "x045"
+      ],
+      "claim_ids": [
+        "c017"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "regional-frame-identity",
+      "object_id": "regional-frame",
+      "property": "identity",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f06"
+      ],
+      "claim_ids": [
+        "c018"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "regional-frame-visibility",
+      "object_id": "regional-frame",
+      "property": "visibility",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "f05",
+        "f06",
+        "f07",
+        "f08"
+      ],
+      "claim_ids": [
+        "c019"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "regional-frame-size",
+      "object_id": "regional-frame",
+      "property": "size",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "f06",
+        "f07",
+        "f08"
+      ],
+      "claim_ids": [
+        "c020"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "regional-row1-identity",
+      "object_id": "regional-row1",
+      "property": "identity",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f14"
+      ],
+      "claim_ids": [
+        "c021"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "regional-row1-text",
+      "object_id": "regional-row1",
+      "property": "text",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f07",
+        "f14"
+      ],
+      "claim_ids": [
+        "c022"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "regional-row1-visibility",
+      "object_id": "regional-row1",
+      "property": "visibility",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "f06",
+        "f07",
+        "f08"
+      ],
+      "claim_ids": [
+        "c023"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "regional-row1-color",
+      "object_id": "regional-row1",
+      "property": "color",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "f06",
+        "f08",
+        "f09",
+        "f14"
+      ],
+      "claim_ids": [
+        "c024"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "regional-row2-identity",
+      "object_id": "regional-row2",
+      "property": "identity",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f14"
+      ],
+      "claim_ids": [
+        "c025"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "regional-row2-text",
+      "object_id": "regional-row2",
+      "property": "text",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f14",
+        "f16"
+      ],
+      "claim_ids": [
+        "c026"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "regional-row2-visibility",
+      "object_id": "regional-row2",
+      "property": "visibility",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "x077",
+        "x078",
+        "x080",
+        "x082",
+        "x085",
+        "x087",
+        "x089"
+      ],
+      "claim_ids": [
+        "c027"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "regional-row2-color",
+      "object_id": "regional-row2",
+      "property": "color",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "f14",
+        "f16"
+      ],
+      "claim_ids": [
+        "c028"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "regional-link-identity",
+      "object_id": "regional-link",
+      "property": "identity",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f06"
+      ],
+      "claim_ids": [
+        "c029"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "regional-link-visibility",
+      "object_id": "regional-link",
+      "property": "visibility",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "f06",
+        "f14"
+      ],
+      "claim_ids": [
+        "c030"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "regional-link-relation",
+      "object_id": "regional-link",
+      "property": "relation",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f06",
+        "f14"
+      ],
+      "claim_ids": [
+        "c031"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "caption-identity",
+      "object_id": "caption",
+      "property": "identity",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f00"
+      ],
+      "claim_ids": [
+        "c032"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "caption-text",
+      "object_id": "caption",
+      "property": "text",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "f00",
+        "f06",
+        "f16"
+      ],
+      "claim_ids": [
+        "c033",
+        "c034",
+        "c035"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "caption-color",
+      "object_id": "caption",
+      "property": "color",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "f05",
+        "f06",
+        "f10",
+        "f14",
+        "f16"
+      ],
+      "claim_ids": [
+        "c037"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "caption-visibility",
+      "object_id": "caption",
+      "property": "visibility",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "f03",
+        "f04",
+        "f12",
+        "f13"
+      ],
+      "claim_ids": [
+        "c036"
+      ],
+      "unknown_ids": [],
+      "reason": "선택 표본에서 확인한 상태·변화. identity 행은 구간 중 출현한 대상의 식별이며 연속 가시성을 뜻하지 않음."
+    },
+    {
+      "id": "regional-link-internal_state",
+      "object_id": "regional-link",
+      "property": "internal_state",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "unresolved",
+      "change": "unknown",
+      "evidence_ids": [],
+      "claim_ids": [],
+      "unknown_ids": [
+        "u02"
+      ],
+      "reason": "연결선 내부 무늬의 이동 방향은 아직 미확정"
+    },
+    {
+      "id": "gangwon-face-identity",
+      "object_id": "gangwon-face",
+      "property": "identity",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "x042"
+      ],
+      "claim_ids": [
+        "c038"
+      ],
+      "unknown_ids": [],
+      "reason": "보강 표본의 관측"
+    },
+    {
+      "id": "gangwon-face-visibility",
+      "object_id": "gangwon-face",
+      "property": "visibility",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "x033",
+        "x039",
+        "x040",
+        "x042"
+      ],
+      "claim_ids": [
+        "c039"
+      ],
+      "unknown_ids": [],
+      "reason": "보강 표본의 관측"
+    },
+    {
+      "id": "gangwon-face-size",
+      "object_id": "gangwon-face",
+      "property": "size",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "x040",
+        "x041",
+        "x042",
+        "x043",
+        "x045"
+      ],
+      "claim_ids": [
+        "c040"
+      ],
+      "unknown_ids": [],
+      "reason": "보강 표본의 관측"
+    },
+    {
+      "id": "regional-link-position",
+      "object_id": "regional-link",
+      "property": "position",
+      "time_seconds": [
+        43.8,
+        45.3
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "p098",
+        "p099",
+        "p100",
+        "p101",
+        "p102",
+        "p103",
+        "p104",
+        "p105",
+        "p106",
+        "p107",
+        "p108",
+        "p109",
+        "p110",
+        "p111",
+        "p112",
+        "p113",
+        "p114",
+        "p115",
+        "p116",
+        "p117",
+        "p118",
+        "p119"
+      ],
+      "claim_ids": [
+        "c043"
+      ],
+      "unknown_ids": [],
+      "reason": "연속 10프레임과 선택 ROI에서 같은 무늬 위치 확인. 전체 창의 모든 시각·초기 등장 과정은 미확정."
+    },
+    {
+      "id": "regional-link-position-before",
+      "object_id": "regional-link",
+      "property": "position",
+      "time_seconds": [
+        40,
+        43.8
+      ],
+      "review_state": "not_reviewed",
+      "change": "unknown",
+      "evidence_ids": [],
+      "claim_ids": [],
+      "unknown_ids": [
+        "u02"
+      ],
+      "reason": "정착 구간의 위치 비교를 앞뒤 시간대로 확대하지 않음. 생성/퇴장과 다른 시각은 추가 검수 대상."
+    },
+    {
+      "id": "regional-link-position-after",
+      "object_id": "regional-link",
+      "property": "position",
+      "time_seconds": [
+        45.3,
+        48
+      ],
+      "review_state": "not_reviewed",
+      "change": "unknown",
+      "evidence_ids": [],
+      "claim_ids": [],
+      "unknown_ids": [
+        "u02"
+      ],
+      "reason": "정착 구간의 위치 비교를 앞뒤 시간대로 확대하지 않음. 생성/퇴장과 다른 시각은 추가 검수 대상."
+    }
+  ],
+  "claims": [
+    {
+      "id": "c001",
+      "object_id": "map",
+      "property": "identity",
+      "facet": "identity",
+      "dimension": "visible-form",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "구간 안에서 관측된 형태: 어두운 위성 지형, 경계선과 회색 지명, 오른쪽 바다",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f00"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c002",
+      "object_id": "map",
+      "property": "size",
+      "facet": "direction",
+      "dimension": "global-framing",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "40초와 48초 사이 지도와 기존 기관·설명 묶음의 보이는 크기·배치가 소폭 달라져 전체 구도가 넓어지는 듯하다. 정확 공통 카메라·부모 스케일 변환은 미확정이며 모든 카드가 고정이라고 단정하지 않는다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f00",
+        "f06",
+        "f16"
+      ],
+      "content_review": "rejected"
+    },
+    {
+      "id": "c003",
+      "object_id": "region",
+      "property": "identity",
+      "facet": "identity",
+      "dimension": "visible-form",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "구간 안에서 관측된 형태: 청록색 면과 밝은 외곽·흰 횡성 글자",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f00"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c004",
+      "object_id": "region",
+      "property": "text",
+      "facet": "value",
+      "dimension": "label",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "횡성",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f00",
+        "f06",
+        "f14"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c005",
+      "object_id": "region",
+      "property": "color",
+      "facet": "value",
+      "dimension": "highlight",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "어두운 지도 안에서 횡성 영역을 청록색 채움과 밝은 외곽으로 강조한다. 이 색은 정책·기관 설명의 노랑/분홍과 별도다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f00",
+        "f06",
+        "f14"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c006",
+      "object_id": "police",
+      "property": "identity",
+      "facet": "identity",
+      "dimension": "visible-form",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "구간 안에서 관측된 형태: 노란 독수리 문양·파란 경찰청 글자, 밝은 사각 면과 가는 모서리 선",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f00"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c007",
+      "object_id": "police",
+      "property": "text",
+      "facet": "value",
+      "dimension": "agency",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "경찰청",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f00",
+        "f06"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c008",
+      "object_id": "police",
+      "property": "visibility",
+      "facet": "presence",
+      "dimension": "already-present",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "40초 구간 시작부터 왼쪽 기관 카드와 위 설명 패널이 보인다. 이 구간만으로 최초 등장 과정을 기록하지 않는다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f00",
+        "f06",
+        "f14"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c009",
+      "object_id": "policy-panel",
+      "property": "identity",
+      "facet": "identity",
+      "dimension": "visible-form",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "구간 안에서 관측된 형태: 노랑·연두 가로 화살촉 띠 두 줄, 반투명 사각 면과 바깥 모서리 선",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f00"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c010",
+      "object_id": "policy-panel",
+      "property": "text",
+      "facet": "value",
+      "dimension": "policy-1",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "자율주행자동차 운행 안전관리를 위한 도로교통법 개정 추진",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f00",
+        "f06"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c011",
+      "object_id": "policy-panel",
+      "property": "text",
+      "facet": "value",
+      "dimension": "policy-2",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "완전 자율주행시대에 대비한 도로교통안전 추진 전략 수립",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f00",
+        "f06"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c012",
+      "object_id": "policy-panel",
+      "property": "color",
+      "facet": "value",
+      "dimension": "row-emphasis",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "노랑·연두 띠의 밝기와 테두리 강도가 선택 시점에서 달라 보인다. 정확 반복 주기·행별 동기화는 미확정.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f00",
+        "f06",
+        "f14"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c013",
+      "object_id": "police-link",
+      "property": "identity",
+      "facet": "identity",
+      "dimension": "visible-form",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "구간 안에서 관측된 형태: 기관 카드와 위 패널을 잇는 가는 노란 세로선·반복 화살 모양과 원형 접점",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f06"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c014",
+      "object_id": "police-link",
+      "property": "relation",
+      "facet": "relation",
+      "dimension": "card-panel-link",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "경찰청 카드 위쪽에서 노란 연결선이 설명 패널 아래 접점으로 이어져 카드와 위 두 문구의 소속 관계를 시각적으로 묶는다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f06",
+        "f14"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c015",
+      "object_id": "gangwon",
+      "property": "identity",
+      "facet": "identity",
+      "dimension": "visible-form",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "구간 안에서 관측된 형태: 분홍·회색 로고 글자와 밝은 사각 면·모서리 선",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f06"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c016",
+      "object_id": "gangwon",
+      "property": "text",
+      "facet": "value",
+      "dimension": "agency",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "강원특별자치도",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f06",
+        "f14"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c017",
+      "object_id": "gangwon",
+      "property": "visibility",
+      "facet": "order",
+      "dimension": "logo-assembly",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "41.3초 선택 ROI에서 로고가 뚜렷하지 않고 41.4초 얇게 드러난 부분, 41.5초 일부 글자, 41.6초 강원 로고 형태가 보인다. 밝은 카드 면은 그 뒤 42.3초 가느다란 세로 범위로 생겨 42.4~42.8초 가로로 넓어진다. 로고 글자와 카드 면을 하나의 동시 등장으로 처리하지 않는다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "x030",
+        "x031",
+        "x032",
+        "x033",
+        "x040",
+        "x041",
+        "x045"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c018",
+      "object_id": "regional-frame",
+      "property": "identity",
+      "facet": "identity",
+      "dimension": "visible-form",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "구간 안에서 관측된 형태: 분홍 가는 외곽 모서리, 반투명 사각 면과 붉은 가로 띠",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f06"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c019",
+      "object_id": "regional-frame",
+      "property": "visibility",
+      "facet": "order",
+      "dimension": "frame-enter",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "43초 위쪽에 좁고 세로로 긴 반투명 면과 빈 붉은 띠가 보이고 43.5~44초 가로 폭과 첫 줄 문구가 갖춰진다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f05",
+        "f06",
+        "f07",
+        "f08"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c020",
+      "object_id": "regional-frame",
+      "property": "size",
+      "facet": "direction",
+      "dimension": "frame-width",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "43초의 좁은 배경 프레임이 44초 더 넓은 사각 범위로 보인다. 실제 레이어 폭·회전·마스크 중 무엇인지는 미확정.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f06",
+        "f07",
+        "f08"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c021",
+      "object_id": "regional-row1",
+      "property": "identity",
+      "facet": "identity",
+      "dimension": "visible-form",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "구간 안에서 관측된 형태: 붉은 가로 화살촉 띠와 흰 한글",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f14"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c022",
+      "object_id": "regional-row1",
+      "property": "text",
+      "facet": "value",
+      "dimension": "copy",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "강원특별자치도 미래산업글로벌도시 조성",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f07",
+        "f14"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c023",
+      "object_id": "regional-row1",
+      "property": "visibility",
+      "facet": "order",
+      "dimension": "copy-after-band",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "43초 빈 붉은 띠 뒤 43.5초 첫 줄 글자가 읽힌다. 배경 면과 글자 완료를 같은 사건으로 뭉치지 않는다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f06",
+        "f07",
+        "f08"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c024",
+      "object_id": "regional-row1",
+      "property": "color",
+      "facet": "value",
+      "dimension": "red-to-pink",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "첫 줄 띠는 43초 어둡게 보이다 44~44.5초 더 밝은 분홍 강조가 보이고 47초에는 두 번째 줄보다 어둡다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f06",
+        "f08",
+        "f09",
+        "f14"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c025",
+      "object_id": "regional-row2",
+      "property": "identity",
+      "facet": "identity",
+      "dimension": "visible-form",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "구간 안에서 관측된 형태: 첫 줄 아래의 분홍 가로 화살촉 띠와 흰 한글",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f14"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c026",
+      "object_id": "regional-row2",
+      "property": "text",
+      "facet": "value",
+      "dimension": "copy",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "미래차 전체 주기 기업지원 생태계 구축",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f14",
+        "f16"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c027",
+      "object_id": "regional-row2",
+      "property": "visibility",
+      "facet": "order",
+      "dimension": "second-row-enter",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "46.0초에는 둘째 줄 띠가 뚜렷하지 않고 46.1초 작은 어두운 띠가 생겨 46.2~46.4초 가로로 넓어진다. 46.5초 옅은 글자가 나타나 46.6~47.0초 더 읽히고, 47.2초 이후 밝은 분홍 강조가 강해진다. 띠·글자·강조의 시작을 분리한다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "x077",
+        "x078",
+        "x080",
+        "x082",
+        "x085",
+        "x087",
+        "x089"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c028",
+      "object_id": "regional-row2",
+      "property": "color",
+      "facet": "value",
+      "dimension": "emphasis",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "47초와 48초 둘째 줄은 첫 줄보다 밝은 분홍으로 강조돼 있다. 행별 강조의 전체 주기는 이 구간만으로 확정하지 않는다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f14",
+        "f16"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c029",
+      "object_id": "regional-link",
+      "property": "identity",
+      "facet": "identity",
+      "dimension": "visible-form",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "구간 안에서 관측된 형태: 분홍 세로 화살 모양 선·흰 원형 접점",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f06"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c030",
+      "object_id": "regional-link",
+      "property": "visibility",
+      "facet": "presence",
+      "dimension": "visible",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "43초 이후 중앙 기관 카드에서 위 프레임으로 이어지는 분홍 연결선이 보인다. 선 내부 무늬의 이동 방향은 연속 확인하지 않았다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f06",
+        "f14"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c031",
+      "object_id": "regional-link",
+      "property": "relation",
+      "facet": "relation",
+      "dimension": "agency-panel-link",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "분홍 기관 카드와 위 붉은 설명 프레임을 연결한다. 노란 경찰청 설명과 구분되는 소속 묶음이다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f06",
+        "f14"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c032",
+      "object_id": "caption",
+      "property": "identity",
+      "facet": "identity",
+      "dimension": "visible-form",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "구간 안에서 관측된 형태: 검은 반투명 가로 면, 회색 문구 중 일부가 흰색으로 밝아짐",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f00"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c033",
+      "object_id": "caption",
+      "property": "text",
+      "facet": "value",
+      "dimension": "copy-1",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "교통사고로부터 안전한 국민의 일상을 만들어가고 있습니다",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f00"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c034",
+      "object_id": "caption",
+      "property": "text",
+      "facet": "value",
+      "dimension": "copy-2",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "강원특별자치도는 5대 첨단산업 클러스터를 조성하여",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f06"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c035",
+      "object_id": "caption",
+      "property": "text",
+      "facet": "value",
+      "dimension": "copy-3",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "전기차, 자율주행차 등 첨단산업의 활성화를 추진하고 있습니다",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f16"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c036",
+      "object_id": "caption",
+      "property": "visibility",
+      "facet": "order",
+      "dimension": "copy-changes",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "41.5~42초 사이 첫 문구에서 두 번째로, 46~46.5초 사이 두 번째에서 세 번째로 교체되는 표본이 보인다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f03",
+        "f04",
+        "f12",
+        "f13"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c037",
+      "object_id": "caption",
+      "property": "color",
+      "facet": "direction",
+      "dimension": "progressive-brightening",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "42.5초 두 번째 문구의 왼쪽 부분이 더 밝고 뒤는 어두우며 뒤 시점에는 밝은 구간이 늘어난다. 47초 세 번째 문구의 앞부분이 밝고 뒤는 어둡지만 48초 경계에는 더 넓게 밝다. 음성을 듣지 않아 발화와 싱크한다고 판정하지 않는다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f05",
+        "f06",
+        "f10",
+        "f14",
+        "f16"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c038",
+      "object_id": "gangwon-face",
+      "property": "identity",
+      "facet": "identity",
+      "dimension": "visible-form",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "42.5초 로고 뒤의 밝은 직사각 면과 모서리 선을 구분한다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "x042"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c039",
+      "object_id": "gangwon-face",
+      "property": "visibility",
+      "facet": "order",
+      "dimension": "face-after-logo",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "41.6초 로고는 보이지만 밝은 직사각 면은 없고, 42.3초 뒤에 좁은 세로 면이 생겨 42.5초 이후 카드 바탕으로 보인다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "x033",
+        "x039",
+        "x040",
+        "x042"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c040",
+      "object_id": "gangwon-face",
+      "property": "size",
+      "facet": "direction",
+      "dimension": "face-width",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "42.3초 좁은 세로 면에서 42.4~42.8초 넓은 가로 카드 면으로 변한다. 실제 스케일·마스크·회전 구현은 미확정.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "x040",
+        "x041",
+        "x042",
+        "x043",
+        "x045"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c041",
+      "object_id": "map",
+      "property": "size",
+      "facet": "value",
+      "dimension": "stable-map-anchors",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "40~48초의 0.5초 표본에서 지도 남서·남동의 서로 떨어진 지형 ROI와 기존 경찰청 카드의 같은 특징이 같은 원본 좌표에 유지된다. 40/48초 정합에서도 두 지도 ROI와 카드가 같은 위치에서 일치한다. 이 구간의 지도 줌·기존 묶음 축소 추정 c002는 기각한다. 새 기관 카드·패널의 개별 등장은 별도 동작이며 AE 카메라·부모 리그를 복원한 것이 아니다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f00",
+        "f01",
+        "f02",
+        "f03",
+        "f04",
+        "f05",
+        "f06",
+        "f07",
+        "f08",
+        "f09",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f16"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c042",
+      "object_id": "map",
+      "property": "size",
+      "facet": "value",
+      "dimension": "native-roi-difference",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "statement": "같은 native 좌표 ROI를 40초와 나머지 16개 표본에서 비교한 최대 평균 RGB 절대차는 지도 남서 0.10819/남동 0.05304(0~255 단위), 경찰청 카드 0.35044다. 40/48초의 1/4회색조 NCC는 두 지도 ROI 약1, 카드 0.99999이며 일치 위치는 동일하다. 4px 정합 해상도와 압축 차이를 포함한다. 가려진 북쪽 ROI(NCC .315)와 강조가 바뀐 정책 패널(.374)은 채택하지 않는다. 세 점 affine 잔차가 0에 가깝다는 사실은 독립 검증 근거로 사용하지 않는다.",
+      "basis_kind": "calculated",
+      "evidence_ids": [
+        "f00",
+        "f01",
+        "f02",
+        "f03",
+        "f04",
+        "f05",
+        "f06",
+        "f07",
+        "f08",
+        "f09",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f16"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c043",
+      "object_id": "regional-link",
+      "property": "position",
+      "facet": "value",
+      "dimension": "stationary-upward-glyph",
+      "time_seconds": [
+        43.8,
+        45.3
+      ],
+      "statement": "연결선 ROI의 43.8~45.3초 선택 표본과 44.000~44.300초의 연속 10프레임에서 위를 향하는 화살 무늬의 위치는 같아 보이고 주로 밝기 차이가 보인다. 위를 향하는 모양을 위로 이동하는 애니메이션으로 쓰지 않는다. 검사하지 않은 시간의 흐름·초기 성장·주기는 이 결론에 포함하지 않는다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "p098",
+        "p099",
+        "p100",
+        "p101",
+        "p102",
+        "p103",
+        "p104",
+        "p105",
+        "p106",
+        "p107",
+        "p108",
+        "p109",
+        "p110",
+        "p111",
+        "p112",
+        "p113",
+        "p114",
+        "p115",
+        "p116",
+        "p117",
+        "p118",
+        "p119"
+      ],
+      "content_review": "supported"
+    }
+  ],
+  "unknowns": [
+    {
+      "id": "u01",
+      "object_id": "map",
+      "question": "지도·카드 구도의 공통 변환과 개별 요소의 이동을 어떻게 분리할까?",
+      "state": "resolved",
+      "reason": "기존 지도/카드의 서로 떨어진 고정 특징을 확인해 전체 줌 추정을 기각. 새 카드·패널 등장과 분리. 실제 리그·렌더 사이 숨은 움직임은 검증하지 않음.",
+      "required_basis_kind": "observed",
+      "next_probe": "",
+      "resolution_claim_ids": [
+        "c041"
+      ]
+    },
+    {
+      "id": "u02",
+      "object_id": "regional-link",
+      "question": "연결선 내부 화살 무늬가 어느 방향으로 움직이는가?",
+      "state": "open",
+      "reason": "선택 ROI와 연속 10프레임의 정착 구간에서는 위쪽 화살 모양이 같은 위치에 보임. 초기 생성/다른 시간대의 이동 여부는 아직 남음.",
+      "required_basis_kind": "observed",
+      "next_probe": "연결선 처음 생성~정착과 이후 퇴장까지 같은 무늬 특징을 연속 비교. 방향 형태와 실제 이동을 분리",
+      "resolution_claim_ids": []
+    },
+    {
+      "id": "u03",
+      "object_id": "policy-panel",
+      "question": "행별 강조의 정확 주기와 지역 패널 강조와의 동기화는?",
+      "state": "open",
+      "reason": "강약은 관측했지만 전체 주기·파형은 측정하지 않음",
+      "required_basis_kind": "observed",
+      "next_probe": "사용 목적에 필요한 부분의 native ROI·시간 표본을 보강하고, 구현값이 필요하면 원본 프로젝트 확인",
+      "resolution_claim_ids": []
+    }
+  ],
+  "discovery": {
+    "forward_evidence_ids": [
+      "f00",
+      "f01",
+      "f02",
+      "f03",
+      "f04",
+      "f05",
+      "f06",
+      "f07",
+      "f08",
+      "f09",
+      "f10",
+      "f11",
+      "f12",
+      "f13",
+      "f14",
+      "f15",
+      "f16"
+    ],
+    "reverse_evidence_ids": [
+      "f16",
+      "f15",
+      "f14",
+      "f13",
+      "f12",
+      "f11",
+      "f10",
+      "f09",
+      "f08",
+      "f07",
+      "f06",
+      "f05",
+      "f04",
+      "f03",
+      "f02",
+      "f01",
+      "f00"
+    ],
+    "unresolved_ids": [
+      "u02",
+      "u03"
+    ]
+  },
+  "layout": {
+    "canvas": {
+      "aspect_ratio": "16:9 (3840x2160)",
+      "coordinate_system": "native raster, 전체 좌표와 하위 영역을 구분. 정확 픽셀 미측정"
+    },
+    "states": [
+      {
+        "id": "map-composite",
+        "time_seconds": [
+          40,
+          48
+        ],
+        "evidence_ids": [
+          "f14"
+        ],
+        "composition": "어두운 지형·행정 경계 위 왼쪽 노랑 경찰청 설명 묶음과 중앙 위 분홍 지역 설명 묶음. 횡성은 아래 중앙 청록 강조, 바다는 오른쪽 여백. 하단 검은 자막은 두 설명과 별도.",
+        "element_object_ids": [
+          "map",
+          "region",
+          "police",
+          "policy-panel",
+          "police-link",
+          "gangwon",
+          "regional-frame",
+          "regional-row1",
+          "regional-row2",
+          "regional-link",
+          "caption",
+          "gangwon-face"
+        ],
+        "claim_ids": [
+          "c001",
+          "c002",
+          "c003",
+          "c004",
+          "c005",
+          "c006",
+          "c007",
+          "c008",
+          "c009",
+          "c010",
+          "c011",
+          "c012",
+          "c013",
+          "c014",
+          "c015",
+          "c016",
+          "c017",
+          "c018",
+          "c019",
+          "c020",
+          "c021",
+          "c022",
+          "c023",
+          "c024",
+          "c025",
+          "c026",
+          "c027",
+          "c028",
+          "c029",
+          "c030",
+          "c031",
+          "c032",
+          "c033",
+          "c034",
+          "c035",
+          "c036",
+          "c037",
+          "c038",
+          "c039",
+          "c040",
+          "c041",
+          "c042",
+          "c043"
+        ],
+        "design_spec": {
+          "hierarchy": {
+            "description": "지역 지도·횡성 강조를 배경 맥락으로 두고 기관 카드와 연결된 정책 설명을 위에 겹친다. 아래 자막은 별도 정보층.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c001",
+              "c002",
+              "c003",
+              "c004",
+              "c005",
+              "c006",
+              "c007",
+              "c008",
+              "c009",
+              "c010",
+              "c011",
+              "c012",
+              "c013",
+              "c014",
+              "c015",
+              "c016",
+              "c017",
+              "c018",
+              "c019",
+              "c020",
+              "c021",
+              "c022",
+              "c023",
+              "c024",
+              "c025",
+              "c026",
+              "c027",
+              "c028",
+              "c029",
+              "c030",
+              "c031",
+              "c032",
+              "c033",
+              "c034",
+              "c035",
+              "c036",
+              "c037"
+            ]
+          },
+          "alignment": {
+            "description": "기관별 카드 → 세로 연결선 → 위쪽 설명 프레임. 두 기관 묶음을 나란히 배치하고 각 프레임 안 가로 문구 띠를 수직으로 쌓는다.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c001",
+              "c002",
+              "c003",
+              "c004",
+              "c005",
+              "c006",
+              "c007",
+              "c008",
+              "c009",
+              "c010",
+              "c011",
+              "c012",
+              "c013",
+              "c014",
+              "c015",
+              "c016",
+              "c017",
+              "c018",
+              "c019",
+              "c020",
+              "c021",
+              "c022",
+              "c023",
+              "c024",
+              "c025",
+              "c026",
+              "c027",
+              "c028",
+              "c029",
+              "c030",
+              "c031",
+              "c032",
+              "c033",
+              "c034",
+              "c035",
+              "c036",
+              "c037"
+            ]
+          },
+          "spacing": {
+            "description": "지도와 지명을 일부 보이게 둔 반투명 패널, 오른쪽 바다의 넓은 여백, 아래 자막과 횡성 강조 사이 간격.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c001",
+              "c002",
+              "c003",
+              "c004",
+              "c005",
+              "c006",
+              "c007",
+              "c008",
+              "c009",
+              "c010",
+              "c011",
+              "c012",
+              "c013",
+              "c014",
+              "c015",
+              "c016",
+              "c017",
+              "c018",
+              "c019",
+              "c020",
+              "c021",
+              "c022",
+              "c023",
+              "c024",
+              "c025",
+              "c026",
+              "c027",
+              "c028",
+              "c029",
+              "c030",
+              "c031",
+              "c032",
+              "c033",
+              "c034",
+              "c035",
+              "c036",
+              "c037"
+            ]
+          },
+          "typography": {
+            "description": "카드의 기관 로고 서체와 설명·자막의 한글 산세리프를 구분한다. 지도 지명은 어둡고 외곽이 있으며 정확 글꼴·크기 미측정.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c001",
+              "c002",
+              "c003",
+              "c004",
+              "c005",
+              "c006",
+              "c007",
+              "c008",
+              "c009",
+              "c010",
+              "c011",
+              "c012",
+              "c013",
+              "c014",
+              "c015",
+              "c016",
+              "c017",
+              "c018",
+              "c019",
+              "c020",
+              "c021",
+              "c022",
+              "c023",
+              "c024",
+              "c025",
+              "c026",
+              "c027",
+              "c028",
+              "c029",
+              "c030",
+              "c031",
+              "c032",
+              "c033",
+              "c034",
+              "c035",
+              "c036",
+              "c037"
+            ]
+          },
+          "color": {
+            "description": "어두운 녹갈색 지도·짙은 남청 바다, 횡성 청록, 경찰청 노랑/연두, 지역 설명 붉은색/분홍, 밝은 로고 카드.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c001",
+              "c002",
+              "c003",
+              "c004",
+              "c005",
+              "c006",
+              "c007",
+              "c008",
+              "c009",
+              "c010",
+              "c011",
+              "c012",
+              "c013",
+              "c014",
+              "c015",
+              "c016",
+              "c017",
+              "c018",
+              "c019",
+              "c020",
+              "c021",
+              "c022",
+              "c023",
+              "c024",
+              "c025",
+              "c026",
+              "c027",
+              "c028",
+              "c029",
+              "c030",
+              "c031",
+              "c032",
+              "c033",
+              "c034",
+              "c035",
+              "c036",
+              "c037"
+            ]
+          },
+          "background": {
+            "description": "위성 지형 질감과 행정 경계·지명. 정보 프레임은 반투명해 지도가 일부 비친다.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c001",
+              "c002",
+              "c003",
+              "c004",
+              "c005",
+              "c006",
+              "c007",
+              "c008",
+              "c009",
+              "c010",
+              "c011",
+              "c012",
+              "c013",
+              "c014",
+              "c015",
+              "c016",
+              "c017",
+              "c018",
+              "c019",
+              "c020",
+              "c021",
+              "c022",
+              "c023",
+              "c024",
+              "c025",
+              "c026",
+              "c027",
+              "c028",
+              "c029",
+              "c030",
+              "c031",
+              "c032",
+              "c033",
+              "c034",
+              "c035",
+              "c036",
+              "c037"
+            ]
+          },
+          "shapes": {
+            "description": "화살촉 양끝 문구 띠, 직사각 반투명 면, 가는 모서리·프레임, 세로 화살 무늬·원형 접점, 지역 경계 면과 검은 자막 바.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c001",
+              "c002",
+              "c003",
+              "c004",
+              "c005",
+              "c006",
+              "c007",
+              "c008",
+              "c009",
+              "c010",
+              "c011",
+              "c012",
+              "c013",
+              "c014",
+              "c015",
+              "c016",
+              "c017",
+              "c018",
+              "c019",
+              "c020",
+              "c021",
+              "c022",
+              "c023",
+              "c024",
+              "c025",
+              "c026",
+              "c027",
+              "c028",
+              "c029",
+              "c030",
+              "c031",
+              "c032",
+              "c033",
+              "c034",
+              "c035",
+              "c036",
+              "c037"
+            ]
+          }
+        },
+        "unresolved_ids": [
+          "u02",
+          "u03"
+        ]
+      }
+    ],
+    "unresolved_ids": [
+      "u02",
+      "u03"
+    ]
+  },
+  "motion_groups": [
+    {
+      "id": "flow",
+      "level": "flow",
+      "name": "기존 경찰청 묶음·횡성 지도 유지 → 지역 로고 카드 전개 → 위 프레임·첫 줄 → 둘째 줄과 강조 → 자막 교체·밝기 진행",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "object_ids": [
+        "map",
+        "region",
+        "police",
+        "policy-panel",
+        "police-link",
+        "gangwon",
+        "regional-frame",
+        "regional-row1",
+        "regional-row2",
+        "regional-link",
+        "caption"
+      ],
+      "claim_ids": [
+        "c041",
+        "c008",
+        "c017",
+        "c019",
+        "c020",
+        "c023",
+        "c027",
+        "c030",
+        "c036",
+        "c043"
+      ],
+      "pattern_occurrence_ids": []
+    },
+    {
+      "id": "detail",
+      "level": "detail",
+      "name": "기관별 프레임·글자·연결선 분리, 첫째·둘째 줄 순서와 강조 강약, 자막 내용과 밝기 진행 구분",
+      "time_seconds": [
+        40,
+        48
+      ],
+      "object_ids": [
+        "map",
+        "region",
+        "police",
+        "policy-panel",
+        "police-link",
+        "gangwon",
+        "regional-frame",
+        "regional-row1",
+        "regional-row2",
+        "regional-link",
+        "caption",
+        "gangwon-face"
+      ],
+      "claim_ids": [
+        "c041",
+        "c004",
+        "c005",
+        "c007",
+        "c008",
+        "c010",
+        "c011",
+        "c012",
+        "c014",
+        "c016",
+        "c017",
+        "c019",
+        "c020",
+        "c022",
+        "c023",
+        "c024",
+        "c026",
+        "c027",
+        "c028",
+        "c030",
+        "c031",
+        "c033",
+        "c034",
+        "c035",
+        "c036",
+        "c037",
+        "c039",
+        "c040",
+        "c043"
+      ],
+      "pattern_occurrence_ids": []
+    }
+  ],
+  "pattern_refs": [],
+  "reuse_map": null,
+  "review": {
+    "content_reviewed_claim_ids": [
+      "c001",
+      "c002",
+      "c003",
+      "c004",
+      "c005",
+      "c006",
+      "c007",
+      "c008",
+      "c009",
+      "c010",
+      "c011",
+      "c012",
+      "c013",
+      "c014",
+      "c015",
+      "c016",
+      "c017",
+      "c018",
+      "c019",
+      "c020",
+      "c021",
+      "c022",
+      "c023",
+      "c024",
+      "c025",
+      "c026",
+      "c027",
+      "c028",
+      "c029",
+      "c030",
+      "c031",
+      "c032",
+      "c033",
+      "c034",
+      "c035",
+      "c036",
+      "c037",
+      "c038",
+      "c039",
+      "c040",
+      "c041",
+      "c042",
+      "c043"
+    ],
+    "claim_denominator_complete": false,
+    "remaining_scope": [
+      "동일 AI의 후속 검수. 원본 전체 정밀 분석·독립 정답·모든 미발견 요소의 분모는 미확인.",
+      "열린 쟁점 u02, u03"
+    ]
+  },
+  "handoff": null,
+  "limitations": [
+    "정확한 글꼴·색·좌표·키프레임·이징·주기·제작 의도는 미확정.",
+    "0.5초 간격 표본 사이 사건·가림·미세 변화가 남을 수 있음.",
+    "화면 속 홍보 문구의 기술적·정책적 사실성을 검증한 것이 아님.",
+    "선택 표본을 통한 전체 디자인의 정성 기록이며 모든 속성의 연속 측정은 아님.",
+    "전체 원본 영상에서 확인한 구간은 8초. 원본 전체 분석 완료 아님.",
+    "0.1초 보강은 지정 ROI의 상세 확인. 다른 대상·전체 프레임의 완전성을 보장하지 않음."
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "episode": "main postrun file-fact checker baseline reconstruction assertion",
+  "cause": "Path.write_text on Windows produced CRLF; reconstructed JSON was LF. Parsed objects match and actual backups match fixture SHA.",
+  "fix": "Use byte-pinned real pre-change backups for before objects rather than reserialized reconstruction.",
+  "model_trial_failure": false,
+  "model_trial_exclusion": false,
+  "production_or_executor_artifacts_changed": false,
+  "before_checker_sha256": "7f72c85148b79ecd6d7770b130e261ea95e7a82675395853f9d965b538459343"
+}

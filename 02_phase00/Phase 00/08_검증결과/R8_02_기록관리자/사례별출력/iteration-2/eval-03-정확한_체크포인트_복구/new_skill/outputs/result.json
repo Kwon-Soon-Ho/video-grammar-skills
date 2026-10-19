@@ -1,0 +1,343 @@
+{
+  "status": "exact_checkpoint_restored",
+  "target_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-03-정확한_체크포인트_복구\\new_skill\\run-1\\inputs\\Phase00\\12_통합기록\\통합기록_작업초안.json",
+  "record_id": "R8-DEV-STEW-03",
+  "schema_version": "0.2.0",
+  "before_version": "0.1.1",
+  "after_version": "0.1.0",
+  "before_sha256": "f94804859022f09c248c5c73ef9e014649fdbab06dcec16f83aa6afe94ec14b9",
+  "after_sha256": "4f309bf8061d4973956f82fa36b74b587403995cdf93545c54411209139b4ec2",
+  "checkpoint_sha256": "4f309bf8061d4973956f82fa36b74b587403995cdf93545c54411209139b4ec2",
+  "checkpoint_byte_equal": true,
+  "failed_file_backup": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-03-정확한_체크포인트_복구\\new_skill\\run-1\\inputs\\Phase00\\backup\\복구작업\\통합기록_실패본.json",
+  "backup_byte_equal": true,
+  "restored_structure_valid": true,
+  "restored_structure_status": "draft_structure_pass",
+  "restored_structure_errors": [],
+  "restored_unresolved": [],
+  "restored_human_review_queue": [
+    {
+      "claim_id": "CL-ONE",
+      "claim_version": "0.1.0",
+      "priority": "normal",
+      "reasons": [
+        "주장 내용 사람 검수 필요"
+      ],
+      "status": "specimen_only",
+      "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+    },
+    {
+      "item_id": "SP-ROOT",
+      "status": "specimen_only",
+      "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+      "verified": false
+    },
+    {
+      "item_id": "SP-CROP",
+      "status": "specimen_only",
+      "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+      "verified": false
+    },
+    {
+      "item_id": "SP-RESIZE",
+      "status": "specimen_only",
+      "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+      "verified": false
+    },
+    {
+      "item_id": "TR-SP-CROP",
+      "status": "specimen_only",
+      "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+      "verified": false
+    },
+    {
+      "item_id": "TR-SP-RESIZE",
+      "status": "specimen_only",
+      "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+      "verified": false
+    },
+    {
+      "item_id": "G-ROOT",
+      "status": "specimen_only",
+      "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+      "verified": false
+    },
+    {
+      "item_id": "G-RESULT",
+      "status": "specimen_only",
+      "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+      "verified": false
+    },
+    {
+      "item_id": "design",
+      "status": "specimen_only",
+      "reason": "토큰 역할·적용 목적·프로젝트 예외 검수. 영상 필수 회사 규칙 승인과 구분",
+      "verified": false
+    },
+    {
+      "item_id": "TG-ASSET/video_type",
+      "status": "specimen_only",
+      "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+      "verified": false
+    },
+    {
+      "item_id": "TG-ASSET",
+      "status": "specimen_only",
+      "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+      "verified": false
+    },
+    {
+      "item_id": "TG-SEGMENT/video_type",
+      "status": "specimen_only",
+      "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+      "verified": false
+    },
+    {
+      "item_id": "TG-SEGMENT/communication_purpose",
+      "status": "specimen_only",
+      "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+      "verified": false
+    },
+    {
+      "item_id": "TG-SEGMENT/information_relation",
+      "status": "specimen_only",
+      "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+      "verified": false
+    },
+    {
+      "item_id": "TG-SEGMENT/art_direction",
+      "status": "specimen_only",
+      "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+      "verified": false
+    },
+    {
+      "item_id": "TG-SEGMENT",
+      "status": "specimen_only",
+      "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+      "verified": false
+    },
+    {
+      "item_id": "TG-STATE/communication_purpose",
+      "status": "specimen_only",
+      "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+      "verified": false
+    },
+    {
+      "item_id": "TG-STATE/information_relation",
+      "status": "specimen_only",
+      "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+      "verified": false
+    },
+    {
+      "item_id": "TG-STATE/layout",
+      "status": "specimen_only",
+      "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+      "verified": false
+    },
+    {
+      "item_id": "TG-STATE/art_direction",
+      "status": "specimen_only",
+      "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+      "verified": false
+    },
+    {
+      "item_id": "TG-STATE",
+      "status": "specimen_only",
+      "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+      "verified": false
+    },
+    {
+      "item_id": "TG-BEAT/communication_purpose",
+      "status": "specimen_only",
+      "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+      "verified": false
+    },
+    {
+      "item_id": "TG-BEAT/motion_function",
+      "status": "specimen_only",
+      "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+      "verified": false
+    },
+    {
+      "item_id": "TG-BEAT/motion_property",
+      "status": "specimen_only",
+      "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+      "verified": false
+    },
+    {
+      "item_id": "TG-BEAT/timing",
+      "status": "specimen_only",
+      "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+      "verified": false
+    },
+    {
+      "item_id": "TG-BEAT",
+      "status": "specimen_only",
+      "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+      "verified": false
+    },
+    {
+      "item_id": "run",
+      "status": "specimen_only",
+      "reason": "실행 주체·도구/모델·입출력·설정과 실제 작업 로그를 대조. 선언을 실행 증명으로 보지 않음",
+      "verified": false
+    }
+  ],
+  "legacy_status": "needs_migration",
+  "legacy_valid": false,
+  "legacy_missing_or_review_items": [
+    {
+      "pointer": "/asset/version",
+      "reason": "원본 영상 identity 미확인. JSON/파일명에서 추정 금지",
+      "automatic_fill_allowed": false
+    },
+    {
+      "pointer": "/asset/sha256",
+      "reason": "원본 영상 identity 미확인. JSON/파일명에서 추정 금지",
+      "automatic_fill_allowed": false
+    },
+    {
+      "pointer": "/asset/duration_s",
+      "reason": "재생 길이와 확인 근거 미확인",
+      "automatic_fill_allowed": false
+    },
+    {
+      "pointer": "/time_contract",
+      "reason": "원점·PTS·구간/프레임·근거를 새 시간 계약에 명시 연결해야 함",
+      "automatic_fill_allowed": false
+    },
+    {
+      "pointer": "/targets",
+      "reason": "원본/설명 구간/화면 상태/동작·대상의 범위와 버전 연결 필요",
+      "automatic_fill_allowed": false
+    },
+    {
+      "pointer": "/evidence",
+      "reason": "자료 pin·선택 부분·주장 범위/근거 역할 연결 필요",
+      "automatic_fill_allowed": false
+    },
+    {
+      "pointer": "/segments/*/classification",
+      "reason": "구형 태그는 출처와 범위를 검토할 후보. 상태/관측 사실 자동 생성 금지",
+      "automatic_fill_allowed": false
+    },
+    {
+      "pointer": "/run",
+      "reason": "실제 수행 기록 미작성. 미실행과 구분해 보존",
+      "automatic_fill_allowed": false
+    },
+    {
+      "pointer": "/review",
+      "reason": "구형 검수/승인 상태는 새 통합 context로 자동 이전하지 않음",
+      "automatic_fill_allowed": false
+    }
+  ],
+  "legacy_intake_performed": false,
+  "legacy_migration_performed": false,
+  "r5_modified": false,
+  "r5_direct_reference_check": [],
+  "scope_audit_pass": true,
+  "commands": [
+    {
+      "name": "failed_current_structure",
+      "argv": [
+        "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-03-정확한_체크포인트_복구\\new_skill\\run-1\\inputs\\Phase00\\07_실행도구\\자료검증.py",
+        "--record",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-03-정확한_체크포인트_복구\\new_skill\\run-1\\inputs\\Phase00\\12_통합기록\\통합기록_작업초안.json"
+      ],
+      "cwd": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-03-정확한_체크포인트_복구\\new_skill\\run-1\\inputs\\Phase00",
+      "exit_code": 1,
+      "stdout_path": "failed_current_structure.stdout.txt",
+      "stderr_path": "failed_current_structure.stderr.txt"
+    },
+    {
+      "name": "checkpoint_structure",
+      "argv": [
+        "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-03-정확한_체크포인트_복구\\new_skill\\run-1\\inputs\\Phase00\\07_실행도구\\자료검증.py",
+        "--record",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-03-정확한_체크포인트_복구\\new_skill\\run-1\\inputs\\Phase00\\backup\\이전작업\\통합기록_정상체크포인트.json"
+      ],
+      "cwd": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-03-정확한_체크포인트_복구\\new_skill\\run-1\\inputs\\Phase00",
+      "exit_code": 0,
+      "stdout_path": "checkpoint_structure.stdout.txt",
+      "stderr_path": "checkpoint_structure.stderr.txt"
+    },
+    {
+      "name": "legacy_readonly_check",
+      "argv": [
+        "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-03-정확한_체크포인트_복구\\new_skill\\run-1\\inputs\\Phase00\\07_실행도구\\자료검증.py",
+        "--record",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-03-정확한_체크포인트_복구\\new_skill\\run-1\\inputs\\Phase00\\작업초안\\구형_추가자료.json"
+      ],
+      "cwd": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-03-정확한_체크포인트_복구\\new_skill\\run-1\\inputs\\Phase00",
+      "exit_code": 2,
+      "stdout_path": "legacy_readonly_check.stdout.txt",
+      "stderr_path": "legacy_readonly_check.stderr.txt"
+    },
+    {
+      "name": "exact_restore_comparison",
+      "argv": [
+        "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-03-정확한_체크포인트_복구\\new_skill\\run-1\\inputs\\Phase00\\실행스킬\\video-record-steward\\scripts\\판본대조.py",
+        "--before",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-03-정확한_체크포인트_복구\\new_skill\\run-1\\inputs\\Phase00\\backup\\복구작업\\통합기록_실패본.json",
+        "--after",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-03-정확한_체크포인트_복구\\new_skill\\run-1\\inputs\\Phase00\\12_통합기록\\통합기록_작업초안.json",
+        "--mode",
+        "exact_restore",
+        "--checkpoint",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-03-정확한_체크포인트_복구\\new_skill\\run-1\\inputs\\Phase00\\backup\\이전작업\\통합기록_정상체크포인트.json",
+        "--checkpoint-sha",
+        "4f309bf8061d4973956f82fa36b74b587403995cdf93545c54411209139b4ec2"
+      ],
+      "cwd": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-03-정확한_체크포인트_복구\\new_skill\\run-1\\inputs\\Phase00",
+      "exit_code": 0,
+      "stdout_path": "exact_restore_comparison.stdout.txt",
+      "stderr_path": "exact_restore_comparison.stderr.txt"
+    },
+    {
+      "name": "restored_structure",
+      "argv": [
+        "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-03-정확한_체크포인트_복구\\new_skill\\run-1\\inputs\\Phase00\\07_실행도구\\자료검증.py",
+        "--record",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-03-정확한_체크포인트_복구\\new_skill\\run-1\\inputs\\Phase00\\12_통합기록\\통합기록_작업초안.json"
+      ],
+      "cwd": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-03-정확한_체크포인트_복구\\new_skill\\run-1\\inputs\\Phase00",
+      "exit_code": 0,
+      "stdout_path": "restored_structure.stdout.txt",
+      "stderr_path": "restored_structure.stderr.txt"
+    }
+  ],
+  "fact_verified": false,
+  "company_approved": false,
+  "operational_release": false,
+  "R6_full_current_check_performed": false,
+  "R7_full_check_performed": false,
+  "elapsed_time": null,
+  "token_usage": null,
+  "measurements_note": "실행 시간·token 미수집",
+  "limitations": [
+    "선언 구조/참조 및 정확 바이트 복원 검사 범위. 미디어/원본 내용·실측·사람 신원·회사 승인 미검사.",
+    "명시된 수행사본에 R6/R7 전체 검증자료가 없고 이번 복구 요청에 무관하여 full 통과로 보고하지 않음.",
+    "복구 직전 바이트 재확인 및 동일 폴더 교체를 수행했으나 파일시스템 전체 원자성/완전 동시성 제어를 보장하지 않음."
+  ]
+}

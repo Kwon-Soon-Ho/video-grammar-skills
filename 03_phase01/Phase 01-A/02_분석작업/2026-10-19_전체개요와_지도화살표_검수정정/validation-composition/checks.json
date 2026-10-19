@@ -1,0 +1,179 @@
+{
+  "utc": "2026-10-19T02:46:25.012515+00:00",
+  "scope": "separation, composition graph, selective export, backward source references; no fresh video comparison",
+  "tests": [
+    {
+      "name": "valid_current_case_composition",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "legacy_entry_preserved_exactly",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "old_card_number_not_reassigned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "current_renderer_contains_all_five_patterns",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stored_historical_source_readable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "historical_source_not_current_pass",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wrong_case_composition",
+      "passed": true,
+      "detail": "['reuse map belongs to another case']"
+    },
+    {
+      "name": "missing_composition_with_occurrences",
+      "passed": true,
+      "detail": "['pattern occurrences need a whole-case composition map']"
+    },
+    {
+      "name": "unassigned_detail",
+      "passed": true,
+      "detail": "['occurrences must be assigned exactly once']"
+    },
+    {
+      "name": "duplicate_role_assignment",
+      "passed": true,
+      "detail": "['occurrences must be assigned exactly once']"
+    },
+    {
+      "name": "detail_in_layout_slot",
+      "passed": true,
+      "detail": "['layout slot category mismatch']"
+    },
+    {
+      "name": "missing_overall_flow",
+      "passed": true,
+      "detail": "['assembled case needs layout and overall flow']"
+    },
+    {
+      "name": "unknown_occurrence_link",
+      "passed": true,
+      "detail": "['invalid composition link']"
+    },
+    {
+      "name": "self_link",
+      "passed": true,
+      "detail": "['invalid composition link']"
+    },
+    {
+      "name": "bad_relation_type",
+      "passed": true,
+      "detail": "['composition relation']"
+    },
+    {
+      "name": "link_without_current_basis",
+      "passed": true,
+      "detail": "['relation needs current evidence or inference basis']"
+    },
+    {
+      "name": "cyclic_temporal_order",
+      "passed": true,
+      "detail": "['cyclic precedes relations']"
+    },
+    {
+      "name": "cyclic_containment",
+      "passed": true,
+      "detail": "['cyclic contains relations']"
+    },
+    {
+      "name": "wrong_current_object_scope",
+      "passed": true,
+      "detail": "['occurrence claims belong to another object scope']"
+    },
+    {
+      "name": "unverified_match_not_confirmed",
+      "passed": true,
+      "detail": "['unverified occurrence cannot be confirmed']"
+    },
+    {
+      "name": "missing_map_in_new_schema",
+      "passed": true,
+      "detail": "['missing reuse_map; use null before pattern assembly']"
+    },
+    {
+      "name": "wrong_library_snapshot_pin",
+      "passed": true,
+      "detail": "['library snapshot mismatch']"
+    },
+    {
+      "name": "detail_export_has_only_its_three_claims",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "detail_export_omits_other_pattern_definitions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "detail_export_evidence_is_exact_claim_union",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "detail_export_keeps_open_questions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "definition_cannot_claim_another_source_atom",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "unknown_number_cannot_be_filled_with_zero",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "detail_cannot_occupy_layout_category",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "derivation_target_must_exist",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "source_unknown_must_exist",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no_automatic_approval",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "first_observation_pin_must_match",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "registration_failures_did_not_mutate_library",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "passed": 34,
+  "total": 34,
+  "all_passed": true
+}

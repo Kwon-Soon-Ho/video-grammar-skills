@@ -1,0 +1,120 @@
+{
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "name": "@allons-y/agent-skills",
+  "version": "1.4.0",
+  "description": "A collection of self-contained agent skills that streamline common developer workflows and reduce token usage. Install in Claude Code via the plugin marketplace, or vendor into any agent harness with npx.",
+  "license": "MPL-2.0",
+  "author": "Cassondra Roberts <castastrophe@users.noreply.github.com> (https://allons-y.studio)",
+  "homepage": "https://github.com/allonsy-studio/agent-skills#readme",
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/castastrophe"
+    },
+    {
+      "type": "buy-me-a-coffee",
+      "url": "https://www.buymeacoffee.com/castastrophe"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allonsy-studio/agent-skills.git"
+  },
+  "bugs": {
+    "url": "https://github.com/allonsy-studio/agent-skills/issues"
+  },
+  "type": "module",
+  "main": "index.js",
+  "bin": "bin/install.js",
+  "files": [
+    ".claude-plugin/",
+    "bin/",
+    "skills/",
+    "CLAUDE.md"
+  ],
+  "scripts": {
+    "build": "yarn workspaces foreach -A run build",
+    "changeset": "changeset",
+    "ci": "cross-env ELEVENTY_ENV=production yarn build && eleventy",
+    "ci:test": "yarn constraints && yarn workspaces foreach -A run ci:test",
+    "clean": "rimraf _site",
+    "coverage": "node scripts/run-tests.js --coverage-only",
+    "evals": "node scripts/run-evals.js",
+    "format": "yarn package:format",
+    "generate:marketplace": "node scripts/generate-plugin-manifest.js",
+    "lint": "yarn package:lint",
+    "package:format": "yarn package:lint --fix",
+    "package:lint": "eslint --no-error-on-unmatched-pattern --no-warn-ignored --cache '**/*'",
+    "postinstall": "husky && envoy || true",
+    "postpack": "pinst --enable",
+    "prepack": "pinst --disable",
+    "prepublishOnly": "yarn generate:marketplace",
+    "release": "changeset publish",
+    "security": "yarn workspaces foreach -A run security",
+    "serve": "eleventy --serve",
+    "test": "node scripts/run-tests.js",
+    "ts:check": "tsc --noEmit",
+    "version:packages": "changeset version && node scripts/clean-skill-changelogs.js && yarn generate:marketplace"
+  },
+  "workspaces": [
+    "skills/*",
+    "docs/",
+    "."
+  ],
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.5",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+    "@allons-y/envoy": "^1.1.0",
+    "@anthropic-ai/sdk": "^0.96.0",
+    "@changesets/changelog-github": "^0.5.1",
+    "@changesets/cli": "^2.29.7",
+    "@commitlint/cli": "^20.5.3",
+    "@commitlint/config-conventional": "^20.5.3",
+    "@eslint/css": "^1.2.0",
+    "@eslint/js": "^10.0.1",
+    "@eslint/json": "^1.2.0",
+    "@eslint/markdown": "^8.0.1",
+    "colors": "^1.4.0",
+    "cross-env": "^10.1.0",
+    "eslint": "^10.3.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-jsonc": "^3.1.2",
+    "execa": "^9.6.1",
+    "globals": "^17.6.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "listr2": "^10.2.1",
+    "markdown-it": "^14.1.1",
+    "pinst": "^3.0.0",
+    "prismjs": "^1.30.0",
+    "text-table": "^0.2.0",
+    "yargs": "^18.0.0"
+  },
+  "keywords": [
+    "agent-skills",
+    "agents",
+    "ai",
+    "anthropic",
+    "automation",
+    "claude",
+    "claude-code"
+  ],
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "lint-staged": {
+    "*": [
+      "eslint --fix --format stylish"
+    ],
+    ".github/renovate.json": "npx --yes --package renovate -- renovate-config-validator --strict"
+  },
+  "packageManager": "yarn@4.17.1"
+}

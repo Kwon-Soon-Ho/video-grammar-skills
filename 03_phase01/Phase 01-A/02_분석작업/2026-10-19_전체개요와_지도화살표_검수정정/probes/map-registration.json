@@ -1,0 +1,171 @@
+{
+  "method": "quarter-size grayscale normalized cross-correlation of fixed templates and coarse affine least squares",
+  "sources": [
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\window\\f_01200_040.000.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\window\\f_01440_048.000.png"
+  ],
+  "matches": [
+    {
+      "name": "map-north",
+      "source_box": [
+        1908,
+        228,
+        2200,
+        428
+      ],
+      "matched_box": [
+        1820,
+        20,
+        2112,
+        220
+      ],
+      "NCC": 0.31475395525741423,
+      "source_center": [
+        2054.0,
+        328.0
+      ],
+      "matched_center": [
+        1966.0,
+        120.0
+      ]
+    },
+    {
+      "name": "map-west-south",
+      "source_box": [
+        1400,
+        1440,
+        1760,
+        1680
+      ],
+      "matched_box": [
+        1400,
+        1440,
+        1760,
+        1680
+      ],
+      "NCC": 1.0000000000000002,
+      "source_center": [
+        1580.0,
+        1560.0
+      ],
+      "matched_center": [
+        1580.0,
+        1560.0
+      ]
+    },
+    {
+      "name": "map-east-south",
+      "source_box": [
+        2840,
+        1560,
+        3240,
+        1820
+      ],
+      "matched_box": [
+        2840,
+        1560,
+        3240,
+        1820
+      ],
+      "NCC": 0.9999999999999979,
+      "source_center": [
+        3040.0,
+        1690.0
+      ],
+      "matched_center": [
+        3040.0,
+        1690.0
+      ]
+    },
+    {
+      "name": "police-card",
+      "source_box": [
+        440,
+        848,
+        928,
+        1008
+      ],
+      "matched_box": [
+        440,
+        848,
+        928,
+        1008
+      ],
+      "NCC": 0.9999908239378907,
+      "source_center": [
+        684.0,
+        928.0
+      ],
+      "matched_center": [
+        684.0,
+        928.0
+      ]
+    },
+    {
+      "name": "policy-panel",
+      "source_box": [
+        328,
+        268,
+        1000,
+        380
+      ],
+      "matched_box": [
+        336,
+        296,
+        1008,
+        408
+      ],
+      "NCC": 0.3743083810189547,
+      "source_center": [
+        664.0,
+        324.0
+      ],
+      "matched_center": [
+        672.0,
+        352.0
+      ]
+    }
+  ],
+  "fit": {
+    "affine_2d_row_matrix": [
+      [
+        1.000000000000001,
+        2.6320033493068586e-16
+      ],
+      [
+        -3.0254575104831735e-15,
+        0.9999999999999991
+      ],
+      [
+        1.8996677474914125e-12,
+        3.991857842541857e-13
+      ]
+    ],
+    "residual_pixels": [
+      1.224444715065716e-12,
+      2.2737367544323206e-13,
+      2.5421149729252077e-13
+    ],
+    "landmark_names": [
+      "map-west-south",
+      "map-east-south",
+      "police-card"
+    ],
+    "limitation": "Coarse 4px image sampling; no scale search, no rig/camera identification. Approximate matching must be visually reviewed."
+  },
+  "visual_review": {
+    "reviewer": "same_agent_context",
+    "state": "reviewed",
+    "accepted": [
+      "map-west-south",
+      "map-east-south",
+      "police-card"
+    ],
+    "excluded": {
+      "map-north": "새 붉은 패널에 가림. 낮은 NCC 후보 기각.",
+      "policy-panel": "행 강조가 바뀜. 낮은 NCC 후보 기각."
+    },
+    "conclusion": "선택 고정 특징에서 위치 일치. 지도 줌 추정 기각. affine 잔차 자체를 증거로 사용하지 않음."
+  },
+  "AE_rig_recovered": false
+}

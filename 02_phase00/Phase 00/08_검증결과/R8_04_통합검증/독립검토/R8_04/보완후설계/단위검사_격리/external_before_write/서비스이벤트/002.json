@@ -1,0 +1,21 @@
+{
+  "request": {
+    "op": "write",
+    "path": "a.json",
+    "candidate_path": "outputs/a.json",
+    "expected_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d"
+  },
+  "sequence": 2,
+  "status": "error",
+  "before_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d",
+  "external_actor_sha256": "969676dbf6fa2dd4c973b3420845558a18a9e01efe8291b46ecd5d18cf32225a",
+  "error": "current bytes changed; write not applied",
+  "after_sha256": "969676dbf6fa2dd4c973b3420845558a18a9e01efe8291b46ecd5d18cf32225a",
+  "response": {
+    "op": "write",
+    "ok": false,
+    "error_type": "AssertionError",
+    "error": "current bytes changed; write not applied",
+    "actual_current_sha256": "969676dbf6fa2dd4c973b3420845558a18a9e01efe8291b46ecd5d18cf32225a"
+  }
+}

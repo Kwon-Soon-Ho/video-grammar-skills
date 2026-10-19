@@ -1,0 +1,1102 @@
+{
+  "scope": "합성 입력의 구조·시간 계약 검사. 파일/영상/원점/추정 정확성 미검증.",
+  "count": 75,
+  "passed": 75,
+  "all_passed": true,
+  "cases": [
+    {
+      "name": "정상 비영점 원본PTS→재생1초",
+      "kind": "valid",
+      "expected_error_fragment": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "영상 10초 밖 프레임100초",
+      "kind": "invalid",
+      "expected_error_fragment": "프레임 영상 범위 밖",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-FRAME: 프레임 영상 범위 밖",
+          "EX-FRAME: 프레임 구간 범위 밖"
+        ],
+        "unresolved": [
+          "EX-FRAME: 프레임 경계 소속 미해결"
+        ],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "부모3초 밖 프레임4초",
+      "kind": "invalid",
+      "expected_error_fragment": "프레임 구간 범위 밖",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-FRAME: 프레임 구간 범위 밖"
+        ],
+        "unresolved": [
+          "EX-FRAME: 프레임 경계 소속 미해결"
+        ],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "근거 구간으로 연결할 역전9→1초",
+      "kind": "invalid",
+      "expected_error_fragment": "시작<끝",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-SEGMENT: range 시작<끝 필요",
+          "EX-FRAME: 프레임 구간 범위 밖"
+        ],
+        "unresolved": [
+          "EX-FRAME: 프레임 경계 소속 미해결"
+        ],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "근거 구간으로 연결할 영상밖 끝100초",
+      "kind": "invalid",
+      "expected_error_fragment": "영상 길이 이하",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-SEGMENT: 구간 끝은 영상 길이 이하"
+        ],
+        "unresolved": [
+          "EX-SEGMENT: 오차 범위가 영상 경계를 가로지름"
+        ],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "구간끝3초 내부프레임으로 오인",
+      "kind": "invalid",
+      "expected_error_fragment": "프레임 구간 범위 밖",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-FRAME: 프레임 구간 범위 밖"
+        ],
+        "unresolved": [
+          "EX-FRAME: 프레임 경계 소속 미해결"
+        ],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "구간끝3초 문맥프레임",
+      "kind": "unresolved",
+      "expected_error_fragment": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [
+          "EX-FRAME: 문맥 프레임은 구간 내부 근거 아님"
+        ],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "끝3초는 다음구간 내부프레임",
+      "kind": "valid",
+      "expected_error_fragment": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "영상끝10초 프레임",
+      "kind": "invalid",
+      "expected_error_fragment": "프레임 영상 범위 밖",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-FRAME: 프레임 영상 범위 밖",
+          "EX-FRAME: 프레임 구간 범위 밖"
+        ],
+        "unresolved": [
+          "EX-FRAME: 프레임 경계 소속 미해결"
+        ],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "영상끝10초 instant",
+      "kind": "invalid",
+      "expected_error_fragment": "끝 미만",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-SEGMENT: 시작/순간은 영상 끝 미만"
+        ],
+        "unresolved": [
+          "EX-SEGMENT: 오차 범위가 영상 경계를 가로지름"
+        ],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "0길이 range",
+      "kind": "invalid",
+      "expected_error_fragment": "시작<끝",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-SEGMENT: range 시작<끝 필요",
+          "EX-FRAME: 프레임 구간 범위 밖"
+        ],
+        "unresolved": [
+          "EX-FRAME: 프레임 경계 소속 미해결"
+        ],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "유효1초 instant",
+      "kind": "valid",
+      "expected_error_fragment": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "instant끝값 추가",
+      "kind": "invalid",
+      "expected_error_fragment": "start만",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-SEGMENT: instant는 start만 기록",
+          "EX-FRAME: 순간과 프레임 시각 불일치"
+        ],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "unknown 시간과 이유 보존",
+      "kind": "unresolved",
+      "expected_error_fragment": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [
+          "EX-SEGMENT: 구간 시간 미확인",
+          "EX-FRAME: 프레임 소속 검사 미해결"
+        ],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "unknown을0초로 채움",
+      "kind": "invalid",
+      "expected_error_fragment": "시간/오차 null",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-SEGMENT: unknown은 시간/오차 null + 이유 필요"
+        ],
+        "unresolved": [
+          "EX-SEGMENT: 구간 시간 미확인",
+          "EX-FRAME: 프레임 소속 검사 미해결"
+        ],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "unknown 이유 없음",
+      "kind": "invalid",
+      "expected_error_fragment": "이유 필요",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-SEGMENT: unknown은 시간/오차 null + 이유 필요"
+        ],
+        "unresolved": [
+          "EX-SEGMENT: 구간 시간 미확인",
+          "EX-FRAME: 프레임 소속 검사 미해결"
+        ],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "원점 미확인값 보존",
+      "kind": "unresolved",
+      "expected_error_fragment": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [
+          "EX-TIME: 원점 변환 미확인",
+          "EX-FRAME: 프레임 재생 시각 미확인",
+          "EX-FRAME: 프레임 소속 검사 미해결"
+        ],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "원점미확인인데mapped",
+      "kind": "invalid",
+      "expected_error_fragment": "확인 원점",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-FRAME: mapped에 원본 시간/확인 원점/actual 필요"
+        ],
+        "unresolved": [
+          "EX-TIME: 원점 변환 미확인"
+        ],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "원점근거 비어있음",
+      "kind": "invalid",
+      "expected_error_fragment": "매핑근거",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-TIME: 원점 PTS/양수 time_base/매핑근거 필요"
+        ],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "음수 원본PTS 재생0.5초",
+      "kind": "valid",
+      "expected_error_fragment": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "원점보다 앞의PTS를0초라 주장",
+      "kind": "invalid",
+      "expected_error_fragment": "PTS 변환",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-FRAME: PTS 변환과 actual 불일치"
+        ],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "다른 time_base 섞기",
+      "kind": "invalid",
+      "expected_error_fragment": "time_base 불일치",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-FRAME: 프레임과 원점 time_base 불일치",
+          "EX-FRAME: PTS 변환과 actual 불일치"
+        ],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "29.97fps 정확분수 CFR",
+      "kind": "valid",
+      "expected_error_fragment": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "VFR에 고정FPS 환산",
+      "kind": "invalid",
+      "expected_error_fragment": "VFR/unknown",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-TIME: VFR/unknown에서 명목 FPS를 번호 환산에 사용 금지"
+        ],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "CFR fps 없음",
+      "kind": "invalid",
+      "expected_error_fragment": "CFR 양수",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-TIME: CFR 양수 nominal_fps 필요"
+        ],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "프레임 수 초과 ordinal",
+      "kind": "invalid",
+      "expected_error_fragment": "전체 수 이상",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-FRAME: 프레임 번호가 전체 수 이상"
+        ],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "추정PTS 확정과 구분",
+      "kind": "unresolved",
+      "expected_error_fragment": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [
+          "EX-FRAME: 추정 PTS — 확정 시간 근거로 승격 금지"
+        ],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "미매핑인데actual선언",
+      "kind": "invalid",
+      "expected_error_fragment": "actual=null",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-FRAME: unmapped는 actual=null"
+        ],
+        "unresolved": [
+          "EX-FRAME: 프레임 재생 시각 미확인"
+        ],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "at_or_after 앞프레임",
+      "kind": "invalid",
+      "expected_error_fragment": "방향 위반",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-FRAME: at_or_after 방향 위반"
+        ],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "at_or_before 뒤프레임",
+      "kind": "invalid",
+      "expected_error_fragment": "방향 위반",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-FRAME: at_or_before 방향 위반"
+        ],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "nearest 실제최근접 미증명",
+      "kind": "unresolved",
+      "expected_error_fragment": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [
+          "EX-FRAME: 최단 거리 여부는 전체 프레임 인덱스로 확인 필요"
+        ],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "오차로 영상밖100초 합법화 금지",
+      "kind": "invalid",
+      "expected_error_fragment": "프레임 영상 범위 밖",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-FRAME: 프레임 영상 범위 밖",
+          "EX-FRAME: 프레임 구간 범위 밖"
+        ],
+        "unresolved": [
+          "EX-SEGMENT: 오차 범위가 영상 경계를 가로지름",
+          "EX-FRAME: 프레임 경계 소속 미해결"
+        ],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "오차가 프레임소속 경계 겹침",
+      "kind": "unresolved",
+      "expected_error_fragment": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [
+          "EX-SEGMENT: 오차 범위가 영상 경계를 가로지름",
+          "EX-FRAME: 프레임 경계 소속 미해결"
+        ],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "구간끝만 duration까지 허용",
+      "kind": "valid",
+      "expected_error_fragment": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "없는 시간축참조",
+      "kind": "invalid",
+      "expected_error_fragment": "없는 시간축",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-FRAME: 없는 시간축"
+        ],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "없는 부모구간참조",
+      "kind": "invalid",
+      "expected_error_fragment": "없는 부모",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-SEGMENT: 없는 부모 구간"
+        ],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "자기부모 순환",
+      "kind": "invalid",
+      "expected_error_fragment": "순환",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-SEGMENT: 부모 구간 순환"
+        ],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "다른 시간축 부모",
+      "kind": "invalid",
+      "expected_error_fragment": "다른 시간축",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CHILD: 부모와 다른 시간축"
+        ],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "자식이 부모밖으로 나감",
+      "kind": "invalid",
+      "expected_error_fragment": "부모 구간 범위 밖",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CHILD: 부모 구간 범위 밖"
+        ],
+        "unresolved": [
+          "CHILD: 오차를 고려한 부모 소속 미해결"
+        ],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "unknown 부모 포함검사 미해결",
+      "kind": "unresolved",
+      "expected_error_fragment": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [
+          "EX-SEGMENT: 부모/자식 포함 관계 미확인",
+          "PARENT: 구간 시간 미확인"
+        ],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "instant 부모에 자식",
+      "kind": "invalid",
+      "expected_error_fragment": "부모는 range",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-SEGMENT: 부모는 range 또는 unknown만 가능",
+          "EX-SEGMENT: 부모는 range 또는 unknown만 가능"
+        ],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "동일ID 중복",
+      "kind": "invalid",
+      "expected_error_fragment": "ID 중복",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "record: ID 중복"
+        ],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "부모없는 unassigned 프레임",
+      "kind": "unresolved",
+      "expected_error_fragment": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [
+          "EX-FRAME: 프레임 구간 소속 미지정"
+        ],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "context_before 방향 오류",
+      "kind": "invalid",
+      "expected_error_fragment": "위치 오류",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-FRAME: context_before 위치 오류"
+        ],
+        "unresolved": [
+          "EX-FRAME: 문맥 프레임은 구간 내부 근거 아님"
+        ],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "context_after 방향 오류",
+      "kind": "invalid",
+      "expected_error_fragment": "위치 오류",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-FRAME: context_after 위치 오류"
+        ],
+        "unresolved": [
+          "EX-FRAME: 문맥 프레임은 구간 내부 근거 아님"
+        ],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "미상duration",
+      "kind": "unresolved",
+      "expected_error_fragment": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [
+          "EX-TIME: 영상 길이 미확인"
+        ],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "0denominator 형식 오류",
+      "kind": "invalid",
+      "expected_error_fragment": "[minimum]",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "['frames', 0, 'actual', 'den'] [minimum]: 0 is less than the minimum of 1",
+          "['frames', 0, 'actual'] [type]: {'num': 1, 'den': 0} is not of type 'null'"
+        ],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "bool 정수 위장 금지",
+      "kind": "invalid",
+      "expected_error_fragment": "integer",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "['frames', 0, 'actual', 'num'] [type]: True is not of type 'integer'",
+          "['frames', 0, 'actual'] [type]: {'num': True, 'den': 1} is not of type 'null'",
+          "record.frames[0].actual.num: 원본 정수 타입 필요"
+        ],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "float정수 타입 위장 금지",
+      "kind": "invalid",
+      "expected_error_fragment": "원본 정수",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "record.frames[0].actual.num: 원본 정수 타입 필요"
+        ],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "NaN 기록 금지",
+      "kind": "invalid",
+      "expected_error_fragment": "integer",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "['frames', 0, 'actual', 'num'] [type]: nan is not of type 'integer'",
+          "['frames', 0, 'actual'] [type]: {'num': nan, 'den': 1} is not of type 'null'",
+          "record.frames[0].actual.num: 원본 정수 타입 필요"
+        ],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "JS safe integer 초과",
+      "kind": "invalid",
+      "expected_error_fragment": "[maximum]",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "['frames', 0, 'actual', 'num'] [maximum]: 9007199254740992 is greater than the maximum of 9007199254740991",
+          "['frames', 0, 'actual'] [type]: {'num': 9007199254740992, 'den': 1} is not of type 'null'"
+        ],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "PTS int64 초과",
+      "kind": "invalid",
+      "expected_error_fragment": "int64 범위",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-FRAME: PTS int64 범위 밖",
+          "EX-FRAME: PTS 변환과 actual 불일치"
+        ],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "PTS 문자열 초장문 금지",
+      "kind": "invalid",
+      "expected_error_fragment": "too long",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "['frames', 0, 'source_pts'] [maxLength]: '111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 … 111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111' is too long",
+          "['frames', 0, 'source_pts'] [type]: '111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 … 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111' is not of type 'null'"
+        ],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "원점 AV_NOPTS_VALUE 거부",
+      "kind": "invalid",
+      "expected_error_fragment": "AV_NOPTS_VALUE",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-TIME: AV_NOPTS_VALUE는 null/unknown으로 기록",
+          "EX-FRAME: PTS 변환과 actual 불일치"
+        ],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "프레임 AV_NOPTS_VALUE 거부",
+      "kind": "invalid",
+      "expected_error_fragment": "AV_NOPTS_VALUE",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-FRAME: AV_NOPTS_VALUE는 null/unknown으로 기록",
+          "EX-FRAME: PTS 변환과 actual 불일치"
+        ],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "유효 분수 PTS→1001/30000초",
+      "kind": "valid",
+      "expected_error_fragment": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "비약분 분수도 동일시간 인정",
+      "kind": "valid",
+      "expected_error_fragment": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "unknown선택 정책 확정아님",
+      "kind": "unresolved",
+      "expected_error_fragment": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [
+          "EX-FRAME: 프레임 선택 방법 미확인"
+        ],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "nullordinal 확인누락 보존",
+      "kind": "unresolved",
+      "expected_error_fragment": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [
+          "EX-FRAME: 표시 순서 프레임 번호 미확인"
+        ],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "instant 오차가 부모 제외끝점과 일치",
+      "kind": "unresolved",
+      "expected_error_fragment": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [
+          "CHILD: 오차를 고려한 부모 소속 미해결"
+        ],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "instant 오차가 영상 제외끝점과 일치",
+      "kind": "unresolved",
+      "expected_error_fragment": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [
+          "EX-SEGMENT: 오차 범위가 영상 경계를 가로지름"
+        ],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "0초영상 미매핑프레임 거부",
+      "kind": "invalid",
+      "expected_error_fragment": "0초 영상",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-FRAME: 0초 영상에는 프레임을 등록할 수 없음"
+        ],
+        "unresolved": [
+          "EX-FRAME: 프레임 재생 시각 미확인",
+          "EX-FRAME: 프레임 구간 소속 미지정"
+        ],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "0framecount nullordinal 거부",
+      "kind": "invalid",
+      "expected_error_fragment": "0 프레임",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-FRAME: 0 프레임 시간축에 프레임 등록 금지"
+        ],
+        "unresolved": [
+          "EX-FRAME: 표시 순서 프레임 번호 미확인"
+        ],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "동일스트림 상충시간축 거부",
+      "kind": "invalid",
+      "expected_error_fragment": "중복 시간축",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "record: 동일 자산/스트림 중복 시간축 금지"
+        ],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "동일스트림 동일값alias 거부",
+      "kind": "invalid",
+      "expected_error_fragment": "중복 시간축",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "record: 동일 자산/스트림 중복 시간축 금지"
+        ],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "프레임PTS끝개행 거부",
+      "kind": "invalid",
+      "expected_error_fragment": "[pattern]",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "['frames', 0, 'source_pts'] [pattern]: '180000\\n' does not match '^(0|-?[1-9][0-9]*)(?![\\\\s\\\\S])'",
+          "['frames', 0, 'source_pts'] [type]: '180000\\n' is not of type 'null'"
+        ],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "원점PTS끝개행 거부",
+      "kind": "invalid",
+      "expected_error_fragment": "[pattern]",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "['timelines', 0, 'origin', 'pts'] [pattern]: '90000\\n' does not match '^(0|-?[1-9][0-9]*)(?![\\\\s\\\\S])'",
+          "['timelines', 0, 'origin', 'pts'] [type]: '90000\\n' is not of type 'null'"
+        ],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "sha256끝개행 거부",
+      "kind": "invalid",
+      "expected_error_fragment": "[maxLength]",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "['asset', 'sha256'] [maxLength]: '0000000000000000000000000000000000000000000000000000000000000000\\n' is too long"
+        ],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "unknown자식 instant부모 거부",
+      "kind": "invalid",
+      "expected_error_fragment": "부모는 range",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-SEGMENT: 부모는 range 또는 unknown만 가능"
+        ],
+        "unresolved": [
+          "EX-SEGMENT: 구간 시간 미확인",
+          "EX-SEGMENT: 부모/자식 포함 관계 미확인"
+        ],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "실제 서로 다른스트림 시간축 등록",
+      "kind": "valid",
+      "expected_error_fragment": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "동일ordinal 다른시간 충돌",
+      "kind": "invalid",
+      "expected_error_fragment": "ordinal의 시각 충돌",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "SECOND: 동일 프레임 ordinal의 시각 충돌"
+        ],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "ordinal 증가하지만시간역전",
+      "kind": "invalid",
+      "expected_error_fragment": "시각 역전",
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-TIME: 표시 순서 ordinal과 시각 역전"
+        ],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "다른ordinal 같은PTS 임의금지 안함",
+      "kind": "valid",
+      "expected_error_fragment": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "동일ordinal 동일PTS 참조공유 허용",
+      "kind": "valid",
+      "expected_error_fragment": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    },
+    {
+      "name": "두프레임 정상표시순서",
+      "kind": "valid",
+      "expected_error_fragment": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "fact_verified": false
+      }
+    }
+  ]
+}

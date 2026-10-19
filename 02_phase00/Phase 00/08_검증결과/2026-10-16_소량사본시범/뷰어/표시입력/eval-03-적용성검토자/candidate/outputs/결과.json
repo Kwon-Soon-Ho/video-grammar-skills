@@ -1,0 +1,991 @@
+{
+  "id": "eval-03-small-pilot-applicability-review",
+  "version": "0.1.0",
+  "task_type": "read_only_document_guidance_review",
+  "skill": {
+    "name": "video-guidance-reviewer",
+    "version": "0.2.0-draft.4",
+    "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\실행스킬\\video-guidance-reviewer\\SKILL.md",
+    "sha256": "1885f3166d405d6519615f418351eb8b6092219e06c5e5ec558409b6c039dd6b"
+  },
+  "target": {
+    "kind": "지식 설명카드 초안과 로컬 연결목록",
+    "document": {
+      "id": "phase00-small-pilot-knowledge",
+      "version": "0.1.1",
+      "sha256": "254bd6423812859452c60b7247bc0cdcfe7e626ff6a62b698a8218957655645f",
+      "human_review": "pending",
+      "company_approved": false
+    },
+    "index": {
+      "id": "phase00-small-pilot-index",
+      "version": "0.1.1",
+      "sha256": "f3c5ea305279706e9127cd123df032bbf34cb8c6d25b4b30a529947609a27c83",
+      "human_review": "pending",
+      "company_approved": false
+    },
+    "card_versions": {
+      "시범카드001": "0.1.1",
+      "시범카드002": "0.1.1",
+      "시범카드003": "0.1.1"
+    },
+    "purpose": "쉬운말 설명의 원문 충실성·조건·예외·추론 범위와 판본 연결 검토",
+    "audience_prior_knowledge": null,
+    "media": null,
+    "silent_viewing": null,
+    "aspect_ratio": null,
+    "missing_context_effect": "실제 독자 적합성/렌더 품질 확정에 한정. 문서 의미·연결 검토는 수행 가능."
+  },
+  "outcome": {
+    "local_document_review_completed": true,
+    "confirmed_required_errors": [],
+    "required_edits": [],
+    "recommendation": "3카드/연결목록 유지. 지정 소량 사본의 문서 대조 결과를 부모의 별도 레드팀 검토로 넘길 수 있음. 사람 실무피드백은 대기. 전체 준비완료·회사 승인·기본전환 제안 없음.",
+    "overall_ready": false,
+    "human_review": "pending",
+    "company_approved": false,
+    "basic_skill_transition": false,
+    "actual_video_effect_verified": false,
+    "single_total_score": null
+  },
+  "preselection": {
+    "file": "검수항목_사전선정.json",
+    "before_target_read": true,
+    "changes": [],
+    "mandatory_all_26": false
+  },
+  "criteria_reviews": [
+    {
+      "id": "Q-INFO-01",
+      "required": true,
+      "reason": "전문용어를 풀어 쓴 3카드의 목적·대상·설명수준을 문서로 점검",
+      "scope": "문서 의미·초보 이해용 범위에 한정. 실제 시청자 이해도는 미검수",
+      "criteria_version": "0.1.1",
+      "criteria_sha256": "c5b9e91e902747a1d657fbbaee19c4b2b97e96dcf58f0ae2bb032384f29ce60f",
+      "progress": "문서 검토 완료; 사람 적합성 판단 대기",
+      "verdict": "판단보류",
+      "evidence_and_reason": "쉬운말 설명카드라는 목적과 가상 예는 확인했다. 대상 독자의 실제 사전지식·실무 출력 피드백이 없어 설명 난이도/이해 용이성은 아직 확정하지 않는다. 각 카드의 용어 의미 검토는 별도 통과.",
+      "evidence_locations": [
+        "task.txt",
+        "쉬운말_지식카드.json /scope,/records[*]/plain_explanation,/human_review"
+      ],
+      "required_edit": null,
+      "recheck_or_resolution": "독자의 사전지식 근거·이번 판본에 대한 자유 답변 내용 검토. 실제 영상 효과 자료를 지금 요청하지 않음.",
+      "human_question_ref": "H-01"
+    },
+    {
+      "id": "Q-INFO-02",
+      "required": true,
+      "reason": "쉬운설명의 부정어·의미·조건이 제공 원문과 같은지 직접 대조",
+      "scope": "문서 전사/의미/조건·반례. 영상 음성·자막 검수 아님",
+      "criteria_version": "0.1.1",
+      "criteria_sha256": "c5b9e91e902747a1d657fbbaee19c4b2b97e96dcf58f0ae2bb032384f29ce60f",
+      "progress": "문서 대조 완료",
+      "verdict": "통과",
+      "evidence_and_reason": "3 source_snapshot은 용어 원문과 필드 전체가 같고, 쉬운말 본문은 부정·한계·조건·가상 예 표기를 보존한다. 원문의 짧은 정의를 회사 사실/실영상으로 확대하지 않았다.",
+      "evidence_locations": [
+        "공통용어사전.json /terms/27,/terms/37,/terms/47",
+        "쉬운말_지식카드.json /records[*]"
+      ],
+      "required_edit": null,
+      "recheck_or_resolution": "원문·카드 판본/SHA 또는 검토할 의미가 바뀌면 해당 문장을 다시 대조. 실제 자막/음성 일치성은 미실시.",
+      "human_question_ref": null
+    },
+    {
+      "id": "Q-SCREEN-02",
+      "required": true,
+      "reason": "선형 프로세스의 정보관계·가로/세로·선택조건·반례를 확인",
+      "scope": "레이아웃 설명카드의 조건부 지식만. 실제 화면 밀도·가독성은 미검수",
+      "criteria_version": "0.1.1",
+      "criteria_sha256": "c5b9e91e902747a1d657fbbaee19c4b2b97e96dcf58f0ae2bb032384f29ce60f",
+      "progress": "조건부 지식 문서 대조 완료",
+      "verdict": "통과",
+      "evidence_and_reason": "선형 프로세스의 순서·방향·분기/회귀·시간축 구분과 가로/세로 변형을 보존한다. 원문 반례와 충돌하는 단정은 발견하지 않았다.",
+      "evidence_locations": [
+        "레이아웃_심화지식.json /layout_cards/3",
+        "07_레이아웃별_선택조건과반례.md 73~94행",
+        "쉬운말_지식카드.json /records/0"
+      ],
+      "required_edit": null,
+      "recheck_or_resolution": "실제 절차/문구/화면비·시안에 적용할 때 화면 적합성 별도 검토.",
+      "human_question_ref": null
+    },
+    {
+      "id": "Q-BRAND-02",
+      "required": true,
+      "reason": "연결목록의 디자인 참조를 회사 규칙/공식색/실제 시안 승인으로 승격하지 않았는지 확인",
+      "scope": "출처·역할 분리만 적용. 실제 색/시안 적용 적합성은 이번 대상에 비적용",
+      "criteria_version": "0.1.1",
+      "criteria_sha256": "c5b9e91e902747a1d657fbbaee19c4b2b97e96dcf58f0ae2bb032384f29ce60f",
+      "progress": "출처·역할 경계 문서 검토 완료",
+      "verdict": "통과",
+      "evidence_and_reason": "design_reference는 hanmac-video@0.1.0 실제 profile_id/판본/SHA와 일치하고 usage=reference_only_no_new_color_selected다. 새 색·역할·공식 CI나 회사 승인으로 쓰지 않았다.",
+      "evidence_locations": [
+        "연결목록.json /design_reference",
+        "한맥디자인정본.json /profile_id,/version,/description,/provenance_limit",
+        "07_한맥디자인과_CI_확인현황.md 3~14행"
+      ],
+      "required_edit": null,
+      "recheck_or_resolution": "새 색/화면 역할을 실제 선택하면 별도 적용 조건을 검토. 이번에 사용하지 않은 CI 세부 미정은 전체 차단 조건이 아님.",
+      "human_question_ref": null
+    },
+    {
+      "id": "Q-TRUST-01",
+      "required": true,
+      "reason": "상류 파일·원문·연결판본·SHA와 문장 지지범위를 직접 검증",
+      "scope": "문서 비공간 주장. PTS/OCR/좌표/프레임을 요구하거나 만들지 않음",
+      "criteria_version": "0.1.1",
+      "criteria_sha256": "c5b9e91e902747a1d657fbbaee19c4b2b97e96dcf58f0ae2bb032384f29ce60f",
+      "progress": "로컬 판본/연결/내용 대조 완료",
+      "verdict": "통과",
+      "evidence_and_reason": "3카드 ID·term_ref·원문 snapshot/원문 SHA·draft_ref 문서/카드 판본·실제 파일 SHA가 일치했다. 상류 인계 destination별 SHA도 모두 일치한다. source 경로 존재/SHA만으로 의미 통과라 하지 않고 위 카드별 본문 대조를 별도로 수행했다.",
+      "evidence_locations": [
+        "local_audit.json",
+        "상류결과/01/결과.md",
+        "상류결과/02/결과.md",
+        "상류_인계증거.json"
+      ],
+      "required_edit": null,
+      "recheck_or_resolution": "full R6/R7와 품질 출처 조사 전체는 제공되지 않아 full 검증 통과로 확대하지 않음. 문서 주장이므로 PTS/OCR/좌표는 요구하지 않음.",
+      "human_question_ref": null
+    },
+    {
+      "id": "Q-TRUST-02",
+      "required": true,
+      "reason": "주목 이동 기능과 실제 시선효과, 가시성 관측과 제작원인, 미검수와 승인 경계를 확인",
+      "scope": "효과/구현/회사일반화의 주장범위 검토. 실제 효과·제작자 의도 확정 아님",
+      "criteria_version": "0.1.1",
+      "criteria_sha256": "c5b9e91e902747a1d657fbbaee19c4b2b97e96dcf58f0ae2bb032384f29ce60f",
+      "progress": "추론/승인 범위 문서 검토 완료",
+      "verdict": "통과",
+      "evidence_and_reason": "주목 이동 기능/효과와 가시성 관측/구현 원인을 분리한다. draft·human_review=pending·company_approved=false를 유지했다. 옛 R8-3 구성/분량 유지 회신과 CI 최신성 회신을 이번 3카드 내용 승인에 재사용하지 않는다.",
+      "evidence_locations": [
+        "쉬운말_지식카드.json /records/1/caution,/records/2/caution,/human_review,/company_approved",
+        "연결목록.json /human_review,/company_approved",
+        "R8-3_적용성검토자_검토답변.json /scope"
+      ],
+      "required_edit": null,
+      "recheck_or_resolution": "실제 제작 의도/원인·시선/학습 효과·회사 규칙·회사 승인·후보 기본 전환을 확정하지 않음.",
+      "human_question_ref": null
+    }
+  ],
+  "card_reviews": [
+    {
+      "card_id": "시범카드001",
+      "version": "0.1.1",
+      "term_id": "LAYOUT-PROCESS-LINE",
+      "term_version": "0.1.0",
+      "axis": "layout",
+      "progress": "문서 대조 완료",
+      "verdict": "통과",
+      "scope": "제공 원문에 대한 의미·조건·반례·기권 경계의 문서 검토",
+      "target_locations": [
+        "/records/0/plain_explanation",
+        "/records/0/use_when",
+        "/records/0/example",
+        "/records/0/counterexample",
+        "/records/0/caution"
+      ],
+      "source_locations": [
+        "공통용어사전.json /terms/27",
+        "용어판정기준.json /guides/27",
+        "레이아웃지식.json /layouts/3",
+        "레이아웃_심화지식.json /layout_cards/3",
+        "07_레이아웃별_선택조건과반례.md 73~94행"
+      ],
+      "evidence": "단계를 선·방향으로 연결한다는 정의와 순서 있는 단계 조건을 보존. 세로 예에서도 단계 순서·연결 방향을 유지하고 가로/세로는 방향 속성으로 분리. 동등 나열·연도축·중요 분기/회귀 은폐를 반례로 두고 선 길이와 실제 소요시간을 분리한다. 선후·분기 근거가 없으면 순서를 확정하지 않는다.",
+      "valid_exceptions": "가로·세로 재배열 모두 가능. 순서선이 반드시 기간 길이를 뜻하지 않음. 분기/기간이 핵심이면 다른 구조를 검토하는 원문 조건을 보존.",
+      "counterevidence_or_limits": "실제 단계 명칭·선후 사실, 실제 화면의 가독성·밀도·지속시간은 제공되지 않았으므로 검수하지 않음. 원문이 요구하는 모든 시안 조정 지침을 이 간단한 용어 설명에 전부 복제할 필요는 없음.",
+      "action": "현재 문장 유지",
+      "required_edit": null,
+      "recheck_when": "카드 문장/원문 판본·SHA가 바뀌거나 실제 절차/시안에 적용할 때"
+    },
+    {
+      "card_id": "시범카드002",
+      "version": "0.1.1",
+      "term_id": "FUNCTION-FOCUS",
+      "term_version": "0.1.0",
+      "axis": "motion_function",
+      "progress": "문서 대조 완료",
+      "verdict": "통과",
+      "scope": "모션 기능 설명과 효과 입증 범위의 문서 검토",
+      "target_locations": [
+        "/records/1/plain_explanation",
+        "/records/1/use_when",
+        "/records/1/counterexample",
+        "/records/1/caution"
+      ],
+      "source_locations": [
+        "공통용어사전.json /terms/37",
+        "용어판정기준.json /guides/37",
+        "분류운영규칙.json /evidence_rules/temporal_change_plus_message_context"
+      ],
+      "evidence": "지금 설명하는 대상에 안내하는 움직임의 역할이라고 쓰고, 시간에 따른 강조 변화와 설명 맥락을 함께 요구한다. 장식용 점의 모든 이동을 기능으로 보지 않으며 대상 근거가 부족하면 후보로 남긴다. 실제 시청자의 시선을 옮겼는지는 별도 검토가 필요하다고 명시한다.",
+      "valid_exceptions": "기능의 문서 정의/계획된 예를 설명할 수 있으나 실제 렌더 관측·시청효과로 승격하지 않음.",
+      "counterevidence_or_limits": "눈길을 안내한다는 목적 표현만 떼어 효과 확정으로 읽으면 오해할 수 있으나 같은 카드의 caution이 실제 효과를 명시 분리해 확인된 의미 오류는 없음. 실제 시선효과·학습효과·제작자 의도는 미확인.",
+      "action": "효과 분리 caution을 포함해 현재 문장 유지",
+      "required_edit": null,
+      "recheck_when": "해당 caution 삭제·축약, 실제 영상/효과 주장 추가 시"
+    },
+    {
+      "card_id": "시범카드003",
+      "version": "0.1.1",
+      "term_id": "PROPERTY-VISIBILITY",
+      "term_version": "0.1.0",
+      "axis": "motion_property",
+      "progress": "문서 대조 완료",
+      "verdict": "통과",
+      "scope": "가시성 관측과 구현/원인 추정의 문서 검토",
+      "target_locations": [
+        "/records/2/plain_explanation",
+        "/records/2/use_when",
+        "/records/2/counterexample",
+        "/records/2/caution"
+      ],
+      "source_locations": [
+        "공통용어사전.json /terms/47",
+        "공통용어사전.json /terms/48",
+        "용어판정기준.json /guides/47",
+        "용어판정기준.json /guides/48",
+        "분류운영규칙.json /claim_status_policy"
+      ],
+      "evidence": "보이는 범위·정도의 시간 변화와 같은 대상/시간 범위 조건을 보존. 불투명도·마스크·합성·배경 중 원인을 원본 없이 확정하지 않고, 관측이 충분하면 가시성 기록을 유지하며 원인만 미확정으로 둔다.",
+      "valid_exceptions": "구현 원인이 미확정이어도 충분한 화면 관측까지 삭제하지 않음. 정확한 opacity 수치/알고리즘은 별도 정의 필수근거 없으면 확정 불가.",
+      "counterevidence_or_limits": "가상 예를 실제 제목/글자의 등장 관측으로 등록하지 않음. 실제 opacity/마스크/합성 원인은 조사하지 않음.",
+      "action": "현재 문장 유지",
+      "required_edit": null,
+      "recheck_when": "관측/원인 분리 문장 변경 또는 실제 구현 주장 추가 시"
+    }
+  ],
+  "source_versions_and_hashes": [
+    {
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\01_공통용어\\공통용어사전.json",
+      "relative_path": "01_공통용어/공통용어사전.json",
+      "version": "0.1.1",
+      "sha256": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+      "semantic_scope": [
+        "/terms/27",
+        "/terms/37",
+        "/terms/47",
+        "/terms/48"
+      ]
+    },
+    {
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\01_공통용어\\용어판정기준.json",
+      "relative_path": "01_공통용어/용어판정기준.json",
+      "version": "0.1.2",
+      "sha256": "c975dcb7f8b35b07419a5e35f7f11b4581b480b84d879fed46f5adf94062c8f4",
+      "semantic_scope": [
+        "/guides/27",
+        "/guides/37",
+        "/guides/47",
+        "/guides/48"
+      ]
+    },
+    {
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\01_공통용어\\분류운영규칙.json",
+      "relative_path": "01_공통용어/분류운영규칙.json",
+      "version": "0.1.1",
+      "sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d",
+      "semantic_scope": [
+        "/axis_units",
+        "/claim_status_policy",
+        "/evidence_rules"
+      ]
+    },
+    {
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\02_원칙과레이아웃\\레이아웃지식.json",
+      "relative_path": "02_원칙과레이아웃/레이아웃지식.json",
+      "version": "0.1.1",
+      "sha256": "0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306",
+      "semantic_scope": [
+        "/layouts/3"
+      ]
+    },
+    {
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\02_원칙과레이아웃\\레이아웃_심화지식.json",
+      "relative_path": "02_원칙과레이아웃/레이아웃_심화지식.json",
+      "version": "0.1.2",
+      "sha256": "5d6378eb954b6b75f94be2a0988254a1406f6dacc8a6c44060c6a05ff56aa14c",
+      "semantic_scope": [
+        "/layout_cards/3"
+      ]
+    },
+    {
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\02_원칙과레이아웃\\07_레이아웃별_선택조건과반례.md",
+      "relative_path": "02_원칙과레이아웃/07_레이아웃별_선택조건과반례.md",
+      "version": null,
+      "sha256": "945fa1ec974bd73899d71de9b4019edf0d465d3c32443a9fe8ee610d56c471dd",
+      "semantic_scope": [
+        "머리말 1~5행",
+        "선형 프로세스 73~94행"
+      ]
+    },
+    {
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\13_품질검수\\품질항목_정본.json",
+      "relative_path": "13_품질검수/품질항목_정본.json",
+      "version": "0.1.1",
+      "sha256": "c5b9e91e902747a1d657fbbaee19c4b2b97e96dcf58f0ae2bb032384f29ce60f",
+      "semantic_scope": [
+        "Q-INFO-01",
+        "Q-INFO-02",
+        "Q-SCREEN-02",
+        "Q-BRAND-02",
+        "Q-TRUST-01",
+        "Q-TRUST-02"
+      ]
+    },
+    {
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\13_품질검수\\03_판정운영기준.md",
+      "relative_path": "13_품질검수/03_판정운영기준.md",
+      "version": "R7-1 2026-10-15",
+      "sha256": "2a8e21f028e18398ab2a6544cc429e585ab6a0a59abd370dbacd7991e141b7c1",
+      "semantic_scope": [
+        "전체"
+      ]
+    },
+    {
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\03_한맥디자인\\한맥디자인정본.json",
+      "relative_path": "03_한맥디자인/한맥디자인정본.json",
+      "version": "0.1.0",
+      "sha256": "dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed",
+      "semantic_scope": [
+        "/profile_id",
+        "/version",
+        "/description",
+        "/provenance_limit",
+        "/sources"
+      ]
+    },
+    {
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\14_스킬재구성\\R8_현재사용안내.md",
+      "relative_path": "14_스킬재구성/R8_현재사용안내.md",
+      "version": "2026-10-15",
+      "sha256": "2389ff50cb88d00c353c469df388a967ad6bde36166eac67b332a1af26306e09",
+      "semantic_scope": [
+        "전체"
+      ]
+    },
+    {
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\14_스킬재구성\\현재상태_정정표.json",
+      "relative_path": "14_스킬재구성/현재상태_정정표.json",
+      "version": "0.1.1",
+      "sha256": "edf2ac8d3b35af757619c0cec9d52caae5f65c815f63fd64ed7f4b17585e6ce0",
+      "semantic_scope": [
+        "/records 5건"
+      ]
+    }
+  ],
+  "local_link_and_snapshot_checks": {
+    "target_document": {
+      "id": "phase00-small-pilot-knowledge",
+      "version": "0.1.1",
+      "sha256": "254bd6423812859452c60b7247bc0cdcfe7e626ff6a62b698a8218957655645f",
+      "human_review": "pending",
+      "company_approved": false
+    },
+    "index": {
+      "id": "phase00-small-pilot-index",
+      "version": "0.1.1",
+      "sha256": "f3c5ea305279706e9127cd123df032bbf34cb8c6d25b4b30a529947609a27c83",
+      "human_review": "pending",
+      "company_approved": false
+    },
+    "card_count": 3,
+    "index_count": 3,
+    "same_card_set": true,
+    "card_checks": [
+      {
+        "card_id": "시범카드001",
+        "term_id": "LAYOUT-PROCESS-LINE",
+        "source_snapshot_equal": true,
+        "source_sha_match": true,
+        "term_version_match": true,
+        "axis": "layout",
+        "link_id_match": true,
+        "link_term_ref_match": true,
+        "document_version_match": true,
+        "record_version_match": true,
+        "draft_file_sha_match": true,
+        "source_status_preserved": true,
+        "state": "draft",
+        "company_approved": false
+      },
+      {
+        "card_id": "시범카드002",
+        "term_id": "FUNCTION-FOCUS",
+        "source_snapshot_equal": true,
+        "source_sha_match": true,
+        "term_version_match": true,
+        "axis": "motion_function",
+        "link_id_match": true,
+        "link_term_ref_match": true,
+        "document_version_match": true,
+        "record_version_match": true,
+        "draft_file_sha_match": true,
+        "source_status_preserved": true,
+        "state": "draft",
+        "company_approved": false
+      },
+      {
+        "card_id": "시범카드003",
+        "term_id": "PROPERTY-VISIBILITY",
+        "source_snapshot_equal": true,
+        "source_sha_match": true,
+        "term_version_match": true,
+        "axis": "motion_property",
+        "link_id_match": true,
+        "link_term_ref_match": true,
+        "document_version_match": true,
+        "record_version_match": true,
+        "draft_file_sha_match": true,
+        "source_status_preserved": true,
+        "state": "draft",
+        "company_approved": false
+      }
+    ],
+    "design_reference": {
+      "profile_id_actual": "hanmac-video",
+      "reference_id": "hanmac-video",
+      "id_match": true,
+      "version_match": true,
+      "sha_match": true,
+      "usage": "reference_only_no_new_color_selected"
+    },
+    "backup_hashes": [
+      {
+        "path": "backup/이번작업/큐레이터_소량시범_20261016/쉬운말_지식카드_v0.1.0.json",
+        "sha256": "9aaaa77ee0ab7f64db58db3276cdc8f0056f8169471ef05711c36679557963a2"
+      },
+      {
+        "path": "backup/이번작업/기록관리자_소량시범_20261016/연결목록_v0.1.0.json",
+        "sha256": "2a2471e8e26c1e85953ede0bd6c514912dfc3e0e81b7996624b0118b81681147"
+      }
+    ],
+    "transfer_checks": [
+      {
+        "destination": "00_운영계약/01_보존과버전_계약.md",
+        "exists": true,
+        "expected_sha256": "8400b604210c0fc1bdb18c774b9824ef5cf7f389e38aceda93178925f9daedc1",
+        "actual_sha256": "8400b604210c0fc1bdb18c774b9824ef5cf7f389e38aceda93178925f9daedc1",
+        "match": true
+      },
+      {
+        "destination": "00_운영계약/정본과표시_연결목록.json",
+        "exists": true,
+        "expected_sha256": "e46cdd823766e91c84dd6a05a0254879bfcc9f80c2b04bfc48ec0788b5005fe6",
+        "actual_sha256": "e46cdd823766e91c84dd6a05a0254879bfcc9f80c2b04bfc48ec0788b5005fe6",
+        "match": true
+      },
+      {
+        "destination": "01_공통용어/02_기록단위와분류축.md",
+        "exists": true,
+        "expected_sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+        "actual_sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+        "match": true
+      },
+      {
+        "destination": "01_공통용어/공통용어사전.json",
+        "exists": true,
+        "expected_sha256": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+        "actual_sha256": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+        "match": true
+      },
+      {
+        "destination": "01_공통용어/분류운영규칙.json",
+        "exists": true,
+        "expected_sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d",
+        "actual_sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d",
+        "match": true
+      },
+      {
+        "destination": "01_공통용어/용어판정기준.json",
+        "exists": true,
+        "expected_sha256": "c975dcb7f8b35b07419a5e35f7f11b4581b480b84d879fed46f5adf94062c8f4",
+        "actual_sha256": "c975dcb7f8b35b07419a5e35f7f11b4581b480b84d879fed46f5adf94062c8f4",
+        "match": true
+      },
+      {
+        "destination": "02_원칙과레이아웃/07_레이아웃별_선택조건과반례.md",
+        "exists": true,
+        "expected_sha256": "945fa1ec974bd73899d71de9b4019edf0d465d3c32443a9fe8ee610d56c471dd",
+        "actual_sha256": "945fa1ec974bd73899d71de9b4019edf0d465d3c32443a9fe8ee610d56c471dd",
+        "match": true
+      },
+      {
+        "destination": "02_원칙과레이아웃/레이아웃_심화지식.json",
+        "exists": true,
+        "expected_sha256": "5d6378eb954b6b75f94be2a0988254a1406f6dacc8a6c44060c6a05ff56aa14c",
+        "actual_sha256": "5d6378eb954b6b75f94be2a0988254a1406f6dacc8a6c44060c6a05ff56aa14c",
+        "match": true
+      },
+      {
+        "destination": "02_원칙과레이아웃/레이아웃지식.json",
+        "exists": true,
+        "expected_sha256": "0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306",
+        "actual_sha256": "0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306",
+        "match": true
+      },
+      {
+        "destination": "03_한맥디자인/한맥디자인정본.json",
+        "exists": true,
+        "expected_sha256": "dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed",
+        "actual_sha256": "dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed",
+        "match": true
+      },
+      {
+        "destination": "03_한맥디자인/회사별_디자인연결_현황.json",
+        "exists": true,
+        "expected_sha256": "f5a2913c38dc5651e714d48467a558565051bc878ac07b943cfddf48ae7a15ec",
+        "actual_sha256": "f5a2913c38dc5651e714d48467a558565051bc878ac07b943cfddf48ae7a15ec",
+        "match": true
+      },
+      {
+        "destination": "04_기록규격/06_통합최소기록_규격_v0.2.md",
+        "exists": true,
+        "expected_sha256": "3c301c7f874921a3bd7bc3e5922ca8cb7c16ddc950f78ecc9850251b9474df74",
+        "actual_sha256": "3c301c7f874921a3bd7bc3e5922ca8cb7c16ddc950f78ecc9850251b9474df74",
+        "match": true
+      },
+      {
+        "destination": "04_기록규격/통합최소기록_설명용_v0.2.json",
+        "exists": true,
+        "expected_sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+        "actual_sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+        "match": true
+      },
+      {
+        "destination": "07_실행도구/자료검증.py",
+        "exists": true,
+        "expected_sha256": "0abd4cba7f1ba3a69011ef67758dbcc6f5c9599785aa0ae5ed5fd6cd0e434ec4",
+        "actual_sha256": "0abd4cba7f1ba3a69011ef67758dbcc6f5c9599785aa0ae5ed5fd6cd0e434ec4",
+        "match": true
+      },
+      {
+        "destination": "08_검증결과/R4_04_보완결과와레드팀.md",
+        "exists": true,
+        "expected_sha256": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+        "actual_sha256": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+        "match": true
+      },
+      {
+        "destination": "09_다음단계인계/R7_01-A_구현전_인계.md",
+        "exists": true,
+        "expected_sha256": "438dc5bb19e7a4356436869aa67704712e5e2257084d89cd15fc3bbfe8d2f0b4",
+        "actual_sha256": "438dc5bb19e7a4356436869aa67704712e5e2257084d89cd15fc3bbfe8d2f0b4",
+        "match": true
+      },
+      {
+        "destination": "09_다음단계인계/R7_R8_스킬재구성_인계.md",
+        "exists": true,
+        "expected_sha256": "7d7abac31fc1501c48fd17d2e1df0fff368057bedbf90bbb270e47baf12872ac",
+        "actual_sha256": "7d7abac31fc1501c48fd17d2e1df0fff368057bedbf90bbb270e47baf12872ac",
+        "match": true
+      },
+      {
+        "destination": "13_품질검수/03_판정운영기준.md",
+        "exists": true,
+        "expected_sha256": "2a8e21f028e18398ab2a6544cc429e585ab6a0a59abd370dbacd7991e141b7c1",
+        "actual_sha256": "2a8e21f028e18398ab2a6544cc429e585ab6a0a59abd370dbacd7991e141b7c1",
+        "match": true
+      },
+      {
+        "destination": "13_품질검수/품질항목_정본.json",
+        "exists": true,
+        "expected_sha256": "c5b9e91e902747a1d657fbbaee19c4b2b97e96dcf58f0ae2bb032384f29ce60f",
+        "actual_sha256": "c5b9e91e902747a1d657fbbaee19c4b2b97e96dcf58f0ae2bb032384f29ce60f",
+        "match": true
+      },
+      {
+        "destination": "14_스킬재구성/R8_현재사용안내.md",
+        "exists": true,
+        "expected_sha256": "2389ff50cb88d00c353c469df388a967ad6bde36166eac67b332a1af26306e09",
+        "actual_sha256": "2389ff50cb88d00c353c469df388a967ad6bde36166eac67b332a1af26306e09",
+        "match": true
+      },
+      {
+        "destination": "14_스킬재구성/제한소스_보관과활용_미정.json",
+        "exists": true,
+        "expected_sha256": "55ec79d9b7ae879b6d4ab61f12d09bd7365ab5a2af46c9029fd7f4d6155ccca9",
+        "actual_sha256": "55ec79d9b7ae879b6d4ab61f12d09bd7365ab5a2af46c9029fd7f4d6155ccca9",
+        "match": true
+      },
+      {
+        "destination": "14_스킬재구성/현재상태_정정표.json",
+        "exists": true,
+        "expected_sha256": "edf2ac8d3b35af757619c0cec9d52caae5f65c815f63fd64ed7f4b17585e6ce0",
+        "actual_sha256": "edf2ac8d3b35af757619c0cec9d52caae5f65c815f63fd64ed7f4b17585e6ce0",
+        "match": true
+      },
+      {
+        "destination": "작업초안/쉬운말_지식카드.json",
+        "exists": true,
+        "expected_sha256": "254bd6423812859452c60b7247bc0cdcfe7e626ff6a62b698a8218957655645f",
+        "actual_sha256": "254bd6423812859452c60b7247bc0cdcfe7e626ff6a62b698a8218957655645f",
+        "match": true
+      },
+      {
+        "destination": "작업초안/연결목록.json",
+        "exists": true,
+        "expected_sha256": "f3c5ea305279706e9127cd123df032bbf34cb8c6d25b4b30a529947609a27c83",
+        "actual_sha256": "f3c5ea305279706e9127cd123df032bbf34cb8c6d25b4b30a529947609a27c83",
+        "match": true
+      },
+      {
+        "destination": "05_출처와검토/검수와사용범위/07_한맥디자인과_CI_확인현황.md",
+        "exists": true,
+        "expected_sha256": "872b4cf10790af7142a6438252f0da6206cd25233823050d3fafd8f412bbc226",
+        "actual_sha256": "872b4cf10790af7142a6438252f0da6206cd25233823050d3fafd8f412bbc226",
+        "match": true
+      },
+      {
+        "destination": "14_스킬재구성/사람피드백/R8-3_적용성검토자_검토답변.json",
+        "exists": true,
+        "expected_sha256": "e7906857aa075179a0947489a8dfa3fba267145df035c177972c76f20f788a1d",
+        "actual_sha256": "e7906857aa075179a0947489a8dfa3fba267145df035c177972c76f20f788a1d",
+        "match": true
+      },
+      {
+        "destination": "backup/이번작업/기록관리자_소량시범_20261016/연결목록_v0.1.0.json",
+        "exists": true,
+        "expected_sha256": "2a2471e8e26c1e85953ede0bd6c514912dfc3e0e81b7996624b0118b81681147",
+        "actual_sha256": "2a2471e8e26c1e85953ede0bd6c514912dfc3e0e81b7996624b0118b81681147",
+        "match": true
+      },
+      {
+        "destination": "backup/이번작업/큐레이터_소량시범_20261016/쉬운말_지식카드_v0.1.0.json",
+        "exists": true,
+        "expected_sha256": "9aaaa77ee0ab7f64db58db3276cdc8f0056f8169471ef05711c36679557963a2",
+        "actual_sha256": "9aaaa77ee0ab7f64db58db3276cdc8f0056f8169471ef05711c36679557963a2",
+        "match": true
+      },
+      {
+        "destination": "상류결과/01/결과.json",
+        "exists": true,
+        "expected_sha256": "dfa84ae11bb6c2f35555a6a18bef7fc767c7c629d1e258add6f5c0c400ec8922",
+        "actual_sha256": "dfa84ae11bb6c2f35555a6a18bef7fc767c7c629d1e258add6f5c0c400ec8922",
+        "match": true
+      },
+      {
+        "destination": "상류결과/01/결과.md",
+        "exists": true,
+        "expected_sha256": "92632fb0549d0c23f1a015fcec0398ab5396046b6e8cfa44e0e9b7e475e2c612",
+        "actual_sha256": "92632fb0549d0c23f1a015fcec0398ab5396046b6e8cfa44e0e9b7e475e2c612",
+        "match": true
+      },
+      {
+        "destination": "상류결과/01/결과.md",
+        "exists": true,
+        "expected_sha256": "92632fb0549d0c23f1a015fcec0398ab5396046b6e8cfa44e0e9b7e475e2c612",
+        "actual_sha256": "92632fb0549d0c23f1a015fcec0398ab5396046b6e8cfa44e0e9b7e475e2c612",
+        "match": true
+      },
+      {
+        "destination": "상류결과/01/결과.json",
+        "exists": true,
+        "expected_sha256": "dfa84ae11bb6c2f35555a6a18bef7fc767c7c629d1e258add6f5c0c400ec8922",
+        "actual_sha256": "dfa84ae11bb6c2f35555a6a18bef7fc767c7c629d1e258add6f5c0c400ec8922",
+        "match": true
+      },
+      {
+        "destination": "상류결과/02/결과.md",
+        "exists": true,
+        "expected_sha256": "fa3912a238b899a8090398a50f2e2e31ab3019c9a3574ba24108a94af6b3bce3",
+        "actual_sha256": "fa3912a238b899a8090398a50f2e2e31ab3019c9a3574ba24108a94af6b3bce3",
+        "match": true
+      },
+      {
+        "destination": "상류결과/02/결과.json",
+        "exists": true,
+        "expected_sha256": "26fa14346b92149e7ca5c19bab8b42779779e65f5a4a0dd63aa04006049185a4",
+        "actual_sha256": "26fa14346b92149e7ca5c19bab8b42779779e65f5a4a0dd63aa04006049185a4",
+        "match": true
+      }
+    ],
+    "path_scope_checks": [
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\01_진행현황.md",
+        "exists": false
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\08_검증결과\\R8_04_통합검증\\00_최종보고.md",
+        "exists": false
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\07_실행도구\\R6_통합조회.py",
+        "exists": false
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\07_실행도구\\R7_연결확인.py",
+        "exists": false
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\13_품질검수\\판정방식_사용자결정.json",
+        "exists": false
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\05_출처와검토\\R7_02_품질항목_조사기록.json",
+        "exists": false
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\13_품질검수\\항목별기준",
+        "exists": false
+      }
+    ],
+    "canonical_registration_for_working_draft": []
+  },
+  "current_status_guidance": {
+    "guidance_exists": true,
+    "guidance_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\14_스킬재구성\\R8_현재사용안내.md",
+    "errata_exists": true,
+    "errata_checks": [
+      {
+        "id": "ST-R4",
+        "all_hashes_match": true,
+        "references": [
+          {
+            "role": "source",
+            "path": "04_기록규격/06_통합최소기록_규격_v0.2.md",
+            "exists": true,
+            "expected_sha256": "3c301c7f874921a3bd7bc3e5922ca8cb7c16ddc950f78ecc9850251b9474df74",
+            "actual_sha256": "3c301c7f874921a3bd7bc3e5922ca8cb7c16ddc950f78ecc9850251b9474df74",
+            "match": true
+          },
+          {
+            "role": "basis",
+            "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+            "exists": true,
+            "expected_sha256": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+            "actual_sha256": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+            "match": true
+          },
+          {
+            "role": "basis",
+            "path": "07_실행도구/자료검증.py",
+            "exists": true,
+            "expected_sha256": "0abd4cba7f1ba3a69011ef67758dbcc6f5c9599785aa0ae5ed5fd6cd0e434ec4",
+            "actual_sha256": "0abd4cba7f1ba3a69011ef67758dbcc6f5c9599785aa0ae5ed5fd6cd0e434ec4",
+            "match": true
+          }
+        ]
+      },
+      {
+        "id": "ST-R2",
+        "all_hashes_match": true,
+        "references": [
+          {
+            "role": "source",
+            "path": "01_공통용어/02_기록단위와분류축.md",
+            "exists": true,
+            "expected_sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+            "actual_sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+            "match": true
+          },
+          {
+            "role": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "exists": true,
+            "expected_sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "actual_sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "match": true
+          },
+          {
+            "role": "basis",
+            "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+            "exists": true,
+            "expected_sha256": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+            "actual_sha256": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+            "match": true
+          }
+        ]
+      },
+      {
+        "id": "ST-R2-JSON",
+        "all_hashes_match": true,
+        "references": [
+          {
+            "role": "source",
+            "path": "01_공통용어/분류운영규칙.json",
+            "exists": true,
+            "expected_sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d",
+            "actual_sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d",
+            "match": true
+          },
+          {
+            "role": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "exists": true,
+            "expected_sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "actual_sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "match": true
+          }
+        ]
+      },
+      {
+        "id": "ST-HANDOFF",
+        "all_hashes_match": true,
+        "references": [
+          {
+            "role": "source",
+            "path": "09_다음단계인계/R7_01-A_구현전_인계.md",
+            "exists": true,
+            "expected_sha256": "438dc5bb19e7a4356436869aa67704712e5e2257084d89cd15fc3bbfe8d2f0b4",
+            "actual_sha256": "438dc5bb19e7a4356436869aa67704712e5e2257084d89cd15fc3bbfe8d2f0b4",
+            "match": true
+          },
+          {
+            "role": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "exists": true,
+            "expected_sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "actual_sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "match": true
+          },
+          {
+            "role": "basis",
+            "path": "01_공통용어/02_기록단위와분류축.md",
+            "exists": true,
+            "expected_sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+            "actual_sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+            "match": true
+          }
+        ]
+      },
+      {
+        "id": "ST-R7-R8",
+        "all_hashes_match": true,
+        "references": [
+          {
+            "role": "source",
+            "path": "09_다음단계인계/R7_R8_스킬재구성_인계.md",
+            "exists": true,
+            "expected_sha256": "7d7abac31fc1501c48fd17d2e1df0fff368057bedbf90bbb270e47baf12872ac",
+            "actual_sha256": "7d7abac31fc1501c48fd17d2e1df0fff368057bedbf90bbb270e47baf12872ac",
+            "match": true
+          },
+          {
+            "role": "basis",
+            "path": "14_스킬재구성/사람피드백/R8-3_적용성검토자_검토답변.json",
+            "exists": true,
+            "expected_sha256": "e7906857aa075179a0947489a8dfa3fba267145df035c177972c76f20f788a1d",
+            "actual_sha256": "e7906857aa075179a0947489a8dfa3fba267145df035c177972c76f20f788a1d",
+            "match": true
+          }
+        ]
+      }
+    ],
+    "all_5_errata_path_hashes_match": true,
+    "interpretation_scope": "과거 단계/저장연결 상태 해석만. 원문/내용 계약/회사 권한 변경 없음. 최신 통합 종료 보고 원문이 사본에 없어 전체 R8 최신 종료 독립 재확인은 보류.",
+    "prior_feedback_scope": "옛 R8-3 구성·분량 유지와 R8-4 진행 회신. 이번 3카드 실무 출력피드백/내용승인으로 이식하지 않음."
+  },
+  "non_applicable": [
+    {
+      "scope": "실제 색·시안·로고 적용 판정",
+      "reason": "이번 대상은 설명카드/참조목록이며 새로운 색이나 화면 역할을 선택하지 않음. Q-BRAND-02는 출처·권위 경계만 문서에 적용."
+    },
+    {
+      "scope": "PTS/OCR/공간 좌표·시간수치 측정",
+      "reason": "실제 영상/시공간 관측을 검수하는 대상이 아님."
+    },
+    {
+      "scope": "자막·음향·섬광·대비·글리프·크롭·이징·유지시간 등 렌더 품질",
+      "reason": "이번 문서 목적 범위에 적용하지 않음. 실제 영상에서는 다시 적용을 선정해야 하며 이번 결과를 승계하지 않음."
+    }
+  ],
+  "not_performed": [
+    "실제 영상 관측/가독성/모션/학습·시선효과 검증",
+    "사람의 이번 출력 내용/실무피드백 접수·승인",
+    "독립 레드팀: 부모가 별도 수행",
+    "R4/R5 영상 기록 검사기 실행",
+    "R6/R7 full 고정 원문 검증",
+    "원격 원문/웹 최신 재확인",
+    "API·네트워크·CU·AE·설치·D 운영/상위 원본·스킬 변경·기본전환·01-A 구현",
+    "실패/복구·동시수정 시험: 이번 읽기전용 검토에서 수행하지 않음"
+  ],
+  "limitations": [
+    "제공된 로컬 용어/지식 정본과 문서의 대조임. 외부 문헌 locator 목록은 외부 본문을 이번에 열었다는 뜻이 아님.",
+    "R8 현재 안내가 연결한 진행현황/통합최종보고, 전체 R6/R7 조회 도구/정본, 품질 조사기록/항목별기준은 조회한 해당 경로에 없음. 부재는 안내 자체 부재나 카드 전체 검토 중단으로 확대하지 않음.",
+    "full_file 읽기 증거는 프로그램이 전체 바이트를 읽고 stdout에 보존했다는 뜻. UI가 일부 대용량 stdout을 생략했으며 의미 대조는 focus_targets/focus_exact/context_excerpt의 실제 표시 절·JSON pointer에 한정. 회사별 CI 목록 전체의 내용 의미를 전수 검수했다고 주장하지 않음."
+  ],
+  "human_questions": [
+    {
+      "id": "H-01",
+      "status": "pending_not_sent",
+      "role": "이번 설명카드를 사용할 내용 담당자·필요시 실제 독자",
+      "target_file": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\작업초안\\쉬운말_지식카드.json",
+      "document_version": "0.1.1",
+      "sha256": "254bd6423812859452c60b7247bc0cdcfe7e626ff6a62b698a8218957655645f",
+      "target_ids": [
+        "시범카드001",
+        "시범카드002",
+        "시범카드003"
+      ],
+      "locations": [
+        "/records/0/plain_explanation,/use_when,/counterexample,/caution",
+        "/records/1/plain_explanation,/use_when,/counterexample,/caution",
+        "/records/2/plain_explanation,/use_when,/counterexample,/caution"
+      ],
+      "confirmed": "제공 원문과 축·조건·반례·추론범위는 문서 대조에서 유지됨.",
+      "missing": "이번 카드 판본을 읽은 실제 사람의 실무 용이성/사전지식/내용 확인 회신",
+      "question": "이 세 설명을 사용할 독자는 관련 용어를 어느 정도 알고 있나요? 각 카드에서 이해하기 어렵거나 실제 업무 의미와 다르게 읽히는 문장·위치를 자유롭게 알려 주시고, 수정이 필요하면 근거 또는 원하는 의미를 함께 적어 주세요.",
+      "answer": null,
+      "resolution": "해당 v0.1.1/이 SHA·카드 위치/범위의 실제 답변을 확인한 부분만 기록. 다른 판본/옛 R8 회신으로 완료하지 않음."
+    }
+  ],
+  "future_human_review_scope_options": [
+    {
+      "option": "A",
+      "label": "세 카드 전체 내용 검토",
+      "recommend": true,
+      "scope": "v0.1.1 전체를 원문과 함께 읽고 이해 어려운 문장·의미 오독을 자유 답변으로 확인",
+      "reason": "현재 3카드의 필수 범위를 빠뜨리지 않으며 새 회사규칙/시청효과 승인을 요구하지 않음."
+    },
+    {
+      "option": "B",
+      "label": "선형 프로세스 우선",
+      "recommend": false,
+      "scope": "시범카드001의 가로/세로·분기·시간축부터 사람 검토; 002·003은 대기 유지"
+    },
+    {
+      "option": "C",
+      "label": "기능·원인 구분 우선",
+      "recommend": false,
+      "scope": "시범카드002·003의 효과/원인 구분부터 사람 검토; 001은 대기 유지"
+    },
+    {
+      "option": "D",
+      "label": "사람 검토 일정 보류",
+      "recommend": false,
+      "scope": "현재 초안과 검토보고를 보존하고 필요한 담당/원문·문장 범위를 지정; 승인/전체 준비완료로 바꾸지 않음"
+    }
+  ],
+  "writes": {
+    "inputs_changed": false,
+    "existing_knowledge_index_backup_changed": false,
+    "report_and_proposals_only": true,
+    "readonly_verification": {
+      "files_before": 35,
+      "files_after": 35,
+      "inputs_unchanged": true,
+      "changed_paths": []
+    }
+  },
+  "evidence": {
+    "execution_code": [
+      "review_execution.py",
+      "write_report.py"
+    ],
+    "read_scope": "read_evidence.jsonl + focus_exact.stdout.txt + context_excerpt.stdout.txt",
+    "commands": "실행명령.json",
+    "stdout_stderr_exit": "각 stage의 .stdout.txt/.stderr.txt/.execution.json",
+    "input_hashes": [
+      "inputs_before.json",
+      "inputs_after.json",
+      "readonly_verification.json"
+    ],
+    "bootstrap_note": "초기 PowerShell 파일 조회 뒤 동일 파일을 prepare/review_read에서 재조회해 원문 stdout·SHA를 남겼다. 초기 도구 콘솔의 플랫폼 경고는 transcript에 별도 기록.",
+    "elapsed_seconds": null,
+    "tokens": null,
+    "effect_estimate": null
+  }
+}

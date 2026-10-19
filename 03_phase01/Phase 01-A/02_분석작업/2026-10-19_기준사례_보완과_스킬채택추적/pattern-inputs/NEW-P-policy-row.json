@@ -1,0 +1,79 @@
+{
+  "definition_version": "video-pattern-definition-0.2",
+  "category": "TEXT",
+  "name": "정책 띠 전개·문구·한 차례 강조",
+  "source": {
+    "case_id": "DEV-NEW-P-REFERENCE-20261019",
+    "source_sha256": "8d5bf71b3d739c6bf3e758da1c1d7db51becbab4dd77eab4389ee9d0a48a04c3",
+    "observation_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\records\\NEW-P\\observations.json",
+    "observation_sha256": "0b7effd009cc209db069706e1a549721cbf11a1308f6d313708cf918989e383c",
+    "claim_ids": [
+      "c022",
+      "c023",
+      "c024",
+      "c026",
+      "c027",
+      "c028",
+      "c046",
+      "c047"
+    ],
+    "unknown_ids": []
+  },
+  "definition": {
+    "summary": "띠가 생기고 글자가 읽힌 뒤 강조가 유지·약화한다. 행의 시작 시각은 변형으로 둔다.",
+    "target_role": "프레임 안 가로 설명 행",
+    "phases": [
+      {
+        "name": "띠와 글자",
+        "property": "visibility",
+        "observed_change": "빈/좁은 띠→문구 판독 가능 상태",
+        "claim_ids": [
+          "c023",
+          "c027"
+        ]
+      },
+      {
+        "name": "강조와 복귀",
+        "property": "color",
+        "observed_change": "첫째 행 약화와 둘째 행 진입이 겹침",
+        "claim_ids": [
+          "c046",
+          "c047"
+        ]
+      }
+    ],
+    "parameters": [
+      {
+        "name": "row_count",
+        "status": "observed",
+        "value": 2,
+        "unit_or_type": "case variation, not required count"
+      },
+      {
+        "name": "repeated_blink_period",
+        "status": "unknown",
+        "value": null,
+        "unit_or_type": "no periodic repetition established"
+      },
+      {
+        "name": "original_AE_implementation",
+        "status": "unknown",
+        "value": null,
+        "unit_or_type": "source controls/curves/effects"
+      }
+    ],
+    "preserve_constraints": [
+      "문구·색·배치를 먼저 동작 원리와 분리한다.",
+      "관측된 중간 상태·순서·중첩·유지 차이를 보존한다.",
+      "미확인 구현값을 원본 값으로 채우지 않는다."
+    ]
+  },
+  "applicability": "관측한 동작 구조의 초안. 새 목적·문구 길이·화면비·대상 형태에서 근거·차이·가독성·성공 여부를 다시 확인. 수치·문구는 이 사례의 변형값이며 보편 기준 아님.",
+  "counterexamples": [
+    "새 영상·새 문구로 재제작/렌더 검증하지 않음.",
+    "원본 구현 설정·원제작 의도는 영상만으로 확정하지 않음."
+  ],
+  "status": "draft",
+  "supersedes": null,
+  "derived_from": []
+}

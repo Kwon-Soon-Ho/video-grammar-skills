@@ -1,0 +1,363 @@
+{
+  "stage": "R6-1 final existing state/source preservation/workflow intake audit",
+  "limited_completion_supported": true,
+  "unresolved_blocking_findings": [],
+  "completion_scope": [
+    "Existing source-depth/use-scope/review-linkage audit",
+    "Three guidance documents/research boundaries and 4-option discussion review",
+    "User A workflow-policy declaration boundary, not individual content review",
+    "544-row/533-unique original-file identity audit; 4 missing old cache paths preserved through byte-identical current-cache references",
+    "Original ledger/depth/hash/core contracts/skills remain unchanged"
+  ],
+  "not_completed": [
+    "R6-2 source/use-scope contract and checker",
+    "R6-3 human-review intake and decision links implementation",
+    "R6-4 integrated context/queue/stale checks and handoff",
+    "Actual people content or permission decisions",
+    "Corporate role/identity/signature authentication or legal clearance",
+    "Skill reconstruction/evaluation, video analysis, Phase00 completion"
+  ],
+  "findings_fixed_or_covered": [
+    "Current guidance preserves source depth vs own interpretation vs runtime evidence; initial20 catalog not full inventory",
+    "Assets135 reference_only stays internal Phase00 reference scope",
+    "R4/R5 core unchanged; future R6 sidecar context/stale explicitly planned",
+    "A selected as workflow_policy; actual decision list remains empty; no renewed approval of earlier draft authority",
+    "Missing old host cache4 retained as old-path absence with exact-hash recovery aliases; original R3 depth and redistribution holds preserved"
+  ],
+  "future_linkage_requirements": [
+    {
+      "id": "R6-01-F01",
+      "priority": "P1 (후속 연결 설계 필수; 기존 R4/R5 결함 판정 아님)",
+      "title": "출처 목록 20건을 전체 출처·검토 깊이 대장으로 사용하면 누락과 승격 위험",
+      "evidence": [
+        {
+          "path": "05_출처와검토/출처목록.json",
+          "field": "sources: 20 unique IDs; remote_snapshot_hash is null for all 20"
+        },
+        {
+          "path": "05_출처와검토/R3_모션_조사기록.json",
+          "field": "sources[SRC-R3-MATERIAL2].read_depth=search_extract_only; sections/limits vs generic verification"
+        },
+        {
+          "path": "05_출처와검토/R3_레이아웃_조사기록.json",
+          "field": "sources[*].read_depth/sections/limits/local_sha256; reused_prior_sources"
+        },
+        {
+          "path": "05_출처와검토/R4_통합이관_조사기록.json",
+          "field": "web_sources[*] has no ID; URL+row pointer currently needed"
+        }
+      ],
+      "observed": "R3/R4/R5 지정 조사기록에는 54행이 있고 39개 ID가 초기20건에 없다. 중복/재사용을 포함한 행수로 독립 자료54개라고 세지 않는다. 초기 목록을 전수라고 주장한 것은 아니므로 조사 자체가 없다는 뜻도 아니다.",
+      "counterexample": "검색 추출만 확인한 Material2 또는 제목만 확인한 유료강의가 verification 일반 문구만 조회되어 본문·영상 검토 완료로 해석되는 경우.",
+      "minimum_fix": "원기록을 덮어쓰지 않고 path+원기록ID 또는 JSON pointer+판본/hash의 연결 색인을 만든다. 제목/검색추출/요약/선택본문/전체파일/호출참조·코드/실행 검증을 분리하고 원문이 말한 미검토 범위를 보존한다. 웹 원격 hash 없음은 null로 유지한다.",
+      "positive_control": "Summary 깊이인 Kalyuga 정의는 그 범위의 조건부 참고로 사용할 수 있다. 전체원문 미확보를 모든 참고 금지로 바꾸지 않는다."
+    },
+    {
+      "id": "R6-01-F02",
+      "priority": "P1",
+      "title": "자산 등록·출처 검토와 제작/외부 배포 허용은 별개",
+      "evidence": [
+        {
+          "path": "10_공용자산/자산목록.json",
+          "field": "records[135].usage.state=reference_only; contexts=사내 Phase00 자료 정리·검토 (표기2종)"
+        },
+        {
+          "path": "07_실행도구/R1_자산검사.py",
+          "function": "inspect: usage.state==permitted_for_context requires nonempty contexts/evidence only"
+        },
+        {
+          "path": "00_운영계약/자산목록_규격.json",
+          "field": "records.items.properties.usage: state/contexts/evidence, no typed issuer/action/version pin"
+        }
+      ],
+      "observed": "현재135건의 명시 사용범위는 내부 정리·검토다. 회사목록 registered/current 또는 파일hash/CI 관측색source_checked는 새 제작/배포 허용을 증명하지 않는다.",
+      "counterexample": "등록 로고를 R5 프로젝트에 선택했다는 선언만으로 대외 홍보영상 삽입·클라우드 업로드·재배포까지 허용 처리.",
+      "minimum_fix": "별도 R6 연결에서 대상 자산/판본/hash, 실제 요청 행위·매체·수신범위, 명시근거/미확인, 적용기간이 문서에 있으면 그대로, 사람 확인 대기를 구분한다. 기존 내부 참고 사용은 유지하고 미확인 제작행위만 보류한다. 비밀자료 추가수집이나 법적 유효성 판정은 하지 않는다.",
+      "positive_control": "사용자가 요청한 내부 Phase00 정리·검토의 범위가 명시된 사본을 그 범위에서 목록화하는 것은 대외 배포 권한 확인과 별개다."
+    },
+    {
+      "id": "R6-01-F03",
+      "priority": "P1",
+      "title": "사람 검수 대기의 실제 완료 연결은 아직 없으며 자동 생성 금지",
+      "evidence": [
+        {
+          "path": "05_출처와검토/검수결정.json",
+          "field": "decisions=[]; policy forbids automatic human decisions"
+        },
+        {
+          "path": "07_실행도구/근거주장_규격검사.py",
+          "function": "validate: review_records kind human/specimen; declared outcome, identity/fact/company flags false"
+        },
+        {
+          "path": "07_실행도구/좌표변환_규격검사.py",
+          "field": "human_review_queue space/transform/geometry"
+        },
+        {
+          "path": "07_실행도구/R5_디자인적용검사.py",
+          "function": "result: human_review_queue is deduplicated strings; company/fact/selection/release flags false"
+        }
+      ],
+      "observed": "R4는 주장, 메타, 공간, 분류, 실행 선언별 대기를 반환하고 R5는 선택/로고/표시조건별 문자열 대기를 반환한다. R4 receipt와 R5 queue를 함께 추적하는 안정된 검수대상/완료 연결이 없다. 실제검수자료가 없으므로 empty는 정상이다.",
+      "counterexample": "valid=true 또는 unresolved=[]이면 human_review_queue를 무시하고 완료 처리. R5 문자열 한 항목을 지웠다는 이유로 회사 CI 내용검수 완료 처리.",
+      "minimum_fix": "별도 검수대상 key(원기록path/hash+대상ID/종류/범위)를 부여하고 구조검사/내용검수/사용범위 확인/회사규칙 승인을 분리한다. 검수자가 실제 회신한 판단·근거·시각만 연결하고 완료할 수 없는 항목은 사람이 볼 수 있는 대기로 유지한다. 도구가 사람 대신 supported/approved를 생성하지 않는다.",
+      "positive_control": "합성 fixture의 specimen_only 대기는 실제 사람 업무 완료/미완료 성과와 분리한다. 검수대상에 해당하지 않는 항목은 비적용 이유를 남길 수 있다."
+    },
+    {
+      "id": "R6-01-F04",
+      "priority": "P1",
+      "title": "R4 검수 context는 R6 권한·출처 검토 변경을 자동 추적하지 않는다",
+      "evidence": [
+        {
+          "path": "07_실행도구/근거주장_규격검사.py",
+          "function": "context_hash: contract/purpose/time/materials/targets/evidence/claim + 3 validator files"
+        },
+        {
+          "path": "07_실행도구/통합기록_규격검사.py",
+          "function": "context_hash/CONTEXT_FILES: record minus review_contexts, ec review context hashes excluded, 9 dependency files; no R6 catalog/permission ledger"
+        },
+        {
+          "path": "04_기록규격/06_통합최소기록_규격_v0.2.md",
+          "field": "declared context matching is not fact/identity/company/operational approval"
+        }
+      ],
+      "observed": "현재통합 context는 내부 기록·규격 변경을 잡지만 외부에 놓인 사용범위 확인이나 출처깊이 판정을 새로 연결하지 않는다. 이는 현재 R4 한정 설계와 일치하며 R6의 새 연계 범위다.",
+      "counterexample": "허용 매체가 내부 회의에서 대외 공개로 바뀌거나 외부 검수결정이 철회됐는데 R4 context matches만 보고 계속 허용.",
+      "minimum_fix": "R4 원문·hash를 바꾸지 말고 R6 sidecar에서 R4 record/claim/context와 R5 application, 출처/권한/내용결정의 판본·hash를 함께 pin한다. 내용/범위 변경·철회·미확인 링크는 stale/pending으로 유지한다. 해시는 행위자 인증이 아니다.",
+      "positive_control": "동일한 확인범위·자료판본을 연결한 경우 새 검수 대장을 만들었다는 이유만으로 과거 실제 판단을 버릴 필요는 없지만, 실제대응 근거 없이 자동 상속하지 않는다."
+    },
+    {
+      "id": "R6-01-F05",
+      "priority": "P2",
+      "title": "사용자 방향 선택과 사람 내용검수/회사 승인 기록은 별도이며 분산 이력을 연결해야 한다",
+      "evidence": [
+        {
+          "path": "05_출처와검토/사용자결정.json",
+          "field": "decisions=8, company_rule_approval=false; R3까지"
+        },
+        {
+          "path": "05_출처와검토/R4_근거주장_조사기록.json",
+          "field": "user_decision includes mandatory human review"
+        },
+        {
+          "path": "05_출처와검토/R5_적용정책_결정.json",
+          "field": "selected=A,state=user_directed,individual_design_review_performed=false,company_ci_approved=false"
+        }
+      ],
+      "observed": "R4 시간/내용/공간/통합 선택과 R5 A는 단계 파일에 분산돼 있다. 사용자결정.json을 최신 전체결정 목록으로 보면 빠지는 항목이 있다. 사용자 스킬 초안 권한과 실제검수 대신 승인은 구분돼 있다.",
+      "counterexample": "R5 A를 모든 관측색의 회사 공식색 승인으로 인용하거나 R4 A를 실제 사람 검수 완료로 재사용.",
+      "minimum_fix": "기존 선택을 재승인받거나 역사파일을 변경하지 말고 원기록참조·결정종류·범위·상태를 연결한다. 새 의미/정책 선택이 필요한 때만 4선택+추천안을 제시한다. 이 감사는 새 회사 권한자를 지정/인증하지 않는다."
+    },
+    {
+      "id": "R6-01-F06",
+      "priority": "P1",
+      "title": "구형 approved 대장과 새 supported receipt의 의미·호환을 혼합하지 말 것",
+      "evidence": [
+        {
+          "path": "07_실행도구/구형기록_보존검사.py",
+          "function": "validate_record: old review.state approved checks separate decisions object/version/approval_kind/reviewer/scope/time"
+        },
+        {
+          "path": "07_실행도구/자료검증.py",
+          "function": "inspect_record: 0.1 needs_migration; 0.2 integrated validator; validate_catalogs legacy delegated"
+        },
+        {
+          "path": "04_기록규격/근거주장_스키마.json",
+          "field": "review_records: kind/human reviewer_id/reviewed_at/claim_ref/context_sha256/outcome/reason/conflict_resolution"
+        }
+      ],
+      "observed": "같은 단어 검수/승인이라도 v0.1 structural_review, v0.2 declared_supported, 사용자A, 자산허용, 회사규칙은 다른 대상·종류다. 신규R6에서 기존 decisions 필드의 의미를 갈아끼우면 보존검사와 분류검사 호환이 깨질 수 있다.",
+      "counterexample": "기존 structural_review approved를 새 내용 supported/배포 허용으로 자동변환하거나 새검수JSON을 과거대장에 넣고 모든구형에 자동적용.",
+      "minimum_fix": "새 sidecar/명시kind·판본으로 연결하고 구형 원문/대장을 그대로 보존한다. 대상/범위/자료변경, 거절·철회·미결정의 전이 반례와 양성대조를 시험한다. 실제 내용검수는 R7평가기준 및 사람 회신에 연결한다."
+    },
+    {
+      "id": "R6-01-F07",
+      "priority": "P2",
+      "title": "라이선스 표기·원문 확보·참고·이식/배포를 단일 허용값으로 압축하지 말 것",
+      "evidence": [
+        {
+          "path": "05_출처와검토/스킬심층검토/04_라이선스와출처_검토결과.md",
+          "field": "PPTX proprietary / academic conflicting notices / local no-license / drawio NC+NOASSERTION / package-vs-assets separation"
+        },
+        {
+          "path": "05_출처와검토/스킬심층검토/05_세스킬_이식설계안.md",
+          "field": "license-held candidates cannot be rephrased to bypass; R8 reconstruction/evaluation pending"
+        },
+        {
+          "path": "05_출처와검토/R3_편집화면스킬_원본확보목록.json",
+          "field": "repositories/local_packages original acquisition trace"
+        }
+      ],
+      "observed": "기존 심층검토는 고지 충돌과 직접이식 보류를 분리했으며 재라이선스를 수행하지 않았다. 새 R6가 source_checked/MIT 같은 요약 하나로 통합하면 이 보류가 사라질 위험이 있다.",
+      "counterexample": "동일 저장소 Apache가 다른 선택패키지의 proprietary 제한도 해제한다고 기록하거나 코드 MIT로 폰트/사진/API출력 권리까지 확인됐다고 기록.",
+      "minimum_fix": "확인한 문서/고지 경로·hash/범위와 미확인을 그대로 연결한다. 내부 참고와 원문 복사·수정·실행·재배포를 구분하고 해석이 필요한 사용범위는 담당자 확인 대기로 둔다. 법률 결론이나 신규 권리 허가를 만들지 않는다."
+    },
+    {
+      "id": "R6-01-F08",
+      "priority": "P2",
+      "title": "미확인/비적용과 검수 범위를 프로젝트 전체 차단 또는 자동면제로 만들지 말 것",
+      "evidence": [
+        {
+          "path": "03_한맥디자인/영상전용_미정항목.json",
+          "field": "applicability_policy, items[*].review_when/block_scope/human_review_required_when_applicable"
+        },
+        {
+          "path": "03_한맥디자인/09_적용시_필요자료와_검수대기.md",
+          "field": "company CI, output condition, actual specimen review requirements"
+        },
+        {
+          "path": "09_다음단계인계/R5_디자인연결_인계.md",
+          "field": "R6 permission/selection vs R7 actualquality vs R8skills vs 01A extraction"
+        }
+      ],
+      "observed": "R5의9개 미정은 해당항목을 쓰는 범위만 대기로 두며 미사용이면 비적용 이유를 남기는 정책이다. R6에서도 이 조건을 보존해야 한다.",
+      "counterexample": "로고 없는 내부 레이아웃 참고카드까지 로고 최소크기 미정 때문에 전부 차단하거나, 로고가 등장하는 실제영상에서 비적용 선언으로 검수를 생략.",
+      "minimum_fix": "대상행위/매체/자료 사용 여부에 맞춘 조건부 대기와 이유를 연결한다. 내용 확인이 필요한 경우 실제 사람에게 넘기며 비적용도 근거 없이 자동 채우지 않는다."
+    }
+  ],
+  "verification": {
+    "kind": "static audit, hash comparisons, prior synthetic demonstration; not actual content tests",
+    "checks_count": 14,
+    "passed": 14,
+    "all_passed": true,
+    "original_ledger_rows_matching": 540,
+    "original_ledger_rows_missing": 4,
+    "original_ledger_rows_changed": 0,
+    "recovery_aliases_matched": 4,
+    "backup_originals_equal": 26,
+    "initial_artifacts_preserved": true
+  },
+  "actual_human_content_review_performed": false,
+  "company_approval_created": false,
+  "no_D_writes": true,
+  "source_unchanged": true,
+  "after_hashes": {
+    "00_운영계약\\자산목록_규격.json": "cc6e5be499cd4734ba8b86b93dcb004e355582520fa449e411e239e07264e7bc",
+    "03_한맥디자인\\00_디자인안내.md": "0dad287f82d19baf10421d406822cb966e4e321716772dfbeb9c224d2440eb4e",
+    "03_한맥디자인\\01_컬러.md": "bfea0308928aa9eca29756a7443fe1eb521c1ca8971fb6f0650046b7f802d788",
+    "03_한맥디자인\\02_타이포그래피와_간격.md": "7da210bfc1aa87a66b74d775d7abae946e96255ed09c0fbba05ed1641d919ebb",
+    "03_한맥디자인\\03_표면과_UI_참고.md": "c27d31be0f68c1a4a59b156308982a233a300fa131b4f586c590079216d6843a",
+    "03_한맥디자인\\04_출처와_DB_연결.md": "b56ed7c23b97d5132c6bb6ea1658e4ae4f62ff16a57b23caf49e98925399c4f5",
+    "03_한맥디자인\\05_R5_단계별진행안내.md": "fd7652dc30522d80991b524645d572e10435374973468b9ba8acae8e0b67b9ff",
+    "03_한맥디자인\\05_기록규격_연결.md": "dad271354b524ffabbd60b78d688d864c3fdd695f5f0de6c943b4883df19176d",
+    "03_한맥디자인\\06_R5_기존자료_보충안내.md": "76d68f1352ddfae705c33b838167cec3e285943c22557dda96ddd2d91eb519f1",
+    "03_한맥디자인\\07_회사CI와_화면역할_연결규칙.md": "be1baa8a5535d9f43f189bd7bab3f46320c81c5e7697a972f2a6a93320def83b",
+    "03_한맥디자인\\08_영상적용_예와반례.md": "587357eac06331e102d113dfe1f287c76600acf1bd925c5820b354825ae82723",
+    "03_한맥디자인\\09_적용시_필요자료와_검수대기.md": "be50b0d2201d5ad5da5eef29ecd71b60262c12f56eef14ad55384ac1592e42ac",
+    "03_한맥디자인\\10_회사별_연결현황.md": "67b71b51898f40444a8cd7ff15f4dc5c983f2ba711bbe5aa963e72f5b899f8dc",
+    "03_한맥디자인\\11_관측색_대비참고.md": "f77cb51badd2bed7a4160f1c7e46661fac71206988f29f1877707dd2aff3bec1",
+    "03_한맥디자인\\R5_표시_입력목록.json": "6e186320eb729f284466df2a23b2fe8f12acd393b09eac73cd85f5d8aa7653b1",
+    "03_한맥디자인\\관측색_단색대비_참고.json": "04897457cfba6113c1f9e62b9fd2d8d4aa2262de7870194ee62aa044e8a21a79",
+    "03_한맥디자인\\디자인적용_기록규격.json": "e4980e1b19c2f68817da084ad925c4549e4ae1210490479ea7ef0ba3a1562278",
+    "03_한맥디자인\\디자인적용_설명용예시.json": "1f5a6b20fbd67154d8e22b2a460fab4c6a1fea00ca6a5991834552f01d6695cd",
+    "03_한맥디자인\\색상대비검토.json": "2bd4657b785de44c50bd0d9bd91ee14cb8a5e2afdb6837c02651bf25a2e8792f",
+    "03_한맥디자인\\영상적용_예와반례.json": "6e7f4179b43af9b6d45799070e2fe86476de4617122ae152e82aa0a56f56bd30",
+    "03_한맥디자인\\영상전용_미정항목.json": "1fc6d247124789b040db6710e8683fabe705eeee37c32a39932d5bae7cc69ad4",
+    "03_한맥디자인\\자료목록.json": "b25ffd2e9cd3083b91db0d721a878fb8b3512d52dc64bd8e6337c3a7f8e1f982",
+    "03_한맥디자인\\한맥디자인정본.json": "dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed",
+    "03_한맥디자인\\회사별_디자인연결_현황.json": "f5a2913c38dc5651e714d48467a558565051bc878ac07b943cfddf48ae7a15ec",
+    "04_기록규격\\00_기록안내.md": "cf6d38556378f1ad84ba8e830b84c8586c16a1b54a8aec49410cc90cfe69303d",
+    "04_기록규격\\01_R4_단계별진행안내.md": "6e6c61b57a5757fef7483df73dea5df0800afae406adaa0b214792ed55d70b79",
+    "04_기록규격\\02_시간과프레임_기록규격.md": "a2e65ce237fee6c4e1cc3bcd381f55a98400fc5c907ae4f8d62f566eaa0b827e",
+    "04_기록규격\\03_근거와주장_기록규격.md": "6943272574c2e8fa008e5b89b1fbb1977c0529933d4652f5688acb474cf2a422",
+    "04_기록규격\\04_좌표와변환_기록규격.md": "06f8188ed195dc1bd22802de8be22ef9a3303817ac9250762d3adb670e51a61a",
+    "04_기록규격\\05_R4-4_통합이관_진행안내.md": "ad97ca46057e7b9c36f69525a4f84a176a61dc0673c2e61d5349c4a4d8a0a855",
+    "04_기록규격\\06_통합최소기록_규격_v0.2.md": "3c301c7f874921a3bd7bc3e5922ca8cb7c16ddc950f78ecc9850251b9474df74",
+    "04_기록규격\\07_구형기록_접수와이관규칙.md": "1749ac6f888efcc5d391943c60debd44799e4f6a68933aff31aceb1947f86597",
+    "04_기록규격\\공통용어_스키마.json": "9395bf82f433584f963874b1280b1fe78b9a23843269d8ac7d30c9ed3521a9b5",
+    "04_기록규격\\구형최소기록_스키마_v0.1.json": "31f8284509988bad445cb4f8043b841bd6714a1c71c1a67c5ee6f3757ccd9697",
+    "04_기록규격\\근거주장_설명용기록.json": "c8526d5c82f3c90f0e6f79a4fa3c6ca00d3f497b05a58f723c625523b497bc00",
+    "04_기록규격\\근거주장_스키마.json": "e66c9a6897c72ad0588f027e5699012a091f357d6d11834168352a6a760aeca4",
+    "04_기록규격\\근거주장_적용예와반례.md": "eb2344566d037f598e5305cd96b3df78943bf5db56387e63299b41ad67f61a3a",
+    "04_기록규격\\기록접수_스키마.json": "e1e9547ad36a4b2b97c676753ba0f014dfa15eb481859d9ff6460a749feaafc0",
+    "04_기록규격\\레이아웃지식_스키마.json": "2dfa0db9c4c23ad974235c5a3317c7791e2f67c89a7fc30de45abe235d6f7e98",
+    "04_기록규격\\설명용_단계구성_예시.json": "fc906a18a785b4e51ab5d5714483a6c0033d5726847556bd89cf613795509a47",
+    "04_기록규격\\시간프레임_설명용기록.json": "f90dd9ca5bab7a850e876c02e09d8fc4f6729aa326db2283401fc6cb24361a48",
+    "04_기록규격\\시간프레임_스키마.json": "aa440e4e69ed9287c25ba51f0b8051bc92da7162af553b2535d381b7ca0a6efb",
+    "04_기록규격\\원칙지식_스키마.json": "68bcf0ca2a6d75b4b666496f9d417de28faaf69373ae5ebcce93e7a2ed7c47ed",
+    "04_기록규격\\좌표변환_설명용기록.json": "e2788694b1de38e6a6cb9c57c1c05a0f4f303b6e4be52bdc7e2b21c522e2a58d",
+    "04_기록규격\\좌표변환_스키마.json": "5ad07a85612c90b045aa22eb7750502e47dd26677877b95019c826c2abef0535",
+    "04_기록규격\\좌표변환_적용예와반례.md": "e731ecb48b721272ed39990b036ad052fcdb553766e6f2cdd0b43ee023038578",
+    "04_기록규격\\최소기록_스키마.json": "ebf8b243b9402ad4169d0b27c38841f869576938fbe53472524b7480cac8a937",
+    "04_기록규격\\출처목록_스키마.json": "e23b73bfdf13bf5eb4f06badb202a5df03172d778fae02777b651bee13a0e7e9",
+    "04_기록규격\\통합연결_설계초안.json": "278ecf5f94c0818c5b0ab7d30f9241b1aa2199fcb83a4d1135258a5aeb7e40b3",
+    "04_기록규격\\통합최소기록_설명용_v0.2.json": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+    "04_기록규격\\통합최소기록_스키마_v0.2.json": "033c90bc824d88f52f571eaaddc33511f079c54df763fa97599f69bfae563b7e",
+    "05_출처와검토\\00_출처와스킬검토.md": "fc3da3f447b25de0f510463de7ace53f6fc124eaa5b1b3e8751219a7b6b2c46f",
+    "05_출처와검토\\R1_design-tokens_선별검토.md": "adfa4e4537eebd79a2f42200d028b75088adb9a665d57eb6493cabecc7ca4336",
+    "05_출처와검토\\R1_스킬검토_원문목록.json": "e21e7d55fc521b1fc461344ee90f643f17b0e5df38581fd01f00360323103f2c",
+    "05_출처와검토\\R1_자산범위_검토안.md": "9b0973143002d4f86b02b578937fa5f8075581d38d09542cdb4faef2d7086f42",
+    "05_출처와검토\\R1과R5_업무구분.md": "b1057096de449a76b636cbe14839e723c4ed70e4aa88e8a9a5c3a6e5ad04edc7",
+    "05_출처와검토\\R2_조사기록.json": "21d4f34a872c5492d7e526cb040e2ab5ce5316cf55646e66a80704c67c680ec4",
+    "05_출처와검토\\R2_현황과출처.md": "e290eb8da99628154f485e228cb1dfbd125183e4154a11f58c5f1ed486960558",
+    "05_출처와검토\\R3_레이아웃_조사기록.json": "faed3dd1e34e95935962b0973ebcf6e2d2eae31db505e5f93da5cab9d1c7c961",
+    "05_출처와검토\\R3_레이아웃_조사범위.md": "707ae4fdacbdbe7cc383aa0e8296f0500ca9b229ced2f390e14900bc6f3e1d46",
+    "05_출처와검토\\R3_레이아웃_확장범위_검토안.md": "94137509f53c5a95cd4d71c47a4c5cc4284474c3a6a45c898b39d2beb1bc8b51",
+    "05_출처와검토\\R3_모션_조사기록.json": "430a296b9c4903dea564d540152d4a88a5d57bbe10572737819876b50cfa0aa2",
+    "05_출처와검토\\R3_모션_조사범위.md": "3f66a44a1a25f24bf2147d22fb7d8de978e211c0bf28ab987d9c071d171febe0",
+    "05_출처와검토\\R3_모션_확장범위_검토안.md": "ebe90f61ac67a91451538f4cad56d8586e9fb4301c17796a489ee511712eb31e",
+    "05_출처와검토\\R3_발표설명스킬_원본확보목록.json": "453688c4e34bb37fc009678405514a5b21a30582ec348bb0d4951bafd9736ff6",
+    "05_출처와검토\\R3_스킬_원본확보목록.json": "7e13e302be5c59a100a9fe295c99ecf9530a7cc7bc818545d66ed7969a9c4df4",
+    "05_출처와검토\\R3_편집화면스킬_원본확보목록.json": "35d746a35f4b6eacedeb948cff64ce96064908d67a336755e7e16b168f10d10a",
+    "05_출처와검토\\R4_근거주장_조사기록.json": "8fec5b2267ebe4e03251972d4a7af0791aa4e9de689114f5421dc82b8b305820",
+    "05_출처와검토\\R4_시간프레임_조사기록.json": "63790fa479c43d140810ce39033bd593aec033019c5a25489bf418368d9b6408",
+    "05_출처와검토\\R4_좌표변환_조사기록.json": "6235f33acf831a8f990a571bf63a5c3b72953a2edbde4c42a087a2bb955c1024",
+    "05_출처와검토\\R4_통합이관_정책검토안.md": "b8e0d514442d98d7f18f49759f19104f3ccb548d5c2df2ee622d4e4f2bad2eb4",
+    "05_출처와검토\\R4_통합이관_조사기록.json": "07973158e7454f8bbe4e6f54e70387a8e7a9fc3b12f9748e1403920dd038ef9e",
+    "05_출처와검토\\R5_관측색_적용범위_검토안.md": "2d6cc2c956a4836f8d964e7045dcca0171f207494f27cc906676c4e7f66000b2",
+    "05_출처와검토\\R5_적용정책_결정.json": "d8666f2212ae4e434d7d1209f0b64bdded4f0d562df9600a1bda74d136dd9da3",
+    "05_출처와검토\\R5_조사기록.json": "c748d098222dd6d2c2b6de708a9927b8fd0258aee3737d041a2d77f0f2f1d281",
+    "05_출처와검토\\검수결정.json": "46a07ff5b989207a9467869ece5bedabf579a4d9a8e613e37a26f498832b781b",
+    "05_출처와검토\\단계별_심화보완계획.md": "bcd14d78914ba6aa0a2c495912212ed8854b086008be53ea7401f1bd72f869d4",
+    "05_출처와검토\\맞춤스킬_구성검토안.md": "99c8b3dd9abe0ae70e3eb63948a63eed3c4925c587549d3c0db33eac156d63e6",
+    "05_출처와검토\\버전목록.json": "77e69f34555eacc97f0e08d3084c3c64df589384fd4d9a2dab53a626c7326a77",
+    "05_출처와검토\\사용자결정.json": "feb1eae1da1e6801b8a2b61630968fcbe969582077f8b1970453abb38aff6452",
+    "05_출처와검토\\스킬심층검토\\04_라이선스와출처_검토결과.md": "b5b2b3747b5fa395d33a98702c06bcaeca4254b6f4e619d7bfc7856d14c7f569",
+    "05_출처와검토\\스킬심층검토\\검토파일목록.json": "77e88345246c48e3b4f2191131e18f31a90c4f84acf5dc11a5aa5e7b43723c58",
+    "05_출처와검토\\스킬심층검토\\스킬심층검토정본.json": "6f546221a91cd3b13fb0df02ae904910758c5daa626c1baacbdf041a8c6a1969",
+    "05_출처와검토\\추가스킬확보목록.json": "6bdc063f5f2e1749fa882abc19948c18a25dd2ccb71e29a3feded8f942449a62",
+    "05_출처와검토\\출처목록.json": "0fd8c405a36f67a4255be34c198b29fa499fde5d52b7998fd2b0af754bcaec2f",
+    "07_실행도구\\R1_자산검사.py": "ee9978bc3eceb8129f94601ef55d5b27af0d1dcc1e9a821a74da3b6c53198181",
+    "07_실행도구\\R5_디자인적용검사.py": "1c659607fd682a60101d7a3fabb9f206b999eb611f15e3edab4876982756d7aa",
+    "07_실행도구\\R5_조회와표시.py": "9f8ce497e8d7ec32361bc6b6f90c997a74425efb76ee2aad77030a9ee2044cb1",
+    "07_실행도구\\구형기록_보존검사.py": "85a8941ae035fa5fdcae6b06a285ccca538a361f81e9b3410736c73d23f14a26",
+    "07_실행도구\\근거주장_규격검사.py": "854d0353b9a909d5d264baca70250d173f90dc58dc05bee231ca0a8522d11ec3",
+    "07_실행도구\\시간프레임_규격검사.py": "52834649975027af2097becf61c2fb10034b42e4dda3a3f2fbb68e255bd90e69",
+    "07_실행도구\\자료검증.py": "0abd4cba7f1ba3a69011ef67758dbcc6f5c9599785aa0ae5ed5fd6cd0e434ec4",
+    "07_실행도구\\좌표변환_규격검사.py": "9f5f8b44c9d40a09fdb6fec05d9d9c089bc2a03c9e4927e8088b7903a847a265",
+    "07_실행도구\\통합기록_규격검사.py": "09c617b836b6f173f436525078b63e30494be54eeb739c2b7fca25cb2f65d70e",
+    "09_다음단계인계\\00_인계안내.md": "661954892edf3ab8fd4eead918ca28cb1623765d26984f6664a778e8922c31f8",
+    "09_다음단계인계\\01-A_자료준비안내.md": "90951a2644e8efc0063774977a0d0975459a3058f511cfca0d9ab8ab74b32f24",
+    "09_다음단계인계\\R2_R4.md": "c08232f20e193ea8df0b3c6552dea45b1683621f5c28fbd66ad90ed21c5a086f",
+    "09_다음단계인계\\R4_통합규격_스킬호환_인계.md": "1c3d3e65ce47ce631c386075384d2ee2ff99ca86228dcca9aaabcd22e92482a1",
+    "09_다음단계인계\\R5_디자인연결_인계.md": "b50eedd0ed5af946f7a7238b170a201a1cf04aaf07d27ccd850426cf8f4b7c23",
+    "10_공용자산\\00_공용자산안내.md": "76b166560060657d7268cf592ad9f1fdeb49b4daa033e6c29c3de00d761b028a",
+    "10_공용자산\\01_남은자산_준비목록.md": "c72bcacffc35b656fa3f1e8bf6a8839c444513cb68024647f295bc264913037f",
+    "10_공용자산\\CI색상목록.json": "c95a79a81a422fc23f4275a8dd878016f209fdaff171d73f44d3cff7387b7097",
+    "10_공용자산\\문서명시_검토목록.json": "b178ad0165188d602fc75d46a1f6bb68066c3e010b41df2599e0f916666b2653",
+    "10_공용자산\\자산목록.json": "5f4cc581df387e8948bc3071aa9f93bd34fb88a2ffc406aaf72de9f3e8e940a0",
+    "10_공용자산\\회사목록.json": "0b011a9c2962459a3b42067c3f7120602cde9e541c466647fa880a0a298dda2a",
+    "05_출처와검토/검수와사용범위/00_R6_단계별진행안내.md": "a22368a8d169833f9bd168f8cee0881cc8655f6d136ae6e93f356cabfb6d4147",
+    "05_출처와검토/검수와사용범위/01_현황과_보완목록.md": "9b9560a65651c6232901791cd02d215fd1ce9f0e032d3680ebe10e53b1d799c8",
+    "05_출처와검토/검수와사용범위/02_사람검수_접수방식_검토안.md": "7a37460d6be4bdc2400697c7ae060ad32f3d1d8ddea231978c40c1c83aae563f",
+    "05_출처와검토/검수와사용범위/R6_조사기록.json": "d1baa67e0594ae70c55ecf282da03ad0d706e708998e2d4c574582086aef34f4",
+    "08_검증결과/R6_01_착수감사.json": "b1d8eae386922adb608db416562a545c4434478c3c74ecf45d1a18a3236952e8",
+    "05_출처와검토/검수와사용범위/사람검수_접수정책.json": "b0955d85248a9ee1f00ae0da78609836d0cf7bbeda9b941ca8923e35e243245d",
+    "05_출처와검토/검수와사용범위/원문경로_복구연결.json": "8f32f4415740e537d2b142e9b757fcf3ca7fdebb01834823dd928a6f8353b131",
+    "05_출처와검토/검수와사용범위/03_원문보존_보완기록.md": "2e6ea0654ef07294cfc00ec3657c97bc3d84442d00f412fb9383c98213f5821d",
+    "08_검증결과/R6_01_파일대장대조.json": "d02b3404fe4f19443c5a8641756afc3ca77850ac4bee4b989a557dc35c215f8c",
+    "backup\\2026-10-15_R6_01_출처복구\\호스트참조원문\\SKILL.md": "97fedde4ba6c9b9aa56e12b05b13acf035c29f9cd2f6906b8f27ceab11aea9a8",
+    "backup\\2026-10-15_R6_01_출처복구\\호스트참조원문\\style_guidelines.md": "b682d1beb638b6ce77ecab86f83afcbde7a68207a749bc7994d8fd805feec619",
+    "backup\\2026-10-15_R6_01_출처복구\\호스트참조원문\\references\\template_following.md": "16ce4367c3029497bb441c850c577dbfb8de767cb450d52d8c0be9688dcd0649",
+    "backup\\2026-10-15_R6_01_출처복구\\호스트참조원문\\references\\template-elicitation.md": "b0aab045f830d6a05dbab2bd7d9ca747bd68826e69328e01479589026f7ab7c0"
+  },
+  "evidence": {
+    "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R6_독립검토\\R6_01_복구정책_최종대조.json",
+    "sha256": "cefa0f7363036a4a4e5de96be4a26e91c1f7153e6a25df5a233991e415060a9b"
+  },
+  "code": {
+    "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R6_독립검토\\R6_01_복구정책_최종검토.py",
+    "sha256": "9fdb202072251185d0286473be1fc5a20f21567a554576de17550ab5b7cf9f67"
+  },
+  "initial_verdict_sha256": "6287ced2a6fe06b4f836dab2f6ff71119ec90ffa69068bedb21288a103bd8696",
+  "boundary": "User A is a process selection only. Four files were byte-hashed, not freshly semantically reread or activated. Hash equivalence is not runtime equivalence, permission verification or actual human authentication."
+}

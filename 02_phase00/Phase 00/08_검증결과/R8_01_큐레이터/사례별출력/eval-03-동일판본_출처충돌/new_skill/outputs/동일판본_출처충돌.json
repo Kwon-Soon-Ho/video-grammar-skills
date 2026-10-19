@@ -1,0 +1,49 @@
+{
+  "id": "layout-guidance",
+  "path": "02_원칙과레이아웃/레이아웃지식.json",
+  "current_version": "0.1.1",
+  "registered_version": "0.1.1",
+  "registered_sha256": "0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306",
+  "actual_sha256": "b83fcc5cbb62d4fea94784c596b85287564da1e5fc04d6353305b5796b2ef9a2",
+  "same_version_different_sha256": true,
+  "registered_checks": [
+    {
+      "context": "버전목록",
+      "id": "layout-guidance",
+      "kind": "knowledge",
+      "version": "0.1.1",
+      "path": "02_원칙과레이아웃/레이아웃지식.json",
+      "sha256": "0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306",
+      "state": "current_draft_or_reference",
+      "company_approved": false
+    },
+    {
+      "context": "정본과표시 연결목록",
+      "id": "layout-guidance",
+      "version": "0.1.1",
+      "path": "02_원칙과레이아웃/레이아웃지식.json",
+      "role": "current_canonical",
+      "sha256": "0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306"
+    },
+    {
+      "context": "심화지식 core_refs",
+      "path": "02_원칙과레이아웃/레이아웃지식.json",
+      "version": "0.1.1",
+      "sha256": "0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306"
+    }
+  ],
+  "current_field": {
+    "item_id": "KNOW-LAYOUT-SINGLE-FOCUS",
+    "field": "limits",
+    "value": "회사 최신 기준: 모든 단일 초점 화면은 반드시 중앙 배치한다."
+  },
+  "other_local_evidence": {
+    "term_exclude_or_limit": "반드시 중앙 배치 아님",
+    "deep_composition_decisions": "대표 대상, 요점 문장, 보조 설명을 역할로 구분한다. 초점 위치는 중앙·삼분할 모두 후보다."
+  },
+  "conclusion": "동일 ID·버전의 바이트 충돌. 현재 파일의 중앙 배치 의무 주장은 검증된 회사 규칙으로 채택하지 않음.",
+  "cause": "unknown",
+  "previous_registered_bytes_recovered": false,
+  "previous_exact_field_value": "등록 해시만으로 과거 limits 문장을 복원하지 않음. 사전·심화지식과의 의미 차이만 확인.",
+  "action": "고정 해시·운영 정본·과거 참조 보존. 별도 신규 판본 초안 작성, 운영 반영 보류."
+}

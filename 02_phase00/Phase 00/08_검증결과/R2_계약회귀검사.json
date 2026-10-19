@@ -1,0 +1,265 @@
+{
+  "passed": 28,
+  "total": 28,
+  "tests": [
+    {
+      "name": "현재75용어/20혼동쌍/18사례 정상",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "미분류에태그채움차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "R2-EX-01 미분류 태그/이유코드 모순"
+      ]
+    },
+    {
+      "name": "기권사유공백차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "연습사례 ['cases', 0, 'annotations', 3, 'reason']: '   ' does not match '\\\\S'"
+      ]
+    },
+    {
+      "name": "빈분류태그의classified차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "R2-EX-01 분류된 태그/상태 모순"
+      ]
+    },
+    {
+      "name": "없는단위참조차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "R2-EX-01 없는 축/대상"
+      ]
+    },
+    {
+      "name": "동작에레이아웃축차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "R2-EX-01 축의 대상단위 불일치"
+      ]
+    },
+    {
+      "name": "다른축ID차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "R2-EX-01 없는/폐기/다른축 태그 REL-PARALLEL"
+      ]
+    },
+    {
+      "name": "폐기STYLE-PIP신규태그차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "R2-EX-01 없는/폐기/다른축 태그 STYLE-PIP"
+      ]
+    },
+    {
+      "name": "중복태그차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "R2-EX-01 태그 중복"
+      ]
+    },
+    {
+      "name": "같은대상/주장판정중복차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "R2-EX-01 같은 대상/주장/축 판정 중복"
+      ]
+    },
+    {
+      "name": "영상전체루트두개차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "R2-EX-01 영상전체 루트 하나 필요"
+      ]
+    },
+    {
+      "name": "화면상태의잘못된상위/자기참조차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "R2-EX-01 단위 계층 연결 오류"
+      ]
+    },
+    {
+      "name": "동작을상태의배타자식으로바꾸기차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "R2-EX-01 단위 계층 연결 오류"
+      ]
+    },
+    {
+      "name": "검토전후사전해시변경차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "판정기준 분류사전 버전/해시 불일치"
+      ]
+    },
+    {
+      "name": "가이드한개누락차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "현재75개 용어 가이드 누락/중복/폐기 혼입"
+      ]
+    },
+    {
+      "name": "가이드승인표기차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "판정기준 ['guides', 0, 'company_approved']: False was expected"
+      ]
+    },
+    {
+      "name": "사례실제관측위장차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "연습사례 ['cases', 0, 'origin']: 'synthetic_example' was expected"
+      ]
+    },
+    {
+      "name": "사례회사승인표기차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "연습사례 ['cases', 0, 'company_approved']: False was expected"
+      ]
+    },
+    {
+      "name": "이유코드누락차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "R2-EX-01 미분류 태그/이유코드 모순"
+      ]
+    },
+    {
+      "name": "미등록후보문구누락차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "R2-EX-12 미등록 후보 문구/이유 없음"
+      ]
+    },
+    {
+      "name": "미검토를판단불가코드로위장차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "R2-EX-13 미검토 이유코드 혼동"
+      ]
+    },
+    {
+      "name": "빈사례목록으로검증완료위장차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "연습사례 ['cases']: [] should be non-empty"
+      ]
+    },
+    {
+      "name": "필수키삭제는오류반환/크래시없음",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "판정기준 []: 'guides' is a required property"
+      ]
+    },
+    {
+      "name": "누락근거규칙차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "없는 근거규칙 LAYOUT-SINGLE-FOCUS",
+        "없는 근거규칙 LAYOUT-SPLIT-COMPARE",
+        "없는 근거규칙 LAYOUT-BEFORE-AFTER",
+        "없는 근거규칙 LAYOUT-PROCESS-LINE",
+        "없는 근거규칙 LAYOUT-TIMELINE",
+        "없는 근거규칙 LAYOUT-HIERARCHY",
+        "없는 근거규칙 LAYOUT-NETWORK",
+        "없는 근거규칙 LAYOUT-OVERVIEW-DETAIL",
+        "없는 근거규칙 LAYOUT-SPACE-CALLOUT",
+        "없는 근거규칙 LAYOUT-DATA-CHART",
+        "없는 근거규칙 LAYOUT-CARD-GROUP",
+        "없는 근거규칙 STYLE-ILLUSTRATION",
+        "없는 근거규칙 STYLE-DIAGRAM",
+        "없는 근거규칙 STYLE-3D",
+        "없는 근거규칙 STYLE-ISOMETRIC",
+        "없는 근거규칙 LAYOUT-SPLIT",
+        "없는 근거규칙 LAYOUT-PIP"
+      ]
+    },
+    {
+      "name": "관측유지+구현기권정상",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "대상별문구유지/배경모션정상",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "부분분류와시간미확인정상",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "여러범위의복합태그정상",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "errors": []
+    }
+  ],
+  "scope": "자료형/참조/범위/상태 검사; 의미정답은독립독해로검토. 영상분류모델성능시험아님."
+}

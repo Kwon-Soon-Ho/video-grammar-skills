@@ -1,0 +1,840 @@
+{
+  "status": "applied",
+  "scope": "합성 사본의 요청된 두 초안 참조·자체 판본 수정. 실제 분석/디자인/회사 승인 아님.",
+  "root": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\inputs\\Phase00",
+  "time": null,
+  "tokens": null,
+  "commands": [
+    {
+      "label": "before_R4",
+      "argv": [
+        "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\inputs\\Phase00\\07_실행도구\\자료검증.py",
+        "--record",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\inputs\\Phase00\\12_통합기록\\통합기록_작업초안.json"
+      ],
+      "cwd": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\inputs\\Phase00",
+      "exit_code": 1,
+      "stdout_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\outputs\\before_R4.stdout.txt",
+      "stderr_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\outputs\\before_R4.stderr.txt",
+      "result": {
+        "valid": false,
+        "errors": [
+          "TG-STATE: 참조 버전/hash 불일치"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "주장 내용 사람 검수 필요"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          },
+          {
+            "item_id": "SP-ROOT",
+            "status": "specimen_only",
+            "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+            "verified": false
+          },
+          {
+            "item_id": "SP-CROP",
+            "status": "specimen_only",
+            "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+            "verified": false
+          },
+          {
+            "item_id": "SP-RESIZE",
+            "status": "specimen_only",
+            "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+            "verified": false
+          },
+          {
+            "item_id": "TR-SP-CROP",
+            "status": "specimen_only",
+            "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+            "verified": false
+          },
+          {
+            "item_id": "TR-SP-RESIZE",
+            "status": "specimen_only",
+            "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+            "verified": false
+          },
+          {
+            "item_id": "G-ROOT",
+            "status": "specimen_only",
+            "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+            "verified": false
+          },
+          {
+            "item_id": "G-RESULT",
+            "status": "specimen_only",
+            "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+            "verified": false
+          },
+          {
+            "item_id": "design",
+            "status": "specimen_only",
+            "reason": "토큰 역할·적용 목적·프로젝트 예외 검수. 영상 필수 회사 규칙 승인과 구분",
+            "verified": false
+          },
+          {
+            "item_id": "TG-ASSET/video_type",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-ASSET",
+            "status": "specimen_only",
+            "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+            "verified": false
+          },
+          {
+            "item_id": "TG-SEGMENT/video_type",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-SEGMENT/communication_purpose",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-SEGMENT/information_relation",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-SEGMENT/art_direction",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-SEGMENT",
+            "status": "specimen_only",
+            "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+            "verified": false
+          },
+          {
+            "item_id": "TG-BEAT/communication_purpose",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-BEAT/motion_function",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-BEAT/motion_property",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-BEAT/timing",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-BEAT",
+            "status": "specimen_only",
+            "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+            "verified": false
+          },
+          {
+            "item_id": "run",
+            "status": "specimen_only",
+            "reason": "실행 주체·도구/모델·입출력·설정과 실제 작업 로그를 대조. 선언을 실행 증명으로 보지 않음",
+            "verified": false
+          }
+        ],
+        "coordinate_bindings": [],
+        "integrated_review_states": [],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false,
+        "status": "invalid",
+        "schema_version": "0.2.0",
+        "scope": "기록 계약의 구조/연결 검사. 실제 영상·사람 검수·회사 승인·운영 반영 아님.",
+        "source_json_sha256": "8418459bae850424724d12ad0cc4cc1471b94bcee6c4613578e3e3613908c27d"
+      }
+    },
+    {
+      "label": "before_R5",
+      "argv": [
+        "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\inputs\\Phase00\\07_실행도구\\R5_디자인적용검사.py",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\inputs\\Phase00\\작업초안\\디자인적용_초안.json"
+      ],
+      "cwd": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\inputs\\Phase00",
+      "exit_code": 0,
+      "stdout_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\outputs\\before_R5.stdout.txt",
+      "stderr_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\outputs\\before_R5.stderr.txt",
+      "result": {
+        "valid": true,
+        "scope": "구조/현재 참조·정책 검수. 실제 디자인 품질·선택자 인증/회사 승인 아님.",
+        "errors": [],
+        "human_review_queue": [
+          "로고 필요 여부·선택 미정",
+          "saman emphasis: 관측색의 가정·역할 적합성·선택자/실제 선택 확인",
+          "R4 연결은 참조만 확인. 동영상 관측값 변경·가족사 토큰을 R4 한맥 필드에 삽입·품질 승인 안 됨",
+          "출력 해상도·최종 표시 크기 미정",
+          "로고/글자의 최종 배경 미정",
+          "최종 프레임·한국어/숫자·단위·자막·시청환경·움직이는 배경 검수",
+          "로컬 해시는 원문 무결성이다. 최신성/공식성/디자이너 identity·회사/운영 승인 증명 안 됨"
+        ],
+        "resolved_draft_candidates": [
+          {
+            "company_id": "saman",
+            "role": "emphasis",
+            "hex": "#F5821F",
+            "origin": "ci_color",
+            "use": "project_draft_candidate",
+            "review_status": "pending"
+          }
+        ],
+        "company_approved": false,
+        "fact_verified": false,
+        "human_selection_verified": false,
+        "operational_release": false
+      }
+    },
+    {
+      "label": "candidate_R4",
+      "argv": [
+        "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\inputs\\Phase00\\07_실행도구\\자료검증.py",
+        "--record",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\outputs\\R4_candidate.json"
+      ],
+      "cwd": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\inputs\\Phase00",
+      "exit_code": 0,
+      "stdout_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\outputs\\candidate_R4.stdout.txt",
+      "stderr_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\outputs\\candidate_R4.stderr.txt",
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "주장 내용 사람 검수 필요"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          },
+          {
+            "item_id": "SP-ROOT",
+            "status": "specimen_only",
+            "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+            "verified": false
+          },
+          {
+            "item_id": "SP-CROP",
+            "status": "specimen_only",
+            "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+            "verified": false
+          },
+          {
+            "item_id": "SP-RESIZE",
+            "status": "specimen_only",
+            "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+            "verified": false
+          },
+          {
+            "item_id": "TR-SP-CROP",
+            "status": "specimen_only",
+            "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+            "verified": false
+          },
+          {
+            "item_id": "TR-SP-RESIZE",
+            "status": "specimen_only",
+            "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+            "verified": false
+          },
+          {
+            "item_id": "G-ROOT",
+            "status": "specimen_only",
+            "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+            "verified": false
+          },
+          {
+            "item_id": "G-RESULT",
+            "status": "specimen_only",
+            "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+            "verified": false
+          },
+          {
+            "item_id": "design",
+            "status": "specimen_only",
+            "reason": "토큰 역할·적용 목적·프로젝트 예외 검수. 영상 필수 회사 규칙 승인과 구분",
+            "verified": false
+          },
+          {
+            "item_id": "TG-ASSET/video_type",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-ASSET",
+            "status": "specimen_only",
+            "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+            "verified": false
+          },
+          {
+            "item_id": "TG-SEGMENT/video_type",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-SEGMENT/communication_purpose",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-SEGMENT/information_relation",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-SEGMENT/art_direction",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-SEGMENT",
+            "status": "specimen_only",
+            "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+            "verified": false
+          },
+          {
+            "item_id": "TG-STATE/communication_purpose",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-STATE/information_relation",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-STATE/layout",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-STATE/art_direction",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-STATE",
+            "status": "specimen_only",
+            "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+            "verified": false
+          },
+          {
+            "item_id": "TG-BEAT/communication_purpose",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-BEAT/motion_function",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-BEAT/motion_property",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-BEAT/timing",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-BEAT",
+            "status": "specimen_only",
+            "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+            "verified": false
+          },
+          {
+            "item_id": "run",
+            "status": "specimen_only",
+            "reason": "실행 주체·도구/모델·입출력·설정과 실제 작업 로그를 대조. 선언을 실행 증명으로 보지 않음",
+            "verified": false
+          }
+        ],
+        "coordinate_bindings": [],
+        "integrated_review_states": [],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false,
+        "status": "draft_structure_pass",
+        "schema_version": "0.2.0",
+        "scope": "기록 계약의 구조/연결 검사. 실제 영상·사람 검수·회사 승인·운영 반영 아님.",
+        "source_json_sha256": "015d061abd10150f9453fa345fb88bdac147d1de86fcb5528a9b1acf237d64f3"
+      }
+    },
+    {
+      "label": "candidate_R5_after_R4",
+      "argv": [
+        "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\inputs\\Phase00\\07_실행도구\\R5_디자인적용검사.py",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\outputs\\R5_candidate.json"
+      ],
+      "cwd": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\inputs\\Phase00",
+      "exit_code": 0,
+      "stdout_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\outputs\\candidate_R5_after_R4.stdout.txt",
+      "stderr_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\outputs\\candidate_R5_after_R4.stderr.txt",
+      "result": {
+        "valid": true,
+        "scope": "구조/현재 참조·정책 검수. 실제 디자인 품질·선택자 인증/회사 승인 아님.",
+        "errors": [],
+        "human_review_queue": [
+          "로고 필요 여부·선택 미정",
+          "saman emphasis: 관측색의 가정·역할 적합성·선택자/실제 선택 확인",
+          "R4 연결은 참조만 확인. 동영상 관측값 변경·가족사 토큰을 R4 한맥 필드에 삽입·품질 승인 안 됨",
+          "출력 해상도·최종 표시 크기 미정",
+          "로고/글자의 최종 배경 미정",
+          "최종 프레임·한국어/숫자·단위·자막·시청환경·움직이는 배경 검수",
+          "로컬 해시는 원문 무결성이다. 최신성/공식성/디자이너 identity·회사/운영 승인 증명 안 됨"
+        ],
+        "resolved_draft_candidates": [
+          {
+            "company_id": "saman",
+            "role": "emphasis",
+            "hex": "#F5821F",
+            "origin": "ci_color",
+            "use": "project_draft_candidate",
+            "review_status": "pending"
+          }
+        ],
+        "company_approved": false,
+        "fact_verified": false,
+        "human_selection_verified": false,
+        "operational_release": false
+      }
+    },
+    {
+      "label": "after_R4",
+      "argv": [
+        "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\inputs\\Phase00\\07_실행도구\\자료검증.py",
+        "--record",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\inputs\\Phase00\\12_통합기록\\통합기록_작업초안.json"
+      ],
+      "cwd": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\inputs\\Phase00",
+      "exit_code": 0,
+      "stdout_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\outputs\\after_R4.stdout.txt",
+      "stderr_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\outputs\\after_R4.stderr.txt",
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "주장 내용 사람 검수 필요"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          },
+          {
+            "item_id": "SP-ROOT",
+            "status": "specimen_only",
+            "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+            "verified": false
+          },
+          {
+            "item_id": "SP-CROP",
+            "status": "specimen_only",
+            "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+            "verified": false
+          },
+          {
+            "item_id": "SP-RESIZE",
+            "status": "specimen_only",
+            "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+            "verified": false
+          },
+          {
+            "item_id": "TR-SP-CROP",
+            "status": "specimen_only",
+            "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+            "verified": false
+          },
+          {
+            "item_id": "TR-SP-RESIZE",
+            "status": "specimen_only",
+            "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+            "verified": false
+          },
+          {
+            "item_id": "G-ROOT",
+            "status": "specimen_only",
+            "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+            "verified": false
+          },
+          {
+            "item_id": "G-RESULT",
+            "status": "specimen_only",
+            "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+            "verified": false
+          },
+          {
+            "item_id": "design",
+            "status": "specimen_only",
+            "reason": "토큰 역할·적용 목적·프로젝트 예외 검수. 영상 필수 회사 규칙 승인과 구분",
+            "verified": false
+          },
+          {
+            "item_id": "TG-ASSET/video_type",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-ASSET",
+            "status": "specimen_only",
+            "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+            "verified": false
+          },
+          {
+            "item_id": "TG-SEGMENT/video_type",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-SEGMENT/communication_purpose",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-SEGMENT/information_relation",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-SEGMENT/art_direction",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-SEGMENT",
+            "status": "specimen_only",
+            "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+            "verified": false
+          },
+          {
+            "item_id": "TG-STATE/communication_purpose",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-STATE/information_relation",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-STATE/layout",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-STATE/art_direction",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-STATE",
+            "status": "specimen_only",
+            "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+            "verified": false
+          },
+          {
+            "item_id": "TG-BEAT/communication_purpose",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-BEAT/motion_function",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-BEAT/motion_property",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-BEAT/timing",
+            "status": "specimen_only",
+            "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+            "verified": false
+          },
+          {
+            "item_id": "TG-BEAT",
+            "status": "specimen_only",
+            "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+            "verified": false
+          },
+          {
+            "item_id": "run",
+            "status": "specimen_only",
+            "reason": "실행 주체·도구/모델·입출력·설정과 실제 작업 로그를 대조. 선언을 실행 증명으로 보지 않음",
+            "verified": false
+          }
+        ],
+        "coordinate_bindings": [],
+        "integrated_review_states": [],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false,
+        "status": "draft_structure_pass",
+        "schema_version": "0.2.0",
+        "scope": "기록 계약의 구조/연결 검사. 실제 영상·사람 검수·회사 승인·운영 반영 아님.",
+        "source_json_sha256": "015d061abd10150f9453fa345fb88bdac147d1de86fcb5528a9b1acf237d64f3"
+      }
+    },
+    {
+      "label": "after_R5",
+      "argv": [
+        "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\inputs\\Phase00\\07_실행도구\\R5_디자인적용검사.py",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\inputs\\Phase00\\작업초안\\디자인적용_초안.json"
+      ],
+      "cwd": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\inputs\\Phase00",
+      "exit_code": 0,
+      "stdout_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\outputs\\after_R5.stdout.txt",
+      "stderr_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\outputs\\after_R5.stderr.txt",
+      "result": {
+        "valid": true,
+        "scope": "구조/현재 참조·정책 검수. 실제 디자인 품질·선택자 인증/회사 승인 아님.",
+        "errors": [],
+        "human_review_queue": [
+          "로고 필요 여부·선택 미정",
+          "saman emphasis: 관측색의 가정·역할 적합성·선택자/실제 선택 확인",
+          "R4 연결은 참조만 확인. 동영상 관측값 변경·가족사 토큰을 R4 한맥 필드에 삽입·품질 승인 안 됨",
+          "출력 해상도·최종 표시 크기 미정",
+          "로고/글자의 최종 배경 미정",
+          "최종 프레임·한국어/숫자·단위·자막·시청환경·움직이는 배경 검수",
+          "로컬 해시는 원문 무결성이다. 최신성/공식성/디자이너 identity·회사/운영 승인 증명 안 됨"
+        ],
+        "resolved_draft_candidates": [
+          {
+            "company_id": "saman",
+            "role": "emphasis",
+            "hex": "#F5821F",
+            "origin": "ci_color",
+            "use": "project_draft_candidate",
+            "review_status": "pending"
+          }
+        ],
+        "company_approved": false,
+        "fact_verified": false,
+        "human_selection_verified": false,
+        "operational_release": false
+      }
+    },
+    {
+      "label": "version_R4",
+      "argv": [
+        "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\inputs\\Phase00\\실행스킬\\video-record-steward\\scripts\\판본대조.py",
+        "--before",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\backup\\steward-edit-01\\12_통합기록\\통합기록_작업초안.json",
+        "--after",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\inputs\\Phase00\\12_통합기록\\통합기록_작업초안.json"
+      ],
+      "cwd": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\inputs\\Phase00",
+      "exit_code": 0,
+      "stdout_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\outputs\\version_R4.stdout.txt",
+      "stderr_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\outputs\\version_R4.stderr.txt",
+      "result": {
+        "valid": true,
+        "mode": "content_edit",
+        "before_sha256": "8418459bae850424724d12ad0cc4cc1471b94bcee6c4613578e3e3613908c27d",
+        "after_sha256": "015d061abd10150f9453fa345fb88bdac147d1de86fcb5528a9b1acf237d64f3",
+        "bytes_changed": true,
+        "errors": [],
+        "scope": "R4/R5 초안 전후 식별/규격판본·소유기록 판본 또는 요청 checkpoint byte 대조만. 허용 필드·R4/R5 전체 구조·내용·권한 검사는 별도.",
+        "writes_performed": false,
+        "content_verified": false,
+        "company_approved": false,
+        "operational_release": false,
+        "after_record_version": "0.1.1",
+        "before_record_version": "0.1.0"
+      }
+    },
+    {
+      "label": "version_R5",
+      "argv": [
+        "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\inputs\\Phase00\\실행스킬\\video-record-steward\\scripts\\판본대조.py",
+        "--before",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\backup\\steward-edit-01\\작업초안\\디자인적용_초안.json",
+        "--after",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\inputs\\Phase00\\작업초안\\디자인적용_초안.json"
+      ],
+      "cwd": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\inputs\\Phase00",
+      "exit_code": 0,
+      "stdout_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\outputs\\version_R5.stdout.txt",
+      "stderr_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\outputs\\version_R5.stderr.txt",
+      "result": {
+        "valid": true,
+        "mode": "content_edit",
+        "before_sha256": "8e9ccad2d9af6c3732f74bce8dde7e0daf9ad9d256d5f7ee5a9340bd752dd580",
+        "after_sha256": "e8e1c18e4853ffcaa7d225fc01c5eaf261766f6a6d114aa2af843a028820c24d",
+        "bytes_changed": true,
+        "errors": [],
+        "scope": "R4/R5 초안 전후 식별/규격판본·소유기록 판본 또는 요청 checkpoint byte 대조만. 허용 필드·R4/R5 전체 구조·내용·권한 검사는 별도.",
+        "writes_performed": false,
+        "content_verified": false,
+        "company_approved": false,
+        "operational_release": false,
+        "after_record_version": "0.1.1",
+        "before_record_version": "0.1.0"
+      }
+    }
+  ],
+  "records": [
+    {
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\inputs\\Phase00\\12_통합기록\\통합기록_작업초안.json",
+      "id": "R8-DEV-STEW-01",
+      "before_version": "0.1.0",
+      "after_version": "0.1.1",
+      "before_sha256": "8418459bae850424724d12ad0cc4cc1471b94bcee6c4613578e3e3613908c27d",
+      "after_sha256": "015d061abd10150f9453fa345fb88bdac147d1de86fcb5528a9b1acf237d64f3",
+      "backup": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\backup\\steward-edit-01\\12_통합기록\\통합기록_작업초안.json",
+      "backup_byte_match": true
+    },
+    {
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\inputs\\Phase00\\작업초안\\디자인적용_초안.json",
+      "id": "R8-DEV-APPLY-01",
+      "before_version": "0.1.0",
+      "after_version": "0.1.1",
+      "before_sha256": "8e9ccad2d9af6c3732f74bce8dde7e0daf9ad9d256d5f7ee5a9340bd752dd580",
+      "after_sha256": "e8e1c18e4853ffcaa7d225fc01c5eaf261766f6a6d114aa2af843a028820c24d",
+      "backup": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\backup\\steward-edit-01\\작업초안\\디자인적용_초안.json",
+      "backup_byte_match": true
+    }
+  ],
+  "actual_changed_input_files": [
+    "12_통합기록\\통합기록_작업초안.json",
+    "작업초안\\디자인적용_초안.json"
+  ],
+  "unchanged_input_files_count": 268,
+  "allowed_fields_only": true,
+  "final_r4_r5_link_match": true,
+  "rollback_performed": false,
+  "fact_verified": false,
+  "company_approved": false,
+  "operational_release": false,
+  "R6_full_context_checked": false,
+  "R7_full_link_check_performed": false,
+  "limitations": [
+    "R6/R7 전체 고정 자료는 수행 사본에서 일부 생략. full 검증이나 승인으로 보고하지 않음.",
+    "R4 unresolved 및 R5 human_review_queue는 원시 검사 결과에 보존.",
+    "회사자산은 R5/R1 참조·실파일 SHA 검사만 수행. 미디어 해석/새 디자인/01-A 도구 실행 없음.",
+    "여러 파일 저장의 전체 원자성/완전 동시성 제어를 보장하지 않음."
+  ],
+  "human_questions_sent": false,
+  "new_human_decision_needed_for_requested_edit": false,
+  "preserved_candidates": [
+    {
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\outputs\\R4_candidate.json",
+      "state": "검사·실제 반영한 후보 bytes의 보존 사본; 활성 초안은 inputs/Phase00 대상 파일"
+    },
+    {
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\outputs\\R5_candidate.json",
+      "state": "검사·실제 반영한 후보 bytes의 보존 사본; 활성 초안은 inputs/Phase00 대상 파일"
+    }
+  ],
+  "temporary_or_partial_files_remaining": [],
+  "preexisting_error": {
+    "record": "R4",
+    "exit_code": 1,
+    "errors": [
+      "TG-STATE: 참조 버전/hash 불일치"
+    ],
+    "resolved_by_requested_edit": true
+  },
+  "post_save_failure": null,
+  "final_review_queue_counts": {
+    "R4": 27,
+    "R5": 7
+  }
+}

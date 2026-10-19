@@ -1,0 +1,262 @@
+{
+  "stage": "R3-1",
+  "passed": 28,
+  "total": 28,
+  "tests": [
+    {
+      "name": "정상 자료",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "누락된 원칙",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "원칙 누락·중복·신규ID"
+      ]
+    },
+    {
+      "name": "중복 원칙",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "원칙 누락·중복·신규ID"
+      ]
+    },
+    {
+      "name": "새 ID 끼워넣기",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "원칙 누락·중복·신규ID"
+      ]
+    },
+    {
+      "name": "회사 승인 위장",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "AP-01 형식: False was expected"
+      ]
+    },
+    {
+      "name": "회사 필수화 위장",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "상위 초안 권한 위장"
+      ]
+    },
+    {
+      "name": "실영상 시험 위장",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "상위 초안 권한 위장"
+      ]
+    },
+    {
+      "name": "회사 지침 권위 위장",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "상위 초안 권한 위장"
+      ]
+    },
+    {
+      "name": "강의 상세 정의 위장",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "MP-03 강의 본문 확인 위장"
+      ]
+    },
+    {
+      "name": "강의 본문 깊이 위장",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "MP-03 출처 깊이 위장",
+        "MP-03 강의 본문 확인 위장"
+      ]
+    },
+    {
+      "name": "카드와 조사기록 동시 깊이 위장",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "SRC-CAM-ESSENTIAL 검토 깊이 승인 없이 변경",
+        "IP-06 출처 깊이 위장",
+        "IP-07 출처 깊이 위장"
+      ]
+    },
+    {
+      "name": "IP10 선택 근거 삭제",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "조건부 참고 선택 근거 없음"
+      ]
+    },
+    {
+      "name": "정본 해시 교체",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "정본 버전·해시 불일치"
+      ]
+    },
+    {
+      "name": "정본 버전 교체",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "정본 버전·해시 불일치"
+      ]
+    },
+    {
+      "name": "정본 의미 이름 변경",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "AP-01 기존 의미/관계 불일치"
+      ]
+    },
+    {
+      "name": "출처 없는 정의",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "AP-01 없는 출처"
+      ]
+    },
+    {
+      "name": "없는 관련 원칙",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "AP-01 기존 의미/관계 불일치",
+        "AP-01 관계 참조 없음"
+      ]
+    },
+    {
+      "name": "원격 스냅샷 검증 위장",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "SRC-ADOBE-12 원격 원문 스냅샷 미실행 위장"
+      ]
+    },
+    {
+      "name": "출처 한계 삭제",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "SRC-ADOBE-12 출처 위치·한계·URL 없음"
+      ]
+    },
+    {
+      "name": "숫자 기본값 강제",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "AP-01 형식: None was expected"
+      ]
+    },
+    {
+      "name": "설명용 예를 실제 영상으로 변경",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "AP-01 형식: 'synthetic_not_company_video' was expected"
+      ]
+    },
+    {
+      "name": "기권 조건 누락",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "AP-01 형식: '' should be non-empty"
+      ]
+    },
+    {
+      "name": "예와 반례 동일",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "AP-01 예/반례 동일"
+      ]
+    },
+    {
+      "name": "허용되지 않은 권한 필드",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "AP-01 형식: Additional properties are not allowed ('approved_by' was unexpected)"
+      ]
+    },
+    {
+      "name": "상위 권한 필드 삽입",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "심화카드 상위 누락·허용되지 않은 필드"
+      ]
+    },
+    {
+      "name": "UX 신규 체계 활성화 위장",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "추가 후보 권한·깊이"
+      ]
+    },
+    {
+      "name": "UX 다른 출처로 교체",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "UX 후보 출처 변경"
+      ]
+    },
+    {
+      "name": "UX 후보 누락",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "UX 후보 누락·중복"
+      ]
+    }
+  ],
+  "scope": "깊이/승인/참조/동기화 우회 차단의 계약 회귀. 자연어 의미 정답·시청자 효과는 시험하지 않음."
+}

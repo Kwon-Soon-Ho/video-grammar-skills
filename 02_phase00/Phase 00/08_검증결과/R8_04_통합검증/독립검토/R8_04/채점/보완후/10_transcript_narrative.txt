@@ -1,0 +1,108 @@
+작업 순서 및 실제 실행 기록
+
+1. task.txt 읽기. 처음 candidate/자료를 조회했으나 경로가 없어 Get-Content exit1 발생; 실제 안내는 지정 DB/자료에서 읽었다. 이 초기 오류는 DB 변경 전의 경로 조회 오류다. 실행스킬 SKILL.md 및 해당 references 3개만 읽었다.
+2. 지정 DB의 작업범위, IO사용안내, 대상, 보존과버전 계약, R4 사용안내, 현재사용안내/정정표를 읽고 검사기 BASE가 로컬 사본인지 확인했다. 과거결과·평가·서비스설정·서비스상태·다른 운영 DB는 읽지 않았다. 현재사용안내의 범위 밖 링크는 따르지 않았다.
+3. Python -B -X utf8 작업실행.py prepare 실행 exit0. 아래 01~05 실제 CLI 기록 참조. strict JSON에서 중복/비유한수 거부; 문자열 치환으로 다른 원문 바이트 보존. 구조 검사와 byte 일치 backup 확인.
+4. Python -B -X utf8 작업실행.py write 실행 exit0(실행 래퍼의 종료이며 업무 성공 아님). 07 write exit0, 08 저장 후 환경 검사 exit2. 09 read와 실제 bytes로 외부 변경 확인, 10/11 좁은 구조/판본 검사 exit0. 실패를 숨기지 않았다.
+5. 현재 SHA != owned_written_sha256 확인. 외부 변경 덮기 금지에 따라 복구 미실시. 서비스이벤트는 결과 확인용으로만 읽고 outputs에 원문 보존했다.
+6. Python -B -X utf8 작업실행.py report: 12 최종 read exit0; 현재 바이트가 저장 후 보존본과 같은지, backup은 원문과 같은지 확인했다. 결과.json/결과.md 및 diff 작성. 현재 활성 초안은 미복구/사용 중단.
+
+지정 CLI와 읽기 검사 실제 인수/종료/원시 stdout/stderr:
+
+01_read_before
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+stdout (01_read_before.stdout.txt):
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+stderr (01_read_before.stderr.txt):
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+02_structure_before
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+stdout (02_structure_before.stdout.txt):
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+stderr (02_structure_before.stderr.txt):
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+03_structure_candidate
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+stdout (03_structure_candidate.stdout.txt):
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+stderr (03_structure_candidate.stderr.txt):
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+04_backup
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+stdout (04_backup.stdout.txt):
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+stderr (04_backup.stderr.txt):
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+05_version_candidate
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+stdout (05_version_candidate.stdout.txt):
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+stderr (05_version_candidate.stderr.txt):
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+06_read_prewrite
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+stdout (06_read_prewrite.stdout.txt):
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+stderr (06_read_prewrite.stderr.txt):
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+07_write
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+stdout (07_write.stdout.txt):
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+stderr (07_write.stderr.txt):
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+08_validate_after
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+stdout (08_validate_after.stdout.txt):
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+stderr (08_validate_after.stderr.txt):
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+09_read_after
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+stdout (09_read_after.stdout.txt):
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+stderr (09_read_after.stderr.txt):
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+10_structure_after
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+stdout (10_structure_after.stdout.txt):
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+stderr (10_structure_after.stderr.txt):
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+11_version_after
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+stdout (11_version_after.stdout.txt):
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+stderr (11_version_after.stderr.txt):
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+12_read_final
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+stdout (12_read_final.stdout.txt):
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+stderr (12_read_final.stderr.txt):
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+실제 서비스이벤트 요약(원문 별도 보존):
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+현재 최종 상태: {
+  "status": "failed_postsave_validation_external_change_unrestored_stop_use",
+  "before_sha256": "1f0271b62a7f0ee2c4fb2bf788639f75350d7ed62b2a5089f4e90a2afa40bf21",
+  "owned_written_sha256": "dc1357fe8acd3ba338be1326b3eac6d1f5c8462e0c7d8dcf314d7de1ce621490",
+  "current_sha256": "7aa5c95c80c38f5b32af2a3775d37f2ad6684d565b83681d5f0be76d0f170123",
+  "restore_status": "not_attempted_external_bytes_not_owned",
+  "active_draft_status": "미복구/사용 중단. 완료나 안전한 게시 상태가 아님.",
+  "time": null,
+  "tokens": null
+}

@@ -1,0 +1,5 @@
+exec((__import__('pathlib').Path('phase01a-a3/runs/with_b/crops.py')).read_text(encoding='utf-8-sig').split("panels('자료005'")[0])
+panels('자료013','uinative',(250,250,1850,1200),[10.6,11.3,11.5833,12],'T06_ui_transition',cols=1)
+panels('자료013','uinative',(850,650,2250,1500),[12.85,13.15,13.5,13.9,14.4],'T06_model',cols=1)
+panels('자료013','uinative',(950,780,1950,1080),[14.5333,14.6,14.7,14.8,14.9,15,15.1,15.2,15.35,15.5],'T06_light',cols=2)
+panels('자료013','uinative',(2200,1000,3350,1730),[12],'T06_copy',cols=1)

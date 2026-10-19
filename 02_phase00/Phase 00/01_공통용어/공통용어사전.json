@@ -1,0 +1,1620 @@
+{
+  "schema_version": "0.1.0",
+  "taxonomy_id": "company-video-taxonomy",
+  "version": "0.1.1",
+  "language": "ko-KR",
+  "authority": "프로젝트 분류 초안. 회사 표현 규칙 승인이 아님.",
+  "axes": [
+    {
+      "id": "video_type",
+      "name_ko": "영상 유형",
+      "multi_label": true
+    },
+    {
+      "id": "communication_purpose",
+      "name_ko": "전달 목적",
+      "multi_label": true
+    },
+    {
+      "id": "information_relation",
+      "name_ko": "정보 관계",
+      "multi_label": true
+    },
+    {
+      "id": "layout",
+      "name_ko": "화면 레이아웃",
+      "multi_label": true
+    },
+    {
+      "id": "motion_function",
+      "name_ko": "모션 기능",
+      "multi_label": true
+    },
+    {
+      "id": "motion_property",
+      "name_ko": "관측 속성·기법",
+      "multi_label": true
+    },
+    {
+      "id": "timing",
+      "name_ko": "시간 곡선·사건 관계·유지",
+      "multi_label": true
+    },
+    {
+      "id": "art_direction",
+      "name_ko": "매체·표현 속성",
+      "multi_label": true
+    }
+  ],
+  "terms": [
+    {
+      "id": "VIDEO-SW",
+      "axis": "video_type",
+      "name_ko": "소프트웨어 소개",
+      "name_en": "Software introduction",
+      "definition": "제품 기능·사용 흐름을 설명하는 영상",
+      "aliases": [
+        "SW 소개",
+        "소프트웨어 홍보"
+      ],
+      "include_when": "기능·작업 흐름 소개",
+      "exclude_or_limit": "화면 레이아웃과 동일 분류 아님",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "VIDEO-TECH",
+      "axis": "video_type",
+      "name_ko": "기술 설명",
+      "name_en": "Technical explanation",
+      "definition": "기술·원리·공법을 설명하는 영상",
+      "aliases": [
+        "공법 소개",
+        "기술 소개"
+      ],
+      "include_when": "기술 관계·작동 원리",
+      "exclude_or_limit": "실사/3D 매체와 별개",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "VIDEO-COMPANY",
+      "axis": "video_type",
+      "name_ko": "회사 소개",
+      "name_en": "Company introduction",
+      "definition": "조직·사업·역량을 소개하는 영상",
+      "aliases": [
+        "기업 소개"
+      ],
+      "include_when": "사업·조직 설명",
+      "exclude_or_limit": "브랜딩과 복합 가능",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "VIDEO-BRAND",
+      "axis": "video_type",
+      "name_ko": "기업 브랜딩",
+      "name_en": "Corporate branding",
+      "definition": "브랜드 정체성과 인상을 중심으로 하는 영상",
+      "aliases": [
+        "브랜드 필름"
+      ],
+      "include_when": "정체성·태도 전달",
+      "exclude_or_limit": "정보량 적다고 설명 실패 아님",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "VIDEO-REPORT",
+      "axis": "video_type",
+      "name_ko": "성과 보고",
+      "name_en": "Results report",
+      "definition": "성과·결과·변화를 전달하는 영상",
+      "aliases": [
+        "실적 보고"
+      ],
+      "include_when": "수치·결과",
+      "exclude_or_limit": "수치 카운트가 실제 시계열이라는 뜻 아님",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "VIDEO-TRAIN",
+      "axis": "video_type",
+      "name_ko": "교육·안내",
+      "name_en": "Training and instruction",
+      "definition": "학습·업무 수행을 돕는 영상",
+      "aliases": [
+        "교육 영상",
+        "매뉴얼 영상"
+      ],
+      "include_when": "절차·용어 학습",
+      "exclude_or_limit": "관객 전문성과 시청 조건 확인",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "VIDEO-INTERVIEW",
+      "axis": "video_type",
+      "name_ko": "인터뷰",
+      "name_en": "Interview",
+      "definition": "발화·인터뷰를 중심으로 구성한 영상",
+      "aliases": [
+        "인터뷰 영상"
+      ],
+      "include_when": "인물 발화",
+      "exclude_or_limit": "하위 설명 장면은 별도 분류",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "PURPOSE-PROCESS",
+      "axis": "communication_purpose",
+      "name_ko": "단계 설명",
+      "name_en": "Explain process",
+      "definition": "절차와 현재 단계를 이해시키기",
+      "aliases": [
+        "프로세스 설명"
+      ],
+      "include_when": "작업 순서",
+      "exclude_or_limit": "반복 카드라고 자동 단계 설명 아님",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "PURPOSE-COMPARE",
+      "axis": "communication_purpose",
+      "name_ko": "비교",
+      "name_en": "Compare",
+      "definition": "같은 기준에서 차이와 공통점을 전달하기",
+      "aliases": [
+        "A/B 비교"
+      ],
+      "include_when": "동일 기준의 대상",
+      "exclude_or_limit": "시간 전후와 동등 비교 구분",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "PURPOSE-CHANGE",
+      "axis": "communication_purpose",
+      "name_ko": "변화 설명",
+      "name_en": "Explain change",
+      "definition": "상태의 변화와 차이를 전달하기",
+      "aliases": [
+        "전후 설명"
+      ],
+      "include_when": "기존/개선 상태",
+      "exclude_or_limit": "숫자 증가가 항상 개선은 아님",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "PURPOSE-CAUSE",
+      "axis": "communication_purpose",
+      "name_ko": "인과 설명",
+      "name_en": "Explain cause",
+      "definition": "원인과 결과의 연결을 설명하기",
+      "aliases": [
+        "원인 결과"
+      ],
+      "include_when": "화면·시나리오가 표현하는 원인과 결과",
+      "exclude_or_limit": "영상이 표현하는 인과와 현실 사실성·제작자 의도 검증을 분리한다. 실제 인과 승인으로 자동 승격 금지.",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.1",
+      "replaced_by": null
+    },
+    {
+      "id": "PURPOSE-STRUCTURE",
+      "axis": "communication_purpose",
+      "name_ko": "구조 이해",
+      "name_en": "Explain structure",
+      "definition": "부분·전체·계층을 이해시키기",
+      "aliases": [
+        "구조 설명"
+      ],
+      "include_when": "분해·전체도",
+      "exclude_or_limit": "3D라고 구조 설명 자동 판정 아님",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "PURPOSE-SPACE",
+      "axis": "communication_purpose",
+      "name_ko": "공간 이해",
+      "name_en": "Explain spatial context",
+      "definition": "위치·거리·방향·관계를 설명하기",
+      "aliases": [
+        "공간 설명"
+      ],
+      "include_when": "지도·시설",
+      "exclude_or_limit": "카메라 움직임과 정보 의미 분리",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "PURPOSE-FOCUS",
+      "axis": "communication_purpose",
+      "name_ko": "핵심 강조",
+      "name_en": "Highlight key message",
+      "definition": "정보 중 현재 핵심을 식별하게 하기",
+      "aliases": [
+        "핵심 부각"
+      ],
+      "include_when": "주요 문장·대상",
+      "exclude_or_limit": "화려함과 강조 효과 분리",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "PURPOSE-DATA",
+      "axis": "communication_purpose",
+      "name_ko": "데이터 해석",
+      "name_en": "Explain data",
+      "definition": "수치·분포·관계를 이해시키기",
+      "aliases": [
+        "데이터 설명"
+      ],
+      "include_when": "차트·정보",
+      "exclude_or_limit": "차트 종류와 전달 목적 분리",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "PURPOSE-STATE",
+      "axis": "communication_purpose",
+      "name_ko": "상태 안내",
+      "name_en": "Communicate state",
+      "definition": "작업·대상의 상태를 알리기",
+      "aliases": [
+        "상태 설명"
+      ],
+      "include_when": "완료·진행 상태",
+      "exclude_or_limit": "색만으로 상태 확정 금지",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "REL-ORDER",
+      "axis": "information_relation",
+      "name_ko": "순차 관계",
+      "name_en": "Ordered stages",
+      "definition": "순서가 의미를 갖는 관계",
+      "aliases": [
+        "순서",
+        "순차 정보"
+      ],
+      "include_when": "단계 흐름",
+      "exclude_or_limit": "시간축과 꼭 동일하지 않음",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "REL-PARALLEL",
+      "axis": "information_relation",
+      "name_ko": "병렬 관계",
+      "name_en": "Parallel items",
+      "definition": "동등한 여러 항목의 관계",
+      "aliases": [
+        "병렬 정보"
+      ],
+      "include_when": "동등 항목",
+      "exclude_or_limit": "동시 등장 여부와 별개",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "REL-HIERARCHY",
+      "axis": "information_relation",
+      "name_ko": "계층 관계",
+      "name_en": "Hierarchy",
+      "definition": "상위·하위·종속의 관계",
+      "aliases": [
+        "계층 정보"
+      ],
+      "include_when": "조직·분류",
+      "exclude_or_limit": "시각 크기 차이만으로 확정 금지",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "REL-PART",
+      "axis": "information_relation",
+      "name_ko": "부분과 전체",
+      "name_en": "Part to whole",
+      "definition": "전체와 구성 부분의 관계",
+      "aliases": [
+        "부분 전체"
+      ],
+      "include_when": "분해·구성",
+      "exclude_or_limit": "단순 크롭과 구분",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "REL-CAUSE",
+      "axis": "information_relation",
+      "name_ko": "원인과 결과",
+      "name_en": "Cause and effect",
+      "definition": "화면·시나리오가 표현하는 원인과 결과의 관계",
+      "aliases": [
+        "인과 관계"
+      ],
+      "include_when": "화면·시나리오가 표현하는 원인과 결과",
+      "exclude_or_limit": "영상이 표현하는 인과와 현실 사실성·제작자 의도 검증을 분리한다. 실제 인과 승인으로 자동 승격 금지.",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.1",
+      "replaced_by": null
+    },
+    {
+      "id": "REL-TIME",
+      "axis": "information_relation",
+      "name_ko": "시간 변화",
+      "name_en": "Change over time",
+      "definition": "시간에 따른 사건·값의 관계",
+      "aliases": [
+        "시계열"
+      ],
+      "include_when": "실제 시간 변화",
+      "exclude_or_limit": "장식 카운트와 구분",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "REL-SPACE",
+      "axis": "information_relation",
+      "name_ko": "공간 관계",
+      "name_en": "Spatial relationship",
+      "definition": "대상 간 위치·방향·연결 관계",
+      "aliases": [
+        "위치 관계"
+      ],
+      "include_when": "시설·지도",
+      "exclude_or_limit": "화면 배치와 실제 공간 구분",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "REL-CORRELATION",
+      "axis": "information_relation",
+      "name_ko": "상관·관련",
+      "name_en": "Correlation or association",
+      "definition": "함께 관련되지만 인과를 확정하지 않은 관계",
+      "aliases": [
+        "관련 관계"
+      ],
+      "include_when": "데이터 관련",
+      "exclude_or_limit": "관측 상관으로 인과 주장 금지",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "LAYOUT-SINGLE-FOCUS",
+      "axis": "layout",
+      "name_ko": "단일 초점",
+      "name_en": "Single focus",
+      "definition": "핵심 대상·문장 중심의 구성",
+      "aliases": [
+        "중심 집중형"
+      ],
+      "include_when": "핵심 하나",
+      "exclude_or_limit": "반드시 중앙 배치 아님",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "LAYOUT-SPLIT-COMPARE",
+      "axis": "layout",
+      "name_ko": "분할 비교",
+      "name_en": "Split comparison",
+      "definition": "둘 이상의 대상을 공통 기준으로 나눈 구성",
+      "aliases": [
+        "좌우 비교",
+        "상하 비교"
+      ],
+      "include_when": "동등 비교",
+      "exclude_or_limit": "분할이 항상 비교는 아님",
+      "parent_id": "LAYOUT-SPLIT",
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.1",
+      "replaced_by": null
+    },
+    {
+      "id": "LAYOUT-BEFORE-AFTER",
+      "axis": "layout",
+      "name_ko": "전후 대응",
+      "name_en": "Before and after",
+      "definition": "같은 대상의 전후 상태를 대응한 구성",
+      "aliases": [
+        "전후 비교"
+      ],
+      "include_when": "변화 설명",
+      "exclude_or_limit": "서로 다른 대상의 비교와 구분",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "LAYOUT-PROCESS-LINE",
+      "axis": "layout",
+      "name_ko": "선형 프로세스",
+      "name_en": "Linear process",
+      "definition": "단계를 선·방향으로 연결한 구성",
+      "aliases": [
+        "수평 프로세스",
+        "수직 프로세스"
+      ],
+      "include_when": "순서 있는 단계",
+      "exclude_or_limit": "행태별 방향 속성은 별도",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "LAYOUT-TIMELINE",
+      "axis": "layout",
+      "name_ko": "시간축",
+      "name_en": "Timeline",
+      "definition": "실제 시간·기간에 대응한 배치",
+      "aliases": [
+        "타임라인"
+      ],
+      "include_when": "사건/기간",
+      "exclude_or_limit": "영상 편집기 timeline과 문맥 구분",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "LAYOUT-HIERARCHY",
+      "axis": "layout",
+      "name_ko": "계층 구성",
+      "name_en": "Hierarchical layout",
+      "definition": "상하·종속 관계를 배치로 표현",
+      "aliases": [
+        "조직도형"
+      ],
+      "include_when": "계층 관계",
+      "exclude_or_limit": "UI 컴포넌트 분류와 별개",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "LAYOUT-NETWORK",
+      "axis": "layout",
+      "name_ko": "연결 구성",
+      "name_en": "Network layout",
+      "definition": "연결·관계를 배치로 표현",
+      "aliases": [
+        "네트워크형"
+      ],
+      "include_when": "관련·인과 관계",
+      "exclude_or_limit": "선이 있다는 이유로 인과 확정 금지",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "LAYOUT-OVERVIEW-DETAIL",
+      "axis": "layout",
+      "name_ko": "전체와 상세",
+      "name_en": "Overview and detail",
+      "definition": "전체 맥락과 선택 부분 상세를 함께 표현",
+      "aliases": [
+        "전체 상세형"
+      ],
+      "include_when": "포커스 전환",
+      "exclude_or_limit": "부분과 전체 관계는 따로 기록",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "LAYOUT-SPACE-CALLOUT",
+      "axis": "layout",
+      "name_ko": "공간과 설명 표식",
+      "name_en": "Spatial callout",
+      "definition": "지도·구조·공간 대상에 명칭·주석을 연결",
+      "aliases": [
+        "지도 콜아웃"
+      ],
+      "include_when": "위치·시설 설명",
+      "exclude_or_limit": "이소메트릭은 투영 속성",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "LAYOUT-DATA-CHART",
+      "axis": "layout",
+      "name_ko": "데이터 시각화",
+      "name_en": "Data chart",
+      "definition": "데이터 관계를 차트로 구성",
+      "aliases": [
+        "차트형"
+      ],
+      "include_when": "수치·분포·관계",
+      "exclude_or_limit": "차트 유형·데이터 의미 별도",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "LAYOUT-UI-ANNOTATION",
+      "axis": "layout",
+      "name_ko": "실제 UI와 설명",
+      "name_en": "UI annotation",
+      "definition": "제품 화면과 설명·초점·표식을 결합",
+      "aliases": [
+        "UI 설명형"
+      ],
+      "include_when": "SW 데모",
+      "exclude_or_limit": "가상 UI를 실제 제품이라고 기록 금지",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "LAYOUT-CARD-GROUP",
+      "axis": "layout",
+      "name_ko": "카드 그룹",
+      "name_en": "Card group",
+      "definition": "독립 항목들을 카드 형상으로 묶음",
+      "aliases": [
+        "카드형"
+      ],
+      "include_when": "병렬·단계·비교",
+      "exclude_or_limit": "카드와 다른 레이아웃 복합 가능",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "FUNCTION-REVEAL",
+      "axis": "motion_function",
+      "name_ko": "정보 공개",
+      "name_en": "Reveal information",
+      "definition": "내용을 보이게 하거나 읽을 순서를 형성",
+      "aliases": [
+        "등장 기능"
+      ],
+      "include_when": "정보 도입",
+      "exclude_or_limit": "opacity·mask 기법과 별개",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "FUNCTION-FOCUS",
+      "axis": "motion_function",
+      "name_ko": "주목 이동",
+      "name_en": "Shift focus",
+      "definition": "현재 설명 대상으로 주목을 이동",
+      "aliases": [
+        "포커스 전환"
+      ],
+      "include_when": "핵심 단계 설명",
+      "exclude_or_limit": "실제 시선 효과는 검토 필요",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "FUNCTION-CONNECT",
+      "axis": "motion_function",
+      "name_ko": "관계 연결",
+      "name_en": "Connect relationship",
+      "definition": "관련 대상의 관계를 표현",
+      "aliases": [
+        "연결 기능"
+      ],
+      "include_when": "흐름선·연동",
+      "exclude_or_limit": "실제 인과·parenting 구조 확정 금지",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "FUNCTION-PROGRESS",
+      "axis": "motion_function",
+      "name_ko": "진행 표시",
+      "name_en": "Indicate progress",
+      "definition": "단계·작업의 진행을 표현",
+      "aliases": [
+        "진행 기능"
+      ],
+      "include_when": "현재 단계",
+      "exclude_or_limit": "실제 진행 데이터인지 확인",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "FUNCTION-CONTEXT",
+      "axis": "motion_function",
+      "name_ko": "맥락 유지",
+      "name_en": "Preserve context",
+      "definition": "전체·기존 대상의 맥락을 유지",
+      "aliases": [
+        "맥락 보존"
+      ],
+      "include_when": "전체에서 상세로",
+      "exclude_or_limit": "남은 대상의 실제 식별성 확인",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "FUNCTION-CHANGE",
+      "axis": "motion_function",
+      "name_ko": "상태 변화 안내",
+      "name_en": "Show state change",
+      "definition": "앞뒤 상태 차이를 표현",
+      "aliases": [
+        "상태 전환 기능"
+      ],
+      "include_when": "변경·완료",
+      "exclude_or_limit": "실제 값·중간 값 분리",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "FUNCTION-RHYTHM",
+      "axis": "motion_function",
+      "name_ko": "리듬·분절",
+      "name_en": "Pace and segment",
+      "definition": "시간적 구분·휴지·흐름을 만든다",
+      "aliases": [
+        "리듬 기능"
+      ],
+      "include_when": "단계 전개",
+      "exclude_or_limit": "음악 박자 강제 아님",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "FUNCTION-EXPRESSION",
+      "axis": "motion_function",
+      "name_ko": "인상 표현",
+      "name_en": "Express tone",
+      "definition": "브랜드·정서·분위기를 표현",
+      "aliases": [
+        "표현 모션"
+      ],
+      "include_when": "브랜딩·핵심 순간",
+      "exclude_or_limit": "장식이라는 이유로 자동 실패 아님",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "PROPERTY-POSITION",
+      "axis": "motion_property",
+      "name_ko": "화면 위치 변화",
+      "name_en": "Screen position change",
+      "definition": "렌더 화면에서 위치가 달라짐",
+      "aliases": [
+        "이동",
+        "Position"
+      ],
+      "include_when": "화면 추적",
+      "exclude_or_limit": "레이어·카메라 원인 분리",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "PROPERTY-SIZE",
+      "axis": "motion_property",
+      "name_ko": "겉보기 크기 변화",
+      "name_en": "Apparent size change",
+      "definition": "렌더 화면의 대상 크기가 달라짐",
+      "aliases": [
+        "확대",
+        "축소",
+        "크기 변화"
+      ],
+      "include_when": "바운딩박스 관측",
+      "exclude_or_limit": "원본 Scale 값으로 단정 금지",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "PROPERTY-ROTATION",
+      "axis": "motion_property",
+      "name_ko": "방향·회전 변화",
+      "name_en": "Orientation change",
+      "definition": "렌더 화면의 방향이 달라짐",
+      "aliases": [
+        "회전"
+      ],
+      "include_when": "방향 변화",
+      "exclude_or_limit": "카메라·투영 영향 고려",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "PROPERTY-VISIBILITY",
+      "axis": "motion_property",
+      "name_ko": "가시성 변화",
+      "name_en": "Visibility change",
+      "definition": "보이는 범위·강도가 달라짐",
+      "aliases": [
+        "페이드인",
+        "페이드아웃",
+        "Fade in",
+        "Fade out"
+      ],
+      "include_when": "등장·퇴장 관측",
+      "exclude_or_limit": "오퍼시티·마스크·합성 원인 미확정 가능",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "PROPERTY-OPACITY",
+      "axis": "motion_property",
+      "name_ko": "오퍼시티 변화 추정",
+      "name_en": "Opacity estimate",
+      "definition": "합성 조건 또는 원본 근거로 추정한 opacity 변화",
+      "aliases": [
+        "Opacity In",
+        "투명도 등장"
+      ],
+      "include_when": "조건부 수치 추정",
+      "exclude_or_limit": "가시성만으로 정확한 opacity 확정 금지",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "PROPERTY-MASK",
+      "axis": "motion_property",
+      "name_ko": "마스크 공개",
+      "name_en": "Mask or wipe reveal",
+      "definition": "공간적 경계로 내용이 공개",
+      "aliases": [
+        "마스킹",
+        "와이프"
+      ],
+      "include_when": "공개 경계 관측",
+      "exclude_or_limit": "원본 효과 이름을 유일 복원하지 않음",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "PROPERTY-PATH",
+      "axis": "motion_property",
+      "name_ko": "경로 관련 변화",
+      "name_en": "Path change",
+      "definition": "경로 공개 또는 대상의 경로 이동과 관련된 변화",
+      "aliases": [],
+      "include_when": "세부 유형을 별도 기록",
+      "exclude_or_limit": "선이 그려지는 것과 대상이 이동하는 것은 다른 관측이다.",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.1",
+      "replaced_by": null
+    },
+    {
+      "id": "PROPERTY-CAMERA",
+      "axis": "motion_property",
+      "name_ko": "카메라·전역 변화",
+      "name_en": "Camera or global motion",
+      "definition": "화면 전반의 시점·배율·방향 변화",
+      "aliases": [
+        "카메라 이동",
+        "줌"
+      ],
+      "include_when": "전체 시점",
+      "exclude_or_limit": "진짜 카메라와 화면 전체 transform 구분",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "PROPERTY-VALUE",
+      "axis": "motion_property",
+      "name_ko": "문자·값 변화",
+      "name_en": "Text or value change",
+      "definition": "표시 내용·값이 시간에 따라 변화",
+      "aliases": [
+        "카운트업"
+      ],
+      "include_when": "상태·수치",
+      "exclude_or_limit": "장식 중간값을 실측 데이터로 오인 금지",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "CURVE-LINEAR",
+      "axis": "timing",
+      "name_ko": "등속",
+      "name_en": "Linear",
+      "definition": "일정한 변화율",
+      "aliases": [
+        "Linear",
+        "선형"
+      ],
+      "include_when": "관측 궤적",
+      "exclude_or_limit": "루프 외에도 의미상 적합 가능",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.1",
+      "replaced_by": null
+    },
+    {
+      "id": "CURVE-ACCEL",
+      "axis": "timing",
+      "name_ko": "가속",
+      "name_en": "Accelerate",
+      "definition": "변화율이 커짐",
+      "aliases": [
+        "Ease in",
+        "가속 모션"
+      ],
+      "include_when": "관측 궤적",
+      "exclude_or_limit": "원본 핸들 값은 별도",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.1",
+      "replaced_by": null
+    },
+    {
+      "id": "CURVE-DECEL",
+      "axis": "timing",
+      "name_ko": "감속",
+      "name_en": "Decelerate",
+      "definition": "변화율이 작아짐",
+      "aliases": [
+        "Ease out",
+        "감속 모션"
+      ],
+      "include_when": "관측 궤적",
+      "exclude_or_limit": "노이즈·가림 확인",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.1",
+      "replaced_by": null
+    },
+    {
+      "id": "CURVE-INOUT",
+      "axis": "timing",
+      "name_ko": "가속 후 감속",
+      "name_en": "Accelerate then decelerate",
+      "definition": "변화율이 커졌다가 작아짐",
+      "aliases": [
+        "Ease in out"
+      ],
+      "include_when": "관측 궤적",
+      "exclude_or_limit": "같은 모양도 서로 다른 구현 가능",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.1",
+      "replaced_by": null
+    },
+    {
+      "id": "CURVE-OSCILLATE",
+      "axis": "timing",
+      "name_ko": "진동·정착",
+      "name_en": "Oscillation and settle",
+      "definition": "반복 방향·진폭 변화 후 정착",
+      "aliases": [
+        "바운스",
+        "스프링"
+      ],
+      "include_when": "관측 진동",
+      "exclude_or_limit": "물리 파라미터 유일 복원 금지",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.1",
+      "replaced_by": null
+    },
+    {
+      "id": "STYLE-PHOTO",
+      "axis": "art_direction",
+      "name_ko": "실사 중심",
+      "name_en": "Photographic",
+      "definition": "실제 촬영·사진 중심",
+      "aliases": [
+        "실사"
+      ],
+      "include_when": "표현 매체",
+      "exclude_or_limit": "정보 관계와 별개",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "STYLE-ILLUSTRATION",
+      "axis": "art_direction",
+      "name_ko": "일러스트 중심",
+      "name_en": "Illustrative",
+      "definition": "그림·일러스트 중심",
+      "aliases": [
+        "일러스트"
+      ],
+      "include_when": "표현 매체",
+      "exclude_or_limit": "회사의 전체 톤으로 자동 승격 금지",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "STYLE-DIAGRAM",
+      "axis": "art_direction",
+      "name_ko": "도표 중심",
+      "name_en": "Diagrammatic",
+      "definition": "추상 기호·선·면·도표 중심",
+      "aliases": [
+        "도식"
+      ],
+      "include_when": "표현 매체",
+      "exclude_or_limit": "카드만 강제하지 않음",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "STYLE-3D",
+      "axis": "art_direction",
+      "name_ko": "3D 표현",
+      "name_en": "Three-dimensional",
+      "definition": "입체·공간 표현",
+      "aliases": [
+        "3D"
+      ],
+      "include_when": "표현 매체",
+      "exclude_or_limit": "실제 모델 제작 도구 미확정 가능",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "STYLE-ISOMETRIC",
+      "axis": "art_direction",
+      "name_ko": "등각 투영",
+      "name_en": "Isometric projection",
+      "definition": "등각 투영 형태의 표현",
+      "aliases": [
+        "아이소메트릭",
+        "이소메트릭"
+      ],
+      "include_when": "투영 방식",
+      "exclude_or_limit": "레이아웃 유형이나 실제 3D 도구와 별개",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "STYLE-PIP",
+      "axis": "art_direction",
+      "name_ko": "화면 속 화면",
+      "name_en": "Picture in picture",
+      "definition": "중첩된 별도 화면 표현",
+      "aliases": [],
+      "include_when": "배치 속성",
+      "exclude_or_limit": "정보 관계는 별도",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "deprecated",
+      "version": "0.1.1",
+      "replaced_by": "LAYOUT-PIP"
+    },
+    {
+      "id": "LAYOUT-SPLIT",
+      "axis": "layout",
+      "name_ko": "분할 구성",
+      "name_en": "Split layout",
+      "definition": "서로 다른 역할의 화면 영역을 나눈 구성",
+      "aliases": [
+        "좌우 분할",
+        "상하 분할"
+      ],
+      "include_when": "영상+설명·주대상+지원 정보",
+      "exclude_or_limit": "분할만으로 비교 의미를 확정하지 않음",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.1",
+      "replaced_by": null
+    },
+    {
+      "id": "LAYOUT-PIP",
+      "axis": "layout",
+      "name_ko": "화면 속 화면",
+      "name_en": "Picture in picture",
+      "definition": "주 화면 안에 별도 화면을 중첩",
+      "aliases": [
+        "PIP"
+      ],
+      "include_when": "중첩 설명·데모",
+      "exclude_or_limit": "정보 관계·주보조 역할 별도",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.1",
+      "replaced_by": null
+    },
+    {
+      "id": "PROPERTY-PATH-MOVE",
+      "axis": "motion_property",
+      "name_ko": "대상 경로 이동",
+      "name_en": "Object movement along path",
+      "definition": "대상이 경로를 따라 이동",
+      "aliases": [
+        "경로 이동"
+      ],
+      "include_when": "경로 위 대상의 위치 변화",
+      "exclude_or_limit": "새 선이 나타나는 것과 구분",
+      "parent_id": "PROPERTY-PATH",
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.1",
+      "replaced_by": null
+    },
+    {
+      "id": "PROPERTY-LINE-REVEAL",
+      "axis": "motion_property",
+      "name_ko": "선 공개",
+      "name_en": "Line reveal",
+      "definition": "선의 보이는 구간이 변화",
+      "aliases": [
+        "라인 드로우",
+        "선 그리기"
+      ],
+      "include_when": "라인이 순차 공개",
+      "exclude_or_limit": "대상 이동·원본 trim paths 효과와 구분",
+      "parent_id": "PROPERTY-PATH",
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.1",
+      "replaced_by": null
+    },
+    {
+      "id": "TIME-SEQUENCE",
+      "axis": "timing",
+      "name_ko": "순차 발생",
+      "name_en": "Sequential events",
+      "definition": "사건이 차례대로 시작 또는 완료",
+      "aliases": [
+        "Sequential events"
+      ],
+      "include_when": "기준 사건·대상·시간 범위를 함께 기록",
+      "exclude_or_limit": "정확한 시각·원본 키프레임을 용어만으로 확정하지 않음",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.1",
+      "replaced_by": null
+    },
+    {
+      "id": "TIME-SIMULTANEOUS",
+      "axis": "timing",
+      "name_ko": "동시 발생",
+      "name_en": "Simultaneous events",
+      "definition": "사건의 시작 또는 완료가 함께 관측",
+      "aliases": [
+        "Simultaneous events"
+      ],
+      "include_when": "기준 사건·대상·시간 범위를 함께 기록",
+      "exclude_or_limit": "정확한 시각·원본 키프레임을 용어만으로 확정하지 않음",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.1",
+      "replaced_by": null
+    },
+    {
+      "id": "TIME-OVERLAP",
+      "axis": "timing",
+      "name_ko": "중첩",
+      "name_en": "Overlap",
+      "definition": "둘 이상 동작의 시간 범위가 겹침",
+      "aliases": [
+        "Overlap"
+      ],
+      "include_when": "기준 사건·대상·시간 범위를 함께 기록",
+      "exclude_or_limit": "정확한 시각·원본 키프레임을 용어만으로 확정하지 않음",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.1",
+      "replaced_by": null
+    },
+    {
+      "id": "TIME-DELAY",
+      "axis": "timing",
+      "name_ko": "지연",
+      "name_en": "Delay",
+      "definition": "대응 사건 사이 시작·완료 시각 차이",
+      "aliases": [
+        "Delay"
+      ],
+      "include_when": "기준 사건·대상·시간 범위를 함께 기록",
+      "exclude_or_limit": "정확한 시각·원본 키프레임을 용어만으로 확정하지 않음",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.1",
+      "replaced_by": null
+    },
+    {
+      "id": "TIME-HOLD",
+      "axis": "timing",
+      "name_ko": "유지",
+      "name_en": "Hold",
+      "definition": "정보 또는 상태가 식별 가능하게 지속",
+      "aliases": [
+        "Hold"
+      ],
+      "include_when": "기준 사건·대상·시간 범위를 함께 기록",
+      "exclude_or_limit": "정확한 시각·원본 키프레임을 용어만으로 확정하지 않음",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.1",
+      "replaced_by": null
+    },
+    {
+      "id": "TIME-STILL",
+      "axis": "timing",
+      "name_ko": "정지",
+      "name_en": "Stillness",
+      "definition": "대상 또는 화면의 변화가 관측되지 않는 구간",
+      "aliases": [
+        "Stillness"
+      ],
+      "include_when": "기준 사건·대상·시간 범위를 함께 기록",
+      "exclude_or_limit": "정확한 시각·원본 키프레임을 용어만으로 확정하지 않음",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.1",
+      "replaced_by": null
+    },
+    {
+      "id": "TIME-LOOP",
+      "axis": "timing",
+      "name_ko": "반복",
+      "name_en": "Loop",
+      "definition": "상태·동작이 반복",
+      "aliases": [
+        "Loop"
+      ],
+      "include_when": "기준 사건·대상·시간 범위를 함께 기록",
+      "exclude_or_limit": "정확한 시각·원본 키프레임을 용어만으로 확정하지 않음",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.1",
+      "replaced_by": null
+    },
+    {
+      "id": "TIME-OVERSHOOT",
+      "axis": "timing",
+      "name_ko": "목표 초과 후 복귀",
+      "name_en": "Overshoot",
+      "definition": "최종 상태를 지나친 뒤 돌아오는 변화",
+      "aliases": [
+        "Overshoot"
+      ],
+      "include_when": "기준 사건·대상·시간 범위를 함께 기록",
+      "exclude_or_limit": "정확한 시각·원본 키프레임을 용어만으로 확정하지 않음",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.1",
+      "replaced_by": null
+    }
+  ],
+  "unclassified_policy": {
+    "allowed": true,
+    "value": null,
+    "requires_reason": true
+  },
+  "alias_policy": "축을 명시해 조회. 같은 별칭의 다른 의미는 후보를 반환하고 자동 병합하지 않는다.",
+  "qualifiers": {
+    "direction": [
+      "enter",
+      "exit",
+      "increase",
+      "decrease",
+      "forward",
+      "reverse",
+      "unknown"
+    ],
+    "direction_policy": "페이드인/out·확대/축소는 alias 조회 후 방향 한정어를 보존한다. 속성 ID만 반환해 방향을 버리지 않는다."
+  },
+  "migrations": [
+    {
+      "from": "0.1.0",
+      "to": "0.1.1",
+      "changes": [
+        "timing_curve 축을 timing으로 확장",
+        "STYLE-PIP는 LAYOUT-PIP로 대체, 기존 ID보존",
+        "일반 분할과 비교 구분",
+        "인과 표현과 사실 검증 분리",
+        "선 공개와 대상 경로 이동 구분"
+      ]
+    }
+  ]
+}

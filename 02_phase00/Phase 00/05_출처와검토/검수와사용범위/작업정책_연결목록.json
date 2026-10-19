@@ -1,0 +1,322 @@
+{
+  "id": "r6-workflow-policy-links",
+  "version": "0.1.1",
+  "entries": [
+    {
+      "policy_id": "DECISION-SKILL-STRUCTURE",
+      "source": {
+        "path": "05_출처와검토/사용자결정.json",
+        "version": "unversioned",
+        "sha256": "feb1eae1da1e6801b8a2b61630968fcbe969582077f8b1970453abb38aff6452",
+        "kind": "json",
+        "pointer": "/decisions/0"
+      },
+      "original_value": {
+        "id": "DECISION-SKILL-STRUCTURE",
+        "date": "2026-10-14",
+        "selected": "A",
+        "purpose": "지식 정리/DB 기록·검증/디자인 지식 적용성 검토 3개 분리",
+        "source": "현재 대화 사용자 답변",
+        "company_rule_approval": false
+      },
+      "classification": "workflow_policy",
+      "individual_content_review_performed": false,
+      "company_approval_created": false
+    },
+    {
+      "policy_id": "DECISION-SKILL-WRITE",
+      "source": {
+        "path": "05_출처와검토/사용자결정.json",
+        "version": "unversioned",
+        "sha256": "feb1eae1da1e6801b8a2b61630968fcbe969582077f8b1970453abb38aff6452",
+        "kind": "json",
+        "pointer": "/decisions/1"
+      },
+      "original_value": {
+        "id": "DECISION-SKILL-WRITE",
+        "date": "2026-10-14",
+        "selected": "A",
+        "purpose": "요청한 정리는 draft로 작성·검증, 의미 병합·회사 필수화·승인은 검토 제안으로 남김",
+        "source": "현재 대화 사용자 답변",
+        "company_rule_approval": false
+      },
+      "classification": "workflow_policy",
+      "individual_content_review_performed": false,
+      "company_approval_created": false
+    },
+    {
+      "policy_id": "DECISION-SKILL-PILOT",
+      "source": {
+        "path": "05_출처와검토/사용자결정.json",
+        "version": "unversioned",
+        "sha256": "feb1eae1da1e6801b8a2b61630968fcbe969582077f8b1970453abb38aff6452",
+        "kind": "json",
+        "pointer": "/decisions/2"
+      },
+      "original_value": {
+        "id": "DECISION-SKILL-PILOT",
+        "date": "2026-10-14",
+        "selected": "A",
+        "purpose": "세 스킬을 유지하고 소량 DB 정리에서 시범 사용. 로그·변경 전 backup·검증 필수.",
+        "source": "현재 대화 사용자 답변 call_87afdeb3a8164983bae214969a30082d",
+        "company_rule_approval": false
+      },
+      "classification": "workflow_policy",
+      "individual_content_review_performed": false,
+      "company_approval_created": false
+    },
+    {
+      "policy_id": "DECISION-R1-SCOPE",
+      "source": {
+        "path": "05_출처와검토/사용자결정.json",
+        "version": "unversioned",
+        "sha256": "feb1eae1da1e6801b8a2b61630968fcbe969582077f8b1970453abb38aff6452",
+        "kind": "json",
+        "pointer": "/decisions/3"
+      },
+      "original_value": {
+        "id": "DECISION-R1-SCOPE",
+        "date": "2026-10-14",
+        "selected": "B",
+        "purpose": "영상·시나리오·파생자료와회사공용로고·폰트·이미지·도표관리. 가족사7개CI와색근거를회사별보존. R1보완·레드팀후보고, R2는다음.",
+        "source": "현재대화사용자직접지시",
+        "company_rule_approval": false
+      },
+      "classification": "workflow_policy",
+      "individual_content_review_performed": false,
+      "company_approval_created": false
+    },
+    {
+      "policy_id": "DECISION-R1-COMPANIES",
+      "source": {
+        "path": "05_출처와검토/사용자결정.json",
+        "version": "unversioned",
+        "sha256": "feb1eae1da1e6801b8a2b61630968fcbe969582077f8b1970453abb38aff6452",
+        "kind": "json",
+        "pointer": "/decisions/4"
+      },
+      "original_value": {
+        "id": "DECISION-R1-COMPANIES",
+        "date": "2026-10-14",
+        "selected": "D",
+        "purpose": "8개 모두 별도 회사로 등록: 한맥기술·삼안·장헌산업·피티씨·한라산업개발·바론컨설턴트·산하종합기술·㈜장헌",
+        "source": "현재대화사용자직접답변",
+        "company_rule_approval": false
+      },
+      "classification": "workflow_policy",
+      "individual_content_review_performed": false,
+      "company_approval_created": false
+    },
+    {
+      "policy_id": "DECISION-R2-UNITS",
+      "source": {
+        "path": "05_출처와검토/사용자결정.json",
+        "version": "unversioned",
+        "sha256": "feb1eae1da1e6801b8a2b61630968fcbe969582077f8b1970453abb38aff6452",
+        "kind": "json",
+        "pointer": "/decisions/5"
+      },
+      "original_value": {
+        "id": "DECISION-R2-UNITS",
+        "date": "2026-10-14",
+        "selected": "A",
+        "purpose": "영상전체/설명구간/화면상태/짧은동작구분; 컷은보조정보. state실제필드는R4에서연결.",
+        "source": "현재대화사용자직접답변",
+        "company_rule_approval": false
+      },
+      "classification": "workflow_policy",
+      "individual_content_review_performed": false,
+      "company_approval_created": false
+    },
+    {
+      "policy_id": "DECISION-R3-MOTION-SCOPE-A",
+      "source": {
+        "path": "05_출처와검토/사용자결정.json",
+        "version": "unversioned",
+        "sha256": "feb1eae1da1e6801b8a2b61630968fcbe969582077f8b1970453abb38aff6452",
+        "kind": "json",
+        "pointer": "/decisions/6"
+      },
+      "original_value": {
+        "id": "DECISION-R3-MOTION-SCOPE-A",
+        "date": "2026-10-14",
+        "selected": "A",
+        "purpose": "IP-10은 사전 지식 근거가 있을 때 조건부 참고로 기본 조회에 포함. UX12는 기존 원칙 연결 후보로 활용하며 새 분류ID 없음.",
+        "source": "현재 대화 사용자 직접 답변 call_736cd8d8d27e427b9edea47fe56484a5",
+        "company_rule_approval": false
+      },
+      "classification": "workflow_policy",
+      "individual_content_review_performed": false,
+      "company_approval_created": false
+    },
+    {
+      "policy_id": "DECISION-R3-LAYOUT-SCOPE-A",
+      "source": {
+        "path": "05_출처와검토/사용자결정.json",
+        "version": "unversioned",
+        "sha256": "feb1eae1da1e6801b8a2b61630968fcbe969582077f8b1970453abb38aff6452",
+        "kind": "json",
+        "pointer": "/decisions/7"
+      },
+      "original_value": {
+        "id": "DECISION-R3-LAYOUT-SCOPE-A",
+        "date": "2026-10-14",
+        "selected": "A",
+        "purpose": "레이아웃14분류유지. 표·순환·조건분기의지식후보·예/반례별도정리. 기존ID에억지로편입하지않고새분류ID없음.",
+        "source": "현재대화사용자직접답변 call_59e098a7ce8143368f2c18ae38eec569",
+        "company_rule_approval": false
+      },
+      "classification": "workflow_policy",
+      "individual_content_review_performed": false,
+      "company_approval_created": false
+    },
+    {
+      "policy_id": "DECISION-R4-TIME-A",
+      "source": {
+        "path": "05_출처와검토/R4_시간프레임_조사기록.json",
+        "version": "0.1.0",
+        "sha256": "63790fa479c43d140810ce39033bd593aec033019c5a25489bf418368d9b6408",
+        "kind": "json",
+        "pointer": "/user_decision"
+      },
+      "original_value": "A: 재생0초 + 원본PTS/변환근거보존",
+      "classification": "workflow_policy",
+      "individual_content_review_performed": false,
+      "company_approval_created": false
+    },
+    {
+      "policy_id": "DECISION-R4-EVIDENCE-A",
+      "source": {
+        "path": "05_출처와검토/R4_근거주장_조사기록.json",
+        "version": "0.1.0",
+        "sha256": "8fec5b2267ebe4e03251972d4a7af0791aa4e9de689114f5421dc82b8b305820",
+        "kind": "json",
+        "pointer": "/user_decision"
+      },
+      "original_value": "A + 사람이 필요한 내용은 반드시 검수 대기로 전달; 검수 전 확인된 주장으로 이행 금지",
+      "classification": "workflow_policy",
+      "individual_content_review_performed": false,
+      "company_approval_created": false
+    },
+    {
+      "policy_id": "DECISION-R4-SPATIAL-A",
+      "source": {
+        "path": "05_출처와검토/R4_좌표변환_조사기록.json",
+        "version": "0.1.0",
+        "sha256": "6235f33acf831a8f990a571bf63a5c3b72953a2edbde4c42a087a2bb955c1024",
+        "kind": "json",
+        "pointer": "/user_decision"
+      },
+      "original_value": "A: 좌측위 화면경계(0,0),raster px 기본, pixel center(0.5,0.5), normalized 명시변환",
+      "classification": "workflow_policy",
+      "individual_content_review_performed": false,
+      "company_approval_created": false
+    },
+    {
+      "policy_id": "DECISION-R4-MIGRATION-A",
+      "source": {
+        "path": "05_출처와검토/R4_통합이관_정책검토안.md",
+        "version": "document@2026-10-15",
+        "sha256": "b8e0d514442d98d7f18f49759f19104f3ccb548d5c2df2ee622d4e4f2bad2eb4",
+        "kind": "markdown",
+        "pointer": ""
+      },
+      "original_value": "# R4-4 기존 기록 이관 정책 — 사용자 검토안\n\n2026-10-15. **사용자가 A안을 선택했다.** 아래 비교는 선택 당시 검토 기록이다. 새 시간·근거·좌표 규격은 원본 영상 ID/버전/hash와 명확한 대상·시간·파생 연결을 요구한다. 구형 설명용 기록은 이 정보가 부족하다. 부족한 값을 임의로 채우지 않는 원칙은 유지하며, **얼마나 엄격히 현행 DB와 분리할지**를 선택한다. 아래는 구현 전 비교안이다.\n\n| 안 | 처리 방식 | 장점과 부담 |\n|---|---|---|\n| **A. 새 통합 규격을 기본으로, 미완 기록은 접수함에 보존 — 추천** | 새 기본은 v0.2 후보. 필요한 정보와 연결이 갖춰진 기록만 통합 초안으로 이관. 부족하면 원문·누락 보고를 별도 접수함에 보존하고 분석/회사 문법 검색에서 제외. | DB 의미가 선명하다. 기존 설명용 예시는 계획자료로 보존하고, 통합 동작은 별도 합성 예시로 보여줘야 한다. |\n| B. 당분간 구형을 기본으로 두고 새 규격을 병행 | 기존 스킬의 구형 입력 흐름을 우선 유지하고 새 통합 검사·기록은 별도 경로에서 사용. 기본 전환은 R8 재평가 때 한다. | 기존 호출부 변화가 적다. 두 경로의 차이를 관리해야 하며 기본 DB 통합 완료는 전환 전까지 유보된다. |\n| C. 부족한 기록도 한 DB의 ‘부분 초안’으로 수용 | 누락 identity와 아직 연결 못 한 내용을 허용하는 별도 부분 초안 구조를 새 통합 규격 안에 추가. 정식 분석 기록과 상태별 조회를 강제 분리. | 한곳에서 자료를 찾기 쉽다. 엄격한 세 계약 바깥의 부분 초안 경로와 오용 방지 검사도 설계해야 하므로 범위가 커진다. |\n| D. 구형 기록의 자동 이관 없이 건별 사람 확인 | 새 통합 규격·검사기는 구축하되 기존 기록의 실제 이관은 사람이 원본·누락값을 확인한 건부터 수동으로 진행. | 사람 확인을 먼저 받을 수 있다. 자동 이관 도구보다 점검표·작업 지시 위주이며 초기 이관 속도는 느리다. |\n\n**추천 A의 현재 자료에 대한 결과:** 설명용 정본은 실제 영상 근거로 바꾸지 않고 원문과 설계 아이디어를 보존한다. 스킬 시험 입력·과거 평가 산출물은 과거 검증 자료로 그대로 유지한다. 새 통합 예시는 합성임을 명확히 표시해 별도로 만든다. 실제 영상 준비가 없어도 규격·이관 도구·반례 검수는 진행할 수 있다.\n\n어느 안도 영상 hash를 JSON hash로 대체하거나, 파일 이름에서 회사/영상 버전·시간·화면 상태를 추정하지 않는다. 관측·계획·추정과 사람 내용 검수는 구분한다. 회사 정본·과거 평가 원문 삭제/외부 배포/01-A 분석 구현을 포함하지 않는다.\n\n[진행 안내](../04_기록규격/05_R4-4_통합이관_진행안내.md) · [연결 초안](../04_기록규격/통합연결_설계초안.json) · [착수 인벤토리](../08_검증결과/R4_04_01_착수감사.json)\n",
+      "classification": "workflow_policy",
+      "individual_content_review_performed": false,
+      "company_approval_created": false
+    },
+    {
+      "policy_id": "DECISION-R5-OBSERVED-COLOR",
+      "source": {
+        "path": "05_출처와검토/R5_적용정책_결정.json",
+        "version": "unversioned",
+        "sha256": "d8666f2212ae4e434d7d1209f0b64bdded4f0d562df9600a1bda74d136dd9da3",
+        "kind": "json",
+        "pointer": ""
+      },
+      "original_value": {
+        "decision_id": "DECISION-R5-OBSERVED-COLOR",
+        "date": "2026-10-15",
+        "selected": "A",
+        "state": "user_directed",
+        "scope": "관측색의 프로젝트 초안 역할 후보 사용 범위",
+        "rule": "디자이너 명시 선택·출처·가정·선택 이유·검수 상태 필수. 자동 기본 지정/공식색 승격/원문 교체 금지.",
+        "individual_design_review_performed": false,
+        "company_ci_approved": false
+      },
+      "classification": "workflow_policy",
+      "individual_content_review_performed": false,
+      "company_approval_created": false
+    },
+    {
+      "policy_id": "DECISION-R6-HUMAN-INTAKE",
+      "source": {
+        "path": "05_출처와검토/검수와사용범위/사람검수_접수정책.json",
+        "version": "0.1.0",
+        "sha256": "b0955d85248a9ee1f00ae0da78609836d0cf7bbeda9b941ca8923e35e243245d",
+        "kind": "json",
+        "pointer": ""
+      },
+      "original_value": {
+        "id": "DECISION-R6-HUMAN-INTAKE",
+        "version": "0.1.0",
+        "date": "2026-10-15",
+        "selected": "A",
+        "state": "user_directed",
+        "kind": "workflow_policy",
+        "policy": "구체대상/버전/근거/판단범위의 현재대화 실제사람답변을 수동문맥대조로접수. 회사/사용권한은별도근거. 정책답변을개별내용검수로사용하지않음.",
+        "human_identity_authenticated": false,
+        "individual_content_review_performed": false,
+        "company_approval_created": false
+      },
+      "classification": "workflow_policy",
+      "individual_content_review_performed": false,
+      "company_approval_created": false
+    },
+    {
+      "policy_id": "DECISION-HANMAC-COLOR-UI-SCOPE",
+      "source": {
+        "path": "05_출처와검토/검수와사용범위/한맥디자인_대화근거.json",
+        "version": "0.1.0",
+        "sha256": "c259c3462c342e5d9ba2a8113d76514545bb4fd2fc1a8b758b24d39a5106124d",
+        "kind": "json",
+        "pointer": "/messages/0/text"
+      },
+      "original_value": "[https://hanmac-designsystem.vercel.app/claude_app/index.html](https://hanmac-designsystem.vercel.app/claude_app/index.html)\n[https://design.hmac.kr/?path=/story/foundation-color--all](https://design.hmac.kr/?path=/story/foundation-color--all)\n\n우리 회사 한맥 디자인 시스템에 대해 정리한 내용이야.\n\n우리가 진행하기로 한 00단계에서 db 구축할 때 회사 디자인 시스템을 정리할 필요가 있어. 컬러에 관한건 전역으로 쓸 수 있지만 UI 시스템은 참고를 할 뿐 필수적인 요소가 아니야. 이런 부분들을 정제해서 우리가 사용할 수 있게 디자인 시스템 정리해. 한번에 정리하기 힘들면 카테고리별로 나눠서 정리 진행해. 목표는 우리 영상 시스템에 사용할 수 있도록 필요한 내용들만 정제하는거야.\n",
+      "classification": "workflow_policy",
+      "individual_content_review_performed": false,
+      "company_approval_created": false
+    },
+    {
+      "policy_id": "DECISION-HANMAC-STORYBOOK-PRIORITY",
+      "source": {
+        "path": "05_출처와검토/검수와사용범위/한맥디자인_대화근거.json",
+        "version": "0.1.0",
+        "sha256": "c259c3462c342e5d9ba2a8113d76514545bb4fd2fc1a8b758b24d39a5106124d",
+        "kind": "json",
+        "pointer": "/messages/1/text"
+      },
+      "original_value": "<send_user_message_question_reply>\n[{\"questionItemId\":\"[\\\"request_user_input_async\\\",\\\"call_51b08631165541f49483d909f757acf1\\\",0]\",\"question\":\"두 자료의 일부 색상값이 다릅니다. 예를 들어 가장 밝은 Green은 정리 앱에서 #3EBD9A, Storybook에서 #34DAAA입니다. 어느 쪽을 최신 기준으로 볼까요? 답변 전에는 두 자료가 일치하는 색만 공통 토큰으로 채택하고, 다른 값은 별도 보류하겠습니다.\",\"answer\":\"Storybook(design.hmac.kr) 우선\"}]\n</send_user_message_question_reply>\n",
+      "classification": "workflow_policy",
+      "individual_content_review_performed": false,
+      "company_approval_created": false
+    },
+    {
+      "policy_id": "DECISION-HANMAC-VC-ACCENT-NEUTRAL",
+      "source": {
+        "path": "05_출처와검토/검수와사용범위/한맥디자인_대화근거.json",
+        "version": "0.1.0",
+        "sha256": "c259c3462c342e5d9ba2a8113d76514545bb4fd2fc1a8b758b24d39a5106124d",
+        "kind": "json",
+        "pointer": "/messages/2/text"
+      },
+      "original_value": "강조색 중립색은 vercel껄로 적용해서 이어서 작업해\n",
+      "classification": "workflow_policy",
+      "individual_content_review_performed": false,
+      "company_approval_created": false
+    }
+  ],
+  "scope": "중앙8·R4선택4·R5/R6선택 각1·참조대화의 한맥디자인 출처/범위선택3의 원기록 연결. 회사 전체 정책/사용권한 전수목록이나 개별 내용/회사 승인이 아님.",
+  "company_approved": false
+}

@@ -1,0 +1,63 @@
+{
+  "stage": "01-A5b",
+  "status": "stopped_failed_critical_gate",
+  "date": "2026-10-16",
+  "authorization": "latest user A5b instruction; prospective contract stop policy applied",
+  "legacy_completed": 3,
+  "legacy_passed": 3,
+  "primary_planned": 16,
+  "primary_started": 8,
+  "primary_completed": 6,
+  "primary_graded": 6,
+  "primary_interrupted": [
+    "H02-r2-with_skill",
+    "H02-r2-without_skill"
+  ],
+  "primary_not_started": [
+    "H03-r1-with_skill",
+    "H03-r1-without_skill",
+    "H03-r2-with_skill",
+    "H03-r2-without_skill",
+    "H04-r1-with_skill",
+    "H04-r1-without_skill",
+    "H04-r2-with_skill",
+    "H04-r2-without_skill"
+  ],
+  "stop": {
+    "utc": "2026-10-16T09:25:05Z",
+    "reason": "with_skill critical target identity error confirmed by blinded grader and root source reinspection",
+    "run_id": "H02-r1-with_skill",
+    "blind_label": "sample-A",
+    "claim": "Background giant glyph asserted as 큰 숫자 4; actual giant A",
+    "evidence": "blind/H02-r1/sample-A/evidence/evidence-001.png; frozen reference H02-C01; observations.md first bullet",
+    "contract_basis": "quality_gates critical_error_examples: target confusion; stop_policy critical_primary_failure",
+    "remaining_analyses_must_not_start": true,
+    "active_trials_must_preserve_partial_and_stop": true,
+    "observations_must_not_be_rewritten": true
+  },
+  "quality_passed": false,
+  "AI_review_cost_benefit_proved": false,
+  "human_review_cost_benefit_proved": false,
+  "human_gold": false,
+  "report": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\05_결과보고\\17_01-A5b_고정판본_회귀와_비교시험_결과.md",
+  "snapshot": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\04_검증자료\\01-A5b_회귀와_별도비교\\2026-10-16\\최종스냅샷\\20261016T093101Z",
+  "local_evidence_root": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b",
+  "evidence_storage_note": "Raw PNG/crops stay in the live local workspace referenced by absolute paths; JSON/Markdown/code/review viewer snapshot is archived here",
+  "measured_AI_seconds": {
+    "technical": 841.583803,
+    "reference": 435.987033,
+    "review": 246.270976,
+    "dispute": 414.08888,
+    "blind_AI_review": 661,
+    "primary_AI_execution": 4080.661501,
+    "legacy_AI_execution": 1324.807663,
+    "reference_independent_AI_audit": 330
+  },
+  "human_reading_seconds": null,
+  "exact_tokens": null,
+  "exact_host_model_id": null,
+  "skill_version": "0.1.0-draft.3 unchanged",
+  "promotion": false,
+  "next_stage_authorized": false,
+  "snapshot_utc": "2026-10-16T09:31:01.793849+00:00"
+}

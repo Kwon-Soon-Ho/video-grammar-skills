@@ -1,0 +1,24 @@
+{
+  "property": "title_panel.top_y",
+  "method": "c03/c04/c05 RGB crop x=300:350 평균RGB 휘도(채널 산술평균)의 abs(diff) 최대 위치를 y40:150에서 탐색. 부모 원점 y150 가산. 수치 자체는 시각적 상변 검수와 대조.",
+  "samples": [
+    {
+      "seconds": 235.4,
+      "native_y_px": 235
+    },
+    {
+      "seconds": 235.6,
+      "native_y_px": 223
+    },
+    {
+      "seconds": 235.8,
+      "native_y_px": 219
+    }
+  ],
+  "estimated_edge_error_px": 2,
+  "rates_px_per_s": [
+    -60,
+    -20
+  ],
+  "limitations": "렌더 경계·RGB 추정. fade가 섞이며 키프레임/정확 함수 아님."
+}

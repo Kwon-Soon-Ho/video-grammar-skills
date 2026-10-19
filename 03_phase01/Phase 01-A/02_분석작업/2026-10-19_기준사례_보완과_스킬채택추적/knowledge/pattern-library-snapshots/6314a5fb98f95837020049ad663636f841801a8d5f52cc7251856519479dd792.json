@@ -1,0 +1,1449 @@
+{
+  "schema_version": "video-pattern-library-0.2",
+  "patterns": [
+    {
+      "id": "PAT-CARD-0001",
+      "category": "CARD",
+      "name": "이동·확대 UI 기능 예시와 노란 강조",
+      "source": {
+        "case_id": "DEV-H02-20261019",
+        "source_sha256": "786e900ac768e43e546d6b979c31d3e33fbf5046902fe0174ef30156045fd8cc",
+        "observation_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-revision-20261019\\development\\H02\\observations.json",
+        "observation_sha256": "91eac46e28f0df32250803e74c0d0464cc99f4841649f848ebcfcd28fb918a0f",
+        "claim_ids": [
+          "c014",
+          "c015",
+          "c016",
+          "c023",
+          "c026",
+          "c029",
+          "c018"
+        ]
+      },
+      "design_spec": {
+        "layout": "열차 배경·큰 A·연한 영문 위에 흰 주제 제목을 두고, 왼쪽 전경 UI와 노란 기능 표제로 예시를 강조한다. 주제 제목과 설명은 오른쪽에서 왼쪽 정렬, 기능 표제·본문은 왼쪽 지도 UI의 왼쪽 변에 맞춘다.",
+        "typography": "굵은 흰 한글 주제 제목, 더 큰 연한 영문 두 줄, 작은 흰 설명, 노란 바탕의 굵은 검정 기능 표제. 정확한 서체·pt는 미상.",
+        "color": "청회색·검정의 어두운 배경, 흰 주요 문구와 가는 궤적, 노란 표제·테두리·노드, 지도 내부의 다색 노선.",
+        "information_relation": "오른쪽 상위 주제와 왼쪽 구체 기능 예시; 목적은 추론"
+      },
+      "motion_spec": {
+        "flow": "기존 예시 축소 → 새 지도창 이동·확대 → 테두리/표제/설명 → 유지 → 축소 퇴장",
+        "detail": "크기 감속·노란 선 전개·내부 표·문구와 노드의 세부 변화",
+        "timing": "원본 12~20초의 선택 표본; 진입 12.4~13.6초, 정착·설명 뒤 17.6~18.8초 퇴장 관측; 정확 경계 미검수",
+        "properties": "위치와 크기를 따로 기록. 크기 감속은 정성 판단. 테두리와 문구는 별도 변화.",
+        "unknowns": [
+          "u01",
+          "u02",
+          "u03",
+          "u04"
+        ]
+      },
+      "applicability": "정보 전달형 UI 기능 예시의 후보. 문구 길이·요소 수·화면비·읽기 시간은 새 장면에서 재검증. 실제 원제작 의도·회사 공통 규칙으로 사용 금지.",
+      "counterexamples": [
+        "새 내용 적용·다른 화면비는 미시험"
+      ],
+      "status": "draft",
+      "supersedes": null,
+      "created_utc": "2026-10-19T01:04:13.429001+00:00",
+      "sha256": "bd2b03917a1eb42adde5ef8b345f0feaf4f5f8f8ad8171a6238af9d3c453a5dd"
+    },
+    {
+      "id": "PAT-LAYOUT-0001",
+      "definition_version": "video-pattern-definition-0.2",
+      "category": "LAYOUT",
+      "name": "상위 주제와 기능 UI를 나누는 전체 배치",
+      "source": {
+        "case_id": "DEV-H02-PARTS-20261019",
+        "source_sha256": "786e900ac768e43e546d6b979c31d3e33fbf5046902fe0174ef30156045fd8cc",
+        "observation_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\development\\H02\\observations-first-detail.json",
+        "observation_sha256": "4ef3bffb62a8996daaaa8139c68f87367251abf938d3b080e48541c9cdc9741d",
+        "claim_ids": [
+          "c001",
+          "c002",
+          "c003",
+          "c004",
+          "c005",
+          "c006",
+          "c008",
+          "c010",
+          "c011",
+          "c013",
+          "c014",
+          "c019",
+          "c022",
+          "c023",
+          "c025",
+          "c026",
+          "c029"
+        ],
+        "unknown_ids": [
+          "u02",
+          "u04"
+        ]
+      },
+      "definition": {
+        "summary": "전체 디자인과 정보 덩어리의 관계. 개별 등장 동작은 포함하지 않는다.",
+        "canvas": "16:9; 정성 관계 중심, 정확 좌표·비율 미측정",
+        "groups": [
+          {
+            "name": "배경·상징·영문",
+            "claim_ids": [
+              "c001",
+              "c003",
+              "c005"
+            ]
+          },
+          {
+            "name": "상위 주제와 설명",
+            "claim_ids": [
+              "c008",
+              "c010"
+            ]
+          },
+          {
+            "name": "기능 UI와 표제·본문",
+            "claim_ids": [
+              "c013",
+              "c026",
+              "c029"
+            ]
+          }
+        ],
+        "design_dimensions": {
+          "hierarchy": {
+            "description": "열차 배경·큰 A·연한 영문 위에 흰 주제 제목을 두고, 왼쪽 전경 UI와 노란 기능 표제로 예시를 강조한다.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c004",
+              "c006",
+              "c008",
+              "c010",
+              "c026",
+              "c029"
+            ]
+          },
+          "alignment": {
+            "description": "주제 제목과 설명은 오른쪽에서 왼쪽 정렬, 기능 표제·본문은 왼쪽 지도 UI의 왼쪽 변에 맞춘다.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c004",
+              "c008",
+              "c026",
+              "c029"
+            ]
+          },
+          "spacing": {
+            "description": "화면을 좌측 UI와 우측 설명 두 덩어리로 나누고 UI 바로 아래 표제·세 줄 설명을 붙인다. 정확한 간격은 미측정.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c014",
+              "c026",
+              "c029"
+            ]
+          },
+          "typography": {
+            "description": "굵은 흰 한글 주제 제목, 더 큰 연한 영문 두 줄, 작은 흰 설명, 노란 바탕의 굵은 검정 기능 표제. 정확한 서체·pt는 미상.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c006",
+              "c008",
+              "c010",
+              "c026",
+              "c029"
+            ]
+          },
+          "color": {
+            "description": "청회색·검정의 어두운 배경, 흰 주요 문구와 가는 궤적, 노란 표제·테두리·노드, 지도 내부의 다색 노선.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c002",
+              "c023",
+              "c026"
+            ]
+          },
+          "background": {
+            "description": "열차 사진이 화면을 채우고 대형 A와 영문이 겹친다. 정확한 레이어 불투명도·합성 방식은 미상.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c001",
+              "c003",
+              "c005"
+            ]
+          },
+          "shapes": {
+            "description": "지도/표 직사각형 UI, 검정과 노란 외곽, 노란 직사각형 표제, 흰 곡선/타원과 원형 노드가 함께 보인다.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c003",
+              "c011",
+              "c013",
+              "c019",
+              "c022",
+              "c025"
+            ]
+          }
+        }
+      },
+      "applicability": "원본 한 사례에서 정리한 재사용 후보. 새 문구·화면비·정보 관계·시간 조건에서 재검증한다.",
+      "counterexamples": [
+        "다른 장면의 실제 적용·가독성·제작 결과는 미시험"
+      ],
+      "status": "draft",
+      "supersedes": null,
+      "derived_from": [
+        "PAT-CARD-0001"
+      ],
+      "created_utc": "2026-10-19T01:17:45.516190+00:00",
+      "sha256": "bcf169adda1b6c40c5fd22b027bd91e6bf9e2bd224df288d0470e2b939946064"
+    },
+    {
+      "id": "PAT-FLOW-0001",
+      "definition_version": "video-pattern-definition-0.2",
+      "category": "FLOW",
+      "name": "주제 유지와 기능 예시 교체 흐름",
+      "source": {
+        "case_id": "DEV-H02-PARTS-20261019",
+        "source_sha256": "786e900ac768e43e546d6b979c31d3e33fbf5046902fe0174ef30156045fd8cc",
+        "observation_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\development\\H02\\observations-first-detail.json",
+        "observation_sha256": "4ef3bffb62a8996daaaa8139c68f87367251abf938d3b080e48541c9cdc9741d",
+        "claim_ids": [
+          "c008",
+          "c014",
+          "c015",
+          "c018",
+          "c020",
+          "c021",
+          "c023",
+          "c026",
+          "c027",
+          "c029",
+          "c030"
+        ],
+        "unknown_ids": [
+          "u01",
+          "u02",
+          "u04"
+        ]
+      },
+      "definition": {
+        "summary": "기존 예시를 줄이고 새 기능 예시를 제시한 뒤 회수하는 전체 시간 구조",
+        "stages": [
+          {
+            "name": "기존 예시 이동·축소",
+            "timing": "12초대 선택 표본",
+            "claim_ids": [
+              "c020",
+              "c021"
+            ]
+          },
+          {
+            "name": "새 UI 이동·확대",
+            "timing": "12.4~13.6초 표본",
+            "claim_ids": [
+              "c014",
+              "c015"
+            ]
+          },
+          {
+            "name": "테두리·표제·본문 전개",
+            "timing": "13초대 이후; 정확 경계 미확정",
+            "claim_ids": [
+              "c023",
+              "c026",
+              "c029"
+            ]
+          },
+          {
+            "name": "유지 뒤 문구·UI 회수",
+            "timing": "17초대~18.8초 표본",
+            "claim_ids": [
+              "c018",
+              "c027",
+              "c030"
+            ]
+          }
+        ],
+        "overlap_notes": [
+          "UI 정착과 테두리·표제 출현은 일부 겹침. 화살표는 완전 직렬 시간표가 아님."
+        ],
+        "stable_context": "대중교통 분석 상위 주제와 배경은 예시 교체 중에도 유지 관측"
+      },
+      "applicability": "원본 한 사례에서 정리한 재사용 후보. 새 문구·화면비·정보 관계·시간 조건에서 재검증한다.",
+      "counterexamples": [
+        "다른 장면의 실제 적용·가독성·제작 결과는 미시험"
+      ],
+      "status": "draft",
+      "supersedes": null,
+      "derived_from": [
+        "PAT-CARD-0001"
+      ],
+      "created_utc": "2026-10-19T01:17:45.516190+00:00",
+      "sha256": "53fd783fd365c268dd2f55dbfcdb630d6b50523256d354484a89c304657bf2af"
+    },
+    {
+      "id": "PAT-CARD-0002",
+      "definition_version": "video-pattern-definition-0.2",
+      "category": "CARD",
+      "name": "UI 이동·확대·정착과 축소 회수",
+      "source": {
+        "case_id": "DEV-H02-PARTS-20261019",
+        "source_sha256": "786e900ac768e43e546d6b979c31d3e33fbf5046902fe0174ef30156045fd8cc",
+        "observation_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\development\\H02\\observations-first-detail.json",
+        "observation_sha256": "4ef3bffb62a8996daaaa8139c68f87367251abf938d3b080e48541c9cdc9741d",
+        "claim_ids": [
+          "c014",
+          "c015",
+          "c016",
+          "c018"
+        ],
+        "unknown_ids": [
+          "u01"
+        ]
+      },
+      "definition": {
+        "summary": "직사각형 UI의 위치·크기 동작. 열차·노란 테두리·기능 문구는 필수 구성 아님.",
+        "target_role": "주요 직사각형 기능 UI",
+        "phases": [
+          {
+            "name": "진입",
+            "property": "position",
+            "observed_change": "좌상단 쪽에서 오른쪽·아래로 이동해 왼 중앙 정착",
+            "claim_ids": [
+              "c014"
+            ]
+          },
+          {
+            "name": "크기 변화",
+            "property": "size",
+            "observed_change": "확대 후 증가량 감소를 보이며 정착하는 감속 성격",
+            "claim_ids": [
+              "c015",
+              "c016"
+            ]
+          },
+          {
+            "name": "회수",
+            "property": "visibility",
+            "observed_change": "오른쪽·아래로 가며 축소 후 소실 표본",
+            "claim_ids": [
+              "c018"
+            ]
+          }
+        ],
+        "parameters": [
+          {
+            "name": "크기 곡선",
+            "status": "observed",
+            "value": "정성 감속",
+            "unit_or_type": "관측 분류; AE 함수 아님"
+          },
+          {
+            "name": "정확 확대율·시간 경계",
+            "status": "unknown",
+            "value": null,
+            "unit_or_type": "ratio / seconds"
+          }
+        ],
+        "preserve_constraints": [
+          "위치·크기 곡선을 별도로 검토",
+          "새 UI의 가독성과 읽기 시간을 재검증"
+        ]
+      },
+      "applicability": "원본 한 사례에서 정리한 재사용 후보. 새 문구·화면비·정보 관계·시간 조건에서 재검증한다.",
+      "counterexamples": [
+        "다른 장면의 실제 적용·가독성·제작 결과는 미시험"
+      ],
+      "status": "draft",
+      "supersedes": null,
+      "derived_from": [
+        "PAT-CARD-0001"
+      ],
+      "created_utc": "2026-10-19T01:17:45.536460+00:00",
+      "sha256": "1794e591a94619d9880c6ee84635b6d3ba7d7f137bbf728d90f1797033f6535d"
+    },
+    {
+      "id": "PAT-DETAIL-0001",
+      "definition_version": "video-pattern-definition-0.2",
+      "category": "DETAIL",
+      "name": "대상 외곽의 노란 테두리 전개",
+      "source": {
+        "case_id": "DEV-H02-PARTS-20261019",
+        "source_sha256": "786e900ac768e43e546d6b979c31d3e33fbf5046902fe0174ef30156045fd8cc",
+        "observation_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\development\\H02\\observations-first-detail.json",
+        "observation_sha256": "4ef3bffb62a8996daaaa8139c68f87367251abf938d3b080e48541c9cdc9741d",
+        "claim_ids": [
+          "c022",
+          "c023",
+          "c024"
+        ],
+        "unknown_ids": [
+          "u01"
+        ]
+      },
+      "definition": {
+        "summary": "대상 둘레에 강조 선을 전개하는 세부 동작. 원본의 전체 배치를 함께 적용하지 않는다.",
+        "target_role": "강조할 대상의 외곽선",
+        "phases": [
+          {
+            "name": "전개",
+            "property": "shape",
+            "observed_change": "왼쪽·상단부터 강조선이 추가되어 전체 둘레 형성",
+            "claim_ids": [
+              "c023"
+            ]
+          },
+          {
+            "name": "유지와 회수",
+            "property": "visibility",
+            "observed_change": "UI 강조를 유지하다 대상 축소·소실과 함께 보이지 않게 됨",
+            "claim_ids": [
+              "c024"
+            ]
+          }
+        ],
+        "parameters": [
+          {
+            "name": "원본 강조색",
+            "status": "observed",
+            "value": "노랑",
+            "unit_or_type": "정성 색 분류; 공식 CI값 아님"
+          },
+          {
+            "name": "정확 선폭·리빌 시간",
+            "status": "unknown",
+            "value": null,
+            "unit_or_type": "pixels / seconds"
+          }
+        ],
+        "preserve_constraints": [
+          "대상 외곽과의 연결 유지",
+          "색과 선폭은 새 배경 대비에 맞춰 재검토"
+        ]
+      },
+      "applicability": "원본 한 사례에서 정리한 재사용 후보. 새 문구·화면비·정보 관계·시간 조건에서 재검증한다.",
+      "counterexamples": [
+        "다른 장면의 실제 적용·가독성·제작 결과는 미시험"
+      ],
+      "status": "draft",
+      "supersedes": null,
+      "derived_from": [
+        "PAT-CARD-0001"
+      ],
+      "created_utc": "2026-10-19T01:17:45.549585+00:00",
+      "sha256": "f3be82d49f7260171b68aa18cb53ef0a4a7afebc0289424dd41d12c7b0b0ef0c"
+    },
+    {
+      "id": "PAT-TEXT-0001",
+      "definition_version": "video-pattern-definition-0.2",
+      "category": "TEXT",
+      "name": "기능 표제와 본문을 순서대로 제시",
+      "source": {
+        "case_id": "DEV-H02-PARTS-20261019",
+        "source_sha256": "786e900ac768e43e546d6b979c31d3e33fbf5046902fe0174ef30156045fd8cc",
+        "observation_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\development\\H02\\observations-first-detail.json",
+        "observation_sha256": "4ef3bffb62a8996daaaa8139c68f87367251abf938d3b080e48541c9cdc9741d",
+        "claim_ids": [
+          "c025",
+          "c026",
+          "c027",
+          "c028",
+          "c029",
+          "c030"
+        ],
+        "unknown_ids": [
+          "u04"
+        ]
+      },
+      "definition": {
+        "summary": "기능 표제와 뒤따르는 작은 본문을 나눠 제시·회수하는 텍스트 동작 후보. 정확 리빌 방식은 미확정.",
+        "target_role": "기능 표제와 그 아래 본문",
+        "phases": [
+          {
+            "name": "표제 제시",
+            "property": "visibility",
+            "observed_change": "노란 바탕 기능 표제가 먼저 나타남",
+            "claim_ids": [
+              "c026",
+              "c027"
+            ]
+          },
+          {
+            "name": "본문 제시",
+            "property": "visibility",
+            "observed_change": "표제 뒤에 세 줄 설명 출현",
+            "claim_ids": [
+              "c029",
+              "c030"
+            ]
+          },
+          {
+            "name": "회수",
+            "property": "visibility",
+            "observed_change": "표제가 본문보다 먼저 줄어들어 안 보이는 표본 관측",
+            "claim_ids": [
+              "c027",
+              "c030"
+            ]
+          }
+        ],
+        "parameters": [
+          {
+            "name": "본문 줄 수",
+            "status": "observed",
+            "value": 3,
+            "unit_or_type": "lines in source case; 다른 문구에서 고정 금지"
+          },
+          {
+            "name": "정확 리빌 방식·줄별 시간",
+            "status": "unknown",
+            "value": null,
+            "unit_or_type": "effect / seconds"
+          }
+        ],
+        "preserve_constraints": [
+          "표제·본문의 정보 관계와 가독성 유지",
+          "정확 리빌을 모르는 상태를 페이드로 확정하지 않음"
+        ]
+      },
+      "applicability": "원본 한 사례에서 정리한 재사용 후보. 새 문구·화면비·정보 관계·시간 조건에서 재검증한다.",
+      "counterexamples": [
+        "다른 장면의 실제 적용·가독성·제작 결과는 미시험"
+      ],
+      "status": "draft",
+      "supersedes": null,
+      "derived_from": [
+        "PAT-CARD-0001"
+      ],
+      "created_utc": "2026-10-19T01:17:45.554833+00:00",
+      "sha256": "dcf6062f9a955fb49cc314aad8dca2e0f98e58adb8552db2453a1071d6bdd7d9"
+    },
+    {
+      "id": "PAT-LAYOUT-0002",
+      "definition_version": "video-pattern-definition-0.2",
+      "category": "LAYOUT",
+      "name": "두 도해의 비교 배치",
+      "source": {
+        "case_id": "DEV-NEW-N-REFERENCE-20261019",
+        "source_sha256": "42d87e0cc8c507ccb2a8924ae3252d689ef103d4ca3b1219ec1e588f6f474a03",
+        "observation_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\records\\NEW-N\\observations.json",
+        "observation_sha256": "4a843b1bc4fb5a9a072a8970b221fbf055d06647d2f5482b1a384d954b40cd79",
+        "claim_ids": [
+          "c001",
+          "c002",
+          "c003",
+          "c004",
+          "c005",
+          "c006",
+          "c007",
+          "c008",
+          "c009",
+          "c010",
+          "c011",
+          "c012",
+          "c013",
+          "c014",
+          "c015",
+          "c016",
+          "c017",
+          "c018",
+          "c019",
+          "c020",
+          "c021",
+          "c022",
+          "c023",
+          "c024",
+          "c025",
+          "c026",
+          "c027",
+          "c029",
+          "c030",
+          "c031",
+          "c032",
+          "c033",
+          "c034",
+          "c035",
+          "c036",
+          "c037",
+          "c038",
+          "c039",
+          "c040",
+          "c041",
+          "c042",
+          "c043",
+          "c044",
+          "c045",
+          "c046",
+          "c047",
+          "c048",
+          "c049",
+          "c050",
+          "c051",
+          "c052",
+          "c053",
+          "c054",
+          "c055"
+        ],
+        "unknown_ids": [
+          "u02"
+        ]
+      },
+      "definition": {
+        "summary": "32:9 전체 배경 위에 왼쪽 길이 방향 CG, 오른쪽 단면 CG, 좌상단 로고 리본, 각 도해 위 설명, 중앙 하단 공통 자막을 배치한다. 후반 상부 판 조립·청록 외곽 강조·마감 판을 순차 추가하며 오른쪽 단면과 설명은 유지한다. 이 상태의 시간 구간: [166, 168.8]초. 출현·퇴장·유지의 정확 범위는 개별 주장과 흐름에 따름.",
+        "canvas": "32:9 (7680x2160)",
+        "groups": [
+          {
+            "state": "construction-intro",
+            "time_seconds": [
+              166,
+              168.8
+            ],
+            "objects": [
+              "background",
+              "header",
+              "girder",
+              "deck",
+              "front-arcs",
+              "rear-arcs",
+              "section",
+              "section-arcs",
+              "right-label",
+              "caption"
+            ],
+            "composition": "32:9 전체 배경 위에 왼쪽 길이 방향 CG, 오른쪽 단면 CG, 좌상단 로고 리본, 각 도해 위 설명, 중앙 하단 공통 자막을 배치한다. 후반 상부 판 조립·청록 외곽 강조·마감 판을 순차 추가하며 오른쪽 단면과 설명은 유지한다. 이 상태의 시간 구간: [166, 168.8]초. 출현·퇴장·유지의 정확 범위는 개별 주장과 흐름에 따름."
+          },
+          {
+            "state": "two-view-emphasis",
+            "time_seconds": [
+              168.8,
+              174
+            ],
+            "objects": [
+              "background",
+              "header",
+              "girder",
+              "deck",
+              "front-arcs",
+              "rear-arcs",
+              "section",
+              "section-arcs",
+              "right-label",
+              "left-label",
+              "caption"
+            ],
+            "composition": "32:9 전체 배경 위에 왼쪽 길이 방향 CG, 오른쪽 단면 CG, 좌상단 로고 리본, 각 도해 위 설명, 중앙 하단 공통 자막을 배치한다. 후반 상부 판 조립·청록 외곽 강조·마감 판을 순차 추가하며 오른쪽 단면과 설명은 유지한다. 이 상태의 시간 구간: [168.8, 174]초. 출현·퇴장·유지의 정확 범위는 개별 주장과 흐름에 따름."
+          },
+          {
+            "state": "late-assembly",
+            "time_seconds": [
+              174,
+              181
+            ],
+            "objects": [
+              "background",
+              "header",
+              "girder",
+              "deck",
+              "front-arcs",
+              "rear-arcs",
+              "section",
+              "section-arcs",
+              "right-label",
+              "left-label",
+              "caption",
+              "edge-highlight",
+              "top-slab"
+            ],
+            "composition": "32:9 전체 배경 위에 왼쪽 길이 방향 CG, 오른쪽 단면 CG, 좌상단 로고 리본, 각 도해 위 설명, 중앙 하단 공통 자막을 배치한다. 후반 상부 판 조립·청록 외곽 강조·마감 판을 순차 추가하며 오른쪽 단면과 설명은 유지한다. 이 상태의 시간 구간: [174, 181]초. 출현·퇴장·유지의 정확 범위는 개별 주장과 흐름에 따름."
+          }
+        ],
+        "design_dimensions": {
+          "hierarchy": "좌상단 섹션 표제 → 왼쪽 큰 3D 구조와 오른쪽 단면 → 청록 강조·짧은 설명 → 하단 자막.",
+          "alignment": "두 주 콘텐츠는 초광폭의 서로 다른 영역에 배치하고 설명은 각각의 도해 위에 맞춘다.  후속 배치/기준점·모션 변화는 새 주장에 별도 연결.",
+          "spacing": "초광폭 왼쪽 큰 대각 구조와 오른쪽 정면 단면 사이 어두운 여백. 설명 띠는 각 모델 위에, 공통 자막은 두 영역 아래 중앙. 175초 왼쪽 설명의 선 간격 약1473 native px. 개별 요소의 실제 3D/AE 앵커값은 아님.",
+          "typography": "흰 산세리프 한글. 좌상단 리본, 굵은 도해 설명, 하단 자막의 세 위계. 오른쪽 짧은 설명과 왼쪽 긴 설명은 다른 길이/폭이다. 영상 표기는 켄틸레버, 상단의 시공시와 하단의 시공 시를 각각 보존. 서체명·폰트 크기 원값은 미확정.",
+          "color": "남청·청색 배경, 흰/회색 콘크리트·검은 안쪽, 청록 화살표·세로선.",
+          "background": "남청 기술 배경의 좌측 점·망과 하단 푸른 곡선·작은 교차점. 세 ROI에서 도입 밝아짐과 이후 위치 유사 상태를 확인. 원본 레이어 독립성·정확 속성은 미확정.",
+          "shapes": "사선 로고 리본, 구멍/날개/철근을 가진 긴 거더와 오른쪽 단면, 분할 철근 판과 후반 넓은 마감 판. 곡선 화살표와 형상에 밀착한 청록 외곽 강조를 분리한다. 설명은 어두운 띠·청록 양끝선·흰 글자, 자막은 별도 진한 사각 바탕."
+        }
+      },
+      "applicability": "관측한 동작 구조의 초안. 새 목적·문구 길이·화면비·대상 형태에서 근거·차이·가독성·성공 여부를 다시 확인. 수치·문구는 이 사례의 변형값이며 보편 기준 아님.",
+      "counterexamples": [
+        "새 영상·새 문구로 재제작/렌더 검증하지 않음.",
+        "원본 구현 설정·원제작 의도는 영상만으로 확정하지 않음."
+      ],
+      "status": "draft",
+      "supersedes": null,
+      "derived_from": [],
+      "created_utc": "2026-10-19T03:14:59.445126+00:00",
+      "sha256": "73dbe7acacf2a64e2a4ef88270bc2e3e89b5f38c18099020870f3aa2d36f75f9"
+    },
+    {
+      "id": "PAT-FLOW-0002",
+      "definition_version": "video-pattern-definition-0.2",
+      "category": "FLOW",
+      "name": "조립·기울임 설명과 후반 마감",
+      "source": {
+        "case_id": "DEV-NEW-N-REFERENCE-20261019",
+        "source_sha256": "42d87e0cc8c507ccb2a8924ae3252d689ef103d4ca3b1219ec1e588f6f474a03",
+        "observation_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\records\\NEW-N\\observations.json",
+        "observation_sha256": "4a843b1bc4fb5a9a072a8970b221fbf055d06647d2f5482b1a384d954b40cd79",
+        "claim_ids": [
+          "c006",
+          "c007",
+          "c009",
+          "c017",
+          "c024",
+          "c025",
+          "c037",
+          "c038",
+          "c051",
+          "c040",
+          "c041",
+          "c042",
+          "c044",
+          "c046",
+          "c049",
+          "c050",
+          "c053",
+          "c055"
+        ],
+        "unknown_ids": [
+          "u02"
+        ]
+      },
+      "definition": {
+        "summary": "전체 사례의 전개·유지·겹침을 연결한다. 세부 정의를 전체 CARD 하나로 합치지 않는다.",
+        "stages": [
+          {
+            "name": "초기 구도와 판 조립",
+            "timing": "166~168.5",
+            "claim_ids": [
+              "c006",
+              "c007",
+              "c009"
+            ]
+          },
+          {
+            "name": "단면·오른쪽 설명과 회전 강조",
+            "timing": "167.3~174",
+            "claim_ids": [
+              "c017",
+              "c024",
+              "c025",
+              "c037",
+              "c038",
+              "c051"
+            ]
+          },
+          {
+            "name": "왼쪽 설명과 두 번째 조립",
+            "timing": "173~176",
+            "claim_ids": [
+              "c040",
+              "c041",
+              "c042",
+              "c044"
+            ]
+          },
+          {
+            "name": "외곽 강조와 상부 마감",
+            "timing": "176~181",
+            "claim_ids": [
+              "c046",
+              "c049",
+              "c050",
+              "c053",
+              "c055"
+            ]
+          }
+        ],
+        "overlap_notes": [
+          "새 설명/세부 효과가 생겨도 기존 맥락은 유지될 수 있다.",
+          "동시에 진행되는 배경·문구·도형 변화를 직렬 단계로 압축하지 않는다."
+        ],
+        "stable_context": "32:9 전체 배경 위에 왼쪽 길이 방향 CG, 오른쪽 단면 CG, 좌상단 로고 리본, 각 도해 위 설명, 중앙 하단 공통 자막을 배치한다. 후반 상부 판 조립·청록 외곽 강조·마감 판을 순차 추가하며 오른쪽 단면과 설명은 유지한다. 이 상태의 시간 구간: [166, 168.8]초. 출현·퇴장·유지의 정확 범위는 개별 주장과 흐름에 따름."
+      },
+      "applicability": "관측한 동작 구조의 초안. 새 목적·문구 길이·화면비·대상 형태에서 근거·차이·가독성·성공 여부를 다시 확인. 수치·문구는 이 사례의 변형값이며 보편 기준 아님.",
+      "counterexamples": [
+        "새 영상·새 문구로 재제작/렌더 검증하지 않음.",
+        "원본 구현 설정·원제작 의도는 영상만으로 확정하지 않음."
+      ],
+      "status": "draft",
+      "supersedes": null,
+      "derived_from": [],
+      "created_utc": "2026-10-19T03:14:59.478409+00:00",
+      "sha256": "c7bbe8b42bb92f3dec61fa5b6eeb35b8bc0e6f73051cc17c7e14d7fee4fd8055"
+    },
+    {
+      "id": "PAT-LAYOUT-0003",
+      "definition_version": "video-pattern-definition-0.2",
+      "category": "LAYOUT",
+      "name": "지도 위 기관·정책 소속 배치",
+      "source": {
+        "case_id": "DEV-NEW-P-REFERENCE-20261019",
+        "source_sha256": "8d5bf71b3d739c6bf3e758da1c1d7db51becbab4dd77eab4389ee9d0a48a04c3",
+        "observation_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\records\\NEW-P\\observations.json",
+        "observation_sha256": "0b7effd009cc209db069706e1a549721cbf11a1308f6d313708cf918989e383c",
+        "claim_ids": [
+          "c001",
+          "c003",
+          "c004",
+          "c005",
+          "c006",
+          "c007",
+          "c008",
+          "c009",
+          "c010",
+          "c011",
+          "c012",
+          "c013",
+          "c014",
+          "c015",
+          "c016",
+          "c017",
+          "c018",
+          "c019",
+          "c020",
+          "c021",
+          "c022",
+          "c023",
+          "c024",
+          "c025",
+          "c026",
+          "c027",
+          "c028",
+          "c029",
+          "c030",
+          "c031",
+          "c032",
+          "c033",
+          "c034",
+          "c035",
+          "c036",
+          "c037",
+          "c038",
+          "c039",
+          "c040",
+          "c041",
+          "c042",
+          "c043",
+          "c044",
+          "c045",
+          "c046",
+          "c047",
+          "c048",
+          "c049",
+          "c050",
+          "c051",
+          "c052",
+          "c053",
+          "c054",
+          "c055",
+          "c056",
+          "c057",
+          "c058"
+        ],
+        "unknown_ids": []
+      },
+      "definition": {
+        "summary": "16:9 어두운 위성 지도와 지명·지역 경계 위에 횡성 청록 강조를 두고, 기관 카드→세로 연결선→두 행 설명 프레임을 묶는다. 노란 기존 경찰청은 왼쪽에 유지하고 분홍 강원 묶음을 중앙에 추가한 뒤51.5~53초 오른쪽으로 재배치해 중앙 여백을 만든다. 아래 검은 자막은 별도 정보층이다. 이 상태의 시간 구간: [40, 41.4]초. 출현·퇴장·유지의 정확 범위는 개별 주장과 흐름에 따름.",
+        "canvas": "16:9 (3840x2160)",
+        "groups": [
+          {
+            "state": "existing-agency",
+            "time_seconds": [
+              40,
+              41.4
+            ],
+            "objects": [
+              "map",
+              "region",
+              "police",
+              "policy-panel",
+              "police-link",
+              "caption"
+            ],
+            "composition": "16:9 어두운 위성 지도와 지명·지역 경계 위에 횡성 청록 강조를 두고, 기관 카드→세로 연결선→두 행 설명 프레임을 묶는다. 노란 기존 경찰청은 왼쪽에 유지하고 분홍 강원 묶음을 중앙에 추가한 뒤51.5~53초 오른쪽으로 재배치해 중앙 여백을 만든다. 아래 검은 자막은 별도 정보층이다. 이 상태의 시간 구간: [40, 41.4]초. 출현·퇴장·유지의 정확 범위는 개별 주장과 흐름에 따름."
+          },
+          {
+            "state": "two-agency-build",
+            "time_seconds": [
+              41.4,
+              51.5
+            ],
+            "objects": [
+              "map",
+              "region",
+              "police",
+              "policy-panel",
+              "police-link",
+              "gangwon",
+              "regional-frame",
+              "regional-row1",
+              "regional-row2",
+              "regional-link",
+              "caption",
+              "gangwon-face"
+            ],
+            "composition": "16:9 어두운 위성 지도와 지명·지역 경계 위에 횡성 청록 강조를 두고, 기관 카드→세로 연결선→두 행 설명 프레임을 묶는다. 노란 기존 경찰청은 왼쪽에 유지하고 분홍 강원 묶음을 중앙에 추가한 뒤51.5~53초 오른쪽으로 재배치해 중앙 여백을 만든다. 아래 검은 자막은 별도 정보층이다. 이 상태의 시간 구간: [41.4, 51.5]초. 출현·퇴장·유지의 정확 범위는 개별 주장과 흐름에 따름."
+          },
+          {
+            "state": "right-reposition",
+            "time_seconds": [
+              51.5,
+              53
+            ],
+            "objects": [
+              "map",
+              "region",
+              "police",
+              "policy-panel",
+              "police-link",
+              "gangwon",
+              "regional-frame",
+              "regional-row1",
+              "regional-row2",
+              "regional-link",
+              "caption",
+              "gangwon-face"
+            ],
+            "composition": "16:9 어두운 위성 지도와 지명·지역 경계 위에 횡성 청록 강조를 두고, 기관 카드→세로 연결선→두 행 설명 프레임을 묶는다. 노란 기존 경찰청은 왼쪽에 유지하고 분홍 강원 묶음을 중앙에 추가한 뒤51.5~53초 오른쪽으로 재배치해 중앙 여백을 만든다. 아래 검은 자막은 별도 정보층이다. 이 상태의 시간 구간: [51.5, 53]초. 출현·퇴장·유지의 정확 범위는 개별 주장과 흐름에 따름."
+          }
+        ],
+        "design_dimensions": {
+          "hierarchy": "지역 지도·횡성 강조를 배경 맥락으로 두고 기관 카드와 연결된 정책 설명을 위에 겹친다. 아래 자막은 별도 정보층.",
+          "alignment": "카드 위쪽에서 세로 연결선이 설명 프레임 아래 원형 접점으로 이어진다. 프레임 안 두 가로 화살촉 띠는 수직으로 쌓인다. 기존 노란 묶음은 왼쪽 고정, 새 분홍 묶음은 중앙 등장 후 오른쪽 이동.",
+          "spacing": "반투명 프레임 아래 기관 카드, 그 사이 세로 연결선. 지도 경계·지명을 일부 비치게 두며 하단 자막과 횡성 강조 사이 간격을 둔다. 51.5~53초 분홍 기관 묶음이 오른쪽으로 가며 중앙 여백을 만든다.",
+          "typography": "카드의 기관 로고 서체와 설명·자막의 한글 산세리프를 구분한다. 지도 지명은 어둡고 외곽이 있으며 정확 글꼴·크기 미측정.",
+          "color": "어두운 녹갈색 지도/남청 바다, 청록 횡성, 노랑·연두 경찰청, 붉은색/분홍 강원 묶음, 밝은 카드 면. 행별 등장·한 차례 강조·기본 붉은색 복귀를 구분하고 공통 점멸 주기를 만들지 않는다.",
+          "background": "위성 지형 질감과 행정 경계·지명. 정보 프레임은 반투명해 지도가 일부 비친다.",
+          "shapes": "화살촉 양끝 문구 띠, 직사각 반투명 면, 가는 모서리·프레임, 세로 화살 무늬·원형 접점, 지역 경계 면과 검은 자막 바."
+        }
+      },
+      "applicability": "관측한 동작 구조의 초안. 새 목적·문구 길이·화면비·대상 형태에서 근거·차이·가독성·성공 여부를 다시 확인. 수치·문구는 이 사례의 변형값이며 보편 기준 아님.",
+      "counterexamples": [
+        "새 영상·새 문구로 재제작/렌더 검증하지 않음.",
+        "원본 구현 설정·원제작 의도는 영상만으로 확정하지 않음."
+      ],
+      "status": "draft",
+      "supersedes": null,
+      "derived_from": [],
+      "created_utc": "2026-10-19T03:14:59.494707+00:00",
+      "sha256": "656222801ab1018104f8b873f0427d264fc778f7f5f48f2e29bf0b624ab04e10"
+    },
+    {
+      "id": "PAT-FLOW-0003",
+      "definition_version": "video-pattern-definition-0.2",
+      "category": "FLOW",
+      "name": "기관 추가·행별 강조·묶음 재배치",
+      "source": {
+        "case_id": "DEV-NEW-P-REFERENCE-20261019",
+        "source_sha256": "8d5bf71b3d739c6bf3e758da1c1d7db51becbab4dd77eab4389ee9d0a48a04c3",
+        "observation_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\records\\NEW-P\\observations.json",
+        "observation_sha256": "0b7effd009cc209db069706e1a549721cbf11a1308f6d313708cf918989e383c",
+        "claim_ids": [
+          "c008",
+          "c014",
+          "c041",
+          "c045",
+          "c017",
+          "c039",
+          "c040",
+          "c019",
+          "c048",
+          "c049",
+          "c023",
+          "c027",
+          "c046",
+          "c047",
+          "c044",
+          "c050",
+          "c051",
+          "c052",
+          "c053",
+          "c054",
+          "c055"
+        ],
+        "unknown_ids": []
+      },
+      "definition": {
+        "summary": "전체 사례의 전개·유지·겹침을 연결한다. 세부 정의를 전체 CARD 하나로 합치지 않는다.",
+        "stages": [
+          {
+            "name": "기존 기관과 지역 맥락 유지",
+            "timing": "40~41.3",
+            "claim_ids": [
+              "c008",
+              "c014",
+              "c041",
+              "c045"
+            ]
+          },
+          {
+            "name": "로고→밝은 면→설명/연결선",
+            "timing": "41.4~44.5",
+            "claim_ids": [
+              "c017",
+              "c039",
+              "c040",
+              "c019",
+              "c048",
+              "c049"
+            ]
+          },
+          {
+            "name": "행별 등장과 강조 이관",
+            "timing": "43.5~51",
+            "claim_ids": [
+              "c023",
+              "c027",
+              "c046",
+              "c047"
+            ]
+          },
+          {
+            "name": "기관 묶음 재배치",
+            "timing": "51.5~53",
+            "claim_ids": [
+              "c044",
+              "c050",
+              "c051",
+              "c052",
+              "c053",
+              "c054",
+              "c055"
+            ]
+          }
+        ],
+        "overlap_notes": [
+          "새 설명/세부 효과가 생겨도 기존 맥락은 유지될 수 있다.",
+          "동시에 진행되는 배경·문구·도형 변화를 직렬 단계로 압축하지 않는다."
+        ],
+        "stable_context": "16:9 어두운 위성 지도와 지명·지역 경계 위에 횡성 청록 강조를 두고, 기관 카드→세로 연결선→두 행 설명 프레임을 묶는다. 노란 기존 경찰청은 왼쪽에 유지하고 분홍 강원 묶음을 중앙에 추가한 뒤51.5~53초 오른쪽으로 재배치해 중앙 여백을 만든다. 아래 검은 자막은 별도 정보층이다. 이 상태의 시간 구간: [40, 41.4]초. 출현·퇴장·유지의 정확 범위는 개별 주장과 흐름에 따름."
+      },
+      "applicability": "관측한 동작 구조의 초안. 새 목적·문구 길이·화면비·대상 형태에서 근거·차이·가독성·성공 여부를 다시 확인. 수치·문구는 이 사례의 변형값이며 보편 기준 아님.",
+      "counterexamples": [
+        "새 영상·새 문구로 재제작/렌더 검증하지 않음.",
+        "원본 구현 설정·원제작 의도는 영상만으로 확정하지 않음."
+      ],
+      "status": "draft",
+      "supersedes": null,
+      "derived_from": [],
+      "created_utc": "2026-10-19T03:14:59.528401+00:00",
+      "sha256": "2ed2e744ad31c77d8639588854c2e7cffcfaba4aa89d20aa1be429136e1c1dc6"
+    },
+    {
+      "id": "PAT-TEXT-0002",
+      "definition_version": "video-pattern-definition-0.2",
+      "category": "TEXT",
+      "name": "중앙 세로선 분리와 문구 리빌",
+      "source": {
+        "case_id": "DEV-NEW-N-REFERENCE-20261019",
+        "source_sha256": "42d87e0cc8c507ccb2a8924ae3252d689ef103d4ca3b1219ec1e588f6f474a03",
+        "observation_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\records\\NEW-N\\observations.json",
+        "observation_sha256": "4a843b1bc4fb5a9a072a8970b221fbf055d06647d2f5482b1a384d954b40cd79",
+        "claim_ids": [
+          "c040",
+          "c041",
+          "c042",
+          "c043"
+        ],
+        "unknown_ids": []
+      },
+      "definition": {
+        "summary": "좁은 중앙 표시에서 양쪽으로 열리며 글자가 드러나고 폭이 정착한다.",
+        "target_role": "도해 설명 띠",
+        "phases": [
+          {
+            "name": "선 분리",
+            "property": "visibility",
+            "observed_change": "한 줄→가까운 두 줄→빈 띠",
+            "claim_ids": [
+              "c041"
+            ]
+          },
+          {
+            "name": "문구 판독",
+            "property": "text",
+            "observed_change": "부분 글자에서 전체 문구로",
+            "claim_ids": [
+              "c040",
+              "c041"
+            ]
+          },
+          {
+            "name": "폭 정착",
+            "property": "size",
+            "observed_change": "초반 가속·후반 감속, 텍스트 판독보다 늦은 외곽 정착",
+            "claim_ids": [
+              "c042",
+              "c043"
+            ]
+          }
+        ],
+        "parameters": [
+          {
+            "name": "sample_bar_separation",
+            "status": "observed",
+            "value": 1473,
+            "unit_or_type": "native pixels, sample-specific ±3px estimate"
+          },
+          {
+            "name": "visible_width_transition",
+            "status": "estimated",
+            "value": [
+              173,
+              174.8
+            ],
+            "unit_or_type": "absolute source seconds, not universal duration"
+          },
+          {
+            "name": "original_AE_implementation",
+            "status": "unknown",
+            "value": null,
+            "unit_or_type": "source controls/curves/effects"
+          }
+        ],
+        "preserve_constraints": [
+          "문구·색·배치를 먼저 동작 원리와 분리한다.",
+          "관측된 중간 상태·순서·중첩·유지 차이를 보존한다.",
+          "미확인 구현값을 원본 값으로 채우지 않는다."
+        ]
+      },
+      "applicability": "관측한 동작 구조의 초안. 새 목적·문구 길이·화면비·대상 형태에서 근거·차이·가독성·성공 여부를 다시 확인. 수치·문구는 이 사례의 변형값이며 보편 기준 아님.",
+      "counterexamples": [
+        "새 영상·새 문구로 재제작/렌더 검증하지 않음.",
+        "원본 구현 설정·원제작 의도는 영상만으로 확정하지 않음."
+      ],
+      "status": "draft",
+      "supersedes": null,
+      "derived_from": [],
+      "created_utc": "2026-10-19T03:14:59.545034+00:00",
+      "sha256": "794a5051cb4aa28dc9db9d2ed633d2ab3ae944c975496002317afb5524862036"
+    },
+    {
+      "id": "PAT-DETAIL-0002",
+      "definition_version": "video-pattern-definition-0.2",
+      "category": "DETAIL",
+      "name": "구조물의 화면 투영 기울기 왕복",
+      "source": {
+        "case_id": "DEV-NEW-N-REFERENCE-20261019",
+        "source_sha256": "42d87e0cc8c507ccb2a8924ae3252d689ef103d4ca3b1219ec1e588f6f474a03",
+        "observation_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\records\\NEW-N\\observations.json",
+        "observation_sha256": "4a843b1bc4fb5a9a072a8970b221fbf055d06647d2f5482b1a384d954b40cd79",
+        "claim_ids": [
+          "c006",
+          "c018",
+          "c038",
+          "c039",
+          "c052"
+        ],
+        "unknown_ids": [
+          "u02"
+        ]
+      },
+      "definition": {
+        "summary": "화면에서 보이는 구조가 한쪽→반대쪽→원래 구도로 기울어진다.",
+        "target_role": "입체 구조의 기울임 설명",
+        "phases": [
+          {
+            "name": "왕복",
+            "property": "position",
+            "observed_change": "투영 경사의 양/음 극값을 거쳐 돌아옴",
+            "claim_ids": [
+              "c038"
+            ]
+          },
+          {
+            "name": "반주기 가감속",
+            "property": "position",
+            "observed_change": "극점 부근 느리고 중간 빠른 변화",
+            "claim_ids": [
+              "c039"
+            ]
+          },
+          {
+            "name": "정착",
+            "property": "position",
+            "observed_change": "후속 구간에서는 유사 정면 유지",
+            "claim_ids": [
+              "c052"
+            ]
+          }
+        ],
+        "parameters": [
+          {
+            "name": "positive_extrema_spacing",
+            "status": "estimated",
+            "value": 1.8,
+            "unit_or_type": "seconds ±0.2 in this observation; no infinite loop proof"
+          },
+          {
+            "name": "true_3D_rotation_axis_angle",
+            "status": "unknown",
+            "value": null,
+            "unit_or_type": "source project geometry"
+          },
+          {
+            "name": "original_AE_implementation",
+            "status": "unknown",
+            "value": null,
+            "unit_or_type": "source controls/curves/effects"
+          }
+        ],
+        "preserve_constraints": [
+          "문구·색·배치를 먼저 동작 원리와 분리한다.",
+          "관측된 중간 상태·순서·중첩·유지 차이를 보존한다.",
+          "미확인 구현값을 원본 값으로 채우지 않는다."
+        ]
+      },
+      "applicability": "관측한 동작 구조의 초안. 새 목적·문구 길이·화면비·대상 형태에서 근거·차이·가독성·성공 여부를 다시 확인. 수치·문구는 이 사례의 변형값이며 보편 기준 아님.",
+      "counterexamples": [
+        "새 영상·새 문구로 재제작/렌더 검증하지 않음.",
+        "원본 구현 설정·원제작 의도는 영상만으로 확정하지 않음."
+      ],
+      "status": "draft",
+      "supersedes": null,
+      "derived_from": [],
+      "created_utc": "2026-10-19T03:14:59.574510+00:00",
+      "sha256": "23e3e0e7f1a858c42dff440c24aa7502ea6244bbfbd5601daf013338c460cdf6"
+    },
+    {
+      "id": "PAT-DETAIL-0003",
+      "definition_version": "video-pattern-definition-0.2",
+      "category": "DETAIL",
+      "name": "주변 화살표의 한 차례 강조와 서로 다른 유지",
+      "source": {
+        "case_id": "DEV-NEW-N-REFERENCE-20261019",
+        "source_sha256": "42d87e0cc8c507ccb2a8924ae3252d689ef103d4ca3b1219ec1e588f6f474a03",
+        "observation_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\records\\NEW-N\\observations.json",
+        "observation_sha256": "4a843b1bc4fb5a9a072a8970b221fbf055d06647d2f5482b1a384d954b40cd79",
+        "claim_ids": [
+          "c012",
+          "c020",
+          "c034",
+          "c037",
+          "c051"
+        ],
+        "unknown_ids": [
+          "u02"
+        ]
+      },
+      "definition": {
+        "summary": "화살표가 들어와 유지·약화되며 대상별 유지 범위는 다를 수 있다.",
+        "target_role": "구조물 주변의 설명 기호",
+        "phases": [
+          {
+            "name": "강조 진입",
+            "property": "visibility",
+            "observed_change": "전면/먼 끝/단면 곡선이 옅게 들어와 선명해짐",
+            "claim_ids": [
+              "c012",
+              "c020",
+              "c034"
+            ]
+          },
+          {
+            "name": "분리된 유지/퇴장",
+            "property": "visibility",
+            "observed_change": "좌측 전면·먼 끝은174초 소실, 오른쪽은 후속 유지",
+            "claim_ids": [
+              "c037",
+              "c051"
+            ]
+          }
+        ],
+        "parameters": [
+          {
+            "name": "cycle",
+            "status": "unknown",
+            "value": null,
+            "unit_or_type": "one envelope observed, repeated pulse not established"
+          },
+          {
+            "name": "exact_intensity_curve",
+            "status": "unknown",
+            "value": null,
+            "unit_or_type": "source or separately tracked envelope"
+          },
+          {
+            "name": "original_AE_implementation",
+            "status": "unknown",
+            "value": null,
+            "unit_or_type": "source controls/curves/effects"
+          }
+        ],
+        "preserve_constraints": [
+          "문구·색·배치를 먼저 동작 원리와 분리한다.",
+          "관측된 중간 상태·순서·중첩·유지 차이를 보존한다.",
+          "미확인 구현값을 원본 값으로 채우지 않는다."
+        ]
+      },
+      "applicability": "관측한 동작 구조의 초안. 새 목적·문구 길이·화면비·대상 형태에서 근거·차이·가독성·성공 여부를 다시 확인. 수치·문구는 이 사례의 변형값이며 보편 기준 아님.",
+      "counterexamples": [
+        "새 영상·새 문구로 재제작/렌더 검증하지 않음.",
+        "원본 구현 설정·원제작 의도는 영상만으로 확정하지 않음."
+      ],
+      "status": "draft",
+      "supersedes": null,
+      "derived_from": [],
+      "created_utc": "2026-10-19T03:14:59.598670+00:00",
+      "sha256": "15b9e41e723a29023390c05ba3f1b74182d44c334c05eccbbe99771dddd6f8fa"
+    },
+    {
+      "id": "PAT-DETAIL-0004",
+      "definition_version": "video-pattern-definition-0.2",
+      "category": "DETAIL",
+      "name": "구조 형상에 밀착한 외곽·면 강조",
+      "source": {
+        "case_id": "DEV-NEW-N-REFERENCE-20261019",
+        "source_sha256": "42d87e0cc8c507ccb2a8924ae3252d689ef103d4ca3b1219ec1e588f6f474a03",
+        "observation_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\records\\NEW-N\\observations.json",
+        "observation_sha256": "4a843b1bc4fb5a9a072a8970b221fbf055d06647d2f5482b1a384d954b40cd79",
+        "claim_ids": [
+          "c045",
+          "c046",
+          "c047"
+        ],
+        "unknown_ids": []
+      },
+      "definition": {
+        "summary": "형상 경계·날개에 청록 빛이 더해졌다 약해진다.",
+        "target_role": "설명 대상의 형상 강조",
+        "phases": [
+          {
+            "name": "점등",
+            "property": "visibility",
+            "observed_change": "176~176.5초 사이 강한 외곽이 나타남",
+            "claim_ids": [
+              "c045",
+              "c046"
+            ]
+          },
+          {
+            "name": "유지와 소실",
+            "property": "color",
+            "observed_change": "형상을 따라 유지한 뒤178.5~179초 약화·소실",
+            "claim_ids": [
+              "c046",
+              "c047"
+            ]
+          }
+        ],
+        "parameters": [
+          {
+            "name": "sample_appearance",
+            "status": "observed",
+            "value": "cyan edge and pale face",
+            "unit_or_type": "appearance; specific glow effect unverified"
+          },
+          {
+            "name": "original_AE_implementation",
+            "status": "unknown",
+            "value": null,
+            "unit_or_type": "source controls/curves/effects"
+          }
+        ],
+        "preserve_constraints": [
+          "문구·색·배치를 먼저 동작 원리와 분리한다.",
+          "관측된 중간 상태·순서·중첩·유지 차이를 보존한다.",
+          "미확인 구현값을 원본 값으로 채우지 않는다."
+        ]
+      },
+      "applicability": "관측한 동작 구조의 초안. 새 목적·문구 길이·화면비·대상 형태에서 근거·차이·가독성·성공 여부를 다시 확인. 수치·문구는 이 사례의 변형값이며 보편 기준 아님.",
+      "counterexamples": [
+        "새 영상·새 문구로 재제작/렌더 검증하지 않음.",
+        "원본 구현 설정·원제작 의도는 영상만으로 확정하지 않음."
+      ],
+      "status": "draft",
+      "supersedes": null,
+      "derived_from": [],
+      "created_utc": "2026-10-19T03:14:59.611771+00:00",
+      "sha256": "4eeeed2e0fcf25fe99672321325150c83d899ca3a14a006cc9c3256c02eec887"
+    },
+    {
+      "id": "PAT-CARD-0003",
+      "definition_version": "video-pattern-definition-0.2",
+      "category": "CARD",
+      "name": "로고 선등장과 뒤따르는 밝은 카드 면",
+      "source": {
+        "case_id": "DEV-NEW-P-REFERENCE-20261019",
+        "source_sha256": "8d5bf71b3d739c6bf3e758da1c1d7db51becbab4dd77eab4389ee9d0a48a04c3",
+        "observation_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\records\\NEW-P\\observations.json",
+        "observation_sha256": "0b7effd009cc209db069706e1a549721cbf11a1308f6d313708cf918989e383c",
+        "claim_ids": [
+          "c017",
+          "c038",
+          "c039",
+          "c040"
+        ],
+        "unknown_ids": []
+      },
+      "definition": {
+        "summary": "로고의 드러남과 배경 카드 면의 전개가 다른 시점에 진행된다.",
+        "target_role": "기관 로고 카드",
+        "phases": [
+          {
+            "name": "로고",
+            "property": "visibility",
+            "observed_change": "41.4~41.6초 로고 형태가 먼저 보임",
+            "claim_ids": [
+              "c017"
+            ]
+          },
+          {
+            "name": "밝은 면",
+            "property": "size",
+            "observed_change": "42.3~42.8초 좁은 세로 면이 넓어짐",
+            "claim_ids": [
+              "c039",
+              "c040"
+            ]
+          }
+        ],
+        "parameters": [
+          {
+            "name": "logo_before_face",
+            "status": "observed",
+            "value": true,
+            "unit_or_type": "ordering"
+          },
+          {
+            "name": "layer_rotation_vs_mask",
+            "status": "unknown",
+            "value": null,
+            "unit_or_type": "implementation"
+          },
+          {
+            "name": "original_AE_implementation",
+            "status": "unknown",
+            "value": null,
+            "unit_or_type": "source controls/curves/effects"
+          }
+        ],
+        "preserve_constraints": [
+          "문구·색·배치를 먼저 동작 원리와 분리한다.",
+          "관측된 중간 상태·순서·중첩·유지 차이를 보존한다.",
+          "미확인 구현값을 원본 값으로 채우지 않는다."
+        ]
+      },
+      "applicability": "관측한 동작 구조의 초안. 새 목적·문구 길이·화면비·대상 형태에서 근거·차이·가독성·성공 여부를 다시 확인. 수치·문구는 이 사례의 변형값이며 보편 기준 아님.",
+      "counterexamples": [
+        "새 영상·새 문구로 재제작/렌더 검증하지 않음.",
+        "원본 구현 설정·원제작 의도는 영상만으로 확정하지 않음."
+      ],
+      "status": "draft",
+      "supersedes": null,
+      "derived_from": [],
+      "created_utc": "2026-10-19T03:14:59.646009+00:00",
+      "sha256": "a57b3c25f967026235166aa54107f132a8a2134e874dc6fb02a532fd36c0962a"
+    }
+  ]
+}

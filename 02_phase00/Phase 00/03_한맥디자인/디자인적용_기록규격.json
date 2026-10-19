@@ -1,0 +1,568 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "application_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "state": {
+      "const": "project_draft"
+    },
+    "data_scope": {
+      "enum": [
+        "spec_example",
+        "actual_project_draft"
+      ]
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "ownership": {
+      "enum": [
+        "single_company",
+        "multi_company"
+      ]
+    },
+    "company_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "source_pins": {
+      "type": "object",
+      "properties": {
+        "companies": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}(?![\\s\\S])",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "assets": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}(?![\\s\\S])",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "colors": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}(?![\\s\\S])",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "hanmac": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}(?![\\s\\S])",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "policy": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}(?![\\s\\S])",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "companies",
+        "assets",
+        "colors",
+        "hanmac",
+        "policy"
+      ],
+      "additionalProperties": false
+    },
+    "use_hanmac_library": {
+      "type": "boolean"
+    },
+    "logo_intent": {
+      "enum": [
+        "selected",
+        "not_required",
+        "undecided"
+      ]
+    },
+    "logos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "company_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "asset_ref": {
+            "type": "object",
+            "properties": {
+              "asset_id": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "record_version": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}(?![\\s\\S])",
+                "maxLength": 64
+              }
+            },
+            "required": [
+              "asset_id",
+              "record_version",
+              "sha256"
+            ],
+            "additionalProperties": false
+          },
+          "variant_notes": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          }
+        },
+        "required": [
+          "company_id",
+          "asset_ref",
+          "variant_notes"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "color_roles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "role": {
+            "enum": [
+              "background",
+              "text_main",
+              "text_secondary",
+              "emphasis",
+              "chart_series",
+              "decoration"
+            ]
+          },
+          "company_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source": {
+            "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "const": "ci_color"
+                  },
+                  "color_id": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  },
+                  "record_version": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  },
+                  "source_level": {
+                    "enum": [
+                      "official_declared",
+                      "vector_literal",
+                      "raster_sample"
+                    ]
+                  }
+                },
+                "required": [
+                  "kind",
+                  "color_id",
+                  "record_version",
+                  "source_level"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "const": "hanmac_token"
+                  },
+                  "token_id": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  }
+                },
+                "required": [
+                  "kind",
+                  "token_id"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "const": "project_literal"
+                  },
+                  "hex": {
+                    "type": "string",
+                    "pattern": "^#[0-9A-F]{6}(?![\\s\\S])",
+                    "maxLength": 7
+                  },
+                  "color_space": {
+                    "const": "srgb"
+                  },
+                  "purpose": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  }
+                },
+                "required": [
+                  "kind",
+                  "hex",
+                  "color_space",
+                  "purpose"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          },
+          "selection": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "enum": [
+                  "designer_declaration",
+                  "synthetic_example"
+                ]
+              },
+              "selected_by": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "assumptions": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "declared_at": {
+                "type": "string",
+                "format": "date-time"
+              }
+            },
+            "required": [
+              "kind",
+              "selected_by",
+              "reason",
+              "assumptions",
+              "declared_at"
+            ],
+            "additionalProperties": false
+          },
+          "review_status": {
+            "const": "pending"
+          }
+        },
+        "required": [
+          "role",
+          "company_id",
+          "source",
+          "selection",
+          "review_status"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "optional_style_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "minItems": 0,
+      "uniqueItems": true
+    },
+    "output_context": {
+      "type": "object",
+      "properties": {
+        "medium": {
+          "enum": [
+            "video",
+            "web",
+            "slide"
+          ]
+        },
+        "width": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "height": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "background_condition": {
+          "enum": [
+            "light",
+            "dark",
+            "mixed",
+            "unknown"
+          ]
+        },
+        "viewing_notes": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "medium",
+        "width",
+        "height",
+        "background_condition",
+        "viewing_notes"
+      ],
+      "additionalProperties": false
+    },
+    "linked_r4_record": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "record_id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}(?![\\s\\S])",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "record_id",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "review_status": {
+      "const": "pending"
+    },
+    "company_approved": {
+      "const": false
+    },
+    "operational_release": {
+      "const": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "application_id",
+    "version",
+    "state",
+    "data_scope",
+    "purpose",
+    "ownership",
+    "company_ids",
+    "source_pins",
+    "use_hanmac_library",
+    "logo_intent",
+    "logos",
+    "color_roles",
+    "optional_style_refs",
+    "output_context",
+    "linked_r4_record",
+    "review_status",
+    "company_approved",
+    "operational_release"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:hanmac:phase00:design-application:0.1.0",
+  "title": "R5 프로젝트 디자인 초안 참조·적용 계약",
+  "allOf": [
+    {
+      "properties": {
+        "output_context": {
+          "oneOf": [
+            {
+              "properties": {
+                "width": {
+                  "type": "integer"
+                },
+                "height": {
+                  "type": "integer"
+                }
+              }
+            },
+            {
+              "properties": {
+                "width": {
+                  "type": "null"
+                },
+                "height": {
+                  "type": "null"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

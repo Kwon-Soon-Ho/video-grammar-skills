@@ -1,0 +1,1147 @@
+{
+  "version": "0.1.1",
+  "taxonomy_ref": "company-video-taxonomy@0.1.1",
+  "origin": "synthetic_example",
+  "cases": [
+    {
+      "id": "R2-EX-01",
+      "title": "사업부 카드 순차 등장",
+      "origin": "synthetic_example",
+      "units": [
+        {
+          "id": "V",
+          "kind": "asset",
+          "parent_id": null,
+          "scope_note": "설명용 영상 전체"
+        },
+        {
+          "id": "S",
+          "kind": "segment",
+          "parent_id": "V",
+          "scope_note": "설명용 정보 구간"
+        },
+        {
+          "id": "F",
+          "kind": "state",
+          "parent_id": "S",
+          "scope_note": "설명용 화면 상태"
+        },
+        {
+          "id": "B",
+          "kind": "beat",
+          "parent_id": "S",
+          "scope_note": "설명용 짧은 동작; 상태를 가로지를 수 있음"
+        }
+      ],
+      "annotations": [
+        {
+          "unit_id": "F",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "layout",
+          "term_ids": [
+            "LAYOUT-CARD-GROUP"
+          ],
+          "status": "classified",
+          "reason": "독립카드3개",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "layout",
+          "limitations": [],
+          "reason_code": null
+        },
+        {
+          "unit_id": "F",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "information_relation",
+          "term_ids": [
+            "REL-PARALLEL"
+          ],
+          "status": "classified",
+          "reason": "동등사업부로명시",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "information_relation",
+          "limitations": [],
+          "reason_code": null
+        },
+        {
+          "unit_id": "B",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "timing",
+          "term_ids": [
+            "TIME-SEQUENCE"
+          ],
+          "status": "classified",
+          "reason": "시작이A→B→C",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "timing",
+          "limitations": [],
+          "reason_code": null
+        },
+        {
+          "unit_id": "S",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "communication_purpose",
+          "term_ids": [],
+          "status": "unknown",
+          "reason": "단계설명목적은근거없음",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "communication_purpose",
+          "limitations": [],
+          "reason_code": "ambiguous_visual_evidence"
+        }
+      ],
+      "interpretation": "카드순차등장만으로REL-ORDER/PURPOSE-PROCESS를붙이지않는다.",
+      "company_approved": false
+    },
+    {
+      "id": "R2-EX-02",
+      "title": "좌측 제품화면·우측 설명",
+      "origin": "synthetic_example",
+      "units": [
+        {
+          "id": "V",
+          "kind": "asset",
+          "parent_id": null,
+          "scope_note": "설명용 영상 전체"
+        },
+        {
+          "id": "S",
+          "kind": "segment",
+          "parent_id": "V",
+          "scope_note": "설명용 정보 구간"
+        },
+        {
+          "id": "F",
+          "kind": "state",
+          "parent_id": "S",
+          "scope_note": "설명용 화면 상태"
+        },
+        {
+          "id": "B",
+          "kind": "beat",
+          "parent_id": "S",
+          "scope_note": "설명용 짧은 동작; 상태를 가로지를 수 있음"
+        }
+      ],
+      "annotations": [
+        {
+          "unit_id": "F",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "layout",
+          "term_ids": [
+            "LAYOUT-SPLIT"
+          ],
+          "status": "classified",
+          "reason": "제품과설명영역구획",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "layout",
+          "limitations": [],
+          "reason_code": null
+        },
+        {
+          "unit_id": "S",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "communication_purpose",
+          "term_ids": [],
+          "status": "unknown",
+          "reason": "공통비교기준없음",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "communication_purpose",
+          "limitations": [],
+          "reason_code": "ambiguous_visual_evidence"
+        }
+      ],
+      "interpretation": "LAYOUT-SPLIT-COMPARE를자동추가하지않는다.",
+      "company_approved": false
+    },
+    {
+      "id": "R2-EX-03",
+      "title": "같은 조건의 공법A/B",
+      "origin": "synthetic_example",
+      "units": [
+        {
+          "id": "V",
+          "kind": "asset",
+          "parent_id": null,
+          "scope_note": "설명용 영상 전체"
+        },
+        {
+          "id": "S",
+          "kind": "segment",
+          "parent_id": "V",
+          "scope_note": "설명용 정보 구간"
+        },
+        {
+          "id": "F",
+          "kind": "state",
+          "parent_id": "S",
+          "scope_note": "설명용 화면 상태"
+        },
+        {
+          "id": "B",
+          "kind": "beat",
+          "parent_id": "S",
+          "scope_note": "설명용 짧은 동작; 상태를 가로지를 수 있음"
+        }
+      ],
+      "annotations": [
+        {
+          "unit_id": "F",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "layout",
+          "term_ids": [
+            "LAYOUT-SPLIT-COMPARE"
+          ],
+          "status": "classified",
+          "reason": "비교대상/공통항목/분할이명시",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "layout",
+          "limitations": [],
+          "reason_code": null
+        },
+        {
+          "unit_id": "S",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "communication_purpose",
+          "term_ids": [
+            "PURPOSE-COMPARE"
+          ],
+          "status": "classified",
+          "reason": "A/B차이설명",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "communication_purpose",
+          "limitations": [],
+          "reason_code": null
+        }
+      ],
+      "interpretation": "상위LAYOUT-SPLIT를중복기록하지않아도됨.",
+      "company_approved": false
+    },
+    {
+      "id": "R2-EX-04",
+      "title": "시설전체와 확대화면",
+      "origin": "synthetic_example",
+      "units": [
+        {
+          "id": "V",
+          "kind": "asset",
+          "parent_id": null,
+          "scope_note": "설명용 영상 전체"
+        },
+        {
+          "id": "S",
+          "kind": "segment",
+          "parent_id": "V",
+          "scope_note": "설명용 정보 구간"
+        },
+        {
+          "id": "F",
+          "kind": "state",
+          "parent_id": "S",
+          "scope_note": "설명용 화면 상태"
+        },
+        {
+          "id": "B",
+          "kind": "beat",
+          "parent_id": "S",
+          "scope_note": "설명용 짧은 동작; 상태를 가로지를 수 있음"
+        }
+      ],
+      "annotations": [
+        {
+          "unit_id": "F",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "layout",
+          "term_ids": [
+            "LAYOUT-OVERVIEW-DETAIL",
+            "LAYOUT-PIP"
+          ],
+          "status": "classified",
+          "reason": "전체맥락+그안의독립상세화면이명시",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "layout",
+          "limitations": [],
+          "reason_code": null
+        }
+      ],
+      "interpretation": "정보역할과중첩형태가함께충족된복합예. 대상을원문으로확인한다.",
+      "company_approved": false
+    },
+    {
+      "id": "R2-EX-05",
+      "title": "선공개와 점 이동이 동시",
+      "origin": "synthetic_example",
+      "units": [
+        {
+          "id": "V",
+          "kind": "asset",
+          "parent_id": null,
+          "scope_note": "설명용 영상 전체"
+        },
+        {
+          "id": "S",
+          "kind": "segment",
+          "parent_id": "V",
+          "scope_note": "설명용 정보 구간"
+        },
+        {
+          "id": "F",
+          "kind": "state",
+          "parent_id": "S",
+          "scope_note": "설명용 화면 상태"
+        },
+        {
+          "id": "B",
+          "kind": "beat",
+          "parent_id": "S",
+          "scope_note": "설명용 짧은 동작; 상태를 가로지를 수 있음"
+        }
+      ],
+      "annotations": [
+        {
+          "unit_id": "B",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "motion_property",
+          "term_ids": [
+            "PROPERTY-LINE-REVEAL",
+            "PROPERTY-PATH-MOVE"
+          ],
+          "status": "classified",
+          "reason": "선과점이라는서로다른대상",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "motion_property",
+          "limitations": [],
+          "reason_code": null
+        },
+        {
+          "unit_id": "B",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "timing",
+          "term_ids": [
+            "TIME-SIMULTANEOUS"
+          ],
+          "status": "classified",
+          "reason": "같은관측시점의시작으로설명됨",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "timing",
+          "limitations": [],
+          "reason_code": null
+        }
+      ],
+      "interpretation": "같은상위경로속성으로두현상을지워버리지않는다. 실제동시허용오차는R4.",
+      "company_approved": false
+    },
+    {
+      "id": "R2-EX-06",
+      "title": "흐려졌다가 보이는 문자",
+      "origin": "synthetic_example",
+      "units": [
+        {
+          "id": "V",
+          "kind": "asset",
+          "parent_id": null,
+          "scope_note": "설명용 영상 전체"
+        },
+        {
+          "id": "S",
+          "kind": "segment",
+          "parent_id": "V",
+          "scope_note": "설명용 정보 구간"
+        },
+        {
+          "id": "F",
+          "kind": "state",
+          "parent_id": "S",
+          "scope_note": "설명용 화면 상태"
+        },
+        {
+          "id": "B",
+          "kind": "beat",
+          "parent_id": "S",
+          "scope_note": "설명용 짧은 동작; 상태를 가로지를 수 있음"
+        }
+      ],
+      "annotations": [
+        {
+          "unit_id": "B",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "motion_property",
+          "term_ids": [
+            "PROPERTY-VISIBILITY"
+          ],
+          "status": "classified",
+          "reason": "보이는정도변화",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "rendered_visibility",
+          "limitations": [
+            "opacity값/원본합성구현은미확인"
+          ],
+          "reason_code": null
+        },
+        {
+          "unit_id": "B",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "motion_property",
+          "term_ids": [],
+          "status": "unknown",
+          "reason": "opacity값/배경합성조건미확인",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "opacity_parameter",
+          "limitations": [],
+          "reason_code": "implementation_unknown"
+        }
+      ],
+      "interpretation": "두주장의대상은동일하지만관측과opacity구현주장의범위는다르다.",
+      "company_approved": false
+    },
+    {
+      "id": "R2-EX-07",
+      "title": "전역 확대",
+      "origin": "synthetic_example",
+      "units": [
+        {
+          "id": "V",
+          "kind": "asset",
+          "parent_id": null,
+          "scope_note": "설명용 영상 전체"
+        },
+        {
+          "id": "S",
+          "kind": "segment",
+          "parent_id": "V",
+          "scope_note": "설명용 정보 구간"
+        },
+        {
+          "id": "F",
+          "kind": "state",
+          "parent_id": "S",
+          "scope_note": "설명용 화면 상태"
+        },
+        {
+          "id": "B",
+          "kind": "beat",
+          "parent_id": "S",
+          "scope_note": "설명용 짧은 동작; 상태를 가로지를 수 있음"
+        }
+      ],
+      "annotations": [
+        {
+          "unit_id": "B",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "motion_property",
+          "term_ids": [
+            "PROPERTY-SIZE",
+            "PROPERTY-CAMERA"
+          ],
+          "status": "classified",
+          "reason": "명시한전역범위에분포한배경/대상의배율변화;국소그룹과구분",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "motion_property",
+          "limitations": [],
+          "reason_code": null
+        },
+        {
+          "unit_id": "B",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "timing",
+          "term_ids": [],
+          "status": "unknown",
+          "reason": "변화율표본없음",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "timing",
+          "limitations": [],
+          "reason_code": "ambiguous_visual_evidence"
+        }
+      ],
+      "interpretation": "실제카메라나Scale키프레임수치는미확인.",
+      "company_approved": false
+    },
+    {
+      "id": "R2-EX-08",
+      "title": "문구 유지·배경 입자 이동",
+      "origin": "synthetic_example",
+      "units": [
+        {
+          "id": "V",
+          "kind": "asset",
+          "parent_id": null,
+          "scope_note": "설명용 영상 전체"
+        },
+        {
+          "id": "S",
+          "kind": "segment",
+          "parent_id": "V",
+          "scope_note": "설명용 정보 구간"
+        },
+        {
+          "id": "F",
+          "kind": "state",
+          "parent_id": "S",
+          "scope_note": "설명용 화면 상태"
+        },
+        {
+          "id": "B",
+          "kind": "beat",
+          "parent_id": "S",
+          "scope_note": "설명용 짧은 동작; 상태를 가로지를 수 있음"
+        }
+      ],
+      "annotations": [
+        {
+          "unit_id": "B",
+          "target_scope": "문구의유지범위",
+          "axis": "timing",
+          "term_ids": [
+            "TIME-HOLD"
+          ],
+          "status": "classified",
+          "reason": "문구내용/가독역할유지",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "timing",
+          "limitations": [],
+          "reason_code": null
+        },
+        {
+          "unit_id": "B",
+          "target_scope": "배경입자의위치변화범위",
+          "axis": "motion_property",
+          "term_ids": [
+            "PROPERTY-POSITION"
+          ],
+          "status": "classified",
+          "reason": "배경입자위치변화",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "motion_property",
+          "limitations": [],
+          "reason_code": null
+        }
+      ],
+      "interpretation": "문구유지와배경모션대상분리. 전체화면TIME-STILL은붙이지않음.",
+      "company_approved": false
+    },
+    {
+      "id": "R2-EX-09",
+      "title": "한 프레임만 제공",
+      "origin": "synthetic_example",
+      "units": [
+        {
+          "id": "V",
+          "kind": "asset",
+          "parent_id": null,
+          "scope_note": "설명용 영상 전체"
+        },
+        {
+          "id": "S",
+          "kind": "segment",
+          "parent_id": "V",
+          "scope_note": "설명용 정보 구간"
+        },
+        {
+          "id": "F",
+          "kind": "state",
+          "parent_id": "S",
+          "scope_note": "설명용 화면 상태"
+        },
+        {
+          "id": "B",
+          "kind": "beat",
+          "parent_id": "S",
+          "scope_note": "설명용 짧은 동작; 상태를 가로지를 수 있음"
+        }
+      ],
+      "annotations": [
+        {
+          "unit_id": "F",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "layout",
+          "term_ids": [
+            "LAYOUT-SINGLE-FOCUS"
+          ],
+          "status": "classified",
+          "reason": "핵심도형과보조문구의배치설명",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "layout",
+          "limitations": [],
+          "reason_code": null
+        },
+        {
+          "unit_id": "B",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "motion_property",
+          "term_ids": [],
+          "status": "unknown",
+          "reason": "시간표본없음",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "motion_property",
+          "limitations": [],
+          "reason_code": "insufficient_temporal_evidence"
+        },
+        {
+          "unit_id": "B",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "timing",
+          "term_ids": [],
+          "status": "unknown",
+          "reason": "시간표본없음",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "timing",
+          "limitations": [],
+          "reason_code": "insufficient_temporal_evidence"
+        }
+      ],
+      "interpretation": "정지구간/등장방식/속도곡선을상상하지않는다.",
+      "company_approved": false
+    },
+    {
+      "id": "R2-EX-10",
+      "title": "장식 카운트",
+      "origin": "synthetic_example",
+      "units": [
+        {
+          "id": "V",
+          "kind": "asset",
+          "parent_id": null,
+          "scope_note": "설명용 영상 전체"
+        },
+        {
+          "id": "S",
+          "kind": "segment",
+          "parent_id": "V",
+          "scope_note": "설명용 정보 구간"
+        },
+        {
+          "id": "F",
+          "kind": "state",
+          "parent_id": "S",
+          "scope_note": "설명용 화면 상태"
+        },
+        {
+          "id": "B",
+          "kind": "beat",
+          "parent_id": "S",
+          "scope_note": "설명용 짧은 동작; 상태를 가로지를 수 있음"
+        }
+      ],
+      "annotations": [
+        {
+          "unit_id": "B",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "motion_property",
+          "term_ids": [
+            "PROPERTY-VALUE"
+          ],
+          "status": "classified",
+          "reason": "표시수치0→100",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "motion_property",
+          "limitations": [],
+          "reason_code": null
+        },
+        {
+          "unit_id": "F",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "information_relation",
+          "term_ids": [],
+          "status": "unknown",
+          "reason": "실제기간/시계열근거없음",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "information_relation",
+          "limitations": [],
+          "reason_code": "ambiguous_visual_evidence"
+        }
+      ],
+      "interpretation": "REL-TIME/개선성과로승격하지않음.",
+      "company_approved": false
+    },
+    {
+      "id": "R2-EX-11",
+      "title": "연도별 성과 차트",
+      "origin": "synthetic_example",
+      "units": [
+        {
+          "id": "V",
+          "kind": "asset",
+          "parent_id": null,
+          "scope_note": "설명용 영상 전체"
+        },
+        {
+          "id": "S",
+          "kind": "segment",
+          "parent_id": "V",
+          "scope_note": "설명용 정보 구간"
+        },
+        {
+          "id": "F",
+          "kind": "state",
+          "parent_id": "S",
+          "scope_note": "설명용 화면 상태"
+        },
+        {
+          "id": "B",
+          "kind": "beat",
+          "parent_id": "S",
+          "scope_note": "설명용 짧은 동작; 상태를 가로지를 수 있음"
+        }
+      ],
+      "annotations": [
+        {
+          "unit_id": "V",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "video_type",
+          "term_ids": [
+            "VIDEO-REPORT"
+          ],
+          "status": "classified",
+          "reason": "전체성과보고라는설명",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "video_type",
+          "limitations": [],
+          "reason_code": null
+        },
+        {
+          "unit_id": "F",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "layout",
+          "term_ids": [
+            "LAYOUT-DATA-CHART",
+            "LAYOUT-TIMELINE"
+          ],
+          "status": "classified",
+          "reason": "연도축과실적값대응명시",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "layout",
+          "limitations": [],
+          "reason_code": null
+        },
+        {
+          "unit_id": "F",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "information_relation",
+          "term_ids": [
+            "REL-TIME"
+          ],
+          "status": "classified",
+          "reason": "날짜별수치관계",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "information_relation",
+          "limitations": [],
+          "reason_code": null
+        }
+      ],
+      "interpretation": "차트속숫자의등장순서와원자료시간관계를분리.",
+      "company_approved": false
+    },
+    {
+      "id": "R2-EX-12",
+      "title": "새 용어 후보",
+      "origin": "synthetic_example",
+      "units": [
+        {
+          "id": "V",
+          "kind": "asset",
+          "parent_id": null,
+          "scope_note": "설명용 영상 전체"
+        },
+        {
+          "id": "S",
+          "kind": "segment",
+          "parent_id": "V",
+          "scope_note": "설명용 정보 구간"
+        },
+        {
+          "id": "F",
+          "kind": "state",
+          "parent_id": "S",
+          "scope_note": "설명용 화면 상태"
+        },
+        {
+          "id": "B",
+          "kind": "beat",
+          "parent_id": "S",
+          "scope_note": "설명용 짧은 동작; 상태를 가로지를 수 있음"
+        }
+      ],
+      "annotations": [
+        {
+          "unit_id": "F",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "layout",
+          "term_ids": [],
+          "status": "other_candidate",
+          "reason": "관측형태가현사전범위밖",
+          "basis": "synthetic_description",
+          "candidate_text": "미등록 화면 구성 후보 — 예시",
+          "claim_scope": "layout",
+          "limitations": [],
+          "reason_code": "outside_vocabulary"
+        }
+      ],
+      "interpretation": "새ID를자동생성하지않음. 후보문구는별도.",
+      "company_approved": false
+    },
+    {
+      "id": "R2-EX-13",
+      "title": "아직 표현속성을 안 봄",
+      "origin": "synthetic_example",
+      "units": [
+        {
+          "id": "V",
+          "kind": "asset",
+          "parent_id": null,
+          "scope_note": "설명용 영상 전체"
+        },
+        {
+          "id": "S",
+          "kind": "segment",
+          "parent_id": "V",
+          "scope_note": "설명용 정보 구간"
+        },
+        {
+          "id": "F",
+          "kind": "state",
+          "parent_id": "S",
+          "scope_note": "설명용 화면 상태"
+        },
+        {
+          "id": "B",
+          "kind": "beat",
+          "parent_id": "S",
+          "scope_note": "설명용 짧은 동작; 상태를 가로지를 수 있음"
+        }
+      ],
+      "annotations": [
+        {
+          "unit_id": "F",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "art_direction",
+          "term_ids": [],
+          "status": "not_assessed",
+          "reason": "아직이축을검토하지않음",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "art_direction",
+          "limitations": [],
+          "reason_code": "not_assessed_yet"
+        }
+      ],
+      "interpretation": "관측부족unknown과조사미실시구분.",
+      "company_approved": false
+    },
+    {
+      "id": "R2-EX-14",
+      "title": "동작 없는 로고 유지 구간",
+      "origin": "synthetic_example",
+      "units": [
+        {
+          "id": "V",
+          "kind": "asset",
+          "parent_id": null,
+          "scope_note": "설명용 영상 전체"
+        },
+        {
+          "id": "S",
+          "kind": "segment",
+          "parent_id": "V",
+          "scope_note": "설명용 정보 구간"
+        },
+        {
+          "id": "F",
+          "kind": "state",
+          "parent_id": "S",
+          "scope_note": "설명용 화면 상태"
+        },
+        {
+          "id": "B",
+          "kind": "beat",
+          "parent_id": "S",
+          "scope_note": "설명용 짧은 동작; 상태를 가로지를 수 있음"
+        }
+      ],
+      "annotations": [
+        {
+          "unit_id": "B",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "timing",
+          "term_ids": [
+            "TIME-STILL",
+            "TIME-HOLD"
+          ],
+          "status": "classified",
+          "reason": "주어진시간범위에서로고변화없고정보유지",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "timing",
+          "limitations": [],
+          "reason_code": null
+        },
+        {
+          "unit_id": "B",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "motion_property",
+          "term_ids": [],
+          "status": "not_applicable",
+          "reason": "해당로고에변화가없는것을시간범위에서확인",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "motion_property",
+          "limitations": [],
+          "reason_code": "not_applicable_to_scope"
+        }
+      ],
+      "interpretation": "한프레임만이아니라시간범위의무변화를관측했다는합성상황.",
+      "company_approved": false
+    },
+    {
+      "id": "R2-EX-15",
+      "title": "화면에 표현된 원인·결과",
+      "origin": "synthetic_example",
+      "units": [
+        {
+          "id": "V",
+          "kind": "asset",
+          "parent_id": null,
+          "scope_note": "설명용 영상 전체"
+        },
+        {
+          "id": "S",
+          "kind": "segment",
+          "parent_id": "V",
+          "scope_note": "설명용 정보 구간"
+        },
+        {
+          "id": "F",
+          "kind": "state",
+          "parent_id": "S",
+          "scope_note": "설명용 화면 상태"
+        },
+        {
+          "id": "B",
+          "kind": "beat",
+          "parent_id": "S",
+          "scope_note": "설명용 짧은 동작; 상태를 가로지를 수 있음"
+        }
+      ],
+      "annotations": [
+        {
+          "unit_id": "S",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "communication_purpose",
+          "term_ids": [
+            "PURPOSE-CAUSE"
+          ],
+          "status": "classified",
+          "reason": "문구가원인/결과를표현",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "communication_purpose",
+          "limitations": [],
+          "reason_code": null
+        },
+        {
+          "unit_id": "F",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "information_relation",
+          "term_ids": [
+            "REL-CAUSE"
+          ],
+          "status": "classified",
+          "reason": "표현된정보관계명시",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "information_relation",
+          "limitations": [],
+          "reason_code": null
+        }
+      ],
+      "interpretation": "현실인과/제작자확인/회사승인을의미하지않는다.",
+      "company_approved": false
+    },
+    {
+      "id": "R2-EX-16",
+      "title": "부드러운 한동작과 다음등장",
+      "origin": "synthetic_example",
+      "units": [
+        {
+          "id": "V",
+          "kind": "asset",
+          "parent_id": null,
+          "scope_note": "설명용 영상 전체"
+        },
+        {
+          "id": "S",
+          "kind": "segment",
+          "parent_id": "V",
+          "scope_note": "설명용 정보 구간"
+        },
+        {
+          "id": "F",
+          "kind": "state",
+          "parent_id": "S",
+          "scope_note": "설명용 화면 상태"
+        },
+        {
+          "id": "B",
+          "kind": "beat",
+          "parent_id": "S",
+          "scope_note": "설명용 짧은 동작; 상태를 가로지를 수 있음"
+        }
+      ],
+      "annotations": [
+        {
+          "unit_id": "B",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "timing",
+          "term_ids": [
+            "CURVE-INOUT",
+            "TIME-SEQUENCE"
+          ],
+          "status": "classified",
+          "reason": "동일량의변화율이커졌다작아짐;다음대상시작순서도설명",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "timing",
+          "limitations": [],
+          "reason_code": null
+        }
+      ],
+      "interpretation": "시간축내서로다른하위개념이같은범위에조건을충족하면병기가능. exactBezier는미확인.",
+      "company_approved": false
+    },
+    {
+      "id": "R2-EX-17",
+      "title": "실사처럼 보이는 생성 이미지",
+      "origin": "synthetic_example",
+      "units": [
+        {
+          "id": "V",
+          "kind": "asset",
+          "parent_id": null,
+          "scope_note": "설명용 영상 전체"
+        },
+        {
+          "id": "S",
+          "kind": "segment",
+          "parent_id": "V",
+          "scope_note": "설명용 정보 구간"
+        },
+        {
+          "id": "F",
+          "kind": "state",
+          "parent_id": "S",
+          "scope_note": "설명용 화면 상태"
+        },
+        {
+          "id": "B",
+          "kind": "beat",
+          "parent_id": "S",
+          "scope_note": "설명용 짧은 동작; 상태를 가로지를 수 있음"
+        }
+      ],
+      "annotations": [
+        {
+          "unit_id": "F",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "art_direction",
+          "term_ids": [],
+          "status": "unknown",
+          "reason": "촬영출처없음;실사같은외관만확인",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "art_direction",
+          "limitations": [],
+          "reason_code": "ambiguous_visual_evidence"
+        }
+      ],
+      "interpretation": "STYLE-PHOTO의실제촬영사실을확정하지않는다.",
+      "company_approved": false
+    },
+    {
+      "id": "R2-EX-18",
+      "title": "주화면의 작은 발표자영상",
+      "origin": "synthetic_example",
+      "units": [
+        {
+          "id": "V",
+          "kind": "asset",
+          "parent_id": null,
+          "scope_note": "설명용 영상 전체"
+        },
+        {
+          "id": "S",
+          "kind": "segment",
+          "parent_id": "V",
+          "scope_note": "설명용 정보 구간"
+        },
+        {
+          "id": "F",
+          "kind": "state",
+          "parent_id": "S",
+          "scope_note": "설명용 화면 상태"
+        },
+        {
+          "id": "B",
+          "kind": "beat",
+          "parent_id": "S",
+          "scope_note": "설명용 짧은 동작; 상태를 가로지를 수 있음"
+        }
+      ],
+      "annotations": [
+        {
+          "unit_id": "F",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "layout",
+          "term_ids": [
+            "LAYOUT-PIP"
+          ],
+          "status": "classified",
+          "reason": "별도독립영상중첩",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "layout",
+          "limitations": [],
+          "reason_code": null
+        },
+        {
+          "unit_id": "F",
+          "target_scope": "해당 사례 설명에서 지정한 대상/시간범위",
+          "axis": "information_relation",
+          "term_ids": [],
+          "status": "unknown",
+          "reason": "전체상세/구성부분관계근거없음",
+          "basis": "synthetic_description",
+          "candidate_text": null,
+          "claim_scope": "information_relation",
+          "limitations": [],
+          "reason_code": "ambiguous_visual_evidence"
+        }
+      ],
+      "interpretation": "STYLE-PIP는폐기되어신규태그에사용하지않음.",
+      "company_approved": false
+    }
+  ],
+  "limit": "고정답을가진설명용기록. 자동영상분류성능/실제관측/회사승인검증아님."
+}

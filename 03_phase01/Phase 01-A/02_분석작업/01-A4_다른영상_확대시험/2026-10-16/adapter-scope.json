@@ -1,0 +1,28 @@
+{
+  "file_limit_bytes": 3221225472,
+  "why": "Registered source022 single and dual exceed previous 2 GiB. All other progressive MP4 preflight checks preserved. Decoder and read budget remain bounded.",
+  "parser_base_sha256": "4ad47c474f3e847d172fdd17e1bbe9f024a7d04f6415d33370761d5d54e5ce93",
+  "files_allowlisted": [
+    "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\한맥 영상\\3D 시뮬레이션\\위험 공종 시뮬레이션-대호지교\\1.크레인 작업 반경, 물류·인양 안정성 검토.mp4",
+    "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\한맥 영상\\SW 홍보 영상\\EG-BIM 소개 영상\\[EG-Bim]소개영상.mp4",
+    "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\한맥 영상\\센터 소개 영상\\3. [기술개발센터] 홍보 영상(싱글)-KR(2026.09)-V3.0_한맥가족.mp4",
+    "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\한맥 영상\\센터 소개 영상\\1. [기술개발센터] 홍보 영상(듀얼)-KR(2026.09) -V3.0_한맥가족.mp4",
+    "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\한맥 영상\\SW 홈페이지 영상\\EG-BIM\\02_(G).mp4"
+  ],
+  "holdout_sources_not_opened": [
+    "자료011",
+    "자료014"
+  ],
+  "worker_limits": {
+    "wall_seconds_per_worker": 60,
+    "max_read_bytes": 268435456,
+    "max_seeks": 20000,
+    "max_packets": 4000,
+    "max_frames": 1600,
+    "max_pixels": 16588800,
+    "max_output_images": 40,
+    "memory_process_bytes": 2147483648
+  },
+  "adapter_sha256": "f9e75e5e95f18b702f5273051772ea837bed829245f7eb1aa57be6524d603ecd",
+  "time_mapping": "STTS+CTTS+single ELST; every decoded PTS matched to reconstructed samples; seek vs sequential RGB equality on eight test frames"
+}

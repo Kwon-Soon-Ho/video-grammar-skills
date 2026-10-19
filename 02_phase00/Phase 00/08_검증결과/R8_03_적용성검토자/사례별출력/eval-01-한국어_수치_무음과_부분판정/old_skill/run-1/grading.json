@@ -1,0 +1,141 @@
+{
+  "expectations": [
+    {
+      "text": "대본의 침투수 유입 발생을 발생하지 않음으로 바꾼 부정어 오류와 0.35 mm를 0.035 mm로 바꾼 수치 오류를 원문 위치와 대조해 둘 다 수정 제안한다.",
+      "passed": true,
+      "evidence": "검토결과.md 수정표 F01은 초안03 ‘발생하지 않는다’와 SCRIPT-A S1 ‘이 예시 균열에서는 … 발생한다’를 직접 대조하고 원문 의미의 수정 문장을 제안한다. F02는 초안03 0.035 mm와 S2 0.35 mm를 대조하여 1/10 오류와 ‘예시 측정 균열 폭 0.35 mm’ 수정안을 제시한다. 검토기록.json findings/F01·F02도 일치한다. 채점자가 old run 검토자료의 세 원문을 직접 확인했다."
+    },
+    {
+      "text": "무음 시청 조건에서 중복 이론을 이유로 자막·필수 문구를 일괄 삭제하지 않고 웹 UI 180 ms를 설명/읽기 시간으로 채택하지 않는다.",
+      "passed": true,
+      "evidence": "F03은 180 ms 일률 기준을 삭제하고 등장/상호작용과 완성 후 읽기 유지시간을 구별한다. F04는 브리프의 휴대전화 무음을 근거로 일괄 삭제를 거부하며 정의·발생 여부·0.35 mm·A/B 값/단위를 텍스트/도표로 보존한다. JSON F03·F04와 korean_and_units에서 시간/CPS/허용오차 null, 실제 확인 보류가 일치한다."
+    },
+    {
+      "text": "동등 조건 비교의 반복 카드·중앙 수치와 정의용 주제명 제목·정지 표현을 조건부로 유지할 수 있음을 구체 이유로 제안하며 전부 보류하거나 장식을 강제하지 않는다.",
+      "passed": true,
+      "evidence": "K01은 동일 조건 A/B의 0.80/0.65 L/s 대응을 위해 같은 구조·단위·척도를 유지하며 중앙 배치는 선택으로 남긴다. K02는 S1 정의 목적의 ‘침투수 유입 경로’ 주제명과 정지 설명을 유지 가능한 기준으로 제안한다. F07은 카드/중앙 일괄 금지와 사진4/모션8 강제를 삭제한다. 실제 화면 통과는 보류하지만 이 문서 기준까지 일괄 보류하지 않았다."
+    },
+    {
+      "text": "이 검토의 대상·판본과 목적상 적용/필수 기준을 이유와 함께 제시하고 확인된 문서 오류·실제 재생 미확인을 구분한다. 미확인을 비적용/전체 통과로 바꾸지 않는다.",
+      "passed": true,
+      "evidence": "문서 첫머리와 JSON target에 REV-A 0.1.0/SCRIPT-A 0.1.0, 준비회의 목적·혼합 시청자·두 화면비·무음을 고정한다. F01/02의 핵심 의미·수치 보존, F04의 무음 필수 메시지, F06의 화면비별 정보 보존에 목적상 이유를 붙이고 기준ID를 연결한다. 문서 오류는 수정필요, H01~H05는 판단보류, N01은 미검수로 구별하며 overall.ready_for_whole_video_use=false다. 경계: 필수 여부가 모든 항목의 독립 boolean 표로 정규화되지는 않았으나 핵심·필수 메시지/오류 및 해결 전 전체 준비 불가를 의미상 명시하므로 이 기대항목에는 충족으로 판단했다."
+    },
+    {
+      "text": "잘못된 핵심 수치/의미를 미관의 장점이나 단일 총점으로 상쇄하지 않고 문서 수정과 실제 재생/시청 검수의 남은 조건을 함께 제시한다.",
+      "passed": true,
+      "evidence": "F08은 ‘핵심 수치·의미 반전은 미관으로 상쇄할 수 없다’고 하고 단일 총점을 삭제한다. 첫 결론과 H01~H03/N01은 문서 수정 후 실제 출력·음성·시간축·화면비/플레이어·재생 검수의 해소 조건을 함께 남긴다. JSON total_score=null, actual_media_review=false이며 문구 수정이 렌더·음성 통과가 아님을 명시한다."
+    },
+    {
+      "text": "부서/직급만으로 주제 숙련도를 단정하지 않으며 실제 가독성·동기화·읽기 시간을 측정/통과했다고 만들지 않고 필요한 사람 검수 대상·판본·질문·역할을 남긴다.",
+      "passed": true,
+      "evidence": "F05와 H04는 부서만으로 초보 추정 불가, 해당 공법 사전지식 근거 없음과 전문어 보존/정의 수준 확인을 남긴다. H01~H03은 화면·음성 일치/읽기·동기화/화면비의 부족자료·해소조건·기술/자막/디자인/배포 역할을 구체화한다. human_questions.content_questions는 SCRIPT-A v0.1.0 S1/S2와 REV-A v0.1.0 05를 대상으로 의미·값·경로 근거 및 대상 지식·필수용어를 묻고 출력/플레이어 질문도 둔다. 실제 가독성·읽기시간·동기화 통과를 만들지 않고 관련 수치 null, 질문 미발송/실제답변 null이다."
+    },
+    {
+      "text": "관련 R3/R7 근거의 실제 내용과 검토 위치를 연결하고 없는 원문·사람 회신·회사 승인·새 화면 결과를 만들지 않으며 수행 입력을 보존한다.",
+      "passed": true,
+      "evidence": "F03/04·K01/02·F07은 실제 제공 MC-02/03/06/07, SCREEN-TIME-READ/CHOICE, LS-04/09/11/12, Q-* 및 R3 이식 발췌의 관련 위치와 내용을 연결한다. 채점자가 old run의 충돌사례·화면설계·문구화면비·선택 Q카드·이식 발췌·공통 판정을 대조해 무음 중복 예외/읽기시간 분리/반복과 정지 허용의 실질 지원을 확인했다. 원격 재열람·새화면·사람회신·회사승인은 미실시로 한정한다. fixture_before.files 77개와 실제 모든 입력 SHA256을 비교해 변경0/삭제0/추가0을 확인했다."
+    }
+  ],
+  "summary": {
+    "passed": 7,
+    "failed": 0,
+    "total": 7,
+    "pass_rate": 1
+  },
+  "grading_scope": {
+    "case_id": 1,
+    "configuration": "old_skill",
+    "run": 1,
+    "criteria_sha256": "3edf88ae666533fb864c2ad59477f0bbed0256640d2bb93ed45c62a9f0e814f1",
+    "method": "고정 기대항목을 실제 task·완료 transcript 전체·양 출력 전체·해당 수행사본 원문과 의미 대조. 표제/단어 존재로 판정하지 않음.",
+    "other_runs_opened_for_this_grading": false,
+    "source_scope": "이 run에 제공된 사본만; D 원DB·웹·다른 평가자 결론·후보개선 이력 미사용"
+  },
+  "input_integrity": {
+    "baseline": "fixture_before.json#/files",
+    "algorithm": "SHA256",
+    "before_files": 77,
+    "current_files": 77,
+    "changed": [],
+    "deleted": [],
+    "added": [],
+    "all_match": true
+  },
+  "output_validation": {
+    "json_parse": true,
+    "findings_count": 10,
+    "holds_count": 5,
+    "unreviewed_count": 1,
+    "semantic_consistency": "검토결과.md와 검토기록.json의 유지2/수정8/보류5/미검수1, 총점 없음, 실제매체 미검수 및 질문 미발송이 일치함.",
+    "sha256": {
+      "검토결과.md": "f1153ed4c788a95ed279e6ebcb4e625fe6e9c6f6128361921264fa427066397a",
+      "검토기록.json": "bcfacaf977e1f0de5afcc4fd7d6825e93f456aee8d9b7d9f09b121d365072858"
+    },
+    "execution_code_rerun": false
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": null,
+    "total_duration_seconds": null,
+    "reason": "run timing.json 원문: actual agent telemetry not supplied; never replace with text length. 채점자의 추정 시간/token을 추가하지 않음."
+  },
+  "claims": [
+    {
+      "claim": "부정어 반전과 수치 1/10 오류가 제공 문서에서 확인된다.",
+      "type": "factual",
+      "verified": true,
+      "evidence": "직접 읽은 SCRIPT-A S1/S2와 REV-A03 대조가 F01/F02와 일치."
+    },
+    {
+      "claim": "10개 문서 항목, 5개 보류, 총점 null, 실영상 검토 false, 실제 회신 null이다.",
+      "type": "factual",
+      "verified": true,
+      "evidence": "채점자가 JSON을 직접 파싱해 findings=10, holds=5, unreviewed=1과 해당 값을 확인."
+    },
+    {
+      "claim": "입력을 수정하지 않았다.",
+      "type": "process",
+      "verified": true,
+      "evidence": "실행 전 manifest의 77개 경로/해시와 현재 재귀 파일목록/해시 전부 일치; 삭제·추가도 없음."
+    },
+    {
+      "claim": "필요 조건을 잃지 않고 이번 문서 검토와 실제 시청 검수를 구별했다.",
+      "type": "quality",
+      "verified": true,
+      "evidence": "확인된 문서 오류를 보류하지 않으며 K01/K02의 조건부 채택, H01~H05와 N01, 전체 준비 false로 구별."
+    },
+    {
+      "claim": "금지 도구/외부 접근을 사용하지 않았고 기재된 파일들을 실제 읽었다.",
+      "type": "process",
+      "verified": false,
+      "evidence": "제공 transcript는 수행자가 작성한 요약이며 독립 raw tool-call 로그가 아니다. 사본 보존·산출물의 출처 적합성과 모순은 없으나 모든 실제 호출과 읽기 이력의 완전성을 독립 인증할 수 없다. 이 불확실성은 허위 수행의 발견을 뜻하지 않는다."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [
+      "실제 프레임·영상·오디오·시청자 지식·시간축·표시 조건이 제공되지 않음.",
+      "transcript는 출력 잘림과 일부 재조회 후에도 전수 숙독을 주장하지 않는다고 기록."
+    ],
+    "needs_review": [
+      "후속 실제 출력과 원문·음성 대조, 두 화면비/무음의 읽기·가림·동기화, 주제별 사전지식 확인."
+    ],
+    "workarounds": [
+      "공식 자료검증.py 미제공으로 실행 안 함; 독립 draft JSON 구문 파싱만 실시했다고 한정."
+    ]
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "이 run에서는 고정7조건의 실질 충족을 확인했다. 기준 문구/임계값은 변경하지 않았다. 7/7은 이 합성 과제의 항목 충족률이며 시각 품질 총점·실영상/회사 승인·통계적 우위를 뜻하지 않는다."
+  },
+  "not_performed": [
+    "수행 코드 재실행",
+    "실영상/프레임/오디오 분석",
+    "웹/외부 원문 최신성 확인",
+    "CU·AE·API·사람 질문·추가 에이전트 사용",
+    "공식 스키마/전체 R4/R6/R7 검사"
+  ],
+  "uncertainties": [
+    "기대4의 적용/필수 이유는 항목별 설명에 분산되어 있으며 모든 필수 boolean을 갖춘 독립 표는 아니다. 형식 완전성 대신 원 고정문구의 의미 충족으로 판정했다.",
+    "제공 transcript 외 raw 실행로그가 없어 도구사용 부재와 전 읽기이력의 절대적 인증은 불가."
+  ]
+}

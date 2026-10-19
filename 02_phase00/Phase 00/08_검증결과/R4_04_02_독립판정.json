@@ -1,0 +1,144 @@
+{
+  "stage": "R4-4-2",
+  "date": "2026-10-15",
+  "reviewer": "foundation_redteam",
+  "limited_completion_supported": true,
+  "unresolved_blocking_findings": [],
+  "boundary": [
+    "통합 v0.2 후보의 기록 구조·교차 참조·미해결·검수 context와 합성 시험 범위만 한정 완료",
+    "3단계 접수함 규격/도구 검토·실접수/이관·원문값 대응/재실행/rollback은 미완",
+    "4단계 기본 자료검증 전환·버전별 호환·스킬/평가/안내·전체 R4-4 종료 판정은 미완",
+    "실제 영상/자료의 진실성·자동 추출/추적/수치 계산 분석·내용검수·사람 identity·회사/운영 승인은 미검증",
+    "공간 supported 차단 유지. linked/valid/context 일치는 내용/오차/실행 사실 검증이 아님"
+  ],
+  "findings_fixed": [
+    {
+      "id": "F1",
+      "cases": [
+        2
+      ],
+      "type": "runtime",
+      "problem": "유효 RFC3339 소문자 z가 datetime.fromisoformat 예외를 발생",
+      "fix": "입력불변 표기 처리·안전 파서·구조오류 반환"
+    },
+    {
+      "id": "F2",
+      "cases": [
+        5,
+        7
+      ],
+      "type": "semantic_link",
+      "problem": "컷 순간과 참조 주장 시간이 분리돼도 통과",
+      "fix": "동일 시간축·주장 범위 포함 확인, 미상은 보류·범위 양성 보존"
+    },
+    {
+      "id": "F3",
+      "cases": [
+        6,
+        7
+      ],
+      "type": "evidence_kind",
+      "problem": "단일 정지 외관을 관측 컷의 변화 근거로 사용",
+      "fix": "관측 컷은 rendered_observation/temporal_change 요구, 범위를 덮는 clip 양성 유지"
+    },
+    {
+      "id": "F4",
+      "cases": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "type": "semantic_link",
+      "problem": "instant 관련 상태/동작의 시간 분리·제외 끝점 검사 누락",
+      "fix": "instant/range 모든 조합·시작 포함/끝 제외·미상 보류"
+    },
+    {
+      "id": "F5",
+      "cases": [
+        18,
+        19,
+        20
+      ],
+      "type": "output_consistency",
+      "problem": "mapping source 오차가 global unresolved인데 binding_status linked",
+      "fix": "원본 오차·모델 role·변환 경로 메타 미상을 binding unresolved로 전달. 이전에도 사실/운영 우회는 아니었음"
+    }
+  ],
+  "actual_human_content_review_performed": false,
+  "D_modified_by_reviewer": false,
+  "media_API_AE_CU_accessed": false,
+  "test_evidence": {
+    "initial_independent_count": 42,
+    "initial_passed": 36,
+    "initial_runtime_exceptions": 1,
+    "final_independent_count": 42,
+    "final_passed": 42,
+    "final_runtime_exceptions": 0,
+    "final_builtin": {
+      "count": 61,
+      "passed": 61,
+      "runtime_exceptions": 0,
+      "matches_saved": true
+    },
+    "input_unchanged": true,
+    "reviewed_sources_unchanged": true
+  },
+  "static_reference_checks": {
+    "spatial_embedding_diff_only_metadata_empty_spaces_and_profile_note": true,
+    "core_schema_validator_unchanged_since_stage1": true,
+    "core_paths_checked": [
+      "04_기록규격/시간프레임_스키마.json",
+      "04_기록규격/근거주장_스키마.json",
+      "04_기록규격/좌표변환_스키마.json",
+      "07_실행도구/시간프레임_규격검사.py",
+      "07_실행도구/근거주장_규격검사.py",
+      "07_실행도구/좌표변환_규격검사.py"
+    ],
+    "dependency_schema_hash_pins_match": true,
+    "reviewed_files_still_match_final_run": true,
+    "all_actual_fact_identity_company_release_flags_false": true
+  },
+  "positive_controls_preserved": [
+    "계획/관측 분류 구분과 4단위·후보 기권",
+    "범위 claim 안의 변화 컷·instant/range 경계 양성",
+    "forward/reverse mapping·명시 단위·성분",
+    "half-even 양방향 및 1/3 명시반올림",
+    "전체 context 정상/stale/누락",
+    "가짜 draft 분기와 spec_test 혼합 차단·공간 supported 문구 우회 거부",
+    "좌표 없음에 빈 공간 허용·허위 참조 거부"
+  ],
+  "artifacts": {
+    "initial_result": {
+      "path": "단계2_초기_독립반례결과.json",
+      "sha256": "e289bde594dc84df8ec642dbc89f0a9b489baca7db85a875b29811bef5e27494"
+    },
+    "final_result": {
+      "path": "단계2_최종_독립반례결과.json",
+      "sha256": "517efbc579fe3daa46c7e78a43485d5e97fd24a07838ce3c77b2a83f63c08a45"
+    },
+    "independent_code": {
+      "path": "단계2_코드/독립반례검사.py",
+      "sha256": "4e56e53658c1945388441f7a4b73f87de15b872a254c15d4a58a6b37058cd02c"
+    },
+    "initial_candidate_snapshot_count": 6,
+    "checked_final_source_hashes": {
+      "04_기록규격/통합최소기록_스키마_v0.2.json": "033c90bc824d88f52f571eaaddc33511f079c54df763fa97599f69bfae563b7e",
+      "04_기록규격/통합최소기록_설명용_v0.2.json": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+      "04_기록규격/06_통합최소기록_규격_v0.2.md": "3c301c7f874921a3bd7bc3e5922ca8cb7c16ddc950f78ecc9850251b9474df74",
+      "07_실행도구/통합기록_규격검사.py": "09c617b836b6f173f436525078b63e30494be54eeb739c2b7fca25cb2f65d70e",
+      "07_실행도구/통합기록_규격시험.py": "48b379d1f1447b51353e863c90b2856992ae10a2206e6d3c244bb25d3c7a6402",
+      "08_검증결과/R4_04_02_통합계약시험.json": "37b1c640049df5c62e38962abcb4e9a6204012b9786598ce7ce3cc81a59cd59f",
+      "04_기록규격/시간프레임_스키마.json": "aa440e4e69ed9287c25ba51f0b8051bc92da7162af553b2535d381b7ca0a6efb",
+      "04_기록규격/근거주장_스키마.json": "e66c9a6897c72ad0588f027e5699012a091f357d6d11834168352a6a760aeca4",
+      "04_기록규격/좌표변환_스키마.json": "5ad07a85612c90b045aa22eb7750502e47dd26677877b95019c826c2abef0535",
+      "07_실행도구/시간프레임_규격검사.py": "52834649975027af2097becf61c2fb10034b42e4dda3a3f2fbb68e255bd90e69",
+      "07_실행도구/근거주장_규격검사.py": "854d0353b9a909d5d264baca70250d173f90dc58dc05bee231ca0a8522d11ec3",
+      "07_실행도구/좌표변환_규격검사.py": "9f5f8b44c9d40a09fdb6fec05d9d9c089bc2a03c9e4927e8088b7903a847a265",
+      "01_공통용어/분류운영규칙.json": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d",
+      "01_공통용어/공통용어사전.json": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+      "03_한맥디자인/한맥디자인정본.json": "dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed"
+    }
+  }
+}

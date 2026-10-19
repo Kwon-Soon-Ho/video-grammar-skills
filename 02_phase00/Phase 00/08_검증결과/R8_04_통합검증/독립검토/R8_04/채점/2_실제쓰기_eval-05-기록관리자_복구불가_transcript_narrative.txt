@@ -1,0 +1,146 @@
+# 실제 작업 transcript
+시간/token 미수집(null). 실행 순서는 아래 번호와 commands.jsonl을 따른다.
+사전 읽기: 지정 task.txt → candidate/자료의 두 경로 조회 실패(존재하지 않음) → DB/자료의 IO사용안내.md·작업범위.json 및 지정 스킬·세 reference → 대상·보존계약·R4 안내·자료검증.py·판본대조.py. 다른 run/서비스상태/시험설정/다른 스킬은 읽지 않음.
+원문 바이트 로그: 대상.원문.log, IO사용안내.원문.log, 작업범위.원문.log, 보존계약.원문.log.
+보조 실행 오류: 작업실행.py write 최초 호출 exit1. 66행의 줄바꿈 누락으로 SyntaxError: invalid syntax. DB CLI는 호출되지 않았음. 오류 스크립트 전체는 작업실행.py.syntax-failed.log에 보존. 줄바꿈을 수정한 뒤 실제 write 흐름 실행. 이 오류를 DB IO 오류로 바꾸어 보고하지 않음.
+
+## 01_read_before
+[원문 코드/JSON 블록은 별도 로그와 대조]
+요청 JSON:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stdout (별도 원문 파일도 보존):
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 02_structure_before
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stdout (별도 원문 파일도 보존):
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 03_structure_candidate
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stdout (별도 원문 파일도 보존):
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 04_backup
+[원문 코드/JSON 블록은 별도 로그와 대조]
+요청 JSON:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stdout (별도 원문 파일도 보존):
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 05_version_candidate
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stdout (별도 원문 파일도 보존):
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 06_read_prewrite
+[원문 코드/JSON 블록은 별도 로그와 대조]
+요청 JSON:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stdout (별도 원문 파일도 보존):
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 07_write
+[원문 코드/JSON 블록은 별도 로그와 대조]
+요청 JSON:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stdout (별도 원문 파일도 보존):
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 08_validate_postwrite
+[원문 코드/JSON 블록은 별도 로그와 대조]
+요청 JSON:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stdout (별도 원문 파일도 보존):
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 09_read_postwrite
+[원문 코드/JSON 블록은 별도 로그와 대조]
+요청 JSON:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stdout (별도 원문 파일도 보존):
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 10_structure_postwrite
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stdout (별도 원문 파일도 보존):
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 11_version_postwrite
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stdout (별도 원문 파일도 보존):
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 12_read_prerestore
+[원문 코드/JSON 블록은 별도 로그와 대조]
+요청 JSON:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stdout (별도 원문 파일도 보존):
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 13_restore
+[원문 코드/JSON 블록은 별도 로그와 대조]
+요청 JSON:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stdout (별도 원문 파일도 보존):
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 14_read_after_restore
+[원문 코드/JSON 블록은 별도 로그와 대조]
+요청 JSON:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stdout (별도 원문 파일도 보존):
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 15_validate_final
+[원문 코드/JSON 블록은 별도 로그와 대조]
+요청 JSON:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stdout (별도 원문 파일도 보존):
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 16_structure_final
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stdout (별도 원문 파일도 보존):
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 17_exact_restore_compare
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stdout (별도 원문 파일도 보존):
+[원문 코드/JSON 블록은 별도 로그와 대조]
+원시 stderr:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+최종 상태: 미복구·사용 중단. 원문과 백업은 일치하지만 활성 대상은 요청 후보 SHA이며 version=0.1.1. restore 거부 뒤 일반 쓰기/다른 IO/서비스 재설정으로 우회하지 않음. 후속 validate exit0을 복구 성공으로 간주하지 않음.

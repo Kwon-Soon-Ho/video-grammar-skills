@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.1.0",
+  "application_id": "R8-DEV-APPLY-01",
+  "version": "0.1.0",
+  "state": "project_draft",
+  "data_scope": "spec_example",
+  "purpose": "삼안 관측색을 강조 후보로 비교하는 설명용 초안. 실제 회사 영상/디자이너 검수 아님.",
+  "ownership": "single_company",
+  "company_ids": [
+    "saman"
+  ],
+  "source_pins": {
+    "companies": {
+      "path": "10_공용자산/회사목록.json",
+      "version": "0.3.1",
+      "sha256": "0b011a9c2962459a3b42067c3f7120602cde9e541c466647fa880a0a298dda2a"
+    },
+    "assets": {
+      "path": "10_공용자산/자산목록.json",
+      "version": "0.3.1",
+      "sha256": "5f4cc581df387e8948bc3071aa9f93bd34fb88a2ffc406aaf72de9f3e8e940a0"
+    },
+    "colors": {
+      "path": "10_공용자산/CI색상목록.json",
+      "version": "0.3.1",
+      "sha256": "c95a79a81a422fc23f4275a8dd878016f209fdaff171d73f44d3cff7387b7097"
+    },
+    "hanmac": {
+      "path": "03_한맥디자인/한맥디자인정본.json",
+      "version": "0.1.0",
+      "sha256": "dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed"
+    },
+    "policy": {
+      "path": "05_출처와검토/R5_적용정책_결정.json",
+      "version": "A@2026-10-15",
+      "sha256": "d8666f2212ae4e434d7d1209f0b64bdded4f0d562df9600a1bda74d136dd9da3"
+    }
+  },
+  "use_hanmac_library": false,
+  "logo_intent": "undecided",
+  "logos": [],
+  "color_roles": [
+    {
+      "role": "emphasis",
+      "company_id": "saman",
+      "source": {
+        "kind": "ci_color",
+        "color_id": "ci.observed.raster.1",
+        "record_version": "0.1.0",
+        "source_level": "raster_sample"
+      },
+      "selection": {
+        "kind": "synthetic_example",
+        "selected_by": "설명용 디자이너 역할, 실제 인물 아님",
+        "reason": "제공 PNG 관측색을 강조 후보로 비교한다. 공식 Orange 역할 선언 아님.",
+        "assumptions": "ICC 없는 원본의 sRGB 표시 가정. 원문의 #F58220와 병합/보정하지 않음.",
+        "declared_at": "2026-10-15T00:00:00+09:00"
+      },
+      "review_status": "pending"
+    }
+  ],
+  "optional_style_refs": [],
+  "output_context": {
+    "medium": "video",
+    "width": null,
+    "height": null,
+    "background_condition": "unknown",
+    "viewing_notes": "실제 시청 환경 미정. 최종 화면에서 글자/도형 조합 검수 필요."
+  },
+  "linked_r4_record": {
+    "path": "12_통합기록/통합기록_작업초안.json",
+    "record_id": "R8-DEV-STEW-01",
+    "version": "0.1.1",
+    "sha256": "015d061abd10150f9453fa345fb88bdac147d1de86fcb5528a9b1acf237d64f3"
+  },
+  "review_status": "pending",
+  "company_approved": false,
+  "operational_release": false
+}

@@ -1,0 +1,47 @@
+{
+  "knowledge_pins": [
+    {
+      "path": "Phase 00/01_공통용어/공통용어사전.json",
+      "sha256": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2"
+    },
+    {
+      "path": "Phase 00/01_공통용어/03_용어별적용예와반례.md",
+      "sha256": "76d4f24c658046eeca6bd50e940d156e62213eb827487c3565e287046bc3989d"
+    },
+    {
+      "path": "Phase 00/01_공통용어/04_복합화면과미분류처리.md",
+      "sha256": "f323bd54464426d6c5cc8e45016a141f307b5dc55170d4aa2763f09ff5ce718e"
+    },
+    {
+      "path": "Phase 00/02_원칙과레이아웃/03_모션원칙_적용예와반례.md",
+      "sha256": "4593c3e98d23f4191c943b8aa81a43a6866b190a44441400f1aa23544e0c1cb6"
+    }
+  ],
+  "existing_ids": [
+    "AP-06",
+    "MP-02",
+    "CURVE-LINEAR",
+    "CURVE-ACCEL",
+    "CURVE-DECEL",
+    "CURVE-INOUT"
+  ],
+  "already_prepared": true,
+  "failure_reason": [
+    "did not turn knowledge into a per-object per-property inspection checklist",
+    "used sparse appearance/state samples to close the analysis too early",
+    "did not track same objects or compare equal-time changes",
+    "after the first E correction, rechecked only that object instead of auditing other motions"
+  ],
+  "not_the_reason": [
+    "absence of AE keyframe values",
+    "missing Phase00 easing vocabulary"
+  ],
+  "corrective_workflow": [
+    "inventory each target/property",
+    "separate direction from order and speed magnitude",
+    "measure same quantity across source-timed samples",
+    "compare candidate curves and identity/visibility confounds",
+    "leave explicit unsupported/unknown fields instead of silently skipping them"
+  ],
+  "new_A3_skill_created": false
+}

@@ -1,0 +1,87 @@
+[
+  {
+    "name": "self_contained_minimal_gate",
+    "passed": true,
+    "error": null
+  },
+  {
+    "name": "external_https_dref_rejected",
+    "passed": true,
+    "error": "ValueError: external_or_unknown_dref"
+  },
+  {
+    "name": "external_local_path_rejected",
+    "passed": true,
+    "error": "ValueError: external_or_unknown_dref"
+  },
+  {
+    "name": "urn_reference_rejected",
+    "passed": true,
+    "error": "ValueError: external_or_unknown_dref"
+  },
+  {
+    "name": "sample_data_reference_2_rejected",
+    "passed": true,
+    "error": "ValueError: sample_reference_not_1"
+  },
+  {
+    "name": "fragmented_input_rejected",
+    "passed": true,
+    "error": "ValueError: unsupported_box:/moof"
+  },
+  {
+    "name": "corrupt_box_rejected",
+    "passed": true,
+    "error": "ValueError: box_bounds"
+  },
+  {
+    "name": "unregistered_input_rejected",
+    "passed": true,
+    "error": "ValueError: not_allowlisted_id"
+  },
+  {
+    "name": "memory_budget_job_configured",
+    "passed": true,
+    "error": null
+  },
+  {
+    "name": "timeout_kills_only_child",
+    "passed": true,
+    "error": "TimeoutExpired: Command '['C:\\\\Users\\\\User\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\python\\\\python.exe', '-c', 'import time;time.sleep(2)']' timed out after 0.1000000000003638 seconds"
+  },
+  {
+    "name": "unbounded_read_rejected",
+    "passed": true,
+    "error": "ValueError: read_request_limit"
+  },
+  {
+    "name": "SAR_None_remains_unknown",
+    "passed": true,
+    "error": null
+  },
+  {
+    "name": "SAR_zero_remains_unknown",
+    "passed": true,
+    "error": null
+  },
+  {
+    "name": "SAR_one_square_reported",
+    "passed": true,
+    "error": null
+  },
+  {
+    "name": "SAR_nonsquare_not_silently_corrected",
+    "passed": true,
+    "error": "ValueError: non_square_sar_unsupported_in_A2:16/15"
+  },
+  {
+    "name": "allowlisted_path_jangheon",
+    "passed": true,
+    "error": null
+  },
+  {
+    "name": "allowlisted_path_EG",
+    "passed": true,
+    "error": null
+  }
+]

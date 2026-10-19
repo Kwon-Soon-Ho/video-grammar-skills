@@ -1,0 +1,75 @@
+{
+  "id": "A2-HUMAN-SIX-GROUPS-20261016",
+  "version": "0.1",
+  "recorded_at": "2026-10-16T13:17:18+09:00 or later; exact user submission time not exposed",
+  "source": "actual direct user reply in this chat",
+  "verbatim": "①~⑥ 모두 맞아. 이 답변을 검수 기록에 반영하고, 01-A2에서 더 확인할 게 남았는지 알려줘. 추가로 말하면 단순히 \"큰 E가 녹색에서 금색·갈색 계열로 변함\"가 아니라 큰 E가 조각되어서 좌측에서 우측으로 슬라이드 되며 들어오는거야. 그리고 키프레임도 슬라이드 되듯이 초반에 빠르게 진입하다가 천천히 진입(이걸 전문영어로 뭐라고 부르지? 이지 아웃 뭐 이런 식이던데) 이 부분까지 니가 검수 했는데, 나한텐 화면 구성만 확인한다고 안 물어본거야? 아니면 놓친거야?",
+  "context": {
+    "guide_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\작업 보고서(pdf)\\02_중요검수기록\\Phase 01-A\\2026-10-16_01-A2\\내용검수\\사람검수_화면안내\\00_확인할_화면과_항목.md",
+    "guide_sha256": "4c03f128c596a62fbbb6bc1b2ba14a37553ba33bbcbac29030da197b94351c78",
+    "observation_version": "0.2",
+    "observation_sha256": "475de0d3f22854d5f57c52555c6718e408182e1560cbe396152e3172ecda2548",
+    "groups": {
+      "①": [
+        "JH-01"
+      ],
+      "②": [
+        "JH-02 remainder",
+        "JH-03 goals"
+      ],
+      "③": [
+        "JH-05"
+      ],
+      "④": [
+        "EG-01",
+        "EG-02"
+      ],
+      "⑤": [
+        "JH-04"
+      ],
+      "⑥": [
+        "EG-03"
+      ]
+    },
+    "preview_pins": [
+      {
+        "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\작업 보고서(pdf)\\02_중요검수기록\\Phase 01-A\\2026-10-16_01-A2\\내용검수\\사람검수_화면안내\\01_확인할_정지화면.jpg",
+        "sha256": "9e251a4345c39920c5e1c32105dae9b6be992dd6c0478246c417c0461343616a"
+      },
+      {
+        "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\작업 보고서(pdf)\\02_중요검수기록\\Phase 01-A\\2026-10-16_01-A2\\내용검수\\사람검수_화면안내\\02_확인할_변화순서.jpg",
+        "sha256": "c40fb7aae2b99019bfd25da66582280c3caa71247048ccc079b1e8b200be7010"
+      }
+    ],
+    "source_assets": "31c4c47744b8cdfef935b167a1b04df80e13523cfc8550205a8495b4267cc192",
+    "scope": "only presented text/numbers/layout/sampled sequence; excludes actual business/product truth, audio, full-video quality and exact keyframe/easing parameters"
+  },
+  "context_sha256": "198da896ceaccb70accb2935b5ce2280621616a005b1b99717a534e49dc45573",
+  "decision": "confirmed_presented_six_groups_with_E_motion_correction",
+  "confirmed_groups": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤",
+    "⑥"
+  ],
+  "correction": {
+    "previous": "large E green-to-gold/brown change only",
+    "user_description": "large E is divided into pieces that slide in left-to-right; starts fast and decelerates into place",
+    "accepted_scope": "user-provided qualitative motion description",
+    "AI_had_previously_verified_this": false,
+    "AI_verified_after_reply": "31 images over4.0–5.5s and repeated extraction, separate report",
+    "exact_curve_or_AE_keyframes_confirmed": false
+  },
+  "identity_verified": false,
+  "company_approved": false,
+  "does_not_approve": [
+    "whole video",
+    "audio",
+    "actual business figures",
+    "actual product performance",
+    "exact start/end/easing formula/control handles",
+    "A3/01-B/02 execution"
+  ]
+}

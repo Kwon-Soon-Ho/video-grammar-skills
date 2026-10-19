@@ -1,0 +1,367 @@
+{
+  "stage": "R4-4-1",
+  "status": "audit_and_design_only",
+  "date": "2026-10-15",
+  "reviewer": "foundation_redteam",
+  "implemented": false,
+  "migrated_any_record": false,
+  "D_files_modified_by_reviewer": false,
+  "media_or_AE_or_CU_used": false,
+  "new_agent_spawned": false,
+  "fixed_user_decisions": [
+    "R2 4단위/5판정/상태경계 교차 동작",
+    "시간 A 재생0초+원본PTS/변환근거",
+    "공간 A upper-left edge/rasterpx+명시normalized",
+    "미상 보존·추정금지",
+    "필요한 내용은 사람 검수",
+    "초안 작성·검증 권한/의미병합·필수화·승인은 검토 제안",
+    "R4-4 이관 A 새통합 기본·부족구형 원문/누락 접수함"
+  ],
+  "user_choice_A_evidence": "본 검토 중 parent가 전달한 사용자 A 확정. 선택 권한을 추가로 추정하지 않음.",
+  "findings": [
+    {
+      "id": "I1",
+      "priority": "P1",
+      "topic": "단일 정본/중첩",
+      "evidence": [
+        "좌표변환_스키마.properties.evidence_contract",
+        "근거주장_스키마.properties.time_contract",
+        "통합연결_설계초안.data_authority"
+      ],
+      "required": "기록당 시간/자료/대상/좌표를 한 번 저장하고 기존 validator는 읽기용 adapter/view로 호출. 다른 계층 사본은 수정 가능한 정본 금지."
+    },
+    {
+      "id": "I2",
+      "priority": "P1",
+      "topic": "부족 기록의 사실 생성",
+      "evidence": [
+        "설명용_단계구성_예시.asset.path/sha256/duration_s=null",
+        "segments[].frames=[]",
+        "이관 정책 A"
+      ],
+      "required": "엄격계약의 필수 identity를 가상 hash/PTS로 채우지 않음. 원문 bytes hash와 영상 hash 분리. 부족자료는 규격 있는 접수함·누락/검색제외로 보존."
+    },
+    {
+      "id": "I3",
+      "priority": "P1",
+      "topic": "분류 단위/출처",
+      "evidence": [
+        "분류운영규칙.axis_units.layout=[state]",
+        "구형 segments[].classification.layout",
+        "R4-2 targets.unit=screen_state"
+      ],
+      "required": "state↔screen_state 대응, object 보조대상 분리. 구형 계획 layout을 관측 state/태그로 자동 승격하지 않기. 5판정과 근거/이유·후보를 주장범위에 연결."
+    },
+    {
+      "id": "I4",
+      "priority": "P1",
+      "topic": "공간 supported 및 stale",
+      "evidence": [
+        "근거주장_규격검사.validate 공간보류 분기287~288/311",
+        "근거주장_규격검사.context_hash",
+        "통합연결_설계초안.guard_policy"
+      ],
+      "required": "R4-2 차단 유지. sample→geometry component/space/단위/앵커/target/frame/evidence/pin/path/오차를 연결. 새 공간/분류/디자인/규격·검사기 의존성 hash를 context에 포함. formula_checked만으로 지원·내용검수 완료 선언 금지."
+    },
+    {
+      "id": "I5",
+      "priority": "P1",
+      "topic": "기본 진입점·호환",
+      "evidence": [
+        "자료검증.validate_record 반환형 errors list",
+        "자료검증 CLI --record/--output",
+        "지식조회 import catalogs,BASE",
+        "세 스킬 references/작업기준.md"
+      ],
+      "required": "버전별 명시 경로·결과범위, A의 구형 입력은 접수 결과. 예전통과를 통합 valid로 전달하지 않기. 무통지 dict 반환/기존 함수 제거 금지. 과거 fixture·평가이력 보존 후 현행 입력/안내만 별도 갱신."
+    },
+    {
+      "id": "I6",
+      "priority": "P2",
+      "topic": "run/metadata/로컬 schema refs",
+      "evidence": [
+        "최소기록_스키마.asset.metadata 자유 object/null",
+        "최소기록_스키마.run 자유 object/null",
+        "통합연결_설계초안.proposal run/metadata"
+      ],
+      "required": "실행종류·입출력 snapshot·도구/모델/설정 버전·시각·부분실패·한계·미실행 상태. 원본 native metadata와 표준화 값·근거/stream·미상 구분. 로컬 고정 schema registry와 $id/base/$ref/pointer 검사, 런타임 네트워크 fetch 금지."
+    },
+    {
+      "id": "I7",
+      "priority": "P2",
+      "topic": "확정 결정의 상태표기",
+      "evidence": [
+        "통합연결_설계초안.proposal[migration].link=사용자 선택 대기",
+        "부모의 사용자 A 확정 통지"
+      ],
+      "required": "설계/진행 현황에 확정 A와 결정 근거 반영. 기존 검토안은 역사 보존하고 사용자에게 다시 허가받지 않기."
+    }
+  ],
+  "connection_design_assessment": {
+    "sound": [
+      "단일 정본",
+      "4단위/상태교차",
+      "분류 출처 구분",
+      "context 확장",
+      "공간 차단과 사실/운영 분리"
+    ],
+    "before_stage2": [
+      "정확한 모듈 경로/$ref registry/ID·버전·hash/명칭 대응",
+      "metadata 항목·측정 component/계산근거/오차 연결",
+      "접수함 최소규격과 검색제외",
+      "버전별 기본 검사/출력·API 호환",
+      "확정 A 상태표기"
+    ]
+  },
+  "inventory": {
+    "scope": "Phase00 JSON top-level 형상; backup/.환경/.git 제외. 외부 운영DB 전수 조사가 아님. JSON 내용을 미디어로 실행하지 않음.",
+    "initial_json_count": 173,
+    "final_inventory_json_count": 176,
+    "parse_failures": [],
+    "legacy_shape_candidates": [
+      {
+        "path": "04_기록규격/설명용_단계구성_예시.json",
+        "sha256": "fc906a18a785b4e51ab5d5714483a6c0033d5726847556bd89cf613795509a47",
+        "record_id": "EXAMPLE-PROCESS-001",
+        "version": "0.1.0",
+        "schema_version": "0.1.0",
+        "source_type": "synthetic_example",
+        "video_path": null,
+        "video_sha256": null,
+        "recommended_handling": "원문/누락 접수함 사본 및 새통합 합성예 별도"
+      },
+      {
+        "path": "06_맞춤스킬/video-record-steward/evals/files/검사입력.json",
+        "sha256": "a56a429e5b9884d7749adcff5717d3d85b4e2bff12305b423c5fb313d472ef95",
+        "record_id": "EXAMPLE-PROCESS-001",
+        "version": "0.1.0",
+        "schema_version": "0.1.0",
+        "source_type": "synthetic_example",
+        "video_path": null,
+        "video_sha256": null,
+        "recommended_handling": "원문 평가이력 불변 보존; 현행 평가 입력이 필요하면 새 사본"
+      },
+      {
+        "path": "08_검증결과/스킬평가/초안비교/검사입력.json",
+        "sha256": "a56a429e5b9884d7749adcff5717d3d85b4e2bff12305b423c5fb313d472ef95",
+        "record_id": "EXAMPLE-PROCESS-001",
+        "version": "0.1.0",
+        "schema_version": "0.1.0",
+        "source_type": "synthetic_example",
+        "video_path": null,
+        "video_sha256": null,
+        "recommended_handling": "원문 평가이력 불변 보존; 현행 평가 입력이 필요하면 새 사본"
+      },
+      {
+        "path": "08_검증결과/스킬평가/초안쓰기/변경전_기록.json",
+        "sha256": "a56a429e5b9884d7749adcff5717d3d85b4e2bff12305b423c5fb313d472ef95",
+        "record_id": "EXAMPLE-PROCESS-001",
+        "version": "0.1.0",
+        "schema_version": "0.1.0",
+        "source_type": "synthetic_example",
+        "video_path": null,
+        "video_sha256": null,
+        "recommended_handling": "원문 평가이력 불변 보존; 현행 평가 입력이 필요하면 새 사본"
+      },
+      {
+        "path": "08_검증결과/스킬평가/초안쓰기/변경후_기록.json",
+        "sha256": "897a5e79aeb01447444c7fcf609644b87625b9ce9d8e784750b7741d117742b8",
+        "record_id": "EXAMPLE-PROCESS-001",
+        "version": "0.1.1",
+        "schema_version": "0.1.0",
+        "source_type": "synthetic_example",
+        "video_path": null,
+        "video_sha256": null,
+        "recommended_handling": "원문 평가이력 불변 보존; 현행 평가 입력이 필요하면 새 사본"
+      }
+    ],
+    "standalone_synthetic_contract_examples": [
+      {
+        "path": "04_기록규격/근거주장_설명용기록.json",
+        "sha256": "c8526d5c82f3c90f0e6f79a4fa3c6ca00d3f497b05a58f723c625523b497bc00",
+        "synthetic_only": true
+      },
+      {
+        "path": "04_기록규격/시간프레임_설명용기록.json",
+        "sha256": "f90dd9ca5bab7a850e876c02e09d8fc4f6729aa326db2283401fc6cb24361a48",
+        "synthetic_only": true
+      },
+      {
+        "path": "04_기록규격/좌표변환_설명용기록.json",
+        "sha256": "e2788694b1de38e6a6cb9c57c1c05a0f4f303b6e4be52bdc7e2b21c522e2a58d",
+        "synthetic_only": true
+      }
+    ],
+    "actual_operational_database_scope_confirmed": false,
+    "all_found_legacy_candidates_synthetic": true,
+    "deduplication_warning": "같은 record_id/version이라도 경로·원문 hash가 다른 과거 평가 snapshot을 합치거나 덮어쓰지 않음."
+  },
+  "migration_plan": [
+    "대상 manifest/원문 backup",
+    "단일 정본·명칭/참조·미제공 접수함 설계",
+    "run/metadata·표본/공간/context 연결",
+    "새버전 schema/버전별 검사",
+    "dry-run·필드대응·누락/접수 보고",
+    "구형 시간4·근거7·공간 및 정상/미해결 회귀",
+    "독립 레드팀·보완",
+    "세 스킬 참조/eval·도구·문서/버전·인계 호환 확인"
+  ],
+  "human_questions": {
+    "repeat_previous_decisions": false,
+    "required_now": [],
+    "only_if_new_scope": "실제 운영DB가 새로 발견되면 대상 경로/파일 범위 확인. 비영오차/미지원량 보류 완화·권한/회사필수화 변경을 새로 제안할 때만 최소4지선다+추천안 검토."
+  },
+  "completion_boundary": {
+    "audit_complete": true,
+    "R4_4_integrated_or_migration_complete": false,
+    "phase00_complete": false,
+    "phase01a_implementation_started_by_reviewer": false,
+    "actual_human_content_review_performed": false,
+    "minimum_future_gates": [
+      "원문/hash 불변·값별/ID 대응·누락 기권",
+      "재실행 중복방지·rollback",
+      "schema와 의미·교차 계약 검사·독립 회귀",
+      "버전별 도구/스킬 호환·접수함 검색제외·사람대기",
+      "개별75/98/53 통과 개수 합산을 통합 완료로 사용하지 않음"
+    ]
+  },
+  "execution_evidence": "이번 착수 감사에서는 계약 검사/이관 코드를 구현하거나 기존 합성시험을 재실행하지 않았다. 이전 검토 결과는 최종 보고의 범위 한정 인용이다.",
+  "read_sources": [
+    {
+      "path": "04_기록규격/최소기록_스키마.json",
+      "sha256": "31f8284509988bad445cb4f8043b841bd6714a1c71c1a67c5ee6f3757ccd9697",
+      "review": "기록/필드/호출 경로 정적 대조; R4-1/2/3 검사기는 이전 독립검토 이력과 현행 해시도 참조"
+    },
+    {
+      "path": "04_기록규격/설명용_단계구성_예시.json",
+      "sha256": "fc906a18a785b4e51ab5d5714483a6c0033d5726847556bd89cf613795509a47",
+      "review": "기록/필드/호출 경로 정적 대조; R4-1/2/3 검사기는 이전 독립검토 이력과 현행 해시도 참조"
+    },
+    {
+      "path": "07_실행도구/자료검증.py",
+      "sha256": "cf717d628ba322ac5e08cfbe0c9787374987d72c34dab2dafb6ec4642102592d",
+      "review": "기록/필드/호출 경로 정적 대조; R4-1/2/3 검사기는 이전 독립검토 이력과 현행 해시도 참조"
+    },
+    {
+      "path": "01_공통용어/분류운영규칙.json",
+      "sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d",
+      "review": "기록/필드/호출 경로 정적 대조; R4-1/2/3 검사기는 이전 독립검토 이력과 현행 해시도 참조"
+    },
+    {
+      "path": "04_기록규격/02_시간과프레임_기록규격.md",
+      "sha256": "a2e65ce237fee6c4e1cc3bcd381f55a98400fc5c907ae4f8d62f566eaa0b827e",
+      "review": "기록/필드/호출 경로 정적 대조; R4-1/2/3 검사기는 이전 독립검토 이력과 현행 해시도 참조"
+    },
+    {
+      "path": "04_기록규격/03_근거와주장_기록규격.md",
+      "sha256": "6943272574c2e8fa008e5b89b1fbb1977c0529933d4652f5688acb474cf2a422",
+      "review": "기록/필드/호출 경로 정적 대조; R4-1/2/3 검사기는 이전 독립검토 이력과 현행 해시도 참조"
+    },
+    {
+      "path": "04_기록규격/04_좌표와변환_기록규격.md",
+      "sha256": "06f8188ed195dc1bd22802de8be22ef9a3303817ac9250762d3adb670e51a61a",
+      "review": "기록/필드/호출 경로 정적 대조; R4-1/2/3 검사기는 이전 독립검토 이력과 현행 해시도 참조"
+    },
+    {
+      "path": "04_기록규격/시간프레임_스키마.json",
+      "sha256": "aa440e4e69ed9287c25ba51f0b8051bc92da7162af553b2535d381b7ca0a6efb",
+      "review": "기록/필드/호출 경로 정적 대조; R4-1/2/3 검사기는 이전 독립검토 이력과 현행 해시도 참조"
+    },
+    {
+      "path": "04_기록규격/근거주장_스키마.json",
+      "sha256": "e66c9a6897c72ad0588f027e5699012a091f357d6d11834168352a6a760aeca4",
+      "review": "기록/필드/호출 경로 정적 대조; R4-1/2/3 검사기는 이전 독립검토 이력과 현행 해시도 참조"
+    },
+    {
+      "path": "04_기록규격/좌표변환_스키마.json",
+      "sha256": "5ad07a85612c90b045aa22eb7750502e47dd26677877b95019c826c2abef0535",
+      "review": "기록/필드/호출 경로 정적 대조; R4-1/2/3 검사기는 이전 독립검토 이력과 현행 해시도 참조"
+    },
+    {
+      "path": "07_실행도구/시간프레임_규격검사.py",
+      "sha256": "52834649975027af2097becf61c2fb10034b42e4dda3a3f2fbb68e255bd90e69",
+      "review": "기록/필드/호출 경로 정적 대조; R4-1/2/3 검사기는 이전 독립검토 이력과 현행 해시도 참조"
+    },
+    {
+      "path": "07_실행도구/근거주장_규격검사.py",
+      "sha256": "854d0353b9a909d5d264baca70250d173f90dc58dc05bee231ca0a8522d11ec3",
+      "review": "기록/필드/호출 경로 정적 대조; R4-1/2/3 검사기는 이전 독립검토 이력과 현행 해시도 참조"
+    },
+    {
+      "path": "07_실행도구/좌표변환_규격검사.py",
+      "sha256": "9f5f8b44c9d40a09fdb6fec05d9d9c089bc2a03c9e4927e8088b7903a847a265",
+      "review": "기록/필드/호출 경로 정적 대조; R4-1/2/3 검사기는 이전 독립검토 이력과 현행 해시도 참조"
+    },
+    {
+      "path": "08_검증결과/R4_01_보완결과와레드팀.md",
+      "sha256": "789b65b537647399d3b2fb293cc638e611e4d5b7aa7ce7e1bff0c4fd7d49b309",
+      "review": "기록/필드/호출 경로 정적 대조; R4-1/2/3 검사기는 이전 독립검토 이력과 현행 해시도 참조"
+    },
+    {
+      "path": "08_검증결과/R4_02_보완결과와레드팀.md",
+      "sha256": "d93e2196b2379311fc240977c7881c2a1c69f71ea1f542ce5027182d0f6f9353",
+      "review": "기록/필드/호출 경로 정적 대조; R4-1/2/3 검사기는 이전 독립검토 이력과 현행 해시도 참조"
+    },
+    {
+      "path": "08_검증결과/R4_03_보완결과와레드팀.md",
+      "sha256": "7bcc3473150430269ab84d375a16bb623325a0c1135697e35105b8b5f7fb755d",
+      "review": "기록/필드/호출 경로 정적 대조; R4-1/2/3 검사기는 이전 독립검토 이력과 현행 해시도 참조"
+    },
+    {
+      "path": "06_맞춤스킬/video-record-steward/SKILL.md",
+      "sha256": "a1f4b2a75d4b97b84e208bdf81f8d7261af3e4cff59a10d49fdee5fe3bab6bcc",
+      "review": "기록/필드/호출 경로 정적 대조; R4-1/2/3 검사기는 이전 독립검토 이력과 현행 해시도 참조"
+    },
+    {
+      "path": "06_맞춤스킬/video-record-steward/references/작업기준.md",
+      "sha256": "2cd84d36a6a0e9f1a43686d507229e42db3374343c2e8d4ea4d0454e30f06049",
+      "review": "기록/필드/호출 경로 정적 대조; R4-1/2/3 검사기는 이전 독립검토 이력과 현행 해시도 참조"
+    },
+    {
+      "path": "06_맞춤스킬/video-knowledge-curator/references/작업기준.md",
+      "sha256": "2cd84d36a6a0e9f1a43686d507229e42db3374343c2e8d4ea4d0454e30f06049",
+      "review": "기록/필드/호출 경로 정적 대조; R4-1/2/3 검사기는 이전 독립검토 이력과 현행 해시도 참조"
+    },
+    {
+      "path": "06_맞춤스킬/video-guidance-reviewer/references/작업기준.md",
+      "sha256": "2cd84d36a6a0e9f1a43686d507229e42db3374343c2e8d4ea4d0454e30f06049",
+      "review": "기록/필드/호출 경로 정적 대조; R4-1/2/3 검사기는 이전 독립검토 이력과 현행 해시도 참조"
+    },
+    {
+      "path": "07_실행도구/00_실행안내.md",
+      "sha256": "274f147b9f71301c0405f9827a33a255c392f267b4ac8666c684efca10089f7b",
+      "review": "기록/필드/호출 경로 정적 대조; R4-1/2/3 검사기는 이전 독립검토 이력과 현행 해시도 참조"
+    },
+    {
+      "path": "07_실행도구/지식조회.py",
+      "sha256": "3ec0affa54ecb68dd3eee9199875e676d5701705dbb07a577daf90de2b2f0274",
+      "review": "기록/필드/호출 경로 정적 대조; R4-1/2/3 검사기는 이전 독립검토 이력과 현행 해시도 참조"
+    },
+    {
+      "path": "05_출처와검토/버전목록.json",
+      "sha256": "262fe3ed362367c35d5d208dfacf248397876fe172520dc41c0ebc4c52f3eaca",
+      "review": "기록/필드/호출 경로 정적 대조; R4-1/2/3 검사기는 이전 독립검토 이력과 현행 해시도 참조"
+    },
+    {
+      "path": "09_다음단계인계/R2_R4.md",
+      "sha256": "c08232f20e193ea8df0b3c6552dea45b1683621f5c28fbd66ad90ed21c5a086f",
+      "review": "기록/필드/호출 경로 정적 대조; R4-1/2/3 검사기는 이전 독립검토 이력과 현행 해시도 참조"
+    },
+    {
+      "path": "04_기록규격/05_R4-4_통합이관_진행안내.md",
+      "sha256": "ad97ca46057e7b9c36f69525a4f84a176a61dc0673c2e61d5349c4a4d8a0a855",
+      "review": "기록/필드/호출 경로 정적 대조; R4-1/2/3 검사기는 이전 독립검토 이력과 현행 해시도 참조"
+    },
+    {
+      "path": "04_기록규격/통합연결_설계초안.json",
+      "sha256": "f98e2e233adb494c4c82e7eb717075a1c373862fca24f40492ea9d244ee5c7c0",
+      "review": "기록/필드/호출 경로 정적 대조; R4-1/2/3 검사기는 이전 독립검토 이력과 현행 해시도 참조"
+    },
+    {
+      "path": "05_출처와검토/R4_통합이관_정책검토안.md",
+      "sha256": "889dd1a3b1e9f7fad78790c110fc4c6bfc6bb55cb82fc5273fa9ea94480bd936",
+      "review": "기록/필드/호출 경로 정적 대조; R4-1/2/3 검사기는 이전 독립검토 이력과 현행 해시도 참조"
+    }
+  ],
+  "report_md_sha256": "6d79dbdede69598604ce2f72f4eab60edc5d3768ad55b37da492c8ab42a80626"
+}

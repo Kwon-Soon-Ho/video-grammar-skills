@@ -1,0 +1,123 @@
+{
+  "variant": "new_skill",
+  "fixture_count": 272,
+  "changed_files": [],
+  "added_files": [],
+  "missing_files": [],
+  "active_sha256": "fba42ca7fd978f4d61e299d806b6f6a9e56f9b0c2212faf4ef23ef15b09af9c7",
+  "active_version": "0.1.0",
+  "backup_is_regular_file": true,
+  "backup_sha256": "6551178fe2cfdb163299a12265c08d1f8b3051cdff5637e657bc4d27d56ed0ad",
+  "backup_matches_fixture": true,
+  "proposal_representation": "full_candidate",
+  "candidate_sha256": "505748cda7580fc960ffc13574e93be0bf913e3728dfcbf4daf49eaabc4816a4",
+  "candidate_json_diff": [
+    {
+      "path": "/purpose",
+      "before": "삼안 관측색을 강조 후보로 비교하는 설명용 초안. 실제 회사 영상/디자이너 검수 아님.",
+      "after": "삼안 강조색 후보를 비교하는 검토용 초안."
+    },
+    {
+      "path": "/version",
+      "before": "0.1.0",
+      "after": "0.1.1"
+    }
+  ],
+  "independent_active_check": {
+    "valid": true,
+    "scope": "구조/현재 참조·정책 검수. 실제 디자인 품질·선택자 인증/회사 승인 아님.",
+    "errors": [],
+    "human_review_queue": [
+      "로고 필요 여부·선택 미정",
+      "saman emphasis: 관측색의 가정·역할 적합성·선택자/실제 선택 확인",
+      "출력 해상도·최종 표시 크기 미정",
+      "로고/글자의 최종 배경 미정",
+      "최종 프레임·한국어/숫자·단위·자막·시청환경·움직이는 배경 검수",
+      "로컬 해시는 원문 무결성이다. 최신성/공식성/디자이너 identity·회사/운영 승인 증명 안 됨"
+    ],
+    "resolved_draft_candidates": [
+      {
+        "company_id": "saman",
+        "role": "emphasis",
+        "hex": "#F5821F",
+        "origin": "ci_color",
+        "use": "project_draft_candidate",
+        "review_status": "pending"
+      }
+    ],
+    "company_approved": false,
+    "fact_verified": false,
+    "human_selection_verified": false,
+    "operational_release": false
+  },
+  "independent_proposal_check": {
+    "valid": true,
+    "scope": "구조/현재 참조·정책 검수. 실제 디자인 품질·선택자 인증/회사 승인 아님.",
+    "errors": [],
+    "human_review_queue": [
+      "로고 필요 여부·선택 미정",
+      "saman emphasis: 관측색의 가정·역할 적합성·선택자/실제 선택 확인",
+      "출력 해상도·최종 표시 크기 미정",
+      "로고/글자의 최종 배경 미정",
+      "최종 프레임·한국어/숫자·단위·자막·시청환경·움직이는 배경 검수",
+      "로컬 해시는 원문 무결성이다. 최신성/공식성/디자이너 identity·회사/운영 승인 증명 안 됨"
+    ],
+    "resolved_draft_candidates": [
+      {
+        "company_id": "saman",
+        "role": "emphasis",
+        "hex": "#F5821F",
+        "origin": "ci_color",
+        "use": "project_draft_candidate",
+        "review_status": "pending"
+      }
+    ],
+    "company_approved": false,
+    "fact_verified": false,
+    "human_selection_verified": false,
+    "operational_release": false
+  },
+  "reply_sha256": "e881c918fa374a046a436e6c1b4431f14bfbd11f1278a7c65a9a884fdafd27d2",
+  "reply_actual_data": {
+    "id": "R6-REPLY-CI-20261015-001",
+    "version": "0.1.0",
+    "source_kind": "actual_conversation_transcription",
+    "received_on": "2026-10-15",
+    "question_item_id": "[\"request_user_input_async\",\"call_ece84e2ddc334c38ac764f187cc14d0e\",0]",
+    "question": "R6 사람 검수 1건입니다. 현재 정리한 8회사(한맥기술·삼안·장헌산업·피티씨·한라산업개발·바론컨설턴트·산하종합기술·㈜장헌)의 CI 중 ‘공식 최신본과 사용 가이드’를 확인한 회사가 있나요? 확인했다면 회사명과 근거 파일 경로·공식 안내를 함께 알려주세요. 이번 답변은 확인 상태만 기록하며, 기존 관측색 초안 정책을 다시 승인받는 질문은 아닙니다.",
+    "reply": "8개 회사 모두 내가 준 ci 자료가 최신화 된 자료야. 산하는 원래 일러스트레이터 파일 없어.",
+    "presented_request_sha256": "836bbfa4802d2001eecf9b24c22af91797712a861b4d43a974af60071f1dcc74",
+    "presented_request_snapshot": {
+      "path": "backup/2026-10-15_R6_03_초안/검토전사본/05_출처와검토/검수와사용범위/사람검수_요청목록.json",
+      "version": "0.1.0",
+      "sha256": "9c57aff65f0c5c78b21ffebc36e7038afd8b2fad3b5b99d74bf1b72e887c1ce9",
+      "pointer": "/requests/0"
+    },
+    "interpretation": "사용자가 제공 CI 8회사 모두 최신 자료이며 산하는 원래 Illustrator 원본이 없다고 확인. 기존 질문0.1.0의 원문/대상은 유지. 접수규격의 구조화 단위와 한맥대화연결은 회신후 보완한 기록 관리 맥락이며 사용자가 새 스키마/한맥대화 전부를 내용 검수했다는 뜻이 아님.",
+    "not_confirmed": [
+      "CI 보호공간/최소크기/허용형 등 추가 사용 가이드의 전체 범위",
+      "외부API업로드/재배포 권한·공식회사승인",
+      "관측색의 공식 sRGB값 자격/프로필",
+      "실제 화면 디자인의 적합성"
+    ],
+    "identity_authenticated": false,
+    "company_approved": false,
+    "permission_granted": false
+  },
+  "inspection_did_not_change_inputs": true,
+  "output_files": [
+    "outputs/R5_現초안검사_stderr.txt",
+    "outputs/R5_現초안검사_stdout.json",
+    "outputs/R5_수정안검사_stderr.txt",
+    "outputs/R5_수정안검사_stdout.json",
+    "outputs/R6_부분원문대조.json",
+    "outputs/검사결과.json",
+    "outputs/결과설명.md",
+    "outputs/디자인적용_미반영수정안_v0.1.1.json",
+    "outputs/변경제안_diff.json",
+    "outputs/사람판단_제안.json",
+    "outputs/수행과검사.py",
+    "outputs/판본대조_원초안대미반영안_stderr.txt",
+    "outputs/판본대조_원초안대미반영안_stdout.json"
+  ]
+}

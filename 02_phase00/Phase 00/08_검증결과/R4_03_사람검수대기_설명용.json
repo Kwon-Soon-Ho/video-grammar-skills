@@ -1,0 +1,62 @@
+{
+  "purpose": "specimen_only",
+  "origin": "R4_03_좌표계약시험.json/cases/0/result/human_review_queue",
+  "actual_media_supplied": false,
+  "actual_human_content_review_performed": false,
+  "operational_release": false,
+  "items": [
+    {
+      "claim_id": "CL-ONE",
+      "claim_version": "0.1.0",
+      "priority": "normal",
+      "reasons": [
+        "주장 내용 사람 검수 필요"
+      ],
+      "status": "specimen_only",
+      "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+    },
+    {
+      "item_id": "SP-ROOT",
+      "status": "specimen_only",
+      "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+      "verified": false
+    },
+    {
+      "item_id": "SP-CROP",
+      "status": "specimen_only",
+      "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+      "verified": false
+    },
+    {
+      "item_id": "SP-RESIZE",
+      "status": "specimen_only",
+      "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+      "verified": false
+    },
+    {
+      "item_id": "TR-SP-CROP",
+      "status": "specimen_only",
+      "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+      "verified": false
+    },
+    {
+      "item_id": "TR-SP-RESIZE",
+      "status": "specimen_only",
+      "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+      "verified": false
+    },
+    {
+      "item_id": "G-ROOT",
+      "status": "specimen_only",
+      "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+      "verified": false
+    },
+    {
+      "item_id": "G-RESULT",
+      "status": "specimen_only",
+      "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+      "verified": false
+    }
+  ],
+  "note": "설명용 합성 기록이다. 실제 자료 검수·담당자 지정·외부 전달을 수행하지 않았다. 실제 입력 시 해당 자료와 근거를 붙여 awaiting_human으로 검수 인계한다."
+}

@@ -1,0 +1,150 @@
+{
+  "id": "R3-01-independent-recheck",
+  "reviewed_on": "2026-10-14",
+  "result": "pass_with_scope_limits",
+  "scope": "R3-1의 설명용 모션 지식·후보 연결·충돌 사례 보완 재검수. R3-2·R3-3·회사 규칙 승인·실영상 효과는 범위 밖.",
+  "audited_files": [
+    {
+      "path": "02_원칙과레이아웃/모션원칙_심화카드.json",
+      "version": "0.1.1",
+      "sha256": "c78e9bd68d5b8c277e37a092fb7bb021389ad914211af111533da03e480f9dad"
+    },
+    {
+      "path": "02_원칙과레이아웃/추가모션체계_연결후보.json",
+      "version": "0.1.2",
+      "sha256": "957f1d4b065c69065977cd9a3c133bf5e70494bb024bfd5b00cf2d7a5b045416"
+    },
+    {
+      "path": "02_원칙과레이아웃/모션원칙_충돌판단사례.json",
+      "version": "0.1.0",
+      "sha256": "6712a37bee362242dd1ce0a4944b1daa3804943ae6ec2b1a3ffdb6fb456bc4c4"
+    },
+    {
+      "path": "02_원칙과레이아웃/02_모션원칙_읽는순서.md"
+    },
+    {
+      "path": "02_원칙과레이아웃/04_모션원칙_충돌과예외.md"
+    },
+    {
+      "path": "02_원칙과레이아웃/05_추가모션체계_연결검토.md"
+    },
+    {
+      "path": "07_실행도구/R3_모션자료검사.py"
+    },
+    {
+      "path": "08_검증결과/R3_01_계약회귀검사.json"
+    }
+  ],
+  "original_findings": [
+    {
+      "id": "R3M-F01",
+      "status": "resolved",
+      "evidence": "UX04를 형태·기능 상태 변화로 교체하고 UX06 공개 영역, UX07 전경판 이동·복귀, UX09 가림·흐림 변화·복귀를 시간 과정으로 구체화했다. 정지 상태와 해당 모션을 구분하는 반례도 있다."
+    },
+    {
+      "id": "R3M-F02",
+      "status": "resolved",
+      "evidence": "후보 v0.1.2의 summary_origin과 05 조회문서가 저자 텍스트의 짧은 자체 요약과 프로젝트의 연결·적용 예·반례·우선순위를 구분한다. 각 후보의 Principle별 locator 추가는 선택적 추적성 개선으로 남지만 종료 결함은 아니다."
+    },
+    {
+      "id": "R3M-F03",
+      "status": "resolved",
+      "evidence": "02 읽는 순서에 상황→원칙/MC 사례 표와 8개 사례를 먼저 읽는 동선이 추가됐다. IP10 행은 검토 제안이라고 명시한다."
+    },
+    {
+      "id": "R3M-R01",
+      "status": "resolved_reconfirmed",
+      "evidence": "이전 독립검토에서 실제 공개 원문의 절과 대조한 v0.1.1 MR locator 보완을 유지한다."
+    }
+  ],
+  "conflict_reviews": [
+    {
+      "id": "MC-01",
+      "result": "pass",
+      "reason": "실측 운동의 시간·경로를 보존하고 장식 이징과 구분한다. 이징 미사용 자체를 실패로 보지 않는다."
+    },
+    {
+      "id": "MC-02",
+      "result": "pass",
+      "reason": "제시된 동등 A/B 비교 조건에서 동시 참조를 검토하며 순차 등장 미사용을 허용한다. 기억 부담은 가능성으로 표현한다."
+    },
+    {
+      "id": "MC-03",
+      "result": "pass",
+      "reason": "무음·접근성·기술 용어·단위 필요를 중복/양식 원칙보다 먼저 검토하며 자막 삭제를 자동화하지 않는다."
+    },
+    {
+      "id": "MC-04",
+      "result": "pass",
+      "reason": "최종 실적값과 연출 중간값을 분리하고 허위 시계열 기록을 차단한다. 정지 최종값도 허용한다."
+    },
+    {
+      "id": "MC-05",
+      "result": "pass",
+      "reason": "시간상 공동 이동의 관측과 AE parent·실제 인과를 분리한다. 전체 화면 이동 때문에 요소를 분리하지 못하면 관측 확신도도 낮춘다."
+    },
+    {
+      "id": "MC-06",
+      "result": "pass",
+      "reason": "배치 읽기와 변화 학습의 과제를 구분하며 연구 표본/과제를 회사 영상에 일반화하거나 효과 수치를 전용하지 않는다. 정지 상태의 유지도 정상 관측으로 허용한다."
+    },
+    {
+      "id": "MC-07",
+      "result": "pass",
+      "reason": "실제 사전 지식 근거를 요구하고 직급/부서 추정을 금지한다. IP10 활성화 전에는 검토 제안만 남긴다고 명시하여 pending 우회가 없다."
+    },
+    {
+      "id": "MC-08",
+      "result": "pass",
+      "reason": "플래시·자동 움직임/업데이트·상호작용 모션의 서로 다른 적용 조건을 분리한다. 재생 버튼만으로 플래시 안전을 판정하지 않고 비적용과 미검사를 구분한다."
+    }
+  ],
+  "independent_checks": {
+    "current_structure_command": "PYTHONDONTWRITEBYTECODE=1; PYTHONIOENCODING=utf-8; Phase 00/.환경/Scripts/python.exe 07_실행도구/R3_모션자료검사.py",
+    "current_structure_exit_code": 0,
+    "current_structure_output": {
+      "valid": true,
+      "errors": [],
+      "scope": "설명용 지식의 구조·출처 깊이·권한·연결만 검사. 영상 효과·자연어 의미·학술 원문 진위는 별도 검토."
+    },
+    "in_memory_normal_valid": true,
+    "in_memory_coupled_depth_forgery": {
+      "source": "SRC-ADOBE-12",
+      "mutation": "조사기록과 AP12 카드의 read_depth를 모두 full_chapter로 변경",
+      "blocked": true,
+      "errors": [
+        "SRC-ADOBE-12 검토 깊이 승인 없이 변경"
+      ]
+    },
+    "conflict_count": 8,
+    "conflict_duplicate_ids": 0,
+    "missing_conflict_principle_refs": [],
+    "missing_conflict_source_refs": [],
+    "conflict_company_approved": false,
+    "conflict_actual_video_test": false,
+    "candidate_view_version_and_hash_match": true,
+    "regression_log": {
+      "passed": 28,
+      "total": 28,
+      "verification": "D 최종 결과와 C 회귀 스크립트를 읽어 중복 정상 대조 제거를 확인했다. 28건 전체를 독립 재실행한 것으로 주장하지 않는다."
+    }
+  },
+  "interpretation_limits": [
+    "이번 검사 통과는 자연어의 모든 의미 오류나 원문 진위를 자동 판정한다는 뜻이 아니다. 고정 expected_depths는 이번 조사 범위의 미검토 깊이 승격을 차단하는 계약이다.",
+    "28/28은 데이터 계약의 반례/정상 대조이며 시청자 이해도·영상 품질·학습 성과·스킬 효과의 시험 수가 아니다.",
+    "이번 재검수에서는 앞선 독립검토의 15개 공개 출처 대조 결과를 이용했다. 변경된 예문·충돌 사례·동선·계약을 내부 대조했으며 공개 원문 전체·임베드·유료강의를 새로 검증하지 않았다.",
+    "충돌 판단은 명시된 입력 조건의 설명용 프로젝트 제안이다. 다른 배포/시청/데이터 조건에 자동 적용하는 회사 규칙이 아니다."
+  ],
+  "activation_state": {
+    "ip10": "기존 정본 pending 및 심화카드 recommendation_enabled=false 유지. MC07은 검토 제안.",
+    "ux12": "proposal_not_new_taxonomy 유지. 기존 원칙과 연결 후보이며 의미 병합·새 taxonomy ID·회사 필수 규칙 승격 없음.",
+    "pending_user_decision": "사용자 선택이 내려지기 전 조회 활성화·독립체계 확장으로 자동 변경하지 않음."
+  },
+  "open_blocking_findings": [],
+  "optional_followups": [
+    "향후 후보가 정본으로 채택될 때 UX 각 행에 Principle 번호 locator를 붙이고 조건부 연결과 동일 개념 관계를 계속 구분한다.",
+    "출처 깊이의 실제 승격은 새로운 읽기/근거와 검토를 거쳐 계약을 개정해야 한다."
+  ],
+  "final_judgment": "이전 실질 지적은 해결됐고 새 8개 사례에서 범위 위장·보류 우회·의무 강제 오용을 발견하지 않았다. R3-1 설명용 모션 지식 묶음의 보완 검토를 종료해도 된다. IP10/UX12 활성화 결정과 R3-2·3의 완료는 별개다.",
+  "modifications": "D 자료 변경 없음. C workspace의 R3_01_독립재검토.json만 신규 작성."
+}

@@ -1,0 +1,153 @@
+{
+  "schema_version": "expanded-case-review-0.1",
+  "reviewer": "same_agent_context",
+  "issues": [
+    {
+      "id": "N-background",
+      "source_case": "NEW-N",
+      "before": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\records\\NEW-N\\observations.json",
+        "sha256": "8b62d3cb512e7983d1836e9188e1272d9c7c82a23d23f5ec9fd1687708f5bee7",
+        "unknown_id": "u01"
+      },
+      "after": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\records\\NEW-N\\observations-linked.json",
+        "sha256": "85024e9b5cb5808d6a922a910ef1837b69aac03ce0dacab8278f87d0d611c088",
+        "unknown_id": "u01"
+      },
+      "state": "addressed_with_limits",
+      "answer_claim_ids": [
+        "c035"
+      ],
+      "answer": "세 배경 ROI의 위치 유사·밝아짐 이후 유지 확인. 모든 픽셀/원본 레이어 독립성 판정 아님.",
+      "scope_note": "새 관측 창은 이전보다 넓다. 같은 창의 review_ledger 규칙을 우회하지 않고 확장 사례의 별도 보완 장부로 연결.",
+      "quality_acceptance": false
+    },
+    {
+      "id": "N-arcs-and-sway",
+      "source_case": "NEW-N",
+      "before": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\records\\NEW-N\\observations.json",
+        "sha256": "8b62d3cb512e7983d1836e9188e1272d9c7c82a23d23f5ec9fd1687708f5bee7",
+        "unknown_id": "u02"
+      },
+      "after": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\records\\NEW-N\\observations-linked.json",
+        "sha256": "85024e9b5cb5808d6a922a910ef1837b69aac03ce0dacab8278f87d0d611c088",
+        "unknown_id": "u02"
+      },
+      "state": "partial",
+      "answer_claim_ids": [
+        "c037",
+        "c038",
+        "c039",
+        "c051"
+      ],
+      "answer": "한 차례 화살표 강조와 구조물의 왕복 기울임을 분리. 화면 투영 경사 가감속은 확인했지만 화살표 정확 강도 곡선·원본 동기화 설정은 남음.",
+      "scope_note": "새 관측 창은 이전보다 넓다. 같은 창의 review_ledger 규칙을 우회하지 않고 확장 사례의 별도 보완 장부로 연결.",
+      "quality_acceptance": false
+    },
+    {
+      "id": "N-label-completion",
+      "source_case": "NEW-N",
+      "before": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\records\\NEW-N\\observations.json",
+        "sha256": "8b62d3cb512e7983d1836e9188e1272d9c7c82a23d23f5ec9fd1687708f5bee7",
+        "unknown_id": "u03"
+      },
+      "after": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\records\\NEW-N\\observations-linked.json",
+        "sha256": "85024e9b5cb5808d6a922a910ef1837b69aac03ce0dacab8278f87d0d611c088",
+        "unknown_id": "u03"
+      },
+      "state": "addressed_with_limits",
+      "answer_claim_ids": [
+        "c040",
+        "c041"
+      ],
+      "answer": "완성 문구와 외곽 폭 정착의 시각 차이를 확인. 원본 폰트명·실제 마스크 설정은 미확정.",
+      "scope_note": "새 관측 창은 이전보다 넓다. 같은 창의 review_ledger 규칙을 우회하지 않고 확장 사례의 별도 보완 장부로 연결.",
+      "quality_acceptance": false
+    },
+    {
+      "id": "P-connector",
+      "source_case": "NEW-P",
+      "before": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\records\\NEW-P\\observations.json",
+        "sha256": "89c2fce3d10ff5a226d9b651a842f167cabbcd34d9764a8cbd484429ebd00a73",
+        "unknown_id": "u02"
+      },
+      "after": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\records\\NEW-P\\observations-linked.json",
+        "sha256": "8827a4eeb2ab67ab51db87fc205a8eee477e94c4799684a19f17df299b8ed3ec",
+        "unknown_id": "u02"
+      },
+      "state": "addressed_with_limits",
+      "answer_claim_ids": [
+        "c048",
+        "c050",
+        "c058"
+      ],
+      "answer": "생성 중 유색 영역의 위쪽 성장, 정착 뒤 무늬 유지, 이후 묶음 이동을 구분. 최종 퇴장은 관측 창 밖.",
+      "scope_note": "새 관측 창은 이전보다 넓다. 같은 창의 review_ledger 규칙을 우회하지 않고 확장 사례의 별도 보완 장부로 연결.",
+      "quality_acceptance": false
+    },
+    {
+      "id": "P-row-emphasis",
+      "source_case": "NEW-P",
+      "before": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\records\\NEW-P\\observations.json",
+        "sha256": "89c2fce3d10ff5a226d9b651a842f167cabbcd34d9764a8cbd484429ebd00a73",
+        "unknown_id": "u03"
+      },
+      "after": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\records\\NEW-P\\observations-linked.json",
+        "sha256": "8827a4eeb2ab67ab51db87fc205a8eee477e94c4799684a19f17df299b8ed3ec",
+        "unknown_id": "u03"
+      },
+      "state": "addressed_with_limits",
+      "answer_claim_ids": [
+        "c045"
+      ],
+      "answer": "기존 노란 행과 새 분홍 행의 한 차례 강조를 대조. 반복 주기/동기화 전제를 채택하지 않음.",
+      "scope_note": "새 관측 창은 이전보다 넓다. 같은 창의 review_ledger 규칙을 우회하지 않고 확장 사례의 별도 보완 장부로 연결.",
+      "quality_acceptance": false
+    }
+  ],
+  "counts": {
+    "addressed_with_limits": 4,
+    "partial": 1
+  },
+  "discovery_completeness": false,
+  "original_intent_confirmed": false,
+  "new_discoveries": [
+    {
+      "case": "NEW-N",
+      "finding": "화면 표기 켄틸레버를 캔틸레버로 읽은 과거 c028을 기각하고 c040으로 정정",
+      "claims": [
+        "c028",
+        "c040"
+      ]
+    },
+    {
+      "case": "NEW-N",
+      "finding": "176초 이후 형상 밀착 강조·마감 판을 별도 대상으로 추가",
+      "claims": [
+        "c045",
+        "c046",
+        "c048",
+        "c049"
+      ]
+    },
+    {
+      "case": "NEW-P",
+      "finding": "지도는 유지되고 기관 묶음만 오른쪽으로 이동하는 후속 배치",
+      "claims": [
+        "c044",
+        "c050",
+        "c051",
+        "c053"
+      ]
+    }
+  ]
+}

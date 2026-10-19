@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-16T15:03:45+09:00",
+  "state": "A2_known_case_regression_passed_A3_user_decision_pending",
+  "report": "Phase 01-A/05_결과보고/12_01-A2_스킬작성전_재시험_결과.md",
+  "result": "Phase 01-A/02_분석작업/01-A2_스킬작성전_재시험/2026-10-16_첫실행/재시험_결과.json",
+  "viewer": "Phase 01-A/02_분석작업/01-A2_스킬작성전_재시험/2026-10-16_첫실행/재시험_검토화면.html",
+  "decision": "Phase 01-A/06_도구와계약/01-A2_모션검수절차/스킬작성전_재발시험/02_현재판정.json",
+  "A3_started": false,
+  "skill_created": false,
+  "A3_authoring_ready": true,
+  "A3_authoring_ready_scope": "only the six frozen A2 known-case requirements; recommendation to author a limited draft, not approval to start or overall motion accuracy",
+  "new_behavior_replay_run": true,
+  "known_required_cases_all_satisfied": true,
+  "user_stage_decision": "pending",
+  "prior_human_confirmations_preserved": true,
+  "questions_to_repeat_to_user": [],
+  "coverage_gaps": [
+    {
+      "window": "EG-BIM 8.2~10.4s",
+      "event": "UI table selection row / thumbnail selection changes",
+      "status": "not_in_this_six_case_run",
+      "reference_status": "prior_AI_candidate_not_human_gold",
+      "action": "add a separate case when designing A3 tests; do not claim this run validated it"
+    },
+    {
+      "event": "장헌0~5.9초 도입의 정지 대조 시험 및 전체 영상",
+      "status": "not_separately_retested_in_this_run; T05 only5.9~6.6s",
+      "action": "preserve current scope; whole-video/audio and expansion tests remain deferred"
+    }
+  ],
+  "historical_notice": true,
+  "superseded_by": "Phase 01-A/00_진행안내/20_01-A3_스킬작성과시험_현재안내.json",
+  "superseded_note": "A3 user approval, skill creation and tests recorded in notice20; historical A2 result preserved."
+}

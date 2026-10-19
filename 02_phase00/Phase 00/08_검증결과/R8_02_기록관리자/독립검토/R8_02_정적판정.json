@@ -1,0 +1,58 @@
+{
+  "stage": "R8-2",
+  "date": "2026-10-15",
+  "skill": "video-record-steward",
+  "candidate_version": "0.2.0-draft.2",
+  "verdict": "정적 검토 통과 — 역할별 합성 개발시험으로 진행 가능",
+  "scope": "후보 4파일·구성안내와 현재 도구/API·권한/실패 계약의 정적 대조. 행동시험·R6/R7 live checker 실행 없음.",
+  "initial_findings": [
+    {
+      "id": "STATIC-01",
+      "priority": 2,
+      "file": "06_맞춤스킬/재구성후보/video-record-steward/references/수정과복구.md",
+      "initial_lines": [14, 15],
+      "problem": "저장 후 검사 실패/부분 저장 시 성공으로 보고하지 않는 규칙만 있어, 이미 바뀐 활성 초안을 작업 전 상태로 되돌려야 하는 의무가 불명확함.",
+      "resolution": "draft.2의 수정·검사·게시 5가 내 쓰기 bytes와 현재 값 일치 시 영향 대상 backup 복구·SHA/관련검사 확인, 실패 후보 별도 보존, 외부변경/복구실패의 미복구·사용중단, 새 결과 격리/미반영을 명시함.",
+      "status": "정적 보완 확인 완료; 실제 복구 행동은 미검증"
+    }
+  ],
+  "unresolved_static_findings": [],
+  "checked_contracts": {
+    "original_identity_and_requested_draft_only": true,
+    "no_mandatory_fixed_original_overwrite": true,
+    "no_forced_legacy_conversion": true,
+    "no_fabricated_source_time_coordinate_value": true,
+    "backup_before_write_and_conflict_failure_safety": true,
+    "exact_checkpoint_and_external_change_guard": true,
+    "r4_api_and_local_base_match_current_code": true,
+    "r5_inspect_data_base_signature_match": true,
+    "r6_r7_base_argument_match": true,
+    "r4_output_location_restriction_respected": true,
+    "r5_separate_draft_r6_context_r7_separate_reference": true,
+    "structure_vs_content_company_permission_separate": true,
+    "no_media_ocr_measurement_or_new_design": true,
+    "no_concrete_fixture_ids_or_values_in_candidate": true
+  },
+  "evidence": {
+    "hash_manifest": "R8_02_읽은D파일hash.json",
+    "initial_hash_manifest_preserved": "R8_02_초기후보_읽은D파일hash.json",
+    "baseline_files": 164,
+    "changed_baseline_files": 4,
+    "all_changes_match_main_declared_allowlist": true,
+    "r7_static_pins": 130,
+    "r7_static_hash_mismatches": 0,
+    "candidate_four_hashes_match_confirmation_and_revision": true,
+    "changed_candidate_draft1_bytes_found_in_revision_backup": true,
+    "candidate_markdown_link_missing": 0
+  },
+  "limitations": [
+    "정적 문구/경로/API 정합성이 실제 수정·backup·실패안전·복구 성공을 입증하지 않음.",
+    "D 운영 R6/R7 현재 정상 결과는 main의 별도 확인이며, 이번 독립 검토는 live checker를 재실행하지 않음.",
+    "수행 fixture의 R6/R7 명시 누락은 미실시·불완전 범위로 남겨야 하며 D 정상 결과를 사본 통과로 전용할 수 없음.",
+    "이 후보는 기본 전환·회사 승인·실영상 성능·R8/Phase00 완료 판정이 아님.",
+    "R8-4의 평가설계 분리와 새 미사용 사례 확인은 필수 잔여."
+  ],
+  "D_write_performed_by_reviewer": false,
+  "behavior_test_executed_by_reviewer": false,
+  "candidate_adopted": false
+}

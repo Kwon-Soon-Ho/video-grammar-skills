@@ -1,0 +1,9 @@
+{
+  "scope": "독립 검토자의 게시 AST 차이 감사",
+  "error": "TypeError: expected AST, got list",
+  "cause": "Assign.targets 목록 자체를 ast.dump에 전달함.",
+  "correction": "각 target AST를 개별 dump하여 목록 대조.",
+  "initial_source": "긴경로_해시_독립검토_초기AST대조.py",
+  "D_or_performer_or_viewer_or_grading_or_publication_code_modified": false,
+  "model_trial_or_IO_trial_count_changed": false
+}

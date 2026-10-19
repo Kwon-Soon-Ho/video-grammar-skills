@@ -1,0 +1,432 @@
+{
+  "record_type": "isolated_document_applicability_review",
+  "record_version": "0.1.0",
+  "schema_claim": "독립 검토기록. R4/R5/R6/R7 정본 규격 준수·검사 통과를 주장하지 않음",
+  "review_date": "2026-10-15",
+  "target": {
+    "id": "삼안 검토용 메모 REV-B",
+    "version": "0.1.0",
+    "source_key": "memo",
+    "company_ids": [
+      "saman"
+    ],
+    "data_scope": "synthetic_project_draft",
+    "purpose": "삼안 CI색 배경/강조 역할 후보 및 한맥 웹 회색 글자 후보의 문서 적용성 검토"
+  },
+  "overall": {
+    "document_disposition": "수정필요",
+    "application_disposition": "판단보류",
+    "actual_video_status": "미검수",
+    "scope": "문서의 출처·회신범위·조건 대조",
+    "ready_for_all_use": false,
+    "company_approved": false,
+    "identity_authenticated": false,
+    "permission_granted": false,
+    "human_response_generated": false
+  },
+  "adopt": [
+    {
+      "item": "삼안 단독·산하 비사용 범위",
+      "source_keys": [
+        "memo"
+      ]
+    },
+    {
+      "item": "기존 최신성 회신과 산하 Illustrator 원본 부재 확인",
+      "source_keys": [
+        "reply",
+        "ledger",
+        "status"
+      ]
+    },
+    {
+      "item": "R5 기존 A정책 안에서 명시 선택을 갖춘 관측색 초안 후보 검토",
+      "source_keys": [
+        "r5_policy",
+        "r5_rules"
+      ]
+    },
+    {
+      "item": "한맥 공통 라이브러리의 출처 구분·명시 선택 참고",
+      "source_keys": [
+        "hanmac",
+        "r5_rules"
+      ]
+    }
+  ],
+  "reply_scope": {
+    "reply_id": "R6-REPLY-CI-20261015-001",
+    "reply_version": "0.1.0",
+    "event_id": "HUMAN-R6-CI-20261015-001",
+    "outcome": "limited_statement",
+    "coverage": "partial",
+    "confirmed": [
+      "제공 8회사 CI 자료 최신성",
+      "산하에는 원래 Illustrator 파일 없음"
+    ],
+    "unresolved": [
+      "CI 세부 사용 가이드",
+      "공식 sRGB·프로필/변환 자격",
+      "개별 역할·조합·시안 적합성",
+      "신원·회사 직무 권한 인증",
+      "회사 승인·외부 API 업로드·재배포 권한"
+    ],
+    "not_reused_as": [
+      "관측색 정책 재승인",
+      "회신 후 구조화 스키마·한맥 대화 전체 내용 검수"
+    ],
+    "latest_material_requestion_needed": false
+  },
+  "findings": [
+    {
+      "id": "B1",
+      "status": "수정필요",
+      "observation": "자료 최신성 회신을 이번 시안 회사 승인으로 확대하고 검수 대기 삭제 제안",
+      "evidence": [
+        "reply:/not_confirmed",
+        "ledger:/events/0",
+        "r5_rules:연결 순서6"
+      ],
+      "impact": "자료 사실 확인과 디자인·권한 승인을 혼동",
+      "minimal_change": "최신 자료 확인만 유지하고 역할·최종 조합·가독성·사용권한 검수를 별도로 남긴다.",
+      "recheck": "승인 문구가 제거되고 실제 확인 범위만 표시됐는지 문서 재검토",
+      "related_cause": "authority_and_readiness_expansion"
+    },
+    {
+      "id": "B2",
+      "status": "수정필요",
+      "observation": "한맥 웹 회색을 삼안 공식 CI색으로 등록 제안",
+      "evidence": [
+        "r5_rules:연결 순서4~5",
+        "brand:Q-BRAND-02",
+        "hanmac:/source_selection"
+      ],
+      "impact": "공통 참고와 회사 공식색 출처·자격 혼동",
+      "minimal_change": "hanmac-video@0.1.0의 명시 선택한 토큰을 company_id=null인 공통 참고로 연결. 삼안 CI값 승격 금지.",
+      "recheck": "정확한 토큰ID·버전·역할·선택 이유·가정·검수 상태 접수; 현재 미선택"
+    },
+    {
+      "id": "B3",
+      "status": "수정필요",
+      "observation": "대비가 낮을 가능성만으로 CI 원색 자동 암화·새 기본형 제안",
+      "evidence": [
+        "r5_rules:CI 로고와 바탕/텍스트 역할 문단",
+        "ci_contract:페이지에서 가져오기",
+        "brand:Q-BRAND-01/02"
+      ],
+      "impact": "실제 대비 관측 없이 원색/원형을 훼손하고 새 공식형을 만들 위험",
+      "minimal_change": "원색 보존. 배경판·글자색·역할/배치·근거 있는 허용형 후보를 우선 검토. 새 응용값 필요 시 project_literal/ui_proposal로 별도 제안.",
+      "actual_low_contrast_observed": false,
+      "recheck": "최종 조합·시안·출력/시청 조건과 원색 보존 확인"
+    },
+    {
+      "id": "B4",
+      "status": "수정필요",
+      "observation": "근거 없는 미관 총점94로 전체 사용 가능 선언 제안",
+      "evidence": [
+        "memo:B4",
+        "review_rules:준비상태는 목적과 범위를 붙인 제안"
+      ],
+      "impact": "필수 오류·보류·미검수를 미관으로 상쇄",
+      "minimal_change": "항목별 판정과 적용 범위로 대체. 전체 사용 가능·준비 완료 선언 보류.",
+      "score_measured_by_this_review": null,
+      "recheck": "미관 점수와 승인/준비 판정 연결이 제거되고 필수 보류가 드러나는지",
+      "related_cause": "authority_and_readiness_expansion"
+    },
+    {
+      "id": "B5",
+      "status": "수정필요",
+      "observation": "산하 AI 부재로 삼안 중단 또는 8회사 최신성 재질문 제안",
+      "evidence": [
+        "memo:삼안 단독·산하 비사용",
+        "reply:/reply",
+        "status:산하종합기술",
+        "review_rules:준비상태 제안4"
+      ],
+      "impact": "비사용 자료 때문에 현 검토 지연·이미 확인한 질문 반복",
+      "minimal_change": "이번 산하 항목 비적용 사유 기록. 기존 최신성 회신 인용 후 삼안 잔여 조건만 확인.",
+      "recheck": "삼안 범위 유지. 산하 자산을 실제 사용하도록 범위가 바뀔 때만 재평가"
+    }
+  ],
+  "candidate_qualification": {
+    "reference_only": true,
+    "source_key": "colors",
+    "company_id": "saman",
+    "record_version": "0.1.0",
+    "raster_candidates": [
+      {
+        "id": "ci.observed.raster.1",
+        "screen_hex": "#F5821F"
+      },
+      {
+        "id": "ci.observed.raster.2",
+        "screen_hex": "#F9A159"
+      },
+      {
+        "id": "ci.observed.raster.3",
+        "screen_hex": "#FCC28F"
+      }
+    ],
+    "raster_conditions": "current/source_checked 기록, ICC 없음·채널 보존·sRGB 표시 가정. R5 명시 선택 초안 범위에만 후보로 사용. 이번 원본 재대조 없음.",
+    "vector_hold": [
+      "ci.observed.vector.1",
+      "ci.observed.vector.2"
+    ],
+    "declared_draft_hold": [
+      "ci.declared.draft.gray.hex",
+      "ci.declared.draft.orange.hex",
+      "ci.declared.draft.gray.pantone",
+      "ci.declared.draft.orange.pantone"
+    ],
+    "hold_reason": "벡터는 screen_value=null. 선언후보4개는 draft와 screen_value=null. 최신 자료 회신만으로 색의 공식 화면 자격·변환 조건을 확정하지 않음.",
+    "no_auto_merge": [
+      "#F5821F 관측값",
+      "#F58220 선언후보"
+    ],
+    "hanmac_gray_exact_token": null
+  },
+  "pending": [
+    {
+      "id": "H1",
+      "status": "판단보류",
+      "target": "REV-B@0.1.0 색 역할 선택",
+      "role": "프로젝트 디자이너",
+      "question": "역할별 회사/색ID/버전 또는 한맥 토큰/프로필 버전, 출처·이유·가정·검수 대기를 실제 선택 기록으로 제시할 수 있는가?",
+      "resolution": "실제 선택 기록 접수",
+      "reply": null
+    },
+    {
+      "id": "H2",
+      "status": "판단보류",
+      "target": "삼안 선언후보4개@0.1.0 / R6-REQ-SAMAN-VALUES",
+      "role": "CI·색관리 조건 확인 담당자",
+      "question": "CI-COLLECTION-030 해당 값의 판본·사용형·공식 화면 sRGB 및 프로필/변환 조건을 확인할 근거는 무엇인가?",
+      "resolution": "대상별 근거와 확인 범위 접수",
+      "reply": null
+    },
+    {
+      "id": "H3",
+      "status": "판단보류",
+      "target": "실제로 선택할 삼안 CI 사용형·조합",
+      "role": "디자인 검수자·브랜드 사용규칙 확인 담당자",
+      "question": "사용 자산ID/버전·허용형·보호공간·최소크기·배경 조건을 무엇으로 확인하는가?",
+      "resolution": "실제 사용형·근거·최종 배치 접수",
+      "reply": null
+    },
+    {
+      "id": "H4",
+      "status": "판단보류",
+      "execution_status": "미검수",
+      "target": "최종 합성·영상 가독성",
+      "role": "디자이너·필요시 대상 시청자",
+      "question": "목적·대상·출력/시청 조건과 실제 문구·글자 크기·배경·노출 시간·렌더를 제시할 수 있는가?",
+      "resolution": "실제 조건·렌더 접수 후 시간·가독성 검수",
+      "reply": null
+    },
+    {
+      "id": "H5",
+      "status": "미검수",
+      "applicability": "행위 선택 시 판단",
+      "target": "외부 API 업로드·재배포 등 실제 행위",
+      "role": "해당 사용 권한 확인 담당자",
+      "question": "대상 자산·버전·행위별 권한 근거는 무엇인가?",
+      "resolution": "해당 행위 선택 시 범위별 확인",
+      "reply": null
+    }
+  ],
+  "not_applicable": [
+    {
+      "target": "산하 Illustrator·로고·가이드 사용형",
+      "reason": "이번 삼안 단독 초안은 산하 자산을 쓰지 않음",
+      "reconsider_if": "산하 자산 사용으로 프로젝트 범위 변경"
+    }
+  ],
+  "operating_options": {
+    "decision_status": "제안만; 사람 선택 미접수",
+    "recommended": "A",
+    "options": [
+      {
+        "key": "A",
+        "text": "현 정책 내 조건부 후보 문서 검토 계속, B1~B5 수정 후 선택·시안별 별도 검수",
+        "tradeoff": "지금 가능한 문서 검토 진행, 최종 적용은 보류"
+      },
+      {
+        "key": "B",
+        "text": "삼안 관측색 역할 검토를 미루고 한맥 글자색 후보의 출처 구분만 검토",
+        "tradeoff": "CI 역할 검토 목적 일부 지연"
+      },
+      {
+        "key": "C",
+        "text": "출처·자격 대조만 전달하고 역할 선택 검토는 자료 접수 후 진행",
+        "tradeoff": "적용성 검토 범위 축소"
+      },
+      {
+        "key": "D",
+        "text": "실제 선택 선언·출력 조건·시안을 준비한 뒤 적용 검토를 모아 진행",
+        "tradeoff": "실제 검수 정보 확보 가능하나 문서 오류 수정까지 미룰 필요 없음"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "key": "memo",
+      "path": "검토자료/프로젝트메모.md",
+      "version": "REV-B v0.1.0",
+      "locations": [
+        "대상 회사·검토 목적",
+        "B1~B5"
+      ]
+    },
+    {
+      "key": "scope",
+      "path": "수행사본_범위.json",
+      "version": null,
+      "locations": [
+        "scope",
+        "not_provided",
+        "limits"
+      ]
+    },
+    {
+      "key": "r5_policy",
+      "path": "05_출처와검토/R5_적용정책_결정.json",
+      "version": "A@2026-10-15",
+      "locations": [
+        "DECISION-R5-OBSERVED-COLOR"
+      ]
+    },
+    {
+      "key": "r5_rules",
+      "path": "03_한맥디자인/07_회사CI와_화면역할_연결규칙.md",
+      "version": null,
+      "locations": [
+        " 연결 순서 1~6",
+        "CI 로고와 바탕/텍스트 역할은 별개 문단",
+        "현재 규격 project_draft·review pending 문단"
+      ]
+    },
+    {
+      "key": "company_links",
+      "path": "03_한맥디자인/회사별_디자인연결_현황.json",
+      "version": "0.1.0",
+      "locations": [
+        "/companies/1",
+        "/state",
+        "/boundary"
+      ]
+    },
+    {
+      "key": "companies",
+      "path": "10_공용자산/회사목록.json",
+      "version": "record_version=0.3.1",
+      "locations": [
+        "companies: company_id=saman"
+      ]
+    },
+    {
+      "key": "assets",
+      "path": "10_공용자산/자산목록.json",
+      "version": "record_version=0.3.1",
+      "locations": [
+        "records: CI-SOURCE-009@0.1.0",
+        "records: CI-COLLECTION-030@0.1.0"
+      ]
+    },
+    {
+      "key": "colors",
+      "path": "10_공용자산/CI색상목록.json",
+      "version": "record_version=0.3.1",
+      "locations": [
+        "colors: company_id=saman, record_version=0.1.0",
+        "/notes"
+      ]
+    },
+    {
+      "key": "ci_contract",
+      "path": "00_운영계약/03_CI와색상_기록절차.md",
+      "version": null,
+      "locations": [
+        "색 기록의 종류",
+        "페이지에서 가져오기",
+        "R1 최종 보완"
+      ]
+    },
+    {
+      "key": "hanmac",
+      "path": "03_한맥디자인/한맥디자인정본.json",
+      "version": "hanmac-video@0.1.0",
+      "locations": [
+        "/source_selection",
+        "/color_tokens",
+        "/rules",
+        "/db_contract",
+        "/not_defined"
+      ]
+    },
+    {
+      "key": "status",
+      "path": "05_출처와검토/검수와사용범위/07_한맥디자인과_CI_확인현황.md",
+      "version": "2026-10-15",
+      "locations": [
+        "8회사 CI 자료",
+        "산하종합기술",
+        "부분 확인 문단"
+      ]
+    },
+    {
+      "key": "reply",
+      "path": "05_출처와검토/검수와사용범위/사람답변원문/2026-10-15_8회사CI_최신자료와산하AI부재.json",
+      "version": "0.1.0",
+      "locations": [
+        "/reply",
+        "/not_confirmed",
+        "/interpretation",
+        "/company_approved"
+      ]
+    },
+    {
+      "key": "ledger",
+      "path": "05_출처와검토/검수와사용범위/사람검수_접수대장.json",
+      "version": "0.1.1",
+      "locations": [
+        "/events/0",
+        "/requests/1: R6-REQ-SAMAN-VALUES"
+      ]
+    },
+    {
+      "key": "intake_policy",
+      "path": "05_출처와검토/검수와사용범위/사람검수_접수정책.json",
+      "version": "0.1.0",
+      "locations": [
+        "/policy"
+      ]
+    },
+    {
+      "key": "review_rules",
+      "path": "13_품질검수/03_판정운영기준.md",
+      "version": "R7-1 2026-10-15",
+      "locations": [
+        "네 가지 항목 판정",
+        "준비상태는 목적과 범위를 붙인 제안",
+        "우선순위와 사람 검수"
+      ]
+    },
+    {
+      "key": "brand",
+      "path": "13_품질검수/항목별기준/06_브랜드와출처.md",
+      "version": "품질항목 정본 v0.1.1 읽기용",
+      "locations": [
+        "Q-BRAND-01",
+        "Q-BRAND-02"
+      ]
+    }
+  ],
+  "limitations": [
+    "합성 문서 검토이며 실제 화면·오디오·시청 성능·내용 검수 없음",
+    "원격 원문 재열람/최신 확인 없음",
+    "CI 원본 실물·전체 R4/R5 검사기·전체 R6/R7 고정 입력 미제공",
+    "07_실행도구/자료검증.py Test-Path=false. 제공 검사기 실행 불가, 정본 구조 통과 주장 없음",
+    "입력 변경·새 로고/화면 생성·실제 사람 질문·네트워크·CU·AE·API·Claude CLI·추가 에이전트 없음",
+    "B1/B4 관련 원인은 연결하되 중복 감점·총점 계산 없음"
+  ]
+}

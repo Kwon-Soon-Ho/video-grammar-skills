@@ -1,0 +1,50 @@
+{
+  "summary": {
+    "passed": 12,
+    "failed": 0,
+    "total": 12,
+    "pass_rate": 1.0
+  },
+  "direct_checks": 88,
+  "direct_check_failures": [],
+  "runs": [
+    {
+      "case": 1,
+      "name": "큐레이터_복구거부",
+      "run": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\5_경로보완회귀\\eval-01-큐레이터_복구거부\\candidate",
+      "passed": 4,
+      "failed": 0,
+      "total": 4,
+      "pass_rate": 1.0,
+      "direct_checks": 26
+    },
+    {
+      "case": 2,
+      "name": "기록관리자_부분저장복구",
+      "run": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\5_경로보완회귀\\eval-02-기록관리자_부분저장복구\\candidate",
+      "passed": 4,
+      "failed": 0,
+      "total": 4,
+      "pass_rate": 1.0,
+      "direct_checks": 39
+    },
+    {
+      "case": 3,
+      "name": "검토자_외부변경",
+      "run": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\5_경로보완회귀\\eval-03-검토자_외부변경\\candidate",
+      "passed": 4,
+      "failed": 0,
+      "total": 4,
+      "pass_rate": 1.0,
+      "direct_checks": 23
+    }
+  ],
+  "scope": "curator3복구거부/steward5부분복구/reviewer4외부변경의재사용자료·경로상태표적3회만",
+  "limitations": [
+    "최신3SKILL로이전모든fault분기를재시험하지않음",
+    "재사용회귀이며미관측일반화홀드아웃/비교우월성아님",
+    "실영상/독자효과/회사승인/사람회신·신원/전체OS감시/완전동시성미시험",
+    "모델시간/token미수집",
+    "기존8회·보완후11회·인계2회원자료/원채점변경안함"
+  ]
+}

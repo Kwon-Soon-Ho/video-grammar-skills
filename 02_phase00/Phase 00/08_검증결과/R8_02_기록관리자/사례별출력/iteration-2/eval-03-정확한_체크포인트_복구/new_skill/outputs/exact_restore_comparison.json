@@ -1,0 +1,40 @@
+{
+  "execution": {
+    "name": "exact_restore_comparison",
+    "argv": [
+      "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-03-정확한_체크포인트_복구\\new_skill\\run-1\\inputs\\Phase00\\실행스킬\\video-record-steward\\scripts\\판본대조.py",
+      "--before",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-03-정확한_체크포인트_복구\\new_skill\\run-1\\inputs\\Phase00\\backup\\복구작업\\통합기록_실패본.json",
+      "--after",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-03-정확한_체크포인트_복구\\new_skill\\run-1\\inputs\\Phase00\\12_통합기록\\통합기록_작업초안.json",
+      "--mode",
+      "exact_restore",
+      "--checkpoint",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-03-정확한_체크포인트_복구\\new_skill\\run-1\\inputs\\Phase00\\backup\\이전작업\\통합기록_정상체크포인트.json",
+      "--checkpoint-sha",
+      "4f309bf8061d4973956f82fa36b74b587403995cdf93545c54411209139b4ec2"
+    ],
+    "cwd": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-03-정확한_체크포인트_복구\\new_skill\\run-1\\inputs\\Phase00",
+    "exit_code": 0,
+    "stdout_path": "exact_restore_comparison.stdout.txt",
+    "stderr_path": "exact_restore_comparison.stderr.txt"
+  },
+  "result": {
+    "valid": true,
+    "mode": "exact_restore",
+    "before_sha256": "f94804859022f09c248c5c73ef9e014649fdbab06dcec16f83aa6afe94ec14b9",
+    "after_sha256": "4f309bf8061d4973956f82fa36b74b587403995cdf93545c54411209139b4ec2",
+    "bytes_changed": true,
+    "errors": [],
+    "scope": "R4/R5 초안 전후 식별/규격판본·소유기록 판본 또는 요청 checkpoint byte 대조만. 허용 필드·R4/R5 전체 구조·내용·권한 검사는 별도.",
+    "writes_performed": false,
+    "content_verified": false,
+    "company_approved": false,
+    "operational_release": false,
+    "after_record_version": "0.1.0"
+  }
+}

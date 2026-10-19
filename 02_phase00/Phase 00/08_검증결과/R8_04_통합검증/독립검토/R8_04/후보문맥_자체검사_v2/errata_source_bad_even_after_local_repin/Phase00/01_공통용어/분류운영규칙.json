@@ -1,0 +1,160 @@
+{
+  "version": "0.1.1",
+  "status": "project_draft",
+  "decision": "사용자A안확정 2026-10-14",
+  "taxonomy_ref": "company-video-taxonomy@0.1.1",
+  "taxonomy_sha256": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+  "units": [
+    {
+      "id": "asset",
+      "name_ko": "영상 전체",
+      "meaning": "하나의제공영상·해당버전전체",
+      "boundary": "파일/버전/편집본이달라지면R1자산참조로구분",
+      "example": "한편의기술설명영상",
+      "counterexample": "한장의대표이미지만보고전체유형확정",
+      "existing_field": "asset; 현재classification은segments에있어전체분류필드는R4연결검토"
+    },
+    {
+      "id": "segment",
+      "name_ko": "설명 구간",
+      "meaning": "하나의설명질문/정보주제를이루는시간범위",
+      "boundary": "주요설명대상/질문/단계주제가바뀌면경계후보; 컷전환만으로강제분리하지않음",
+      "example": "침투수발생원인설명구간; 그안에전체/확대화면포함",
+      "counterexample": "아이콘이한번나타날때마다새장면으로분리",
+      "existing_field": "segments; 논리구간이촬영scene/편집clip과같지않음"
+    },
+    {
+      "id": "state",
+      "name_ko": "화면 상태",
+      "meaning": "식별가능한정보관계/구성요소배치가유지되는관측범위",
+      "boundary": "새정보역할/비교패널/주석대상/구성이변하면후보. 배경입자움직임이나한프레임마다분리하지않음",
+      "example": "제목만있는상태→제목과도표가있는상태",
+      "counterexample": "움직임이있다는이유로화면상태를정의할수없다고처리",
+      "existing_field": "현재명시필드없음. 프레임은표본일뿐화면상태와같지않음; R4에서구조연결"
+    },
+    {
+      "id": "beat",
+      "name_ko": "짧은 동작",
+      "meaning": "대상/시간범위가분명한변화동작또는유지·정지등의미있는시간사건. 짧은동작이라는이름이고정최대길이를뜻하지않음.",
+      "boundary": "같은대상의연관변화는묶을수있고다른대상의동작은동시/중첩허용. 화면상태의경계를가로지를수있음",
+      "example": "도표공개와강조표시가겹쳐발생",
+      "counterexample": "마지막정지이미지로등장방식/속도곡선확정",
+      "existing_field": "segments[].beats; 상태참조/전역동작의필드연결은R4검토"
+    }
+  ],
+  "axis_units": {
+    "video_type": [
+      "asset",
+      "segment"
+    ],
+    "communication_purpose": [
+      "segment",
+      "state",
+      "beat"
+    ],
+    "information_relation": [
+      "segment",
+      "state"
+    ],
+    "layout": [
+      "state"
+    ],
+    "motion_function": [
+      "beat"
+    ],
+    "motion_property": [
+      "beat"
+    ],
+    "timing": [
+      "beat"
+    ],
+    "art_direction": [
+      "state",
+      "segment"
+    ]
+  },
+  "cross_unit_policy": "4단위는단순배타트리가아니다. 동작이화면상태를가로지를수있다. 서로다른범위의태그를자동합산/상속하지않는다. 컷표식은관측된보조정보. 겹친상태/분할영역은대상범위로구분.",
+  "states": [
+    "classified",
+    "unknown",
+    "not_applicable",
+    "other_candidate",
+    "not_assessed"
+  ],
+  "reason_codes": [
+    "insufficient_temporal_evidence",
+    "scope_unknown",
+    "ambiguous_visual_evidence",
+    "missing_context",
+    "implementation_unknown",
+    "outside_vocabulary",
+    "not_applicable_to_scope",
+    "not_assessed_yet"
+  ],
+  "unclassified_policy": "classified만현재유효용어ID를저장. 나머지는빈term_ids+이유. other_candidate는자유후보문구를별도로남기고즉시정본ID를발명하지않음.",
+  "mapping_boundary": "R2연습기록은별도계약. 기존R4최소기록의classification배열/asset/segments/frames/beats필드를바꾸지않는다. null은의미상미판정이며배열자리에null을쓰는구현지시가아님.",
+  "company_approval": false,
+  "claim_status_policy": "판정상태는특정대상·범위·주장에대한것. 관측이충분하고구현만모르면관측태그는classified로유지하고구현주장을별도unknown으로남긴다. 관측대상/시간/량자체가부족하면unknown. 원본/출처가정의에필수인opacity/photo/실제UI는해당근거없으면기권.",
+  "evidence_rules": {
+    "whole_content_or_declared_context": {
+      "requires": [
+        "전체/해당구간의내용 또는 범위가확인된기획맥락"
+      ],
+      "limit": "일부프레임을전체유형으로자동상속하지않음. 기획맥락과실제완성영상의일치는별도."
+    },
+    "visible_scope_and_message_context": {
+      "requires": [
+        "대상화면/구간 또는 명시한시나리오범위",
+        "표현된의미의근거"
+      ],
+      "limit": "계획/시나리오뿐이면계획된표현의후보. 실제렌더관측/제작자확인의도/현실사실로승격하지않음."
+    },
+    "temporal_change_plus_message_context": {
+      "requires": [
+        "대상과시간변화/유지의관측범위",
+        "표현된기능의의미근거"
+      ],
+      "limit": "정지프레임/기획문장만으로실제모션기능을관측했다고판정하지않음."
+    },
+    "visible_scope": {
+      "requires": [
+        "대상/영역이확인된화면근거"
+      ],
+      "limit": "실제레이아웃관측에는화면이필요. 문장뿐이면계획/추론후보. 제작툴/원본지오메트리는별도."
+    },
+    "visible_ui_scope_and_verified_capture_source": {
+      "requires": [
+        "범위내UI화면",
+        "확인가능한실제제품캡처출처"
+      ],
+      "limit": "UI처럼보이는모형이나기획문구는실제UI출처증거아님."
+    },
+    "visible_material_and_verified_photo_source": {
+      "requires": [
+        "범위내재료",
+        "확인가능한촬영/사진출처"
+      ],
+      "limit": "사실적외관/합성조건/추정은촬영출처를대체하지않음."
+    },
+    "source_value_or_conditioned_opacity_estimate": {
+      "requires": [
+        "원본opacity속성 또는 합성조건/근거/불확실성을명시한수치추정"
+      ],
+      "limit": "보이는정도변화만으로정확한opacity값/알고리즘확정하지않음."
+    },
+    "quantity_and_temporal_samples": {
+      "requires": [
+        "같은대상과동일관측량",
+        "시간표본과방향/속도크기구분"
+      ],
+      "limit": "개념적곡선후보이지원본키프레임/베지어값확정아님. 반전/시점/추적오차는한계로남김."
+    },
+    "tracked_target_and_temporal_scope": {
+      "requires": [
+        "대상/영역범위",
+        "변화또는무변화를확인하는시간근거"
+      ],
+      "limit": "단일프레임에서등장/정지구간/순서/원본구현을확정하지않음."
+    }
+  }
+}

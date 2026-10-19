@@ -1,0 +1,550 @@
+{
+  "stage": "R7-2 품질항목 조건부 지식 독립검토",
+  "limited_completion_supported": true,
+  "unresolved_blocking_findings": [],
+  "scope": {
+    "completed": [
+      "7묶음26항목의 검수질문/조건/필요근거/예·반례/예외/보류/사람역할에 대한 정적 의미검토",
+      "정본과7MD·26항목을 담은7개미발송템플릿·24참조 연결/해시 대조",
+      "선택94원문/94backup 보존과 R6 현재 조회·세맞춤스킬 관련파일14개 보존",
+      "외부15출처 중10출처의 지정부분 독립 공개원문대조(나머지5미재열람)"
+    ],
+    "not_completed": [
+      "R7-3 정답/평가표본·지표·분모/성능합격 조건의 구현·효과검증",
+      "R7-4 현행기록 연결/인계 및 R8 스킬 재구성·재평가",
+      "01-A 영상분석/실제미디어·픽셀·모션·오디오·섬광 검사",
+      "실제사람내용검수·신원/회사/사용권한인증·시청효과 입증",
+      "외부15전체/참고논문전문/일반방송·납품규정/법적의무 전수검토",
+      "R7 전체·Phase00 종료"
+    ]
+  },
+  "verification": {
+    "static_conditions": 31,
+    "static_passed": 31,
+    "counts_are_not_video_trials_or_effectiveness_metrics": true,
+    "conditional_criteria_count": 26,
+    "groups": 7,
+    "existing_reference_files_current_backup": 94,
+    "custom_skill_count": 3,
+    "custom_skill_related_files_preserved": 14,
+    "custom_skill_related_files_note": "06_맞춤스킬 아래 세맞춤스킬과 공통평가계획 등 확인대상 파일14개.14개스킬을 조사/승인했다는 뜻 아님.",
+    "current_R6_query_valid": true,
+    "final_source_unchanged": true
+  },
+  "findings_fixed": [
+    {
+      "id": "R7-2-F1",
+      "criterion_id": "Q-SCREEN-03",
+      "issue": "수치계산 자체의 통과와 영상가독성 통과 혼동",
+      "origin": "root자체검토와 독립동의",
+      "status": "fixed",
+      "before": {
+        "hold_when": "최종 합성·표시 환경·동적 배경이 없으면 최종 가독성 보류. 색 계산 통과만 기록 가능."
+      },
+      "after": {
+        "hold_when": "최종 합성·표시 환경·동적 배경이 없으면 최종 가독성 보류. 계산값·방법·가정만 기록 가능하며 영상 가독성 통과는 별도."
+      }
+    },
+    {
+      "id": "R7-2-F2",
+      "criterion_id": "Q-MOTION-04",
+      "issue": "단회/SDR 결과를 반복/HDR로 승계할 누락조건",
+      "origin": "독립 W3C Intent 대조",
+      "status": "fixed",
+      "before": {
+        "required_evidence": "최종 영상 전 구간의 연속 시간 정보·실제 재생 크기/밝기 조건·방법/검사 결과·후보 범위.",
+        "review_method": "횟수만이 아니라 일반/적색 임계값·면적 등 출처의 조건을 확인한다. 전체 원본 확보 후 적절한 검사와 담당 검토 필요. 지금 도구 실행 없음.",
+        "hold_when": "연속 시간/휘도/면적·재생 조건·검사 근거가 없으면 안전 판정 보류. 후보 미검출을 비적용 이유로 쓰지 않음."
+      },
+      "after": {
+        "required_evidence": "최종 영상 전 구간의 연속 시간 정보·최대 재생 크기·색공간/전달특성·SDR/HDR/최대 동적범위·반복 여부/끝→시작 경계·방법/검사 결과·후보 범위.",
+        "review_method": "횟수만이 아니라 일반/적색 임계값·면적 등 출처의 조건을 확인한다. 최대 재생 크기·최대 동적범위와 loop 경계를 해당 납품본에서 검토하고 단회 SDR 결과를 HDR/반복본으로 승계하지 않는다. 전체 원본 확보 후 적절한 검사와 담당 검토 필요. 지금 도구 실행 없음.",
+        "hold_when": "연속 시간/휘도/면적·색공간/전달특성·최대 동적범위/재생 크기·반복 여부와 경계·검사 근거가 없으면 해당 조건의 안전 판정 보류. 후보 미검출을 비적용 이유로 쓰지 않음."
+      }
+    },
+    {
+      "id": "R7-2-F3",
+      "criterion_id": "Q-TRUST-01",
+      "issue": "문서전사/비공간 주장에 불필요한 좌표를 전역필수로 읽는 위험",
+      "origin": "독립 R4적용범위 대조",
+      "status": "fixed",
+      "before": {
+        "required_evidence": "원본/파생 버전·R4 시간/프레임·좌표/변환·실제 접근 가능 근거·반대 근거.",
+        "review_method": "기존 R4 통합 계약과 R6 조회를 사용하고 원본 부분을 내용 대조. 구조 통과만으로 관측 정확성 통과 불가.",
+        "valid_exception": "시나리오 내용 관측은 그 종류로 기록 가능. 렌더 화면 관측이나 실제 구현 근거로 바꾸지 않음.",
+        "hold_when": "버전·원본 접근·시간/좌표 변환·내용 대조가 없으면 해당 주장 보류. 구조 오류는 원정보 보완 후 재검사."
+      },
+      "after": {
+        "required_evidence": "해당 주장에 필요한 원본/파생 버전·실제 접근 가능 근거·반대 근거. 영상 시점/변화 주장은 R4 시간/프레임, 공간·변환 주장은 좌표/변환 근거를 추가. 문서 전사·비공간 주장에는 불필요한 좌표를 요구하지 않음.",
+        "review_method": "기존 R4 통합 계약과 R6 조회를 사용하고 원본 부분을 내용 대조. 주장에 필요한 근거 종류와 비적용 이유를 구분하며 구조 통과만으로 관측 정확성 통과 불가.",
+        "valid_exception": "시나리오 내용 관측은 그 종류로 기록 가능. 비공간적 주장은 좌표 비적용 이유를 남길 수 있고 R4의 적법한 spaces=[] 기록도 허용. 렌더 화면 관측이나 실제 구현 근거로 바꾸지 않음.",
+        "hold_when": "버전·원본 접근·내용 대조 또는 해당 주장에 필요한 시간/좌표·변환 근거가 없으면 해당 주장 보류. 공간 주장 누락을 비공간 예외로 우회하지 않음. 구조 오류는 원정보 보완 후 재검사."
+      }
+    },
+    {
+      "id": "R7-2-F4",
+      "criterion_id": "Q-CAP-02",
+      "issue": "PTS 미확인과 가능한 제한구간 내용관측을 일괄 폐기할 위험",
+      "origin": "독립 주장범위 검토",
+      "status": "fixed",
+      "before": {
+        "hold_when": "PTS 대응·실제 자막/발화·배포 UI가 없으면 해당 시간/가림 최종 판정 보류. 스틸만으로 동기화 통과 불가."
+      },
+      "after": {
+        "hold_when": "해당 판정에 필요한 공통 시간축·대응 근거(원본 PTS/시각 변환은 확보 범위 기록)·실제 자막/발화·배포 UI가 없으면 그 정밀도/범위의 시간·가림 판정 보류. 제한 구간의 수작업 관측은 보존하되 스틸로 동기화 통과, 미상 시간의 임의 추정, R4 필수값/검사 우회는 금지."
+      }
+    },
+    {
+      "id": "R7-2-F5",
+      "criterion_id": "Q-CAP-01",
+      "issue": "자막요구 미확인/미제공을 비적용으로 돌리는 위험",
+      "origin": "root자체보완·독립확인",
+      "status": "fixed",
+      "before": {
+        "hold_when": "오디오/자막/청취 조건 또는 소리의 의미가 없으면 해당 정확성·누락 판정 보류."
+      },
+      "after": {
+        "hold_when": "오디오/자막/청취 조건 또는 소리의 의미가 없으면 해당 정확성·누락 판정 보류. 자막 요구가 미확인이면 필요 여부를 확인하고, 자막이 없다는 이유만으로 비적용 처리하지 않음."
+      }
+    }
+  ],
+  "criterion_semantic_review": [
+    {
+      "criterion_id": "Q-INFO-01",
+      "review_result": "acceptable_as_conditional_knowledge_after_fixes",
+      "reason": "직급으로 사전지식 단정 금지,목적 미확인은 해당 적합성만 보류",
+      "real_example_tested": false
+    },
+    {
+      "criterion_id": "Q-INFO-02",
+      "review_result": "acceptable_as_conditional_knowledge_after_fixes",
+      "reason": "원문 전사/정정제안·부정어/소수점/이름 충돌을 구분",
+      "real_example_tested": false
+    },
+    {
+      "criterion_id": "Q-INFO-03",
+      "review_result": "acceptable_as_conditional_knowledge_after_fixes",
+      "reason": "조건비교와 실제인과·개선주장을 분리",
+      "real_example_tested": false
+    },
+    {
+      "criterion_id": "Q-INFO-04",
+      "review_result": "acceptable_as_conditional_knowledge_after_fixes",
+      "reason": "결측·모델추정·카운트연출·실측 분리. Carbon 원문을 모든 모델추정의 단일 규칙으로 복제하지 않음",
+      "real_example_tested": false
+    },
+    {
+      "criterion_id": "Q-TEXT-01",
+      "review_result": "acceptable_as_conditional_knowledge_after_fixes",
+      "reason": "글리프/첨자 의미와 실제표시 확인,폰트이름으로 설치/허가 확정 안 함",
+      "real_example_tested": false
+    },
+    {
+      "criterion_id": "Q-TEXT-02",
+      "review_result": "acceptable_as_conditional_knowledge_after_fixes",
+      "reason": "SI5.4.1/3/4 해당부분과 °C·평면각·소수 구분·원문보존이 부합",
+      "real_example_tested": false
+    },
+    {
+      "criterion_id": "Q-TEXT-03",
+      "review_result": "acceptable_as_conditional_knowledge_after_fixes",
+      "reason": "KLREQ초안의 어절/글자선택·수열/첨자 분리제한을 구분,고정줄수 없음",
+      "real_example_tested": false
+    },
+    {
+      "criterion_id": "Q-CAP-01",
+      "review_result": "acceptable_as_conditional_knowledge_after_fixes",
+      "reason": "의미있는 소리와무음예외,요구미확인/자막미제공의 비적용우회 차단",
+      "real_example_tested": false
+    },
+    {
+      "criterion_id": "Q-CAP-02",
+      "review_result": "acceptable_as_conditional_knowledge_after_fixes",
+      "reason": "공통시간축·정밀도/범위 보류,제한관측 보존과 R4검사우회금지",
+      "real_example_tested": false
+    },
+    {
+      "criterion_id": "Q-CAP-03",
+      "review_result": "acceptable_as_conditional_knowledge_after_fixes",
+      "reason": "음성자막과시각대체를 구분,한감각단서 의존·무음핵심삭제 방지",
+      "real_example_tested": false
+    },
+    {
+      "criterion_id": "Q-CAP-04",
+      "review_result": "acceptable_as_conditional_knowledge_after_fixes",
+      "reason": "실청취와TTS/전사/파형구조를 구분,회사음량수치 미설정",
+      "real_example_tested": false
+    },
+    {
+      "criterion_id": "Q-SCREEN-01",
+      "review_result": "acceptable_as_conditional_knowledge_after_fixes",
+      "reason": "그룹/라벨대응과시선효과를 구분,단일초점강제없음",
+      "real_example_tested": false
+    },
+    {
+      "criterion_id": "Q-SCREEN-02",
+      "review_result": "acceptable_as_conditional_knowledge_after_fixes",
+      "reason": "14분류/확장후보구분,카드·중앙/정형 금지없음",
+      "real_example_tested": false
+    },
+    {
+      "criterion_id": "Q-SCREEN-03",
+      "review_result": "acceptable_as_conditional_knowledge_after_fixes",
+      "reason": "계산값/방법/가정과영상가독성 구분,웹큰글자px전용금지",
+      "real_example_tested": false
+    },
+    {
+      "criterion_id": "Q-SCREEN-04",
+      "review_result": "acceptable_as_conditional_knowledge_after_fixes",
+      "reason": "필수그래픽/장식/동등대체 구분,3:1·CI재색칠전역강제없음",
+      "real_example_tested": false
+    },
+    {
+      "criterion_id": "Q-SCREEN-05",
+      "review_result": "acceptable_as_conditional_knowledge_after_fixes",
+      "reason": "막대비교/추세선목적·결측/축절단·범례 구분,Carbon구현px강제없음",
+      "real_example_tested": false
+    },
+    {
+      "criterion_id": "Q-SCREEN-06",
+      "review_result": "acceptable_as_conditional_knowledge_after_fixes",
+      "reason": "공간/기능대응·개념UI와실제품구분,구조와의미정확성분리",
+      "real_example_tested": false
+    },
+    {
+      "criterion_id": "Q-SCREEN-07",
+      "review_result": "acceptable_as_conditional_knowledge_after_fixes",
+      "reason": "실제출력/플레이어/크롭한정검수,고정세이프존 없음",
+      "real_example_tested": false
+    },
+    {
+      "criterion_id": "Q-MOTION-01",
+      "review_result": "acceptable_as_conditional_knowledge_after_fixes",
+      "reason": "유지시간과충분성분리,공개요약을항상정지/모든문구유지로확대안함",
+      "real_example_tested": false
+    },
+    {
+      "criterion_id": "Q-MOTION-02",
+      "review_result": "acceptable_as_conditional_knowledge_after_fixes",
+      "reason": "대상연속성과기술관계,AEparent가설분리·UI대각선금지전용안함",
+      "real_example_tested": false
+    },
+    {
+      "criterion_id": "Q-MOTION-03",
+      "review_result": "acceptable_as_conditional_knowledge_after_fixes",
+      "reason": "등속/정지·절제 허용,실측값바운스/형상왜곡 위험구분",
+      "real_example_tested": false
+    },
+    {
+      "criterion_id": "Q-MOTION-04",
+      "review_result": "acceptable_as_conditional_knowledge_after_fixes",
+      "reason": "희소표본으로안전확정안함,최대재생/HDR·색공간/전달특성·loop경계 보완",
+      "real_example_tested": false
+    },
+    {
+      "criterion_id": "Q-BRAND-01",
+      "review_result": "acceptable_as_conditional_knowledge_after_fixes",
+      "reason": "회사별CI원형·최신성/사용규칙분리,산하AI새원본생성금지",
+      "real_example_tested": false
+    },
+    {
+      "criterion_id": "Q-BRAND-02",
+      "review_result": "acceptable_as_conditional_knowledge_after_fixes",
+      "reason": "한맥웹색/CI관측색/역할명시선택 구분,회사공식색·CMYK→공식HEX 승격금지",
+      "real_example_tested": false
+    },
+    {
+      "criterion_id": "Q-TRUST-01",
+      "review_result": "acceptable_as_conditional_knowledge_after_fixes",
+      "reason": "주장별필요근거·비공간 spaces=[]와실제공간누락우회 구분",
+      "real_example_tested": false
+    },
+    {
+      "criterion_id": "Q-TRUST-02",
+      "review_result": "acceptable_as_conditional_knowledge_after_fixes",
+      "reason": "의도/구현/부재/회사일반화의별도근거·반대근거/범위한계 유지",
+      "real_example_tested": false
+    }
+  ],
+  "independent_primary_reading": {
+    "stage": "R7-2 독립 공개원문 부분대조",
+    "checked_on": "2026-10-15",
+    "scope": "열람한10출처 지정부분의 대조. 작성자의15원문 전체열람/깊이를 인증하거나10실험을 수행했다는 뜻이 아님. 원문복제/재배포권한 판정 없음.",
+    "records": [
+      {
+        "source_id": "WEB-CAP",
+        "url": "https://www.w3.org/WAI/media/av/captions/",
+        "independent_read_scope": "Does My Media Need Captions?; Automatic Captions; Positioning",
+        "primary_content_summary": "무의미한 배경음/무음과 필요한 음성정보를 구분하고 자동자막 오류/부정어 누락을 다룬다.",
+        "comparison": "Q-CAP-01의 조건부 비적용과 필요한 소리 대조는 부합. 요구 미확인을 비적용으로 바꾸면 안 됨.",
+        "full_text_review": false,
+        "remote_content_hash": null,
+        "raw_fulltext_archived": false
+      },
+      {
+        "source_id": "WEB-KO",
+        "url": "https://www.w3.org/TR/2026/DNOTE-klreq-20260321/",
+        "independent_read_scope": "Status;6.6.1;7.1.1~7.1.4",
+        "primary_content_summary": "Group Note Draft 2026-03-21, 한글 글자/어절 줄바꿈 선택 및 수열·첨자 등 분리 제한을 확인.",
+        "comparison": "고정 글자 크기/줄수/모든어절 분리 금지로 만들지 않는 조건부 해석이 적절.",
+        "full_text_review": false,
+        "remote_content_hash": null,
+        "raw_fulltext_archived": false
+      },
+      {
+        "source_id": "WEB-SI",
+        "url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf/2d2b50bf-f2b4-9661-f402-5f9d66e4b507?version=7.0",
+        "independent_read_scope": "공식소개→영어PDF v4.01;5.4.1 해당 표머리글 부분,5.4.3~4 printed144~145/PDF33~34",
+        "primary_content_summary": "단위 분리 공백,평면각 예외,°C,소수점/소수쉼표 문맥,0접두표기,숫자그룹 예외와 표머리글 단위 표현을 확인.",
+        "comparison": "원문 전사보존/담당 검수/소수구분미상을 유지하는 예·반례와 부합. 전체SI/GUM 검토 아님.",
+        "full_text_review": false,
+        "remote_content_hash": null,
+        "raw_fulltext_archived": false
+      },
+      {
+        "source_id": "WEB-CONTRAST",
+        "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+        "independent_read_scope": "SC/Intent,large-scale threshold,rounding,anti-aliasing",
+        "primary_content_summary": "웹 텍스트 대비 기준과 예외,크기 판정 문맥,반올림 금지,실표시 한계를 확인.",
+        "comparison": "Q-SCREEN-03의 계산값·가정/실영상 가독성 구분 필요. 한국어 영상px를 큰글자로 자동판정하지 않음.",
+        "full_text_review": false,
+        "remote_content_hash": null,
+        "raw_fulltext_archived": false
+      },
+      {
+        "source_id": "WEB-NONTEXT",
+        "url": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html",
+        "independent_read_scope": "Graphical Objects/essential exception/testing principles",
+        "primary_content_summary": "의미이해에 필요한 부분·대체정보·필수 원형 예외와 인접색 검토 조건을 확인.",
+        "comparison": "필수선/장식 구분 및 CI자동재색칠금지,본문에 로고예외전용금지와 부합. 전체WCAG평가 아님.",
+        "full_text_review": false,
+        "remote_content_hash": null,
+        "raw_fulltext_archived": false
+      },
+      {
+        "source_id": "WEB-FLASH",
+        "url": "https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold.html",
+        "independent_read_scope": "SC/Intent 특히 최대재생46,비sRGB/최고동적범위47~48,loop49; Key Terms",
+        "primary_content_summary": "횟수와 면적/일반·적색 조건,최대재생·색공간/동적범위·반복경계 조건을 확인.",
+        "comparison": "초안의 loop/HDR 누락을 지적했으며 보완 후보가 조건을 추가함. 실제섬광도구/인체/안전인증 없음.",
+        "full_text_review": false,
+        "remote_content_hash": null,
+        "raw_fulltext_archived": false
+      },
+      {
+        "source_id": "WEB-CHART",
+        "url": "https://v10.carbondesignsystem.com/data-visualization/axes-and-labels/",
+        "independent_read_scope": "Starting at zero;Gaps in data;Breaks in axes;Time series",
+        "primary_content_summary": "막대/면적의0기준 권고와 추세선의 제한범위,결측과 축압축·문서WIP 표기를 확인.",
+        "comparison": "일괄0축/16px·0.5px 전용 금지 적절. 원문의 결측보간 금지와 프로젝트의 명시적 모델 추정 예외는 서로 동일한 원문명령으로 취급하지 않음.",
+        "full_text_review": false,
+        "remote_content_hash": null,
+        "raw_fulltext_archived": false
+      },
+      {
+        "source_id": "WEB-CHOREO",
+        "url": "https://v10.carbondesignsystem.com/guidelines/motion/choreography/",
+        "independent_read_scope": "Paths;Composition/Consistency/Continuity/Sequence",
+        "primary_content_summary": "원문은 Carbon UI 격자·대각선·stagger 규칙과 UI 의미/공간연속성을 다룸.",
+        "comparison": "영상 기술경로/동시비교에 대각선금지·stagger를 강제하지 않는 전이 한계가 적절. 코드예제실행 없음.",
+        "full_text_review": false,
+        "remote_content_hash": null,
+        "raw_fulltext_archived": false
+      },
+      {
+        "source_id": "WEB-TRANSIENT",
+        "url": "https://www.cambridge.org/core/books/abs/cambridge-handbook-of-multimedia-learning/transient-information-principle-in-multimedia-learning/670D96C3B9520320CE558AA855A49EE9",
+        "independent_read_scope": "Chapter21 title/author/2021 date,Summary,pp268~274/DOI",
+        "primary_content_summary": "공개 Summary에서 사라지는 정보와 계속접근 가능한 정보의 대비를 확인.",
+        "comparison": "Q-MOTION-01은 고정정지/모든텍스트유지로 확대하지 않아 범위 적절. 장전문·인용실험은 읽지 않음.",
+        "full_text_review": false,
+        "remote_content_hash": null,
+        "raw_fulltext_archived": false
+      },
+      {
+        "source_id": "WEB-TABLE",
+        "url": "https://design-system.service.gov.uk/components/table/",
+        "independent_read_scope": "When to use/not use;captions;headers;numbers",
+        "primary_content_summary": "행열 비교,표제와머리글 의미,숫자열정렬의 HTML컴포넌트 문맥을 확인.",
+        "comparison": "영상에 HTML/grid/반응형 의무로 옮기지 않고 R3후보/내용관계참고로 한정해 적절. 구현코드실행 없음.",
+        "full_text_review": false,
+        "remote_content_hash": null,
+        "raw_fulltext_archived": false
+      }
+    ],
+    "catalog_external_count": 15,
+    "independently_checked_catalog_sources": 10,
+    "not_independently_reopened_source_ids": [
+      "WEB-AV",
+      "WEB-DESC",
+      "WEB-COLOR",
+      "WEB-VISUAL",
+      "WEB-MOTION"
+    ],
+    "access_notes": [
+      {
+        "source_id": "WEB-SI",
+        "initial_exact_URL_attempt": "web open Internal Error",
+        "recovery": "BIPM 공식 소개 페이지의 영어PDF link를 click하여 동일제목9th/v4.01 EN/102pages와해당절 확인. 실패를 단독열람완료로 바꾸지 않음."
+      }
+    ],
+    "real_video_test": false,
+    "company_authority": false
+  },
+  "depth_limits": [
+    "7개 항목별MD와 안내/조사기록/두정본JSON은 전문을 읽고 구조값·생성문구를대조했다. 원본94전체의새의미정독을주장하지않음.",
+    "기존9참조는새외부조사가아니며출처고정/앞단계제약을재사용. 외부10직접부분대조는저자의15전체읽기깊이를인증하지않음.",
+    "웹전체파일을로컬원문보존하거나remotehash를확보하지않음. 출처URL/판본·조항/이번열람한부분과접근실패·회복을분리했다."
+  ],
+  "remaining_human_review": {
+    "R7_actual_target_count": 0,
+    "R7_actual_human_answer_count": 0,
+    "template_groups_not_real_requests": 7,
+    "R6_preexisting_reply_records_preserved": 1,
+    "CI_latest_declared_units_preserved": 8,
+    "CI_usage_guide_unresolved_units_preserved": 8,
+    "policy": "내용·의도·실제시청판단이필요한경우대상/버전·실제근거·질문범위를사람에게넘겨확인한범위만기록. 무응답/자료부족·기권을통과/비적용/회사승인으로바꾸지않음. 새실제자료요청은현재범위가아님."
+  },
+  "actual_human_content_review_performed": false,
+  "actual_video_analyzed": false,
+  "actual_flash_tool_or_safety_test": false,
+  "criteria_effectiveness_proven": false,
+  "company_approved": false,
+  "permission_granted": false,
+  "phase01a_started": false,
+  "R7_complete": false,
+  "Phase00_complete": false,
+  "evidence": [
+    {
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R7_독립검토\\R7_02_독립감사.py",
+      "sha256": "3dd985ae87ac5b45c81bd18d415e7fe4c63d7c277b375b2d473eda90b6be0c56"
+    },
+    {
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R7_독립검토\\R7_02_최종_원문대조.json",
+      "sha256": "30dc8d773b5e5b393339e567c8645a1f14514a41e47ee99c26ce1a57eab08eb1"
+    },
+    {
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R7_독립검토\\R7_02_공개원문_대조기록.py",
+      "sha256": "e1f677b5912433f1ac2cd62560c24a22c792694afc277e549d16613d58d79fde"
+    },
+    {
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R7_독립검토\\R7_02_공개원문_독립대조.json",
+      "sha256": "24ba78581ff2265fac7699f329678605316b29bd7ccf3826a21e4d77a72fca8d"
+    },
+    {
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R7_독립검토\\R7_02_초기보존.py",
+      "sha256": "4094dd4075616553fedc87cfea9387c48b3ad7a739232fbff07789edc89c83cb"
+    }
+  ],
+  "after_hashes": {
+    "05_출처와검토/R7_02_품질항목_조사기록.json": "27b88c43dc4855c4d9c1ebb8342c3a1f33d123f72c87f3bf7f710be6862cd603",
+    "13_품질검수/04_품질항목_읽는순서.md": "333106c3c3e0b0d49edf767363535bd789f1e7338a0edb89054d359d715e3b65",
+    "13_품질검수/05_사람검수_준비목록.md": "1f1310f861db6d35e9304b3cb45f231ef73c73f310b04737e159f63fdec36086",
+    "13_품질검수/사람검수_준비목록.json": "e7bf925c8160351b95fc71f226167542973da29236632776c9308c8f6d61c7f6",
+    "13_품질검수/품질항목_정본.json": "d15f94c08727318065075e61c99966a2eacd651b3ec368aa1820619999888191",
+    "13_품질검수/항목별기준/01_정보와데이터.md": "c306c9fe128702a7b245f84fb16ed1f7502025c2905afd2d44de9909b89869b6",
+    "13_품질검수/항목별기준/02_한국어와단위.md": "aa91fe572617b1538c0e3b5a593b022e273044faebb9f049373bb3e090346782",
+    "13_품질검수/항목별기준/03_자막과전달경로.md": "b32906f4c0afab9378e30e2b8a74ce316b27e833ecf0bfb5187433adb817150d",
+    "13_품질검수/항목별기준/04_화면과도표.md": "4fbf886a9b6c6634c76ce540cf3d27e51df7c5e50b121d21507f0d5845a01ded",
+    "13_품질검수/항목별기준/05_모션과시간.md": "cf3a090dee44ed24fdd995b16fb5a3d5576c27009e9e88c85e6452569d7a2208",
+    "13_품질검수/항목별기준/06_브랜드와출처.md": "417db92dfadab111850116b1edba049f78369e9821d185e7e28c321ea0b930b9",
+    "13_품질검수/항목별기준/07_분석신뢰도.md": "81b05baecd43625bbb130761de3308b8d41a2a25247c2806e2b32c4e4f851c95",
+    "08_검증결과/R7_02_입력보존.json": "d1e40854e1d6769a4e0d8cd829d602a33844d76676947962102abdd1e5c6e346",
+    "08_검증결과/R7_02_작성확인.json": "a51bd7eec5b76948d898654a109518fcbfdb92af81f368f3b0187886fddc4898",
+    "01_공통용어/분류운영규칙.json": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d",
+    "02_원칙과레이아웃/00_지식안내.md": "f5fbbd632bd0cf604c73b6859ddc37d8e64cd5a3ab55ab383e4de69f29d737af",
+    "02_원칙과레이아웃/01_R3_단계별진행안내.md": "4c306b7b9a900cc5dffa14543482f570c82810781958657be7e9795775b8bdea",
+    "02_원칙과레이아웃/02_모션원칙_읽는순서.md": "7e2068b5527bb196e4f1e2e35593f94471d361af132d6ab1aa598515d72f5514",
+    "02_원칙과레이아웃/03_모션원칙_적용예와반례.md": "4593c3e98d23f4191c943b8aa81a43a6866b190a44441400f1aa23544e0c1cb6",
+    "02_원칙과레이아웃/04_모션원칙_충돌과예외.md": "a21649e3c6c16e778464ee0d76ebfe1bd9ffddd55cb076fa449efbf5371c353f",
+    "02_원칙과레이아웃/05_추가모션체계_연결검토.md": "23dfda58722f0c802312fdce3372f4c7baec4f34211f9ba540873ab955924d4b",
+    "02_원칙과레이아웃/06_레이아웃지식_읽는순서.md": "2fdfb5a725ae2c7d54a425c189dbdc9aec8092b6bc9157886bbefa9f8a42fc49",
+    "02_원칙과레이아웃/07_레이아웃별_선택조건과반례.md": "945fa1ec974bd73899d71de9b4019edf0d465d3c32443a9fe8ee610d56c471dd",
+    "02_원칙과레이아웃/08_화면설계_적용기준과반례.md": "1c6216125725542785ac8773d4cc6d41adbc178044aa2016f2c0af5630431c0e",
+    "02_원칙과레이아웃/09_문구와화면비_검토사례.md": "1a4067d5455af7b4208c7578064448acc33a360b6f730f932e5f2367ccd3c2dd",
+    "02_원칙과레이아웃/10_확장레이아웃_후보와반례.md": "b248bf4907543f600a1580f7717e449c52af7d75951e7944d15cce775605e610",
+    "02_원칙과레이아웃/레이아웃_문구와화면비사례.json": "43ca618fa2e7a8105e7b1aaf8ece4500cfc3edc57954e2530b634d76baf24888",
+    "02_원칙과레이아웃/레이아웃_심화지식.json": "5d6378eb954b6b75f94be2a0988254a1406f6dacc8a6c44060c6a05ff56aa14c",
+    "02_원칙과레이아웃/레이아웃_확장후보.json": "ca615a23e93b681e79eae845ee21c9b37a781c0f0e35af44217985f80e7702f8",
+    "02_원칙과레이아웃/레이아웃지식.json": "0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306",
+    "02_원칙과레이아웃/모션과정보전달원칙.json": "249ef6b9e7b14ff62f41352922be2f00e748c8b10debb4d4992b580364e0daa5",
+    "02_원칙과레이아웃/모션원칙_심화카드.json": "76b77be793d1ac56c5486a00e81133f68767c132846d8123c57a337b6c7fa066",
+    "02_원칙과레이아웃/모션원칙_충돌판단사례.json": "eef6f53023334cb88276eb4c4a9b7258bc88717dc022198b2bd0f22f46064920",
+    "02_원칙과레이아웃/지식목록.md": "df848ec46422e54dd6f25d067676f3acb6bc15957554f8547273ec39a99b3b3b",
+    "02_원칙과레이아웃/추가모션체계_연결후보.json": "957f1d4b065c69065977cd9a3c133bf5e70494bb024bfd5b00cf2d7a5b045416",
+    "02_원칙과레이아웃/화면설계원칙.json": "281fe61151dfc96649a070b6fd3ae653c0353b7513f3209534140ce1f54e6b96",
+    "03_한맥디자인/08_영상적용_예와반례.md": "587357eac06331e102d113dfe1f287c76600acf1bd925c5820b354825ae82723",
+    "03_한맥디자인/R5_표시_입력목록.json": "6e186320eb729f284466df2a23b2fe8f12acd393b09eac73cd85f5d8aa7653b1",
+    "03_한맥디자인/디자인적용_기록규격.json": "e4980e1b19c2f68817da084ad925c4549e4ae1210490479ea7ef0ba3a1562278",
+    "03_한맥디자인/영상적용_예와반례.json": "6e7f4179b43af9b6d45799070e2fe86476de4617122ae152e82aa0a56f56bd30",
+    "03_한맥디자인/영상전용_미정항목.json": "1fc6d247124789b040db6710e8683fabe705eeee37c32a39932d5bae7cc69ad4",
+    "03_한맥디자인/한맥디자인정본.json": "dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed",
+    "03_한맥디자인/회사별_디자인연결_현황.json": "f5a2913c38dc5651e714d48467a558565051bc878ac07b943cfddf48ae7a15ec",
+    "04_기록규격/03_근거와주장_기록규격.md": "6943272574c2e8fa008e5b89b1fbb1977c0529933d4652f5688acb474cf2a422",
+    "04_기록규격/06_통합최소기록_규격_v0.2.md": "3c301c7f874921a3bd7bc3e5922ca8cb7c16ddc950f78ecc9850251b9474df74",
+    "04_기록규격/근거주장_스키마.json": "e66c9a6897c72ad0588f027e5699012a091f357d6d11834168352a6a760aeca4",
+    "04_기록규격/시간프레임_스키마.json": "aa440e4e69ed9287c25ba51f0b8051bc92da7162af553b2535d381b7ca0a6efb",
+    "04_기록규격/좌표변환_스키마.json": "5ad07a85612c90b045aa22eb7750502e47dd26677877b95019c826c2abef0535",
+    "04_기록규격/통합최소기록_스키마_v0.2.json": "033c90bc824d88f52f571eaaddc33511f079c54df763fa97599f69bfae563b7e",
+    "05_출처와검토/R2_조사기록.json": "21d4f34a872c5492d7e526cb040e2ab5ce5316cf55646e66a80704c67c680ec4",
+    "05_출처와검토/R3_레이아웃_조사기록.json": "faed3dd1e34e95935962b0973ebcf6e2d2eae31db505e5f93da5cab9d1c7c961",
+    "05_출처와검토/R3_모션_조사기록.json": "430a296b9c4903dea564d540152d4a88a5d57bbe10572737819876b50cfa0aa2",
+    "05_출처와검토/R4_근거주장_조사기록.json": "8fec5b2267ebe4e03251972d4a7af0791aa4e9de689114f5421dc82b8b305820",
+    "05_출처와검토/R4_시간프레임_조사기록.json": "63790fa479c43d140810ce39033bd593aec033019c5a25489bf418368d9b6408",
+    "05_출처와검토/R4_좌표변환_조사기록.json": "6235f33acf831a8f990a571bf63a5c3b72953a2edbde4c42a087a2bb955c1024",
+    "05_출처와검토/R4_통합이관_정책검토안.md": "b8e0d514442d98d7f18f49759f19104f3ccb548d5c2df2ee622d4e4f2bad2eb4",
+    "05_출처와검토/R4_통합이관_조사기록.json": "07973158e7454f8bbe4e6f54e70387a8e7a9fc3b12f9748e1403920dd038ef9e",
+    "05_출처와검토/R5_적용정책_결정.json": "d8666f2212ae4e434d7d1209f0b64bdded4f0d562df9600a1bda74d136dd9da3",
+    "05_출처와검토/R5_조사기록.json": "c748d098222dd6d2c2b6de708a9927b8fd0258aee3737d041a2d77f0f2f1d281",
+    "05_출처와검토/검수결정.json": "46a07ff5b989207a9467869ece5bedabf579a4d9a8e613e37a26f498832b781b",
+    "05_출처와검토/검수와사용범위/07_한맥디자인과_CI_확인현황.md": "872b4cf10790af7142a6438252f0da6206cd25233823050d3fafd8f412bbc226",
+    "05_출처와검토/검수와사용범위/R6_조사기록.json": "d1baa67e0594ae70c55ecf282da03ad0d706e708998e2d4c574582086aef34f4",
+    "05_출처와검토/검수와사용범위/사람검수_요청목록.json": "18141680b32cdf8ff061646eb68d740e17acef8e1eda2623bb7f7236d2d29337",
+    "05_출처와검토/검수와사용범위/사람검수_접수규격.json": "e4721b1124f2be638aec26731bc03f7874a06edc868ddc19a7ac64e923af4301",
+    "05_출처와검토/검수와사용범위/사람검수_접수대장.json": "a01dcbeea028f046fd47410628007afb69b20ca91f96ecf749b35c0f4095a21d",
+    "05_출처와검토/검수와사용범위/사람검수_접수정책.json": "b0955d85248a9ee1f00ae0da78609836d0cf7bbeda9b941ca8923e35e243245d",
+    "05_출처와검토/검수와사용범위/사람답변원문/2026-10-15_8회사CI_최신자료와산하AI부재.json": "e881c918fa374a046a436e6c1b4431f14bfbd11f1278a7c65a9a884fdafd27d2",
+    "05_출처와검토/검수와사용범위/원문경로_복구연결.json": "8f32f4415740e537d2b142e9b757fcf3ca7fdebb01834823dd928a6f8353b131",
+    "05_출처와검토/검수와사용범위/작업정책_연결목록.json": "90265bc4c09e3092695dc6ff7845564418e87806028e00dac6b607afa5b87992",
+    "05_출처와검토/검수와사용범위/출처와사용범위_연결규격.json": "616531f70a4d7ef441ba42f755eea24aa9a9e44ba9214c7bd3ebfe296f2e7c97",
+    "05_출처와검토/검수와사용범위/출처와사용범위_연결목록.json": "605c3d82be42e53499f72fcc7dff4fa99ce8c4904d1027727167b71ab45ec4d5",
+    "05_출처와검토/검수와사용범위/통합검수_입력규격.json": "c0d33e26f9f78cf9387bb44a6a18f6ff9e1fbc224dcbc48115cd3f960f01e440",
+    "05_출처와검토/검수와사용범위/한맥디자인_대화근거.json": "c259c3462c342e5d9ba2a8113d76514545bb4fd2fc1a8b758b24d39a5106124d",
+    "05_출처와검토/사용자결정.json": "feb1eae1da1e6801b8a2b61630968fcbe969582077f8b1970453abb38aff6452",
+    "05_출처와검토/스킬심층검토/검토파일목록.json": "77e88345246c48e3b4f2191131e18f31a90c4f84acf5dc11a5aa5e7b43723c58",
+    "05_출처와검토/스킬심층검토/스킬심층검토정본.json": "6f546221a91cd3b13fb0df02ae904910758c5daa626c1baacbdf041a8c6a1969",
+    "05_출처와검토/출처목록.json": "0fd8c405a36f67a4255be34c198b29fa499fde5d52b7998fd2b0af754bcaec2f",
+    "06_맞춤스킬/00_스킬안내.md": "6f259a80ad6a29a67fa0a24fafa7d1bb010629c604f51953c8a7f42de61238af",
+    "06_맞춤스킬/01_시범사용안내.md": "db128f146e28b9d05f8d5b8397eb66484c6d0062144576839d0a6c7d95bcc12f",
+    "06_맞춤스킬/video-guidance-reviewer/SKILL.md": "73741029082b93694d450703f8c910ed61329d0dc46434a5b0b7be55a76e4fad",
+    "06_맞춤스킬/video-guidance-reviewer/evals/evals.json": "eeec885d919b06d5b953395e8a2ffe5a28cd3b1703cca6b6b30ee742f76b173e",
+    "06_맞춤스킬/video-guidance-reviewer/references/작업기준.md": "2cd84d36a6a0e9f1a43686d507229e42db3374343c2e8d4ea4d0454e30f06049",
+    "06_맞춤스킬/video-knowledge-curator/SKILL.md": "233db126b7240f2ce95ed0c66d28963747d29033aae170b0da2be7458d68eb6e",
+    "06_맞춤스킬/video-knowledge-curator/evals/evals.json": "76af27db45b60b217038e55065138ef0e5d01f68254517e2e32090a9c51c61fa",
+    "06_맞춤스킬/video-knowledge-curator/references/작업기준.md": "2cd84d36a6a0e9f1a43686d507229e42db3374343c2e8d4ea4d0454e30f06049",
+    "06_맞춤스킬/video-record-steward/SKILL.md": "a1f4b2a75d4b97b84e208bdf81f8d7261af3e4cff59a10d49fdee5fe3bab6bcc",
+    "06_맞춤스킬/video-record-steward/evals/evals.json": "3b12bc3f853afe6f3aa34ecf985fcefd0125fa376b66ce28370bf2aa15feeef3",
+    "06_맞춤스킬/video-record-steward/evals/files/검사입력.json": "a56a429e5b9884d7749adcff5717d3d85b4e2bff12305b423c5fb313d472ef95",
+    "06_맞춤스킬/video-record-steward/references/작업기준.md": "2cd84d36a6a0e9f1a43686d507229e42db3374343c2e8d4ea4d0454e30f06049",
+    "06_맞춤스킬/자료목록.json": "74dd26a0962bbb563a88741e537e5bd1337c5fc7a1a52b5bf34487cdfa480abc",
+    "06_맞춤스킬/평가계획.json": "1d0c0a2c2d5521ffac06388d51751c05efecaece5e9e039bfce736b211746e25",
+    "07_실행도구/R5_디자인적용검사.py": "1c659607fd682a60101d7a3fabb9f206b999eb611f15e3edab4876982756d7aa",
+    "07_실행도구/R6_사람검수.py": "3039e2707a55b3bb29b9aa1b15429a09c301ce85e279317bf4fef9d4c44ae736",
+    "07_실행도구/R6_출처사용검사.py": "6eeaa1cb737ebe1dbb964caece8d05e1a2f76b8add407c8c0b449279e4c20373",
+    "07_실행도구/R6_통합조회.py": "7ad2b868723fbf07f316a476b53ed9dee08a1a13a5dc11747128d5721d83271f",
+    "07_실행도구/근거주장_규격검사.py": "854d0353b9a909d5d264baca70250d173f90dc58dc05bee231ca0a8522d11ec3",
+    "07_실행도구/시간프레임_규격검사.py": "52834649975027af2097becf61c2fb10034b42e4dda3a3f2fbb68e255bd90e69",
+    "07_실행도구/좌표변환_규격검사.py": "9f5f8b44c9d40a09fdb6fec05d9d9c089bc2a03c9e4927e8088b7903a847a265",
+    "07_실행도구/통합기록_규격검사.py": "09c617b836b6f173f436525078b63e30494be54eeb739c2b7fca25cb2f65d70e",
+    "08_검증결과/Phase00_종료재감사.md": "f0122c8f7fc739ff218102253915e010b1004b65a5944db847d54e70ffb56e08",
+    "08_검증결과/R6_R7_최종레드팀.md": "3ef91afa68b071daa15fdca19b2ed3d6c6be476f5d893fdc092573389e68b712",
+    "08_검증결과/R7_최종반례검사.json": "c659effa5bc74859e9eafcfc972c2b041061dc1f93efd420fce1f392b4d8b479",
+    "09_다음단계인계/R6_검수연결_인계.md": "7845cc26e36d8efa3ff360db1c7a06c88a93699399d09c42b4d4d3d9ef4a59dc",
+    "10_공용자산/CI색상목록.json": "c95a79a81a422fc23f4275a8dd878016f209fdaff171d73f44d3cff7387b7097",
+    "10_공용자산/자산목록.json": "5f4cc581df387e8948bc3071aa9f93bd34fb88a2ffc406aaf72de9f3e8e940a0",
+    "10_공용자산/회사목록.json": "0b011a9c2962459a3b42067c3f7120602cde9e541c466647fa880a0a298dda2a",
+    "13_품질검수/03_판정운영기준.md": "2a8e21f028e18398ab2a6544cc429e585ab6a0a59abd370dbacd7991e141b7c1",
+    "backup/2026-10-15_R6_03_초안/검토전사본/05_출처와검토/검수와사용범위/사람검수_요청목록.json": "9c57aff65f0c5c78b21ffebc36e7038afd8b2fad3b5b99d74bf1b72e887c1ce9"
+  },
+  "after_hashes_note": "검토한 draft 후보의시점스냅샷. 이후root의reviewed메타/보고·현황갱신은별도정합성확인이필요하고이해시를현재보증으로자동갱신하지않음."
+}

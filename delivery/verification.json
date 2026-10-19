@@ -1,0 +1,77 @@
+{
+  "archive_checks": [
+    {
+      "folder": "01_skills",
+      "included_hashes_after_extraction": 262,
+      "status": "passed"
+    },
+    {
+      "folder": "02_phase00",
+      "included_hashes_after_extraction": 3764,
+      "status": "passed"
+    },
+    {
+      "folder": "03_phase01",
+      "included_hashes_after_extraction": 4378,
+      "status": "passed"
+    }
+  ],
+  "relocation_command": [
+    "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\cold-review-package-20261019\\extracted-review\\01_skills\\portable_check.py",
+    "--root",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\cold-review-package-20261019\\extracted-review",
+    "--out",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\cold-review-package-20261019\\relocation-check"
+  ],
+  "relocation_exit_code": 0,
+  "relocation_summary": {
+    "status": "passed",
+    "scope": "relocated catalog/reference/index/query smoke check only",
+    "queries": [
+      {
+        "query": "work",
+        "uses": 1,
+        "record_ids": [
+          "LINK-VC-134"
+        ]
+      },
+      {
+        "query": "building",
+        "uses": 2,
+        "record_ids": [
+          "LINK-VC-172"
+        ]
+      },
+      {
+        "query": "profile",
+        "uses": 2,
+        "record_ids": [
+          "LINK-VC-134",
+          "LINK-VC-172"
+        ]
+      },
+      {
+        "query": "review",
+        "uses": 2,
+        "record_ids": [
+          "LINK-VC-MOTION"
+        ]
+      },
+      {
+        "query": "motion",
+        "uses": 9,
+        "record_ids": [
+          "LINK-VC-MOTION"
+        ]
+      }
+    ],
+    "company_approved": false,
+    "original_packages_modified": false
+  },
+  "scope": "actual extraction + included bytes + bounded relocated query; not content approval",
+  "extracted_package_bytes_unchanged_after_execution": true
+}

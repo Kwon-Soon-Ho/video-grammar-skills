@@ -1,0 +1,29 @@
+{
+  "version": "0.1.0",
+  "date": "2026-10-15",
+  "scope": "통합 설계 착수 관련절. 구현/전체 표준 전수 아님.",
+  "local_sources": [
+    "R2 분류운영규칙",
+    "R4-1/2/3 원문/검사/시험/최종판정",
+    "기존 최소기록/자료검증/설명 예시/스킬 호출부/과거 평가 입력"
+  ],
+  "web_sources": [
+    {
+      "url": "https://json-schema.org/understanding-json-schema/structuring",
+      "read_depth": "$id/$ref/$defs/모듈 결합·bundling 관련 본문",
+      "project_use": "스키마 참조 URI와 내부 정본/hash 일치 검수. 네트워크 자동 조회 없이 로컬 등록/검증 예정."
+    },
+    {
+      "url": "https://json-schema.org/understanding-json-schema/reference/object#extending-closed-schemas",
+      "read_depth": "additionalProperties·allOf·unevaluatedProperties와 누락/null 관련 본문",
+      "project_use": "닫힌 기존 스키마에 필드를 무조건 덧붙이지 않음. 버전별 독립 정본과 명시 이관을 검토."
+    }
+  ],
+  "unreviewed": [
+    "실제 운영 DB와 미디어",
+    "실행 모델/API/추출 도구",
+    "실제 사람 내용 검수",
+    "R4-4 통합 코드와 이관 정확성"
+  ],
+  "phase01a_started": false
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "자료005",
+    "exit": 1,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2\\extract.py\", line 131, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2\\extract.py\", line 119, in main\n    if len(sys.argv)==4 and sys.argv[1]=='worker':worker(sys.argv[2],sys.argv[3]);return\n                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2\\extract.py\", line 101, in worker\n    first_rotation={'rotation_reported_ccw':f.rotation,'side_data_types':[str(x.type) for x in f.side_data],'raw_raster':[f.width,f.height],'sar':str(s.sample_aspect_ratio),'matrix_basis':'tkhd explicit identity','rotation_applied':False}\n                                                                              ^^^^^^\nAttributeError: 'Type' object has no attribute 'type'\n",
+    "elapsed_seconds": 0.48399999999855936
+  },
+  {
+    "id": "자료013",
+    "exit": 0,
+    "stdout": "{\"id\": \"자료013\", \"phase\": \"initial\", \"images\": 17, \"decoded\": 931, \"result\": \"C:\\\\Users\\\\User\\\\Documents\\\\ChatGPT\\\\업무@사내 영상 생성기\\\\phase01a-a2\\\\cases\\\\자료013\\\\initial\\\\실행기록.json\"}\n",
+    "stderr": "",
+    "elapsed_seconds": 9.04700000000048
+  }
+]

@@ -1,0 +1,84 @@
+{
+  "definition_version": "video-pattern-definition-0.2",
+  "category": "DETAIL",
+  "name": "구조물의 화면 투영 기울기 왕복",
+  "source": {
+    "case_id": "DEV-NEW-N-REFERENCE-20261019",
+    "source_sha256": "42d87e0cc8c507ccb2a8924ae3252d689ef103d4ca3b1219ec1e588f6f474a03",
+    "observation_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\records\\NEW-N\\observations.json",
+    "observation_sha256": "4a843b1bc4fb5a9a072a8970b221fbf055d06647d2f5482b1a384d954b40cd79",
+    "claim_ids": [
+      "c006",
+      "c018",
+      "c038",
+      "c039",
+      "c052"
+    ],
+    "unknown_ids": [
+      "u02"
+    ]
+  },
+  "definition": {
+    "summary": "화면에서 보이는 구조가 한쪽→반대쪽→원래 구도로 기울어진다.",
+    "target_role": "입체 구조의 기울임 설명",
+    "phases": [
+      {
+        "name": "왕복",
+        "property": "position",
+        "observed_change": "투영 경사의 양/음 극값을 거쳐 돌아옴",
+        "claim_ids": [
+          "c038"
+        ]
+      },
+      {
+        "name": "반주기 가감속",
+        "property": "position",
+        "observed_change": "극점 부근 느리고 중간 빠른 변화",
+        "claim_ids": [
+          "c039"
+        ]
+      },
+      {
+        "name": "정착",
+        "property": "position",
+        "observed_change": "후속 구간에서는 유사 정면 유지",
+        "claim_ids": [
+          "c052"
+        ]
+      }
+    ],
+    "parameters": [
+      {
+        "name": "positive_extrema_spacing",
+        "status": "estimated",
+        "value": 1.8,
+        "unit_or_type": "seconds ±0.2 in this observation; no infinite loop proof"
+      },
+      {
+        "name": "true_3D_rotation_axis_angle",
+        "status": "unknown",
+        "value": null,
+        "unit_or_type": "source project geometry"
+      },
+      {
+        "name": "original_AE_implementation",
+        "status": "unknown",
+        "value": null,
+        "unit_or_type": "source controls/curves/effects"
+      }
+    ],
+    "preserve_constraints": [
+      "문구·색·배치를 먼저 동작 원리와 분리한다.",
+      "관측된 중간 상태·순서·중첩·유지 차이를 보존한다.",
+      "미확인 구현값을 원본 값으로 채우지 않는다."
+    ]
+  },
+  "applicability": "관측한 동작 구조의 초안. 새 목적·문구 길이·화면비·대상 형태에서 근거·차이·가독성·성공 여부를 다시 확인. 수치·문구는 이 사례의 변형값이며 보편 기준 아님.",
+  "counterexamples": [
+    "새 영상·새 문구로 재제작/렌더 검증하지 않음.",
+    "원본 구현 설정·원제작 의도는 영상만으로 확정하지 않음."
+  ],
+  "status": "draft",
+  "supersedes": null,
+  "derived_from": []
+}

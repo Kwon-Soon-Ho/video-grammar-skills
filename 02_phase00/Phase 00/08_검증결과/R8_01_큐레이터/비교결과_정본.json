@@ -1,0 +1,372 @@
+{
+  "id": "r8-curator-observed-comparison",
+  "version": "0.1.0",
+  "kind": "synthetic_development_skill_comparison_not_R7_quality_total",
+  "candidate_instruction_version": "0.2.0-draft.1",
+  "baseline_instruction_version": "0.1.0",
+  "actual_attempts": {
+    "executor_trials_total": 8,
+    "comparison_eligible": 6,
+    "infrastructure_invalid": 2,
+    "preflight_code_failure_episodes_not_model_trials": 1,
+    "cases": 3,
+    "runs_per_case_per_configuration": 1
+  },
+  "comparisons": [
+    {
+      "case": 1,
+      "eval_name": "회의메모_지식정리",
+      "configurations": {
+        "new_skill": {
+          "passed": 8,
+          "total": 8,
+          "grading_sha256": "d26cb00487568b667ca53fe55324840ee6558604a1a705dbf4b2ff0571d6dd87",
+          "expectations": [
+            {
+              "text": "메모의 개념을 기존 사전/원칙/레이아웃과 대조하고 실제 존재하는 ID/근거를 사용한다. 정의 후보를 정식 승인 ID로 발명하지 않는다.",
+              "passed": true,
+              "evidence": "outputs/회의메모_공통지식초안.json cards K01~K07이 IP-02/IP-07/IP-10/AP-06/MP-02/SCREEN 및 KNOW-LAYOUT·CURVE-LINEAR를 기존 항목으로 연결한다. 독립 대조에서 knowledge_versions/term_versions/company_rule_versions의 ID·version 불일치 0개. E02/E04/E05/E06 등의 파일 SHA도 실제 바이트와 일치한다. K02~04는 candidate_ref와 빈 term_ids를 사용하며 승인 ID를 발명하지 않았다."
+            },
+            {
+              "text": "단계 번호의 일괄 삭제를 회사 규칙으로 채택하지 않고, 순서/학습 안내처럼 번호가 유용한 조건과 오용 조건을 구분한다.",
+              "passed": true,
+              "evidence": "K01 project_interpretation은 '번호가 순서·현재 위치·참조 대상을 전달한다면 유지'하고 불필요한 순위 암시만 줄인다. 예는 접수→검토→승인 1·2·3과 현재 단계, 반례는 번호 삭제로 재참조 손실/동등 항목 우선순위 오해다. 실제 원칙 IP-02의 단계번호 표식과 부합한다."
+            },
+            {
+              "text": "표·순환·분기는 기존14분류의 별도 지식 후보로 다루며 정식 taxonomy를 자동 확대하거나 억지로 기존ID에 병합하지 않는다.",
+              "passed": true,
+              "evidence": "K02/K03/K04는 각각 LAYOUT-CAND-TABLE/CYCLE/BRANCH, classification.state=other_candidate, term_ids=[]이다. 실제 레이아웃_확장후보.json의 proposal_not_new_taxonomy 및 세 candidate_id와 일치하고 표를 CARD-GROUP/닫힌 순환을 PROCESS-LINE으로 자동 병합하지 않는 조건을 적었다. 입력 사전·taxonomy 바이트 불변도 독립 확인."
+            },
+            {
+              "text": "기획실 직군명만으로 숙련도/사전지식을 단정하지 않는다. 관련 원칙의 확인 깊이를 과장하지 않고 필요한 근거/추가 판단을 남긴다.",
+              "passed": true,
+              "evidence": "K05는 '기획실이라는 부서명과 해당 주제의 사전 지식은 별개', 숙련도 unknown으로 남기고 인터뷰/해당 주제 근거를 요구한다. 실제 IP-10@0.1.2 정의·기권 조건과 대조했다. '공식 Summary 수준' 및 장 전체·진단도구·효과 검증 아님을 명시해 확인 깊이를 과장하지 않았다."
+            },
+            {
+              "text": "일정속도 설비 설명에서 선형 이동이 적절할 수 있음을 구체적으로 설명하며 이징·움직임 개수를 보편 필수로 만들지 않는다.",
+              "passed": true,
+              "evidence": "K06은 등속 설명 대상의 제공 시간·경로 보존과 안내 패널 이징을 분리한다. 직선 경로와 시간 변화율도 구분한다. 반례는 설비 감속으로 등속 설명 변경이다. AP-06의 '등속 전달·기계 시뮬레이션은 선형도 적합' 및 MC-01과 일치하며 등속·정지·모션 미사용 자체를 실패로 삼지 않았다."
+            },
+            {
+              "text": "최신 CI/관측색을 모든 본문 공식색으로 승격하지 않는다. R5 프로젝트 초안의 명시 선택·조건과 기존 R6 확인 범위를 구분한다.",
+              "passed": true,
+              "evidence": "K07은 관측색/공식성·최신성 선언/프로젝트 역할 선택을 분리하고 회사·색ID·버전·SHA·명시 선택 이유·가정·최종 가독성 확인을 요구한다. E11의 실제 R5 연결규칙과 대조했다. provenance_limits.ci_scope는 R6 문맥/바이너리 재검증 미수행이라고 밝히며 최신 선언을 본문색 승인으로 전용하지 않았다. R6 확정 상태를 독립 확인했다고 주장하지 않는 제한된 설명이다."
+            },
+            {
+              "text": "최소한 정리의 핵심 근거를 해당 실제 로컬 항목/판본과 식별 가능한 경로·SHA로 연결하며 읽은 범위와 자체 해석·가상 예를 구분한다. 존재하지 않는 근거/실제영상효과를 만들지 않는다.",
+              "passed": true,
+              "evidence": "evidence_manifest 24개의 경로·SHA를 실제 해당 run 파일로 재계산해 전부 일치했다. 카드의 핵심 정본 판본도 대조 일치. read_depth_this_run은 selected_items/full_document/외부 원문 미열람을 구분한다. K05의 Summary, K06의 공개 강의 항목명 수준과 project_interpretation·example_kind/actual_observation=null이 명시된다. 실제 영상효과나 없던 근거를 생성한 징후 없음. 실행 시점의 읽기 과정 자체는 self-reported transcript 한계가 있다."
+            },
+            {
+              "text": "요청한 결과 JSON과 한국어 설명에 실제 정리 가능한 지식·적용 예/반례를 남기고 운영 입력은 바꾸지 않는다. 모든 항목을 이유 없이 보류해 작업을 회피하지 않는다.",
+              "passed": true,
+              "evidence": "실제 UTF-8 파싱 가능한 결과 JSON의 7카드에 조건·예·반례·허용 예외가 있고 설명.md에 한국어 정리가 있다. ready_reference 7개와 필요한 판단을 분리해 전부 보류하지 않았다. fixture_before의 입력 303/303파일을 현재 바이트와 직접 대조하여 변경·추가·삭제 0개다."
+            }
+          ]
+        },
+        "old_skill": {
+          "passed": 8,
+          "total": 8,
+          "grading_sha256": "fe7227f49f91f6962211cfa6b0669714ea36d2ffe4868bdcd1f9ce9f7d22b372",
+          "expectations": [
+            {
+              "text": "메모의 개념을 기존 사전/원칙/레이아웃과 대조하고 실제 존재하는 ID/근거를 사용한다. 정의 후보를 정식 승인 ID로 발명하지 않는다.",
+              "passed": true,
+              "evidence": "outputs/knowledge_draft.json records 5개와 reference_registry 34개를 직접 읽었다. REF-01~34의 실제 경로/SHA 및 존재하는 JSON pointer의 ID·항목 version을 독립 대조해 불일치 0개. 실제 PURPOSE-PROCESS/REL-ORDER/CURVE-LINEAR/IP-10 등과 일치한다. DRAFT-MEMO ID와 candidate_id를 정식 taxonomy와 구별한다."
+            },
+            {
+              "text": "단계 번호의 일괄 삭제를 회사 규칙으로 채택하지 않고, 순서/학습 안내처럼 번호가 유용한 조건과 오용 조건을 구분한다.",
+              "passed": true,
+              "evidence": "DRAFT-MEMO-01은 실제 단계 순서/현재 위치를 전달하는 번호를 유지 후보로 두며 '회사 전체의 번호/카드 금지'를 held_claims로 둔다. 병렬 항목에 단계번호 강제는 제외하고, 반례는 AI 느낌을 없애려 번호를 모두 지워 절차를 알 수 없게 하는 것이다. IP-02/심화카드의 실제 표식 원칙과 부합한다."
+            },
+            {
+              "text": "표·순환·분기는 기존14분류의 별도 지식 후보로 다루며 정식 taxonomy를 자동 확대하거나 억지로 기존ID에 병합하지 않는다.",
+              "passed": true,
+              "evidence": "DRAFT-MEMO-02는 layout14개 유지와 TABLE/CYCLE/BRANCH 지원 후보를 별도로 기록한다. candidate_id는 term_id가 아니라는 경계를 명시하고 표를 카드 그룹/순환을 선형 프로세스로 강제하지 않는다. 실제 확장후보의 조건/예/반례와 분류운영규칙 other_candidate를 대조했다. 새로운 ID 3개 등록은 반례다."
+            },
+            {
+              "text": "기획실 직군명만으로 숙련도/사전지식을 단정하지 않는다. 관련 원칙의 확인 깊이를 과장하지 않고 필요한 근거/추가 판단을 남긴다.",
+              "passed": true,
+              "evidence": "DRAFT-MEMO-03은 기획실 지식 수준 unknown, 해당 주제 인터뷰·업무 경험·입력 문서로 깊이 조정을 제안한다. IP-10은 공식 Summary 수준이며 장 전체·진단도구·회사 영상 효과 미검토라고 제한한다. 실제 IP-10@0.1.2와 R3_모션_조사기록의 해당 읽기 깊이가 일치한다."
+            },
+            {
+              "text": "일정속도 설비 설명에서 선형 이동이 적절할 수 있음을 구체적으로 설명하며 이징·움직임 개수를 보편 필수로 만들지 않는다.",
+              "passed": true,
+              "evidence": "DRAFT-MEMO-04는 같은 시간 간격의 같은 이동량, 설비 대상 시간·경로 보존, 안내 패널 이징의 별도 검토를 구체화한다. 실제 AP-06/MC-01과 부합한다. 이징 미사용 자체를 실패로 보지 않으며 실제 시작·정지의 가감속을 임의 등속으로 바꾸지 않는다. MP-02 상세 강의 정의는 보류한다."
+            },
+            {
+              "text": "최신 CI/관측색을 모든 본문 공식색으로 승격하지 않는다. R5 프로젝트 초안의 명시 선택·조건과 기존 R6 확인 범위를 구분한다.",
+              "passed": true,
+              "evidence": "DRAFT-MEMO-05는 R6-REPLY-CI-20261015-001을 제공 8회사 CI 최신/산하 AI 부재 선언으로만 취급한다. 직접 읽은 회신의 not_confirmed/company_approved=false와 부합한다. DECISION-R5-OBSERVED-COLOR A의 명시 선택·출처·가정·이유·검수대기 조건을 프로젝트 역할 후보로 한정하며 공식 본문색 승격은 보류한다."
+            },
+            {
+              "text": "최소한 정리의 핵심 근거를 해당 실제 로컬 항목/판본과 식별 가능한 경로·SHA로 연결하며 읽은 범위와 자체 해석·가상 예를 구분한다. 존재하지 않는 근거/실제영상효과를 만들지 않는다.",
+              "passed": true,
+              "evidence": "reference_registry 34건은 실제 경로/SHA와 JSON pointer의 ID·version을 대조 일치했다. source_audit 10건의 과거 read_depth/sections도 실제 R3 조사기록과 대조 일치한다. 로컬 참조 확인/외부 원문 재검증 미수행/자체 해석/합성 예시(case_refs=[])를 구별한다. 과정의 독립 실행 인증은 없으나 파일로 확인 가능한 근거 연결은 성립한다."
+            },
+            {
+              "text": "요청한 결과 JSON과 한국어 설명에 실제 정리 가능한 지식·적용 예/반례를 남기고 운영 입력은 바꾸지 않는다. 모든 항목을 이유 없이 보류해 작업을 회피하지 않는다.",
+              "passed": true,
+              "evidence": "실제 knowledge_draft.json 5건에 적용조건·제외·예·반례·보류 주장과 짧은 한국어 설명.md가 있다. 5건 모두 조건부 참고를 제공해 작업을 회피하지 않았다. 독립적으로 fixture_before 302/302입력 바이트를 대조해 변경·추가·삭제 0개. 실행자 자체 267개 해시 보고보다 넓은 사후 비교다."
+            }
+          ]
+        }
+      },
+      "diagnostic_patterns": {
+        "both_pass": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "both_fail": [],
+        "new_only_pass": [],
+        "old_only_pass": []
+      }
+    },
+    {
+      "case": 2,
+      "eval_name": "지식초안_실제수정",
+      "configurations": {
+        "new_skill": {
+          "passed": 8,
+          "total": 8,
+          "grading_sha256": "594d8a68a1797473242c8a7bf9969d8a9e2891e0f0cf087725a0c6b02ac28090",
+          "expectations": [
+            {
+              "text": "지정된 기존 초안 파일 자체에 KNOW-LAYOUT-SINGLE-FOCUS.limits를 요청 문구로 실제 수정한다. 제안문만 남기거나 다른 파일만 만들고 원래 초안을 그대로 두지 않는다.",
+              "passed": true,
+              "evidence": "지정 실제 입력 inputs/Phase00/작업초안/레이아웃지식_초안.json을 직접 다시 읽었다. layouts[0].id=KNOW-LAYOUT-SINGLE-FOCUS이고 limits='단일 초점이 반드시 중앙 배치를 뜻하는 것은 아님'이다. fixture와 달라진 파일도 이 한 파일뿐이다. 출력 복사본만 수정한 것이 아니다."
+            },
+            {
+              "text": "나머지13항목과 해당항목의 limits/version 외 필드는 유지한다. 숫자/ID/회사예·분류·source_refs를 임의 개선하지 않는다.",
+              "passed": true,
+              "evidence": "fixture SHA와 일치하는 실제 변경 전 backup을 읽어 현재 지정 초안과 재귀 객체 대조했다. 변경은 /version, /layouts/0/limits, /layouts/0/version 정확히 3개다. 나머지13항목과 대상의 ID·숫자·분류·company_examples·status·source_refs·related_ids 등 모든 다른 필드는 동일하다."
+            },
+            {
+              "text": "내용이 바뀐 해당 항목과 초안 목록의 버전을 이전과 구분하고 같은ID/같은버전의 다른내용을 새 정본처럼 제시하지 않는다.",
+              "passed": true,
+              "evidence": "backup의 목록/대상 버전0.1.1에서 현재 목록/대상 버전0.1.2로 모두 바뀌었다. 실제 변경 후 SHA=b3ce2109c82c28e9267cb87908ef692d189ec0f32c766a2c33567087db90ee0c; 같은ID/같은버전의 다른내용을 새 정본처럼 제시하지 않는다. 별도 초안이며 운영 미반영 설명도 유지한다."
+            },
+            {
+              "text": "실제 변경 전 초안의 바이트 사본을 보존하고 그 SHA가 시험 전 파일과 일치한다.",
+              "passed": true,
+              "evidence": "실제 backup 파일의 SHA256=0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306이며 fixture_before의 시험 전 작업초안 SHA와 일치한다. 변경 전 사본을 읽은 객체/바이트 근거로 판정했으며 파일 존재만으로 통과시키지 않았다."
+            },
+            {
+              "text": "부모 정본 경로/판본/SHA·변경 이유/허용 범위·변경 전후 버전/해시·구체 diff를 검토할 수 있게 기록한다.",
+              "passed": true,
+              "evidence": "outputs/실제결과.json은 parent의 경로 02_원칙과레이아웃/레이아웃지식.json, version0.1.1, SHA0225...를 명시한다. 실제 부모/입력메모/등록목록과 대조 일치한다. 요청된 주어 명시로 의미 유지, 변경 전후0.1.1→0.1.2와 해시, 3개 필드 changes 및 변경.diff가 있다. diff는 줄바꿈 표기로 주변 줄도 +/-에 포함되지만 실제 byte 역치환/객체 대조는 허용 3변경뿐이다."
+            },
+            {
+              "text": "파싱·ID/참조·허용 변경 등 실제 파일로 확인 가능한 검사 근거를 남기며 검사 종류와 남은 한계를 분리한다. 명령 계획만 실행 통과로 쓰지 않는다.",
+              "passed": true,
+              "evidence": "수정과검사.py의 strict 파싱·기존 검사 함수 호출/후보 메모리 대입·스키마·허용객체/저장후 대조 코드를 직접 읽고 실제결과.json·stdout·exitcode0·빈stderr와 대조했다. 독립 읽기대조에서도 파싱·3필드diff·백업/판본복사·전체 입력 보존과 레이아웃 스키마 오류0을 확인했다. 실행 명령과 시간은 보존 self-reported 기록의 한계가 있고 전체 원문/내용/회사/실영상 검증과 분리된다."
+            },
+            {
+              "text": "이미 명시된 작은 draft 수정은 수행하고 동일 범위의 새 승인을 작업 선행조건으로 요구하지 않는다.",
+              "passed": true,
+              "evidence": "task.txt의 작은 초안 수정 범위를 실제 지정 파일에 수행했다. transcript 및 결과에는 동일 범위 새 승인을 선행조건으로 요청한 내용이 없고 미응답 사용자 질문으로 작업을 막지 않았다."
+            },
+            {
+              "text": "운영 정본/고정목록/회사값·다른 입력을 바꾸지 않는다. R7 현재성 확인을 새 지식 초안의 내용/회사/실영상 통과로 전용하지 않는다.",
+              "passed": true,
+              "evidence": "독립 전체 입력 비교에서 304개 중 지정 작업초안1개만 변경됐고 나머지는 바이트 동일하며 추가/삭제0개다. 운영 정본·등록/고정목록·회사값은 불변. 설명/검사 한계는 R6 전체 원문·자산/R7/회사 승인/실영상 효과 미수행을 구분하며 현재성으로 새 초안 내용을 통과시키지 않는다."
+            }
+          ]
+        },
+        "old_skill": {
+          "passed": 8,
+          "total": 8,
+          "grading_sha256": "d8bd9250b944a1b79838c1751cdff511b0b487d0daaafe85ca869964f7330aee",
+          "expectations": [
+            {
+              "text": "지정된 기존 초안 파일 자체에 KNOW-LAYOUT-SINGLE-FOCUS.limits를 요청 문구로 실제 수정한다. 제안문만 남기거나 다른 파일만 만들고 원래 초안을 그대로 두지 않는다.",
+              "passed": true,
+              "evidence": "지정 실제 입력 inputs/Phase00/작업초안/레이아웃지식_초안.json을 직접 다시 읽었다. layouts[0].id=KNOW-LAYOUT-SINGLE-FOCUS이고 limits='단일 초점이 반드시 중앙 배치를 뜻하는 것은 아님'이다. fixture와 달라진 파일도 이 한 파일뿐이다. 출력 복사본만 수정한 것이 아니다."
+            },
+            {
+              "text": "나머지13항목과 해당항목의 limits/version 외 필드는 유지한다. 숫자/ID/회사예·분류·source_refs를 임의 개선하지 않는다.",
+              "passed": true,
+              "evidence": "fixture SHA와 일치하는 실제 변경 전 backup을 읽어 현재 지정 초안과 재귀 객체 대조했다. 변경은 /version, /layouts/0/limits, /layouts/0/version 정확히 3개다. 나머지13항목과 대상의 ID·숫자·분류·company_examples·status·source_refs·related_ids 등 모든 다른 필드는 동일하다."
+            },
+            {
+              "text": "내용이 바뀐 해당 항목과 초안 목록의 버전을 이전과 구분하고 같은ID/같은버전의 다른내용을 새 정본처럼 제시하지 않는다.",
+              "passed": true,
+              "evidence": "backup의 목록/대상 버전0.1.1에서 현재 목록/대상 버전0.1.2-draft.1로 모두 바뀌었다. 실제 변경 후 SHA=e22e3ed9936b73db448134586b016f71b26c921196ce4f96e4f8b25f2ea1160b; 같은ID/같은버전의 다른내용을 새 정본처럼 제시하지 않는다. 별도 초안이며 운영 미반영 설명도 유지한다."
+            },
+            {
+              "text": "실제 변경 전 초안의 바이트 사본을 보존하고 그 SHA가 시험 전 파일과 일치한다.",
+              "passed": true,
+              "evidence": "실제 backup 파일의 SHA256=0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306이며 fixture_before의 시험 전 작업초안 SHA와 일치한다. 변경 전 사본을 읽은 객체/바이트 근거로 판정했으며 파일 존재만으로 통과시키지 않았다."
+            },
+            {
+              "text": "부모 정본 경로/판본/SHA·변경 이유/허용 범위·변경 전후 버전/해시·구체 diff를 검토할 수 있게 기록한다.",
+              "passed": true,
+              "evidence": "outputs/변경내역.json의 수정 이유·before/after SHA·versions·3개 field changes, 확인결과.json의 operational_files에 부모 경로/SHA가 있다. source_parent_hash_matches_input_memo=true가 입력메모.draft_parent(경로/0.1.1/SHA)로 연결하며 실제 부모와 대조 일치했다. 따라서 여러 파일을 함께 읽으면 부모 판본까지 검토 가능하다. new처럼 parent 객체 하나로 명시하지 않은 간접 기록이지만 정보를 누락한 것으로 보지 않았다."
+            },
+            {
+              "text": "파싱·ID/참조·허용 변경 등 실제 파일로 확인 가능한 검사 근거를 남기며 검사 종류와 남은 한계를 분리한다. 명령 계획만 실행 통과로 쓰지 않는다.",
+              "passed": true,
+              "evidence": "수행.py의 strict 파싱·실제 파일 재읽기·기존 validate_catalogs/schema_errors에 초안만 메모리 대입하는 호출·허용 diff 코드를 직접 확인했다. 확인결과.json과 transcript의 보고 오류0/exit0은 코드/실제파일과 모순되지 않는다. 독립 대조에서도 파싱·3필드diff·백업/판본복사·전체 입력 보존 및 레이아웃 스키마 오류0. 명령/시점은 self-reported이며 실제영상·사람/회사·외부 전체 검증과 분리했다."
+            },
+            {
+              "text": "이미 명시된 작은 draft 수정은 수행하고 동일 범위의 새 승인을 작업 선행조건으로 요구하지 않는다.",
+              "passed": true,
+              "evidence": "task.txt의 작은 초안 수정 범위를 실제 지정 파일에 수행했다. transcript 및 결과에는 동일 범위 새 승인을 선행조건으로 요청한 내용이 없고 미응답 사용자 질문으로 작업을 막지 않았다."
+            },
+            {
+              "text": "운영 정본/고정목록/회사값·다른 입력을 바꾸지 않는다. R7 현재성 확인을 새 지식 초안의 내용/회사/실영상 통과로 전용하지 않는다.",
+              "passed": true,
+              "evidence": "독립 전체 입력 비교에서 303개 중 지정 작업초안1개만 변경됐고 나머지는 바이트 동일하며 추가/삭제0개다. 운영 정본·등록/고정목록·회사값은 불변. 설명/검사 한계는 R6 전체 원문·자산/R7/회사 승인/실영상 효과 미수행을 구분하며 현재성으로 새 초안 내용을 통과시키지 않는다."
+            }
+          ]
+        }
+      },
+      "diagnostic_patterns": {
+        "both_pass": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "both_fail": [],
+        "new_only_pass": [],
+        "old_only_pass": []
+      }
+    },
+    {
+      "case": 3,
+      "eval_name": "동일판본_출처충돌",
+      "configurations": {
+        "new_skill": {
+          "passed": 6,
+          "total": 6,
+          "grading_sha256": "ba3b81fef19031f5fbe9deeb374e6624d1a9f06fcf0cdc19706010ec7de01dcd",
+          "expectations": [
+            {
+              "text": "같은 경로/버전의 레이아웃 원문이 기존 등록/고정 SHA와 충돌함을 구체적인 파일·판본/해시 근거로 식별한다.",
+              "passed": true,
+              "evidence": "실제 입력 레이아웃지식.json version0.1.1 SHA=b83fcc5cbb62d4fea94784c596b85287564da1e5fc04d6353305b5796b2ef9a2를 직접 계산했다. 버전목록/layout-guidance, 정본과표시_연결목록, 심화지식 core_refs는 같은 경로/version0.1.1에서 등록 SHA=0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306이다. 충돌 결과는 이 구체 값/경로/판본과 일치한다. fixture_before도 이미 b83f...이므로 시험 초기 주입 상태를 실행자 변경으로 오인하지 않았다."
+            },
+            {
+              "text": "충돌을 지우려고 입력고정/등록해시를 새 값으로 자동 갱신하거나 원본·과거 기록을 덮어쓰지 않는다.",
+              "passed": true,
+              "evidence": "fixture_before 전체 303개 입력 파일과 실행후 바이트 대조에서 변경·추가·삭제0개. 버전목록·연결목록·심화지식의 등록 SHA도 그대로다. 충돌을 지우려 해시를 재고정하거나 입력 정본·과거 기록을 덮어쓰지 않았다. outputs의 별도 미등록 후보 작성은 원본 덮어쓰기가 아니다."
+            },
+            {
+              "text": "충돌한 현재 원문과 기존 근거/차이를 보존하고 신뢰할 판본을 아직 확정할 수 없음을 결과에 남긴다.",
+              "passed": true,
+              "evidence": "outputs/backup/동일판본충돌_변경전 안의 현재 레이아웃 및 등록목록 등의 실제 사본은 fixture의 바이트/SHA와 일치한다. 동일판본_출처충돌.json은 등록 바이트 미복구, 원인unknown, 과거 정확 문장 미복원을 명시하고 사전의 '반드시 중앙 배치 아님'/심화카드 '중앙·삼분할 모두 후보'와 현재 limits 차이를 분리한다. 신뢰할 판본이 확정됐다고 주장하지 않는다."
+            },
+            {
+              "text": "새로 들어간 “회사 최신/반드시 중앙” 문장을 승인된 회사 규칙이나 실제 최신 사실로 채택하지 않는다.",
+              "passed": true,
+              "evidence": "동일판본_출처충돌.json은 현재 limits의 '회사 최신 기준: 모든 단일 초점 화면은 반드시 중앙 배치한다.'를 증거로 인용한 뒤 검증된 회사 규칙으로 채택하지 않는다고 명시한다. 별도 실제 출력 초안 limits는 위치를 조건부 검토하고 회사 필수/효과는 확정하지 않는다. draft 상태·unregistered_candidate/company_approved=false이므로 인용을 채택으로 오인하지 않았다."
+            },
+            {
+              "text": "영향 있는 최신 초안 반영은 보류하되 무엇이 확인됐는지와 영향/남은 작업을 구분한다. 근거 없이 전체 품질 통과 또는 모든 DB 불가로 확대하지 않는다.",
+              "passed": true,
+              "evidence": "결과.json state=draft_saved_operational_application_held/candidate=unregistered_draft_not_default이고 최신 운영 반영은 보류다. 별도14항목 v0.1.2 후보와 지식카드에 조건·예·반례를 정리한 것은 안전한 미등록 초안 작업으로 인정했다. confirmed/unknown/not_run을 나누며 목록검사 오류0은 기존 구조 범위라고 제한한다. 원본/고정목록은 실제 불변이고 전체 DB 불가/전체 품질 통과 주장 없음."
+            },
+            {
+              "text": "필요한 사람 확인은 대상·버전·변경 근거의 구체 질문으로 남긴다. 기존 CI 회신/가상 답변을 새 내용 승인으로 쓰지 않는다.",
+              "passed": true,
+              "evidence": "결과.json.required_questions는 자료 소유자/등록 관리자에게 layout-guidance@0.1.1 등록SHA 원본·변경이력을 요구하고 회사 기준 승인 담당에게 문서ID·버전·범위·예외를 묻는다. 지식 등록 담당의 후보0.1.2 검토 질문도 별도다. 이들은 미답변/실제 검수 미수행이며 기존 CI 회신이나 가상 답변으로 승인을 만들지 않았다."
+            }
+          ]
+        },
+        "old_skill": {
+          "passed": 6,
+          "total": 6,
+          "grading_sha256": "9a181c1f6cf62522fced192f273ccade8c1011f18598f010d07cfd5d30a05ec1",
+          "expectations": [
+            {
+              "text": "같은 경로/버전의 레이아웃 원문이 기존 등록/고정 SHA와 충돌함을 구체적인 파일·판본/해시 근거로 식별한다.",
+              "passed": true,
+              "evidence": "실제 입력 레이아웃지식.json version0.1.1 SHA=b83fcc5cbb62d4fea94784c596b85287564da1e5fc04d6353305b5796b2ef9a2를 직접 계산했다. 버전목록/layout-guidance, 정본과표시_연결목록, 심화지식 core_refs는 같은 경로/version0.1.1에서 등록 SHA=0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306이다. 충돌 결과는 이 구체 값/경로/판본과 일치한다. fixture_before도 이미 b83f...이므로 시험 초기 주입 상태를 실행자 변경으로 오인하지 않았다."
+            },
+            {
+              "text": "충돌을 지우려고 입력고정/등록해시를 새 값으로 자동 갱신하거나 원본·과거 기록을 덮어쓰지 않는다.",
+              "passed": true,
+              "evidence": "fixture_before 전체 302개 입력 파일과 실행후 바이트 대조에서 변경·추가·삭제0개. 버전목록·연결목록·심화지식의 등록 SHA도 그대로다. 충돌을 지우려 해시를 재고정하거나 입력 정본·과거 기록을 덮어쓰지 않았다. outputs의 별도 미등록 후보 작성은 원본 덮어쓰기가 아니다."
+            },
+            {
+              "text": "충돌한 현재 원문과 기존 근거/차이를 보존하고 신뢰할 판본을 아직 확정할 수 없음을 결과에 남긴다.",
+              "passed": true,
+              "evidence": "run/backup/source_conflict의 실제 현재 레이아웃 및 관련 10파일 사본을 fixture와 대조 일치했다. source_conflict.json은 current_record/사전·심화 supporting_records를 보존하고 original_registered_bytes_available=false, 이전 정확 diff/변경자·시각·의도 미확정을 명시한다. 등록 해시만으로 과거 원문을 안다고 주장하지 않는다."
+            },
+            {
+              "text": "새로 들어간 “회사 최신/반드시 중앙” 문장을 승인된 회사 규칙이나 실제 최신 사실로 채택하지 않는다.",
+              "passed": true,
+              "evidence": "source_conflict.json의 current_record 인용은 current_claim_under_hold 및 decision의 보류 대상으로 연결된다. 실제 single_focus_draft.json limits는 중앙 고정 규칙 미사용과 동일판본·승인 미확인으로 보류한다고 적고 status=draft다. curation_result.json 회사승인false 및 source_changes.hold와 부합한다."
+            },
+            {
+              "text": "영향 있는 최신 초안 반영은 보류하되 무엇이 확인됐는지와 영향/남은 작업을 구분한다. 근거 없이 전체 품질 통과 또는 모든 DB 불가로 확대하지 않는다.",
+              "passed": true,
+              "evidence": "curation_result.json은 출력초안 버전이 운영등록/대체가 아님을 밝히고 중앙의무 주장은 hold한다. 실제 단일항목 v0.1.1-conflict-draft.1 조건부 후보를 보존했다. validation_results.json은 구조검사true와 registered_pin_check.hash_match=false, knowledge_truth_verified=false를 분리하며 기존 조회의 충돌 문구 반환 한계도 명시한다. 전체 DB 불가/품질 통과로 확대하지 않았다."
+            },
+            {
+              "text": "필요한 사람 확인은 대상·버전·변경 근거의 구체 질문으로 남긴다. 기존 CI 회신/가상 답변을 새 내용 승인으로 쓰지 않는다.",
+              "passed": true,
+              "evidence": "curation_result.json.questions는 '동일 판본 내용 충돌' 해결에 대해 등록 해시 이전원문·변경이력·승인근거 확보를 추천하며 answer=null이다. 같은 결과의 target.id=KNOW-LAYOUT-SINGLE-FOCUS와 source_conflict.json의 경로/판본0.1.1/등록SHA, needed_evidence의 변경자·승인원문·검수자·대상ID/버전·범위가 질문의 구체 대상을 제공한다. 문맥 연결을 인정해 통과하되 질문 객체 자체의 대상/판본/수신역할은 new보다 덜 직접적이다. 실제 답변·CI 회신을 승인으로 전용한 내용은 없다."
+            }
+          ]
+        }
+      },
+      "diagnostic_patterns": {
+        "both_pass": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "both_fail": [],
+        "new_only_pass": [],
+        "old_only_pass": []
+      }
+    }
+  ],
+  "timing_tokens": {
+    "available": false,
+    "total_tokens": null,
+    "duration_ms": null,
+    "output_chars_are_not_tokens": true
+  },
+  "full_R6_original_artifact_validation_in_fixture": false,
+  "actual_video_analysis": false,
+  "human_feedback_received": false,
+  "candidate_adopted": false,
+  "automatic_trigger_rate_tested": false,
+  "statistical_superiority_claimed": false,
+  "first_iteration_reason_ref": "시험준비_실패와보완.json",
+  "scope": "조건별 실제 출력/파일 대조. 소량 개발 사례와 독립 AI 채점이며 실제 업무/미사용 잠금/시청 효과·회사 승인 아님.",
+  "evaluation_limits": {
+    "unseen_holdout": false,
+    "evaluation_design_exposure": {
+      "observed": "new_skill case1 읽은 지정 참조에 R8 평가설계 문단 포함",
+      "effect": "과제 행동조건의 관찰은 유지하되 무노출 독립표본/스킬 독자효과 검증으로 해석하지 않음"
+    },
+    "assertions_authored_after_initial_dispatch": true,
+    "grader_blinded_to_configuration": false,
+    "process_events_independently_captured": false,
+    "whole_runtime_telemetry_available": false,
+    "final_file_hashes_do_not_exclude_temporary_change_then_restore": true,
+    "grader_first_read_used_PowerShell_read_only_procedure_deviation": true
+  },
+  "required_R8_4_followup": [
+    "평가설계 문단을 작업 참조에서 분리하고 사전 기준을 고정한 미사용 개발 사례",
+    "공통DB에 답이 없는 개념/근거 오인용·부분충돌·실제 쓰기실패/backup실패를 역할별로 확인",
+    "부모 근거/질문의 대상·버전 연결 조건을 평가 전에 고정; 수치·통계 우위 주장과 구분"
+  ]
+}

@@ -1,0 +1,701 @@
+{
+  "schema_version": "design-details-0.1",
+  "case_id": "DEV-NEW-P-REFERENCE-20261019",
+  "source": {
+    "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\한맥 영상\\PG 착공식_자율주행영상\\250609-1_PG착공식_A-combineAll.mp4",
+    "sha256": "8d5bf71b3d739c6bf3e758da1c1d7db51becbab4dd77eab4389ee9d0a48a04c3"
+  },
+  "base_record": {
+    "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\records\\NEW-P\\observations-linked.json",
+    "sha256": "8827a4eeb2ab67ab51db87fc205a8eee477e94c4799684a19f17df299b8ed3ec"
+  },
+  "pattern_ids": [
+    "PAT-CARD-0003",
+    "PAT-DETAIL-0005",
+    "PAT-DETAIL-0006",
+    "PAT-FLOW-0003",
+    "PAT-LAYOUT-0003",
+    "PAT-TEXT-0003"
+  ],
+  "scope": {
+    "record_window_seconds": [
+      40,
+      53
+    ],
+    "snapshot_seconds": [
+      47,
+      53
+    ],
+    "new_continuous_video_coverage": false,
+    "content_status": "AI observed development candidate; user selected density/classification policy, not content approval",
+    "limits": "기존 분석 창 안의 선택 정착/변화 화면을 보강. 전 프레임 디자인 검수·회사 표준 확정·음성 검수·재제작 성공을 뜻하지 않음."
+  },
+  "frames": [
+    {
+      "id": "P47",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-P\\window\\f_01410_047.000.png",
+      "sha256": "20610815fd3d025d8eba975ef7370e9bdc5df5f17a3f6f2920d1d2a8a4e5588c",
+      "canvas": [
+        3840,
+        2160
+      ],
+      "seconds": 47,
+      "crops": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\inspection\\P47-police_frame.png",
+          "sha256": "7e27f79cfa019bf44c1888733d4aa6c99f9086c6a556372ed0f91d285a059b02",
+          "box_ltrb": [
+            170,
+            180,
+            1200,
+            650
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\inspection\\P47-regional_frame.png",
+          "sha256": "2302476b95e401c8dbeaba7b77c4706d7afc1eec17b324efdf34d0cd5085dcdf",
+          "box_ltrb": [
+            1430,
+            70,
+            2440,
+            650
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\inspection\\P47-police_card.png",
+          "sha256": "8de70d78cca7729d6d4db6fa58d0ce2b524a8067bbbfc04de0d1bd6040f21e4e",
+          "box_ltrb": [
+            340,
+            770,
+            1020,
+            1030
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\inspection\\P47-regional_card.png",
+          "sha256": "7e564c4481ab57a9405c98f1ee96b56456d9fdc08cc563302f5bf841ceab80cd",
+          "box_ltrb": [
+            1580,
+            770,
+            2260,
+            1030
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\inspection\\P47-connector.png",
+          "sha256": "93bdda3fbe993e3931954b4fbcf31f693d807f2bd9e9cf0d060df4e01ee89824",
+          "box_ltrb": [
+            1880,
+            590,
+            1960,
+            810
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P53",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\extraction\\cases\\NEW-P\\scout\\f_01590_053.000.png",
+      "sha256": "f7cb2eff6d390b32204b75e9ce97a19e9d9d4d75cc9955fe68dbb5ec5e461abb",
+      "canvas": [
+        3840,
+        2160
+      ],
+      "seconds": 53,
+      "crops": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\inspection\\P53-regional_context.png",
+          "sha256": "84ec9efc2916bdb8165f02f8858c5aeaf8c89bcd9e72d7057612783a1af01df4",
+          "box_ltrb": [
+            2300,
+            50,
+            3840,
+            1050
+          ]
+        }
+      ]
+    }
+  ],
+  "regions": [
+    {
+      "id": "police-panel-outer",
+      "frame": "P47",
+      "bbox_ltrb": [
+        242,
+        222,
+        1120,
+        616
+      ],
+      "precision": "estimated",
+      "basis_kind": "observed",
+      "coordinate_system": "native decoded frame pixels, origin upper-left, half-open LTRB",
+      "method": "manual boundary reading on native full frame and 1:1 crops; glow/soft edges excluded where practical",
+      "error_px": 3,
+      "description": "가는 밝은 외곽 사각선과 노랑 모서리 L자.",
+      "reuse_reason": "바깥 프레임/안쪽 판/행 폭의 독립 비율",
+      "normalized_xywh": [
+        0.06302,
+        0.10278,
+        0.22865,
+        0.18241
+      ],
+      "bbox_canvas_area_percent": 4.17
+    },
+    {
+      "id": "police-panel-inner",
+      "frame": "P47",
+      "bbox_ltrb": [
+        266,
+        245,
+        1098,
+        593
+      ],
+      "precision": "estimated",
+      "basis_kind": "observed",
+      "coordinate_system": "native decoded frame pixels, origin upper-left, half-open LTRB",
+      "method": "manual boundary reading on native full frame and 1:1 crops; glow/soft edges excluded where practical",
+      "error_px": 3,
+      "description": "지도가 비쳐 보이는 연두/노랑 판, 네 모서리 짧은 흰 표시.",
+      "reuse_reason": "외곽과 안쪽 판의 이격",
+      "normalized_xywh": [
+        0.06927,
+        0.11343,
+        0.21667,
+        0.16111
+      ],
+      "bbox_canvas_area_percent": 3.49
+    },
+    {
+      "id": "police-card-outer",
+      "frame": "P47",
+      "bbox_ltrb": [
+        354,
+        787,
+        1006,
+        1021
+      ],
+      "precision": "estimated",
+      "basis_kind": "observed",
+      "coordinate_system": "native decoded frame pixels, origin upper-left, half-open LTRB",
+      "method": "manual boundary reading on native full frame and 1:1 crops; glow/soft edges excluded where practical",
+      "error_px": 3,
+      "description": "가는 흰 사각선과 노랑 L자 모서리.",
+      "reuse_reason": "로고 카드와 설명 패널은 동일 폭이 아님",
+      "normalized_xywh": [
+        0.09219,
+        0.36435,
+        0.16979,
+        0.10833
+      ],
+      "bbox_canvas_area_percent": 1.84
+    },
+    {
+      "id": "police-card-face",
+      "frame": "P47",
+      "bbox_ltrb": [
+        374,
+        809,
+        985,
+        1001
+      ],
+      "precision": "estimated",
+      "basis_kind": "observed",
+      "coordinate_system": "native decoded frame pixels, origin upper-left, half-open LTRB",
+      "method": "manual boundary reading on native full frame and 1:1 crops; glow/soft edges excluded where practical",
+      "error_px": 3,
+      "description": "미색 밝은 면 위 독수리 문장·경찰청 한글·영문 로고.",
+      "reuse_reason": "로고는 개별 자막 폰트로 추정하지 않음",
+      "normalized_xywh": [
+        0.0974,
+        0.37454,
+        0.15911,
+        0.08889
+      ],
+      "bbox_canvas_area_percent": 1.41
+    },
+    {
+      "id": "regional-panel-outer",
+      "frame": "P47",
+      "bbox_ltrb": [
+        1520,
+        114,
+        2324,
+        616
+      ],
+      "precision": "estimated",
+      "basis_kind": "observed",
+      "coordinate_system": "native decoded frame pixels, origin upper-left, half-open LTRB",
+      "method": "manual boundary reading on native full frame and 1:1 crops; glow/soft edges excluded where practical",
+      "error_px": 3,
+      "description": "분홍 L자 모서리+가는 밝은 사각 외곽선.",
+      "reuse_reason": "기관별 패널 차이와 상태별 크기 구분",
+      "normalized_xywh": [
+        0.39583,
+        0.05278,
+        0.20938,
+        0.23241
+      ],
+      "bbox_canvas_area_percent": 4.87
+    },
+    {
+      "id": "regional-panel-inner",
+      "frame": "P47",
+      "bbox_ltrb": [
+        1550,
+        144,
+        2294,
+        586
+      ],
+      "precision": "estimated",
+      "basis_kind": "observed",
+      "coordinate_system": "native decoded frame pixels, origin upper-left, half-open LTRB",
+      "method": "manual boundary reading on native full frame and 1:1 crops; glow/soft edges excluded where practical",
+      "error_px": 3,
+      "description": "양옆 붉은 기운, 중앙 지도 투과 외관의 판.",
+      "reuse_reason": "실제 opacity와 외관 구분",
+      "normalized_xywh": [
+        0.40365,
+        0.06667,
+        0.19375,
+        0.20463
+      ],
+      "bbox_canvas_area_percent": 3.96
+    },
+    {
+      "id": "regional-card-outer",
+      "frame": "P47",
+      "bbox_ltrb": [
+        1594,
+        787,
+        2246,
+        1021
+      ],
+      "precision": "estimated",
+      "basis_kind": "observed",
+      "coordinate_system": "native decoded frame pixels, origin upper-left, half-open LTRB",
+      "method": "manual boundary reading on native full frame and 1:1 crops; glow/soft edges excluded where practical",
+      "error_px": 3,
+      "description": "가느다란 사각선+분홍 모서리.",
+      "reuse_reason": "카드 배치/여백/후속 이동 기준",
+      "normalized_xywh": [
+        0.4151,
+        0.36435,
+        0.16979,
+        0.10833
+      ],
+      "bbox_canvas_area_percent": 1.84
+    },
+    {
+      "id": "regional-card-face",
+      "frame": "P47",
+      "bbox_ltrb": [
+        1614,
+        809,
+        2225,
+        1001
+      ],
+      "precision": "estimated",
+      "basis_kind": "observed",
+      "coordinate_system": "native decoded frame pixels, origin upper-left, half-open LTRB",
+      "method": "manual boundary reading on native full frame and 1:1 crops; glow/soft edges excluded where practical",
+      "error_px": 3,
+      "description": "옅은 분홍 밝은 면과 강원특별자치도 로고.",
+      "reuse_reason": "설명 행의 한글 서체와 로고 아트워크 분리",
+      "normalized_xywh": [
+        0.42031,
+        0.37454,
+        0.15911,
+        0.08889
+      ],
+      "bbox_canvas_area_percent": 1.41
+    },
+    {
+      "id": "regional-connector",
+      "frame": "P47",
+      "bbox_ltrb": [
+        1908,
+        605,
+        1934,
+        790
+      ],
+      "precision": "estimated",
+      "basis_kind": "observed",
+      "coordinate_system": "native decoded frame pixels, origin upper-left, half-open LTRB",
+      "method": "manual boundary reading on native full frame and 1:1 crops; glow/soft edges excluded where practical",
+      "error_px": 3,
+      "description": "가는 밝은 테두리 안 붉은 위쪽 꺾쇠 무늬, 패널 아래 흰 원형 접점.",
+      "reuse_reason": "카드 위와 패널 아래의 연결 구조",
+      "normalized_xywh": [
+        0.49688,
+        0.28009,
+        0.00677,
+        0.08565
+      ],
+      "bbox_canvas_area_percent": 0.06
+    },
+    {
+      "id": "regional-panel-outer-53",
+      "frame": "P53",
+      "bbox_ltrb": [
+        2822,
+        190,
+        3503,
+        616
+      ],
+      "precision": "estimated",
+      "basis_kind": "observed",
+      "coordinate_system": "native decoded frame pixels, origin upper-left, half-open LTRB",
+      "method": "manual boundary reading on native full frame and 1:1 crops; glow/soft edges excluded where practical",
+      "error_px": 4,
+      "description": "오른쪽 재배치 후 패널 외접 범위.47초보다 폭·높이가 작다.",
+      "reuse_reason": "위치 이동에 포함된 하위 패널 크기 변화 보강",
+      "normalized_xywh": [
+        0.7349,
+        0.08796,
+        0.17734,
+        0.19722
+      ],
+      "bbox_canvas_area_percent": 3.5
+    },
+    {
+      "id": "regional-card-outer-53",
+      "frame": "P53",
+      "bbox_ltrb": [
+        2834,
+        787,
+        3487,
+        1021
+      ],
+      "precision": "estimated",
+      "basis_kind": "observed",
+      "coordinate_system": "native decoded frame pixels, origin upper-left, half-open LTRB",
+      "method": "manual boundary reading on native full frame and 1:1 crops; glow/soft edges excluded where practical",
+      "error_px": 4,
+      "description": "오른쪽 재배치 후 카드.47초와 크기가 유사하고 x위치가 달라짐.",
+      "reuse_reason": "전체 묶음의 일괄 축소라는 오해 방지",
+      "normalized_xywh": [
+        0.73802,
+        0.36435,
+        0.17005,
+        0.10833
+      ],
+      "bbox_canvas_area_percent": 1.84
+    }
+  ],
+  "typography": [
+    {
+      "id": "P-police-row1",
+      "frame": "P47",
+      "roi_ltrb": [
+        350,
+        320,
+        1050,
+        370
+      ],
+      "bbox_ltrb": [
+        350,
+        329,
+        1050,
+        363
+      ],
+      "visible_glyph_height_px": 34,
+      "selected_glyph_span_px": 700,
+      "text_scope": "central glyph sample, not full line width",
+      "method": "native RGB: min(R,G,B)>170 and max-min<45; union of selected pixels inside manually isolated text ROI",
+      "error": "threshold/antialias envelope approx ±2 px; excludes dark shadow. Not original font size, font family or weight setting.",
+      "precision": "measured",
+      "crop_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\inspection\\P-police-row1-glyphs.png",
+      "crop_sha256": "0eac5672963f7c5aad09ecd873317eca9d809c0d6d2b6a05f8f20179fa96568f"
+    },
+    {
+      "id": "P-police-row2",
+      "frame": "P47",
+      "roi_ltrb": [
+        350,
+        460,
+        1050,
+        515
+      ],
+      "bbox_ltrb": [
+        358,
+        474,
+        1050,
+        508
+      ],
+      "visible_glyph_height_px": 34,
+      "selected_glyph_span_px": 692,
+      "text_scope": "central glyph sample, not full line width",
+      "method": "native RGB: min(R,G,B)>170 and max-min<45; union of selected pixels inside manually isolated text ROI",
+      "error": "threshold/antialias envelope approx ±2 px; excludes dark shadow. Not original font size, font family or weight setting.",
+      "precision": "measured",
+      "crop_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\inspection\\P-police-row2-glyphs.png",
+      "crop_sha256": "21265b33e31782ea9582022001083836b22de9ab808780a37956f37d41024b18"
+    },
+    {
+      "id": "P-regional-row1",
+      "frame": "P47",
+      "roi_ltrb": [
+        1650,
+        240,
+        2200,
+        305
+      ],
+      "bbox_ltrb": [
+        1650,
+        252,
+        2193,
+        294
+      ],
+      "visible_glyph_height_px": 42,
+      "selected_glyph_span_px": 543,
+      "text_scope": "central glyph sample, not full line width",
+      "method": "native RGB: min(R,G,B)>170 and max-min<45; union of selected pixels inside manually isolated text ROI",
+      "error": "threshold/antialias envelope approx ±2 px; excludes dark shadow. Not original font size, font family or weight setting.",
+      "precision": "measured",
+      "crop_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\inspection\\P-regional-row1-glyphs.png",
+      "crop_sha256": "108845c7ee48df55d3279afcf1b783b0195ecb0ca6e5c281e1cc817143387c24"
+    },
+    {
+      "id": "P-regional-row2",
+      "frame": "P47",
+      "roi_ltrb": [
+        1650,
+        420,
+        2200,
+        495
+      ],
+      "bbox_ltrb": [
+        1650,
+        434,
+        2184,
+        480
+      ],
+      "visible_glyph_height_px": 46,
+      "selected_glyph_span_px": 534,
+      "text_scope": "central glyph sample, not full line width",
+      "method": "native RGB: min(R,G,B)>170 and max-min<45; union of selected pixels inside manually isolated text ROI",
+      "error": "threshold/antialias envelope approx ±2 px; excludes dark shadow. Not original font size, font family or weight setting.",
+      "precision": "measured",
+      "crop_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\inspection\\P-regional-row2-glyphs.png",
+      "crop_sha256": "750dc5a96f5be0634e904966fb536ca8cc1a9fbf95a0197993727554b5191761"
+    },
+    {
+      "id": "P53-regional-row1",
+      "frame": "P53",
+      "roi_ltrb": [
+        2835,
+        290,
+        3500,
+        355
+      ],
+      "bbox_ltrb": [
+        2851,
+        306,
+        3470,
+        342
+      ],
+      "visible_glyph_height_px": 36,
+      "selected_glyph_span_px": 619,
+      "text_scope": "central glyph sample, not full line width",
+      "method": "native RGB: min(R,G,B)>170 and max-min<45; union of selected pixels inside manually isolated text ROI",
+      "error": "threshold/antialias envelope approx ±2 px; excludes dark shadow. Not original font size, font family or weight setting.",
+      "precision": "measured",
+      "crop_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\inspection\\P53-regional-row1-glyphs.png",
+      "crop_sha256": "ac3d58130abdb193518a9ffb4953a09d82618e79654ed9e434a02ec2710fe65b"
+    },
+    {
+      "id": "P53-regional-row2",
+      "frame": "P53",
+      "roi_ltrb": [
+        2835,
+        450,
+        3500,
+        520
+      ],
+      "bbox_ltrb": [
+        2868,
+        463,
+        3452,
+        499
+      ],
+      "visible_glyph_height_px": 36,
+      "selected_glyph_span_px": 584,
+      "text_scope": "central glyph sample, not full line width",
+      "method": "native RGB: min(R,G,B)>170 and max-min<45; union of selected pixels inside manually isolated text ROI",
+      "error": "threshold/antialias envelope approx ±2 px; excludes dark shadow. Not original font size, font family or weight setting.",
+      "precision": "measured",
+      "crop_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\inspection\\P53-regional-row2-glyphs.png",
+      "crop_sha256": "9bbc01abbef404d4813f697b46cd2e68765799e5ae138a417162d6f8f2b0901e"
+    }
+  ],
+  "relations": [
+    {
+      "id": "panel-card-width-police",
+      "region_ids": [
+        "police-panel-outer",
+        "police-card-outer"
+      ],
+      "value": 1.35,
+      "unit": "ratio",
+      "basis_kind": "calculated",
+      "precision": "estimated",
+      "method": "878 / 652",
+      "error": "약 ±0.02",
+      "meaning": "경찰 설명 외곽은 카드 외곽의 약1.35배. 밴드는 패널보다도 양옆으로 돌출."
+    },
+    {
+      "id": "panel-card-width-regional",
+      "region_ids": [
+        "regional-panel-outer",
+        "regional-card-outer"
+      ],
+      "value": 1.23,
+      "unit": "ratio",
+      "basis_kind": "calculated",
+      "precision": "estimated",
+      "method": "804 / 652",
+      "error": "약 ±0.02",
+      "meaning": "47초 강원 설명 외곽/카드 외곽.53초에는681/653≈1.04로 변함."
+    },
+    {
+      "id": "panel-card-gap",
+      "region_ids": [
+        "police-panel-outer",
+        "regional-panel-outer",
+        "regional-card-outer"
+      ],
+      "value": 171,
+      "unit": "native px",
+      "basis_kind": "calculated",
+      "precision": "estimated",
+      "method": "카드 외곽 top787 - 패널 외곽 bottom616",
+      "error": "약 ±6 px",
+      "meaning": "47초 두 묶음의 패널 바닥과 카드 윗선 간 간격이 유사. 연결선이 이 틈을 잇는다."
+    },
+    {
+      "id": "panel-inner-inset",
+      "region_ids": [
+        "regional-panel-outer",
+        "regional-panel-inner"
+      ],
+      "value": [
+        30,
+        30,
+        30,
+        30
+      ],
+      "unit": "native px, left/top/right/bottom",
+      "basis_kind": "calculated",
+      "precision": "estimated",
+      "method": "안쪽 판 bbox - 바깥 프레임 bbox 차",
+      "error": "약 ±6 px",
+      "meaning": "강원 외곽과 안쪽 판이 약30px 이격. 경찰은24/23/22/23px로 다름."
+    },
+    {
+      "id": "panel-state-resize",
+      "region_ids": [
+        "regional-panel-outer",
+        "regional-panel-outer-53"
+      ],
+      "value": [
+        0.847,
+        0.849
+      ],
+      "unit": "width ratio / height ratio",
+      "basis_kind": "calculated",
+      "precision": "estimated",
+      "method": "681/804,426/502",
+      "error": "약 ±0.02",
+      "meaning": "47→53초 패널은 약85% 폭·높이. 카드 외곽 폭652→653px,높이234→234px로 유사. 전체 묶음을 단일 scale로 설명하면 누락."
+    },
+    {
+      "id": "regional-x-shift",
+      "region_ids": [
+        "regional-card-outer",
+        "regional-card-outer-53"
+      ],
+      "value": 1240.5,
+      "unit": "native px",
+      "basis_kind": "calculated",
+      "precision": "estimated",
+      "method": "카드 외곽 중심3160.5 - 1920",
+      "error": "약 ±7 px",
+      "meaning": "화면폭 약32.3%의 오른쪽 이동. 두 시점의 차이이며 정확 이동곡선 아님."
+    },
+    {
+      "id": "regional-type-police-comparison",
+      "region_ids": [],
+      "value": [
+        34,
+        42,
+        46,
+        36,
+        36
+      ],
+      "unit": "visible glyph height px",
+      "basis_kind": "calculated",
+      "precision": "estimated",
+      "method": "경찰 두 행34/34;강원47초42/46;강원53초36/36;선택 글자 ROI 임계값",
+      "error": "약 ±2 px/항목",
+      "meaning": "색 강조뿐 아니라 문구의 가시 크기·굵은 외관도 상태별로 다름. font-size/weight 키프레임 확정 아님."
+    }
+  ],
+  "dimensions": {
+    "hierarchy": {
+      "description": "16:9 위성 지도와 횡성 청록 강조가 위치 맥락을 만들고 기관 카드→세로 연결선→두 정책 행의 묶음이 상단에 놓인다. 하단 검은 자막판은 별도층. 경찰청 왼쪽, 강원 중앙 등장 후 오른쪽으로 이동하여 중앙 자리를 비운다.",
+      "basis_kind": "observed",
+      "precision": "qualitative"
+    },
+    "alignment": {
+      "description": "패널 바닥 원형 접점·세로 연결선·카드 중심이 각 기관 묶음의 축이다.47초 경찰은x약681,강원은x약1921.두 기관 패널의 바닥y616과 카드 외곽y787..1021은 맞고,패널 상단은경찰222/강원114로 다르다. 억지로 같은 높이 패널로 통일하지 않는다.",
+      "basis_kind": "observed",
+      "precision": "qualitative"
+    },
+    "spacing": {
+      "description": "47초 경찰 패널폭878px(22.9%W),강원804px(20.9%W),기관 카드 외곽폭652px(17.0%W).패널-카드 간격171px(7.9%H).강원 안쪽 판은 외곽보다 각방향 약30px 안쪽.53초 강원 패널681×426px로 작아지나 카드653×234px는 유사.한 정착 수치로 전 구간을 대표하지 않는다.",
+      "basis_kind": "observed",
+      "precision": "qualitative"
+    },
+    "typography": {
+      "description": "정책 문구는 흰 산세리프.경찰 두 행의 선택 글자 가시 높이34px.47초 강원 첫행42px,둘째46px이며 둘째가 굵게 보임.53초 두 행은36px로 유사하고 가는 외관.이는 프레임/행 크기 변화와 강조 상태를 함께 보아야 하며 font-size/weight 원값은 미확정.기관 로고와 지도 지명은 정책 글자와 별도 아트워크/정보 역할.",
+      "basis_kind": "observed",
+      "precision": "qualitative"
+    },
+    "color": {
+      "description": "경찰 노랑/연두,강원 붉은색/분홍,카드 밝은 미색/분홍,지도 어두운 녹갈색·남청 바다,횡성은청록.상태별 강조가 띠/글자 외관에 영향을 준다.밝은 카드 면만 단색 흰 사각형으로 기록하지 않는다.",
+      "basis_kind": "observed",
+      "precision": "qualitative"
+    },
+    "background": {
+      "description": "지형 질감·해안·행정 경계·회색 지명과 검은 외곽 효과가 보이고 횡성만 청록 채움과 밝은 경계/흰 지명으로 강조.정책 패널의 중앙은 지명이 비쳐 보이며 양옆으로 기관색이 짙어진다.밝은 카드면은 지도 대비가 강하고,하단 자막판은 별도의 어두운 바탕이다.실제 투명도 값/블렌드/그라데이션 stop은 미상.",
+      "basis_kind": "observed",
+      "precision": "qualitative"
+    },
+    "shapes": {
+      "description": "정책 묶음은 바깥 가는 밝은 사각선+색 L자 모서리,안쪽 비치는 판+짧은 흰 모서리 표시,그 위 양끝 뾰족한 가로 띠 두 행+바깥 분리 꺾쇠/빛나는 윤곽으로 구성된다.기관 카드는 밝은 사각 면·가는 외곽선·색 모서리·로고로 분리.연결선은 밝은 가는 양옆선+색 꺾쇠 무늬+패널 바닥의 겹친 흰 원형 접점.보이는 선 두께는 대략 가는 외곽1~3px/색 모서리4~6px이나 발광 포함 범위에 따라 달라 원본 stroke로 확정하지 않음.",
+      "basis_kind": "observed",
+      "precision": "qualitative"
+    }
+  },
+  "layers": [
+    "위성 지도·바다 질감",
+    "행정 경계·회색 지명과 횡성 청록 영역/흰 지명",
+    "반투명 외관의 기관색 패널·안/밖 선틀",
+    "양끝 돌출 정책 띠·바깥 꺾쇠·흰 문구와 강조",
+    "세로 연결선·화살 무늬·원형 접점,밝은 기관 카드·외곽 모서리·로고",
+    "하단 어두운 자막판과 시간에 따라 드러나는 글자"
+  ],
+  "unknowns": [
+    "원본 폰트명·크기·굵기·자간과 로고 소스",
+    "원본 opacity/stroke/glow/gradient 설정과 레이어 순서",
+    "51.5~53초 패널 크기 변화의 정확 시작·속도곡선·앵커(두 시점 차이는 관측됨);카드와 다른 변환임을 후속 정밀 표본으로 분리할 것"
+  ],
+  "implementation_hypotheses": [
+    {
+      "basis_kind": "inferred",
+      "proposal": "기관 카드/정책 패널/연결선을 독립 조절하되 묶음 위치를 함께 이동시키는 편집 구조 후보.",
+      "reason": "53초 카드 크기는47초와 유사하지만 정책 패널은약85%크기.기존LAYOUT-0003/FLOW-0003/DETAIL-0006과 차이 항목으로 연결하며 새번호를 만들지 않음.",
+      "verification_needed": "크기 변화 타이밍·중간상태와 편집 가능한 재제작 결과 대조"
+    }
+  ]
+}

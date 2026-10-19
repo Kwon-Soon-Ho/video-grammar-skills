@@ -1,0 +1,173 @@
+{
+  "schema_version": "video-review-ledger-0.1",
+  "revision": 1,
+  "before": {
+    "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analyzer-realuse-20261019\\runs\\H04\\observations.json",
+    "sha256": "8c33d83e4ef8212116f4fcf9d3ed9c0519f1347de879a39184a7bda23a4bb263"
+  },
+  "after": {
+    "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\cases-r3\\H04\\observations-reviewed.json",
+    "sha256": "8099fc3001988ca9afa323fc974cccf19586ac35d120542fb781fd2cf4149b70"
+  },
+  "reviewer": {
+    "kind": "same_agent_context",
+    "name": "Codex development review",
+    "method": "기존 노출 자료·지적을 알고 native와 픽셀 동일 ROI 재관찰. 독립 평가 아님."
+  },
+  "findings": [
+    {
+      "id": "F03",
+      "question": "인셋 내부 이동 방향과 상단 체류",
+      "requirements": [
+        {
+          "object_id": "mini-marker",
+          "property": "position",
+          "dimension": "panel-relative"
+        }
+      ],
+      "required_basis_kind": "observed",
+      "before_claim_ids": [
+        "c017"
+      ],
+      "state": "addressed",
+      "resolution_claim_ids": [
+        "c017"
+      ],
+      "reason": "명시한 native 또는 픽셀 동일 ROI와 개요 시트를 재대조해 해당 관측을 추가·변경함. 자동 진실성 검증·독립 평가 아님.",
+      "next_probe": null
+    },
+    {
+      "id": "F04",
+      "question": "상단 표제의 중간 형태와 가로로 보이는 범위",
+      "requirements": [
+        {
+          "object_id": "header",
+          "property": "size",
+          "dimension": "transition-width"
+        },
+        {
+          "object_id": "header",
+          "property": "visibility",
+          "dimension": "replacement"
+        }
+      ],
+      "required_basis_kind": "observed",
+      "before_claim_ids": [
+        "c004"
+      ],
+      "state": "addressed",
+      "resolution_claim_ids": [
+        "c004",
+        "c024"
+      ],
+      "reason": "명시한 native 또는 픽셀 동일 ROI와 개요 시트를 재대조해 해당 관측을 추가·변경함. 자동 진실성 검증·독립 평가 아님.",
+      "next_probe": null
+    },
+    {
+      "id": "F05",
+      "question": "하단 착륙과 상단 새 표제 완성의 선후",
+      "requirements": [
+        {
+          "object_id": "caption",
+          "property": "visibility",
+          "dimension": "replacement"
+        }
+      ],
+      "required_basis_kind": "observed",
+      "before_claim_ids": [
+        "c021",
+        "c004"
+      ],
+      "state": "addressed",
+      "resolution_claim_ids": [
+        "c021"
+      ],
+      "reason": "명시한 native 또는 픽셀 동일 ROI와 개요 시트를 재대조해 해당 관측을 추가·변경함. 자동 진실성 검증·독립 평가 아님.",
+      "next_probe": null
+    },
+    {
+      "id": "F06",
+      "question": "인셋 드론 주변의 원형 빛 누락",
+      "requirements": [
+        {
+          "object_id": "mini-halo",
+          "property": "color",
+          "dimension": "halo-intensity"
+        },
+        {
+          "object_id": "mini-halo",
+          "property": "size",
+          "dimension": "halo-area"
+        },
+        {
+          "object_id": "mini-halo",
+          "property": "visibility",
+          "dimension": "halo-visible"
+        }
+      ],
+      "required_basis_kind": "observed",
+      "before_claim_ids": [],
+      "state": "addressed",
+      "resolution_claim_ids": [
+        "c026",
+        "c027",
+        "c028"
+      ],
+      "reason": "명시한 native 또는 픽셀 동일 ROI와 개요 시트를 재대조해 해당 관측을 추가·변경함. 자동 진실성 검증·독립 평가 아님.",
+      "next_probe": null
+    },
+    {
+      "id": "F07",
+      "question": "실사 드론 상단 붉은 광점 누락",
+      "requirements": [
+        {
+          "object_id": "red-light",
+          "property": "color",
+          "dimension": "red-appearance"
+        },
+        {
+          "object_id": "red-light",
+          "property": "visibility",
+          "dimension": "visible-sample"
+        }
+      ],
+      "required_basis_kind": "observed",
+      "before_claim_ids": [],
+      "state": "addressed",
+      "resolution_claim_ids": [
+        "c030",
+        "c031"
+      ],
+      "reason": "명시한 native 또는 픽셀 동일 ROI와 개요 시트를 재대조해 해당 관측을 추가·변경함. 자동 진실성 검증·독립 평가 아님.",
+      "next_probe": null
+    },
+    {
+      "id": "F09",
+      "question": "보강 표본으로 실사 구도 전환 경계 좁히기",
+      "requirements": [
+        {
+          "object_id": "footage",
+          "property": "internal_state",
+          "dimension": "shot-change"
+        },
+        {
+          "object_id": "real-drone",
+          "property": "size",
+          "dimension": "shot-boundary"
+        }
+      ],
+      "required_basis_kind": "observed",
+      "before_claim_ids": [
+        "c006",
+        "c009"
+      ],
+      "state": "addressed",
+      "resolution_claim_ids": [
+        "c006",
+        "c009"
+      ],
+      "reason": "명시한 native 또는 픽셀 동일 ROI와 개요 시트를 재대조해 해당 관측을 추가·변경함. 자동 진실성 검증·독립 평가 아님.",
+      "next_probe": null
+    }
+  ]
+}

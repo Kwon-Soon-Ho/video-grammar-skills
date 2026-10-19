@@ -1,0 +1,241 @@
+{
+  "id": "R3_03_문서_최종레드팀",
+  "version": "0.1.0",
+  "reviewed_on": "2026-10-14",
+  "reviewer": "/root/r_audit_knowledge",
+  "verdict": "현재 선택범위 정리 초안은 조건부 활용 가능하나 문서 정합성 4건 보완 필요. R3-3 전체 종료는 미완료.",
+  "scope": {
+    "reviewed_directory": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\05_출처와검토\\스킬심층검토",
+    "read": "7개 MD 본문과 정본 JSON 33카드/메타데이터, 파일 목록 JSON의 전체 경로·해시·깊이·중복 구조",
+    "ledger_note_depth": "375개 행의 note를 모두 심층 해석한 것은 아님. 전체 행 경로/hash/depth 확인과 원감사 행의 provenance를 대조.",
+    "source_reports": "보존된 독립감사 6개 path/sha 및 파일별 깊이 기록을 대조. 지식/발표 감사의 이전 본문 검토 결과도 비교. 다른 감사의 원본코드 전체 재독해 아님.",
+    "new_scope_pending": "사용자가 추가 요청한 편집디자인/화면디자인 후보 확장은 별도 진행 중이며 이번 33그룹 분모 밖",
+    "upstream_code_executed": false,
+    "installed": false,
+    "d_files_modified_by_reviewer": false,
+    "new_agent_spawned": false,
+    "external_legal_or_primary_source_recheck": false
+  },
+  "verified": {
+    "candidate_groups": 33,
+    "external_unique_selected_entrypoints": 32,
+    "local_unique_selected_entrypoints": 14,
+    "host_entrypoint_selected_sections": 1,
+    "count_method": "각 카드 source_package + entrypoint로 고유화. Impeccable SKILL.src.md 포함, critique11/AntV5를 분리. 설치/실행/효용 수량 아님.",
+    "ledger_records": 375,
+    "unique_absolute_file_paths": 364,
+    "duplicated_file_groups": 11,
+    "duplicate_extra_records": 11,
+    "all_ledger_rows_actual_file_path_and_hash_checked": 375,
+    "missing_actual_files": 0,
+    "actual_hash_mismatches": 0,
+    "d_relative_absolute_path_mismatches": 0,
+    "preserved_independent_reports": 6,
+    "preserved_report_hash_mismatches": 0,
+    "ledger_rows_from_six_reports": 337,
+    "original_report_path_sha_depth_mismatches": 0,
+    "root_read_attestation_rows": 38,
+    "root_attestation_depth": {
+      "full_text_static_review": 35,
+      "selected_sections_only": 3
+    },
+    "root_attestation_marker": "root source text review 2026-10-14",
+    "root_attestation_limit": "38행의 원본 파일/해시는 맞지만 위 marker는 파일 경로가 아니라 root의 자체 읽기 진술. 독립감사 6개의337행으로 계산하거나 독립적인 읽기 검증이라고 말하지 않음.",
+    "runtime_verified_true_in_cards": 0,
+    "company_mandatory_true_in_cards": 0,
+    "execution_true_in_ledger": 0,
+    "source_and_transfer_distinction": "실행/설치/회사 승인 미수행, proprietary/충돌/미확인 자산의 직접 이식 보류, full/partial/structure/not-read 구분은 대체로 유지됨.",
+    "state_assessment": "selected_static_reviews_complete_transfer_design_pending_final_redteam은 현재 선택범위 draft 상태로 읽을 수 있음. 전체 R3-3 complete나 실무효과 통과 선언은 아님."
+  },
+  "findings": [
+    {
+      "id": "DOC-F01",
+      "severity": "medium",
+      "location": "스킬심층검토정본.json:5 / scope; 06_단계구분과남은검증.md:6,15",
+      "finding": "정본 scope는 여전히 초기8저장소/로컬5인데 본문·counts·functional_coverage는 초기+발표33그룹/외부32/로컬14/호스트1을 다룸. 추가 요청한 편집디자인/화면디자인 확장 상태도 정본 범위에서 명시되지 않아 현재 범위 완료와 전체 업무 완료가 혼동될 수 있음.",
+      "evidence": "정본 cards33 및 counts32+14+1 직접 재계산. 사용자 최신 추가요청은 parent 전달 맥락으로 확인.",
+      "fix": "scope를 초기8저장소 선택범위+발표5추가패키지(Anthropic 동일 저장소의 별도범위 재포함)+로컬14+호스트1선택절로 갱신하고, 현재 검토 완료/편집·화면 추가 확장 진행중/R8이식설계 및 전체종료pending을 나눈다. 현재 state를 전체 완료로 승격하지 않는다.",
+      "status": "open_at_review",
+      "does_not_require": "전 세계 모든 스킬 전수 조사, 미검토 엔진/전이의존성 무한 확보"
+    },
+    {
+      "id": "DOC-F02",
+      "severity": "medium",
+      "location": "검토파일목록.json / policy / records",
+      "finding": "policy는 같은 파일의 복수 읽기를 합산하지 않는다고 쓰지만 실제 records375행은 고유파일364개이며11개 파일에 각각2개 검토 기록이 있다. 32+14+1 entrypoint count 자체는 고유기준으로 맞지만 records 길이를 file_count로 쓰면 부풀려짐.",
+      "duplicate_paths": [
+        "발표설명확장/스킬원본/anthropic-pptx/skills/pptx/LICENSE.txt",
+        "발표설명확장/스킬원본/anthropic-pptx/skills/pptx/SKILL.md",
+        "원본확보/스킬원본/design-critique/DISCLAIMER.md",
+        "원본확보/스킬원본/design-critique/package.json",
+        "원본확보/스킬원본/design-critique/TERMS.md",
+        "원본확보/스킬원본/impeccable/NOTICE.md",
+        "원본확보/스킬원본/impeccable/skill/reference/new-work.md",
+        "원본확보/스킬원본/impeccable/skill/SKILL.src.md",
+        "원본확보/스킬원본/taste/skills/redesign-skill/SKILL.md",
+        "원본확보/스킬원본/taste/skills/taste-skill/references/research.md",
+        "원본확보/스킬원본/taste/skills/taste-skill/SKILL.md"
+      ],
+      "fix": "고유 path/hash를 file record 키로 하고 검토 발생을 review_occurrences 배열로 보존하거나, 현재 형식에 unique_file_count364/review_occurrence_count375를 명시한다. 깊이/검수자를 합쳐 버리지 말고 각각 표시; root38자체읽기와 독립보고337행도 별도표시. 두 사람이 읽었다는 사실을 성능·정확도 증거로 합산하지 않는다.",
+      "status": "open_at_review",
+      "scope_limit": "중복 자체가 내용 깊이 위장은 아님. 중복 검토·부분+전문 기록은 보존할 수 있으나 파일 분모와 달라야 함."
+    },
+    {
+      "id": "DOC-F03",
+      "severity": "medium",
+      "location": "03_코드와의존성_검토결과.md:11 / PPTX 원본",
+      "finding": "selectedPython14전문/2부분은 원감사의 전문파일14개에 SKILL/ LICENSE2개가 포함된 것을 Python14개로 표현한 오계수다.",
+      "evidence": "R3_03_PPT도구_독립검토.json.scope/file_review_manifest: 전문14파일=문서2+Python12, Python부분2, 빈scripts/__init__.py1목록/hash. 전체Python15, XSD39구조별도.",
+      "fix": "'14파일 전문(문서2+Python12), Python2부분, 빈init1목록/hash, XSD39참조구조'로 교정. 전문/부분/XSD구조의 개수를 모두 Python 전문 독해로 합치지 않는다.",
+      "status": "open_at_review"
+    },
+    {
+      "id": "DOC-F04",
+      "severity": "medium",
+      "location": "04_라이선스와출처_검토결과.md:3; 스킬심층검토정본.json/cards/*/direct_upstream_copy_performed",
+      "finding": "현재 모든 후보의 직접 원문 복사는 미수행이라는 표현은 감사용 backup 보존사본을 실제 확보한 것과 맞지 않게 읽힐 수 있다. 의도는 맞춤스킬/제품으로 직접 이식하지 않았다는 뜻으로 보임.",
+      "evidence": "검토파일목록의 실제 backup 경로/원문 해시와 원본확보 명세 존재. direct_copy_policy들은 not_selected_now/blocked로 이식 보류를 기록.",
+      "fix": "'감사용 원문 보존사본 확보는 수행, 맞춤스킬/제품으로 원문 직접이식·재배포·upstream 실행은 미수행'으로 명확히 분리. JSON bool도 copy_into_custom_skill_performed 등 목적범위가 보이는 이름/설명을 둔다. 획득 사실·이식 여부·권리 판정을 구분.",
+      "status": "open_at_review",
+      "legal_warranty": false
+    }
+  ],
+  "nonblocking_traceability_recommendations": [
+    "33카드의 source_review_ref가 모두 일반 파일목록 하나를 가리킨다. 각각 evidence_report+finding/clause ID와 핵심 source locator를 연결하면 신규 독자가 전체375행과6보고를 수동 검색하지 않아도 됨.",
+    "AntV 카드 unresolved에 PI-F04~07의 구체 경계(등록/호출미폐쇄, raw HTML 입력/@latest, numericdomain/missing/unit, text-only/한국어실렌더 미검증)를 참조로 남기면 generic '추가 감사 확인'을 전체지원 완료로 읽는 위험을 줄임. 원문 보고에 이미 있으므로 전부 본문에 중복할 필요 없음.",
+    "root38자체읽기 marker는 legitimate attestation으로 표시하되 reviewer_report 파일 경로와 같은 타입으로 다루지 않도록 source_kind/reviewer/record_reference를 분리. 필요한 경우 root 읽기 기록을 별도 보존파일로 연결.",
+    "선별 후보가 정보목적/관계의 generic 개념인 일부 추가 카드와 반복 예/반례는 기능 인계 단계에서 구체 조건을 더할 수 있음. 현재 설계안 상태에서 이를 실제 새 영상 기획/실효성 검증이라고 부르지 않음."
+  ],
+  "preserved_material_limits": [
+    "design-system MPL; author/reviewer MIT; critique MIT+TERMS/DISCLAIMER; academic MIT/frontmatter 충돌; narrative LICENSE없음; 로컬불명/visual-style MIT변형예외 구분 유지.",
+    "PPTX 고유license와 타 Anthropic Apache를 구분하고 현재 직접/파생이식 보류 유지. 법적 최종판정으로 확장하지 않음.",
+    "data-cleaning samefile 보호와 별도output 덮어쓰기, flatJSONL profile/CSV-TSV reconcile, header/허용delta gate 부재 등 실제지원 경계 유지.",
+    "Impeccable native/바이너리/다른branch, AntVrenderer/deps, 각font/resource는 미검토가 정상일 수 있음. 설치보류 선택에서 이를 무한조사로 강제하지 않음.",
+    "파일/해시/정적코드/검사양성/반례·반복리뷰는 실영상효과·사람이해도·실행성능·회사승인 proof가 아님.",
+    "Phase00 지식·절차·기권·권한 설계 / R8 맞춤스킬 재구성·효용평가 / 01-A 분석구현 / 01-B 회사문법검증 / 02 실제기획·제작 구분 유지.",
+    "추가 편집디자인/화면디자인 요청을 이미검토완료라고 포함하거나01-A로 미루지 않음. 추가 선택범위 검토가 현재 R3-3에 남음."
+  ],
+  "completion_boundary": {
+    "current_selected_summary": "4건 정합성 보완 후 현재33그룹에 대한 문서 정리 완료를 검토할 수 있음.",
+    "whole_R3_3": "미완료: 사용자 추가 편집/화면 디자인 확장과 그 선택범위 검수 진행 중. 이 결과만으로 전체종료 선언 불가.",
+    "runtime_and_effect": "계속 미검증·보류. 현재 승인A는 지식/절차 선별이며 engine/code 전수도입 승인 아님.",
+    "d_modified": false
+  },
+  "reviewed_document_hashes": [
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\05_출처와검토\\스킬심층검토\\00_읽는순서.md",
+      "bytes": 981,
+      "sha256": "827a926065a085b3fdb4013aa52059f1a30755cd5cf9bea037d6b942f06a43ee",
+      "depth": "full_text_read_document_review"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\05_출처와검토\\스킬심층검토\\01_후보선정과단계.md",
+      "bytes": 2959,
+      "sha256": "53c40918cc224552192a787ddbc1dc527395eaffefff6e57bea455ee44da62b2",
+      "depth": "full_text_read_document_review"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\05_출처와검토\\스킬심층검토\\02_원문과참조_검토결과.md",
+      "bytes": 24038,
+      "sha256": "ff057e4d384e52f77074c6e7231f18d749308b4748d42d6410c36812c8e4feb0",
+      "depth": "full_text_read_document_review"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\05_출처와검토\\스킬심층검토\\03_코드와의존성_검토결과.md",
+      "bytes": 4173,
+      "sha256": "462cbb3b4bd6aecd04992a25b98368796d3afb11486b8d52a83fe4b5a181ed0a",
+      "depth": "full_text_read_document_review"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\05_출처와검토\\스킬심층검토\\04_라이선스와출처_검토결과.md",
+      "bytes": 6833,
+      "sha256": "a36c79697221e2fdb46882fa8ffdd68b0cfda66cec88824d9217acc359159bf3",
+      "depth": "full_text_read_document_review"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\05_출처와검토\\스킬심층검토\\05_세스킬_이식설계안.md",
+      "bytes": 2676,
+      "sha256": "d8d83879d3b28ac7ab58aec7686c01e6c2afad5c958713ab67b3301a3c962ff5",
+      "depth": "full_text_read_document_review"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\05_출처와검토\\스킬심층검토\\06_단계구분과남은검증.md",
+      "bytes": 1653,
+      "sha256": "84f2718d5377260bfbf4870a9ee7f16454c1d1e1734bd29bb9d506d17791adf4",
+      "depth": "full_text_read_document_review"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\05_출처와검토\\스킬심층검토\\검토파일목록.json",
+      "bytes": 263184,
+      "sha256": "9d2f33f8e39e7587d1dfaa2ad4abdfa76304494dae82e57c8abe2ede33fc292e",
+      "depth": "all_path_hash_depth_structural_scan_and_source_provenance_comparison"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\05_출처와검토\\스킬심층검토\\스킬심층검토정본.json",
+      "bytes": 64852,
+      "sha256": "4571447bd8645f8e31ab3a9a587bd2f42900825bde28ec2404eccfead3f8cbcc",
+      "depth": "full_text_read_document_review"
+    }
+  ],
+  "preserved_report_hash_checks": [
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\08_검증결과\\스킬심층검토\\R3_03_모션로컬_독립검토.json",
+      "expected_sha256": "fd5ac86513bb0fb00e56f898244a82e11417e8965f645cff90221f4e04e2ba67",
+      "actual_sha256": "fd5ac86513bb0fb00e56f898244a82e11417e8965f645cff90221f4e04e2ba67",
+      "match": true,
+      "depth": "metadata_and_file_depth_provenance_read; earlier_assigned_audit_content_used_where_applicable"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\08_검증결과\\스킬심층검토\\R3_03_지식후보_독립검토.json",
+      "expected_sha256": "56b10c68d3d889241b989fe56e9d4a6b64ebb130b20a1e6c66459eb554996def",
+      "actual_sha256": "56b10c68d3d889241b989fe56e9d4a6b64ebb130b20a1e6c66459eb554996def",
+      "match": true,
+      "depth": "metadata_and_file_depth_provenance_read; earlier_assigned_audit_content_used_where_applicable"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\08_검증결과\\스킬심층검토\\R3_03_실행코드_독립검토.json",
+      "expected_sha256": "232ab4879b8f88beaaa8d431838c82abff42a633e1920e11539ffb8bb84585d9",
+      "actual_sha256": "232ab4879b8f88beaaa8d431838c82abff42a633e1920e11539ffb8bb84585d9",
+      "match": true,
+      "depth": "metadata_and_file_depth_provenance_read; earlier_assigned_audit_content_used_where_applicable"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\08_검증결과\\스킬심층검토\\R3_03_발표인포_독립검토.json",
+      "expected_sha256": "1c91086120c74b86d5575d99087a6e675a2b31f785f52bed63b694c0bc4ffefa",
+      "actual_sha256": "1c91086120c74b86d5575d99087a6e675a2b31f785f52bed63b694c0bc4ffefa",
+      "match": true,
+      "depth": "metadata_and_file_depth_provenance_read; earlier_assigned_audit_content_used_where_applicable"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\08_검증결과\\스킬심층검토\\R3_03_설명영상후보_독립검토.json",
+      "expected_sha256": "58a505c63af7edc4486485844388e691fe1472b02a5a5b2aa7af77770d1f02a1",
+      "actual_sha256": "58a505c63af7edc4486485844388e691fe1472b02a5a5b2aa7af77770d1f02a1",
+      "match": true,
+      "depth": "metadata_and_file_depth_provenance_read; earlier_assigned_audit_content_used_where_applicable"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\08_검증결과\\스킬심층검토\\R3_03_PPT도구_독립검토.json",
+      "expected_sha256": "19e0b20b762e5a8159fa697ad6f91d43cbda26ed16ede1757adea607b3e2ebd8",
+      "actual_sha256": "19e0b20b762e5a8159fa697ad6f91d43cbda26ed16ede1757adea607b3e2ebd8",
+      "match": true,
+      "depth": "metadata_and_file_depth_provenance_read; earlier_assigned_audit_content_used_where_applicable"
+    }
+  ],
+  "benchmark_source_selective_check": {
+    "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\taste\\skills\\taste-skill\\references\\research.md",
+    "sha256": "016d908b429099f49c665fb0ef649932f79dc35832e2e5689eceefdb1a0ec5c7",
+    "depth": "selected lines by text search, benchmark table and limits, not full reread",
+    "locators": [
+      "research.md:278",
+      "research.md:291",
+      "research.md:293",
+      "research.md:305"
+    ],
+    "final_round_skill_mean": 7.7,
+    "final_round_baseline_mean": 7.8,
+    "briefs": 3,
+    "round5_reuses_round4_briefs": true,
+    "jurors": "models, not people",
+    "interpretation": "03MD 숫자/재사용/모델juror/0FAIL 비효과 표현이 원문 보고와 일치. 원문 재현·성능 시험을 수행한 것은 아님"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "id": "NEW-N",
+  "phase": "window",
+  "input_sha256": "42d87e0cc8c507ccb2a8924ae3252d689ef103d4ca3b1219ec1e588f6f474a03",
+  "limits": {
+    "wall_seconds_per_worker": 60,
+    "max_read_bytes": 268435456,
+    "max_seeks": 20000,
+    "max_packets": 4000,
+    "max_frames": 1600,
+    "max_pixels": 16588800,
+    "max_output_images": 40,
+    "memory_process_bytes": 2147483648
+  },
+  "tool": {
+    "av": "19.0.1",
+    "libraries": "{'libavutil': (61, 1, 102), 'libavcodec': (63, 1, 102), 'libavformat': (63, 1, 102), 'libavdevice': (63, 1, 102), 'libavfilter': (12, 1, 102), 'libswscale': (10, 1, 102), 'libswresample': (7, 1, 102)}"
+  },
+  "frames": [],
+  "audio_status": "track_metadata_only_not_decoded_not_listened_not_transcribed",
+  "separate_api_calls": 0,
+  "genpts_disabled": true,
+  "timing_status": "reported_values_until_sample_table_crosscheck",
+  "ai_model_id": "host_not_exposed",
+  "ai_internal_resize": "unknown",
+  "container": {
+    "start_time": 0,
+    "duration": 418433333,
+    "time_unit": "microseconds",
+    "format": "mov",
+    "metadata": {
+      "major_brand": "mp42",
+      "minor_version": "0",
+      "compatible_brands": "mp42mp41",
+      "creation_time": "2026-06-22T06:44:08.000000Z"
+    },
+    "flags": 2097280
+  },
+  "streams": [
+    {
+      "index": 0,
+      "type": "video",
+      "codec": "h264",
+      "time_base": "1/30000",
+      "start_time": "0",
+      "duration": "12553000",
+      "frames_reported": 12553,
+      "metadata": {
+        "creation_time": "2026-06-22T06:44:08.000000Z",
+        "language": "eng",
+        "handler_name": "\u001fMainconcept Video Media Handler",
+        "encoder": "AVC Coding"
+      },
+      "width": 7680,
+      "height": 2160,
+      "sample_aspect_ratio": "0/1",
+      "average_rate": "30/1",
+      "has_b_frames": true,
+      "format": "<av.VideoFormat yuv420p, 7680x2160>",
+      "color_range": "1",
+      "colorspace": "1"
+    },
+    {
+      "index": 1,
+      "type": "audio",
+      "codec": "aac",
+      "time_base": "1/48000",
+      "start_time": "0",
+      "duration": "20084800",
+      "frames_reported": 19616,
+      "metadata": {
+        "creation_time": "2026-06-22T06:44:08.000000Z",
+        "language": "eng",
+        "handler_name": "#Mainconcept MP4 Sound Media Handler"
+      },
+      "sample_rate": 48000,
+      "layout": "<av.AudioLayout 'stereo'>"
+    }
+  ]
+}

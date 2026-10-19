@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-14",
+  "stage": "R1",
+  "status": "complete",
+  "scope": "정본·자산 연결·ID/버전·원본/파생·backup·경로 계약",
+  "design_reference": {
+    "path": "03_한맥디자인/한맥디자인정본.json",
+    "profile": "hanmac-video@0.1.0",
+    "sha256": "dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed"
+  },
+  "asset_inspection": {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "공식 지정색 전체 확인 미완료; 관측색은 공식값 아님"
+    ],
+    "collection_complete": true,
+    "official_values_complete": false,
+    "counts": {
+      "companies": 8,
+      "assets": 135,
+      "colors": 95
+    }
+  },
+  "nonblocking_followups": [
+    "추가 벡터/심볼/폰트/이미지/도표 확보",
+    "회사 CI 최신판/색공간/사용 규정의 개별 적용 확인"
+  ],
+  "phase00_status": "incomplete",
+  "next_stage": "R2 별도 진행",
+  "correction": "모든 공용자산 수집과 공식 CI 확인을 R1 종료 조건처럼 설명한 범위 확대 정정"
+}

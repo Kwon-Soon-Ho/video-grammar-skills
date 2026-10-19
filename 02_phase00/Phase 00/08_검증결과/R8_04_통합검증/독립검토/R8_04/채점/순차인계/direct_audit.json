@@ -1,0 +1,915 @@
+[
+  {
+    "stage": 1,
+    "run": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-01-기록관리자_인계연결\\candidate",
+    "checks": [
+      {
+        "name": "task frozen SHA",
+        "passed": true,
+        "evidence": "49aca13334c5fb2a399bf196ce45420801bd9041ace1339e30e90ee77641f929"
+      },
+      {
+        "name": "skill frozen SKILL.md",
+        "passed": true,
+        "evidence": "970c94fbbc9f1dc88fa822ea915e9f62935ed60af6f41662f0c36571e7d23378"
+      },
+      {
+        "name": "skill frozen references/기록연결기준.md",
+        "passed": true,
+        "evidence": "413f84662e7e452f3e86119c25d2effbab544c88dd8f8248c264dd9deb759592"
+      },
+      {
+        "name": "skill frozen references/보고지침.md",
+        "passed": true,
+        "evidence": "c1092ee7077f38e7d8918e525fc0054fc1cc8044797a518320ad9a63371d4583"
+      },
+      {
+        "name": "skill frozen references/수정과복구.md",
+        "passed": true,
+        "evidence": "7b14bb63d1b69a568871e1aab76c217f661832c30a57f58871a440705c33ac70"
+      },
+      {
+        "name": "skill frozen scripts/판본대조.py",
+        "passed": true,
+        "evidence": "b5eadb2d9f42ebb3e6d02dbd5a87448e558e78ef9bc7ffeb1807b79f507d03e7"
+      },
+      {
+        "name": "upstream exact 작업초안/연결설명_지식초안.json",
+        "passed": true,
+        "evidence": {
+          "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-01-큐레이터_정상판본정리\\candidate\\inputs\\Phase00\\작업초안\\연결설명_지식초안.json",
+          "destination": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-01-기록관리자_인계연결\\candidate\\inputs\\Phase00\\작업초안\\연결설명_지식초안.json",
+          "actual_sha": "12ca3ff198a384694aa49869df82b35d11aa394d98abf8b8714a885817bd5d60",
+          "frozen_sha": "12ca3ff198a384694aa49869df82b35d11aa394d98abf8b8714a885817bd5d60"
+        }
+      },
+      {
+        "name": "upstream exact 자료/원문메모.md",
+        "passed": true,
+        "evidence": {
+          "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-01-큐레이터_정상판본정리\\candidate\\inputs\\Phase00\\자료\\원문메모.md",
+          "destination": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-01-기록관리자_인계연결\\candidate\\inputs\\Phase00\\자료\\원문메모.md",
+          "actual_sha": "b278a15449a2907b1833a8a8bb8097436655562582921dca08e55da947b4de88",
+          "frozen_sha": "b278a15449a2907b1833a8a8bb8097436655562582921dca08e55da947b4de88"
+        }
+      },
+      {
+        "name": "upstream exact 자료/추가의견.md",
+        "passed": true,
+        "evidence": {
+          "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-01-큐레이터_정상판본정리\\candidate\\inputs\\Phase00\\자료\\추가의견.md",
+          "destination": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-01-기록관리자_인계연결\\candidate\\inputs\\Phase00\\자료\\추가의견.md",
+          "actual_sha": "f3e26f2e6f3531073e0d64b83bbd181a610aaa780cc302cdd1b5e65cb6401d15",
+          "frozen_sha": "f3e26f2e6f3531073e0d64b83bbd181a610aaa780cc302cdd1b5e65cb6401d15"
+        }
+      },
+      {
+        "name": "upstream exact 인계받은보고/결과.md",
+        "passed": true,
+        "evidence": {
+          "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-01-큐레이터_정상판본정리\\candidate\\outputs\\결과.md",
+          "destination": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-01-기록관리자_인계연결\\candidate\\inputs\\Phase00\\인계받은보고\\결과.md",
+          "actual_sha": "0d15d1011bedfef9f37edf4526a6df001d3476ea99f7fbd53c95a370bcddb212",
+          "frozen_sha": "0d15d1011bedfef9f37edf4526a6df001d3476ea99f7fbd53c95a370bcddb212"
+        }
+      },
+      {
+        "name": "upstream exact 인계받은보고/결과.json",
+        "passed": true,
+        "evidence": {
+          "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-01-큐레이터_정상판본정리\\candidate\\outputs\\결과.json",
+          "destination": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-01-기록관리자_인계연결\\candidate\\inputs\\Phase00\\인계받은보고\\결과.json",
+          "actual_sha": "265738e8eaf671fdfe617278e2a9018d28a21667bccaff35ffd4b4181d41f4be",
+          "frozen_sha": "265738e8eaf671fdfe617278e2a9018d28a21667bccaff35ffd4b4181d41f4be"
+        }
+      },
+      {
+        "name": "only allowed final changes",
+        "passed": true,
+        "evidence": {
+          "changed": [
+            {
+              "path": "작업초안/인계목록.json",
+              "before": "2cb847d4cd30624c2be60756a5a1b954bf7cd9478b49914b01a1aeec45356946",
+              "after": "799d6a44e275e0befc96b9a909386c7a4fb7123bf7bff08f984e9a1dfd0a2abb"
+            }
+          ],
+          "extra": []
+        }
+      },
+      {
+        "name": "actual index link",
+        "passed": true,
+        "evidence": {
+          "index": {
+            "id": "LOCAL-HANDOFF-INDEX",
+            "version": "0.1.1",
+            "status": "draft",
+            "source_kind": "synthetic_knowledge_handoff",
+            "item_ref": {
+              "path": "작업초안/연결설명_지식초안.json",
+              "id": "note-loop",
+              "version": "0.1.1",
+              "file_sha256": "12ca3ff198a384694aa49869df82b35d11aa394d98abf8b8714a885817bd5d60"
+            },
+            "human_review": "pending; no actual reply",
+            "company_approved": false,
+            "notes": "설명용 자료, 미확인 논문효과·정식 분류 병합 제안은 미채택"
+          },
+          "matches": 1
+        }
+      },
+      {
+        "name": "pending/company preserved",
+        "passed": true,
+        "evidence": {
+          "id": "LOCAL-HANDOFF-INDEX",
+          "version": "0.1.1",
+          "status": "draft",
+          "source_kind": "synthetic_knowledge_handoff",
+          "item_ref": {
+            "path": "작업초안/연결설명_지식초안.json",
+            "id": "note-loop",
+            "version": "0.1.1",
+            "file_sha256": "12ca3ff198a384694aa49869df82b35d11aa394d98abf8b8714a885817bd5d60"
+          },
+          "human_review": "pending; no actual reply",
+          "company_approved": false,
+          "notes": "설명용 자료, 미확인 논문효과·정식 분류 병합 제안은 미채택"
+        }
+      },
+      {
+        "name": "command actual command exit/stream",
+        "passed": true,
+        "evidence": {
+          "argv": {
+            "argv": [
+              "-B",
+              "-X",
+              "utf8",
+              "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-01-기록관리자_인계연결\\candidate\\outputs\\인계연결_수행.py"
+            ],
+            "cwd": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기",
+            "executable": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe"
+          },
+          "exit": "0",
+          "stderr_bytes": 0,
+          "stdout": "{\n  \"status\": \"완료_로컬인계연결갱신\",\n  \"target\": \"C:\\\\Users\\\\User\\\\Documents\\\\ChatGPT\\\\업무@사내 영상 생성기\\\\phase00-build\\\\R8_04_시험\\\\3_스킬인계\\\\eval-01-기록관리자_인계연결\\\\candidate\\\\inputs\\\\Phase00\\\\작업초안\\\\인계목록.json\",\n  \"result\": \"C:\\\\Users\\\\User\\\\Documents\\\\ChatGPT\\\\업무@사내 영상 생성기\\\\phase00-build\\\\R8_04_시험\\\\3_스킬인계\\\\eval-01-기록관리자_인계연결\\\\candidate\\\\outputs\\\\결과.json\",\n  \"before_sha256\": \"2cb847d4cd30624c2be60756a5a1b954bf7cd9478b49914b01a1aeec45356946\",\n  \"after_sha256\": \"799d6a44e275e0befc96b9a909386c7a4fb7123bf7bff08f984e9a1dfd0a2abb\",\n  \"item_file_sha256\": \"12ca3ff198a384694aa49869df82b35d11aa394d98abf8b8714a885817bd5d60\",\n  \"final_link_valid\": true\n}\n",
+          "stdout_sha": "c522abe079ead7d5a9683bd01743f731415ab2e3a8e2c5b76c2e083670a9777e"
+        }
+      },
+      {
+        "name": "exact original backup",
+        "passed": true,
+        "evidence": "2cb847d4cd30624c2be60756a5a1b954bf7cd9478b49914b01a1aeec45356946"
+      },
+      {
+        "name": "only three fields changed",
+        "passed": true,
+        "evidence": [
+          {
+            "path": "/version",
+            "before": "0.1.0",
+            "after": "0.1.1"
+          },
+          {
+            "path": "/item_ref/version",
+            "before": "0.1.0",
+            "after": "0.1.1"
+          },
+          {
+            "path": "/item_ref/file_sha256",
+            "before": "847002623e7956be46d91f62b47c59133351d2701cb92002df3bab22e75ea912",
+            "after": "12ca3ff198a384694aa49869df82b35d11aa394d98abf8b8714a885817bd5d60"
+          }
+        ]
+      },
+      {
+        "name": "actual bytes equal candidate",
+        "passed": true,
+        "evidence": "799d6a44e275e0befc96b9a909386c7a4fb7123bf7bff08f984e9a1dfd0a2abb"
+      },
+      {
+        "name": "backup before actual replace",
+        "passed": true,
+        "evidence": {
+          "backup_event_index": 30,
+          "replace_event_index": 41,
+          "replacement": {
+            "kind": "replace",
+            "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-01-기록관리자_인계연결\\candidate\\inputs\\Phase00\\작업초안\\인계목록.json.handoff-tmp",
+            "target": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-01-기록관리자_인계연결\\candidate\\inputs\\Phase00\\작업초안\\인계목록.json",
+            "sha256": "799d6a44e275e0befc96b9a909386c7a4fb7123bf7bff08f984e9a1dfd0a2abb",
+            "concurrency_guarantee": "단일 파일 교체 및 직전 재확인만; 완전한 동시성/다중 파일 원자성 보장 아님"
+          }
+        }
+      },
+      {
+        "name": "post checks actual original",
+        "passed": true,
+        "evidence": {
+          "valid": true,
+          "errors": [],
+          "changes": [
+            {
+              "path": "/version",
+              "before": "0.1.0",
+              "after": "0.1.1"
+            },
+            {
+              "path": "/item_ref/version",
+              "before": "0.1.0",
+              "after": "0.1.1"
+            },
+            {
+              "path": "/item_ref/file_sha256",
+              "before": "847002623e7956be46d91f62b47c59133351d2701cb92002df3bab22e75ea912",
+              "after": "12ca3ff198a384694aa49869df82b35d11aa394d98abf8b8714a885817bd5d60"
+            }
+          ],
+          "scope": "로컬 인계목록의 strict JSON·허용 필드·소유 ID/새 판본·참조 경로/ID+판본/실제 파일 전체 SHA·백업/검사 바이트 대조",
+          "r4_r5_full_validation": false,
+          "content_verified": false,
+          "company_approved": false,
+          "operational_release": false,
+          "human_reply_received": false,
+          "actual_bytes_match_candidate": true,
+          "knowledge_file_byte_preserved": true,
+          "protected_files_sha_preserved": true
+        }
+      }
+    ],
+    "changed": [
+      {
+        "path": "작업초안/인계목록.json",
+        "before": "2cb847d4cd30624c2be60756a5a1b954bf7cd9478b49914b01a1aeec45356946",
+        "after": "799d6a44e275e0befc96b9a909386c7a4fb7123bf7bff08f984e9a1dfd0a2abb"
+      }
+    ],
+    "extra": [],
+    "commands": [
+      {
+        "argv": {
+          "argv": [
+            "-B",
+            "-X",
+            "utf8",
+            "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-01-기록관리자_인계연결\\candidate\\outputs\\인계연결_수행.py"
+          ],
+          "cwd": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기",
+          "executable": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe"
+        },
+        "exit": "0",
+        "stderr_bytes": 0,
+        "stdout_sha": "c522abe079ead7d5a9683bd01743f731415ab2e3a8e2c5b76c2e083670a9777e"
+      }
+    ],
+    "correction_source_basis": [
+      {
+        "id": "ST-R4",
+        "links": [
+          {
+            "path": "04_기록규격/06_통합최소기록_규격_v0.2.md",
+            "expected": "3c301c7f874921a3bd7bc3e5922ca8cb7c16ddc950f78ecc9850251b9474df74",
+            "actual": null
+          },
+          {
+            "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+            "expected": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+            "actual": null
+          },
+          {
+            "path": "07_실행도구/자료검증.py",
+            "expected": "0abd4cba7f1ba3a69011ef67758dbcc6f5c9599785aa0ae5ed5fd6cd0e434ec4",
+            "actual": null
+          }
+        ]
+      },
+      {
+        "id": "ST-R2",
+        "links": [
+          {
+            "path": "01_공통용어/02_기록단위와분류축.md",
+            "expected": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+            "actual": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a"
+          },
+          {
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "expected": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "actual": null
+          },
+          {
+            "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+            "expected": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+            "actual": null
+          }
+        ]
+      },
+      {
+        "id": "ST-R2-JSON",
+        "links": [
+          {
+            "path": "01_공통용어/분류운영규칙.json",
+            "expected": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d",
+            "actual": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d"
+          },
+          {
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "expected": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "actual": null
+          }
+        ]
+      },
+      {
+        "id": "ST-HANDOFF",
+        "links": [
+          {
+            "path": "09_다음단계인계/R7_01-A_구현전_인계.md",
+            "expected": "438dc5bb19e7a4356436869aa67704712e5e2257084d89cd15fc3bbfe8d2f0b4",
+            "actual": null
+          },
+          {
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "expected": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "actual": null
+          },
+          {
+            "path": "01_공통용어/02_기록단위와분류축.md",
+            "expected": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+            "actual": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a"
+          }
+        ]
+      },
+      {
+        "id": "ST-R7-R8",
+        "links": [
+          {
+            "path": "09_다음단계인계/R7_R8_스킬재구성_인계.md",
+            "expected": "7d7abac31fc1501c48fd17d2e1df0fff368057bedbf90bbb270e47baf12872ac",
+            "actual": null
+          },
+          {
+            "path": "14_스킬재구성/사람피드백/R8-3_적용성검토자_검토답변.json",
+            "expected": "e7906857aa075179a0947489a8dfa3fba267145df035c177972c76f20f788a1d",
+            "actual": null
+          }
+        ]
+      }
+    ],
+    "coverage": [
+      {
+        "path": "outputs\\command.argv.json",
+        "sha256": "7883402f6abb514f8b5beca1315a46e5fd041294e42fa4de28af49b1e7893289",
+        "bytes": 491
+      },
+      {
+        "path": "outputs\\command.exit.txt",
+        "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+        "bytes": 3
+      },
+      {
+        "path": "outputs\\command.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      {
+        "path": "outputs\\command.stdout.txt",
+        "sha256": "c522abe079ead7d5a9683bd01743f731415ab2e3a8e2c5b76c2e083670a9777e",
+        "bytes": 776
+      },
+      {
+        "path": "outputs\\transcript.md",
+        "sha256": "72fd7aa672e191b375d8b923f4359dc061c6380571ec8285fb496e72b664cc03",
+        "bytes": 25058
+      },
+      {
+        "path": "outputs\\결과.json",
+        "sha256": "fe088ec91683d739753f2bba89ada50a2c057eb05c9b64db329f0dd3853e31d6",
+        "bytes": 15020
+      },
+      {
+        "path": "outputs\\결과.md",
+        "sha256": "c87500ad9822f47b83339195e6eb02d508974b0405e9ec4cf8a449de751e5b79",
+        "bytes": 3205
+      },
+      {
+        "path": "outputs\\변경.diff",
+        "sha256": "2e82e1f659f2f118ba9dd32e51c5e339124da72fe65b6ab07b36fbc64fa56139",
+        "bytes": 651
+      },
+      {
+        "path": "outputs\\실행이벤트.jsonl",
+        "sha256": "0e94b6ca64f79f1a4eeb471ab02799f14771a156969cc065f252126f0d1653dc",
+        "bytes": 22262
+      },
+      {
+        "path": "outputs\\인계연결_수행.py",
+        "sha256": "fae8d5c2fcee66dfa74929ecc1115da83025cc02d52e25ed1b63c23dfbc702d7",
+        "bytes": 18226
+      },
+      {
+        "path": "outputs\\저장후검사.json",
+        "sha256": "edfaf33b17815f2fc6d835f6809010e29b00cdb69de733f58276fbb9f57d94a9",
+        "bytes": 903
+      },
+      {
+        "path": "outputs\\정정표_확인범위.json",
+        "sha256": "65444c73a571a8c5e1fba228e6efc81dcef9269d3dd271b3e38f07001f0abe68",
+        "bytes": 5604
+      },
+      {
+        "path": "outputs\\초기읽기_기록.json",
+        "sha256": "3e791cf264dd2300a3a6e9af88961b0054f5b88681c2c34ab626cd3b9cbc02ae",
+        "bytes": 5879
+      },
+      {
+        "path": "outputs\\후보_인계목록.json",
+        "sha256": "799d6a44e275e0befc96b9a909386c7a4fb7123bf7bff08f984e9a1dfd0a2abb",
+        "bytes": 525
+      },
+      {
+        "path": "outputs\\후보검사.json",
+        "sha256": "4c621cb5cbffc3b3c09129e1a7ba7a988394e8ae23ae38db64ba7a6211db59cc",
+        "bytes": 781
+      },
+      {
+        "path": "outputs\\backup\\handoff-index-v010\\인계목록.json",
+        "sha256": "2cb847d4cd30624c2be60756a5a1b954bf7cd9478b49914b01a1aeec45356946",
+        "bytes": 525
+      }
+    ],
+    "summary": {
+      "passed": 4,
+      "failed": 0,
+      "total": 4,
+      "pass_rate": 1.0
+    },
+    "script_sha": "fae8d5c2fcee66dfa74929ecc1115da83025cc02d52e25ed1b63c23dfbc702d7"
+  },
+  {
+    "stage": 2,
+    "run": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-02-검토자_인계내용검토\\candidate",
+    "checks": [
+      {
+        "name": "task frozen SHA",
+        "passed": true,
+        "evidence": "55cc8adff249825c2f5adde07006accc0ff7c9a0960d6c5a529ef85ac60f6f8a"
+      },
+      {
+        "name": "skill frozen SKILL.md",
+        "passed": true,
+        "evidence": "6341e2255eecd88c6e6be018b6afd1338072535a7ad74b4640763e90e8043e25"
+      },
+      {
+        "name": "skill frozen references/근거찾기와적용조건.md",
+        "passed": true,
+        "evidence": "cc8985460df26bb9e223eb5747f2694c6703df38921ecee7ce2bf76f6fe7c1b8"
+      },
+      {
+        "name": "skill frozen references/판정과사람검수.md",
+        "passed": true,
+        "evidence": "86617f5d2c9ee44d876cf76c3a697c3413e493874df4600b10e67503be059f86"
+      },
+      {
+        "name": "upstream exact 작업초안/연결설명_지식초안.json",
+        "passed": true,
+        "evidence": {
+          "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-01-기록관리자_인계연결\\candidate\\inputs\\Phase00\\작업초안\\연결설명_지식초안.json",
+          "destination": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-02-검토자_인계내용검토\\candidate\\inputs\\Phase00\\작업초안\\연결설명_지식초안.json",
+          "actual_sha": "12ca3ff198a384694aa49869df82b35d11aa394d98abf8b8714a885817bd5d60",
+          "frozen_sha": "12ca3ff198a384694aa49869df82b35d11aa394d98abf8b8714a885817bd5d60"
+        }
+      },
+      {
+        "name": "upstream exact 자료/원문메모.md",
+        "passed": true,
+        "evidence": {
+          "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-01-기록관리자_인계연결\\candidate\\inputs\\Phase00\\자료\\원문메모.md",
+          "destination": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-02-검토자_인계내용검토\\candidate\\inputs\\Phase00\\자료\\원문메모.md",
+          "actual_sha": "b278a15449a2907b1833a8a8bb8097436655562582921dca08e55da947b4de88",
+          "frozen_sha": "b278a15449a2907b1833a8a8bb8097436655562582921dca08e55da947b4de88"
+        }
+      },
+      {
+        "name": "upstream exact 자료/추가의견.md",
+        "passed": true,
+        "evidence": {
+          "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-01-기록관리자_인계연결\\candidate\\inputs\\Phase00\\자료\\추가의견.md",
+          "destination": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-02-검토자_인계내용검토\\candidate\\inputs\\Phase00\\자료\\추가의견.md",
+          "actual_sha": "f3e26f2e6f3531073e0d64b83bbd181a610aaa780cc302cdd1b5e65cb6401d15",
+          "frozen_sha": "f3e26f2e6f3531073e0d64b83bbd181a610aaa780cc302cdd1b5e65cb6401d15"
+        }
+      },
+      {
+        "name": "upstream exact 작업초안/인계목록.json",
+        "passed": true,
+        "evidence": {
+          "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-01-기록관리자_인계연결\\candidate\\inputs\\Phase00\\작업초안\\인계목록.json",
+          "destination": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-02-검토자_인계내용검토\\candidate\\inputs\\Phase00\\작업초안\\인계목록.json",
+          "actual_sha": "799d6a44e275e0befc96b9a909386c7a4fb7123bf7bff08f984e9a1dfd0a2abb",
+          "frozen_sha": "799d6a44e275e0befc96b9a909386c7a4fb7123bf7bff08f984e9a1dfd0a2abb"
+        }
+      },
+      {
+        "name": "upstream exact 인계받은보고/결과.md",
+        "passed": true,
+        "evidence": {
+          "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-01-기록관리자_인계연결\\candidate\\outputs\\결과.md",
+          "destination": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-02-검토자_인계내용검토\\candidate\\inputs\\Phase00\\인계받은보고\\결과.md",
+          "actual_sha": "c87500ad9822f47b83339195e6eb02d508974b0405e9ec4cf8a449de751e5b79",
+          "frozen_sha": "c87500ad9822f47b83339195e6eb02d508974b0405e9ec4cf8a449de751e5b79"
+        }
+      },
+      {
+        "name": "upstream exact 인계받은보고/결과.json",
+        "passed": true,
+        "evidence": {
+          "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-01-기록관리자_인계연결\\candidate\\outputs\\결과.json",
+          "destination": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-02-검토자_인계내용검토\\candidate\\inputs\\Phase00\\인계받은보고\\결과.json",
+          "actual_sha": "fe088ec91683d739753f2bba89ada50a2c057eb05c9b64db329f0dd3853e31d6",
+          "frozen_sha": "fe088ec91683d739753f2bba89ada50a2c057eb05c9b64db329f0dd3853e31d6"
+        }
+      },
+      {
+        "name": "only allowed final changes",
+        "passed": true,
+        "evidence": {
+          "changed": [],
+          "extra": []
+        }
+      },
+      {
+        "name": "actual index link",
+        "passed": true,
+        "evidence": {
+          "index": {
+            "id": "LOCAL-HANDOFF-INDEX",
+            "version": "0.1.1",
+            "status": "draft",
+            "source_kind": "synthetic_knowledge_handoff",
+            "item_ref": {
+              "path": "작업초안/연결설명_지식초안.json",
+              "id": "note-loop",
+              "version": "0.1.1",
+              "file_sha256": "12ca3ff198a384694aa49869df82b35d11aa394d98abf8b8714a885817bd5d60"
+            },
+            "human_review": "pending; no actual reply",
+            "company_approved": false,
+            "notes": "설명용 자료, 미확인 논문효과·정식 분류 병합 제안은 미채택"
+          },
+          "matches": 1
+        }
+      },
+      {
+        "name": "pending/company preserved",
+        "passed": true,
+        "evidence": {
+          "id": "LOCAL-HANDOFF-INDEX",
+          "version": "0.1.1",
+          "status": "draft",
+          "source_kind": "synthetic_knowledge_handoff",
+          "item_ref": {
+            "path": "작업초안/연결설명_지식초안.json",
+            "id": "note-loop",
+            "version": "0.1.1",
+            "file_sha256": "12ca3ff198a384694aa49869df82b35d11aa394d98abf8b8714a885817bd5d60"
+          },
+          "human_review": "pending; no actual reply",
+          "company_approved": false,
+          "notes": "설명용 자료, 미확인 논문효과·정식 분류 병합 제안은 미채택"
+        }
+      },
+      {
+        "name": "inspect actual command exit/stream",
+        "passed": true,
+        "evidence": {
+          "argv": {
+            "executable": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+            "argv": [
+              "-B",
+              "-X",
+              "utf8",
+              "outputs\\검토수행.py",
+              "inspect"
+            ],
+            "cwd": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-02-검토자_인계내용검토\\candidate"
+          },
+          "exit": "0",
+          "stderr_bytes": 0,
+          "stdout": "SELECTED QUALITY CARDS\n[\n  {\n    \"id\": \"Q-INFO-01\",\n    \"group\": \"정보·데이터\",\n    \"title\": \"목적·대상·전문용어\",\n    \"question\": \"이 화면에서 누구에게 무엇을 이해시키려는지, 용어 설명 수준에 근거가 있는가?\",\n    \"applies_when\": \"기획/시안/실제영상의 전달 목적을 검수할 때. 분석은 목적이 제공됐을 때만 목적 적합성까지 판단.\",\n    \"required_evidence\": \"버전이 정해진 브리프/시나리오, 필수 메시지, 해당 주제의 시청자 사전지식 근거, 시청 환경.\",\n    \"review_method\": \"필수 메시지와 화면·발화의 대응을 확인하고, 모르는 전문용어가 설명 없이 전제되는지 본다. 직급으로 지식 수준을 추정하지 않는다.\",\n    \"positive_example\": \"신입 교육이라는 확인된 목적에 따라 침투수 용어를 먼저 정의하고 공법을 소개한다.\",\n    \"counterexample\": \"기획실이면 모두 비전문가라며 근거 없이 설명을 유아화하거나 전문어를 임의 삭제한다.\",\n    \"valid_exception\": \"해당 기술을 아는 대상이라는 근거가 있으면 짧은 전문 용어 중심 요약도 가능.\",\n    \"hold_when\": \"목적/필수 메시지/사전지식이 없으면 성공·난이도 적합성만 보류. 보이는 정보 자체는 기록.\",\n    \"human_review\": {\n      \"role\": \"기획 책임자·해당 주제 담당자; 필요시 실제 대상 시청자\",\n      \"question\": \"이 화면에서 누구에게 무엇을 이해시키려는지, 용어 설명 수준에 근거가 있는가?\",\n      \"required_for\": \"실제 내용·의도·시청 품질의 최종 판단. 자료가 없으면 이 질문을 완료로 만들지 않음\"\n    },\n    \"impact\": \"핵심 메시지 누락은 목적 수행에 영향. 설명 취향 차이는 별도.\",\n    \"source_refs\": [\n     [전체원문파일별도]",
+          "stdout_sha": "57a2c11424fa0a1bb18cb9c407535cb0d8141b9332a26b78d80d12474d9c6391"
+        }
+      },
+      {
+        "name": "report actual command exit/stream",
+        "passed": true,
+        "evidence": {
+          "argv": {
+            "argv": [
+              "-B",
+              "-X",
+              "utf8",
+              "outputs\\검토수행.py",
+              "report"
+            ],
+            "executable": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+            "cwd": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-02-검토자_인계내용검토\\candidate"
+          },
+          "exit": "0",
+          "stderr_bytes": 0,
+          "stdout": "{\n  \"status\": \"검토결과작성완료_회의한정참고가능_근거와사람판단잔여\",\n  \"required_outputs\": [\n    \"C:\\\\Users\\\\User\\\\Documents\\\\ChatGPT\\\\업무@사내 영상 생성기\\\\phase00-build\\\\R8_04_시험\\\\3_스킬인계\\\\eval-02-검토자_인계내용검토\\\\candidate\\\\outputs\\\\결과.md\",\n    \"C:\\\\Users\\\\User\\\\Documents\\\\ChatGPT\\\\업무@사내 영상 생성기\\\\phase00-build\\\\R8_04_시험\\\\3_스킬인계\\\\eval-02-검토자_인계내용검토\\\\candidate\\\\outputs\\\\결과.json\",\n    \"C:\\\\Users\\\\User\\\\Documents\\\\ChatGPT\\\\업무@사내 영상 생성기\\\\phase00-build\\\\R8_04_시험\\\\3_스킬인계\\\\eval-02-검토자_인계내용검토\\\\candidate\\\\outputs\\\\transcript.md\"\n  ],\n  \"input_unchanged\": true,\n  \"hash_link_valid\": true,\n  \"pending_human_count\": 5,\n  \"verification\": \"산출물검사.json\"\n}\n",
+          "stdout_sha": "83fdd64fc559e8d2ce52341b7e0e9ae6357d0e979810e40f43b430b17ddcbb75"
+        }
+      },
+      {
+        "name": "all input manifests equal fixture",
+        "passed": true,
+        "evidence": {
+          "fixture_count": 83,
+          "reported_count": 83
+        }
+      },
+      {
+        "name": "six criteria consistent with full26",
+        "passed": true,
+        "evidence": {
+          "selected": 6,
+          "total": 26,
+          "unselected": 20
+        }
+      }
+    ],
+    "changed": [],
+    "extra": [],
+    "commands": [
+      {
+        "argv": {
+          "executable": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+          "argv": [
+            "-B",
+            "-X",
+            "utf8",
+            "outputs\\검토수행.py",
+            "inspect"
+          ],
+          "cwd": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-02-검토자_인계내용검토\\candidate"
+        },
+        "exit": "0",
+        "stderr_bytes": 0,
+        "stdout_sha": "57a2c11424fa0a1bb18cb9c407535cb0d8141b9332a26b78d80d12474d9c6391"
+      },
+      {
+        "argv": {
+          "argv": [
+            "-B",
+            "-X",
+            "utf8",
+            "outputs\\검토수행.py",
+            "report"
+          ],
+          "executable": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+          "cwd": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-02-검토자_인계내용검토\\candidate"
+        },
+        "exit": "0",
+        "stderr_bytes": 0,
+        "stdout_sha": "83fdd64fc559e8d2ce52341b7e0e9ae6357d0e979810e40f43b430b17ddcbb75"
+      }
+    ],
+    "correction_source_basis": [
+      {
+        "id": "ST-R4",
+        "links": [
+          {
+            "path": "04_기록규격/06_통합최소기록_규격_v0.2.md",
+            "expected": "3c301c7f874921a3bd7bc3e5922ca8cb7c16ddc950f78ecc9850251b9474df74",
+            "actual": null
+          },
+          {
+            "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+            "expected": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+            "actual": null
+          },
+          {
+            "path": "07_실행도구/자료검증.py",
+            "expected": "0abd4cba7f1ba3a69011ef67758dbcc6f5c9599785aa0ae5ed5fd6cd0e434ec4",
+            "actual": null
+          }
+        ]
+      },
+      {
+        "id": "ST-R2",
+        "links": [
+          {
+            "path": "01_공통용어/02_기록단위와분류축.md",
+            "expected": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+            "actual": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a"
+          },
+          {
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "expected": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "actual": null
+          },
+          {
+            "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+            "expected": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+            "actual": null
+          }
+        ]
+      },
+      {
+        "id": "ST-R2-JSON",
+        "links": [
+          {
+            "path": "01_공통용어/분류운영규칙.json",
+            "expected": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d",
+            "actual": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d"
+          },
+          {
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "expected": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "actual": null
+          }
+        ]
+      },
+      {
+        "id": "ST-HANDOFF",
+        "links": [
+          {
+            "path": "09_다음단계인계/R7_01-A_구현전_인계.md",
+            "expected": "438dc5bb19e7a4356436869aa67704712e5e2257084d89cd15fc3bbfe8d2f0b4",
+            "actual": null
+          },
+          {
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "expected": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "actual": null
+          },
+          {
+            "path": "01_공통용어/02_기록단위와분류축.md",
+            "expected": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+            "actual": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a"
+          }
+        ]
+      },
+      {
+        "id": "ST-R7-R8",
+        "links": [
+          {
+            "path": "09_다음단계인계/R7_R8_스킬재구성_인계.md",
+            "expected": "7d7abac31fc1501c48fd17d2e1df0fff368057bedbf90bbb270e47baf12872ac",
+            "actual": null
+          },
+          {
+            "path": "14_스킬재구성/사람피드백/R8-3_적용성검토자_검토답변.json",
+            "expected": "e7906857aa075179a0947489a8dfa3fba267145df035c177972c76f20f788a1d",
+            "actual": null
+          }
+        ]
+      }
+    ],
+    "coverage": [
+      {
+        "path": "outputs\\input_manifest_after.json",
+        "sha256": "f7eaafa396470be51dba05c67b531b76ff9144e7ac6c99b5cc847686880531ba",
+        "bytes": 10582
+      },
+      {
+        "path": "outputs\\input_manifest_before.json",
+        "sha256": "f7eaafa396470be51dba05c67b531b76ff9144e7ac6c99b5cc847686880531ba",
+        "bytes": 10582
+      },
+      {
+        "path": "outputs\\inspect.argv.json",
+        "sha256": "7d22c17b40bc7fba9d265704b50aa30d628ab4c2e61895cc237b0e40923ab6d7",
+        "bytes": 429
+      },
+      {
+        "path": "outputs\\inspect.exit.txt",
+        "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+        "bytes": 3
+      },
+      {
+        "path": "outputs\\inspect.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      {
+        "path": "outputs\\inspect.stdout.txt",
+        "sha256": "57a2c11424fa0a1bb18cb9c407535cb0d8141b9332a26b78d80d12474d9c6391",
+        "bytes": 45357
+      },
+      {
+        "path": "outputs\\read_batch_01.txt",
+        "sha256": "fa69fceac6d0c3b252e98e14c60da62c68e2b851e92f1df34c8a104bbb4c44aa",
+        "bytes": 42915
+      },
+      {
+        "path": "outputs\\read_batch_02.txt",
+        "sha256": "d7618a5383cb38f02b6fa9b8c5a669e2af7b1905005ef00aaad9b04faca785b6",
+        "bytes": 149053
+      },
+      {
+        "path": "outputs\\report.argv.json",
+        "sha256": "f5ff9213b82da3f3555f6e775434e920367d305462d71621be81c21f1fb9e63e",
+        "bytes": 428
+      },
+      {
+        "path": "outputs\\report.argv.runtime.json",
+        "sha256": "36a17dc7fa633ab1d3b87ebee3c3261930fbfbedf4911076724dea369713b1e5",
+        "bytes": 533
+      },
+      {
+        "path": "outputs\\report.exit.txt",
+        "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+        "bytes": 3
+      },
+      {
+        "path": "outputs\\report.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      {
+        "path": "outputs\\report.stdout.txt",
+        "sha256": "83fdd64fc559e8d2ce52341b7e0e9ae6357d0e979810e40f43b430b17ddcbb75",
+        "bytes": 833
+      },
+      {
+        "path": "outputs\\transcript.md",
+        "sha256": "811c0b2c39f7cb038b1f3b5cc57899eccc385fc2f4277686ef6c16920412fe01",
+        "bytes": 14567
+      },
+      {
+        "path": "outputs\\검토수행.py",
+        "sha256": "b59f94ddd688a7b282586d80bfe56eee535fed79cfdcea67e5be9ce3c8f46d1f",
+        "bytes": 39643
+      },
+      {
+        "path": "outputs\\결과.json",
+        "sha256": "ddf486e0ecfef889dfc338fb752ea30e12b641db931b40230704be5ecf136017",
+        "bytes": 25379
+      },
+      {
+        "path": "outputs\\결과.md",
+        "sha256": "b04aeb2d90272f456dcaa68a1fddb141fb9a816e143dbc9cc5804e2f7a750ed2",
+        "bytes": 15993
+      },
+      {
+        "path": "outputs\\사전선정.json",
+        "sha256": "07ebc9fd19365035f66f5d00a264f2bbd1feb47c89094bd373a5153a38c19f86",
+        "bytes": 1123
+      },
+      {
+        "path": "outputs\\산출물검사.json",
+        "sha256": "873f7bab2bdf3568bb888bf81e1c4737a2ef9640ca7739d7eae444e7368a562f",
+        "bytes": 230
+      },
+      {
+        "path": "outputs\\실제읽기_inspect.json",
+        "sha256": "295c1f7b12d0810229d3d94aa2a090a329e56f2d5b8682f1b4c02c84bc3901d9",
+        "bytes": 2452
+      },
+      {
+        "path": "outputs\\실제읽기_report.json",
+        "sha256": "29b15731e3ecabfe12b0169e7366a6a9f8c07a0095f5c769c807e91c1fbba7f8",
+        "bytes": 1363
+      },
+      {
+        "path": "outputs\\실제읽기_종합.json",
+        "sha256": "74196698dd19a5cb942c69e0776198c1636a19eeb8a0dbb91f4cd8407117eae4",
+        "bytes": 4448
+      },
+      {
+        "path": "outputs\\쓰기목록.json",
+        "sha256": "e08541fc52edcc9e7285a7efb195ec8971eace94706f50d3eb47036b6b29d5b7",
+        "bytes": 6756
+      },
+      {
+        "path": "outputs\\입력보존_검사.json",
+        "sha256": "1a9fabfb51513f914ce887d50b839a6867eb2586127237971951ead62146c618",
+        "bytes": 181
+      },
+      {
+        "path": "outputs\\정정표_대조.json",
+        "sha256": "577d324a2964a067e055495a522ce689494a7208250bf7232e8057379fb0f5a0",
+        "bytes": 4437
+      },
+      {
+        "path": "outputs\\초기명령_기록.json",
+        "sha256": "4ed0fde98df9e13267f1f3275bc29ce42181aec69b66f978bd6dcc78c2ef88c2",
+        "bytes": 9432
+      },
+      {
+        "path": "outputs\\판본해시_대조.json",
+        "sha256": "0b60e5d46230e7814388471c0b4f20a7adfeb5b18eb47d76080aed36a326cc89",
+        "bytes": 1961
+      }
+    ],
+    "summary": {
+      "passed": 4,
+      "failed": 0,
+      "total": 4,
+      "pass_rate": 1.0
+    },
+    "script_sha": "b59f94ddd688a7b282586d80bfe56eee535fed79cfdcea67e5be9ce3c8f46d1f"
+  }
+]

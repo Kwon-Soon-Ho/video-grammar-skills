@@ -1,0 +1,494 @@
+{
+  "id": "r5-video-application-guidance",
+  "version": "0.1.0",
+  "stage": "R5-3",
+  "state": "project_guidance_draft_not_company_approved",
+  "cases": [
+    {
+      "id": "R5-CASE-01",
+      "topic": "한맥 웹색과 회사CI",
+      "condition": "한맥기술 소개 화면",
+      "application_example": "한맥 웹 Green과 로고 관측 빨강/파랑을 서로 다른 출처로 선택 기록",
+      "counterexample": "한맥이라는 이름만 보고 웹 Green을 CI공식색으로 복사",
+      "review_action": "출처·목적을 확인하고 공통 참고 사용 여부 명시",
+      "basis": [
+        "03_한맥디자인/한맥디자인정본.json",
+        "00_운영계약/03_CI와색상_기록절차.md"
+      ],
+      "status": "project_guidance_draft",
+      "actual_video_validated": false,
+      "company_rule_approved": false,
+      "human_review_required": true
+    },
+    {
+      "id": "R5-CASE-02",
+      "topic": "문서명시와 픽셀",
+      "condition": "삼안 강조색 후보 비교",
+      "application_example": "문서 #F58220(draft)와 PNG #F5821F(관측)를 둘 다 보존",
+      "counterexample": "1채널 차이라며 PNG 관측을 문서값으로 수정",
+      "review_action": "어느 자료/프로필이 현행인지 사람 확인 전 선택을 공식화하지 않음",
+      "basis": [
+        "10_공용자산/CI색상목록.json",
+        "10_공용자산/문서명시_검토목록.json"
+      ],
+      "status": "project_guidance_draft",
+      "actual_video_validated": false,
+      "company_rule_approved": false,
+      "human_review_required": true
+    },
+    {
+      "id": "R5-CASE-03",
+      "topic": "인쇄색 변환",
+      "condition": "벡터 CMYK/별색만 있음",
+      "application_example": "원문 채널을 보존하고 출력 프로필 확인 전 화면값 null",
+      "counterexample": "CMYK 숫자를 간단 산식으로 바꿔 공식HEX 지정",
+      "review_action": "프로필·변환방법·가이드 화면값 확보. 없으면 다른 확인된 관측값을 후보로 명시 선택",
+      "basis": [
+        "00_운영계약/03_CI와색상_기록절차.md"
+      ],
+      "status": "project_guidance_draft",
+      "actual_video_validated": false,
+      "company_rule_approved": false,
+      "human_review_required": true
+    },
+    {
+      "id": "R5-CASE-04",
+      "topic": "로고 비례와 원형",
+      "condition": "레이아웃에 맞춰 로고 배치",
+      "application_example": "동일비율 크기 조절 후보, 원본 여백/시그니처와 실제 화면 대조",
+      "counterexample": "가로로 늘리거나 글자 간격·두께·심볼 위치를 임의 수정",
+      "review_action": "제공형/허용형을 확인. 자동 자르기/재구성/AI 재생성 대신 원본 참조",
+      "basis": [
+        "00_운영계약/03_CI와색상_기록절차.md",
+        "10_공용자산/문서명시_검토목록.json"
+      ],
+      "status": "project_guidance_draft",
+      "actual_video_validated": false,
+      "company_rule_approved": false,
+      "human_review_required": true
+    },
+    {
+      "id": "R5-CASE-05",
+      "topic": "보호공간",
+      "condition": "로고 주변 여백 필요",
+      "application_example": "공식 보호공간 미확인으로 기록하고 프로젝트 배치 후보를 사람 검수",
+      "counterexample": "임의 x높이·10%를 회사공통 공식 여백으로 등록",
+      "review_action": "로고 원형 보호와 프로젝트 임시 여백은 구분. 가이드 미확인 값은 null",
+      "basis": [
+        "00_운영계약/03_CI와색상_기록절차.md"
+      ],
+      "status": "project_guidance_draft",
+      "actual_video_validated": false,
+      "company_rule_approved": false,
+      "human_review_required": true
+    },
+    {
+      "id": "R5-CASE-06",
+      "topic": "최소 크기",
+      "condition": "작은 화면/하단 로고",
+      "application_example": "최종 출력에서 사명/심볼 식별 여부를 확인하는 프로젝트 검수",
+      "counterexample": "원본 PNG가 크니 모든 출력에서 식별 가능하다고 통과",
+      "review_action": "최소크기 미정·최종표시조건 기록, 필요시 배치/허용형 재검토",
+      "basis": [
+        "00_운영계약/03_CI와색상_기록절차.md"
+      ],
+      "status": "project_guidance_draft",
+      "actual_video_validated": false,
+      "company_rule_approved": false,
+      "human_review_required": true
+    },
+    {
+      "id": "R5-CASE-07",
+      "topic": "어두운 배경",
+      "condition": "흰색/반전형 미확보",
+      "application_example": "원형을 보존하는 별도 배경판·배치 대안을 검토",
+      "counterexample": "컬러 로고를 자동 흰색/모노톤으로 바꿔 공식 반전형으로 저장",
+      "review_action": "허용 반전/단색형은 원본·가이드가 있을 때 연결. 판 자체 적합성도 사람 검수",
+      "basis": [
+        "00_운영계약/03_CI와색상_기록절차.md",
+        "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+      ],
+      "status": "project_guidance_draft",
+      "actual_video_validated": false,
+      "company_rule_approved": false,
+      "human_review_required": true
+    },
+    {
+      "id": "R5-CASE-08",
+      "topic": "언어와 법인명",
+      "condition": "영문 버전 사용",
+      "application_example": "보유 자산의 영문형을 후보로 지정하고 공식 표기·가독성 검수",
+      "counterexample": "파일명만 보고 영문법인명을 확정하거나 AI로 사명 번역",
+      "review_action": "영문명/회사 동일성 미확인 시 대기. ㈜장헌과 장헌산업을 자동 병합하지 않음",
+      "basis": [
+        "10_공용자산/회사목록.json",
+        "00_운영계약/03_CI와색상_기록절차.md"
+      ],
+      "status": "project_guidance_draft",
+      "actual_video_validated": false,
+      "company_rule_approved": false,
+      "human_review_required": true
+    },
+    {
+      "id": "R5-CASE-09",
+      "topic": "공동 가족사",
+      "condition": "여러 회사가 같은 화면에 등장",
+      "application_example": "주체/로고 순서·대표색·비중을 프로젝트별 명시",
+      "counterexample": "회사ID 배열 첫 항목을 대표로 선택·나머지 로고 축소",
+      "review_action": "공동주체와 위계는 담당자 확인. 글자/번호로도 회사를 구분",
+      "basis": [
+        "00_운영계약/03_CI와색상_기록절차.md",
+        "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html"
+      ],
+      "status": "project_guidance_draft",
+      "actual_video_validated": false,
+      "company_rule_approved": false,
+      "human_review_required": true
+    },
+    {
+      "id": "R5-CASE-10",
+      "topic": "글자색 대비",
+      "condition": "한맥 강조 Orange와 밝은 중립글자",
+      "application_example": "불투명 sRGB 단색 조합을 계산 후 글자색/배경판 역할 대안 검토",
+      "counterexample": "브랜드색 조합이라는 이유로 글자 대비 자동 통과",
+      "review_action": "정지 대비는 보조 지표. 로고 예외를 본문글자에 확대하지 않음",
+      "basis": [
+        "03_한맥디자인/한맥디자인정본.json",
+        "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+      ],
+      "status": "project_guidance_draft",
+      "actual_video_validated": false,
+      "company_rule_approved": false,
+      "human_review_required": true
+    },
+    {
+      "id": "R5-CASE-11",
+      "topic": "큰 글자 단위",
+      "condition": "웹 기준을 영상에 참고",
+      "application_example": "공식 설명의18pt/14pt bold와 CSS/표시크기 맥락을 확인",
+      "counterexample": "스킬의18px/14px를 영상 큰 글자 판정 수치로 복사",
+      "review_action": "영상픽셀을 CSS px/pt와 동일시하지 않고 최종 표시·한국어 글리프/굵기 검수",
+      "basis": [
+        "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+      ],
+      "status": "project_guidance_draft",
+      "actual_video_validated": false,
+      "company_rule_approved": false,
+      "human_review_required": true
+    },
+    {
+      "id": "R5-CASE-12",
+      "topic": "배경 변화/알파",
+      "condition": "영상/그라데이션 위 자막",
+      "application_example": "텍스트가 읽혀야 하는 구간의 실제 배경·불투명도·움직임을 함께 검수",
+      "counterexample": "평균 한 프레임 또는 단색 대비만으로 전체구간 통과",
+      "review_action": "필요 구간을 검수 대기로 남기고 판/배치·타이밍 대안. 플래시/전정 등 전체 접근성은 별도",
+      "basis": [
+        "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+        "02_원칙과레이아웃/03_모션원칙_적용예와반례.md"
+      ],
+      "status": "project_guidance_draft",
+      "actual_video_validated": false,
+      "company_rule_approved": false,
+      "human_review_required": true
+    },
+    {
+      "id": "R5-CASE-13",
+      "topic": "폰트/한국어",
+      "condition": "Noto Sans KR/대체서체 참고",
+      "application_example": "위계 개념을 참고하고 실제 설치·라이선스·한글/숫자폭·줄바꿈 확인",
+      "counterexample": "웹 폰트이름이 있으니 영상툴 설치/사용권/동일조판 보장",
+      "review_action": "장문 기술명·㎡·㎥·%·소수점·단위를 프로젝트 문구로 검수. 파일/권한은 R6",
+      "basis": [
+        "03_한맥디자인/한맥디자인정본.json",
+        "02_원칙과레이아웃/08_화면설계_적용기준과반례.md"
+      ],
+      "status": "project_guidance_draft",
+      "actual_video_validated": false,
+      "company_rule_approved": false,
+      "human_review_required": true
+    },
+    {
+      "id": "R5-CASE-14",
+      "topic": "영상 자막·정보 밀도",
+      "condition": "내레이션/기술정보 전달",
+      "application_example": "설명 목적·읽기 시간·화면 점유·음성과 함께 자막/도표 위계를 설계",
+      "counterexample": "웹caption14px/lineheight1.5를 모든 영상 자막규격으로 확정",
+      "review_action": "자막 수치·최대줄수/글자수·유지시간은 현재null/프로젝트결정. 실제 읽기검수 필요",
+      "basis": [
+        "03_한맥디자인/한맥디자인정본.json",
+        "02_원칙과레이아웃/08_화면설계_적용기준과반례.md",
+        "02_원칙과레이아웃/03_모션원칙_적용예와반례.md"
+      ],
+      "status": "project_guidance_draft",
+      "actual_video_validated": false,
+      "company_rule_approved": false,
+      "human_review_required": true
+    },
+    {
+      "id": "R5-CASE-15",
+      "topic": "화면비 변경",
+      "condition": "16:9 자료를9:16/정사각으로 전환",
+      "application_example": "내용 위계/흐름을 유지하며 재배치할 후보를 비교",
+      "counterexample": "가운데 크롭·균일축소만으로 긴 제목/로고/도표를 잘라도 통과",
+      "review_action": "세로/정사각 출력의 레이아웃·문구·유효영역 별도 검수. 세이프존 수치 추측 금지",
+      "basis": [
+        "02_원칙과레이아웃/08_화면설계_적용기준과반례.md",
+        "02_원칙과레이아웃/09_문구와화면비_검토사례.md"
+      ],
+      "status": "project_guidance_draft",
+      "actual_video_validated": false,
+      "company_rule_approved": false,
+      "human_review_required": true
+    },
+    {
+      "id": "R5-CASE-16",
+      "topic": "간격·그리드",
+      "condition": "웹 간격을 영상에 참고",
+      "application_example": "정렬/그룹/위계를 참고하고 출력·내용에 맞춰 간격 후보 설정",
+      "counterexample": "4px grid를 4K영상 픽셀의 회사필수 규격으로 강제",
+      "review_action": "출처별참고/프로젝트결정을 분리. 새 수치를 공통규격으로 자동승격하지 않음",
+      "basis": [
+        "03_한맥디자인/한맥디자인정본.json",
+        "02_원칙과레이아웃/08_화면설계_적용기준과반례.md"
+      ],
+      "status": "project_guidance_draft",
+      "actual_video_validated": false,
+      "company_rule_approved": false,
+      "human_review_required": true
+    },
+    {
+      "id": "R5-CASE-17",
+      "topic": "레이아웃 목적",
+      "condition": "과정/비교/구조/수치 설명",
+      "application_example": "R3 지식에서 목적에 맞는 분할·흐름·비교 등 후보 선택",
+      "counterexample": "기술 설명을 모두 UI 카드3개·대시보드로 바꿈",
+      "review_action": "레이아웃 이름은 방법 후보. 실제 핵심관계 전달 여부와 반례 검수",
+      "basis": [
+        "02_원칙과레이아웃/08_화면설계_적용기준과반례.md",
+        "02_원칙과레이아웃/07_레이아웃별_선택조건과반례.md"
+      ],
+      "status": "project_guidance_draft",
+      "actual_video_validated": false,
+      "company_rule_approved": false,
+      "human_review_required": true
+    },
+    {
+      "id": "R5-CASE-18",
+      "topic": "차트·도표 구분",
+      "condition": "여러회사/수치 시리즈",
+      "application_example": "색과 라벨/번호/선형태·범례를 함께 검토",
+      "counterexample": "CI색이 비슷한 두 회사를 색만으로 구분하거나 Yellow를 범용 차트색으로 지정",
+      "review_action": "시리즈 팔레트 미정. 수치/단위/인과·축/비례의 의미 검수는 R7",
+      "basis": [
+        "03_한맥디자인/한맥디자인정본.json",
+        "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html",
+        "https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html"
+      ],
+      "status": "project_guidance_draft",
+      "actual_video_validated": false,
+      "company_rule_approved": false,
+      "human_review_required": true
+    },
+    {
+      "id": "R5-CASE-19",
+      "topic": "제품 UI 재현",
+      "condition": "실제 편집기/웹툴 설명",
+      "application_example": "실제 대상 UI/시점/상태와 선택한참고를 구분",
+      "counterexample": "웹참고UI를 실제 제품 캡처처럼 만들거나 영상에 UI사용을 강제",
+      "review_action": "실제 UI 재현은 대상 원문대조 필요. UI미선택은 실패가 아님",
+      "basis": [
+        "03_한맥디자인/한맥디자인정본.json"
+      ],
+      "status": "project_guidance_draft",
+      "actual_video_validated": false,
+      "company_rule_approved": false,
+      "human_review_required": true
+    },
+    {
+      "id": "R5-CASE-20",
+      "topic": "그라데이션/툴 차이",
+      "condition": "표면 효과를 선택한 장면",
+      "application_example": "원문 CSS 스톱/공간·방향을 확인하고 도구별 시작/끝·보간 후보 대조",
+      "counterexample": "CSS180deg를 AE에 같은값으로 대입하고 동일결과라고 단정",
+      "review_action": "사진/3D/로고를 표면색에 맞춰 변조하지 않음. 표현 선택·최종화면 검수",
+      "basis": [
+        "03_한맥디자인/한맥디자인정본.json"
+      ],
+      "status": "project_guidance_draft",
+      "actual_video_validated": false,
+      "company_rule_approved": false,
+      "human_review_required": true
+    },
+    {
+      "id": "R5-CASE-21",
+      "topic": "모션 시간",
+      "condition": "등장·유지·퇴장/설명 순서",
+      "application_example": "R3 원칙과 내레이션·읽기·정보관계로 후보 기획",
+      "counterexample": "웹 hover120/150ms를 모든 영상 등장 시간으로 사용",
+      "review_action": "회사 모션 수치는미정. 실제 영상의 반복근거·예/반례는01-B, 모션 생성은후속",
+      "basis": [
+        "03_한맥디자인/한맥디자인정본.json",
+        "02_원칙과레이아웃/03_모션원칙_적용예와반례.md"
+      ],
+      "status": "project_guidance_draft",
+      "actual_video_validated": false,
+      "company_rule_approved": false,
+      "human_review_required": true
+    },
+    {
+      "id": "R5-CASE-22",
+      "topic": "투명도·컷 전환",
+      "condition": "영상 페이드/합성",
+      "application_example": "브랜드 표면 레시피의 알파 제약을 해당 표면에 한정",
+      "counterexample": "표면에rgba금지라는 문구를 영상페이드/모든알파 금지로 확대",
+      "review_action": "참고 맥락을 확인하고 서서히 보이는 글자의 유효읽기시간/대비 검수",
+      "basis": [
+        "03_한맥디자인/한맥디자인정본.json",
+        "02_원칙과레이아웃/03_모션원칙_적용예와반례.md"
+      ],
+      "status": "project_guidance_draft",
+      "actual_video_validated": false,
+      "company_rule_approved": false,
+      "human_review_required": true
+    },
+    {
+      "id": "R5-CASE-23",
+      "topic": "관측과 기획 분리",
+      "condition": "R4 기록과 R5 초안 연결",
+      "application_example": "프레임관측은그대로 보존, 토큰 대응/역할은별도 기록",
+      "counterexample": "CI선택값으로 원본프레임 RGB/좌표를 보정하거나 기획의도를관측으로 기록",
+      "review_action": "R4 기록 pin·주장 종류·분석 대상 단위를 확인. R5 선택은원본사실아님",
+      "basis": [
+        "04_기록규격/06_통합최소기록_규격_v0.2.md",
+        "00_운영계약/03_CI와색상_기록절차.md"
+      ],
+      "status": "project_guidance_draft",
+      "actual_video_validated": false,
+      "company_rule_approved": false,
+      "human_review_required": true
+    },
+    {
+      "id": "R5-CASE-24",
+      "topic": "적용 검수와 회사 승인",
+      "condition": "구조 검사 통과",
+      "application_example": "검사상 구조통과와 사람검수대기/공식성미확인을 함께 표시",
+      "counterexample": "valid=true를 디자인검수완료/회사승인/원문진위/배포가능으로 표현",
+      "review_action": "내용/선택자identity·권한·프로젝트 적용승인은 담당자가확인하고 R6/R7로연결",
+      "basis": [
+        "03_한맥디자인/07_회사CI와_화면역할_연결규칙.md"
+      ],
+      "status": "project_guidance_draft",
+      "actual_video_validated": false,
+      "company_rule_approved": false,
+      "human_review_required": true
+    }
+  ],
+  "boundary": "24개 설명용 적용 예/반례. 실제 영상 적용시험/회사표준 승인 아님. R3 지식을 재사용하며 새 레이아웃/모션 분류ID를 만들지 않는다.",
+  "basis_pins": {
+    "local": [
+      {
+        "path": "00_운영계약/03_CI와색상_기록절차.md",
+        "version_if_declared": null,
+        "sha256": "7c1d6a1338bb0c077331f8ec069a4262c9077ca8908bf915107583a83fe34d17",
+        "depth": "현행 로컬 원문/기존 단계 조사 결과의 해당 사례 관련 부분 대조. 새 실영상/원격 전체 검수 아님."
+      },
+      {
+        "path": "02_원칙과레이아웃/03_모션원칙_적용예와반례.md",
+        "version_if_declared": null,
+        "sha256": "4593c3e98d23f4191c943b8aa81a43a6866b190a44441400f1aa23544e0c1cb6",
+        "depth": "현행 로컬 원문/기존 단계 조사 결과의 해당 사례 관련 부분 대조. 새 실영상/원격 전체 검수 아님."
+      },
+      {
+        "path": "02_원칙과레이아웃/07_레이아웃별_선택조건과반례.md",
+        "version_if_declared": null,
+        "sha256": "945fa1ec974bd73899d71de9b4019edf0d465d3c32443a9fe8ee610d56c471dd",
+        "depth": "현행 로컬 원문/기존 단계 조사 결과의 해당 사례 관련 부분 대조. 새 실영상/원격 전체 검수 아님."
+      },
+      {
+        "path": "02_원칙과레이아웃/08_화면설계_적용기준과반례.md",
+        "version_if_declared": null,
+        "sha256": "1c6216125725542785ac8773d4cc6d41adbc178044aa2016f2c0af5630431c0e",
+        "depth": "현행 로컬 원문/기존 단계 조사 결과의 해당 사례 관련 부분 대조. 새 실영상/원격 전체 검수 아님."
+      },
+      {
+        "path": "02_원칙과레이아웃/09_문구와화면비_검토사례.md",
+        "version_if_declared": null,
+        "sha256": "1a4067d5455af7b4208c7578064448acc33a360b6f730f932e5f2367ccd3c2dd",
+        "depth": "현행 로컬 원문/기존 단계 조사 결과의 해당 사례 관련 부분 대조. 새 실영상/원격 전체 검수 아님."
+      },
+      {
+        "path": "03_한맥디자인/07_회사CI와_화면역할_연결규칙.md",
+        "version_if_declared": null,
+        "sha256": "be1baa8a5535d9f43f189bd7bab3f46320c81c5e7697a972f2a6a93320def83b",
+        "depth": "현행 로컬 원문/기존 단계 조사 결과의 해당 사례 관련 부분 대조. 새 실영상/원격 전체 검수 아님."
+      },
+      {
+        "path": "03_한맥디자인/한맥디자인정본.json",
+        "version_if_declared": "0.1.0",
+        "sha256": "dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed",
+        "depth": "현행 로컬 원문/기존 단계 조사 결과의 해당 사례 관련 부분 대조. 새 실영상/원격 전체 검수 아님."
+      },
+      {
+        "path": "04_기록규격/06_통합최소기록_규격_v0.2.md",
+        "version_if_declared": null,
+        "sha256": "3c301c7f874921a3bd7bc3e5922ca8cb7c16ddc950f78ecc9850251b9474df74",
+        "depth": "현행 로컬 원문/기존 단계 조사 결과의 해당 사례 관련 부분 대조. 새 실영상/원격 전체 검수 아님."
+      },
+      {
+        "path": "10_공용자산/CI색상목록.json",
+        "version_if_declared": "0.3.1",
+        "sha256": "c95a79a81a422fc23f4275a8dd878016f209fdaff171d73f44d3cff7387b7097",
+        "depth": "현행 로컬 원문/기존 단계 조사 결과의 해당 사례 관련 부분 대조. 새 실영상/원격 전체 검수 아님."
+      },
+      {
+        "path": "10_공용자산/문서명시_검토목록.json",
+        "version_if_declared": "0.1.0",
+        "sha256": "b178ad0165188d602fc75d46a1f6bb68066c3e010b41df2599e0f916666b2653",
+        "depth": "현행 로컬 원문/기존 단계 조사 결과의 해당 사례 관련 부분 대조. 새 실영상/원격 전체 검수 아님."
+      },
+      {
+        "path": "10_공용자산/회사목록.json",
+        "version_if_declared": "0.3.1",
+        "sha256": "0b011a9c2962459a3b42067c3f7120602cde9e541c466647fa880a0a298dda2a",
+        "depth": "현행 로컬 원문/기존 단계 조사 결과의 해당 사례 관련 부분 대조. 새 실영상/원격 전체 검수 아님."
+      }
+    ],
+    "external": [
+      {
+        "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+        "research_entry_id": "R5-W3C-CONTRAST",
+        "depth": "관련 본문 확인",
+        "research_record_ref": {
+          "path": "05_출처와검토/R5_조사기록.json",
+          "version": "0.1.1",
+          "sha256": "c748d098222dd6d2c2b6de708a9927b8fd0258aee3737d041a2d77f0f2f1d281"
+        },
+        "remote_full_document_hash_available": false
+      },
+      {
+        "url": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html",
+        "research_entry_id": "R5-W3C-NONTEXT",
+        "depth": "관련 본문 확인",
+        "research_record_ref": {
+          "path": "05_출처와검토/R5_조사기록.json",
+          "version": "0.1.1",
+          "sha256": "c748d098222dd6d2c2b6de708a9927b8fd0258aee3737d041a2d77f0f2f1d281"
+        },
+        "remote_full_document_hash_available": false
+      },
+      {
+        "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html",
+        "research_entry_id": "R5-W3C-COLOR",
+        "depth": "관련 본문 확인",
+        "research_record_ref": {
+          "path": "05_출처와검토/R5_조사기록.json",
+          "version": "0.1.1",
+          "sha256": "c748d098222dd6d2c2b6de708a9927b8fd0258aee3737d041a2d77f0f2f1d281"
+        },
+        "remote_full_document_hash_available": false
+      }
+    ],
+    "scope": "사례가 참조한 판본/조사 깊이 고정. 원문 진실성/원격 최신성/회사 승인 아님."
+  }
+}

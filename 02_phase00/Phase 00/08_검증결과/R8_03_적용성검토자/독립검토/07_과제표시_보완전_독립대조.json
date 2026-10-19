@@ -1,0 +1,160 @@
+{
+  "kind": "independent_static_aggregate_viewer_data_audit",
+  "totals": {
+    "new_skill": 21,
+    "old_skill": 21
+  },
+  "cases": 3,
+  "model_runs": 6,
+  "output_files_equal": 12,
+  "grading_data_equal": [
+    {
+      "run": "eval-01-한국어_수치_무음과_부분판정-new_skill-run-1",
+      "full_grading_equal_keys": [
+        "grading"
+      ],
+      "run_keys": [
+        "id",
+        "prompt",
+        "eval_id",
+        "outputs",
+        "grading"
+      ]
+    },
+    {
+      "run": "eval-01-한국어_수치_무음과_부분판정-old_skill-run-1",
+      "full_grading_equal_keys": [
+        "grading"
+      ],
+      "run_keys": [
+        "id",
+        "prompt",
+        "eval_id",
+        "outputs",
+        "grading"
+      ]
+    },
+    {
+      "run": "eval-02-회사CI_회신범위와_사용조건-new_skill-run-1",
+      "full_grading_equal_keys": [
+        "grading"
+      ],
+      "run_keys": [
+        "id",
+        "prompt",
+        "eval_id",
+        "outputs",
+        "grading"
+      ]
+    },
+    {
+      "run": "eval-02-회사CI_회신범위와_사용조건-old_skill-run-1",
+      "full_grading_equal_keys": [
+        "grading"
+      ],
+      "run_keys": [
+        "id",
+        "prompt",
+        "eval_id",
+        "outputs",
+        "grading"
+      ]
+    },
+    {
+      "run": "eval-03-외부지침_과잉일반화와_출처충돌-new_skill-run-1",
+      "full_grading_equal_keys": [
+        "grading"
+      ],
+      "run_keys": [
+        "id",
+        "prompt",
+        "eval_id",
+        "outputs",
+        "grading"
+      ]
+    },
+    {
+      "run": "eval-03-외부지침_과잉일반화와_출처충돌-old_skill-run-1",
+      "full_grading_equal_keys": [
+        "grading"
+      ],
+      "run_keys": [
+        "id",
+        "prompt",
+        "eval_id",
+        "outputs",
+        "grading"
+      ]
+    }
+  ],
+  "prompt_mismatches": [
+    {
+      "run": "eval-01-한국어_수치_무음과_부분판정-new_skill-run-1",
+      "actual_prompt": "(No prompt found)",
+      "expected_prompt": "검토자료의 대본 원문과 검토 초안을 보고, 초안의 검토 기준을 이번 설명 영상 준비에 쓸 수 있는지 검토해줘. 유지할 점과 수정할 점, 자료가 더 필요한 부분을 구체 근거로 나눠 줘. 회의용으로 읽기 쉽게 검토결과.md와 검토기록.json을 결과 폴더에 작성해줘. 새 화면이나 영상을 제작하지 말고 입력 파일은 그대로 둬."
+    },
+    {
+      "run": "eval-01-한국어_수치_무음과_부분판정-old_skill-run-1",
+      "actual_prompt": "(No prompt found)",
+      "expected_prompt": "검토자료의 대본 원문과 검토 초안을 보고, 초안의 검토 기준을 이번 설명 영상 준비에 쓸 수 있는지 검토해줘. 유지할 점과 수정할 점, 자료가 더 필요한 부분을 구체 근거로 나눠 줘. 회의용으로 읽기 쉽게 검토결과.md와 검토기록.json을 결과 폴더에 작성해줘. 새 화면이나 영상을 제작하지 말고 입력 파일은 그대로 둬."
+    },
+    {
+      "run": "eval-02-회사CI_회신범위와_사용조건-new_skill-run-1",
+      "actual_prompt": "(No prompt found)",
+      "expected_prompt": "검토자료의 삼안 프로젝트 메모를 기존 회사 자료·회신과 대조해서 검토해줘. 이번에 판단할 수 있는 적용 범위와 추가로 확인할 부분, 가능한 최소 수정 제안을 정리해줘. 회의용 검토결과.md와 검토기록.json을 결과 폴더에 작성해줘. 새 로고나 화면을 만들거나 입력 대장/회신을 고치지는 마."
+    },
+    {
+      "run": "eval-02-회사CI_회신범위와_사용조건-old_skill-run-1",
+      "actual_prompt": "(No prompt found)",
+      "expected_prompt": "검토자료의 삼안 프로젝트 메모를 기존 회사 자료·회신과 대조해서 검토해줘. 이번에 판단할 수 있는 적용 범위와 추가로 확인할 부분, 가능한 최소 수정 제안을 정리해줘. 회의용 검토결과.md와 검토기록.json을 결과 폴더에 작성해줘. 새 로고나 화면을 만들거나 입력 대장/회신을 고치지는 마."
+    },
+    {
+      "run": "eval-03-외부지침_과잉일반화와_출처충돌-new_skill-run-1",
+      "actual_prompt": "(No prompt found)",
+      "expected_prompt": "검토자료의 모션·화면 기준안을 우리 Phase 00 기준으로 사용해도 되는지 검토해줘. 인용한 근거와 제안의 관계를 실제 제공 자료에서 확인하고, 유지·수정·보류할 부분과 필요한 질문을 정리해줘. 회의용 검토결과.md와 검토기록.json을 결과 폴더에 작성해줘. 기준안/정본은 그대로 두고 실제 화면 제작은 하지 마."
+    },
+    {
+      "run": "eval-03-외부지침_과잉일반화와_출처충돌-old_skill-run-1",
+      "actual_prompt": "(No prompt found)",
+      "expected_prompt": "검토자료의 모션·화면 기준안을 우리 Phase 00 기준으로 사용해도 되는지 검토해줘. 인용한 근거와 제안의 관계를 실제 제공 자료에서 확인하고, 유지·수정·보류할 부분과 필요한 질문을 정리해줘. 회의용 검토결과.md와 검토기록.json을 결과 폴더에 작성해줘. 기준안/정본은 그대로 두고 실제 화면 제작은 하지 마."
+    }
+  ],
+  "embedded_raw_display_data_equal": true,
+  "display_external_resource_tags": [],
+  "raw_external_tags_removed": [
+    [
+      "link",
+      "href",
+      "https://fonts.googleapis.com"
+    ],
+    [
+      "link",
+      "href",
+      "https://fonts.gstatic.com"
+    ],
+    [
+      "link",
+      "href",
+      "https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Lora:wght@400;500&display=swap"
+    ],
+    [
+      "script",
+      "src",
+      "https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"
+    ]
+  ],
+  "embedded_script_boundary_escaped": true,
+  "benchmark_equals_file": true,
+  "benchmark_uncollected_summary_statistics_empty": true,
+  "official_script_template_and_adapter_current_hashes_match_log": true,
+  "official_license_bytes_equal": true,
+  "raw_display_hashes_match_record": true,
+  "publisher_sha256": "68ccf6c5afba614bd0d4be8a86584d9c3a8de84a03d3c58addc925f1521cfaf9",
+  "human_output_feedback_received": false,
+  "browser_render_or_click_tested": false,
+  "limits": [
+    "static source/data comparison, not rendered UI verification",
+    "no official viewer or aggregate script rerun",
+    "tie does not establish independent skill effect or general equivalence"
+  ]
+}

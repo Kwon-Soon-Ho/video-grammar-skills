@@ -1,0 +1,57 @@
+{
+  "schema_version": "video-review-ledger-0.1",
+  "revision": 1,
+  "before": {
+    "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\results\\NEW-N\\first-observations.json",
+    "sha256": "a88145c0709f3b23639b54138d879ea8e6219126d37b5bffc0ca6b48a2299a07"
+  },
+  "after": {
+    "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\detail-results\\NEW-N\\observations-detailed.json",
+    "sha256": "b76da0bb521899e14ec926b91558a55fe030069db28f55a60fc1ec915e58466a"
+  },
+  "reviewer": {
+    "kind": "same_agent_context",
+    "name": "Codex detail review",
+    "method": "지정 ROI의 0.1초 표본 시각 재대조. 독립 검수 아님."
+  },
+  "findings": [
+    {
+      "id": "D01",
+      "question": "설명 띠 중간 상태와 판독 구간을 0.1초 표본으로 구체화",
+      "requirements": [
+        {
+          "object_id": "right-label",
+          "property": "visibility",
+          "dimension": "reveal"
+        }
+      ],
+      "required_basis_kind": "observed",
+      "before_claim_ids": [
+        "c024"
+      ],
+      "state": "addressed",
+      "resolution_claim_ids": [
+        "c024"
+      ],
+      "reason": "0.1초 간격 근거를 만든 뒤 지정 ROI의 시간순 개요를 재관찰해 보완. 동일 AI 문맥, 독립 검수 아님.",
+      "next_probe": null
+    },
+    {
+      "id": "OPEN-background",
+      "question": "배경 미세 모션은 아직 대상별 연속 검수하지 않음",
+      "requirements": [
+        {
+          "object_id": "background",
+          "property": "internal_state",
+          "dimension": "unreviewed-change"
+        }
+      ],
+      "required_basis_kind": "observed",
+      "before_claim_ids": [],
+      "state": "open",
+      "resolution_claim_ids": [],
+      "reason": "미확인 속성을 범위 밖으로 숨기지 않고 열린 검수로 유지",
+      "next_probe": "해당 영역을 기준점으로 시간순 원본 비교 후 관측 주장 또는 판독 한계를 보완"
+    }
+  ]
+}

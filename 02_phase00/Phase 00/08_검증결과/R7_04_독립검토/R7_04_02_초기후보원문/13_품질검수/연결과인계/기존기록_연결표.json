@@ -1,0 +1,897 @@
+{
+  "id": "r7-existing-record-field-map",
+  "version": "0.1.0",
+  "kind": "field_mapping_design_not_actual_record_links",
+  "criteria_ref": {
+    "path": "13_품질검수/품질항목_정본.json",
+    "sha256": "c5b9e91e902747a1d657fbbaee19c4b2b97e96dcf58f0ae2bb032384f29ce60f"
+  },
+  "bindings": [
+    {
+      "id": "R4-IDENTITY",
+      "structure_reference": "04_기록규격/통합최소기록_설명용_v0.2.json",
+      "structure_reference_sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+      "key_path": [
+        "record_id"
+      ],
+      "data_scope": "synthetic_structure_example",
+      "note": "기록ID. 실제 대상 영상·장면ID와 구분하고 기록 version을 함께 참조.",
+      "actual_evidence": false
+    },
+    {
+      "id": "R4-TARGETS",
+      "structure_reference": "04_기록규격/통합최소기록_설명용_v0.2.json",
+      "structure_reference_sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+      "key_path": [
+        "spatial_contract",
+        "evidence_contract",
+        "targets"
+      ],
+      "data_scope": "synthetic_structure_example",
+      "note": "실제 대상의 ID/version·부모·범위. R2 단위를 적용.",
+      "actual_evidence": false
+    },
+    {
+      "id": "R4-MATERIALS",
+      "structure_reference": "04_기록규격/통합최소기록_설명용_v0.2.json",
+      "structure_reference_sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+      "key_path": [
+        "spatial_contract",
+        "evidence_contract",
+        "materials"
+      ],
+      "data_scope": "synthetic_structure_example",
+      "note": "원본/파생/문서·전사 등의 자료·버전·출처. 구조 예시의 가상 자료를 실제 근거로 사용 금지.",
+      "actual_evidence": false
+    },
+    {
+      "id": "R4-EVIDENCE",
+      "structure_reference": "04_기록규격/통합최소기록_설명용_v0.2.json",
+      "structure_reference_sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+      "key_path": [
+        "spatial_contract",
+        "evidence_contract",
+        "evidence"
+      ],
+      "data_scope": "synthetic_structure_example",
+      "note": "자료의 선택 부분과 주장 근거. 실제 내용 대조는 사람 검수.",
+      "actual_evidence": false
+    },
+    {
+      "id": "R4-CLAIMS",
+      "structure_reference": "04_기록규격/통합최소기록_설명용_v0.2.json",
+      "structure_reference_sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+      "key_path": [
+        "spatial_contract",
+        "evidence_contract",
+        "claims"
+      ],
+      "data_scope": "synthetic_structure_example",
+      "note": "관측·계획·추론·수치·의도·부재 등의 주장 범위/지지·반대 근거.",
+      "actual_evidence": false
+    },
+    {
+      "id": "R4-TIME",
+      "structure_reference": "04_기록규격/통합최소기록_설명용_v0.2.json",
+      "structure_reference_sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+      "key_path": [
+        "spatial_contract",
+        "evidence_contract",
+        "time_contract"
+      ],
+      "data_scope": "synthetic_structure_example",
+      "note": "필요한 시점·구간·프레임/PTS·원점·시각 변환. 비시간 문서 주장에 강제하지 않음.",
+      "actual_evidence": false
+    },
+    {
+      "id": "R4-SPACE",
+      "structure_reference": "04_기록규격/통합최소기록_설명용_v0.2.json",
+      "structure_reference_sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+      "key_path": [
+        "spatial_contract",
+        "spaces"
+      ],
+      "data_scope": "synthetic_structure_example",
+      "note": "필요한 공간·원점·단위. 비공간 주장/적법한 spaces=[]는 이유를 남기고 좌표를 만들지 않음.",
+      "actual_evidence": false
+    },
+    {
+      "id": "R4-GEOMETRY",
+      "structure_reference": "04_기록규격/통합최소기록_설명용_v0.2.json",
+      "structure_reference_sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+      "key_path": [
+        "spatial_contract",
+        "geometries"
+      ],
+      "data_scope": "synthetic_structure_example",
+      "note": "영역/점 등 기하. 실제 측정·동일 대상·변환 적합성은 별도.",
+      "actual_evidence": false
+    },
+    {
+      "id": "R4-TRANSFORMS",
+      "structure_reference": "04_기록규격/통합최소기록_설명용_v0.2.json",
+      "structure_reference_sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+      "key_path": [
+        "spatial_contract",
+        "transforms"
+      ],
+      "data_scope": "synthetic_structure_example",
+      "note": "회전/크롭/리사이즈 변환. 실제 적용 결과는 별도 내용 검수.",
+      "actual_evidence": false
+    },
+    {
+      "id": "R4-MAPPINGS",
+      "structure_reference": "04_기록규격/통합최소기록_설명용_v0.2.json",
+      "structure_reference_sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+      "key_path": [
+        "spatial_contract",
+        "mappings"
+      ],
+      "data_scope": "synthetic_structure_example",
+      "note": "원본/파생 공간의 대응. 존재만으로 실제 위치/추적 타당성을 확인하지 않음.",
+      "actual_evidence": false
+    },
+    {
+      "id": "R4-UNITS",
+      "structure_reference": "04_기록규격/통합최소기록_설명용_v0.2.json",
+      "structure_reference_sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+      "key_path": [
+        "units"
+      ],
+      "data_scope": "synthetic_structure_example",
+      "note": "분류·시나리오·표본·관련상태. 프레임을 화면상태로 자동 대체하지 않음.",
+      "actual_evidence": false
+    },
+    {
+      "id": "R4-REVIEW",
+      "structure_reference": "04_기록규격/통합최소기록_설명용_v0.2.json",
+      "structure_reference_sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+      "key_path": [
+        "review_contexts"
+      ],
+      "data_scope": "synthetic_structure_example",
+      "note": "기존 검수 문맥. R7 새 판단이나 R6 사람 범위 대신 재사용 금지.",
+      "actual_evidence": false
+    },
+    {
+      "id": "R5-IDENTITY",
+      "structure_reference": "03_한맥디자인/디자인적용_설명용예시.json",
+      "structure_reference_sha256": "1f5a6b20fbd67154d8e22b2a460fab4c6a1fea00ca6a5991834552f01d6695cd",
+      "key_path": [
+        "application_id"
+      ],
+      "data_scope": "synthetic_structure_example",
+      "note": "적용 초안 ID와 version. 실제 분석 기록과 별도.",
+      "actual_evidence": false
+    },
+    {
+      "id": "R5-COMPANIES",
+      "structure_reference": "03_한맥디자인/디자인적용_설명용예시.json",
+      "structure_reference_sha256": "1f5a6b20fbd67154d8e22b2a460fab4c6a1fea00ca6a5991834552f01d6695cd",
+      "key_path": [
+        "company_ids"
+      ],
+      "data_scope": "synthetic_structure_example",
+      "note": "대상 회사·단독/공동. 배열 첫 회사로 주체/위계를 자동 선택하지 않음.",
+      "actual_evidence": false
+    },
+    {
+      "id": "R5-PINS",
+      "structure_reference": "03_한맥디자인/디자인적용_설명용예시.json",
+      "structure_reference_sha256": "1f5a6b20fbd67154d8e22b2a460fab4c6a1fea00ca6a5991834552f01d6695cd",
+      "key_path": [
+        "source_pins"
+      ],
+      "data_scope": "synthetic_structure_example",
+      "note": "회사/자산/관측색/한맥/정책의 판본 고정.",
+      "actual_evidence": false
+    },
+    {
+      "id": "R5-LOGOS",
+      "structure_reference": "03_한맥디자인/디자인적용_설명용예시.json",
+      "structure_reference_sha256": "1f5a6b20fbd67154d8e22b2a460fab4c6a1fea00ca6a5991834552f01d6695cd",
+      "key_path": [
+        "logos"
+      ],
+      "data_scope": "synthetic_structure_example",
+      "note": "제공된 로고 자산 참조/사용형·선택 메모. 빈 배열은 실제 로고 선택 없음.",
+      "actual_evidence": false
+    },
+    {
+      "id": "R5-COLORS",
+      "structure_reference": "03_한맥디자인/디자인적용_설명용예시.json",
+      "structure_reference_sha256": "1f5a6b20fbd67154d8e22b2a460fab4c6a1fea00ca6a5991834552f01d6695cd",
+      "key_path": [
+        "color_roles"
+      ],
+      "data_scope": "synthetic_structure_example",
+      "note": "역할 후보·출처/가정·디자이너 명시 선택. 공식 CI색/회사 규칙 아님.",
+      "actual_evidence": false
+    },
+    {
+      "id": "R5-OUTPUT",
+      "structure_reference": "03_한맥디자인/디자인적용_설명용예시.json",
+      "structure_reference_sha256": "1f5a6b20fbd67154d8e22b2a460fab4c6a1fea00ca6a5991834552f01d6695cd",
+      "key_path": [
+        "output_context"
+      ],
+      "data_scope": "synthetic_structure_example",
+      "note": "실제 출력/배경/시청 조건. 미정 값은 추정하지 않음.",
+      "actual_evidence": false
+    },
+    {
+      "id": "R5-R4-LINK",
+      "structure_reference": "03_한맥디자인/디자인적용_설명용예시.json",
+      "structure_reference_sha256": "1f5a6b20fbd67154d8e22b2a460fab4c6a1fea00ca6a5991834552f01d6695cd",
+      "key_path": [
+        "linked_r4_record"
+      ],
+      "data_scope": "synthetic_structure_example",
+      "note": "실제 연결한 분석 기록의 참조. null인 설명 예를 연결 완료로 표현하지 않음.",
+      "actual_evidence": false
+    },
+    {
+      "id": "R6-REQUESTS",
+      "structure_reference": "05_출처와검토/검수와사용범위/사람검수_접수대장.json",
+      "structure_reference_sha256": "a01dcbeea028f046fd47410628007afb69b20ca91f96ecf749b35c0f4095a21d",
+      "key_path": [
+        "requests"
+      ],
+      "data_scope": "existing_CI_intake_not_R7_content_review",
+      "note": "R6 현재 실제 질문의 범위. 새 R7 질문을 기존 CI 질문으로 대신하지 않음.",
+      "actual_evidence": false
+    },
+    {
+      "id": "R6-EVENTS",
+      "structure_reference": "05_출처와검토/검수와사용범위/사람검수_접수대장.json",
+      "structure_reference_sha256": "a01dcbeea028f046fd47410628007afb69b20ca91f96ecf749b35c0f4095a21d",
+      "key_path": [
+        "events"
+      ],
+      "data_scope": "existing_CI_intake_not_R7_content_review",
+      "note": "현재 문맥의 실제 답변·부분확인/정정/철회. 특정 답변·범위와 새 대상의 적용 가능성은 사람이 확인.",
+      "actual_evidence": false
+    },
+    {
+      "id": "R6-CONTEXT",
+      "structure_reference": "05_출처와검토/검수와사용범위/사람검수_접수대장.json",
+      "structure_reference_sha256": "a01dcbeea028f046fd47410628007afb69b20ca91f96ecf749b35c0f4095a21d",
+      "key_path": [
+        "source_pins"
+      ],
+      "data_scope": "existing_CI_intake_not_R7_content_review",
+      "note": "현재 검수 문맥의 입력 pin. 새 문맥/질문/회신 접수는 R6 절차를 따로 거침.",
+      "actual_evidence": false
+    }
+  ],
+  "criteria_links": [
+    {
+      "criterion_ref": "Q-INFO-01",
+      "group": "정보·데이터",
+      "binding_candidates": [
+        "R4-TARGETS",
+        "R4-MATERIALS",
+        "R4-EVIDENCE",
+        "R4-CLAIMS",
+        "R4-UNITS"
+      ],
+      "human_context_candidates": [
+        "R6-REQUESTS",
+        "R6-EVENTS",
+        "R6-CONTEXT"
+      ],
+      "selection_rule": "후보 필드이며 일괄 필수 아님. 실제 과제/주장에 필요한 것만 적용 이유와 함께 선택. 시간/좌표 비적용과 누락을 구분.",
+      "required_evidence": "버전이 정해진 브리프/시나리오, 필수 메시지, 해당 주제의 시청자 사전지식 근거, 시청 환경.",
+      "hold_when": "목적/필수 메시지/사전지식이 없으면 성공·난이도 적합성만 보류. 보이는 정보 자체는 기록.",
+      "human_role": "기획 책임자·해당 주제 담당자; 필요시 실제 대상 시청자",
+      "actual_target_ref": null,
+      "actual_evidence_refs": [],
+      "actual_review_result": null
+    },
+    {
+      "criterion_ref": "Q-INFO-02",
+      "group": "정보·데이터",
+      "binding_candidates": [
+        "R4-TARGETS",
+        "R4-MATERIALS",
+        "R4-EVIDENCE",
+        "R4-CLAIMS",
+        "R4-UNITS"
+      ],
+      "human_context_candidates": [
+        "R6-REQUESTS",
+        "R6-EVENTS",
+        "R6-CONTEXT"
+      ],
+      "selection_rule": "후보 필드이며 일괄 필수 아님. 실제 과제/주장에 필요한 것만 적용 이유와 함께 선택. 시간/좌표 비적용과 누락을 구분.",
+      "required_evidence": "원문과 정정 이력, 실제 화면·청취 가능한 음성, 동기화된 시나리오, 값의 출처.",
+      "hold_when": "음성만 없으면 음성 일치성만 보류. 시나리오와 원본 충돌/판독 불가이면 해당 내용 보류.",
+      "human_role": "기술/업무 내용 담당자·자막 검수자",
+      "actual_target_ref": null,
+      "actual_evidence_refs": [],
+      "actual_review_result": null
+    },
+    {
+      "criterion_ref": "Q-INFO-03",
+      "group": "정보·데이터",
+      "binding_candidates": [
+        "R4-TARGETS",
+        "R4-MATERIALS",
+        "R4-EVIDENCE",
+        "R4-CLAIMS",
+        "R4-UNITS"
+      ],
+      "human_context_candidates": [
+        "R6-REQUESTS",
+        "R6-EVENTS",
+        "R6-CONTEXT"
+      ],
+      "selection_rule": "후보 필드이며 일괄 필수 아님. 실제 과제/주장에 필요한 것만 적용 이유와 함께 선택. 시간/좌표 비적용과 누락을 구분.",
+      "required_evidence": "비교 데이터·대상·기간·분모·단위·촬영조건, 관계의 출처, 원본 화면.",
+      "hold_when": "원자료·조건·관계 근거가 없으면 우열/개선/인과 판정 보류. 비교 배치 관측은 남김.",
+      "human_role": "기술/데이터 담당자·기획 책임자",
+      "actual_target_ref": null,
+      "actual_evidence_refs": [],
+      "actual_review_result": null
+    },
+    {
+      "criterion_ref": "Q-INFO-04",
+      "group": "정보·데이터",
+      "binding_candidates": [
+        "R4-TARGETS",
+        "R4-MATERIALS",
+        "R4-EVIDENCE",
+        "R4-CLAIMS",
+        "R4-UNITS"
+      ],
+      "human_context_candidates": [
+        "R6-REQUESTS",
+        "R6-EVENTS",
+        "R6-CONTEXT"
+      ],
+      "selection_rule": "후보 필드이며 일괄 필수 아님. 실제 과제/주장에 필요한 것만 적용 이유와 함께 선택. 시간/좌표 비적용과 누락을 구분.",
+      "required_evidence": "데이터 버전·실측/추정 표기·결측 구간, 실제 재생과 최종값, 연출 목적.",
+      "hold_when": "종류/모델/최종값 출처가 없으면 실측 주장 보류. 보이는 숫자 관측은 유지.",
+      "human_role": "데이터 담당자·디자인 검수자",
+      "actual_target_ref": null,
+      "actual_evidence_refs": [],
+      "actual_review_result": null
+    },
+    {
+      "criterion_ref": "Q-TEXT-01",
+      "group": "한국어·단위",
+      "binding_candidates": [
+        "R4-TARGETS",
+        "R4-MATERIALS",
+        "R4-EVIDENCE",
+        "R4-CLAIMS",
+        "R5-OUTPUT"
+      ],
+      "human_context_candidates": [
+        "R6-REQUESTS",
+        "R6-EVENTS",
+        "R6-CONTEXT"
+      ],
+      "selection_rule": "후보 필드이며 일괄 필수 아님. 실제 과제/주장에 필요한 것만 적용 이유와 함께 선택. 시간/좌표 비적용과 누락을 구분.",
+      "required_evidence": "필수 명칭 원문, 실제 글꼴/대체글꼴과 출력 문자열, 최종 크기·해상도.",
+      "hold_when": "글꼴·원문·실출력이 없으면 최종 표시 보류. 글꼴 이름만으로 설치/라이선스까지 통과시키지 않음.",
+      "human_role": "디자인 검수자·기술명 담당자",
+      "actual_target_ref": null,
+      "actual_evidence_refs": [],
+      "actual_review_result": null
+    },
+    {
+      "criterion_ref": "Q-TEXT-02",
+      "group": "한국어·단위",
+      "binding_candidates": [
+        "R4-TARGETS",
+        "R4-MATERIALS",
+        "R4-EVIDENCE",
+        "R4-CLAIMS",
+        "R5-OUTPUT"
+      ],
+      "human_context_candidates": [
+        "R6-REQUESTS",
+        "R6-EVENTS",
+        "R6-CONTEXT"
+      ],
+      "selection_rule": "후보 필드이며 일괄 필수 아님. 실제 과제/주장에 필요한 것만 적용 이유와 함께 선택. 시간/좌표 비적용과 누락을 구분.",
+      "required_evidence": "원본 수치/정밀도/단위, 채택한 표기 지침, 문맥, 실제 표시.",
+      "hold_when": "압력/힘 등 물리량·정밀도·소수 구분이 모호하거나 변환 근거가 없으면 해당 수정·사실 판정 보류.",
+      "human_role": "기술/데이터 담당자·디자인 검수자",
+      "actual_target_ref": null,
+      "actual_evidence_refs": [],
+      "actual_review_result": null
+    },
+    {
+      "criterion_ref": "Q-TEXT-03",
+      "group": "한국어·단위",
+      "binding_candidates": [
+        "R4-TARGETS",
+        "R4-MATERIALS",
+        "R4-EVIDENCE",
+        "R4-CLAIMS",
+        "R5-OUTPUT"
+      ],
+      "human_context_candidates": [
+        "R6-REQUESTS",
+        "R6-EVENTS",
+        "R6-CONTEXT"
+      ],
+      "selection_rule": "후보 필드이며 일괄 필수 아님. 실제 과제/주장에 필요한 것만 적용 이유와 함께 선택. 시간/좌표 비적용과 누락을 구분.",
+      "required_evidence": "실제 문구·글꼴·줄폭·해상도, 중요 의미 묶음, 재생 시간.",
+      "hold_when": "실제 조판·시청 조건이 없으면 최종 줄바꿈 적합성/가독성 보류. 원문 전사 자체는 별도.",
+      "human_role": "디자인/자막 검수자·필요시 내용 담당자",
+      "actual_target_ref": null,
+      "actual_evidence_refs": [],
+      "actual_review_result": null
+    },
+    {
+      "criterion_ref": "Q-CAP-01",
+      "group": "자막·전달 경로",
+      "binding_candidates": [
+        "R4-TARGETS",
+        "R4-MATERIALS",
+        "R4-EVIDENCE",
+        "R4-CLAIMS",
+        "R4-TIME",
+        "R5-OUTPUT"
+      ],
+      "human_context_candidates": [
+        "R6-REQUESTS",
+        "R6-EVENTS",
+        "R6-CONTEXT"
+      ],
+      "selection_rule": "후보 필드이며 일괄 필수 아님. 실제 과제/주장에 필요한 것만 적용 이유와 함께 선택. 시간/좌표 비적용과 누락을 구분.",
+      "required_evidence": "실제 오디오·자막·화자/소리의 의미·목적·자막 요구.",
+      "hold_when": "오디오/자막/청취 조건 또는 소리의 의미가 없으면 해당 정확성·누락 판정 보류. 자막 요구가 미확인이면 필요 여부를 확인하고, 자막이 없다는 이유만으로 비적용 처리하지 않음.",
+      "human_role": "자막 검수자·소리 의미를 아는 내용 담당자",
+      "actual_target_ref": null,
+      "actual_evidence_refs": [],
+      "actual_review_result": null
+    },
+    {
+      "criterion_ref": "Q-CAP-02",
+      "group": "자막·전달 경로",
+      "binding_candidates": [
+        "R4-TARGETS",
+        "R4-MATERIALS",
+        "R4-EVIDENCE",
+        "R4-CLAIMS",
+        "R4-TIME",
+        "R5-OUTPUT"
+      ],
+      "human_context_candidates": [
+        "R6-REQUESTS",
+        "R6-EVENTS",
+        "R6-CONTEXT"
+      ],
+      "selection_rule": "후보 필드이며 일괄 필수 아님. 실제 과제/주장에 필요한 것만 적용 이유와 함께 선택. 시간/좌표 비적용과 누락을 구분.",
+      "required_evidence": "실제 자막/오디오/영상의 공통 시간축, 발화 구간, 전환·가림·플레이어 UI, 시청 조건.",
+      "hold_when": "해당 판정에 필요한 공통 시간축·대응 근거(원본 PTS/시각 변환은 확보 범위 기록)·실제 자막/발화·배포 UI가 없으면 그 정밀도/범위의 시간·가림 판정 보류. 제한 구간의 수작업 관측은 보존하되 스틸로 동기화 통과, 미상 시간의 임의 추정, R4 필수값/검사 우회는 금지.",
+      "human_role": "자막/디자인 검수자·필요시 실제 시청자",
+      "actual_target_ref": null,
+      "actual_evidence_refs": [],
+      "actual_review_result": null
+    },
+    {
+      "criterion_ref": "Q-CAP-03",
+      "group": "자막·전달 경로",
+      "binding_candidates": [
+        "R4-TARGETS",
+        "R4-MATERIALS",
+        "R4-EVIDENCE",
+        "R4-CLAIMS",
+        "R4-TIME",
+        "R5-OUTPUT"
+      ],
+      "human_context_candidates": [
+        "R6-REQUESTS",
+        "R6-EVENTS",
+        "R6-CONTEXT"
+      ],
+      "selection_rule": "후보 필드이며 일괄 필수 아님. 실제 과제/주장에 필요한 것만 적용 이유와 함께 선택. 시간/좌표 비적용과 누락을 구분.",
+      "required_evidence": "사용 환경·접근 요구·필수 메시지, 시각/음성 정보 목록과 실제 대체 경로.",
+      "hold_when": "배포 환경·요구·대체 자료 접근성이 미확인이면 해당 전달 보장만 보류. 전체 접근성 인증은 하지 않음.",
+      "human_role": "기획 책임자·디자인/접근성 검수자·필요시 대상 사용자",
+      "actual_target_ref": null,
+      "actual_evidence_refs": [],
+      "actual_review_result": null
+    },
+    {
+      "criterion_ref": "Q-CAP-04",
+      "group": "자막·전달 경로",
+      "binding_candidates": [
+        "R4-TARGETS",
+        "R4-MATERIALS",
+        "R4-EVIDENCE",
+        "R4-CLAIMS",
+        "R4-TIME",
+        "R5-OUTPUT"
+      ],
+      "human_context_candidates": [
+        "R6-REQUESTS",
+        "R6-EVENTS",
+        "R6-CONTEXT"
+      ],
+      "selection_rule": "후보 필드이며 일괄 필수 아님. 실제 과제/주장에 필요한 것만 적용 이유와 함께 선택. 시간/좌표 비적용과 누락을 구분.",
+      "required_evidence": "실제 오디오와 재생 조건, 대본·명칭 발음 근거, 배경음악/효과음, 청취 검수.",
+      "hold_when": "음성·장치/환경·발음 근거가 없으면 해당 청취/발음 판정 보류.",
+      "human_role": "내용 담당자·오디오/영상 검수자·필요시 실제 시청자",
+      "actual_target_ref": null,
+      "actual_evidence_refs": [],
+      "actual_review_result": null
+    },
+    {
+      "criterion_ref": "Q-SCREEN-01",
+      "group": "화면·도표",
+      "binding_candidates": [
+        "R4-TARGETS",
+        "R4-MATERIALS",
+        "R4-EVIDENCE",
+        "R4-CLAIMS",
+        "R5-OUTPUT"
+      ],
+      "human_context_candidates": [
+        "R6-REQUESTS",
+        "R6-EVENTS",
+        "R6-CONTEXT"
+      ],
+      "selection_rule": "후보 필드이며 일괄 필수 아님. 실제 과제/주장에 필요한 것만 적용 이유와 함께 선택. 시간/좌표 비적용과 누락을 구분.",
+      "required_evidence": "필수 메시지·관계·실제 화면 상태·해상도/표시 환경.",
+      "hold_when": "정보 역할·원본/최종 크기가 없으면 의미/최종 읽기 판정 보류. 위치 관측은 유지.",
+      "human_role": "디자인 검수자·관계가 모호하면 내용 담당자",
+      "actual_target_ref": null,
+      "actual_evidence_refs": [],
+      "actual_review_result": null
+    },
+    {
+      "criterion_ref": "Q-SCREEN-02",
+      "group": "화면·도표",
+      "binding_candidates": [
+        "R4-TARGETS",
+        "R4-MATERIALS",
+        "R4-EVIDENCE",
+        "R4-CLAIMS",
+        "R5-OUTPUT"
+      ],
+      "human_context_candidates": [
+        "R6-REQUESTS",
+        "R6-EVENTS",
+        "R6-CONTEXT"
+      ],
+      "selection_rule": "후보 필드이며 일괄 필수 아님. 실제 과제/주장에 필요한 것만 적용 이유와 함께 선택. 시간/좌표 비적용과 누락을 구분.",
+      "required_evidence": "내용 관계·필수 정보·후보 레이아웃과 선택 이유·표시/시간 조건.",
+      "hold_when": "관계·필수 정보·시청 조건이 없으면 적합성 보류. 새로움/고급스러움을 자동 판정하지 않음.",
+      "human_role": "디자인 검수자·기획 책임자",
+      "actual_target_ref": null,
+      "actual_evidence_refs": [],
+      "actual_review_result": null
+    },
+    {
+      "criterion_ref": "Q-SCREEN-03",
+      "group": "화면·도표",
+      "binding_candidates": [
+        "R4-TARGETS",
+        "R4-MATERIALS",
+        "R4-EVIDENCE",
+        "R4-CLAIMS",
+        "R5-OUTPUT"
+      ],
+      "human_context_candidates": [
+        "R6-REQUESTS",
+        "R6-EVENTS",
+        "R6-CONTEXT"
+      ],
+      "selection_rule": "후보 필드이며 일괄 필수 아님. 실제 과제/주장에 필요한 것만 적용 이유와 함께 선택. 시간/좌표 비적용과 누락을 구분.",
+      "required_evidence": "실제 합성 결과·텍스트/배경 색·알파·움직임·출력 크기/표시·글꼴 조건.",
+      "hold_when": "최종 합성·표시 환경·동적 배경이 없으면 최종 가독성 보류. 계산값·방법·가정만 기록 가능하며 영상 가독성 통과는 별도.",
+      "human_role": "디자인 검수자·필요시 대상 시청자",
+      "actual_target_ref": null,
+      "actual_evidence_refs": [],
+      "actual_review_result": null
+    },
+    {
+      "criterion_ref": "Q-SCREEN-04",
+      "group": "화면·도표",
+      "binding_candidates": [
+        "R4-TARGETS",
+        "R4-MATERIALS",
+        "R4-EVIDENCE",
+        "R4-CLAIMS",
+        "R5-OUTPUT"
+      ],
+      "human_context_candidates": [
+        "R6-REQUESTS",
+        "R6-EVENTS",
+        "R6-CONTEXT"
+      ],
+      "selection_rule": "후보 필드이며 일괄 필수 아님. 실제 과제/주장에 필요한 것만 적용 이유와 함께 선택. 시간/좌표 비적용과 누락을 구분.",
+      "required_evidence": "범례·라벨·필수 그래픽 목록·인접 색과 실제 출력, 대체 정보.",
+      "hold_when": "의미상 필수 그래픽·범례 대응·표시 환경이 없으면 해당 구분성 보류.",
+      "human_role": "디자인 검수자·기술 도표 담당자",
+      "actual_target_ref": null,
+      "actual_evidence_refs": [],
+      "actual_review_result": null
+    },
+    {
+      "criterion_ref": "Q-SCREEN-05",
+      "group": "화면·도표",
+      "binding_candidates": [
+        "R4-TARGETS",
+        "R4-MATERIALS",
+        "R4-EVIDENCE",
+        "R4-CLAIMS",
+        "R5-OUTPUT"
+      ],
+      "human_context_candidates": [
+        "R6-REQUESTS",
+        "R6-EVENTS",
+        "R6-CONTEXT"
+      ],
+      "selection_rule": "후보 필드이며 일괄 필수 아님. 실제 과제/주장에 필요한 것만 적용 이유와 함께 선택. 시간/좌표 비적용과 누락을 구분.",
+      "required_evidence": "원자료 버전·단위·축 범위·시간/범주 정의·범례·결측·실제 화면.",
+      "hold_when": "데이터/목적·범례 대응/축 설명이 없으면 그래프 사실성 보류. 보이는 형태는 기록.",
+      "human_role": "데이터/내용 담당자·디자인 검수자",
+      "actual_target_ref": null,
+      "actual_evidence_refs": [],
+      "actual_review_result": null
+    },
+    {
+      "criterion_ref": "Q-SCREEN-06",
+      "group": "화면·도표",
+      "binding_candidates": [
+        "R4-TARGETS",
+        "R4-MATERIALS",
+        "R4-EVIDENCE",
+        "R4-CLAIMS",
+        "R5-OUTPUT",
+        "R4-SPACE",
+        "R4-GEOMETRY",
+        "R4-TRANSFORMS",
+        "R4-MAPPINGS"
+      ],
+      "human_context_candidates": [
+        "R6-REQUESTS",
+        "R6-EVENTS",
+        "R6-CONTEXT"
+      ],
+      "selection_rule": "후보 필드이며 일괄 필수 아님. 실제 과제/주장에 필요한 것만 적용 이유와 함께 선택. 시간/좌표 비적용과 누락을 구분.",
+      "required_evidence": "버전이 정해진 원도면/제품 UI·대상 대응, 크롭/회전/리사이즈 경로, 실제 화면.",
+      "hold_when": "원본 버전·대상 대응·변환이 없으면 공간/기능 정확성 보류. 읽히는 주석 관측은 유지.",
+      "human_role": "도면/제품 담당자·디자인 검수자",
+      "actual_target_ref": null,
+      "actual_evidence_refs": [],
+      "actual_review_result": null
+    },
+    {
+      "criterion_ref": "Q-SCREEN-07",
+      "group": "화면·도표",
+      "binding_candidates": [
+        "R4-TARGETS",
+        "R4-MATERIALS",
+        "R4-EVIDENCE",
+        "R4-CLAIMS",
+        "R5-OUTPUT",
+        "R4-SPACE",
+        "R4-GEOMETRY",
+        "R4-TRANSFORMS",
+        "R4-MAPPINGS"
+      ],
+      "human_context_candidates": [
+        "R6-REQUESTS",
+        "R6-EVENTS",
+        "R6-CONTEXT"
+      ],
+      "selection_rule": "후보 필드이며 일괄 필수 아님. 실제 과제/주장에 필요한 것만 적용 이유와 함께 선택. 시간/좌표 비적용과 누락을 구분.",
+      "required_evidence": "원본/출력 버전과 크기·회전/크롭/리사이즈·실제 오버레이·플레이어 상태·필수 정보.",
+      "hold_when": "최종 출력/플레이어 UI·오버레이가 없으면 해당 환경 최종 판정 보류. 확보한 버전만 한정 검수.",
+      "human_role": "디자인/영상 검수자·필요시 배포 담당자",
+      "actual_target_ref": null,
+      "actual_evidence_refs": [],
+      "actual_review_result": null
+    },
+    {
+      "criterion_ref": "Q-MOTION-01",
+      "group": "모션·시간",
+      "binding_candidates": [
+        "R4-TARGETS",
+        "R4-MATERIALS",
+        "R4-EVIDENCE",
+        "R4-CLAIMS",
+        "R4-TIME"
+      ],
+      "human_context_candidates": [
+        "R6-REQUESTS",
+        "R6-EVENTS",
+        "R6-CONTEXT"
+      ],
+      "selection_rule": "후보 필드이며 일괄 필수 아님. 실제 과제/주장에 필요한 것만 적용 이유와 함께 선택. 시간/좌표 비적용과 누락을 구분.",
+      "required_evidence": "대상별 등장·완성·유지·퇴장 시간과 발화, 필수 관계, 실제 시청 조건/필요시 시청자 확인.",
+      "hold_when": "실제 시간·완성시점·시청 조건이 없으면 충분성 보류. 관측 유지시간은 근거가 있을 때 기록.",
+      "human_role": "디자인/영상 검수자·필요시 실제 대상 시청자",
+      "actual_target_ref": null,
+      "actual_evidence_refs": [],
+      "actual_review_result": null
+    },
+    {
+      "criterion_ref": "Q-MOTION-02",
+      "group": "모션·시간",
+      "binding_candidates": [
+        "R4-TARGETS",
+        "R4-MATERIALS",
+        "R4-EVIDENCE",
+        "R4-CLAIMS",
+        "R4-TIME",
+        "R4-SPACE",
+        "R4-GEOMETRY"
+      ],
+      "human_context_candidates": [
+        "R6-REQUESTS",
+        "R6-EVENTS",
+        "R6-CONTEXT"
+      ],
+      "selection_rule": "후보 필드이며 일괄 필수 아님. 실제 과제/주장에 필요한 것만 적용 이유와 함께 선택. 시간/좌표 비적용과 누락을 구분.",
+      "required_evidence": "전후/중간 시계열·동일 대상 대응·기술 관계·실측/설명도 구분·실제 재생.",
+      "hold_when": "중간 표본·동일성·실제 관계 자료가 없으면 해당 연속성/인과 보류. 보이는 연동 관측과 구현 추정은 분리.",
+      "human_role": "기술 담당자·디자인/모션 검수자",
+      "actual_target_ref": null,
+      "actual_evidence_refs": [],
+      "actual_review_result": null
+    },
+    {
+      "criterion_ref": "Q-MOTION-03",
+      "group": "모션·시간",
+      "binding_candidates": [
+        "R4-TARGETS",
+        "R4-MATERIALS",
+        "R4-EVIDENCE",
+        "R4-CLAIMS",
+        "R4-TIME",
+        "R4-SPACE",
+        "R4-GEOMETRY"
+      ],
+      "human_context_candidates": [
+        "R6-REQUESTS",
+        "R6-EVENTS",
+        "R6-CONTEXT"
+      ],
+      "selection_rule": "후보 필드이며 일괄 필수 아님. 실제 과제/주장에 필요한 것만 적용 이유와 함께 선택. 시간/좌표 비적용과 누락을 구분.",
+      "required_evidence": "목적·시간 표본·실측/연출 구분·원형/문구·실제 재생.",
+      "hold_when": "실측 구분·목적·시계열 근거가 없으면 기술 타당성/곡선 수치 추정 보류.",
+      "human_role": "디자인/모션 검수자·측정 설명은 기술 담당자",
+      "actual_target_ref": null,
+      "actual_evidence_refs": [],
+      "actual_review_result": null
+    },
+    {
+      "criterion_ref": "Q-MOTION-04",
+      "group": "모션·시간",
+      "binding_candidates": [
+        "R4-TARGETS",
+        "R4-MATERIALS",
+        "R4-EVIDENCE",
+        "R4-CLAIMS",
+        "R4-TIME"
+      ],
+      "human_context_candidates": [
+        "R6-REQUESTS",
+        "R6-EVENTS",
+        "R6-CONTEXT"
+      ],
+      "selection_rule": "후보 필드이며 일괄 필수 아님. 실제 과제/주장에 필요한 것만 적용 이유와 함께 선택. 시간/좌표 비적용과 누락을 구분.",
+      "required_evidence": "최종 영상 전 구간의 연속 시간 정보·최대 재생 크기·색공간/전달특성·SDR/HDR/최대 동적범위·반복 여부/끝→시작 경계·방법/검사 결과·후보 범위.",
+      "hold_when": "연속 시간/휘도/면적·색공간/전달특성·최대 동적범위/재생 크기·반복 여부와 경계·검사 근거가 없으면 해당 조건의 안전 판정 보류. 후보 미검출을 비적용 이유로 쓰지 않음.",
+      "human_role": "적절한 섬광 검사 근거를 해석할 검수 담당자",
+      "actual_target_ref": null,
+      "actual_evidence_refs": [],
+      "actual_review_result": null
+    },
+    {
+      "criterion_ref": "Q-BRAND-01",
+      "group": "브랜드·출처",
+      "binding_candidates": [
+        "R5-IDENTITY",
+        "R5-COMPANIES",
+        "R5-PINS",
+        "R5-LOGOS",
+        "R5-COLORS",
+        "R5-OUTPUT",
+        "R5-R4-LINK"
+      ],
+      "human_context_candidates": [
+        "R6-REQUESTS",
+        "R6-EVENTS",
+        "R6-CONTEXT"
+      ],
+      "selection_rule": "후보 필드이며 일괄 필수 아님. 실제 과제/주장에 필요한 것만 적용 이유와 함께 선택. 시간/좌표 비적용과 누락을 구분.",
+      "required_evidence": "회사ID·제공 자산/버전·사용형·최종 표시, 해당 보호공간/반전형 등의 근거.",
+      "hold_when": "실제 적용 버전·사용형/보호공간·법인 대응이 없으면 해당 적용만 보류. 최신 자료인지 반복 질문하지 않음.",
+      "human_role": "디자인 검수자·해당 사용규칙 확인 담당자",
+      "actual_target_ref": null,
+      "actual_evidence_refs": [],
+      "actual_review_result": null
+    },
+    {
+      "criterion_ref": "Q-BRAND-02",
+      "group": "브랜드·출처",
+      "binding_candidates": [
+        "R5-IDENTITY",
+        "R5-COMPANIES",
+        "R5-PINS",
+        "R5-LOGOS",
+        "R5-COLORS",
+        "R5-OUTPUT",
+        "R5-R4-LINK"
+      ],
+      "human_context_candidates": [
+        "R6-REQUESTS",
+        "R6-EVENTS",
+        "R6-CONTEXT"
+      ],
+      "selection_rule": "후보 필드이며 일괄 필수 아님. 실제 과제/주장에 필요한 것만 적용 이유와 함께 선택. 시간/좌표 비적용과 누락을 구분.",
+      "required_evidence": "R5 프로필·색 출처/가정·프로젝트 명시 선택·색관리/합성 조건·역할·실제 시안.",
+      "hold_when": "명시 선택·출처/프로필·역할 조건이 없으면 적용 적합성/공식성 판정 보류. 단순 관측 값 자체는 보존.",
+      "human_role": "프로젝트 디자이너·필요시 브랜드 규칙 담당자",
+      "actual_target_ref": null,
+      "actual_evidence_refs": [],
+      "actual_review_result": null
+    },
+    {
+      "criterion_ref": "Q-TRUST-01",
+      "group": "분석 신뢰도",
+      "binding_candidates": [
+        "R4-IDENTITY",
+        "R4-TARGETS",
+        "R4-MATERIALS",
+        "R4-EVIDENCE",
+        "R4-CLAIMS",
+        "R4-REVIEW",
+        "R4-TIME",
+        "R4-SPACE",
+        "R4-GEOMETRY",
+        "R4-TRANSFORMS",
+        "R4-MAPPINGS"
+      ],
+      "human_context_candidates": [
+        "R6-REQUESTS",
+        "R6-EVENTS",
+        "R6-CONTEXT"
+      ],
+      "selection_rule": "후보 필드이며 일괄 필수 아님. 실제 과제/주장에 필요한 것만 적용 이유와 함께 선택. 시간/좌표 비적용과 누락을 구분.",
+      "required_evidence": "해당 주장에 필요한 원본/파생 버전·실제 접근 가능 근거·반대 근거. 영상 시점/변화 주장은 R4 시간/프레임, 공간·변환 주장은 좌표/변환 근거를 추가. 문서 전사·비공간 주장에는 불필요한 좌표를 요구하지 않음.",
+      "hold_when": "버전·원본 접근·내용 대조 또는 해당 주장에 필요한 시간/좌표·변환 근거가 없으면 해당 주장 보류. 공간 주장 누락을 비공간 예외로 우회하지 않음. 구조 오류는 원정보 보완 후 재검사.",
+      "human_role": "분석 내용 검수자·기술/디자인 담당자",
+      "actual_target_ref": null,
+      "actual_evidence_refs": [],
+      "actual_review_result": null
+    },
+    {
+      "criterion_ref": "Q-TRUST-02",
+      "group": "분석 신뢰도",
+      "binding_candidates": [
+        "R4-IDENTITY",
+        "R4-TARGETS",
+        "R4-MATERIALS",
+        "R4-EVIDENCE",
+        "R4-CLAIMS",
+        "R4-REVIEW"
+      ],
+      "human_context_candidates": [
+        "R6-REQUESTS",
+        "R6-EVENTS",
+        "R6-CONTEXT"
+      ],
+      "selection_rule": "후보 필드이며 일괄 필수 아님. 실제 과제/주장에 필요한 것만 적용 이유와 함께 선택. 시간/좌표 비적용과 누락을 구분.",
+      "required_evidence": "원본 프로젝트/제작자 확인 또는 충분한 관측 범위, 반대 근거·표본 한계, 구체 사람 회신.",
+      "hold_when": "제작자/원본/전 구간·대표 표본 근거가 없거나 반대 근거가 미해결이면 해당 확대 주장 보류.",
+      "human_role": "제작자·내용 담당자·회사 규칙 확인 담당자",
+      "actual_target_ref": null,
+      "actual_evidence_refs": [],
+      "actual_review_result": null
+    }
+  ],
+  "actual_R7_record_links": 0,
+  "structure_examples_are_not_real_evidence": true,
+  "R6_context_is_not_R7_approval": true
+}

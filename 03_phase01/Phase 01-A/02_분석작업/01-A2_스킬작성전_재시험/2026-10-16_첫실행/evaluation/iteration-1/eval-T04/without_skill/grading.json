@@ -1,0 +1,60 @@
+{
+  "case_id": "T04",
+  "graded_at": "2026-10-16T14:56:31+09:00",
+  "grader": "parent Codex, source-aware content review; no independent human adjudication",
+  "frozen_reference_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\06_도구와계약\\01-A2_모션검수절차\\스킬작성전_재발시험\\채점전용\\실패사례와_내용대조기준.json",
+  "frozen_reference_sha256": "5e1385bdc9bddd8c547983d0332fb72b48963ddfd58e1d8d91b1e3c5c03d991c",
+  "raw_output_sha256": "40444de0b34af44ef1a22d91fbf0646c3aa30bd145d5aa5ade76235f55acde88",
+  "expectations": [
+    {
+      "text": "수주→매출→이익의 데이터 변화 순서",
+      "passed": true,
+      "evidence": "temporal_order와 orders/sales/profit 항목이 수주8.0~9.2초→매출15.4~16.6초→이익16.667~17.6초로 기록. 세 native card sequence에서 활성 순서가 일치한다."
+    },
+    {
+      "text": "막대 상향 성장·원형 시계방향 채움·숫자 증가를 각각 식별",
+      "passed": true,
+      "evidence": "각 카드의 position_direction에 고정 바닥에서 상향하는 막대,12시 시작 시계방향 파란 호,증가하는 실적/중앙%를 분리했다. 18초55억92%/39억61%/5억71% 및16초31억48%를 최종/중간 표본으로 구분했다."
+    },
+    {
+      "text": "정착부 감속 관측",
+      "passed": true,
+      "evidence": "orders/sales/profit.easing이 후반의 등시간 증가량 감소와 정착을 각각 명시했다. 매출 표본14→34→48→56→60→61% 등과 원본 호/막대 성장의 감소에 부합하며 정확한 curve는 미분류다."
+    },
+    {
+      "text": "카드 틀 등장을 데이터 동작 순서와 혼동하지 않음",
+      "passed": true,
+      "evidence": "T04-transition/card-shells는 세 카드 틀이 도입 dissolve 때 함께 나타나 고정되고 내부 실적만 차례로 활성화됨을 기록. 카드 출현 순서를 데이터 변화 순서로 쓰지 않았다."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4
+  },
+  "claims": [
+    {
+      "claim": "배경·카드가 고정이어도 내부는 개별 검수했다",
+      "type": "factual",
+      "verified": true,
+      "evidence": "원출력의 card-shells/goals와 orders/sales/profit이 분리되고, 원본폭3840 추가32프레임 및 숫자/호/막대 크롭을 사용했다.",
+      "critical_error": false
+    },
+    {
+      "claim": "검사 표본에서 도시/강 배경의 독립 이동을 확인하지 못했다",
+      "type": "factual",
+      "verified": true,
+      "evidence": "출력은 표본 비교의 한계로 표현하며 압축 차이를 의도된 pan으로 주장하지 않았다. 전체 영상 정지로 확대하지 않았다.",
+      "critical_error": false
+    }
+  ],
+  "notes": [
+    "필수 사건 충족. 시간 표본 사이의 정확한 활성 프레임과 극초반 가속은 허용된 미분류로 보존."
+  ],
+  "source_review": "selected raw temporal PNGs/native crops and measurements; no audio or full realtime playback claim",
+  "scope": "known-case baseline regression, not new skill effectiveness or unseen-source accuracy",
+  "case_status": "충족",
+  "executor_tokens": null,
+  "executor_duration_seconds": null,
+  "telemetry_status": "not reported by collaboration tool; not estimated from output length"
+}

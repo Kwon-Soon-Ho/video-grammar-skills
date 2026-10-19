@@ -1,0 +1,81 @@
+{
+  "draft_schema": {
+    "valid": true,
+    "errors": []
+  },
+  "draft_id_source_axis_connections": {
+    "valid": true,
+    "errors": []
+  },
+  "existing_catalog_format_check": {
+    "valid": true,
+    "errors": [],
+    "tool": "07_실행도구/구형기록_보존검사.py::validate_catalogs",
+    "scope": "기존 사전·출처·원칙·레이아웃 형식/연결 검사. 자연어 진실성·동일 판본 해시 일치를 보장하지 않는다."
+  },
+  "registered_pin_check": {
+    "path": "02_원칙과레이아웃/레이아웃지식.json",
+    "current_version": "0.1.1",
+    "registered_version": "0.1.1",
+    "same_version": true,
+    "registered_sha256": "0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306",
+    "deep_reference_sha256": "0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306",
+    "current_sha256": "b83fcc5cbb62d4fea94784c596b85287564da1e5fc04d6353305b5796b2ef9a2",
+    "hash_match": false,
+    "original_registered_bytes_available": false,
+    "original_registered_bytes_note": "등록 해시는 확인했지만 해당 해시의 이전 원문 바이트를 이번 작업에서 확보하지 않았다. 옛 limits 문구의 정확한 변경 전후 diff는 확정할 수 없다."
+  },
+  "existing_lookup": {
+    "exit_code": 0,
+    "stdout": "existing_lookup_stdout.txt",
+    "stderr": "existing_lookup_stderr.txt",
+    "caveat": "원시 기존 조회는 중앙 배치 충돌 문구를 반환할 수 있다. 조회 반환을 승인이나 출처 무결성 확인으로 취급하지 않는다."
+  },
+  "input_preservation": {
+    "checked_paths": [
+      "01_공통용어/공통용어사전.json",
+      "02_원칙과레이아웃/레이아웃지식.json",
+      "02_원칙과레이아웃/레이아웃_심화지식.json",
+      "02_원칙과레이아웃/지식목록.md",
+      "02_원칙과레이아웃/화면설계원칙.json",
+      "05_출처와검토/버전목록.json",
+      "05_출처와검토/출처목록.json",
+      "05_출처와검토/검수결정.json",
+      "05_출처와검토/사용자결정.json",
+      "05_출처와검토/R3_레이아웃_조사기록.json"
+    ],
+    "before_sha256": {
+      "01_공통용어/공통용어사전.json": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+      "02_원칙과레이아웃/레이아웃지식.json": "b83fcc5cbb62d4fea94784c596b85287564da1e5fc04d6353305b5796b2ef9a2",
+      "02_원칙과레이아웃/레이아웃_심화지식.json": "5d6378eb954b6b75f94be2a0988254a1406f6dacc8a6c44060c6a05ff56aa14c",
+      "02_원칙과레이아웃/지식목록.md": "df848ec46422e54dd6f25d067676f3acb6bc15957554f8547273ec39a99b3b3b",
+      "02_원칙과레이아웃/화면설계원칙.json": "281fe61151dfc96649a070b6fd3ae653c0353b7513f3209534140ce1f54e6b96",
+      "05_출처와검토/버전목록.json": "a31ba13f0e1fa17a6772b94a5441cbb13fba35e96a0fe7e2647d292ff79c34d2",
+      "05_출처와검토/출처목록.json": "0fd8c405a36f67a4255be34c198b29fa499fde5d52b7998fd2b0af754bcaec2f",
+      "05_출처와검토/검수결정.json": "46a07ff5b989207a9467869ece5bedabf579a4d9a8e613e37a26f498832b781b",
+      "05_출처와검토/사용자결정.json": "feb1eae1da1e6801b8a2b61630968fcbe969582077f8b1970453abb38aff6452",
+      "05_출처와검토/R3_레이아웃_조사기록.json": "faed3dd1e34e95935962b0973ebcf6e2d2eae31db505e5f93da5cab9d1c7c961"
+    },
+    "after_sha256": {
+      "01_공통용어/공통용어사전.json": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+      "02_원칙과레이아웃/레이아웃지식.json": "b83fcc5cbb62d4fea94784c596b85287564da1e5fc04d6353305b5796b2ef9a2",
+      "02_원칙과레이아웃/레이아웃_심화지식.json": "5d6378eb954b6b75f94be2a0988254a1406f6dacc8a6c44060c6a05ff56aa14c",
+      "02_원칙과레이아웃/지식목록.md": "df848ec46422e54dd6f25d067676f3acb6bc15957554f8547273ec39a99b3b3b",
+      "02_원칙과레이아웃/화면설계원칙.json": "281fe61151dfc96649a070b6fd3ae653c0353b7513f3209534140ce1f54e6b96",
+      "05_출처와검토/버전목록.json": "a31ba13f0e1fa17a6772b94a5441cbb13fba35e96a0fe7e2647d292ff79c34d2",
+      "05_출처와검토/출처목록.json": "0fd8c405a36f67a4255be34c198b29fa499fde5d52b7998fd2b0af754bcaec2f",
+      "05_출처와검토/검수결정.json": "46a07ff5b989207a9467869ece5bedabf579a4d9a8e613e37a26f498832b781b",
+      "05_출처와검토/사용자결정.json": "feb1eae1da1e6801b8a2b61630968fcbe969582077f8b1970453abb38aff6452",
+      "05_출처와검토/R3_레이아웃_조사기록.json": "faed3dd1e34e95935962b0973ebcf6e2d2eae31db505e5f93da5cab9d1c7c961"
+    },
+    "unchanged": true,
+    "backup_matches": true
+  },
+  "full_r6_check": {
+    "performed": false,
+    "reason": "외부 스킬 원문/자산이 시험 사본에 미포함. 범위 밖 참조를 피했다."
+  },
+  "knowledge_truth_verified": false,
+  "company_approved": false,
+  "operational_release": false
+}

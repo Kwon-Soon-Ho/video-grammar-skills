@@ -1,0 +1,411 @@
+{
+  "version": "0.1.1",
+  "layouts": [
+    {
+      "id": "KNOW-LAYOUT-SINGLE-FOCUS",
+      "term_id": "LAYOUT-SINGLE-FOCUS",
+      "name_ko": "단일 초점",
+      "definition": "핵심 대상·문장 중심의 구성",
+      "fit_conditions": "핵심 하나",
+      "limits": "반드시 중앙 배치 아님",
+      "variant_dimensions": [
+        "요소 수",
+        "문구 길이",
+        "출력 비율",
+        "정보 관계",
+        "읽기·유지 시간"
+      ],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "related_ids": [
+        "SCREEN-HIERARCHY",
+        "SCREEN-TYPE-KO",
+        "SCREEN-TIME-READ"
+      ],
+      "company_examples": [],
+      "status": "reference",
+      "version": "0.1.1",
+      "application_reference_refs": [
+        "SRC-IMPECCABLE"
+      ]
+    },
+    {
+      "id": "KNOW-LAYOUT-SPLIT-COMPARE",
+      "term_id": "LAYOUT-SPLIT-COMPARE",
+      "name_ko": "분할 비교",
+      "definition": "둘 이상의 대상을 공통 기준으로 나눈 구성",
+      "fit_conditions": "동등 비교",
+      "limits": "분할이 항상 비교는 아님",
+      "variant_dimensions": [
+        "요소 수",
+        "문구 길이",
+        "출력 비율",
+        "정보 관계",
+        "읽기·유지 시간"
+      ],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "related_ids": [
+        "SCREEN-HIERARCHY",
+        "SCREEN-TYPE-KO",
+        "SCREEN-TIME-READ"
+      ],
+      "company_examples": [],
+      "status": "reference",
+      "version": "0.1.1",
+      "application_reference_refs": [
+        "SRC-IMPECCABLE"
+      ]
+    },
+    {
+      "id": "KNOW-LAYOUT-BEFORE-AFTER",
+      "term_id": "LAYOUT-BEFORE-AFTER",
+      "name_ko": "전후 대응",
+      "definition": "같은 대상의 전후 상태를 대응한 구성",
+      "fit_conditions": "변화 설명",
+      "limits": "서로 다른 대상의 비교와 구분",
+      "variant_dimensions": [
+        "요소 수",
+        "문구 길이",
+        "출력 비율",
+        "정보 관계",
+        "읽기·유지 시간"
+      ],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "related_ids": [
+        "SCREEN-HIERARCHY",
+        "SCREEN-TYPE-KO",
+        "SCREEN-TIME-READ"
+      ],
+      "company_examples": [],
+      "status": "reference",
+      "version": "0.1.1",
+      "application_reference_refs": [
+        "SRC-IMPECCABLE"
+      ]
+    },
+    {
+      "id": "KNOW-LAYOUT-PROCESS-LINE",
+      "term_id": "LAYOUT-PROCESS-LINE",
+      "name_ko": "선형 프로세스",
+      "definition": "단계를 선·방향으로 연결한 구성",
+      "fit_conditions": "순서 있는 단계",
+      "limits": "행태별 방향 속성은 별도",
+      "variant_dimensions": [
+        "요소 수",
+        "문구 길이",
+        "출력 비율",
+        "정보 관계",
+        "읽기·유지 시간"
+      ],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "related_ids": [
+        "SCREEN-HIERARCHY",
+        "SCREEN-TYPE-KO",
+        "SCREEN-TIME-READ"
+      ],
+      "company_examples": [],
+      "status": "reference",
+      "version": "0.1.1",
+      "application_reference_refs": [
+        "SRC-IMPECCABLE"
+      ]
+    },
+    {
+      "id": "KNOW-LAYOUT-TIMELINE",
+      "term_id": "LAYOUT-TIMELINE",
+      "name_ko": "시간축",
+      "definition": "실제 시간·기간에 대응한 배치",
+      "fit_conditions": "사건/기간",
+      "limits": "영상 편집기 timeline과 문맥 구분",
+      "variant_dimensions": [
+        "요소 수",
+        "문구 길이",
+        "출력 비율",
+        "정보 관계",
+        "읽기·유지 시간"
+      ],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "related_ids": [
+        "SCREEN-HIERARCHY",
+        "SCREEN-TYPE-KO",
+        "SCREEN-TIME-READ"
+      ],
+      "company_examples": [],
+      "status": "reference",
+      "version": "0.1.1",
+      "application_reference_refs": [
+        "SRC-IMPECCABLE"
+      ]
+    },
+    {
+      "id": "KNOW-LAYOUT-HIERARCHY",
+      "term_id": "LAYOUT-HIERARCHY",
+      "name_ko": "계층 구성",
+      "definition": "상하·종속 관계를 배치로 표현",
+      "fit_conditions": "계층 관계",
+      "limits": "UI 컴포넌트 분류와 별개",
+      "variant_dimensions": [
+        "요소 수",
+        "문구 길이",
+        "출력 비율",
+        "정보 관계",
+        "읽기·유지 시간"
+      ],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "related_ids": [
+        "SCREEN-HIERARCHY",
+        "SCREEN-TYPE-KO",
+        "SCREEN-TIME-READ"
+      ],
+      "company_examples": [],
+      "status": "reference",
+      "version": "0.1.1",
+      "application_reference_refs": [
+        "SRC-IMPECCABLE"
+      ]
+    },
+    {
+      "id": "KNOW-LAYOUT-NETWORK",
+      "term_id": "LAYOUT-NETWORK",
+      "name_ko": "연결 구성",
+      "definition": "연결·관계를 배치로 표현",
+      "fit_conditions": "관련·인과 관계",
+      "limits": "선이 있다는 이유로 인과 확정 금지",
+      "variant_dimensions": [
+        "요소 수",
+        "문구 길이",
+        "출력 비율",
+        "정보 관계",
+        "읽기·유지 시간"
+      ],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "related_ids": [
+        "SCREEN-HIERARCHY",
+        "SCREEN-TYPE-KO",
+        "SCREEN-TIME-READ"
+      ],
+      "company_examples": [],
+      "status": "reference",
+      "version": "0.1.1",
+      "application_reference_refs": [
+        "SRC-IMPECCABLE"
+      ]
+    },
+    {
+      "id": "KNOW-LAYOUT-OVERVIEW-DETAIL",
+      "term_id": "LAYOUT-OVERVIEW-DETAIL",
+      "name_ko": "전체와 상세",
+      "definition": "전체 맥락과 선택 부분 상세를 함께 표현",
+      "fit_conditions": "포커스 전환",
+      "limits": "부분과 전체 관계는 따로 기록",
+      "variant_dimensions": [
+        "요소 수",
+        "문구 길이",
+        "출력 비율",
+        "정보 관계",
+        "읽기·유지 시간"
+      ],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "related_ids": [
+        "SCREEN-HIERARCHY",
+        "SCREEN-TYPE-KO",
+        "SCREEN-TIME-READ"
+      ],
+      "company_examples": [],
+      "status": "reference",
+      "version": "0.1.1",
+      "application_reference_refs": [
+        "SRC-IMPECCABLE"
+      ]
+    },
+    {
+      "id": "KNOW-LAYOUT-SPACE-CALLOUT",
+      "term_id": "LAYOUT-SPACE-CALLOUT",
+      "name_ko": "공간과 설명 표식",
+      "definition": "지도·구조·공간 대상에 명칭·주석을 연결",
+      "fit_conditions": "위치·시설 설명",
+      "limits": "이소메트릭은 투영 속성",
+      "variant_dimensions": [
+        "요소 수",
+        "문구 길이",
+        "출력 비율",
+        "정보 관계",
+        "읽기·유지 시간"
+      ],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "related_ids": [
+        "SCREEN-HIERARCHY",
+        "SCREEN-TYPE-KO",
+        "SCREEN-TIME-READ"
+      ],
+      "company_examples": [],
+      "status": "reference",
+      "version": "0.1.1",
+      "application_reference_refs": [
+        "SRC-IMPECCABLE"
+      ]
+    },
+    {
+      "id": "KNOW-LAYOUT-DATA-CHART",
+      "term_id": "LAYOUT-DATA-CHART",
+      "name_ko": "데이터 시각화",
+      "definition": "데이터 관계를 차트로 구성",
+      "fit_conditions": "수치·분포·관계",
+      "limits": "차트 유형·데이터 의미 별도",
+      "variant_dimensions": [
+        "요소 수",
+        "문구 길이",
+        "출력 비율",
+        "정보 관계",
+        "읽기·유지 시간"
+      ],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "related_ids": [
+        "SCREEN-HIERARCHY",
+        "SCREEN-TYPE-KO",
+        "SCREEN-TIME-READ"
+      ],
+      "company_examples": [],
+      "status": "reference",
+      "version": "0.1.1",
+      "application_reference_refs": [
+        "SRC-IMPECCABLE"
+      ]
+    },
+    {
+      "id": "KNOW-LAYOUT-UI-ANNOTATION",
+      "term_id": "LAYOUT-UI-ANNOTATION",
+      "name_ko": "실제 UI와 설명",
+      "definition": "제품 화면과 설명·초점·표식을 결합",
+      "fit_conditions": "SW 데모",
+      "limits": "가상 UI를 실제 제품이라고 기록 금지",
+      "variant_dimensions": [
+        "요소 수",
+        "문구 길이",
+        "출력 비율",
+        "정보 관계",
+        "읽기·유지 시간"
+      ],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "related_ids": [
+        "SCREEN-HIERARCHY",
+        "SCREEN-TYPE-KO",
+        "SCREEN-TIME-READ"
+      ],
+      "company_examples": [],
+      "status": "reference",
+      "version": "0.1.1",
+      "application_reference_refs": [
+        "SRC-IMPECCABLE"
+      ]
+    },
+    {
+      "id": "KNOW-LAYOUT-CARD-GROUP",
+      "term_id": "LAYOUT-CARD-GROUP",
+      "name_ko": "카드 그룹",
+      "definition": "독립 항목들을 카드 형상으로 묶음",
+      "fit_conditions": "병렬·단계·비교",
+      "limits": "카드와 다른 레이아웃 복합 가능",
+      "variant_dimensions": [
+        "요소 수",
+        "문구 길이",
+        "출력 비율",
+        "정보 관계",
+        "읽기·유지 시간"
+      ],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "related_ids": [
+        "SCREEN-HIERARCHY",
+        "SCREEN-TYPE-KO",
+        "SCREEN-TIME-READ"
+      ],
+      "company_examples": [],
+      "status": "reference",
+      "version": "0.1.1",
+      "application_reference_refs": [
+        "SRC-IMPECCABLE"
+      ]
+    },
+    {
+      "id": "KNOW-LAYOUT-SPLIT",
+      "term_id": "LAYOUT-SPLIT",
+      "name_ko": "분할 구성",
+      "definition": "서로 다른 역할의 화면 영역을 나눈 구성",
+      "fit_conditions": "영상+설명·주대상+지원 정보",
+      "limits": "분할만으로 비교 의미를 확정하지 않음",
+      "variant_dimensions": [
+        "요소 수",
+        "문구 길이",
+        "출력 비율",
+        "정보 관계",
+        "읽기·유지 시간"
+      ],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "related_ids": [
+        "SCREEN-HIERARCHY",
+        "SCREEN-TYPE-KO",
+        "SCREEN-TIME-READ"
+      ],
+      "company_examples": [],
+      "status": "reference",
+      "version": "0.1.1",
+      "application_reference_refs": [
+        "SRC-IMPECCABLE"
+      ]
+    },
+    {
+      "id": "KNOW-LAYOUT-PIP",
+      "term_id": "LAYOUT-PIP",
+      "name_ko": "화면 속 화면",
+      "definition": "주 화면 안에 별도 화면을 중첩",
+      "fit_conditions": "중첩 설명·데모",
+      "limits": "정보 관계·주보조 역할 별도",
+      "variant_dimensions": [
+        "요소 수",
+        "문구 길이",
+        "출력 비율",
+        "정보 관계",
+        "읽기·유지 시간"
+      ],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "related_ids": [
+        "SCREEN-HIERARCHY",
+        "SCREEN-TYPE-KO",
+        "SCREEN-TIME-READ"
+      ],
+      "company_examples": [],
+      "status": "reference",
+      "version": "0.1.1",
+      "application_reference_refs": [
+        "SRC-IMPECCABLE"
+      ]
+    }
+  ]
+}

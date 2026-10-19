@@ -1,0 +1,80 @@
+{
+  "id": "자료013",
+  "phase": "detail_retest",
+  "input_sha256": "31c4c47744b8cdfef935b167a1b04df80e13523cfc8550205a8495b4267cc192",
+  "limits": {
+    "wall_seconds_per_worker": 45,
+    "max_read_bytes": 268435456,
+    "max_seeks": 20000,
+    "max_packets": 4000,
+    "max_frames": 1600,
+    "max_pixels": 8294400,
+    "max_output_images": 40,
+    "memory_process_bytes": 1610612736
+  },
+  "tool": {
+    "av": "19.0.1",
+    "libraries": "{'libavutil': (61, 1, 102), 'libavcodec': (63, 1, 102), 'libavformat': (63, 1, 102), 'libavdevice': (63, 1, 102), 'libavfilter': (12, 1, 102), 'libswscale': (10, 1, 102), 'libswresample': (7, 1, 102)}"
+  },
+  "frames": [],
+  "audio_status": "track_metadata_only_not_decoded_not_listened_not_transcribed",
+  "separate_api_calls": 0,
+  "genpts_disabled": true,
+  "timing_status": "reported_values_until_sample_table_crosscheck",
+  "ai_model_id": "host_not_exposed",
+  "ai_internal_resize": "unknown",
+  "container": {
+    "start_time": 0,
+    "duration": 16183333,
+    "time_unit": "microseconds",
+    "format": "mov",
+    "metadata": {
+      "major_brand": "mp42",
+      "minor_version": "0",
+      "compatible_brands": "mp42mp41",
+      "creation_time": "2025-12-18T05:50:02.000000Z"
+    },
+    "flags": 2097280
+  },
+  "streams": [
+    {
+      "index": 0,
+      "type": "video",
+      "codec": "h264",
+      "time_base": "1/60000",
+      "start_time": "0",
+      "duration": "971000",
+      "frames_reported": 971,
+      "metadata": {
+        "creation_time": "2025-12-18T05:50:02.000000Z",
+        "language": "eng",
+        "handler_name": "\u001fMainconcept Video Media Handler",
+        "encoder": "AVC Coding"
+      },
+      "width": 3840,
+      "height": 2160,
+      "sample_aspect_ratio": "0/1",
+      "average_rate": "60/1",
+      "has_b_frames": true,
+      "format": "<av.VideoFormat yuv420p, 3840x2160>",
+      "color_range": "1",
+      "colorspace": "1"
+    },
+    {
+      "index": 1,
+      "type": "audio",
+      "codec": "aac",
+      "time_base": "1/48000",
+      "start_time": "0",
+      "duration": "776800",
+      "frames_reported": 760,
+      "metadata": {
+        "creation_time": "2025-12-18T05:50:02.000000Z",
+        "language": "eng",
+        "handler_name": "#Mainconcept MP4 Sound Media Handler"
+      },
+      "sample_rate": 48000,
+      "layout": "<av.AudioLayout 'stereo'>"
+    }
+  ]
+}

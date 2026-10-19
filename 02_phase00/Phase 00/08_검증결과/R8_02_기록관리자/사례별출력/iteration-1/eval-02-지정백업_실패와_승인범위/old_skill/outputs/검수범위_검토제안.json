@@ -1,0 +1,91 @@
+{
+  "memo_source_kind": "참고 의견; 실제 사용자 결정/새 검수 답변 아님",
+  "memo_is_new_human_decision": false,
+  "reply_id": "R6-REPLY-CI-20261015-001",
+  "reply_file_sha256": "e881c918fa374a046a436e6c1b4431f14bfbd11f1278a7c65a9a884fdafd27d2",
+  "reply_pin_integrity_matches": true,
+  "ledger_event_id": "HUMAN-R6-CI-20261015-001",
+  "outcome": "limited_statement",
+  "scope_coverage": "partial",
+  "covered_scope_ids": [
+    "hanmac:latest_material",
+    "saman:latest_material",
+    "jangheon-industry:latest_material",
+    "ptc:latest_material",
+    "halla:latest_material",
+    "baron:latest_material",
+    "sanha:latest_material",
+    "jangheon:latest_material"
+  ],
+  "unresolved_scope_ids": [
+    "hanmac:usage_guide",
+    "saman:usage_guide",
+    "jangheon-industry:usage_guide",
+    "ptc:usage_guide",
+    "halla:usage_guide",
+    "baron:usage_guide",
+    "sanha:usage_guide",
+    "jangheon:usage_guide"
+  ],
+  "confirmed_in_provided_copy": [
+    "제공 CI 자료 8회사가 최신이라는 사용자 진술이 사본/대장에 있음",
+    "산하는 원래 Illustrator 원본이 없다는 사용자 진술이 사본/대장에 있음"
+  ],
+  "not_confirmed": [
+    "CI 보호공간/최소크기/허용형 등 추가 사용 가이드의 전체 범위",
+    "외부API업로드/재배포 권한·공식회사승인",
+    "관측색의 공식 sRGB값 자격/프로필",
+    "실제 화면 디자인의 적합성"
+  ],
+  "interpretation": "이는 제공 사본의 진술·연결 확인이다. 현재 실행에서 최신성 자체/원문 전체/신원·권한을 독립 검증한 것이 아니다. 시안 승인·R7 품질 통과·관측색 공식화·외부업로드 권한으로 확대하지 않는다.",
+  "missing_ledger_source_files": [
+    {
+      "key": "r6_sources",
+      "path": "05_출처와검토/검수와사용범위/출처와사용범위_연결목록.json"
+    },
+    {
+      "key": "skill_cards",
+      "path": "05_출처와검토/스킬심층검토/스킬심층검토정본.json"
+    },
+    {
+      "key": "workflow_policy_links",
+      "path": "05_출처와검토/검수와사용범위/작업정책_연결목록.json"
+    },
+    {
+      "key": "hanmac_thread",
+      "path": "05_출처와검토/검수와사용범위/한맥디자인_대화근거.json"
+    }
+  ],
+  "r6_full_validation": "not_performed_partial_copy",
+  "r7_full_validation": "not_performed_partial_copy",
+  "company_approved": false,
+  "permission_granted": false,
+  "identity_authenticated": false,
+  "decision_proposal": {
+    "recommended": "A",
+    "options": [
+      {
+        "key": "A",
+        "label": "검수 대기와 미승인 유지 (추천)",
+        "effect": "purpose/판본 수정안만 보관하고 백업 경로 복구 후 동일 변경 재시도"
+      },
+      {
+        "key": "B",
+        "label": "사용 가이드 근거 확보 후 범위별 검수",
+        "effect": "보호공간·최소크기·허용형 등 확인 가능한 대상만 별도 검토"
+      },
+      {
+        "key": "C",
+        "label": "실제 시안/최종 프레임 확보 후 품질 검수",
+        "effect": "대상 버전·필수 품질항목·근거를 고정하고 부분/전체 판정을 구분"
+      },
+      {
+        "key": "D",
+        "label": "승인 권한이 있는 담당자에게 특정 범위 판단 요청",
+        "effect": "실제 답변·대상·버전·권한 근거가 확보돼야 별도 승인 기록 가능"
+      }
+    ],
+    "automatic_application": false,
+    "new_human_answer_recorded": false
+  }
+}

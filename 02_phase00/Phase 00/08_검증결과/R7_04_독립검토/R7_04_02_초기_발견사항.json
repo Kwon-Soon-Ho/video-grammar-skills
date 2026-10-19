@@ -1,0 +1,76 @@
+{
+  "stage": "R7-4-2초기",
+  "status": "pending_corrections_and_retest",
+  "findings": [
+    {
+      "id": "R7-4-2-F1",
+      "priority": "P2",
+      "kind": "template_structural_contract_gap_not_fixed_hash_bypass",
+      "function": "inspect form branch",
+      "inputs": [
+        "remove blank_fields.required_criteria_inventory",
+        "blank_fields={} flatten",
+        "template_rules={} or mandatory omission flag false",
+        "allowed_outcomes=[회사승인]",
+        "actual_review_count=false"
+      ],
+      "actual_result": "valid=true in parser-return-only memory fault injection",
+      "suggestion": "fixed field inventory/rules and allowed enums/constants; strict int==0 counts; preserve empty fields template not validate future actual records"
+    },
+    {
+      "id": "R7-4-2-F2",
+      "priority": "P2",
+      "kind": "map_structural_scope_inventory_gap_not_fixed_hash_bypass",
+      "function": "inspect fieldmap/bindings branch",
+      "inputs": [
+        "binding.data_scope=actual_verified_evidence",
+        "map.kind=actual_content_approved",
+        "bindings=[] plus row candidates=[]",
+        "actual_R7_record_links=false"
+      ],
+      "actual_result": "valid=true in parser-return-only memory fault injection",
+      "suggestion": "expected kind/source-specific data_scope and current22binding inventory, strict zero int; distinguish keys existing from mapping meaning"
+    }
+  ],
+  "normal_D_baseline_valid": true,
+  "real_file_tamper_without_repin": "C copy test changes rejected by fixed hash; no production bypass shown",
+  "initial_conditions": 45,
+  "initial_passed": 39,
+  "initial_structural_failures": 6,
+  "additional_structural_failures": 4,
+  "runtime_exceptions": 0,
+  "D_unchanged_in_initial_test": true,
+  "initial_snapshot": [
+    {
+      "path": "07_실행도구/R7_연결확인.py",
+      "sha256": "1a8298cc512300cd399b6947c8f6d998e2dd8ab71f2885996ede26530e30744d",
+      "same_initial_result": false
+    },
+    {
+      "path": "13_품질검수/연결과인계/기존기록_연결표.json",
+      "sha256": "5dd442de41fc63f60c52002ad22772ef0c012a76af7ff0f8730b6c7112ac2b49",
+      "same_initial_result": true
+    },
+    {
+      "path": "13_품질검수/연결과인계/품질검수_작성양식.json",
+      "sha256": "f831a2f27614beeaa998f70b89bebcba8da2135e7c95f146d0fba83d92b718d0",
+      "same_initial_result": true
+    },
+    {
+      "path": "13_품질검수/연결과인계/03_검수와보류_연결규칙.md",
+      "sha256": "fd2a30669abc639b2a8767aea1302eeb9b930cc37de76c79e78e1a6841f5814d",
+      "same_initial_result": true
+    },
+    {
+      "path": "13_품질검수/연결과인계/현재연결_입력고정.json",
+      "sha256": "b92c30869bd4ebd236c46cd5015768150a95f4c9d348f823dc4d62ac07dd9dd9",
+      "same_initial_result": false
+    },
+    {
+      "path": "13_품질검수/연결과인계/04_연결확인_사용안내.md",
+      "sha256": "073804ae9a8751ff3d6601f88c6a6a62c71fbdcc580e8902cf066c0086798ddf",
+      "same_initial_result": null
+    }
+  ],
+  "documentation_review": "03/04 full read: four separate scopes/conditional must review/real CI not R7 approval/duplicatecause vs metricdenominator/stale and no automatic rebaseline are appropriate. No current D source changed by this reviewer."
+}

@@ -1,0 +1,95 @@
+{
+  "version": "0.1.0",
+  "status": "design_draft_not_implemented",
+  "target_schema_version": "0.2.0_candidate",
+  "data_authority": "한 통합 기록 안에 동일 시간/자료/좌표를 한 번만 저장. 다른 계층은 ID/version/hash로 연결. 읽기용 평탄화는 파생자료.",
+  "proposal": [
+    {
+      "part": "asset/segment/screen_state/beat",
+      "source": "R2 분류운영규칙과 R4-2 targets",
+      "link": "공통 대상 ID/버전과 시간 period_ref. beat는 segment 소속+관련 state_refs로 여러 상태를 참조",
+      "reject": [
+        "프레임=화면상태",
+        "컷마다 설명구간 강제생성",
+        "상태별 layout을 구간에서 무조건 상속"
+      ]
+    },
+    {
+      "part": "time",
+      "source": "R4-1 time_contract",
+      "link": "R4-2 안의 time_contract를 한 번 저장. 구간/대상/프레임/주장/좌표가 동일 ID를 참조",
+      "reject": [
+        "별도 elapsed float와 원본 PTS의 불일치 방치",
+        "unknown을0 또는 CFR로 추정",
+        "duration 끝 프레임을 내부 근거로 사용"
+      ]
+    },
+    {
+      "part": "evidence",
+      "source": "R4-2 materials/targets/evidence/claims/reviews",
+      "link": "원본 영상·파생 프레임·시나리오·대상 범위·지지/반대/문맥을 버전 고정",
+      "reject": [
+        "기존 evidence ID만 복사하고 원본 동일성 확인 완료로 처리",
+        "계획문장을 관측 사실로 승격",
+        "오래된 review receipt를 새 context에 재사용"
+      ]
+    },
+    {
+      "part": "spatial",
+      "source": "R4-3 spaces/transforms/geometries/mappings",
+      "link": "공간 material pin/frame_ref/target ref를 근거·시간과 공유. 별도의 근거/시간 사본을 두지 않음",
+      "reject": [
+        "유효한 공간 ID 문자열만으로 측정 내용 확인",
+        "공간 크기/좌표/단위/변환을 자유metadata로 우회",
+        "geometry와 sample의 대상/프레임/값/오차 불일치"
+      ]
+    },
+    {
+      "part": "classification",
+      "source": "R2 axis_units/states/reason_codes/공통용어사전",
+      "link": "단위별 허용축+5판정+term_ids/이유/후보문구. actual 관측·계획·추론 출처를 주장과 연결",
+      "reject": [
+        "unknown/not_assessed 자동 classified",
+        "other_candidate에 정본 ID 발명",
+        "범위 밖 태그 자동 상속"
+      ]
+    },
+    {
+      "part": "design",
+      "source": "현행 한맥 profile/taxonomy",
+      "link": "현행 ID/version/hash와 토큰/선택 스타일 참조만 연결. 프로젝트 예외는 초안",
+      "reject": [
+        "UI를 영상필수규칙으로 승격",
+        "관측CI색을 공식지정색으로 확정"
+      ]
+    },
+    {
+      "part": "run/metadata",
+      "source": "기존 자유객체의 보완",
+      "link": "작업 종류·수행 주체 유형·도구/버전·모델/API 식별(해당시)·입출력/규격 pin·시각/실행상태·한계·비밀정보 제외. null/미실행 명시. 실제 추출 없음",
+      "reject": [
+        "임의 approved/run=true를 검증완료로 해석",
+        "미실행을 실제 자동분석 실행처럼 기록",
+        "metadata에 승인/좌표 정본을 숨김"
+      ]
+    },
+    {
+      "part": "migration",
+      "source": "v0.1.0 원문과 접수 보고",
+      "link": "원문 bytes/hash+값별 대응+부족 항목+참조 재연결+검사 결과. 사용자 A 확정: 새 통합 규격 기본, 정보 부족 원문은 누락 보고와 별도 접수함에 보존",
+      "reject": [
+        "영상hash/원본version/시간/화면상태를 추정 생성",
+        "과거 평가 입력/결과를 새 규격 통과용으로 덮어쓰기",
+        "이관성공=분석내용승인"
+      ]
+    }
+  ],
+  "guard_policy": {
+    "spatial_supported": "R4-2 원문 차단 유지. 통합에서 존재/버전/범위/값/단위/오차/context를 검수하고 제한 연결 상태로만 표현. 미확인/사람검수 전 사실승격 금지. 세부 구현안은 2단계 레드팀에서 검수.",
+    "context": "시간/근거/좌표뿐 아니라 분류·설계참조·검사기/규격 버전 변경도 통합 review context에 포함. 기존 receipt를 자동 이전하지 않음.",
+    "release": "형식 valid/참조 일치/내용 검수/회사 승인/운영 반영을 분리. fact_verified/company_approved/operational_release false 유지."
+  },
+  "phase01a_started": false,
+  "implemented": false,
+  "migration_decision": "A_confirmed"
+}

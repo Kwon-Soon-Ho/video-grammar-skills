@@ -1,0 +1,57 @@
+{
+  "id": "r7-quality-review-form",
+  "version": "0.1.0",
+  "kind": "unfilled_template_not_actual_review_or_R4_record",
+  "template_rules": {
+    "target_required_before_actual_record": true,
+    "applicable_required_items_cannot_be_silently_omitted": true,
+    "allowed_outcomes": [
+      "통과",
+      "수정필요",
+      "판단보류",
+      "비적용"
+    ],
+    "progress_is_separate": [
+      "미검수",
+      "검수중",
+      "판정기록됨"
+    ],
+    "unknown_is_not_not_applicable": true,
+    "human_reply_must_not_be_fabricated": true,
+    "hash_check_is_not_content_review": true
+  },
+  "blank_fields": {
+    "review_id": null,
+    "version": null,
+    "target": null,
+    "purpose_and_scope": null,
+    "required_criteria_inventory": null,
+    "criterion_ref": null,
+    "criterion_version": null,
+    "applicability_reason": null,
+    "required_for_this_purpose": null,
+    "required_reason": null,
+    "progress": null,
+    "outcome": null,
+    "findings": null,
+    "evidence_refs": [],
+    "contrary_evidence_refs": [],
+    "R4_record_ref": null,
+    "R5_application_ref": null,
+    "R6_context_ref": null,
+    "actual_human_request_ref": null,
+    "actual_human_reply_ref": null,
+    "human_review_scope": null,
+    "human_review_state": null,
+    "missing_materials": [],
+    "failure_group_id": null,
+    "distinct_impact": null,
+    "revision_and_recheck_refs": [],
+    "readiness_proposal": null
+  },
+  "company_approved": false,
+  "permission_granted": false,
+  "operational_release": false,
+  "actual_target_count": 0,
+  "actual_review_count": 0
+}

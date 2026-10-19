@@ -1,0 +1,26 @@
+{
+  "recorded_at": "2026-10-16T14:44:39+09:00",
+  "skill_used_for_eval_workflow": "anthropic-skill-creator; baseline-only adaptation because A3 skill not yet exists",
+  "new_analysis_skill_available": false,
+  "agent_input_history": "fork_turns none; neutral prompt/procedure/current raw frames only",
+  "input_separation": "instructions and separate input paths; no filesystem security boundary asserted",
+  "analysts": {
+    "retest_a": [
+      "T01",
+      "T04"
+    ],
+    "retest_b": [
+      "T02",
+      "T05"
+    ],
+    "retest_c": [
+      "T03",
+      "T06"
+    ]
+  },
+  "model": "inherited configured model; exact backend model revision not exposed by spawn tool",
+  "independence_scope": "separate analysis contexts, no prior user corrections supplied; same known source videos, not unseen-source generalization",
+  "allowed_additional_evidence": "only assigned time windows, bounded local extraction helper, no answer feedback",
+  "grading_status": "not started; wait until per-case raw output hashes sealed",
+  "A3_started": false
+}

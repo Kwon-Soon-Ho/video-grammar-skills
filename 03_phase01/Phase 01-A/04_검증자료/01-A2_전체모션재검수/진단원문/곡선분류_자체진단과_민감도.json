@@ -1,0 +1,178 @@
+{
+  "scope": "technical checks of curve-family comparator and timing-window sensitivity; not video recognition accuracy",
+  "analytic_curve_controls": [
+    {
+      "expected": "linear",
+      "observed": "linear",
+      "pass": true
+    },
+    {
+      "expected": "ease-in",
+      "observed": "ease-in_2",
+      "pass": true
+    },
+    {
+      "expected": "ease-out",
+      "observed": "ease-out_2",
+      "pass": true
+    },
+    {
+      "expected": "ease-in-out",
+      "observed": "ease-in-out_2",
+      "pass": true
+    },
+    {
+      "expected": "constant insufficient",
+      "observed": "insufficient",
+      "pass": true
+    }
+  ],
+  "extra_fits": [
+    {
+      "id": "EG-UI2-enter",
+      "property": "front screen right boundary after it becomes separable",
+      "fit": {
+        "window": [
+          11.4,
+          12.2
+        ],
+        "rank": [
+          {
+            "candidate": "ease-out_3",
+            "rmse": 0.04566805283035039
+          },
+          {
+            "candidate": "ease-out_2",
+            "rmse": 0.0625636938454577
+          },
+          {
+            "candidate": "ease-out_4",
+            "rmse": 0.10565043363036251
+          },
+          {
+            "candidate": "linear",
+            "rmse": 0.24077730440691497
+          }
+        ],
+        "progress_quarters": [
+          0.5000000000000017,
+          0.8125,
+          1.0
+        ],
+        "limitation": "diagnostic curve family, no original preset/handle recovery; window/segmentation/opacity can change estimates"
+      }
+    },
+    {
+      "id": "EG-front-relayout2",
+      "property": "rightmost visible front-left vertical yellow edge, older frame can show behind",
+      "fit": {
+        "window": [
+          13.8,
+          14.6
+        ],
+        "rank": [
+          {
+            "candidate": "ease-in-out_2",
+            "rmse": 0.06726043646273751
+          },
+          {
+            "candidate": "ease-in-out_3",
+            "rmse": 0.09003129018331771
+          },
+          {
+            "candidate": "linear",
+            "rmse": 0.10501404681485764
+          },
+          {
+            "candidate": "ease-in-out_4",
+            "rmse": 0.11366648678627318
+          }
+        ],
+        "progress_quarters": [
+          0.16129032258064602,
+          0.6129032258064551,
+          0.8709677419354839
+        ],
+        "limitation": "diagnostic curve family, no original preset/handle recovery; window/segmentation/opacity can change estimates"
+      }
+    },
+    {
+      "id": "EG-caption-spacing-settle",
+      "property": "leftmost bright caption edge; only short visible tail and pixel quantization",
+      "fit": {
+        "window": [
+          2.9,
+          3.5
+        ],
+        "rank": [
+          {
+            "candidate": "ease-out_2",
+            "rmse": 0.04977407124241077
+          },
+          {
+            "candidate": "ease-out_3",
+            "rmse": 0.10813974100072521
+          },
+          {
+            "candidate": "ease-out_4",
+            "rmse": 0.16178987567747025
+          },
+          {
+            "candidate": "linear",
+            "rmse": 0.17321952835926144
+          }
+        ],
+        "progress_quarters": [
+          0.5,
+          0.7,
+          0.9
+        ],
+        "limitation": "diagnostic curve family, no original preset/handle recovery; window/segmentation/opacity can change estimates"
+      },
+      "confidence": "candidate, threshold/letter visibility can move edge by one pixel"
+    }
+  ],
+  "window_sensitivity": [
+    {
+      "id": "EG-title-reveal",
+      "one_frame_shift_candidate_results": [
+        "ease-in-out_2",
+        "ease-in-out_2",
+        "ease-in-out_2"
+      ],
+      "interpretation": "family only; individual exponent is not identified"
+    },
+    {
+      "id": "EG-UI1-enter",
+      "one_frame_shift_candidate_results": [
+        "ease-out_3",
+        "ease-out_3",
+        "ease-out_3"
+      ],
+      "interpretation": "family only; individual exponent is not identified"
+    },
+    {
+      "id": "EG-model-grow",
+      "one_frame_shift_candidate_results": [
+        "ease-out_2",
+        "ease-out_2",
+        "ease-out_2"
+      ],
+      "interpretation": "family only; individual exponent is not identified"
+    },
+    {
+      "id": "EG-model-connected-face-current",
+      "one_frame_shift_candidate_results": [
+        "ease-out_2",
+        "ease-out_2",
+        "ease-out_2"
+      ],
+      "interpretation": "current connected-face proxy; replaces fixed-caption-contaminated earlier size proxy"
+    }
+  ],
+  "exclusions": [
+    "no original AE handles",
+    "no exact exponent/preset claim",
+    "no single total score"
+  ]
+}

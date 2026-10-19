@@ -1,0 +1,55 @@
+--- inputs/Phase00/02_원칙과레이아웃/레이아웃지식.json
++++ outputs/레이아웃지식_단일초점_초안_v0.1.2.json
+@@ -1,31 +1,31 @@
+ {
+-  "version": "0.1.1",
++  "version": "0.1.2",
+   "layouts": [
+     {
+       "id": "KNOW-LAYOUT-SINGLE-FOCUS",
+       "term_id": "LAYOUT-SINGLE-FOCUS",
+       "name_ko": "단일 초점",
+       "definition": "핵심 대상·문장 중심의 구성",
+-      "fit_conditions": "핵심 하나",
+-      "limits": "회사 최신 기준: 모든 단일 초점 화면은 반드시 중앙 배치한다.",
+-      "variant_dimensions": [
+-        "요소 수",
+-        "문구 길이",
+-        "출력 비율",
+-        "정보 관계",
+-        "읽기·유지 시간"
+-      ],
+-      "source_refs": [
+-        "SRC-PROJECT-TAXONOMY"
+-      ],
+-      "related_ids": [
+-        "SCREEN-HIERARCHY",
+-        "SCREEN-TYPE-KO",
+-        "SCREEN-TIME-READ"
+-      ],
+-      "company_examples": [],
+-      "status": "reference",
+-      "version": "0.1.1",
++      "fit_conditions": "핵심 메시지가 하나이며 다른 요소가 근거·맥락을 지원할 때",
++      "limits": "단일 초점은 반드시 중앙 배치를 뜻하지 않는다. 중앙·삼분할 등의 위치는 목적·정보 관계·문구·화면비·읽기 조건에 따라 검토한다. 동등 비교가 목적이면 한 대상만 과도하게 강조해 우열을 암시하지 않는다. 회사 필수 기준이나 시청 효과는 이 초안으로 확정하지 않는다.",
++      "variant_dimensions": [
++        "요소 수",
++        "문구 길이",
++        "출력 비율",
++        "정보 관계",
++        "읽기·유지 시간"
++      ],
++      "source_refs": [
++        "SRC-PROJECT-TAXONOMY"
++      ],
++      "related_ids": [
++        "SCREEN-HIERARCHY",
++        "SCREEN-TYPE-KO",
++        "SCREEN-TIME-READ"
++      ],
++      "company_examples": [],
++      "status": "draft",
++      "version": "0.1.2",
+       "application_reference_refs": [
+         "SRC-IMPECCABLE"
+       ]

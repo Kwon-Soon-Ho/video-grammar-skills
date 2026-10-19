@@ -1,0 +1,711 @@
+{
+  "criteria": {
+    "case_id": "H01",
+    "source_sha256": "ac83de770d91d1ce9d484e7f74c7b4c3b579db9b68c1e6b5775a3ec2e543de5c",
+    "window_seconds": [
+      0,
+      8
+    ],
+    "atoms": [
+      {
+        "id": "H01-C01",
+        "source_id": "A5-T",
+        "window_id": "H01",
+        "target": "배경",
+        "property_or_relation": "appearance",
+        "state_or_direction_or_order": "푸른/청록 사선 띠 배경이 처음부터 있고 초반 띠 위치·밝기/흐림이 변한 뒤 대체로 유지된다",
+        "time_bracket": [
+          0,
+          1.2
+        ],
+        "evidence": [
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00000_000.000.png",
+            "actual_seconds": "0",
+            "sha256": "7aabbabe18f11ede97d4f3a7a0b4b226c2973ee6d0bdd2a14c59222235bb8d21"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00012_000.400.png",
+            "actual_seconds": "2/5",
+            "sha256": "abe4454f20e8ff025f7d43af099549b462502d4dfea3e66815708c579dbaa7cc"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00024_000.800.png",
+            "actual_seconds": "4/5",
+            "sha256": "e37f05303d9f73851018f6864c4e24bd4b5254105b3bdaacb6504339de935d3e"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00036_001.200.png",
+            "actual_seconds": "6/5",
+            "sha256": "17908081b22d422cde84c8641648a711083297b4c04f8ebf8fa69853959ff6ef"
+          }
+        ],
+        "tier": "core",
+        "judgable": true,
+        "reason_if_unjudgable": null
+      },
+      {
+        "id": "H01-C02",
+        "source_id": "A5-T",
+        "window_id": "H01",
+        "target": "Value of",
+        "property_or_relation": "reveal_order",
+        "state_or_direction_or_order": "영문이 왼쪽 V부터 오른쪽 of까지 순차로 풀려 드러난다",
+        "time_bracket": [
+          1.4,
+          3
+        ],
+        "evidence": [
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00042_001.400.png",
+            "actual_seconds": "7/5",
+            "sha256": "1675d6fa83f79ebc126af84197a41187cfc055a539db1e7428e8d0e88dc005c1"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00054_001.800.png",
+            "actual_seconds": "9/5",
+            "sha256": "6be2d690842d74978f499b9097d2842db1bdf3b94b9d252117943779f481d08d"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00066_002.200.png",
+            "actual_seconds": "11/5",
+            "sha256": "56f8a8f2e57ee70f26c927a483f2b4e14377abd1e3e1f45266c04c3f27ddf684"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00078_002.600.png",
+            "actual_seconds": "13/5",
+            "sha256": "3df27e91d026a5fe2d22e6f2ad7d2b60eda7e487a52bdebeb51a9e4dc28253bc"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00090_003.000.png",
+            "actual_seconds": "3",
+            "sha256": "e5e0953690a6905944be76198dc11df575efbc95c7dc6738e9c54849dd6b9f8b"
+          }
+        ],
+        "tier": "core",
+        "judgable": true,
+        "reason_if_unjudgable": null
+      },
+      {
+        "id": "H01-C03",
+        "source_id": "A5-T",
+        "window_id": "H01",
+        "target": "Value of",
+        "property_or_relation": "text",
+        "state_or_direction_or_order": "완성되는 문구는 Value of",
+        "time_bracket": [
+          3,
+          3.2
+        ],
+        "evidence": [
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00090_003.000.png",
+            "actual_seconds": "3",
+            "sha256": "e5e0953690a6905944be76198dc11df575efbc95c7dc6738e9c54849dd6b9f8b"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00096_003.200.png",
+            "actual_seconds": "16/5",
+            "sha256": "00ec2f094453568a88486f3bbd4bac088a1d15d3f62031e2dc95f741fb28a659"
+          }
+        ],
+        "tier": "core",
+        "judgable": true,
+        "reason_if_unjudgable": null
+      },
+      {
+        "id": "H01-C04",
+        "source_id": "A5-T",
+        "window_id": "H01",
+        "target": "TOVA 로고",
+        "property_or_relation": "reveal",
+        "state_or_direction_or_order": "Value of 뒤 우측에서 흰 가로 조각→TOVA 로고의 아래쪽/후속 획까지 단계적으로 완성된다",
+        "time_bracket": [
+          3.4,
+          4.2
+        ],
+        "evidence": [
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00102_003.400.png",
+            "actual_seconds": "17/5",
+            "sha256": "d1c2e46462e3a3b68c77986889718a535acf2ca3671c2a95c850870332bb39df"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00114_003.800.png",
+            "actual_seconds": "19/5",
+            "sha256": "2895539ef3d49a243f6ec81da6a384848d393ed7a4a20e76d932dda5404127b1"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00120_004.000.png",
+            "actual_seconds": "4",
+            "sha256": "d20a807d2dd4cb6429f240dc6358b0f6ef4d32a72f0cf7193e3971c964f5bda9"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00126_004.200.png",
+            "actual_seconds": "21/5",
+            "sha256": "a2ce7213cd53fdda5724accb8f0bc90953352c42ffd739a8effc4e369c112e41"
+          }
+        ],
+        "tier": "core",
+        "judgable": true,
+        "reason_if_unjudgable": null
+      },
+      {
+        "id": "H01-C05",
+        "source_id": "A5-T",
+        "window_id": "H01",
+        "target": "Value of",
+        "property_or_relation": "visibility",
+        "state_or_direction_or_order": "3.2~4.6초에 완성된 Value of가 어두운 회색으로 약해진 뒤 유지되며 후반에는 큰 T에 일부 가려진다",
+        "time_bracket": [
+          3.2,
+          7.6
+        ],
+        "evidence": [
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00096_003.200.png",
+            "actual_seconds": "16/5",
+            "sha256": "00ec2f094453568a88486f3bbd4bac088a1d15d3f62031e2dc95f741fb28a659"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00114_003.800.png",
+            "actual_seconds": "19/5",
+            "sha256": "2895539ef3d49a243f6ec81da6a384848d393ed7a4a20e76d932dda5404127b1"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00138_004.600.png",
+            "actual_seconds": "23/5",
+            "sha256": "498fc99f00700ea0a5652139f0ccca56211577787013fd5e5286db05815bf8a8"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00192_006.400.png",
+            "actual_seconds": "32/5",
+            "sha256": "45fa2d840cacf81db662f06b4e97bcfd95b68fb6eb1e4cf94bde886829d4d357"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00228_007.600.png",
+            "actual_seconds": "38/5",
+            "sha256": "574aeb7b80e41ea1e9acffa710afb78fd426d8db1940080afaaab938948e80d2"
+          }
+        ],
+        "tier": "core",
+        "judgable": true,
+        "reason_if_unjudgable": null
+      },
+      {
+        "id": "H01-C06",
+        "source_id": "A5-T",
+        "window_id": "H01",
+        "target": "로고 아래 한국어",
+        "property_or_relation": "reveal",
+        "state_or_direction_or_order": "로고 완성 뒤 설명 두 줄이 부분 문구에서 완전한 두 줄로 드러나고 진해진다",
+        "time_bracket": [
+          5.4,
+          6.4
+        ],
+        "evidence": [
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00162_005.400.png",
+            "actual_seconds": "27/5",
+            "sha256": "7ed299b716df960b99c9a473567f9e9966f7dcede87632d19c8f0e59f121fd6c"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00168_005.600.png",
+            "actual_seconds": "28/5",
+            "sha256": "08f143f963c53359d7356ca7ca0785341c674509007cf070645bdc3dcb2135f1"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00180_006.000.png",
+            "actual_seconds": "6",
+            "sha256": "18d8f55faf9ec4189fa37ab7fc3737f87b2a51f86a8c85e8cd3293706271c403"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00192_006.400.png",
+            "actual_seconds": "32/5",
+            "sha256": "45fa2d840cacf81db662f06b4e97bcfd95b68fb6eb1e4cf94bde886829d4d357"
+          }
+        ],
+        "tier": "core",
+        "judgable": true,
+        "reason_if_unjudgable": null
+      },
+      {
+        "id": "H01-C07",
+        "source_id": "A5-T",
+        "window_id": "H01",
+        "target": "거대한 T",
+        "property_or_relation": "position_reveal",
+        "state_or_direction_or_order": "우상단 흰 사선/지도 조각이 들어와 좌하 방향으로 점유를 넓혀 거대한 T 형태가 된다",
+        "time_bracket": [
+          6.4,
+          7.6
+        ],
+        "evidence": [
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00192_006.400.png",
+            "actual_seconds": "32/5",
+            "sha256": "45fa2d840cacf81db662f06b4e97bcfd95b68fb6eb1e4cf94bde886829d4d357"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00198_006.600.png",
+            "actual_seconds": "33/5",
+            "sha256": "409c52d40f2815f11bdfe3c1cfed82da8034eb4db9d2ef007dd718d6ba5beaf4"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00204_006.800.png",
+            "actual_seconds": "34/5",
+            "sha256": "855d9c97a50906953e3e15eba44b0292409626b0a54f3c109deca87c9ea247cd"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00207_006.900.png",
+            "actual_seconds": "69/10",
+            "sha256": "3c182f55a2d71b83b7228241c855079857b7397aad38bf9baaa81cef176021e8"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00213_007.100.png",
+            "actual_seconds": "71/10",
+            "sha256": "a49ba092b12b4a4284f03ef35f9d8c0a8410927d9dc020317994a7f4189fb704"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00219_007.300.png",
+            "actual_seconds": "73/10",
+            "sha256": "73cd0ceeda7cd5eabf1eed64f9bf324c233bf14614799f33d0dfecc73376ee12"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00228_007.600.png",
+            "actual_seconds": "38/5",
+            "sha256": "574aeb7b80e41ea1e9acffa710afb78fd426d8db1940080afaaab938948e80d2"
+          }
+        ],
+        "tier": "core",
+        "judgable": true,
+        "reason_if_unjudgable": null
+      },
+      {
+        "id": "H01-C08",
+        "source_id": "A5-T",
+        "window_id": "H01",
+        "target": "로고와 설명",
+        "property_or_relation": "relation",
+        "state_or_direction_or_order": "큰 T 뒤에 놓인 회색 Value of는 오른쪽 일부가 가려진 채 남으며 TOVA 로고/설명은 앞에 유지된다",
+        "time_bracket": [
+          6.4,
+          7.6
+        ],
+        "evidence": [
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00192_006.400.png",
+            "actual_seconds": "32/5",
+            "sha256": "45fa2d840cacf81db662f06b4e97bcfd95b68fb6eb1e4cf94bde886829d4d357"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00216_007.200.png",
+            "actual_seconds": "36/5",
+            "sha256": "e6afbfc4457ff9edcf01751ab1b1f65996df51308fd6d352d0839d4df1f631fc"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00228_007.600.png",
+            "actual_seconds": "38/5",
+            "sha256": "574aeb7b80e41ea1e9acffa710afb78fd426d8db1940080afaaab938948e80d2"
+          }
+        ],
+        "tier": "core",
+        "judgable": true,
+        "reason_if_unjudgable": null
+      },
+      {
+        "id": "H01-D01",
+        "source_id": "A5-T",
+        "window_id": "H01",
+        "target": "Value of",
+        "property_or_relation": "shape",
+        "state_or_direction_or_order": "등장 중 글자에 말림/접힘처럼 휘어진 어두운 면과 밝은 앞면이 따로 보여 단순 전체 페이드에 그치지 않는다",
+        "time_bracket": [
+          1.8,
+          3
+        ],
+        "evidence": [
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00054_001.800.png",
+            "actual_seconds": "9/5",
+            "sha256": "6be2d690842d74978f499b9097d2842db1bdf3b94b9d252117943779f481d08d"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00066_002.200.png",
+            "actual_seconds": "11/5",
+            "sha256": "56f8a8f2e57ee70f26c927a483f2b4e14377abd1e3e1f45266c04c3f27ddf684"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00078_002.600.png",
+            "actual_seconds": "13/5",
+            "sha256": "3df27e91d026a5fe2d22e6f2ad7d2b60eda7e487a52bdebeb51a9e4dc28253bc"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00090_003.000.png",
+            "actual_seconds": "3",
+            "sha256": "e5e0953690a6905944be76198dc11df575efbc95c7dc6738e9c54849dd6b9f8b"
+          }
+        ],
+        "tier": "detail",
+        "judgable": true,
+        "reason_if_unjudgable": null
+      },
+      {
+        "id": "H01-D02",
+        "source_id": "A5-T",
+        "window_id": "H01",
+        "target": "TOVA",
+        "property_or_relation": "color_detail",
+        "state_or_direction_or_order": "흰 로고 획 안/오른쪽 끝에 노란 사선 작은 획들이 추가된다",
+        "time_bracket": [
+          3.8,
+          4.6
+        ],
+        "evidence": [
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00114_003.800.png",
+            "actual_seconds": "19/5",
+            "sha256": "2895539ef3d49a243f6ec81da6a384848d393ed7a4a20e76d932dda5404127b1"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00126_004.200.png",
+            "actual_seconds": "21/5",
+            "sha256": "a2ce7213cd53fdda5724accb8f0bc90953352c42ffd739a8effc4e369c112e41"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00138_004.600.png",
+            "actual_seconds": "23/5",
+            "sha256": "498fc99f00700ea0a5652139f0ccca56211577787013fd5e5286db05815bf8a8"
+          }
+        ],
+        "tier": "detail",
+        "judgable": true,
+        "reason_if_unjudgable": null
+      },
+      {
+        "id": "H01-D03",
+        "source_id": "A5-T",
+        "window_id": "H01",
+        "target": "로고 영문 풀네임",
+        "property_or_relation": "text",
+        "state_or_direction_or_order": "작은 풀네임은 TOtal Vehicle Assignment (표시 대소문자는 이 형태)",
+        "time_bracket": [
+          4.6,
+          6.4
+        ],
+        "evidence": [
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00138_004.600.png",
+            "actual_seconds": "23/5",
+            "sha256": "498fc99f00700ea0a5652139f0ccca56211577787013fd5e5286db05815bf8a8"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00168_005.600.png",
+            "actual_seconds": "28/5",
+            "sha256": "08f143f963c53359d7356ca7ca0785341c674509007cf070645bdc3dcb2135f1"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00192_006.400.png",
+            "actual_seconds": "32/5",
+            "sha256": "45fa2d840cacf81db662f06b4e97bcfd95b68fb6eb1e4cf94bde886829d4d357"
+          }
+        ],
+        "tier": "detail",
+        "judgable": true,
+        "reason_if_unjudgable": null
+      },
+      {
+        "id": "H01-D04",
+        "source_id": "A5-T",
+        "window_id": "H01",
+        "target": "로고 영문 풀네임",
+        "property_or_relation": "color",
+        "state_or_direction_or_order": "TO/V/A 등 대응 첫 부분이 노란색이며 나머지 문자는 흰색",
+        "time_bracket": [
+          4.6,
+          6.4
+        ],
+        "evidence": [
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00138_004.600.png",
+            "actual_seconds": "23/5",
+            "sha256": "498fc99f00700ea0a5652139f0ccca56211577787013fd5e5286db05815bf8a8"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00192_006.400.png",
+            "actual_seconds": "32/5",
+            "sha256": "45fa2d840cacf81db662f06b4e97bcfd95b68fb6eb1e4cf94bde886829d4d357"
+          }
+        ],
+        "tier": "detail",
+        "judgable": true,
+        "reason_if_unjudgable": null
+      },
+      {
+        "id": "H01-D05",
+        "source_id": "A5-T",
+        "window_id": "H01",
+        "target": "한국어 설명",
+        "property_or_relation": "text",
+        "state_or_direction_or_order": "도로, 버스, 도시철도, 지역간 철도, 항공 및 해운 여객교통수요를 통합적으로 분석하는 한국형 통합 교통 수요분석 프로그램이라는 문구",
+        "time_bracket": [
+          6.4,
+          7.6
+        ],
+        "evidence": [
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00192_006.400.png",
+            "actual_seconds": "32/5",
+            "sha256": "45fa2d840cacf81db662f06b4e97bcfd95b68fb6eb1e4cf94bde886829d4d357"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00228_007.600.png",
+            "actual_seconds": "38/5",
+            "sha256": "574aeb7b80e41ea1e9acffa710afb78fd426d8db1940080afaaab938948e80d2"
+          }
+        ],
+        "tier": "detail",
+        "judgable": true,
+        "reason_if_unjudgable": null
+      },
+      {
+        "id": "H01-D06",
+        "source_id": "A5-T",
+        "window_id": "H01",
+        "target": "한국어 설명",
+        "property_or_relation": "color",
+        "state_or_direction_or_order": "둘째 줄 한국형 통합 교통 수요분석 프로그램이 노란색으로 강조된다",
+        "time_bracket": [
+          5.6,
+          6.4
+        ],
+        "evidence": [
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00168_005.600.png",
+            "actual_seconds": "28/5",
+            "sha256": "08f143f963c53359d7356ca7ca0785341c674509007cf070645bdc3dcb2135f1"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00192_006.400.png",
+            "actual_seconds": "32/5",
+            "sha256": "45fa2d840cacf81db662f06b4e97bcfd95b68fb6eb1e4cf94bde886829d4d357"
+          }
+        ],
+        "tier": "detail",
+        "judgable": true,
+        "reason_if_unjudgable": null
+      },
+      {
+        "id": "H01-D07",
+        "source_id": "A5-T",
+        "window_id": "H01",
+        "target": "큰 T 내부",
+        "property_or_relation": "sharpness",
+        "state_or_direction_or_order": "흰 면의 흐린 내부가 선명한 도로 지도 선으로 드러난다",
+        "time_bracket": [
+          6.9,
+          7.6
+        ],
+        "evidence": [
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00207_006.900.png",
+            "actual_seconds": "69/10",
+            "sha256": "3c182f55a2d71b83b7228241c855079857b7397aad38bf9baaa81cef176021e8"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00213_007.100.png",
+            "actual_seconds": "71/10",
+            "sha256": "a49ba092b12b4a4284f03ef35f9d8c0a8410927d9dc020317994a7f4189fb704"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00219_007.300.png",
+            "actual_seconds": "73/10",
+            "sha256": "73cd0ceeda7cd5eabf1eed64f9bf324c233bf14614799f33d0dfecc73376ee12"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00228_007.600.png",
+            "actual_seconds": "38/5",
+            "sha256": "574aeb7b80e41ea1e9acffa710afb78fd426d8db1940080afaaab938948e80d2"
+          }
+        ],
+        "tier": "detail",
+        "judgable": true,
+        "reason_if_unjudgable": null
+      },
+      {
+        "id": "H01-D08",
+        "source_id": "A5-T",
+        "window_id": "H01",
+        "target": "TOVA 설명",
+        "property_or_relation": "reveal_order",
+        "state_or_direction_or_order": "첫 줄 뒤 둘째 줄은 한국형부터 더 긴 강조 구절과 입니다까지 이어진다",
+        "time_bracket": [
+          5.6,
+          6.4
+        ],
+        "evidence": [
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00168_005.600.png",
+            "actual_seconds": "28/5",
+            "sha256": "08f143f963c53359d7356ca7ca0785341c674509007cf070645bdc3dcb2135f1"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00180_006.000.png",
+            "actual_seconds": "6",
+            "sha256": "18d8f55faf9ec4189fa37ab7fc3737f87b2a51f86a8c85e8cd3293706271c403"
+          },
+          {
+            "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00192_006.400.png",
+            "actual_seconds": "32/5",
+            "sha256": "45fa2d840cacf81db662f06b4e97bcfd95b68fb6eb1e4cf94bde886829d4d357"
+          }
+        ],
+        "tier": "detail",
+        "judgable": true,
+        "reason_if_unjudgable": null
+      }
+    ],
+    "unjudgable_properties": [
+      "정확한 AE 속성·함수/핸들 값",
+      "Value of 말림의 실제 3D 회전축",
+      "정밀 이징은 동일 속성 진행 중 변화율 측정 없이는 unknown 허용"
+    ],
+    "native_crop_evidence": [
+      {
+        "case_id": "H01",
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\reference\\H01-c01.png",
+        "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00054_001.800.png",
+        "crop_xyxy_native_pixels": [
+          250,
+          1300,
+          1100,
+          1780
+        ],
+        "actual_seconds": "9/5"
+      },
+      {
+        "case_id": "H01",
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\reference\\H01-c02.png",
+        "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00066_002.200.png",
+        "crop_xyxy_native_pixels": [
+          250,
+          1300,
+          1100,
+          1780
+        ],
+        "actual_seconds": "11/5"
+      },
+      {
+        "case_id": "H01",
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\reference\\H01-c03.png",
+        "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00078_002.600.png",
+        "crop_xyxy_native_pixels": [
+          250,
+          1300,
+          1800,
+          1780
+        ],
+        "actual_seconds": "13/5"
+      },
+      {
+        "case_id": "H01",
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\reference\\H01-c04.png",
+        "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00090_003.000.png",
+        "crop_xyxy_native_pixels": [
+          250,
+          1100,
+          1800,
+          1780
+        ],
+        "actual_seconds": "3"
+      },
+      {
+        "case_id": "H01",
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\reference\\H01-c05.png",
+        "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00102_003.400.png",
+        "crop_xyxy_native_pixels": [
+          1900,
+          1450,
+          3200,
+          1830
+        ],
+        "actual_seconds": "17/5"
+      },
+      {
+        "case_id": "H01",
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\reference\\H01-c06.png",
+        "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00114_003.800.png",
+        "crop_xyxy_native_pixels": [
+          1900,
+          1450,
+          3200,
+          1830
+        ],
+        "actual_seconds": "19/5"
+      },
+      {
+        "case_id": "H01",
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\reference\\H01-c07.png",
+        "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00138_004.600.png",
+        "crop_xyxy_native_pixels": [
+          1900,
+          1450,
+          3350,
+          1870
+        ],
+        "actual_seconds": "23/5"
+      },
+      {
+        "case_id": "H01",
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\reference\\H01-c08.png",
+        "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00168_005.600.png",
+        "crop_xyxy_native_pixels": [
+          1900,
+          1450,
+          3350,
+          1950
+        ],
+        "actual_seconds": "28/5"
+      },
+      {
+        "case_id": "H01",
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\reference\\H01-c09.png",
+        "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\H01\\f_00192_006.400.png",
+        "crop_xyxy_native_pixels": [
+          1900,
+          1450,
+          3350,
+          1950
+        ],
+        "actual_seconds": "32/5"
+      },
+      {
+        "case_id": "H01",
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\reference\\H01-c10.png",
+        "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00207_006.900.png",
+        "crop_xyxy_native_pixels": [
+          2700,
+          0,
+          3840,
+          800
+        ],
+        "actual_seconds": "69/10"
+      },
+      {
+        "case_id": "H01",
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\reference\\H01-c11.png",
+        "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-T\\REF-H01\\f_00219_007.300.png",
+        "crop_xyxy_native_pixels": [
+          0,
+          0,
+          3840,
+          1000
+        ],
+        "actual_seconds": "73/10"
+      }
+    ],
+    "boundary_scoring_note": "time_bracket is an observed event/state span, not automatically an onset bracket. Only separately stated boundary events use boundary tolerance. Exact time evidence must match log."
+  },
+  "reference_sha256": "7e8cf866c8f97a007b2233d03664c236da3fc8f1e17ce7d04bd6ab98718fcfc1",
+  "human_gold": false
+}

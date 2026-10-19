@@ -1,0 +1,78 @@
+{
+  "평가번호": 2,
+  "실행조건": "맞춤스킬 없이 일반 정본과 기반 검증기로 수행",
+  "검토대상": "검사입력.json: EXAMPLE-PROCESS-001@0.1.0",
+  "평가자료시점": "사용 정본과 검사구현은 이 독립 baseline 평가에서 읽고 실행한 당시의 내용이다. 검증근거는 실제 검사 시점의 출력 그대로이며 후속 구현·규격 보완은 소급 반영하지 않았다.",
+  "종합판정": "기반 기록 검증 실패. 설명용 예시로 수정할 수 있으나 회사 영상 문법 승인은 불가.",
+  "검증근거": {
+    "실행명령": ".환경\\Scripts\\python.exe -B 07_실행도구\\자료검증.py --record C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\스킬평가\\초안비교\\검사입력.json",
+    "작업디렉터리": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00",
+    "출력파일지정": false,
+    "종료코드": 1,
+    "valid": false,
+    "오류원문": [
+      "없는 한맥 토큰: HM-COLOR-NOT-EXIST",
+      "미분류 이유 없음",
+      "주장 수치 추정의 방법·단위·불확실성·근거 부족",
+      "설명용 예의 회사 승인 금지",
+      "이 최소 사례 계약은 회사 문법 승인을 담지 않는다. 01-B 별도 패턴 검수 필요",
+      "승인 검수자·시각·범위 없음",
+      "대상·종류·범위가 일치하는 별도 사람 검수 결정 없음",
+      "승인 근거 버전 미고정"
+    ],
+    "범위": "Phase 00 데이터·기록 계약. 실영상 정확도/효과 검증 아님."
+  },
+  "핵심오류": [
+    {
+      "필드": "design.palette_role_bindings.background",
+      "문제": "HM-COLOR-NOT-EXIST는 정본 color_tokens에 없는 참조다.",
+      "수정방향": "기획 예시 배경을 선택한다면 기존 토큰 HM-COLOR-GREEN-500 등을 명시적 설계 후보로 참조한다. 실제 배경색을 관측했다고 쓰지 않는다. 새 토큰을 정본에 만들거나 기존 토큰을 바꾸지 않는다.",
+      "근거": "한맥디자인정본.json@0.1.0의 color_tokens 및 db_contract.scene_contract"
+    },
+    {
+      "필드": "segments[0].classification 및 unclassified_reason",
+      "문제": "layout이 빈 배열인데 unclassified_reason도 null이다.",
+      "수정방향": "실제 화면이 없는 구조 설명용 예라 레이아웃을 확정하지 않았다는 이유를 기입한다. 요청문만으로 실제 카드·선형 레이아웃 관측을 생성하지 않는다.",
+      "근거": "검증기의 미분류 이유 없음 오류"
+    },
+    {
+      "필드": "claims[0].support_mode",
+      "문제": "numerical_estimate라고 되어 있으나 measurement=null이고 근거는 example_description뿐이다. 수치 추정 방법·단위·불확실성·원본 근거가 없다.",
+      "수정방향": "설계 연결을 설명하는 이 주장에는 not_observed_example을 사용한다. measurement=null을 유지한다. 실제 프레임·타임코드·측정값을 꾸며 채우지 않는다.",
+      "근거": "최소기록_스키마.json의 support_mode 구분 및 00_기록안내.md의 미정과 사실 구분"
+    },
+    {
+      "필드": "review",
+      "문제": "synthetic_example을 state=approved, approval_kind=company_rule, approved_scope=회사 영상 문법으로 승격했다. reviewer=AI는 사람 승인 근거가 아니며 reviewed_at·decision_ref가 null, evidence_versions가 비어 있다.",
+      "수정방향": "안전한 수정 초안은 draft로 내리고 승인 관련 필드는 null/빈값으로 둔다. 사람이 확인하지 않은 이름·시각·결정·근거 버전을 생성하지 않는다.",
+      "근거": "검수결정.json은 decisions=[]이며 자동 스킬이 사람 검수 결정을 만들지 않는다고 명시. 검증기 승인 관련 오류 5개."
+    }
+  ],
+  "안전한수정초안": {
+    "적용상태": "방향 및 필드별 제안만 작성. 입력 파일에 적용하지 않음.",
+    "권장필드변경": [
+      {"경로": "design.palette_role_bindings.background", "후보값": "HM-COLOR-GREEN-500", "조건": "구조 설명용 Green 배경 예시를 선택하는 경우"},
+      {"경로": "segments[0].unclassified_reason", "후보값": "실제 결과 화면이 없는 구조 설명용 계획 예이므로 레이아웃을 미분류로 남긴다."},
+      {"경로": "claims[0].support_mode", "후보값": "not_observed_example"},
+      {"경로": "review.state", "후보값": "draft"},
+      {"경로": "review.reviewer", "후보값": null},
+      {"경로": "review.reviewed_at", "후보값": null},
+      {"경로": "review.approved_scope", "후보값": null},
+      {"경로": "review.approval_kind", "후보값": null},
+      {"경로": "review.decision_ref", "후보값": null},
+      {"경로": "review.evidence_versions", "후보값": {}}
+    ],
+    "유지": ["asset.source_type=synthetic_example", "asset.path/sha256/duration_s/metadata=null", "run=null", "각 period의 수치=null 및 time_basis=unknown", "frames=[]", "measurement=null", "실제 관측을 하지 않았다는 limitations", "기존 taxonomy_ref 및 profile_ref"],
+    "후속검증": "사용자가 수정 초안을 채택하여 별도 파일을 만든 뒤 기반 검증기를 다시 실행한다. 현재는 수정본을 생성·검증하지 않았으므로 수정 후 통과를 선언하지 않는다."
+  },
+  "회사승인가능여부": {
+    "현재": false,
+    "구조수정으로회사승인가능": false,
+    "이유": "설명용 합성 예시와 최소 사례 계약은 회사 문법 승인 대상으로 사용할 수 없다. 데이터 정합성 검증과 실영상 사실 검수 및 회사 표현 패턴 승인은 별도다.",
+    "필요조건": "실제 회사 사례와 근거를 확보하고 01-B 별도 패턴 검수에서 실제 사람 결정의 대상·버전·종류·범위·근거 버전을 연결해야 한다. 검증기는 사람 신원을 인증하지 않는다."
+  },
+  "미확정필드": ["원본 영상 경로·해시·길이·메타데이터", "실제 실행 run", "원본 시간축·PTS·프레임", "실제 레이아웃 및 색 관측", "수치 추정 방법·단위·불확실성·측정 근거", "제작자 의도·실제 전달 효과", "실제 검수자·검수시각·검수결정", "회사 승인 범위와 근거 버전"],
+  "오류로채우지않을빈값": "구조 설명용 예시의 원본·시간·프레임·측정 null/빈값은 미관측 상태 표현이다. 검증 오류를 없애려고 관측값을 조작하지 않는다.",
+  "사용자료": ["평가요청.json의 case 2", "검사입력.json", "04_기록규격/최소기록_스키마.json", "04_기록규격/00_기록안내.md", "03_한맥디자인/한맥디자인정본.json@0.1.0", "05_출처와검토/검수결정.json@0.1.0", "기반 자료검증.py의 실제 실행 출력"],
+  "변경": "결과 파일만 저장. 입력·정본 변경 없음."
+}

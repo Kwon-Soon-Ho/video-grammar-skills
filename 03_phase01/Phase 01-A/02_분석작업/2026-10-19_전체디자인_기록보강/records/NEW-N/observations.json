@@ -1,0 +1,5381 @@
+{
+  "schema_version": "video-observation-0.4",
+  "skill_version": "0.1.0-draft.9",
+  "case_id": "DEV-NEW-N-REFERENCE-20261019",
+  "source": {
+    "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\한맥 영상\\노듈러거더 홍보 영상\\노듈러거더홍보영상_한맥(KR)_260622.mp4",
+    "sha256": "42d87e0cc8c507ccb2a8924ae3252d689ef103d4ca3b1219ec1e588f6f474a03"
+  },
+  "window_seconds": [
+    166,
+    181
+  ],
+  "method": "원본·기존 draft.8 관측을 보존하고 새 범위로 작성한 기준 사례 후보. 기존0.1초 표본 재사용, 새 전후 구간과 PG 연결선 생성의 연속36프레임 보강. 원본 크기 ROI, 경사/선 간격/유색 경계의 변화율과 전체 구도 대조. 같은 AI 문맥의 개발 관측이며 독립 평가·최종 정답 아님. 이번 판은 기존 근거·번호를 보존한 디자인 기록 보강본. 별도 design_details에 원본 크기 측정/추정,상태별 차이와 미확정을 연결.",
+  "document_mode": "none",
+  "audio_reviewed": false,
+  "files_read": [
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\window\\실행기록.json",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\selection-plan.json",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\decision.json",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\inspection\\phase-measurements.json",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\inspection\\pose-geometry.json"
+  ],
+  "evidence": [
+    {
+      "id": "f00",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\window\\f_04980_166.000.png",
+      "actual_seconds": "166",
+      "role": "within"
+    },
+    {
+      "id": "f01",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\window\\f_04995_166.500.png",
+      "actual_seconds": "333/2",
+      "role": "within"
+    },
+    {
+      "id": "f02",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\window\\f_05010_167.000.png",
+      "actual_seconds": "167",
+      "role": "within"
+    },
+    {
+      "id": "f03",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\window\\f_05025_167.500.png",
+      "actual_seconds": "335/2",
+      "role": "within"
+    },
+    {
+      "id": "f04",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\window\\f_05040_168.000.png",
+      "actual_seconds": "168",
+      "role": "within"
+    },
+    {
+      "id": "f05",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\window\\f_05055_168.500.png",
+      "actual_seconds": "337/2",
+      "role": "within"
+    },
+    {
+      "id": "f06",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\window\\f_05070_169.000.png",
+      "actual_seconds": "169",
+      "role": "within"
+    },
+    {
+      "id": "f07",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\window\\f_05085_169.500.png",
+      "actual_seconds": "339/2",
+      "role": "within"
+    },
+    {
+      "id": "f08",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\window\\f_05100_170.000.png",
+      "actual_seconds": "170",
+      "role": "within"
+    },
+    {
+      "id": "f09",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\window\\f_05115_170.500.png",
+      "actual_seconds": "341/2",
+      "role": "within"
+    },
+    {
+      "id": "f10",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\window\\f_05130_171.000.png",
+      "actual_seconds": "171",
+      "role": "within"
+    },
+    {
+      "id": "f11",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\window\\f_05145_171.500.png",
+      "actual_seconds": "343/2",
+      "role": "within"
+    },
+    {
+      "id": "f12",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\window\\f_05160_172.000.png",
+      "actual_seconds": "172",
+      "role": "within"
+    },
+    {
+      "id": "f13",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\window\\f_05175_172.500.png",
+      "actual_seconds": "345/2",
+      "role": "within"
+    },
+    {
+      "id": "f14",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\window\\f_05190_173.000.png",
+      "actual_seconds": "173",
+      "role": "within"
+    },
+    {
+      "id": "f15",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\window\\f_05205_173.500.png",
+      "actual_seconds": "347/2",
+      "role": "within"
+    },
+    {
+      "id": "f16",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\window\\f_05220_174.000.png",
+      "actual_seconds": "174",
+      "role": "within"
+    },
+    {
+      "id": "x017",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail1\\f_04980_166.000.png",
+      "actual_seconds": "166",
+      "role": "within"
+    },
+    {
+      "id": "x018",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail1\\f_04983_166.100.png",
+      "actual_seconds": "1661/10",
+      "role": "within"
+    },
+    {
+      "id": "x019",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail1\\f_04986_166.200.png",
+      "actual_seconds": "831/5",
+      "role": "within"
+    },
+    {
+      "id": "x020",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail1\\f_04989_166.300.png",
+      "actual_seconds": "1663/10",
+      "role": "within"
+    },
+    {
+      "id": "x021",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail1\\f_04992_166.400.png",
+      "actual_seconds": "832/5",
+      "role": "within"
+    },
+    {
+      "id": "x022",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail1\\f_04995_166.500.png",
+      "actual_seconds": "333/2",
+      "role": "within"
+    },
+    {
+      "id": "x023",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail1\\f_04998_166.600.png",
+      "actual_seconds": "833/5",
+      "role": "within"
+    },
+    {
+      "id": "x024",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail1\\f_05001_166.700.png",
+      "actual_seconds": "1667/10",
+      "role": "within"
+    },
+    {
+      "id": "x025",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail1\\f_05004_166.800.png",
+      "actual_seconds": "834/5",
+      "role": "within"
+    },
+    {
+      "id": "x026",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail1\\f_05007_166.900.png",
+      "actual_seconds": "1669/10",
+      "role": "within"
+    },
+    {
+      "id": "x027",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail1\\f_05010_167.000.png",
+      "actual_seconds": "167",
+      "role": "within"
+    },
+    {
+      "id": "x028",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail1\\f_05013_167.100.png",
+      "actual_seconds": "1671/10",
+      "role": "within"
+    },
+    {
+      "id": "x029",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail1\\f_05016_167.200.png",
+      "actual_seconds": "836/5",
+      "role": "within"
+    },
+    {
+      "id": "x030",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail1\\f_05019_167.300.png",
+      "actual_seconds": "1673/10",
+      "role": "within"
+    },
+    {
+      "id": "x031",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail1\\f_05022_167.400.png",
+      "actual_seconds": "837/5",
+      "role": "within"
+    },
+    {
+      "id": "x032",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail1\\f_05025_167.500.png",
+      "actual_seconds": "335/2",
+      "role": "within"
+    },
+    {
+      "id": "x033",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail1\\f_05028_167.600.png",
+      "actual_seconds": "838/5",
+      "role": "within"
+    },
+    {
+      "id": "x034",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail1\\f_05031_167.700.png",
+      "actual_seconds": "1677/10",
+      "role": "within"
+    },
+    {
+      "id": "x035",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail1\\f_05034_167.800.png",
+      "actual_seconds": "839/5",
+      "role": "within"
+    },
+    {
+      "id": "x036",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail1\\f_05037_167.900.png",
+      "actual_seconds": "1679/10",
+      "role": "within"
+    },
+    {
+      "id": "x037",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail1\\f_05040_168.000.png",
+      "actual_seconds": "168",
+      "role": "within"
+    },
+    {
+      "id": "x038",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail1\\f_05043_168.100.png",
+      "actual_seconds": "1681/10",
+      "role": "within"
+    },
+    {
+      "id": "x039",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail1\\f_05046_168.200.png",
+      "actual_seconds": "841/5",
+      "role": "within"
+    },
+    {
+      "id": "x040",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail1\\f_05049_168.300.png",
+      "actual_seconds": "1683/10",
+      "role": "within"
+    },
+    {
+      "id": "x041",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail1\\f_05052_168.400.png",
+      "actual_seconds": "842/5",
+      "role": "within"
+    },
+    {
+      "id": "x042",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail1\\f_05055_168.500.png",
+      "actual_seconds": "337/2",
+      "role": "within"
+    },
+    {
+      "id": "x043",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail1\\f_05058_168.600.png",
+      "actual_seconds": "843/5",
+      "role": "within"
+    },
+    {
+      "id": "x044",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail2\\f_05061_168.700.png",
+      "actual_seconds": "1687/10",
+      "role": "within"
+    },
+    {
+      "id": "x045",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail2\\f_05064_168.800.png",
+      "actual_seconds": "844/5",
+      "role": "within"
+    },
+    {
+      "id": "x046",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail2\\f_05067_168.900.png",
+      "actual_seconds": "1689/10",
+      "role": "within"
+    },
+    {
+      "id": "x047",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail2\\f_05070_169.000.png",
+      "actual_seconds": "169",
+      "role": "within"
+    },
+    {
+      "id": "x048",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail2\\f_05073_169.100.png",
+      "actual_seconds": "1691/10",
+      "role": "within"
+    },
+    {
+      "id": "x049",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail2\\f_05076_169.200.png",
+      "actual_seconds": "846/5",
+      "role": "within"
+    },
+    {
+      "id": "x050",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail2\\f_05079_169.300.png",
+      "actual_seconds": "1693/10",
+      "role": "within"
+    },
+    {
+      "id": "x051",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail2\\f_05082_169.400.png",
+      "actual_seconds": "847/5",
+      "role": "within"
+    },
+    {
+      "id": "x052",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail2\\f_05085_169.500.png",
+      "actual_seconds": "339/2",
+      "role": "within"
+    },
+    {
+      "id": "x053",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail2\\f_05088_169.600.png",
+      "actual_seconds": "848/5",
+      "role": "within"
+    },
+    {
+      "id": "x054",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail2\\f_05091_169.700.png",
+      "actual_seconds": "1697/10",
+      "role": "within"
+    },
+    {
+      "id": "x055",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail2\\f_05094_169.800.png",
+      "actual_seconds": "849/5",
+      "role": "within"
+    },
+    {
+      "id": "x056",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail2\\f_05097_169.900.png",
+      "actual_seconds": "1699/10",
+      "role": "within"
+    },
+    {
+      "id": "x057",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail2\\f_05100_170.000.png",
+      "actual_seconds": "170",
+      "role": "within"
+    },
+    {
+      "id": "x058",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail2\\f_05103_170.100.png",
+      "actual_seconds": "1701/10",
+      "role": "within"
+    },
+    {
+      "id": "x059",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail2\\f_05106_170.200.png",
+      "actual_seconds": "851/5",
+      "role": "within"
+    },
+    {
+      "id": "x060",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail2\\f_05109_170.300.png",
+      "actual_seconds": "1703/10",
+      "role": "within"
+    },
+    {
+      "id": "x061",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail2\\f_05112_170.400.png",
+      "actual_seconds": "852/5",
+      "role": "within"
+    },
+    {
+      "id": "x062",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail2\\f_05115_170.500.png",
+      "actual_seconds": "341/2",
+      "role": "within"
+    },
+    {
+      "id": "x063",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail2\\f_05118_170.600.png",
+      "actual_seconds": "853/5",
+      "role": "within"
+    },
+    {
+      "id": "x064",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail2\\f_05121_170.700.png",
+      "actual_seconds": "1707/10",
+      "role": "within"
+    },
+    {
+      "id": "x065",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail2\\f_05124_170.800.png",
+      "actual_seconds": "854/5",
+      "role": "within"
+    },
+    {
+      "id": "x066",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail2\\f_05127_170.900.png",
+      "actual_seconds": "1709/10",
+      "role": "within"
+    },
+    {
+      "id": "x067",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail2\\f_05130_171.000.png",
+      "actual_seconds": "171",
+      "role": "within"
+    },
+    {
+      "id": "x068",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail2\\f_05133_171.100.png",
+      "actual_seconds": "1711/10",
+      "role": "within"
+    },
+    {
+      "id": "x069",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail2\\f_05136_171.200.png",
+      "actual_seconds": "856/5",
+      "role": "within"
+    },
+    {
+      "id": "x070",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail2\\f_05139_171.300.png",
+      "actual_seconds": "1713/10",
+      "role": "within"
+    },
+    {
+      "id": "x071",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail3\\f_05142_171.400.png",
+      "actual_seconds": "857/5",
+      "role": "within"
+    },
+    {
+      "id": "x072",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail3\\f_05145_171.500.png",
+      "actual_seconds": "343/2",
+      "role": "within"
+    },
+    {
+      "id": "x073",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail3\\f_05148_171.600.png",
+      "actual_seconds": "858/5",
+      "role": "within"
+    },
+    {
+      "id": "x074",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail3\\f_05151_171.700.png",
+      "actual_seconds": "1717/10",
+      "role": "within"
+    },
+    {
+      "id": "x075",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail3\\f_05154_171.800.png",
+      "actual_seconds": "859/5",
+      "role": "within"
+    },
+    {
+      "id": "x076",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail3\\f_05157_171.900.png",
+      "actual_seconds": "1719/10",
+      "role": "within"
+    },
+    {
+      "id": "x077",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail3\\f_05160_172.000.png",
+      "actual_seconds": "172",
+      "role": "within"
+    },
+    {
+      "id": "x078",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail3\\f_05163_172.100.png",
+      "actual_seconds": "1721/10",
+      "role": "within"
+    },
+    {
+      "id": "x079",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail3\\f_05166_172.200.png",
+      "actual_seconds": "861/5",
+      "role": "within"
+    },
+    {
+      "id": "x080",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail3\\f_05169_172.300.png",
+      "actual_seconds": "1723/10",
+      "role": "within"
+    },
+    {
+      "id": "x081",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail3\\f_05172_172.400.png",
+      "actual_seconds": "862/5",
+      "role": "within"
+    },
+    {
+      "id": "x082",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail3\\f_05175_172.500.png",
+      "actual_seconds": "345/2",
+      "role": "within"
+    },
+    {
+      "id": "x083",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail3\\f_05178_172.600.png",
+      "actual_seconds": "863/5",
+      "role": "within"
+    },
+    {
+      "id": "x084",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail3\\f_05181_172.700.png",
+      "actual_seconds": "1727/10",
+      "role": "within"
+    },
+    {
+      "id": "x085",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail3\\f_05184_172.800.png",
+      "actual_seconds": "864/5",
+      "role": "within"
+    },
+    {
+      "id": "x086",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail3\\f_05187_172.900.png",
+      "actual_seconds": "1729/10",
+      "role": "within"
+    },
+    {
+      "id": "x087",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail3\\f_05190_173.000.png",
+      "actual_seconds": "173",
+      "role": "within"
+    },
+    {
+      "id": "x088",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail3\\f_05193_173.100.png",
+      "actual_seconds": "1731/10",
+      "role": "within"
+    },
+    {
+      "id": "x089",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail3\\f_05196_173.200.png",
+      "actual_seconds": "866/5",
+      "role": "within"
+    },
+    {
+      "id": "x090",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail3\\f_05199_173.300.png",
+      "actual_seconds": "1733/10",
+      "role": "within"
+    },
+    {
+      "id": "x091",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail3\\f_05202_173.400.png",
+      "actual_seconds": "867/5",
+      "role": "within"
+    },
+    {
+      "id": "x092",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail3\\f_05205_173.500.png",
+      "actual_seconds": "347/2",
+      "role": "within"
+    },
+    {
+      "id": "x093",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail3\\f_05208_173.600.png",
+      "actual_seconds": "868/5",
+      "role": "within"
+    },
+    {
+      "id": "x094",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail3\\f_05211_173.700.png",
+      "actual_seconds": "1737/10",
+      "role": "within"
+    },
+    {
+      "id": "x095",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail3\\f_05214_173.800.png",
+      "actual_seconds": "869/5",
+      "role": "within"
+    },
+    {
+      "id": "x096",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail3\\f_05217_173.900.png",
+      "actual_seconds": "1739/10",
+      "role": "within"
+    },
+    {
+      "id": "x097",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\detail3\\f_05220_174.000.png",
+      "actual_seconds": "174",
+      "role": "within"
+    },
+    {
+      "id": "p098",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-background-left-166.0.png",
+      "actual_seconds": "166",
+      "role": "within"
+    },
+    {
+      "id": "p099",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-background-left-168.0.png",
+      "actual_seconds": "168",
+      "role": "within"
+    },
+    {
+      "id": "p100",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-background-left-170.0.png",
+      "actual_seconds": "170",
+      "role": "within"
+    },
+    {
+      "id": "p101",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-background-left-172.0.png",
+      "actual_seconds": "172",
+      "role": "within"
+    },
+    {
+      "id": "p102",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-background-left-174.0.png",
+      "actual_seconds": "174",
+      "role": "within"
+    },
+    {
+      "id": "p103",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-background-right-166.0.png",
+      "actual_seconds": "166",
+      "role": "within"
+    },
+    {
+      "id": "p104",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-background-right-168.0.png",
+      "actual_seconds": "168",
+      "role": "within"
+    },
+    {
+      "id": "p105",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-background-right-170.0.png",
+      "actual_seconds": "170",
+      "role": "within"
+    },
+    {
+      "id": "p106",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-background-right-172.0.png",
+      "actual_seconds": "172",
+      "role": "within"
+    },
+    {
+      "id": "p107",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-background-right-174.0.png",
+      "actual_seconds": "174",
+      "role": "within"
+    },
+    {
+      "id": "p108",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-rear-168.5.png",
+      "actual_seconds": "337/2",
+      "role": "within"
+    },
+    {
+      "id": "p109",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-rear-169.0.png",
+      "actual_seconds": "169",
+      "role": "within"
+    },
+    {
+      "id": "p110",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-rear-169.5.png",
+      "actual_seconds": "339/2",
+      "role": "within"
+    },
+    {
+      "id": "p111",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-rear-170.0.png",
+      "actual_seconds": "170",
+      "role": "within"
+    },
+    {
+      "id": "p112",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-rear-170.5.png",
+      "actual_seconds": "341/2",
+      "role": "within"
+    },
+    {
+      "id": "p113",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-rear-171.0.png",
+      "actual_seconds": "171",
+      "role": "within"
+    },
+    {
+      "id": "p114",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-rear-171.5.png",
+      "actual_seconds": "343/2",
+      "role": "within"
+    },
+    {
+      "id": "p115",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-rear-172.0.png",
+      "actual_seconds": "172",
+      "role": "within"
+    },
+    {
+      "id": "p116",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-rear-172.5.png",
+      "actual_seconds": "345/2",
+      "role": "within"
+    },
+    {
+      "id": "p117",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-rear-173.0.png",
+      "actual_seconds": "173",
+      "role": "within"
+    },
+    {
+      "id": "p118",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-rear-173.5.png",
+      "actual_seconds": "347/2",
+      "role": "within"
+    },
+    {
+      "id": "p119",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-rear-174.0.png",
+      "actual_seconds": "174",
+      "role": "within"
+    },
+    {
+      "id": "b120",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\extraction\\cases\\NEW-N\\scout\\f_05280_176.000.png",
+      "actual_seconds": "176",
+      "role": "within"
+    },
+    {
+      "id": "b121",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\extraction\\cases\\NEW-N\\scout\\f_05340_178.000.png",
+      "actual_seconds": "178",
+      "role": "within"
+    },
+    {
+      "id": "b122",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\f_05400_180.000.png",
+      "actual_seconds": "180",
+      "role": "within"
+    },
+    {
+      "id": "b123",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\extraction\\cases\\NEW-N\\tail1\\f_05238_174.600.png",
+      "actual_seconds": "873/5",
+      "role": "within"
+    },
+    {
+      "id": "b124",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\f_05250_175.000.png",
+      "actual_seconds": "175",
+      "role": "within"
+    },
+    {
+      "id": "b125",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\extraction\\cases\\NEW-N\\tail1\\f_05244_174.800.png",
+      "actual_seconds": "874/5",
+      "role": "within"
+    },
+    {
+      "id": "b126",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\extraction\\cases\\NEW-N\\tail1\\f_05226_174.200.png",
+      "actual_seconds": "871/5",
+      "role": "within"
+    },
+    {
+      "id": "b127",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\extraction\\cases\\NEW-N\\tail1\\f_05232_174.400.png",
+      "actual_seconds": "872/5",
+      "role": "within"
+    },
+    {
+      "id": "b128",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\extraction\\cases\\NEW-N\\scout\\f_05235_174.500.png",
+      "actual_seconds": "349/2",
+      "role": "within"
+    },
+    {
+      "id": "b129",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\extraction\\cases\\NEW-N\\tail1\\f_05265_175.500.png",
+      "actual_seconds": "351/2",
+      "role": "within"
+    },
+    {
+      "id": "b130",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\extraction\\cases\\NEW-N\\scout\\f_05310_177.000.png",
+      "actual_seconds": "177",
+      "role": "within"
+    },
+    {
+      "id": "b131",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\extraction\\cases\\NEW-N\\tail1\\f_05295_176.500.png",
+      "actual_seconds": "353/2",
+      "role": "within"
+    },
+    {
+      "id": "b132",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\extraction\\cases\\NEW-N\\tail2\\f_05355_178.500.png",
+      "actual_seconds": "357/2",
+      "role": "within"
+    },
+    {
+      "id": "b133",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\extraction\\cases\\NEW-N\\scout\\f_05370_179.000.png",
+      "actual_seconds": "179",
+      "role": "within"
+    },
+    {
+      "id": "b134",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\extraction\\cases\\NEW-N\\tail2\\f_05385_179.500.png",
+      "actual_seconds": "359/2",
+      "role": "within"
+    },
+    {
+      "id": "b135",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\extraction\\cases\\NEW-N\\tail2\\f_05415_180.500.png",
+      "actual_seconds": "361/2",
+      "role": "within"
+    },
+    {
+      "id": "b136",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\extraction\\cases\\NEW-N\\scout\\f_05430_181.000.png",
+      "actual_seconds": "181",
+      "role": "context_after"
+    }
+  ],
+  "objects": [
+    {
+      "id": "background",
+      "name": "초광폭 기술 배경",
+      "parent": null,
+      "shape_description": "어두운 남청색 바탕, 좌측 점·망사와 하단 곡선·작은 광점",
+      "required_properties": [
+        "identity",
+        "color",
+        "internal_state"
+      ],
+      "excluded_properties": {
+        "visibility": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "text": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "size": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "shape": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "relation": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "position": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님."
+      },
+      "identity": {
+        "status": "reviewed",
+        "label": "초광폭 기술 배경",
+        "candidates": [],
+        "claim_ids": [
+          "c001"
+        ]
+      }
+    },
+    {
+      "id": "header",
+      "name": "좌상단 한맥 로고·섹션 리본",
+      "parent": null,
+      "shape_description": "흰 로고 칸과 파란 사선 리본·흰 한글",
+      "required_properties": [
+        "identity",
+        "text"
+      ],
+      "excluded_properties": {
+        "visibility": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "size": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "shape": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "relation": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "color": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "internal_state": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "position": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님."
+      },
+      "identity": {
+        "status": "reviewed",
+        "label": "좌상단 한맥 로고·섹션 리본",
+        "candidates": [],
+        "claim_ids": [
+          "c003"
+        ]
+      }
+    },
+    {
+      "id": "girder",
+      "name": "왼쪽 긴 거더 구조",
+      "parent": null,
+      "shape_description": "구멍과 철근이 있는 회색 장대 구조물, 앞쪽 단면과 뒤로 이어지는 반복 부재",
+      "required_properties": [
+        "identity",
+        "position",
+        "size"
+      ],
+      "excluded_properties": {
+        "visibility": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "shape": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "relation": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "color": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "internal_state": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "text": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님."
+      },
+      "identity": {
+        "status": "reviewed",
+        "label": "왼쪽 긴 거더 구조",
+        "candidates": [],
+        "claim_ids": [
+          "c005"
+        ]
+      }
+    },
+    {
+      "id": "deck",
+      "name": "구조물 위 흰 상판 조각",
+      "parent": "girder",
+      "shape_description": "검은 고리 모양 철근을 가진 흰 판들이 길이 방향으로 반복",
+      "required_properties": [
+        "identity",
+        "position",
+        "internal_state"
+      ],
+      "excluded_properties": {
+        "visibility": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "size": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "shape": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "relation": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "color": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "text": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님."
+      },
+      "identity": {
+        "status": "reviewed",
+        "label": "구조물 위 흰 상판 조각",
+        "candidates": [],
+        "claim_ids": [
+          "c008"
+        ]
+      }
+    },
+    {
+      "id": "front-arcs",
+      "name": "왼쪽 거더 앞 단면 주변 청록 곡선 화살표",
+      "parent": "girder",
+      "shape_description": "앞 단면 좌우에 위·아래 화살촉을 가진 굵은 청록 곡선",
+      "required_properties": [
+        "identity",
+        "visibility",
+        "shape"
+      ],
+      "excluded_properties": {
+        "text": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "size": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "relation": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "color": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "internal_state": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "position": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님."
+      },
+      "identity": {
+        "status": "reviewed",
+        "label": "왼쪽 거더 앞 단면 주변 청록 곡선 화살표",
+        "candidates": [],
+        "claim_ids": [
+          "c011"
+        ]
+      }
+    },
+    {
+      "id": "rear-arcs",
+      "name": "왼쪽 거더 먼 끝의 작은 화살표",
+      "parent": "girder",
+      "shape_description": "긴 구조물 뒤쪽 끝 부근에도 작게 보이는 청록 곡선 한 쌍",
+      "required_properties": [
+        "identity",
+        "visibility"
+      ],
+      "excluded_properties": {
+        "text": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "size": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "shape": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "relation": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "color": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "internal_state": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "position": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님."
+      },
+      "identity": {
+        "status": "reviewed",
+        "label": "왼쪽 거더 먼 끝의 작은 화살표",
+        "candidates": [],
+        "claim_ids": [
+          "c014"
+        ]
+      }
+    },
+    {
+      "id": "section",
+      "name": "오른쪽 단면 도해",
+      "parent": null,
+      "shape_description": "중앙 검은 구멍과 둥근 홈, 위로 넓은 회색 단면",
+      "required_properties": [
+        "identity",
+        "visibility",
+        "position"
+      ],
+      "excluded_properties": {
+        "size": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "shape": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "relation": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "color": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "internal_state": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "text": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님."
+      },
+      "identity": {
+        "status": "reviewed",
+        "label": "오른쪽 단면 도해",
+        "candidates": [],
+        "claim_ids": [
+          "c016"
+        ]
+      }
+    },
+    {
+      "id": "section-arcs",
+      "name": "오른쪽 단면 청록 곡선 화살표",
+      "parent": "section",
+      "shape_description": "오른쪽 단면 좌우를 감싸는 굵은 곡선과 양끝 화살촉",
+      "required_properties": [
+        "identity",
+        "visibility",
+        "shape"
+      ],
+      "excluded_properties": {
+        "text": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "size": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "relation": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "color": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "internal_state": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "position": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님."
+      },
+      "identity": {
+        "status": "reviewed",
+        "label": "오른쪽 단면 청록 곡선 화살표",
+        "candidates": [],
+        "claim_ids": [
+          "c019"
+        ]
+      }
+    },
+    {
+      "id": "right-label",
+      "name": "오른쪽 설명 띠와 글자",
+      "parent": null,
+      "shape_description": "짙은 반투명 가로 띠, 양끝 청록 세로선, 흰 한글",
+      "required_properties": [
+        "identity",
+        "text",
+        "visibility",
+        "size"
+      ],
+      "excluded_properties": {
+        "shape": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "relation": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "color": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "internal_state": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "position": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님."
+      },
+      "identity": {
+        "status": "reviewed",
+        "label": "오른쪽 설명 띠와 글자",
+        "candidates": [],
+        "claim_ids": [
+          "c022"
+        ]
+      }
+    },
+    {
+      "id": "left-label",
+      "name": "후반 왼쪽 설명 띠",
+      "parent": null,
+      "shape_description": "왼쪽 모델 위쪽에 새로 생기는 청록 양끝선·어두운 띠와 문구",
+      "required_properties": [
+        "identity",
+        "visibility",
+        "text",
+        "size"
+      ],
+      "excluded_properties": {
+        "shape": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "relation": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "color": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "internal_state": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "position": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님."
+      },
+      "identity": {
+        "status": "reviewed",
+        "label": "후반 왼쪽 설명 띠",
+        "candidates": [],
+        "claim_ids": [
+          "c026"
+        ]
+      }
+    },
+    {
+      "id": "caption",
+      "name": "화면 하단 공통 자막",
+      "parent": null,
+      "shape_description": "초광폭 중앙 아래의 짙은 청색 바탕과 흰 한글",
+      "required_properties": [
+        "identity",
+        "text",
+        "visibility"
+      ],
+      "excluded_properties": {
+        "size": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "shape": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "relation": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "color": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "internal_state": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님.",
+        "position": "별도 변화가 관측된 속성으로 채택하지 않음. 정성 외관은 전체 디자인·형태 설명에 보존하며 미발견 변화가 없다는 판정은 아님."
+      },
+      "identity": {
+        "status": "reviewed",
+        "label": "화면 하단 공통 자막",
+        "candidates": [],
+        "claim_ids": [
+          "c029"
+        ]
+      }
+    },
+    {
+      "id": "edge-highlight",
+      "name": "거더 외곽·날개를 따르는 청록 강조",
+      "parent": null,
+      "shape_description": "좌측 거더 상부 길이와 옆 날개에 밀착한 청록 윤곽·빛 면",
+      "required_properties": [
+        "identity",
+        "visibility",
+        "color"
+      ],
+      "excluded_properties": {
+        "internal_state": "이 객체의 현재 관측 목적에서는 독립 요구 속성이 아님. 재사용 시 해당 목적에서 다시 검토.",
+        "relation": "이 객체의 현재 관측 목적에서는 독립 요구 속성이 아님. 재사용 시 해당 목적에서 다시 검토.",
+        "position": "이 객체의 현재 관측 목적에서는 독립 요구 속성이 아님. 재사용 시 해당 목적에서 다시 검토.",
+        "shape": "이 객체의 현재 관측 목적에서는 독립 요구 속성이 아님. 재사용 시 해당 목적에서 다시 검토.",
+        "size": "이 객체의 현재 관측 목적에서는 독립 요구 속성이 아님. 재사용 시 해당 목적에서 다시 검토.",
+        "text": "이 객체의 현재 관측 목적에서는 독립 요구 속성이 아님. 재사용 시 해당 목적에서 다시 검토."
+      },
+      "identity": {
+        "status": "reviewed",
+        "label": "거더 외곽·날개를 따르는 청록 강조",
+        "candidates": [],
+        "claim_ids": [
+          "c045"
+        ]
+      }
+    },
+    {
+      "id": "top-slab",
+      "name": "마감되는 넓은 상부 판",
+      "parent": null,
+      "shape_description": "상부 철근 판 위를 넓게 덮는 밝은 회백색 연속 면",
+      "required_properties": [
+        "identity",
+        "position",
+        "visibility"
+      ],
+      "excluded_properties": {
+        "internal_state": "이 객체의 현재 관측 목적에서는 독립 요구 속성이 아님. 재사용 시 해당 목적에서 다시 검토.",
+        "relation": "이 객체의 현재 관측 목적에서는 독립 요구 속성이 아님. 재사용 시 해당 목적에서 다시 검토.",
+        "color": "이 객체의 현재 관측 목적에서는 독립 요구 속성이 아님. 재사용 시 해당 목적에서 다시 검토.",
+        "shape": "이 객체의 현재 관측 목적에서는 독립 요구 속성이 아님. 재사용 시 해당 목적에서 다시 검토.",
+        "size": "이 객체의 현재 관측 목적에서는 독립 요구 속성이 아님. 재사용 시 해당 목적에서 다시 검토.",
+        "text": "이 객체의 현재 관측 목적에서는 독립 요구 속성이 아님. 재사용 시 해당 목적에서 다시 검토."
+      },
+      "identity": {
+        "status": "reviewed",
+        "label": "마감되는 넓은 상부 판",
+        "candidates": [],
+        "claim_ids": [
+          "c048"
+        ]
+      }
+    }
+  ],
+  "observation_rows": [
+    {
+      "id": "background-identity",
+      "object_id": "background",
+      "property": "identity",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f00"
+      ],
+      "claim_ids": [
+        "c001"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "background-color",
+      "object_id": "background",
+      "property": "color",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "f00",
+        "f08",
+        "p098",
+        "p099",
+        "p100",
+        "p101",
+        "p102",
+        "p103",
+        "p104",
+        "p105",
+        "p106",
+        "p107",
+        "x017",
+        "x037",
+        "x052",
+        "b122"
+      ],
+      "claim_ids": [
+        "c002",
+        "c033",
+        "c036"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "background-internal_state",
+      "object_id": "background",
+      "property": "internal_state",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "x017",
+        "x027",
+        "x037",
+        "x047",
+        "x057",
+        "x077",
+        "x097",
+        "b120",
+        "b121",
+        "b122"
+      ],
+      "claim_ids": [
+        "c035"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "header-identity",
+      "object_id": "header",
+      "property": "identity",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f08"
+      ],
+      "claim_ids": [
+        "c003"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "header-text",
+      "object_id": "header",
+      "property": "text",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f08"
+      ],
+      "claim_ids": [
+        "c004"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "girder-identity",
+      "object_id": "girder",
+      "property": "identity",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f08"
+      ],
+      "claim_ids": [
+        "c005"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "girder-position",
+      "object_id": "girder",
+      "property": "position",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "f00",
+        "f02",
+        "f03",
+        "f10",
+        "f11",
+        "x063",
+        "x072",
+        "x081",
+        "x089",
+        "x064",
+        "x065",
+        "x066",
+        "x067",
+        "x068",
+        "x070",
+        "x071"
+      ],
+      "claim_ids": [
+        "c006",
+        "c038",
+        "c039"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "girder-size",
+      "object_id": "girder",
+      "property": "size",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "f00",
+        "f02",
+        "f03"
+      ],
+      "claim_ids": [
+        "c007"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "deck-identity",
+      "object_id": "deck",
+      "property": "identity",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f02"
+      ],
+      "claim_ids": [
+        "c008"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "deck-position",
+      "object_id": "deck",
+      "property": "position",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "f01",
+        "f02",
+        "f03",
+        "f04",
+        "b128",
+        "b124",
+        "b129",
+        "b120"
+      ],
+      "claim_ids": [
+        "c009",
+        "c044"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "deck-internal_state",
+      "object_id": "deck",
+      "property": "internal_state",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "f00",
+        "f02",
+        "f04"
+      ],
+      "claim_ids": [
+        "c010"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "front-arcs-identity",
+      "object_id": "front-arcs",
+      "property": "identity",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f08"
+      ],
+      "claim_ids": [
+        "c011"
+      ],
+      "unknown_ids": [
+        "u02"
+      ],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "front-arcs-visibility",
+      "object_id": "front-arcs",
+      "property": "visibility",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "unresolved",
+      "change": "changed",
+      "evidence_ids": [
+        "f05",
+        "f06",
+        "f07",
+        "f08",
+        "f15",
+        "x042",
+        "x047",
+        "x052",
+        "x057",
+        "x087",
+        "x092",
+        "x097"
+      ],
+      "claim_ids": [
+        "c012",
+        "c037"
+      ],
+      "unknown_ids": [
+        "u02"
+      ],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "front-arcs-shape",
+      "object_id": "front-arcs",
+      "property": "shape",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f08"
+      ],
+      "claim_ids": [
+        "c013"
+      ],
+      "unknown_ids": [
+        "u02"
+      ],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "rear-arcs-identity",
+      "object_id": "rear-arcs",
+      "property": "identity",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f08"
+      ],
+      "claim_ids": [
+        "c014"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "rear-arcs-visibility",
+      "object_id": "rear-arcs",
+      "property": "visibility",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "f08",
+        "f15",
+        "p108",
+        "p109",
+        "p110",
+        "p111",
+        "p112",
+        "p113",
+        "p114",
+        "p115",
+        "p116",
+        "p117",
+        "p118",
+        "p119"
+      ],
+      "claim_ids": [
+        "c015",
+        "c034"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "section-identity",
+      "object_id": "section",
+      "property": "identity",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f08"
+      ],
+      "claim_ids": [
+        "c016"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "section-visibility",
+      "object_id": "section",
+      "property": "visibility",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "f03",
+        "f04",
+        "f05",
+        "f08"
+      ],
+      "claim_ids": [
+        "c017"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "section-position",
+      "object_id": "section",
+      "property": "position",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "f08",
+        "f11",
+        "f13",
+        "x097",
+        "b120",
+        "b121",
+        "b122"
+      ],
+      "claim_ids": [
+        "c018",
+        "c052"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "section-arcs-identity",
+      "object_id": "section-arcs",
+      "property": "identity",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f08"
+      ],
+      "claim_ids": [
+        "c019"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "section-arcs-visibility",
+      "object_id": "section-arcs",
+      "property": "visibility",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "f05",
+        "f06",
+        "f07",
+        "f08",
+        "x087",
+        "x097",
+        "b124",
+        "b121",
+        "b122"
+      ],
+      "claim_ids": [
+        "c020",
+        "c051"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "section-arcs-shape",
+      "object_id": "section-arcs",
+      "property": "shape",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f08"
+      ],
+      "claim_ids": [
+        "c021"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "right-label-identity",
+      "object_id": "right-label",
+      "property": "identity",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f08"
+      ],
+      "claim_ids": [
+        "c022"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "right-label-text",
+      "object_id": "right-label",
+      "property": "text",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f08"
+      ],
+      "claim_ids": [
+        "c023"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "right-label-visibility",
+      "object_id": "right-label",
+      "property": "visibility",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "x029",
+        "x030",
+        "x036",
+        "x039",
+        "x043",
+        "x044",
+        "b124",
+        "b121",
+        "b122"
+      ],
+      "claim_ids": [
+        "c024",
+        "c055"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "right-label-size",
+      "object_id": "right-label",
+      "property": "size",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "f03",
+        "f04",
+        "f05",
+        "f06"
+      ],
+      "claim_ids": [
+        "c025"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "left-label-identity",
+      "object_id": "left-label",
+      "property": "identity",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f15"
+      ],
+      "claim_ids": [
+        "c026"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "left-label-visibility",
+      "object_id": "left-label",
+      "property": "visibility",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "f14",
+        "f15",
+        "f16",
+        "x087",
+        "x089",
+        "x091",
+        "x093",
+        "x095",
+        "x097",
+        "b125",
+        "b124",
+        "b122"
+      ],
+      "claim_ids": [
+        "c027",
+        "c041"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "left-label-text",
+      "object_id": "left-label",
+      "property": "text",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f15",
+        "f16",
+        "x097",
+        "b123",
+        "b124"
+      ],
+      "claim_ids": [
+        "c028",
+        "c040"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "left-label-size",
+      "object_id": "left-label",
+      "property": "size",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "x087",
+        "x089",
+        "x091",
+        "x093",
+        "x095",
+        "x097",
+        "b126",
+        "b127",
+        "b123",
+        "b125",
+        "b124",
+        "b130"
+      ],
+      "claim_ids": [
+        "c042",
+        "c043",
+        "c056"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "caption-identity",
+      "object_id": "caption",
+      "property": "identity",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "f00"
+      ],
+      "claim_ids": [
+        "c029"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "caption-text",
+      "object_id": "caption",
+      "property": "text",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "f00",
+        "f02",
+        "f05",
+        "f08",
+        "b128",
+        "b124",
+        "b122"
+      ],
+      "claim_ids": [
+        "c030",
+        "c031",
+        "c053"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "caption-visibility",
+      "object_id": "caption",
+      "property": "visibility",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "f02",
+        "f03",
+        "f15",
+        "f16",
+        "b128",
+        "b124",
+        "b122"
+      ],
+      "claim_ids": [
+        "c032",
+        "c054"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "edge-highlight-identity",
+      "object_id": "edge-highlight",
+      "property": "identity",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "b130"
+      ],
+      "claim_ids": [
+        "c045"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "edge-highlight-visibility",
+      "object_id": "edge-highlight",
+      "property": "visibility",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "b120",
+        "b131",
+        "b130",
+        "b121",
+        "b132",
+        "b133"
+      ],
+      "claim_ids": [
+        "c046"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "edge-highlight-color",
+      "object_id": "edge-highlight",
+      "property": "color",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "b130",
+        "b121"
+      ],
+      "claim_ids": [
+        "c047"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "top-slab-identity",
+      "object_id": "top-slab",
+      "property": "identity",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "unchanged",
+      "evidence_ids": [
+        "b134",
+        "b122",
+        "b135"
+      ],
+      "claim_ids": [
+        "c048"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "top-slab-position",
+      "object_id": "top-slab",
+      "property": "position",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "b134",
+        "b122",
+        "b135"
+      ],
+      "claim_ids": [
+        "c049"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    },
+    {
+      "id": "top-slab-visibility",
+      "object_id": "top-slab",
+      "property": "visibility",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "review_state": "reviewed",
+      "change": "changed",
+      "evidence_ids": [
+        "b122",
+        "b135",
+        "b136"
+      ],
+      "claim_ids": [
+        "c050"
+      ],
+      "unknown_ids": [],
+      "reason": "이 사례의 전후 표본과 속성별 주장에 근거. identity는 대상 식별이며 매 순간의 가시성·연속 정지를 뜻하지 않음. 기각 주장은 이력이며 현재 결론으로 쓰지 않음."
+    }
+  ],
+  "claims": [
+    {
+      "id": "c001",
+      "object_id": "background",
+      "property": "identity",
+      "facet": "identity",
+      "dimension": "visible-form",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "구간 안에서 관측된 형태: 어두운 남청색 바탕, 좌측 점·망사와 하단 곡선·작은 광점",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f00"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c002",
+      "object_id": "background",
+      "property": "color",
+      "facet": "value",
+      "dimension": "palette",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "두 영역에 남청색·청색 빛과 낮은 대비의 선·점이 이어지고 흰 구조물·청록 강조가 대비된다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f00",
+        "f08"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c003",
+      "object_id": "header",
+      "property": "identity",
+      "facet": "identity",
+      "dimension": "visible-form",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "구간 안에서 관측된 형태: 흰 로고 칸과 파란 사선 리본·흰 한글",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f08"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c004",
+      "object_id": "header",
+      "property": "text",
+      "facet": "value",
+      "dimension": "section",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "3. 노듈러거더 핵심기술",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f08"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c005",
+      "object_id": "girder",
+      "property": "identity",
+      "facet": "identity",
+      "dimension": "visible-form",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "구간 안에서 관측된 형태: 구멍과 철근이 있는 회색 장대 구조물, 앞쪽 단면과 뒤로 이어지는 반복 부재",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f08"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c006",
+      "object_id": "girder",
+      "property": "position",
+      "facet": "direction",
+      "dimension": "screen-view",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "166초에는 구조물이 왼쪽 아래부터 위쪽으로 크게 뻗고 167~167.5초 앞 단면이 더 드러나는 대각 구도로 정리된다. 171~171.5초에는 구조물의 기울어진 시점도 변한다. 카메라와 물체 변환의 기여는 분리 확정하지 않는다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f00",
+        "f02",
+        "f03",
+        "f10",
+        "f11"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c007",
+      "object_id": "girder",
+      "property": "size",
+      "facet": "direction",
+      "dimension": "projected-extent",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "166초 화면 경계를 벗어나는 구조물에서 167.5초 전면과 길이 방향이 함께 보이는 범위로 바뀐다. 실제 모델 스케일 변경으로 단정하지 않는다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f00",
+        "f02",
+        "f03"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c008",
+      "object_id": "deck",
+      "property": "identity",
+      "facet": "identity",
+      "dimension": "visible-form",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "구간 안에서 관측된 형태: 검은 고리 모양 철근을 가진 흰 판들이 길이 방향으로 반복",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f02"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c009",
+      "object_id": "deck",
+      "property": "position",
+      "facet": "direction",
+      "dimension": "assembly",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "167초 일부 흰 판이 구조물 위쪽에 분리되어 떠 있는 단계가 보이고 167.5~168초에는 긴 구조물 위를 더 연속으로 덮는 상태가 된다. 정확 이동 곡선·각 판 순서는 미확정.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f01",
+        "f02",
+        "f03",
+        "f04"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c010",
+      "object_id": "deck",
+      "property": "internal_state",
+      "facet": "value",
+      "dimension": "open-versus-covered",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "166초 위쪽 안쪽이 열린 거더와 뒤 표본의 흰 판이 덮인 거더를 구분한다. 화면 전체 축소만으로 내부 변화 설명을 대체하지 않는다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f00",
+        "f02",
+        "f04"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c011",
+      "object_id": "front-arcs",
+      "property": "identity",
+      "facet": "identity",
+      "dimension": "visible-form",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "구간 안에서 관측된 형태: 앞 단면 좌우에 위·아래 화살촉을 가진 굵은 청록 곡선",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f08"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c012",
+      "object_id": "front-arcs",
+      "property": "visibility",
+      "facet": "direction",
+      "dimension": "draw-and-fade",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "169초 희미한 곡선이 보이고 169.5~170초 더 선명해진다. 173.5초에는 같은 앞 단면의 화살표가 약해져 있다. 정확 점멸 주기는 미확정.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f05",
+        "f06",
+        "f07",
+        "f08",
+        "f15"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c013",
+      "object_id": "front-arcs",
+      "property": "shape",
+      "facet": "value",
+      "dimension": "paired-arcs",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "앞 단면 좌우를 감싸는 두 곡선에 양끝 화살촉이 있다. 회전 의미를 암시하지만 실제 힘이나 물체 운동의 물리량은 판정하지 않는다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f08"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c014",
+      "object_id": "rear-arcs",
+      "property": "identity",
+      "facet": "identity",
+      "dimension": "visible-form",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "구간 안에서 관측된 형태: 긴 구조물 뒤쪽 끝 부근에도 작게 보이는 청록 곡선 한 쌍",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f08"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c015",
+      "object_id": "rear-arcs",
+      "property": "visibility",
+      "facet": "presence",
+      "dimension": "far-end-effect",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "170초 원본 좌측 영역에는 앞 단면뿐 아니라 먼 뒤쪽 끝에도 작은 청록 곡선·화살표가 보인다. 앞쪽 효과와 별도 대상으로 연결한다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f08",
+        "f15"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c016",
+      "object_id": "section",
+      "property": "identity",
+      "facet": "identity",
+      "dimension": "visible-form",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "구간 안에서 관측된 형태: 중앙 검은 구멍과 둥근 홈, 위로 넓은 회색 단면",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f08"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c017",
+      "object_id": "section",
+      "property": "visibility",
+      "facet": "order",
+      "dimension": "enter",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "167.5초에는 오른쪽 도해가 아직 뚜렷하지 않고 168초 오른쪽 중앙 아래에 작은 단면이 보인다. 168.5초 이후 단면과 상단 설명이 함께 자리 잡는다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f03",
+        "f04",
+        "f05",
+        "f08"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c018",
+      "object_id": "section",
+      "property": "position",
+      "facet": "direction",
+      "dimension": "tilt",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "170초에 비해 171.5초 단면 상단이 오른쪽 위로 기울어져 보이고 172.5초 다시 더 수평에 가까워 보인다. 반복 여부·정확 각도는 미측정.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f08",
+        "f11",
+        "f13"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c019",
+      "object_id": "section-arcs",
+      "property": "identity",
+      "facet": "identity",
+      "dimension": "visible-form",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "구간 안에서 관측된 형태: 오른쪽 단면 좌우를 감싸는 굵은 곡선과 양끝 화살촉",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f08"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c020",
+      "object_id": "section-arcs",
+      "property": "visibility",
+      "facet": "direction",
+      "dimension": "enter",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "168.5초에는 오른쪽 단면 주변 곡선이 뚜렷하지 않고 169초 일부가 보이며 169.5~170초 더 선명하다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f05",
+        "f06",
+        "f07",
+        "f08"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c021",
+      "object_id": "section-arcs",
+      "property": "shape",
+      "facet": "value",
+      "dimension": "paired-arcs",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "오른쪽 단면의 좌우에 각각 양끝 화살촉이 달린 청록 호가 있어 좌측 큰 구조물의 강조와 대응한다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f08"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c022",
+      "object_id": "right-label",
+      "property": "identity",
+      "facet": "identity",
+      "dimension": "visible-form",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "구간 안에서 관측된 형태: 짙은 반투명 가로 띠, 양끝 청록 세로선, 흰 한글",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f08"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c023",
+      "object_id": "right-label",
+      "property": "text",
+      "facet": "value",
+      "dimension": "headline",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "횡방향보강으로 단면 안정성 향상",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f08"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c024",
+      "object_id": "right-label",
+      "property": "visibility",
+      "facet": "order",
+      "dimension": "reveal",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "167.2초 표본에서는 설명 세로선이 뚜렷하지 않고 167.3초 옅은 단일 세로선이 보인다. 167.9초 가까운 두 선, 168.2초 부분 글자, 168.6~168.7초 문구가 전체로 읽히는 상태가 된다. 두 선 사이 가로 범위 전개와 글자의 가시성은 서로 구분한다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "x029",
+        "x030",
+        "x036",
+        "x039",
+        "x043",
+        "x044"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c025",
+      "object_id": "right-label",
+      "property": "size",
+      "facet": "direction",
+      "dimension": "width",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "167.5~169초 양끝 청록선 사이의 가로로 보이는 범위가 커진다. 실제 폭·마스크·다른 리빌 구현 중 무엇인지는 미확정.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f03",
+        "f04",
+        "f05",
+        "f06"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c026",
+      "object_id": "left-label",
+      "property": "identity",
+      "facet": "identity",
+      "dimension": "visible-form",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "구간 안에서 관측된 형태: 왼쪽 모델 위쪽에 새로 생기는 청록 양끝선·어두운 띠와 문구",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f15"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c027",
+      "object_id": "left-label",
+      "property": "visibility",
+      "facet": "direction",
+      "dimension": "late-enter",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "173초 작은 세로선 뒤 173.5초 부분 글자가 있는 띠가 나타난다. 174초 경계 표본은 더 읽히는 문맥이며 구간 밖 완성 과정을 관찰했다고 쓰지 않는다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f14",
+        "f15",
+        "f16"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c028",
+      "object_id": "left-label",
+      "property": "text",
+      "facet": "value",
+      "dimension": "boundary-copy",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "174초 경계 문맥에서 캔틸레버 바닥판 시공시 동바리 역할 수행이라는 문구가 읽힌다. 분석 창 안 173.5초에는 아직 부분 판독 상태다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f15",
+        "f16"
+      ],
+      "content_review": "rejected"
+    },
+    {
+      "id": "c029",
+      "object_id": "caption",
+      "property": "identity",
+      "facet": "identity",
+      "dimension": "visible-form",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "구간 안에서 관측된 형태: 초광폭 중앙 아래의 짙은 청색 바탕과 흰 한글",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f00"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c030",
+      "object_id": "caption",
+      "property": "text",
+      "facet": "value",
+      "dimension": "copy-before",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "166~167초: 하부 바닥판을 타설하는 습식연결 방식을 가능하게 하는 구성요소이며,",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f00",
+        "f02"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c031",
+      "object_id": "caption",
+      "property": "text",
+      "facet": "value",
+      "dimension": "copy-middle",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "167.5초 이후: 단면의 안정성을 높이는 횡방향 보강격벽이자,",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f05",
+        "f08"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c032",
+      "object_id": "caption",
+      "property": "visibility",
+      "facet": "order",
+      "dimension": "copy-change",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "167~167.5초 사이 자막 내용이 바뀐다. 174초 끝 문맥에는 다음 문장으로 교체되므로 전체 영상의 최종 자막이라고 쓰지 않는다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f02",
+        "f03",
+        "f15",
+        "f16"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c033",
+      "object_id": "background",
+      "property": "color",
+      "facet": "value",
+      "dimension": "local-brightness-evolution",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "확인한 좌측 점·망사 ROI와 오른쪽 푸른 배경 ROI에서는 166→168→170초에 더 밝아지고 170/172/174초 표본은 유사한 밝기다. 같은 무늬의 위치는 대체로 유지된다. 전체 배경의 미세 이동·밝기 곡선·실제 opacity 구현은 이 표본으로 확정하지 않는다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "p098",
+        "p099",
+        "p100",
+        "p101",
+        "p102",
+        "p103",
+        "p104",
+        "p105",
+        "p106",
+        "p107"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c034",
+      "object_id": "rear-arcs",
+      "property": "visibility",
+      "facet": "value",
+      "dimension": "sampled-onset-and-exit",
+      "time_seconds": [
+        166,
+        174
+      ],
+      "statement": "먼 끝 ROI는 168.5초에 곡선이 뚜렷하지 않고 169초에 희미한 일부, 169.5초에 더 분명한 곡선, 170~173초 표본에 청록 쌍 곡선이 보인다. 173.5초에는 약해지고 174초 문맥 표본에는 보이지 않는다. 정확 출현·소실 시각은 인접 표본 사이이며 전체 주기와 가감속은 미확정이다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "p108",
+        "p109",
+        "p110",
+        "p111",
+        "p112",
+        "p113",
+        "p114",
+        "p115",
+        "p116",
+        "p117",
+        "p118",
+        "p119"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c035",
+      "object_id": "background",
+      "property": "internal_state",
+      "facet": "value",
+      "dimension": "sampled-background-geometry",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "statement": "좌측 점·망, 오른쪽 여백, 오른쪽 하단 곡선/빛 교차점의 원본 ROI를 대조했다. 166~180초의 선택 표본에서 무늬 위치와 교차점은 유지되어 보이고, 도입의 밝아짐 이후 독립적인 빛 이동·흐름은 확인되지 않는다. 전체 픽셀의 연속 무변화나 원본 레이어 독립성을 뜻하지 않는다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "x017",
+        "x027",
+        "x037",
+        "x047",
+        "x057",
+        "x077",
+        "x097",
+        "b120",
+        "b121",
+        "b122"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c036",
+      "object_id": "background",
+      "property": "color",
+      "facet": "value",
+      "dimension": "rgb-signal",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "statement": "좌측 고정 ROI(0,300~500,1400)의 평균 RGB는 166초 약(9.2,16.4,27.3), 168초(14.3,23.2,37.1), 169.5초(15.5,25.0,39.6). 이후 180초까지 큰 반복 밝기 파형은 보이지 않는다. 8bit 디코딩 RGB의 영역 평균이며 레이어 opacity 값이 아니다.",
+      "basis_kind": "calculated",
+      "evidence_ids": [
+        "x017",
+        "x037",
+        "x052",
+        "b122"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c037",
+      "object_id": "front-arcs",
+      "property": "visibility",
+      "facet": "value",
+      "dimension": "one-envelope-not-cycle",
+      "time_seconds": [
+        168.5,
+        174
+      ],
+      "statement": "전면 화살표는 168.5초에 뚜렷하지 않고 169초 옅은 상태, 169.5~170초 선명한 상태로 들어가 173초까지 유지된 뒤 173.5초 약화, 174초에는 보이지 않는다. 이 범위에서 확인한 것은 한 번의 등장·유지·소실이며 주기적 점멸을 확인한 것이 아니다. 먼 끝도 비슷한 시간 범위에 생겼다 사라지지만 오른쪽 단면의 곡선은 이후에도 남는다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "x042",
+        "x047",
+        "x052",
+        "x057",
+        "x087",
+        "x092",
+        "x097"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c038",
+      "object_id": "girder",
+      "property": "position",
+      "facet": "value",
+      "dimension": "projected-aperture-angle",
+      "time_seconds": [
+        169.5,
+        173.5
+      ],
+      "statement": "앞 단면 검은 구멍 상단의 화면 투영 경사를 1/5 크기 ROI에서 추적했다. 약170.6초 +17.8도, 171.5초 -6.3도, 172.4초 +17.9도로 방향이 왕복하고 173.2초 약+6.1도로 돌아온다. 두 양의 극값 간 약1.8초(0.1초 표본 기반 대략±0.2초). 실제 3D 회전각·반복 루프 주기가 아니며 패치의 선형 적합 오차 약0.25px은 전체 측정 오차를 뜻하지 않는다.",
+      "basis_kind": "calculated",
+      "evidence_ids": [
+        "x063",
+        "x072",
+        "x081",
+        "x089"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c039",
+      "object_id": "girder",
+      "property": "position",
+      "facet": "easing",
+      "dimension": "projected-sway-easing",
+      "time_seconds": [
+        170.6,
+        171.5
+      ],
+      "statement": "투영 경사 170.6→170.7→170.8→170.9→171.0→171.1초는 +17.82→+16.87→+14.00→+10.40→+6.17→+1.71도, 이후171.3→171.4→171.5초는 -5.04→-6.20→-6.34도로 극점 부근 변화량이 작아진다. 같은 투영 방향의 반주기에서 시작은 느리고 중간은 빠르며 끝이 느려지는 성격이다. 각도 자체는 화면상 관측량이고 AE 커브 복원 아님.",
+      "basis_kind": "calculated",
+      "evidence_ids": [
+        "x063",
+        "x064",
+        "x065",
+        "x066",
+        "x067",
+        "x068",
+        "x070",
+        "x071",
+        "x072"
+      ],
+      "content_review": "supported",
+      "easing": {
+        "classification": "in_out",
+        "basis_evidence_ids": [
+          "x063",
+          "x064",
+          "x065",
+          "x066",
+          "x067",
+          "x068",
+          "x070",
+          "x071",
+          "x072"
+        ],
+        "method": "투영 경사 170.6→170.7→170.8→170.9→171.0→171.1초는 +17.82→+16.87→+14.00→+10.40→+6.17→+1.71도, 이후171.3→171.4→171.5초는 -5.04→-6.20→-6.34도로 극점 부근 변화량이 작아진다. 같은 투영 방향의 반주기에서 시작은 느리고 중간은 빠르며 끝이 느려지는 성격이다. 각도 자체는 화면상 관측량이고 AE 커브 복원 아님.",
+        "limitation": "영상에서 보이는 속성의 변화율. 원본 AE 보간 함수·키프레임·Influence·물리량 복원 아님."
+      }
+    },
+    {
+      "id": "c040",
+      "object_id": "left-label",
+      "property": "text",
+      "facet": "value",
+      "dimension": "verified-copy",
+      "time_seconds": [
+        173,
+        181
+      ],
+      "statement": "완성 문구의 화면 표기는 “켄틸레버 바닥판 시공시 동바리 역할 수행”이다. 기술 용어의 통상 표기로 고치지 않고 원본 표기를 기록한다. 이전 c028의 “캔틸레버” 판독은 기각한다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "x097",
+        "b123",
+        "b124"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c041",
+      "object_id": "left-label",
+      "property": "visibility",
+      "facet": "value",
+      "dimension": "complete-reveal",
+      "time_seconds": [
+        173,
+        181
+      ],
+      "statement": "173초 중앙 세로선, 173.2초 가까운 두 선, 173.4초 넓어진 빈 띠, 173.6~173.8초 부분 문구, 174초 전체 문구가 읽히는 상태, 174.8~175초 선 간격 정착으로 이어진다. 글자가 읽히는 시점과 외곽 폭이 정착하는 시점은 다르다. 180초에도 문구는 남는다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "x087",
+        "x089",
+        "x091",
+        "x093",
+        "x095",
+        "x097",
+        "b125",
+        "b124",
+        "b122"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c042",
+      "object_id": "left-label",
+      "property": "size",
+      "facet": "easing",
+      "dimension": "bar-separation-easing",
+      "time_seconds": [
+        173,
+        175
+      ],
+      "statement": "청록 세로선 간격은 173.0/173.2/173.4/173.6/173.8/174.0/174.2/174.4/174.6/174.8초에 약21/53/242/733/1087/1272/1377/1435/1465/1473px이다. 같은 0.2초에서 증가량은32→189→491→354→185→105→58→30→8px이므로 초반 가속·후반 감속 성격을 확인한다. 174.8~175초에는 간격이 약1473px로 유지된다. 색 임계값 기반 외곽 추정 오차 약±3px, AE 폭/마스크 원값 아님.",
+      "basis_kind": "calculated",
+      "evidence_ids": [
+        "x087",
+        "x089",
+        "x091",
+        "x093",
+        "x095",
+        "x097",
+        "b126",
+        "b127",
+        "b123",
+        "b125",
+        "b124"
+      ],
+      "content_review": "supported",
+      "easing": {
+        "classification": "in_out",
+        "basis_evidence_ids": [
+          "x087",
+          "x089",
+          "x091",
+          "x093",
+          "x095",
+          "x097",
+          "b126",
+          "b127",
+          "b123",
+          "b125",
+          "b124"
+        ],
+        "method": "청록 세로선 간격은 173.0/173.2/173.4/173.6/173.8/174.0/174.2/174.4/174.6/174.8초에 약21/53/242/733/1087/1272/1377/1435/1465/1473px이다. 같은 0.2초에서 증가량은32→189→491→354→185→105→58→30→8px이므로 초반 가속·후반 감속 성격을 확인한다. 174.8~175초에는 간격이 약1473px로 유지된다. 색 임계값 기반 외곽 추정 오차 약±3px, AE 폭/마스크 원값 아님.",
+        "limitation": "영상에서 보이는 속성의 변화율. 원본 AE 보간 함수·키프레임·Influence·물리량 복원 아님."
+      }
+    },
+    {
+      "id": "c043",
+      "object_id": "left-label",
+      "property": "size",
+      "facet": "value",
+      "dimension": "settled-bar-geometry",
+      "time_seconds": [
+        173,
+        181
+      ],
+      "statement": "175초 청록선의 좌우 바깥 추정 x는1334/2807px, 간격 약1473px이다. native ROI(1000,230~3300,380)의 청록 세로열>35픽셀 검출. 이는 선 간격이며 텍스트 레이어 폭과 다르다.",
+      "basis_kind": "calculated",
+      "evidence_ids": [
+        "b124"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c044",
+      "object_id": "deck",
+      "property": "position",
+      "facet": "value",
+      "dimension": "second-assembly",
+      "time_seconds": [
+        174,
+        176.5
+      ],
+      "statement": "174.5~175.5초에는 추가 흰 판들이 위쪽에 떨어져 보이다가 아래로 내려오며 연결되고 176초에는 더 넓은 연속 상부 판으로 정리된다. 앞서167초 부근의 조립과 같은 시각 사건으로 합치지 않는다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "b128",
+        "b124",
+        "b129",
+        "b120"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c045",
+      "object_id": "edge-highlight",
+      "property": "identity",
+      "facet": "identity",
+      "dimension": "visible-form",
+      "time_seconds": [
+        176,
+        179
+      ],
+      "statement": "거더 가장자리와 돌출 날개를 따라 별도로 생기는 청록 테두리·빛 면. 전면의 원호 화살표와 구분한다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "b130"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c046",
+      "object_id": "edge-highlight",
+      "property": "visibility",
+      "facet": "value",
+      "dimension": "envelope",
+      "time_seconds": [
+        176,
+        179
+      ],
+      "statement": "176초에는 강한 청록 외곽이 뚜렷하지 않고176.5~178초에 보이며178.5초 약해진 뒤179초에는 강한 강조가 보이지 않는다. 직전 구조 조립의 완료와 겹쳐 등장한다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "b120",
+        "b131",
+        "b130",
+        "b121",
+        "b132",
+        "b133"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c047",
+      "object_id": "edge-highlight",
+      "property": "color",
+      "facet": "value",
+      "dimension": "appearance",
+      "time_seconds": [
+        176,
+        179
+      ],
+      "statement": "흰/회색 원래 구조 위에 청록·밝은 푸른 외곽과 넓은 반투명 밝은 면이 더해진다. 발광/색 혼합 효과의 외관이며 특정 Glow 효과나 알파 값은 미확정이다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "b130",
+        "b121"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c048",
+      "object_id": "top-slab",
+      "property": "identity",
+      "facet": "identity",
+      "dimension": "visible-form",
+      "time_seconds": [
+        179,
+        181
+      ],
+      "statement": "179.5초 이후 상부에 새로 들어오는 넓고 연속적인 밝은 판. 기존 분할 철근 판과 구분한다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "b134",
+        "b122",
+        "b135"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c049",
+      "object_id": "top-slab",
+      "property": "position",
+      "facet": "value",
+      "dimension": "assembly",
+      "time_seconds": [
+        179,
+        181
+      ],
+      "statement": "179.5초 위쪽의 넓은 판이 보이고180초 겹치며 내려온 상태,180.5초 상부를 연속 면으로 덮은 상태다. 실제 시공 순서의 기술적 정확성은 검증하지 않았다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "b134",
+        "b122",
+        "b135"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c050",
+      "object_id": "top-slab",
+      "property": "visibility",
+      "facet": "value",
+      "dimension": "occlusion",
+      "time_seconds": [
+        179,
+        181
+      ],
+      "statement": "180~180.5초 마감 판이 상부의 철근·분할선을 가린다. 181초 문맥 표본에도 넓은 상부 면이 보인다. 기존 판이 없어졌다는 사실로 바꾸지 않는다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "b122",
+        "b135",
+        "b136"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c051",
+      "object_id": "section-arcs",
+      "property": "visibility",
+      "facet": "value",
+      "dimension": "longer-hold",
+      "time_seconds": [
+        173,
+        181
+      ],
+      "statement": "오른쪽 단면의 곡선은173~174초 약해진 뒤174~180초에도 녹색 원호로 남아 있다. 좌측 전면·먼 끝 곡선의174초 소실과 같은 퇴장으로 묶지 않는다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "x087",
+        "x097",
+        "b124",
+        "b121",
+        "b122"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c052",
+      "object_id": "section",
+      "property": "position",
+      "facet": "value",
+      "dimension": "settled-after-tilt",
+      "time_seconds": [
+        174,
+        181
+      ],
+      "statement": "단면은 앞 구간의 기울기 변화 이후174/176/178/180초에 유사한 정면 구도로 유지된다. 원본 회전각/중심축은 복원하지 않았다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "x097",
+        "b120",
+        "b121",
+        "b122"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c053",
+      "object_id": "caption",
+      "property": "text",
+      "facet": "value",
+      "dimension": "third-caption",
+      "time_seconds": [
+        174,
+        181
+      ],
+      "statement": "174~180초의 다음 자막은 “켄틸레버 바닥판 시공 시 동바리 역할도 수행하는 다목적 부재입니다.”로 읽힌다. 위쪽 설명 띠의 문구·띄어쓰기와 별도로 보존한다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "b128",
+        "b124",
+        "b122"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c054",
+      "object_id": "caption",
+      "property": "visibility",
+      "facet": "value",
+      "dimension": "late-caption-hold",
+      "time_seconds": [
+        174,
+        181
+      ],
+      "statement": "새 자막은174.5/175/180초에 유지된다. 181.2초 이후의 다른 장면 겹침과182초의 다음 자막은 분석 창 밖 문맥이다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "b128",
+        "b124",
+        "b122"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c055",
+      "object_id": "right-label",
+      "property": "visibility",
+      "facet": "value",
+      "dimension": "late-hold",
+      "time_seconds": [
+        174,
+        181
+      ],
+      "statement": "오른쪽 설명과 양끝 세로선은175/178/180초에도 유지된다. 새 왼쪽 설명이 생겨도 기존 오른쪽 설명을 대체하지 않는다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "b124",
+        "b121",
+        "b122"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c056",
+      "object_id": "left-label",
+      "property": "size",
+      "facet": "value",
+      "dimension": "settled-label-width-comparison",
+      "time_seconds": [
+        177,
+        177.001
+      ],
+      "statement": "177초 양 설명 띠의 가시 폭은 약1474/1473px로 수동 경계 오차3~4px 안에서 유사하다.문구 길이·글자 좌우 여백은 다르다. 이전의 길이/폭 차이라는 요약은 생성중/문구 길이와 정착 띠 폭을 구분해 읽어야 한다.",
+      "basis_kind": "calculated",
+      "evidence_ids": [
+        "b130"
+      ],
+      "content_review": "supported"
+    }
+  ],
+  "unknowns": [
+    {
+      "id": "u01",
+      "object_id": "background",
+      "question": "배경의 작은 점·선·빛에 독립적인 변화가 있는가?",
+      "state": "resolved",
+      "reason": "세 배경 ROI에서 밝기 변화와 무늬 위치 유사를 추가 확인. 원본 레이어 독립성/정확 속성은 범위 한계로 보존.",
+      "required_basis_kind": "observed",
+      "next_probe": "",
+      "resolution_claim_ids": [
+        "c035"
+      ]
+    },
+    {
+      "id": "u02",
+      "object_id": "front-arcs",
+      "question": "화살표의 정확 주기·가감속과 앞뒤 강조의 동기화는?",
+      "state": "open",
+      "reason": "한 번의 화살표 포락선과 별도의 거더 왕복 기울임, 좌측/오른쪽 강조 유지 차이를 확인했다. 정확한 화살표 강도 곡선·원본 동기화 설정까지는 미확정.",
+      "required_basis_kind": "observed",
+      "next_probe": "필요한 재사용 정밀도에 따라 움직이는 화살표의 자세 변화와 밝기를 분리 추적하거나 원본 프로젝트에서 강도/동기화 설정 확인",
+      "resolution_claim_ids": []
+    },
+    {
+      "id": "u03",
+      "object_id": "left-label",
+      "question": "왼쪽 설명의 완성 이후 전체 상태와 정확 리빌 방식은?",
+      "state": "resolved",
+      "reason": "창 뒤 구간에서 완성 문구·폭 정착·가감속을 별도 확인. c028 문자 판독도 정정.",
+      "required_basis_kind": "observed",
+      "next_probe": "",
+      "resolution_claim_ids": [
+        "c040",
+        "c041"
+      ]
+    },
+    {
+      "id": "u04",
+      "object_id": "rear-arcs",
+      "question": "먼 끝의 작은 화살표는 어느 시각부터 어떤 강약으로 변하는가?",
+      "state": "resolved",
+      "reason": "0.5초 표본의 출현 범위·강약·소실을 추가 관측. 정확 프레임 경계·반복 파형은 u02에 남음.",
+      "required_basis_kind": "observed",
+      "next_probe": "",
+      "resolution_claim_ids": [
+        "c034"
+      ]
+    }
+  ],
+  "discovery": {
+    "forward_evidence_ids": [
+      "f00",
+      "f01",
+      "f02",
+      "f03",
+      "f04",
+      "f05",
+      "f06",
+      "f07",
+      "f08",
+      "f09",
+      "f10",
+      "f11",
+      "f12",
+      "f13",
+      "f14",
+      "f15",
+      "f16"
+    ],
+    "reverse_evidence_ids": [
+      "f16",
+      "f15",
+      "f14",
+      "f13",
+      "f12",
+      "f11",
+      "f10",
+      "f09",
+      "f08",
+      "f07",
+      "f06",
+      "f05",
+      "f04",
+      "f03",
+      "f02",
+      "f01",
+      "f00"
+    ],
+    "unresolved_ids": [
+      "u02"
+    ]
+  },
+  "layout": {
+    "canvas": {
+      "aspect_ratio": "32:9 (7680x2160)",
+      "coordinate_system": "native raster, 전체 좌표와 하위 영역을 구분. 정확 픽셀 미측정"
+    },
+    "states": [
+      {
+        "id": "construction-intro",
+        "time_seconds": [
+          166,
+          168.8
+        ],
+        "evidence_ids": [
+          "f04"
+        ],
+        "composition": "32:9 전체 배경 위에 왼쪽 길이 방향 CG, 오른쪽 단면 CG, 좌상단 로고 리본, 각 도해 위 설명, 중앙 하단 공통 자막을 배치한다. 후반 상부 판 조립·청록 외곽 강조·마감 판을 순차 추가하며 오른쪽 단면과 설명은 유지한다. 이 상태의 시간 구간: [166, 168.8]초. 출현·퇴장·유지의 정확 범위는 개별 주장과 흐름에 따름.",
+        "element_object_ids": [
+          "background",
+          "header",
+          "girder",
+          "deck",
+          "front-arcs",
+          "rear-arcs",
+          "section",
+          "section-arcs",
+          "right-label",
+          "caption"
+        ],
+        "claim_ids": [
+          "c001",
+          "c002",
+          "c003",
+          "c004",
+          "c005",
+          "c006",
+          "c007",
+          "c008",
+          "c009",
+          "c010",
+          "c011",
+          "c012",
+          "c013",
+          "c014",
+          "c015",
+          "c016",
+          "c017",
+          "c018",
+          "c019",
+          "c020",
+          "c021",
+          "c022",
+          "c023",
+          "c024",
+          "c025",
+          "c029",
+          "c030",
+          "c031",
+          "c032",
+          "c033",
+          "c034",
+          "c035",
+          "c036",
+          "c037",
+          "c038",
+          "c039",
+          "c044",
+          "c051",
+          "c052",
+          "c053",
+          "c054",
+          "c055"
+        ],
+        "design_spec": {
+          "hierarchy": {
+            "description": "좌상단 섹션 표제 → 왼쪽 큰 3D 구조와 오른쪽 단면 → 청록 강조·짧은 설명 → 하단 자막. 보강: 32:9. 좌상단 장 제목, 왼쪽 큰 사시도와 오른쪽 작은 정면 단면의 비교 구도. 두 설명 띠는 같은 y의 상단, 공통 자막은 하단 중앙. 제목이 가장 큰 글자라는 전제를 두지 않는다. 수치의 기준 시점은 design_details의 frame별 항목에 한정.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c001",
+              "c002",
+              "c003",
+              "c004",
+              "c005",
+              "c006",
+              "c007",
+              "c008",
+              "c009",
+              "c010",
+              "c011",
+              "c012",
+              "c013",
+              "c014",
+              "c015",
+              "c016",
+              "c017",
+              "c018",
+              "c019",
+              "c020",
+              "c021",
+              "c022",
+              "c023",
+              "c024",
+              "c025",
+              "c029",
+              "c030",
+              "c031",
+              "c032",
+              "c033",
+              "c034",
+              "c035",
+              "c036",
+              "c037",
+              "c038",
+              "c039",
+              "c044",
+              "c051",
+              "c052",
+              "c053",
+              "c054",
+              "c055"
+            ]
+          },
+          "alignment": {
+            "description": "두 주 콘텐츠는 초광폭의 서로 다른 영역에 배치하고 설명은 각각의 도해 위에 맞춘다.  후속 배치/기준점·모션 변화는 새 주장에 별도 연결. 보강: 177초 양 라벨은 y253..370으로 상단선이 맞는다. 오른쪽 단면과 설명 띠는 대략 중심을 공유한다. 왼쪽 모델은 원근 방향 때문에 라벨 중심과 기하 중심이 일치하지 않으며 이를 오류 정렬로 바꾸지 않는다. 수치의 기준 시점은 design_details의 frame별 항목에 한정.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c001",
+              "c002",
+              "c003",
+              "c004",
+              "c005",
+              "c006",
+              "c007",
+              "c008",
+              "c009",
+              "c010",
+              "c011",
+              "c012",
+              "c013",
+              "c014",
+              "c015",
+              "c016",
+              "c017",
+              "c018",
+              "c019",
+              "c020",
+              "c021",
+              "c022",
+              "c023",
+              "c024",
+              "c025",
+              "c029",
+              "c030",
+              "c031",
+              "c032",
+              "c033",
+              "c034",
+              "c035",
+              "c036",
+              "c037",
+              "c038",
+              "c039",
+              "c044",
+              "c051",
+              "c052",
+              "c053",
+              "c054",
+              "c055"
+            ]
+          },
+          "spacing": {
+            "description": "초광폭 왼쪽 큰 대각 구조와 오른쪽 정면 단면 사이 어두운 여백. 설명 띠는 각 모델 위에, 공통 자막은 두 영역 아래 중앙. 175초 왼쪽 설명의 선 간격 약1473 native px. 개별 요소의 실제 3D/AE 앵커값은 아님. 보강: 왼쪽 모델 외접 폭34.1%W, 오른쪽24.0%W, 두 모델 사이 약19.1%W의 투영 여백. 라벨은 각각 약19.2%W. 왼쪽 글자 좌우 여백126/135px, 오른쪽240/244px. 자막판 하단 여백86px. 배경 장식은 이 사이에도 존재한다. 수치의 기준 시점은 design_details의 frame별 항목에 한정.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c001",
+              "c002",
+              "c003",
+              "c004",
+              "c005",
+              "c006",
+              "c007",
+              "c008",
+              "c009",
+              "c010",
+              "c011",
+              "c012",
+              "c013",
+              "c014",
+              "c015",
+              "c016",
+              "c017",
+              "c018",
+              "c019",
+              "c020",
+              "c021",
+              "c022",
+              "c023",
+              "c024",
+              "c025",
+              "c029",
+              "c030",
+              "c031",
+              "c032",
+              "c033",
+              "c034",
+              "c035",
+              "c036",
+              "c037",
+              "c038",
+              "c039",
+              "c044",
+              "c051",
+              "c052",
+              "c053",
+              "c054",
+              "c055"
+            ]
+          },
+          "typography": {
+            "description": "흰 산세리프 한글. 좌상단 리본, 굵은 도해 설명, 하단 자막의 세 위계. 오른쪽 짧은 설명과 왼쪽 긴 설명은 문구 길이는 다르며177초 정착 띠 폭은 측정상 유사하다. 영상 표기는 켄틸레버, 상단의 시공시와 하단의 시공 시를 각각 보존. 서체명·폰트 크기 원값은 미확정. 보강: 흰 산세리프 한글. 가시 글자 높이는 제목58px, 왼쪽75px, 오른쪽76px, 자막92px(177초). 왼쪽 라벨의 “켄틸레버 바닥판”과 “동바리 역할 수행”이 굵게 보이고 “시공시”는 상대적으로 가늘다. 자막 앞 “켄틸레버 바닥판”도 뒤 문장보다 굵게 보인다. 서체명/포인트 크기/weight 수치는 미확정. 표기 켄틸레버·시공시/시공 시를 유지한다. 수치의 기준 시점은 design_details의 frame별 항목에 한정.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c001",
+              "c002",
+              "c003",
+              "c004",
+              "c005",
+              "c006",
+              "c007",
+              "c008",
+              "c009",
+              "c010",
+              "c011",
+              "c012",
+              "c013",
+              "c014",
+              "c015",
+              "c016",
+              "c017",
+              "c018",
+              "c019",
+              "c020",
+              "c021",
+              "c022",
+              "c023",
+              "c024",
+              "c025",
+              "c029",
+              "c030",
+              "c031",
+              "c032",
+              "c033",
+              "c034",
+              "c035",
+              "c036",
+              "c037",
+              "c038",
+              "c039",
+              "c044",
+              "c051",
+              "c052",
+              "c053",
+              "c054",
+              "c055"
+            ]
+          },
+          "color": {
+            "description": "남청·청색 배경, 흰/회색 콘크리트·검은 안쪽, 청록 화살표·세로선. 보강: 남청/청색 기술 배경, 흰·회색 콘크리트/검은 내부 구멍, 흰 글자. 라벨과 모델 면·모서리는 청록, 오른쪽 외곽 화살표는 녹색 계열로 분리한다. 화면 색을 원본 색 토큰으로 확정하지 않는다. 수치의 기준 시점은 design_details의 frame별 항목에 한정.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c001",
+              "c002",
+              "c003",
+              "c004",
+              "c005",
+              "c006",
+              "c007",
+              "c008",
+              "c009",
+              "c010",
+              "c011",
+              "c012",
+              "c013",
+              "c014",
+              "c015",
+              "c016",
+              "c017",
+              "c018",
+              "c019",
+              "c020",
+              "c021",
+              "c022",
+              "c023",
+              "c024",
+              "c025",
+              "c029",
+              "c030",
+              "c031",
+              "c032",
+              "c033",
+              "c034",
+              "c035",
+              "c036",
+              "c037",
+              "c038",
+              "c039",
+              "c044",
+              "c051",
+              "c052",
+              "c053",
+              "c054",
+              "c055"
+            ]
+          },
+          "background": {
+            "description": "남청 기술 배경의 좌측 점·망과 하단 푸른 곡선·작은 교차점. 세 ROI에서 도입 밝아짐과 이후 위치 유사 상태를 확인. 원본 레이어 독립성·정확 속성은 미확정. 보강: 기저의 어두운 남청 그라데이션 위에 좌상단 점열, 좌하단 노드와 망, 하단~우측 곡선 다발과 청색 발광 교차점이 보인다. 라벨 아래로 배경/모델이 비치는 외관이 있으나 opacity 값은 미상. 앞 단계의 밝아짐과177초 배경 상태를 구분한다. 수치의 기준 시점은 design_details의 frame별 항목에 한정.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c001",
+              "c002",
+              "c003",
+              "c004",
+              "c005",
+              "c006",
+              "c007",
+              "c008",
+              "c009",
+              "c010",
+              "c011",
+              "c012",
+              "c013",
+              "c014",
+              "c015",
+              "c016",
+              "c017",
+              "c018",
+              "c019",
+              "c020",
+              "c021",
+              "c022",
+              "c023",
+              "c024",
+              "c025",
+              "c029",
+              "c030",
+              "c031",
+              "c032",
+              "c033",
+              "c034",
+              "c035",
+              "c036",
+              "c037",
+              "c038",
+              "c039",
+              "c044",
+              "c051",
+              "c052",
+              "c053",
+              "c054",
+              "c055"
+            ]
+          },
+          "shapes": {
+            "description": "사선 로고 리본, 구멍/날개/철근을 가진 긴 거더와 오른쪽 단면, 분할 철근 판과 후반 넓은 마감 판. 곡선 화살표와 형상에 밀착한 청록 외곽 강조를 분리한다. 설명은 어두운 띠·청록 양끝선·흰 글자, 자막은 별도 진한 사각 바탕. 보강: 로고 사선 흰 면+외곽선+청색 리본을 한 사각형으로 단순화하지 않는다. 라벨은 직각 띠+양끝 가는 수직선이며 둥근 카드가 아니다. CG는 날개/원형 정착부/중공/철근/판의 겹침을 보존한다. 녹색 화살표는 양쪽 곡선·화살촉, 청록 강조는 형상에 밀착한 모서리/면이다. 자막은 설명 띠와 다른 별도 사각판이다. 수치의 기준 시점은 design_details의 frame별 항목에 한정.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c001",
+              "c002",
+              "c003",
+              "c004",
+              "c005",
+              "c006",
+              "c007",
+              "c008",
+              "c009",
+              "c010",
+              "c011",
+              "c012",
+              "c013",
+              "c014",
+              "c015",
+              "c016",
+              "c017",
+              "c018",
+              "c019",
+              "c020",
+              "c021",
+              "c022",
+              "c023",
+              "c024",
+              "c025",
+              "c029",
+              "c030",
+              "c031",
+              "c032",
+              "c033",
+              "c034",
+              "c035",
+              "c036",
+              "c037",
+              "c038",
+              "c039",
+              "c044",
+              "c051",
+              "c052",
+              "c053",
+              "c054",
+              "c055"
+            ]
+          }
+        },
+        "unresolved_ids": [
+          "u02"
+        ]
+      },
+      {
+        "id": "two-view-emphasis",
+        "time_seconds": [
+          168.8,
+          174
+        ],
+        "evidence_ids": [
+          "f08"
+        ],
+        "composition": "32:9 전체 배경 위에 왼쪽 길이 방향 CG, 오른쪽 단면 CG, 좌상단 로고 리본, 각 도해 위 설명, 중앙 하단 공통 자막을 배치한다. 후반 상부 판 조립·청록 외곽 강조·마감 판을 순차 추가하며 오른쪽 단면과 설명은 유지한다. 이 상태의 시간 구간: [168.8, 174]초. 출현·퇴장·유지의 정확 범위는 개별 주장과 흐름에 따름.",
+        "element_object_ids": [
+          "background",
+          "header",
+          "girder",
+          "deck",
+          "front-arcs",
+          "rear-arcs",
+          "section",
+          "section-arcs",
+          "right-label",
+          "left-label",
+          "caption"
+        ],
+        "claim_ids": [
+          "c001",
+          "c002",
+          "c003",
+          "c004",
+          "c005",
+          "c006",
+          "c007",
+          "c008",
+          "c009",
+          "c010",
+          "c011",
+          "c012",
+          "c013",
+          "c014",
+          "c015",
+          "c016",
+          "c017",
+          "c018",
+          "c019",
+          "c020",
+          "c021",
+          "c022",
+          "c023",
+          "c024",
+          "c025",
+          "c026",
+          "c027",
+          "c029",
+          "c030",
+          "c031",
+          "c032",
+          "c033",
+          "c034",
+          "c035",
+          "c036",
+          "c037",
+          "c038",
+          "c039",
+          "c040",
+          "c041",
+          "c042",
+          "c043",
+          "c044",
+          "c051",
+          "c052",
+          "c053",
+          "c054",
+          "c055",
+          "c056"
+        ],
+        "design_spec": {
+          "hierarchy": {
+            "description": "좌상단 섹션 표제 → 왼쪽 큰 3D 구조와 오른쪽 단면 → 청록 강조·짧은 설명 → 하단 자막. 보강: 32:9. 좌상단 장 제목, 왼쪽 큰 사시도와 오른쪽 작은 정면 단면의 비교 구도. 두 설명 띠는 같은 y의 상단, 공통 자막은 하단 중앙. 제목이 가장 큰 글자라는 전제를 두지 않는다. 수치의 기준 시점은 design_details의 frame별 항목에 한정.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c001",
+              "c002",
+              "c003",
+              "c004",
+              "c005",
+              "c006",
+              "c007",
+              "c008",
+              "c009",
+              "c010",
+              "c011",
+              "c012",
+              "c013",
+              "c014",
+              "c015",
+              "c016",
+              "c017",
+              "c018",
+              "c019",
+              "c020",
+              "c021",
+              "c022",
+              "c023",
+              "c024",
+              "c025",
+              "c026",
+              "c027",
+              "c029",
+              "c030",
+              "c031",
+              "c032",
+              "c033",
+              "c034",
+              "c035",
+              "c036",
+              "c037",
+              "c038",
+              "c039",
+              "c040",
+              "c041",
+              "c042",
+              "c043",
+              "c044",
+              "c051",
+              "c052",
+              "c053",
+              "c054",
+              "c055",
+              "c056"
+            ]
+          },
+          "alignment": {
+            "description": "두 주 콘텐츠는 초광폭의 서로 다른 영역에 배치하고 설명은 각각의 도해 위에 맞춘다.  후속 배치/기준점·모션 변화는 새 주장에 별도 연결. 보강: 177초 양 라벨은 y253..370으로 상단선이 맞는다. 오른쪽 단면과 설명 띠는 대략 중심을 공유한다. 왼쪽 모델은 원근 방향 때문에 라벨 중심과 기하 중심이 일치하지 않으며 이를 오류 정렬로 바꾸지 않는다. 수치의 기준 시점은 design_details의 frame별 항목에 한정.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c001",
+              "c002",
+              "c003",
+              "c004",
+              "c005",
+              "c006",
+              "c007",
+              "c008",
+              "c009",
+              "c010",
+              "c011",
+              "c012",
+              "c013",
+              "c014",
+              "c015",
+              "c016",
+              "c017",
+              "c018",
+              "c019",
+              "c020",
+              "c021",
+              "c022",
+              "c023",
+              "c024",
+              "c025",
+              "c026",
+              "c027",
+              "c029",
+              "c030",
+              "c031",
+              "c032",
+              "c033",
+              "c034",
+              "c035",
+              "c036",
+              "c037",
+              "c038",
+              "c039",
+              "c040",
+              "c041",
+              "c042",
+              "c043",
+              "c044",
+              "c051",
+              "c052",
+              "c053",
+              "c054",
+              "c055",
+              "c056"
+            ]
+          },
+          "spacing": {
+            "description": "초광폭 왼쪽 큰 대각 구조와 오른쪽 정면 단면 사이 어두운 여백. 설명 띠는 각 모델 위에, 공통 자막은 두 영역 아래 중앙. 175초 왼쪽 설명의 선 간격 약1473 native px. 개별 요소의 실제 3D/AE 앵커값은 아님. 보강: 왼쪽 모델 외접 폭34.1%W, 오른쪽24.0%W, 두 모델 사이 약19.1%W의 투영 여백. 라벨은 각각 약19.2%W. 왼쪽 글자 좌우 여백126/135px, 오른쪽240/244px. 자막판 하단 여백86px. 배경 장식은 이 사이에도 존재한다. 수치의 기준 시점은 design_details의 frame별 항목에 한정.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c001",
+              "c002",
+              "c003",
+              "c004",
+              "c005",
+              "c006",
+              "c007",
+              "c008",
+              "c009",
+              "c010",
+              "c011",
+              "c012",
+              "c013",
+              "c014",
+              "c015",
+              "c016",
+              "c017",
+              "c018",
+              "c019",
+              "c020",
+              "c021",
+              "c022",
+              "c023",
+              "c024",
+              "c025",
+              "c026",
+              "c027",
+              "c029",
+              "c030",
+              "c031",
+              "c032",
+              "c033",
+              "c034",
+              "c035",
+              "c036",
+              "c037",
+              "c038",
+              "c039",
+              "c040",
+              "c041",
+              "c042",
+              "c043",
+              "c044",
+              "c051",
+              "c052",
+              "c053",
+              "c054",
+              "c055",
+              "c056"
+            ]
+          },
+          "typography": {
+            "description": "흰 산세리프 한글. 좌상단 리본, 굵은 도해 설명, 하단 자막의 세 위계. 오른쪽 짧은 설명과 왼쪽 긴 설명은 문구 길이는 다르며177초 정착 띠 폭은 측정상 유사하다. 영상 표기는 켄틸레버, 상단의 시공시와 하단의 시공 시를 각각 보존. 서체명·폰트 크기 원값은 미확정. 보강: 흰 산세리프 한글. 가시 글자 높이는 제목58px, 왼쪽75px, 오른쪽76px, 자막92px(177초). 왼쪽 라벨의 “켄틸레버 바닥판”과 “동바리 역할 수행”이 굵게 보이고 “시공시”는 상대적으로 가늘다. 자막 앞 “켄틸레버 바닥판”도 뒤 문장보다 굵게 보인다. 서체명/포인트 크기/weight 수치는 미확정. 표기 켄틸레버·시공시/시공 시를 유지한다. 수치의 기준 시점은 design_details의 frame별 항목에 한정.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c001",
+              "c002",
+              "c003",
+              "c004",
+              "c005",
+              "c006",
+              "c007",
+              "c008",
+              "c009",
+              "c010",
+              "c011",
+              "c012",
+              "c013",
+              "c014",
+              "c015",
+              "c016",
+              "c017",
+              "c018",
+              "c019",
+              "c020",
+              "c021",
+              "c022",
+              "c023",
+              "c024",
+              "c025",
+              "c026",
+              "c027",
+              "c029",
+              "c030",
+              "c031",
+              "c032",
+              "c033",
+              "c034",
+              "c035",
+              "c036",
+              "c037",
+              "c038",
+              "c039",
+              "c040",
+              "c041",
+              "c042",
+              "c043",
+              "c044",
+              "c051",
+              "c052",
+              "c053",
+              "c054",
+              "c055",
+              "c056"
+            ]
+          },
+          "color": {
+            "description": "남청·청색 배경, 흰/회색 콘크리트·검은 안쪽, 청록 화살표·세로선. 보강: 남청/청색 기술 배경, 흰·회색 콘크리트/검은 내부 구멍, 흰 글자. 라벨과 모델 면·모서리는 청록, 오른쪽 외곽 화살표는 녹색 계열로 분리한다. 화면 색을 원본 색 토큰으로 확정하지 않는다. 수치의 기준 시점은 design_details의 frame별 항목에 한정.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c001",
+              "c002",
+              "c003",
+              "c004",
+              "c005",
+              "c006",
+              "c007",
+              "c008",
+              "c009",
+              "c010",
+              "c011",
+              "c012",
+              "c013",
+              "c014",
+              "c015",
+              "c016",
+              "c017",
+              "c018",
+              "c019",
+              "c020",
+              "c021",
+              "c022",
+              "c023",
+              "c024",
+              "c025",
+              "c026",
+              "c027",
+              "c029",
+              "c030",
+              "c031",
+              "c032",
+              "c033",
+              "c034",
+              "c035",
+              "c036",
+              "c037",
+              "c038",
+              "c039",
+              "c040",
+              "c041",
+              "c042",
+              "c043",
+              "c044",
+              "c051",
+              "c052",
+              "c053",
+              "c054",
+              "c055",
+              "c056"
+            ]
+          },
+          "background": {
+            "description": "남청 기술 배경의 좌측 점·망과 하단 푸른 곡선·작은 교차점. 세 ROI에서 도입 밝아짐과 이후 위치 유사 상태를 확인. 원본 레이어 독립성·정확 속성은 미확정. 보강: 기저의 어두운 남청 그라데이션 위에 좌상단 점열, 좌하단 노드와 망, 하단~우측 곡선 다발과 청색 발광 교차점이 보인다. 라벨 아래로 배경/모델이 비치는 외관이 있으나 opacity 값은 미상. 앞 단계의 밝아짐과177초 배경 상태를 구분한다. 수치의 기준 시점은 design_details의 frame별 항목에 한정.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c001",
+              "c002",
+              "c003",
+              "c004",
+              "c005",
+              "c006",
+              "c007",
+              "c008",
+              "c009",
+              "c010",
+              "c011",
+              "c012",
+              "c013",
+              "c014",
+              "c015",
+              "c016",
+              "c017",
+              "c018",
+              "c019",
+              "c020",
+              "c021",
+              "c022",
+              "c023",
+              "c024",
+              "c025",
+              "c026",
+              "c027",
+              "c029",
+              "c030",
+              "c031",
+              "c032",
+              "c033",
+              "c034",
+              "c035",
+              "c036",
+              "c037",
+              "c038",
+              "c039",
+              "c040",
+              "c041",
+              "c042",
+              "c043",
+              "c044",
+              "c051",
+              "c052",
+              "c053",
+              "c054",
+              "c055",
+              "c056"
+            ]
+          },
+          "shapes": {
+            "description": "사선 로고 리본, 구멍/날개/철근을 가진 긴 거더와 오른쪽 단면, 분할 철근 판과 후반 넓은 마감 판. 곡선 화살표와 형상에 밀착한 청록 외곽 강조를 분리한다. 설명은 어두운 띠·청록 양끝선·흰 글자, 자막은 별도 진한 사각 바탕. 보강: 로고 사선 흰 면+외곽선+청색 리본을 한 사각형으로 단순화하지 않는다. 라벨은 직각 띠+양끝 가는 수직선이며 둥근 카드가 아니다. CG는 날개/원형 정착부/중공/철근/판의 겹침을 보존한다. 녹색 화살표는 양쪽 곡선·화살촉, 청록 강조는 형상에 밀착한 모서리/면이다. 자막은 설명 띠와 다른 별도 사각판이다. 수치의 기준 시점은 design_details의 frame별 항목에 한정.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c001",
+              "c002",
+              "c003",
+              "c004",
+              "c005",
+              "c006",
+              "c007",
+              "c008",
+              "c009",
+              "c010",
+              "c011",
+              "c012",
+              "c013",
+              "c014",
+              "c015",
+              "c016",
+              "c017",
+              "c018",
+              "c019",
+              "c020",
+              "c021",
+              "c022",
+              "c023",
+              "c024",
+              "c025",
+              "c026",
+              "c027",
+              "c029",
+              "c030",
+              "c031",
+              "c032",
+              "c033",
+              "c034",
+              "c035",
+              "c036",
+              "c037",
+              "c038",
+              "c039",
+              "c040",
+              "c041",
+              "c042",
+              "c043",
+              "c044",
+              "c051",
+              "c052",
+              "c053",
+              "c054",
+              "c055",
+              "c056"
+            ]
+          }
+        },
+        "unresolved_ids": [
+          "u02"
+        ]
+      },
+      {
+        "id": "late-assembly",
+        "time_seconds": [
+          174,
+          181
+        ],
+        "evidence_ids": [
+          "b130"
+        ],
+        "composition": "32:9 전체 배경 위에 왼쪽 길이 방향 CG, 오른쪽 단면 CG, 좌상단 로고 리본, 각 도해 위 설명, 중앙 하단 공통 자막을 배치한다. 후반 상부 판 조립·청록 외곽 강조·마감 판을 순차 추가하며 오른쪽 단면과 설명은 유지한다. 이 상태의 시간 구간: [174, 181]초. 출현·퇴장·유지의 정확 범위는 개별 주장과 흐름에 따름.",
+        "element_object_ids": [
+          "background",
+          "header",
+          "girder",
+          "deck",
+          "front-arcs",
+          "rear-arcs",
+          "section",
+          "section-arcs",
+          "right-label",
+          "left-label",
+          "caption",
+          "edge-highlight",
+          "top-slab"
+        ],
+        "claim_ids": [
+          "c001",
+          "c002",
+          "c003",
+          "c004",
+          "c005",
+          "c006",
+          "c007",
+          "c008",
+          "c009",
+          "c010",
+          "c011",
+          "c012",
+          "c013",
+          "c014",
+          "c015",
+          "c016",
+          "c017",
+          "c018",
+          "c019",
+          "c020",
+          "c021",
+          "c022",
+          "c023",
+          "c024",
+          "c025",
+          "c026",
+          "c027",
+          "c029",
+          "c030",
+          "c031",
+          "c032",
+          "c033",
+          "c034",
+          "c035",
+          "c036",
+          "c037",
+          "c038",
+          "c039",
+          "c040",
+          "c041",
+          "c042",
+          "c043",
+          "c044",
+          "c045",
+          "c046",
+          "c047",
+          "c048",
+          "c049",
+          "c050",
+          "c051",
+          "c052",
+          "c053",
+          "c054",
+          "c055",
+          "c056"
+        ],
+        "design_spec": {
+          "hierarchy": {
+            "description": "좌상단 섹션 표제 → 왼쪽 큰 3D 구조와 오른쪽 단면 → 청록 강조·짧은 설명 → 하단 자막. 보강: 32:9. 좌상단 장 제목, 왼쪽 큰 사시도와 오른쪽 작은 정면 단면의 비교 구도. 두 설명 띠는 같은 y의 상단, 공통 자막은 하단 중앙. 제목이 가장 큰 글자라는 전제를 두지 않는다. 수치의 기준 시점은 design_details의 frame별 항목에 한정.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c001",
+              "c002",
+              "c003",
+              "c004",
+              "c005",
+              "c006",
+              "c007",
+              "c008",
+              "c009",
+              "c010",
+              "c011",
+              "c012",
+              "c013",
+              "c014",
+              "c015",
+              "c016",
+              "c017",
+              "c018",
+              "c019",
+              "c020",
+              "c021",
+              "c022",
+              "c023",
+              "c024",
+              "c025",
+              "c026",
+              "c027",
+              "c029",
+              "c030",
+              "c031",
+              "c032",
+              "c033",
+              "c034",
+              "c035",
+              "c036",
+              "c037",
+              "c038",
+              "c039",
+              "c040",
+              "c041",
+              "c042",
+              "c043",
+              "c044",
+              "c045",
+              "c046",
+              "c047",
+              "c048",
+              "c049",
+              "c050",
+              "c051",
+              "c052",
+              "c053",
+              "c054",
+              "c055",
+              "c056"
+            ]
+          },
+          "alignment": {
+            "description": "두 주 콘텐츠는 초광폭의 서로 다른 영역에 배치하고 설명은 각각의 도해 위에 맞춘다.  후속 배치/기준점·모션 변화는 새 주장에 별도 연결. 보강: 177초 양 라벨은 y253..370으로 상단선이 맞는다. 오른쪽 단면과 설명 띠는 대략 중심을 공유한다. 왼쪽 모델은 원근 방향 때문에 라벨 중심과 기하 중심이 일치하지 않으며 이를 오류 정렬로 바꾸지 않는다. 수치의 기준 시점은 design_details의 frame별 항목에 한정.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c001",
+              "c002",
+              "c003",
+              "c004",
+              "c005",
+              "c006",
+              "c007",
+              "c008",
+              "c009",
+              "c010",
+              "c011",
+              "c012",
+              "c013",
+              "c014",
+              "c015",
+              "c016",
+              "c017",
+              "c018",
+              "c019",
+              "c020",
+              "c021",
+              "c022",
+              "c023",
+              "c024",
+              "c025",
+              "c026",
+              "c027",
+              "c029",
+              "c030",
+              "c031",
+              "c032",
+              "c033",
+              "c034",
+              "c035",
+              "c036",
+              "c037",
+              "c038",
+              "c039",
+              "c040",
+              "c041",
+              "c042",
+              "c043",
+              "c044",
+              "c045",
+              "c046",
+              "c047",
+              "c048",
+              "c049",
+              "c050",
+              "c051",
+              "c052",
+              "c053",
+              "c054",
+              "c055",
+              "c056"
+            ]
+          },
+          "spacing": {
+            "description": "초광폭 왼쪽 큰 대각 구조와 오른쪽 정면 단면 사이 어두운 여백. 설명 띠는 각 모델 위에, 공통 자막은 두 영역 아래 중앙. 175초 왼쪽 설명의 선 간격 약1473 native px. 개별 요소의 실제 3D/AE 앵커값은 아님. 보강: 왼쪽 모델 외접 폭34.1%W, 오른쪽24.0%W, 두 모델 사이 약19.1%W의 투영 여백. 라벨은 각각 약19.2%W. 왼쪽 글자 좌우 여백126/135px, 오른쪽240/244px. 자막판 하단 여백86px. 배경 장식은 이 사이에도 존재한다. 수치의 기준 시점은 design_details의 frame별 항목에 한정.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c001",
+              "c002",
+              "c003",
+              "c004",
+              "c005",
+              "c006",
+              "c007",
+              "c008",
+              "c009",
+              "c010",
+              "c011",
+              "c012",
+              "c013",
+              "c014",
+              "c015",
+              "c016",
+              "c017",
+              "c018",
+              "c019",
+              "c020",
+              "c021",
+              "c022",
+              "c023",
+              "c024",
+              "c025",
+              "c026",
+              "c027",
+              "c029",
+              "c030",
+              "c031",
+              "c032",
+              "c033",
+              "c034",
+              "c035",
+              "c036",
+              "c037",
+              "c038",
+              "c039",
+              "c040",
+              "c041",
+              "c042",
+              "c043",
+              "c044",
+              "c045",
+              "c046",
+              "c047",
+              "c048",
+              "c049",
+              "c050",
+              "c051",
+              "c052",
+              "c053",
+              "c054",
+              "c055",
+              "c056"
+            ]
+          },
+          "typography": {
+            "description": "흰 산세리프 한글. 좌상단 리본, 굵은 도해 설명, 하단 자막의 세 위계. 오른쪽 짧은 설명과 왼쪽 긴 설명은 문구 길이는 다르며177초 정착 띠 폭은 측정상 유사하다. 영상 표기는 켄틸레버, 상단의 시공시와 하단의 시공 시를 각각 보존. 서체명·폰트 크기 원값은 미확정. 보강: 흰 산세리프 한글. 가시 글자 높이는 제목58px, 왼쪽75px, 오른쪽76px, 자막92px(177초). 왼쪽 라벨의 “켄틸레버 바닥판”과 “동바리 역할 수행”이 굵게 보이고 “시공시”는 상대적으로 가늘다. 자막 앞 “켄틸레버 바닥판”도 뒤 문장보다 굵게 보인다. 서체명/포인트 크기/weight 수치는 미확정. 표기 켄틸레버·시공시/시공 시를 유지한다. 수치의 기준 시점은 design_details의 frame별 항목에 한정.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c001",
+              "c002",
+              "c003",
+              "c004",
+              "c005",
+              "c006",
+              "c007",
+              "c008",
+              "c009",
+              "c010",
+              "c011",
+              "c012",
+              "c013",
+              "c014",
+              "c015",
+              "c016",
+              "c017",
+              "c018",
+              "c019",
+              "c020",
+              "c021",
+              "c022",
+              "c023",
+              "c024",
+              "c025",
+              "c026",
+              "c027",
+              "c029",
+              "c030",
+              "c031",
+              "c032",
+              "c033",
+              "c034",
+              "c035",
+              "c036",
+              "c037",
+              "c038",
+              "c039",
+              "c040",
+              "c041",
+              "c042",
+              "c043",
+              "c044",
+              "c045",
+              "c046",
+              "c047",
+              "c048",
+              "c049",
+              "c050",
+              "c051",
+              "c052",
+              "c053",
+              "c054",
+              "c055",
+              "c056"
+            ]
+          },
+          "color": {
+            "description": "남청·청색 배경, 흰/회색 콘크리트·검은 안쪽, 청록 화살표·세로선. 보강: 남청/청색 기술 배경, 흰·회색 콘크리트/검은 내부 구멍, 흰 글자. 라벨과 모델 면·모서리는 청록, 오른쪽 외곽 화살표는 녹색 계열로 분리한다. 화면 색을 원본 색 토큰으로 확정하지 않는다. 수치의 기준 시점은 design_details의 frame별 항목에 한정.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c001",
+              "c002",
+              "c003",
+              "c004",
+              "c005",
+              "c006",
+              "c007",
+              "c008",
+              "c009",
+              "c010",
+              "c011",
+              "c012",
+              "c013",
+              "c014",
+              "c015",
+              "c016",
+              "c017",
+              "c018",
+              "c019",
+              "c020",
+              "c021",
+              "c022",
+              "c023",
+              "c024",
+              "c025",
+              "c026",
+              "c027",
+              "c029",
+              "c030",
+              "c031",
+              "c032",
+              "c033",
+              "c034",
+              "c035",
+              "c036",
+              "c037",
+              "c038",
+              "c039",
+              "c040",
+              "c041",
+              "c042",
+              "c043",
+              "c044",
+              "c045",
+              "c046",
+              "c047",
+              "c048",
+              "c049",
+              "c050",
+              "c051",
+              "c052",
+              "c053",
+              "c054",
+              "c055",
+              "c056"
+            ]
+          },
+          "background": {
+            "description": "남청 기술 배경의 좌측 점·망과 하단 푸른 곡선·작은 교차점. 세 ROI에서 도입 밝아짐과 이후 위치 유사 상태를 확인. 원본 레이어 독립성·정확 속성은 미확정. 보강: 기저의 어두운 남청 그라데이션 위에 좌상단 점열, 좌하단 노드와 망, 하단~우측 곡선 다발과 청색 발광 교차점이 보인다. 라벨 아래로 배경/모델이 비치는 외관이 있으나 opacity 값은 미상. 앞 단계의 밝아짐과177초 배경 상태를 구분한다. 수치의 기준 시점은 design_details의 frame별 항목에 한정.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c001",
+              "c002",
+              "c003",
+              "c004",
+              "c005",
+              "c006",
+              "c007",
+              "c008",
+              "c009",
+              "c010",
+              "c011",
+              "c012",
+              "c013",
+              "c014",
+              "c015",
+              "c016",
+              "c017",
+              "c018",
+              "c019",
+              "c020",
+              "c021",
+              "c022",
+              "c023",
+              "c024",
+              "c025",
+              "c026",
+              "c027",
+              "c029",
+              "c030",
+              "c031",
+              "c032",
+              "c033",
+              "c034",
+              "c035",
+              "c036",
+              "c037",
+              "c038",
+              "c039",
+              "c040",
+              "c041",
+              "c042",
+              "c043",
+              "c044",
+              "c045",
+              "c046",
+              "c047",
+              "c048",
+              "c049",
+              "c050",
+              "c051",
+              "c052",
+              "c053",
+              "c054",
+              "c055",
+              "c056"
+            ]
+          },
+          "shapes": {
+            "description": "사선 로고 리본, 구멍/날개/철근을 가진 긴 거더와 오른쪽 단면, 분할 철근 판과 후반 넓은 마감 판. 곡선 화살표와 형상에 밀착한 청록 외곽 강조를 분리한다. 설명은 어두운 띠·청록 양끝선·흰 글자, 자막은 별도 진한 사각 바탕. 보강: 로고 사선 흰 면+외곽선+청색 리본을 한 사각형으로 단순화하지 않는다. 라벨은 직각 띠+양끝 가는 수직선이며 둥근 카드가 아니다. CG는 날개/원형 정착부/중공/철근/판의 겹침을 보존한다. 녹색 화살표는 양쪽 곡선·화살촉, 청록 강조는 형상에 밀착한 모서리/면이다. 자막은 설명 띠와 다른 별도 사각판이다. 수치의 기준 시점은 design_details의 frame별 항목에 한정.",
+            "basis_kind": "observed",
+            "precision": "qualitative",
+            "claim_ids": [
+              "c001",
+              "c002",
+              "c003",
+              "c004",
+              "c005",
+              "c006",
+              "c007",
+              "c008",
+              "c009",
+              "c010",
+              "c011",
+              "c012",
+              "c013",
+              "c014",
+              "c015",
+              "c016",
+              "c017",
+              "c018",
+              "c019",
+              "c020",
+              "c021",
+              "c022",
+              "c023",
+              "c024",
+              "c025",
+              "c026",
+              "c027",
+              "c029",
+              "c030",
+              "c031",
+              "c032",
+              "c033",
+              "c034",
+              "c035",
+              "c036",
+              "c037",
+              "c038",
+              "c039",
+              "c040",
+              "c041",
+              "c042",
+              "c043",
+              "c044",
+              "c045",
+              "c046",
+              "c047",
+              "c048",
+              "c049",
+              "c050",
+              "c051",
+              "c052",
+              "c053",
+              "c054",
+              "c055",
+              "c056"
+            ]
+          }
+        },
+        "unresolved_ids": [
+          "u02"
+        ]
+      }
+    ],
+    "unresolved_ids": [
+      "u02"
+    ]
+  },
+  "motion_groups": [
+    {
+      "id": "flow",
+      "level": "flow",
+      "name": "32:9 전체 배경 위에 왼쪽 길이 방향 CG, 오른쪽 단면 CG, 좌상단 로고 리본, 각 도해 위 설명, 중앙 하단 공통 자막을 배치한다. 후반 상부 판 조립·청록 외곽 강조·마감 판을 순차 추가하며 오른쪽 단면과 설명은 유지한다.",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "object_ids": [
+        "background",
+        "header",
+        "girder",
+        "deck",
+        "front-arcs",
+        "rear-arcs",
+        "section",
+        "section-arcs",
+        "right-label",
+        "left-label",
+        "caption",
+        "edge-highlight",
+        "top-slab"
+      ],
+      "claim_ids": [
+        "c006",
+        "c007",
+        "c009",
+        "c017",
+        "c024",
+        "c025",
+        "c037",
+        "c038",
+        "c051",
+        "c040",
+        "c041",
+        "c042",
+        "c044",
+        "c046",
+        "c049",
+        "c050",
+        "c053",
+        "c055"
+      ],
+      "pattern_occurrence_ids": [
+        "flow"
+      ]
+    },
+    {
+      "id": "detail",
+      "level": "detail",
+      "name": "대상별 가시성·내부 변화·가감속·기울임·유지와 재배치",
+      "time_seconds": [
+        166,
+        181
+      ],
+      "object_ids": [
+        "background",
+        "header",
+        "girder",
+        "deck",
+        "front-arcs",
+        "rear-arcs",
+        "section",
+        "section-arcs",
+        "right-label",
+        "left-label",
+        "caption",
+        "edge-highlight",
+        "top-slab"
+      ],
+      "claim_ids": [
+        "c002",
+        "c006",
+        "c007",
+        "c009",
+        "c010",
+        "c012",
+        "c013",
+        "c015",
+        "c017",
+        "c018",
+        "c020",
+        "c021",
+        "c024",
+        "c025",
+        "c027",
+        "c032",
+        "c033",
+        "c034",
+        "c035",
+        "c036",
+        "c037",
+        "c038",
+        "c039",
+        "c041",
+        "c042",
+        "c043",
+        "c044",
+        "c046",
+        "c047",
+        "c049",
+        "c050",
+        "c051",
+        "c052",
+        "c054",
+        "c055"
+      ],
+      "pattern_occurrence_ids": [
+        "left-label",
+        "right-label",
+        "sway",
+        "arcs",
+        "edge"
+      ]
+    }
+  ],
+  "pattern_refs": [
+    {
+      "id": "layout",
+      "pattern_id": "PAT-LAYOUT-0002",
+      "pattern_sha256": "73dbe7acacf2a64e2a4ef88270bc2e3e89b5f38c18099020870f3aa2d36f75f9",
+      "library_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\knowledge\\pattern-library-snapshots\\83fe63bf52a8bf5caff59c3697c6c3f638280d23c483442a3143497de225991b.json",
+      "library_sha256": "83fe63bf52a8bf5caff59c3697c6c3f638280d23c483442a3143497de225991b",
+      "object_ids": [
+        "background",
+        "header",
+        "girder",
+        "deck",
+        "front-arcs",
+        "rear-arcs",
+        "section",
+        "section-arcs",
+        "right-label",
+        "left-label",
+        "caption",
+        "edge-highlight",
+        "top-slab"
+      ],
+      "current_claim_ids": [
+        "c001",
+        "c002",
+        "c003",
+        "c004",
+        "c005",
+        "c006",
+        "c007",
+        "c008",
+        "c009",
+        "c010",
+        "c011",
+        "c012",
+        "c013",
+        "c014",
+        "c015",
+        "c016",
+        "c017",
+        "c018",
+        "c019",
+        "c020",
+        "c021",
+        "c022",
+        "c023",
+        "c024",
+        "c025",
+        "c026",
+        "c027",
+        "c029",
+        "c030",
+        "c031",
+        "c032",
+        "c033",
+        "c034",
+        "c035",
+        "c036",
+        "c037",
+        "c038",
+        "c039",
+        "c040",
+        "c041",
+        "c042",
+        "c043",
+        "c044",
+        "c045",
+        "c046",
+        "c047",
+        "c048",
+        "c049",
+        "c050",
+        "c051",
+        "c052",
+        "c053",
+        "c054",
+        "c055",
+        "c056"
+      ],
+      "match_status": "candidate",
+      "differences": [
+        "최초 정의를 만든 동일 사례의 연결. 새 목적에서 적합성 미검증.",
+        "디자인 보강 c056: 177초 양 설명 띠의 가시 폭은 약1474/1473px로 수동 경계 오차3~4px 안에서 유사하다.문구 길이·글자 좌우 여백은 다르다. 이전의 길이/폭 차이라는 요약은 생성중/문구 길이와 정착 띠 폭을 구분해 읽어야 한다."
+      ],
+      "unverified_dimensions": [
+        "새 문구·화면비의 편집/렌더 검증",
+        "원본 구현 설정과 제작 의도"
+      ]
+    },
+    {
+      "id": "flow",
+      "pattern_id": "PAT-FLOW-0002",
+      "pattern_sha256": "c7bbe8b42bb92f3dec61fa5b6eeb35b8bc0e6f73051cc17c7e14d7fee4fd8055",
+      "library_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\knowledge\\pattern-library-snapshots\\83fe63bf52a8bf5caff59c3697c6c3f638280d23c483442a3143497de225991b.json",
+      "library_sha256": "83fe63bf52a8bf5caff59c3697c6c3f638280d23c483442a3143497de225991b",
+      "object_ids": [
+        "background",
+        "header",
+        "girder",
+        "deck",
+        "front-arcs",
+        "rear-arcs",
+        "section",
+        "section-arcs",
+        "right-label",
+        "left-label",
+        "caption",
+        "edge-highlight",
+        "top-slab"
+      ],
+      "current_claim_ids": [
+        "c006",
+        "c007",
+        "c009",
+        "c017",
+        "c024",
+        "c025",
+        "c037",
+        "c038",
+        "c051",
+        "c040",
+        "c041",
+        "c042",
+        "c044",
+        "c046",
+        "c049",
+        "c050",
+        "c053",
+        "c055",
+        "c056"
+      ],
+      "match_status": "candidate",
+      "differences": [
+        "최초 정의를 만든 동일 사례의 연결. 새 목적에서 적합성 미검증.",
+        "디자인 보강 c056: 177초 양 설명 띠의 가시 폭은 약1474/1473px로 수동 경계 오차3~4px 안에서 유사하다.문구 길이·글자 좌우 여백은 다르다. 이전의 길이/폭 차이라는 요약은 생성중/문구 길이와 정착 띠 폭을 구분해 읽어야 한다."
+      ],
+      "unverified_dimensions": [
+        "새 문구·화면비의 편집/렌더 검증",
+        "원본 구현 설정과 제작 의도"
+      ]
+    },
+    {
+      "id": "left-label",
+      "pattern_id": "PAT-TEXT-0002",
+      "pattern_sha256": "794a5051cb4aa28dc9db9d2ed633d2ab3ae944c975496002317afb5524862036",
+      "library_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\knowledge\\pattern-library-snapshots\\83fe63bf52a8bf5caff59c3697c6c3f638280d23c483442a3143497de225991b.json",
+      "library_sha256": "83fe63bf52a8bf5caff59c3697c6c3f638280d23c483442a3143497de225991b",
+      "object_ids": [
+        "left-label"
+      ],
+      "current_claim_ids": [
+        "c040",
+        "c041",
+        "c042",
+        "c043",
+        "c056"
+      ],
+      "match_status": "candidate",
+      "differences": [
+        "최초 정의를 만든 동일 사례의 연결. 새 목적에서 적합성 미검증.",
+        "디자인 보강 c056: 177초 양 설명 띠의 가시 폭은 약1474/1473px로 수동 경계 오차3~4px 안에서 유사하다.문구 길이·글자 좌우 여백은 다르다. 이전의 길이/폭 차이라는 요약은 생성중/문구 길이와 정착 띠 폭을 구분해 읽어야 한다."
+      ],
+      "unverified_dimensions": [
+        "새 문구·화면비의 편집/렌더 검증",
+        "원본 구현 설정과 제작 의도"
+      ]
+    },
+    {
+      "id": "right-label",
+      "pattern_id": "PAT-TEXT-0002",
+      "pattern_sha256": "794a5051cb4aa28dc9db9d2ed633d2ab3ae944c975496002317afb5524862036",
+      "library_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\knowledge\\pattern-library-snapshots\\83fe63bf52a8bf5caff59c3697c6c3f638280d23c483442a3143497de225991b.json",
+      "library_sha256": "83fe63bf52a8bf5caff59c3697c6c3f638280d23c483442a3143497de225991b",
+      "object_ids": [
+        "right-label"
+      ],
+      "current_claim_ids": [
+        "c022",
+        "c023",
+        "c024",
+        "c025"
+      ],
+      "match_status": "candidate",
+      "differences": [
+        "문구·등장 시각·가로 길이가 다름. 오른쪽의 폭 가감속을 왼쪽 측정에서 복사하지 않음."
+      ],
+      "unverified_dimensions": [
+        "새 문구·화면비의 편집/렌더 검증",
+        "원본 구현 설정과 제작 의도"
+      ]
+    },
+    {
+      "id": "sway",
+      "pattern_id": "PAT-DETAIL-0002",
+      "pattern_sha256": "23e3e0e7f1a858c42dff440c24aa7502ea6244bbfbd5601daf013338c460cdf6",
+      "library_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\knowledge\\pattern-library-snapshots\\83fe63bf52a8bf5caff59c3697c6c3f638280d23c483442a3143497de225991b.json",
+      "library_sha256": "83fe63bf52a8bf5caff59c3697c6c3f638280d23c483442a3143497de225991b",
+      "object_ids": [
+        "girder",
+        "section"
+      ],
+      "current_claim_ids": [
+        "c006",
+        "c018",
+        "c038",
+        "c039",
+        "c052"
+      ],
+      "match_status": "candidate",
+      "differences": [
+        "최초 정의를 만든 동일 사례의 연결. 새 목적에서 적합성 미검증."
+      ],
+      "unverified_dimensions": [
+        "새 문구·화면비의 편집/렌더 검증",
+        "원본 구현 설정과 제작 의도"
+      ]
+    },
+    {
+      "id": "arcs",
+      "pattern_id": "PAT-DETAIL-0003",
+      "pattern_sha256": "15b9e41e723a29023390c05ba3f1b74182d44c334c05eccbbe99771dddd6f8fa",
+      "library_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\knowledge\\pattern-library-snapshots\\83fe63bf52a8bf5caff59c3697c6c3f638280d23c483442a3143497de225991b.json",
+      "library_sha256": "83fe63bf52a8bf5caff59c3697c6c3f638280d23c483442a3143497de225991b",
+      "object_ids": [
+        "front-arcs",
+        "rear-arcs",
+        "section-arcs"
+      ],
+      "current_claim_ids": [
+        "c012",
+        "c020",
+        "c034",
+        "c037",
+        "c051"
+      ],
+      "match_status": "candidate",
+      "differences": [
+        "최초 정의를 만든 동일 사례의 연결. 새 목적에서 적합성 미검증."
+      ],
+      "unverified_dimensions": [
+        "새 문구·화면비의 편집/렌더 검증",
+        "원본 구현 설정과 제작 의도"
+      ]
+    },
+    {
+      "id": "edge",
+      "pattern_id": "PAT-DETAIL-0004",
+      "pattern_sha256": "4eeeed2e0fcf25fe99672321325150c83d899ca3a14a006cc9c3256c02eec887",
+      "library_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\knowledge\\pattern-library-snapshots\\83fe63bf52a8bf5caff59c3697c6c3f638280d23c483442a3143497de225991b.json",
+      "library_sha256": "83fe63bf52a8bf5caff59c3697c6c3f638280d23c483442a3143497de225991b",
+      "object_ids": [
+        "edge-highlight"
+      ],
+      "current_claim_ids": [
+        "c045",
+        "c046",
+        "c047"
+      ],
+      "match_status": "candidate",
+      "differences": [
+        "최초 정의를 만든 동일 사례의 연결. 새 목적에서 적합성 미검증."
+      ],
+      "unverified_dimensions": [
+        "새 문구·화면비의 편집/렌더 검증",
+        "원본 구현 설정과 제작 의도"
+      ]
+    }
+  ],
+  "reuse_map": {
+    "case_id": "DEV-NEW-N-REFERENCE-20261019",
+    "layout_occurrence_ids": [
+      "layout"
+    ],
+    "flow_occurrence_ids": [
+      "flow"
+    ],
+    "detail_occurrence_ids": [
+      "left-label",
+      "right-label",
+      "sway",
+      "arcs",
+      "edge"
+    ],
+    "links": [
+      {
+        "from_id": "flow",
+        "to_id": "left-label",
+        "relation": "contains",
+        "basis_kind": "observed",
+        "claim_ids": [
+          "c040",
+          "c041",
+          "c042",
+          "c043"
+        ]
+      },
+      {
+        "from_id": "layout",
+        "to_id": "left-label",
+        "relation": "anchors_to",
+        "basis_kind": "inferred",
+        "claim_ids": [
+          "c040",
+          "c041",
+          "c042",
+          "c043"
+        ]
+      },
+      {
+        "from_id": "flow",
+        "to_id": "right-label",
+        "relation": "contains",
+        "basis_kind": "observed",
+        "claim_ids": [
+          "c022",
+          "c023",
+          "c024",
+          "c025"
+        ]
+      },
+      {
+        "from_id": "layout",
+        "to_id": "right-label",
+        "relation": "anchors_to",
+        "basis_kind": "inferred",
+        "claim_ids": [
+          "c022",
+          "c023",
+          "c024",
+          "c025"
+        ]
+      },
+      {
+        "from_id": "flow",
+        "to_id": "sway",
+        "relation": "contains",
+        "basis_kind": "observed",
+        "claim_ids": [
+          "c006",
+          "c018",
+          "c038",
+          "c039",
+          "c052"
+        ]
+      },
+      {
+        "from_id": "layout",
+        "to_id": "sway",
+        "relation": "anchors_to",
+        "basis_kind": "inferred",
+        "claim_ids": [
+          "c006",
+          "c018",
+          "c038",
+          "c039",
+          "c052"
+        ]
+      },
+      {
+        "from_id": "flow",
+        "to_id": "arcs",
+        "relation": "contains",
+        "basis_kind": "observed",
+        "claim_ids": [
+          "c012",
+          "c020",
+          "c034",
+          "c037",
+          "c051"
+        ]
+      },
+      {
+        "from_id": "layout",
+        "to_id": "arcs",
+        "relation": "anchors_to",
+        "basis_kind": "inferred",
+        "claim_ids": [
+          "c012",
+          "c020",
+          "c034",
+          "c037",
+          "c051"
+        ]
+      },
+      {
+        "from_id": "flow",
+        "to_id": "edge",
+        "relation": "contains",
+        "basis_kind": "observed",
+        "claim_ids": [
+          "c045",
+          "c046",
+          "c047"
+        ]
+      },
+      {
+        "from_id": "layout",
+        "to_id": "edge",
+        "relation": "anchors_to",
+        "basis_kind": "inferred",
+        "claim_ids": [
+          "c045",
+          "c046",
+          "c047"
+        ]
+      },
+      {
+        "from_id": "arcs",
+        "to_id": "sway",
+        "relation": "accompanies",
+        "basis_kind": "observed",
+        "claim_ids": [
+          "c037",
+          "c038"
+        ]
+      }
+    ],
+    "unresolved_ids": [
+      "u02"
+    ]
+  },
+  "review": {
+    "content_reviewed_claim_ids": [
+      "c001",
+      "c002",
+      "c003",
+      "c004",
+      "c005",
+      "c006",
+      "c007",
+      "c008",
+      "c009",
+      "c010",
+      "c011",
+      "c012",
+      "c013",
+      "c014",
+      "c015",
+      "c016",
+      "c017",
+      "c018",
+      "c019",
+      "c020",
+      "c021",
+      "c022",
+      "c023",
+      "c024",
+      "c025",
+      "c026",
+      "c027",
+      "c028",
+      "c029",
+      "c030",
+      "c031",
+      "c032",
+      "c033",
+      "c034",
+      "c035",
+      "c036",
+      "c037",
+      "c038",
+      "c039",
+      "c040",
+      "c041",
+      "c042",
+      "c043",
+      "c044",
+      "c045",
+      "c046",
+      "c047",
+      "c048",
+      "c049",
+      "c050",
+      "c051",
+      "c052",
+      "c053",
+      "c054",
+      "c055",
+      "c056"
+    ],
+    "claim_denominator_complete": false,
+    "remaining_scope": [
+      "동일 AI 후속 검수이며 독립 정답·회사 승인·원본 전체 미발견 항목의 분모 검토 아님.",
+      "선택 표본/특정 경계 연속프레임/ROI/수치 보조. 모든 프레임의 native 전체 화면 검수 아님.",
+      "열린 관측 쟁점: ['u02']"
+    ]
+  },
+  "handoff": null,
+  "limitations": [
+    "영상 표기 그대로 읽으며 기술적 용어/홍보 내용의 사실성은 검증하지 않음.",
+    "원본 글꼴명·AE 레이어 구조·효과 종류·키프레임·Influence·3D 축/각도는 미확정. 화면 투영/색 임계값의 관측량과 구분.",
+    "원본 전체 정밀 분석 아님. 정지/주기 없음은 확인한 구간·표본의 범위에 한정.",
+    "범위 밖 전후 문맥은 분석 창 시간으로 집계하지 않음.",
+    "초기 사례 초안이며 새 문구/화면비로 편집·재제작·렌더 검증한 패턴은 아님.",
+    "서체명·폰트 크기·행간·자간의 원본 값",
+    "양 라벨의 생성 중 폭 변화 함수는 같다고 확정하지 않음",
+    "정확 RGB/그라데이션 stop·투명도·광선 효과·원본 레이어 구조",
+    "앞/뒤 곡선 화살표의 정확 강도 곡선과 원본 동기화 설정(기존 열린 쟁점 유지)"
+  ],
+  "design_details": {
+    "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\records\\NEW-N\\design-details.json",
+    "sha256": "a2ad2722b209896e2785133eb0d82320b55a243fa09276a6cb378436f73c6cfa"
+  },
+  "record_lineage": {
+    "base_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\records\\NEW-N\\observations-linked.json",
+    "base_sha256": "85024e9b5cb5808d6a922a910ef1837b69aac03ce0dacab8278f87d0d611c088",
+    "change": "design enrichment; prior immutable pattern definitions remain pinned"
+  }
+}

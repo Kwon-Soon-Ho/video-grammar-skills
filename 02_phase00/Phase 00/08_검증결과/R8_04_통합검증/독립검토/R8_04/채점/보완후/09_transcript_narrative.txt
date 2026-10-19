@@ -1,0 +1,285 @@
+# 실제 작업 transcript
+
+범위: 지정 task, 자료/IO사용안내.md, 자료/작업범위.json, 지정 video-record-steward 스킬과 참조·읽기 검사 도구 및 지정 DB 관련 원문만 읽었습니다. 시험설정·서비스상태·다른 run·다른 스킬·실제 D DB는 열지 않았습니다. 지정 D Python 실행 파일만 사용했습니다.
+
+준비: 원문 엄격 JSON 파싱(중복 키·비유한수 거부), 경로 연결점 확인, 원문 증거 보존, baseline 구조 검사, 후보 생성·허용필드 차이·자체 판본 검사, 지정 CLI 백업과 byte 대조를 수행했습니다. 첫 저장 전 두 현재 원문 SHA를 다시 확인했습니다.
+
+실행 harness: Python -B -X utf8 outputs/execute.py prepare → apply → recover → report. harness는 개별 CLI의 exit를 원문으로 기록합니다. apply harness 자체 exit0은 R5 CLI 성공을 의미하지 않습니다. DB 쓰기는 CLI만 사용했습니다.
+
+저장: R4 성공 → 환경/구조 검사 → 실제 R4 SHA로 R5 후보 확인 → R5 부분저장 실패 → 환경 검사 실패 → 실패본 읽기/보존 → 서비스 소유바이트 확인 → R5 복구 → R4 복구 → 정확 바이트 대조/환경·구조 검사.
+
+후보와 실패본은 outputs에 남기고 미반영/사용 중단으로 표시했습니다. 재쓰기 없음. 복구 이후 두 활성 초안은 원본/백업 SHA와 일치합니다. 시간/token은 미수집(null).
+
+## 1. 01_read_R4
+
+실제 argv:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+exit: 0
+stdout 원문: 01_read_R4.stdout.txt
+stderr 원문: 01_read_R4.stderr.txt
+요청 JSON: 01_read_R4.request.json
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 2. 02_baseline_R4
+
+실제 argv:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+exit: 0
+stdout 원문: 02_baseline_R4.stdout.txt
+stderr 원문: 02_baseline_R4.stderr.txt
+
+## 3. 01_read_R5
+
+실제 argv:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+exit: 0
+stdout 원문: 01_read_R5.stdout.txt
+stderr 원문: 01_read_R5.stderr.txt
+요청 JSON: 01_read_R5.request.json
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 4. 02_baseline_R5
+
+실제 argv:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+exit: 0
+stdout 원문: 02_baseline_R5.stdout.txt
+stderr 원문: 02_baseline_R5.stderr.txt
+
+## 5. 03_version_candidate_R4
+
+실제 argv:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+exit: 0
+stdout 원문: 03_version_candidate_R4.stdout.txt
+stderr 원문: 03_version_candidate_R4.stderr.txt
+
+## 6. 03_version_candidate_R5
+
+실제 argv:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+exit: 0
+stdout 원문: 03_version_candidate_R5.stdout.txt
+stderr 원문: 03_version_candidate_R5.stderr.txt
+
+## 7. 04_candidate_R4
+
+실제 argv:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+exit: 0
+stdout 원문: 04_candidate_R4.stdout.txt
+stderr 원문: 04_candidate_R4.stderr.txt
+
+## 8. 04_candidate_R5_before_R4_save
+
+실제 argv:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+exit: 1
+stdout 원문: 04_candidate_R5_before_R4_save.stdout.txt
+stderr 원문: 04_candidate_R5_before_R4_save.stderr.txt
+
+## 9. 05_backup_R4
+
+실제 argv:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+exit: 0
+stdout 원문: 05_backup_R4.stdout.txt
+stderr 원문: 05_backup_R4.stderr.txt
+요청 JSON: 05_backup_R4.request.json
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 10. 05_backup_R5
+
+실제 argv:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+exit: 0
+stdout 원문: 05_backup_R5.stdout.txt
+stderr 원문: 05_backup_R5.stderr.txt
+요청 JSON: 05_backup_R5.request.json
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 11. 06_write_R4
+
+실제 argv:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+exit: 0
+stdout 원문: 06_write_R4.stdout.txt
+stderr 원문: 06_write_R4.stderr.txt
+요청 JSON: 06_write_R4.request.json
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 12. 07_version_saved_R4
+
+실제 argv:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+exit: 0
+stdout 원문: 07_version_saved_R4.stdout.txt
+stderr 원문: 07_version_saved_R4.stderr.txt
+
+## 13. 07_validate_R4
+
+실제 argv:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+exit: 0
+stdout 원문: 07_validate_R4.stdout.txt
+stderr 원문: 07_validate_R4.stderr.txt
+요청 JSON: 07_validate_R4.request.json
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 14. 07_structure_saved_R4
+
+실제 argv:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+exit: 0
+stdout 원문: 07_structure_saved_R4.stdout.txt
+stderr 원문: 07_structure_saved_R4.stderr.txt
+
+## 15. 08_candidate_R5_actual_R4
+
+실제 argv:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+exit: 0
+stdout 원문: 08_candidate_R5_actual_R4.stdout.txt
+stderr 원문: 08_candidate_R5_actual_R4.stderr.txt
+
+## 16. 09_write_R5
+
+실제 argv:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+exit: 2
+stdout 원문: 09_write_R5.stdout.txt
+stderr 원문: 09_write_R5.stderr.txt
+요청 JSON: 09_write_R5.request.json
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 17. 10_validate_after_writes
+
+실제 argv:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+exit: 2
+stdout 원문: 10_validate_after_writes.stdout.txt
+stderr 원문: 10_validate_after_writes.stderr.txt
+요청 JSON: 10_validate_after_writes.request.json
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 18. 10_read_after_R4
+
+실제 argv:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+exit: 0
+stdout 원문: 10_read_after_R4.stdout.txt
+stderr 원문: 10_read_after_R4.stderr.txt
+요청 JSON: 10_read_after_R4.request.json
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 19. 10_read_after_R5
+
+실제 argv:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+exit: 0
+stdout 원문: 10_read_after_R5.stdout.txt
+stderr 원문: 10_read_after_R5.stderr.txt
+요청 JSON: 10_read_after_R5.request.json
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 20. 11_read_prerestore_R5
+
+실제 argv:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+exit: 0
+stdout 원문: 11_read_prerestore_R5.stdout.txt
+stderr 원문: 11_read_prerestore_R5.stderr.txt
+요청 JSON: 11_read_prerestore_R5.request.json
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 21. 12_restore_R5
+
+실제 argv:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+exit: 0
+stdout 원문: 12_restore_R5.stdout.txt
+stderr 원문: 12_restore_R5.stderr.txt
+요청 JSON: 12_restore_R5.request.json
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 22. 13_exact_restore_R5
+
+실제 argv:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+exit: 0
+stdout 원문: 13_exact_restore_R5.stdout.txt
+stderr 원문: 13_exact_restore_R5.stderr.txt
+
+## 23. 11_read_prerestore_R4
+
+실제 argv:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+exit: 0
+stdout 원문: 11_read_prerestore_R4.stdout.txt
+stderr 원문: 11_read_prerestore_R4.stderr.txt
+요청 JSON: 11_read_prerestore_R4.request.json
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 24. 12_restore_R4
+
+실제 argv:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+exit: 0
+stdout 원문: 12_restore_R4.stdout.txt
+stderr 원문: 12_restore_R4.stderr.txt
+요청 JSON: 12_restore_R4.request.json
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 25. 13_exact_restore_R4
+
+실제 argv:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+exit: 0
+stdout 원문: 13_exact_restore_R4.stdout.txt
+stderr 원문: 13_exact_restore_R4.stderr.txt
+
+## 26. 14_validate_after_restore
+
+실제 argv:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+exit: 0
+stdout 원문: 14_validate_after_restore.stdout.txt
+stderr 원문: 14_validate_after_restore.stderr.txt
+요청 JSON: 14_validate_after_restore.request.json
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 27. 15_read_final_R4
+
+실제 argv:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+exit: 0
+stdout 원문: 15_read_final_R4.stdout.txt
+stderr 원문: 15_read_final_R4.stderr.txt
+요청 JSON: 15_read_final_R4.request.json
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 28. 16_final_structure_R4
+
+실제 argv:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+exit: 0
+stdout 원문: 16_final_structure_R4.stdout.txt
+stderr 원문: 16_final_structure_R4.stderr.txt
+
+## 29. 15_read_final_R5
+
+실제 argv:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+exit: 0
+stdout 원문: 15_read_final_R5.stdout.txt
+stderr 원문: 15_read_final_R5.stderr.txt
+요청 JSON: 15_read_final_R5.request.json
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 30. 16_final_structure_R5
+
+실제 argv:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+exit: 0
+stdout 원문: 16_final_structure_R5.stdout.txt
+stderr 원문: 16_final_structure_R5.stderr.txt

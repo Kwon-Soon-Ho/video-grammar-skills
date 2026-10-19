@@ -1,0 +1,41 @@
+{
+  "grader": "root inline AI visual review",
+  "human_approved": false,
+  "expectations": [
+    {
+      "text": "한글 타이틀 조각별 등장→영문 리빌→본문→큰 G→왼 UI→오른 UI 순서",
+      "passed": true,
+      "evidence": "heading/en/body/G/UI 순서; outputs/observations.json 및 원본 ROI 대조"
+    },
+    {
+      "text": "영문 주변 십자 커서와 점선 사각형의 확장/수축 및 영문 연해짐을 분리",
+      "passed": false,
+      "evidence": "영문 녹색 면/연해짐만 기록. 영문 점선 사각형·십자와 수축 동작 누락.; outputs/observations.json 및 원본 ROI 대조"
+    },
+    {
+      "text": "큰 G의 형태가 드러나는 변화와 곡선/십자 가이드 선을 기록; E와 같은 동작으로 답 복사 금지",
+      "passed": true,
+      "evidence": "G와 보조 원호/십자 분리; outputs/observations.json 및 원본 ROI 대조"
+    },
+    {
+      "text": "두 UI의 이동·확대·겹침/빛 강조·하단 설명 순서를 분리",
+      "passed": true,
+      "evidence": "좌·우 UI 등장과 설명, 광점; outputs/observations.json 및 원본 ROI 대조"
+    },
+    {
+      "text": "배경 모니터 UI의 실제 변화/정지 검사 및 가감속별 근거; 문서없음/오디오미검수 유지",
+      "passed": true,
+      "evidence": "배경 UI 비교, 문서없음·오디오 미검수, 과장 없는 속성별 유보; outputs/observations.json 및 원본 ROI 대조"
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 1,
+    "total": 5,
+    "pass_rate": 0.8
+  },
+  "interpretation": "이 기준에 한정된 진단. 일반 정확도·독립표본 합격률 아님. JSON/카탈로그 통과와 내용판정 별개.",
+  "eval_feedback": {
+    "overall": "자막 전환 기준은 최초 동결 목록에 없던 실제 오류로 양쪽 결과에 동일하게 사후 추가. V04 기준의 필터 오기는 폴더로 해석. 세밀한 이징 유보는 근거가 부족하면 실패로 강제하지 않음."
+  }
+}

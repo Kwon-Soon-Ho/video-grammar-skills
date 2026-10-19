@@ -1,0 +1,234 @@
+{
+  "version": "0.1.2",
+  "origin": "synthetic_example",
+  "pairs": [
+    {
+      "id": "R2-PAIR-01",
+      "term_ids": [
+        "LAYOUT-SPLIT",
+        "LAYOUT-SPLIT-COMPARE"
+      ],
+      "title": "분할과 비교",
+      "contrast": "제품 캡처+설명은 분할. 공법A/B의 같은 평가항목 대응이면 분할 비교도 후보.",
+      "avoid": "영역 둘이라는 이유로 비교 태그를 붙이지 않는다.",
+      "status": "project_draft"
+    },
+    {
+      "id": "R2-PAIR-02",
+      "term_ids": [
+        "TIME-SEQUENCE",
+        "REL-ORDER",
+        "PURPOSE-PROCESS"
+      ],
+      "title": "등장 순서와 업무 순서",
+      "contrast": "사업부 카드 A/B/C의 순차 등장과 준비→시공→검수의 업무 단계는 다르다.",
+      "avoid": "시간순서·정보관계·전달목적을 각각 기록한다.",
+      "status": "project_draft"
+    },
+    {
+      "id": "R2-PAIR-03",
+      "term_ids": [
+        "TIME-SIMULTANEOUS",
+        "REL-PARALLEL"
+      ],
+      "title": "동시 발생과 병렬 정보",
+      "contrast": "동일시각에 나타난 본부/부서도 종속관계일 수 있다.",
+      "avoid": "같은시각은 동등관계의 증거가 아니다.",
+      "status": "project_draft"
+    },
+    {
+      "id": "R2-PAIR-04",
+      "term_ids": [
+        "TIME-OVERLAP",
+        "TIME-SIMULTANEOUS"
+      ],
+      "title": "중첩과 동시 시작",
+      "contrast": "A가 움직이는중 B가 나중에 시작하면 동작중첩이지만 동시시작은 아니다.",
+      "avoid": "시작/완료 기준과 동작범위를 명시한다.",
+      "status": "project_draft"
+    },
+    {
+      "id": "R2-PAIR-05",
+      "term_ids": [
+        "LAYOUT-TIMELINE",
+        "LAYOUT-PROCESS-LINE",
+        "REL-TIME"
+      ],
+      "title": "시간축과 단계 배치",
+      "contrast": "2023→2025 사건배치는 시간축. 준비→검수 배치는 업무단계이고 실제기간을 뜻하지 않을 수 있다.",
+      "avoid": "작업용편집패널이나이름만으로판정하지않는다. 최종영상속UI가시간/사건관계를표현하면대상범위별시간축+UI복합후보가능.",
+      "status": "project_draft"
+    },
+    {
+      "id": "R2-PAIR-06",
+      "term_ids": [
+        "PROPERTY-VALUE",
+        "REL-TIME"
+      ],
+      "title": "숫자 카운트와 시계열",
+      "contrast": "목표값100을 보여주는 0→100 카운트는 표시면변화. 연도별 실제값 비교는 시간관계.",
+      "avoid": "카운트 애니메이션을 실제성과추이로 해석하지 않는다.",
+      "status": "project_draft"
+    },
+    {
+      "id": "R2-PAIR-07",
+      "term_ids": [
+        "LAYOUT-BEFORE-AFTER",
+        "LAYOUT-SPLIT-COMPARE"
+      ],
+      "title": "전후 대응과 A/B",
+      "contrast": "동일시설 보수전후와 다른공법A/B의 차이를 구분.",
+      "avoid": "동일대상·시간상태 근거 없이 전후로 확정하지 않는다.",
+      "status": "project_draft"
+    },
+    {
+      "id": "R2-PAIR-08",
+      "term_ids": [
+        "REL-HIERARCHY",
+        "LAYOUT-HIERARCHY"
+      ],
+      "title": "정보 계층과 시각 배치",
+      "contrast": "본부/부서의 관계는 계층정보. 그 관계를 배치/선으로 표현한 범위가 계층구성.",
+      "avoid": "큰제목·위쪽배치만으로 정보종속을 확정하지 않는다.",
+      "status": "project_draft"
+    },
+    {
+      "id": "R2-PAIR-09",
+      "term_ids": [
+        "REL-PART",
+        "LAYOUT-OVERVIEW-DETAIL",
+        "LAYOUT-PIP"
+      ],
+      "title": "부분전체와 확대·삽입화면",
+      "contrast": "시설내부펌프는 구성부분; 시설전체+확대사진은 전체상세; 작은독립영상은 PIP.",
+      "avoid": "삽입영역이 실제부분/상세인지 단순독립영상인지 구분한다.",
+      "status": "project_draft"
+    },
+    {
+      "id": "R2-PAIR-10",
+      "term_ids": [
+        "PROPERTY-LINE-REVEAL",
+        "PROPERTY-PATH-MOVE"
+      ],
+      "title": "선 공개와 경로 이동",
+      "contrast": "선의보이는길이가 늘어나는것과 점이선위를움직이는것을 구분.",
+      "avoid": "두현상이 함께 있으면 서로다른대상으로 둘다 기록한다.",
+      "status": "project_draft"
+    },
+    {
+      "id": "R2-PAIR-11",
+      "term_ids": [
+        "PROPERTY-VISIBILITY",
+        "PROPERTY-OPACITY",
+        "PROPERTY-MASK"
+      ],
+      "title": "가시성·불투명도·경계 공개",
+      "contrast": "문구가보이는정도변화는 관측. 합성조건/원본 opacity는 별도근거. 경계를따른공개도 마스크구현확정은 아님.",
+      "avoid": "렌더결과만으로 Opacity 수치/AE마스크를 확정하지 않는다.",
+      "status": "project_draft"
+    },
+    {
+      "id": "R2-PAIR-12",
+      "term_ids": [
+        "PROPERTY-SIZE",
+        "PROPERTY-CAMERA"
+      ],
+      "title": "크기 변화와 카메라 구현",
+      "contrast": "화면속대상이커지는것과 여러요소의전역배율변화를 구분해관측.",
+      "avoid": "원본Scale·실제카메라Zoom은 관측태그와 별도 주장이다.",
+      "status": "project_draft"
+    },
+    {
+      "id": "R2-PAIR-13",
+      "term_ids": [
+        "TIME-HOLD",
+        "TIME-STILL"
+      ],
+      "title": "유지와 정지",
+      "contrast": "문구는읽히는상태로유지되면서 배경이움직일수있다.",
+      "avoid": "유지대상과 정지판정범위를 함께 명시한다.",
+      "status": "project_draft"
+    },
+    {
+      "id": "R2-PAIR-14",
+      "term_ids": [
+        "CURVE-INOUT",
+        "TIME-SEQUENCE"
+      ],
+      "title": "속도곡선과 사건순서",
+      "contrast": "한동작의속도곡선과여러사건의발생순서는 timing축 안의 서로다른하위개념이다.",
+      "avoid": "순차등장을 easing곡선으로 판정하지 않는다.",
+      "status": "project_draft"
+    },
+    {
+      "id": "R2-PAIR-15",
+      "term_ids": [
+        "CURVE-OSCILLATE",
+        "TIME-LOOP",
+        "TIME-OVERSHOOT"
+      ],
+      "title": "정착·반복·목표초과",
+      "contrast": "진폭이줄며정착하는것과 같은패턴반복, 목표를지나복귀하는것은 구분.",
+      "avoid": "범위/대상/최종목표의근거가 맞으면 복합태그도 가능.",
+      "status": "project_draft"
+    },
+    {
+      "id": "R2-PAIR-16",
+      "term_ids": [
+        "PURPOSE-CAUSE",
+        "REL-CAUSE",
+        "REL-CORRELATION"
+      ],
+      "title": "인과 표현과 실제 인과",
+      "contrast": "화면에원인/결과가표현된것을 기록하고 실제인과검증은 별도.",
+      "avoid": "연결선·상관자료를 실제원인 승인으로 승격하지 않는다.",
+      "status": "project_draft"
+    },
+    {
+      "id": "R2-PAIR-17",
+      "term_ids": [
+        "LAYOUT-UI-ANNOTATION",
+        "STYLE-ILLUSTRATION"
+      ],
+      "title": "실제 UI와 UI처럼 보이는 그림",
+      "contrast": "원본제품캡처확인과 화면스타일관측은 다른주장.",
+      "avoid": "실제출처가 없으면 실제UI 표현을 보류한다.",
+      "status": "project_draft"
+    },
+    {
+      "id": "R2-PAIR-18",
+      "term_ids": [
+        "STYLE-PHOTO",
+        "STYLE-3D",
+        "STYLE-ISOMETRIC"
+      ],
+      "title": "표현과 제작 출처",
+      "contrast": "실사/입체/등각처럼 보이는 형식은 제작원본·촬영사실과 구분.",
+      "avoid": "충분히관측된입체표현STYLE-3D는유지하고실제3D제작원본주장은미확인으로분리. PHOTO는촬영출처가필수이며정확한등각투영은별도기하/원본근거확인.",
+      "status": "project_draft"
+    },
+    {
+      "id": "R2-PAIR-19",
+      "term_ids": [
+        "FUNCTION-FOCUS",
+        "PROPERTY-POSITION",
+        "PURPOSE-FOCUS"
+      ],
+      "title": "모션 속성과 역할·목적",
+      "contrast": "표식의이동을 관측, 설명대상으로초점이옮겨갔다는기능을 별도해석.",
+      "avoid": "모든이동이 주목이동/핵심강조 목적은 아니다.",
+      "status": "project_draft"
+    },
+    {
+      "id": "R2-PAIR-20",
+      "term_ids": [
+        "LAYOUT-PIP",
+        "STYLE-PIP"
+      ],
+      "title": "폐기 용어와 현재 용어",
+      "contrast": "신규기록은LAYOUT-PIP. 과거STYLE-PIP는 원문·버전을 보존하고 대체후보를 제안.",
+      "avoid": "폐기ID를새기록에재사용하거나과거축을자동변경하지 않는다.",
+      "status": "project_draft"
+    }
+  ]
+}

@@ -1,0 +1,836 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "const": "r6-human-review-ledger"
+    },
+    "version": {
+      "const": "0.1.1"
+    },
+    "data_scope": {
+      "enum": [
+        "actual_review_queue",
+        "spec_test"
+      ]
+    },
+    "source_pins": {
+      "type": "object",
+      "properties": {
+        "intake_policy": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "r6_sources": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "company_design": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "companies": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "assets": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "ci_colors": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "r5_policy": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "r5_parameters": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "skill_cards": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "workflow_policy_links": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "hanmac_profile": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "hanmac_thread": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "intake_policy",
+        "r6_sources",
+        "company_design",
+        "companies",
+        "assets",
+        "ci_colors",
+        "r5_policy",
+        "r5_parameters",
+        "skill_cards",
+        "workflow_policy_links",
+        "hanmac_profile",
+        "hanmac_thread"
+      ],
+      "additionalProperties": false
+    },
+    "request_catalog_pin": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "maxLength": 64
+        }
+      },
+      "required": [
+        "path",
+        "version",
+        "sha256"
+      ],
+      "additionalProperties": false
+    },
+    "requests": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "request_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "version": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "kind": {
+            "enum": [
+              "source_status",
+              "content_check",
+              "usage_scope"
+            ]
+          },
+          "readiness": {
+            "enum": [
+              "awaiting_response",
+              "needs_material",
+              "not_due"
+            ]
+          },
+          "dependency": {
+            "type": "string"
+          },
+          "applicability": {
+            "enum": [
+              "applicable",
+              "undetermined",
+              "not_applicable"
+            ]
+          },
+          "applicability_reason": {
+            "type": "string"
+          },
+          "targets": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "source_key": {
+                  "enum": [
+                    "intake_policy",
+                    "r6_sources",
+                    "company_design",
+                    "companies",
+                    "assets",
+                    "ci_colors",
+                    "r5_policy",
+                    "r5_parameters",
+                    "skill_cards",
+                    "workflow_policy_links",
+                    "hanmac_profile",
+                    "hanmac_thread"
+                  ]
+                },
+                "pointer": {
+                  "type": "string"
+                },
+                "scope": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                }
+              },
+              "required": [
+                "source_key",
+                "pointer",
+                "scope"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "source_key": {
+                  "enum": [
+                    "intake_policy",
+                    "r6_sources",
+                    "company_design",
+                    "companies",
+                    "assets",
+                    "ci_colors",
+                    "r5_policy",
+                    "r5_parameters",
+                    "skill_cards",
+                    "workflow_policy_links",
+                    "hanmac_profile",
+                    "hanmac_thread"
+                  ]
+                },
+                "pointer": {
+                  "type": "string"
+                },
+                "scope": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                }
+              },
+              "required": [
+                "source_key",
+                "pointer",
+                "scope"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "question": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "requested_knowledge": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "included_scope": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            }
+          },
+          "excluded_scope": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            }
+          },
+          "options": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "key": {
+                  "enum": [
+                    "A",
+                    "B",
+                    "C",
+                    "D"
+                  ]
+                },
+                "label": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "recommended": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "key",
+                "label",
+                "recommended"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "company_approval_requested": {
+            "const": false
+          }
+        },
+        "required": [
+          "request_id",
+          "version",
+          "title",
+          "kind",
+          "readiness",
+          "dependency",
+          "applicability",
+          "applicability_reason",
+          "targets",
+          "evidence",
+          "question",
+          "requested_knowledge",
+          "included_scope",
+          "excluded_scope",
+          "options",
+          "company_approval_requested"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "event_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "origin_data_scope": {
+            "enum": [
+              "actual_review_queue",
+              "spec_test"
+            ]
+          },
+          "kind": {
+            "enum": [
+              "response",
+              "correction",
+              "withdrawal"
+            ]
+          },
+          "request_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "request_version": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "request_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$",
+            "maxLength": 64
+          },
+          "context_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$",
+            "maxLength": 64
+          },
+          "supersedes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "outcome": {
+            "enum": [
+              "limited_statement",
+              "needs_material",
+              "unable_to_determine",
+              "disagrees",
+              "not_applicable",
+              "withdrawn"
+            ]
+          },
+          "scope_coverage": {
+            "enum": [
+              "partial",
+              "full"
+            ]
+          },
+          "covered_scope_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            }
+          },
+          "unresolved_scope_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            }
+          },
+          "not_applicable_scope_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            }
+          },
+          "assessed_scope": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            }
+          },
+          "excluded_scope": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "minItems": 1
+          },
+          "applicability_reason": {
+            "type": "string"
+          },
+          "raw_reply": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "reply_evidence_pin": {
+            "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "path": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  },
+                  "version": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  },
+                  "sha256": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$",
+                    "maxLength": 64
+                  }
+                },
+                "required": [
+                  "path",
+                  "version",
+                  "sha256"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "provenance": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "enum": [
+                  "current_conversation_manual",
+                  "specimen"
+                ]
+              },
+              "conversation_locator": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "received_on": {
+                "type": "string",
+                "format": "date"
+              },
+              "recorded_by": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "context_compared_manually": {
+                "const": true
+              }
+            },
+            "required": [
+              "kind",
+              "conversation_locator",
+              "received_on",
+              "recorded_by",
+              "context_compared_manually"
+            ],
+            "additionalProperties": false
+          },
+          "role_statement": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "authority_scope": {
+            "const": "content_statement_only"
+          },
+          "identity_authenticated": {
+            "const": false
+          },
+          "company_approved": {
+            "const": false
+          },
+          "permission_granted": {
+            "const": false
+          }
+        },
+        "required": [
+          "event_id",
+          "origin_data_scope",
+          "kind",
+          "request_id",
+          "request_version",
+          "request_sha256",
+          "context_sha256",
+          "supersedes",
+          "outcome",
+          "scope_coverage",
+          "covered_scope_ids",
+          "unresolved_scope_ids",
+          "not_applicable_scope_ids",
+          "assessed_scope",
+          "excluded_scope",
+          "applicability_reason",
+          "raw_reply",
+          "reply_evidence_pin",
+          "provenance",
+          "role_statement",
+          "authority_scope",
+          "identity_authenticated",
+          "company_approved",
+          "permission_granted"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "identity_authenticated": {
+      "const": false
+    },
+    "company_approved": {
+      "const": false
+    },
+    "operational_release": {
+      "const": false
+    }
+  },
+  "required": [
+    "id",
+    "version",
+    "data_scope",
+    "source_pins",
+    "request_catalog_pin",
+    "requests",
+    "events",
+    "identity_authenticated",
+    "company_approved",
+    "operational_release"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:hanmac:phase00:r6-human-intake:0.1.1",
+  "title": "R6 사람 답변 접수·정정·철회 기록"
+}

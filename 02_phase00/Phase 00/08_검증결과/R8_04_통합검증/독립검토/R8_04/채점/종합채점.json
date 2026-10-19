@@ -1,0 +1,140 @@
+{
+  "scope": "기존 고정 후보 새사례3회 + 실제쓰기5회만. 보완후/순차인계 준비자료 미열람.",
+  "summary": {
+    "passed": 38,
+    "failed": 0,
+    "total": 38,
+    "pass_rate": 1.0
+  },
+  "runs": [
+    {
+      "group": "1_새사례",
+      "case": "용어초안_지정판본과없는근거",
+      "run": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\1_새사례\\eval-01-용어초안_지정판본과없는근거\\candidate",
+      "grading": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\1_새사례\\eval-01-용어초안_지정판본과없는근거\\candidate\\grading.json",
+      "passed": 5,
+      "failed": 0,
+      "total": 5,
+      "pass_rate": 1.0,
+      "limitations": [
+        "초기 raw stdout/stderr 일부 미보존, rg 출력잘림 후 관련 객체 재조회."
+      ]
+    },
+    {
+      "group": "1_새사례",
+      "case": "정상기록_미수정과국소보류",
+      "run": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\1_새사례\\eval-02-정상기록_미수정과국소보류\\candidate",
+      "grading": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\1_새사례\\eval-02-정상기록_미수정과국소보류\\candidate\\grading.json",
+      "passed": 5,
+      "failed": 0,
+      "total": 5,
+      "pass_rate": 1.0,
+      "limitations": [
+        "PowerShell 출력잘림 후 실제 Python 로드/검사. 전체 OS audit 아님."
+      ]
+    },
+    {
+      "group": "1_새사례",
+      "case": "정상비교_맞는해시와다른판본회신",
+      "run": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\1_새사례\\eval-03-정상비교_맞는해시와다른판본회신\\candidate",
+      "grading": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\1_새사례\\eval-03-정상비교_맞는해시와다른판본회신\\candidate\\grading.json",
+      "passed": 5,
+      "failed": 0,
+      "total": 5,
+      "pass_rate": 1.0,
+      "limitations": [
+        "초기 보고서 CRLF byte assert exit1 후 실패본 보존·write_bytes 재작성. 카드 조회 ID불일치0개 교정.",
+        "보고서 잔여항목26이라는 문구 오류(26전체-11선정=15)."
+      ]
+    },
+    {
+      "group": "2_실제쓰기",
+      "case": "큐레이터_저장후실패",
+      "run": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-01-큐레이터_저장후실패\\candidate",
+      "grading": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-01-큐레이터_저장후실패\\candidate\\grading.json",
+      "passed": 4,
+      "failed": 0,
+      "total": 4,
+      "pass_rate": 1.0,
+      "limitations": [
+        "보고 생성 도구 JavaScript 구문오류1회.",
+        "복구직전 재읽기 SHA를 자기후보/owned에 비교하는 guard 없음."
+      ]
+    },
+    {
+      "group": "2_실제쓰기",
+      "case": "검토자_명시초안수정후실패",
+      "run": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-02-검토자_명시초안수정후실패\\candidate",
+      "grading": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-02-검토자_명시초안수정후실패\\candidate\\grading.json",
+      "passed": 4,
+      "failed": 0,
+      "total": 4,
+      "pass_rate": 1.0,
+      "limitations": []
+    },
+    {
+      "group": "2_실제쓰기",
+      "case": "기록관리자_여러파일일부저장",
+      "run": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-03-기록관리자_여러파일일부저장\\candidate",
+      "grading": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-03-기록관리자_여러파일일부저장\\candidate\\grading.json",
+      "passed": 5,
+      "failed": 0,
+      "total": 5,
+      "pass_rate": 1.0,
+      "limitations": [
+        "candidate/자료 잘못된 경로조회 실패 후 정정. 보고작성.py IndexError exit1 후 인수 보완."
+      ]
+    },
+    {
+      "group": "2_실제쓰기",
+      "case": "기록관리자_외부수정개입",
+      "run": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate",
+      "grading": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate\\grading.json",
+      "passed": 5,
+      "failed": 0,
+      "total": 5,
+      "pass_rate": 1.0,
+      "limitations": [
+        "report.py import argv부족 IndexError exit1 후 report 인수 보완."
+      ]
+    },
+    {
+      "group": "2_실제쓰기",
+      "case": "기록관리자_복구불가",
+      "run": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-05-기록관리자_복구불가\\candidate",
+      "grading": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-05-기록관리자_복구불가\\candidate\\grading.json",
+      "passed": 5,
+      "failed": 0,
+      "total": 5,
+      "pass_rate": 1.0,
+      "limitations": [
+        "candidate/자료 경로실패 후 DB/자료 조회. 작업실행.py SyntaxError exit1은 CLI전 발생, 원본오류로그 보존."
+      ]
+    }
+  ],
+  "tested": [
+    "원문byte백업",
+    "한정지식실제편집",
+    "정상 R4/R5 읽기검사",
+    "맞는SHA와주장지지범위분리",
+    "이전판본 합성회신 배제",
+    "저장후검사실패 실제주입2회",
+    "R4정상/R5부분쓰기와양쪽복구",
+    "외부actor최종bytes보존/복구안함",
+    "restore거부후우회없음/미복구사용중단보고"
+  ],
+  "not_tested": [
+    "전체OS쓰기감시/중간모든파일사건",
+    "실영상/실제시청자효과",
+    "회사승인/사용권한/사람신원",
+    "커널원자성/완전한동시성",
+    "큐레이터 복구직전 외부 actor 교체 조건",
+    "보완후11회/순차인계2회"
+  ],
+  "qualifications": [
+    "38/38은 고정된 관측 기대의 결과이며 모든 구현이 안전하다는 뜻이 아니다.",
+    "큐레이터 복구전 새current SHA와 자기 bytes 비교 guard 부재는 현재원문 복구 성공과 별도로 남긴다.",
+    "검토자 보고서의 나머지26항목은 산술상 잘못이며 실제 최종판정근거와 분리한다.",
+    "실제쓰기의 환경실패는 의도된시험, 보고스크립트오류/초기경로실패/미수집텔레메트리는 그와 별도다."
+  ]
+}

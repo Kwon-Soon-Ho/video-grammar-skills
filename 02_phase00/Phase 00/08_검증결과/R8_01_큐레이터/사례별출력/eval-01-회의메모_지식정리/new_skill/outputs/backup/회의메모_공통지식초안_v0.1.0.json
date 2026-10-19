@@ -1,0 +1,433 @@
+{
+  "kind": "knowledge_draft_from_synthetic_meeting_notes",
+  "id": "meeting-knowledge-draft",
+  "version": "0.1.0",
+  "status": "draft_unregistered",
+  "company_approved": false,
+  "operational_release": false,
+  "scope": "입력메모 5개를 기존 로컬 용어·원칙·레이아웃·회사 참조와 대조한 지식 초안. 실제 영상·시청효과·사람 검수 결과 아님.",
+  "input_ref": "입력메모.json@0.1.0",
+  "authority_boundary": "원문 메모의 없애자/추가해도 되겠다/공식색 제안은 정리할 내용이며 사용자 승인·회사 결정으로 취급하지 않았다. 기존 정본은 변경하지 않았다.",
+  "ready_reference": [
+    "K01",
+    "K02",
+    "K03",
+    "K04",
+    "K05",
+    "K06",
+    "K07"
+  ],
+  "judgment_required": [
+    "K02: 새 taxonomy 등록",
+    "K03: 새 taxonomy 등록",
+    "K04: 새 taxonomy 등록",
+    "K05: 해당 주제 사전 지식 및 설명 깊이",
+    "K07: 회사·색·버전·역할 선택 및 공식성/최신성"
+  ],
+  "cards": [
+    {
+      "id": "K01",
+      "note_index": 1,
+      "title": "단계 번호는 정보 관계에 따라 유지한다",
+      "status": "conditional_reference",
+      "knowledge_refs": [
+        "IP-02",
+        "SCREEN-CHOICE",
+        "SCREEN-GROUP",
+        "KNOW-LAYOUT-CARD-GROUP",
+        "KNOW-LAYOUT-PROCESS-LINE"
+      ],
+      "term_refs": [
+        "PURPOSE-PROCESS",
+        "REL-ORDER",
+        "LAYOUT-CARD-GROUP",
+        "LAYOUT-PROCESS-LINE"
+      ],
+      "source_refs": [
+        "SRC-CAM-EXTRANEOUS",
+        "SRC-PROJECT-GUIDANCE",
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "local_evidence_refs": [
+        "E02",
+        "E04",
+        "E05",
+        "E06",
+        "E07",
+        "E12"
+      ],
+      "original_concept": "IP-02는 구조를 식별하는 정보 표식에 단계 번호를 포함한다. 카드 형상과 순차 관계는 별도 축이다.",
+      "project_interpretation": "번호가 순서·현재 위치·참조 대상을 전달한다면 유지하고, 불필요하게 순위를 암시하는 번호는 줄인다. anti-generic을 번호/카드/대칭/내용상 반복의 전면 금지로 쓰지 않는다.",
+      "applicable_when": "확인된 절차 순서 또는 번호와 범례의 대응이 있을 때. 반복 구조가 같은 역할의 항목을 읽는 데 도움이 될 때.",
+      "positive_example": "설명용: 접수→검토→승인에 1·2·3과 단계명을 함께 두고 현재 단계만 표식한다.",
+      "counterexample": "설명용: 모든 번호를 지워 현재 위치와 재참조가 어려워지거나, 동등한 사업 분야에 1·2·3을 붙여 우선순위로 오해하게 한다.",
+      "acceptable_exception": "동등 항목이고 순서가 의미 없으면 번호를 생략해도 된다. 같은 역할의 항목은 같은 정보 순서로 반복할 수 있다.",
+      "unknowns": [
+        "실제 카드 화면·목적·절차 원문이 없어 특정 번호의 삭제 여부와 가독성은 미확정"
+      ],
+      "actual_observation": null,
+      "human_question": "내용 담당자: 실제 순서와 현재 위치를 식별해야 하는 장면인가?"
+    },
+    {
+      "id": "K02",
+      "note_index": 2,
+      "title": "표·매트릭스는 기존 확장 후보로 유지",
+      "status": "reference_with_taxonomy_decision_pending",
+      "candidate_ref": "LAYOUT-CAND-TABLE",
+      "classification": {
+        "state": "other_candidate",
+        "term_ids": [],
+        "reason_code": "outside_vocabulary"
+      },
+      "knowledge_refs": [
+        "KNOW-LAYOUT-SPLIT-COMPARE",
+        "SCREEN-DATA",
+        "SCREEN-TYPE-KO",
+        "SCREEN-TIME-READ"
+      ],
+      "term_refs": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY",
+        "SRC-PROJECT-GUIDANCE"
+      ],
+      "local_evidence_refs": [
+        "E02",
+        "E03",
+        "E05",
+        "E08",
+        "E09"
+      ],
+      "original_concept": "LAYOUT-CAND-TABLE은 proposal_not_new_taxonomy의 지원 지식 후보이며 taxonomy term_id가 아니다.",
+      "project_interpretation": "행·열의 교차 관계를 설명하되 카드 그룹으로 자동 대체하지 않는다. 실제로 분할 비교 정의를 만족하는 부분만 기존 분류와 연결한다.",
+      "applicable_when": "여러 대상의 여러 항목을 정확히 조회·대조하며 행·열 제목, 기간, 기준과 단위를 확인할 수 있을 때.",
+      "positive_example": "설명용: 공법 A/B의 공기·비용·조건을 같은 기준의 행·열로 대응하고 단위와 미제공을 표시한다.",
+      "counterexample": "설명용: 결측을 0으로 채우거나 서로 다른 단위를 한 열에서 비교한다.",
+      "acceptable_exception": "정확한 값 조회가 핵심이 아니면 차트·분할 비교·단일 초점을 후보로 비교한다. 좁은 화면은 공통 머리를 유지하며 구간을 나눌 수 있다.",
+      "unknowns": [
+        "실제 행·열 기준·숫자·결측 의미·출력 조건 미제공",
+        "정식 분류 추가는 별도 판단"
+      ],
+      "actual_observation": null,
+      "decision_ref": "D01"
+    },
+    {
+      "id": "K03",
+      "note_index": 2,
+      "title": "순환·반복 흐름은 복귀 근거를 요구",
+      "status": "reference_with_taxonomy_decision_pending",
+      "candidate_ref": "LAYOUT-CAND-CYCLE",
+      "classification": {
+        "state": "other_candidate",
+        "term_ids": [],
+        "reason_code": "outside_vocabulary"
+      },
+      "knowledge_refs": [
+        "KNOW-LAYOUT-NETWORK",
+        "KNOW-LAYOUT-PROCESS-LINE"
+      ],
+      "term_refs": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "local_evidence_refs": [
+        "E02",
+        "E03",
+        "E06",
+        "E07",
+        "E08",
+        "E09"
+      ],
+      "original_concept": "LAYOUT-CAND-CYCLE은 끝에서 앞 단계로 돌아가는 의미를 다루는 지원 후보다.",
+      "project_interpretation": "복귀·반복·재시작/종료 조건을 표시하고 원형 배치를 반복 사실의 근거로 쓰지 않는다. 닫힌 순환 전체를 선형 프로세스로 강제하지 않는다.",
+      "applicable_when": "마지막 단계가 이전 단계로 복귀한다는 절차 근거가 있을 때.",
+      "positive_example": "설명용: 점검→조치→재점검에 복귀 화살표와 반복 조건을 붙인다.",
+      "counterexample": "설명용: 일회성 접수→검토→승인을 원형으로 그려 승인 후 재접수를 암시한다.",
+      "acceptable_exception": "확인된 노드·연결 부분이 NETWORK 정의에 맞으면 해당 부분의 후보 연결은 가능하다. 일회성 종료 흐름은 선형 프로세스를 검토한다.",
+      "unknowns": [
+        "실제 복귀·종료 조건 미제공",
+        "원형 배치가 각 단계의 시간 길이가 같다는 뜻은 아님"
+      ],
+      "actual_observation": null,
+      "decision_ref": "D01"
+    },
+    {
+      "id": "K04",
+      "note_index": 2,
+      "title": "조건 분기는 조건·경로·결과를 구분",
+      "status": "reference_with_taxonomy_decision_pending",
+      "candidate_ref": "LAYOUT-CAND-BRANCH",
+      "classification": {
+        "state": "other_candidate",
+        "term_ids": [],
+        "reason_code": "outside_vocabulary"
+      },
+      "knowledge_refs": [
+        "KNOW-LAYOUT-NETWORK",
+        "KNOW-LAYOUT-PROCESS-LINE"
+      ],
+      "term_refs": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "local_evidence_refs": [
+        "E02",
+        "E03",
+        "E06",
+        "E07",
+        "E08",
+        "E09"
+      ],
+      "original_concept": "LAYOUT-CAND-BRANCH는 조건에 따라 갈리는 경로를 설명하는 후보이며 새 정식 ID가 아니다.",
+      "project_interpretation": "입력→조건 질문→각 경로 라벨→결과/합류를 구분한다. 분기 도형이나 화살표만으로 현실 인과·승인 절차를 확정하지 않는다.",
+      "applicable_when": "조건·경로·결과가 시나리오나 업무 원문으로 확인될 때.",
+      "positive_example": "설명용: 검토 결과에 따라 승인/보완 요청으로 나누고 각 경로에 조건을 적는다.",
+      "counterexample": "설명용: 실제 기준 없이 승인 조건을 만들거나 예/아니오 라벨을 뒤집는다.",
+      "acceptable_exception": "조건이 없고 순서만 있으면 선형 프로세스 후보, 관계 소개가 중심이면 연결 구성 후보를 검토한다. 맞지 않는 부분은 미분류로 둔다.",
+      "unknowns": [
+        "실제 판단 기준·경로·합류 원문 미제공"
+      ],
+      "actual_observation": null,
+      "decision_ref": "D01"
+    },
+    {
+      "id": "K05",
+      "note_index": 3,
+      "title": "부서명으로 숙련도를 단정하지 않고 설명 깊이를 조정",
+      "status": "conditional_reference_with_audience_unknown",
+      "knowledge_refs": [
+        "IP-07",
+        "IP-10",
+        "IP-03",
+        "IP-06",
+        "SCREEN-TYPE-KO",
+        "SCREEN-TIME-READ"
+      ],
+      "term_refs": [],
+      "source_refs": [
+        "SRC-CAM-ESSENTIAL",
+        "SRC-R3-EXPERTISE-SUMMARY",
+        "SRC-CAM-EXTRANEOUS",
+        "SRC-PROJECT-GUIDANCE"
+      ],
+      "local_evidence_refs": [
+        "E04",
+        "E05",
+        "E12",
+        "E13",
+        "E14",
+        "E16"
+      ],
+      "original_concept": "IP-07은 낯선 핵심 명칭·역할의 사전 소개, IP-10 v0.1.2는 입력 근거에 따라 숙련도별 지원을 조정하는 조건부 참고다. 공식 Summary 수준의 근거이며 장 전체·진단도구·회사 영상 효과 검증은 아니다.",
+      "project_interpretation": "기획실이라는 부서명과 해당 주제의 사전 지식은 별개다. 현재 숙련도는 unknown. 핵심 용어를 우선 소개하는 후보는 정리하되 모든 용어를 항상 풀어쓰는 의무는 만들지 않는다.",
+      "applicable_when": "사전 지식·영상 목적·시청 조건과 실제 기술명이 확인되면 필요한 개념 소개의 깊이와 반복을 비교한다.",
+      "positive_example": "설명용: 용어에 익숙하지 않다는 입력이 확인된 시청자에게 본 설명 전 핵심 구성 명칭과 역할을 짧은 범례로 소개한다.",
+      "counterexample": "설명용: 부서명만으로 전원을 초보자로 기록하고 이미 아는 용어까지 매번 풀어 화면을 과밀하게 한다.",
+      "acceptable_exception": "숙련자라도 필수 고지·안전·새로운 정의·접근성 정보는 유지한다. 무음·자막을 위한 필요한 중복을 삭제하지 않는다.",
+      "unknowns": [
+        "해당 주제의 실제 사전 지식",
+        "핵심 용어 목록·정의·긴 한국어 문구·숫자/SI 단위",
+        "음성/무음 배포·출력 화면비·읽을 시간"
+      ],
+      "actual_observation": null,
+      "decision_ref": "D02",
+      "human_question": "기획/내용 담당자와 실제 대상 시청자: 이 주제에서 이미 아는 용어와 처음 접하는 핵심 개념의 근거를 제공할 수 있는가? 부서명으로 대체하지 않는다."
+    },
+    {
+      "id": "K06",
+      "note_index": 4,
+      "title": "등속 설비 설명에는 선형 변화율이 적합할 수 있음",
+      "status": "conditional_reference",
+      "knowledge_refs": [
+        "AP-06",
+        "MP-02",
+        "SCREEN-DATA",
+        "SCREEN-TIME-READ"
+      ],
+      "term_refs": [
+        "CURVE-LINEAR"
+      ],
+      "source_refs": [
+        "SRC-ADOBE-12",
+        "SRC-JORGE-10",
+        "SRC-PROJECT-GUIDANCE"
+      ],
+      "local_evidence_refs": [
+        "E02",
+        "E03",
+        "E04",
+        "E05",
+        "E12",
+        "E13",
+        "E17"
+      ],
+      "original_concept": "CURVE-LINEAR는 일정한 변화율이다. AP-06은 등속 전달·기계 시뮬레이션에 선형도 적합하다고 명시한다. MP-02의 외부 공식 근거는 공개 강의 항목명이며 상세 강의 정의는 미확보다.",
+      "project_interpretation": "실제 등속을 설명하려면 이징을 반드시 넣을 이유가 없다. 공간의 직선 경로와 시간에 따른 선형 변화율을 분리하고, 장식 패널의 이징을 설비 운동과 나눈다.",
+      "applicable_when": "설명 대상의 일정 속도라는 전제가 업무 자료·실측 시간/경로와 맞고, 대상별 변화율을 구분할 때.",
+      "positive_example": "설명용: 제공된 시간과 경로를 보존해 설비를 등속으로 움직이고 설명 패널은 별도 가감속 후보로 설계한다.",
+      "counterexample": "설명용: 자연스러워 보이도록 설비에 감속을 넣어 등속이라는 설명을 바꾼다. 직선 경로라는 이유만으로 등속을 관측했다고 기록한다.",
+      "acceptable_exception": "출발/정지의 실제 가감속이 설명 대상이라면 확인된 운동을 따른다. 등속·정지·모션 미사용 자체는 실패 조건이 아니다.",
+      "unknowns": [
+        "메모의 등속은 기획 전제이며 실제 관측 아님",
+        "실측 표본·키프레임·속도·프레임·AE 곡선값 없음"
+      ],
+      "actual_observation": null,
+      "human_question": "기술 내용 담당자: 일정 속도 구간과 출발/정지 구간의 시간·경로 근거는 무엇인가?"
+    },
+    {
+      "id": "K07",
+      "note_index": 5,
+      "title": "CI 관측색은 공식 본문색과 구분",
+      "status": "reference_with_company_decision_pending",
+      "knowledge_refs": [
+        "SCREEN-COLOR"
+      ],
+      "term_refs": [],
+      "source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ],
+      "company_rule_refs": [
+        "HM-RULE-SCOPE",
+        "HM-RULE-OBSERVATION",
+        "HM-RULE-NEUTRAL",
+        "HM-RULE-READABILITY"
+      ],
+      "local_evidence_refs": [
+        "E05",
+        "E10",
+        "E11",
+        "E15"
+      ],
+      "original_concept": "회사 CI 관측색·공식성/최신성 선언·디자이너의 프로젝트 역할 선택은 서로 다른 근거다. 한맥 공통 라이브러리는 명시 선택할 때 쓰며 모든 장면 의무가 아니다.",
+      "project_interpretation": "최신으로 받았다는 메모만으로 대상 회사·색값·문서 버전·사용 범위가 확인되지 않는다. 공식 본문 글자색으로 전체 적용하지 않고 구체 버전에 대한 역할 후보와 검수 대기로 남긴다.",
+      "applicable_when": "회사/공동주체, 색 ID·원문/기록 버전과 SHA, 현재 원문대조·화면 sRGB 근거, 명시 선택 이유·가정, 사용 권한과 최종 배경의 가독성을 확인한 뒤 프로젝트 후보로 사용한다.",
+      "positive_example": "설명용: 확인된 회사색을 강조 후보로 연결하고 본문은 합성 배경에서 읽히는 역할색 후보를 비교한다. 원 CI색은 보존한다.",
+      "counterexample": "설명용: 로고에서 관측한 색을 모든 본문에 강제하거나 대비를 맞추려고 CI 원색 자체를 바꿔 공식형으로 기록한다.",
+      "acceptable_exception": "공식 지침이 특정 본문 역할을 명시한다면 그 문서의 회사·버전·용도 범위에서 별도 확인한다. 대비가 부족하면 배경판·글자색·배치·허용 변형을 검토한다.",
+      "unknowns": [
+        "최신으로 받았다는 CI의 회사·파일·버전·SHA·색값·공식 역할",
+        "실제 문서/CI 바이너리와 최종 프레임·대비·사람 검수 미수행"
+      ],
+      "actual_observation": null,
+      "decision_ref": "D03",
+      "human_question": "회사 CI 담당자: 대상 문서의 공식성·최신성·본문색 지정 범위와 근거는 무엇인가? 디자인 담당자: 해당 배경/문구에서 선택한 역할과 가독성 근거는 무엇인가?"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D01",
+      "topic": "표·순환·분기의 운영 분류 방식",
+      "status": "pending_not_sent",
+      "role": "분류 운영 담당자/01-B",
+      "question": "기존 후보 세 가지를 어떤 방식으로 관리할지?",
+      "options": [
+        {
+          "id": "A",
+          "text": "기존 candidate_id와 other_candidate를 유지하고 실제 정의에 맞는 범위만 기존 ID에 연결",
+          "impact": "현재 계약을 지키며 바로 참고 가능"
+        },
+        {
+          "id": "B",
+          "text": "추가 자료를 모은 후 세 후보를 하나씩 독립 검토",
+          "impact": "개념별 경계와 필요성을 검토"
+        },
+        {
+          "id": "C",
+          "text": "일치가 확인된 범위만 기존 분류를 사용하고 나머지는 미분류",
+          "impact": "임의 병합 없이 보수적으로 기록"
+        },
+        {
+          "id": "D",
+          "text": "정식 분류 확장을 별도 설계·영향 검토·버전 변경 안건으로 추진",
+          "impact": "승인 전 ID 등록은 하지 않음"
+        }
+      ],
+      "recommended": "A",
+      "recommendation_reason": "이미 proposal_not_new_taxonomy 후보가 있고 지원 예/반례를 바로 쓸 수 있음. 정식 분류를 새로 등록할 권한·판단은 별도다."
+    },
+    {
+      "id": "D02",
+      "topic": "설명 지원 방식",
+      "status": "pending_not_sent",
+      "role": "기획/내용 담당자",
+      "question": "사전 지식 확인 후 설명 깊이를 어떻게 운영할지?",
+      "options": [
+        {
+          "id": "A",
+          "text": "핵심 용어만 사전 소개하고 나머지는 맥락에 따라 설명",
+          "impact": "실제 사전 지식 근거로 깊이 조정"
+        },
+        {
+          "id": "B",
+          "text": "입문용 상세 설명과 숙련용 요약을 분리",
+          "impact": "버전 운영·대상 구분 필요"
+        },
+        {
+          "id": "C",
+          "text": "공통 본편과 별도 용어집/참조 자료 제공",
+          "impact": "참조 경로와 무음 전달 조건 확인 필요"
+        },
+        {
+          "id": "D",
+          "text": "확인 전 기존 설명 깊이를 유지하고 대상 조사 후 결정",
+          "impact": "근거 없는 초보자 단정을 보류"
+        }
+      ],
+      "recommended": "A",
+      "recommendation_reason": "핵심 개념 소개는 조건부 참고 가능하나 실제 적용 깊이는 사전 지식 근거 확보 후 결정. 근거 확보 전에는 D의 보류 상태."
+    },
+    {
+      "id": "D03",
+      "topic": "회사색의 본문 역할",
+      "status": "pending_not_sent",
+      "role": "회사 CI 담당자·디자인 검수자/01-B",
+      "question": "확인된 CI색을 영상에서 어떤 범위로 사용할지?",
+      "options": [
+        {
+          "id": "A",
+          "text": "확인된 색을 프로젝트별 역할 후보로 선택하고 조합·가독성 검수",
+          "impact": "회사 승인과 프로젝트 선택을 구분"
+        },
+        {
+          "id": "B",
+          "text": "공식 문서의 명시 본문 규정만 해당 범위에 적용",
+          "impact": "권위·최신성·적용 용도 확인 필요"
+        },
+        {
+          "id": "C",
+          "text": "CI색은 로고/강조에 한정하고 본문 역할은 별도 후보 검토",
+          "impact": "명시 선택과 회사 허용 범위 확인 필요"
+        },
+        {
+          "id": "D",
+          "text": "본문색의 회사 공통 필수화 안건을 별도 심의",
+          "impact": "실제 사례·반례·권한자 승인 전 필수화 없음"
+        }
+      ],
+      "recommended": "A",
+      "recommendation_reason": "관측색의 공식 역할 승격을 피하면서 기존 R5 범위 내에서 조건부 후보를 정리할 수 있다."
+    }
+  ],
+  "provenance_limits": {
+    "local_reading": "로컬 정본의 선택 항목·문단과 기존 조사기록의 해당 출처 선언을 대조했다. 참고문헌 목록을 외부 원문 독립 열람으로 계산하지 않는다.",
+    "external_reading": "이번 실행에서 네트워크·외부 원문/스킬 코드·유료 강의·학술 장 전체를 읽지 않았다. 기존 조사기록은 이전 읽기 깊이에 관한 선언으로만 사용했다.",
+    "ci_scope": "CI 바이너리/실제 최신 원문과 R6 질문·답변 문맥을 이번에 검증하지 않았다. 과거 최신성 회신을 이 초안의 효과·본문색 승인으로 사용하지 않았다.",
+    "not_performed": [
+      "R6 통합 조회의 전체 원문/자산 검사",
+      "R7 연결 검사 및 실제 영상 품질 판정",
+      "영상 추출·OCR·모션 측정·AE·CU",
+      "사람 답변·회사 승인·지식 정본 등록/기본 전환"
+    ],
+    "numeric_defaults": null,
+    "actual_video_cases": [],
+    "approval_claims": []
+  },
+  "change_record": {
+    "action": "new_separate_draft",
+    "parent": "입력 메모 및 참조 정본(아래 evidence_manifest)",
+    "before_version": null,
+    "after_version": "0.1.0",
+    "backup": "새 파일 생성. 기존 초안을 덮어쓰지 않으므로 변경 전 사본 없음. 입력과 고정 정본 원문은 유지.",
+    "diff": "운영 정본 delta 없음. outputs에 새 지식 초안과 실행 근거만 추가.",
+    "unregistered": "지식 정본/연결목록 미등록. 운영 등록·기본 전환 미수행."
+  }
+}

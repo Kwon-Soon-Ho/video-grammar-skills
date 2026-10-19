@@ -1,0 +1,3221 @@
+{
+  "scope": "8개 별도회사 등록 계약 독립 재검사. 가상회사·가상색은 C fixture/메모리에서만 사용",
+  "tool_sha256": "ee9978bc3eceb8129f94601ef55d5b27af0d1dcc1e9a821a74da3b6c53198181",
+  "schema_sha256": {
+    "회사목록_규격.json": "861b4b2fa8b8f4da06eeaf8340deef4b4249ccbf3aa05219090cb5cd93e49cd3",
+    "자산목록_규격.json": "cc6e5be499cd4734ba8b86b93dcb004e355582520fa449e411e239e07264e7bc",
+    "CI색상목록_규격.json": "07c5a227f3ed67dcabeac2d68c2a12a9df916649b769943422c92e1f3b58a8fd"
+  },
+  "limits": "출처/최신CI 진위·사람 신원·원문 실제 복사 정확성은 인증하지 않음",
+  "prior_regressions": [
+    {
+      "id": "F1",
+      "name": "원본없는 파생 CI·응용색 완료 차단",
+      "result": {
+        "valid": true,
+        "errors": [],
+        "warnings": [
+          "회사별 원본 CI·관측색 자료 수집/검토 미완료",
+          "공식 지정색 전체 확인 미완료; 관측색은 공식값 아님"
+        ],
+        "collection_complete": false,
+        "official_values_complete": false,
+        "counts": {
+          "companies": 8,
+          "assets": 16,
+          "colors": 8
+        }
+      },
+      "palette": {
+        "company_id": "fixture_company_0",
+        "colors": [],
+        "reason": "해당 조건의 확인된 화면색 없음",
+        "authority": "원문대조/관측/제안의 기록. 회사 필수화·페이지 품질 승인 아님."
+      },
+      "mutation_original": [
+        {
+          "path": "/assets/records/0/generation",
+          "before": null,
+          "after": {
+            "method": "redraw",
+            "tool_or_process": "fixture",
+            "run_ref": null,
+            "changes_from_source": "derived logo"
+          }
+        },
+        {
+          "path": "/assets/records/0/relationships",
+          "before": [],
+          "after": [
+            {
+              "relation": "derived_from",
+              "target": {
+                "asset_id": "fixture_guide_0",
+                "record_version": "1.0.0",
+                "sha256": "9c89bc7399cd47b9087e8f762f2f3c7c136650fdab7088f7ca47c383748a6b64"
+              }
+            }
+          ]
+        },
+        {
+          "path": "/assets/records/0/role",
+          "before": "original",
+          "after": "derived"
+        },
+        {
+          "path": "/assets/records/2/generation",
+          "before": null,
+          "after": {
+            "method": "redraw",
+            "tool_or_process": "fixture",
+            "run_ref": null,
+            "changes_from_source": "derived logo"
+          }
+        },
+        {
+          "path": "/assets/records/2/relationships",
+          "before": [],
+          "after": [
+            {
+              "relation": "derived_from",
+              "target": {
+                "asset_id": "fixture_guide_1",
+                "record_version": "1.0.0",
+                "sha256": "6d60db829c6cb853b2933ef3ec4bde1f7d3afcc82c03b9dcbb984706be614296"
+              }
+            }
+          ]
+        },
+        {
+          "path": "/assets/records/2/role",
+          "before": "original",
+          "after": "derived"
+        },
+        {
+          "path": "/assets/records/4/generation",
+          "before": null,
+          "after": {
+            "method": "redraw",
+            "tool_or_process": "fixture",
+            "run_ref": null,
+            "changes_from_source": "derived logo"
+          }
+        },
+        {
+          "path": "/assets/records/4/relationships",
+          "before": [],
+          "after": [
+            {
+              "relation": "derived_from",
+              "target": {
+                "asset_id": "fixture_guide_2",
+                "record_version": "1.0.0",
+                "sha256": "f457e668fa6893cacdfe62ac1d5ae2406cf68968990a543a71b2978b768175db"
+              }
+            }
+          ]
+        },
+        {
+          "path": "/assets/records/4/role",
+          "before": "original",
+          "after": "derived"
+        },
+        {
+          "path": "/assets/records/6/generation",
+          "before": null,
+          "after": {
+            "method": "redraw",
+            "tool_or_process": "fixture",
+            "run_ref": null,
+            "changes_from_source": "derived logo"
+          }
+        },
+        {
+          "path": "/assets/records/6/relationships",
+          "before": [],
+          "after": [
+            {
+              "relation": "derived_from",
+              "target": {
+                "asset_id": "fixture_guide_3",
+                "record_version": "1.0.0",
+                "sha256": "14c277c79f41faa3faa1ecf6dc6b6d0f186d3d518f7a0b2a62c366764dcf0740"
+              }
+            }
+          ]
+        },
+        {
+          "path": "/assets/records/6/role",
+          "before": "original",
+          "after": "derived"
+        },
+        {
+          "path": "/assets/records/8/generation",
+          "before": null,
+          "after": {
+            "method": "redraw",
+            "tool_or_process": "fixture",
+            "run_ref": null,
+            "changes_from_source": "derived logo"
+          }
+        },
+        {
+          "path": "/assets/records/8/relationships",
+          "before": [],
+          "after": [
+            {
+              "relation": "derived_from",
+              "target": {
+                "asset_id": "fixture_guide_4",
+                "record_version": "1.0.0",
+                "sha256": "3c606e12f790e5dea9f59a3d46fefcf7e95151731dbece59b487cd5b6ebb3a0f"
+              }
+            }
+          ]
+        },
+        {
+          "path": "/assets/records/8/role",
+          "before": "original",
+          "after": "derived"
+        },
+        {
+          "path": "/assets/records/10/generation",
+          "before": null,
+          "after": {
+            "method": "redraw",
+            "tool_or_process": "fixture",
+            "run_ref": null,
+            "changes_from_source": "derived logo"
+          }
+        },
+        {
+          "path": "/assets/records/10/relationships",
+          "before": [],
+          "after": [
+            {
+              "relation": "derived_from",
+              "target": {
+                "asset_id": "fixture_guide_5",
+                "record_version": "1.0.0",
+                "sha256": "6956814d6fea24d5d5e05f0fc8ec8f1778dea7b6ebd8c9a26f821110d4ddc40c"
+              }
+            }
+          ]
+        },
+        {
+          "path": "/assets/records/10/role",
+          "before": "original",
+          "after": "derived"
+        },
+        {
+          "path": "/assets/records/12/generation",
+          "before": null,
+          "after": {
+            "method": "redraw",
+            "tool_or_process": "fixture",
+            "run_ref": null,
+            "changes_from_source": "derived logo"
+          }
+        },
+        {
+          "path": "/assets/records/12/relationships",
+          "before": [],
+          "after": [
+            {
+              "relation": "derived_from",
+              "target": {
+                "asset_id": "fixture_guide_6",
+                "record_version": "1.0.0",
+                "sha256": "edbd68466a9f20cdc0f899f32c0747d421b166e8d2896a9596656b9b43a5552b"
+              }
+            }
+          ]
+        },
+        {
+          "path": "/assets/records/12/role",
+          "before": "original",
+          "after": "derived"
+        },
+        {
+          "path": "/assets/records/14/generation",
+          "before": null,
+          "after": {
+            "method": "redraw",
+            "tool_or_process": "fixture",
+            "run_ref": null,
+            "changes_from_source": "derived logo"
+          }
+        },
+        {
+          "path": "/assets/records/14/relationships",
+          "before": [],
+          "after": [
+            {
+              "relation": "derived_from",
+              "target": {
+                "asset_id": "fixture_guide_7",
+                "record_version": "1.0.0",
+                "sha256": "6b400e0a6b715eb7dcb1da33e097cadcd00ca60ac970b6c8f3a63fc144b09d80"
+              }
+            }
+          ]
+        },
+        {
+          "path": "/assets/records/14/role",
+          "before": "original",
+          "after": "derived"
+        },
+        {
+          "path": "/colors/colors/0/source_level",
+          "before": "official_declared",
+          "after": "ui_proposal"
+        },
+        {
+          "path": "/colors/colors/1/source_level",
+          "before": "official_declared",
+          "after": "ui_proposal"
+        },
+        {
+          "path": "/colors/colors/2/source_level",
+          "before": "official_declared",
+          "after": "ui_proposal"
+        },
+        {
+          "path": "/colors/colors/3/source_level",
+          "before": "official_declared",
+          "after": "ui_proposal"
+        },
+        {
+          "path": "/colors/colors/4/source_level",
+          "before": "official_declared",
+          "after": "ui_proposal"
+        },
+        {
+          "path": "/colors/colors/5/source_level",
+          "before": "official_declared",
+          "after": "ui_proposal"
+        },
+        {
+          "path": "/colors/colors/6/source_level",
+          "before": "official_declared",
+          "after": "ui_proposal"
+        },
+        {
+          "path": "/colors/colors/7/source_level",
+          "before": "official_declared",
+          "after": "ui_proposal"
+        },
+        {
+          "path": "/companies/companies/0/ci_asset_refs",
+          "before": [
+            {
+              "asset_id": "fixture_logo_0",
+              "record_version": "1.0.0",
+              "sha256": "8e105eca49cb38075b19fc658dc952b2cdee640a638faed7d2edfe0505441052"
+            }
+          ],
+          "after": []
+        },
+        {
+          "path": "/companies/companies/1/ci_asset_refs",
+          "before": [
+            {
+              "asset_id": "fixture_logo_1",
+              "record_version": "1.0.0",
+              "sha256": "7efa6369713001145300e43283874a4f924f3f9182ce4e90812fc98ba206d779"
+            }
+          ],
+          "after": []
+        },
+        {
+          "path": "/companies/companies/2/ci_asset_refs",
+          "before": [
+            {
+              "asset_id": "fixture_logo_2",
+              "record_version": "1.0.0",
+              "sha256": "fd6220359b93593b53f4815e76b433f0e354a70053a11cf1e4e21bf371e5c411"
+            }
+          ],
+          "after": []
+        },
+        {
+          "path": "/companies/companies/3/ci_asset_refs",
+          "before": [
+            {
+              "asset_id": "fixture_logo_3",
+              "record_version": "1.0.0",
+              "sha256": "32248d28014c24cd003fe02beeaa193e0883fff04638d8280ff5016b7ff44ec2"
+            }
+          ],
+          "after": []
+        },
+        {
+          "path": "/companies/companies/4/ci_asset_refs",
+          "before": [
+            {
+              "asset_id": "fixture_logo_4",
+              "record_version": "1.0.0",
+              "sha256": "e5b48c46e2c084fadbc9bf6bb463ecdf8c3872c181ec0eb865e2c95819da6678"
+            }
+          ],
+          "after": []
+        },
+        {
+          "path": "/companies/companies/5/ci_asset_refs",
+          "before": [
+            {
+              "asset_id": "fixture_logo_5",
+              "record_version": "1.0.0",
+              "sha256": "3a6c2ae8e97c3972a6d5f67c3616636d4b1efa51b6d80ce248e5b57f4795b9d3"
+            }
+          ],
+          "after": []
+        },
+        {
+          "path": "/companies/companies/6/ci_asset_refs",
+          "before": [
+            {
+              "asset_id": "fixture_logo_6",
+              "record_version": "1.0.0",
+              "sha256": "075ff350062ff8b7583f7a3cc4fcfcddd873f920c4c104d62966de6daae9ef09"
+            }
+          ],
+          "after": []
+        },
+        {
+          "path": "/companies/companies/7/ci_asset_refs",
+          "before": [
+            {
+              "asset_id": "fixture_logo_7",
+              "record_version": "1.0.0",
+              "sha256": "1818244516d6cf56a5df6995a4cd2a4480e77d76168055ae66fc3dfc714de2a3"
+            }
+          ],
+          "after": []
+        }
+      ],
+      "expected_valid": true,
+      "valid_expectation_matched": true,
+      "expected_complete": false,
+      "completion_expectation_matched": true,
+      "expected_palette_count": 0,
+      "palette_expectation_matched": true
+    },
+    {
+      "id": "F2a",
+      "name": "actual 자산 synthetic 출처 차단",
+      "result": {
+        "valid": false,
+        "errors": [
+          "fixture_logo_0@1.0.0 설명용 자산을 실제 목록에 등록"
+        ],
+        "warnings": [
+          "회사별 원본 CI·관측색 자료 수집/검토 미완료",
+          "공식 지정색 전체 확인 미완료; 관측색은 공식값 아님"
+        ],
+        "collection_complete": false,
+        "official_values_complete": false,
+        "counts": {
+          "companies": 8,
+          "assets": 16,
+          "colors": 8
+        }
+      },
+      "palette": {
+        "company_id": "fixture_company_0",
+        "colors": [],
+        "reason": "검증 실패 또는 실제 목록 아님",
+        "errors": [
+          "fixture_logo_0@1.0.0 설명용 자산을 실제 목록에 등록"
+        ]
+      },
+      "mutation_original": [
+        {
+          "path": "/assets/records/0/source/kind",
+          "before": "provided_file",
+          "after": "synthetic_example"
+        }
+      ],
+      "expected_valid": false,
+      "valid_expectation_matched": true,
+      "expected_complete": false,
+      "completion_expectation_matched": true,
+      "expected_palette_count": 0,
+      "palette_expectation_matched": true
+    },
+    {
+      "id": "F2b",
+      "name": "actual 회사 synthetic 명단 차단",
+      "result": {
+        "valid": false,
+        "errors": [
+          "실제 회사 목록에 설명용 명단 근거"
+        ],
+        "warnings": [
+          "회사별 원본 CI·관측색 자료 수집/검토 미완료",
+          "공식 지정색 전체 확인 미완료; 관측색은 공식값 아님"
+        ],
+        "collection_complete": false,
+        "official_values_complete": false,
+        "counts": {
+          "companies": 8,
+          "assets": 16,
+          "colors": 8
+        }
+      },
+      "palette": {
+        "company_id": "fixture_company_0",
+        "colors": [],
+        "reason": "검증 실패 또는 실제 목록 아님",
+        "errors": [
+          "실제 회사 목록에 설명용 명단 근거"
+        ]
+      },
+      "mutation_original": [
+        {
+          "path": "/companies/companies/0/membership_source/kind",
+          "before": "provided_file",
+          "after": "synthetic_example"
+        }
+      ],
+      "expected_valid": false,
+      "valid_expectation_matched": true,
+      "expected_complete": false,
+      "completion_expectation_matched": true,
+      "expected_palette_count": 0,
+      "palette_expectation_matched": true
+    },
+    {
+      "id": "F3",
+      "name": "공식선언+샘플방법·다른 화면값 차단",
+      "result": {
+        "valid": false,
+        "errors": [
+          "fixture_color_0@1.0.0 관측 방법을 공식 선언으로 승격",
+          "fixture_color_0@1.0.0 래스터 샘플 영역·알파·배경·프로필 가정 누락",
+          "fixture_color_0@1.0.0 원문 sRGB값 변경 또는 불투명 identity 위반"
+        ],
+        "warnings": [
+          "회사별 원본 CI·관측색 자료 수집/검토 미완료",
+          "공식 지정색 전체 확인 미완료; 관측색은 공식값 아님"
+        ],
+        "collection_complete": false,
+        "official_values_complete": false,
+        "counts": {
+          "companies": 8,
+          "assets": 16,
+          "colors": 8
+        }
+      },
+      "palette": {
+        "company_id": "fixture_company_0",
+        "colors": [],
+        "reason": "검증 실패 또는 실제 목록 아님",
+        "errors": [
+          "fixture_color_0@1.0.0 관측 방법을 공식 선언으로 승격",
+          "fixture_color_0@1.0.0 래스터 샘플 영역·알파·배경·프로필 가정 누락",
+          "fixture_color_0@1.0.0 원문 sRGB값 변경 또는 불투명 identity 위반"
+        ]
+      },
+      "mutation_original": [
+        {
+          "path": "/colors/colors/0/normalization/method",
+          "before": "exact_srgb_identity",
+          "after": "raster_sample"
+        },
+        {
+          "path": "/colors/colors/0/screen_value/hex",
+          "before": "#112233",
+          "after": "#ABCDEF"
+        }
+      ],
+      "expected_valid": false,
+      "valid_expectation_matched": true,
+      "expected_complete": false,
+      "completion_expectation_matched": true,
+      "expected_palette_count": 0,
+      "palette_expectation_matched": true
+    },
+    {
+      "id": "F4",
+      "name": "래스터 조건 누락 차단",
+      "result": {
+        "valid": false,
+        "errors": [
+          "fixture_color_0@1.0.0 래스터 샘플 영역·알파·배경·프로필 가정 누락"
+        ],
+        "warnings": [
+          "회사별 원본 CI·관측색 자료 수집/검토 미완료",
+          "공식 지정색 전체 확인 미완료; 관측색은 공식값 아님"
+        ],
+        "collection_complete": false,
+        "official_values_complete": false,
+        "counts": {
+          "companies": 8,
+          "assets": 16,
+          "colors": 8
+        }
+      },
+      "palette": {
+        "company_id": "fixture_company_0",
+        "colors": [],
+        "reason": "검증 실패 또는 실제 목록 아님",
+        "errors": [
+          "fixture_color_0@1.0.0 래스터 샘플 영역·알파·배경·프로필 가정 누락"
+        ]
+      },
+      "mutation_original": [
+        {
+          "path": "/colors/colors/0/normalization/method",
+          "before": "exact_srgb_identity",
+          "after": "raster_sample"
+        },
+        {
+          "path": "/colors/colors/0/source_level",
+          "before": "official_declared",
+          "after": "raster_sample"
+        }
+      ],
+      "expected_valid": false,
+      "valid_expectation_matched": true,
+      "expected_complete": false,
+      "completion_expectation_matched": true,
+      "expected_palette_count": 0,
+      "palette_expectation_matched": true
+    },
+    {
+      "id": "F5",
+      "name": "회사별 같은 로컬색ID 정상 허용",
+      "result": {
+        "valid": true,
+        "errors": [],
+        "warnings": [],
+        "collection_complete": true,
+        "official_values_complete": true,
+        "counts": {
+          "companies": 8,
+          "assets": 16,
+          "colors": 8
+        }
+      },
+      "palette": {
+        "company_id": "fixture_company_0",
+        "colors": [
+          {
+            "color_id": "brand.primary",
+            "record_version": "1.0.0",
+            "revision_state": "current",
+            "company_id": "fixture_company_0",
+            "ci_asset_ref": {
+              "asset_id": "fixture_logo_0",
+              "record_version": "1.0.0",
+              "sha256": "8e105eca49cb38075b19fc658dc952b2cdee640a638faed7d2edfe0505441052"
+            },
+            "evidence_asset_ref": {
+              "asset_id": "fixture_guide_0",
+              "record_version": "1.0.0",
+              "sha256": "9c89bc7399cd47b9087e8f762f2f3c7c136650fdab7088f7ca47c383748a6b64"
+            },
+            "source_level": "official_declared",
+            "label_in_source": "fixture swatch",
+            "raw_value": {
+              "notation": "HEX",
+              "value": "#112233",
+              "declared_color_space": "srgb"
+            },
+            "screen_value": {
+              "color_space": "srgb",
+              "hex": "#112233",
+              "alpha": 1
+            },
+            "normalization": {
+              "method": "exact_srgb_identity",
+              "source_profile": "srgb",
+              "notes": "fixture identity"
+            },
+            "evidence_locator": "fixture page 1 declared HEX",
+            "verification": {
+              "state": "source_checked",
+              "checked_by": "FIXTURE PERSON",
+              "checked_at": "2026-10-14T00:00:00Z",
+              "notes": "fixture state only; no identity/authenticity assertion"
+            },
+            "notes": "SYNTHETIC REDTEAM FIXTURE"
+          }
+        ],
+        "reason": null,
+        "authority": "원문대조/관측/제안의 기록. 회사 필수화·페이지 품질 승인 아님."
+      },
+      "mutation_original": [
+        {
+          "path": "/colors/colors/0/color_id",
+          "before": "fixture_color_0",
+          "after": "brand.primary"
+        },
+        {
+          "path": "/colors/colors/1/color_id",
+          "before": "fixture_color_1",
+          "after": "brand.primary"
+        },
+        {
+          "path": "/colors/colors/2/color_id",
+          "before": "fixture_color_2",
+          "after": "brand.primary"
+        },
+        {
+          "path": "/colors/colors/3/color_id",
+          "before": "fixture_color_3",
+          "after": "brand.primary"
+        },
+        {
+          "path": "/colors/colors/4/color_id",
+          "before": "fixture_color_4",
+          "after": "brand.primary"
+        },
+        {
+          "path": "/colors/colors/5/color_id",
+          "before": "fixture_color_5",
+          "after": "brand.primary"
+        },
+        {
+          "path": "/colors/colors/6/color_id",
+          "before": "fixture_color_6",
+          "after": "brand.primary"
+        },
+        {
+          "path": "/colors/colors/7/color_id",
+          "before": "fixture_color_7",
+          "after": "brand.primary"
+        }
+      ],
+      "expected_valid": true,
+      "valid_expectation_matched": true,
+      "expected_complete": true,
+      "completion_expectation_matched": true,
+      "expected_palette_count": 1,
+      "palette_expectation_matched": true
+    },
+    {
+      "id": "F6",
+      "name": "독립 palette scope 우회 차단",
+      "result": {
+        "valid": false,
+        "errors": [
+          "자산/색상 actual·synthetic 범위 혼합"
+        ],
+        "warnings": [
+          "회사별 원본 CI·관측색 자료 수집/검토 미완료",
+          "공식 지정색 전체 확인 미완료; 관측색은 공식값 아님"
+        ],
+        "collection_complete": false,
+        "official_values_complete": false,
+        "counts": {
+          "companies": 8,
+          "assets": 16,
+          "colors": 8
+        }
+      },
+      "palette": {
+        "company_id": "fixture_company_0",
+        "colors": [],
+        "reason": "검증 실패 또는 실제 목록 아님",
+        "errors": [
+          "자산/색상 actual·synthetic 범위 혼합"
+        ]
+      },
+      "mutation_original": [
+        {
+          "path": "/colors/scope",
+          "before": "actual_registry",
+          "after": "synthetic_example"
+        }
+      ],
+      "expected_valid": false,
+      "valid_expectation_matched": true,
+      "expected_complete": false,
+      "completion_expectation_matched": true,
+      "expected_palette_count": 0,
+      "palette_expectation_matched": true
+    }
+  ],
+  "new_cases": [
+    {
+      "id": "N1",
+      "name": "historical CI색을 현재 완료·기본조회에서 제외",
+      "result": {
+        "valid": true,
+        "errors": [],
+        "warnings": [
+          "회사별 원본 CI·관측색 자료 수집/검토 미완료",
+          "공식 지정색 전체 확인 미완료; 관측색은 공식값 아님"
+        ],
+        "collection_complete": false,
+        "official_values_complete": false,
+        "counts": {
+          "companies": 8,
+          "assets": 17,
+          "colors": 8
+        }
+      },
+      "palette": {
+        "company_id": "fixture_company_0",
+        "colors": [],
+        "reason": "해당 조건의 확인된 화면색 없음",
+        "authority": "원문대조/관측/제안의 기록. 회사 필수화·페이지 품질 승인 아님."
+      },
+      "mutation_original": [
+        {
+          "path": "/assets/records",
+          "before": [
+            {
+              "asset_id": "fixture_logo_0",
+              "record_version": "1.0.0",
+              "revision_state": "current",
+              "kind": "logo",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_logo_0.txt",
+                "sha256": "8e105eca49cb38075b19fc658dc952b2cdee640a638faed7d2edfe0505441052",
+                "original_name": "fixture_logo_0.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_0"
+              ]
+            },
+            {
+              "asset_id": "fixture_guide_0",
+              "record_version": "1.0.0",
+              "revision_state": "current",
+              "kind": "ci_guide",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_guide_0.txt",
+                "sha256": "9c89bc7399cd47b9087e8f762f2f3c7c136650fdab7088f7ca47c383748a6b64",
+                "original_name": "fixture_guide_0.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_0"
+              ]
+            },
+            {
+              "asset_id": "fixture_logo_1",
+              "record_version": "1.0.0",
+              "revision_state": "current",
+              "kind": "logo",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_logo_1.txt",
+                "sha256": "7efa6369713001145300e43283874a4f924f3f9182ce4e90812fc98ba206d779",
+                "original_name": "fixture_logo_1.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_1"
+              ]
+            },
+            {
+              "asset_id": "fixture_guide_1",
+              "record_version": "1.0.0",
+              "revision_state": "current",
+              "kind": "ci_guide",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_guide_1.txt",
+                "sha256": "6d60db829c6cb853b2933ef3ec4bde1f7d3afcc82c03b9dcbb984706be614296",
+                "original_name": "fixture_guide_1.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_1"
+              ]
+            },
+            {
+              "asset_id": "fixture_logo_2",
+              "record_version": "1.0.0",
+              "revision_state": "current",
+              "kind": "logo",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_logo_2.txt",
+                "sha256": "fd6220359b93593b53f4815e76b433f0e354a70053a11cf1e4e21bf371e5c411",
+                "original_name": "fixture_logo_2.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_2"
+              ]
+            },
+            {
+              "asset_id": "fixture_guide_2",
+              "record_version": "1.0.0",
+              "revision_state": "current",
+              "kind": "ci_guide",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_guide_2.txt",
+                "sha256": "f457e668fa6893cacdfe62ac1d5ae2406cf68968990a543a71b2978b768175db",
+                "original_name": "fixture_guide_2.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_2"
+              ]
+            },
+            {
+              "asset_id": "fixture_logo_3",
+              "record_version": "1.0.0",
+              "revision_state": "current",
+              "kind": "logo",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_logo_3.txt",
+                "sha256": "32248d28014c24cd003fe02beeaa193e0883fff04638d8280ff5016b7ff44ec2",
+                "original_name": "fixture_logo_3.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_3"
+              ]
+            },
+            {
+              "asset_id": "fixture_guide_3",
+              "record_version": "1.0.0",
+              "revision_state": "current",
+              "kind": "ci_guide",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_guide_3.txt",
+                "sha256": "14c277c79f41faa3faa1ecf6dc6b6d0f186d3d518f7a0b2a62c366764dcf0740",
+                "original_name": "fixture_guide_3.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_3"
+              ]
+            },
+            {
+              "asset_id": "fixture_logo_4",
+              "record_version": "1.0.0",
+              "revision_state": "current",
+              "kind": "logo",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_logo_4.txt",
+                "sha256": "e5b48c46e2c084fadbc9bf6bb463ecdf8c3872c181ec0eb865e2c95819da6678",
+                "original_name": "fixture_logo_4.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_4"
+              ]
+            },
+            {
+              "asset_id": "fixture_guide_4",
+              "record_version": "1.0.0",
+              "revision_state": "current",
+              "kind": "ci_guide",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_guide_4.txt",
+                "sha256": "3c606e12f790e5dea9f59a3d46fefcf7e95151731dbece59b487cd5b6ebb3a0f",
+                "original_name": "fixture_guide_4.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_4"
+              ]
+            },
+            {
+              "asset_id": "fixture_logo_5",
+              "record_version": "1.0.0",
+              "revision_state": "current",
+              "kind": "logo",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_logo_5.txt",
+                "sha256": "3a6c2ae8e97c3972a6d5f67c3616636d4b1efa51b6d80ce248e5b57f4795b9d3",
+                "original_name": "fixture_logo_5.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_5"
+              ]
+            },
+            {
+              "asset_id": "fixture_guide_5",
+              "record_version": "1.0.0",
+              "revision_state": "current",
+              "kind": "ci_guide",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_guide_5.txt",
+                "sha256": "6956814d6fea24d5d5e05f0fc8ec8f1778dea7b6ebd8c9a26f821110d4ddc40c",
+                "original_name": "fixture_guide_5.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_5"
+              ]
+            },
+            {
+              "asset_id": "fixture_logo_6",
+              "record_version": "1.0.0",
+              "revision_state": "current",
+              "kind": "logo",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_logo_6.txt",
+                "sha256": "075ff350062ff8b7583f7a3cc4fcfcddd873f920c4c104d62966de6daae9ef09",
+                "original_name": "fixture_logo_6.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_6"
+              ]
+            },
+            {
+              "asset_id": "fixture_guide_6",
+              "record_version": "1.0.0",
+              "revision_state": "current",
+              "kind": "ci_guide",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_guide_6.txt",
+                "sha256": "edbd68466a9f20cdc0f899f32c0747d421b166e8d2896a9596656b9b43a5552b",
+                "original_name": "fixture_guide_6.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_6"
+              ]
+            },
+            {
+              "asset_id": "fixture_logo_7",
+              "record_version": "1.0.0",
+              "revision_state": "current",
+              "kind": "logo",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_logo_7.txt",
+                "sha256": "1818244516d6cf56a5df6995a4cd2a4480e77d76168055ae66fc3dfc714de2a3",
+                "original_name": "fixture_logo_7.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_7"
+              ]
+            },
+            {
+              "asset_id": "fixture_guide_7",
+              "record_version": "1.0.0",
+              "revision_state": "current",
+              "kind": "ci_guide",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_guide_7.txt",
+                "sha256": "6b400e0a6b715eb7dcb1da33e097cadcd00ca60ac970b6c8f3a63fc144b09d80",
+                "original_name": "fixture_guide_7.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_7"
+              ]
+            }
+          ],
+          "after": [
+            {
+              "asset_id": "fixture_logo_0",
+              "record_version": "1.0.0",
+              "revision_state": "current",
+              "kind": "logo",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_logo_0.txt",
+                "sha256": "8e105eca49cb38075b19fc658dc952b2cdee640a638faed7d2edfe0505441052",
+                "original_name": "fixture_logo_0.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_0"
+              ]
+            },
+            {
+              "asset_id": "fixture_guide_0",
+              "record_version": "1.0.0",
+              "revision_state": "current",
+              "kind": "ci_guide",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_guide_0.txt",
+                "sha256": "9c89bc7399cd47b9087e8f762f2f3c7c136650fdab7088f7ca47c383748a6b64",
+                "original_name": "fixture_guide_0.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_0"
+              ]
+            },
+            {
+              "asset_id": "fixture_logo_1",
+              "record_version": "1.0.0",
+              "revision_state": "current",
+              "kind": "logo",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_logo_1.txt",
+                "sha256": "7efa6369713001145300e43283874a4f924f3f9182ce4e90812fc98ba206d779",
+                "original_name": "fixture_logo_1.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_1"
+              ]
+            },
+            {
+              "asset_id": "fixture_guide_1",
+              "record_version": "1.0.0",
+              "revision_state": "current",
+              "kind": "ci_guide",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_guide_1.txt",
+                "sha256": "6d60db829c6cb853b2933ef3ec4bde1f7d3afcc82c03b9dcbb984706be614296",
+                "original_name": "fixture_guide_1.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_1"
+              ]
+            },
+            {
+              "asset_id": "fixture_logo_2",
+              "record_version": "1.0.0",
+              "revision_state": "current",
+              "kind": "logo",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_logo_2.txt",
+                "sha256": "fd6220359b93593b53f4815e76b433f0e354a70053a11cf1e4e21bf371e5c411",
+                "original_name": "fixture_logo_2.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_2"
+              ]
+            },
+            {
+              "asset_id": "fixture_guide_2",
+              "record_version": "1.0.0",
+              "revision_state": "current",
+              "kind": "ci_guide",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_guide_2.txt",
+                "sha256": "f457e668fa6893cacdfe62ac1d5ae2406cf68968990a543a71b2978b768175db",
+                "original_name": "fixture_guide_2.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_2"
+              ]
+            },
+            {
+              "asset_id": "fixture_logo_3",
+              "record_version": "1.0.0",
+              "revision_state": "current",
+              "kind": "logo",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_logo_3.txt",
+                "sha256": "32248d28014c24cd003fe02beeaa193e0883fff04638d8280ff5016b7ff44ec2",
+                "original_name": "fixture_logo_3.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_3"
+              ]
+            },
+            {
+              "asset_id": "fixture_guide_3",
+              "record_version": "1.0.0",
+              "revision_state": "current",
+              "kind": "ci_guide",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_guide_3.txt",
+                "sha256": "14c277c79f41faa3faa1ecf6dc6b6d0f186d3d518f7a0b2a62c366764dcf0740",
+                "original_name": "fixture_guide_3.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_3"
+              ]
+            },
+            {
+              "asset_id": "fixture_logo_4",
+              "record_version": "1.0.0",
+              "revision_state": "current",
+              "kind": "logo",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_logo_4.txt",
+                "sha256": "e5b48c46e2c084fadbc9bf6bb463ecdf8c3872c181ec0eb865e2c95819da6678",
+                "original_name": "fixture_logo_4.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_4"
+              ]
+            },
+            {
+              "asset_id": "fixture_guide_4",
+              "record_version": "1.0.0",
+              "revision_state": "current",
+              "kind": "ci_guide",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_guide_4.txt",
+                "sha256": "3c606e12f790e5dea9f59a3d46fefcf7e95151731dbece59b487cd5b6ebb3a0f",
+                "original_name": "fixture_guide_4.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_4"
+              ]
+            },
+            {
+              "asset_id": "fixture_logo_5",
+              "record_version": "1.0.0",
+              "revision_state": "current",
+              "kind": "logo",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_logo_5.txt",
+                "sha256": "3a6c2ae8e97c3972a6d5f67c3616636d4b1efa51b6d80ce248e5b57f4795b9d3",
+                "original_name": "fixture_logo_5.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_5"
+              ]
+            },
+            {
+              "asset_id": "fixture_guide_5",
+              "record_version": "1.0.0",
+              "revision_state": "current",
+              "kind": "ci_guide",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_guide_5.txt",
+                "sha256": "6956814d6fea24d5d5e05f0fc8ec8f1778dea7b6ebd8c9a26f821110d4ddc40c",
+                "original_name": "fixture_guide_5.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_5"
+              ]
+            },
+            {
+              "asset_id": "fixture_logo_6",
+              "record_version": "1.0.0",
+              "revision_state": "current",
+              "kind": "logo",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_logo_6.txt",
+                "sha256": "075ff350062ff8b7583f7a3cc4fcfcddd873f920c4c104d62966de6daae9ef09",
+                "original_name": "fixture_logo_6.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_6"
+              ]
+            },
+            {
+              "asset_id": "fixture_guide_6",
+              "record_version": "1.0.0",
+              "revision_state": "current",
+              "kind": "ci_guide",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_guide_6.txt",
+                "sha256": "edbd68466a9f20cdc0f899f32c0747d421b166e8d2896a9596656b9b43a5552b",
+                "original_name": "fixture_guide_6.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_6"
+              ]
+            },
+            {
+              "asset_id": "fixture_logo_7",
+              "record_version": "1.0.0",
+              "revision_state": "current",
+              "kind": "logo",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_logo_7.txt",
+                "sha256": "1818244516d6cf56a5df6995a4cd2a4480e77d76168055ae66fc3dfc714de2a3",
+                "original_name": "fixture_logo_7.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_7"
+              ]
+            },
+            {
+              "asset_id": "fixture_guide_7",
+              "record_version": "1.0.0",
+              "revision_state": "current",
+              "kind": "ci_guide",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_guide_7.txt",
+                "sha256": "6b400e0a6b715eb7dcb1da33e097cadcd00ca60ac970b6c8f3a63fc144b09d80",
+                "original_name": "fixture_guide_7.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_7"
+              ]
+            },
+            {
+              "asset_id": "fixture_logo_0",
+              "record_version": "0.9.0",
+              "revision_state": "historical",
+              "kind": "logo",
+              "role": "original",
+              "source_origin": "internal",
+              "registration_state": "registered",
+              "file": {
+                "path": "fixture/fixture_logo_0.txt",
+                "sha256": "8e105eca49cb38075b19fc658dc952b2cdee640a638faed7d2edfe0505441052",
+                "original_name": "fixture_logo_0.txt"
+              },
+              "source": {
+                "kind": "provided_file",
+                "locator": "SYNTHETIC REDTEAM FIXTURE",
+                "url": null,
+                "retrieved_on": null,
+                "notes": "테스트 픽스처. 진위·승인 주장 없음."
+              },
+              "relationships": [],
+              "generation": null,
+              "usage": {
+                "state": "reference_only",
+                "contexts": [],
+                "evidence": null
+              },
+              "notes": "SYNTHETIC REDTEAM FIXTURE",
+              "company_ids": [
+                "fixture_company_0"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "/colors/colors/0/ci_asset_ref/record_version",
+          "before": "1.0.0",
+          "after": "0.9.0"
+        }
+      ],
+      "expected_valid": true,
+      "valid_expectation_matched": true,
+      "expected_complete": false,
+      "completion_expectation_matched": true,
+      "expected_palette_count": 0,
+      "palette_expectation_matched": true,
+      "isolated_observed_reproduction": {
+        "positive_current_ci_control": {
+          "valid": true,
+          "errors": [],
+          "warnings": [
+            "공식 지정색 전체 확인 미완료; 관측색은 공식값 아님"
+          ],
+          "collection_complete": true,
+          "official_values_complete": false,
+          "counts": {
+            "companies": 8,
+            "assets": 16,
+            "colors": 8
+          }
+        },
+        "historical_ci_only_result": {
+          "valid": true,
+          "errors": [],
+          "warnings": [
+            "회사별 원본 CI·관측색 자료 수집/검토 미완료",
+            "공식 지정색 전체 확인 미완료; 관측색은 공식값 아님"
+          ],
+          "collection_complete": false,
+          "official_values_complete": false,
+          "counts": {
+            "companies": 8,
+            "assets": 17,
+            "colors": 8
+          }
+        },
+        "explicit_observed_palette": {
+          "company_id": "fixture_company_0",
+          "colors": [],
+          "reason": "해당 조건의 확인된 화면색 없음",
+          "authority": "원문대조/관측/제안의 기록. 회사 필수화·페이지 품질 승인 아님."
+        },
+        "mutation_original": [
+          {
+            "path": "/assets/records",
+            "before": [
+              {
+                "asset_id": "fixture_logo_0",
+                "record_version": "1.0.0",
+                "revision_state": "current",
+                "kind": "logo",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_logo_0.txt",
+                  "sha256": "8e105eca49cb38075b19fc658dc952b2cdee640a638faed7d2edfe0505441052",
+                  "original_name": "fixture_logo_0.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_0"
+                ]
+              },
+              {
+                "asset_id": "fixture_guide_0",
+                "record_version": "1.0.0",
+                "revision_state": "current",
+                "kind": "ci_guide",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_guide_0.txt",
+                  "sha256": "9c89bc7399cd47b9087e8f762f2f3c7c136650fdab7088f7ca47c383748a6b64",
+                  "original_name": "fixture_guide_0.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_0"
+                ]
+              },
+              {
+                "asset_id": "fixture_logo_1",
+                "record_version": "1.0.0",
+                "revision_state": "current",
+                "kind": "logo",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_logo_1.txt",
+                  "sha256": "7efa6369713001145300e43283874a4f924f3f9182ce4e90812fc98ba206d779",
+                  "original_name": "fixture_logo_1.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_1"
+                ]
+              },
+              {
+                "asset_id": "fixture_guide_1",
+                "record_version": "1.0.0",
+                "revision_state": "current",
+                "kind": "ci_guide",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_guide_1.txt",
+                  "sha256": "6d60db829c6cb853b2933ef3ec4bde1f7d3afcc82c03b9dcbb984706be614296",
+                  "original_name": "fixture_guide_1.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_1"
+                ]
+              },
+              {
+                "asset_id": "fixture_logo_2",
+                "record_version": "1.0.0",
+                "revision_state": "current",
+                "kind": "logo",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_logo_2.txt",
+                  "sha256": "fd6220359b93593b53f4815e76b433f0e354a70053a11cf1e4e21bf371e5c411",
+                  "original_name": "fixture_logo_2.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_2"
+                ]
+              },
+              {
+                "asset_id": "fixture_guide_2",
+                "record_version": "1.0.0",
+                "revision_state": "current",
+                "kind": "ci_guide",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_guide_2.txt",
+                  "sha256": "f457e668fa6893cacdfe62ac1d5ae2406cf68968990a543a71b2978b768175db",
+                  "original_name": "fixture_guide_2.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_2"
+                ]
+              },
+              {
+                "asset_id": "fixture_logo_3",
+                "record_version": "1.0.0",
+                "revision_state": "current",
+                "kind": "logo",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_logo_3.txt",
+                  "sha256": "32248d28014c24cd003fe02beeaa193e0883fff04638d8280ff5016b7ff44ec2",
+                  "original_name": "fixture_logo_3.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_3"
+                ]
+              },
+              {
+                "asset_id": "fixture_guide_3",
+                "record_version": "1.0.0",
+                "revision_state": "current",
+                "kind": "ci_guide",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_guide_3.txt",
+                  "sha256": "14c277c79f41faa3faa1ecf6dc6b6d0f186d3d518f7a0b2a62c366764dcf0740",
+                  "original_name": "fixture_guide_3.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_3"
+                ]
+              },
+              {
+                "asset_id": "fixture_logo_4",
+                "record_version": "1.0.0",
+                "revision_state": "current",
+                "kind": "logo",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_logo_4.txt",
+                  "sha256": "e5b48c46e2c084fadbc9bf6bb463ecdf8c3872c181ec0eb865e2c95819da6678",
+                  "original_name": "fixture_logo_4.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_4"
+                ]
+              },
+              {
+                "asset_id": "fixture_guide_4",
+                "record_version": "1.0.0",
+                "revision_state": "current",
+                "kind": "ci_guide",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_guide_4.txt",
+                  "sha256": "3c606e12f790e5dea9f59a3d46fefcf7e95151731dbece59b487cd5b6ebb3a0f",
+                  "original_name": "fixture_guide_4.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_4"
+                ]
+              },
+              {
+                "asset_id": "fixture_logo_5",
+                "record_version": "1.0.0",
+                "revision_state": "current",
+                "kind": "logo",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_logo_5.txt",
+                  "sha256": "3a6c2ae8e97c3972a6d5f67c3616636d4b1efa51b6d80ce248e5b57f4795b9d3",
+                  "original_name": "fixture_logo_5.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_5"
+                ]
+              },
+              {
+                "asset_id": "fixture_guide_5",
+                "record_version": "1.0.0",
+                "revision_state": "current",
+                "kind": "ci_guide",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_guide_5.txt",
+                  "sha256": "6956814d6fea24d5d5e05f0fc8ec8f1778dea7b6ebd8c9a26f821110d4ddc40c",
+                  "original_name": "fixture_guide_5.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_5"
+                ]
+              },
+              {
+                "asset_id": "fixture_logo_6",
+                "record_version": "1.0.0",
+                "revision_state": "current",
+                "kind": "logo",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_logo_6.txt",
+                  "sha256": "075ff350062ff8b7583f7a3cc4fcfcddd873f920c4c104d62966de6daae9ef09",
+                  "original_name": "fixture_logo_6.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_6"
+                ]
+              },
+              {
+                "asset_id": "fixture_guide_6",
+                "record_version": "1.0.0",
+                "revision_state": "current",
+                "kind": "ci_guide",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_guide_6.txt",
+                  "sha256": "edbd68466a9f20cdc0f899f32c0747d421b166e8d2896a9596656b9b43a5552b",
+                  "original_name": "fixture_guide_6.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_6"
+                ]
+              },
+              {
+                "asset_id": "fixture_logo_7",
+                "record_version": "1.0.0",
+                "revision_state": "current",
+                "kind": "logo",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_logo_7.txt",
+                  "sha256": "1818244516d6cf56a5df6995a4cd2a4480e77d76168055ae66fc3dfc714de2a3",
+                  "original_name": "fixture_logo_7.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_7"
+                ]
+              },
+              {
+                "asset_id": "fixture_guide_7",
+                "record_version": "1.0.0",
+                "revision_state": "current",
+                "kind": "ci_guide",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_guide_7.txt",
+                  "sha256": "6b400e0a6b715eb7dcb1da33e097cadcd00ca60ac970b6c8f3a63fc144b09d80",
+                  "original_name": "fixture_guide_7.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_7"
+                ]
+              }
+            ],
+            "after": [
+              {
+                "asset_id": "fixture_logo_0",
+                "record_version": "1.0.0",
+                "revision_state": "current",
+                "kind": "logo",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_logo_0.txt",
+                  "sha256": "8e105eca49cb38075b19fc658dc952b2cdee640a638faed7d2edfe0505441052",
+                  "original_name": "fixture_logo_0.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_0"
+                ]
+              },
+              {
+                "asset_id": "fixture_guide_0",
+                "record_version": "1.0.0",
+                "revision_state": "current",
+                "kind": "ci_guide",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_guide_0.txt",
+                  "sha256": "9c89bc7399cd47b9087e8f762f2f3c7c136650fdab7088f7ca47c383748a6b64",
+                  "original_name": "fixture_guide_0.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_0"
+                ]
+              },
+              {
+                "asset_id": "fixture_logo_1",
+                "record_version": "1.0.0",
+                "revision_state": "current",
+                "kind": "logo",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_logo_1.txt",
+                  "sha256": "7efa6369713001145300e43283874a4f924f3f9182ce4e90812fc98ba206d779",
+                  "original_name": "fixture_logo_1.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_1"
+                ]
+              },
+              {
+                "asset_id": "fixture_guide_1",
+                "record_version": "1.0.0",
+                "revision_state": "current",
+                "kind": "ci_guide",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_guide_1.txt",
+                  "sha256": "6d60db829c6cb853b2933ef3ec4bde1f7d3afcc82c03b9dcbb984706be614296",
+                  "original_name": "fixture_guide_1.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_1"
+                ]
+              },
+              {
+                "asset_id": "fixture_logo_2",
+                "record_version": "1.0.0",
+                "revision_state": "current",
+                "kind": "logo",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_logo_2.txt",
+                  "sha256": "fd6220359b93593b53f4815e76b433f0e354a70053a11cf1e4e21bf371e5c411",
+                  "original_name": "fixture_logo_2.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_2"
+                ]
+              },
+              {
+                "asset_id": "fixture_guide_2",
+                "record_version": "1.0.0",
+                "revision_state": "current",
+                "kind": "ci_guide",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_guide_2.txt",
+                  "sha256": "f457e668fa6893cacdfe62ac1d5ae2406cf68968990a543a71b2978b768175db",
+                  "original_name": "fixture_guide_2.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_2"
+                ]
+              },
+              {
+                "asset_id": "fixture_logo_3",
+                "record_version": "1.0.0",
+                "revision_state": "current",
+                "kind": "logo",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_logo_3.txt",
+                  "sha256": "32248d28014c24cd003fe02beeaa193e0883fff04638d8280ff5016b7ff44ec2",
+                  "original_name": "fixture_logo_3.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_3"
+                ]
+              },
+              {
+                "asset_id": "fixture_guide_3",
+                "record_version": "1.0.0",
+                "revision_state": "current",
+                "kind": "ci_guide",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_guide_3.txt",
+                  "sha256": "14c277c79f41faa3faa1ecf6dc6b6d0f186d3d518f7a0b2a62c366764dcf0740",
+                  "original_name": "fixture_guide_3.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_3"
+                ]
+              },
+              {
+                "asset_id": "fixture_logo_4",
+                "record_version": "1.0.0",
+                "revision_state": "current",
+                "kind": "logo",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_logo_4.txt",
+                  "sha256": "e5b48c46e2c084fadbc9bf6bb463ecdf8c3872c181ec0eb865e2c95819da6678",
+                  "original_name": "fixture_logo_4.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_4"
+                ]
+              },
+              {
+                "asset_id": "fixture_guide_4",
+                "record_version": "1.0.0",
+                "revision_state": "current",
+                "kind": "ci_guide",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_guide_4.txt",
+                  "sha256": "3c606e12f790e5dea9f59a3d46fefcf7e95151731dbece59b487cd5b6ebb3a0f",
+                  "original_name": "fixture_guide_4.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_4"
+                ]
+              },
+              {
+                "asset_id": "fixture_logo_5",
+                "record_version": "1.0.0",
+                "revision_state": "current",
+                "kind": "logo",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_logo_5.txt",
+                  "sha256": "3a6c2ae8e97c3972a6d5f67c3616636d4b1efa51b6d80ce248e5b57f4795b9d3",
+                  "original_name": "fixture_logo_5.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_5"
+                ]
+              },
+              {
+                "asset_id": "fixture_guide_5",
+                "record_version": "1.0.0",
+                "revision_state": "current",
+                "kind": "ci_guide",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_guide_5.txt",
+                  "sha256": "6956814d6fea24d5d5e05f0fc8ec8f1778dea7b6ebd8c9a26f821110d4ddc40c",
+                  "original_name": "fixture_guide_5.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_5"
+                ]
+              },
+              {
+                "asset_id": "fixture_logo_6",
+                "record_version": "1.0.0",
+                "revision_state": "current",
+                "kind": "logo",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_logo_6.txt",
+                  "sha256": "075ff350062ff8b7583f7a3cc4fcfcddd873f920c4c104d62966de6daae9ef09",
+                  "original_name": "fixture_logo_6.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_6"
+                ]
+              },
+              {
+                "asset_id": "fixture_guide_6",
+                "record_version": "1.0.0",
+                "revision_state": "current",
+                "kind": "ci_guide",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_guide_6.txt",
+                  "sha256": "edbd68466a9f20cdc0f899f32c0747d421b166e8d2896a9596656b9b43a5552b",
+                  "original_name": "fixture_guide_6.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_6"
+                ]
+              },
+              {
+                "asset_id": "fixture_logo_7",
+                "record_version": "1.0.0",
+                "revision_state": "current",
+                "kind": "logo",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_logo_7.txt",
+                  "sha256": "1818244516d6cf56a5df6995a4cd2a4480e77d76168055ae66fc3dfc714de2a3",
+                  "original_name": "fixture_logo_7.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_7"
+                ]
+              },
+              {
+                "asset_id": "fixture_guide_7",
+                "record_version": "1.0.0",
+                "revision_state": "current",
+                "kind": "ci_guide",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_guide_7.txt",
+                  "sha256": "6b400e0a6b715eb7dcb1da33e097cadcd00ca60ac970b6c8f3a63fc144b09d80",
+                  "original_name": "fixture_guide_7.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_7"
+                ]
+              },
+              {
+                "asset_id": "fixture_logo_0",
+                "record_version": "0.9.0",
+                "revision_state": "historical",
+                "kind": "logo",
+                "role": "original",
+                "source_origin": "internal",
+                "registration_state": "registered",
+                "file": {
+                  "path": "fixture/fixture_logo_0.txt",
+                  "sha256": "8e105eca49cb38075b19fc658dc952b2cdee640a638faed7d2edfe0505441052",
+                  "original_name": "fixture_logo_0.txt"
+                },
+                "source": {
+                  "kind": "provided_file",
+                  "locator": "SYNTHETIC REDTEAM FIXTURE",
+                  "url": null,
+                  "retrieved_on": null,
+                  "notes": "테스트 픽스처. 진위·승인 주장 없음."
+                },
+                "relationships": [],
+                "generation": null,
+                "usage": {
+                  "state": "reference_only",
+                  "contexts": [],
+                  "evidence": null
+                },
+                "notes": "SYNTHETIC REDTEAM FIXTURE",
+                "company_ids": [
+                  "fixture_company_0"
+                ]
+              }
+            ]
+          },
+          {
+            "path": "/colors/colors/0/ci_asset_ref/record_version",
+            "before": "1.0.0",
+            "after": "0.9.0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "N2",
+      "name": "sRGB 별칭+documented_conversion identity 변조 차단",
+      "result": {
+        "valid": false,
+        "errors": [
+          "fixture_color_0@1.0.0 원문 sRGB값 변경 또는 불투명 identity 위반"
+        ],
+        "warnings": [
+          "회사별 원본 CI·관측색 자료 수집/검토 미완료",
+          "공식 지정색 전체 확인 미완료; 관측색은 공식값 아님"
+        ],
+        "collection_complete": false,
+        "official_values_complete": false,
+        "counts": {
+          "companies": 8,
+          "assets": 16,
+          "colors": 8
+        }
+      },
+      "palette": {
+        "company_id": "fixture_company_0",
+        "colors": [],
+        "reason": "검증 실패 또는 실제 목록 아님",
+        "errors": [
+          "fixture_color_0@1.0.0 원문 sRGB값 변경 또는 불투명 identity 위반"
+        ]
+      },
+      "mutation_original": [
+        {
+          "path": "/colors/colors/0/normalization/method",
+          "before": "exact_srgb_identity",
+          "after": "documented_conversion"
+        },
+        {
+          "path": "/colors/colors/0/normalization/notes",
+          "before": "fixture identity",
+          "after": "sRGB에서 동일한 sRGB로 변환; 별도색변경이나 합성 없음"
+        },
+        {
+          "path": "/colors/colors/0/normalization/source_profile",
+          "before": "srgb",
+          "after": "sRGB"
+        },
+        {
+          "path": "/colors/colors/0/raw_value/declared_color_space",
+          "before": "srgb",
+          "after": "sRGB"
+        },
+        {
+          "path": "/colors/colors/0/screen_value/hex",
+          "before": "#112233",
+          "after": "#ABCDEF"
+        }
+      ],
+      "expected_valid": false,
+      "valid_expectation_matched": true,
+      "expected_complete": false,
+      "completion_expectation_matched": true,
+      "expected_palette_count": 0,
+      "palette_expectation_matched": true
+    },
+    {
+      "id": "N3",
+      "name": "vector_literal 출처+raster_sample 방법 모순 차단",
+      "result": {
+        "valid": false,
+        "errors": [
+          "fixture_color_0@1.0.0 벡터 원문과 픽셀 추출 방법 혼합"
+        ],
+        "warnings": [
+          "회사별 원본 CI·관측색 자료 수집/검토 미완료",
+          "공식 지정색 전체 확인 미완료; 관측색은 공식값 아님"
+        ],
+        "collection_complete": false,
+        "official_values_complete": false,
+        "counts": {
+          "companies": 8,
+          "assets": 16,
+          "colors": 8
+        }
+      },
+      "palette": {
+        "company_id": "fixture_company_0",
+        "colors": [],
+        "reason": "검증 실패 또는 실제 목록 아님",
+        "errors": [
+          "fixture_color_0@1.0.0 벡터 원문과 픽셀 추출 방법 혼합"
+        ]
+      },
+      "mutation_original": [
+        {
+          "path": "/colors/colors/0/normalization/method",
+          "before": "exact_srgb_identity",
+          "after": "raster_sample"
+        },
+        {
+          "path": "/colors/colors/0/observation",
+          "before": "<missing>",
+          "after": {
+            "region": "pixel (1,1)",
+            "alpha_handling": "alpha255",
+            "background_handling": "합성없음",
+            "profile_assumption": "sRGB"
+          }
+        },
+        {
+          "path": "/colors/colors/0/source_level",
+          "before": "official_declared",
+          "after": "vector_literal"
+        }
+      ],
+      "expected_valid": false,
+      "valid_expectation_matched": true,
+      "expected_complete": false,
+      "completion_expectation_matched": true,
+      "expected_palette_count": 0,
+      "palette_expectation_matched": true,
+      "observed_palette": {
+        "company_id": "fixture_company_0",
+        "colors": [],
+        "reason": "검증 실패 또는 실제 목록 아님",
+        "errors": [
+          "fixture_color_0@1.0.0 벡터 원문과 픽셀 추출 방법 혼합"
+        ]
+      }
+    },
+    {
+      "id": "N4",
+      "name": "대조자 공백 문자열 source_checked 차단",
+      "result": {
+        "valid": false,
+        "errors": [
+          "fixture_color_0@1.0.0 원문대조자·시각 누락"
+        ],
+        "warnings": [
+          "회사별 원본 CI·관측색 자료 수집/검토 미완료",
+          "공식 지정색 전체 확인 미완료; 관측색은 공식값 아님"
+        ],
+        "collection_complete": false,
+        "official_values_complete": false,
+        "counts": {
+          "companies": 8,
+          "assets": 16,
+          "colors": 8
+        }
+      },
+      "palette": {
+        "company_id": "fixture_company_0",
+        "colors": [],
+        "reason": "검증 실패 또는 실제 목록 아님",
+        "errors": [
+          "fixture_color_0@1.0.0 원문대조자·시각 누락"
+        ]
+      },
+      "mutation_original": [
+        {
+          "path": "/colors/colors/0/verification/checked_by",
+          "before": "FIXTURE PERSON",
+          "after": "   "
+        }
+      ],
+      "expected_valid": false,
+      "valid_expectation_matched": true,
+      "expected_complete": false,
+      "completion_expectation_matched": true,
+      "expected_palette_count": 0,
+      "palette_expectation_matched": true
+    },
+    {
+      "id": "N5",
+      "name": "관측 sRGB 원문값과 다른 화면값을 vector_value_read로 통과시키는 회피 차단",
+      "result": {
+        "valid": false,
+        "errors": [
+          "fixture_color_0@1.0.0 원문 sRGB값 변경 또는 불투명 identity 위반"
+        ],
+        "warnings": [
+          "회사별 원본 CI·관측색 자료 수집/검토 미완료",
+          "공식 지정색 전체 확인 미완료; 관측색은 공식값 아님"
+        ],
+        "collection_complete": false,
+        "official_values_complete": false,
+        "counts": {
+          "companies": 8,
+          "assets": 16,
+          "colors": 8
+        }
+      },
+      "palette": {
+        "company_id": "fixture_company_0",
+        "colors": [],
+        "reason": "검증 실패 또는 실제 목록 아님",
+        "errors": [
+          "fixture_color_0@1.0.0 원문 sRGB값 변경 또는 불투명 identity 위반"
+        ]
+      },
+      "mutation_original": [
+        {
+          "path": "/colors/colors/0/normalization/method",
+          "before": "exact_srgb_identity",
+          "after": "vector_value_read"
+        },
+        {
+          "path": "/colors/colors/0/screen_value/hex",
+          "before": "#112233",
+          "after": "#ABCDEF"
+        },
+        {
+          "path": "/colors/colors/0/source_level",
+          "before": "official_declared",
+          "after": "vector_literal"
+        }
+      ],
+      "expected_valid": false,
+      "valid_expectation_matched": true,
+      "expected_complete": false,
+      "completion_expectation_matched": true,
+      "expected_palette_count": 0,
+      "palette_expectation_matched": true,
+      "observed_palette": {
+        "company_id": "fixture_company_0",
+        "colors": [],
+        "reason": "검증 실패 또는 실제 목록 아님",
+        "errors": [
+          "fixture_color_0@1.0.0 원문 sRGB값 변경 또는 불투명 identity 위반"
+        ]
+      }
+    }
+  ],
+  "positive_8_company_control": {
+    "valid": true,
+    "errors": [],
+    "warnings": [],
+    "collection_complete": true,
+    "official_values_complete": true,
+    "counts": {
+      "companies": 8,
+      "assets": 16,
+      "colors": 8
+    }
+  },
+  "completion_positive_control_passed": true,
+  "documented_non_srgb_conversion_control": {
+    "valid": true,
+    "errors": [],
+    "warnings": [],
+    "collection_complete": true,
+    "official_values_complete": true,
+    "counts": {
+      "companies": 8,
+      "assets": 16,
+      "colors": 8
+    }
+  },
+  "actual_snapshot_observation": {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "공식 지정색 전체 확인 미완료; 관측색은 공식값 아님"
+    ],
+    "collection_complete": true,
+    "official_values_complete": false,
+    "counts": {
+      "companies": 8,
+      "assets": 80,
+      "colors": 91
+    }
+  },
+  "previous_6_findings_rechecked": "7 checks including source subtype; valid/palette/completion expected outcomes all passed.",
+  "final_summary": "정상 공식 8사 완료True/공식값완료True; 정상 관측 8사 완료True; 기존7검사+신규5검사와 historical 관측 독립대조 모두 통과. Display P3 documented_conversion 정상허용."
+}

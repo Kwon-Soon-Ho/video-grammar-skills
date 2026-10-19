@@ -1,0 +1,54 @@
+{
+  "performed": true,
+  "valid": true,
+  "scope": "수정된 초안에 대한 JSON·스키마·카탈로그 ID/대체/분류축/관련항목/출처 연결 검사 및 변경 범위·바이트 불변 비교",
+  "method": "기존 구형기록_보존검사.py의 schema_errors 및 validate_catalogs 함수 실행. read 함수의 레이아웃 입력만 수정 초안 객체로 대체. main/영상기록 진단 미실행.",
+  "schema_errors": [],
+  "catalog_errors": [],
+  "draft_reopened": true,
+  "backup_byte_identical": true,
+  "versioned_copy_byte_identical": true,
+  "only_requested_text_and_version_changed": true,
+  "other_13_layouts_identical": true,
+  "source_parent_hash_matches_input_memo": true,
+  "operational_files": {
+    "unchanged": true,
+    "before": {
+      "02_원칙과레이아웃/레이아웃지식.json": "0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306",
+      "01_공통용어/공통용어사전.json": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+      "05_출처와검토/출처목록.json": "0fd8c405a36f67a4255be34c198b29fa499fde5d52b7998fd2b0af754bcaec2f",
+      "02_원칙과레이아웃/모션과정보전달원칙.json": "249ef6b9e7b14ff62f41352922be2f00e748c8b10debb4d4992b580364e0daa5",
+      "02_원칙과레이아웃/화면설계원칙.json": "281fe61151dfc96649a070b6fd3ae653c0353b7513f3209534140ce1f54e6b96",
+      "03_한맥디자인/한맥디자인정본.json": "dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed",
+      "04_기록규격/레이아웃지식_스키마.json": "2dfa0db9c4c23ad974235c5a3317c7791e2f67c89a7fc30de45abe235d6f7e98",
+      "04_기록규격/공통용어_스키마.json": "9395bf82f433584f963874b1280b1fe78b9a23843269d8ac7d30c9ed3521a9b5",
+      "04_기록규격/출처목록_스키마.json": "e23b73bfdf13bf5eb4f06badb202a5df03172d778fae02777b651bee13a0e7e9",
+      "04_기록규격/원칙지식_스키마.json": "68bcf0ca2a6d75b4b666496f9d417de28faaf69373ae5ebcce93e7a2ed7c47ed",
+      "07_실행도구/구형기록_보존검사.py": "85a8941ae035fa5fdcae6b06a285ccca538a361f81e9b3410736c73d23f14a26"
+    },
+    "after": {
+      "02_원칙과레이아웃/레이아웃지식.json": "0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306",
+      "01_공통용어/공통용어사전.json": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+      "05_출처와검토/출처목록.json": "0fd8c405a36f67a4255be34c198b29fa499fde5d52b7998fd2b0af754bcaec2f",
+      "02_원칙과레이아웃/모션과정보전달원칙.json": "249ef6b9e7b14ff62f41352922be2f00e748c8b10debb4d4992b580364e0daa5",
+      "02_원칙과레이아웃/화면설계원칙.json": "281fe61151dfc96649a070b6fd3ae653c0353b7513f3209534140ce1f54e6b96",
+      "03_한맥디자인/한맥디자인정본.json": "dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed",
+      "04_기록규격/레이아웃지식_스키마.json": "2dfa0db9c4c23ad974235c5a3317c7791e2f67c89a7fc30de45abe235d6f7e98",
+      "04_기록규격/공통용어_스키마.json": "9395bf82f433584f963874b1280b1fe78b9a23843269d8ac7d30c9ed3521a9b5",
+      "04_기록규격/출처목록_스키마.json": "e23b73bfdf13bf5eb4f06badb202a5df03172d778fae02777b651bee13a0e7e9",
+      "04_기록규격/원칙지식_스키마.json": "68bcf0ca2a6d75b4b666496f9d417de28faaf69373ae5ebcce93e7a2ed7c47ed",
+      "07_실행도구/구형기록_보존검사.py": "85a8941ae035fa5fdcae6b06a285ccca538a361f81e9b3410736c73d23f14a26"
+    }
+  },
+  "not_performed": [
+    "R6 통합조회 전체 원문·CI 자산 검사",
+    "외부 원문·영상·시선·가독성·효과 검증",
+    "회사 규칙 승인·운영 반영",
+    "운영 조회문서 재생성"
+  ],
+  "limits": [
+    "검사 함수는 기존 카탈로그의 구조와 연결을 검사하며 자연어 의미의 정답을 보증하지 않음.",
+    "시험 사본에 포함되지 않은 외부 스킬 원문·CI 바이너리를 접근하거나 통과했다고 주장하지 않음.",
+    "운영 정본과 조회문서는 미수정이며 수정 초안의 조회본만 outputs에 작성."
+  ]
+}

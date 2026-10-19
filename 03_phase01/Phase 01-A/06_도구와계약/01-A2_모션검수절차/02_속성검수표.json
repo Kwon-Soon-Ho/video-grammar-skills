@@ -1,0 +1,1937 @@
+{
+  "schema_version": "0.1",
+  "rows": [
+    {
+      "id": "J-intro-text",
+      "axis_checks": {
+        "이동": "추가 독립 이동을 발견하지 못함. 장면 전환/상위 대상 움직임은 별도 기록.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "정착 후 유지. 전환 시에는 상위 장면의 가시성 변화에 포함.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "첫 관측 시점에 이미 배치. 6초 이후 전환과 함께 사라짐.",
+        "가감속": "독립 변화 관측이 없어 비적용."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/04_검증자료/01-A2_누락방지_재검수/기존참조근거/자료005_전체동작_1.jpg",
+          "sha256": "ed5a072bf2a713d970ffbcae313baa2f3059df93f690d57ae5be8452b58af451",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\..\\phase01a-a2-fullmotion\\자료005_전체동작_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/04_검증자료/01-A2_누락방지_재검수/기존참조근거/장헌_정지와_전환곡선.json",
+          "sha256": "1ecad159a7569e96e247ec610507bed18950ad6d4e9adf5466b9d5580266489e",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\..\\phase01a-a2-fullmotion\\장헌_정지와_전환곡선.json"
+        }
+      ],
+      "prior_relation": "①",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "J-intro-photo",
+      "axis_checks": {
+        "이동": "추가 독립 이동을 발견하지 못함. 장면 전환/상위 대상 움직임은 별도 기록.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "정착 후 유지. 전환 시에는 상위 장면의 가시성 변화에 포함.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "선택 원본 PNG와 480px 시계열에서 독립 구름·물결 동작을 발견하지 못함. 저해상도 픽셀차로 미세 정지까지 증명하지 않음.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "해당 장면과 함께 등장·유지.",
+        "가감속": "독립 변화 관측이 없어 비적용."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/04_검증자료/01-A2_누락방지_재검수/기존참조근거/자료005_전체동작_1.jpg",
+          "sha256": "ed5a072bf2a713d970ffbcae313baa2f3059df93f690d57ae5be8452b58af451",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\..\\phase01a-a2-fullmotion\\자료005_전체동작_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/04_검증자료/01-A2_누락방지_재검수/기존참조근거/장헌_정지와_전환곡선.json",
+          "sha256": "1ecad159a7569e96e247ec610507bed18950ad6d4e9adf5466b9d5580266489e",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\..\\phase01a-a2-fullmotion\\장헌_정지와_전환곡선.json"
+        }
+      ],
+      "prior_relation": "기존 정지 정정",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "J-transition",
+      "axis_checks": {
+        "이동": "추가 독립 이동을 발견하지 못함. 장면 전환/상위 대상 움직임은 별도 기록.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "두 화면이 겹쳐 교체. 경계 이동 슬라이드로 해석하지 않음.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "전환 동안 이전·다음 장면 중첩.",
+        "등퇴장과순서": "해당 장면과 함께 등장·유지.",
+        "가감속": "혼합 진행량 감속형(ease-out) 기존 근거 유지."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/04_검증자료/01-A2_누락방지_재검수/기존참조근거/장헌_정지와_전환곡선.json",
+          "sha256": "1ecad159a7569e96e247ec610507bed18950ad6d4e9adf5466b9d5580266489e",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\..\\phase01a-a2-fullmotion\\장헌_정지와_전환곡선.json"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_1.jpg",
+          "sha256": "129bf87c152278c96adc46233e6827dbec1dbb314ec09787ae8a75712c43535c",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_3.jpg",
+          "sha256": "c5ea26a77087e517d5399a7a28c257f7ac72252f787776de47866051e1c71609",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_3.jpg"
+        }
+      ],
+      "prior_relation": "N1",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "J-base",
+      "axis_checks": {
+        "이동": "추가 독립 이동을 발견하지 못함. 장면 전환/상위 대상 움직임은 별도 기록.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "정착 후 유지. 전환 시에는 상위 장면의 가시성 변화에 포함.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "도시·물·주석·장식선에 새 독립 동작을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "해당 장면과 함께 등장·유지.",
+        "가감속": "독립 변화 관측이 없어 비적용."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_1.jpg",
+          "sha256": "129bf87c152278c96adc46233e6827dbec1dbb314ec09787ae8a75712c43535c",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_2.jpg",
+          "sha256": "e84003ef34b8acdd044fd2430cc14457a1efd526a94e46f46977e3d155f0d241",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_3.jpg",
+          "sha256": "c5ea26a77087e517d5399a7a28c257f7ac72252f787776de47866051e1c71609",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_3.jpg"
+        }
+      ],
+      "prior_relation": "①②",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "J-cards",
+      "axis_checks": {
+        "이동": "추가 독립 이동을 발견하지 못함. 장면 전환/상위 대상 움직임은 별도 기록.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "정착 후 유지. 전환 시에는 상위 장면의 가시성 변화에 포함.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "세 카드 틀은 장면 전환으로 같이 드러남. 수주→매출→이익의 데이터 순서와 분리.",
+        "가감속": "독립 변화 관측이 없어 비적용."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_1.jpg",
+          "sha256": "129bf87c152278c96adc46233e6827dbec1dbb314ec09787ae8a75712c43535c",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_2.jpg",
+          "sha256": "e84003ef34b8acdd044fd2430cc14457a1efd526a94e46f46977e3d155f0d241",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_2.jpg"
+        }
+      ],
+      "prior_relation": "N2",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "J-order-goal",
+      "axis_checks": {
+        "이동": "추가 독립 이동을 발견하지 못함. 장면 전환/상위 대상 움직임은 별도 기록.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "정착 후 유지. 전환 시에는 상위 장면의 가시성 변화에 포함.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "해당 장면과 함께 등장·유지.",
+        "가감속": "독립 변화 관측이 없어 비적용."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_1.jpg",
+          "sha256": "129bf87c152278c96adc46233e6827dbec1dbb314ec09787ae8a75712c43535c",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_2.jpg",
+          "sha256": "e84003ef34b8acdd044fd2430cc14457a1efd526a94e46f46977e3d155f0d241",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/04_검증자료/01-A2_누락방지_재검수/기존참조근거/장헌_차트_시간곡선진단.json",
+          "sha256": "8edcfee808bcd2d7d34a3bec3ba38fdc2e0bdb39b0865cd19522d290ac131ce7",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\..\\phase01a-a2-fullmotion\\장헌_차트_시간곡선진단.json"
+        }
+      ],
+      "prior_relation": "N2",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "J-order-actual",
+      "axis_checks": {
+        "이동": "추가 독립 이동을 발견하지 못함. 장면 전환/상위 대상 움직임은 별도 기록.",
+        "크기": "하단 기준에서 위로 성장.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "정착 후 유지. 전환 시에는 상위 장면의 가시성 변화에 포함.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "수주→매출→영업이익 순서. 각 카드 틀의 등장과 다름.",
+        "가감속": "시각 대조상 감속형. 곡선 계량 근거는 원형 진행량이 중심이며 막대 원본 키프레임 복원 아님."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_1.jpg",
+          "sha256": "129bf87c152278c96adc46233e6827dbec1dbb314ec09787ae8a75712c43535c",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_2.jpg",
+          "sha256": "e84003ef34b8acdd044fd2430cc14457a1efd526a94e46f46977e3d155f0d241",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/04_검증자료/01-A2_누락방지_재검수/기존참조근거/장헌_차트_시간곡선진단.json",
+          "sha256": "8edcfee808bcd2d7d34a3bec3ba38fdc2e0bdb39b0865cd19522d290ac131ce7",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\..\\phase01a-a2-fullmotion\\장헌_차트_시간곡선진단.json"
+        }
+      ],
+      "prior_relation": "N2",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "J-order-ring",
+      "axis_checks": {
+        "이동": "추가 독립 이동을 발견하지 못함. 장면 전환/상위 대상 움직임은 별도 기록.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "12시 방향에서 시계방향으로 파랑 영역 증가. 회색 기준 원 유지.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "해당 장면과 함께 등장·유지.",
+        "가감속": "파랑 영역 진행량 ease-out 곡선군. 기존 후보 피팅 유지."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_1.jpg",
+          "sha256": "129bf87c152278c96adc46233e6827dbec1dbb314ec09787ae8a75712c43535c",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_2.jpg",
+          "sha256": "e84003ef34b8acdd044fd2430cc14457a1efd526a94e46f46977e3d155f0d241",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/04_검증자료/01-A2_누락방지_재검수/기존참조근거/장헌_차트_시간곡선진단.json",
+          "sha256": "8edcfee808bcd2d7d34a3bec3ba38fdc2e0bdb39b0865cd19522d290ac131ce7",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\..\\phase01a-a2-fullmotion\\장헌_차트_시간곡선진단.json"
+        }
+      ],
+      "prior_relation": "N2",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "J-order-numbers",
+      "axis_checks": {
+        "이동": "금액 숫자는 막대 상단을 따라 위로. 퍼센트 중심 위치는 유지.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "정착 후 유지. 전환 시에는 상위 장면의 가시성 변화에 포함.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "막대 위 금액 및 원 안 비율이 증가. 금액 라벨은 자라는 막대 상단을 따름.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "해당 장면과 함께 등장·유지.",
+        "가감속": "증가량이 끝에서 작아짐. 정수 반올림 때문에 값 변화의 계단을 별도 곡선으로 보지 않음."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_1.jpg",
+          "sha256": "129bf87c152278c96adc46233e6827dbec1dbb314ec09787ae8a75712c43535c",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_2.jpg",
+          "sha256": "e84003ef34b8acdd044fd2430cc14457a1efd526a94e46f46977e3d155f0d241",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/04_검증자료/01-A2_누락방지_재검수/기존참조근거/장헌_차트_시간곡선진단.json",
+          "sha256": "8edcfee808bcd2d7d34a3bec3ba38fdc2e0bdb39b0865cd19522d290ac131ce7",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\..\\phase01a-a2-fullmotion\\장헌_차트_시간곡선진단.json"
+        }
+      ],
+      "prior_relation": "N2",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "J-sales-goal",
+      "axis_checks": {
+        "이동": "추가 독립 이동을 발견하지 못함. 장면 전환/상위 대상 움직임은 별도 기록.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "정착 후 유지. 전환 시에는 상위 장면의 가시성 변화에 포함.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "해당 장면과 함께 등장·유지.",
+        "가감속": "독립 변화 관측이 없어 비적용."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_1.jpg",
+          "sha256": "129bf87c152278c96adc46233e6827dbec1dbb314ec09787ae8a75712c43535c",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_2.jpg",
+          "sha256": "e84003ef34b8acdd044fd2430cc14457a1efd526a94e46f46977e3d155f0d241",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/04_검증자료/01-A2_누락방지_재검수/기존참조근거/장헌_차트_시간곡선진단.json",
+          "sha256": "8edcfee808bcd2d7d34a3bec3ba38fdc2e0bdb39b0865cd19522d290ac131ce7",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\..\\phase01a-a2-fullmotion\\장헌_차트_시간곡선진단.json"
+        }
+      ],
+      "prior_relation": "N2",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "J-sales-actual",
+      "axis_checks": {
+        "이동": "추가 독립 이동을 발견하지 못함. 장면 전환/상위 대상 움직임은 별도 기록.",
+        "크기": "하단 기준에서 위로 성장.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "정착 후 유지. 전환 시에는 상위 장면의 가시성 변화에 포함.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "수주→매출→영업이익 순서. 각 카드 틀의 등장과 다름.",
+        "가감속": "시각 대조상 감속형. 곡선 계량 근거는 원형 진행량이 중심이며 막대 원본 키프레임 복원 아님."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_1.jpg",
+          "sha256": "129bf87c152278c96adc46233e6827dbec1dbb314ec09787ae8a75712c43535c",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_2.jpg",
+          "sha256": "e84003ef34b8acdd044fd2430cc14457a1efd526a94e46f46977e3d155f0d241",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/04_검증자료/01-A2_누락방지_재검수/기존참조근거/장헌_차트_시간곡선진단.json",
+          "sha256": "8edcfee808bcd2d7d34a3bec3ba38fdc2e0bdb39b0865cd19522d290ac131ce7",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\..\\phase01a-a2-fullmotion\\장헌_차트_시간곡선진단.json"
+        }
+      ],
+      "prior_relation": "N2",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "J-sales-ring",
+      "axis_checks": {
+        "이동": "추가 독립 이동을 발견하지 못함. 장면 전환/상위 대상 움직임은 별도 기록.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "12시 방향에서 시계방향으로 파랑 영역 증가. 회색 기준 원 유지.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "해당 장면과 함께 등장·유지.",
+        "가감속": "파랑 영역 진행량 ease-out 곡선군. 기존 후보 피팅 유지."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_1.jpg",
+          "sha256": "129bf87c152278c96adc46233e6827dbec1dbb314ec09787ae8a75712c43535c",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_2.jpg",
+          "sha256": "e84003ef34b8acdd044fd2430cc14457a1efd526a94e46f46977e3d155f0d241",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/04_검증자료/01-A2_누락방지_재검수/기존참조근거/장헌_차트_시간곡선진단.json",
+          "sha256": "8edcfee808bcd2d7d34a3bec3ba38fdc2e0bdb39b0865cd19522d290ac131ce7",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\..\\phase01a-a2-fullmotion\\장헌_차트_시간곡선진단.json"
+        }
+      ],
+      "prior_relation": "N2",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "J-sales-numbers",
+      "axis_checks": {
+        "이동": "금액 숫자는 막대 상단을 따라 위로. 퍼센트 중심 위치는 유지.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "정착 후 유지. 전환 시에는 상위 장면의 가시성 변화에 포함.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "막대 위 금액 및 원 안 비율이 증가. 금액 라벨은 자라는 막대 상단을 따름.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "해당 장면과 함께 등장·유지.",
+        "가감속": "증가량이 끝에서 작아짐. 정수 반올림 때문에 값 변화의 계단을 별도 곡선으로 보지 않음."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_1.jpg",
+          "sha256": "129bf87c152278c96adc46233e6827dbec1dbb314ec09787ae8a75712c43535c",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_2.jpg",
+          "sha256": "e84003ef34b8acdd044fd2430cc14457a1efd526a94e46f46977e3d155f0d241",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/04_검증자료/01-A2_누락방지_재검수/기존참조근거/장헌_차트_시간곡선진단.json",
+          "sha256": "8edcfee808bcd2d7d34a3bec3ba38fdc2e0bdb39b0865cd19522d290ac131ce7",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\..\\phase01a-a2-fullmotion\\장헌_차트_시간곡선진단.json"
+        }
+      ],
+      "prior_relation": "N2",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "J-profit-goal",
+      "axis_checks": {
+        "이동": "추가 독립 이동을 발견하지 못함. 장면 전환/상위 대상 움직임은 별도 기록.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "정착 후 유지. 전환 시에는 상위 장면의 가시성 변화에 포함.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "해당 장면과 함께 등장·유지.",
+        "가감속": "독립 변화 관측이 없어 비적용."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_1.jpg",
+          "sha256": "129bf87c152278c96adc46233e6827dbec1dbb314ec09787ae8a75712c43535c",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_2.jpg",
+          "sha256": "e84003ef34b8acdd044fd2430cc14457a1efd526a94e46f46977e3d155f0d241",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/04_검증자료/01-A2_누락방지_재검수/기존참조근거/장헌_차트_시간곡선진단.json",
+          "sha256": "8edcfee808bcd2d7d34a3bec3ba38fdc2e0bdb39b0865cd19522d290ac131ce7",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\..\\phase01a-a2-fullmotion\\장헌_차트_시간곡선진단.json"
+        }
+      ],
+      "prior_relation": "N2",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "J-profit-actual",
+      "axis_checks": {
+        "이동": "추가 독립 이동을 발견하지 못함. 장면 전환/상위 대상 움직임은 별도 기록.",
+        "크기": "하단 기준에서 위로 성장.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "정착 후 유지. 전환 시에는 상위 장면의 가시성 변화에 포함.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "수주→매출→영업이익 순서. 각 카드 틀의 등장과 다름.",
+        "가감속": "시각 대조상 감속형. 곡선 계량 근거는 원형 진행량이 중심이며 막대 원본 키프레임 복원 아님."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_1.jpg",
+          "sha256": "129bf87c152278c96adc46233e6827dbec1dbb314ec09787ae8a75712c43535c",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_2.jpg",
+          "sha256": "e84003ef34b8acdd044fd2430cc14457a1efd526a94e46f46977e3d155f0d241",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/04_검증자료/01-A2_누락방지_재검수/기존참조근거/장헌_차트_시간곡선진단.json",
+          "sha256": "8edcfee808bcd2d7d34a3bec3ba38fdc2e0bdb39b0865cd19522d290ac131ce7",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\..\\phase01a-a2-fullmotion\\장헌_차트_시간곡선진단.json"
+        }
+      ],
+      "prior_relation": "N2",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "J-profit-ring",
+      "axis_checks": {
+        "이동": "추가 독립 이동을 발견하지 못함. 장면 전환/상위 대상 움직임은 별도 기록.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "12시 방향에서 시계방향으로 파랑 영역 증가. 회색 기준 원 유지.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "해당 장면과 함께 등장·유지.",
+        "가감속": "파랑 영역 진행량 ease-out 곡선군. 기존 후보 피팅 유지."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_1.jpg",
+          "sha256": "129bf87c152278c96adc46233e6827dbec1dbb314ec09787ae8a75712c43535c",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_2.jpg",
+          "sha256": "e84003ef34b8acdd044fd2430cc14457a1efd526a94e46f46977e3d155f0d241",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/04_검증자료/01-A2_누락방지_재검수/기존참조근거/장헌_차트_시간곡선진단.json",
+          "sha256": "8edcfee808bcd2d7d34a3bec3ba38fdc2e0bdb39b0865cd19522d290ac131ce7",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\..\\phase01a-a2-fullmotion\\장헌_차트_시간곡선진단.json"
+        }
+      ],
+      "prior_relation": "N2",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "J-profit-numbers",
+      "axis_checks": {
+        "이동": "금액 숫자는 막대 상단을 따라 위로. 퍼센트 중심 위치는 유지.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "정착 후 유지. 전환 시에는 상위 장면의 가시성 변화에 포함.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "막대 위 금액 및 원 안 비율이 증가. 금액 라벨은 자라는 막대 상단을 따름.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "해당 장면과 함께 등장·유지.",
+        "가감속": "증가량이 끝에서 작아짐. 정수 반올림 때문에 값 변화의 계단을 별도 곡선으로 보지 않음."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_1.jpg",
+          "sha256": "129bf87c152278c96adc46233e6827dbec1dbb314ec09787ae8a75712c43535c",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_2.jpg",
+          "sha256": "e84003ef34b8acdd044fd2430cc14457a1efd526a94e46f46977e3d155f0d241",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/04_검증자료/01-A2_누락방지_재검수/기존참조근거/장헌_차트_시간곡선진단.json",
+          "sha256": "8edcfee808bcd2d7d34a3bec3ba38fdc2e0bdb39b0865cd19522d290ac131ce7",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\..\\phase01a-a2-fullmotion\\장헌_차트_시간곡선진단.json"
+        }
+      ],
+      "prior_relation": "N2",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "J-sector-bg",
+      "axis_checks": {
+        "이동": "추가 독립 이동을 발견하지 못함. 장면 전환/상위 대상 움직임은 별도 기록.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "정착 후 유지. 전환 시에는 상위 장면의 가시성 변화에 포함.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "해당 장면과 함께 등장·유지.",
+        "가감속": "독립 변화 관측이 없어 비적용."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_3.jpg",
+          "sha256": "c5ea26a77087e517d5399a7a28c257f7ac72252f787776de47866051e1c71609",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_3.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_4.jpg",
+          "sha256": "90a342a0095e0e4f0257bcd68b01b35173837d001caf52597000c8db56fba9af",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_4.jpg"
+        }
+      ],
+      "prior_relation": "③",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "AI_new_observation_not_human_approved"
+    },
+    {
+      "id": "J-sector-ring",
+      "axis_checks": {
+        "이동": "추가 독립 이동을 발견하지 못함. 장면 전환/상위 대상 움직임은 별도 기록.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "색 영역이 시계방향으로 채워짐. 도넛 중심 구멍 위치 유지.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "해당 장면과 함께 등장·유지.",
+        "가감속": "채움 진행량 감속형 ease-out."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_3.jpg",
+          "sha256": "c5ea26a77087e517d5399a7a28c257f7ac72252f787776de47866051e1c71609",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_3.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/04_검증자료/01-A2_누락방지_재검수/기존참조근거/장헌_차트_시간곡선진단.json",
+          "sha256": "8edcfee808bcd2d7d34a3bec3ba38fdc2e0bdb39b0865cd19522d290ac131ce7",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\..\\phase01a-a2-fullmotion\\장헌_차트_시간곡선진단.json"
+        }
+      ],
+      "prior_relation": "N3",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "J-sector-labels",
+      "axis_checks": {
+        "이동": "추가 독립 이동을 발견하지 못함. 장면 전환/상위 대상 움직임은 별도 기록.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "정착 후 유지. 전환 시에는 상위 장면의 가시성 변화에 포함.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "장면 전환으로 보이고 자리 유지. 라벨이 도넛을 따라 회전하거나 따로 그려지는 동작을 발견하지 못함.",
+        "가감속": "독립 변화 관측이 없어 비적용."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_3.jpg",
+          "sha256": "c5ea26a77087e517d5399a7a28c257f7ac72252f787776de47866051e1c71609",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_3.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_4.jpg",
+          "sha256": "90a342a0095e0e4f0257bcd68b01b35173837d001caf52597000c8db56fba9af",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_4.jpg"
+        }
+      ],
+      "prior_relation": "③",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "AI_new_observation_not_human_approved"
+    },
+    {
+      "id": "J-sector-percent",
+      "axis_checks": {
+        "이동": "추가 독립 이동을 발견하지 못함. 장면 전환/상위 대상 움직임은 별도 기록.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "정착 후 유지. 전환 시에는 상위 장면의 가시성 변화에 포함.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "비중 숫자 증가. 화살표와 설명문은 별도 이동/점멸을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "해당 장면과 함께 등장·유지.",
+        "가감속": "숫자 증가량 끝에서 감소. 정수 반올림 영향 존재."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_3.jpg",
+          "sha256": "c5ea26a77087e517d5399a7a28c257f7ac72252f787776de47866051e1c71609",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_3.jpg"
+        }
+      ],
+      "prior_relation": "N3",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "J-business-ring",
+      "axis_checks": {
+        "이동": "추가 독립 이동을 발견하지 못함. 장면 전환/상위 대상 움직임은 별도 기록.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "이번 24초까지 회색 원 유지. 그 이후 진행 여부 판정 안 함.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "해당 장면과 함께 등장·유지.",
+        "가감속": "독립 변화 관측이 없어 비적용."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_3.jpg",
+          "sha256": "c5ea26a77087e517d5399a7a28c257f7ac72252f787776de47866051e1c71609",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_3.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/jh_all_4.jpg",
+          "sha256": "90a342a0095e0e4f0257bcd68b01b35173837d001caf52597000c8db56fba9af",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\jh_all_4.jpg"
+        }
+      ],
+      "prior_relation": "기존 범위 한정",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "E-glow",
+      "axis_checks": {
+        "이동": "추가 독립 이동을 발견하지 못함. 장면 전환/상위 대상 움직임은 별도 기록.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "정착 후 유지. 전환 시에는 상위 장면의 가시성 변화에 포함.",
+        "색과광량": "중앙 녹색광·주변 어둠이 형성되고 유지. 주 대상 전경과 다른 광량.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "해당 장면과 함께 등장·유지.",
+        "가감속": "미분류: 낮은 대비와 전경 중첩. 색/밝기 이징과 위치 속도를 혼용하지 않음."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_1.jpg",
+          "sha256": "ccef35d8005ac93f9aef212a0c8b74004befa84623046709f8ef43a98ef436a6",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_2.jpg",
+          "sha256": "fa6743be4504fb7d808e2b89dc9c7386dcec76a59d1b246d2500022aa384c56f",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_3.jpg",
+          "sha256": "43f80dd3f4af33e7f2e6e85fe14aa348f4a345f0973d8f573545e68cddcb2552",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_3.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/도입_작은요소_역순_1.jpg",
+          "sha256": "efe5d6b0963dc81ac55760da7cbef80ba366bd00467d01db885b484300485ad2",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\도입_작은요소_역순_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_1.jpg",
+          "sha256": "60938bedcd85f02a8fc8376527f3e00d81beb619c8f6608f902ab71025df8f60",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_2.jpg",
+          "sha256": "308f4be5ea5d766b4aa45e2e3feed3303ddbfcb044f919666ec570857eff9bdc",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_3.jpg",
+          "sha256": "107ab2ee028c9f39f454acaed86c09f401a4fada23afd5b4e23c3adbf995cc22",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_3.jpg"
+        }
+      ],
+      "prior_relation": "기존 일반 배경",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "E-grid",
+      "axis_checks": {
+        "이동": "도입 경계 자리/크기가 달라지는 부분은 있음. 동일 선의 전 구간 추적을 확정하지 않음.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "도입에서 점차 선명해짐. 이후 배경으로 유지.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "해당 장면과 함께 등장·유지.",
+        "가감속": "미분류: 도입 가시성과 경계 이동 중첩. 존재 관측을 지우지 않고 경로·속도 보류."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_1.jpg",
+          "sha256": "ccef35d8005ac93f9aef212a0c8b74004befa84623046709f8ef43a98ef436a6",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_2.jpg",
+          "sha256": "fa6743be4504fb7d808e2b89dc9c7386dcec76a59d1b246d2500022aa384c56f",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_3.jpg",
+          "sha256": "43f80dd3f4af33e7f2e6e85fe14aa348f4a345f0973d8f573545e68cddcb2552",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_3.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/도입_작은요소_역순_1.jpg",
+          "sha256": "efe5d6b0963dc81ac55760da7cbef80ba366bd00467d01db885b484300485ad2",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\도입_작은요소_역순_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_1.jpg",
+          "sha256": "60938bedcd85f02a8fc8376527f3e00d81beb619c8f6608f902ab71025df8f60",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_2.jpg",
+          "sha256": "308f4be5ea5d766b4aa45e2e3feed3303ddbfcb044f919666ec570857eff9bdc",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_3.jpg",
+          "sha256": "107ab2ee028c9f39f454acaed86c09f401a4fada23afd5b4e23c3adbf995cc22",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_3.jpg"
+        }
+      ],
+      "prior_relation": "기존 일반 배경",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "E-early-upper",
+      "axis_checks": {
+        "이동": "화면 왼쪽에서 오른쪽으로 들어와 정착.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "어두운 조각이 배경 위에 드러남.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "작은 커서/큰 영문보다 먼저. 뒤의 금빛 E 재등장과 구분.",
+        "가감속": "정착부 이동량이 줄어드는 감속 성향. 저대비 때문에 정확한 시작/곡선 미분류."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_1.jpg",
+          "sha256": "ccef35d8005ac93f9aef212a0c8b74004befa84623046709f8ef43a98ef436a6",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_2.jpg",
+          "sha256": "fa6743be4504fb7d808e2b89dc9c7386dcec76a59d1b246d2500022aa384c56f",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_3.jpg",
+          "sha256": "43f80dd3f4af33e7f2e6e85fe14aa348f4a345f0973d8f573545e68cddcb2552",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_3.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/도입_작은요소_역순_1.jpg",
+          "sha256": "efe5d6b0963dc81ac55760da7cbef80ba366bd00467d01db885b484300485ad2",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\도입_작은요소_역순_1.jpg"
+        }
+      ],
+      "prior_relation": "추가 세분화",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "AI_new_observation_not_human_approved"
+    },
+    {
+      "id": "E-early-middle",
+      "axis_checks": {
+        "이동": "왼쪽→오른쪽 정착.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "정착 후 유지. 전환 시에는 상위 장면의 가시성 변화에 포함.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "위·아래 조각과 시간차/중첩. 저대비로 프레임 단위 엄밀 선후는 보류.",
+        "가감속": "감속 성향만 관측; 정확한 곡선 분류 보류."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_1.jpg",
+          "sha256": "ccef35d8005ac93f9aef212a0c8b74004befa84623046709f8ef43a98ef436a6",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_2.jpg",
+          "sha256": "fa6743be4504fb7d808e2b89dc9c7386dcec76a59d1b246d2500022aa384c56f",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_3.jpg",
+          "sha256": "43f80dd3f4af33e7f2e6e85fe14aa348f4a345f0973d8f573545e68cddcb2552",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_3.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/도입_작은요소_역순_1.jpg",
+          "sha256": "efe5d6b0963dc81ac55760da7cbef80ba366bd00467d01db885b484300485ad2",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\도입_작은요소_역순_1.jpg"
+        }
+      ],
+      "prior_relation": "추가 세분화",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "AI_new_observation_not_human_approved"
+    },
+    {
+      "id": "E-early-lower",
+      "axis_checks": {
+        "이동": "왼쪽→오른쪽 정착.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "정착 후 유지. 전환 시에는 상위 장면의 가시성 변화에 포함.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "도입 E 조립 단계. 3.5초 이후 전경 E 조립과 분리.",
+        "가감속": "감속 성향만 관측; 정확한 곡선 분류 보류."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_1.jpg",
+          "sha256": "ccef35d8005ac93f9aef212a0c8b74004befa84623046709f8ef43a98ef436a6",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_2.jpg",
+          "sha256": "fa6743be4504fb7d808e2b89dc9c7386dcec76a59d1b246d2500022aa384c56f",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_3.jpg",
+          "sha256": "43f80dd3f4af33e7f2e6e85fe14aa348f4a345f0973d8f573545e68cddcb2552",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_3.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/도입_작은요소_역순_1.jpg",
+          "sha256": "efe5d6b0963dc81ac55760da7cbef80ba366bd00467d01db885b484300485ad2",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\도입_작은요소_역순_1.jpg"
+        }
+      ],
+      "prior_relation": "추가 세분화",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "AI_new_observation_not_human_approved"
+    },
+    {
+      "id": "E-outline-light",
+      "axis_checks": {
+        "이동": "빛이 E 주변을 통과하는 관측 유지. 고정 테두리와 이동 발광 부분의 완전 분리는 아직 못함.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "정착 후 유지. 전환 시에는 상위 장면의 가시성 변화에 포함.",
+        "색과광량": "얇은 선·수평 발광 부분이 강해졌다 약해짐.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "해당 장면과 함께 등장·유지.",
+        "가감속": "미분류: 동선 전체와 가시성 변화가 분리되지 않음."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_1.jpg",
+          "sha256": "ccef35d8005ac93f9aef212a0c8b74004befa84623046709f8ef43a98ef436a6",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_2.jpg",
+          "sha256": "fa6743be4504fb7d808e2b89dc9c7386dcec76a59d1b246d2500022aa384c56f",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_3.jpg",
+          "sha256": "43f80dd3f4af33e7f2e6e85fe14aa348f4a345f0973d8f573545e68cddcb2552",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_3.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/도입_작은요소_역순_1.jpg",
+          "sha256": "efe5d6b0963dc81ac55760da7cbef80ba366bd00467d01db885b484300485ad2",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\도입_작은요소_역순_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_1.jpg",
+          "sha256": "60938bedcd85f02a8fc8376527f3e00d81beb619c8f6608f902ab71025df8f60",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_2.jpg",
+          "sha256": "308f4be5ea5d766b4aa45e2e3feed3303ddbfcb044f919666ec570857eff9bdc",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_3.jpg",
+          "sha256": "107ab2ee028c9f39f454acaed86c09f401a4fada23afd5b4e23c3adbf995cc22",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_3.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/재추출/자료013/eg_fine/f_00030_000.500.png",
+          "sha256": "9169333c5057b7824d766ef0be22f381c2f276b5967e998d71293882bdd92d58",
+          "basis": "native 3840x2160 RGB frame; sample-table PTS checked",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\cases\\자료013\\eg_fine\\f_00030_000.500.png"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/재추출/자료013/eg_fine/f_00072_001.200.png",
+          "sha256": "880645f7e3d2b0572754480ac0c6d84c880fc70ad114f54198533d04ec59697d",
+          "basis": "native 3840x2160 RGB frame; sample-table PTS checked",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\cases\\자료013\\eg_fine\\f_00072_001.200.png"
+        }
+      ],
+      "prior_relation": "C1",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "E-cursor",
+      "axis_checks": {
+        "이동": "왼쪽 위 부근에서 오른쪽 아래로 이동해 선택 영역의 반대 모서리를 따라감.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "적색 수평·녹색 수직·중앙 작은 사각형이 드러나고 이후 사라짐.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "큰 영문 공개 전부터 보임. 점선 확장과 겹침.",
+        "가감속": "선택 영역 공개 경계와 관련되지만 커서 자체 전 구간 이징은 미분류."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_1.jpg",
+          "sha256": "ccef35d8005ac93f9aef212a0c8b74004befa84623046709f8ef43a98ef436a6",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_2.jpg",
+          "sha256": "fa6743be4504fb7d808e2b89dc9c7386dcec76a59d1b246d2500022aa384c56f",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_3.jpg",
+          "sha256": "43f80dd3f4af33e7f2e6e85fe14aa348f4a345f0973d8f573545e68cddcb2552",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_3.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/도입_작은요소_역순_1.jpg",
+          "sha256": "efe5d6b0963dc81ac55760da7cbef80ba366bd00467d01db885b484300485ad2",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\도입_작은요소_역순_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/04_검증자료/01-A2_누락방지_재검수/기존참조근거/십자커서_점선영역_확대와축소.jpg",
+          "sha256": "d3e51c9d70f9047854fa356aa6c5a967f72e2893ba84d93f316675a55ba99e39",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\..\\phase01a-a2-correction2\\십자커서_점선영역_확대와축소.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/재추출/자료013/eg_fine/f_00072_001.200.png",
+          "sha256": "880645f7e3d2b0572754480ac0c6d84c880fc70ad114f54198533d04ec59697d",
+          "basis": "native 3840x2160 RGB frame; sample-table PTS checked",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\cases\\자료013\\eg_fine\\f_00072_001.200.png"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/재추출/자료013/eg_fine/f_00186_003.100.png",
+          "sha256": "9cb5434cac46c84526389d147d4a75ddee24ce05e815d68428c23e3d51e1acef",
+          "basis": "native 3840x2160 RGB frame; sample-table PTS checked",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\cases\\자료013\\eg_fine\\f_00186_003.100.png"
+        }
+      ],
+      "prior_relation": "C2",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "E-selection",
+      "axis_checks": {
+        "이동": "추가 독립 이동을 발견하지 못함. 장면 전환/상위 대상 움직임은 별도 기록.",
+        "크기": "좌상단에서 우하단으로 넓어져 큰 영문을 공개. 이후 왼쪽/위쪽 경계가 우하단으로 따라가며 영역 축소.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "점선 영역 안의 밝은 문구와 바깥의 연한 문구가 구분됨.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "점선 패턴의 이동/명멸과 영역 변화를 분리. 점선 질감 자체 주행 속도는 미분류.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "해당 장면과 함께 등장·유지.",
+        "가감속": "공개 경계 가속후감속, 소실 경계 가속 기존 후보 유지. 점선 질감/커서/전체 opacity 곡선으로 확대 안 함."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_1.jpg",
+          "sha256": "ccef35d8005ac93f9aef212a0c8b74004befa84623046709f8ef43a98ef436a6",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_2.jpg",
+          "sha256": "fa6743be4504fb7d808e2b89dc9c7386dcec76a59d1b246d2500022aa384c56f",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_3.jpg",
+          "sha256": "43f80dd3f4af33e7f2e6e85fe14aa348f4a345f0973d8f573545e68cddcb2552",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_3.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/도입_작은요소_역순_1.jpg",
+          "sha256": "efe5d6b0963dc81ac55760da7cbef80ba366bd00467d01db885b484300485ad2",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\도입_작은요소_역순_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/04_검증자료/01-A2_누락방지_재검수/기존참조근거/십자커서_점선영역_확대와축소.jpg",
+          "sha256": "d3e51c9d70f9047854fa356aa6c5a967f72e2893ba84d93f316675a55ba99e39",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\..\\phase01a-a2-correction2\\십자커서_점선영역_확대와축소.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/재추출/자료013/eg_fine/f_00186_003.100.png",
+          "sha256": "9cb5434cac46c84526389d147d4a75ddee24ce05e815d68428c23e3d51e1acef",
+          "basis": "native 3840x2160 RGB frame; sample-table PTS checked",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\cases\\자료013\\eg_fine\\f_00186_003.100.png"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/재추출/자료013/eg_fine/f_00198_003.300.png",
+          "sha256": "2145a2f5f096910e996ce85adad1b766de14e0c326cfe25c94a111c631a80dd3",
+          "basis": "native 3840x2160 RGB frame; sample-table PTS checked",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\cases\\자료013\\eg_fine\\f_00198_003.300.png"
+        }
+      ],
+      "prior_relation": "C2",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "E-value",
+      "axis_checks": {
+        "이동": "추가 독립 이동을 발견하지 못함. 장면 전환/상위 대상 움직임은 별도 기록.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "선택 영역 확대에 따라 드러나고 영역 축소 후 연한 전체 문구가 배경에 남음.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "밝은/연한 글자의 합성처럼 보이는 결과. 실제 AE 레이어 수는 미확인.",
+        "등퇴장과순서": "해당 장면과 함께 등장·유지.",
+        "가감속": "밝은 공개/소실 경계 곡선은 N4. 연한 원문 전체 opacity 곡선으로 확정하지 않음."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_1.jpg",
+          "sha256": "ccef35d8005ac93f9aef212a0c8b74004befa84623046709f8ef43a98ef436a6",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_2.jpg",
+          "sha256": "fa6743be4504fb7d808e2b89dc9c7386dcec76a59d1b246d2500022aa384c56f",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_3.jpg",
+          "sha256": "43f80dd3f4af33e7f2e6e85fe14aa348f4a345f0973d8f573545e68cddcb2552",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_3.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/도입_작은요소_역순_1.jpg",
+          "sha256": "efe5d6b0963dc81ac55760da7cbef80ba366bd00467d01db885b484300485ad2",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\도입_작은요소_역순_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_1.jpg",
+          "sha256": "60938bedcd85f02a8fc8376527f3e00d81beb619c8f6608f902ab71025df8f60",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_2.jpg",
+          "sha256": "308f4be5ea5d766b4aa45e2e3feed3303ddbfcb044f919666ec570857eff9bdc",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_3.jpg",
+          "sha256": "107ab2ee028c9f39f454acaed86c09f401a4fada23afd5b4e23c3adbf995cc22",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_3.jpg"
+        }
+      ],
+      "prior_relation": "N4+C2",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "E-title",
+      "axis_checks": {
+        "이동": "벌어진 문자가 중심 쪽으로 모여 자간이 좁아짐.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "문자별로 선명해짐.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "큰 Value of가 완전히 지워지기 전에 등장. 부제·본문보다 먼저 선명해짐.",
+        "가감속": "기존 자간 수렴 ease-out 성향. 짧은 구간/가시성 중첩 한계 유지."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_1.jpg",
+          "sha256": "ccef35d8005ac93f9aef212a0c8b74004befa84623046709f8ef43a98ef436a6",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_2.jpg",
+          "sha256": "fa6743be4504fb7d808e2b89dc9c7386dcec76a59d1b246d2500022aa384c56f",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_3.jpg",
+          "sha256": "43f80dd3f4af33e7f2e6e85fe14aa348f4a345f0973d8f573545e68cddcb2552",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_3.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/도입_작은요소_역순_1.jpg",
+          "sha256": "efe5d6b0963dc81ac55760da7cbef80ba366bd00467d01db885b484300485ad2",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\도입_작은요소_역순_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/본문_등장순서_1.jpg",
+          "sha256": "4a74e20b45c7f7abdd1a54cf8bc565d97743139f39f59c3a0e0bc536a8728c32",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\본문_등장순서_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_1.jpg",
+          "sha256": "60938bedcd85f02a8fc8376527f3e00d81beb619c8f6608f902ab71025df8f60",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_2.jpg",
+          "sha256": "308f4be5ea5d766b4aa45e2e3feed3303ddbfcb044f919666ec570857eff9bdc",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_3.jpg",
+          "sha256": "107ab2ee028c9f39f454acaed86c09f401a4fada23afd5b4e23c3adbf995cc22",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_3.jpg"
+        }
+      ],
+      "prior_relation": "N4",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "E-subtitle",
+      "axis_checks": {
+        "이동": "추가 독립 이동을 발견하지 못함. 장면 전환/상위 대상 움직임은 별도 기록.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "EG-BIM 수렴 중 부제가 선명해짐. 본문보다 앞서 나타남.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "주제명→영문 부제→한글 본문 순으로 중첩하며 선명해짐.",
+        "가감속": "가시성 후보만 관찰. 배경/문자 경계 중첩으로 정확한 opacity 곡선 미분류."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/본문_등장순서_1.jpg",
+          "sha256": "4a74e20b45c7f7abdd1a54cf8bc565d97743139f39f59c3a0e0bc536a8728c32",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\본문_등장순서_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_1.jpg",
+          "sha256": "60938bedcd85f02a8fc8376527f3e00d81beb619c8f6608f902ab71025df8f60",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_2.jpg",
+          "sha256": "308f4be5ea5d766b4aa45e2e3feed3303ddbfcb044f919666ec570857eff9bdc",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_3.jpg",
+          "sha256": "107ab2ee028c9f39f454acaed86c09f401a4fada23afd5b4e23c3adbf995cc22",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_3.jpg"
+        }
+      ],
+      "prior_relation": "N4 세분화",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "AI_new_observation_not_human_approved"
+    },
+    {
+      "id": "E-body-upper",
+      "axis_checks": {
+        "이동": "추가 독립 이동을 발견하지 못함. 장면 전환/상위 대상 움직임은 별도 기록.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "위쪽 문장이 아래쪽 문장보다 먼저 선명해짐.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "부제 뒤, 아래 두 줄 앞. 완전히 분리된 컷이 아니라 일부 겹침.",
+        "가감속": "위→아래 공개 순서 확인. 개별 줄 opacity/와이프 구현 및 곡선은 미분류."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/본문_등장순서_1.jpg",
+          "sha256": "4a74e20b45c7f7abdd1a54cf8bc565d97743139f39f59c3a0e0bc536a8728c32",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\본문_등장순서_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_1.jpg",
+          "sha256": "60938bedcd85f02a8fc8376527f3e00d81beb619c8f6608f902ab71025df8f60",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_2.jpg",
+          "sha256": "308f4be5ea5d766b4aa45e2e3feed3303ddbfcb044f919666ec570857eff9bdc",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_3.jpg",
+          "sha256": "107ab2ee028c9f39f454acaed86c09f401a4fada23afd5b4e23c3adbf995cc22",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_3.jpg"
+        }
+      ],
+      "prior_relation": "N4 세분화",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "AI_new_observation_not_human_approved"
+    },
+    {
+      "id": "E-body-lower",
+      "axis_checks": {
+        "이동": "추가 독립 이동을 발견하지 못함. 장면 전환/상위 대상 움직임은 별도 기록.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "위쪽 두 줄이 보인 후 아래쪽 두 줄이 선명해짐.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "위→아래 순차 선명화. 3.6초에도 아래쪽이 상대적으로 약함; 이후 정착.",
+        "가감속": "세부 밝기 곡선 미분류. 문자별 키프레임/타이핑으로 해석하지 않음."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/본문_등장순서_1.jpg",
+          "sha256": "4a74e20b45c7f7abdd1a54cf8bc565d97743139f39f59c3a0e0bc536a8728c32",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\본문_등장순서_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_1.jpg",
+          "sha256": "60938bedcd85f02a8fc8376527f3e00d81beb619c8f6608f902ab71025df8f60",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_2.jpg",
+          "sha256": "308f4be5ea5d766b4aa45e2e3feed3303ddbfcb044f919666ec570857eff9bdc",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_3.jpg",
+          "sha256": "107ab2ee028c9f39f454acaed86c09f401a4fada23afd5b4e23c3adbf995cc22",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_3.jpg"
+        }
+      ],
+      "prior_relation": "N4 세분화",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "AI_new_observation_not_human_approved"
+    },
+    {
+      "id": "E-hero-upper",
+      "axis_checks": {
+        "이동": "왼쪽→오른쪽으로 들어와 조립.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "정착 후 유지. 전환 시에는 상위 장면의 가시성 변화에 포함.",
+        "색과광량": "녹색 조각이 금색/갈색 계열로 전환되며 세부 선무늬 드러남.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "큰 영문 잔존·설명문 정착과 중첩. 조각별 시작이 달라 한 덩어리 색 변화로 적지 않음.",
+        "가감속": "기존 측정된 E 경계 이동 감속/ease-out 유지. 세 조각의 원본 동일 곡선으로 단정하지 않음."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_1.jpg",
+          "sha256": "ccef35d8005ac93f9aef212a0c8b74004befa84623046709f8ef43a98ef436a6",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_2.jpg",
+          "sha256": "fa6743be4504fb7d808e2b89dc9c7386dcec76a59d1b246d2500022aa384c56f",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_3.jpg",
+          "sha256": "43f80dd3f4af33e7f2e6e85fe14aa348f4a345f0973d8f573545e68cddcb2552",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_3.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/도입_작은요소_역순_1.jpg",
+          "sha256": "efe5d6b0963dc81ac55760da7cbef80ba366bd00467d01db885b484300485ad2",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\도입_작은요소_역순_1.jpg"
+        }
+      ],
+      "prior_relation": "기존 E 정정",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "E-hero-middle",
+      "axis_checks": {
+        "이동": "왼쪽→오른쪽으로 들어와 조립.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "정착 후 유지. 전환 시에는 상위 장면의 가시성 변화에 포함.",
+        "색과광량": "녹색 조각이 금색/갈색 계열로 전환되며 세부 선무늬 드러남.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "큰 영문 잔존·설명문 정착과 중첩. 조각별 시작이 달라 한 덩어리 색 변화로 적지 않음.",
+        "가감속": "기존 측정된 E 경계 이동 감속/ease-out 유지. 세 조각의 원본 동일 곡선으로 단정하지 않음."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_1.jpg",
+          "sha256": "ccef35d8005ac93f9aef212a0c8b74004befa84623046709f8ef43a98ef436a6",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_2.jpg",
+          "sha256": "fa6743be4504fb7d808e2b89dc9c7386dcec76a59d1b246d2500022aa384c56f",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_3.jpg",
+          "sha256": "43f80dd3f4af33e7f2e6e85fe14aa348f4a345f0973d8f573545e68cddcb2552",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_3.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/도입_작은요소_역순_1.jpg",
+          "sha256": "efe5d6b0963dc81ac55760da7cbef80ba366bd00467d01db885b484300485ad2",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\도입_작은요소_역순_1.jpg"
+        }
+      ],
+      "prior_relation": "기존 E 정정",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "E-hero-lower",
+      "axis_checks": {
+        "이동": "왼쪽→오른쪽으로 들어와 조립.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "정착 후 유지. 전환 시에는 상위 장면의 가시성 변화에 포함.",
+        "색과광량": "녹색 조각이 금색/갈색 계열로 전환되며 세부 선무늬 드러남.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "큰 영문 잔존·설명문 정착과 중첩. 조각별 시작이 달라 한 덩어리 색 변화로 적지 않음.",
+        "가감속": "기존 측정된 E 경계 이동 감속/ease-out 유지. 세 조각의 원본 동일 곡선으로 단정하지 않음."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_1.jpg",
+          "sha256": "ccef35d8005ac93f9aef212a0c8b74004befa84623046709f8ef43a98ef436a6",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_2.jpg",
+          "sha256": "fa6743be4504fb7d808e2b89dc9c7386dcec76a59d1b246d2500022aa384c56f",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_3.jpg",
+          "sha256": "43f80dd3f4af33e7f2e6e85fe14aa348f4a345f0973d8f573545e68cddcb2552",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_3.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/도입_작은요소_역순_1.jpg",
+          "sha256": "efe5d6b0963dc81ac55760da7cbef80ba366bd00467d01db885b484300485ad2",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\도입_작은요소_역순_1.jpg"
+        }
+      ],
+      "prior_relation": "기존 E 정정",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "E-hero-dim",
+      "axis_checks": {
+        "이동": "추가 독립 이동을 발견하지 못함. 장면 전환/상위 대상 움직임은 별도 기록.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "정착 후 유지. 전환 시에는 상위 장면의 가시성 변화에 포함.",
+        "색과광량": "약5초에 밝게 보인 뒤 7~8초 쪽으로 갈수록 어두운 갈색 배경 역할로 약화. E 위치 이동과 다른 사건.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "해당 장면과 함께 등장·유지.",
+        "가감속": "광량 전이 확인. 고정 ROI는 색·배경 혼합량이므로 정확한 AE opacity/easing으로 확정하지 않음."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_intro_3.jpg",
+          "sha256": "43f80dd3f4af33e7f2e6e85fe14aa348f4a345f0973d8f573545e68cddcb2552",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_intro_3.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/E내부_역순_3.jpg",
+          "sha256": "36ac792fa95efbee2a70cda943984eee108b188131f3af0dd15422eea5d6fd9a",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\E내부_역순_3.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/E_광량과_내부질감진단.json",
+          "sha256": "a466d3e86d688f2ff6e58e8c3b13cfe47dcc69daf0f2fcb34d72eecb91f08230",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\E_광량과_내부질감진단.json"
+        }
+      ],
+      "prior_relation": "추가 세분화",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "AI_new_observation_not_human_approved"
+    },
+    {
+      "id": "E-texture",
+      "axis_checks": {
+        "이동": "추가 독립 이동을 발견하지 못함. 장면 전환/상위 대상 움직임은 별도 기록.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "E 등장·발광에 따라 선무늬가 선명해졌다 약해짐.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "선무늬가 독립적으로 계속 흐른다고 확정할 근거를 찾지 못함. 고정 ROI 상관 비교는 참고만 사용.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "해당 장면과 함께 등장·유지.",
+        "가감속": "독립 질감 이동 곡선 미분류. 광량 전이와 혼용하지 않음."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/E내부_역순_1.jpg",
+          "sha256": "da25d2ce5b4d2cf21b6806d7840543dc7be3c05b18c066c08d22b3ce9362866d",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\E내부_역순_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/E내부_역순_2.jpg",
+          "sha256": "6929055a12deffbd4d7b245b58f14b86f03177ade3d8307bfb9b10e51bc823cd",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\E내부_역순_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/E내부_역순_3.jpg",
+          "sha256": "36ac792fa95efbee2a70cda943984eee108b188131f3af0dd15422eea5d6fd9a",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\E내부_역순_3.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/E_광량과_내부질감진단.json",
+          "sha256": "a466d3e86d688f2ff6e58e8c3b13cfe47dcc69daf0f2fcb34d72eecb91f08230",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\E_광량과_내부질감진단.json"
+        }
+      ],
+      "prior_relation": "추가 세분화",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "AI_new_observation_not_human_approved"
+    },
+    {
+      "id": "E-ui1",
+      "axis_checks": {
+        "이동": "오른쪽 이동 진입, 이후 우하단 이동·축소되어 뒷 창이 됨.",
+        "크기": "첫 진입 시 폭 증가로 단정 안 함. 재배치 시 축소.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "진입하며 선명해짐.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "다음 도면 창 뒤로 가려지고 나중 재배치 때 다시 노출.",
+        "등퇴장과순서": "전경 E 정착 뒤 첫 UI, 그 뒤 도면 UI.",
+        "가감속": "진입 ease-out, 재배치 ease-in-out 기존 후보."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_1.jpg",
+          "sha256": "60938bedcd85f02a8fc8376527f3e00d81beb619c8f6608f902ab71025df8f60",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_2.jpg",
+          "sha256": "308f4be5ea5d766b4aa45e2e3feed3303ddbfcb044f919666ec570857eff9bdc",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_3.jpg",
+          "sha256": "107ab2ee028c9f39f454acaed86c09f401a4fada23afd5b4e23c3adbf995cc22",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_3.jpg"
+        }
+      ],
+      "prior_relation": "N5+N6",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "E-ui1-inside",
+      "axis_checks": {
+        "이동": "추가 독립 이동을 발견하지 못함. 장면 전환/상위 대상 움직임은 별도 기록.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "정착 후 유지. 전환 시에는 상위 장면의 가시성 변화에 포함.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "구역 변화 대조에서 내부 변화가 남아 확대 재검수. 상단 선택행과 하단 주황 선택영역이 순서대로 바뀜. 이 실행 초안의 내부 변화 없음 판단을 철회.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "아래 두 대상에서 별도 상태 교체를 기록. 실제 포인터 클릭/이벤트 실행은 영상만으로 확정하지 않음.",
+        "가감속": "독립 변화 관측이 없어 비적용."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_1.jpg",
+          "sha256": "60938bedcd85f02a8fc8376527f3e00d81beb619c8f6608f902ab71025df8f60",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_2.jpg",
+          "sha256": "308f4be5ea5d766b4aa45e2e3feed3303ddbfcb044f919666ec570857eff9bdc",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_3.jpg",
+          "sha256": "107ab2ee028c9f39f454acaed86c09f401a4fada23afd5b4e23c3adbf995cc22",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_3.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/추가발견_UI내부_선택변화.jpg",
+          "sha256": "d37f8eb77dcd4e68b62cd3b09ca8ae4551dd2ada17f133c4929fe0fb6f2163dd",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\추가발견_UI내부_선택변화.jpg"
+        }
+      ],
+      "prior_relation": "신규 누락 발견",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "AI_new_observation_not_human_approved"
+    },
+    {
+      "id": "E-ui1-row",
+      "axis_checks": {
+        "이동": "표 자체나 행이 연속 이동하는 것보다 선택 표시가 다음 행으로 교체됨.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "교체 중 이전/다음 표 내용과 선택행이 겹쳐 옅게 보임.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "첫 행에서 다음 행들로 선택 상태가 내려감.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "하단 도면 선택 변경과 함께 순차 교체.",
+        "가감속": "행 선택은 상태 교체. 연속 위치 속도에 ease-in/out을 부여하지 않음. 화면 혼합 곡선은 미분류."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/추가발견_UI내부_선택변화.jpg",
+          "sha256": "d37f8eb77dcd4e68b62cd3b09ca8ae4551dd2ada17f133c4929fe0fb6f2163dd",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\추가발견_UI내부_선택변화.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/재추출/자료013/eg_fine/f_00480_008.000.png",
+          "sha256": "a0d43f10f799dd38f9f60d988c3cf01582395af1689919c85a9a90ce1565af0d",
+          "basis": "native 3840x2160 RGB frame; sample-table PTS checked",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\cases\\자료013\\eg_fine\\f_00480_008.000.png"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/재추출/자료013/eg_fine/f_00540_009.000.png",
+          "sha256": "5caa69551f976a6fa072b2d26252f7d83eb3287e86763a9bfc9ef3e63076ea3f",
+          "basis": "native 3840x2160 RGB frame; sample-table PTS checked",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\cases\\자료013\\eg_fine\\f_00540_009.000.png"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/재추출/자료013/eg_fine/f_00600_010.000.png",
+          "sha256": "0380636431f9eff6f3f041960faa706e8c291dc3b73640405582ce3928028b4d",
+          "basis": "native 3840x2160 RGB frame; sample-table PTS checked",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\cases\\자료013\\eg_fine\\f_00600_010.000.png"
+        }
+      ],
+      "prior_relation": "신규 누락 발견",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "AI_new_observation_not_human_approved"
+    },
+    {
+      "id": "E-ui1-thumb",
+      "axis_checks": {
+        "이동": "맨 윗줄 도면 선택 표시가 첫째→둘째→셋째→넷째로 왼쪽에서 오른쪽으로 바뀜. 물리적인 커서 슬라이드로 확정하지 않음.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "교체 중 양쪽 선택 상태가 겹쳐 보이는 전환.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "주황 테두리/이름 바의 선택 대상이 바뀜.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "상단 선택행 변경과 동반. 창 전체의 오른쪽 진입/우하단 재배치와 별도 사건.",
+        "가감속": "선택 상태 교체이며 이동속도 곡선 비적용. 전환 opacity 곡선은 미분류."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/추가발견_UI내부_선택변화.jpg",
+          "sha256": "d37f8eb77dcd4e68b62cd3b09ca8ae4551dd2ada17f133c4929fe0fb6f2163dd",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\추가발견_UI내부_선택변화.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/재추출/자료013/eg_fine/f_00480_008.000.png",
+          "sha256": "a0d43f10f799dd38f9f60d988c3cf01582395af1689919c85a9a90ce1565af0d",
+          "basis": "native 3840x2160 RGB frame; sample-table PTS checked",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\cases\\자료013\\eg_fine\\f_00480_008.000.png"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/재추출/자료013/eg_fine/f_00540_009.000.png",
+          "sha256": "5caa69551f976a6fa072b2d26252f7d83eb3287e86763a9bfc9ef3e63076ea3f",
+          "basis": "native 3840x2160 RGB frame; sample-table PTS checked",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\cases\\자료013\\eg_fine\\f_00540_009.000.png"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/재추출/자료013/eg_fine/f_00600_010.000.png",
+          "sha256": "0380636431f9eff6f3f041960faa706e8c291dc3b73640405582ce3928028b4d",
+          "basis": "native 3840x2160 RGB frame; sample-table PTS checked",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\cases\\자료013\\eg_fine\\f_00600_010.000.png"
+        }
+      ],
+      "prior_relation": "신규 누락 발견",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "AI_new_observation_not_human_approved"
+    },
+    {
+      "id": "E-ui2",
+      "axis_checks": {
+        "이동": "오른쪽으로 진입. 모델 이후 우하단으로 재배치.",
+        "크기": "재배치 때 축소되어 뒤 창이 더 드러남.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "이전 UI와 겹쳐 선명해짐.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "첫 UI 앞, 모델 뒤. 테두리 중첩을 새 창 복제본 등장으로 오인하지 않음.",
+        "등퇴장과순서": "해당 장면과 함께 등장·유지.",
+        "가감속": "진입 ease-out, 재배치 ease-in-out 기존 후보."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_1.jpg",
+          "sha256": "60938bedcd85f02a8fc8376527f3e00d81beb619c8f6608f902ab71025df8f60",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_2.jpg",
+          "sha256": "308f4be5ea5d766b4aa45e2e3feed3303ddbfcb044f919666ec570857eff9bdc",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_3.jpg",
+          "sha256": "107ab2ee028c9f39f454acaed86c09f401a4fada23afd5b4e23c3adbf995cc22",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_3.jpg"
+        }
+      ],
+      "prior_relation": "N6+N7",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "E-ui2-inside",
+      "axis_checks": {
+        "이동": "추가 독립 이동을 발견하지 못함. 장면 전환/상위 대상 움직임은 별도 기록.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "정착 후 유지. 전환 시에는 상위 장면의 가시성 변화에 포함.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "도면 내 원래 작은 형상은 남아 있고 별도 전경 모델이 커져 나옴. 화면 전체가 모델로 변형된 것은 아님.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "해당 장면과 함께 등장·유지.",
+        "가감속": "독립 변화 관측이 없어 비적용."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/추가발견_모델_연결면.jpg",
+          "sha256": "53969e544a4d7a965d9a831433a033736bf6636abe210f30cd936fb642e6b783",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\추가발견_모델_연결면.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_1.jpg",
+          "sha256": "60938bedcd85f02a8fc8376527f3e00d81beb619c8f6608f902ab71025df8f60",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_2.jpg",
+          "sha256": "308f4be5ea5d766b4aa45e2e3feed3303ddbfcb044f919666ec570857eff9bdc",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_3.jpg",
+          "sha256": "107ab2ee028c9f39f454acaed86c09f401a4fada23afd5b4e23c3adbf995cc22",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_3.jpg"
+        }
+      ],
+      "prior_relation": "추가 세분화",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "AI_new_observation_not_human_approved"
+    },
+    {
+      "id": "E-model",
+      "axis_checks": {
+        "이동": "도면 안 작은 지점 부근에서 우하단으로 커져 나옴.",
+        "크기": "초반 빠르게 커진 후 끝에서 변화량 감소.",
+        "형태와회전": "추가 회전 후보를 검토했으나 명확한 독립 회전 근거로 확정하지 않음. 작은 초기 블러·확대·연결면이 중첩.",
+        "가시성과공개": "정착 후 유지. 전환 시에는 상위 장면의 가시성 변화에 포함.",
+        "색과광량": "추가 독립 색/광량 변화를 발견하지 못함.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "도면 창보다 앞. 뒤 연결면과 나중 광점이 별도 요소.",
+        "등퇴장과순서": "해당 장면과 함께 등장·유지.",
+        "가감속": "기존 모델 면 확대 진행량 ease-out 후보 유지. 원본 Scale/카메라가 아님."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/모델_원근형태_1.jpg",
+          "sha256": "5712681d88765223d8a8d55baec7e2709a7403a096887a1fe155a383395ad510",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\모델_원근형태_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/모델_원근형태_2.jpg",
+          "sha256": "681993283a0243736f8198b4fea06343b5d11004f121c5220d75a3b23b379808",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\모델_원근형태_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/모델_원근형태_3.jpg",
+          "sha256": "9060f6c6dd90182d1814aef99d4a62594d116f5f4d3ccafd13191f099cc422fc",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\모델_원근형태_3.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/추가발견_모델_연결면.jpg",
+          "sha256": "53969e544a4d7a965d9a831433a033736bf6636abe210f30cd936fb642e6b783",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\추가발견_모델_연결면.jpg"
+        }
+      ],
+      "prior_relation": "N7",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    },
+    {
+      "id": "E-connector",
+      "axis_checks": {
+        "이동": "도면의 작은 지점 부근에서 전경 모델 쪽 우하단으로 뻗음.",
+        "크기": "모델이 멀어지고 커질수록 연결 영역이 넓어짐.",
+        "형태와회전": "삼각/사다리꼴로 보이는 반투명 면. 모델 자체 회전과 분리.",
+        "가시성과공개": "모델 확대와 함께 선명해져 뒤에 남음.",
+        "색과광량": "어두운 도면 위를 밝히는 회색 반투명 면.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "도면 위, 전경 모델 뒤. 14초대 후반 광점/수평 빛띠와도 다른 요소.",
+        "등퇴장과순서": "모델 확대에 따라 펼쳐짐. 뒤 창 재배치 뒤에도 연결 유지.",
+        "가감속": "모델 확대와 연동되어 끝에서 변화가 작아지는 성향. 면 경계 자체 곡선 미분류."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/추가발견_모델_연결면.jpg",
+          "sha256": "53969e544a4d7a965d9a831433a033736bf6636abe210f30cd936fb642e6b783",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\추가발견_모델_연결면.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/모델_원근형태_1.jpg",
+          "sha256": "5712681d88765223d8a8d55baec7e2709a7403a096887a1fe155a383395ad510",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\모델_원근형태_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/모델_원근형태_2.jpg",
+          "sha256": "681993283a0243736f8198b4fea06343b5d11004f121c5220d75a3b23b379808",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\모델_원근형태_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/재추출/자료013/eg_fine/f_00786_013.100.png",
+          "sha256": "e3596bfe385df7e15637b722023418784e509c3e4e3c59cb602f3bd7e13dcc1b",
+          "basis": "native 3840x2160 RGB frame; sample-table PTS checked",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\cases\\자료013\\eg_fine\\f_00786_013.100.png"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/재추출/자료013/eg_fine/f_00828_013.800.png",
+          "sha256": "6ac32337a310bd0542e9ec61f544f8bef13e2ca05dccb25f22fc7f70fd5c53f3",
+          "basis": "native 3840x2160 RGB frame; sample-table PTS checked",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\cases\\자료013\\eg_fine\\f_00828_013.800.png"
+        }
+      ],
+      "prior_relation": "신규 누락 발견",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "AI_new_observation_not_human_approved"
+    },
+    {
+      "id": "E-flare",
+      "axis_checks": {
+        "이동": "추가 독립 이동을 발견하지 못함. 장면 전환/상위 대상 움직임은 별도 기록.",
+        "크기": "추가 크기 변화를 발견하지 못함.",
+        "형태와회전": "추가 형태 변화·회전을 발견하지 못함.",
+        "가시성과공개": "광점과 오른쪽 빛띠가 강해짐.",
+        "색과광량": "노랑/흰색 발광 증가.",
+        "내부변화": "이 대상 내부의 추가 독립 동작을 발견하지 못함.",
+        "중첩": "배경 위에 배치. 별도 가림 동작을 발견하지 못함.",
+        "등퇴장과순서": "해당 장면과 함께 등장·유지.",
+        "가감속": "고정 영역 밝기 ease-in-out 성향. 위치 속도나 실제 opacity 커브로 확대 안 함."
+      },
+      "evidence": [
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_1.jpg",
+          "sha256": "60938bedcd85f02a8fc8376527f3e00d81beb619c8f6608f902ab71025df8f60",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_1.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_2.jpg",
+          "sha256": "308f4be5ea5d766b4aa45e2e3feed3303ddbfcb044f919666ec570857eff9bdc",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_2.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/eg_late_3.jpg",
+          "sha256": "107ab2ee028c9f39f454acaed86c09f401a4fada23afd5b4e23c3adbf995cc22",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\eg_late_3.jpg"
+        },
+        {
+          "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 01-A/02_분석작업/01-A2_누락방지_재검수/검수판/추가발견_모델_연결면.jpg",
+          "sha256": "53969e544a4d7a965d9a831433a033736bf6636abe210f30cd936fb642e6b783",
+          "source_workspace_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-audit3\\검수판\\추가발견_모델_연결면.jpg"
+        }
+      ],
+      "prior_relation": "N8",
+      "reviewer": "current Codex visual review; no independent reviewer",
+      "review_state": "reviewed_with_declared_limits",
+      "human_approval_scope": "prior_scope_only"
+    }
+  ],
+  "complete_video_or_no_omission_guarantee": false,
+  "new_human_approval_requested": false,
+  "A3_started": false
+}

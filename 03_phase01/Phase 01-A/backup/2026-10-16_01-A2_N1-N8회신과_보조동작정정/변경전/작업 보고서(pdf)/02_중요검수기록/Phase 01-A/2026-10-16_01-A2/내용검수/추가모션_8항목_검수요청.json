@@ -1,0 +1,347 @@
+{
+  "id": "A2-HUMAN-NEW-MOTION-8",
+  "version": "0.1",
+  "status": "pending",
+  "groups": [
+    {
+      "id": "N1",
+      "asset": "자료005",
+      "window": "약6.0~6.4초·21.0~21.4초",
+      "description": "이전 화면과 다음 화면이 겹쳐 교체되는 전환. 슬라이드가 아니라 크로스페이드이며 초반 전환량이 크고 끝에서 완만해짐.",
+      "plain_check": "두 장면이 겹쳐 바뀌며, 처음 빠르게 전환된 뒤 끝에서 부드럽게 마무리되는지.",
+      "property": "혼합 영상 진행량(왼쪽 제목 ROI)",
+      "direction": "가시성 교체; 이동 방향 비적용",
+      "curve": "ease-out 감속형",
+      "taxonomy": [
+        "CURVE-DECEL"
+      ],
+      "evidence_files": [
+        "장헌_정지와_전환곡선.json"
+      ],
+      "clips": [
+        "N1",
+        "N3"
+      ],
+      "confidence": "관측 곡선군에 대한 강한 후보",
+      "human_review": "pending_new_motion_scope_only",
+      "evidence_pins": [
+        {
+          "path": "Phase 01-A/04_검증자료/01-A2_전체모션재검수/진단원문/장헌_정지와_전환곡선.json",
+          "sha256": "1ecad159a7569e96e247ec610507bed18950ad6d4e9adf5466b9d5580266489e"
+        }
+      ],
+      "clip_pins": [
+        {
+          "id": "N1",
+          "path": "Phase 01-A/02_분석작업/01-A2_전체모션재검수/추가검수_화면/N1_장헌_장면전환.mp4",
+          "sha256": "72b63ea748b5707c6f517b4bd72015de16859448ef29ee2f40d152d612ae6752"
+        },
+        {
+          "id": "N3",
+          "path": "Phase 01-A/02_분석작업/01-A2_전체모션재검수/추가검수_화면/N3_장헌_매출처도넛.mp4",
+          "sha256": "27d2edb784109f61d2c357fbf558267feb48a7958041b9a0bdb182db70d88ecc"
+        }
+      ]
+    },
+    {
+      "id": "N2",
+      "asset": "자료005",
+      "window": "약8~9.3초 / 15.5~16.7초 / 16.8~17.8초",
+      "description": "수주→매출→영업이익 순으로 실적 막대가 아래에서 위로 자라고, 원형 진행표시는12시 방향에서 시계방향으로 채워짐. 수치도 증가하고 증가량은 끝에서 작아짐.",
+      "plain_check": "숫자 값 자체가 아니라, 막대가 위로 자라고 원이 시계방향으로 채워지며 끝에서 느려지는지.",
+      "property": "동일 원형 ROI의 파란 채움 픽셀량과 막대/숫자의 시점 대조",
+      "direction": "막대 위쪽 / 원형 시계방향",
+      "curve": "세 지표 모두 ease-out 감속형",
+      "taxonomy": [
+        "CURVE-DECEL"
+      ],
+      "evidence_files": [
+        "장헌_차트_시간곡선진단.json"
+      ],
+      "clips": [
+        "N2",
+        "N2S",
+        "N2P"
+      ],
+      "confidence": "원형 진행량에 대한 강한 후보; 개별 숫자 타이밍은 반올림 영향",
+      "human_review": "pending_new_motion_scope_only",
+      "evidence_pins": [
+        {
+          "path": "Phase 01-A/04_검증자료/01-A2_전체모션재검수/진단원문/장헌_차트_시간곡선진단.json",
+          "sha256": "8edcfee808bcd2d7d34a3bec3ba38fdc2e0bdb39b0865cd19522d290ac131ce7"
+        }
+      ],
+      "clip_pins": [
+        {
+          "id": "N2",
+          "path": "Phase 01-A/02_분석작업/01-A2_전체모션재검수/추가검수_화면/N2_장헌_수주_막대와_원형진행.mp4",
+          "sha256": "555783ed485ea193a556a1f90b727b9fd049c28e3e605699428a8159ed53e64e"
+        },
+        {
+          "id": "N2S",
+          "path": "Phase 01-A/02_분석작업/01-A2_전체모션재검수/추가검수_화면/N2S_장헌_매출_막대와_원형진행.mp4",
+          "sha256": "02fe668d51e081573cdbe0ddec986679c08b1cfb0f6cc64e0ce9c2152f37a316"
+        },
+        {
+          "id": "N2P",
+          "path": "Phase 01-A/02_분석작업/01-A2_전체모션재검수/추가검수_화면/N2P_장헌_영업이익_막대와_원형진행.mp4",
+          "sha256": "f07c5a4e1cf95ad2777d591007742e8ce02ad803e69cd1585c4784a43648ee5f"
+        }
+      ]
+    },
+    {
+      "id": "N3",
+      "asset": "자료005",
+      "window": "약21.3~22.6초",
+      "description": "매출처 도넛의 색 영역이 시계방향으로 늘고 가족사 비중 숫자가 함께 올라간 뒤 완만하게 정착. 오른쪽 사업분야 원은24초까지 회색 상태.",
+      "plain_check": "왼쪽 도넛과 가족사 비중이 빠르게 채워지다가 천천히 마무리되는지.",
+      "property": "고정 도넛 ROI의 빨강/분홍 채움 면적",
+      "direction": "도넛 시계방향",
+      "curve": "ease-out 감속형",
+      "taxonomy": [
+        "CURVE-DECEL"
+      ],
+      "evidence_files": [
+        "장헌_차트_시간곡선진단.json"
+      ],
+      "clips": [
+        "N3"
+      ],
+      "confidence": "채움 진행량에 대한 강한 후보",
+      "human_review": "pending_new_motion_scope_only",
+      "evidence_pins": [
+        {
+          "path": "Phase 01-A/04_검증자료/01-A2_전체모션재검수/진단원문/장헌_차트_시간곡선진단.json",
+          "sha256": "8edcfee808bcd2d7d34a3bec3ba38fdc2e0bdb39b0865cd19522d290ac131ce7"
+        }
+      ],
+      "clip_pins": [
+        {
+          "id": "N3",
+          "path": "Phase 01-A/02_분석작업/01-A2_전체모션재검수/추가검수_화면/N3_장헌_매출처도넛.mp4",
+          "sha256": "27d2edb784109f61d2c357fbf558267feb48a7958041b9a0bdb182db70d88ecc"
+        }
+      ]
+    },
+    {
+      "id": "N4",
+      "asset": "자료013",
+      "window": "약1.9~3.8초",
+      "description": "Value of는 글자 전체가 옆으로 날아오는 것보다 공개 영역이 오른쪽/아래로 확장되며 보임. 밝은 글자는 이후 왼쪽부터 오른쪽으로 지워져 옅은 배경 문구가 남고, 작은 EG-BIM 글자들이 간격을 좁히며 맞춰지고 부제/본문이 선명해짐.",
+      "plain_check": "큰 문구가 좌→우로 드러났다 같은 방향으로 지워지고, EG-BIM 글자들이 모여 정착하는지.",
+      "property": "공개된 흰 영역의 오른쪽 경계 / 밝은 영역 소실량 / 작은 제목 좌우 끝",
+      "direction": "공개/소실 경계 좌→우; 글자 간격 수렴",
+      "curve": "공개 ease-in-out / 소실 ease-in / 자간 수렴 ease-out 성향",
+      "taxonomy": [
+        "CURVE-INOUT",
+        "CURVE-ACCEL",
+        "CURVE-DECEL"
+      ],
+      "evidence_files": [
+        "EG_이동과_공개_곡선진단.json",
+        "EG_작은제목_문자간격진단.json",
+        "곡선분류_자체진단과_민감도.json"
+      ],
+      "clips": [
+        "N4"
+      ],
+      "confidence": "공개·소실은 곡선 후보, 자간 수렴은 짧은 범위/가시성 중첩 한계",
+      "human_review": "pending_new_motion_scope_only",
+      "evidence_pins": [
+        {
+          "path": "Phase 01-A/04_검증자료/01-A2_전체모션재검수/진단원문/EG_이동과_공개_곡선진단.json",
+          "sha256": "30f4f66a3c24c25695f55d9fa411839e94167ce6c388abb22fde09d6514f8c30"
+        },
+        {
+          "path": "Phase 01-A/04_검증자료/01-A2_전체모션재검수/진단원문/EG_작은제목_문자간격진단.json",
+          "sha256": "6971bd3bd1c2feb5e6be4cd318a5b79d529d23286d00f7295cf94f1865c9d96f"
+        },
+        {
+          "path": "Phase 01-A/04_검증자료/01-A2_전체모션재검수/진단원문/곡선분류_자체진단과_민감도.json",
+          "sha256": "db572e6246ca544dc16b97f57645a184bea6b129164f489252176275c1850d08"
+        }
+      ],
+      "clip_pins": [
+        {
+          "id": "N4",
+          "path": "Phase 01-A/02_분석작업/01-A2_전체모션재검수/추가검수_화면/N4_EG_제목공개와_교체.mp4",
+          "sha256": "6c716cd98f0c97ef167cb27d7d62ebef71e8ad55bad7989a6e831806992f6a64"
+        }
+      ]
+    },
+    {
+      "id": "N5",
+      "asset": "자료013",
+      "window": "약6.9~8.0초",
+      "description": "첫 UI 이미지가 오른쪽으로 이동하면서 선명해지고 정착함. 초기 희미한 테두리 일부를 놓치면 폭 증가나 반대 방향 이동으로 오인할 수 있어 오른쪽 경계를 따로 추적함.",
+      "plain_check": "첫 UI 이미지가 오른쪽으로 움직이며 나타나고, 끝에서 느려지는지.",
+      "property": "동일 UI 오른쪽 노란 세로 테두리의 x 위치",
+      "direction": "오른쪽",
+      "curve": "ease-out 감속형",
+      "taxonomy": [
+        "CURVE-DECEL"
+      ],
+      "evidence_files": [
+        "EG_이동과_공개_곡선진단.json",
+        "EG_사진테두리_1920진단.json"
+      ],
+      "clips": [
+        "N5"
+      ],
+      "confidence": "추적 경계의 감속 강한 후보; 가시성은 별도 관찰",
+      "human_review": "pending_new_motion_scope_only",
+      "evidence_pins": [
+        {
+          "path": "Phase 01-A/04_검증자료/01-A2_전체모션재검수/진단원문/EG_이동과_공개_곡선진단.json",
+          "sha256": "30f4f66a3c24c25695f55d9fa411839e94167ce6c388abb22fde09d6514f8c30"
+        },
+        {
+          "path": "Phase 01-A/04_검증자료/01-A2_전체모션재검수/진단원문/EG_사진테두리_1920진단.json",
+          "sha256": "fc98415e7180c30406af3d799a9bf93b832f71b1abd47d0371f80e6cb2d21a23"
+        }
+      ],
+      "clip_pins": [
+        {
+          "id": "N5",
+          "path": "Phase 01-A/02_분석작업/01-A2_전체모션재검수/추가검수_화면/N5_EG_첫화면진입.mp4",
+          "sha256": "376c4cd700b5e72821da7ab76178720ee4235a5856c5d9d59f073ef46b0d515b"
+        }
+      ]
+    },
+    {
+      "id": "N6",
+      "asset": "자료013",
+      "window": "약10.7~12.2초",
+      "description": "먼저 있던 UI 창이 오른쪽 아래로 이동하며 작아져 뒤쪽 자리를 만들고, 다음 도면 창이 그 앞에 오른쪽으로 이동하면서 선명해져 겹침. 두 사건은 일부 중첩되지만 같은 동작이나 같은 속도곡선이 아님.",
+      "plain_check": "앞 창이 우하단으로 작아져 물러나고, 새 도면 창이 그 앞에 오른쪽으로 들어와 정착하는지.",
+      "property": "기존 창 왼쪽/위쪽 경계와 크기 / 새 앞 창 오른쪽 경계",
+      "direction": "기존창 우하단+축소 / 새창 오른쪽",
+      "curve": "기존창 재배치 ease-in-out / 새창 진입 ease-out",
+      "taxonomy": [
+        "CURVE-INOUT",
+        "CURVE-DECEL"
+      ],
+      "evidence_files": [
+        "EG_이동과_공개_곡선진단.json",
+        "EG_전면창_재배치진단.json",
+        "곡선분류_자체진단과_민감도.json"
+      ],
+      "clips": [
+        "N6"
+      ],
+      "confidence": "곽선군 후보; 처음 가시성이 낮은 새 창의 시작 시각은 근사",
+      "human_review": "pending_new_motion_scope_only",
+      "evidence_pins": [
+        {
+          "path": "Phase 01-A/04_검증자료/01-A2_전체모션재검수/진단원문/EG_이동과_공개_곡선진단.json",
+          "sha256": "30f4f66a3c24c25695f55d9fa411839e94167ce6c388abb22fde09d6514f8c30"
+        },
+        {
+          "path": "Phase 01-A/04_검증자료/01-A2_전체모션재검수/진단원문/EG_전면창_재배치진단.json",
+          "sha256": "f74b6442bddafee950c20e9f506e9d2f2842d74705c9c1899350bcfcec5082ac"
+        },
+        {
+          "path": "Phase 01-A/04_검증자료/01-A2_전체모션재검수/진단원문/곡선분류_자체진단과_민감도.json",
+          "sha256": "db572e6246ca544dc16b97f57645a184bea6b129164f489252176275c1850d08"
+        }
+      ],
+      "clip_pins": [
+        {
+          "id": "N6",
+          "path": "Phase 01-A/02_분석작업/01-A2_전체모션재검수/추가검수_화면/N6_EG_창재배치와_다음화면.mp4",
+          "sha256": "1d9716195ec9d5b2d2eccc986d529b43f2394ae595a569f61ab259b9dd4a79fe"
+        }
+      ]
+    },
+    {
+      "id": "N7",
+      "asset": "자료013",
+      "window": "약13.0~14.6초",
+      "description": "작은 모델 이미지가 오른쪽 아래로 이동하고 커지며 화면 앞쪽으로 펼쳐져 보임. 확대 변화량은 끝에서 작아짐. 그 뒤 배경의 두 창도 오른쪽 아래로 다시 재배치되어 겹침 간격이 달라짐. 원본 카메라/3D 키프레임 구현은 판정하지 않음.",
+      "plain_check": "모델이 우하단으로 커져 나오다가 느려지고, 뒤의 창들도 다시 우하단으로 재배치되는지.",
+      "property": "연결된 밝은 모델 면의 면적 제곱근/중심 / 앞 창 왼쪽 경계",
+      "direction": "모델 우하단+확대 / 뒤창 우하단 재배치",
+      "curve": "모델 확대 ease-out / 창 재배치 ease-in-out 성향",
+      "taxonomy": [
+        "CURVE-DECEL",
+        "CURVE-INOUT"
+      ],
+      "evidence_files": [
+        "EG_모델면_연결성보완진단.json",
+        "EG_전면창_재배치진단.json",
+        "곡선분류_자체진단과_민감도.json"
+      ],
+      "clips": [
+        "N7"
+      ],
+      "confidence": "모델 면과 창 경계에 대한 후보; 면적은 전체 모델의 원본 Scale 아님",
+      "human_review": "pending_new_motion_scope_only",
+      "evidence_pins": [
+        {
+          "path": "Phase 01-A/04_검증자료/01-A2_전체모션재검수/진단원문/EG_모델면_연결성보완진단.json",
+          "sha256": "70a3fe38c14388cf713aa632437ef09ba7a9bbe2bd651ec4ad16f14a165a9dd3"
+        },
+        {
+          "path": "Phase 01-A/04_검증자료/01-A2_전체모션재검수/진단원문/EG_전면창_재배치진단.json",
+          "sha256": "f74b6442bddafee950c20e9f506e9d2f2842d74705c9c1899350bcfcec5082ac"
+        },
+        {
+          "path": "Phase 01-A/04_검증자료/01-A2_전체모션재검수/진단원문/곡선분류_자체진단과_민감도.json",
+          "sha256": "db572e6246ca544dc16b97f57645a184bea6b129164f489252176275c1850d08"
+        }
+      ],
+      "clip_pins": [
+        {
+          "id": "N7",
+          "path": "Phase 01-A/02_분석작업/01-A2_전체모션재검수/추가검수_화면/N7_EG_모델확대와_이동.mp4",
+          "sha256": "98d0cf041ddfd66484b7299f4b13660e714398a33807f32c8e34568083b853f9"
+        }
+      ]
+    },
+    {
+      "id": "N8",
+      "asset": "자료013",
+      "window": "약14.3~15.0초",
+      "description": "모델 왼쪽 위 부근의 광점과 오른쪽으로 퍼지는 빛띠가 강해짐. 위치 이동 속도가 아니라 고정 영역의 밝기 진행량이 처음/끝에서 완만하고 중간에서 빠른 S형임.",
+      "plain_check": "광점과 빛띠가 서서히 시작해 중간에 빠르게 밝아진 뒤 완만해지는지.",
+      "property": "모델 상부 고정 ROI의 평균 밝기",
+      "direction": "빛띠가 오른쪽으로 퍼져 보임; 밝기 곡선과 이동속도 구분",
+      "curve": "밝기 진행량 ease-in-out 성향",
+      "taxonomy": [
+        "CURVE-INOUT"
+      ],
+      "evidence_files": [
+        "EG_이동과_공개_곡선진단.json"
+      ],
+      "clips": [
+        "N8"
+      ],
+      "confidence": "참고 후보: 모델 이동·배경 밝기 중첩으로 실제 opacity 곡선은 확정하지 않음",
+      "human_review": "pending_new_motion_scope_only",
+      "evidence_pins": [
+        {
+          "path": "Phase 01-A/04_검증자료/01-A2_전체모션재검수/진단원문/EG_이동과_공개_곡선진단.json",
+          "sha256": "30f4f66a3c24c25695f55d9fa411839e94167ce6c388abb22fde09d6514f8c30"
+        }
+      ],
+      "clip_pins": [
+        {
+          "id": "N8",
+          "path": "Phase 01-A/02_분석작업/01-A2_전체모션재검수/추가검수_화면/N8_EG_빛띠_밝기변화.mp4",
+          "sha256": "0c1a417025077368cbc84f3b0fbae46ea3225b3e553ff2097fca17becbf564e3"
+        }
+      ]
+    }
+  ],
+  "original_reply_requested": "그럼 A3로 넘어가기 전에 장헌과 EG-BIM의 현재 분석 구간에서 다른 동작도 이동 방향·등장 순서·가감속까지 다시 검수해줘. 이번처럼 놓친 부분을 정리하고, 내가 추가로 확인할 항목만 보여줘. 그리고 ae 키프레임 값은 내가 제공 못해. 니가 동영상 검수 스킬을 사용해서 이지 인인지 아웃인지 등을 파악해. 그리고 이전 00단계에서 준비하던 지식 중에 이런 모션 들을 정리하지않았어? 왜 파악 못한거야",
+  "guide_path": "Phase 01-A/02_분석작업/01-A2_전체모션재검수/00_추가로_확인할_모션.md",
+  "guide_sha256": "652d970352eac3bfafaa7344d5c7a06bca35a2b07cb0e1f3fe99adb5ad734525",
+  "observation_sha256": "4970dfaa3f713a62ce5e380bcb962510f457829abb7af89f946fb56b3ab81484",
+  "scope": "new movement/order/curve descriptions only; no request for AE source values; excludes exact reconstruction/business facts/audio/generalization",
+  "does_not_reask": [
+    "previous numeric transcription",
+    "previous E correction"
+  ],
+  "receipt": null,
+  "context_sha256": "d292eb79adf206bb1bb295a52348737c42f67e039554e51e15295082cdfd6f47"
+}

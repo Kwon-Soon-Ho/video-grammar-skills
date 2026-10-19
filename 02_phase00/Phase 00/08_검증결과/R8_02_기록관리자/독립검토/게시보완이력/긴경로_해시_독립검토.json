@@ -1,0 +1,38 @@
+{
+  "scope": "긴 경로 IO 일관화만 정적/바이트 확인. 게시·모델·IO 시험을 재실행하지 않는다.",
+  "limited_completion_supported_unchanged": true,
+  "unresolved_blocking_findings": [],
+  "publisher_sha256": "89bb4056b380fb4b5799c989406aa7bb339b096b148805df1d94830c2e15f071",
+  "previous_publisher_sha256": "c2e82d39a489768cf625c69a1dab5e40b854bd9016664d5beee0b3ce0a54f045",
+  "exact_io_review": "safe 검증된 dst로부터 io_dst를 만들고 mkdir/exists/copy2/SHA에 일관 사용. 상대 manifest는 원래 dst.relative_to(BASE)로 유지. 존재 사본 SHA 불일치 거부와 원문/파일명/목적 경계 유지.",
+  "AST_differing_top_level_nodes": [
+    [
+      23,
+      "FunctionDef"
+    ],
+    [
+      33,
+      "Assign"
+    ]
+  ],
+  "other_report_change": "이력 문단을 첫 복사 중단+두 번째 SHA 재열기 중단에 맞춰 설명.",
+  "actual_290_path_existing_bytes_sha_match": true,
+  "actual_test_source_sha256": "b8e0062153d07b3217d12dfd9febc2051d19819de5a848164666a839f3200c61",
+  "actual_test_destination_sha256": "b8e0062153d07b3217d12dfd9febc2051d19819de5a848164666a839f3200c61",
+  "test_report_current_code_hash_matches": true,
+  "author_copy_and_resume_test_read_not_independently_rerun": true,
+  "author_initial_length_assert_source_preserved_sha256": "ed40119eb171310834ac152290ca96e9387cfb7a852da9692dd0025d6bc7fa4c",
+  "prior_D_hashes_unchanged": true,
+  "prior_C_hashes_unchanged_except_publisher": true,
+  "initial164_changed_paths_unchanged": [
+    "00_시작안내.md",
+    "01_진행현황.md",
+    "08_검증결과/R8_01_큐레이터/00_결과안내.md",
+    "14_스킬재구성/진행상태.json"
+  ],
+  "D_report_not_written": true,
+  "D_write_performed": false,
+  "publication_rerun_performed": false,
+  "model_trials_unchanged": 10,
+  "post_publication_preservation_and_R6_R7_receipt_still_required": true
+}

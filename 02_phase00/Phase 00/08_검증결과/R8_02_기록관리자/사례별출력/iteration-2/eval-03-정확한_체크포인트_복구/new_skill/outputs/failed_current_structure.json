@@ -1,0 +1,89 @@
+{
+  "execution": {
+    "name": "failed_current_structure",
+    "argv": [
+      "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-03-정확한_체크포인트_복구\\new_skill\\run-1\\inputs\\Phase00\\07_실행도구\\자료검증.py",
+      "--record",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-03-정확한_체크포인트_복구\\new_skill\\run-1\\inputs\\Phase00\\12_통합기록\\통합기록_작업초안.json"
+    ],
+    "cwd": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-03-정확한_체크포인트_복구\\new_skill\\run-1\\inputs\\Phase00",
+    "exit_code": 1,
+    "stdout_path": "failed_current_structure.stdout.txt",
+    "stderr_path": "failed_current_structure.stderr.txt"
+  },
+  "result": {
+    "valid": false,
+    "errors": [
+      "core: MAP-ONE: 변환 계산 좌표 불일치"
+    ],
+    "unresolved": [],
+    "human_review_queue": [
+      {
+        "claim_id": "CL-ONE",
+        "claim_version": "0.1.0",
+        "priority": "normal",
+        "reasons": [
+          "주장 내용 사람 검수 필요"
+        ],
+        "status": "specimen_only",
+        "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+      },
+      {
+        "item_id": "SP-ROOT",
+        "status": "specimen_only",
+        "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+        "verified": false
+      },
+      {
+        "item_id": "SP-CROP",
+        "status": "specimen_only",
+        "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+        "verified": false
+      },
+      {
+        "item_id": "SP-RESIZE",
+        "status": "specimen_only",
+        "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+        "verified": false
+      },
+      {
+        "item_id": "TR-SP-CROP",
+        "status": "specimen_only",
+        "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+        "verified": false
+      },
+      {
+        "item_id": "TR-SP-RESIZE",
+        "status": "specimen_only",
+        "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+        "verified": false
+      },
+      {
+        "item_id": "G-ROOT",
+        "status": "specimen_only",
+        "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+        "verified": false
+      },
+      {
+        "item_id": "G-RESULT",
+        "status": "specimen_only",
+        "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+        "verified": false
+      }
+    ],
+    "coordinate_bindings": [],
+    "integrated_review_states": [],
+    "fact_verified": false,
+    "human_identity_verified": false,
+    "company_approved": false,
+    "operational_release": false,
+    "status": "invalid",
+    "schema_version": "0.2.0",
+    "scope": "기록 계약의 구조/연결 검사. 실제 영상·사람 검수·회사 승인·운영 반영 아님.",
+    "source_json_sha256": "f94804859022f09c248c5c73ef9e014649fdbab06dcec16f83aa6afe94ec14b9"
+  }
+}

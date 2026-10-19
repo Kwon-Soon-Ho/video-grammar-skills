@@ -1,0 +1,113 @@
+{
+  "authorized_A3": true,
+  "status": "requested_A3_draft_and_seven_case_tests_completed_with_targeted_improvements",
+  "final_skill_version": "0.1.0-draft.2",
+  "all_requested_cases_tested": true,
+  "first_skill_runs": {
+    "T01": "requirements_satisfied",
+    "T02": "requirements_satisfied",
+    "T03": "requirements_satisfied",
+    "T04": "needs_revision",
+    "T05": "requirements_satisfied",
+    "T06": "needs_revision",
+    "T07": "requirements_satisfied"
+  },
+  "baseline_runs": {
+    "T01": "requirements_satisfied",
+    "T02": "requirements_satisfied",
+    "T03": "requirements_satisfied",
+    "T04": "requirements_satisfied",
+    "T05": "needs_revision",
+    "T06": "needs_revision",
+    "T07": "requirements_satisfied"
+  },
+  "final_selected_results": [
+    {
+      "case_id": "T01",
+      "selected_run": "iteration-1",
+      "skill_version": "0.1.0-draft.1",
+      "status": "requirements_satisfied"
+    },
+    {
+      "case_id": "T02",
+      "selected_run": "iteration-1",
+      "skill_version": "0.1.0-draft.1",
+      "status": "requirements_satisfied"
+    },
+    {
+      "case_id": "T03",
+      "selected_run": "iteration-1",
+      "skill_version": "0.1.0-draft.1",
+      "status": "requirements_satisfied"
+    },
+    {
+      "case_id": "T04",
+      "selected_run": "iteration-2",
+      "skill_version": "0.1.0-draft.2",
+      "status": "requirements_satisfied"
+    },
+    {
+      "case_id": "T05",
+      "selected_run": "iteration-1",
+      "skill_version": "0.1.0-draft.1",
+      "status": "requirements_satisfied"
+    },
+    {
+      "case_id": "T06",
+      "selected_run": "iteration-2",
+      "skill_version": "0.1.0-draft.2",
+      "status": "requirements_satisfied"
+    },
+    {
+      "case_id": "T07",
+      "selected_run": "iteration-1",
+      "skill_version": "0.1.0-draft.1",
+      "status": "requirements_satisfied"
+    }
+  ],
+  "independent_clean_analysis_batches": 5,
+  "case_runs": 16,
+  "known_human_reference_cases": 6,
+  "AI_reference_cases": 1,
+  "v2_motion_retests": [
+    "T04",
+    "T06"
+  ],
+  "v2_structural_recheck_all_seven": {
+    "eval-T01": [],
+    "eval-T02": [],
+    "eval-T03": [],
+    "eval-T04": [],
+    "eval-T05": [],
+    "eval-T06": [],
+    "eval-T07": []
+  },
+  "helper_tests": {
+    "v1_passed": 10,
+    "v1_total": 12,
+    "v2_passed": 12,
+    "v2_total": 12
+  },
+  "new_user_questions_required": [],
+  "new_AI_observations_are_human_approved": false,
+  "global_accuracy": null,
+  "unseen_source_validation": false,
+  "A4_started": false,
+  "global_skill_installation": false,
+  "full_R4_DB_export_tested": false,
+  "document_and_audio_route_tested": false,
+  "no_missing_motion_guarantee": false,
+  "limits": [
+    "selected-frame review, not full realtime playback",
+    "same known sources, single run per condition, root semantic grading",
+    "v2 changed instructions tested only on two affected windows; other five retain v1 content results",
+    "bounded extraction adapter is project-provided; universal decoder not bundled",
+    "new UI reference and fine observations remain AI observations"
+  ],
+  "changes": [
+    "same-target/same-property sample checking",
+    "occlusion reveal separated from actual object motion",
+    "reject event references wholly outside event time",
+    "reject cyclic object parent references"
+  ]
+}

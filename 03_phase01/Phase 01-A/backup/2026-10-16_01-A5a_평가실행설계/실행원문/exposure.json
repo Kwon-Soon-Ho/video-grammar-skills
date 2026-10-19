@@ -1,0 +1,111 @@
+{
+  "scope": "current thread, referenced direction thread, accessible A1–A4 logs and input document-review records; no claim of exhaustive all-account history",
+  "source_records": [
+    "reference-thread.json",
+    "phase01a-a4/result.json",
+    "phase01a-a4/adapter-scope.json",
+    "phase01a-docreview/문서목록과_읽기결과.json",
+    "자료011/03_기획서검토_근거.json"
+  ],
+  "projects": [
+    {
+      "id": "자료014",
+      "visual_used_in_A1_A4": false,
+      "document_status": "none, user-confirmed",
+      "current_stage_inspection": "selected two MP4 hashes and headers only",
+      "independence_limit": "same homepage genre as earlier EG-BIM, asset/template independence unverified",
+      "reserve_clips": [
+        "02_(O).mp4",
+        "03_(V).mp4"
+      ],
+      "reserve_use": "not silently substituted after failure; unused same-project clips are not new independent projects"
+    },
+    {
+      "id": "자료011",
+      "visual_used_in_A1_A4": false,
+      "document_status": "DOC064 text previously extracted/reviewed",
+      "prior_document_record": {
+        "id": "DOC064",
+        "path": "한맥 영상/K-GEO FESTA 1핵심 홍보동영상/5. [홍보영상] K-GEO FESTA 1핵심 홍보동영상 시나리오_250912-1.pptx",
+        "sha256": "6ab8c927a15b4c1847c0f7688342095afa64bc361eac7290106b16a939cff1a5",
+        "status": "text_extracted",
+        "chunk_count": 116,
+        "chars": 1737,
+        "detail": {
+          "slides": 13,
+          "slide_text_coverage": [
+            {
+              "slide": 1,
+              "picture_shapes": 0,
+              "text_paragraphs": 15
+            },
+            {
+              "slide": 2,
+              "picture_shapes": 8,
+              "text_paragraphs": 8
+            },
+            {
+              "slide": 3,
+              "picture_shapes": 3,
+              "text_paragraphs": 11
+            },
+            {
+              "slide": 4,
+              "picture_shapes": 2,
+              "text_paragraphs": 17
+            },
+            {
+              "slide": 5,
+              "picture_shapes": 3,
+              "text_paragraphs": 18
+            },
+            {
+              "slide": 6,
+              "picture_shapes": 4,
+              "text_paragraphs": 4
+            },
+            {
+              "slide": 7,
+              "picture_shapes": 1,
+              "text_paragraphs": 3
+            },
+            {
+              "slide": 8,
+              "picture_shapes": 1,
+              "text_paragraphs": 3
+            },
+            {
+              "slide": 9,
+              "picture_shapes": 1,
+              "text_paragraphs": 3
+            },
+            {
+              "slide": 10,
+              "picture_shapes": 1,
+              "text_paragraphs": 3
+            },
+            {
+              "slide": 11,
+              "picture_shapes": 2,
+              "text_paragraphs": 7
+            },
+            {
+              "slide": 12,
+              "picture_shapes": 3,
+              "text_paragraphs": 21
+            },
+            {
+              "slide": 13,
+              "picture_shapes": 1,
+              "text_paragraphs": 3
+            }
+          ],
+          "scope": "native slide text and notes; image-only contents not OCR; no embedded video opened"
+        }
+      },
+      "current_stage_inspection": "MP4 header/hash and PPTX hash; no new body or pixel read",
+      "independence_limit": "video-new/document-exposed, not fully unseen multimodal input"
+    }
+  ],
+  "unverified_other_context_exposure": "If later confirmed before execution, revise label/report scope; do not relabel as unseen merely because evaluator context is fresh."
+}

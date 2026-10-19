@@ -1,0 +1,3810 @@
+[
+  {
+    "case": 1,
+    "checks": [
+      {
+        "name": "same ID separate history and branch preserved",
+        "passed": true,
+        "evidence": {
+          "id_versions": [
+            [
+              "note-loop",
+              "0.0.9"
+            ],
+            [
+              "note-loop",
+              "0.1.1"
+            ],
+            [
+              "note-branch",
+              "0.1.0"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "target actual candidate byte equality",
+        "passed": true,
+        "evidence": "12ca3ff198a384694aa49869df82b35d11aa394d98abf8b8714a885817bd5d60"
+      }
+    ],
+    "guidance_files": {
+      "guide_exists": true,
+      "guide_sha": "c017141b6b266b96dbdde2d3cd92ccf216d41ca94d0e5e88b3c962c2cafc34c2",
+      "table_exists": true,
+      "table_sha": "b6675701a6355f9bdb25256d924d2e98696b8b929f75fab0d3e2f99a870c40e3",
+      "root_table_exists": false
+    },
+    "correction_source_basis": [
+      {
+        "id": "ST-R4",
+        "links": [
+          {
+            "kind": "source",
+            "path": "04_기록규격/06_통합최소기록_규격_v0.2.md",
+            "sha256": "3c301c7f874921a3bd7bc3e5922ca8cb7c16ddc950f78ecc9850251b9474df74",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+            "sha256": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "07_실행도구/자료검증.py",
+            "sha256": "0abd4cba7f1ba3a69011ef67758dbcc6f5c9599785aa0ae5ed5fd6cd0e434ec4",
+            "exists": false,
+            "actual_sha256": null
+          }
+        ]
+      },
+      {
+        "id": "ST-R2",
+        "links": [
+          {
+            "kind": "source",
+            "path": "01_공통용어/02_기록단위와분류축.md",
+            "sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+            "exists": true,
+            "actual_sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a"
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+            "sha256": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+            "exists": false,
+            "actual_sha256": null
+          }
+        ]
+      },
+      {
+        "id": "ST-R2-JSON",
+        "links": [
+          {
+            "kind": "source",
+            "path": "01_공통용어/분류운영규칙.json",
+            "sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d",
+            "exists": true,
+            "actual_sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d"
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": false,
+            "actual_sha256": null
+          }
+        ]
+      },
+      {
+        "id": "ST-HANDOFF",
+        "links": [
+          {
+            "kind": "source",
+            "path": "09_다음단계인계/R7_01-A_구현전_인계.md",
+            "sha256": "438dc5bb19e7a4356436869aa67704712e5e2257084d89cd15fc3bbfe8d2f0b4",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "01_공통용어/02_기록단위와분류축.md",
+            "sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+            "exists": true,
+            "actual_sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a"
+          }
+        ]
+      }
+    ],
+    "structural_version_commands": [],
+    "findings": []
+  },
+  {
+    "case": 2,
+    "checks": [
+      {
+        "name": "agent executable own byte guard preserved",
+        "passed": true,
+        "evidence": {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-02-큐레이터_저장후복구\\candidate\\outputs\\실패복구.py",
+          "guard": "assert current['actual_current_sha256']==owned==sha(raw)"
+        }
+      }
+    ],
+    "guidance_files": {
+      "guide_exists": true,
+      "guide_sha": "c017141b6b266b96dbdde2d3cd92ccf216d41ca94d0e5e88b3c962c2cafc34c2",
+      "table_exists": true,
+      "table_sha": "b6675701a6355f9bdb25256d924d2e98696b8b929f75fab0d3e2f99a870c40e3",
+      "root_table_exists": false
+    },
+    "correction_source_basis": [
+      {
+        "id": "ST-R4",
+        "links": [
+          {
+            "kind": "source",
+            "path": "04_기록규격/06_통합최소기록_규격_v0.2.md",
+            "sha256": "3c301c7f874921a3bd7bc3e5922ca8cb7c16ddc950f78ecc9850251b9474df74",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+            "sha256": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "07_실행도구/자료검증.py",
+            "sha256": "0abd4cba7f1ba3a69011ef67758dbcc6f5c9599785aa0ae5ed5fd6cd0e434ec4",
+            "exists": false,
+            "actual_sha256": null
+          }
+        ]
+      },
+      {
+        "id": "ST-R2",
+        "links": [
+          {
+            "kind": "source",
+            "path": "01_공통용어/02_기록단위와분류축.md",
+            "sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+            "exists": true,
+            "actual_sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a"
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+            "sha256": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+            "exists": false,
+            "actual_sha256": null
+          }
+        ]
+      },
+      {
+        "id": "ST-R2-JSON",
+        "links": [
+          {
+            "kind": "source",
+            "path": "01_공통용어/분류운영규칙.json",
+            "sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d",
+            "exists": true,
+            "actual_sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d"
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": false,
+            "actual_sha256": null
+          }
+        ]
+      },
+      {
+        "id": "ST-HANDOFF",
+        "links": [
+          {
+            "kind": "source",
+            "path": "09_다음단계인계/R7_01-A_구현전_인계.md",
+            "sha256": "438dc5bb19e7a4356436869aa67704712e5e2257084d89cd15fc3bbfe8d2f0b4",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "01_공통용어/02_기록단위와분류축.md",
+            "sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+            "exists": true,
+            "actual_sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a"
+          }
+        ]
+      }
+    ],
+    "structural_version_commands": [],
+    "findings": []
+  },
+  {
+    "case": 3,
+    "checks": [],
+    "guidance_files": {
+      "guide_exists": true,
+      "guide_sha": "c017141b6b266b96dbdde2d3cd92ccf216d41ca94d0e5e88b3c962c2cafc34c2",
+      "table_exists": true,
+      "table_sha": "b6675701a6355f9bdb25256d924d2e98696b8b929f75fab0d3e2f99a870c40e3",
+      "root_table_exists": false
+    },
+    "correction_source_basis": [
+      {
+        "id": "ST-R4",
+        "links": [
+          {
+            "kind": "source",
+            "path": "04_기록규격/06_통합최소기록_규격_v0.2.md",
+            "sha256": "3c301c7f874921a3bd7bc3e5922ca8cb7c16ddc950f78ecc9850251b9474df74",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+            "sha256": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "07_실행도구/자료검증.py",
+            "sha256": "0abd4cba7f1ba3a69011ef67758dbcc6f5c9599785aa0ae5ed5fd6cd0e434ec4",
+            "exists": false,
+            "actual_sha256": null
+          }
+        ]
+      },
+      {
+        "id": "ST-R2",
+        "links": [
+          {
+            "kind": "source",
+            "path": "01_공통용어/02_기록단위와분류축.md",
+            "sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+            "exists": true,
+            "actual_sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a"
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+            "sha256": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+            "exists": false,
+            "actual_sha256": null
+          }
+        ]
+      },
+      {
+        "id": "ST-R2-JSON",
+        "links": [
+          {
+            "kind": "source",
+            "path": "01_공통용어/분류운영규칙.json",
+            "sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d",
+            "exists": true,
+            "actual_sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d"
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": false,
+            "actual_sha256": null
+          }
+        ]
+      },
+      {
+        "id": "ST-HANDOFF",
+        "links": [
+          {
+            "kind": "source",
+            "path": "09_다음단계인계/R7_01-A_구현전_인계.md",
+            "sha256": "438dc5bb19e7a4356436869aa67704712e5e2257084d89cd15fc3bbfe8d2f0b4",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "01_공통용어/02_기록단위와분류축.md",
+            "sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+            "exists": true,
+            "actual_sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a"
+          }
+        ]
+      }
+    ],
+    "structural_version_commands": [],
+    "findings": []
+  },
+  {
+    "case": 4,
+    "checks": [],
+    "guidance_files": {
+      "guide_exists": true,
+      "guide_sha": "c017141b6b266b96dbdde2d3cd92ccf216d41ca94d0e5e88b3c962c2cafc34c2",
+      "table_exists": true,
+      "table_sha": "b6675701a6355f9bdb25256d924d2e98696b8b929f75fab0d3e2f99a870c40e3",
+      "root_table_exists": false
+    },
+    "correction_source_basis": [
+      {
+        "id": "ST-R4",
+        "links": [
+          {
+            "kind": "source",
+            "path": "04_기록규격/06_통합최소기록_규격_v0.2.md",
+            "sha256": "3c301c7f874921a3bd7bc3e5922ca8cb7c16ddc950f78ecc9850251b9474df74",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+            "sha256": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "07_실행도구/자료검증.py",
+            "sha256": "0abd4cba7f1ba3a69011ef67758dbcc6f5c9599785aa0ae5ed5fd6cd0e434ec4",
+            "exists": false,
+            "actual_sha256": null
+          }
+        ]
+      },
+      {
+        "id": "ST-R2",
+        "links": [
+          {
+            "kind": "source",
+            "path": "01_공통용어/02_기록단위와분류축.md",
+            "sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+            "exists": true,
+            "actual_sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a"
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+            "sha256": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+            "exists": false,
+            "actual_sha256": null
+          }
+        ]
+      },
+      {
+        "id": "ST-R2-JSON",
+        "links": [
+          {
+            "kind": "source",
+            "path": "01_공통용어/분류운영규칙.json",
+            "sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d",
+            "exists": true,
+            "actual_sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d"
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": false,
+            "actual_sha256": null
+          }
+        ]
+      },
+      {
+        "id": "ST-HANDOFF",
+        "links": [
+          {
+            "kind": "source",
+            "path": "09_다음단계인계/R7_01-A_구현전_인계.md",
+            "sha256": "438dc5bb19e7a4356436869aa67704712e5e2257084d89cd15fc3bbfe8d2f0b4",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "01_공통용어/02_기록단위와분류축.md",
+            "sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+            "exists": true,
+            "actual_sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a"
+          }
+        ]
+      }
+    ],
+    "structural_version_commands": [],
+    "findings": []
+  },
+  {
+    "case": 5,
+    "checks": [],
+    "guidance_files": {
+      "guide_exists": true,
+      "guide_sha": "c017141b6b266b96dbdde2d3cd92ccf216d41ca94d0e5e88b3c962c2cafc34c2",
+      "table_exists": true,
+      "table_sha": "b6675701a6355f9bdb25256d924d2e98696b8b929f75fab0d3e2f99a870c40e3",
+      "root_table_exists": false
+    },
+    "correction_source_basis": [
+      {
+        "id": "ST-R4",
+        "links": [
+          {
+            "kind": "source",
+            "path": "04_기록규격/06_통합최소기록_규격_v0.2.md",
+            "sha256": "3c301c7f874921a3bd7bc3e5922ca8cb7c16ddc950f78ecc9850251b9474df74",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+            "sha256": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "07_실행도구/자료검증.py",
+            "sha256": "0abd4cba7f1ba3a69011ef67758dbcc6f5c9599785aa0ae5ed5fd6cd0e434ec4",
+            "exists": false,
+            "actual_sha256": null
+          }
+        ]
+      },
+      {
+        "id": "ST-R2",
+        "links": [
+          {
+            "kind": "source",
+            "path": "01_공통용어/02_기록단위와분류축.md",
+            "sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+            "exists": true,
+            "actual_sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a"
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+            "sha256": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+            "exists": false,
+            "actual_sha256": null
+          }
+        ]
+      },
+      {
+        "id": "ST-R2-JSON",
+        "links": [
+          {
+            "kind": "source",
+            "path": "01_공통용어/분류운영규칙.json",
+            "sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d",
+            "exists": true,
+            "actual_sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d"
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": false,
+            "actual_sha256": null
+          }
+        ]
+      },
+      {
+        "id": "ST-HANDOFF",
+        "links": [
+          {
+            "kind": "source",
+            "path": "09_다음단계인계/R7_01-A_구현전_인계.md",
+            "sha256": "438dc5bb19e7a4356436869aa67704712e5e2257084d89cd15fc3bbfe8d2f0b4",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "01_공통용어/02_기록단위와분류축.md",
+            "sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+            "exists": true,
+            "actual_sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a"
+          }
+        ]
+      }
+    ],
+    "structural_version_commands": [],
+    "findings": [
+      {
+        "kind": "guidance_lookup_gap",
+        "text": "transcript: 현재상태_정정표.json은 DB 루트에서 존재하지 않았다. DB직하 부재는 사실이나 안내가 가리키는14하위에는 존재. 좁은 guidance 변경에 상태 정정을 적용하지 않았으므로 정정 미적용 자체는 적절."
+      }
+    ]
+  },
+  {
+    "case": 6,
+    "checks": [
+      {
+        "name": "agent executable own byte guard preserved",
+        "passed": true,
+        "evidence": {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-06-큐레이터_복구거부\\candidate\\outputs\\run_io.py",
+          "guard": "assert sha(current)==write['owned_written_sha256']"
+        }
+      }
+    ],
+    "guidance_files": {
+      "guide_exists": true,
+      "guide_sha": "c017141b6b266b96dbdde2d3cd92ccf216d41ca94d0e5e88b3c962c2cafc34c2",
+      "table_exists": true,
+      "table_sha": "b6675701a6355f9bdb25256d924d2e98696b8b929f75fab0d3e2f99a870c40e3",
+      "root_table_exists": false
+    },
+    "correction_source_basis": [
+      {
+        "id": "ST-R4",
+        "links": [
+          {
+            "kind": "source",
+            "path": "04_기록규격/06_통합최소기록_규격_v0.2.md",
+            "sha256": "3c301c7f874921a3bd7bc3e5922ca8cb7c16ddc950f78ecc9850251b9474df74",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+            "sha256": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "07_실행도구/자료검증.py",
+            "sha256": "0abd4cba7f1ba3a69011ef67758dbcc6f5c9599785aa0ae5ed5fd6cd0e434ec4",
+            "exists": false,
+            "actual_sha256": null
+          }
+        ]
+      },
+      {
+        "id": "ST-R2",
+        "links": [
+          {
+            "kind": "source",
+            "path": "01_공통용어/02_기록단위와분류축.md",
+            "sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+            "exists": true,
+            "actual_sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a"
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+            "sha256": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+            "exists": false,
+            "actual_sha256": null
+          }
+        ]
+      },
+      {
+        "id": "ST-R2-JSON",
+        "links": [
+          {
+            "kind": "source",
+            "path": "01_공통용어/분류운영규칙.json",
+            "sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d",
+            "exists": true,
+            "actual_sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d"
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": false,
+            "actual_sha256": null
+          }
+        ]
+      },
+      {
+        "id": "ST-HANDOFF",
+        "links": [
+          {
+            "kind": "source",
+            "path": "09_다음단계인계/R7_01-A_구현전_인계.md",
+            "sha256": "438dc5bb19e7a4356436869aa67704712e5e2257084d89cd15fc3bbfe8d2f0b4",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "01_공통용어/02_기록단위와분류축.md",
+            "sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+            "exists": true,
+            "actual_sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a"
+          }
+        ]
+      }
+    ],
+    "structural_version_commands": [],
+    "findings": [
+      {
+        "kind": "guidance_lookup_gap",
+        "text": "결과/기록은 스킬이 안내한 현재상태 정정표를 루트에서 미제공이라고 보고.14하위 제공 파일의 확인 누락. 정정 미적용과 변경안전성은 별도."
+      }
+    ]
+  },
+  {
+    "case": 7,
+    "checks": [],
+    "guidance_files": {
+      "guide_exists": true,
+      "guide_sha": "c017141b6b266b96dbdde2d3cd92ccf216d41ca94d0e5e88b3c962c2cafc34c2",
+      "table_exists": true,
+      "table_sha": "b6675701a6355f9bdb25256d924d2e98696b8b929f75fab0d3e2f99a870c40e3",
+      "root_table_exists": false
+    },
+    "correction_source_basis": [
+      {
+        "id": "ST-R4",
+        "links": [
+          {
+            "kind": "source",
+            "path": "04_기록규격/06_통합최소기록_규격_v0.2.md",
+            "sha256": "3c301c7f874921a3bd7bc3e5922ca8cb7c16ddc950f78ecc9850251b9474df74",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+            "sha256": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "07_실행도구/자료검증.py",
+            "sha256": "0abd4cba7f1ba3a69011ef67758dbcc6f5c9599785aa0ae5ed5fd6cd0e434ec4",
+            "exists": false,
+            "actual_sha256": null
+          }
+        ]
+      },
+      {
+        "id": "ST-R2",
+        "links": [
+          {
+            "kind": "source",
+            "path": "01_공통용어/02_기록단위와분류축.md",
+            "sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+            "exists": true,
+            "actual_sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a"
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+            "sha256": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+            "exists": false,
+            "actual_sha256": null
+          }
+        ]
+      },
+      {
+        "id": "ST-R2-JSON",
+        "links": [
+          {
+            "kind": "source",
+            "path": "01_공통용어/분류운영규칙.json",
+            "sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d",
+            "exists": true,
+            "actual_sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d"
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": false,
+            "actual_sha256": null
+          }
+        ]
+      },
+      {
+        "id": "ST-HANDOFF",
+        "links": [
+          {
+            "kind": "source",
+            "path": "09_다음단계인계/R7_01-A_구현전_인계.md",
+            "sha256": "438dc5bb19e7a4356436869aa67704712e5e2257084d89cd15fc3bbfe8d2f0b4",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "01_공통용어/02_기록단위와분류축.md",
+            "sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+            "exists": true,
+            "actual_sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a"
+          }
+        ]
+      }
+    ],
+    "structural_version_commands": [],
+    "findings": [
+      {
+        "kind": "imprecise_status_label",
+        "text": "결과.json status=partial_write_external_change_preserved_postsave_validation_failed이지만 write는 정상 후보전체저장이고 partial_or_invalid_json=false. 실제 보고본문은 외부변경/미복구를 정확히 구분하므로 손상JSON을 숨긴 것은 아님."
+      }
+    ]
+  },
+  {
+    "case": 8,
+    "checks": [],
+    "guidance_files": {
+      "guide_exists": true,
+      "guide_sha": "c017141b6b266b96dbdde2d3cd92ccf216d41ca94d0e5e88b3c962c2cafc34c2",
+      "table_exists": true,
+      "table_sha": "b6675701a6355f9bdb25256d924d2e98696b8b929f75fab0d3e2f99a870c40e3",
+      "root_table_exists": false
+    },
+    "correction_source_basis": [
+      {
+        "id": "ST-R4",
+        "links": [
+          {
+            "kind": "source",
+            "path": "04_기록규격/06_통합최소기록_규격_v0.2.md",
+            "sha256": "3c301c7f874921a3bd7bc3e5922ca8cb7c16ddc950f78ecc9850251b9474df74",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+            "sha256": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "07_실행도구/자료검증.py",
+            "sha256": "0abd4cba7f1ba3a69011ef67758dbcc6f5c9599785aa0ae5ed5fd6cd0e434ec4",
+            "exists": false,
+            "actual_sha256": null
+          }
+        ]
+      },
+      {
+        "id": "ST-R2",
+        "links": [
+          {
+            "kind": "source",
+            "path": "01_공통용어/02_기록단위와분류축.md",
+            "sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+            "exists": true,
+            "actual_sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a"
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+            "sha256": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+            "exists": false,
+            "actual_sha256": null
+          }
+        ]
+      },
+      {
+        "id": "ST-R2-JSON",
+        "links": [
+          {
+            "kind": "source",
+            "path": "01_공통용어/분류운영규칙.json",
+            "sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d",
+            "exists": true,
+            "actual_sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d"
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": false,
+            "actual_sha256": null
+          }
+        ]
+      },
+      {
+        "id": "ST-HANDOFF",
+        "links": [
+          {
+            "kind": "source",
+            "path": "09_다음단계인계/R7_01-A_구현전_인계.md",
+            "sha256": "438dc5bb19e7a4356436869aa67704712e5e2257084d89cd15fc3bbfe8d2f0b4",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "01_공통용어/02_기록단위와분류축.md",
+            "sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+            "exists": true,
+            "actual_sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a"
+          }
+        ]
+      }
+    ],
+    "structural_version_commands": [],
+    "findings": [
+      {
+        "kind": "guard_provenance_limit",
+        "text": "작업실행.py는 generic CLI wrapper이고 별도 실행 가능한 restore 소유 비교 assert가 보존되지 않음. 다만 실제 read(sequence5) 후 동일한 이전 owned SHA를 restore expected에 사용했고 transcript가 현재 read→후보소유 일치확인→restore 판단을 명시. 이 실제 관측 결정만 인정."
+      }
+    ]
+  },
+  {
+    "case": 9,
+    "checks": [
+      {
+        "name": "R5 own version and actual R4 new hash",
+        "passed": true,
+        "evidence": {
+          "path": "12_통합기록/작업초안.json",
+          "record_id": "R8-FAULT-NEW-3",
+          "version": "0.1.1",
+          "sha256": "a29079cee9a5165de1cd919e43028466cfa32ad2be2bf8184a3fbfff445d3782"
+        }
+      },
+      {
+        "name": "R5 failed bytes exact candidate prefix",
+        "passed": true,
+        "evidence": {
+          "bytes": 927,
+          "sha": "a65c32199d7cc079f45deead196ed1d4fa85a7590869a7dd56b395dca699bf9f"
+        }
+      },
+      {
+        "name": "agent executable own byte guard preserved",
+        "passed": true,
+        "evidence": {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\outputs\\execute.py",
+          "guard": "if not ownership.get(rel) or ownership[rel]!=current:"
+        }
+      }
+    ],
+    "guidance_files": {
+      "guide_exists": true,
+      "guide_sha": "c017141b6b266b96dbdde2d3cd92ccf216d41ca94d0e5e88b3c962c2cafc34c2",
+      "table_exists": true,
+      "table_sha": "b6675701a6355f9bdb25256d924d2e98696b8b929f75fab0d3e2f99a870c40e3",
+      "root_table_exists": false
+    },
+    "correction_source_basis": [
+      {
+        "id": "ST-R4",
+        "links": [
+          {
+            "kind": "source",
+            "path": "04_기록규격/06_통합최소기록_규격_v0.2.md",
+            "sha256": "3c301c7f874921a3bd7bc3e5922ca8cb7c16ddc950f78ecc9850251b9474df74",
+            "exists": true,
+            "actual_sha256": "3c301c7f874921a3bd7bc3e5922ca8cb7c16ddc950f78ecc9850251b9474df74"
+          },
+          {
+            "kind": "basis",
+            "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+            "sha256": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "07_실행도구/자료검증.py",
+            "sha256": "0abd4cba7f1ba3a69011ef67758dbcc6f5c9599785aa0ae5ed5fd6cd0e434ec4",
+            "exists": true,
+            "actual_sha256": "0abd4cba7f1ba3a69011ef67758dbcc6f5c9599785aa0ae5ed5fd6cd0e434ec4"
+          }
+        ]
+      },
+      {
+        "id": "ST-R2",
+        "links": [
+          {
+            "kind": "source",
+            "path": "01_공통용어/02_기록단위와분류축.md",
+            "sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+            "exists": true,
+            "actual_sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a"
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": true,
+            "actual_sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37"
+          },
+          {
+            "kind": "basis",
+            "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+            "sha256": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+            "exists": false,
+            "actual_sha256": null
+          }
+        ]
+      },
+      {
+        "id": "ST-R2-JSON",
+        "links": [
+          {
+            "kind": "source",
+            "path": "01_공통용어/분류운영규칙.json",
+            "sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d",
+            "exists": true,
+            "actual_sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d"
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": true,
+            "actual_sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37"
+          }
+        ]
+      },
+      {
+        "id": "ST-HANDOFF",
+        "links": [
+          {
+            "kind": "source",
+            "path": "09_다음단계인계/R7_01-A_구현전_인계.md",
+            "sha256": "438dc5bb19e7a4356436869aa67704712e5e2257084d89cd15fc3bbfe8d2f0b4",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": true,
+            "actual_sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37"
+          },
+          {
+            "kind": "basis",
+            "path": "01_공통용어/02_기록단위와분류축.md",
+            "sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+            "exists": true,
+            "actual_sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a"
+          }
+        ]
+      }
+    ],
+    "structural_version_commands": [
+      {
+        "file": "02_baseline_R4.command.json",
+        "argv": [
+          "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+          "-B",
+          "-X",
+          "utf8",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\inputs\\Phase00\\07_실행도구\\자료검증.py",
+          "--record",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\inputs\\Phase00\\12_통합기록\\작업초안.json"
+        ],
+        "exit": 0,
+        "result": {
+          "valid": true,
+          "errors": [],
+          "unresolved": [],
+          "human_review_queue": [
+            {
+              "claim_id": "CL-ONE",
+              "claim_version": "0.1.0",
+              "priority": "normal",
+              "reasons": [
+                "주장 내용 사람 검수 필요"
+              ],
+              "status": "specimen_only",
+              "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+            },
+            {
+              "item_id": "SP-ROOT",
+              "status": "specimen_only",
+              "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+              "verified": false
+            },
+            {
+              "item_id": "SP-CROP",
+              "status": "specimen_only",
+              "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+              "verified": false
+            },
+            {
+              "item_id": "SP-RESIZE",
+              "status": "specimen_only",
+              "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TR-SP-CROP",
+              "status": "specimen_only",
+              "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TR-SP-RESIZE",
+              "status": "specimen_only",
+              "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+              "verified": false
+            },
+            {
+              "item_id": "G-ROOT",
+              "status": "specimen_only",
+              "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+              "verified": false
+            },
+            {
+              "item_id": "G-RESULT",
+              "status": "specimen_only",
+              "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+              "verified": false
+            },
+            {
+              "item_id": "design",
+              "status": "specimen_only",
+              "reason": "토큰 역할·적용 목적·프로젝트 예외 검수. 영상 필수 회사 규칙 승인과 구분",
+              "verified": false
+            },
+            {
+              "item_id": "TG-ASSET/video_type",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-ASSET",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/video_type",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/communication_purpose",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/information_relation",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/art_direction",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/communication_purpose",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/information_relation",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/layout",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/art_direction",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/communication_purpose",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/motion_function",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/motion_property",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/timing",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "run",
+              "status": "specimen_only",
+              "reason": "실행 주체·도구/모델·입출력·설정과 실제 작업 로그를 대조. 선언을 실행 증명으로 보지 않음",
+              "verified": false
+            }
+          ],
+          "coordinate_bindings": [],
+          "integrated_review_states": [],
+          "fact_verified": false,
+          "human_identity_verified": false,
+          "company_approved": false,
+          "operational_release": false,
+          "status": "draft_structure_pass",
+          "schema_version": "0.2.0",
+          "scope": "기록 계약의 구조/연결 검사. 실제 영상·사람 검수·회사 승인·운영 반영 아님.",
+          "source_json_sha256": "c5d0295783c3ce02b650a72a1f62c5c558caef6f7d9d7ea45580c72fc3876ddc"
+        },
+        "stderr_bytes": 0
+      },
+      {
+        "file": "02_baseline_R5.command.json",
+        "argv": [
+          "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+          "-B",
+          "-X",
+          "utf8",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\inputs\\Phase00\\07_실행도구\\R5_디자인적용검사.py",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\inputs\\Phase00\\작업초안\\디자인연결.json"
+        ],
+        "exit": 0,
+        "result": {
+          "valid": true,
+          "scope": "구조/현재 참조·정책 검수. 실제 디자인 품질·선택자 인증/회사 승인 아님.",
+          "errors": [],
+          "human_review_queue": [
+            "로고 필요 여부·선택 미정",
+            "saman emphasis: 관측색의 가정·역할 적합성·선택자/실제 선택 확인",
+            "R4 연결은 참조만 확인. 동영상 관측값 변경·가족사 토큰을 R4 한맥 필드에 삽입·품질 승인 안 됨",
+            "출력 해상도·최종 표시 크기 미정",
+            "로고/글자의 최종 배경 미정",
+            "최종 프레임·한국어/숫자·단위·자막·시청환경·움직이는 배경 검수",
+            "로컬 해시는 원문 무결성이다. 최신성/공식성/디자이너 identity·회사/운영 승인 증명 안 됨"
+          ],
+          "resolved_draft_candidates": [
+            {
+              "company_id": "saman",
+              "role": "emphasis",
+              "hex": "#F5821F",
+              "origin": "ci_color",
+              "use": "project_draft_candidate",
+              "review_status": "pending"
+            }
+          ],
+          "company_approved": false,
+          "fact_verified": false,
+          "human_selection_verified": false,
+          "operational_release": false
+        },
+        "stderr_bytes": 0
+      },
+      {
+        "file": "03_version_candidate_R4.command.json",
+        "argv": [
+          "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+          "-B",
+          "-X",
+          "utf8",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\inputs\\Phase00\\실행스킬\\video-record-steward\\scripts\\판본대조.py",
+          "--before",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\outputs\\R4_원문.json",
+          "--after",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\outputs\\R4_후보.json",
+          "--mode",
+          "content_edit"
+        ],
+        "exit": 0,
+        "result": {
+          "valid": true,
+          "mode": "content_edit",
+          "before_sha256": "c5d0295783c3ce02b650a72a1f62c5c558caef6f7d9d7ea45580c72fc3876ddc",
+          "after_sha256": "a29079cee9a5165de1cd919e43028466cfa32ad2be2bf8184a3fbfff445d3782",
+          "bytes_changed": true,
+          "errors": [],
+          "scope": "R4/R5 초안 전후 식별/규격판본·소유기록 판본 또는 요청 checkpoint byte 대조만. 허용 필드·R4/R5 전체 구조·내용·권한 검사는 별도.",
+          "writes_performed": false,
+          "content_verified": false,
+          "company_approved": false,
+          "operational_release": false,
+          "after_record_version": "0.1.1",
+          "before_record_version": "0.1.0"
+        },
+        "stderr_bytes": 0
+      },
+      {
+        "file": "03_version_candidate_R5.command.json",
+        "argv": [
+          "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+          "-B",
+          "-X",
+          "utf8",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\inputs\\Phase00\\실행스킬\\video-record-steward\\scripts\\판본대조.py",
+          "--before",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\outputs\\R5_원문.json",
+          "--after",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\outputs\\R5_후보.json",
+          "--mode",
+          "content_edit"
+        ],
+        "exit": 0,
+        "result": {
+          "valid": true,
+          "mode": "content_edit",
+          "before_sha256": "94524a9c69fcc0972288c4522538b67d95cec937cf1e3274ef5a0cac658e99ca",
+          "after_sha256": "5819cd71f8dfa237b3f3746822e0b2b2bcbb91106c5ecf3a895ce1738b1c17e7",
+          "bytes_changed": true,
+          "errors": [],
+          "scope": "R4/R5 초안 전후 식별/규격판본·소유기록 판본 또는 요청 checkpoint byte 대조만. 허용 필드·R4/R5 전체 구조·내용·권한 검사는 별도.",
+          "writes_performed": false,
+          "content_verified": false,
+          "company_approved": false,
+          "operational_release": false,
+          "after_record_version": "0.1.1",
+          "before_record_version": "0.1.0"
+        },
+        "stderr_bytes": 0
+      },
+      {
+        "file": "04_candidate_R4.command.json",
+        "argv": [
+          "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+          "-B",
+          "-X",
+          "utf8",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\inputs\\Phase00\\07_실행도구\\자료검증.py",
+          "--record",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\outputs\\R4_후보.json"
+        ],
+        "exit": 0,
+        "result": {
+          "valid": true,
+          "errors": [],
+          "unresolved": [],
+          "human_review_queue": [
+            {
+              "claim_id": "CL-ONE",
+              "claim_version": "0.1.0",
+              "priority": "normal",
+              "reasons": [
+                "주장 내용 사람 검수 필요"
+              ],
+              "status": "specimen_only",
+              "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+            },
+            {
+              "item_id": "SP-ROOT",
+              "status": "specimen_only",
+              "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+              "verified": false
+            },
+            {
+              "item_id": "SP-CROP",
+              "status": "specimen_only",
+              "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+              "verified": false
+            },
+            {
+              "item_id": "SP-RESIZE",
+              "status": "specimen_only",
+              "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TR-SP-CROP",
+              "status": "specimen_only",
+              "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TR-SP-RESIZE",
+              "status": "specimen_only",
+              "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+              "verified": false
+            },
+            {
+              "item_id": "G-ROOT",
+              "status": "specimen_only",
+              "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+              "verified": false
+            },
+            {
+              "item_id": "G-RESULT",
+              "status": "specimen_only",
+              "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+              "verified": false
+            },
+            {
+              "item_id": "design",
+              "status": "specimen_only",
+              "reason": "토큰 역할·적용 목적·프로젝트 예외 검수. 영상 필수 회사 규칙 승인과 구분",
+              "verified": false
+            },
+            {
+              "item_id": "TG-ASSET/video_type",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-ASSET",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/video_type",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/communication_purpose",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/information_relation",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/art_direction",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/communication_purpose",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/information_relation",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/layout",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/art_direction",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/communication_purpose",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/motion_function",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/motion_property",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/timing",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "run",
+              "status": "specimen_only",
+              "reason": "실행 주체·도구/모델·입출력·설정과 실제 작업 로그를 대조. 선언을 실행 증명으로 보지 않음",
+              "verified": false
+            }
+          ],
+          "coordinate_bindings": [],
+          "integrated_review_states": [],
+          "fact_verified": false,
+          "human_identity_verified": false,
+          "company_approved": false,
+          "operational_release": false,
+          "status": "draft_structure_pass",
+          "schema_version": "0.2.0",
+          "scope": "기록 계약의 구조/연결 검사. 실제 영상·사람 검수·회사 승인·운영 반영 아님.",
+          "source_json_sha256": "a29079cee9a5165de1cd919e43028466cfa32ad2be2bf8184a3fbfff445d3782"
+        },
+        "stderr_bytes": 0
+      },
+      {
+        "file": "04_candidate_R5_before_R4_save.command.json",
+        "argv": [
+          "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+          "-B",
+          "-X",
+          "utf8",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\inputs\\Phase00\\07_실행도구\\R5_디자인적용검사.py",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\outputs\\R5_후보.json"
+        ],
+        "exit": 1,
+        "result": {
+          "valid": false,
+          "scope": "구조/현재 참조·정책 검수. 실제 디자인 품질·선택자 인증/회사 승인 아님.",
+          "errors": [
+            "R4 파일 hash 불일치"
+          ],
+          "human_review_queue": [
+            "로고 필요 여부·선택 미정",
+            "saman emphasis: 관측색의 가정·역할 적합성·선택자/실제 선택 확인",
+            "출력 해상도·최종 표시 크기 미정",
+            "로고/글자의 최종 배경 미정",
+            "최종 프레임·한국어/숫자·단위·자막·시청환경·움직이는 배경 검수",
+            "로컬 해시는 원문 무결성이다. 최신성/공식성/디자이너 identity·회사/운영 승인 증명 안 됨"
+          ],
+          "resolved_draft_candidates": [
+            {
+              "company_id": "saman",
+              "role": "emphasis",
+              "hex": "#F5821F",
+              "origin": "ci_color",
+              "use": "project_draft_candidate",
+              "review_status": "pending"
+            }
+          ],
+          "company_approved": false,
+          "fact_verified": false,
+          "human_selection_verified": false,
+          "operational_release": false
+        },
+        "stderr_bytes": 0
+      },
+      {
+        "file": "07_structure_saved_R4.command.json",
+        "argv": [
+          "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+          "-B",
+          "-X",
+          "utf8",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\inputs\\Phase00\\07_실행도구\\자료검증.py",
+          "--record",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\inputs\\Phase00\\12_통합기록\\작업초안.json"
+        ],
+        "exit": 0,
+        "result": {
+          "valid": true,
+          "errors": [],
+          "unresolved": [],
+          "human_review_queue": [
+            {
+              "claim_id": "CL-ONE",
+              "claim_version": "0.1.0",
+              "priority": "normal",
+              "reasons": [
+                "주장 내용 사람 검수 필요"
+              ],
+              "status": "specimen_only",
+              "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+            },
+            {
+              "item_id": "SP-ROOT",
+              "status": "specimen_only",
+              "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+              "verified": false
+            },
+            {
+              "item_id": "SP-CROP",
+              "status": "specimen_only",
+              "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+              "verified": false
+            },
+            {
+              "item_id": "SP-RESIZE",
+              "status": "specimen_only",
+              "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TR-SP-CROP",
+              "status": "specimen_only",
+              "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TR-SP-RESIZE",
+              "status": "specimen_only",
+              "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+              "verified": false
+            },
+            {
+              "item_id": "G-ROOT",
+              "status": "specimen_only",
+              "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+              "verified": false
+            },
+            {
+              "item_id": "G-RESULT",
+              "status": "specimen_only",
+              "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+              "verified": false
+            },
+            {
+              "item_id": "design",
+              "status": "specimen_only",
+              "reason": "토큰 역할·적용 목적·프로젝트 예외 검수. 영상 필수 회사 규칙 승인과 구분",
+              "verified": false
+            },
+            {
+              "item_id": "TG-ASSET/video_type",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-ASSET",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/video_type",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/communication_purpose",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/information_relation",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/art_direction",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/communication_purpose",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/information_relation",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/layout",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/art_direction",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/communication_purpose",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/motion_function",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/motion_property",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/timing",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "run",
+              "status": "specimen_only",
+              "reason": "실행 주체·도구/모델·입출력·설정과 실제 작업 로그를 대조. 선언을 실행 증명으로 보지 않음",
+              "verified": false
+            }
+          ],
+          "coordinate_bindings": [],
+          "integrated_review_states": [],
+          "fact_verified": false,
+          "human_identity_verified": false,
+          "company_approved": false,
+          "operational_release": false,
+          "status": "draft_structure_pass",
+          "schema_version": "0.2.0",
+          "scope": "기록 계약의 구조/연결 검사. 실제 영상·사람 검수·회사 승인·운영 반영 아님.",
+          "source_json_sha256": "a29079cee9a5165de1cd919e43028466cfa32ad2be2bf8184a3fbfff445d3782"
+        },
+        "stderr_bytes": 0
+      },
+      {
+        "file": "07_version_saved_R4.command.json",
+        "argv": [
+          "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+          "-B",
+          "-X",
+          "utf8",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\inputs\\Phase00\\실행스킬\\video-record-steward\\scripts\\판본대조.py",
+          "--before",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\inputs\\Phase00\\backup\\이번작업\\R4_변경전.json",
+          "--after",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\inputs\\Phase00\\12_통합기록\\작업초안.json",
+          "--mode",
+          "content_edit"
+        ],
+        "exit": 0,
+        "result": {
+          "valid": true,
+          "mode": "content_edit",
+          "before_sha256": "c5d0295783c3ce02b650a72a1f62c5c558caef6f7d9d7ea45580c72fc3876ddc",
+          "after_sha256": "a29079cee9a5165de1cd919e43028466cfa32ad2be2bf8184a3fbfff445d3782",
+          "bytes_changed": true,
+          "errors": [],
+          "scope": "R4/R5 초안 전후 식별/규격판본·소유기록 판본 또는 요청 checkpoint byte 대조만. 허용 필드·R4/R5 전체 구조·내용·권한 검사는 별도.",
+          "writes_performed": false,
+          "content_verified": false,
+          "company_approved": false,
+          "operational_release": false,
+          "after_record_version": "0.1.1",
+          "before_record_version": "0.1.0"
+        },
+        "stderr_bytes": 0
+      },
+      {
+        "file": "08_candidate_R5_actual_R4.command.json",
+        "argv": [
+          "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+          "-B",
+          "-X",
+          "utf8",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\inputs\\Phase00\\07_실행도구\\R5_디자인적용검사.py",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\outputs\\R5_후보.json"
+        ],
+        "exit": 0,
+        "result": {
+          "valid": true,
+          "scope": "구조/현재 참조·정책 검수. 실제 디자인 품질·선택자 인증/회사 승인 아님.",
+          "errors": [],
+          "human_review_queue": [
+            "로고 필요 여부·선택 미정",
+            "saman emphasis: 관측색의 가정·역할 적합성·선택자/실제 선택 확인",
+            "R4 연결은 참조만 확인. 동영상 관측값 변경·가족사 토큰을 R4 한맥 필드에 삽입·품질 승인 안 됨",
+            "출력 해상도·최종 표시 크기 미정",
+            "로고/글자의 최종 배경 미정",
+            "최종 프레임·한국어/숫자·단위·자막·시청환경·움직이는 배경 검수",
+            "로컬 해시는 원문 무결성이다. 최신성/공식성/디자이너 identity·회사/운영 승인 증명 안 됨"
+          ],
+          "resolved_draft_candidates": [
+            {
+              "company_id": "saman",
+              "role": "emphasis",
+              "hex": "#F5821F",
+              "origin": "ci_color",
+              "use": "project_draft_candidate",
+              "review_status": "pending"
+            }
+          ],
+          "company_approved": false,
+          "fact_verified": false,
+          "human_selection_verified": false,
+          "operational_release": false
+        },
+        "stderr_bytes": 0
+      },
+      {
+        "file": "13_exact_restore_R4.command.json",
+        "argv": [
+          "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+          "-B",
+          "-X",
+          "utf8",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\inputs\\Phase00\\실행스킬\\video-record-steward\\scripts\\판본대조.py",
+          "--before",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\outputs\\R4_실패시점.bytes",
+          "--after",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\inputs\\Phase00\\12_통합기록\\작업초안.json",
+          "--mode",
+          "exact_restore",
+          "--checkpoint",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\inputs\\Phase00\\backup\\이번작업\\R4_변경전.json",
+          "--checkpoint-sha",
+          "c5d0295783c3ce02b650a72a1f62c5c558caef6f7d9d7ea45580c72fc3876ddc"
+        ],
+        "exit": 0,
+        "result": {
+          "valid": true,
+          "mode": "exact_restore",
+          "before_sha256": "a29079cee9a5165de1cd919e43028466cfa32ad2be2bf8184a3fbfff445d3782",
+          "after_sha256": "c5d0295783c3ce02b650a72a1f62c5c558caef6f7d9d7ea45580c72fc3876ddc",
+          "bytes_changed": true,
+          "errors": [],
+          "scope": "R4/R5 초안 전후 식별/규격판본·소유기록 판본 또는 요청 checkpoint byte 대조만. 허용 필드·R4/R5 전체 구조·내용·권한 검사는 별도.",
+          "writes_performed": false,
+          "content_verified": false,
+          "company_approved": false,
+          "operational_release": false,
+          "after_record_version": "0.1.0"
+        },
+        "stderr_bytes": 0
+      },
+      {
+        "file": "13_exact_restore_R5.command.json",
+        "argv": [
+          "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+          "-B",
+          "-X",
+          "utf8",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\inputs\\Phase00\\실행스킬\\video-record-steward\\scripts\\판본대조.py",
+          "--before",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\outputs\\R5_실패시점.bytes",
+          "--after",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\inputs\\Phase00\\작업초안\\디자인연결.json",
+          "--mode",
+          "exact_restore",
+          "--checkpoint",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\inputs\\Phase00\\backup\\이번작업\\R5_변경전.json",
+          "--checkpoint-sha",
+          "94524a9c69fcc0972288c4522538b67d95cec937cf1e3274ef5a0cac658e99ca"
+        ],
+        "exit": 0,
+        "result": {
+          "valid": true,
+          "mode": "exact_restore",
+          "before_sha256": "a65c32199d7cc079f45deead196ed1d4fa85a7590869a7dd56b395dca699bf9f",
+          "after_sha256": "94524a9c69fcc0972288c4522538b67d95cec937cf1e3274ef5a0cac658e99ca",
+          "bytes_changed": true,
+          "errors": [],
+          "scope": "R4/R5 초안 전후 식별/규격판본·소유기록 판본 또는 요청 checkpoint byte 대조만. 허용 필드·R4/R5 전체 구조·내용·권한 검사는 별도.",
+          "writes_performed": false,
+          "content_verified": false,
+          "company_approved": false,
+          "operational_release": false,
+          "after_record_version": "0.1.0"
+        },
+        "stderr_bytes": 0
+      },
+      {
+        "file": "16_final_structure_R4.command.json",
+        "argv": [
+          "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+          "-B",
+          "-X",
+          "utf8",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\inputs\\Phase00\\07_실행도구\\자료검증.py",
+          "--record",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\inputs\\Phase00\\12_통합기록\\작업초안.json"
+        ],
+        "exit": 0,
+        "result": {
+          "valid": true,
+          "errors": [],
+          "unresolved": [],
+          "human_review_queue": [
+            {
+              "claim_id": "CL-ONE",
+              "claim_version": "0.1.0",
+              "priority": "normal",
+              "reasons": [
+                "주장 내용 사람 검수 필요"
+              ],
+              "status": "specimen_only",
+              "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+            },
+            {
+              "item_id": "SP-ROOT",
+              "status": "specimen_only",
+              "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+              "verified": false
+            },
+            {
+              "item_id": "SP-CROP",
+              "status": "specimen_only",
+              "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+              "verified": false
+            },
+            {
+              "item_id": "SP-RESIZE",
+              "status": "specimen_only",
+              "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TR-SP-CROP",
+              "status": "specimen_only",
+              "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TR-SP-RESIZE",
+              "status": "specimen_only",
+              "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+              "verified": false
+            },
+            {
+              "item_id": "G-ROOT",
+              "status": "specimen_only",
+              "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+              "verified": false
+            },
+            {
+              "item_id": "G-RESULT",
+              "status": "specimen_only",
+              "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+              "verified": false
+            },
+            {
+              "item_id": "design",
+              "status": "specimen_only",
+              "reason": "토큰 역할·적용 목적·프로젝트 예외 검수. 영상 필수 회사 규칙 승인과 구분",
+              "verified": false
+            },
+            {
+              "item_id": "TG-ASSET/video_type",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-ASSET",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/video_type",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/communication_purpose",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/information_relation",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/art_direction",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/communication_purpose",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/information_relation",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/layout",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/art_direction",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/communication_purpose",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/motion_function",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/motion_property",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/timing",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "run",
+              "status": "specimen_only",
+              "reason": "실행 주체·도구/모델·입출력·설정과 실제 작업 로그를 대조. 선언을 실행 증명으로 보지 않음",
+              "verified": false
+            }
+          ],
+          "coordinate_bindings": [],
+          "integrated_review_states": [],
+          "fact_verified": false,
+          "human_identity_verified": false,
+          "company_approved": false,
+          "operational_release": false,
+          "status": "draft_structure_pass",
+          "schema_version": "0.2.0",
+          "scope": "기록 계약의 구조/연결 검사. 실제 영상·사람 검수·회사 승인·운영 반영 아님.",
+          "source_json_sha256": "c5d0295783c3ce02b650a72a1f62c5c558caef6f7d9d7ea45580c72fc3876ddc"
+        },
+        "stderr_bytes": 0
+      },
+      {
+        "file": "16_final_structure_R5.command.json",
+        "argv": [
+          "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+          "-B",
+          "-X",
+          "utf8",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\inputs\\Phase00\\07_실행도구\\R5_디자인적용검사.py",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\inputs\\Phase00\\작업초안\\디자인연결.json"
+        ],
+        "exit": 0,
+        "result": {
+          "valid": true,
+          "scope": "구조/현재 참조·정책 검수. 실제 디자인 품질·선택자 인증/회사 승인 아님.",
+          "errors": [],
+          "human_review_queue": [
+            "로고 필요 여부·선택 미정",
+            "saman emphasis: 관측색의 가정·역할 적합성·선택자/실제 선택 확인",
+            "R4 연결은 참조만 확인. 동영상 관측값 변경·가족사 토큰을 R4 한맥 필드에 삽입·품질 승인 안 됨",
+            "출력 해상도·최종 표시 크기 미정",
+            "로고/글자의 최종 배경 미정",
+            "최종 프레임·한국어/숫자·단위·자막·시청환경·움직이는 배경 검수",
+            "로컬 해시는 원문 무결성이다. 최신성/공식성/디자이너 identity·회사/운영 승인 증명 안 됨"
+          ],
+          "resolved_draft_candidates": [
+            {
+              "company_id": "saman",
+              "role": "emphasis",
+              "hex": "#F5821F",
+              "origin": "ci_color",
+              "use": "project_draft_candidate",
+              "review_status": "pending"
+            }
+          ],
+          "company_approved": false,
+          "fact_verified": false,
+          "human_selection_verified": false,
+          "operational_release": false
+        },
+        "stderr_bytes": 0
+      }
+    ],
+    "findings": [
+      {
+        "kind": "false_guidance_absence_claim",
+        "text": "결과.json current_guidance 및 execute.py report()는14하위 안내·정정표 모두 없음이라고 명시하나 fixture/current 실제 파일 모두 존재. source/basis 일부 미제공과 다른 오류."
+      }
+    ]
+  },
+  {
+    "case": 10,
+    "checks": [],
+    "guidance_files": {
+      "guide_exists": true,
+      "guide_sha": "c017141b6b266b96dbdde2d3cd92ccf216d41ca94d0e5e88b3c962c2cafc34c2",
+      "table_exists": true,
+      "table_sha": "b6675701a6355f9bdb25256d924d2e98696b8b929f75fab0d3e2f99a870c40e3",
+      "root_table_exists": false
+    },
+    "correction_source_basis": [
+      {
+        "id": "ST-R4",
+        "links": [
+          {
+            "kind": "source",
+            "path": "04_기록규격/06_통합최소기록_규격_v0.2.md",
+            "sha256": "3c301c7f874921a3bd7bc3e5922ca8cb7c16ddc950f78ecc9850251b9474df74",
+            "exists": true,
+            "actual_sha256": "3c301c7f874921a3bd7bc3e5922ca8cb7c16ddc950f78ecc9850251b9474df74"
+          },
+          {
+            "kind": "basis",
+            "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+            "sha256": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "07_실행도구/자료검증.py",
+            "sha256": "0abd4cba7f1ba3a69011ef67758dbcc6f5c9599785aa0ae5ed5fd6cd0e434ec4",
+            "exists": true,
+            "actual_sha256": "0abd4cba7f1ba3a69011ef67758dbcc6f5c9599785aa0ae5ed5fd6cd0e434ec4"
+          }
+        ]
+      },
+      {
+        "id": "ST-R2",
+        "links": [
+          {
+            "kind": "source",
+            "path": "01_공통용어/02_기록단위와분류축.md",
+            "sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+            "exists": true,
+            "actual_sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a"
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": true,
+            "actual_sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37"
+          },
+          {
+            "kind": "basis",
+            "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+            "sha256": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+            "exists": false,
+            "actual_sha256": null
+          }
+        ]
+      },
+      {
+        "id": "ST-R2-JSON",
+        "links": [
+          {
+            "kind": "source",
+            "path": "01_공통용어/분류운영규칙.json",
+            "sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d",
+            "exists": true,
+            "actual_sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d"
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": true,
+            "actual_sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37"
+          }
+        ]
+      },
+      {
+        "id": "ST-HANDOFF",
+        "links": [
+          {
+            "kind": "source",
+            "path": "09_다음단계인계/R7_01-A_구현전_인계.md",
+            "sha256": "438dc5bb19e7a4356436869aa67704712e5e2257084d89cd15fc3bbfe8d2f0b4",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": true,
+            "actual_sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37"
+          },
+          {
+            "kind": "basis",
+            "path": "01_공통용어/02_기록단위와분류축.md",
+            "sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+            "exists": true,
+            "actual_sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a"
+          }
+        ]
+      }
+    ],
+    "structural_version_commands": [
+      {
+        "file": "02_structure_before.command.json",
+        "argv": [
+          "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+          "-B",
+          "-X",
+          "utf8",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-10-기록관리자_외부변경\\candidate\\inputs\\Phase00\\07_실행도구\\자료검증.py",
+          "--record",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-10-기록관리자_외부변경\\candidate\\inputs\\Phase00\\12_통합기록\\작업초안.json"
+        ],
+        "exit": 0,
+        "result": {
+          "valid": true,
+          "errors": [],
+          "unresolved": [],
+          "human_review_queue": [
+            {
+              "claim_id": "CL-ONE",
+              "claim_version": "0.1.0",
+              "priority": "normal",
+              "reasons": [
+                "주장 내용 사람 검수 필요"
+              ],
+              "status": "specimen_only",
+              "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+            },
+            {
+              "item_id": "SP-ROOT",
+              "status": "specimen_only",
+              "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+              "verified": false
+            },
+            {
+              "item_id": "SP-CROP",
+              "status": "specimen_only",
+              "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+              "verified": false
+            },
+            {
+              "item_id": "SP-RESIZE",
+              "status": "specimen_only",
+              "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TR-SP-CROP",
+              "status": "specimen_only",
+              "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TR-SP-RESIZE",
+              "status": "specimen_only",
+              "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+              "verified": false
+            },
+            {
+              "item_id": "G-ROOT",
+              "status": "specimen_only",
+              "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+              "verified": false
+            },
+            {
+              "item_id": "G-RESULT",
+              "status": "specimen_only",
+              "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+              "verified": false
+            },
+            {
+              "item_id": "design",
+              "status": "specimen_only",
+              "reason": "토큰 역할·적용 목적·프로젝트 예외 검수. 영상 필수 회사 규칙 승인과 구분",
+              "verified": false
+            },
+            {
+              "item_id": "TG-ASSET/video_type",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-ASSET",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/video_type",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/communication_purpose",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/information_relation",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/art_direction",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/communication_purpose",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/information_relation",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/layout",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/art_direction",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/communication_purpose",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/motion_function",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/motion_property",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/timing",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "run",
+              "status": "specimen_only",
+              "reason": "실행 주체·도구/모델·입출력·설정과 실제 작업 로그를 대조. 선언을 실행 증명으로 보지 않음",
+              "verified": false
+            }
+          ],
+          "coordinate_bindings": [],
+          "integrated_review_states": [],
+          "fact_verified": false,
+          "human_identity_verified": false,
+          "company_approved": false,
+          "operational_release": false,
+          "status": "draft_structure_pass",
+          "schema_version": "0.2.0",
+          "scope": "기록 계약의 구조/연결 검사. 실제 영상·사람 검수·회사 승인·운영 반영 아님.",
+          "source_json_sha256": "1f0271b62a7f0ee2c4fb2bf788639f75350d7ed62b2a5089f4e90a2afa40bf21"
+        },
+        "stderr_bytes": 0
+      },
+      {
+        "file": "03_structure_candidate.command.json",
+        "argv": [
+          "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+          "-B",
+          "-X",
+          "utf8",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-10-기록관리자_외부변경\\candidate\\inputs\\Phase00\\07_실행도구\\자료검증.py",
+          "--record",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-10-기록관리자_외부변경\\candidate\\outputs\\후보.json"
+        ],
+        "exit": 0,
+        "result": {
+          "valid": true,
+          "errors": [],
+          "unresolved": [],
+          "human_review_queue": [
+            {
+              "claim_id": "CL-ONE",
+              "claim_version": "0.1.0",
+              "priority": "normal",
+              "reasons": [
+                "주장 내용 사람 검수 필요"
+              ],
+              "status": "specimen_only",
+              "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+            },
+            {
+              "item_id": "SP-ROOT",
+              "status": "specimen_only",
+              "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+              "verified": false
+            },
+            {
+              "item_id": "SP-CROP",
+              "status": "specimen_only",
+              "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+              "verified": false
+            },
+            {
+              "item_id": "SP-RESIZE",
+              "status": "specimen_only",
+              "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TR-SP-CROP",
+              "status": "specimen_only",
+              "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TR-SP-RESIZE",
+              "status": "specimen_only",
+              "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+              "verified": false
+            },
+            {
+              "item_id": "G-ROOT",
+              "status": "specimen_only",
+              "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+              "verified": false
+            },
+            {
+              "item_id": "G-RESULT",
+              "status": "specimen_only",
+              "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+              "verified": false
+            },
+            {
+              "item_id": "design",
+              "status": "specimen_only",
+              "reason": "토큰 역할·적용 목적·프로젝트 예외 검수. 영상 필수 회사 규칙 승인과 구분",
+              "verified": false
+            },
+            {
+              "item_id": "TG-ASSET/video_type",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-ASSET",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/video_type",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/communication_purpose",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/information_relation",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/art_direction",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/communication_purpose",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/information_relation",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/layout",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/art_direction",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/communication_purpose",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/motion_function",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/motion_property",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/timing",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "run",
+              "status": "specimen_only",
+              "reason": "실행 주체·도구/모델·입출력·설정과 실제 작업 로그를 대조. 선언을 실행 증명으로 보지 않음",
+              "verified": false
+            }
+          ],
+          "coordinate_bindings": [],
+          "integrated_review_states": [],
+          "fact_verified": false,
+          "human_identity_verified": false,
+          "company_approved": false,
+          "operational_release": false,
+          "status": "draft_structure_pass",
+          "schema_version": "0.2.0",
+          "scope": "기록 계약의 구조/연결 검사. 실제 영상·사람 검수·회사 승인·운영 반영 아님.",
+          "source_json_sha256": "dc1357fe8acd3ba338be1326b3eac6d1f5c8462e0c7d8dcf314d7de1ce621490"
+        },
+        "stderr_bytes": 0
+      },
+      {
+        "file": "05_version_candidate.command.json",
+        "argv": [
+          "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+          "-B",
+          "-X",
+          "utf8",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-10-기록관리자_외부변경\\candidate\\inputs\\Phase00\\실행스킬\\video-record-steward\\scripts\\판본대조.py",
+          "--before",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-10-기록관리자_외부변경\\candidate\\inputs\\Phase00\\backup\\이번작업\\변경전.json",
+          "--after",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-10-기록관리자_외부변경\\candidate\\outputs\\후보.json"
+        ],
+        "exit": 0,
+        "result": {
+          "valid": true,
+          "mode": "content_edit",
+          "before_sha256": "1f0271b62a7f0ee2c4fb2bf788639f75350d7ed62b2a5089f4e90a2afa40bf21",
+          "after_sha256": "dc1357fe8acd3ba338be1326b3eac6d1f5c8462e0c7d8dcf314d7de1ce621490",
+          "bytes_changed": true,
+          "errors": [],
+          "scope": "R4/R5 초안 전후 식별/규격판본·소유기록 판본 또는 요청 checkpoint byte 대조만. 허용 필드·R4/R5 전체 구조·내용·권한 검사는 별도.",
+          "writes_performed": false,
+          "content_verified": false,
+          "company_approved": false,
+          "operational_release": false,
+          "after_record_version": "0.1.1",
+          "before_record_version": "0.1.0"
+        },
+        "stderr_bytes": 0
+      },
+      {
+        "file": "10_structure_after.command.json",
+        "argv": [
+          "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+          "-B",
+          "-X",
+          "utf8",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-10-기록관리자_외부변경\\candidate\\inputs\\Phase00\\07_실행도구\\자료검증.py",
+          "--record",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-10-기록관리자_외부변경\\candidate\\inputs\\Phase00\\12_통합기록\\작업초안.json"
+        ],
+        "exit": 0,
+        "result": {
+          "valid": true,
+          "errors": [],
+          "unresolved": [],
+          "human_review_queue": [
+            {
+              "claim_id": "CL-ONE",
+              "claim_version": "0.1.0",
+              "priority": "normal",
+              "reasons": [
+                "주장 내용 사람 검수 필요"
+              ],
+              "status": "specimen_only",
+              "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+            },
+            {
+              "item_id": "SP-ROOT",
+              "status": "specimen_only",
+              "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+              "verified": false
+            },
+            {
+              "item_id": "SP-CROP",
+              "status": "specimen_only",
+              "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+              "verified": false
+            },
+            {
+              "item_id": "SP-RESIZE",
+              "status": "specimen_only",
+              "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TR-SP-CROP",
+              "status": "specimen_only",
+              "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TR-SP-RESIZE",
+              "status": "specimen_only",
+              "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+              "verified": false
+            },
+            {
+              "item_id": "G-ROOT",
+              "status": "specimen_only",
+              "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+              "verified": false
+            },
+            {
+              "item_id": "G-RESULT",
+              "status": "specimen_only",
+              "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+              "verified": false
+            },
+            {
+              "item_id": "design",
+              "status": "specimen_only",
+              "reason": "토큰 역할·적용 목적·프로젝트 예외 검수. 영상 필수 회사 규칙 승인과 구분",
+              "verified": false
+            },
+            {
+              "item_id": "TG-ASSET/video_type",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-ASSET",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/video_type",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/communication_purpose",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/information_relation",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/art_direction",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/communication_purpose",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/information_relation",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/layout",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/art_direction",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/communication_purpose",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/motion_function",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/motion_property",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/timing",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "run",
+              "status": "specimen_only",
+              "reason": "실행 주체·도구/모델·입출력·설정과 실제 작업 로그를 대조. 선언을 실행 증명으로 보지 않음",
+              "verified": false
+            }
+          ],
+          "coordinate_bindings": [],
+          "integrated_review_states": [],
+          "fact_verified": false,
+          "human_identity_verified": false,
+          "company_approved": false,
+          "operational_release": false,
+          "status": "draft_structure_pass",
+          "schema_version": "0.2.0",
+          "scope": "기록 계약의 구조/연결 검사. 실제 영상·사람 검수·회사 승인·운영 반영 아님.",
+          "source_json_sha256": "7aa5c95c80c38f5b32af2a3775d37f2ad6684d565b83681d5f0be76d0f170123"
+        },
+        "stderr_bytes": 0
+      },
+      {
+        "file": "11_version_after.command.json",
+        "argv": [
+          "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+          "-B",
+          "-X",
+          "utf8",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-10-기록관리자_외부변경\\candidate\\inputs\\Phase00\\실행스킬\\video-record-steward\\scripts\\판본대조.py",
+          "--before",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-10-기록관리자_외부변경\\candidate\\inputs\\Phase00\\backup\\이번작업\\변경전.json",
+          "--after",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-10-기록관리자_외부변경\\candidate\\inputs\\Phase00\\12_통합기록\\작업초안.json"
+        ],
+        "exit": 0,
+        "result": {
+          "valid": true,
+          "mode": "content_edit",
+          "before_sha256": "1f0271b62a7f0ee2c4fb2bf788639f75350d7ed62b2a5089f4e90a2afa40bf21",
+          "after_sha256": "7aa5c95c80c38f5b32af2a3775d37f2ad6684d565b83681d5f0be76d0f170123",
+          "bytes_changed": true,
+          "errors": [],
+          "scope": "R4/R5 초안 전후 식별/규격판본·소유기록 판본 또는 요청 checkpoint byte 대조만. 허용 필드·R4/R5 전체 구조·내용·권한 검사는 별도.",
+          "writes_performed": false,
+          "content_verified": false,
+          "company_approved": false,
+          "operational_release": false,
+          "after_record_version": "0.1.1",
+          "before_record_version": "0.1.0"
+        },
+        "stderr_bytes": 0
+      }
+    ],
+    "findings": []
+  },
+  {
+    "case": 11,
+    "checks": [
+      {
+        "name": "agent executable own byte guard preserved",
+        "passed": true,
+        "evidence": {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\outputs\\post_save.py",
+          "guard": "if owned and sha(current)==owned:"
+        }
+      }
+    ],
+    "guidance_files": {
+      "guide_exists": true,
+      "guide_sha": "c017141b6b266b96dbdde2d3cd92ccf216d41ca94d0e5e88b3c962c2cafc34c2",
+      "table_exists": true,
+      "table_sha": "b6675701a6355f9bdb25256d924d2e98696b8b929f75fab0d3e2f99a870c40e3",
+      "root_table_exists": false
+    },
+    "correction_source_basis": [
+      {
+        "id": "ST-R4",
+        "links": [
+          {
+            "kind": "source",
+            "path": "04_기록규격/06_통합최소기록_규격_v0.2.md",
+            "sha256": "3c301c7f874921a3bd7bc3e5922ca8cb7c16ddc950f78ecc9850251b9474df74",
+            "exists": true,
+            "actual_sha256": "3c301c7f874921a3bd7bc3e5922ca8cb7c16ddc950f78ecc9850251b9474df74"
+          },
+          {
+            "kind": "basis",
+            "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+            "sha256": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "07_실행도구/자료검증.py",
+            "sha256": "0abd4cba7f1ba3a69011ef67758dbcc6f5c9599785aa0ae5ed5fd6cd0e434ec4",
+            "exists": true,
+            "actual_sha256": "0abd4cba7f1ba3a69011ef67758dbcc6f5c9599785aa0ae5ed5fd6cd0e434ec4"
+          }
+        ]
+      },
+      {
+        "id": "ST-R2",
+        "links": [
+          {
+            "kind": "source",
+            "path": "01_공통용어/02_기록단위와분류축.md",
+            "sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+            "exists": true,
+            "actual_sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a"
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": true,
+            "actual_sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37"
+          },
+          {
+            "kind": "basis",
+            "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+            "sha256": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+            "exists": false,
+            "actual_sha256": null
+          }
+        ]
+      },
+      {
+        "id": "ST-R2-JSON",
+        "links": [
+          {
+            "kind": "source",
+            "path": "01_공통용어/분류운영규칙.json",
+            "sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d",
+            "exists": true,
+            "actual_sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d"
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": true,
+            "actual_sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37"
+          }
+        ]
+      },
+      {
+        "id": "ST-HANDOFF",
+        "links": [
+          {
+            "kind": "source",
+            "path": "09_다음단계인계/R7_01-A_구현전_인계.md",
+            "sha256": "438dc5bb19e7a4356436869aa67704712e5e2257084d89cd15fc3bbfe8d2f0b4",
+            "exists": false,
+            "actual_sha256": null
+          },
+          {
+            "kind": "basis",
+            "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+            "sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+            "exists": true,
+            "actual_sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37"
+          },
+          {
+            "kind": "basis",
+            "path": "01_공통용어/02_기록단위와분류축.md",
+            "sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+            "exists": true,
+            "actual_sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a"
+          }
+        ]
+      }
+    ],
+    "structural_version_commands": [
+      {
+        "file": "01_변경전구조검사.command.json",
+        "argv": [
+          "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+          "-B",
+          "-X",
+          "utf8",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\inputs\\Phase00\\07_실행도구\\자료검증.py",
+          "--record",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\inputs\\Phase00\\12_통합기록\\작업초안.json"
+        ],
+        "exit": 0,
+        "result": {
+          "valid": true,
+          "errors": [],
+          "unresolved": [],
+          "human_review_queue": [
+            {
+              "claim_id": "CL-ONE",
+              "claim_version": "0.1.0",
+              "priority": "normal",
+              "reasons": [
+                "주장 내용 사람 검수 필요"
+              ],
+              "status": "specimen_only",
+              "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+            },
+            {
+              "item_id": "SP-ROOT",
+              "status": "specimen_only",
+              "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+              "verified": false
+            },
+            {
+              "item_id": "SP-CROP",
+              "status": "specimen_only",
+              "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+              "verified": false
+            },
+            {
+              "item_id": "SP-RESIZE",
+              "status": "specimen_only",
+              "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TR-SP-CROP",
+              "status": "specimen_only",
+              "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TR-SP-RESIZE",
+              "status": "specimen_only",
+              "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+              "verified": false
+            },
+            {
+              "item_id": "G-ROOT",
+              "status": "specimen_only",
+              "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+              "verified": false
+            },
+            {
+              "item_id": "G-RESULT",
+              "status": "specimen_only",
+              "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+              "verified": false
+            },
+            {
+              "item_id": "design",
+              "status": "specimen_only",
+              "reason": "토큰 역할·적용 목적·프로젝트 예외 검수. 영상 필수 회사 규칙 승인과 구분",
+              "verified": false
+            },
+            {
+              "item_id": "TG-ASSET/video_type",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-ASSET",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/video_type",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/communication_purpose",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/information_relation",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/art_direction",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/communication_purpose",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/information_relation",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/layout",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/art_direction",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/communication_purpose",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/motion_function",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/motion_property",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/timing",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "run",
+              "status": "specimen_only",
+              "reason": "실행 주체·도구/모델·입출력·설정과 실제 작업 로그를 대조. 선언을 실행 증명으로 보지 않음",
+              "verified": false
+            }
+          ],
+          "coordinate_bindings": [],
+          "integrated_review_states": [],
+          "fact_verified": false,
+          "human_identity_verified": false,
+          "company_approved": false,
+          "operational_release": false,
+          "status": "draft_structure_pass",
+          "schema_version": "0.2.0",
+          "scope": "기록 계약의 구조/연결 검사. 실제 영상·사람 검수·회사 승인·운영 반영 아님.",
+          "source_json_sha256": "8f14c54fed046bc9782746d1efd3333da4a9394c4f95a2063c006d872dca95c5"
+        },
+        "stderr_bytes": 0
+      },
+      {
+        "file": "02_후보구조검사.command.json",
+        "argv": [
+          "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+          "-B",
+          "-X",
+          "utf8",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\inputs\\Phase00\\07_실행도구\\자료검증.py",
+          "--record",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\outputs\\후보.json"
+        ],
+        "exit": 0,
+        "result": {
+          "valid": true,
+          "errors": [],
+          "unresolved": [],
+          "human_review_queue": [
+            {
+              "claim_id": "CL-ONE",
+              "claim_version": "0.1.0",
+              "priority": "normal",
+              "reasons": [
+                "주장 내용 사람 검수 필요"
+              ],
+              "status": "specimen_only",
+              "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+            },
+            {
+              "item_id": "SP-ROOT",
+              "status": "specimen_only",
+              "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+              "verified": false
+            },
+            {
+              "item_id": "SP-CROP",
+              "status": "specimen_only",
+              "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+              "verified": false
+            },
+            {
+              "item_id": "SP-RESIZE",
+              "status": "specimen_only",
+              "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TR-SP-CROP",
+              "status": "specimen_only",
+              "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TR-SP-RESIZE",
+              "status": "specimen_only",
+              "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+              "verified": false
+            },
+            {
+              "item_id": "G-ROOT",
+              "status": "specimen_only",
+              "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+              "verified": false
+            },
+            {
+              "item_id": "G-RESULT",
+              "status": "specimen_only",
+              "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+              "verified": false
+            },
+            {
+              "item_id": "design",
+              "status": "specimen_only",
+              "reason": "토큰 역할·적용 목적·프로젝트 예외 검수. 영상 필수 회사 규칙 승인과 구분",
+              "verified": false
+            },
+            {
+              "item_id": "TG-ASSET/video_type",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-ASSET",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/video_type",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/communication_purpose",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/information_relation",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/art_direction",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/communication_purpose",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/information_relation",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/layout",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/art_direction",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/communication_purpose",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/motion_function",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/motion_property",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/timing",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "run",
+              "status": "specimen_only",
+              "reason": "실행 주체·도구/모델·입출력·설정과 실제 작업 로그를 대조. 선언을 실행 증명으로 보지 않음",
+              "verified": false
+            }
+          ],
+          "coordinate_bindings": [],
+          "integrated_review_states": [],
+          "fact_verified": false,
+          "human_identity_verified": false,
+          "company_approved": false,
+          "operational_release": false,
+          "status": "draft_structure_pass",
+          "schema_version": "0.2.0",
+          "scope": "기록 계약의 구조/연결 검사. 실제 영상·사람 검수·회사 승인·운영 반영 아님.",
+          "source_json_sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a"
+        },
+        "stderr_bytes": 0
+      },
+      {
+        "file": "04_후보판본대조.command.json",
+        "argv": [
+          "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+          "-B",
+          "-X",
+          "utf8",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\inputs\\Phase00\\실행스킬\\video-record-steward\\scripts\\판본대조.py",
+          "--before",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\inputs\\Phase00\\backup\\이번작업\\변경전.json",
+          "--after",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\outputs\\후보.json"
+        ],
+        "exit": 0,
+        "result": {
+          "valid": true,
+          "mode": "content_edit",
+          "before_sha256": "8f14c54fed046bc9782746d1efd3333da4a9394c4f95a2063c006d872dca95c5",
+          "after_sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a",
+          "bytes_changed": true,
+          "errors": [],
+          "scope": "R4/R5 초안 전후 식별/규격판본·소유기록 판본 또는 요청 checkpoint byte 대조만. 허용 필드·R4/R5 전체 구조·내용·권한 검사는 별도.",
+          "writes_performed": false,
+          "content_verified": false,
+          "company_approved": false,
+          "operational_release": false,
+          "after_record_version": "0.1.1",
+          "before_record_version": "0.1.0"
+        },
+        "stderr_bytes": 0
+      },
+      {
+        "file": "07_저장후구조검사.command.json",
+        "argv": [
+          "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+          "-B",
+          "-X",
+          "utf8",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\inputs\\Phase00\\07_실행도구\\자료검증.py",
+          "--record",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\inputs\\Phase00\\12_통합기록\\작업초안.json"
+        ],
+        "exit": 0,
+        "result": {
+          "valid": true,
+          "errors": [],
+          "unresolved": [],
+          "human_review_queue": [
+            {
+              "claim_id": "CL-ONE",
+              "claim_version": "0.1.0",
+              "priority": "normal",
+              "reasons": [
+                "주장 내용 사람 검수 필요"
+              ],
+              "status": "specimen_only",
+              "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+            },
+            {
+              "item_id": "SP-ROOT",
+              "status": "specimen_only",
+              "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+              "verified": false
+            },
+            {
+              "item_id": "SP-CROP",
+              "status": "specimen_only",
+              "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+              "verified": false
+            },
+            {
+              "item_id": "SP-RESIZE",
+              "status": "specimen_only",
+              "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TR-SP-CROP",
+              "status": "specimen_only",
+              "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TR-SP-RESIZE",
+              "status": "specimen_only",
+              "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+              "verified": false
+            },
+            {
+              "item_id": "G-ROOT",
+              "status": "specimen_only",
+              "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+              "verified": false
+            },
+            {
+              "item_id": "G-RESULT",
+              "status": "specimen_only",
+              "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+              "verified": false
+            },
+            {
+              "item_id": "design",
+              "status": "specimen_only",
+              "reason": "토큰 역할·적용 목적·프로젝트 예외 검수. 영상 필수 회사 규칙 승인과 구분",
+              "verified": false
+            },
+            {
+              "item_id": "TG-ASSET/video_type",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-ASSET",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/video_type",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/communication_purpose",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/information_relation",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT/art_direction",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-SEGMENT",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/communication_purpose",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/information_relation",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/layout",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE/art_direction",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-STATE",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/communication_purpose",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/motion_function",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/motion_property",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT/timing",
+              "status": "specimen_only",
+              "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+              "verified": false
+            },
+            {
+              "item_id": "TG-BEAT",
+              "status": "specimen_only",
+              "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+              "verified": false
+            },
+            {
+              "item_id": "run",
+              "status": "specimen_only",
+              "reason": "실행 주체·도구/모델·입출력·설정과 실제 작업 로그를 대조. 선언을 실행 증명으로 보지 않음",
+              "verified": false
+            }
+          ],
+          "coordinate_bindings": [],
+          "integrated_review_states": [],
+          "fact_verified": false,
+          "human_identity_verified": false,
+          "company_approved": false,
+          "operational_release": false,
+          "status": "draft_structure_pass",
+          "schema_version": "0.2.0",
+          "scope": "기록 계약의 구조/연결 검사. 실제 영상·사람 검수·회사 승인·운영 반영 아님.",
+          "source_json_sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a"
+        },
+        "stderr_bytes": 0
+      },
+      {
+        "file": "08_저장후판본대조.command.json",
+        "argv": [
+          "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+          "-B",
+          "-X",
+          "utf8",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\inputs\\Phase00\\실행스킬\\video-record-steward\\scripts\\판본대조.py",
+          "--before",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\inputs\\Phase00\\backup\\이번작업\\변경전.json",
+          "--after",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\inputs\\Phase00\\12_통합기록\\작업초안.json"
+        ],
+        "exit": 0,
+        "result": {
+          "valid": true,
+          "mode": "content_edit",
+          "before_sha256": "8f14c54fed046bc9782746d1efd3333da4a9394c4f95a2063c006d872dca95c5",
+          "after_sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a",
+          "bytes_changed": true,
+          "errors": [],
+          "scope": "R4/R5 초안 전후 식별/규격판본·소유기록 판본 또는 요청 checkpoint byte 대조만. 허용 필드·R4/R5 전체 구조·내용·권한 검사는 별도.",
+          "writes_performed": false,
+          "content_verified": false,
+          "company_approved": false,
+          "operational_release": false,
+          "after_record_version": "0.1.1",
+          "before_record_version": "0.1.0"
+        },
+        "stderr_bytes": 0
+      },
+      {
+        "file": "11_정확복구대조.command.json",
+        "argv": [
+          "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+          "-B",
+          "-X",
+          "utf8",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\inputs\\Phase00\\실행스킬\\video-record-steward\\scripts\\판본대조.py",
+          "--before",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\outputs\\복구전실패본.json",
+          "--after",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\inputs\\Phase00\\12_통합기록\\작업초안.json",
+          "--mode",
+          "exact_restore",
+          "--checkpoint",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\inputs\\Phase00\\backup\\이번작업\\변경전.json",
+          "--checkpoint-sha",
+          "8f14c54fed046bc9782746d1efd3333da4a9394c4f95a2063c006d872dca95c5"
+        ],
+        "exit": 1,
+        "result": {
+          "valid": false,
+          "mode": "exact_restore",
+          "before_sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a",
+          "after_sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a",
+          "bytes_changed": false,
+          "errors": [
+            "복원 후 bytes가 checkpoint와 다름"
+          ],
+          "scope": "R4/R5 초안 전후 식별/규격판본·소유기록 판본 또는 요청 checkpoint byte 대조만. 허용 필드·R4/R5 전체 구조·내용·권한 검사는 별도.",
+          "writes_performed": false,
+          "content_verified": false,
+          "company_approved": false,
+          "operational_release": false,
+          "after_record_version": "0.1.1"
+        },
+        "stderr_bytes": 0
+      }
+    ],
+    "findings": []
+  }
+]

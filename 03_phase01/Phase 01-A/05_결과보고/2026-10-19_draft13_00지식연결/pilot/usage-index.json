@@ -1,0 +1,3385 @@
+{
+  "schema_version": "video-knowledge-use-index-0.1",
+  "catalog_pin": {
+    "path": "../knowledge/catalog.json",
+    "sha256": "8e9e8efd995028046b845fe2d6f44ac6f662b0034a4bf17e7f644dff482ee435"
+  },
+  "records": [
+    {
+      "path": "case-134.json",
+      "sha256": "46c11b861256cc80bc33650b6e7181de3aea22dcdb3c2e23fe235352d00aec55",
+      "record": {
+        "schema_version": "video-knowledge-links-0.1",
+        "record_id": "LINK-VC-134",
+        "version": "r1",
+        "source": {
+          "name": "가치창출성과 영상_260923_v3.mp4",
+          "sha256": "be78fc4f2f94c6b3cbd31339a1a1ccc84b91613d56c0e485d5dd1296839f56fa",
+          "duration_seconds": 434.4
+        },
+        "source_records": [
+          {
+            "id": "S1",
+            "path": "preserved/static/00_사례요약.md",
+            "sha256": "680cd5f9db361d4ee7b7b5f166405bf7cacff28ac55f02245725703e777036c9",
+            "role": "preserved_observation"
+          },
+          {
+            "id": "S2",
+            "path": "preserved/static/01_부품과조합.md",
+            "sha256": "5c4ae7ad8b8254b52432ba9883c6139d8c2bd6ce4446dec4624e5581b713942e",
+            "role": "preserved_observation"
+          },
+          {
+            "id": "S3",
+            "path": "preserved/static/02_전체상세.md",
+            "sha256": "c1bc9c1d49e460a276c394ef5e8a260021c24f5abd8c864fca542fba9ffa6d85",
+            "role": "preserved_observation"
+          },
+          {
+            "id": "S4",
+            "path": "preserved/static/03_근거와검수.md",
+            "sha256": "a677b68f81e085aaffebd9a684b36f9bc6396791965765570c0fd5d21670f671",
+            "role": "preserved_observation"
+          },
+          {
+            "id": "S5",
+            "path": "preserved/static/04_모션조사.md",
+            "sha256": "2e4915cfd3e6ce3e6b0384ef3e61b6a487f5237c3093c433cdbb26aa2f7e3036",
+            "role": "preserved_observation"
+          }
+        ],
+        "evidence": [
+          {
+            "id": "E134",
+            "path": "preserved/static/evidence/134.png",
+            "sha256": "e1fe065b8d9f9ad8ce819266389a8326d58ecb886fe85b53eb6e18a701f3f2f8",
+            "time": {
+              "start": 134,
+              "end": 134
+            },
+            "kind": "still_frame"
+          },
+          {
+            "id": "E172",
+            "path": "preserved/static/evidence/172.png",
+            "sha256": "44a26a91328863dd335f9b950780afb96929888f8475b45b2298035250a1771a",
+            "time": {
+              "start": 172,
+              "end": 172
+            },
+            "kind": "still_frame"
+          }
+        ],
+        "claims": [
+          {
+            "id": "C1",
+            "text": "가족사 사업→기술개발센터 전문인력 참여: 파랑 프로젝트 요청. 반대 방향 초록 전문인력 지원.",
+            "basis_kind": "observed",
+            "evidence_ids": [
+              "E134"
+            ],
+            "source_record_ids": [
+              "S3"
+            ]
+          },
+          {
+            "id": "C2",
+            "text": "흰 역할판 두 개, 왼쪽 회사8개 2열×4행, 오른쪽 역할 헤더/BIM/모니터 업무 묶음. 중앙 관계 여백.",
+            "basis_kind": "observed",
+            "evidence_ids": [
+              "E134"
+            ],
+            "source_record_ids": [
+              "S3"
+            ]
+          },
+          {
+            "id": "C3",
+            "text": "크림 공간·흰 유광처럼 보이는 판·모서리 색 강조·원형 도상·가는 선·바닥 반사가 함께 보임.",
+            "basis_kind": "observed",
+            "evidence_ids": [
+              "E134"
+            ],
+            "source_record_ids": [
+              "S3"
+            ]
+          },
+          {
+            "id": "C4",
+            "text": "업무 묶음은 모니터3대+선반+책·화분. 별도 방향 라벨은 두 역할판의 문구/방향과 대응.",
+            "basis_kind": "observed",
+            "evidence_ids": [
+              "E134"
+            ],
+            "source_record_ids": [
+              "S2",
+              "S3"
+            ]
+          },
+          {
+            "id": "C5",
+            "text": "두 화면의 동일 회사 목록은 2×4와 원근 가로열의 배치 차이, HALLA/피티씨 순서 차이를 가진 가족 후보. 동일 파일/이동은 미확인.",
+            "basis_kind": "observed",
+            "evidence_ids": [
+              "E134",
+              "E172"
+            ],
+            "source_record_ids": [
+              "S2",
+              "S3"
+            ]
+          },
+          {
+            "id": "C6",
+            "text": "좌상 장 표식은 금갈색 육각형 배지의 2/TDC와 프로젝트 지원을 통한 가치 창출 제목을 묶는다. 본문 제목과 구별된다.",
+            "basis_kind": "observed",
+            "evidence_ids": [
+              "E134"
+            ],
+            "source_record_ids": [
+              "S3"
+            ]
+          }
+        ],
+        "units": [
+          {
+            "id": "RC-CASE-001",
+            "kind": "case",
+            "title": "두 조직의 요청·지원 역할판",
+            "summary": "가족사 사업→기술개발센터 전문인력 참여: 파랑 프로젝트 요청. 반대 방향 초록 전문인력 지원. 흰 역할판 두 개, 왼쪽 회사8개 2열×4행, 오른쪽 역할 헤더/BIM/모니터 업무 묶음. 중앙 관계 여백. 크림 공간·흰 유광처럼 보이는 판·모서리 색 강조·원형 도상·가는 선·바닥 반사가 함께 보임. 모션은 두 정지 표본에서 미관측. 전체 문구/디테일은 보존 MD에 연결.",
+            "observation_status": "observed_static",
+            "definition_version": "v1"
+          },
+          {
+            "id": "RC-LAYOUT-001@v1",
+            "kind": "layout",
+            "title": "두 조직의 요청·지원 역할판 구성",
+            "summary": "전체는 두 역할 영역과 중앙 연결 여백, 왼쪽 내부는2열×4행 모듈. 정보 유형과 기하 배치를 별도로 기록.",
+            "observation_status": "observed_static",
+            "definition_version": "v1"
+          },
+          {
+            "id": "PROFILE-VC-CREAM-SPACE@v1",
+            "kind": "visual_profile",
+            "title": "크림 공간의 입체 정보 무대",
+            "summary": "크림색 공간+입체 정보 대상+받침/프레임·반사의 조합 가족 후보. 개별 색·대상·재질 처리 차이는 사용처에 보존.",
+            "observation_status": "observed_static",
+            "definition_version": "v1"
+          },
+          {
+            "id": "RC-COMP-001@v1",
+            "kind": "component",
+            "title": "장 번호/제목 표식",
+            "summary": "장 번호와 장 제목을 묶는 표식. 본문 전체 디자인과 구분.",
+            "observation_status": "observed_static",
+            "definition_version": "v1"
+          },
+          {
+            "id": "RC-COMP-002@v1",
+            "kind": "component",
+            "title": "가족사 로고 타일 묶음",
+            "summary": "같은 회사 목록을 담은 타일 가족 후보. 동일 파일/연속 모핑은 미확인.",
+            "observation_status": "observed_static",
+            "definition_version": "v1"
+          },
+          {
+            "id": "RC-COMP-003@v1",
+            "kind": "component",
+            "title": "역할 헤더",
+            "summary": "역할판 상부의 헤더/구분선/문구 묶음.",
+            "observation_status": "observed_static",
+            "definition_version": "v1"
+          },
+          {
+            "id": "RC-COMP-004@v1",
+            "kind": "component",
+            "title": "요청·지원 방향 라벨",
+            "summary": "주체와 방향별 문구를 함께 전달하는 표식. 실제 모션은 미관측.",
+            "observation_status": "observed_static",
+            "definition_version": "v1"
+          },
+          {
+            "id": "RC-COMP-007@v1",
+            "kind": "component",
+            "title": "업무 이미지 묶음",
+            "summary": "모니터3대+선반+책/화분을 묶은 업무 이미지. 소품은 하위 구성.",
+            "observation_status": "observed_static",
+            "definition_version": "v1"
+          }
+        ],
+        "facets": [
+          {
+            "id": "F1",
+            "unit_id": "RC-LAYOUT-001@v1",
+            "domain": "information",
+            "name": "관계/내용",
+            "description": "두 주체의 방향 있는 요청/지원 교환. 비교 지표나 데이터 상관으로 강제하지 않음. 관계 세부 어휘는 미분류 후보.",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C1",
+              "C2"
+            ]
+          },
+          {
+            "id": "F2",
+            "unit_id": "RC-LAYOUT-001@v1",
+            "domain": "screen",
+            "name": "전체/하위 격자",
+            "description": "전체는 두 역할 영역과 중앙 연결 여백, 왼쪽 내부는2열×4행 모듈. 정보 유형과 기하 배치를 별도로 기록.",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2",
+              "C5"
+            ]
+          },
+          {
+            "id": "F3",
+            "unit_id": "PROFILE-VC-CREAM-SPACE@v1",
+            "domain": "visual",
+            "name": "타입의 역할",
+            "description": "장 표식/본문 제목→역할 헤더→BIM 항목/회사명→방향별 요청·지원 문구. 글꼴명/정확 척도는 미상.",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C1",
+              "C2",
+              "C4"
+            ]
+          },
+          {
+            "id": "F4",
+            "unit_id": "PROFILE-VC-CREAM-SPACE@v1",
+            "domain": "visual",
+            "name": "역할색/형태/재질/층",
+            "description": "흰 판/가는 구분선·파랑 요청/초록 지원을 관계에 대응. 역할색을 회사CI 원색/규정으로 확정하지 않음.",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C3"
+            ]
+          },
+          {
+            "id": "F5",
+            "unit_id": "PROFILE-VC-CREAM-SPACE@v1",
+            "domain": "visual",
+            "name": "공통 표현 조합",
+            "description": "크림 배경과 입체 대상·프레임/기단·반사를 공간 기준으로 함께 기록. 고급스럽다는 평가/시청자 효과는 확정하지 않음.",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C3"
+            ]
+          },
+          {
+            "id": "F6",
+            "unit_id": "RC-LAYOUT-001@v1",
+            "domain": "motion",
+            "name": "관측 상태",
+            "description": "이번 근거는 정지 두 점. 등장·이동·정착·퇴장/오디오·이징은 미관측.",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2"
+            ]
+          }
+        ],
+        "knowledge_links": [
+          {
+            "id": "K1",
+            "unit_id": "RC-LAYOUT-001@v1",
+            "concept_id": "LAYOUT-SPLIT",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2"
+            ],
+            "rationale": "전체는 두 역할 영역과 중앙 연결 여백, 왼쪽 내부는2열×4행 모듈. 정보 유형과 기하 배치를 별도로 기록."
+          },
+          {
+            "id": "K2",
+            "unit_id": "RC-LAYOUT-001@v1",
+            "concept_id": "LAYOUT-NETWORK",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C1",
+              "C2"
+            ],
+            "rationale": "표식과 방향으로 두 집단을 연결한다. 인과/동작은 미확정."
+          },
+          {
+            "id": "K3",
+            "unit_id": "PROFILE-VC-CREAM-SPACE@v1",
+            "concept_id": "STYLE-3D",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C3"
+            ],
+            "rationale": "입체·공간 표현의 외관 분류. 실제 모델/카메라 도구 증거 아님."
+          },
+          {
+            "id": "K4",
+            "unit_id": "RC-LAYOUT-001@v1",
+            "concept_id": "SCREEN-HIERARCHY",
+            "relation": "review_relevant",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C1",
+              "C2"
+            ],
+            "rationale": "주/보조/맥락 역할 보존을 검토할 지식. 효과 승인 아님."
+          },
+          {
+            "id": "K5",
+            "unit_id": "RC-LAYOUT-001@v1",
+            "concept_id": "Q-INFO-03",
+            "relation": "evaluated_against",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C1",
+              "C2"
+            ],
+            "rationale": "관계/금액을 근거 없는 비교·인과·분할로 확대하지 않고 원래 의미/한계를 기록했다."
+          },
+          {
+            "id": "K6",
+            "unit_id": "PROFILE-VC-CREAM-SPACE@v1",
+            "concept_id": "Q-BRAND-02",
+            "relation": "evaluated_against",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C3"
+            ],
+            "rationale": "관측색/재질과 공식CI 원형/역할 토큰의 연결은 미확인."
+          },
+          {
+            "id": "K7",
+            "unit_id": "RC-LAYOUT-001@v1",
+            "concept_id": "Q-MOTION-01",
+            "relation": "evaluated_against",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2"
+            ],
+            "rationale": "정지 입력만으로 정보 완성/읽기 유지 시간을 검토하지 못함."
+          }
+        ],
+        "uses": [
+          {
+            "id": "U1",
+            "definition_id": "RC-COMP-001@v1",
+            "case_unit_id": "RC-CASE-001",
+            "time": {
+              "start": 134,
+              "end": 134
+            },
+            "evidence_ids": [
+              "E134"
+            ],
+            "claim_ids": [
+              "C6"
+            ],
+            "differences": [],
+            "unverified": [
+              "동일 원본 자산/회사 표준 및 다른 주제·화면비 적용 미검증"
+            ],
+            "conditions": [
+              {
+                "text": "장 구분이 필요한 경우 번호/제목 역할을 보존한다. 표식의 색·장 번호·제목은 가변 후보이며 회사 표준은 미확인.",
+                "validation": "untested"
+              }
+            ]
+          },
+          {
+            "id": "U2",
+            "definition_id": "RC-COMP-002@v1",
+            "case_unit_id": "RC-CASE-001",
+            "time": {
+              "start": 134,
+              "end": 134
+            },
+            "evidence_ids": [
+              "E134",
+              "E172"
+            ],
+            "claim_ids": [
+              "C2",
+              "C5"
+            ],
+            "differences": [
+              "2×4 vs 원근 가로열, HALLA/피티씨 순서 차이"
+            ],
+            "unverified": [
+              "동일 원본 자산/회사 표준 및 다른 주제·화면비 적용 미검증"
+            ],
+            "conditions": [
+              {
+                "text": "같은 소속 목록을 묶어 보여줄 때 회사명/로고 식별·비율을 보호한다. 개수·격자/가로열은 가변 후보이나 순서·읽기와 공식 자산을 다시 검토한다.",
+                "validation": "untested"
+              }
+            ],
+            "evidence_roles": {
+              "E134": "current",
+              "E172": "context_variant"
+            }
+          },
+          {
+            "id": "U3",
+            "definition_id": "RC-COMP-003@v1",
+            "case_unit_id": "RC-CASE-001",
+            "time": {
+              "start": 134,
+              "end": 134
+            },
+            "evidence_ids": [
+              "E134"
+            ],
+            "claim_ids": [
+              "C2"
+            ],
+            "differences": [],
+            "unverified": [
+              "동일 원본 자산/회사 표준 및 다른 주제·화면비 적용 미검증"
+            ],
+            "conditions": [
+              {
+                "text": "역할 영역의 상위 제목과 하위 정보를 구분할 때 사용. 헤더 문구/폭은 가변이지만 본문과 구분되는 위계·경계는 검토한다.",
+                "validation": "untested"
+              }
+            ]
+          },
+          {
+            "id": "U4",
+            "definition_id": "RC-COMP-004@v1",
+            "case_unit_id": "RC-CASE-001",
+            "time": {
+              "start": 134,
+              "end": 134
+            },
+            "evidence_ids": [
+              "E134"
+            ],
+            "claim_ids": [
+              "C4"
+            ],
+            "differences": [],
+            "unverified": [
+              "동일 원본 자산/회사 표준 및 다른 주제·화면비 적용 미검증"
+            ],
+            "conditions": [
+              {
+                "text": "두 주체 사이 요청/지원의 방향과 문구를 함께 보호한다. 색·길이/배치는 변형 후보이며 방향이 다른데 같은 의미로 복제하지 않는다.",
+                "validation": "untested"
+              }
+            ]
+          },
+          {
+            "id": "U7",
+            "definition_id": "RC-COMP-007@v1",
+            "case_unit_id": "RC-CASE-001",
+            "time": {
+              "start": 134,
+              "end": 134
+            },
+            "evidence_ids": [
+              "E134"
+            ],
+            "claim_ids": [
+              "C4"
+            ],
+            "differences": [],
+            "unverified": [
+              "동일 원본 자산/회사 표준 및 다른 주제·화면비 적용 미검증"
+            ],
+            "conditions": [
+              {
+                "text": "전문 업무를 상징하는 장면 묶음이 필요할 때 후보. 모니터/선반/소품의 그룹 역할은 보호하며 개수·소품은 가변 후보. 실제 제품 UI/기능을 증명하지 않는다.",
+                "validation": "untested"
+              }
+            ]
+          },
+          {
+            "id": "U-LAYOUT",
+            "definition_id": "RC-LAYOUT-001@v1",
+            "case_unit_id": "RC-CASE-001",
+            "time": {
+              "start": 134,
+              "end": 134
+            },
+            "evidence_ids": [
+              "E134"
+            ],
+            "claim_ids": [
+              "C1",
+              "C2",
+              "C3"
+            ],
+            "differences": [
+              "흰 판/가는 구분선·파랑 요청/초록 지원을 관계에 대응. 역할색을 회사CI 원색/규정으로 확정하지 않음."
+            ],
+            "unverified": [
+              "동일 원본 자산/회사 표준 및 다른 주제·화면비 적용 미검증"
+            ],
+            "conditions": [
+              {
+                "text": "주체/방향/내용 관계와 읽는 구역을 보호한다. 판 개수·격자·원근·여백은 내용량/화면비에 맞춘 변형 후보.",
+                "validation": "untested"
+              }
+            ]
+          },
+          {
+            "id": "U-PROFILE",
+            "definition_id": "PROFILE-VC-CREAM-SPACE@v1",
+            "case_unit_id": "RC-CASE-001",
+            "time": {
+              "start": 134,
+              "end": 134
+            },
+            "evidence_ids": [
+              "E134"
+            ],
+            "claim_ids": [
+              "C1",
+              "C2",
+              "C3"
+            ],
+            "differences": [
+              "흰 판/가는 구분선·파랑 요청/초록 지원을 관계에 대응. 역할색을 회사CI 원색/규정으로 확정하지 않음."
+            ],
+            "unverified": [
+              "동일 원본 자산/회사 표준 및 다른 주제·화면비 적용 미검증"
+            ],
+            "conditions": [
+              {
+                "text": "크림 공간+입체 정보대상+지지면/반사의 조합을 참고한다. 소재/역할색/대상은 가변 후보이며 정보 관계·필수 문구/회사CI를 훼손하지 않는다.",
+                "validation": "untested"
+              }
+            ]
+          }
+        ],
+        "composition_links": [
+          {
+            "from": "RC-LAYOUT-001@v1",
+            "to": "RC-COMP-001@v1",
+            "relation": "contains",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2",
+              "C4"
+            ]
+          },
+          {
+            "from": "RC-LAYOUT-001@v1",
+            "to": "RC-COMP-002@v1",
+            "relation": "contains",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2",
+              "C4"
+            ]
+          },
+          {
+            "from": "RC-LAYOUT-001@v1",
+            "to": "RC-COMP-003@v1",
+            "relation": "contains",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2",
+              "C4"
+            ]
+          },
+          {
+            "from": "RC-LAYOUT-001@v1",
+            "to": "RC-COMP-004@v1",
+            "relation": "contains",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2",
+              "C4"
+            ]
+          },
+          {
+            "from": "RC-LAYOUT-001@v1",
+            "to": "RC-COMP-007@v1",
+            "relation": "contains",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2",
+              "C4"
+            ]
+          },
+          {
+            "from": "RC-CASE-001",
+            "to": "RC-LAYOUT-001@v1",
+            "relation": "contains",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2"
+            ]
+          },
+          {
+            "from": "RC-LAYOUT-001@v1",
+            "to": "PROFILE-VC-CREAM-SPACE@v1",
+            "relation": "accompanies",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C3"
+            ]
+          }
+        ],
+        "events": [],
+        "event_links": [],
+        "reviews": [
+          {
+            "id": "R1",
+            "unit_id": "RC-LAYOUT-001@v1",
+            "criterion_id": "Q-INFO-03",
+            "status": "pass",
+            "reason": "관계/금액을 근거 없는 비교·인과·분할로 확대하지 않고 원래 의미/한계를 기록했다.",
+            "evidence_ids": [
+              "E134"
+            ],
+            "claim_ids": [
+              "C1",
+              "C2"
+            ],
+            "reviewer": "AI: 기존 기록-새 연결 구조 대조",
+            "scope": "기존 관측 기록의 의미/연결 검토. 새 원본 시각·가독성/효과 검사 아님.",
+            "next_probe": null
+          },
+          {
+            "id": "R2",
+            "unit_id": "PROFILE-VC-CREAM-SPACE@v1",
+            "criterion_id": "Q-BRAND-02",
+            "status": "hold",
+            "reason": "관측색/재질과 공식CI 원형/역할 토큰의 연결은 미확인.",
+            "evidence_ids": [
+              "E134"
+            ],
+            "claim_ids": [
+              "C3"
+            ],
+            "reviewer": "AI: 기존 기록-새 연결 구조 대조",
+            "scope": "기존 관측 기록의 의미/연결 검토. 새 원본 시각·가독성/효과 검사 아님.",
+            "next_probe": "선택할 회사/프로젝트 역할·공식CI 사용 근거를 확인"
+          },
+          {
+            "id": "R3",
+            "unit_id": "RC-LAYOUT-001@v1",
+            "criterion_id": "Q-MOTION-01",
+            "status": "not_reviewed",
+            "reason": "정지 입력만으로 정보 완성/읽기 유지 시간을 검토하지 못함.",
+            "evidence_ids": [],
+            "claim_ids": [
+              "C2"
+            ],
+            "reviewer": "AI: 기존 기록-새 연결 구조 대조",
+            "scope": "기존 관측 기록의 의미/연결 검토. 새 원본 시각·가독성/효과 검사 아님.",
+            "next_probe": "해당 장면의 실제 모션/읽기 유지 구간을 확보"
+          }
+        ],
+        "unknowns": [
+          {
+            "id": "UNKNOWN-MOTION",
+            "unit_id": "RC-LAYOUT-001@v1",
+            "question": "대상별 등장/내부 변화/정착/퇴장은 어떠한가?",
+            "impact": "동작 패턴/읽기 시간 재사용 제한",
+            "next_probe": "해당 구간 연속 근거/경계 표본 확보"
+          }
+        ],
+        "limitations": [
+          "기존 관측 기록과 지식의 연결 작업. 새 원본 연속 재생/재추출·새 픽셀 검수 아님.",
+          "정확 AE 속성·폰트·색 원값/실제 청취/원제작 의도·다른 내용/화면비 적용은 미검증.",
+          "정본 등록/회사 승인 아님. source record와 연결 구조는 별도이며 자동 동기화 없음."
+        ],
+        "company_approved": false,
+        "canonical_registered": false
+      }
+    },
+    {
+      "path": "case-172.json",
+      "sha256": "4d97ce77a7359007932cfa644a5a532443792a85688c02abb70ea00f0e72f618",
+      "record": {
+        "schema_version": "video-knowledge-links-0.1",
+        "record_id": "LINK-VC-172",
+        "version": "r1",
+        "source": {
+          "name": "가치창출성과 영상_260923_v3.mp4",
+          "sha256": "be78fc4f2f94c6b3cbd31339a1a1ccc84b91613d56c0e485d5dd1296839f56fa",
+          "duration_seconds": 434.4
+        },
+        "source_records": [
+          {
+            "id": "S1",
+            "path": "preserved/static/00_사례요약.md",
+            "sha256": "680cd5f9db361d4ee7b7b5f166405bf7cacff28ac55f02245725703e777036c9",
+            "role": "preserved_observation"
+          },
+          {
+            "id": "S2",
+            "path": "preserved/static/01_부품과조합.md",
+            "sha256": "5c4ae7ad8b8254b52432ba9883c6139d8c2bd6ce4446dec4624e5581b713942e",
+            "role": "preserved_observation"
+          },
+          {
+            "id": "S3",
+            "path": "preserved/static/02_전체상세.md",
+            "sha256": "c1bc9c1d49e460a276c394ef5e8a260021c24f5abd8c864fca542fba9ffa6d85",
+            "role": "preserved_observation"
+          },
+          {
+            "id": "S4",
+            "path": "preserved/static/03_근거와검수.md",
+            "sha256": "a677b68f81e085aaffebd9a684b36f9bc6396791965765570c0fd5d21670f671",
+            "role": "preserved_observation"
+          },
+          {
+            "id": "S5",
+            "path": "preserved/static/04_모션조사.md",
+            "sha256": "2e4915cfd3e6ce3e6b0384ef3e61b6a487f5237c3093c433cdbb26aa2f7e3036",
+            "role": "preserved_observation"
+          }
+        ],
+        "evidence": [
+          {
+            "id": "E134",
+            "path": "preserved/static/evidence/134.png",
+            "sha256": "e1fe065b8d9f9ad8ce819266389a8326d58ecb886fe85b53eb6e18a701f3f2f8",
+            "time": {
+              "start": 134,
+              "end": 134
+            },
+            "kind": "still_frame"
+          },
+          {
+            "id": "E172",
+            "path": "preserved/static/evidence/172.png",
+            "sha256": "44a26a91328863dd335f9b950780afb96929888f8475b45b2298035250a1771a",
+            "time": {
+              "start": 172,
+              "end": 172
+            },
+            "kind": "still_frame"
+          }
+        ],
+        "claims": [
+          {
+            "id": "C1",
+            "text": "실제 투입 인력·비용 기준 성과 23.7억원으로 설명. 회사별 배분/산정 타당성은 미검증.",
+            "basis_kind": "observed",
+            "evidence_ids": [
+              "E172"
+            ],
+            "source_record_ids": [
+              "S3"
+            ]
+          },
+          {
+            "id": "C2",
+            "text": "왼쪽 거대 금색 입체 수치–중앙 원근 회사열–오른쪽 건물/원형 기단의 공간 배치.",
+            "basis_kind": "observed",
+            "evidence_ids": [
+              "E172"
+            ],
+            "source_record_ids": [
+              "S3"
+            ]
+          },
+          {
+            "id": "C3",
+            "text": "크림·금색 공간·곡선 받침·투명 판·짙은 녹색 유리처럼 보이는 면·바닥 반사/금빛 곡선.",
+            "basis_kind": "observed",
+            "evidence_ids": [
+              "E172"
+            ],
+            "source_record_ids": [
+              "S3"
+            ]
+          },
+          {
+            "id": "C4",
+            "text": "BIM지원 위, BIM설계 좌아래, 디자인지원 오른쪽, 해외사업지원 전면 아래. 명찰과 건물/기단은 별도.",
+            "basis_kind": "observed",
+            "evidence_ids": [
+              "E172"
+            ],
+            "source_record_ids": [
+              "S2",
+              "S3"
+            ]
+          },
+          {
+            "id": "C5",
+            "text": "두 화면의 동일 회사 목록은 2×4와 원근 가로열의 배치 차이, HALLA/피티씨 순서 차이를 가진 가족 후보. 동일 파일/이동은 미확인.",
+            "basis_kind": "observed",
+            "evidence_ids": [
+              "E134",
+              "E172"
+            ],
+            "source_record_ids": [
+              "S2",
+              "S3"
+            ]
+          },
+          {
+            "id": "C6",
+            "text": "좌상 장 표식은 금갈색 육각형 배지의 2/TDC와 프로젝트 지원을 통한 가치 창출 제목을 묶는다. 본문 제목과 구별된다.",
+            "basis_kind": "observed",
+            "evidence_ids": [
+              "E172"
+            ],
+            "source_record_ids": [
+              "S3"
+            ]
+          }
+        ],
+        "units": [
+          {
+            "id": "RC-CASE-002",
+            "kind": "case",
+            "title": "성과값·회사열·센터의 공간 무대",
+            "summary": "실제 투입 인력·비용 기준 성과 23.7억원으로 설명. 회사별 배분/산정 타당성은 미검증. 왼쪽 거대 금색 입체 수치–중앙 원근 회사열–오른쪽 건물/원형 기단의 공간 배치. 크림·금색 공간·곡선 받침·투명 판·짙은 녹색 유리처럼 보이는 면·바닥 반사/금빛 곡선. 모션은 두 정지 표본에서 미관측. 전체 문구/디테일은 보존 MD에 연결.",
+            "observation_status": "observed_static",
+            "definition_version": "v1"
+          },
+          {
+            "id": "RC-LAYOUT-002@v1",
+            "kind": "layout",
+            "title": "성과값·회사열·센터의 공간 무대 구성",
+            "summary": "좌 수치/중앙 회사열/우 기관 대상의 비대칭 세 영역. 회사 타일의 기하 배열은 원근 가로열이며 134초 모듈과 다름.",
+            "observation_status": "observed_static",
+            "definition_version": "v1"
+          },
+          {
+            "id": "PROFILE-VC-CREAM-SPACE@v1",
+            "kind": "visual_profile",
+            "title": "크림 공간의 입체 정보 무대",
+            "summary": "크림색 공간+입체 정보 대상+받침/프레임·반사의 조합 가족 후보. 개별 색·대상·재질 처리 차이는 사용처에 보존.",
+            "observation_status": "observed_static",
+            "definition_version": "v1"
+          },
+          {
+            "id": "RC-COMP-001@v1",
+            "kind": "component",
+            "title": "장 번호/제목 표식",
+            "summary": "장 번호와 장 제목을 묶는 표식. 본문 전체 디자인과 구분.",
+            "observation_status": "observed_static",
+            "definition_version": "v1"
+          },
+          {
+            "id": "RC-COMP-002@v1",
+            "kind": "component",
+            "title": "가족사 로고 타일 묶음",
+            "summary": "같은 회사 목록을 담은 타일 가족 후보. 동일 파일/연속 모핑은 미확인.",
+            "observation_status": "observed_static",
+            "definition_version": "v1"
+          },
+          {
+            "id": "RC-COMP-005@v1",
+            "kind": "component",
+            "title": "지원 명찰",
+            "summary": "건물 주변 네 지원 항목 표식. 건물/기단과 별도 부품.",
+            "observation_status": "observed_static",
+            "definition_version": "v1"
+          },
+          {
+            "id": "RC-COMP-006@v1",
+            "kind": "component",
+            "title": "성과 수치 조형",
+            "summary": "큰 금액+단위와 받침/강조 조합. 정량 차트와 구분.",
+            "observation_status": "observed_static",
+            "definition_version": "v1"
+          },
+          {
+            "id": "RC-COMP-008@v1",
+            "kind": "component",
+            "title": "건물/기단 묶음",
+            "summary": "건물과 원형 기단을 묶은 기관 대상. 주변 명찰과 별도.",
+            "observation_status": "observed_static",
+            "definition_version": "v1"
+          }
+        ],
+        "facets": [
+          {
+            "id": "F1",
+            "unit_id": "RC-LAYOUT-002@v1",
+            "domain": "information",
+            "name": "관계/내용",
+            "description": "성과 수치·관련 회사·센터 지원 범위의 병렬 제시. 회사열을 금액의 분할/합산 증거로 해석하지 않음.",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C1",
+              "C2"
+            ]
+          },
+          {
+            "id": "F2",
+            "unit_id": "RC-LAYOUT-002@v1",
+            "domain": "screen",
+            "name": "전체/하위 격자",
+            "description": "좌 수치/중앙 회사열/우 기관 대상의 비대칭 세 영역. 회사 타일의 기하 배열은 원근 가로열이며 134초 모듈과 다름.",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2",
+              "C5"
+            ]
+          },
+          {
+            "id": "F3",
+            "unit_id": "PROFILE-VC-CREAM-SPACE@v1",
+            "domain": "visual",
+            "name": "타입의 역할",
+            "description": "23.7억원은 주수치+단위, 상부 설명문은 산정 맥락, 명찰은 지원 항목. 숫자 크기가 정량 척도를 뜻하지 않음.",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C1",
+              "C2",
+              "C4"
+            ]
+          },
+          {
+            "id": "F4",
+            "unit_id": "PROFILE-VC-CREAM-SPACE@v1",
+            "domain": "visual",
+            "name": "역할색/형태/재질/층",
+            "description": "금색 입체 수치를 주강조하고 건물 녹색 면/투명 명찰·원형 기단으로 공간을 구성. 실제3D 제작도구/공식CI색은 미상.",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C3"
+            ]
+          },
+          {
+            "id": "F5",
+            "unit_id": "PROFILE-VC-CREAM-SPACE@v1",
+            "domain": "visual",
+            "name": "공통 표현 조합",
+            "description": "크림 배경과 입체 대상·프레임/기단·반사를 공간 기준으로 함께 기록. 고급스럽다는 평가/시청자 효과는 확정하지 않음.",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C3"
+            ]
+          },
+          {
+            "id": "F6",
+            "unit_id": "RC-LAYOUT-002@v1",
+            "domain": "motion",
+            "name": "관측 상태",
+            "description": "이번 근거는 정지 두 점. 등장·이동·정착·퇴장/오디오·이징은 미관측.",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2"
+            ]
+          }
+        ],
+        "knowledge_links": [
+          {
+            "id": "K1",
+            "unit_id": "RC-LAYOUT-002@v1",
+            "concept_id": "LAYOUT-SPLIT",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2"
+            ],
+            "rationale": "좌 수치/중앙 회사열/우 기관 대상의 비대칭 세 영역. 회사 타일의 기하 배열은 원근 가로열이며 134초 모듈과 다름."
+          },
+          {
+            "id": "K2",
+            "unit_id": "RC-COMP-008@v1",
+            "concept_id": "LAYOUT-SPACE-CALLOUT",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C4"
+            ],
+            "rationale": "기관 대상 주변 위치에 라벨을 대응한다. 실제 공간 좌표/등각 도면은 아님."
+          },
+          {
+            "id": "K3",
+            "unit_id": "PROFILE-VC-CREAM-SPACE@v1",
+            "concept_id": "STYLE-3D",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C3"
+            ],
+            "rationale": "입체·공간 표현의 외관 분류. 실제 모델/카메라 도구 증거 아님."
+          },
+          {
+            "id": "K4",
+            "unit_id": "RC-LAYOUT-002@v1",
+            "concept_id": "SCREEN-HIERARCHY",
+            "relation": "review_relevant",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C1",
+              "C2"
+            ],
+            "rationale": "주/보조/맥락 역할 보존을 검토할 지식. 효과 승인 아님."
+          },
+          {
+            "id": "K5",
+            "unit_id": "RC-LAYOUT-002@v1",
+            "concept_id": "Q-INFO-03",
+            "relation": "evaluated_against",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C1",
+              "C2"
+            ],
+            "rationale": "관계/금액을 근거 없는 비교·인과·분할로 확대하지 않고 원래 의미/한계를 기록했다."
+          },
+          {
+            "id": "K6",
+            "unit_id": "PROFILE-VC-CREAM-SPACE@v1",
+            "concept_id": "Q-BRAND-02",
+            "relation": "evaluated_against",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C3"
+            ],
+            "rationale": "관측색/재질과 공식CI 원형/역할 토큰의 연결은 미확인."
+          },
+          {
+            "id": "K7",
+            "unit_id": "RC-LAYOUT-002@v1",
+            "concept_id": "Q-MOTION-01",
+            "relation": "evaluated_against",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2"
+            ],
+            "rationale": "정지 입력만으로 정보 완성/읽기 유지 시간을 검토하지 못함."
+          }
+        ],
+        "uses": [
+          {
+            "id": "U1",
+            "definition_id": "RC-COMP-001@v1",
+            "case_unit_id": "RC-CASE-002",
+            "time": {
+              "start": 172,
+              "end": 172
+            },
+            "evidence_ids": [
+              "E172"
+            ],
+            "claim_ids": [
+              "C6"
+            ],
+            "differences": [],
+            "unverified": [
+              "동일 원본 자산/회사 표준 및 다른 주제·화면비 적용 미검증"
+            ],
+            "conditions": [
+              {
+                "text": "장 구분이 필요한 경우 번호/제목 역할을 보존한다. 표식의 색·장 번호·제목은 가변 후보이며 회사 표준은 미확인.",
+                "validation": "untested"
+              }
+            ]
+          },
+          {
+            "id": "U2",
+            "definition_id": "RC-COMP-002@v1",
+            "case_unit_id": "RC-CASE-002",
+            "time": {
+              "start": 172,
+              "end": 172
+            },
+            "evidence_ids": [
+              "E134",
+              "E172"
+            ],
+            "claim_ids": [
+              "C2",
+              "C5"
+            ],
+            "differences": [
+              "2×4 vs 원근 가로열, HALLA/피티씨 순서 차이"
+            ],
+            "unverified": [
+              "동일 원본 자산/회사 표준 및 다른 주제·화면비 적용 미검증"
+            ],
+            "conditions": [
+              {
+                "text": "같은 소속 목록을 묶어 보여줄 때 회사명/로고 식별·비율을 보호한다. 개수·격자/가로열은 가변 후보이나 순서·읽기와 공식 자산을 다시 검토한다.",
+                "validation": "untested"
+              }
+            ],
+            "evidence_roles": {
+              "E134": "context_variant",
+              "E172": "current"
+            }
+          },
+          {
+            "id": "U5",
+            "definition_id": "RC-COMP-005@v1",
+            "case_unit_id": "RC-CASE-002",
+            "time": {
+              "start": 172,
+              "end": 172
+            },
+            "evidence_ids": [
+              "E172"
+            ],
+            "claim_ids": [
+              "C4"
+            ],
+            "differences": [],
+            "unverified": [
+              "동일 원본 자산/회사 표준 및 다른 주제·화면비 적용 미검증"
+            ],
+            "conditions": [
+              {
+                "text": "주변에 배치할 지원 항목과 중심 대상의 의미 대응을 보호한다. 항목수/문구/위치는 가변 후보이며 건물 일부라는 오해·가림을 검토한다.",
+                "validation": "untested"
+              }
+            ]
+          },
+          {
+            "id": "U6",
+            "definition_id": "RC-COMP-006@v1",
+            "case_unit_id": "RC-CASE-002",
+            "time": {
+              "start": 172,
+              "end": 172
+            },
+            "evidence_ids": [
+              "E172"
+            ],
+            "claim_ids": [
+              "C2"
+            ],
+            "differences": [],
+            "unverified": [
+              "동일 원본 자산/회사 표준 및 다른 주제·화면비 적용 미검증"
+            ],
+            "conditions": [
+              {
+                "text": "같은 집계/단위를 가진 하나의 성과를 크게 강조할 때 후보. 값/단위/산정 맥락은 보호하고 단순 ID/날짜를 값 변화나 성과 척도로 쓰지 않는다.",
+                "validation": "untested"
+              }
+            ]
+          },
+          {
+            "id": "U8",
+            "definition_id": "RC-COMP-008@v1",
+            "case_unit_id": "RC-CASE-002",
+            "time": {
+              "start": 172,
+              "end": 172
+            },
+            "evidence_ids": [
+              "E172"
+            ],
+            "claim_ids": [
+              "C4"
+            ],
+            "differences": [],
+            "unverified": [
+              "동일 원본 자산/회사 표준 및 다른 주제·화면비 적용 미검증"
+            ],
+            "conditions": [
+              {
+                "text": "기관을 대표하는 대상+받침을 함께 쓸 때 후보. 건물과 기단의 지지·공간 관계는 보호하며 명찰은 별도. 실제 사옥/정확 투영·규정은 별도 확인.",
+                "validation": "untested"
+              }
+            ]
+          },
+          {
+            "id": "U-LAYOUT",
+            "definition_id": "RC-LAYOUT-002@v1",
+            "case_unit_id": "RC-CASE-002",
+            "time": {
+              "start": 172,
+              "end": 172
+            },
+            "evidence_ids": [
+              "E172"
+            ],
+            "claim_ids": [
+              "C1",
+              "C2",
+              "C3"
+            ],
+            "differences": [
+              "금색 입체 수치를 주강조하고 건물 녹색 면/투명 명찰·원형 기단으로 공간을 구성. 실제3D 제작도구/공식CI색은 미상."
+            ],
+            "unverified": [
+              "동일 원본 자산/회사 표준 및 다른 주제·화면비 적용 미검증"
+            ],
+            "conditions": [
+              {
+                "text": "주체/방향/내용 관계와 읽는 구역을 보호한다. 판 개수·격자·원근·여백은 내용량/화면비에 맞춘 변형 후보.",
+                "validation": "untested"
+              }
+            ]
+          },
+          {
+            "id": "U-PROFILE",
+            "definition_id": "PROFILE-VC-CREAM-SPACE@v1",
+            "case_unit_id": "RC-CASE-002",
+            "time": {
+              "start": 172,
+              "end": 172
+            },
+            "evidence_ids": [
+              "E172"
+            ],
+            "claim_ids": [
+              "C1",
+              "C2",
+              "C3"
+            ],
+            "differences": [
+              "금색 입체 수치를 주강조하고 건물 녹색 면/투명 명찰·원형 기단으로 공간을 구성. 실제3D 제작도구/공식CI색은 미상."
+            ],
+            "unverified": [
+              "동일 원본 자산/회사 표준 및 다른 주제·화면비 적용 미검증"
+            ],
+            "conditions": [
+              {
+                "text": "크림 공간+입체 정보대상+지지면/반사의 조합을 참고한다. 소재/역할색/대상은 가변 후보이며 정보 관계·필수 문구/회사CI를 훼손하지 않는다.",
+                "validation": "untested"
+              }
+            ]
+          }
+        ],
+        "composition_links": [
+          {
+            "from": "RC-LAYOUT-002@v1",
+            "to": "RC-COMP-001@v1",
+            "relation": "contains",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2",
+              "C4"
+            ]
+          },
+          {
+            "from": "RC-LAYOUT-002@v1",
+            "to": "RC-COMP-002@v1",
+            "relation": "contains",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2",
+              "C4"
+            ]
+          },
+          {
+            "from": "RC-LAYOUT-002@v1",
+            "to": "RC-COMP-005@v1",
+            "relation": "contains",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2",
+              "C4"
+            ]
+          },
+          {
+            "from": "RC-LAYOUT-002@v1",
+            "to": "RC-COMP-006@v1",
+            "relation": "contains",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2",
+              "C4"
+            ]
+          },
+          {
+            "from": "RC-LAYOUT-002@v1",
+            "to": "RC-COMP-008@v1",
+            "relation": "contains",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2",
+              "C4"
+            ]
+          },
+          {
+            "from": "RC-CASE-002",
+            "to": "RC-LAYOUT-002@v1",
+            "relation": "contains",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2"
+            ]
+          },
+          {
+            "from": "RC-LAYOUT-002@v1",
+            "to": "PROFILE-VC-CREAM-SPACE@v1",
+            "relation": "accompanies",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C3"
+            ]
+          },
+          {
+            "from": "RC-COMP-005@v1",
+            "to": "RC-COMP-008@v1",
+            "relation": "anchors_to",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C4"
+            ]
+          }
+        ],
+        "events": [],
+        "event_links": [],
+        "reviews": [
+          {
+            "id": "R1",
+            "unit_id": "RC-LAYOUT-002@v1",
+            "criterion_id": "Q-INFO-03",
+            "status": "pass",
+            "reason": "관계/금액을 근거 없는 비교·인과·분할로 확대하지 않고 원래 의미/한계를 기록했다.",
+            "evidence_ids": [
+              "E172"
+            ],
+            "claim_ids": [
+              "C1",
+              "C2"
+            ],
+            "reviewer": "AI: 기존 기록-새 연결 구조 대조",
+            "scope": "기존 관측 기록의 의미/연결 검토. 새 원본 시각·가독성/효과 검사 아님.",
+            "next_probe": null
+          },
+          {
+            "id": "R2",
+            "unit_id": "PROFILE-VC-CREAM-SPACE@v1",
+            "criterion_id": "Q-BRAND-02",
+            "status": "hold",
+            "reason": "관측색/재질과 공식CI 원형/역할 토큰의 연결은 미확인.",
+            "evidence_ids": [
+              "E172"
+            ],
+            "claim_ids": [
+              "C3"
+            ],
+            "reviewer": "AI: 기존 기록-새 연결 구조 대조",
+            "scope": "기존 관측 기록의 의미/연결 검토. 새 원본 시각·가독성/효과 검사 아님.",
+            "next_probe": "선택할 회사/프로젝트 역할·공식CI 사용 근거를 확인"
+          },
+          {
+            "id": "R3",
+            "unit_id": "RC-LAYOUT-002@v1",
+            "criterion_id": "Q-MOTION-01",
+            "status": "not_reviewed",
+            "reason": "정지 입력만으로 정보 완성/읽기 유지 시간을 검토하지 못함.",
+            "evidence_ids": [],
+            "claim_ids": [
+              "C2"
+            ],
+            "reviewer": "AI: 기존 기록-새 연결 구조 대조",
+            "scope": "기존 관측 기록의 의미/연결 검토. 새 원본 시각·가독성/효과 검사 아님.",
+            "next_probe": "해당 장면의 실제 모션/읽기 유지 구간을 확보"
+          }
+        ],
+        "unknowns": [
+          {
+            "id": "UNKNOWN-MOTION",
+            "unit_id": "RC-LAYOUT-002@v1",
+            "question": "대상별 등장/내부 변화/정착/퇴장은 어떠한가?",
+            "impact": "동작 패턴/읽기 시간 재사용 제한",
+            "next_probe": "해당 구간 연속 근거/경계 표본 확보"
+          }
+        ],
+        "limitations": [
+          "기존 관측 기록과 지식의 연결 작업. 새 원본 연속 재생/재추출·새 픽셀 검수 아님.",
+          "정확 AE 속성·폰트·색 원값/실제 청취/원제작 의도·다른 내용/화면비 적용은 미검증.",
+          "정본 등록/회사 승인 아님. source record와 연결 구조는 별도이며 자동 동기화 없음."
+        ],
+        "company_approved": false,
+        "canonical_registered": false
+      }
+    },
+    {
+      "path": "motion-windows.json",
+      "sha256": "72b5b205df725b7067d5a86e7eb6164772650f4ece2ccff258438bb8bed28709",
+      "record": {
+        "schema_version": "video-knowledge-links-0.1",
+        "record_id": "LINK-VC-MOTION",
+        "version": "r1",
+        "source": {
+          "name": "가치창출성과 영상_260923_v3.mp4",
+          "sha256": "be78fc4f2f94c6b3cbd31339a1a1ccc84b91613d56c0e485d5dd1296839f56fa",
+          "duration_seconds": 434.4
+        },
+        "source_records": [
+          {
+            "id": "S1",
+            "path": "preserved/motion/00_현재상태와_읽는순서.md",
+            "sha256": "6734c93403ee10c2540a1fd07d0e7dce691835d718fe81579b28e27e9033b6da",
+            "role": "preserved_observation"
+          },
+          {
+            "id": "S2",
+            "path": "preserved/motion/01_계약_수집기록.md",
+            "sha256": "08c97ec66a4e4efe3d7e7f0bc5c5195aee1f4a3d753cfc1c8b174c1457950003",
+            "role": "preserved_observation"
+          },
+          {
+            "id": "S3",
+            "path": "preserved/motion/02_프로젝트지원_수집기록.md",
+            "sha256": "ce5da90fd1093198f9905933b2ba00d405b27eeee6c6bb08bf6b947839cee633",
+            "role": "preserved_observation"
+          },
+          {
+            "id": "S4",
+            "path": "preserved/motion/03_재사용단위_색인.md",
+            "sha256": "3c0371b70fd7df7f316e85140dd8aaac973571508fa4d5b104434ffa466f941d",
+            "role": "preserved_observation"
+          },
+          {
+            "id": "S5",
+            "path": "preserved/motion/04_누락과_보강계획.md",
+            "sha256": "622675e9f0a18a8f3513ad2d841b1a5872bfa9e1065fe7db745d1acd596f182d",
+            "role": "preserved_observation"
+          },
+          {
+            "id": "S6",
+            "path": "preserved/motion/05_근거와_실행기록.md",
+            "sha256": "b33895a6772203d8a06f3426b5428e8dbbe82be014776b8e160a98f9201f3e07",
+            "role": "preserved_observation"
+          },
+          {
+            "id": "S7",
+            "path": "preserved/motion/06_대조확인.md",
+            "sha256": "bb87baa170baebe301b12f00d151e39b1a6e9ed2cc8d7ae7e22da6f6e81c53f9",
+            "role": "preserved_observation"
+          }
+        ],
+        "evidence": [
+          {
+            "id": "E1",
+            "path": "preserved/motion/evidence/contract-reflow.jpg",
+            "sha256": "cfa87b47a9f817b497ebb360165c30ec6f777c7acd547daeaf1c418a65609784",
+            "time": {
+              "start": 96,
+              "end": 100
+            },
+            "kind": "contact_sheet"
+          },
+          {
+            "id": "E2",
+            "path": "preserved/motion/evidence/contract-panel.jpg",
+            "sha256": "34f2d6f7fc9c5a0278c9397f19e74de29453ba9a1bcaf36683335ec173acaf5b",
+            "time": {
+              "start": 103,
+              "end": 106
+            },
+            "kind": "contact_sheet"
+          },
+          {
+            "id": "E3",
+            "path": "preserved/motion/evidence/contract-number.jpg",
+            "sha256": "26dd1da7fc06c12f44f5a981799138b6106b40207b068c8d41c1e4e8bdfb37d5",
+            "time": {
+              "start": 108,
+              "end": 112
+            },
+            "kind": "contact_sheet"
+          },
+          {
+            "id": "E4",
+            "path": "preserved/motion/evidence/project-reflow.jpg",
+            "sha256": "2e6f89cfd0c346c2ea2f5da3e018d75839a2622754338871a50080f4cefaabcf",
+            "time": {
+              "start": 136,
+              "end": 140
+            },
+            "kind": "contact_sheet"
+          },
+          {
+            "id": "E5",
+            "path": "preserved/motion/evidence/project-wipe.jpg",
+            "sha256": "b6d7ff1915ca99d11e4b901e230da8b8506ca74503a5cbc9d6c170d9d8057f19",
+            "time": {
+              "start": 143,
+              "end": 146
+            },
+            "kind": "contact_sheet"
+          },
+          {
+            "id": "E6",
+            "path": "preserved/motion/evidence/project-panel.jpg",
+            "sha256": "7c8c4034b590f8f649dd296c60539a97e76d83d0075b7ad9f9369aaec494e66a",
+            "time": {
+              "start": 147,
+              "end": 150
+            },
+            "kind": "contact_sheet"
+          }
+        ],
+        "claims": [
+          {
+            "id": "C1",
+            "text": "수주 판 재배치 뒤 비용 판·제목·동전/문서 도상·설명 캡슐·숫자를 단계적으로 공개. 0.5초 표본의 상태 순서. 정확 시작/정착 프레임·속도 곡선·효과 원값 미확인. 이 항목은 과거 관측 기록을 새 문법 색인에 연결한 것이며 이번 연속 재생 재검수가 아님.",
+            "basis_kind": "observed",
+            "evidence_ids": [
+              "E1"
+            ],
+            "source_record_ids": [
+              "S2",
+              "S6"
+            ]
+          },
+          {
+            "id": "C2",
+            "text": "수주·비용을 남긴 채 오른쪽에 매출 판이 진입하고 제목·중복 제외 설명을 보강. 외형 첫 가시성은 (103.5,104]초. 정확한 이징·원본 AE 속성은 미확인. 이 항목은 과거 관측 기록을 새 문법 색인에 연결한 것이며 이번 연속 재생 재검수가 아님.",
+            "basis_kind": "observed",
+            "evidence_ids": [
+              "E2"
+            ],
+            "source_record_ids": [
+              "S2",
+              "S6"
+            ]
+          },
+          {
+            "id": "C3",
+            "text": "매출 금액이 0.8→10.8→12.9억원으로 변하고 막대·상승 화살표가 조립됨. 숫자 정착과 도상 완료를 분리. 최종값 가시 경계 (110,110.5]초. 도상 후속 상태는 111/112초 대조. 중간값은 실측 데이터가 아니며 동일 시작/종료를 가정하지 않음. 이 항목은 과거 관측 기록을 새 문법 색인에 연결한 것이며 이번 연속 재생 재검수가 아님.",
+            "basis_kind": "observed",
+            "evidence_ids": [
+              "E3"
+            ],
+            "source_record_ids": [
+              "S2",
+              "S6"
+            ]
+          },
+          {
+            "id": "C4",
+            "text": "137.5초 기존 화살표/요소가 옅어지고 138초 옛 판의 바깥 이동 상태와 새 수치가 함께 보임. 0.5초 표본에서 확인한 중첩 후보. 정밀 시작/종료·opacity·이징 원값은 미확인. 이 항목은 과거 관측 기록을 새 문법 색인에 연결한 것이며 이번 연속 재생 재검수가 아님.",
+            "basis_kind": "observed",
+            "evidence_ids": [
+              "E4"
+            ],
+            "source_record_ids": [
+              "S3",
+              "S6"
+            ]
+          },
+          {
+            "id": "C5",
+            "text": "총량 화면에서 지도/도로 영상 경계가 들어오고 여러 업무 영상 구획과 라벨이 보강됨. 첫 영상층 가시 경계 (143.5,144]초. 실제 마스크 기법·내부 영상의 정확 카메라 동작은 미확인. 이 항목은 과거 관측 기록을 새 문법 색인에 연결한 것이며 이번 연속 재생 재검수가 아님.",
+            "basis_kind": "observed",
+            "evidence_ids": [
+              "E5"
+            ],
+            "source_record_ids": [
+              "S3",
+              "S6"
+            ]
+          },
+          {
+            "id": "C6",
+            "text": "영상 3구획 뒤 통계판과 약44→64→82%가 보이고 보조 카드·도넛 색·막대가 후속 보강됨. 비중 끝값 경계 (148.5,149]초. 모든 카드/도넛/막대가 동시 완료한 것은 아님. 카드 겉보기 크기 변화와 AE Scale/기법은 별개. 이 항목은 과거 관측 기록을 새 문법 색인에 연결한 것이며 이번 연속 재생 재검수가 아님.",
+            "basis_kind": "observed",
+            "evidence_ids": [
+              "E6"
+            ],
+            "source_record_ids": [
+              "S3",
+              "S6"
+            ]
+          }
+        ],
+        "units": [
+          {
+            "id": "VC-CASE-A",
+            "kind": "case",
+            "title": "계약 성과 전개",
+            "summary": "기존 계약 수집의 선택 모션 창만 연결",
+            "observation_status": "observed_sampled",
+            "definition_version": "v1"
+          },
+          {
+            "id": "VC-CASE-B",
+            "kind": "case",
+            "title": "지원 성과 전개",
+            "summary": "기존 지원 수집의 선택 모션 창만 연결",
+            "observation_status": "observed_sampled",
+            "definition_version": "v1"
+          },
+          {
+            "id": "VC-CASE-A/A-M1",
+            "kind": "flow",
+            "title": "기존 구역 재배치와 새 비용 정보판의 단계적 누적",
+            "summary": "수주 판 재배치 뒤 비용 판·제목·동전/문서 도상·설명 캡슐·숫자를 단계적으로 공개.",
+            "observation_status": "observed_sampled",
+            "definition_version": "v1"
+          },
+          {
+            "id": "VC-CASE-A/A-M2",
+            "kind": "flow",
+            "title": "기존 비교 맥락을 남기고 매출 판 추가",
+            "summary": "수주·비용을 남긴 채 오른쪽에 매출 판이 진입하고 제목·중복 제외 설명을 보강.",
+            "observation_status": "observed_sampled",
+            "definition_version": "v1"
+          },
+          {
+            "id": "VC-CASE-A/A-M3",
+            "kind": "flow",
+            "title": "금액 변화와 도상 완성의 시차",
+            "summary": "매출 금액이 0.8→10.8→12.9억원으로 변하고 막대·상승 화살표가 조립됨. 숫자 정착과 도상 완료를 분리.",
+            "observation_status": "observed_sampled",
+            "definition_version": "v1"
+          },
+          {
+            "id": "VC-CASE-B/B-M1",
+            "kind": "flow",
+            "title": "관계도 퇴장과 새 총량 장면의 시간 중첩",
+            "summary": "137.5초 기존 화살표/요소가 옅어지고 138초 옛 판의 바깥 이동 상태와 새 수치가 함께 보임.",
+            "observation_status": "observed_sampled",
+            "definition_version": "v1"
+          },
+          {
+            "id": "VC-CASE-B/B-M2",
+            "kind": "flow",
+            "title": "대각 경계로 업무 영상 구획을 구성하는 전환",
+            "summary": "총량 화면에서 지도/도로 영상 경계가 들어오고 여러 업무 영상 구획과 라벨이 보강됨.",
+            "observation_status": "observed_sampled",
+            "definition_version": "v1"
+          },
+          {
+            "id": "VC-CASE-B/B-M3",
+            "kind": "flow",
+            "title": "업무 영상에서 핵심 비중·보조 카드로 전개",
+            "summary": "영상 3구획 뒤 통계판과 약44→64→82%가 보이고 보조 카드·도넛 색·막대가 후속 보강됨.",
+            "observation_status": "observed_sampled",
+            "definition_version": "v1"
+          },
+          {
+            "id": "MOTION-VC-A-NUM@v1",
+            "kind": "detail",
+            "title": "매출 수치 변화",
+            "summary": "0.8→10.8→12.9억원. 끝값 가시 경계(110,110.5]초. 중간값은 실적 시계열 아님.",
+            "observation_status": "observed_sampled",
+            "definition_version": "v1"
+          },
+          {
+            "id": "MOTION-VC-A-ICON@v1",
+            "kind": "detail",
+            "title": "상승 도상 후속 조립",
+            "summary": "수치가 끝값을 보인 뒤에도 111/112초의 상승 도상 상태가 다름. 정확 완료 미상.",
+            "observation_status": "observed_sampled",
+            "definition_version": "v1"
+          },
+          {
+            "id": "MOTION-VC-B-NUM@v1",
+            "kind": "detail",
+            "title": "비중 수치 공개",
+            "summary": "약44→64→82%, 끝값 가시 경계(148.5,149]초.",
+            "observation_status": "observed_sampled",
+            "definition_version": "v1"
+          },
+          {
+            "id": "MOTION-VC-B-CARDS@v1",
+            "kind": "detail",
+            "title": "보조 카드/차트 후속 보강",
+            "summary": "149.5초 세번째 카드·도넛색·막대 후속. 모든 요소 동시 완료 아님.",
+            "observation_status": "observed_sampled",
+            "definition_version": "v1"
+          }
+        ],
+        "facets": [
+          {
+            "id": "F1",
+            "unit_id": "VC-CASE-A/A-M1",
+            "domain": "information",
+            "name": "사용한 내용",
+            "description": "수주 판 재배치 뒤 비용 판·제목·동전/문서 도상·설명 캡슐·숫자를 단계적으로 공개.",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C1"
+            ]
+          },
+          {
+            "id": "F2",
+            "unit_id": "VC-CASE-A/A-M1",
+            "domain": "motion",
+            "name": "전체 흐름/겹침/미상",
+            "description": "0.5초 표본의 상태 순서. 정확 시작/정착 프레임·속도 곡선·효과 원값 미확인. 이 항목은 과거 관측 기록을 새 문법 색인에 연결한 것이며 이번 연속 재생 재검수가 아님.",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C1"
+            ]
+          },
+          {
+            "id": "F3",
+            "unit_id": "VC-CASE-A/A-M2",
+            "domain": "information",
+            "name": "사용한 내용",
+            "description": "수주·비용을 남긴 채 오른쪽에 매출 판이 진입하고 제목·중복 제외 설명을 보강.",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2"
+            ]
+          },
+          {
+            "id": "F4",
+            "unit_id": "VC-CASE-A/A-M2",
+            "domain": "motion",
+            "name": "전체 흐름/겹침/미상",
+            "description": "외형 첫 가시성은 (103.5,104]초. 정확한 이징·원본 AE 속성은 미확인. 이 항목은 과거 관측 기록을 새 문법 색인에 연결한 것이며 이번 연속 재생 재검수가 아님.",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2"
+            ]
+          },
+          {
+            "id": "F5",
+            "unit_id": "VC-CASE-A/A-M3",
+            "domain": "information",
+            "name": "사용한 내용",
+            "description": "매출 금액이 0.8→10.8→12.9억원으로 변하고 막대·상승 화살표가 조립됨. 숫자 정착과 도상 완료를 분리.",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C3"
+            ]
+          },
+          {
+            "id": "F6",
+            "unit_id": "VC-CASE-A/A-M3",
+            "domain": "motion",
+            "name": "전체 흐름/겹침/미상",
+            "description": "최종값 가시 경계 (110,110.5]초. 도상 후속 상태는 111/112초 대조. 중간값은 실측 데이터가 아니며 동일 시작/종료를 가정하지 않음. 이 항목은 과거 관측 기록을 새 문법 색인에 연결한 것이며 이번 연속 재생 재검수가 아님.",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C3"
+            ]
+          },
+          {
+            "id": "F7",
+            "unit_id": "VC-CASE-B/B-M1",
+            "domain": "information",
+            "name": "사용한 내용",
+            "description": "137.5초 기존 화살표/요소가 옅어지고 138초 옛 판의 바깥 이동 상태와 새 수치가 함께 보임.",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C4"
+            ]
+          },
+          {
+            "id": "F8",
+            "unit_id": "VC-CASE-B/B-M1",
+            "domain": "motion",
+            "name": "전체 흐름/겹침/미상",
+            "description": "0.5초 표본에서 확인한 중첩 후보. 정밀 시작/종료·opacity·이징 원값은 미확인. 이 항목은 과거 관측 기록을 새 문법 색인에 연결한 것이며 이번 연속 재생 재검수가 아님.",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C4"
+            ]
+          },
+          {
+            "id": "F9",
+            "unit_id": "VC-CASE-B/B-M2",
+            "domain": "information",
+            "name": "사용한 내용",
+            "description": "총량 화면에서 지도/도로 영상 경계가 들어오고 여러 업무 영상 구획과 라벨이 보강됨.",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C5"
+            ]
+          },
+          {
+            "id": "F10",
+            "unit_id": "VC-CASE-B/B-M2",
+            "domain": "motion",
+            "name": "전체 흐름/겹침/미상",
+            "description": "첫 영상층 가시 경계 (143.5,144]초. 실제 마스크 기법·내부 영상의 정확 카메라 동작은 미확인. 이 항목은 과거 관측 기록을 새 문법 색인에 연결한 것이며 이번 연속 재생 재검수가 아님.",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C5"
+            ]
+          },
+          {
+            "id": "F11",
+            "unit_id": "VC-CASE-B/B-M3",
+            "domain": "information",
+            "name": "사용한 내용",
+            "description": "영상 3구획 뒤 통계판과 약44→64→82%가 보이고 보조 카드·도넛 색·막대가 후속 보강됨.",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C6"
+            ]
+          },
+          {
+            "id": "F12",
+            "unit_id": "VC-CASE-B/B-M3",
+            "domain": "motion",
+            "name": "전체 흐름/겹침/미상",
+            "description": "비중 끝값 경계 (148.5,149]초. 모든 카드/도넛/막대가 동시 완료한 것은 아님. 카드 겉보기 크기 변화와 AE Scale/기법은 별개. 이 항목은 과거 관측 기록을 새 문법 색인에 연결한 것이며 이번 연속 재생 재검수가 아님.",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C6"
+            ]
+          },
+          {
+            "id": "F13",
+            "unit_id": "MOTION-VC-A-NUM@v1",
+            "domain": "motion",
+            "name": "독립 세부 동작",
+            "description": "0.8→10.8→12.9억원. 끝값 가시 경계(110,110.5]초. 중간값은 실적 시계열 아님.",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C3"
+            ]
+          },
+          {
+            "id": "F14",
+            "unit_id": "MOTION-VC-A-ICON@v1",
+            "domain": "motion",
+            "name": "독립 세부 동작",
+            "description": "수치가 끝값을 보인 뒤에도 111/112초의 상승 도상 상태가 다름. 정확 완료 미상.",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C3"
+            ]
+          },
+          {
+            "id": "F15",
+            "unit_id": "MOTION-VC-B-NUM@v1",
+            "domain": "motion",
+            "name": "독립 세부 동작",
+            "description": "약44→64→82%, 끝값 가시 경계(148.5,149]초.",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C6"
+            ]
+          },
+          {
+            "id": "F16",
+            "unit_id": "MOTION-VC-B-CARDS@v1",
+            "domain": "motion",
+            "name": "독립 세부 동작",
+            "description": "149.5초 세번째 카드·도넛색·막대 후속. 모든 요소 동시 완료 아님.",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C6"
+            ]
+          }
+        ],
+        "knowledge_links": [
+          {
+            "id": "K1",
+            "unit_id": "VC-CASE-A/A-M1",
+            "concept_id": "FUNCTION-REVEAL",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C1"
+            ],
+            "rationale": "기존 표본 기록의 해당 역할/속성/관계 해석. 정확 구현/정보 효과 검증 아님."
+          },
+          {
+            "id": "K2",
+            "unit_id": "VC-CASE-A/A-M1",
+            "concept_id": "PROPERTY-POSITION",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C1"
+            ],
+            "rationale": "기존 표본 기록의 해당 역할/속성/관계 해석. 정확 구현/정보 효과 검증 아님."
+          },
+          {
+            "id": "K3",
+            "unit_id": "VC-CASE-A/A-M1",
+            "concept_id": "PROPERTY-VISIBILITY",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C1"
+            ],
+            "rationale": "기존 표본 기록의 해당 역할/속성/관계 해석. 정확 구현/정보 효과 검증 아님."
+          },
+          {
+            "id": "K4",
+            "unit_id": "VC-CASE-A/A-M1",
+            "concept_id": "TIME-SEQUENCE",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C1"
+            ],
+            "rationale": "기존 표본 기록의 해당 역할/속성/관계 해석. 정확 구현/정보 효과 검증 아님."
+          },
+          {
+            "id": "K5",
+            "unit_id": "VC-CASE-A/A-M1",
+            "concept_id": "AP-09",
+            "relation": "review_relevant",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C1"
+            ],
+            "rationale": "이 기록에서 검토할 관련 지식. 원제작자의 원칙 사용/효과를 입증하지 않음."
+          },
+          {
+            "id": "K6",
+            "unit_id": "VC-CASE-A/A-M1",
+            "concept_id": "MP-01",
+            "relation": "review_relevant",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C1"
+            ],
+            "rationale": "이 기록에서 검토할 관련 지식. 원제작자의 원칙 사용/효과를 입증하지 않음."
+          },
+          {
+            "id": "K7",
+            "unit_id": "VC-CASE-A/A-M1",
+            "concept_id": "MR-04",
+            "relation": "review_relevant",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C1"
+            ],
+            "rationale": "이 기록에서 검토할 관련 지식. 원제작자의 원칙 사용/효과를 입증하지 않음."
+          },
+          {
+            "id": "K8",
+            "unit_id": "VC-CASE-A/A-M1",
+            "concept_id": "SCREEN-TIME-READ",
+            "relation": "review_relevant",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C1"
+            ],
+            "rationale": "이 기록에서 검토할 관련 지식. 원제작자의 원칙 사용/효과를 입증하지 않음."
+          },
+          {
+            "id": "K9",
+            "unit_id": "VC-CASE-A/A-M1",
+            "concept_id": "Q-MOTION-02",
+            "relation": "evaluated_against",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C1"
+            ],
+            "rationale": "기존 기록의 대상·변화·유지/중첩과 확인 범위를 연결했다. 가시성 변화를 원본 속성/AE 구현으로 확정하지 않았다."
+          },
+          {
+            "id": "K10",
+            "unit_id": "VC-CASE-A/A-M1",
+            "concept_id": "Q-CAP-02",
+            "relation": "evaluated_against",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C1"
+            ],
+            "rationale": "실제 음성/자막 싱크를 청취하지 않았다."
+          },
+          {
+            "id": "K11",
+            "unit_id": "VC-CASE-A/A-M2",
+            "concept_id": "FUNCTION-REVEAL",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2"
+            ],
+            "rationale": "기존 표본 기록의 해당 역할/속성/관계 해석. 정확 구현/정보 효과 검증 아님."
+          },
+          {
+            "id": "K12",
+            "unit_id": "VC-CASE-A/A-M2",
+            "concept_id": "FUNCTION-CONTEXT",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2"
+            ],
+            "rationale": "기존 표본 기록의 해당 역할/속성/관계 해석. 정확 구현/정보 효과 검증 아님."
+          },
+          {
+            "id": "K13",
+            "unit_id": "VC-CASE-A/A-M2",
+            "concept_id": "PROPERTY-POSITION",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2"
+            ],
+            "rationale": "기존 표본 기록의 해당 역할/속성/관계 해석. 정확 구현/정보 효과 검증 아님."
+          },
+          {
+            "id": "K14",
+            "unit_id": "VC-CASE-A/A-M2",
+            "concept_id": "PROPERTY-VISIBILITY",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2"
+            ],
+            "rationale": "기존 표본 기록의 해당 역할/속성/관계 해석. 정확 구현/정보 효과 검증 아님."
+          },
+          {
+            "id": "K15",
+            "unit_id": "VC-CASE-A/A-M2",
+            "concept_id": "TIME-SEQUENCE",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2"
+            ],
+            "rationale": "기존 표본 기록의 해당 역할/속성/관계 해석. 정확 구현/정보 효과 검증 아님."
+          },
+          {
+            "id": "K16",
+            "unit_id": "VC-CASE-A/A-M2",
+            "concept_id": "IP-09",
+            "relation": "review_relevant",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2"
+            ],
+            "rationale": "이 기록에서 검토할 관련 지식. 원제작자의 원칙 사용/효과를 입증하지 않음."
+          },
+          {
+            "id": "K17",
+            "unit_id": "VC-CASE-A/A-M2",
+            "concept_id": "MR-03",
+            "relation": "review_relevant",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2"
+            ],
+            "rationale": "이 기록에서 검토할 관련 지식. 원제작자의 원칙 사용/효과를 입증하지 않음."
+          },
+          {
+            "id": "K18",
+            "unit_id": "VC-CASE-A/A-M2",
+            "concept_id": "MR-04",
+            "relation": "review_relevant",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2"
+            ],
+            "rationale": "이 기록에서 검토할 관련 지식. 원제작자의 원칙 사용/효과를 입증하지 않음."
+          },
+          {
+            "id": "K19",
+            "unit_id": "VC-CASE-A/A-M2",
+            "concept_id": "Q-MOTION-02",
+            "relation": "evaluated_against",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2"
+            ],
+            "rationale": "기존 기록의 대상·변화·유지/중첩과 확인 범위를 연결했다. 가시성 변화를 원본 속성/AE 구현으로 확정하지 않았다."
+          },
+          {
+            "id": "K20",
+            "unit_id": "VC-CASE-A/A-M2",
+            "concept_id": "Q-CAP-02",
+            "relation": "evaluated_against",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2"
+            ],
+            "rationale": "실제 음성/자막 싱크를 청취하지 않았다."
+          },
+          {
+            "id": "K21",
+            "unit_id": "VC-CASE-A/A-M3",
+            "concept_id": "FUNCTION-REVEAL",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C3"
+            ],
+            "rationale": "기존 표본 기록의 해당 역할/속성/관계 해석. 정확 구현/정보 효과 검증 아님."
+          },
+          {
+            "id": "K22",
+            "unit_id": "VC-CASE-A/A-M3",
+            "concept_id": "PROPERTY-VALUE",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C3"
+            ],
+            "rationale": "기존 표본 기록의 해당 역할/속성/관계 해석. 정확 구현/정보 효과 검증 아님."
+          },
+          {
+            "id": "K23",
+            "unit_id": "VC-CASE-A/A-M3",
+            "concept_id": "TIME-SEQUENCE",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C3"
+            ],
+            "rationale": "기존 표본 기록의 해당 역할/속성/관계 해석. 정확 구현/정보 효과 검증 아님."
+          },
+          {
+            "id": "K24",
+            "unit_id": "VC-CASE-A/A-M3",
+            "concept_id": "MR-08",
+            "relation": "review_relevant",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C3"
+            ],
+            "rationale": "이 기록에서 검토할 관련 지식. 원제작자의 원칙 사용/효과를 입증하지 않음."
+          },
+          {
+            "id": "K25",
+            "unit_id": "VC-CASE-A/A-M3",
+            "concept_id": "AP-09",
+            "relation": "review_relevant",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C3"
+            ],
+            "rationale": "이 기록에서 검토할 관련 지식. 원제작자의 원칙 사용/효과를 입증하지 않음."
+          },
+          {
+            "id": "K26",
+            "unit_id": "VC-CASE-A/A-M3",
+            "concept_id": "MP-01",
+            "relation": "review_relevant",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C3"
+            ],
+            "rationale": "이 기록에서 검토할 관련 지식. 원제작자의 원칙 사용/효과를 입증하지 않음."
+          },
+          {
+            "id": "K27",
+            "unit_id": "VC-CASE-A/A-M3",
+            "concept_id": "SCREEN-DATA",
+            "relation": "review_relevant",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C3"
+            ],
+            "rationale": "이 기록에서 검토할 관련 지식. 원제작자의 원칙 사용/효과를 입증하지 않음."
+          },
+          {
+            "id": "K28",
+            "unit_id": "VC-CASE-A/A-M3",
+            "concept_id": "Q-MOTION-02",
+            "relation": "evaluated_against",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C3"
+            ],
+            "rationale": "기존 기록의 대상·변화·유지/중첩과 확인 범위를 연결했다. 가시성 변화를 원본 속성/AE 구현으로 확정하지 않았다."
+          },
+          {
+            "id": "K29",
+            "unit_id": "VC-CASE-A/A-M3",
+            "concept_id": "Q-CAP-02",
+            "relation": "evaluated_against",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C3"
+            ],
+            "rationale": "실제 음성/자막 싱크를 청취하지 않았다."
+          },
+          {
+            "id": "K30",
+            "unit_id": "VC-CASE-B/B-M1",
+            "concept_id": "FUNCTION-CHANGE",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C4"
+            ],
+            "rationale": "기존 표본 기록의 해당 역할/속성/관계 해석. 정확 구현/정보 효과 검증 아님."
+          },
+          {
+            "id": "K31",
+            "unit_id": "VC-CASE-B/B-M1",
+            "concept_id": "PROPERTY-POSITION",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C4"
+            ],
+            "rationale": "기존 표본 기록의 해당 역할/속성/관계 해석. 정확 구현/정보 효과 검증 아님."
+          },
+          {
+            "id": "K32",
+            "unit_id": "VC-CASE-B/B-M1",
+            "concept_id": "PROPERTY-VISIBILITY",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C4"
+            ],
+            "rationale": "기존 표본 기록의 해당 역할/속성/관계 해석. 정확 구현/정보 효과 검증 아님."
+          },
+          {
+            "id": "K33",
+            "unit_id": "VC-CASE-B/B-M1",
+            "concept_id": "TIME-OVERLAP",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C4"
+            ],
+            "rationale": "기존 표본 기록의 해당 역할/속성/관계 해석. 정확 구현/정보 효과 검증 아님."
+          },
+          {
+            "id": "K34",
+            "unit_id": "VC-CASE-B/B-M1",
+            "concept_id": "MR-04",
+            "relation": "review_relevant",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C4"
+            ],
+            "rationale": "이 기록에서 검토할 관련 지식. 원제작자의 원칙 사용/효과를 입증하지 않음."
+          },
+          {
+            "id": "K35",
+            "unit_id": "VC-CASE-B/B-M1",
+            "concept_id": "MP-07",
+            "relation": "review_relevant",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C4"
+            ],
+            "rationale": "이 기록에서 검토할 관련 지식. 원제작자의 원칙 사용/효과를 입증하지 않음."
+          },
+          {
+            "id": "K36",
+            "unit_id": "VC-CASE-B/B-M1",
+            "concept_id": "AP-05",
+            "relation": "review_relevant",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C4"
+            ],
+            "rationale": "이 기록에서 검토할 관련 지식. 원제작자의 원칙 사용/효과를 입증하지 않음."
+          },
+          {
+            "id": "K37",
+            "unit_id": "VC-CASE-B/B-M1",
+            "concept_id": "Q-MOTION-02",
+            "relation": "evaluated_against",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C4"
+            ],
+            "rationale": "기존 기록의 대상·변화·유지/중첩과 확인 범위를 연결했다. 가시성 변화를 원본 속성/AE 구현으로 확정하지 않았다."
+          },
+          {
+            "id": "K38",
+            "unit_id": "VC-CASE-B/B-M1",
+            "concept_id": "Q-CAP-02",
+            "relation": "evaluated_against",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C4"
+            ],
+            "rationale": "실제 음성/자막 싱크를 청취하지 않았다."
+          },
+          {
+            "id": "K39",
+            "unit_id": "VC-CASE-B/B-M2",
+            "concept_id": "FUNCTION-CHANGE",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C5"
+            ],
+            "rationale": "기존 표본 기록의 해당 역할/속성/관계 해석. 정확 구현/정보 효과 검증 아님."
+          },
+          {
+            "id": "K40",
+            "unit_id": "VC-CASE-B/B-M2",
+            "concept_id": "FUNCTION-REVEAL",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C5"
+            ],
+            "rationale": "기존 표본 기록의 해당 역할/속성/관계 해석. 정확 구현/정보 효과 검증 아님."
+          },
+          {
+            "id": "K41",
+            "unit_id": "VC-CASE-B/B-M2",
+            "concept_id": "PROPERTY-POSITION",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C5"
+            ],
+            "rationale": "기존 표본 기록의 해당 역할/속성/관계 해석. 정확 구현/정보 효과 검증 아님."
+          },
+          {
+            "id": "K42",
+            "unit_id": "VC-CASE-B/B-M2",
+            "concept_id": "PROPERTY-VISIBILITY",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C5"
+            ],
+            "rationale": "기존 표본 기록의 해당 역할/속성/관계 해석. 정확 구현/정보 효과 검증 아님."
+          },
+          {
+            "id": "K43",
+            "unit_id": "VC-CASE-B/B-M2",
+            "concept_id": "TIME-SEQUENCE",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C5"
+            ],
+            "rationale": "기존 표본 기록의 해당 역할/속성/관계 해석. 정확 구현/정보 효과 검증 아님."
+          },
+          {
+            "id": "K44",
+            "unit_id": "VC-CASE-B/B-M2",
+            "concept_id": "LAYOUT-SPLIT",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C5"
+            ],
+            "rationale": "기존 표본 기록의 해당 역할/속성/관계 해석. 정확 구현/정보 효과 검증 아님."
+          },
+          {
+            "id": "K45",
+            "unit_id": "VC-CASE-B/B-M2",
+            "concept_id": "MR-04",
+            "relation": "review_relevant",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C5"
+            ],
+            "rationale": "이 기록에서 검토할 관련 지식. 원제작자의 원칙 사용/효과를 입증하지 않음."
+          },
+          {
+            "id": "K46",
+            "unit_id": "VC-CASE-B/B-M2",
+            "concept_id": "MP-01",
+            "relation": "review_relevant",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C5"
+            ],
+            "rationale": "이 기록에서 검토할 관련 지식. 원제작자의 원칙 사용/효과를 입증하지 않음."
+          },
+          {
+            "id": "K47",
+            "unit_id": "VC-CASE-B/B-M2",
+            "concept_id": "Q-MOTION-02",
+            "relation": "evaluated_against",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C5"
+            ],
+            "rationale": "기존 기록의 대상·변화·유지/중첩과 확인 범위를 연결했다. 가시성 변화를 원본 속성/AE 구현으로 확정하지 않았다."
+          },
+          {
+            "id": "K48",
+            "unit_id": "VC-CASE-B/B-M2",
+            "concept_id": "Q-CAP-02",
+            "relation": "evaluated_against",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C5"
+            ],
+            "rationale": "실제 음성/자막 싱크를 청취하지 않았다."
+          },
+          {
+            "id": "K49",
+            "unit_id": "VC-CASE-B/B-M3",
+            "concept_id": "FUNCTION-REVEAL",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C6"
+            ],
+            "rationale": "기존 표본 기록의 해당 역할/속성/관계 해석. 정확 구현/정보 효과 검증 아님."
+          },
+          {
+            "id": "K50",
+            "unit_id": "VC-CASE-B/B-M3",
+            "concept_id": "FUNCTION-CHANGE",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C6"
+            ],
+            "rationale": "기존 표본 기록의 해당 역할/속성/관계 해석. 정확 구현/정보 효과 검증 아님."
+          },
+          {
+            "id": "K51",
+            "unit_id": "VC-CASE-B/B-M3",
+            "concept_id": "PROPERTY-VALUE",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C6"
+            ],
+            "rationale": "기존 표본 기록의 해당 역할/속성/관계 해석. 정확 구현/정보 효과 검증 아님."
+          },
+          {
+            "id": "K52",
+            "unit_id": "VC-CASE-B/B-M3",
+            "concept_id": "PROPERTY-SIZE",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C6"
+            ],
+            "rationale": "기존 표본 기록의 해당 역할/속성/관계 해석. 정확 구현/정보 효과 검증 아님."
+          },
+          {
+            "id": "K53",
+            "unit_id": "VC-CASE-B/B-M3",
+            "concept_id": "TIME-SEQUENCE",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C6"
+            ],
+            "rationale": "기존 표본 기록의 해당 역할/속성/관계 해석. 정확 구현/정보 효과 검증 아님."
+          },
+          {
+            "id": "K54",
+            "unit_id": "VC-CASE-B/B-M3",
+            "concept_id": "TIME-OVERLAP",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C6"
+            ],
+            "rationale": "기존 표본 기록의 해당 역할/속성/관계 해석. 정확 구현/정보 효과 검증 아님."
+          },
+          {
+            "id": "K55",
+            "unit_id": "VC-CASE-B/B-M3",
+            "concept_id": "LAYOUT-DATA-CHART",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C6"
+            ],
+            "rationale": "기존 표본 기록의 해당 역할/속성/관계 해석. 정확 구현/정보 효과 검증 아님."
+          },
+          {
+            "id": "K56",
+            "unit_id": "VC-CASE-B/B-M3",
+            "concept_id": "REL-PART",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C6"
+            ],
+            "rationale": "기존 표본 기록의 해당 역할/속성/관계 해석. 정확 구현/정보 효과 검증 아님."
+          },
+          {
+            "id": "K57",
+            "unit_id": "VC-CASE-B/B-M3",
+            "concept_id": "MR-08",
+            "relation": "review_relevant",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C6"
+            ],
+            "rationale": "이 기록에서 검토할 관련 지식. 원제작자의 원칙 사용/효과를 입증하지 않음."
+          },
+          {
+            "id": "K58",
+            "unit_id": "VC-CASE-B/B-M3",
+            "concept_id": "MR-04",
+            "relation": "review_relevant",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C6"
+            ],
+            "rationale": "이 기록에서 검토할 관련 지식. 원제작자의 원칙 사용/효과를 입증하지 않음."
+          },
+          {
+            "id": "K59",
+            "unit_id": "VC-CASE-B/B-M3",
+            "concept_id": "SCREEN-DATA",
+            "relation": "review_relevant",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C6"
+            ],
+            "rationale": "이 기록에서 검토할 관련 지식. 원제작자의 원칙 사용/효과를 입증하지 않음."
+          },
+          {
+            "id": "K60",
+            "unit_id": "VC-CASE-B/B-M3",
+            "concept_id": "MP-01",
+            "relation": "review_relevant",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C6"
+            ],
+            "rationale": "이 기록에서 검토할 관련 지식. 원제작자의 원칙 사용/효과를 입증하지 않음."
+          },
+          {
+            "id": "K61",
+            "unit_id": "VC-CASE-B/B-M3",
+            "concept_id": "Q-MOTION-02",
+            "relation": "evaluated_against",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C6"
+            ],
+            "rationale": "기존 기록의 대상·변화·유지/중첩과 확인 범위를 연결했다. 가시성 변화를 원본 속성/AE 구현으로 확정하지 않았다."
+          },
+          {
+            "id": "K62",
+            "unit_id": "VC-CASE-B/B-M3",
+            "concept_id": "Q-CAP-02",
+            "relation": "evaluated_against",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C6"
+            ],
+            "rationale": "실제 음성/자막 싱크를 청취하지 않았다."
+          },
+          {
+            "id": "K63",
+            "unit_id": "MOTION-VC-A-NUM@v1",
+            "concept_id": "FUNCTION-REVEAL",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C3"
+            ],
+            "rationale": "관측 단계의 공개 역할을 분류한 해석."
+          },
+          {
+            "id": "K64",
+            "unit_id": "MOTION-VC-A-ICON@v1",
+            "concept_id": "FUNCTION-REVEAL",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C3"
+            ],
+            "rationale": "관측 단계의 공개 역할을 분류한 해석."
+          },
+          {
+            "id": "K65",
+            "unit_id": "MOTION-VC-B-NUM@v1",
+            "concept_id": "FUNCTION-REVEAL",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C6"
+            ],
+            "rationale": "관측 단계의 공개 역할을 분류한 해석."
+          },
+          {
+            "id": "K66",
+            "unit_id": "MOTION-VC-B-CARDS@v1",
+            "concept_id": "FUNCTION-REVEAL",
+            "relation": "classified_as",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C6"
+            ],
+            "rationale": "관측 단계의 공개 역할을 분류한 해석."
+          },
+          {
+            "id": "K67",
+            "unit_id": "VC-CASE-A/A-M3",
+            "concept_id": "Q-MOTION-01",
+            "relation": "evaluated_against",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C3"
+            ],
+            "rationale": "수치 끝값과 보조 도상/카드의 후속 상태는 구분했지만 정보 전체 완성/읽기 유지 시간은 미확인."
+          },
+          {
+            "id": "K68",
+            "unit_id": "VC-CASE-B/B-M3",
+            "concept_id": "Q-MOTION-01",
+            "relation": "evaluated_against",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C6"
+            ],
+            "rationale": "수치 끝값과 보조 도상/카드의 후속 상태는 구분했지만 정보 전체 완성/읽기 유지 시간은 미확인."
+          }
+        ],
+        "uses": [
+          {
+            "id": "U1",
+            "definition_id": "VC-CASE-A/A-M1",
+            "case_unit_id": "VC-CASE-A",
+            "time": {
+              "start": 96,
+              "end": 100
+            },
+            "evidence_ids": [
+              "E1"
+            ],
+            "claim_ids": [
+              "C1"
+            ],
+            "differences": [],
+            "unverified": [
+              "동일 원본 자산/회사 표준 및 다른 주제·화면비 적용 미검증"
+            ],
+            "conditions": [
+              {
+                "text": "설명을 누적하면서 이전 구역을 보존할 때 후보. 공간이 이미 찼다면 같은 판 추가를 강제하지 않는다.",
+                "validation": "untested"
+              }
+            ]
+          },
+          {
+            "id": "U2",
+            "definition_id": "VC-CASE-A/A-M2",
+            "case_unit_id": "VC-CASE-A",
+            "time": {
+              "start": 103,
+              "end": 106
+            },
+            "evidence_ids": [
+              "E2"
+            ],
+            "claim_ids": [
+              "C2"
+            ],
+            "differences": [],
+            "unverified": [
+              "동일 원본 자산/회사 표준 및 다른 주제·화면비 적용 미검증"
+            ],
+            "conditions": [
+              {
+                "text": "기존 두 지표와 새 지표의 비교 맥락을 유지할 때 후보. 기간/집계가 바뀌면 이전 수치를 그대로 남기지 않는다.",
+                "validation": "untested"
+              }
+            ]
+          },
+          {
+            "id": "U3",
+            "definition_id": "VC-CASE-A/A-M3",
+            "case_unit_id": "VC-CASE-A",
+            "time": {
+              "start": 108,
+              "end": 112
+            },
+            "evidence_ids": [
+              "E3"
+            ],
+            "claim_ids": [
+              "C3"
+            ],
+            "differences": [],
+            "unverified": [
+              "동일 원본 자산/회사 표준 및 다른 주제·화면비 적용 미검증"
+            ],
+            "conditions": [
+              {
+                "text": "연속 양을 나타내는 성과 강조에 후보. 날짜/식별번호는 카운트업 제외, 변화 중 보간값은 실측 데이터가 아니다.",
+                "validation": "untested"
+              }
+            ]
+          },
+          {
+            "id": "U4",
+            "definition_id": "VC-CASE-B/B-M1",
+            "case_unit_id": "VC-CASE-B",
+            "time": {
+              "start": 136,
+              "end": 140
+            },
+            "evidence_ids": [
+              "E4"
+            ],
+            "claim_ids": [
+              "C4"
+            ],
+            "differences": [],
+            "unverified": [
+              "동일 원본 자산/회사 표준 및 다른 주제·화면비 적용 미검증"
+            ],
+            "conditions": [
+              {
+                "text": "관계 맥락에서 총량 요약으로 넘길 때 후보. 기존 방향 문구를 읽어야 한다면 퇴장 시점을 다시 검토한다.",
+                "validation": "untested"
+              }
+            ]
+          },
+          {
+            "id": "U5",
+            "definition_id": "VC-CASE-B/B-M2",
+            "case_unit_id": "VC-CASE-B",
+            "time": {
+              "start": 143,
+              "end": 146
+            },
+            "evidence_ids": [
+              "E5"
+            ],
+            "claim_ids": [
+              "C5"
+            ],
+            "differences": [],
+            "unverified": [
+              "동일 원본 자산/회사 표준 및 다른 주제·화면비 적용 미검증"
+            ],
+            "conditions": [
+              {
+                "text": "여러 업무의 실제 사례 영상을 함께 소개할 때 후보. 기간/범위가 다른 자료를 동등 비교로 오해시키지 않도록 라벨을 검토한다.",
+                "validation": "untested"
+              }
+            ]
+          },
+          {
+            "id": "U6",
+            "definition_id": "VC-CASE-B/B-M3",
+            "case_unit_id": "VC-CASE-B",
+            "time": {
+              "start": 147,
+              "end": 150
+            },
+            "evidence_ids": [
+              "E6"
+            ],
+            "claim_ids": [
+              "C6"
+            ],
+            "differences": [],
+            "unverified": [
+              "동일 원본 자산/회사 표준 및 다른 주제·화면비 적용 미검증"
+            ],
+            "conditions": [
+              {
+                "text": "실제로 우세한 구성비와 나머지 항목을 설명할 때 후보. 분모/단위를 보호하며 네 항목이라는 이유만으로 주1+보조3을 강제하지 않는다.",
+                "validation": "untested"
+              }
+            ]
+          },
+          {
+            "id": "U-A-NUM",
+            "definition_id": "MOTION-VC-A-NUM@v1",
+            "case_unit_id": "VC-CASE-A",
+            "time": {
+              "start": 108,
+              "end": 112
+            },
+            "evidence_ids": [
+              "E3"
+            ],
+            "claim_ids": [
+              "C3"
+            ],
+            "differences": [],
+            "unverified": [
+              "동일 원본 자산/회사 표준 및 다른 주제·화면비 적용 미검증"
+            ],
+            "conditions": [
+              {
+                "text": "수치/단위/끝값의 의미를 보호하고 보간값을 실측으로 쓰지 않는다. 속도/유지는 새 문구와 시청 조건에서 검토한다.",
+                "validation": "untested"
+              }
+            ]
+          },
+          {
+            "id": "U-A-ICON",
+            "definition_id": "MOTION-VC-A-ICON@v1",
+            "case_unit_id": "VC-CASE-A",
+            "time": {
+              "start": 108,
+              "end": 112
+            },
+            "evidence_ids": [
+              "E3"
+            ],
+            "claim_ids": [
+              "C3"
+            ],
+            "differences": [],
+            "unverified": [
+              "동일 원본 자산/회사 표준 및 다른 주제·화면비 적용 미검증"
+            ],
+            "conditions": [
+              {
+                "text": "주수치와 관련된 보조 동작이지만 동시 완료를 전제하지 않는다. 장식의 후속 때문에 실제 정보가 언제 완성되는지 가려지지 않는지 검토한다.",
+                "validation": "untested"
+              }
+            ]
+          },
+          {
+            "id": "U-B-NUM",
+            "definition_id": "MOTION-VC-B-NUM@v1",
+            "case_unit_id": "VC-CASE-B",
+            "time": {
+              "start": 147,
+              "end": 150
+            },
+            "evidence_ids": [
+              "E6"
+            ],
+            "claim_ids": [
+              "C6"
+            ],
+            "differences": [],
+            "unverified": [
+              "동일 원본 자산/회사 표준 및 다른 주제·화면비 적용 미검증"
+            ],
+            "conditions": [
+              {
+                "text": "수치/단위/끝값의 의미를 보호하고 보간값을 실측으로 쓰지 않는다. 속도/유지는 새 문구와 시청 조건에서 검토한다.",
+                "validation": "untested"
+              }
+            ]
+          },
+          {
+            "id": "U-B-CARDS",
+            "definition_id": "MOTION-VC-B-CARDS@v1",
+            "case_unit_id": "VC-CASE-B",
+            "time": {
+              "start": 147,
+              "end": 150
+            },
+            "evidence_ids": [
+              "E6"
+            ],
+            "claim_ids": [
+              "C6"
+            ],
+            "differences": [],
+            "unverified": [
+              "동일 원본 자산/회사 표준 및 다른 주제·화면비 적용 미검증"
+            ],
+            "conditions": [
+              {
+                "text": "주수치와 관련된 보조 동작이지만 동시 완료를 전제하지 않는다. 장식의 후속 때문에 실제 정보가 언제 완성되는지 가려지지 않는지 검토한다.",
+                "validation": "untested"
+              }
+            ]
+          }
+        ],
+        "composition_links": [
+          {
+            "from": "VC-CASE-A",
+            "to": "VC-CASE-A/A-M1",
+            "relation": "contains",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C1"
+            ]
+          },
+          {
+            "from": "VC-CASE-A",
+            "to": "VC-CASE-A/A-M2",
+            "relation": "contains",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C2"
+            ]
+          },
+          {
+            "from": "VC-CASE-A",
+            "to": "VC-CASE-A/A-M3",
+            "relation": "contains",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C3"
+            ]
+          },
+          {
+            "from": "VC-CASE-B",
+            "to": "VC-CASE-B/B-M1",
+            "relation": "contains",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C4"
+            ]
+          },
+          {
+            "from": "VC-CASE-B",
+            "to": "VC-CASE-B/B-M2",
+            "relation": "contains",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C5"
+            ]
+          },
+          {
+            "from": "VC-CASE-B",
+            "to": "VC-CASE-B/B-M3",
+            "relation": "contains",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C6"
+            ]
+          },
+          {
+            "from": "VC-CASE-A/A-M3",
+            "to": "MOTION-VC-A-NUM@v1",
+            "relation": "contains",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C3"
+            ]
+          },
+          {
+            "from": "VC-CASE-A/A-M3",
+            "to": "MOTION-VC-A-ICON@v1",
+            "relation": "contains",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C3"
+            ]
+          },
+          {
+            "from": "VC-CASE-B/B-M3",
+            "to": "MOTION-VC-B-NUM@v1",
+            "relation": "contains",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C6"
+            ]
+          },
+          {
+            "from": "VC-CASE-B/B-M3",
+            "to": "MOTION-VC-B-CARDS@v1",
+            "relation": "contains",
+            "basis_kind": "inferred",
+            "claim_ids": [
+              "C6"
+            ]
+          }
+        ],
+        "events": [
+          {
+            "id": "EVENT1",
+            "unit_id": "VC-CASE-A/A-M1",
+            "title": "기존 구역 재배치와 새 비용 정보판의 단계적 누적",
+            "status": "observed_sampled",
+            "time": {
+              "start": 96,
+              "end": 100
+            },
+            "claim_ids": [
+              "C1"
+            ]
+          },
+          {
+            "id": "EVENT2",
+            "unit_id": "VC-CASE-A/A-M2",
+            "title": "기존 비교 맥락을 남기고 매출 판 추가",
+            "status": "observed_sampled",
+            "time": {
+              "start": 103,
+              "end": 106
+            },
+            "claim_ids": [
+              "C2"
+            ]
+          },
+          {
+            "id": "EVENT3",
+            "unit_id": "VC-CASE-A/A-M3",
+            "title": "금액 변화와 도상 완성의 시차",
+            "status": "observed_sampled",
+            "time": {
+              "start": 108,
+              "end": 112
+            },
+            "claim_ids": [
+              "C3"
+            ]
+          },
+          {
+            "id": "EVENT4",
+            "unit_id": "VC-CASE-B/B-M1",
+            "title": "관계도 퇴장과 새 총량 장면의 시간 중첩",
+            "status": "observed_sampled",
+            "time": {
+              "start": 136,
+              "end": 140
+            },
+            "claim_ids": [
+              "C4"
+            ]
+          },
+          {
+            "id": "EVENT5",
+            "unit_id": "VC-CASE-B/B-M2",
+            "title": "대각 경계로 업무 영상 구획을 구성하는 전환",
+            "status": "observed_sampled",
+            "time": {
+              "start": 143,
+              "end": 146
+            },
+            "claim_ids": [
+              "C5"
+            ]
+          },
+          {
+            "id": "EVENT6",
+            "unit_id": "VC-CASE-B/B-M3",
+            "title": "업무 영상에서 핵심 비중·보조 카드로 전개",
+            "status": "observed_sampled",
+            "time": {
+              "start": 147,
+              "end": 150
+            },
+            "claim_ids": [
+              "C6"
+            ]
+          },
+          {
+            "id": "EVENT-A-NUM",
+            "unit_id": "MOTION-VC-A-NUM@v1",
+            "title": "매출 수치 변화의 끝값이 보이는 첫 표본",
+            "status": "observed_sampled",
+            "time": {
+              "start": 110.5,
+              "end": 110.5
+            },
+            "claim_ids": [
+              "C3"
+            ],
+            "start_bounds": [
+              110,
+              110.5
+            ]
+          },
+          {
+            "id": "EVENT-A-ICON",
+            "unit_id": "MOTION-VC-A-ICON@v1",
+            "title": "상승 도상 후속 조립의 관측된 후반 변화 상태",
+            "status": "observed_sampled",
+            "time": {
+              "start": 111,
+              "end": 112
+            },
+            "claim_ids": [
+              "C3"
+            ]
+          },
+          {
+            "id": "EVENT-B-NUM",
+            "unit_id": "MOTION-VC-B-NUM@v1",
+            "title": "비중 수치 공개의 끝값이 보이는 첫 표본",
+            "status": "observed_sampled",
+            "time": {
+              "start": 149,
+              "end": 149
+            },
+            "claim_ids": [
+              "C6"
+            ],
+            "start_bounds": [
+              148.5,
+              149
+            ]
+          },
+          {
+            "id": "EVENT-B-CARDS",
+            "unit_id": "MOTION-VC-B-CARDS@v1",
+            "title": "보조 카드/차트 후속 보강의 관측된 후반 변화 상태",
+            "status": "observed_sampled",
+            "time": {
+              "start": 149.5,
+              "end": 150
+            },
+            "claim_ids": [
+              "C6"
+            ]
+          }
+        ],
+        "event_links": [
+          {
+            "from": "EVENT-A-ICON",
+            "to": "EVENT-A-NUM",
+            "relation": "continues_after",
+            "basis_kind": "observed",
+            "claim_ids": [
+              "C3"
+            ]
+          },
+          {
+            "from": "EVENT-B-CARDS",
+            "to": "EVENT-B-NUM",
+            "relation": "continues_after",
+            "basis_kind": "observed",
+            "claim_ids": [
+              "C6"
+            ]
+          }
+        ],
+        "reviews": [
+          {
+            "id": "R1",
+            "unit_id": "VC-CASE-A/A-M1",
+            "criterion_id": "Q-MOTION-02",
+            "status": "pass",
+            "reason": "기존 기록의 대상·변화·유지/중첩과 확인 범위를 연결했다. 가시성 변화를 원본 속성/AE 구현으로 확정하지 않았다.",
+            "evidence_ids": [
+              "E1"
+            ],
+            "claim_ids": [
+              "C1"
+            ],
+            "reviewer": "AI: 기존 기록-새 연결 구조 대조",
+            "scope": "기존 관측 기록의 의미/연결 검토. 새 원본 시각·가독성/효과 검사 아님.",
+            "next_probe": null
+          },
+          {
+            "id": "R2",
+            "unit_id": "VC-CASE-A/A-M1",
+            "criterion_id": "Q-CAP-02",
+            "status": "not_reviewed",
+            "reason": "실제 음성/자막 싱크를 청취하지 않았다.",
+            "evidence_ids": [],
+            "claim_ids": [
+              "C1"
+            ],
+            "reviewer": "AI: 기존 기록-새 연결 구조 대조",
+            "scope": "기존 관측 기록의 의미/연결 검토. 새 원본 시각·가독성/효과 검사 아님.",
+            "next_probe": "실제 오디오/자막과 해당 원본 시각을 확보"
+          },
+          {
+            "id": "R3",
+            "unit_id": "VC-CASE-A/A-M2",
+            "criterion_id": "Q-MOTION-02",
+            "status": "pass",
+            "reason": "기존 기록의 대상·변화·유지/중첩과 확인 범위를 연결했다. 가시성 변화를 원본 속성/AE 구현으로 확정하지 않았다.",
+            "evidence_ids": [
+              "E2"
+            ],
+            "claim_ids": [
+              "C2"
+            ],
+            "reviewer": "AI: 기존 기록-새 연결 구조 대조",
+            "scope": "기존 관측 기록의 의미/연결 검토. 새 원본 시각·가독성/효과 검사 아님.",
+            "next_probe": null
+          },
+          {
+            "id": "R4",
+            "unit_id": "VC-CASE-A/A-M2",
+            "criterion_id": "Q-CAP-02",
+            "status": "not_reviewed",
+            "reason": "실제 음성/자막 싱크를 청취하지 않았다.",
+            "evidence_ids": [],
+            "claim_ids": [
+              "C2"
+            ],
+            "reviewer": "AI: 기존 기록-새 연결 구조 대조",
+            "scope": "기존 관측 기록의 의미/연결 검토. 새 원본 시각·가독성/효과 검사 아님.",
+            "next_probe": "실제 오디오/자막과 해당 원본 시각을 확보"
+          },
+          {
+            "id": "R5",
+            "unit_id": "VC-CASE-A/A-M3",
+            "criterion_id": "Q-MOTION-02",
+            "status": "pass",
+            "reason": "기존 기록의 대상·변화·유지/중첩과 확인 범위를 연결했다. 가시성 변화를 원본 속성/AE 구현으로 확정하지 않았다.",
+            "evidence_ids": [
+              "E3"
+            ],
+            "claim_ids": [
+              "C3"
+            ],
+            "reviewer": "AI: 기존 기록-새 연결 구조 대조",
+            "scope": "기존 관측 기록의 의미/연결 검토. 새 원본 시각·가독성/효과 검사 아님.",
+            "next_probe": null
+          },
+          {
+            "id": "R6",
+            "unit_id": "VC-CASE-A/A-M3",
+            "criterion_id": "Q-CAP-02",
+            "status": "not_reviewed",
+            "reason": "실제 음성/자막 싱크를 청취하지 않았다.",
+            "evidence_ids": [],
+            "claim_ids": [
+              "C3"
+            ],
+            "reviewer": "AI: 기존 기록-새 연결 구조 대조",
+            "scope": "기존 관측 기록의 의미/연결 검토. 새 원본 시각·가독성/효과 검사 아님.",
+            "next_probe": "실제 오디오/자막과 해당 원본 시각을 확보"
+          },
+          {
+            "id": "R7",
+            "unit_id": "VC-CASE-B/B-M1",
+            "criterion_id": "Q-MOTION-02",
+            "status": "pass",
+            "reason": "기존 기록의 대상·변화·유지/중첩과 확인 범위를 연결했다. 가시성 변화를 원본 속성/AE 구현으로 확정하지 않았다.",
+            "evidence_ids": [
+              "E4"
+            ],
+            "claim_ids": [
+              "C4"
+            ],
+            "reviewer": "AI: 기존 기록-새 연결 구조 대조",
+            "scope": "기존 관측 기록의 의미/연결 검토. 새 원본 시각·가독성/효과 검사 아님.",
+            "next_probe": null
+          },
+          {
+            "id": "R8",
+            "unit_id": "VC-CASE-B/B-M1",
+            "criterion_id": "Q-CAP-02",
+            "status": "not_reviewed",
+            "reason": "실제 음성/자막 싱크를 청취하지 않았다.",
+            "evidence_ids": [],
+            "claim_ids": [
+              "C4"
+            ],
+            "reviewer": "AI: 기존 기록-새 연결 구조 대조",
+            "scope": "기존 관측 기록의 의미/연결 검토. 새 원본 시각·가독성/효과 검사 아님.",
+            "next_probe": "실제 오디오/자막과 해당 원본 시각을 확보"
+          },
+          {
+            "id": "R9",
+            "unit_id": "VC-CASE-B/B-M2",
+            "criterion_id": "Q-MOTION-02",
+            "status": "pass",
+            "reason": "기존 기록의 대상·변화·유지/중첩과 확인 범위를 연결했다. 가시성 변화를 원본 속성/AE 구현으로 확정하지 않았다.",
+            "evidence_ids": [
+              "E5"
+            ],
+            "claim_ids": [
+              "C5"
+            ],
+            "reviewer": "AI: 기존 기록-새 연결 구조 대조",
+            "scope": "기존 관측 기록의 의미/연결 검토. 새 원본 시각·가독성/효과 검사 아님.",
+            "next_probe": null
+          },
+          {
+            "id": "R10",
+            "unit_id": "VC-CASE-B/B-M2",
+            "criterion_id": "Q-CAP-02",
+            "status": "not_reviewed",
+            "reason": "실제 음성/자막 싱크를 청취하지 않았다.",
+            "evidence_ids": [],
+            "claim_ids": [
+              "C5"
+            ],
+            "reviewer": "AI: 기존 기록-새 연결 구조 대조",
+            "scope": "기존 관측 기록의 의미/연결 검토. 새 원본 시각·가독성/효과 검사 아님.",
+            "next_probe": "실제 오디오/자막과 해당 원본 시각을 확보"
+          },
+          {
+            "id": "R11",
+            "unit_id": "VC-CASE-B/B-M3",
+            "criterion_id": "Q-MOTION-02",
+            "status": "pass",
+            "reason": "기존 기록의 대상·변화·유지/중첩과 확인 범위를 연결했다. 가시성 변화를 원본 속성/AE 구현으로 확정하지 않았다.",
+            "evidence_ids": [
+              "E6"
+            ],
+            "claim_ids": [
+              "C6"
+            ],
+            "reviewer": "AI: 기존 기록-새 연결 구조 대조",
+            "scope": "기존 관측 기록의 의미/연결 검토. 새 원본 시각·가독성/효과 검사 아님.",
+            "next_probe": null
+          },
+          {
+            "id": "R12",
+            "unit_id": "VC-CASE-B/B-M3",
+            "criterion_id": "Q-CAP-02",
+            "status": "not_reviewed",
+            "reason": "실제 음성/자막 싱크를 청취하지 않았다.",
+            "evidence_ids": [],
+            "claim_ids": [
+              "C6"
+            ],
+            "reviewer": "AI: 기존 기록-새 연결 구조 대조",
+            "scope": "기존 관측 기록의 의미/연결 검토. 새 원본 시각·가독성/효과 검사 아님.",
+            "next_probe": "실제 오디오/자막과 해당 원본 시각을 확보"
+          },
+          {
+            "id": "R13",
+            "unit_id": "VC-CASE-A/A-M3",
+            "criterion_id": "Q-MOTION-01",
+            "status": "hold",
+            "reason": "수치 끝값과 보조 도상/카드의 후속 상태는 구분했지만 정보 전체 완성/읽기 유지 시간은 미확인.",
+            "evidence_ids": [
+              "E3"
+            ],
+            "claim_ids": [
+              "C3"
+            ],
+            "reviewer": "AI: 기존 기록-새 연결 구조 대조",
+            "scope": "기존 관측 기록의 의미/연결 검토. 새 원본 시각·가독성/효과 검사 아님.",
+            "next_probe": "전체 대상의 마지막 변화와 읽기 유지 구간을 실제 원본에서 확인"
+          },
+          {
+            "id": "R14",
+            "unit_id": "VC-CASE-B/B-M3",
+            "criterion_id": "Q-MOTION-01",
+            "status": "hold",
+            "reason": "수치 끝값과 보조 도상/카드의 후속 상태는 구분했지만 정보 전체 완성/읽기 유지 시간은 미확인.",
+            "evidence_ids": [
+              "E6"
+            ],
+            "claim_ids": [
+              "C6"
+            ],
+            "reviewer": "AI: 기존 기록-새 연결 구조 대조",
+            "scope": "기존 관측 기록의 의미/연결 검토. 새 원본 시각·가독성/효과 검사 아님.",
+            "next_probe": "전체 대상의 마지막 변화와 읽기 유지 구간을 실제 원본에서 확인"
+          }
+        ],
+        "unknowns": [
+          {
+            "id": "UNKNOWN1",
+            "unit_id": "VC-CASE-A/A-M1",
+            "question": "정확 경계·속도곡선·원본 구현은?",
+            "impact": "정밀 동작/구현 템플릿으로 직접 사용 제한",
+            "next_probe": "쟁점 경계/대상의 추가 원본 표본 또는 프로젝트를 확인"
+          },
+          {
+            "id": "UNKNOWN2",
+            "unit_id": "VC-CASE-A/A-M2",
+            "question": "정확 경계·속도곡선·원본 구현은?",
+            "impact": "정밀 동작/구현 템플릿으로 직접 사용 제한",
+            "next_probe": "쟁점 경계/대상의 추가 원본 표본 또는 프로젝트를 확인"
+          },
+          {
+            "id": "UNKNOWN3",
+            "unit_id": "VC-CASE-A/A-M3",
+            "question": "정확 경계·속도곡선·원본 구현은?",
+            "impact": "정밀 동작/구현 템플릿으로 직접 사용 제한",
+            "next_probe": "쟁점 경계/대상의 추가 원본 표본 또는 프로젝트를 확인"
+          },
+          {
+            "id": "UNKNOWN4",
+            "unit_id": "VC-CASE-B/B-M1",
+            "question": "정확 경계·속도곡선·원본 구현은?",
+            "impact": "정밀 동작/구현 템플릿으로 직접 사용 제한",
+            "next_probe": "쟁점 경계/대상의 추가 원본 표본 또는 프로젝트를 확인"
+          },
+          {
+            "id": "UNKNOWN5",
+            "unit_id": "VC-CASE-B/B-M2",
+            "question": "정확 경계·속도곡선·원본 구현은?",
+            "impact": "정밀 동작/구현 템플릿으로 직접 사용 제한",
+            "next_probe": "쟁점 경계/대상의 추가 원본 표본 또는 프로젝트를 확인"
+          },
+          {
+            "id": "UNKNOWN6",
+            "unit_id": "VC-CASE-B/B-M3",
+            "question": "정확 경계·속도곡선·원본 구현은?",
+            "impact": "정밀 동작/구현 템플릿으로 직접 사용 제한",
+            "next_probe": "쟁점 경계/대상의 추가 원본 표본 또는 프로젝트를 확인"
+          }
+        ],
+        "limitations": [
+          "기존 관측 기록과 지식의 연결 작업. 새 원본 연속 재생/재추출·새 픽셀 검수 아님.",
+          "정확 AE 속성·폰트·색 원값/실제 청취/원제작 의도·다른 내용/화면비 적용은 미검증.",
+          "정본 등록/회사 승인 아님. source record와 연결 구조는 별도이며 자동 동기화 없음."
+        ],
+        "company_approved": false,
+        "canonical_registered": false
+      }
+    }
+  ],
+  "scope": "linked draft records; not canonical registration or semantic search"
+}

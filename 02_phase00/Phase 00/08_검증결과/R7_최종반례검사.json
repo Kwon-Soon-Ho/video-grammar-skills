@@ -1,0 +1,125 @@
+{
+  "tests": [
+    {
+      "name": "관측 구조 fixture 정상",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "name": "시나리오 주장에 디자인 프로필만 근거로 사용 차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "evidence": [
+        "주장 시나리오 지원의 원문/전사 대상 근거 없음"
+      ]
+    },
+    {
+      "name": "시나리오 주장에 실제 script 대상 연결 허용",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "name": "script 근거의 없는 시나리오 대상 차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "evidence": [
+        "시나리오 근거의 대상 없음",
+        "주장 시나리오 지원의 원문/전사 대상 근거 없음"
+      ]
+    },
+    {
+      "name": "수치 추정 구조 fixture 정상",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "name": "키만 존재하고 내용이 null/임의 객체인 수치 추정 차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "evidence": [
+        "claims/0/measurement: 수치 추정 규격: {'method': None, 'quantity': None, 'unit': None, 'value': {'invented': True}, 'uncertainty': None, 'source_frame_refs': ['FIXTURE-FRAME-001'], 'limitations': None, 'assumptions': []} is not valid under any of the given schemas",
+        "claims/0/measurement/method: 수치 추정 규격: None is not of type 'string'",
+        "claims/0/measurement/quantity: 수치 추정 규격: None is not of type 'string'",
+        "claims/0/measurement/unit: 수치 추정 규격: None is not of type 'string'",
+        "claims/0/measurement/value: 수치 추정 규격: {'invented': True} is not valid under any of the given schemas",
+        "claims/0/measurement/uncertainty: 수치 추정 규격: None is not of type 'number'",
+        "claims/0/measurement/limitations: 수치 추정 규격: None is not of type 'string'"
+      ]
+    },
+    {
+      "name": "수치 추정의 공백 단위 차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "evidence": [
+        "claims/0/measurement: 수치 추정 규격: {'method': 'fixture bounding-box width measurement', 'quantity': 'apparent_width', 'unit': '   ', 'value': 115, 'uncertainty': 2, 'source_frame_refs': ['FIXTURE-FRAME-001'], 'limitations': 'fixture only; does not recover AE Scale', 'assumptions': ['same coordinate space']} is not valid under any of the given schemas",
+        "claims/0/measurement/unit: 수치 추정 규격: '   ' does not match '\\\\S'"
+      ]
+    },
+    {
+      "name": "수치 추정 값이 수치 아닌 문장일 때 차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "evidence": [
+        "claims/0/measurement: 수치 추정 규격: {'method': 'fixture bounding-box width measurement', 'quantity': 'apparent_width', 'unit': 'px', 'value': '정확히 115였음', 'uncertainty': 2, 'source_frame_refs': ['FIXTURE-FRAME-001'], 'limitations': 'fixture only; does not recover AE Scale', 'assumptions': ['same coordinate space']} is not valid under any of the given schemas",
+        "claims/0/measurement/value: 수치 추정 규격: '정확히 115였음' is not valid under any of the given schemas"
+      ]
+    },
+    {
+      "name": "승인 상태/시각이 일치하는 메모리 결정 정상",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "name": "rejected 결정을 approved 기록 근거로 쓰기 차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "evidence": [
+        "승인 결정의 상태·검수 시각 불일치"
+      ]
+    },
+    {
+      "name": "stale 결정을 approved 기록 근거로 쓰기 차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "evidence": [
+        "승인 결정의 상태·검수 시각 불일치"
+      ]
+    },
+    {
+      "name": "검수 결정과 승인 기록 시각 불일치 차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "evidence": [
+        "승인 결정의 상태·검수 시각 불일치"
+      ]
+    },
+    {
+      "name": "시각 없는 검수 결정을 approved 근거로 쓰기 차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "evidence": [
+        "승인 결정의 상태·검수 시각 불일치"
+      ]
+    }
+  ],
+  "passed": 13,
+  "total": 13,
+  "scope": "메모리 내 자료 관계 회귀검사. 실제 영상·측정·사람 승인 아님. D 파일 변경 없음."
+}

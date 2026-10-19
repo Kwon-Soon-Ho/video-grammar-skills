@@ -1,0 +1,815 @@
+{
+  "schema_version": "a3-observation-0.1",
+  "case_id": "V02",
+  "source": {
+    "id": "A4-D",
+    "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\한맥 영상\\3D 시뮬레이션\\위험 공종 시뮬레이션-대호지교\\1.크레인 작업 반경, 물류·인양 안정성 검토.mp4",
+    "sha256": "fd6cdc943e7d3b83fe9933a6e24c878b71d1cc5c6e87543b9dfcd633204df181"
+  },
+  "window_seconds": [
+    130,
+    138
+  ],
+  "method": "개요 보드는 탐색에만 사용. 실제 PNG 선택 프레임을 view_image로 열람하고 작은 글자·경계는 native raster ROI를 별도 열람. 시간순 관찰 뒤 완성 상태에서 역추적. 연속 재생/전 프레임 검사는 하지 않음.",
+  "document_mode": "storyboard_text_chronology_unverified",
+  "audio_reviewed": false,
+  "evidence": [
+    {
+      "id": "f0",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\f_03900_130.000.png",
+      "actual_seconds": "130",
+      "role": "within",
+      "sha256": "2f8afd9ba04fe9e0ed968be3b49e640fc72015c6ded5b6fb9ec4e559afe07fde",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        }
+      ],
+      "extraction_log": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\실행기록.json"
+    },
+    {
+      "id": "f3",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\f_03936_131.200.png",
+      "actual_seconds": "656/5",
+      "role": "within",
+      "sha256": "18763e0aaf85c87b06582794347ba173818b75d4e7443dd0e4b48f3fa5a7a285",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        }
+      ],
+      "extraction_log": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\실행기록.json"
+    },
+    {
+      "id": "f6",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\f_03972_132.400.png",
+      "actual_seconds": "662/5",
+      "role": "within",
+      "sha256": "d01b44652058d18ac1997fb063c44eeb81a7aa73b5ce280b6380ec38e311fce9",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        }
+      ],
+      "extraction_log": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\실행기록.json"
+    },
+    {
+      "id": "f10",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\f_04020_134.000.png",
+      "actual_seconds": "134",
+      "role": "within",
+      "sha256": "25e556e2b9d99a46a9944225a6e4c39940d950222778a30fb66c68e45a682b83",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        }
+      ],
+      "extraction_log": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\실행기록.json"
+    },
+    {
+      "id": "f14",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\f_04068_135.600.png",
+      "actual_seconds": "678/5",
+      "role": "within",
+      "sha256": "e0bc792e964447fa1631c547d7bf9459707dc833783b69efffbf0831b4961e43",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        }
+      ],
+      "extraction_log": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\실행기록.json"
+    },
+    {
+      "id": "f19",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\f_04128_137.600.png",
+      "actual_seconds": "688/5",
+      "role": "within",
+      "sha256": "0af1698edec463b7de046d943722e50251763fe71a478a77dcb1e7e120cee0d8",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        }
+      ],
+      "extraction_log": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\실행기록.json"
+    },
+    {
+      "id": "r0",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\with_a_rois\\V02_radius_0.png",
+      "actual_seconds": "130",
+      "role": "within",
+      "sha256": "03d0d9e1170f1182b54d3da8a05706394b97446e1688f8a563bf0a4a06e7e37b",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\f_03900_130.000.png",
+      "transforms": [
+        {
+          "op": "crop",
+          "xyxy": [
+            0,
+            1360,
+            1200,
+            1940
+          ],
+          "coordinate_system": "native 3840x2160 raster",
+          "resize": null
+        }
+      ]
+    },
+    {
+      "id": "r1",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\with_a_rois\\V02_radius_1.png",
+      "actual_seconds": "652/5",
+      "role": "within",
+      "sha256": "9a5433ce4b8d3105e22ad0e69a6194731e82970762cbbc3809983178cd1fdb03",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\f_03912_130.400.png",
+      "transforms": [
+        {
+          "op": "crop",
+          "xyxy": [
+            0,
+            1360,
+            1200,
+            1940
+          ],
+          "coordinate_system": "native 3840x2160 raster",
+          "resize": null
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\with_a_rois\\V02_radius_2.png",
+      "actual_seconds": "654/5",
+      "role": "within",
+      "sha256": "dec62597e218330b334d57997cc84874ffac9c5f941ba002540cf7f641c8c8af",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\f_03924_130.800.png",
+      "transforms": [
+        {
+          "op": "crop",
+          "xyxy": [
+            0,
+            1360,
+            1200,
+            1940
+          ],
+          "coordinate_system": "native 3840x2160 raster",
+          "resize": null
+        }
+      ]
+    },
+    {
+      "id": "r3",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\with_a_rois\\V02_radius_3.png",
+      "actual_seconds": "656/5",
+      "role": "within",
+      "sha256": "ab0141a380bb2657c8a4f0fa5d434b6d49a26e0f31df5311a3a56eee6876fc2d",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\f_03936_131.200.png",
+      "transforms": [
+        {
+          "op": "crop",
+          "xyxy": [
+            0,
+            1360,
+            1200,
+            1940
+          ],
+          "coordinate_system": "native 3840x2160 raster",
+          "resize": null
+        }
+      ]
+    },
+    {
+      "id": "w5",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\with_a_rois\\V02_row_5.png",
+      "actual_seconds": "132",
+      "role": "within",
+      "sha256": "c7566353112ea5a1cdbb9761864d96bef22f69c5e1478dc994818f3198e3179a",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\f_03960_132.000.png",
+      "transforms": [
+        {
+          "op": "crop",
+          "xyxy": [
+            2000,
+            620,
+            3600,
+            770
+          ],
+          "coordinate_system": "native 3840x2160 raster",
+          "resize": null
+        }
+      ]
+    },
+    {
+      "id": "w6",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\with_a_rois\\V02_row_6.png",
+      "actual_seconds": "662/5",
+      "role": "within",
+      "sha256": "2c2e94e4baba1450e482b1f8df8514b6374c373c1226212ba3f68d2877ac7e7e",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\f_03972_132.400.png",
+      "transforms": [
+        {
+          "op": "crop",
+          "xyxy": [
+            2000,
+            620,
+            3600,
+            770
+          ],
+          "coordinate_system": "native 3840x2160 raster",
+          "resize": null
+        }
+      ]
+    },
+    {
+      "id": "w7",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\with_a_rois\\V02_row_7.png",
+      "actual_seconds": "664/5",
+      "role": "within",
+      "sha256": "0b86082017931ac4612b7cfacb281b57e654f6500ecb548d40238ce50068403c",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\f_03984_132.800.png",
+      "transforms": [
+        {
+          "op": "crop",
+          "xyxy": [
+            2000,
+            620,
+            3600,
+            770
+          ],
+          "coordinate_system": "native 3840x2160 raster",
+          "resize": null
+        }
+      ]
+    },
+    {
+      "id": "l8",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\with_a_rois\\V02_load_8.png",
+      "actual_seconds": "666/5",
+      "role": "within",
+      "sha256": "d46f5a42edfeee90dfe3a8e9b2d612de6d345ab81df9da9b996c1540fc6827a5",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\f_03996_133.200.png",
+      "transforms": [
+        {
+          "op": "crop",
+          "xyxy": [
+            1130,
+            600,
+            1550,
+            1070
+          ],
+          "coordinate_system": "native 3840x2160 raster",
+          "resize": null
+        }
+      ]
+    },
+    {
+      "id": "l9",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\with_a_rois\\V02_load_9.png",
+      "actual_seconds": "668/5",
+      "role": "within",
+      "sha256": "b98dd95bb58d97ae9f8532b815afc4b6229dfc4fa009c1b07f6b9a4618504266",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\f_04008_133.600.png",
+      "transforms": [
+        {
+          "op": "crop",
+          "xyxy": [
+            1130,
+            600,
+            1550,
+            1070
+          ],
+          "coordinate_system": "native 3840x2160 raster",
+          "resize": null
+        }
+      ]
+    },
+    {
+      "id": "l10",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\with_a_rois\\V02_load_10.png",
+      "actual_seconds": "134",
+      "role": "within",
+      "sha256": "ca78bc6009f3b3caa59a917f308e62edebf3b3a136170acf14b62cecc40736dc",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\f_04020_134.000.png",
+      "transforms": [
+        {
+          "op": "crop",
+          "xyxy": [
+            1130,
+            600,
+            1550,
+            1070
+          ],
+          "coordinate_system": "native 3840x2160 raster",
+          "resize": null
+        }
+      ]
+    },
+    {
+      "id": "l11",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\with_a_rois\\V02_load_11.png",
+      "actual_seconds": "672/5",
+      "role": "within",
+      "sha256": "1e9e1cc14f0336d1ecc689468cc228398c5c5edd6c163103f3d455579f2f4e93",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\f_04032_134.400.png",
+      "transforms": [
+        {
+          "op": "crop",
+          "xyxy": [
+            1130,
+            600,
+            1550,
+            1070
+          ],
+          "coordinate_system": "native 3840x2160 raster",
+          "resize": null
+        }
+      ]
+    },
+    {
+      "id": "l12",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\with_a_rois\\V02_load_12.png",
+      "actual_seconds": "674/5",
+      "role": "within",
+      "sha256": "540e3b0ca6d9fb8436da095f7e088fb788b7245ed3c4c4b91d03fdc00eb7975e",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\f_04044_134.800.png",
+      "transforms": [
+        {
+          "op": "crop",
+          "xyxy": [
+            1130,
+            600,
+            1550,
+            1070
+          ],
+          "coordinate_system": "native 3840x2160 raster",
+          "resize": null
+        }
+      ]
+    },
+    {
+      "id": "l13",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\with_a_rois\\V02_load_13.png",
+      "actual_seconds": "676/5",
+      "role": "within",
+      "sha256": "066cd15c522e49a2d113cf9ccf7d18d0c9af791486f684e2398520140974938a",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\f_04056_135.200.png",
+      "transforms": [
+        {
+          "op": "crop",
+          "xyxy": [
+            1130,
+            600,
+            1550,
+            1070
+          ],
+          "coordinate_system": "native 3840x2160 raster",
+          "resize": null
+        }
+      ]
+    },
+    {
+      "id": "l14",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\with_a_rois\\V02_load_14.png",
+      "actual_seconds": "678/5",
+      "role": "within",
+      "sha256": "5a19200e9537c8f2094a25f000cabbabf4d351a12758dce3e588f3241b54e814",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\f_04068_135.600.png",
+      "transforms": [
+        {
+          "op": "crop",
+          "xyxy": [
+            1130,
+            600,
+            1550,
+            1070
+          ],
+          "coordinate_system": "native 3840x2160 raster",
+          "resize": null
+        }
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "id": "layout",
+      "name": "크레인과 제조사 표의 좌우 대응",
+      "parent": null,
+      "events": [
+        {
+          "description": "좌측에는 작업대 위 크레인과 붐 끝에서 내려오는 와이어/장비, 우측에는 “크롤라크레인 제조사 정격하중표”가 배치된다. 좌상 제목/대호지교 가교는 유지된다. 표는 Boom length, Working radius, Rated load의 JIS/BS/PCSA 열로 구성되어 있다.",
+          "properties": [
+            "layout"
+          ],
+          "time_seconds": [
+            130,
+            138
+          ],
+          "evidence_ids": [
+            "f0",
+            "f6",
+            "f14",
+            "f19"
+          ],
+          "direction_order": "3D 모델 왼쪽, 수치 근거 표 오른쪽",
+          "easing": {
+            "property": "layout",
+            "classification": "not_applicable",
+            "basis": "배치/정보관계 기술. 모델의 독립 이동을 관측한 것이 아님."
+          },
+          "status": "observed",
+          "limitations": []
+        }
+      ]
+    },
+    {
+      "id": "column",
+      "name": "붐길이 열 강조",
+      "parent": null,
+      "events": [
+        {
+          "description": "130초에는 Boom length 열 전체를 청록·파랑 윤곽이 감싸고 45.0 (147′8″)가 밝게 강조된다. 131.2초에는 윤곽이 사라지고 일반 표 셀 상태로 돌아간다.",
+          "properties": [
+            "visibility",
+            "color"
+          ],
+          "time_seconds": [
+            130,
+            131.2
+          ],
+          "evidence_ids": [
+            "f0",
+            "f3"
+          ],
+          "direction_order": "붐길이 열 강조 종료 → 첫 반경 행 강조",
+          "easing": {
+            "property": "visibility",
+            "classification": "unknown",
+            "basis": "강조 소실의 중간 속도 표본 부족."
+          },
+          "status": "observed",
+          "limitations": []
+        }
+      ]
+    },
+    {
+      "id": "radius",
+      "name": "작업 반경 도형·문구",
+      "parent": null,
+      "events": [
+        {
+          "description": "크레인 밑에 반투명 청록 타원이 생겨 좌우로 커진다. 130.4초 작은 타원, 130.8초 큰 타원, 131.2초 거의 정착 크기로 보인다. 초록 화살표가 중심에서 화면 좌하 쪽으로 뻗으며 131.2초부터 아래에 “작업 반경 R=9.7m” 글자가 흐리게 만들어지고 132.4초 선명하다.",
+          "properties": [
+            "scale",
+            "reveal",
+            "position"
+          ],
+          "time_seconds": [
+            130,
+            132.4
+          ],
+          "evidence_ids": [
+            "r0",
+            "r1",
+            "r2",
+            "r3",
+            "f6"
+          ],
+          "direction_order": "타원 확장/방향 화살표 → 반경 라벨",
+          "easing": {
+            "property": "scale",
+            "classification": "decelerate",
+            "basis": "타원 우측 가시 경계의 확장량은 같은 0.4초 간격 130.4→130.8에서 크고 130.8→131.2에서 작다. 타원 크기의 시각적 감속 판정이며 텍스트나 다른 도형의 곡선에 적용하지 않음."
+          },
+          "status": "observed",
+          "limitations": [
+            "크레인에 가려진 타원 중심·좌측 전체 경계는 미측정. 픽셀 오차 미상."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "crane_label",
+      "name": "크롤라크레인 라벨·점선 보조선",
+      "parent": null,
+      "events": [
+        {
+          "description": "131.2초 붐 근처 주황 글자가 일부 나타나고 132.4초 “크롤라크레인” 라벨과 아래쪽 작은 꺾인 표지가 보인다. 이때 붐 방향을 연장한 옅은 청록 점선과 수직 와이어 부근 보조선도 보인다.",
+          "properties": [
+            "reveal"
+          ],
+          "time_seconds": [
+            131.2,
+            132.4
+          ],
+          "evidence_ids": [
+            "f3",
+            "f6"
+          ],
+          "direction_order": "라벨 부분 노출 → 선명한 라벨/점선",
+          "easing": {
+            "property": "reveal",
+            "classification": "unknown",
+            "basis": "점선의 정확한 그리기 순서는 1.2초 간격 두 표본으로 확정하지 않음."
+          },
+          "status": "observed",
+          "limitations": []
+        }
+      ]
+    },
+    {
+      "id": "row",
+      "name": "9.7m 행의 확대 강조",
+      "parent": null,
+      "events": [
+        {
+          "description": "9.7 / 31′10″ / 69,000 / 64,400 / 142,000 / 69,900 / 152,100 첫 행이 분홍 바탕·파란 글씨로 강조된다. 132초 내부에 작은 둥근 테두리가 생기고 132.4초 기존 글자와 확대 글자가 겹쳐 보인다. 132.8초 확대 행은 좌우로 넓어져 원래 표 밖까지 약간 돌출되고 이후 유지된다.",
+          "properties": [
+            "scale",
+            "internal_content"
+          ],
+          "time_seconds": [
+            130,
+            134
+          ],
+          "evidence_ids": [
+            "f0",
+            "f3",
+            "w5",
+            "w6",
+            "w7",
+            "f10"
+          ],
+          "direction_order": "첫 행 색 강조 → 복제/겹침처럼 보이는 확대 → 독립 띠 형태 정착",
+          "easing": {
+            "property": "scale",
+            "classification": "decelerate",
+            "basis": "132/132.4/132.8의 같은 간격에서 둥근 행 윤곽 폭 증가가 뒤 구간에 줄어드는 시각적 경향. 실제 복제 레이어 사용 여부는 미상."
+          },
+          "status": "observed",
+          "limitations": [
+            "중첩 글자를 하나의 글자 연속 이동으로 단정하지 않았다. 정확한 폭/오차 수치는 미계측."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "load_label",
+      "name": "정격하중 화살표·카드·숫자",
+      "parent": null,
+      "events": [
+        {
+          "description": "133.2초 “정격…” 글자와 얇은 수평선이 나타나고 133.6초 파란 상향 화살표와 “정격하중”이 보인다. 134초까지 화살표/카드가 커져 정착한다. 134.8초 카드 안에 흐린 숫자 6이 먼저 보이고 135.2초 69와 t, 135.6초 69 ton이 읽힌다.",
+          "properties": [
+            "reveal",
+            "scale",
+            "visibility"
+          ],
+          "time_seconds": [
+            133.2,
+            135.6
+          ],
+          "evidence_ids": [
+            "l8",
+            "l9",
+            "l10",
+            "l11",
+            "l12",
+            "l13",
+            "l14"
+          ],
+          "direction_order": "제목/선 → 위쪽 화살표·카드 → 숫자 69 → ton",
+          "easing": {
+            "property": "reveal",
+            "classification": "unknown",
+            "basis": "화살표 크기는 133.6→134에서 커지고 134→134.4 거의 유지되어 감속 정착과 양립한다. 글자 리빌/숫자 선명화는 별도 변화이며 정확한 가감속은 미계측. 숫자는 카운트업으로 단정하지 않음."
+          },
+          "status": "observed",
+          "limitations": []
+        }
+      ]
+    },
+    {
+      "id": "load_highlight",
+      "name": "JIS 값·와이어/인양장비 강조",
+      "parent": null,
+      "events": [
+        {
+          "description": "134초에는 JIS rating 제목이 밝고 수직 와이어·아래 장비 윤곽에 파란 강조가 더해진다. 135.6초에는 첫 행 JIS 69,000 셀이 짙은 파란 바탕·흰 글자로 강조된다. 137.6초에도 카드 69 ton과 셀 69,000이 함께 유지된다.",
+          "properties": [
+            "color",
+            "luminance",
+            "internal_content"
+          ],
+          "time_seconds": [
+            132.4,
+            137.6
+          ],
+          "evidence_ids": [
+            "f6",
+            "f10",
+            "f14",
+            "f19"
+          ],
+          "direction_order": "행 강조 뒤 JIS/장비 강조 → 69,000 셀과 69 ton 카드 연결",
+          "easing": {
+            "property": "color",
+            "classification": "unknown",
+            "basis": "색/광량 변화의 세부 시작과 세기 곡선은 미측정. 빛 강조를 실제 장비 이동으로 기록하지 않음."
+          },
+          "status": "observed",
+          "limitations": []
+        }
+      ]
+    },
+    {
+      "id": "water",
+      "name": "배경 수면",
+      "parent": null,
+      "events": [
+        {
+          "description": "크레인과 표 외곽은 대체로 같은 배치인데 바다 표면의 물결 무늬는 표본 사이에 변한다. 화면을 완전 정지 화면으로 취급하지 않았다.",
+          "properties": [
+            "internal_content"
+          ],
+          "time_seconds": [
+            130,
+            138
+          ],
+          "evidence_ids": [
+            "f0",
+            "f6",
+            "f14",
+            "f19"
+          ],
+          "direction_order": "",
+          "easing": {
+            "property": "internal_content",
+            "classification": "unknown",
+            "basis": "비강체 물결 패턴의 단일 이동 방향/가감속은 미상."
+          },
+          "status": "observed",
+          "limitations": []
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "overview": "130~138초에서 표의 수치 관계와 반경/하중 그래픽의 중첩 순서를 검사했다.",
+    "secondary_details": "타원, 초록 화살표, 주황 장비 라벨, 청록 점선, 파란 와이어/장비 강조, 카드의 얇은 상하 선을 별도로 확인했다.",
+    "internal_content": "우측은 소프트웨어 인터랙션이 아닌 정격하중표 시각물이다. 열→첫 행→확대 행→JIS 셀 강조 상태 변화를 추적했다.",
+    "unresolved": [
+      "정확한 원형/화살표 시작 프레임 및 빛 강조의 속도곡선은 미확정.",
+      "문서 버전의 실제 제작 순서·시간표 차이 원인은 미상. 문서 레이아웃/삽입 이미지는 미열람."
+    ]
+  },
+  "hypotheses": [],
+  "limitations": [
+    "선택 표본 사이의 정확한 시작/종료 프레임 및 짧은 사건은 미확정.",
+    "가감속은 명시한 대상/속성의 시각 추정이며 원본 보간함수·키프레임 값은 미상.",
+    "RGB 변환 색 범위 정확도 미검증; 픽셀색을 공식 CI색으로 해석하지 않음.",
+    "오디오 디코딩·청취·전사 없음. 음성/자막 싱크 미검수.",
+    "회사 공통 규칙이나 제작 의도, 실제 안전성 인증으로 승격하지 않은 AI 관측 초안.",
+    "Phase 00 정본 용어 정의가 별도 제공되지 않아 분류 ID를 임의 부여하지 않음."
+  ],
+  "files_read": [
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\case-plan.json",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\output-format.md",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\skill-draft2\\SKILL.md",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\skill-draft2\\references\\evidence-and-records.md",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\skill-draft2\\references\\motion-review.md",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\skill-draft2\\references\\output-contract.md",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\skill-draft2\\scripts\\evidence_catalog.py",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\skill-draft2\\scripts\\check_observations.py",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\extract.py",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\with_a_rois\\manifest.json",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\실행기록.json",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\f_03900_130.000.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\f_03936_131.200.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\f_03972_132.400.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\f_04020_134.000.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\f_04068_135.600.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\f_04128_137.600.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\with_a_rois\\V02_radius_0.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\with_a_rois\\V02_radius_1.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\with_a_rois\\V02_radius_2.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\with_a_rois\\V02_radius_3.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\with_a_rois\\V02_row_5.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\with_a_rois\\V02_row_6.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\with_a_rois\\V02_row_7.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\with_a_rois\\V02_load_8.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\with_a_rois\\V02_load_9.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\with_a_rois\\V02_load_10.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\with_a_rois\\V02_load_11.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\with_a_rois\\V02_load_12.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\with_a_rois\\V02_load_13.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\with_a_rois\\V02_load_14.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\documents\\DOC063.txt",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\documents\\DOC063.json",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\board-1.jpg",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-D\\V02\\board-2.jpg"
+  ],
+  "extraction_context": [
+    {
+      "phase": "V02",
+      "timing_status": "all_decoded_frame_pts_match_reconstructed_sample_tables_in_this_window",
+      "timing_mapping": {
+        "basis": "single rate-1 elst, stts+ctts table reconstructed, then compared to displayed decoded PTS",
+        "edit_media_offset": "0",
+        "playback_zero_movie_ticks": "0",
+        "first_expected_presentation": "0",
+        "video_media_scale": 30000,
+        "sample_count": 7055,
+        "raw_container_cts_of_playback_zero": "0",
+        "movie_timescale": 90000,
+        "container_duration_vs_video_edit_difference_seconds": "1/30"
+      },
+      "sar_status": "reported_square",
+      "orientation": {
+        "rotation_reported_ccw": 0,
+        "raw_raster": [
+          3840,
+          2160
+        ],
+        "matrix_basis": "tkhd identity",
+        "rotation_applied": false
+      },
+      "input_sha256": "fd6cdc943e7d3b83fe9933a6e24c878b71d1cc5c6e87543b9dfcd633204df181",
+      "input_sha256_after": "fd6cdc943e7d3b83fe9933a6e24c878b71d1cc5c6e87543b9dfcd633204df181"
+    }
+  ],
+  "document_comparison": [
+    {
+      "document_id": "DOC063",
+      "document_sha256": "879959f784ee8fa6cca088056305249aaef8fa6a9a4e58bf365a52fd20818c36",
+      "locators": [
+        "slide[9]/p[14]",
+        "slide[9]/p[15]",
+        "slide[9]/p[16]",
+        "slide[9]/p[17]"
+      ],
+      "quote": "크레인 도해에는 작업반경 R=9.7m, 정격하중 69.0Ton 문구를 표시한다.",
+      "evidence_ids": [
+        "f6",
+        "f14",
+        "f19"
+      ],
+      "finding": "내용은 slide[9]의 좌측 크레인/우측 제조사 표, R=9.7m, JIS 69,000kg 및 69.0Ton과 대응한다. 실제 카드에는 “69 ton”으로 표시되어 소수 .0이 생략된다. 문서 타임코드는 01:25~01:40(85~100초)인데 실제 지정창은 130~138초이다. 내용 대응과 시간 대응을 분리해야 한다."
+    },
+    {
+      "locators": [
+        "slide[12]/p[7]",
+        "slide[12]/p[8]",
+        "slide[12]/p[13]"
+      ],
+      "quote": "평면도에 크레인 위치를 중심으로 작업반경 R=24m 원을 표시한다.",
+      "evidence_ids": [
+        "f0",
+        "f6",
+        "f19"
+      ],
+      "finding": "실제 02:10~02:18은 문서 같은 시간대 slide[12]의 평면 배치/R=24m 화면과 다르다. 현재 창은 사선 3D 크레인과 제조사 표의 R=9.7m 조건이다. 문서의 실제 안전성 판단과 대사는 영상 시각만으로 검증하지 않았다."
+    }
+  ],
+  "evidence_verification": {
+    "tool": "skill-draft2/scripts/evidence_catalog.py",
+    "catalog_outputs": [
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\with_a_catalog_D.json"
+    ],
+    "result": "completed without error; PNG hashes, input before/after hashes, timestamp ordering and PTS basic relation checked",
+    "content_verified": false
+  }
+}

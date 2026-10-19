@@ -1,0 +1,4150 @@
+{
+  "schema_version": "0.2.0",
+  "record_version": "0.3.1",
+  "scope": "actual_registry",
+  "colors": [
+    {
+      "company_id": "hanmac",
+      "color_id": "ci.observed.raster.1",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-013",
+        "record_version": "0.1.0",
+        "sha256": "8bf20af63dbec973ee5da65fb4da5c6fdd818c63d3a45611665c077ac44f2585"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-013",
+        "record_version": "0.1.0",
+        "sha256": "8bf20af63dbec973ee5da65fb4da5c6fdd818c63d3a45611665c077ac44f2585"
+      },
+      "source_level": "raster_sample",
+      "label_in_source": "공식 색 이름 없음: 불투명 픽셀 대표색 1",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          219,
+          49,
+          54
+        ],
+        "declared_color_space": null
+      },
+      "screen_value": {
+        "color_space": "srgb",
+        "hex": "#DB3136",
+        "alpha": 1
+      },
+      "normalization": {
+        "method": "raster_sample",
+        "source_profile": null,
+        "notes": "원본 PNG에 ICC 없음. 채널값을 보존하고 화면 표시만 sRGB 가정. 빈도·색간거리로 대표 관측색 선정; 그라디언트 전체 의미나 브랜드 색 이름 아님."
+      },
+      "observation": {
+        "region": "파일 전체에서 alpha=255 픽셀 집계; 좌상단 기준 대표 좌표 x=75, y=3; 동일 RGB 픽셀 3429개",
+        "alpha_handling": "alpha=255인 픽셀만 사용; 반투명·안티앨리어싱 경계 제외",
+        "background_handling": "투명배경을 흰색/검정과 합성하지 않음",
+        "profile_assumption": "ICC/sRGB 청크 없음 여부는 ICC 확인 기준. ICC 프로필 없음, sRGB 표시 가정; 공식 디지털 색 인증 아님"
+      },
+      "evidence_locator": "PNG 원본 픽셀 (75, 3) RGBA=[219, 49, 54, 255]",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex 원본 픽셀 대조",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "RGBA 채널·좌표·빈도 재현 확인. 담당자 승인/공식 지정색 확인 아님."
+      },
+      "notes": "페이지 디자인의 강조/배경 역할은 후속 제안. 현재 색을 회사 필수값으로 정하지 않음."
+    },
+    {
+      "company_id": "hanmac",
+      "color_id": "ci.observed.raster.2",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-013",
+        "record_version": "0.1.0",
+        "sha256": "8bf20af63dbec973ee5da65fb4da5c6fdd818c63d3a45611665c077ac44f2585"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-013",
+        "record_version": "0.1.0",
+        "sha256": "8bf20af63dbec973ee5da65fb4da5c6fdd818c63d3a45611665c077ac44f2585"
+      },
+      "source_level": "raster_sample",
+      "label_in_source": "공식 색 이름 없음: 불투명 픽셀 대표색 2",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          55,
+          73,
+          140
+        ],
+        "declared_color_space": null
+      },
+      "screen_value": {
+        "color_space": "srgb",
+        "hex": "#37498C",
+        "alpha": 1
+      },
+      "normalization": {
+        "method": "raster_sample",
+        "source_profile": null,
+        "notes": "원본 PNG에 ICC 없음. 채널값을 보존하고 화면 표시만 sRGB 가정. 빈도·색간거리로 대표 관측색 선정; 그라디언트 전체 의미나 브랜드 색 이름 아님."
+      },
+      "observation": {
+        "region": "파일 전체에서 alpha=255 픽셀 집계; 좌상단 기준 대표 좌표 x=149, y=3; 동일 RGB 픽셀 3423개",
+        "alpha_handling": "alpha=255인 픽셀만 사용; 반투명·안티앨리어싱 경계 제외",
+        "background_handling": "투명배경을 흰색/검정과 합성하지 않음",
+        "profile_assumption": "ICC/sRGB 청크 없음 여부는 ICC 확인 기준. ICC 프로필 없음, sRGB 표시 가정; 공식 디지털 색 인증 아님"
+      },
+      "evidence_locator": "PNG 원본 픽셀 (149, 3) RGBA=[55, 73, 140, 255]",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex 원본 픽셀 대조",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "RGBA 채널·좌표·빈도 재현 확인. 담당자 승인/공식 지정색 확인 아님."
+      },
+      "notes": "페이지 디자인의 강조/배경 역할은 후속 제안. 현재 색을 회사 필수값으로 정하지 않음."
+    },
+    {
+      "company_id": "hanmac",
+      "color_id": "ci.observed.vector.1",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-003",
+        "record_version": "0.1.0",
+        "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-003",
+        "record_version": "0.1.0",
+        "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 1",
+      "raw_value": {
+        "notation": "CMYK",
+        "value": [
+          78.5156,
+          82.0313,
+          83.5938,
+          67.9688
+        ],
+        "declared_color_space": "cmyk"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "가족사_CI_국문_원본.ai groupItems[4] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "hanmac",
+      "color_id": "ci.observed.vector.2",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-003",
+        "record_version": "0.1.0",
+        "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-003",
+        "record_version": "0.1.0",
+        "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 2",
+      "raw_value": {
+        "notation": "CMYK",
+        "value": [
+          10,
+          95,
+          87,
+          0
+        ],
+        "declared_color_space": "cmyk"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "가족사_CI_국문_원본.ai groupItems[4] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "hanmac",
+      "color_id": "ci.observed.vector.3",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-003",
+        "record_version": "0.1.0",
+        "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-003",
+        "record_version": "0.1.0",
+        "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 3",
+      "raw_value": {
+        "notation": "CMYK",
+        "value": [
+          92,
+          84,
+          17,
+          0
+        ],
+        "declared_color_space": "cmyk"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "가족사_CI_국문_원본.ai groupItems[4] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "saman",
+      "color_id": "ci.observed.raster.1",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-009",
+        "record_version": "0.1.0",
+        "sha256": "d895fbd63173648ba1ff4be885439fbdae1492803217650ebba388f72e4117fd"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-009",
+        "record_version": "0.1.0",
+        "sha256": "d895fbd63173648ba1ff4be885439fbdae1492803217650ebba388f72e4117fd"
+      },
+      "source_level": "raster_sample",
+      "label_in_source": "공식 색 이름 없음: 불투명 픽셀 대표색 1",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          245,
+          130,
+          31
+        ],
+        "declared_color_space": null
+      },
+      "screen_value": {
+        "color_space": "srgb",
+        "hex": "#F5821F",
+        "alpha": 1
+      },
+      "normalization": {
+        "method": "raster_sample",
+        "source_profile": null,
+        "notes": "원본 PNG에 ICC 없음. 채널값을 보존하고 화면 표시만 sRGB 가정. 빈도·색간거리로 대표 관측색 선정; 그라디언트 전체 의미나 브랜드 색 이름 아님."
+      },
+      "observation": {
+        "region": "파일 전체에서 alpha=255 픽셀 집계; 좌상단 기준 대표 좌표 x=63, y=2; 동일 RGB 픽셀 2204개",
+        "alpha_handling": "alpha=255인 픽셀만 사용; 반투명·안티앨리어싱 경계 제외",
+        "background_handling": "투명배경을 흰색/검정과 합성하지 않음",
+        "profile_assumption": "ICC/sRGB 청크 없음 여부는 ICC 확인 기준. ICC 프로필 없음, sRGB 표시 가정; 공식 디지털 색 인증 아님"
+      },
+      "evidence_locator": "PNG 원본 픽셀 (63, 2) RGBA=[245, 130, 31, 255]",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex 원본 픽셀 대조",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "RGBA 채널·좌표·빈도 재현 확인. 담당자 승인/공식 지정색 확인 아님."
+      },
+      "notes": "페이지 디자인의 강조/배경 역할은 후속 제안. 현재 색을 회사 필수값으로 정하지 않음."
+    },
+    {
+      "company_id": "saman",
+      "color_id": "ci.observed.raster.2",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-009",
+        "record_version": "0.1.0",
+        "sha256": "d895fbd63173648ba1ff4be885439fbdae1492803217650ebba388f72e4117fd"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-009",
+        "record_version": "0.1.0",
+        "sha256": "d895fbd63173648ba1ff4be885439fbdae1492803217650ebba388f72e4117fd"
+      },
+      "source_level": "raster_sample",
+      "label_in_source": "공식 색 이름 없음: 불투명 픽셀 대표색 2",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          249,
+          161,
+          89
+        ],
+        "declared_color_space": null
+      },
+      "screen_value": {
+        "color_space": "srgb",
+        "hex": "#F9A159",
+        "alpha": 1
+      },
+      "normalization": {
+        "method": "raster_sample",
+        "source_profile": null,
+        "notes": "원본 PNG에 ICC 없음. 채널값을 보존하고 화면 표시만 sRGB 가정. 빈도·색간거리로 대표 관측색 선정; 그라디언트 전체 의미나 브랜드 색 이름 아님."
+      },
+      "observation": {
+        "region": "파일 전체에서 alpha=255 픽셀 집계; 좌상단 기준 대표 좌표 x=59, y=51; 동일 RGB 픽셀 49개",
+        "alpha_handling": "alpha=255인 픽셀만 사용; 반투명·안티앨리어싱 경계 제외",
+        "background_handling": "투명배경을 흰색/검정과 합성하지 않음",
+        "profile_assumption": "ICC/sRGB 청크 없음 여부는 ICC 확인 기준. ICC 프로필 없음, sRGB 표시 가정; 공식 디지털 색 인증 아님"
+      },
+      "evidence_locator": "PNG 원본 픽셀 (59, 51) RGBA=[249, 161, 89, 255]",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex 원본 픽셀 대조",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "RGBA 채널·좌표·빈도 재현 확인. 담당자 승인/공식 지정색 확인 아님."
+      },
+      "notes": "페이지 디자인의 강조/배경 역할은 후속 제안. 현재 색을 회사 필수값으로 정하지 않음."
+    },
+    {
+      "company_id": "saman",
+      "color_id": "ci.observed.raster.3",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-009",
+        "record_version": "0.1.0",
+        "sha256": "d895fbd63173648ba1ff4be885439fbdae1492803217650ebba388f72e4117fd"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-009",
+        "record_version": "0.1.0",
+        "sha256": "d895fbd63173648ba1ff4be885439fbdae1492803217650ebba388f72e4117fd"
+      },
+      "source_level": "raster_sample",
+      "label_in_source": "공식 색 이름 없음: 불투명 픽셀 대표색 3",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          252,
+          194,
+          143
+        ],
+        "declared_color_space": null
+      },
+      "screen_value": {
+        "color_space": "srgb",
+        "hex": "#FCC28F",
+        "alpha": 1
+      },
+      "normalization": {
+        "method": "raster_sample",
+        "source_profile": null,
+        "notes": "원본 PNG에 ICC 없음. 채널값을 보존하고 화면 표시만 sRGB 가정. 빈도·색간거리로 대표 관측색 선정; 그라디언트 전체 의미나 브랜드 색 이름 아님."
+      },
+      "observation": {
+        "region": "파일 전체에서 alpha=255 픽셀 집계; 좌상단 기준 대표 좌표 x=55, y=67; 동일 RGB 픽셀 34개",
+        "alpha_handling": "alpha=255인 픽셀만 사용; 반투명·안티앨리어싱 경계 제외",
+        "background_handling": "투명배경을 흰색/검정과 합성하지 않음",
+        "profile_assumption": "ICC/sRGB 청크 없음 여부는 ICC 확인 기준. ICC 프로필 없음, sRGB 표시 가정; 공식 디지털 색 인증 아님"
+      },
+      "evidence_locator": "PNG 원본 픽셀 (55, 67) RGBA=[252, 194, 143, 255]",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex 원본 픽셀 대조",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "RGBA 채널·좌표·빈도 재현 확인. 담당자 승인/공식 지정색 확인 아님."
+      },
+      "notes": "페이지 디자인의 강조/배경 역할은 후속 제안. 현재 색을 회사 필수값으로 정하지 않음."
+    },
+    {
+      "company_id": "saman",
+      "color_id": "ci.observed.vector.1",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-003",
+        "record_version": "0.1.0",
+        "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-003",
+        "record_version": "0.1.0",
+        "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 1",
+      "raw_value": {
+        "notation": "CMYK",
+        "value": [
+          0,
+          0,
+          0,
+          72
+        ],
+        "declared_color_space": "cmyk"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "가족사_CI_국문_원본.ai groupItems[8] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "saman",
+      "color_id": "ci.observed.vector.2",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-003",
+        "record_version": "0.1.0",
+        "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-003",
+        "record_version": "0.1.0",
+        "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 2",
+      "raw_value": {
+        "notation": "CMYK",
+        "value": [
+          0,
+          60,
+          100,
+          0
+        ],
+        "declared_color_space": "cmyk"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "가족사_CI_국문_원본.ai groupItems[8] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon-industry",
+      "color_id": "ci.observed.raster.1",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-010",
+        "record_version": "0.1.0",
+        "sha256": "fd8cd342a5701248c1f04274ed8a94e087f0bd417302aec6743bedb61ef5aa95"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-010",
+        "record_version": "0.1.0",
+        "sha256": "fd8cd342a5701248c1f04274ed8a94e087f0bd417302aec6743bedb61ef5aa95"
+      },
+      "source_level": "raster_sample",
+      "label_in_source": "공식 색 이름 없음: 불투명 픽셀 대표색 1",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          76,
+          130,
+          165
+        ],
+        "declared_color_space": null
+      },
+      "screen_value": {
+        "color_space": "srgb",
+        "hex": "#4C82A5",
+        "alpha": 1
+      },
+      "normalization": {
+        "method": "raster_sample",
+        "source_profile": null,
+        "notes": "원본 PNG에 ICC 없음. 채널값을 보존하고 화면 표시만 sRGB 가정. 빈도·색간거리로 대표 관측색 선정; 그라디언트 전체 의미나 브랜드 색 이름 아님."
+      },
+      "observation": {
+        "region": "파일 전체에서 alpha=255 픽셀 집계; 좌상단 기준 대표 좌표 x=186, y=29; 동일 RGB 픽셀 1923개",
+        "alpha_handling": "alpha=255인 픽셀만 사용; 반투명·안티앨리어싱 경계 제외",
+        "background_handling": "투명배경을 흰색/검정과 합성하지 않음",
+        "profile_assumption": "ICC/sRGB 청크 없음 여부는 ICC 확인 기준. ICC 프로필 없음, sRGB 표시 가정; 공식 디지털 색 인증 아님"
+      },
+      "evidence_locator": "PNG 원본 픽셀 (186, 29) RGBA=[76, 130, 165, 255]",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex 원본 픽셀 대조",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "RGBA 채널·좌표·빈도 재현 확인. 담당자 승인/공식 지정색 확인 아님."
+      },
+      "notes": "페이지 디자인의 강조/배경 역할은 후속 제안. 현재 색을 회사 필수값으로 정하지 않음."
+    },
+    {
+      "company_id": "jangheon-industry",
+      "color_id": "ci.observed.raster.2",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-010",
+        "record_version": "0.1.0",
+        "sha256": "fd8cd342a5701248c1f04274ed8a94e087f0bd417302aec6743bedb61ef5aa95"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-010",
+        "record_version": "0.1.0",
+        "sha256": "fd8cd342a5701248c1f04274ed8a94e087f0bd417302aec6743bedb61ef5aa95"
+      },
+      "source_level": "raster_sample",
+      "label_in_source": "공식 색 이름 없음: 불투명 픽셀 대표색 2",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          135,
+          185,
+          207
+        ],
+        "declared_color_space": null
+      },
+      "screen_value": {
+        "color_space": "srgb",
+        "hex": "#87B9CF",
+        "alpha": 1
+      },
+      "normalization": {
+        "method": "raster_sample",
+        "source_profile": null,
+        "notes": "원본 PNG에 ICC 없음. 채널값을 보존하고 화면 표시만 sRGB 가정. 빈도·색간거리로 대표 관측색 선정; 그라디언트 전체 의미나 브랜드 색 이름 아님."
+      },
+      "observation": {
+        "region": "파일 전체에서 alpha=255 픽셀 집계; 좌상단 기준 대표 좌표 x=84, y=3; 동일 RGB 픽셀 1889개",
+        "alpha_handling": "alpha=255인 픽셀만 사용; 반투명·안티앨리어싱 경계 제외",
+        "background_handling": "투명배경을 흰색/검정과 합성하지 않음",
+        "profile_assumption": "ICC/sRGB 청크 없음 여부는 ICC 확인 기준. ICC 프로필 없음, sRGB 표시 가정; 공식 디지털 색 인증 아님"
+      },
+      "evidence_locator": "PNG 원본 픽셀 (84, 3) RGBA=[135, 185, 207, 255]",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex 원본 픽셀 대조",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "RGBA 채널·좌표·빈도 재현 확인. 담당자 승인/공식 지정색 확인 아님."
+      },
+      "notes": "페이지 디자인의 강조/배경 역할은 후속 제안. 현재 색을 회사 필수값으로 정하지 않음."
+    },
+    {
+      "company_id": "jangheon-industry",
+      "color_id": "ci.observed.vector.1",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-003",
+        "record_version": "0.1.0",
+        "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-003",
+        "record_version": "0.1.0",
+        "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 1",
+      "raw_value": {
+        "notation": "CMYK",
+        "value": [
+          0,
+          0,
+          0,
+          100
+        ],
+        "declared_color_space": "cmyk"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "가족사_CI_국문_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon-industry",
+      "color_id": "ci.observed.vector.2",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-003",
+        "record_version": "0.1.0",
+        "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-003",
+        "record_version": "0.1.0",
+        "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 2",
+      "raw_value": {
+        "notation": "CMYK",
+        "value": [
+          75,
+          68,
+          67,
+          90.2
+        ],
+        "declared_color_space": "cmyk"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "가족사_CI_국문_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon-industry",
+      "color_id": "ci.observed.vector.3",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-003",
+        "record_version": "0.1.0",
+        "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-003",
+        "record_version": "0.1.0",
+        "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 3",
+      "raw_value": {
+        "notation": "CMYK",
+        "value": [
+          46.22263,
+          14.19394,
+          12.26215,
+          0
+        ],
+        "declared_color_space": "cmyk"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "가족사_CI_국문_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon-industry",
+      "color_id": "ci.observed.vector.4",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-003",
+        "record_version": "0.1.0",
+        "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-003",
+        "record_version": "0.1.0",
+        "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 4",
+      "raw_value": {
+        "notation": "CMYK",
+        "value": [
+          74.45334,
+          42.16067,
+          22.56504,
+          0
+        ],
+        "declared_color_space": "cmyk"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "가족사_CI_국문_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "ptc",
+      "color_id": "ci.observed.raster.1",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-011",
+        "record_version": "0.1.0",
+        "sha256": "6ca1dc896e47d59ec8771e57375d79ab61addbab5f5ecf09674e6d4644ae193f"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-011",
+        "record_version": "0.1.0",
+        "sha256": "6ca1dc896e47d59ec8771e57375d79ab61addbab5f5ecf09674e6d4644ae193f"
+      },
+      "source_level": "raster_sample",
+      "label_in_source": "공식 색 이름 없음: 불투명 픽셀 대표색 1",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          0,
+          111,
+          186
+        ],
+        "declared_color_space": null
+      },
+      "screen_value": {
+        "color_space": "srgb",
+        "hex": "#006FBA",
+        "alpha": 1
+      },
+      "normalization": {
+        "method": "raster_sample",
+        "source_profile": null,
+        "notes": "원본 PNG에 ICC 없음. 채널값을 보존하고 화면 표시만 sRGB 가정. 빈도·색간거리로 대표 관측색 선정; 그라디언트 전체 의미나 브랜드 색 이름 아님."
+      },
+      "observation": {
+        "region": "파일 전체에서 alpha=255 픽셀 집계; 좌상단 기준 대표 좌표 x=59, y=1; 동일 RGB 픽셀 2718개",
+        "alpha_handling": "alpha=255인 픽셀만 사용; 반투명·안티앨리어싱 경계 제외",
+        "background_handling": "투명배경을 흰색/검정과 합성하지 않음",
+        "profile_assumption": "ICC/sRGB 청크 없음 여부는 ICC 확인 기준. ICC 프로필 없음, sRGB 표시 가정; 공식 디지털 색 인증 아님"
+      },
+      "evidence_locator": "PNG 원본 픽셀 (59, 1) RGBA=[0, 111, 186, 255]",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex 원본 픽셀 대조",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "RGBA 채널·좌표·빈도 재현 확인. 담당자 승인/공식 지정색 확인 아님."
+      },
+      "notes": "페이지 디자인의 강조/배경 역할은 후속 제안. 현재 색을 회사 필수값으로 정하지 않음."
+    },
+    {
+      "company_id": "ptc",
+      "color_id": "ci.observed.raster.2",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-011",
+        "record_version": "0.1.0",
+        "sha256": "6ca1dc896e47d59ec8771e57375d79ab61addbab5f5ecf09674e6d4644ae193f"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-011",
+        "record_version": "0.1.0",
+        "sha256": "6ca1dc896e47d59ec8771e57375d79ab61addbab5f5ecf09674e6d4644ae193f"
+      },
+      "source_level": "raster_sample",
+      "label_in_source": "공식 색 이름 없음: 불투명 픽셀 대표색 2",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          251,
+          169,
+          25
+        ],
+        "declared_color_space": null
+      },
+      "screen_value": {
+        "color_space": "srgb",
+        "hex": "#FBA919",
+        "alpha": 1
+      },
+      "normalization": {
+        "method": "raster_sample",
+        "source_profile": null,
+        "notes": "원본 PNG에 ICC 없음. 채널값을 보존하고 화면 표시만 sRGB 가정. 빈도·색간거리로 대표 관측색 선정; 그라디언트 전체 의미나 브랜드 색 이름 아님."
+      },
+      "observation": {
+        "region": "파일 전체에서 alpha=255 픽셀 집계; 좌상단 기준 대표 좌표 x=44, y=41; 동일 RGB 픽셀 1645개",
+        "alpha_handling": "alpha=255인 픽셀만 사용; 반투명·안티앨리어싱 경계 제외",
+        "background_handling": "투명배경을 흰색/검정과 합성하지 않음",
+        "profile_assumption": "ICC/sRGB 청크 없음 여부는 ICC 확인 기준. ICC 프로필 없음, sRGB 표시 가정; 공식 디지털 색 인증 아님"
+      },
+      "evidence_locator": "PNG 원본 픽셀 (44, 41) RGBA=[251, 169, 25, 255]",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex 원본 픽셀 대조",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "RGBA 채널·좌표·빈도 재현 확인. 담당자 승인/공식 지정색 확인 아님."
+      },
+      "notes": "페이지 디자인의 강조/배경 역할은 후속 제안. 현재 색을 회사 필수값으로 정하지 않음."
+    },
+    {
+      "company_id": "ptc",
+      "color_id": "ci.observed.raster.3",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-011",
+        "record_version": "0.1.0",
+        "sha256": "6ca1dc896e47d59ec8771e57375d79ab61addbab5f5ecf09674e6d4644ae193f"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-011",
+        "record_version": "0.1.0",
+        "sha256": "6ca1dc896e47d59ec8771e57375d79ab61addbab5f5ecf09674e6d4644ae193f"
+      },
+      "source_level": "raster_sample",
+      "label_in_source": "공식 색 이름 없음: 불투명 픽셀 대표색 3",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          132,
+          65,
+          153
+        ],
+        "declared_color_space": null
+      },
+      "screen_value": {
+        "color_space": "srgb",
+        "hex": "#844199",
+        "alpha": 1
+      },
+      "normalization": {
+        "method": "raster_sample",
+        "source_profile": null,
+        "notes": "원본 PNG에 ICC 없음. 채널값을 보존하고 화면 표시만 sRGB 가정. 빈도·색간거리로 대표 관측색 선정; 그라디언트 전체 의미나 브랜드 색 이름 아님."
+      },
+      "observation": {
+        "region": "파일 전체에서 alpha=255 픽셀 집계; 좌상단 기준 대표 좌표 x=59, y=25; 동일 RGB 픽셀 1376개",
+        "alpha_handling": "alpha=255인 픽셀만 사용; 반투명·안티앨리어싱 경계 제외",
+        "background_handling": "투명배경을 흰색/검정과 합성하지 않음",
+        "profile_assumption": "ICC/sRGB 청크 없음 여부는 ICC 확인 기준. ICC 프로필 없음, sRGB 표시 가정; 공식 디지털 색 인증 아님"
+      },
+      "evidence_locator": "PNG 원본 픽셀 (59, 25) RGBA=[132, 65, 153, 255]",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex 원본 픽셀 대조",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "RGBA 채널·좌표·빈도 재현 확인. 담당자 승인/공식 지정색 확인 아님."
+      },
+      "notes": "페이지 디자인의 강조/배경 역할은 후속 제안. 현재 색을 회사 필수값으로 정하지 않음."
+    },
+    {
+      "company_id": "ptc",
+      "color_id": "ci.observed.vector.1",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-003",
+        "record_version": "0.1.0",
+        "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-003",
+        "record_version": "0.1.0",
+        "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 1",
+      "raw_value": {
+        "notation": "CMYK",
+        "value": [
+          0,
+          38,
+          100,
+          0
+        ],
+        "declared_color_space": "cmyk"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "가족사_CI_국문_원본.ai groupItems[15] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "ptc",
+      "color_id": "ci.observed.vector.2",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-003",
+        "record_version": "0.1.0",
+        "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-003",
+        "record_version": "0.1.0",
+        "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 2",
+      "raw_value": {
+        "notation": "CMYK",
+        "value": [
+          57,
+          89,
+          0,
+          0
+        ],
+        "declared_color_space": "cmyk"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "가족사_CI_국문_원본.ai groupItems[15] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "ptc",
+      "color_id": "ci.observed.vector.3",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-003",
+        "record_version": "0.1.0",
+        "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-003",
+        "record_version": "0.1.0",
+        "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 3",
+      "raw_value": {
+        "notation": "CMYK",
+        "value": [
+          100,
+          52,
+          0,
+          0
+        ],
+        "declared_color_space": "cmyk"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "가족사_CI_국문_원본.ai groupItems[15] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "halla",
+      "color_id": "ci.observed.raster.1",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-012",
+        "record_version": "0.1.0",
+        "sha256": "9eb8e43cb84c379821ed3e019120d43503a397bedd25085856d6db3ee4ef1c1f"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-012",
+        "record_version": "0.1.0",
+        "sha256": "9eb8e43cb84c379821ed3e019120d43503a397bedd25085856d6db3ee4ef1c1f"
+      },
+      "source_level": "raster_sample",
+      "label_in_source": "공식 색 이름 없음: 불투명 픽셀 대표색 1",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          0,
+          114,
+          188
+        ],
+        "declared_color_space": null
+      },
+      "screen_value": {
+        "color_space": "srgb",
+        "hex": "#0072BC",
+        "alpha": 1
+      },
+      "normalization": {
+        "method": "raster_sample",
+        "source_profile": null,
+        "notes": "원본 PNG에 ICC 없음. 채널값을 보존하고 화면 표시만 sRGB 가정. 빈도·색간거리로 대표 관측색 선정; 그라디언트 전체 의미나 브랜드 색 이름 아님."
+      },
+      "observation": {
+        "region": "파일 전체에서 alpha=255 픽셀 집계; 좌상단 기준 대표 좌표 x=87, y=42; 동일 RGB 픽셀 322개",
+        "alpha_handling": "alpha=255인 픽셀만 사용; 반투명·안티앨리어싱 경계 제외",
+        "background_handling": "투명배경을 흰색/검정과 합성하지 않음",
+        "profile_assumption": "ICC/sRGB 청크 없음 여부는 ICC 확인 기준. ICC 프로필 없음, sRGB 표시 가정; 공식 디지털 색 인증 아님"
+      },
+      "evidence_locator": "PNG 원본 픽셀 (87, 42) RGBA=[0, 114, 188, 255]",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex 원본 픽셀 대조",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "RGBA 채널·좌표·빈도 재현 확인. 담당자 승인/공식 지정색 확인 아님."
+      },
+      "notes": "페이지 디자인의 강조/배경 역할은 후속 제안. 현재 색을 회사 필수값으로 정하지 않음."
+    },
+    {
+      "company_id": "halla",
+      "color_id": "ci.observed.vector.1",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-003",
+        "record_version": "0.1.0",
+        "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-003",
+        "record_version": "0.1.0",
+        "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 1",
+      "raw_value": {
+        "notation": "CMYK",
+        "value": [
+          0,
+          0,
+          0,
+          100
+        ],
+        "declared_color_space": "cmyk"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "가족사_CI_국문_원본.ai groupItems[25] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "halla",
+      "color_id": "ci.observed.vector.2",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-003",
+        "record_version": "0.1.0",
+        "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-003",
+        "record_version": "0.1.0",
+        "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 2",
+      "raw_value": {
+        "notation": "CMYK",
+        "value": [
+          100,
+          50,
+          0,
+          0
+        ],
+        "declared_color_space": "cmyk"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "가족사_CI_국문_원본.ai groupItems[25] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "baron",
+      "color_id": "ci.observed.raster.1",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-007",
+        "record_version": "0.1.0",
+        "sha256": "478ea643756e040e384c6be277e1805d8223b300bdd3caf2984340b24668e40a"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-007",
+        "record_version": "0.1.0",
+        "sha256": "478ea643756e040e384c6be277e1805d8223b300bdd3caf2984340b24668e40a"
+      },
+      "source_level": "raster_sample",
+      "label_in_source": "공식 색 이름 없음: 불투명 픽셀 대표색 1",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          38,
+          65,
+          133
+        ],
+        "declared_color_space": null
+      },
+      "screen_value": {
+        "color_space": "srgb",
+        "hex": "#264185",
+        "alpha": 1
+      },
+      "normalization": {
+        "method": "raster_sample",
+        "source_profile": null,
+        "notes": "원본 PNG에 ICC 없음. 채널값을 보존하고 화면 표시만 sRGB 가정. 빈도·색간거리로 대표 관측색 선정; 그라디언트 전체 의미나 브랜드 색 이름 아님."
+      },
+      "observation": {
+        "region": "파일 전체에서 alpha=255 픽셀 집계; 좌상단 기준 대표 좌표 x=59, y=0; 동일 RGB 픽셀 12756개",
+        "alpha_handling": "alpha=255인 픽셀만 사용; 반투명·안티앨리어싱 경계 제외",
+        "background_handling": "투명배경을 흰색/검정과 합성하지 않음",
+        "profile_assumption": "ICC/sRGB 청크 없음 여부는 ICC 확인 기준. ICC 프로필 없음, sRGB 표시 가정; 공식 디지털 색 인증 아님"
+      },
+      "evidence_locator": "PNG 원본 픽셀 (59, 0) RGBA=[38, 65, 133, 255]",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex 원본 픽셀 대조",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "RGBA 채널·좌표·빈도 재현 확인. 담당자 승인/공식 지정색 확인 아님."
+      },
+      "notes": "페이지 디자인의 강조/배경 역할은 후속 제안. 현재 색을 회사 필수값으로 정하지 않음."
+    },
+    {
+      "company_id": "baron",
+      "color_id": "ci.observed.vector.1",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-003",
+        "record_version": "0.1.0",
+        "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-003",
+        "record_version": "0.1.0",
+        "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 1",
+      "raw_value": {
+        "notation": "CMYK",
+        "value": [
+          100,
+          89.5,
+          20.7,
+          0
+        ],
+        "declared_color_space": "cmyk"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "가족사_CI_국문_원본.ai groupItems[22] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "sanha",
+      "color_id": "ci.observed.raster.1",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-008",
+        "record_version": "0.1.0",
+        "sha256": "8827e5bf48a958b1e0ec73ddbf2647238b2bebd71d9afe4676241c887e3d50c1"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-008",
+        "record_version": "0.1.0",
+        "sha256": "8827e5bf48a958b1e0ec73ddbf2647238b2bebd71d9afe4676241c887e3d50c1"
+      },
+      "source_level": "raster_sample",
+      "label_in_source": "공식 색 이름 없음: 불투명 픽셀 대표색 1",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          1,
+          154,
+          206
+        ],
+        "declared_color_space": null
+      },
+      "screen_value": {
+        "color_space": "srgb",
+        "hex": "#019ACE",
+        "alpha": 1
+      },
+      "normalization": {
+        "method": "raster_sample",
+        "source_profile": null,
+        "notes": "원본 PNG에 ICC 없음. 채널값을 보존하고 화면 표시만 sRGB 가정. 빈도·색간거리로 대표 관측색 선정; 그라디언트 전체 의미나 브랜드 색 이름 아님."
+      },
+      "observation": {
+        "region": "파일 전체에서 alpha=255 픽셀 집계; 좌상단 기준 대표 좌표 x=395, y=424; 동일 RGB 픽셀 306204개",
+        "alpha_handling": "alpha=255인 픽셀만 사용; 반투명·안티앨리어싱 경계 제외",
+        "background_handling": "투명배경을 흰색/검정과 합성하지 않음",
+        "profile_assumption": "ICC/sRGB 청크 없음 여부는 ICC 확인 기준. ICC 프로필 없음, sRGB 표시 가정; 공식 디지털 색 인증 아님"
+      },
+      "evidence_locator": "PNG 원본 픽셀 (395, 424) RGBA=[1, 154, 206, 255]",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex 원본 픽셀 대조",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "RGBA 채널·좌표·빈도 재현 확인. 담당자 승인/공식 지정색 확인 아님."
+      },
+      "notes": "페이지 디자인의 강조/배경 역할은 후속 제안. 현재 색을 회사 필수값으로 정하지 않음."
+    },
+    {
+      "company_id": "sanha",
+      "color_id": "ci.observed.raster.2",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-008",
+        "record_version": "0.1.0",
+        "sha256": "8827e5bf48a958b1e0ec73ddbf2647238b2bebd71d9afe4676241c887e3d50c1"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-008",
+        "record_version": "0.1.0",
+        "sha256": "8827e5bf48a958b1e0ec73ddbf2647238b2bebd71d9afe4676241c887e3d50c1"
+      },
+      "source_level": "raster_sample",
+      "label_in_source": "공식 색 이름 없음: 불투명 픽셀 대표색 2",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          17,
+          147,
+          52
+        ],
+        "declared_color_space": null
+      },
+      "screen_value": {
+        "color_space": "srgb",
+        "hex": "#119334",
+        "alpha": 1
+      },
+      "normalization": {
+        "method": "raster_sample",
+        "source_profile": null,
+        "notes": "원본 PNG에 ICC 없음. 채널값을 보존하고 화면 표시만 sRGB 가정. 빈도·색간거리로 대표 관측색 선정; 그라디언트 전체 의미나 브랜드 색 이름 아님."
+      },
+      "observation": {
+        "region": "파일 전체에서 alpha=255 픽셀 집계; 좌상단 기준 대표 좌표 x=639, y=1; 동일 RGB 픽셀 263286개",
+        "alpha_handling": "alpha=255인 픽셀만 사용; 반투명·안티앨리어싱 경계 제외",
+        "background_handling": "투명배경을 흰색/검정과 합성하지 않음",
+        "profile_assumption": "ICC/sRGB 청크 없음 여부는 ICC 확인 기준. ICC 프로필 없음, sRGB 표시 가정; 공식 디지털 색 인증 아님"
+      },
+      "evidence_locator": "PNG 원본 픽셀 (639, 1) RGBA=[17, 147, 52, 255]",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex 원본 픽셀 대조",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "RGBA 채널·좌표·빈도 재현 확인. 담당자 승인/공식 지정색 확인 아님."
+      },
+      "notes": "페이지 디자인의 강조/배경 역할은 후속 제안. 현재 색을 회사 필수값으로 정하지 않음."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.raster.1",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-006",
+        "record_version": "0.1.0",
+        "sha256": "45fb1233b5700bd06951c61c728adad7ec7abbcc9f1b9d33a1a28e5ef962d4e4"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-006",
+        "record_version": "0.1.0",
+        "sha256": "45fb1233b5700bd06951c61c728adad7ec7abbcc9f1b9d33a1a28e5ef962d4e4"
+      },
+      "source_level": "raster_sample",
+      "label_in_source": "공식 색 이름 없음: 불투명 픽셀 대표색 1",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          41,
+          37,
+          34
+        ],
+        "declared_color_space": null
+      },
+      "screen_value": {
+        "color_space": "srgb",
+        "hex": "#292522",
+        "alpha": 1
+      },
+      "normalization": {
+        "method": "raster_sample",
+        "source_profile": null,
+        "notes": "원본 PNG에 ICC 없음. 채널값을 보존하고 화면 표시만 sRGB 가정. 빈도·색간거리로 대표 관측색 선정; 그라디언트 전체 의미나 브랜드 색 이름 아님."
+      },
+      "observation": {
+        "region": "파일 전체에서 alpha=255 픽셀 집계; 좌상단 기준 대표 좌표 x=2392, y=2522; 동일 RGB 픽셀 1788145개",
+        "alpha_handling": "alpha=255인 픽셀만 사용; 반투명·안티앨리어싱 경계 제외",
+        "background_handling": "투명배경을 흰색/검정과 합성하지 않음",
+        "profile_assumption": "ICC/sRGB 청크 없음 여부는 ICC 확인 기준. ICC 프로필 없음, sRGB 표시 가정; 공식 디지털 색 인증 아님"
+      },
+      "evidence_locator": "PNG 원본 픽셀 (2392, 2522) RGBA=[41, 37, 34, 255]",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex 원본 픽셀 대조",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "RGBA 채널·좌표·빈도 재현 확인. 담당자 승인/공식 지정색 확인 아님."
+      },
+      "notes": "페이지 디자인의 강조/배경 역할은 후속 제안. 현재 색을 회사 필수값으로 정하지 않음."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.raster.2",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-006",
+        "record_version": "0.1.0",
+        "sha256": "45fb1233b5700bd06951c61c728adad7ec7abbcc9f1b9d33a1a28e5ef962d4e4"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-006",
+        "record_version": "0.1.0",
+        "sha256": "45fb1233b5700bd06951c61c728adad7ec7abbcc9f1b9d33a1a28e5ef962d4e4"
+      },
+      "source_level": "raster_sample",
+      "label_in_source": "공식 색 이름 없음: 불투명 픽셀 대표색 2",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          61,
+          118,
+          186
+        ],
+        "declared_color_space": null
+      },
+      "screen_value": {
+        "color_space": "srgb",
+        "hex": "#3D76BA",
+        "alpha": 1
+      },
+      "normalization": {
+        "method": "raster_sample",
+        "source_profile": null,
+        "notes": "원본 PNG에 ICC 없음. 채널값을 보존하고 화면 표시만 sRGB 가정. 빈도·색간거리로 대표 관측색 선정; 그라디언트 전체 의미나 브랜드 색 이름 아님."
+      },
+      "observation": {
+        "region": "파일 전체에서 alpha=255 픽셀 집계; 좌상단 기준 대표 좌표 x=3209, y=639; 동일 RGB 픽셀 315364개",
+        "alpha_handling": "alpha=255인 픽셀만 사용; 반투명·안티앨리어싱 경계 제외",
+        "background_handling": "투명배경을 흰색/검정과 합성하지 않음",
+        "profile_assumption": "ICC/sRGB 청크 없음 여부는 ICC 확인 기준. ICC 프로필 없음, sRGB 표시 가정; 공식 디지털 색 인증 아님"
+      },
+      "evidence_locator": "PNG 원본 픽셀 (3209, 639) RGBA=[61, 118, 186, 255]",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex 원본 픽셀 대조",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "RGBA 채널·좌표·빈도 재현 확인. 담당자 승인/공식 지정색 확인 아님."
+      },
+      "notes": "페이지 디자인의 강조/배경 역할은 후속 제안. 현재 색을 회사 필수값으로 정하지 않음."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.raster.3",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-006",
+        "record_version": "0.1.0",
+        "sha256": "45fb1233b5700bd06951c61c728adad7ec7abbcc9f1b9d33a1a28e5ef962d4e4"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-006",
+        "record_version": "0.1.0",
+        "sha256": "45fb1233b5700bd06951c61c728adad7ec7abbcc9f1b9d33a1a28e5ef962d4e4"
+      },
+      "source_level": "raster_sample",
+      "label_in_source": "공식 색 이름 없음: 불투명 픽셀 대표색 3",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          41,
+          61,
+          133
+        ],
+        "declared_color_space": null
+      },
+      "screen_value": {
+        "color_space": "srgb",
+        "hex": "#293D85",
+        "alpha": 1
+      },
+      "normalization": {
+        "method": "raster_sample",
+        "source_profile": null,
+        "notes": "원본 PNG에 ICC 없음. 채널값을 보존하고 화면 표시만 sRGB 가정. 빈도·색간거리로 대표 관측색 선정; 그라디언트 전체 의미나 브랜드 색 이름 아님."
+      },
+      "observation": {
+        "region": "파일 전체에서 alpha=255 픽셀 집계; 좌상단 기준 대표 좌표 x=338, y=2840; 동일 RGB 픽셀 254521개",
+        "alpha_handling": "alpha=255인 픽셀만 사용; 반투명·안티앨리어싱 경계 제외",
+        "background_handling": "투명배경을 흰색/검정과 합성하지 않음",
+        "profile_assumption": "ICC/sRGB 청크 없음 여부는 ICC 확인 기준. ICC 프로필 없음, sRGB 표시 가정; 공식 디지털 색 인증 아님"
+      },
+      "evidence_locator": "PNG 원본 픽셀 (338, 2840) RGBA=[41, 61, 133, 255]",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex 원본 픽셀 대조",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "RGBA 채널·좌표·빈도 재현 확인. 담당자 승인/공식 지정색 확인 아님."
+      },
+      "notes": "페이지 디자인의 강조/배경 역할은 후속 제안. 현재 색을 회사 필수값으로 정하지 않음."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.1",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 1",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          171,
+          186,
+          223
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.2",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 2",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          156,
+          198,
+          232
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.3",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 3",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          113,
+          170,
+          205
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.4",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 4",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          91,
+          140,
+          182
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.5",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 5",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          194,
+          224,
+          233
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.6",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 6",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          123,
+          190,
+          222
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.7",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 7",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          48,
+          94,
+          170
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.8",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 8",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          108,
+          166,
+          211
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.9",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 9",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          236,
+          246,
+          249
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.10",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 10",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          98,
+          157,
+          212
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.11",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 11",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          66,
+          127,
+          193
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.12",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 12",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          73,
+          100,
+          173
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.13",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 13",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          69,
+          112,
+          182
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.14",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 14",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          26,
+          48,
+          103
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.15",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 15",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          33,
+          81,
+          161
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.16",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 16",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          35,
+          68,
+          146
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.17",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 17",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          68,
+          105,
+          176
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.18",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 18",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          61,
+          118,
+          186
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.19",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 19",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          40,
+          77,
+          159
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.20",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 20",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          30,
+          44,
+          96
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.21",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 21",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          30,
+          44,
+          104
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.22",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 22",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          25,
+          52,
+          138
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.23",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 23",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          24,
+          50,
+          143
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.24",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 24",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          29,
+          43,
+          109
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.25",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 25",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          26,
+          56,
+          136
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.26",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 26",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          27,
+          40,
+          88
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.27",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 27",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          50,
+          78,
+          145
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.28",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 28",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          42,
+          65,
+          141
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.29",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 29",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          101,
+          118,
+          183
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.30",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 30",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          230,
+          45,
+          45
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.31",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 31",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          234,
+          102,
+          104
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.32",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 32",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          0,
+          152,
+          68
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.33",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 33",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          238,
+          149,
+          150
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.34",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 34",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          242,
+          168,
+          156
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.35",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 35",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          232,
+          79,
+          75
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.36",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 36",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          147,
+          30,
+          35
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.37",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 37",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          174,
+          30,
+          36
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.38",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 38",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          175,
+          30,
+          35
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.39",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 39",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          200,
+          24,
+          29
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.40",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 40",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          229,
+          71,
+          71
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.41",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 41",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          233,
+          85,
+          65
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.42",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 42",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          216,
+          38,
+          40
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.43",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 43",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          135,
+          35,
+          35
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.44",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 44",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          149,
+          36,
+          38
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.45",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 45",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          221,
+          130,
+          135
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.46",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 46",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          209,
+          27,
+          29
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.47",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 47",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          134,
+          28,
+          33
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.48",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 48",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          188,
+          29,
+          33
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.49",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 49",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          202,
+          23,
+          29
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.50",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 50",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          190,
+          26,
+          32
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.51",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 51",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          189,
+          26,
+          33
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.52",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 52",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          113,
+          112,
+          113
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.53",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 53",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          89,
+          87,
+          87
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.54",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 54",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          99,
+          98,
+          98
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.55",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 55",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          116,
+          115,
+          115
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.56",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 56",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          180,
+          180,
+          181
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.57",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 57",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          165,
+          165,
+          166
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.58",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 58",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          41,
+          61,
+          133
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "jangheon",
+      "color_id": "ci.observed.vector.59",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-SOURCE-005",
+        "record_version": "0.1.0",
+        "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+      },
+      "source_level": "vector_literal",
+      "label_in_source": "원본 패스/그라디언트 채널값 59",
+      "raw_value": {
+        "notation": "RGB",
+        "value": [
+          41,
+          37,
+          34
+        ],
+        "declared_color_space": "rgb"
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "Illustrator fillColor/strokeColor 원문 채널. 회사 지정색 이름·프로필 미확인; 화면용 HEX 자동 변환하지 않음."
+      },
+      "observation": null,
+      "evidence_locator": "주식회사장헌_CI_원본.ai groupItems[0] / CI분리재구성기록.json signature",
+      "verification": {
+        "state": "source_checked",
+        "checked_by": "Codex Illustrator 네이티브 값 비교",
+        "checked_at": "2026-10-14T04:38:22.419544+00:00",
+        "notes": "복제 전후 값 대조. 값이 실제 눈에 보이는 대표색인지/공식색인지 인증하지 않음."
+      },
+      "notes": "클리핑·플러그인·그라디언트 내부값 포함 가능. 전색 목록은 원문 비교용이며 페이지 팔레트 역할 승인 아님."
+    },
+    {
+      "company_id": "saman",
+      "color_id": "ci.declared.draft.gray.hex",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-009",
+        "record_version": "0.1.0",
+        "sha256": "d895fbd63173648ba1ff4be885439fbdae1492803217650ebba388f72e4117fd"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-COLLECTION-030",
+        "record_version": "0.1.0",
+        "sha256": "5362dc5574d2c64e1c51d1fe86b207cdddb1c372da9c49c4503f250ca0318cd7"
+      },
+      "source_level": "official_declared",
+      "label_in_source": "회색 HEX",
+      "raw_value": {
+        "notation": "HEX",
+        "value": "#4D4D4D",
+        "declared_color_space": null
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "원문명시값그대로전사. HEX의sRGB프로필선언없음. CMYK/별색을HEX로환산하지않음."
+      },
+      "observation": null,
+      "evidence_locator": "삼안_CI_구성모음_제공원본.ai PDF호환page1 / 우측중단 메인컬러 두패널",
+      "verification": {
+        "state": "draft",
+        "checked_by": null,
+        "checked_at": null,
+        "notes": "원문육안확인. 회사공식최신판/형태별CI연결/출처권위검토전draft. 기본공식색조회에서제외."
+      },
+      "notes": "사용자제공디자인문서의명시값. 회사필수화승인아님. HEX/CMYK/PANTONE은동일값을자동계산한것이아니라서로다른원문표기."
+    },
+    {
+      "company_id": "saman",
+      "color_id": "ci.declared.draft.orange.hex",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-009",
+        "record_version": "0.1.0",
+        "sha256": "d895fbd63173648ba1ff4be885439fbdae1492803217650ebba388f72e4117fd"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-COLLECTION-030",
+        "record_version": "0.1.0",
+        "sha256": "5362dc5574d2c64e1c51d1fe86b207cdddb1c372da9c49c4503f250ca0318cd7"
+      },
+      "source_level": "official_declared",
+      "label_in_source": "주황 HEX",
+      "raw_value": {
+        "notation": "HEX",
+        "value": "#F58220",
+        "declared_color_space": null
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "원문명시값그대로전사. HEX의sRGB프로필선언없음. CMYK/별색을HEX로환산하지않음."
+      },
+      "observation": null,
+      "evidence_locator": "삼안_CI_구성모음_제공원본.ai PDF호환page1 / 우측중단 메인컬러 두패널",
+      "verification": {
+        "state": "draft",
+        "checked_by": null,
+        "checked_at": null,
+        "notes": "원문육안확인. 회사공식최신판/형태별CI연결/출처권위검토전draft. 기본공식색조회에서제외."
+      },
+      "notes": "사용자제공디자인문서의명시값. 회사필수화승인아님. HEX/CMYK/PANTONE은동일값을자동계산한것이아니라서로다른원문표기."
+    },
+    {
+      "company_id": "saman",
+      "color_id": "ci.declared.draft.gray.pantone",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-009",
+        "record_version": "0.1.0",
+        "sha256": "d895fbd63173648ba1ff4be885439fbdae1492803217650ebba388f72e4117fd"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-COLLECTION-030",
+        "record_version": "0.1.0",
+        "sha256": "5362dc5574d2c64e1c51d1fe86b207cdddb1c372da9c49c4503f250ca0318cd7"
+      },
+      "source_level": "official_declared",
+      "label_in_source": "회색 별색",
+      "raw_value": {
+        "notation": "PANTONE",
+        "value": "Pantone Cool Gray 10C",
+        "declared_color_space": null
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "원문명시값그대로전사. HEX의sRGB프로필선언없음. CMYK/별색을HEX로환산하지않음."
+      },
+      "observation": null,
+      "evidence_locator": "삼안_CI_구성모음_제공원본.ai PDF호환page1 / 우측중단 메인컬러 두패널",
+      "verification": {
+        "state": "draft",
+        "checked_by": null,
+        "checked_at": null,
+        "notes": "원문육안확인. 회사공식최신판/형태별CI연결/출처권위검토전draft. 기본공식색조회에서제외."
+      },
+      "notes": "사용자제공디자인문서의명시값. 회사필수화승인아님. HEX/CMYK/PANTONE은동일값을자동계산한것이아니라서로다른원문표기."
+    },
+    {
+      "company_id": "saman",
+      "color_id": "ci.declared.draft.orange.pantone",
+      "record_version": "0.1.0",
+      "revision_state": "current",
+      "ci_asset_ref": {
+        "asset_id": "CI-SOURCE-009",
+        "record_version": "0.1.0",
+        "sha256": "d895fbd63173648ba1ff4be885439fbdae1492803217650ebba388f72e4117fd"
+      },
+      "evidence_asset_ref": {
+        "asset_id": "CI-COLLECTION-030",
+        "record_version": "0.1.0",
+        "sha256": "5362dc5574d2c64e1c51d1fe86b207cdddb1c372da9c49c4503f250ca0318cd7"
+      },
+      "source_level": "official_declared",
+      "label_in_source": "주황 별색",
+      "raw_value": {
+        "notation": "PANTONE",
+        "value": "Pantone 165C",
+        "declared_color_space": null
+      },
+      "screen_value": null,
+      "normalization": {
+        "method": "none",
+        "source_profile": null,
+        "notes": "원문명시값그대로전사. HEX의sRGB프로필선언없음. CMYK/별색을HEX로환산하지않음."
+      },
+      "observation": null,
+      "evidence_locator": "삼안_CI_구성모음_제공원본.ai PDF호환page1 / 우측중단 메인컬러 두패널",
+      "verification": {
+        "state": "draft",
+        "checked_by": null,
+        "checked_at": null,
+        "notes": "원문육안확인. 회사공식최신판/형태별CI연결/출처권위검토전draft. 기본공식색조회에서제외."
+      },
+      "notes": "사용자제공디자인문서의명시값. 회사필수화승인아님. HEX/CMYK/PANTONE은동일값을자동계산한것이아니라서로다른원문표기."
+    }
+  ],
+  "notes": "PNG관측17+원문벡터74+삼안문서명시HEX/별색draft4=95건. Black70% / Magenta60%+Yellow100%는전체4채널이명시되지않아0으로채우지않고명시규정목록에원문문구로보존."
+}

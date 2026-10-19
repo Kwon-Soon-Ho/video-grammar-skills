@@ -1,0 +1,27 @@
+{
+  "status": "proposal_only_not_applied",
+  "target": "작업초안/디자인적용_초안.json",
+  "application_id": "R8-DEV-APPLY-02",
+  "precondition_sha256": "fba42ca7fd978f4d61e299d806b6f6a9e56f9b0c2212faf4ef23ef15b09af9c7",
+  "from_version": "0.1.0",
+  "proposed_version": "0.1.1",
+  "patch": [
+    {
+      "op": "test",
+      "path": "/version",
+      "value": "0.1.0"
+    },
+    {
+      "op": "replace",
+      "path": "/purpose",
+      "value": "삼안 강조색 후보를 비교하는 검토용 초안."
+    },
+    {
+      "op": "replace",
+      "path": "/version",
+      "value": "0.1.1"
+    }
+  ],
+  "preserve": "purpose/version 이외의 모든 값·선택·검수 상태 유지",
+  "blocked_by": "지정 backup 경로가 기존 일반 파일이며 생성 실패. 대체 위치 미사용."
+}

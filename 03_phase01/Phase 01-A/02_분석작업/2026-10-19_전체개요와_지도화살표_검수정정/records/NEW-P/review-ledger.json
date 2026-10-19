@@ -1,0 +1,59 @@
+{
+  "schema_version": "video-review-ledger-0.1",
+  "revision": 1,
+  "before": {
+    "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\detail-results\\NEW-P\\observations-property-reviewed.json",
+    "sha256": "cdbc725c381a9b675a56cb5581e4307f8324b8d4d552781a36d03601ecaffdc8"
+  },
+  "after": {
+    "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\records\\NEW-P\\observations.json",
+    "sha256": "89c2fce3d10ff5a226d9b651a842f167cabbcd34d9764a8cbd484429ebd00a73"
+  },
+  "reviewer": {
+    "kind": "same_agent_context",
+    "name": "Codex",
+    "method": "원본 픽셀 ROI·시각 순서 대조, 수치 정합의 가림/강조 예외 검토. 사람/독립 AI 아님."
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "question": "40~48초의 0.5초 표본에서 지도 남서·남동의 서로 떨어진 지형 ROI와 기존 경찰청 카드의 같은 특징이 같은 원본 좌표에 유지된다. 40/48초 정합에서도 두 지도 ROI와 카드가 같은 위치에서 일치한다. 이 구간의 지도 줌·기존 묶음 축소 추정 c002는 기각한다. 새 기관 카드·패널의 개별 등장은 별도 동작이며 AE 카메라·부모 리그를 복원한 것이 아니다.",
+      "requirements": [
+        {
+          "object_id": "map",
+          "property": "size",
+          "dimension": "stable-map-anchors"
+        }
+      ],
+      "required_basis_kind": "observed",
+      "before_claim_ids": [
+        "c002"
+      ],
+      "state": "addressed",
+      "resolution_claim_ids": [
+        "c041"
+      ],
+      "reason": "지정 ROI를 실제 비교하여 확인한 새 사실. 전체 발견 완전성/구현 확정과 구분.",
+      "next_probe": ""
+    },
+    {
+      "id": "F2",
+      "question": "연결선 ROI의 43.8~45.3초 선택 표본과 44.000~44.300초의 연속 10프레임에서 위를 향하는 화살 무늬의 위치는 같아 보이고 주로 밝기 차이가 보인다. 위를 향하는 모양을 위로 이동하는 애니메이션으로 쓰지 않는다. 검사하지 않은 시간의 흐름·초기 성장·주기는 이 결론에 포함하지 않는다.",
+      "requirements": [
+        {
+          "object_id": "regional-link",
+          "property": "position",
+          "dimension": "stationary-upward-glyph"
+        }
+      ],
+      "required_basis_kind": "observed",
+      "before_claim_ids": [],
+      "state": "addressed",
+      "resolution_claim_ids": [
+        "c043"
+      ],
+      "reason": "지정 ROI를 실제 비교하여 확인한 새 사실. 전체 발견 완전성/구현 확정과 구분.",
+      "next_probe": ""
+    }
+  ]
+}

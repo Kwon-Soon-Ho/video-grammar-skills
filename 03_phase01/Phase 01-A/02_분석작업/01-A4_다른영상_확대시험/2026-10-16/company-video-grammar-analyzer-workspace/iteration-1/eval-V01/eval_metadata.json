@@ -1,0 +1,14 @@
+{
+  "eval_id": 1,
+  "eval_name": "V01",
+  "prompt": "V01: case-plan.json 지정 구간의 화면 구성·문구·정보 관계·모션(이동 방향·등장 순서·가감속, 주변/내부 동작)을 원본 근거와 연결해 분석하고 누락·오분석을 검토한다. 해당 문서가 있으면 영상과 대조하고, V06S/W는 동일 장면 상태 기준으로 변형을 비교한다. AE 키프레임은 제공되지 않는다.",
+  "prompt_record_kind": "normalized task summary; original dispatch retained in conversation",
+  "assertions": [
+    "전경의 시점/원근 변화와 크레인 자체 동작을 구분; 후반 접근에 따른 확대·화면 위치 변화를 기록",
+    "상단 제목의 왼쪽 선/패널→문구/밑제목 순서 및 테두리·색 변화",
+    "수면의 시간 변화 등 주 대상 밖의 동작을 검사",
+    "문서 Scene1 0–10초의 의도를 관측 근거로 대체하지 않고 실제 검사창 0–8초로 한정",
+    "가감속 주장에는 같은 특징의 실제 시간 표본; 불명확한 원인·곡선은 유보"
+  ],
+  "criteria_origin": "root-audit/criteria-frozen.json; human gold 아님"
+}

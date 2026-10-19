@@ -1,0 +1,101 @@
+{
+  "id": "A2-motion-audit-current",
+  "version": "0.3",
+  "state": "A2_subject_property_audit_performed_with_declared_unclassified_properties",
+  "scope": {
+    "자료005": [
+      0,
+      24
+    ],
+    "자료013": [
+      0,
+      15.5
+    ]
+  },
+  "operational_procedure": "Phase 01-A/06_도구와계약/01-A2_모션검수절차/00_실행검수절차.md",
+  "subject_registry": "Phase 01-A/06_도구와계약/01-A2_모션검수절차/01_대상목록.json",
+  "axis_matrix": "Phase 01-A/06_도구와계약/01-A2_모션검수절차/02_속성검수표.json",
+  "structure_check": "Phase 01-A/04_검증자료/01-A2_누락방지_재검수/06_절차검사.json",
+  "previous_current_observation": "Phase 01-A/02_분석작업/01-A2_전체모션재검수/모션재검수_확정과_추가정정.json",
+  "previous_confirmed_receipt": "Phase 01-A/04_검증자료/01-A2_전체모션재검수/사람확인_N1-N8과_빛커서정정_회신.json",
+  "prior_six_N1_N8_and_user_C1_C2_preserved": true,
+  "new_observations": [
+    {
+      "id": "A3audit-new-UI-state",
+      "type": "new_omission",
+      "asset": "자료013",
+      "window": "약8.2~10.4초",
+      "description": "첫 UI의 상단 표 선택행이 아래로, 하단 주황 선택 표시가 윗줄 도면 첫째→둘째→셋째→넷째로 순차 교체. 중간에는 전후 화면이 겹침. 실제 클릭/커서 주행으로 단정하지 않음.",
+      "subject_ids": [
+        "E-ui1-row",
+        "E-ui1-thumb"
+      ],
+      "curve": "선택은 상태 교체. 위치 이징 비적용, 화면 혼합 곡선 미분류.",
+      "human_status": "not_asked_not_approved_AI_observation"
+    },
+    {
+      "id": "A3audit-new-connector",
+      "type": "new_omission",
+      "asset": "자료013",
+      "window": "약13~15.5초",
+      "description": "도면 창의 작은 지점 부근과 전경 모델 사이에 회색 반투명 연결면이 펼쳐지고 모델 뒤에 남음. 모델 확대와 14초대 후반 광점은 별도 요소.",
+      "subject_ids": [
+        "E-connector"
+      ],
+      "curve": "확대와 연동해 변화량 감소 성향. 연결면 자체 곡선 미분류.",
+      "human_status": "not_asked_not_approved_AI_observation"
+    },
+    {
+      "id": "A3audit-refine-body",
+      "type": "previous_description_refined",
+      "asset": "자료013",
+      "window": "약2.8~4초",
+      "description": "EG-BIM 문자 수렴→영문 부제→한글 본문 위쪽→아래쪽 순으로 중첩하며 선명해짐. 기존 N4의 본문 선명화를 순서별로 세분화.",
+      "subject_ids": [
+        "E-subtitle",
+        "E-body-upper",
+        "E-body-lower"
+      ],
+      "human_status": "new_detail_not_covered_by_previous_N4_approval"
+    },
+    {
+      "id": "A3audit-refine-dim",
+      "type": "previous_description_refined",
+      "asset": "자료013",
+      "window": "약5~8초",
+      "description": "금빛 E가 정착한 뒤 광량이 줄어 어두운 배경 역할로 약화됨. 내부 선무늬의 독립 흐름으로 확정하지 않음.",
+      "subject_ids": [
+        "E-hero-dim",
+        "E-texture"
+      ],
+      "human_status": "AI_refinement"
+    },
+    {
+      "id": "A3audit-refine-intro",
+      "type": "previous_description_refined",
+      "asset": "자료013",
+      "window": "약0.2~1.2초",
+      "description": "도입의 어두운 E 조각 조립을 3.5초 이후 전경 E 조립과 분리. 커서/큰 영문보다 앞선 단계로 기록.",
+      "subject_ids": [
+        "E-early-upper",
+        "E-early-middle",
+        "E-early-lower"
+      ],
+      "human_status": "AI_refinement"
+    }
+  ],
+  "JH_new_omissions_found": 0,
+  "subjects": 49,
+  "axis_cells": 441,
+  "not_recognition_accuracy_or_no_omission_guarantee": true,
+  "remaining_unclassified": [
+    "thin-light full path and speed curve",
+    "background grid boundary identity/curve",
+    "individual body-line visibility curve",
+    "connector own boundary curve",
+    "original AE compositing/keyframe implementation"
+  ],
+  "human_questions_pending": [],
+  "new_findings_human_approved": false,
+  "A3_started": false
+}

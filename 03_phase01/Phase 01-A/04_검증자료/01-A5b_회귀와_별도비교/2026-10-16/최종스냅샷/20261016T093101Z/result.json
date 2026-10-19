@@ -1,0 +1,365 @@
+{
+  "utc": "2026-10-16T09:28:23.836325+00:00",
+  "legacy": {
+    "all_passed": true,
+    "runs_completed": 3,
+    "cases": [
+      {
+        "case_id": "V05",
+        "passed": true,
+        "criteria_passed": 6,
+        "critical_errors_found": 0,
+        "raw_easing_unknown_events": 15
+      },
+      {
+        "case_id": "V06S",
+        "passed": true,
+        "criteria_passed": 6,
+        "critical_errors_found": 0,
+        "raw_easing_unknown_events": 18
+      },
+      {
+        "case_id": "V06W",
+        "passed": true,
+        "criteria_passed": 6,
+        "critical_errors_found": 0,
+        "raw_easing_unknown_events": 12
+      }
+    ],
+    "decision_utc": "2026-10-16T08:28:41.495917+00:00",
+    "new_video_pixels_opened_at_decision": false,
+    "primary_runs": 0,
+    "legacy_scope": "targeted final draft3 regression; full A4 outcomes preserved; no pair comparison",
+    "residual_detail_omissions": 1,
+    "residual_note": "G contraction top-edge direction omitted while shrinking left boundary and gray text persistence were captured; criterion remains met"
+  },
+  "primary_planned": 16,
+  "primary_completed": 6,
+  "primary_completed_ids": [
+    "H01-r1-with_skill",
+    "H01-r1-without_skill",
+    "H01-r2-without_skill",
+    "H01-r2-with_skill",
+    "H02-r1-without_skill",
+    "H02-r1-with_skill"
+  ],
+  "primary_graded": 6,
+  "primary_results": [
+    {
+      "run_id": "H01-r1-with_skill",
+      "case_id": "H01",
+      "configuration": "with_skill",
+      "repeat": 1,
+      "blind_label": "sample-A",
+      "metrics": {
+        "core_correct": 8,
+        "core_total": 8,
+        "detail_correct": 8,
+        "detail_total": 8,
+        "core_coverage": 1.0,
+        "detail_coverage": 1.0,
+        "supported_enumerated_claims": 105,
+        "total_asserted_claims": null,
+        "enumerated_asserted_claims": 105,
+        "unresolved_enumerated_claims": 0,
+        "unsupported_enumerated_claims": 0,
+        "asserted_claim_precision": null,
+        "avoidable_abstention_count": 0,
+        "avoidable_abstention_fraction": 0.0
+      },
+      "gates_passed": false,
+      "scope_incomplete": true,
+      "critical_errors": [],
+      "missing_reference_atoms": [],
+      "wrong_reference_atoms": [],
+      "avoidable_unknown_reference_atoms": [],
+      "appropriate_unknowns": [
+        "정확한 AE 속성·효과·함수/핸들값",
+        "Value of 실제3D 여부·회전축",
+        "복합 변형·명암의 정밀 곡선",
+        "지도 실제 지역/축척·독립 줌"
+      ],
+      "grading_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r1\\grading.json",
+      "review_seconds": 62,
+      "assertion_count_unit": "deduplicated factual atoms supplied by blinded AI reviewer; not event count",
+      "structure_provenance_passed": true
+    },
+    {
+      "run_id": "H01-r1-without_skill",
+      "case_id": "H01",
+      "configuration": "without_skill",
+      "repeat": 1,
+      "blind_label": "sample-B",
+      "metrics": {
+        "core_correct": 8,
+        "core_total": 8,
+        "detail_correct": 8,
+        "detail_total": 8,
+        "core_coverage": 1.0,
+        "detail_coverage": 1.0,
+        "supported_enumerated_claims": 120,
+        "total_asserted_claims": null,
+        "enumerated_asserted_claims": 121,
+        "unresolved_enumerated_claims": 0,
+        "unsupported_enumerated_claims": 1,
+        "asserted_claim_precision": null,
+        "avoidable_abstention_count": 0,
+        "avoidable_abstention_fraction": 0.0
+      },
+      "gates_passed": false,
+      "scope_incomplete": true,
+      "critical_errors": [],
+      "missing_reference_atoms": [],
+      "wrong_reference_atoms": [],
+      "avoidable_unknown_reference_atoms": [],
+      "appropriate_unknowns": [
+        "정확한 AE 속성·효과·함수/핸들값",
+        "Value of 실제3D 여부·회전축",
+        "복합 변형·명암의 정밀 곡선",
+        "지도 실제 지역/축척·독립 줌"
+      ],
+      "grading_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r1\\grading.json",
+      "review_seconds": 60,
+      "assertion_count_unit": "deduplicated factual atoms supplied by blinded AI reviewer; not event count",
+      "structure_provenance_passed": true
+    },
+    {
+      "run_id": "H01-r2-without_skill",
+      "case_id": "H01",
+      "configuration": "without_skill",
+      "repeat": 2,
+      "blind_label": "sample-A",
+      "metrics": {
+        "core_correct": 8,
+        "core_total": 8,
+        "detail_correct": 8,
+        "detail_total": 8,
+        "core_coverage": 1.0,
+        "detail_coverage": 1.0,
+        "supported_enumerated_claims": 65,
+        "total_asserted_claims": null,
+        "enumerated_asserted_claims": 90,
+        "unresolved_enumerated_claims": 25,
+        "unsupported_enumerated_claims": 0,
+        "asserted_claim_precision": null,
+        "avoidable_abstention_count": 0,
+        "avoidable_abstention_fraction": 0.0
+      },
+      "gates_passed": false,
+      "scope_incomplete": true,
+      "critical_errors": [],
+      "missing_reference_atoms": [],
+      "wrong_reference_atoms": [],
+      "avoidable_unknown_reference_atoms": [],
+      "appropriate_unknowns": [
+        "정확한 AE 속성/키프레임/함수 및 Influence",
+        "Value of의 실제 3D 축과 합성 구현",
+        "지도 지명·출처",
+        "국문 밝기/노출 및 내부 지도 흐림의 정확한 이징",
+        "음성 미검수, 범위 밖 상태 제외"
+      ],
+      "grading_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\grading.json",
+      "review_seconds": 26,
+      "assertion_count_unit": "deduplicated factual atoms supplied by blinded AI reviewer; not event count",
+      "structure_provenance_passed": true
+    },
+    {
+      "run_id": "H01-r2-with_skill",
+      "case_id": "H01",
+      "configuration": "with_skill",
+      "repeat": 2,
+      "blind_label": "sample-B",
+      "metrics": {
+        "core_correct": 8,
+        "core_total": 8,
+        "detail_correct": 8,
+        "detail_total": 8,
+        "core_coverage": 1.0,
+        "detail_coverage": 1.0,
+        "supported_enumerated_claims": 74,
+        "total_asserted_claims": null,
+        "enumerated_asserted_claims": 105,
+        "unresolved_enumerated_claims": 31,
+        "unsupported_enumerated_claims": 0,
+        "asserted_claim_precision": null,
+        "avoidable_abstention_count": 0,
+        "avoidable_abstention_fraction": 0.0
+      },
+      "gates_passed": false,
+      "scope_incomplete": true,
+      "critical_errors": [],
+      "missing_reference_atoms": [],
+      "wrong_reference_atoms": [],
+      "avoidable_unknown_reference_atoms": [],
+      "appropriate_unknowns": [
+        "정확한 AE 속성/키프레임/함수 및 Influence",
+        "Value of의 실제 3D 축과 합성 구현",
+        "지도 지명·출처",
+        "국문 밝기/노출 및 내부 지도 흐림의 정확한 이징",
+        "음성 미검수, 범위 밖 상태 제외"
+      ],
+      "grading_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r2\\grading.json",
+      "review_seconds": 32,
+      "assertion_count_unit": "deduplicated factual atoms supplied by blinded AI reviewer; not event count",
+      "structure_provenance_passed": true
+    },
+    {
+      "run_id": "H02-r1-with_skill",
+      "case_id": "H02",
+      "configuration": "with_skill",
+      "repeat": 1,
+      "blind_label": "sample-A",
+      "metrics": {
+        "core_correct": 5,
+        "core_total": 7,
+        "detail_correct": 7,
+        "detail_total": 8,
+        "core_coverage": 0.7142857142857143,
+        "detail_coverage": 0.875,
+        "supported_enumerated_claims": 53,
+        "total_asserted_claims": null,
+        "enumerated_asserted_claims": 75,
+        "unresolved_enumerated_claims": 21,
+        "unsupported_enumerated_claims": 1,
+        "asserted_claim_precision": null,
+        "avoidable_abstention_count": 0,
+        "avoidable_abstention_fraction": 0.0
+      },
+      "gates_passed": false,
+      "scope_incomplete": true,
+      "critical_errors": [
+        {
+          "claim": "거대한 배경 A를 숫자 4로 확정",
+          "evidence": "observations.json bg 및 MD 첫 항목; evidence-001/018과 reference C01/C07의 A. 루트에 발견 즉시 알렸고 STOP 적용."
+        }
+      ],
+      "missing_reference_atoms": [
+        "H02-D08"
+      ],
+      "wrong_reference_atoms": [
+        "H02-C01",
+        "H02-C07"
+      ],
+      "avoidable_unknown_reference_atoms": [],
+      "appropriate_unknowns": [
+        "정확 AE 곡선·레이어 구조 미상",
+        "오디오 미검수 명시",
+        "표 전체 원문/미세 커서 미확정",
+        "점/선 정확 속도함수 미상",
+        "하단 점 경계 가림과 축소 비율 미상"
+      ],
+      "grading_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H02-r1\\grading.json",
+      "review_seconds": 29,
+      "assertion_count_unit": "deduplicated factual atoms supplied by blinded AI reviewer; not event count",
+      "structure_provenance_passed": true
+    },
+    {
+      "run_id": "H02-r1-without_skill",
+      "case_id": "H02",
+      "configuration": "without_skill",
+      "repeat": 1,
+      "blind_label": "sample-B",
+      "metrics": {
+        "core_correct": 7,
+        "core_total": 7,
+        "detail_correct": 6,
+        "detail_total": 8,
+        "core_coverage": 1.0,
+        "detail_coverage": 0.75,
+        "supported_enumerated_claims": 59,
+        "total_asserted_claims": null,
+        "enumerated_asserted_claims": 75,
+        "unresolved_enumerated_claims": 16,
+        "unsupported_enumerated_claims": 0,
+        "asserted_claim_precision": null,
+        "avoidable_abstention_count": 1,
+        "avoidable_abstention_fraction": 0.06666666666666667
+      },
+      "gates_passed": false,
+      "scope_incomplete": true,
+      "critical_errors": [],
+      "missing_reference_atoms": [
+        "H02-D01"
+      ],
+      "wrong_reference_atoms": [],
+      "avoidable_unknown_reference_atoms": [
+        "H02-D08"
+      ],
+      "appropriate_unknowns": [
+        "정확 AE 곡선/제어점 미상",
+        "선 trim/마스크/opacity 구현 미상",
+        "표 전체 열/단위 미확정",
+        "구간 밖 최초 등장 미확정",
+        "frame 단위 정확 경계 미확정"
+      ],
+      "grading_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H02-r1\\grading.json",
+      "review_seconds": 38,
+      "assertion_count_unit": "deduplicated factual atoms supplied by blinded AI reviewer; not event count",
+      "structure_provenance_passed": true
+    }
+  ],
+  "repeat_joint_detail": [
+    {
+      "case_id": "H01",
+      "configuration": "with_skill",
+      "joint_correct": 8,
+      "detail_total": 8,
+      "joint_coverage": 1.0,
+      "passed": true
+    },
+    {
+      "case_id": "H01",
+      "configuration": "without_skill",
+      "joint_correct": 8,
+      "detail_total": 8,
+      "joint_coverage": 1.0,
+      "passed": true
+    }
+  ],
+  "review_value_comparison": [
+    {
+      "pair": "H01-r1",
+      "both_quality_passed": false,
+      "skill_AI_review_seconds": 62,
+      "baseline_AI_review_seconds": 60,
+      "like_quality_AI_review_ratio": null,
+      "actual_human_review_ratio": null,
+      "note": "not a human labor or model-cost ROI; null if quality/cost incomparable"
+    },
+    {
+      "pair": "H01-r2",
+      "both_quality_passed": false,
+      "skill_AI_review_seconds": 32,
+      "baseline_AI_review_seconds": 26,
+      "like_quality_AI_review_ratio": null,
+      "actual_human_review_ratio": null,
+      "note": "not a human labor or model-cost ROI; null if quality/cost incomparable"
+    },
+    {
+      "pair": "H02-r1",
+      "both_quality_passed": false,
+      "skill_AI_review_seconds": 29,
+      "baseline_AI_review_seconds": 38,
+      "like_quality_AI_review_ratio": null,
+      "actual_human_review_ratio": null,
+      "note": "not a human labor or model-cost ROI; null if quality/cost incomparable"
+    }
+  ],
+  "grading_integrity_flags": [],
+  "stopped": true,
+  "stop": {
+    "utc": "2026-10-16T09:25:05Z",
+    "reason": "with_skill critical target identity error confirmed by blinded grader and root source reinspection",
+    "run_id": "H02-r1-with_skill",
+    "blind_label": "sample-A",
+    "claim": "Background giant glyph asserted as 큰 숫자 4; actual giant A",
+    "evidence": "blind/H02-r1/sample-A/evidence/evidence-001.png; frozen reference H02-C01; observations.md first bullet",
+    "contract_basis": "quality_gates critical_error_examples: target confusion; stop_policy critical_primary_failure",
+    "remaining_analyses_must_not_start": true,
+    "active_trials_must_preserve_partial_and_stop": true,
+    "observations_must_not_be_rewritten": true
+  },
+  "full_comparison_complete": false,
+  "default_promotion": false,
+  "model": "parent inherited; exact host ID not exposed; no model-specific comparative claim"
+}

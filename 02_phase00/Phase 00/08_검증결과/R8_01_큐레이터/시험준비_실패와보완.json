@@ -1,0 +1,25 @@
+{
+  "iteration-1": {
+    "state": "excluded_from_main_comparison_incomplete_fixture",
+    "completed_executor_runs": [
+      "eval-01/new_skill",
+      "eval-01/old_skill"
+    ],
+    "not_executed": [
+      "eval-02/*",
+      "eval-03/*"
+    ],
+    "reason": "기본152보존목록만복사하여공통용어사전/자료검증·지식조회가누락됨. 양측모두미수행범위를보고. 결과/입력/로그는삭제하지않음.",
+    "skill_candidate_changed_for_retry": false
+  },
+  "iteration-2": {
+    "state": "preflight_passed_for_reference_complete_scoped_fixture",
+    "first_preflight_failure": "R6 full original-artifact query requires omitted upstream/CI binary artifacts; preserved separately",
+    "preflight_correction": "knowledge references and tools copied; R7 fixed context validated; R6 declaration structure checked without original artifacts; full artifact validation explicitly not claimed",
+    "expected_paired_runs": 6,
+    "actual_video_trials": 0,
+    "candidate_version": "0.2.0-draft.1",
+    "initial_builder_byte_snapshot_available": false,
+    "initial_fixture_inputs_and_results_preserved": true
+  }
+}

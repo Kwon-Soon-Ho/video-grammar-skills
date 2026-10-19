@@ -1,0 +1,670 @@
+{
+  "matches": [
+    {
+      "id": "LAYOUT-SPACE-CALLOUT",
+      "axis": "layout",
+      "name_ko": "공간과 설명 표식",
+      "name_en": "Spatial callout",
+      "definition": "지도·구조·공간 대상에 명칭·주석을 연결",
+      "aliases": [
+        "지도 콜아웃"
+      ],
+      "include_when": "위치·시설 설명",
+      "exclude_or_limit": "이소메트릭은 투영 속성",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null,
+      "kind": "term",
+      "source_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\01_공통용어\\공통용어사전.json",
+      "source_sha256": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2"
+    }
+  ],
+  "uses": [
+    {
+      "record_id": "RC-STATIC-134-172-KNOWLEDGE",
+      "record_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-1-static-knowledge-use-review\\with_skill\\outputs\\knowledge-links.json",
+      "unit": {
+        "id": "RC-LAYOUT-002@v1",
+        "kind": "layout",
+        "title": "성과값·회사열·건물 무대",
+        "observation_status": "observed_static",
+        "definition_version": "v1",
+        "summary": "왼쪽 큰 금색 성과값, 중앙 원근 회사열, 오른쪽 건물/기단+지원 명찰. 투명판/곡선받침/빛으로 공간 조합.",
+        "status": "local candidate; not canonical",
+        "definition_reference": "prior/01_부품과조합.md"
+      },
+      "use": {
+        "id": "U-L2",
+        "definition_id": "RC-LAYOUT-002@v1",
+        "case_unit_id": "RC-CASE-002",
+        "time": {
+          "start": 172,
+          "end": 172
+        },
+        "evidence_ids": [
+          "E2"
+        ],
+        "claim_ids": [
+          "C4",
+          "C5",
+          "C6",
+          "C7"
+        ],
+        "differences": [
+          "첫 정의의 가로무대 전체"
+        ],
+        "unverified": [
+          "다른 출력환경/회사수·실제 산정식"
+        ],
+        "conditions": [
+          {
+            "text": "수치단위·설명을 함께 보존. 회사별 배분차트로 전용할 근거 없음.",
+            "validation": "observed_case_only"
+          }
+        ],
+        "definition_version": "v1",
+        "content_context": "실제 투입한 인력·비용 기준 23.7억원 가치창출성과와 관련 회사/기관 지원범주",
+        "detail_path": "02_전체상세.md",
+        "definition_path": "01_정의와사용처.md",
+        "composition_context": [
+          {
+            "from": "RC-CASE-002",
+            "to": "RC-LAYOUT-002@v1",
+            "relation": "contains",
+            "basis_kind": "observed",
+            "claim_ids": [
+              "C4",
+              "C5",
+              "C6"
+            ]
+          },
+          {
+            "from": "RC-LAYOUT-002@v1",
+            "to": "RC-COMP-002@v1",
+            "relation": "contains",
+            "basis_kind": "observed",
+            "claim_ids": [
+              "C4",
+              "C5",
+              "C6",
+              "C7"
+            ]
+          },
+          {
+            "from": "RC-LAYOUT-002@v1",
+            "to": "RC-COMP-005@v1",
+            "relation": "contains",
+            "basis_kind": "observed",
+            "claim_ids": [
+              "C4",
+              "C5",
+              "C6",
+              "C7"
+            ]
+          },
+          {
+            "from": "RC-LAYOUT-002@v1",
+            "to": "RC-COMP-006@v1",
+            "relation": "contains",
+            "basis_kind": "observed",
+            "claim_ids": [
+              "C4",
+              "C5",
+              "C6",
+              "C7"
+            ]
+          },
+          {
+            "from": "RC-LAYOUT-002@v1",
+            "to": "RC-COMP-008@v1",
+            "relation": "contains",
+            "basis_kind": "observed",
+            "claim_ids": [
+              "C4",
+              "C5",
+              "C6",
+              "C7"
+            ]
+          },
+          {
+            "from": "RC-COMP-001@v1",
+            "to": "RC-LAYOUT-002@v1",
+            "relation": "accompanies",
+            "basis_kind": "observed",
+            "claim_ids": [
+              "C11"
+            ]
+          }
+        ]
+      },
+      "knowledge_links": [
+        {
+          "id": "K8",
+          "unit_id": "RC-LAYOUT-002@v1",
+          "concept_id": "LAYOUT-SPACE-CALLOUT",
+          "relation": "classified_as",
+          "basis_kind": "inferred",
+          "claim_ids": [
+            "C5",
+            "C6",
+            "C9"
+          ],
+          "rationale": "E2 건물 주변의 명칭/주석 부분에만 제한. 실제건물 부위 업무좌표로 확정하지 않는 개념주석 변형."
+        }
+      ],
+      "reviews": [
+        {
+          "id": "RV6",
+          "unit_id": "RC-LAYOUT-002@v1",
+          "criterion_id": "SCREEN-DATA",
+          "status": "hold",
+          "reason": "실제산정 상세·회사별 배분/비례·집계 데이터가 없어 데이터 사실성/산식은 확인 못함.",
+          "evidence_ids": [
+            "E2",
+            "e2_value"
+          ],
+          "claim_ids": [
+            "C4",
+            "C7"
+          ],
+          "reviewer": "이번 실행 분석 에이전트(자기 재대조)",
+          "scope": "화면전사는 확인했으나 실제 데이터타당성 판정 보류.",
+          "next_probe": "기술/데이터담당자의 산정표·집계기준·해당판본 확보"
+        },
+        {
+          "id": "RV12",
+          "unit_id": "RC-CASE-002",
+          "criterion_id": "Q-MOTION-01",
+          "status": "hold",
+          "reason": "한시점 PNG는 완성시점/유지시간을 보여주지 않아 읽기 충분성을 판정할 수 없음.",
+          "evidence_ids": [
+            "E2"
+          ],
+          "claim_ids": [
+            "C4",
+            "C5",
+            "C6"
+          ],
+          "reviewer": "이번 실행 분석 에이전트(자기 재대조)",
+          "scope": "시간가독성 보류. 정적내용 누락 대조와 별도.",
+          "next_probe": "원본 연속구간·발화·표시환경 확보 후 등장/완성/가림/유지/퇴장 대조"
+        },
+        {
+          "id": "RV13",
+          "unit_id": "RC-CASE-002",
+          "criterion_id": "Q-TRUST-01",
+          "status": "pass",
+          "reason": "현재PNG 파일해시/크롭원좌표/문서판본을 pin하고 주요주장을 해당PNG/ROI로 재대조.",
+          "evidence_ids": [
+            "E2"
+          ],
+          "claim_ids": [
+            "C4",
+            "C5",
+            "C6"
+          ],
+          "reviewer": "이번 실행 분석 에이전트(자기 재대조)",
+          "scope": "제공PNG-기록 대응과 이번크롭 변환/해시만. MP4진위/PTS추출로그는 미확인.",
+          "next_probe": "원본확보시 제공시각/메타데이터를 추출로그와 확인"
+        },
+        {
+          "id": "RV14",
+          "unit_id": "RC-CASE-002",
+          "criterion_id": "Q-TRUST-02",
+          "status": "pass",
+          "reason": "관측/기능해석/미관측을 구분하고 정지2장을 모션/회사규칙/의도/동일자산으로 확대하지 않음.",
+          "evidence_ids": [
+            "E2"
+          ],
+          "claim_ids": [
+            "C4",
+            "C5",
+            "C6"
+          ],
+          "reviewer": "이번 실행 분석 에이전트(자기 재대조)",
+          "scope": "이번 기록의 주장범위 자기 점검; 회사승인·독립검수 아님.",
+          "next_probe": "새 근거가오면 영향받는 주장범위만 별도이력으로 보강"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "E2",
+          "path": "evidence/172.png",
+          "sha256": "44a26a91328863dd335f9b950780afb96929888f8475b45b2298035250a1771a",
+          "time": {
+            "start": 172,
+            "end": 172
+          },
+          "kind": "provided_full_frame",
+          "dimensions": [
+            7680,
+            2160
+          ]
+        }
+      ],
+      "limitations": [
+        "실제관측: 제공7680×2160 PNG2장(전체보기2048×576)과 원본픽셀크롭8개를 original detail로 열람. OCR·원본MP4재생·재추출·음성청취 안함.",
+        "134/172초는 제공 메타데이터에 따른 시각. 자체PTS검증 아님. 38초를 연속관측시간으로 계산하지 않는다.",
+        "prior는 기존분석r2이며 이번실행의독립원본이아님. 기존상세/번호/근거원문은 바이트보존; 이번내용확인은 PNG/ROI 범위.",
+        "단일묶음후보/정지외형반복/동일원자산확인/정본등록/회사승인은 서로다름. 두레이아웃을 같은패턴으로 합치지않음.",
+        "모든모션조사는unobserved. 시간정지·이징·동시발생·퇴장·원제작의도/효과/회사규칙을 만들지않음.",
+        "Phase00지식은 분류/검토질문의 참고. 모든65원칙일괄적용안함. 스킬/정본/R4변경·등록/새화면/영상/PDF/외부스킬실행 없음.",
+        "일반화/다른원본/새스타일활용시험 아님. SHA/연결검사통과는 내용정확성·회사승인을대신하지않음."
+      ]
+    },
+    {
+      "record_id": "RC-STATIC-134-172-KNOWLEDGE",
+      "record_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-1-static-knowledge-use-review\\with_skill\\outputs\\knowledge-links.json",
+      "unit": {
+        "id": "RC-COMP-005@v1",
+        "kind": "component",
+        "title": "지원 명찰",
+        "observation_status": "observed_static",
+        "definition_version": "v1",
+        "summary": "흰 유광 둥근판+갈색 서비스명. E2 건물 위/좌/우/앞의4개 별도 부품. E1 원형 BIM 도상과 동일 부품으로 합치지 않는다.",
+        "status": "local candidate; not canonical",
+        "definition_reference": "prior/01_부품과조합.md"
+      },
+      "use": {
+        "id": "U-C7",
+        "definition_id": "RC-COMP-005@v1",
+        "case_unit_id": "RC-CASE-002",
+        "time": {
+          "start": 172,
+          "end": 172
+        },
+        "evidence_ids": [
+          "e2_building"
+        ],
+        "claim_ids": [
+          "C6"
+        ],
+        "differences": [
+          "건물주변위/좌/우/앞4개;E1BIM원형과 외형차"
+        ],
+        "unverified": [
+          "완전한업무목록/동일부품/실제업무부위"
+        ],
+        "conditions": [
+          {
+            "text": "명찰은008내부로흡수하지않고 독립연결",
+            "validation": "observed_case_only"
+          }
+        ],
+        "definition_version": "v1",
+        "content_context": "실제 투입한 인력·비용 기준 23.7억원 가치창출성과와 관련 회사/기관 지원범주",
+        "detail_path": "02_전체상세.md",
+        "definition_path": "01_정의와사용처.md",
+        "composition_context": [
+          {
+            "from": "RC-LAYOUT-002@v1",
+            "to": "RC-COMP-005@v1",
+            "relation": "contains",
+            "basis_kind": "observed",
+            "claim_ids": [
+              "C4",
+              "C5",
+              "C6",
+              "C7"
+            ]
+          },
+          {
+            "from": "RC-COMP-005@v1",
+            "to": "RC-COMP-008@v1",
+            "relation": "anchors_to",
+            "basis_kind": "observed",
+            "claim_ids": [
+              "C5",
+              "C6"
+            ]
+          },
+          {
+            "from": "RC-COMP-005@v1",
+            "to": "RC-COMP-008@v1",
+            "relation": "overlaps",
+            "basis_kind": "observed",
+            "claim_ids": [
+              "C6"
+            ]
+          }
+        ]
+      },
+      "knowledge_links": [
+        {
+          "id": "K10",
+          "unit_id": "RC-COMP-005@v1",
+          "concept_id": "LAYOUT-SPACE-CALLOUT",
+          "relation": "classified_as",
+          "basis_kind": "inferred",
+          "claim_ids": [
+            "C5",
+            "C6",
+            "C9"
+          ],
+          "rationale": "E2 건물 주변의 명칭/주석 부분에만 제한. 실제건물 부위 업무좌표로 확정하지 않는 개념주석 변형."
+        }
+      ],
+      "reviews": [
+        {
+          "id": "RV4",
+          "unit_id": "RC-COMP-005@v1",
+          "criterion_id": "IP-04",
+          "status": "pass",
+          "reason": "이 표본에서 명찰은 건물을 둘러싸고 명칭을 읽을 수 있으며 별도 부품으로 보존. 주변광선/조경·기단과 일부겹침 기록.",
+          "evidence_ids": [
+            "E2",
+            "e2_building"
+          ],
+          "claim_ids": [
+            "C6"
+          ],
+          "reviewer": "이번 실행 분석 에이전트(자기 재대조)",
+          "scope": "수집 기록의 공간대응/가림 기술 대조. 이해도/최적거리/실부위업무 대응 효과 검증 아님.",
+          "next_probe": "시청환경/실제서비스 내용이 바뀌면 효과/가림을 별도 검수"
+        },
+        {
+          "id": "RV12",
+          "unit_id": "RC-CASE-002",
+          "criterion_id": "Q-MOTION-01",
+          "status": "hold",
+          "reason": "한시점 PNG는 완성시점/유지시간을 보여주지 않아 읽기 충분성을 판정할 수 없음.",
+          "evidence_ids": [
+            "E2"
+          ],
+          "claim_ids": [
+            "C4",
+            "C5",
+            "C6"
+          ],
+          "reviewer": "이번 실행 분석 에이전트(자기 재대조)",
+          "scope": "시간가독성 보류. 정적내용 누락 대조와 별도.",
+          "next_probe": "원본 연속구간·발화·표시환경 확보 후 등장/완성/가림/유지/퇴장 대조"
+        },
+        {
+          "id": "RV13",
+          "unit_id": "RC-CASE-002",
+          "criterion_id": "Q-TRUST-01",
+          "status": "pass",
+          "reason": "현재PNG 파일해시/크롭원좌표/문서판본을 pin하고 주요주장을 해당PNG/ROI로 재대조.",
+          "evidence_ids": [
+            "E2"
+          ],
+          "claim_ids": [
+            "C4",
+            "C5",
+            "C6"
+          ],
+          "reviewer": "이번 실행 분석 에이전트(자기 재대조)",
+          "scope": "제공PNG-기록 대응과 이번크롭 변환/해시만. MP4진위/PTS추출로그는 미확인.",
+          "next_probe": "원본확보시 제공시각/메타데이터를 추출로그와 확인"
+        },
+        {
+          "id": "RV14",
+          "unit_id": "RC-CASE-002",
+          "criterion_id": "Q-TRUST-02",
+          "status": "pass",
+          "reason": "관측/기능해석/미관측을 구분하고 정지2장을 모션/회사규칙/의도/동일자산으로 확대하지 않음.",
+          "evidence_ids": [
+            "E2"
+          ],
+          "claim_ids": [
+            "C4",
+            "C5",
+            "C6"
+          ],
+          "reviewer": "이번 실행 분석 에이전트(자기 재대조)",
+          "scope": "이번 기록의 주장범위 자기 점검; 회사승인·독립검수 아님.",
+          "next_probe": "새 근거가오면 영향받는 주장범위만 별도이력으로 보강"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "e2_building",
+          "path": "evidence/e2_building.png",
+          "sha256": "c54ba9bc56e3a65bbc8d0b433eb23f40e7f502d69da1b55cdc538f80918cf2f7",
+          "time": {
+            "start": 172,
+            "end": 172
+          },
+          "kind": "crop",
+          "parent_id": "E2",
+          "box_ltrb_exclusive": [
+            4790,
+            640,
+            7440,
+            1790
+          ],
+          "transform": "crop only; no resize/recolor/rotation"
+        }
+      ],
+      "limitations": [
+        "실제관측: 제공7680×2160 PNG2장(전체보기2048×576)과 원본픽셀크롭8개를 original detail로 열람. OCR·원본MP4재생·재추출·음성청취 안함.",
+        "134/172초는 제공 메타데이터에 따른 시각. 자체PTS검증 아님. 38초를 연속관측시간으로 계산하지 않는다.",
+        "prior는 기존분석r2이며 이번실행의독립원본이아님. 기존상세/번호/근거원문은 바이트보존; 이번내용확인은 PNG/ROI 범위.",
+        "단일묶음후보/정지외형반복/동일원자산확인/정본등록/회사승인은 서로다름. 두레이아웃을 같은패턴으로 합치지않음.",
+        "모든모션조사는unobserved. 시간정지·이징·동시발생·퇴장·원제작의도/효과/회사규칙을 만들지않음.",
+        "Phase00지식은 분류/검토질문의 참고. 모든65원칙일괄적용안함. 스킬/정본/R4변경·등록/새화면/영상/PDF/외부스킬실행 없음.",
+        "일반화/다른원본/새스타일활용시험 아님. SHA/연결검사통과는 내용정확성·회사승인을대신하지않음."
+      ]
+    },
+    {
+      "record_id": "RC-STATIC-134-172-KNOWLEDGE",
+      "record_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-1-static-knowledge-use-review\\with_skill\\outputs\\knowledge-links.json",
+      "unit": {
+        "id": "RC-COMP-008@v1",
+        "kind": "component",
+        "title": "기관 건물/기단 묶음",
+        "observation_status": "observed_static",
+        "definition_version": "v1",
+        "summary": "TDC/기술개발센터 건물+원형 기단. 흰 외벽/짙은 녹색 유리/창빛/실루엣/조경/출입부는 하위. 명찰005는 별도 부품.",
+        "status": "local candidate; not canonical",
+        "definition_reference": "prior/01_부품과조합.md"
+      },
+      "use": {
+        "id": "U-C10",
+        "definition_id": "RC-COMP-008@v1",
+        "case_unit_id": "RC-CASE-002",
+        "time": {
+          "start": 172,
+          "end": 172
+        },
+        "evidence_ids": [
+          "e2_building",
+          "E2"
+        ],
+        "claim_ids": [
+          "C5",
+          "C6"
+        ],
+        "differences": [
+          "오른쪽중심대상;지원명찰별도;E1업무묶음과다른단위"
+        ],
+        "unverified": [
+          "실제사옥·창내부동작·동일자산/기관교체"
+        ],
+        "conditions": [
+          {
+            "text": "기관표기와기단/조경관계 보존;명찰변수는별도",
+            "validation": "observed_case_only"
+          }
+        ],
+        "definition_version": "v1",
+        "content_context": "실제 투입한 인력·비용 기준 23.7억원 가치창출성과와 관련 회사/기관 지원범주",
+        "detail_path": "02_전체상세.md",
+        "definition_path": "01_정의와사용처.md",
+        "composition_context": [
+          {
+            "from": "RC-LAYOUT-002@v1",
+            "to": "RC-COMP-008@v1",
+            "relation": "contains",
+            "basis_kind": "observed",
+            "claim_ids": [
+              "C4",
+              "C5",
+              "C6",
+              "C7"
+            ]
+          },
+          {
+            "from": "RC-COMP-005@v1",
+            "to": "RC-COMP-008@v1",
+            "relation": "anchors_to",
+            "basis_kind": "observed",
+            "claim_ids": [
+              "C5",
+              "C6"
+            ]
+          },
+          {
+            "from": "RC-COMP-005@v1",
+            "to": "RC-COMP-008@v1",
+            "relation": "overlaps",
+            "basis_kind": "observed",
+            "claim_ids": [
+              "C6"
+            ]
+          }
+        ]
+      },
+      "knowledge_links": [
+        {
+          "id": "K9",
+          "unit_id": "RC-COMP-008@v1",
+          "concept_id": "LAYOUT-SPACE-CALLOUT",
+          "relation": "classified_as",
+          "basis_kind": "inferred",
+          "claim_ids": [
+            "C5",
+            "C6",
+            "C9"
+          ],
+          "rationale": "E2 건물 주변의 명칭/주석 부분에만 제한. 실제건물 부위 업무좌표로 확정하지 않는 개념주석 변형."
+        }
+      ],
+      "reviews": [
+        {
+          "id": "RV3",
+          "unit_id": "RC-COMP-008@v1",
+          "criterion_id": "Q-SCREEN-01",
+          "status": "pass",
+          "reason": "건물/기단 묶음과 별도005명찰 4위치가 기록에 각각 보존되고 관계가 왕복됨.",
+          "evidence_ids": [
+            "E2",
+            "e2_building"
+          ],
+          "claim_ids": [
+            "C5",
+            "C6"
+          ],
+          "reviewer": "이번 실행 분석 에이전트(자기 재대조)",
+          "scope": "정적 원본-기록 조합/라벨 위치 대응만. 실공간 위치 정확성 제외.",
+          "next_probe": "기관교체 시 명찰/기관의 실제관계 확인"
+        },
+        {
+          "id": "RV12",
+          "unit_id": "RC-CASE-002",
+          "criterion_id": "Q-MOTION-01",
+          "status": "hold",
+          "reason": "한시점 PNG는 완성시점/유지시간을 보여주지 않아 읽기 충분성을 판정할 수 없음.",
+          "evidence_ids": [
+            "E2"
+          ],
+          "claim_ids": [
+            "C4",
+            "C5",
+            "C6"
+          ],
+          "reviewer": "이번 실행 분석 에이전트(자기 재대조)",
+          "scope": "시간가독성 보류. 정적내용 누락 대조와 별도.",
+          "next_probe": "원본 연속구간·발화·표시환경 확보 후 등장/완성/가림/유지/퇴장 대조"
+        },
+        {
+          "id": "RV13",
+          "unit_id": "RC-CASE-002",
+          "criterion_id": "Q-TRUST-01",
+          "status": "pass",
+          "reason": "현재PNG 파일해시/크롭원좌표/문서판본을 pin하고 주요주장을 해당PNG/ROI로 재대조.",
+          "evidence_ids": [
+            "E2"
+          ],
+          "claim_ids": [
+            "C4",
+            "C5",
+            "C6"
+          ],
+          "reviewer": "이번 실행 분석 에이전트(자기 재대조)",
+          "scope": "제공PNG-기록 대응과 이번크롭 변환/해시만. MP4진위/PTS추출로그는 미확인.",
+          "next_probe": "원본확보시 제공시각/메타데이터를 추출로그와 확인"
+        },
+        {
+          "id": "RV14",
+          "unit_id": "RC-CASE-002",
+          "criterion_id": "Q-TRUST-02",
+          "status": "pass",
+          "reason": "관측/기능해석/미관측을 구분하고 정지2장을 모션/회사규칙/의도/동일자산으로 확대하지 않음.",
+          "evidence_ids": [
+            "E2"
+          ],
+          "claim_ids": [
+            "C4",
+            "C5",
+            "C6"
+          ],
+          "reviewer": "이번 실행 분석 에이전트(자기 재대조)",
+          "scope": "이번 기록의 주장범위 자기 점검; 회사승인·독립검수 아님.",
+          "next_probe": "새 근거가오면 영향받는 주장범위만 별도이력으로 보강"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "E2",
+          "path": "evidence/172.png",
+          "sha256": "44a26a91328863dd335f9b950780afb96929888f8475b45b2298035250a1771a",
+          "time": {
+            "start": 172,
+            "end": 172
+          },
+          "kind": "provided_full_frame",
+          "dimensions": [
+            7680,
+            2160
+          ]
+        },
+        {
+          "id": "e2_building",
+          "path": "evidence/e2_building.png",
+          "sha256": "c54ba9bc56e3a65bbc8d0b433eb23f40e7f502d69da1b55cdc538f80918cf2f7",
+          "time": {
+            "start": 172,
+            "end": 172
+          },
+          "kind": "crop",
+          "parent_id": "E2",
+          "box_ltrb_exclusive": [
+            4790,
+            640,
+            7440,
+            1790
+          ],
+          "transform": "crop only; no resize/recolor/rotation"
+        }
+      ],
+      "limitations": [
+        "실제관측: 제공7680×2160 PNG2장(전체보기2048×576)과 원본픽셀크롭8개를 original detail로 열람. OCR·원본MP4재생·재추출·음성청취 안함.",
+        "134/172초는 제공 메타데이터에 따른 시각. 자체PTS검증 아님. 38초를 연속관측시간으로 계산하지 않는다.",
+        "prior는 기존분석r2이며 이번실행의독립원본이아님. 기존상세/번호/근거원문은 바이트보존; 이번내용확인은 PNG/ROI 범위.",
+        "단일묶음후보/정지외형반복/동일원자산확인/정본등록/회사승인은 서로다름. 두레이아웃을 같은패턴으로 합치지않음.",
+        "모든모션조사는unobserved. 시간정지·이징·동시발생·퇴장·원제작의도/효과/회사규칙을 만들지않음.",
+        "Phase00지식은 분류/검토질문의 참고. 모든65원칙일괄적용안함. 스킬/정본/R4변경·등록/새화면/영상/PDF/외부스킬실행 없음.",
+        "일반화/다른원본/새스타일활용시험 아님. SHA/연결검사통과는 내용정확성·회사승인을대신하지않음."
+      ]
+    }
+  ],
+  "method": "exact ID or explicit substring; classification inference/review relevance are not effect approval",
+  "company_approved": false
+}

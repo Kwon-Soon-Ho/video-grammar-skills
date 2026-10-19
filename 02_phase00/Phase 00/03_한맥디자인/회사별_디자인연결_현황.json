@@ -1,0 +1,1250 @@
+{
+  "id": "company-design-links",
+  "version": "0.1.0",
+  "date": "2026-10-15",
+  "source_pins": {
+    "companies": {
+      "path": "10_공용자산/회사목록.json",
+      "version": "0.3.1",
+      "sha256": "0b011a9c2962459a3b42067c3f7120602cde9e541c466647fa880a0a298dda2a"
+    },
+    "assets": {
+      "path": "10_공용자산/자산목록.json",
+      "version": "0.3.1",
+      "sha256": "5f4cc581df387e8948bc3071aa9f93bd34fb88a2ffc406aaf72de9f3e8e940a0"
+    },
+    "colors": {
+      "path": "10_공용자산/CI색상목록.json",
+      "version": "0.3.1",
+      "sha256": "c95a79a81a422fc23f4275a8dd878016f209fdaff171d73f44d3cff7387b7097"
+    },
+    "hanmac": {
+      "path": "03_한맥디자인/한맥디자인정본.json",
+      "version": "0.1.0",
+      "sha256": "dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed"
+    },
+    "policy": {
+      "path": "05_출처와검토/R5_적용정책_결정.json",
+      "version": "A@2026-10-15",
+      "sha256": "d8666f2212ae4e434d7d1209f0b64bdded4f0d562df9600a1bda74d136dd9da3"
+    }
+  },
+  "state": "reference_inventory_not_design_approval",
+  "companies": [
+    {
+      "company_id": "hanmac",
+      "name_ko": "한맥기술",
+      "ci_asset_refs": [
+        {
+          "asset_id": "CI-SOURCE-013",
+          "record_version": "0.1.0",
+          "sha256": "8bf20af63dbec973ee5da65fb4da5c6fdd818c63d3a45611665c077ac44f2585"
+        },
+        {
+          "asset_id": "CI-SOURCE-001",
+          "record_version": "0.1.0",
+          "sha256": "0fff2e59a72eaaf42d2bd7875c9044e85fcf5e310bd8ee6a73b271b0a6b6e79e"
+        },
+        {
+          "asset_id": "CI-SOURCE-002",
+          "record_version": "0.1.0",
+          "sha256": "f9506608e532cf0e17e4458957a947dd4cec57c9149fbf68427feae2a44abd96"
+        },
+        {
+          "asset_id": "CI-SOURCE-003",
+          "record_version": "0.1.0",
+          "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+        },
+        {
+          "asset_id": "CI-SOURCE-004",
+          "record_version": "0.1.0",
+          "sha256": "458268a7f5cb6fa2569fe1f7ab4112f47a976c5aab83599b0aab77949e3af743"
+        },
+        {
+          "asset_id": "CI-COLLECTION-049",
+          "record_version": "0.1.0",
+          "sha256": "21992dc5751bf6e720dcff1dec52a7ba0464fe97c07d4af7a8680189ea0a349a"
+        },
+        {
+          "asset_id": "CI-COLLECTION-050",
+          "record_version": "0.1.0",
+          "sha256": "7be61e01e795e65ad8e394bc1e7d7c2ee24b3a3b49cee4ab78f273b3609a7493"
+        },
+        {
+          "asset_id": "CI-COLLECTION-051",
+          "record_version": "0.1.0",
+          "sha256": "871d1aa4f47717d96373dd3bfb012d9343b6392a8568634d88c56426012d9adf"
+        },
+        {
+          "asset_id": "CI-COLLECTION-052",
+          "record_version": "0.1.0",
+          "sha256": "0b756d553167fb08083e0f5d723f59b2eaa360a582dd6229dd3700e385082211"
+        },
+        {
+          "asset_id": "CI-COLLECTION-053",
+          "record_version": "0.1.0",
+          "sha256": "8e96546b74c1b9c9ffc8c74802f9d8e649781c398160d3b1532d87f5382e2e0e"
+        },
+        {
+          "asset_id": "CI-COLLECTION-054",
+          "record_version": "0.1.0",
+          "sha256": "f8b7f28b6b5f4672ec8b492395d793bb59b863eb35f33fb5d9b7bce28cae506b"
+        }
+      ],
+      "color_refs": [
+        {
+          "color_id": "ci.observed.raster.1",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        },
+        {
+          "color_id": "ci.observed.raster.2",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        },
+        {
+          "color_id": "ci.observed.vector.1",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.2",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.3",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        }
+      ],
+      "default_roles": {},
+      "selected_logo": null,
+      "shared_library": "explicit_opt_in_only",
+      "status": "reference_inventory_only",
+      "unresolved": [
+        "공식 최신판/사용범위",
+        "국영문/가로세로/단색·반전형의 맥락별 선택",
+        "보호공간/최소크기/배경",
+        "CI색의 역할 선택·가독성·디자이너 검수"
+      ]
+    },
+    {
+      "company_id": "saman",
+      "name_ko": "삼안",
+      "ci_asset_refs": [
+        {
+          "asset_id": "CI-SOURCE-009",
+          "record_version": "0.1.0",
+          "sha256": "d895fbd63173648ba1ff4be885439fbdae1492803217650ebba388f72e4117fd"
+        },
+        {
+          "asset_id": "CI-SOURCE-001",
+          "record_version": "0.1.0",
+          "sha256": "0fff2e59a72eaaf42d2bd7875c9044e85fcf5e310bd8ee6a73b271b0a6b6e79e"
+        },
+        {
+          "asset_id": "CI-SOURCE-002",
+          "record_version": "0.1.0",
+          "sha256": "f9506608e532cf0e17e4458957a947dd4cec57c9149fbf68427feae2a44abd96"
+        },
+        {
+          "asset_id": "CI-SOURCE-003",
+          "record_version": "0.1.0",
+          "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+        },
+        {
+          "asset_id": "CI-SOURCE-004",
+          "record_version": "0.1.0",
+          "sha256": "458268a7f5cb6fa2569fe1f7ab4112f47a976c5aab83599b0aab77949e3af743"
+        },
+        {
+          "asset_id": "CI-COLLECTION-024",
+          "record_version": "0.1.0",
+          "sha256": "725fa7abbbecf1a16498b5d4010db7a04c72d860bb7e24e5f06af90f219db8a1"
+        },
+        {
+          "asset_id": "CI-COLLECTION-025",
+          "record_version": "0.1.0",
+          "sha256": "b2581f5685ff308f8ec0aa7ca180bb6b4b1a8b757272463a0412b4843151e8bb"
+        },
+        {
+          "asset_id": "CI-COLLECTION-026",
+          "record_version": "0.1.0",
+          "sha256": "f8ed9fd71e21b349a7dc71ba9f62978974886785cddb234ccb36f46537effee5"
+        },
+        {
+          "asset_id": "CI-COLLECTION-027",
+          "record_version": "0.1.0",
+          "sha256": "c00af30816a225203b79dd64077430d0561207b1826a9fc8140d89d68b165960"
+        },
+        {
+          "asset_id": "CI-COLLECTION-028",
+          "record_version": "0.1.0",
+          "sha256": "a52ad33f20bafe1a78eecc46f83e18be658c7d0d20de77a29c4174c0122916e6"
+        },
+        {
+          "asset_id": "CI-COLLECTION-029",
+          "record_version": "0.1.0",
+          "sha256": "b2581f5685ff308f8ec0aa7ca180bb6b4b1a8b757272463a0412b4843151e8bb"
+        },
+        {
+          "asset_id": "CI-COLLECTION-030",
+          "record_version": "0.1.0",
+          "sha256": "5362dc5574d2c64e1c51d1fe86b207cdddb1c372da9c49c4503f250ca0318cd7"
+        }
+      ],
+      "color_refs": [
+        {
+          "color_id": "ci.observed.raster.1",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        },
+        {
+          "color_id": "ci.observed.raster.2",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        },
+        {
+          "color_id": "ci.observed.raster.3",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        },
+        {
+          "color_id": "ci.observed.vector.1",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.2",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.declared.draft.gray.hex",
+          "record_version": "0.1.0",
+          "source_level": "official_declared",
+          "verification": "draft",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.declared.draft.orange.hex",
+          "record_version": "0.1.0",
+          "source_level": "official_declared",
+          "verification": "draft",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.declared.draft.gray.pantone",
+          "record_version": "0.1.0",
+          "source_level": "official_declared",
+          "verification": "draft",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.declared.draft.orange.pantone",
+          "record_version": "0.1.0",
+          "source_level": "official_declared",
+          "verification": "draft",
+          "screen_value_available": false
+        }
+      ],
+      "default_roles": {},
+      "selected_logo": null,
+      "shared_library": "explicit_opt_in_only",
+      "status": "reference_inventory_only",
+      "unresolved": [
+        "공식 최신판/사용범위",
+        "국영문/가로세로/단색·반전형의 맥락별 선택",
+        "보호공간/최소크기/배경",
+        "CI색의 역할 선택·가독성·디자이너 검수"
+      ]
+    },
+    {
+      "company_id": "jangheon-industry",
+      "name_ko": "장헌산업",
+      "ci_asset_refs": [
+        {
+          "asset_id": "CI-SOURCE-010",
+          "record_version": "0.1.0",
+          "sha256": "fd8cd342a5701248c1f04274ed8a94e087f0bd417302aec6743bedb61ef5aa95"
+        },
+        {
+          "asset_id": "CI-SOURCE-001",
+          "record_version": "0.1.0",
+          "sha256": "0fff2e59a72eaaf42d2bd7875c9044e85fcf5e310bd8ee6a73b271b0a6b6e79e"
+        },
+        {
+          "asset_id": "CI-SOURCE-002",
+          "record_version": "0.1.0",
+          "sha256": "f9506608e532cf0e17e4458957a947dd4cec57c9149fbf68427feae2a44abd96"
+        },
+        {
+          "asset_id": "CI-SOURCE-003",
+          "record_version": "0.1.0",
+          "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+        },
+        {
+          "asset_id": "CI-SOURCE-004",
+          "record_version": "0.1.0",
+          "sha256": "458268a7f5cb6fa2569fe1f7ab4112f47a976c5aab83599b0aab77949e3af743"
+        },
+        {
+          "asset_id": "CI-COLLECTION-032",
+          "record_version": "0.1.0",
+          "sha256": "380dac3ada856a084153deb31734ae1cb34423f56567b49bc429bb1797a04458"
+        },
+        {
+          "asset_id": "CI-COLLECTION-033",
+          "record_version": "0.1.0",
+          "sha256": "4faffcf8b01f8624401ecd50c7a24b8eed0c1a33bddd4b8e55778b29986d499d"
+        },
+        {
+          "asset_id": "CI-COLLECTION-034",
+          "record_version": "0.1.0",
+          "sha256": "4a2d1471876228f6c07467693a5ccf581d9e5a2043020b96f614ab1844c98a57"
+        },
+        {
+          "asset_id": "CI-COLLECTION-035",
+          "record_version": "0.1.0",
+          "sha256": "0bdeea356bbf011e220290797b6871e5c79073464e978cee16bcbd872cc9c3d3"
+        },
+        {
+          "asset_id": "CI-COLLECTION-036",
+          "record_version": "0.1.0",
+          "sha256": "933bfb38950d69c9c0450e83125988525b3dc2333e181ff10aecc1202af9d4d3"
+        },
+        {
+          "asset_id": "CI-COLLECTION-037",
+          "record_version": "0.1.0",
+          "sha256": "d5cad9b352e977dc065d80197e21d0681c6f6be1f0f29727409fcfcd7f04c891"
+        },
+        {
+          "asset_id": "CI-COLLECTION-038",
+          "record_version": "0.1.0",
+          "sha256": "7b640d39d7632b9136fd226469484d19cf06a0f0f38a5b0e65630ce6d4345de2"
+        },
+        {
+          "asset_id": "CI-COLLECTION-039",
+          "record_version": "0.1.0",
+          "sha256": "e43e023733c4fb386f38f1e9ceed0707ff9d426bf467534939dda4ad256b8258"
+        }
+      ],
+      "color_refs": [
+        {
+          "color_id": "ci.observed.raster.1",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        },
+        {
+          "color_id": "ci.observed.raster.2",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        },
+        {
+          "color_id": "ci.observed.vector.1",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.2",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.3",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.4",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        }
+      ],
+      "default_roles": {},
+      "selected_logo": null,
+      "shared_library": "explicit_opt_in_only",
+      "status": "reference_inventory_only",
+      "unresolved": [
+        "공식 최신판/사용범위",
+        "국영문/가로세로/단색·반전형의 맥락별 선택",
+        "보호공간/최소크기/배경",
+        "CI색의 역할 선택·가독성·디자이너 검수"
+      ]
+    },
+    {
+      "company_id": "ptc",
+      "name_ko": "피티씨",
+      "ci_asset_refs": [
+        {
+          "asset_id": "CI-SOURCE-011",
+          "record_version": "0.1.0",
+          "sha256": "6ca1dc896e47d59ec8771e57375d79ab61addbab5f5ecf09674e6d4644ae193f"
+        },
+        {
+          "asset_id": "CI-SOURCE-001",
+          "record_version": "0.1.0",
+          "sha256": "0fff2e59a72eaaf42d2bd7875c9044e85fcf5e310bd8ee6a73b271b0a6b6e79e"
+        },
+        {
+          "asset_id": "CI-SOURCE-002",
+          "record_version": "0.1.0",
+          "sha256": "f9506608e532cf0e17e4458957a947dd4cec57c9149fbf68427feae2a44abd96"
+        },
+        {
+          "asset_id": "CI-SOURCE-003",
+          "record_version": "0.1.0",
+          "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+        },
+        {
+          "asset_id": "CI-SOURCE-004",
+          "record_version": "0.1.0",
+          "sha256": "458268a7f5cb6fa2569fe1f7ab4112f47a976c5aab83599b0aab77949e3af743"
+        },
+        {
+          "asset_id": "CI-COLLECTION-010",
+          "record_version": "0.1.0",
+          "sha256": "eda743f400b26e19efab73997b61239f839082cb91a7ca45c056ec08b1ffe8db"
+        },
+        {
+          "asset_id": "CI-COLLECTION-011",
+          "record_version": "0.1.0",
+          "sha256": "1fa0c29259983b3526bc9e4d8eab0c651d8c0ec0c69683be6ac43581618a2837"
+        },
+        {
+          "asset_id": "CI-COLLECTION-012",
+          "record_version": "0.1.0",
+          "sha256": "49f7c6a499427a32d32f9583798d8be0d737f3ce9aa1398742d7bc1c7404e853"
+        },
+        {
+          "asset_id": "CI-COLLECTION-013",
+          "record_version": "0.1.0",
+          "sha256": "14859982623b7af070bc9b9f558482a02472b84ccb2d01269e90b568e7954423"
+        },
+        {
+          "asset_id": "CI-COLLECTION-014",
+          "record_version": "0.1.0",
+          "sha256": "ba7eabccca2a77d6f0c2dd55c479f885f4bb0f5d4d3369a44c4baa72efbb684b"
+        },
+        {
+          "asset_id": "CI-COLLECTION-015",
+          "record_version": "0.1.0",
+          "sha256": "be1b08d79469af775ad159ed473d913676cb559467dbdc6d9b72760e2fa7e193"
+        },
+        {
+          "asset_id": "CI-COLLECTION-016",
+          "record_version": "0.1.0",
+          "sha256": "98b4af000a74b549f9847ac512ef876a7e319e18a6c345e06ae555bc27cd2d79"
+        }
+      ],
+      "color_refs": [
+        {
+          "color_id": "ci.observed.raster.1",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        },
+        {
+          "color_id": "ci.observed.raster.2",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        },
+        {
+          "color_id": "ci.observed.raster.3",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        },
+        {
+          "color_id": "ci.observed.vector.1",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.2",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.3",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        }
+      ],
+      "default_roles": {},
+      "selected_logo": null,
+      "shared_library": "explicit_opt_in_only",
+      "status": "reference_inventory_only",
+      "unresolved": [
+        "공식 최신판/사용범위",
+        "국영문/가로세로/단색·반전형의 맥락별 선택",
+        "보호공간/최소크기/배경",
+        "CI색의 역할 선택·가독성·디자이너 검수"
+      ]
+    },
+    {
+      "company_id": "halla",
+      "name_ko": "한라산업개발",
+      "ci_asset_refs": [
+        {
+          "asset_id": "CI-SOURCE-012",
+          "record_version": "0.1.0",
+          "sha256": "9eb8e43cb84c379821ed3e019120d43503a397bedd25085856d6db3ee4ef1c1f"
+        },
+        {
+          "asset_id": "CI-SOURCE-001",
+          "record_version": "0.1.0",
+          "sha256": "0fff2e59a72eaaf42d2bd7875c9044e85fcf5e310bd8ee6a73b271b0a6b6e79e"
+        },
+        {
+          "asset_id": "CI-SOURCE-002",
+          "record_version": "0.1.0",
+          "sha256": "f9506608e532cf0e17e4458957a947dd4cec57c9149fbf68427feae2a44abd96"
+        },
+        {
+          "asset_id": "CI-SOURCE-003",
+          "record_version": "0.1.0",
+          "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+        },
+        {
+          "asset_id": "CI-SOURCE-004",
+          "record_version": "0.1.0",
+          "sha256": "458268a7f5cb6fa2569fe1f7ab4112f47a976c5aab83599b0aab77949e3af743"
+        },
+        {
+          "asset_id": "CI-COLLECTION-041",
+          "record_version": "0.1.0",
+          "sha256": "cc43f00b163944356fa907a61b1932f93996c4024949b17c1b58dfb1f0677f2b"
+        },
+        {
+          "asset_id": "CI-COLLECTION-042",
+          "record_version": "0.1.0",
+          "sha256": "590e4d95cec07a026cf0a8b8e37dbe6b7bb523dd9c734782d7f951d1ba984b03"
+        },
+        {
+          "asset_id": "CI-COLLECTION-043",
+          "record_version": "0.1.0",
+          "sha256": "b7212add13b1615c3b3c7532340cfd2c505b38f730b0a2273045b7922c392496"
+        },
+        {
+          "asset_id": "CI-COLLECTION-044",
+          "record_version": "0.1.0",
+          "sha256": "c22b711554bfbe91517e567a9e708ef2eb4d8a77f0c91ab7aee17bdeea73e4a3"
+        },
+        {
+          "asset_id": "CI-COLLECTION-045",
+          "record_version": "0.1.0",
+          "sha256": "5efada740fe67546d410f42a82dcc2886b859c163d3d2f42ade5ce6aa2d28836"
+        },
+        {
+          "asset_id": "CI-COLLECTION-046",
+          "record_version": "0.1.0",
+          "sha256": "f8fa755898d77e72e0f724fc915615c14bb49f104d18dcb47e7cd99db462cfe0"
+        },
+        {
+          "asset_id": "CI-COLLECTION-047",
+          "record_version": "0.1.0",
+          "sha256": "01c856abcc6c36d27f9bc5ccee504ba43ec0238f763068ec13ab4065bc19daa6"
+        }
+      ],
+      "color_refs": [
+        {
+          "color_id": "ci.observed.raster.1",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        },
+        {
+          "color_id": "ci.observed.vector.1",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.2",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        }
+      ],
+      "default_roles": {},
+      "selected_logo": null,
+      "shared_library": "explicit_opt_in_only",
+      "status": "reference_inventory_only",
+      "unresolved": [
+        "공식 최신판/사용범위",
+        "국영문/가로세로/단색·반전형의 맥락별 선택",
+        "보호공간/최소크기/배경",
+        "CI색의 역할 선택·가독성·디자이너 검수"
+      ]
+    },
+    {
+      "company_id": "baron",
+      "name_ko": "바론컨설턴트",
+      "ci_asset_refs": [
+        {
+          "asset_id": "CI-SOURCE-007",
+          "record_version": "0.1.0",
+          "sha256": "478ea643756e040e384c6be277e1805d8223b300bdd3caf2984340b24668e40a"
+        },
+        {
+          "asset_id": "CI-SOURCE-001",
+          "record_version": "0.1.0",
+          "sha256": "0fff2e59a72eaaf42d2bd7875c9044e85fcf5e310bd8ee6a73b271b0a6b6e79e"
+        },
+        {
+          "asset_id": "CI-SOURCE-002",
+          "record_version": "0.1.0",
+          "sha256": "f9506608e532cf0e17e4458957a947dd4cec57c9149fbf68427feae2a44abd96"
+        },
+        {
+          "asset_id": "CI-SOURCE-003",
+          "record_version": "0.1.0",
+          "sha256": "2761efdb31b6b883966319ca08ff2b05e1baf459f2b24fc6b3578615bd5c73bf"
+        },
+        {
+          "asset_id": "CI-SOURCE-004",
+          "record_version": "0.1.0",
+          "sha256": "458268a7f5cb6fa2569fe1f7ab4112f47a976c5aab83599b0aab77949e3af743"
+        },
+        {
+          "asset_id": "CI-COLLECTION-018",
+          "record_version": "0.1.0",
+          "sha256": "7c14748b2857b920b9a68194611297ecd6356f0ac78e7560da2c2ed5d5d7162f"
+        },
+        {
+          "asset_id": "CI-COLLECTION-019",
+          "record_version": "0.1.0",
+          "sha256": "dc790926157474682cf5d461a8b2fea7ac98485d87b102edf880e55f7426d572"
+        },
+        {
+          "asset_id": "CI-COLLECTION-020",
+          "record_version": "0.1.0",
+          "sha256": "9d100418ce3cec896fc12a55afb8d6f970f690947b3aa0d711d319c4b02ba263"
+        },
+        {
+          "asset_id": "CI-COLLECTION-021",
+          "record_version": "0.1.0",
+          "sha256": "90cdefd9c0d8b5567d4ac89a25d4569ca80aea3b63bef04b41f79913e18f2069"
+        },
+        {
+          "asset_id": "CI-COLLECTION-022",
+          "record_version": "0.1.0",
+          "sha256": "96d87205e913020b35eb6f8ae02411878653d68a5e21c66f43a6dc12390c89e7"
+        }
+      ],
+      "color_refs": [
+        {
+          "color_id": "ci.observed.raster.1",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        },
+        {
+          "color_id": "ci.observed.vector.1",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        }
+      ],
+      "default_roles": {},
+      "selected_logo": null,
+      "shared_library": "explicit_opt_in_only",
+      "status": "reference_inventory_only",
+      "unresolved": [
+        "공식 최신판/사용범위",
+        "국영문/가로세로/단색·반전형의 맥락별 선택",
+        "보호공간/최소크기/배경",
+        "CI색의 역할 선택·가독성·디자이너 검수"
+      ]
+    },
+    {
+      "company_id": "sanha",
+      "name_ko": "산하종합기술",
+      "ci_asset_refs": [
+        {
+          "asset_id": "CI-SOURCE-008",
+          "record_version": "0.1.0",
+          "sha256": "8827e5bf48a958b1e0ec73ddbf2647238b2bebd71d9afe4676241c887e3d50c1"
+        }
+      ],
+      "color_refs": [
+        {
+          "color_id": "ci.observed.raster.1",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        },
+        {
+          "color_id": "ci.observed.raster.2",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        }
+      ],
+      "default_roles": {},
+      "selected_logo": null,
+      "shared_library": "explicit_opt_in_only",
+      "status": "reference_inventory_only",
+      "unresolved": [
+        "공식 최신판/사용범위",
+        "국영문/가로세로/단색·반전형의 맥락별 선택",
+        "보호공간/최소크기/배경",
+        "CI색의 역할 선택·가독성·디자이너 검수"
+      ]
+    },
+    {
+      "company_id": "jangheon",
+      "name_ko": "㈜장헌",
+      "ci_asset_refs": [
+        {
+          "asset_id": "CI-SOURCE-006",
+          "record_version": "0.1.0",
+          "sha256": "45fb1233b5700bd06951c61c728adad7ec7abbcc9f1b9d33a1a28e5ef962d4e4"
+        },
+        {
+          "asset_id": "CI-SOURCE-005",
+          "record_version": "0.1.0",
+          "sha256": "34485ec2b552e5472f8cc9d49f89360194d73b3f4e7381e07b68511debffd8fe"
+        },
+        {
+          "asset_id": "CI-COLLECTION-001",
+          "record_version": "0.1.0",
+          "sha256": "e08b5a3c44e4028cda6c1e8282a8efd5c741a4d6c4ba22c2cb1c6d49cf0a9fbc"
+        },
+        {
+          "asset_id": "CI-COLLECTION-002",
+          "record_version": "0.1.0",
+          "sha256": "d2046a474233bac44ab50b449a36bcc8cce411bc41e42ce43ca29203de1fdc99"
+        },
+        {
+          "asset_id": "CI-COLLECTION-003",
+          "record_version": "0.1.0",
+          "sha256": "ae3d86316c2d94ee36e8173bb77dbe4fb5f6550241818aae350df81d903abdf6"
+        },
+        {
+          "asset_id": "CI-COLLECTION-004",
+          "record_version": "0.1.0",
+          "sha256": "38f041750b0f8edc21a97d0c14518f0601553f20e323c3acc0ecfeeda71d7536"
+        },
+        {
+          "asset_id": "CI-COLLECTION-005",
+          "record_version": "0.1.0",
+          "sha256": "ac24cc919fa3025828e95696643f63b371ad4e9144aedb7d6e77062639bcbaa8"
+        },
+        {
+          "asset_id": "CI-COLLECTION-006",
+          "record_version": "0.1.0",
+          "sha256": "0d5790a7bba3e9635c184177067721e58681128636d5b79818d88f1bbfaec934"
+        },
+        {
+          "asset_id": "CI-COLLECTION-007",
+          "record_version": "0.1.0",
+          "sha256": "b2eb87870f52c625de16fba39963bd095b595528d955da234b62a43f79f76c4a"
+        },
+        {
+          "asset_id": "CI-COLLECTION-008",
+          "record_version": "0.1.0",
+          "sha256": "a4cf820835543cbe7bd8a1b98f7362df3857ab665b0e5ca93ceca6bef8b5eb9d"
+        }
+      ],
+      "color_refs": [
+        {
+          "color_id": "ci.observed.raster.1",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        },
+        {
+          "color_id": "ci.observed.raster.2",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        },
+        {
+          "color_id": "ci.observed.raster.3",
+          "record_version": "0.1.0",
+          "source_level": "raster_sample",
+          "verification": "source_checked",
+          "screen_value_available": true
+        },
+        {
+          "color_id": "ci.observed.vector.1",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.2",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.3",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.4",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.5",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.6",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.7",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.8",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.9",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.10",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.11",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.12",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.13",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.14",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.15",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.16",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.17",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.18",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.19",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.20",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.21",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.22",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.23",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.24",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.25",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.26",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.27",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.28",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.29",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.30",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.31",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.32",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.33",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.34",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.35",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.36",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.37",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.38",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.39",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.40",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.41",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.42",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.43",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.44",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.45",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.46",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.47",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.48",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.49",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.50",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.51",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.52",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.53",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.54",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.55",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.56",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.57",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.58",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        },
+        {
+          "color_id": "ci.observed.vector.59",
+          "record_version": "0.1.0",
+          "source_level": "vector_literal",
+          "verification": "source_checked",
+          "screen_value_available": false
+        }
+      ],
+      "default_roles": {},
+      "selected_logo": null,
+      "shared_library": "explicit_opt_in_only",
+      "status": "reference_inventory_only",
+      "unresolved": [
+        "공식 최신판/사용범위",
+        "국영문/가로세로/단색·반전형의 맥락별 선택",
+        "보호공간/최소크기/배경",
+        "CI색의 역할 선택·가독성·디자이너 검수"
+      ]
+    }
+  ],
+  "boundary": "8회사 참조 현황. 역할 자동 선택/새 CI 생성/회사 승인 없음."
+}

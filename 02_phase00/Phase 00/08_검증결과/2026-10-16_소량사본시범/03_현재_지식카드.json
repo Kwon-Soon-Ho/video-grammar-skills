@@ -1,0 +1,137 @@
+{
+  "id": "phase00-small-pilot-knowledge",
+  "document_version": "0.1.1",
+  "state": "draft",
+  "scope": "local_working_copy_not_official_taxonomy_or_company_video_case",
+  "records": [
+    {
+      "id": "시범카드001",
+      "version": "0.1.1",
+      "state": "draft",
+      "term_ref": {
+        "id": "LAYOUT-PROCESS-LINE",
+        "version": "0.1.0"
+      },
+      "source_snapshot": {
+        "id": "LAYOUT-PROCESS-LINE",
+        "axis": "layout",
+        "name_ko": "선형 프로세스",
+        "name_en": "Linear process",
+        "definition": "단계를 선·방향으로 연결한 구성",
+        "aliases": [
+          "수평 프로세스",
+          "수직 프로세스"
+        ],
+        "include_when": "순서 있는 단계",
+        "exclude_or_limit": "행태별 방향 속성은 별도",
+        "parent_id": null,
+        "related_ids": [],
+        "source_refs": [
+          "SRC-PROJECT-TAXONOMY"
+        ],
+        "status": "draft",
+        "version": "0.1.0",
+        "replaced_by": null
+      },
+      "source_file": {
+        "path": "01_공통용어/공통용어사전.json",
+        "sha256": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+        "locator": "terms[id=LAYOUT-PROCESS-LINE]"
+      },
+      "plain_explanation": "순서가 있는 단계를 선이나 화살표로 이어, 앞뒤 흐름을 보여 주는 화면 배치입니다.",
+      "use_when": "업무나 공정에서 단계의 순서가 중요하고, 갈림길이 핵심 내용이 아닐 때 씁니다.",
+      "example": "가상 예: 접수→검토→승인을 선으로 이어 보여 주고, 세로로 배치해도 단계 순서와 연결 방향을 유지합니다.",
+      "counterexample": "동등한 항목을 가로로 나열했거나 연도를 축에 표시했다는 이유만으로 단계 흐름이라 부르면 오용입니다. 실제 분기나 되돌아감을 숨기고 한 줄로 잇는 것도 피합니다.",
+      "caution": "가로·세로는 별도 방향 속성이며, 선의 길이가 실제 소요 시간을 뜻하지는 않습니다. 절차의 선후·분기 근거가 없으면 순서를 확정하지 않습니다.",
+      "example_kind": "illustrative_not_actual_video",
+      "company_approved": false
+    },
+    {
+      "id": "시범카드002",
+      "version": "0.1.1",
+      "state": "draft",
+      "term_ref": {
+        "id": "FUNCTION-FOCUS",
+        "version": "0.1.0"
+      },
+      "source_snapshot": {
+        "id": "FUNCTION-FOCUS",
+        "axis": "motion_function",
+        "name_ko": "주목 이동",
+        "name_en": "Shift focus",
+        "definition": "현재 설명 대상으로 주목을 이동",
+        "aliases": [
+          "포커스 전환"
+        ],
+        "include_when": "핵심 단계 설명",
+        "exclude_or_limit": "실제 시선 효과는 검토 필요",
+        "parent_id": null,
+        "related_ids": [],
+        "source_refs": [
+          "SRC-PROJECT-TAXONOMY"
+        ],
+        "status": "draft",
+        "version": "0.1.0",
+        "replaced_by": null
+      },
+      "source_file": {
+        "path": "01_공통용어/공통용어사전.json",
+        "sha256": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+        "locator": "terms[id=FUNCTION-FOCUS]"
+      },
+      "plain_explanation": "지금 설명하는 대상에 눈길을 돌리도록 안내하는 움직임의 역할입니다.",
+      "use_when": "시간에 따라 강조가 어떻게 바뀌는지와 설명 내용을 함께 확인할 수 있고, 핵심 단계에서 설명 대상이 바뀔 때 씁니다.",
+      "example": "가상 예: 절차를 설명하며 강조 테두리가 검토에서 다음 설명 대상인 승인으로 옮겨 갑니다.",
+      "counterexample": "장식용 점이 움직였다는 사실만으로 주목 이동이라 부르는 것은 오용입니다.",
+      "caution": "어느 대상으로 주목을 옮기는지 근거가 부족하면 후보로 남깁니다. 이런 표현이 실제 시청자의 시선을 옮겼는지는 별도 검토가 필요합니다.",
+      "example_kind": "illustrative_not_actual_video",
+      "company_approved": false
+    },
+    {
+      "id": "시범카드003",
+      "version": "0.1.1",
+      "state": "draft",
+      "term_ref": {
+        "id": "PROPERTY-VISIBILITY",
+        "version": "0.1.0"
+      },
+      "source_snapshot": {
+        "id": "PROPERTY-VISIBILITY",
+        "axis": "motion_property",
+        "name_ko": "가시성 변화",
+        "name_en": "Visibility change",
+        "definition": "보이는 범위·강도가 달라짐",
+        "aliases": [
+          "페이드인",
+          "페이드아웃",
+          "Fade in",
+          "Fade out"
+        ],
+        "include_when": "등장·퇴장 관측",
+        "exclude_or_limit": "오퍼시티·마스크·합성 원인 미확정 가능",
+        "parent_id": null,
+        "related_ids": [],
+        "source_refs": [
+          "SRC-PROJECT-TAXONOMY"
+        ],
+        "status": "draft",
+        "version": "0.1.0",
+        "replaced_by": null
+      },
+      "source_file": {
+        "path": "01_공통용어/공통용어사전.json",
+        "sha256": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+        "locator": "terms[id=PROPERTY-VISIBILITY]"
+      },
+      "plain_explanation": "대상이 보이는 범위나 정도가 시간에 따라 달라지는 변화입니다.",
+      "use_when": "같은 대상과 시간 범위를 확인하며 등장·퇴장, 가려짐·드러남의 변화를 볼 수 있을 때 씁니다.",
+      "example": "가상 예: 희미하던 제목이 점차 잘 보이거나, 가려져 있던 글자가 드러납니다.",
+      "counterexample": "글자가 드러났다는 이유만으로 불투명도 설정을 바꿨다고 단정하는 것은 오용입니다.",
+      "caution": "불투명도 설정, 마스크(가림 영역), 합성, 배경 변화 중 무엇이 원인인지는 원본 근거 없이는 확정하지 않습니다. 변화가 충분히 보이면 가시성 변화는 기록하되 원인만 미확정으로 남깁니다.",
+      "example_kind": "illustrative_not_actual_video",
+      "company_approved": false
+    }
+  ],
+  "human_review": "pending",
+  "company_approved": false
+}

@@ -1,0 +1,161 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "참고 원칙 지식",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "principles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "family": {
+            "type": "string",
+            "minLength": 1
+          },
+          "name_ko": {
+            "type": "string",
+            "minLength": 1
+          },
+          "definition": {
+            "type": "string",
+            "minLength": 1
+          },
+          "consider_when": {
+            "type": "string",
+            "minLength": 1
+          },
+          "avoid_or_adjust_when": {
+            "type": "string",
+            "minLength": 1
+          },
+          "analysis_observables": {
+            "type": "string",
+            "minLength": 1
+          },
+          "planning_decisions": {
+            "type": "string",
+            "minLength": 1
+          },
+          "review_questions": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "source_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "interpretation_source_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "application_reference_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "related_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "case_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "scope": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "reference",
+              "draft",
+              "needs_primary_definition_review",
+              "deprecated"
+            ]
+          },
+          "version": {
+            "type": "string",
+            "minLength": 1
+          },
+          "numeric_defaults": {
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "interpretation_origin": {
+            "type": "string",
+            "minLength": 1
+          },
+          "unknown_policy": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "family",
+          "name_ko",
+          "definition",
+          "consider_when",
+          "avoid_or_adjust_when",
+          "analysis_observables",
+          "planning_decisions",
+          "review_questions",
+          "source_refs",
+          "related_ids",
+          "case_refs",
+          "scope",
+          "status",
+          "version",
+          "numeric_defaults",
+          "interpretation_origin"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "default_company_requirement": {
+      "const": false
+    },
+    "overlap_policy": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "version",
+    "principles"
+  ],
+  "additionalProperties": false
+}

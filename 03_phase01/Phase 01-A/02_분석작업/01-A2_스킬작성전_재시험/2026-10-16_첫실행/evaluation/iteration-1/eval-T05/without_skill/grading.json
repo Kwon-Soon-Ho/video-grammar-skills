@@ -1,0 +1,55 @@
+{
+  "case_id": "T05",
+  "graded_at": "2026-10-16T14:56:31+09:00",
+  "grader": "parent Codex, source-aware content review; no independent human adjudication",
+  "frozen_reference_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\06_도구와계약\\01-A2_모션검수절차\\스킬작성전_재발시험\\채점전용\\실패사례와_내용대조기준.json",
+  "frozen_reference_sha256": "5e1385bdc9bddd8c547983d0332fb72b48963ddfd58e1d8d91b1e3c5c03d991c",
+  "raw_output_sha256": "5d73d0b72b0e75940ee2cbdf144968b868c6d0ce6e8ae8176a67a15701f11c6c",
+  "expectations": [
+    {
+      "text": "겹쳐 바뀌는 크로스페이드를 식별",
+      "passed": true,
+      "evidence": "whole_scene_transition에 6.033~6.3초 이전 큰 로고/제목·교량과 새 작은 로고/카드가 동시에 보인다고 기록. T05_title_progress에서 같은 위치의 두 장면 중첩을 확인해 crossfade 식별을 인정."
+    },
+    {
+      "text": "슬라이드·카메라 이동으로 잘못 확정하지 않음",
+      "passed": true,
+      "evidence": "원출력은 크기가 다른 두 로고 중첩을 하나의 축소 이동으로 보지 않고, 슬라이드/회전/확대·카메라 이동을 확정하지 않았다. 위치 고정인 제목과 배경 크롭의 전환에 부합."
+    },
+    {
+      "text": "혼합 진행량의 감속형을 관측 속성에 연결",
+      "passed": true,
+      "evidence": "6.033초 αproxy.200→6.1 .524→6.2 .825→6.3 .959 및1/30초 프레임 변화량 감소를 근거로 혼합 변화가 초반 빠르고 후반 느리다고 명시. 이를 위치 속도가 아닌 가시성/혼합 진행으로 연결했다."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3
+  },
+  "claims": [
+    {
+      "claim": "카드 내부는 이 전환 창에서 유지된다",
+      "type": "factual",
+      "verified": true,
+      "evidence": "card_internal_charts는 목표60/64/7억과 빈 실적/회색 링을 검수했다. 이후 데이터 카운트를 창 밖이므로 추측하지 않았다.",
+      "critical_error": false
+    },
+    {
+      "claim": "정확한 AE Opacity 키프레임 또는 효과를 복원하지 않음",
+      "type": "factual",
+      "verified": true,
+      "evidence": "끝점 선형RGB 혼합 회귀를 proxy로 제한하고, 압축/색처리 잔차와 정확한 함수/핸들 미확인을 명시했다.",
+      "critical_error": false
+    }
+  ],
+  "notes": [
+    "필수 사건 충족. 관측량 분리와 근거 수치가 있어 entrance라는 말만으로 ease-out을 추정한 결과가 아니다."
+  ],
+  "source_review": "selected raw temporal PNGs/native crops and measurements; no audio or full realtime playback claim",
+  "scope": "known-case baseline regression, not new skill effectiveness or unseen-source accuracy",
+  "case_status": "충족",
+  "executor_tokens": null,
+  "executor_duration_seconds": null,
+  "telemetry_status": "not reported by collaboration tool; not estimated from output length"
+}

@@ -1,0 +1,187 @@
+{
+  "id": "R3-01-independent-redteam",
+  "reviewed_on": "2026-10-14",
+  "reviewer": "r_audit_knowledge",
+  "scope": "R3-1 모션 원칙 심화자료만. R3-2 레이아웃·R3-3 스킬 심층 검토는 수행하지 않음.",
+  "result": "minor_revision_required",
+  "summary": "43개 심화카드의 출처 수준·자체 적용 해석·기권 조건은 타당하다. 초기 출처 locator 오류는 v0.1.1에서 보완 확인. UX12 후보 예의 시간 변화·원칙 구분만 좁게 보완하면 R3-1 설명용 지식 묶음의 검토를 종료할 수 있다.",
+  "input_versions": {
+    "motion_cards": "0.1.1",
+    "extension_candidates": "0.1.0",
+    "research_log": "0.1.0"
+  },
+  "checks": {
+    "card_count": 43,
+    "card_ids_match_core": true,
+    "duplicate_card_ids": 0,
+    "missing_source_refs": 0,
+    "invalid_candidate_connections": 0,
+    "company_approved_cards": 0,
+    "numeric_defaults_nonnull": 0,
+    "mp_source_summary": null,
+    "mp_interpretation_origin": "public_outline_only_project_interpretation",
+    "ip10_recommendation_enabled": false,
+    "generated_view_hash_matches": true,
+    "independent_structure_command": "PYTHONDONTWRITEBYTECODE=1 / Phase 00\\.환경\\Scripts\\python.exe / 07_실행도구\\R3_모션자료검사.py",
+    "independent_structure_exit_code": 0,
+    "independent_structure_result": {
+      "valid": true,
+      "errors": []
+    }
+  },
+  "findings": [
+    {
+      "id": "R3M-F01",
+      "severity": "medium",
+      "status": "open",
+      "title": "UX12 일부 적용 예가 정지 배치 또는 다른 원칙의 예로 읽힘",
+      "locations": [
+        "02_원칙과레이아웃/추가모션체계_연결후보.json:48 UX-CAND-04 positive_example",
+        "02_원칙과레이아웃/추가모션체계_연결후보.json:72 UX-CAND-06 positive_example",
+        "02_원칙과레이아웃/추가모션체계_연결후보.json:84 UX-CAND-07 positive_example",
+        "02_원칙과레이아웃/추가모션체계_연결후보.json:109 UX-CAND-09 positive_example"
+      ],
+      "evidence": "Transformation의 전체·상세 연결 예는 Dolly & Zoom과 구분되지 않는다. Overlay의 주석 연결과 Obscuration의 배경 낮춤은 시간 변화 없이도 성립한다. Masking의 필요한 부위 공개도 정지 크롭과 동적 공개의 구분이 생략돼 있다.",
+      "source_url": "https://medium.com/ux-in-motion/creating-usability-with-motion-the-ux-in-motion-manifesto-a87a4584ddc",
+      "source_sections": [
+        "Principle 4: Transformation",
+        "Principle 6: Masking",
+        "Principle 7: Overlay",
+        "Principle 9: Obscuration",
+        "Principle 12: Dolly & Zoom"
+      ],
+      "repair": {
+        "transformation": "설명용 동일 검토 표식이 검토 중 원형 진행 상태에서 확인 완료 체크 상태로 이어져 역할이 바뀌는 과정을 제안한다. 제품의 실제 상태와 혼동되지 않는 개념 예임을 명시한다.",
+        "masking": "가려진 설명 도표의 공개 영역이 시간에 따라 변하며 같은 도표의 내용과 대응 관계가 유지되는 예를 적는다. 이미 잘라 놓은 정지 도표만으로 동적 Masking을 확인하지 않는다.",
+        "overlay": "전경 설명판이 이동해 뒤쪽 원도면을 드러내고 복귀하는 과정으로 앞뒤 층의 위치 관계를 유지한다. 정지 주석 배치와 구분한다.",
+        "obscuration": "전체 맥락이 보임→핵심 부품 강조와 함께 비주요 맥락의 가림/흐림이 변화함→맥락의 존재를 유지한 채 복귀함을 기록한다. 정지 상태에서 어둡게 처리했다는 사실과 구분한다."
+      },
+      "boundary": "후보 자료의 예문 보완만. 신규 분류 ID·회사 규칙·AE 구현을 확정하지 않음."
+    },
+    {
+      "id": "R3M-F02",
+      "severity": "low",
+      "status": "optional",
+      "title": "UX 후보 요약과 연결의 역할을 더 명시하면 오독이 줄어듦",
+      "location": "02_원칙과레이아웃/추가모션체계_연결후보.json rows[].summary_ko / existing_connections",
+      "evidence": "43카드는 source_summary_ko와 project_interpretation을 분리하지만 UX12는 summary_ko 단일 필드다. 기존 연결 후보가 동일 의미 또는 상하위 관계의 확정으로 읽힐 여지도 있다.",
+      "repair": "각 후보에 실제 원문 Principle 번호 locator와 '요약은 자체 정리, 예는 영상용 프로젝트 제안, existing_connections는 동일 개념 확정이 아닌 참고 연결'을 명시한다. 모든 학술 체계를 확장하거나 정본을 바꾸지 않는다."
+    },
+    {
+      "id": "R3M-F03",
+      "severity": "low",
+      "status": "optional",
+      "title": "처음 보는 독자가 43개 중 시작할 항목을 선택하는 동선",
+      "location": "02_원칙과레이아웃/02_모션원칙_읽는순서.md:4",
+      "evidence": "문서 순서는 있지만 2번 단계는 이미 해당 원칙을 알고 있다고 가정한다.",
+      "repair": "3~5개의 상황→참고 ID 예를 추가한다. 예: 긴 설명/무음 시청 IP03·IP06·IP08·IP09, 실측 이동 AP06·MP02·MP03, 전체상세 연결 MR02·MR03, 고대비 반복 ACC01. 기계 점수표나 의무 체크리스트로 만들지 않는다."
+    }
+  ],
+  "resolved_findings": [
+    {
+      "id": "R3M-R01",
+      "title": "MR01~04·MR07~08 출처 절 불일치",
+      "original_evidence": "v0.1.0은 MR01~04를 모두 Paths, MR07~08을 Realtime vs non-realtime으로 지정했다.",
+      "correction_confirmed": "v0.1.1에서 Semantic consistency / Spatial consistency / Continuity / Sequence and stagger / Principle 3: Parenting / Principle 5: Value change로 갱신된 것을 파일과 공개 본문으로 대조했다.",
+      "source_urls": [
+        "https://v10.carbondesignsystem.com/guidelines/motion/choreography/",
+        "https://medium.com/ux-in-motion/creating-usability-with-motion-the-ux-in-motion-manifesto-a87a4584ddc"
+      ]
+    }
+  ],
+  "substantive_passes": [
+    "MP10 상세 정의는 null이며 강의 제목 확인과 프로젝트 해석을 구분한다. 기본 참고 가능 표시는 강사 상세 정의를 검증했다는 승인으로 쓰지 않는다.",
+    "AP 공개 설명과 회사 정보 영상의 적용 예를 구분한다. 3D/AE 제작법과 물리량을 렌더 화면만으로 확정하지 않는다.",
+    "IP03의 자막 삭제 금지, IP06의 학습자 제어와 MP4 휴지 구분, IP08의 무음·청각 접근 조건, IP09의 정지 정보 우월성 일반화 방지가 명시돼 있다.",
+    "IP10 새 공식 Summary가 확인되어도 recommendation_enabled=false이고 기존 정본의 보류를 우회하지 않는다.",
+    "Carbon 격자 경로·순차 등장·ms·브랜드 이징과 UX 저자의 always-easing·agency 주장을 회사 영상 규칙으로 강제하지 않는다.",
+    "실측 형상·수치·속도의 장식적 왜곡, 관측에서 AE parent/핸들/레이어 수·실제 인과를 확정하는 오류를 반례와 기권 조건으로 막는다.",
+    "ACC는 실제 배포 환경·검사 근거가 필요한 참고 카드이며 일반 MP4에 웹 기능을 강제하거나 WCAG 전체 적합·영상 안전 인증을 선언하지 않는다."
+  ],
+  "independent_public_recheck": [
+    {
+      "source": "Adobe",
+      "url": "https://www.adobe.com/creativecloud/animation/discover/principles-of-animation.html",
+      "scope": "1~12 공개 텍스트 설명·절 명칭"
+    },
+    {
+      "source": "Learn Squared",
+      "url": "https://www.learnsquared.com/courses/motion-design",
+      "scope": "Lesson 2의 10 항목명·순서만. 강의 미시청"
+    },
+    {
+      "source": "Cambridge extraneous",
+      "url": "https://www.cambridge.org/core/books/abs/cambridge-handbook-of-multimedia-learning/principles-for-reducing-extraneous-processing-in-multimedia-learning/F29A19FCD34C542806F736E0661C05F5",
+      "scope": "2021 Chapter14 공개 Summary"
+    },
+    {
+      "source": "Cambridge essential",
+      "url": "https://www.cambridge.org/core/books/abs/cambridge-handbook-of-multimedia-learning/principles-for-managing-essential-processing-in-multimedia-learning/A9E77D0172F905AC957689D1771E2888",
+      "scope": "2021 Chapter19 공개 Summary"
+    },
+    {
+      "source": "Cambridge transient",
+      "url": "https://www.cambridge.org/core/books/abs/cambridge-handbook-of-multimedia-learning/transient-information-principle-in-multimedia-learning/670D96C3B9520320CE558AA855A49EE9",
+      "scope": "2021 Chapter21 공개 Summary"
+    },
+    {
+      "source": "Cambridge expertise",
+      "url": "https://www.cambridge.org/core/books/abs/cambridge-handbook-of-multimedia-learning/expertise-reversal-principle-in-multimedia-learning/F6793786D8F79519A22E967FC2563839",
+      "scope": "2021 Chapter13 공개 Summary·DOI"
+    },
+    {
+      "source": "Carbon choreography",
+      "url": "https://v10.carbondesignsystem.com/guidelines/motion/choreography/",
+      "scope": "Paths·Composition/Consistency·Continuity·Sequence and stagger"
+    },
+    {
+      "source": "Carbon overview",
+      "url": "https://v10.carbondesignsystem.com/guidelines/motion/overview/",
+      "scope": "Style/Productive/Expressive·Easing"
+    },
+    {
+      "source": "Fluent2",
+      "url": "https://fluent2.microsoft.design/motion",
+      "scope": "Motion principles"
+    },
+    {
+      "source": "UX in Motion author",
+      "url": "https://medium.com/ux-in-motion/creating-usability-with-motion-the-ux-in-motion-manifesto-a87a4584ddc",
+      "scope": "12항목명·선택 텍스트 설명. GIF 미검증"
+    },
+    {
+      "source": "W3C Flash",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold.html",
+      "scope": "SC/Intent/조건"
+    },
+    {
+      "source": "W3C Pause",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html",
+      "scope": "SC Moving/blinking/scrolling와 auto-updating 조건 구분"
+    },
+    {
+      "source": "W3C Interactions",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html",
+      "scope": "SC/essential/motion animation 정의"
+    },
+    {
+      "source": "APM",
+      "url": "https://www.cambridge.org/core/books/abs/cambridge-handbook-of-multimedia-learning/animation-principles-in-multimedia-learning/C32045ACB824BFD657DA6A702E8255DC",
+      "scope": "2014 Chapter22 공개 Abstract/Summary. 5원칙 세부 미확인"
+    },
+    {
+      "source": "Ploetzner et al",
+      "url": "https://link.springer.com/article/10.1007/s11251-021-09541-w",
+      "scope": "초록의 88명 기어학습·동작/배치 결과만 대조. 통계 독립 재분석 없음"
+    }
+  ],
+  "not_independently_rechecked": [
+    "POLYUM 전체 내용",
+    "Material2 직접 본문",
+    "임베드 영상·GIF",
+    "유료강의·책/학술 장 전체",
+    "실제 사내 영상·학습/홍보 성과"
+  ],
+  "exit_condition": "UX 예의 시간 변화와 원칙 구분 보완 후 해당 부분만 재검토. IP10과 UX12는 보류/후보 상태를 유지하며 R3-2·3의 완료로 확장하지 않는다.",
+  "modifications": "D 자료·정본·사전·스키마·스킬을 수정하지 않음. C workspace 감사 결과 JSON만 신규 작성."
+}

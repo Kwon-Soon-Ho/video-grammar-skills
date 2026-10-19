@@ -1,0 +1,15 @@
+{
+  "eval_id": 5,
+  "eval_name": "V05",
+  "prompt": "V05: case-plan.json 지정 구간의 화면 구성·문구·정보 관계·모션(이동 방향·등장 순서·가감속, 주변/내부 동작)을 원본 근거와 연결해 분석하고 누락·오분석을 검토한다. 해당 문서가 있으면 영상과 대조하고, V06S/W는 동일 장면 상태 기준으로 변형을 비교한다. AE 키프레임은 제공되지 않는다.",
+  "prompt_record_kind": "normalized task summary; original dispatch retained in conversation",
+  "assertions": [
+    "한글 타이틀 조각별 등장→영문 리빌→본문→큰 G→왼 UI→오른 UI 순서",
+    "영문 주변 십자 커서와 점선 사각형의 확장/수축 및 영문 연해짐을 분리",
+    "큰 G의 형태가 드러나는 변화와 곡선/십자 가이드 선을 기록; E와 같은 동작으로 답 복사 금지",
+    "두 UI의 이동·확대·겹침/빛 강조·하단 설명 순서를 분리",
+    "배경 모니터 UI의 실제 변화/정지 검사 및 가감속별 근거; 문서없음/오디오미검수 유지"
+  ],
+  "criteria_origin": "root-audit/criteria-frozen.json; human gold 아님",
+  "iteration": "targeted draft3 rerun"
+}

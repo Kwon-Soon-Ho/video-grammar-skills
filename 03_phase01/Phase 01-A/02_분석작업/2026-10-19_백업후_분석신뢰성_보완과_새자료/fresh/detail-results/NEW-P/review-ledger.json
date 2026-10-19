@@ -1,0 +1,90 @@
+{
+  "schema_version": "video-review-ledger-0.1",
+  "revision": 1,
+  "before": {
+    "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\results\\NEW-P\\first-observations.json",
+    "sha256": "3340f53170cd336df33ac9cc644ead1d6b2c7d07679152936ca6877c7d86906f"
+  },
+  "after": {
+    "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\detail-results\\NEW-P\\observations-detailed.json",
+    "sha256": "9efe8da0f2ebda38416f0f6a50b48080488e5716734a5252b2a5c4af1ca64e23"
+  },
+  "reviewer": {
+    "kind": "same_agent_context",
+    "name": "Codex detail review",
+    "method": "지정 ROI의 0.1초 표본 시각 재대조. 독립 검수 아님."
+  },
+  "findings": [
+    {
+      "id": "D02",
+      "question": "로고 먼저, 밝은 카드 면 나중의 순서와 면 전개 구분",
+      "requirements": [
+        {
+          "object_id": "gangwon",
+          "property": "visibility",
+          "dimension": "logo-assembly"
+        },
+        {
+          "object_id": "gangwon-face",
+          "property": "visibility",
+          "dimension": "face-after-logo"
+        },
+        {
+          "object_id": "gangwon-face",
+          "property": "size",
+          "dimension": "face-width"
+        }
+      ],
+      "required_basis_kind": "observed",
+      "before_claim_ids": [
+        "c017"
+      ],
+      "state": "addressed",
+      "resolution_claim_ids": [
+        "c017",
+        "c039",
+        "c040"
+      ],
+      "reason": "0.1초 간격 근거를 만든 뒤 지정 ROI의 시간순 개요를 재관찰해 보완. 동일 AI 문맥, 독립 검수 아님.",
+      "next_probe": null
+    },
+    {
+      "id": "D03",
+      "question": "둘째 줄 띠·글자·강조의 순서를 0.1초 표본으로 분리",
+      "requirements": [
+        {
+          "object_id": "regional-row2",
+          "property": "visibility",
+          "dimension": "second-row-enter"
+        }
+      ],
+      "required_basis_kind": "observed",
+      "before_claim_ids": [
+        "c027"
+      ],
+      "state": "addressed",
+      "resolution_claim_ids": [
+        "c027"
+      ],
+      "reason": "0.1초 간격 근거를 만든 뒤 지정 ROI의 시간순 개요를 재관찰해 보완. 동일 AI 문맥, 독립 검수 아님.",
+      "next_probe": null
+    },
+    {
+      "id": "OPEN-regional-link",
+      "question": "연결선 내부 무늬의 이동 방향은 아직 미확정",
+      "requirements": [
+        {
+          "object_id": "regional-link",
+          "property": "internal_state",
+          "dimension": "unreviewed-change"
+        }
+      ],
+      "required_basis_kind": "observed",
+      "before_claim_ids": [],
+      "state": "open",
+      "resolution_claim_ids": [],
+      "reason": "미확인 속성을 범위 밖으로 숨기지 않고 열린 검수로 유지",
+      "next_probe": "해당 영역을 기준점으로 시간순 원본 비교 후 관측 주장 또는 판독 한계를 보완"
+    }
+  ]
+}

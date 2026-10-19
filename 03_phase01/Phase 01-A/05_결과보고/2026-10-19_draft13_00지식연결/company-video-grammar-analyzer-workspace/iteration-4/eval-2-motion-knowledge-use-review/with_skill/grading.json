@@ -1,0 +1,127 @@
+{
+  "expectations": [
+    {
+      "text": "기존6개 표본 창 A-M1/A-M2/A-M3/B-M1/B-M2/B-M3을 내용/시각/근거와 연결하고 새 전편/원본 연속 관측으로 확대하지 않는다.",
+      "passed": true,
+      "evidence": "00_수집기록.md의 6개 상세 A-M1~B-M3가 각각 96–100/103–106/108–111/136–140/143–146/147–150초, 현재 내용, JPG와 원기록을 연결한다. 채점자가 6시트를 실제 열어 단계·동반 배경을 대조했다. 112초는 기존 연결 PNG 문맥으로 별도 표시하고 창 사이·전편/연속 재생은 미검수로 남겼다."
+    },
+    {
+      "text": "A-M3의0.8→10.8→12.9억원과끝값 가시경계(110,110.5]초, 도상111/112초 후속을 구별한다. B-M3의44→64→82%와끝값 경계(148.5,149]초 및149.5초 후속 카드/도넛/막대를 보존한다.",
+      "passed": true,
+      "evidence": "00_수집기록.md A-M3 및 C-A-M3/EA3-number에는 109.5=0.8,110=10.8,110.5=12.9억원과 (110,110.5] 경계,111 끝값·미완성 도상→112 완성 화살표를 구분한다. B-M3/C-B-M3/EB3-number는 148=44,148.5=64,149=82%, (148.5,149] 경계와149.5 도넛 분할색·3카드/디자인카드 크기·막대 후속을 보존한다. 두 시트와 기존112/150초 PNG의 실제 픽셀에 부합한다."
+    },
+    {
+      "text": "전체 흐름과 독립 세부 동작을 연결하고 대상별 선후/중첩/유지·수치 정착 이후 변화가 조회 가능한 형태다. 수치와 모든 도상의 동시 완료를 만들지 않는다.",
+      "passed": true,
+      "evidence": "motion.links.json의 부분 전체흐름 2개가 contains/precedes로 USE-A-M1~3/USE-B-M1~3에 연결된다. events/event_links에서 A-M2의 기존 두판 accompanies, B-M1 퇴장/새 수치 overlaps, EA3-icon 및 EB3-follow continues_after 수치가 보존된다. TIME-DELAY 실제 재실행은 A-M3/B-M3를 반환하고 단위 summary에서 끝값 뒤 변화를 읽을 수 있다. 모든 도상 동시 완료를 선언하지 않는다."
+    },
+    {
+      "text": "관측 속성/시간 관계·기능 분류·관련 원칙을 구별하며 정확 AE 키프레임/마스크/원본 곡선·시청 효과를 근거 없이 확정하지 않는다. 미관측/음성 미검수는 분리한다.",
+      "passed": true,
+      "evidence": "관측 claim은 observed, 기능/분류 연결은 inferred이고 PROPERTY/TIME/FUNCTION과 review_relevant를 구분한다. 정확한 이징/AE Scale·mask·opacity·키프레임·실제3D 제작은 각 단위 unverified/unknowns에 남는다. IP-05의 6행 not_reviewed와 AP-06/Q-MOTION-01 hold를 조회에서도 재확인했다. 음성 미검수와 창 사이 미관측을 별도로 기록했다."
+    },
+    {
+      "text": "숫자와 도상의 시차를 조회하면 해당 실제 관측 사례를 반환한다. 원본 관측이 아닌 VC-MOTION-03 가족사별→업무별 교체 제안을 관측 패턴으로 섞지 않는다.",
+      "passed": true,
+      "evidence": "읽은 knowledge_links.py query 경로는 읽기/해시 검증 후 stdout만 반환하며 쓰기를 수행하지 않는다. 채점자가 번들 Python -B -X utf8로 TIME-DELAY --motion-only를 실제 실행: 종료0, A-M3/B-M3 반환, 저장 query-TIME-DELAY.json과 객체 전체 동일. 가족사별 조회도 종료0/0건이며 전체 units/uses에는 VC-MOTION-03 제안이 없다. 원기록03은 해당 교체가 새 시안 제안이라고 명시한다."
+    },
+    {
+      "text": "원본 관측/기존 기록 재사용/기능 해석/새 제안을 구분하고 실제 회사 규칙·원본 제작법·새 원본 관측이나 전편 완료를 근거 없이 만들지 않는다.",
+      "passed": true,
+      "evidence": "C-A/B-Mn에는 [기존 관측 재사용+제공 시트 대조]가 있고 별도 interpretation claim은 분석자의 추론으로 표시된다. 기존 시범 VC-MOTION-02의 변형 후보와 동일 패턴 확정을 구별하고 VC-MOTION-03은 검색에 넣지 않는다. limitations/00/01은 회사 승인·정본 등록·새 제작·새 원본 연속관측·전편 완료를 주장하지 않는다."
+    },
+    {
+      "text": "사례 요약→전체 상세→근거를 읽을 수 있고 기존 상세/정확한 원본 파일·시각·해시·관측 방식/한계를 보존하거나 실제 원문으로 연결한다.",
+      "passed": true,
+      "evidence": "00은 사례 요약→전체 상세 원문 링크/6단위 상세→근거대조 순서다. 입력01/02/03/05의 실제 절대경로와 원문을 보존하며 SR1–SR4 해시가 현재 파일과 일치한다. 제공 MP4명/SHA·크기·fps는 물려받은 메타로 표시했다. 05의 개별 PNG명·0.5초 시각·SHA·기존 추출로그 경로는 실제 원문으로 연결되며 이번 재해시/전수검증이라고 주장하지 않는다."
+    },
+    {
+      "text": "기존 정의 ID/판본 또는 유일한 별칭을 유지하며 정의와 현재 사례/사용처·근거·차이·미검증을 왕복할 수 있다.",
+      "passed": true,
+      "evidence": "A-M1~A-M3/B-M1~B-M3 기존 ID·의미를 유지하고 local-motion-knowledge-review-0.1 판본 및 prior_definition_ref를 덧붙였다. use.definition_id/version과 unit 판본이 일치한다. A-M3 직접 조회를 실제 재실행해 해당 정의·USE-A-M3·VC-CASE-A/A-02·내용/시간·근거·차이/미검증을 반환했고 TIME-DELAY로 B-M3 사용처까지 왕복 가능하다."
+    },
+    {
+      "text": "필요한 Phase00 지식을 실제 정본/심화의 정확ID·출처 위치/판본과 연결한다. 미분류는 이유와 남기며 원칙/용어를 가짜로 만들지 않는다.",
+      "passed": true,
+      "evidence": "catalog source_pins를 실제 정본5파일과 대조해 해시/판본이 일치했다(용어0.1.1, 모션지식파일0.1.2 등). TIME-DELAY는 실제 정의 “대응 사건 사이 시작·완료 시각 차이”; MR-04/MR-08/AP-05/AP-06/IP-05의 실제 ID/정의와 심화카드 source_locator를 읽어 조건/보류가 부합함을 확인했다. knowledge_queries.json은 18개 선택ID 원문, catalog는 정확 source_path/hash/version 및 심화 문맥 path/hash를 제공한다. 미관측·곡선/음성 미상은 무리한 분류 대신 이유로 남는다."
+    },
+    {
+      "text": "개념/유형 분류, 재사용 정의, 개별 사용처, 검토 관련 원칙과 실제 판정을 구별한다. 원칙 태그만으로 효과/승인을 선언하지 않는다.",
+      "passed": true,
+      "evidence": "unit(정의)·uses(개별 사례)·facets/관측 claims·knowledge_links의 classified_as/review_relevant/evaluated_against·reviews를 구별한다. AP-05는 시간 차와 관련 질문만 연결하고 관성/효과 판정은 하지 않는다. MR-04 pass는 명시된 기록 일관성 자기검토 범위이며 읽기 전달효과/원제작 의도/회사 승인으로 확대하지 않는다."
+    },
+    {
+      "text": "실제 조회 명령/결과가 있고 요청한 단위/사례를 반환하며 반환에서 현재 내용·시각·근거·차이/미검증으로 이동할 수 있다. 파일 존재만으로 통과하지 않는다.",
+      "passed": true,
+      "evidence": "02_조회안내.md의 실제 명령을 코드 검토 후 재실행했다. TIME-DELAY=A-M3/B-M3, IP-05/MR-04/Q-MOTION-01=6단위, A-M3=A-M3, 가족사별=0건이며 각 저장 결과와 전체 객체가 동일했다. 반환에 definition_version,use.case_unit_id/region/content/time,differences,unverified,evidence.path/sha와 record_path/claim_ids가 있어 원기록/현재 상세와 시간 사건으로 이동 가능하다. 파일 존재나 validation=true만으로 판정하지 않았다."
+    },
+    {
+      "text": "선택한 실제 검토 항목에는 대상·판정·이유·근거·검토 주체/범위가 있고 미검수/보류에는 다음 확인이 있다. 아직 안 본 것을 비적용/통과로 바꾸지 않는다.",
+      "passed": true,
+      "evidence": "27개 reviews의 대상/criterion/status/reason/evidence_ids/claim_ids/reviewer/scope를 확인했다. 예 RV9는 A-M3/MR-04/pass/AI self-review/기존 기록 순서·중첩 보존에 한정한다. RV10 AP-06 hold는 동일 특징의 변화율 미측정과 다음 표본 비교, RV11 IP-05 not_reviewed는 음성 부재와 확보 후 검토, RV12 Q-MOTION-01 hold는 유지/퇴장/발화·시청조건 후속을 명시한다. 실제 재조회에서도 6단위 음성 not_reviewed·읽기 hold를 유지했다."
+    }
+  ],
+  "summary": {
+    "passed": 12,
+    "failed": 0,
+    "total": 12,
+    "pass_rate": 1.0
+  },
+  "claims": [
+    {
+      "claim": "수치 끝값과 도상 완료가 다른 실제 사례는 A-M3/B-M3 두 사용처이다.",
+      "type": "factual",
+      "verified": true,
+      "evidence": "계약109.5/110/110.5/111 시트와112 PNG, 지원148/148.5/149/149.5/150 시트 및150 PNG를 실제 대조했다. 핵심 값/경계·후속 조립 설명이 일치한다."
+    },
+    {
+      "claim": "10단위·8사용처·21사건·17사건관계·27검토행·92지식연결을 작성했다.",
+      "type": "factual",
+      "verified": true,
+      "evidence": "motion.links.json 배열을 직접 계수해 units10/uses8/events21/event_links17/reviews27/knowledge_links92를 확인했다. 개수 자체는 품질 점수로 사용하지 않았다."
+    },
+    {
+      "claim": "조회 명령은 종료0이고 저장 결과를 재현한다.",
+      "type": "process",
+      "verified": true,
+      "evidence": "채점자가6개 안전한 query를 직접 재실행했다. TIME-DELAY,IP-05,MR-04,Q-MOTION-01,가족사별,A-M3 모두 종료0이며 해당 저장JSON과 전체 객체가 동일했다."
+    },
+    {
+      "claim": "현재 입력/시트/연결 PNG 해시를 고정하며 MP4/개별46프레임을 재검증했다고 주장하지 않는다.",
+      "type": "quality",
+      "verified": true,
+      "evidence": "6 source_records+8 evidence의 현재 SHA를 직접 다시 계산해 일치 확인. 입력/원기록 파일이 실제로 있고 MP4 메타는 supplied, time_mapping은 미재검증으로 명시된다."
+    },
+    {
+      "claim": "AP-06 hold·IP-05 not_reviewed·Q-MOTION-01 hold를 유지한다.",
+      "type": "quality",
+      "verified": true,
+      "evidence": "reviews 및 실제 IP-05/Q-MOTION-01 query가 각각6행 not_reviewed/hold를 반환한다. MR-04/MR-08 pass는 기록 보존/중간값 오해 방지 범위로 제한된다."
+    },
+    {
+      "claim": "이 결과만으로 실제 원본곡선·막대 분모·읽기효과·회사 승인·일반 성능을 판단할 수 없다.",
+      "type": "quality",
+      "verified": true,
+      "evidence": "입력은 알려진 단일 영상의 prior analysis+6개 축소시트이며 MP4/오디오가 없다. 출력이 이 한계를 정확히 명시한다. 채점도 새 전편 관찰이나 일반 성능 검증을 하지 않았다."
+    },
+    {
+      "claim": "실행자가 실행 당시 문서 전부/6이미지/18지식ID를 실제로 읽었다.",
+      "type": "process",
+      "verified": false,
+      "evidence": "execution.md와 read_manifest/knowledge_queries는 이를 보고하고 현재 산출의 내용·경로·hash·query는 독립 재현된다. 다만 제공 execution.md는 요약 실행기록이며 원시 tool-call 전체가 없어 당시 모든 열람 행동 자체는 독립 확증 불가다. 이를 핵심 내용 assertion의 실패로 대체하지 않았다."
+    }
+  ],
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "assertion": "선택한 실제 검토 항목에는 대상·판정·이유·근거·검토 주체/범위가 있고 미검수/보류에는 다음 확인이 있다. 아직 안 본 것을 비적용/통과로 바꾸지 않는다.",
+        "reason": "대상/판정/근거 필드가 있다는 조건만으로는 실제 원칙의 검토 질문에 답했는지 구별하기 어렵다. 이번 MR-04 pass는 원칙 적합성 대신 기록 보존의 자기검토로 좁혀져 있고 범위는 정직하다. 향후 평가에서는 기록 충실성 판정과 실제 원칙 질문(정보 관계에 맞는 순차/동시 선택)의 판정을 따로 요구하고, 자료가 없을 때 후자는 보류되는지도 확인하는 편이 변별력이 높다."
+      },
+      {
+        "assertion": "숫자와 도상의 시차를 조회하면 해당 실제 관측 사례를 반환한다. 원본 관측이 아닌 VC-MOTION-03 가족사별→업무별 교체 제안을 관측 패턴으로 섞지 않는다.",
+        "reason": "가족사별 0건만으로 제안 혼입 부재를 입증하지는 못한다(별칭·비색인 필드로 숨을 수 있음). 이번에는 실제 units/uses와 원기록까지 대조해 통과시켰다. 평가 지침에 반환0건 외 전체 관측 사용처의 출처/ID를 대조하는 배제 검사도 명시하면 좋다."
+      }
+    ],
+    "overall": "12개 assertion 모두 내용 근거로 통과. 표면형식/개수/자기검사 통과만으로 채점하지 않았고 6시트+112/150 PNG, 원기록, 실제 정본ID와 안전한 query 재실행을 확인했다. 추가 중대한 사실오류나 산출/재현 결과 불일치는 발견하지 않았다. 원시 실행로그 부재로 과거 모든 읽기 행동은 독립 확증할 수 없고, 표본 밖/음성/정확 원값/읽기효과/일반 성능은 평가하지 않는다."
+  }
+}

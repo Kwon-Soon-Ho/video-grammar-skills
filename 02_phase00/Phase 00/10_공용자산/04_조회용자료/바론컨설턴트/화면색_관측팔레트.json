@@ -1,0 +1,63 @@
+{
+  "company_id": "baron",
+  "status": "observed_not_official",
+  "canonical_sha256": "c95a79a81a422fc23f4275a8dd878016f209fdaff171d73f44d3cff7387b7097",
+  "palette": {
+    "company_id": "baron",
+    "colors": [
+      {
+        "company_id": "baron",
+        "color_id": "ci.observed.raster.1",
+        "record_version": "0.1.0",
+        "revision_state": "current",
+        "ci_asset_ref": {
+          "asset_id": "CI-SOURCE-007",
+          "record_version": "0.1.0",
+          "sha256": "478ea643756e040e384c6be277e1805d8223b300bdd3caf2984340b24668e40a"
+        },
+        "evidence_asset_ref": {
+          "asset_id": "CI-SOURCE-007",
+          "record_version": "0.1.0",
+          "sha256": "478ea643756e040e384c6be277e1805d8223b300bdd3caf2984340b24668e40a"
+        },
+        "source_level": "raster_sample",
+        "label_in_source": "공식 색 이름 없음: 불투명 픽셀 대표색 1",
+        "raw_value": {
+          "notation": "RGB",
+          "value": [
+            38,
+            65,
+            133
+          ],
+          "declared_color_space": null
+        },
+        "screen_value": {
+          "color_space": "srgb",
+          "hex": "#264185",
+          "alpha": 1
+        },
+        "normalization": {
+          "method": "raster_sample",
+          "source_profile": null,
+          "notes": "원본 PNG에 ICC 없음. 채널값을 보존하고 화면 표시만 sRGB 가정. 빈도·색간거리로 대표 관측색 선정; 그라디언트 전체 의미나 브랜드 색 이름 아님."
+        },
+        "observation": {
+          "region": "파일 전체에서 alpha=255 픽셀 집계; 좌상단 기준 대표 좌표 x=59, y=0; 동일 RGB 픽셀 12756개",
+          "alpha_handling": "alpha=255인 픽셀만 사용; 반투명·안티앨리어싱 경계 제외",
+          "background_handling": "투명배경을 흰색/검정과 합성하지 않음",
+          "profile_assumption": "ICC/sRGB 청크 없음 여부는 ICC 확인 기준. ICC 프로필 없음, sRGB 표시 가정; 공식 디지털 색 인증 아님"
+        },
+        "evidence_locator": "PNG 원본 픽셀 (59, 0) RGBA=[38, 65, 133, 255]",
+        "verification": {
+          "state": "source_checked",
+          "checked_by": "Codex 원본 픽셀 대조",
+          "checked_at": "2026-10-14T04:38:22.419544+00:00",
+          "notes": "RGBA 채널·좌표·빈도 재현 확인. 담당자 승인/공식 지정색 확인 아님."
+        },
+        "notes": "페이지 디자인의 강조/배경 역할은 후속 제안. 현재 색을 회사 필수값으로 정하지 않음."
+      }
+    ],
+    "reason": null,
+    "authority": "원문대조/관측/제안의 기록. 회사 필수화·페이지 품질 승인 아님."
+  }
+}

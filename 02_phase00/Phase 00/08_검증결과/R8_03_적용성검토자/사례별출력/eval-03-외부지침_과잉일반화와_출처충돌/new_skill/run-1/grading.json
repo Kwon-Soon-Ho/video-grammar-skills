@@ -1,0 +1,152 @@
+{
+  "expectations": [
+    {
+      "text": "AP-06/MP-02의 등속 예외와 관련성을 확인하여 등속 무조건 금지와 같은 원인을 두 독립 감점으로 합산하는 기준을 수정한다.",
+      "passed": true,
+      "evidence": "C1/F1는 AP-06 consider_when의 선형 적합 예외, MP-02와 related_ids/중복실패정책, MC-01을 실제 위치로 연결해 등속항상오류와 별도이중감점을 수정한다. 균일유동 가정 등속화살표를 유지후보로 하고 실측검증과 구별한다. 직접 읽은 정본AP-06/MP-02·심화카드 및 overlap_policy 내용과 일치."
+    },
+    {
+      "text": "IP-10의 공식 공개 요약 수준·사전지식 조건을 지키고 학술 장 전체 검토/기획실 모두초보/효과 보장을 사실로 채택하지 않는다.",
+      "passed": true,
+      "evidence": "C2/F2는 IP-10의 공식 Chapter13 Summary/2021·DOI와 publisher_summary 수준을 밝히고 학술전문/실험/진단도구/회사효과 미검토, 사전지식unknown·부서초보단정/최대단순화삭제를 제안한다. 채점자가 IP-10 core/심화카드 및 출처목록의 현재요약/옛목차레코드를 대조했고 조건과 깊이가 일치한다."
+    },
+    {
+      "text": "UX12의 기존 원칙 연결 후보를 새 분류ID나 회사 의무로 등록하지 않으며 지침 검토와 실제 DB 변경을 구분한다.",
+      "passed": true,
+      "evidence": "C3/F3는 연결후보의 status=proposal_not_new_taxonomy/company_approved=false와 기존 DECISION-R3-MOTION-SCOPE-A를 근거로 UX-01~12 신규정식ID·회사필수화를 삭제한다. UX-CAND 식별자와 기존 AP/MP/MR 연결후보를 구별하며 입력/정본의 실제 변경은 하지 않았다."
+    },
+    {
+      "text": "웹 고정 4사진·8모션·32자/두줄·항상 비대칭을 영상 의무로 채택하지 않고 정지/텍스트/대칭/반복이 적합한 제공 사례를 유지할 근거와 최소 수정안을 제시한다.",
+      "passed": true,
+      "evidence": "C4/F4는 4사진/8모션·32자/2줄·항상비대칭을 삭제하고 필수문구·정보관계·실제언어·읽기유지로 조건화한다. 제공 사례 정지정의·대칭/동일구성반복을 조건부 유지하고 장식패널이징/목적상비대칭도 절대금지하지 않는다. Taste/Impeccable/LottieFiles 발췌의 실제 제외·반례와 SCREEN-*가 이를 지지한다."
+    },
+    {
+      "text": "제안서의 잘못된 AP-06 파일 SHA를 실제 제공 파일과 대조해 어긋남을 밝히고 경로/인용 이름만으로 출처가 주장을 지지한다고 인정하지 않는다.",
+      "passed": true,
+      "evidence": "C5/F5는 기재0 SHA와 실제249ef6b9…0daa5의 불일치를 밝히고 AP-06 레코드0.1.1은 맞지만 파일0.1.2라는 층위를 구분한다. 채점자가 Get-FileHash로 실제 파일을 별도 계산해 출력값과 일치 확인. 경로존재·레코드/해시일치와 내용지지 여부를 별개로 검사해 supports_C1=false이며 해시정정만으로 C1검증완료가 아님을 명시."
+    },
+    {
+      "text": "지침 판정의 적용/필수 이유·출처 깊이·반례를 구체화하고 실제 프레임/원문 재열람 부재에 따른 판단 범위와 필요한 사람 질문을 구분한다. 일괄 보류/단일총점/전체 영상 통과를 만들지 않는다.",
+      "passed": true,
+      "evidence": "선정표/criteria.selected는 C1~C6 목적별7항목의 적용·필수이유, F1~F6 위치·반례·최소수정과 source_limits의 공개기사절/강의개요/공식요약/저자글·DB발췌 범위를 구체화한다. 실제프레임/원격원문 재열람 없음, H1/H2·Q1/Q2의 대상판본/역할/질문/자료요구를 분리한다. 전체를 보류하지 않고 확인된문서오류 수정과 조건부유지를 제시하며 score=null/overall_ready=false/actual_video_pass=false다. 실제영상검사는 현재 문서과제의 범위비적용이라 명시했으나 미래영상판정은 미검수로 남겨 자료부재 통과로 바꾸지 않았다."
+    },
+    {
+      "text": "수행 원문/정본/분류와 고정 참조를 보존하고 외부 원문 다운로드·코드 실행·영상 분석·새 화면 제작이나 승인 회신을 허위로 주장하지 않는다.",
+      "passed": true,
+      "evidence": "입력78개 전수 경로/SHA를 fixture_before와 대조해 변경·삭제·추가0. 기준안target.sha와 AP실제sha도 독립계산과 일치한다. 원문전문다운로드·외부코드실행·영상분석·새화면·실제질문/회신·회사승인은 미실시로 한정하며 로컬PowerShell의 파일대조만 보고한다. fullR6/R7검사완료나 없는 실측결과를 만들지 않았다."
+    }
+  ],
+  "summary": {
+    "passed": 7,
+    "failed": 0,
+    "total": 7,
+    "pass_rate": 1
+  },
+  "grading_scope": {
+    "case_id": 3,
+    "configuration": "new_skill",
+    "run": 1,
+    "criteria_sha256": "3edf88ae666533fb864c2ad59477f0bbed0256640d2bb93ed45c62a9f0e814f1",
+    "method": "전체task/transcript/MD/JSON과 해당사본 원문·정본선별레코드·후보·출처목록·결정·이식발췌의 의미를 고정7조건에 대조. 수행코드 재실행 안 함.",
+    "source_scope": "해당사본만. 다른평가자/후보개선이력/D원DB/웹 미사용."
+  },
+  "input_integrity": {
+    "baseline": "fixture_before.json#/files",
+    "algorithm": "SHA256",
+    "before_files": 78,
+    "current_files": 78,
+    "changed": [],
+    "deleted": [],
+    "added": [],
+    "all_match": true
+  },
+  "output_validation": {
+    "json_parse": true,
+    "selected": 7,
+    "findings": 6,
+    "holds": 2,
+    "human_questions": 3,
+    "operational_options": 4,
+    "target_sha_match": true,
+    "AP_file_sha_match": true,
+    "actual_AP_file_sha256": "249ef6b9e7b14ff62f41352922be2f00e748c8b10debb4d4992b580364e0daa5",
+    "semantic_consistency": "MD/JSON의 C1~C6 수정·조건부유지·보류2·질문미발송·총점없음·전체준비false가 일치.",
+    "sha256": {
+      "검토결과.md": "616c22ce3c9e3856a2e12c7368b42273ce1296004fb038e767081fb2ab83e750",
+      "검토기록.json": "596603a2fd06e0f8caa35309888e9e4d6d4e5ffbc2399b38571d348c366bcd69"
+    },
+    "execution_code_rerun": false
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": null,
+    "total_duration_seconds": null,
+    "reason": "실제telemetry 미제공 run timing.json 그대로; 추정시간/token 추가 없음."
+  },
+  "claims": [
+    {
+      "claim": "AP-06 레코드0.1.1은 기재와 같지만 파일0.1.2/실제SHA는 0해시와 다르다.",
+      "type": "factual",
+      "verified": true,
+      "evidence": "직접 정본파싱·Get-FileHash 계산값249ef6…0daa5, F5·심화core_ref 일치."
+    },
+    {
+      "claim": "IP-10 현재근거는 공식Summary이며 옛근거는 목차명칭 확인이다.",
+      "type": "factual",
+      "verified": true,
+      "evidence": "SRC-R3-EXPERTISE-SUMMARY verification/locator와 SRC-CAM-EXPERTISE title_only 직접대조."
+    },
+    {
+      "claim": "UX12는 기존연결후보이며 새정식분류/회사의무가 아니다.",
+      "type": "factual",
+      "verified": true,
+      "evidence": "추가모션연결후보status/승인false, 연결검토도입/예시반례, 사용자결정purpose/승인false가 일치."
+    },
+    {
+      "claim": "입력·기준안·정본을 보존했다.",
+      "type": "process",
+      "verified": true,
+      "evidence": "전체78개 경로/실행전SHA 동일, 추가/삭제0."
+    },
+    {
+      "claim": "제공사례 유지가능성과 실제효과 미확인을 나누었다.",
+      "type": "quality",
+      "verified": true,
+      "evidence": "F1/F4의 keep와 limits, H1/H2, source_limits, actual_video_pass=false로실질구별."
+    },
+    {
+      "claim": "모든 실제읽기호출·금지도구미사용과 선정시점.",
+      "type": "process",
+      "verified": false,
+      "evidence": "수행자가작성한요약transcript외 raw호출로그없어 전체호출/시점 독립인증불가. 산출물/보존과모순없고 허위발견아님."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [
+      "실제매체·사전지식·시청조건·원문전문·효과시험 없음.",
+      "큰JSON출력잘림후선별조회를사용해전수의미검토아님을밝힘."
+    ],
+    "needs_review": [
+      "수정기준안의 실제인용재대조, 실제적용시기술가정/실측·필수내용·시청조건·가독성/유지시간의사람검토."
+    ],
+    "workarounds": [
+      "잘린JSON은관심ID/메타로조회했다고한정; 전체R6/R7검사생략을통과로바꾸지않음."
+    ]
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "고정7조건의실질충족. 기준수정없음. 7/7은문서과제충족률이며영상품질총점·회사승인·통계우위아님."
+  },
+  "not_performed": [
+    "수행코드재실행",
+    "웹·원격전문/최신성",
+    "실영상/이징·가독성측정",
+    "CU·AE·API·사람질문·추가agent",
+    "fullR6/R7/회사승인"
+  ],
+  "uncertainties": [
+    "Q-TRUST-01은원래영상분석기준이지만출력에서비공간문서출처추적원칙으로한정적용했음을명시하므로영상분석통과로읽지않았다.",
+    "실제영상검사의현문서과제비적용표현을미래영상미검수와함께해석했다.",
+    "raw호출로그부재로전체수행과정인증불가."
+  ]
+}

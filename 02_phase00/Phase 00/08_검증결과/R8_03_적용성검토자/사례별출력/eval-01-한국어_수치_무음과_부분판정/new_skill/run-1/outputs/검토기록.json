@@ -1,0 +1,837 @@
+{
+  "review_id": "GUIDANCE-REVIEW-REV-A-001",
+  "version": "1.0.0",
+  "date": "2026-10-15",
+  "kind": "합성 개발시험의 지침/문서 적용성 검토",
+  "targets": [
+    {
+      "id": "REV-A",
+      "version": "0.1.0",
+      "path": "검토자료/검토초안.md",
+      "sha256": null,
+      "hash_status": "미제공·미계산",
+      "scope": "01-07의 규칙/제안"
+    },
+    {
+      "id": "SCRIPT-A",
+      "version": "0.1.0",
+      "path": "검토자료/대본원문.md",
+      "sha256": null,
+      "hash_status": "미제공·미계산",
+      "scope": "S1-S3 문서 대조"
+    }
+  ],
+  "context": {
+    "brief": "검토자료/브리프.md",
+    "purpose": "공법 비교 설명 영상 준비 회의",
+    "viewers": "기획실·현장 직원 혼합",
+    "topic_prior_knowledge": "unknown; 조사/인터뷰 미제공",
+    "aspect_ratios": [
+      "16:9",
+      "9:16"
+    ],
+    "viewing": "휴대전화 무음 포함",
+    "media_provided": false,
+    "reviewer": "AI 문서 검토; 실제 사람 검수 아님"
+  },
+  "skill": {
+    "path": "실행스킬/video-guidance-reviewer/SKILL.md",
+    "version": "0.2.0-draft.2"
+  },
+  "criteria_source": {
+    "path": "13_품질검수/품질항목_정본.json",
+    "id": "r7-quality-criteria",
+    "version": "0.1.1",
+    "authority": "조건부 검수 지식; 회사 의무 규칙 아님"
+  },
+  "selection": {
+    "timing": "브리프·대본·초안을 읽고 최종 판정을 작성하기 전에 위 16개 기준을 선정했다. 전달·문서 일치·무음·양 화면비는 필수, 음성 자막과 동기화는 오디오/자막 사용에 따라 조건부 필수, 장식 역할은 06 주장에 한해 선택 적용. 결과를 이유로 선정 항목을 제외하지 않았고 선정 변경은 없다.",
+    "all_26_mandatory": false,
+    "changes": [],
+    "no_single_score": true
+  },
+  "criteria": [
+    {
+      "criterion_id": "Q-INFO-01",
+      "criterion_version": "0.1.1",
+      "title": "목적·대상·전문용어",
+      "applies": "적용",
+      "required_level": "필수",
+      "reason": "혼합 시청자 대상 설명의 깊이와 필수 용어 보존",
+      "target_id": "REV-A",
+      "target_version": "0.1.0",
+      "locations": [
+        "05"
+      ],
+      "progress": "제공 문서 범위 검토 완료",
+      "verdict": "수정필요",
+      "confirmed": "부서로 초보를 단정하고 전문어 전부 삭제하는 규칙은 근거 없음.",
+      "unconfirmed": "주제별 사전지식·필수 용어 수준",
+      "render_progress": "미검수",
+      "render_verdict": "판단보류(해당 실제 표시/재생 범위)",
+      "human_role": "기획 책임자·기술 담당자",
+      "evidence_refs": [
+        "02_원칙과레이아웃/모션원칙_심화카드.json#IP-10",
+        "02_원칙과레이아웃/04_모션원칙_충돌과예외.md#MC-07"
+      ],
+      "limits": "문서 적용성 판정이며 렌더/효과/사람 내용 승인으로 승계하지 않음",
+      "recheck": "수정 판본 및 해당 미확인 자료를 확보해 지정 역할이 범위별 확인",
+      "related_findings": [
+        "F05"
+      ]
+    },
+    {
+      "criterion_id": "Q-INFO-02",
+      "criterion_version": "0.1.1",
+      "title": "원문·부정어·수치 일치",
+      "applies": "적용",
+      "required_level": "필수",
+      "reason": "공법 의미와 균열 폭의 정확한 전달",
+      "target_id": "REV-A",
+      "target_version": "0.1.0",
+      "locations": [
+        "03"
+      ],
+      "progress": "제공 문서 범위 검토 완료",
+      "verdict": "수정필요",
+      "confirmed": "SCRIPT-A S1의 ‘발생한다’가 부정으로 반전. S2의 0.35 mm가 0.035 mm로 달라짐.",
+      "unconfirmed": "실제 화면·음성 일치와 기술 사실의 사람 확인",
+      "render_progress": "미검수",
+      "render_verdict": "판단보류(해당 실제 표시/재생 범위)",
+      "human_role": "기술/업무 담당자·자막 검수자",
+      "evidence_refs": [
+        "검토자료/대본원문.md#S1-S2",
+        "검토자료/검토초안.md#03"
+      ],
+      "limits": "문서 적용성 판정이며 렌더/효과/사람 내용 승인으로 승계하지 않음",
+      "recheck": "수정 판본 및 해당 미확인 자료를 확보해 지정 역할이 범위별 확인",
+      "related_findings": [
+        "F01",
+        "F02"
+      ]
+    },
+    {
+      "criterion_id": "Q-INFO-03",
+      "criterion_version": "0.1.1",
+      "title": "비교 조건·전후·인과",
+      "applies": "적용",
+      "required_level": "필수",
+      "reason": "A/B 공법 비교가 회의의 목적",
+      "target_id": "REV-A",
+      "target_version": "0.1.0",
+      "locations": [
+        "01"
+      ],
+      "progress": "제공 문서 범위 검토 완료",
+      "verdict": "통과",
+      "confirmed": "대본 S3가 같은 시험 조건과 유량 A 0.80 L/s, B 0.65 L/s를 명시. 대응 구조·단위·척도 일치 제안은 조건부 적합.",
+      "unconfirmed": "시험 원자료 검증·실화면 비교·비용 및 현장 우열",
+      "render_progress": "미검수",
+      "render_verdict": "판단보류(해당 실제 표시/재생 범위)",
+      "human_role": "기술/데이터 담당자",
+      "evidence_refs": [
+        "검토자료/대본원문.md#S3",
+        "02_원칙과레이아웃/04_모션원칙_충돌과예외.md#MC-02"
+      ],
+      "limits": "문서 적용성 판정이며 렌더/효과/사람 내용 승인으로 승계하지 않음",
+      "recheck": "수정 판본 및 해당 미확인 자료를 확보해 지정 역할이 범위별 확인",
+      "related_findings": []
+    },
+    {
+      "criterion_id": "Q-TEXT-01",
+      "criterion_version": "0.1.1",
+      "title": "명칭·글리프·첨자",
+      "applies": "적용",
+      "required_level": "필수",
+      "reason": "‘침투수’와 단위 기호의 의미 보존",
+      "target_id": "REV-A",
+      "target_version": "0.1.0",
+      "locations": [
+        "02",
+        "05"
+      ],
+      "progress": "제공 문서 범위 검토 완료",
+      "verdict": "판단보류",
+      "confirmed": "주제명·용어를 남기는 방향은 타당하나 출력 글꼴·크기·문자열 표시 없음.",
+      "unconfirmed": "최종 글리프·잘림·대체 글꼴",
+      "render_progress": "미검수",
+      "render_verdict": "판단보류(해당 실제 표시/재생 범위)",
+      "human_role": "디자인 검수자·기술명 담당자",
+      "evidence_refs": [
+        "02_원칙과레이아웃/09_문구와화면비_검토사례.md#LS-01,LS-12"
+      ],
+      "limits": "문서 적용성 판정이며 렌더/효과/사람 내용 승인으로 승계하지 않음",
+      "recheck": "수정 판본 및 해당 미확인 자료를 확보해 지정 역할이 범위별 확인",
+      "related_findings": [
+        "F05"
+      ]
+    },
+    {
+      "criterion_id": "Q-TEXT-02",
+      "criterion_version": "0.1.1",
+      "title": "SI 표기·값 보존",
+      "applies": "적용",
+      "required_level": "필수",
+      "reason": "0.35 mm와 A/B 유량의 소수·단위 유지",
+      "target_id": "REV-A",
+      "target_version": "0.1.0",
+      "locations": [
+        "01",
+        "03"
+      ],
+      "progress": "제공 문서 범위 검토 완료",
+      "verdict": "수정필요",
+      "confirmed": "03은 단위가 같은 채 소수점이 바뀐 전사 오류. 0.35 mm로 되돌리는 최소 제안. A/B의 0.80·0.65 정밀도와 L/s를 보존.",
+      "unconfirmed": "실출력에서 값·단위 동시 식별",
+      "render_progress": "미검수",
+      "render_verdict": "판단보류(해당 실제 표시/재생 범위)",
+      "human_role": "기술/데이터 담당자·디자인 검수자",
+      "evidence_refs": [
+        "검토자료/대본원문.md#S2-S3",
+        "02_원칙과레이아웃/09_문구와화면비_검토사례.md#LS-02"
+      ],
+      "limits": "문서 적용성 판정이며 렌더/효과/사람 내용 승인으로 승계하지 않음",
+      "recheck": "수정 판본 및 해당 미확인 자료를 확보해 지정 역할이 범위별 확인",
+      "related_findings": [
+        "F02"
+      ]
+    },
+    {
+      "criterion_id": "Q-TEXT-03",
+      "criterion_version": "0.1.1",
+      "title": "줄바꿈·문장 관계",
+      "applies": "적용",
+      "required_level": "필수",
+      "reason": "한국어 부정어·숫자·단위가 두 화면비에서 같은 의미로 읽혀야 함",
+      "target_id": "REV-A",
+      "target_version": "0.1.0",
+      "locations": [
+        "03",
+        "05"
+      ],
+      "progress": "제공 문서 범위 검토 완료",
+      "verdict": "판단보류",
+      "confirmed": "실제 조판이 없어 줄바꿈은 관측하지 않음. 수열·부정어·값/단위를 의미 묶음으로 확인할 기준은 필요.",
+      "unconfirmed": "글꼴·줄폭·해상도·실제 줄바꿈·읽기 시간",
+      "render_progress": "미검수",
+      "render_verdict": "판단보류(해당 실제 표시/재생 범위)",
+      "human_role": "디자인/자막 검수자",
+      "evidence_refs": [
+        "02_원칙과레이아웃/09_문구와화면비_검토사례.md#LS-01,LS-02,LS-12"
+      ],
+      "limits": "문서 적용성 판정이며 렌더/효과/사람 내용 승인으로 승계하지 않음",
+      "recheck": "수정 판본 및 해당 미확인 자료를 확보해 지정 역할이 범위별 확인",
+      "related_findings": []
+    },
+    {
+      "criterion_id": "Q-CAP-01",
+      "criterion_version": "0.1.1",
+      "title": "음성·소리의 자막",
+      "applies": "적용",
+      "required_level": "조건부 필수",
+      "reason": "의미 있는 발화·소리가 제작본에 있으면 자막 정보 대조 필요",
+      "target_id": "REV-A",
+      "target_version": "0.1.0",
+      "locations": [
+        "04"
+      ],
+      "progress": "제공 문서 범위 검토 완료",
+      "verdict": "판단보류",
+      "confirmed": "무음 시청을 포함한다는 것은 제작본에 오디오가 없다는 뜻이 아님. 실제 오디오·자막이 없어 필요 정보 누락·정확성 미확인.",
+      "unconfirmed": "오디오 구성과 의미 있는 소리 목록·자막 원고·실제 대조",
+      "render_progress": "미검수",
+      "render_verdict": "판단보류(해당 실제 표시/재생 범위)",
+      "human_role": "자막 검수자·내용 담당자",
+      "evidence_refs": [
+        "13_품질검수/항목별기준/03_자막과전달경로.md#Q-CAP-01"
+      ],
+      "limits": "문서 적용성 판정이며 렌더/효과/사람 내용 승인으로 승계하지 않음",
+      "recheck": "수정 판본 및 해당 미확인 자료를 확보해 지정 역할이 범위별 확인",
+      "related_findings": [
+        "F04"
+      ]
+    },
+    {
+      "criterion_id": "Q-CAP-02",
+      "criterion_version": "0.1.1",
+      "title": "자막 동기화·지속·가림",
+      "applies": "적용",
+      "required_level": "조건부 필수",
+      "reason": "자막 사용 시 발화/사건 대응과 읽기 유지 필요",
+      "target_id": "REV-A",
+      "target_version": "0.1.0",
+      "locations": [
+        "04"
+      ],
+      "progress": "제공 문서 범위 검토 완료",
+      "verdict": "판단보류",
+      "confirmed": "180 ms 일괄 기준의 오류와 별개로 실제 동기화·지속·가림은 자료가 없어 미검수.",
+      "unconfirmed": "실제 영상·오디오·자막 공통 시간축·배포 UI",
+      "render_progress": "미검수",
+      "render_verdict": "판단보류(해당 실제 표시/재생 범위)",
+      "human_role": "자막/디자인 검수자",
+      "evidence_refs": [
+        "13_품질검수/항목별기준/03_자막과전달경로.md#Q-CAP-02"
+      ],
+      "limits": "문서 적용성 판정이며 렌더/효과/사람 내용 승인으로 승계하지 않음",
+      "recheck": "수정 판본 및 해당 미확인 자료를 확보해 지정 역할이 범위별 확인",
+      "related_findings": [
+        "F03"
+      ]
+    },
+    {
+      "criterion_id": "Q-CAP-03",
+      "criterion_version": "0.1.1",
+      "title": "무음·시각 대체·감각 단서",
+      "applies": "적용",
+      "required_level": "필수",
+      "reason": "브리프가 휴대전화 무음 시청을 명시",
+      "target_id": "REV-A",
+      "target_version": "0.1.0",
+      "locations": [
+        "04"
+      ],
+      "progress": "제공 문서 범위 검토 완료",
+      "verdict": "수정필요",
+      "confirmed": "대본과 중복된다는 이유만으로 자막 전부 삭제는 무음 핵심 정보 전달을 보장하지 못함.",
+      "unconfirmed": "최종 무음 재생에서 S1-S3 정보 접근성",
+      "render_progress": "미검수",
+      "render_verdict": "판단보류(해당 실제 표시/재생 범위)",
+      "human_role": "기획 책임자·디자인/접근성 검수자",
+      "evidence_refs": [
+        "02_원칙과레이아웃/04_모션원칙_충돌과예외.md#MC-03",
+        "02_원칙과레이아웃/모션원칙_심화카드.json#IP-03,IP-08"
+      ],
+      "limits": "문서 적용성 판정이며 렌더/효과/사람 내용 승인으로 승계하지 않음",
+      "recheck": "수정 판본 및 해당 미확인 자료를 확보해 지정 역할이 범위별 확인",
+      "related_findings": [
+        "F04"
+      ]
+    },
+    {
+      "criterion_id": "Q-SCREEN-01",
+      "criterion_version": "0.1.1",
+      "title": "정보 위계·그룹 대응",
+      "applies": "적용",
+      "required_level": "필수",
+      "reason": "A/B 값·단위·라벨 대응과 정의/경로 관계 필요",
+      "target_id": "REV-A",
+      "target_version": "0.1.0",
+      "locations": [
+        "01",
+        "02"
+      ],
+      "progress": "제공 문서 범위 검토 완료",
+      "verdict": "통과",
+      "confirmed": "동등 비교의 두 초점·공통 카드 구조와 중앙 수치 배치를 금지할 이유 없음. 문서상 구성 방향만 조건부 적합.",
+      "unconfirmed": "실제 위치·대응·해상도·표시 크기",
+      "render_progress": "미검수",
+      "render_verdict": "판단보류(해당 실제 표시/재생 범위)",
+      "human_role": "디자인 검수자·내용 담당자",
+      "evidence_refs": [
+        "02_원칙과레이아웃/08_화면설계_적용기준과반례.md#SCREEN-HIERARCHY,SCREEN-GROUP"
+      ],
+      "limits": "문서 적용성 판정이며 렌더/효과/사람 내용 승인으로 승계하지 않음",
+      "recheck": "수정 판본 및 해당 미확인 자료를 확보해 지정 역할이 범위별 확인",
+      "related_findings": []
+    },
+    {
+      "criterion_id": "Q-SCREEN-02",
+      "criterion_version": "0.1.1",
+      "title": "내용에 맞는 구도·밀도",
+      "applies": "적용",
+      "required_level": "필수",
+      "reason": "비교·정의라는 관계가 구도를 결정해야 함",
+      "target_id": "REV-A",
+      "target_version": "0.1.0",
+      "locations": [
+        "01",
+        "02",
+        "06"
+      ],
+      "progress": "제공 문서 범위 검토 완료",
+      "verdict": "수정필요",
+      "confirmed": "01·02의 카드/중앙/정지 선택은 유지 가능. 06의 카드·중앙 일괄 금지와 모든 장면 사진4장/모션8개 의무는 목적 근거 없음.",
+      "unconfirmed": "실제 밀도·비교 가능성·가독성",
+      "render_progress": "미검수",
+      "render_verdict": "판단보류(해당 실제 표시/재생 범위)",
+      "human_role": "디자인 검수자·기획 책임자",
+      "evidence_refs": [
+        "02_원칙과레이아웃/08_화면설계_적용기준과반례.md#SCREEN-CHOICE",
+        "05_출처와검토/스킬심층검토/02_원문과참조_검토결과.md#Taste,Impeccable,Presentations"
+      ],
+      "limits": "문서 적용성 판정이며 렌더/효과/사람 내용 승인으로 승계하지 않음",
+      "recheck": "수정 판본 및 해당 미확인 자료를 확보해 지정 역할이 범위별 확인",
+      "related_findings": [
+        "F07"
+      ]
+    },
+    {
+      "criterion_id": "Q-SCREEN-03",
+      "criterion_version": "0.1.1",
+      "title": "텍스트 대비·움직이는 배경",
+      "applies": "적용",
+      "required_level": "필수",
+      "reason": "핵심 문구·수치를 휴대전화에서 읽어야 함",
+      "target_id": "REV-A",
+      "target_version": "0.1.0",
+      "locations": [
+        "01",
+        "02",
+        "04"
+      ],
+      "progress": "제공 문서 범위 검토 완료",
+      "verdict": "판단보류",
+      "confirmed": "실제 합성·색·알파·크기·배경 변화 자료가 없음.",
+      "unconfirmed": "양 화면비 최종 합성과 표시 조건·동적 배경",
+      "render_progress": "미검수",
+      "render_verdict": "판단보류(해당 실제 표시/재생 범위)",
+      "human_role": "디자인 검수자·필요시 대상 시청자",
+      "evidence_refs": [
+        "13_품질검수/항목별기준/04_화면과도표.md#Q-SCREEN-03"
+      ],
+      "limits": "문서 적용성 판정이며 렌더/효과/사람 내용 승인으로 승계하지 않음",
+      "recheck": "수정 판본 및 해당 미확인 자료를 확보해 지정 역할이 범위별 확인",
+      "related_findings": []
+    },
+    {
+      "criterion_id": "Q-SCREEN-04",
+      "criterion_version": "0.1.1",
+      "title": "색 외 식별·필수 선 구분",
+      "applies": "적용",
+      "required_level": "필수",
+      "reason": "정의 장면의 단순 경로가 의미 전달을 담당",
+      "target_id": "REV-A",
+      "target_version": "0.1.0",
+      "locations": [
+        "02"
+      ],
+      "progress": "제공 문서 범위 검토 완료",
+      "verdict": "판단보류",
+      "confirmed": "경로의 라벨·선·방향·배경 구분 자료가 없어 전달 여부 미확인.",
+      "unconfirmed": "필수 경로/라벨 대응·출력·기술 관계",
+      "render_progress": "미검수",
+      "render_verdict": "판단보류(해당 실제 표시/재생 범위)",
+      "human_role": "기술 도표 담당자·디자인 검수자",
+      "evidence_refs": [
+        "13_품질검수/항목별기준/04_화면과도표.md#Q-SCREEN-04"
+      ],
+      "limits": "문서 적용성 판정이며 렌더/효과/사람 내용 승인으로 승계하지 않음",
+      "recheck": "수정 판본 및 해당 미확인 자료를 확보해 지정 역할이 범위별 확인",
+      "related_findings": []
+    },
+    {
+      "criterion_id": "Q-SCREEN-07",
+      "criterion_version": "0.1.1",
+      "title": "화면비·크롭·오버레이",
+      "applies": "적용",
+      "required_level": "필수",
+      "reason": "16:9·9:16 두 출력과 휴대전화 조건이 명시",
+      "target_id": "REV-A",
+      "target_version": "0.1.0",
+      "locations": [
+        "05"
+      ],
+      "progress": "제공 문서 범위 검토 완료",
+      "verdict": "수정필요",
+      "confirmed": "중앙 크롭만으로 검토 완료라는 규칙은 부적합. 실제 잘림 발생 여부는 관측하지 않음.",
+      "unconfirmed": "두 비율 실제 출력·변환·오버레이·플레이어 상태",
+      "render_progress": "미검수",
+      "render_verdict": "판단보류(해당 실제 표시/재생 범위)",
+      "human_role": "디자인/영상 검수자·배포 담당자",
+      "evidence_refs": [
+        "02_원칙과레이아웃/09_문구와화면비_검토사례.md#LS-04,LS-09"
+      ],
+      "limits": "문서 적용성 판정이며 렌더/효과/사람 내용 승인으로 승계하지 않음",
+      "recheck": "수정 판본 및 해당 미확인 자료를 확보해 지정 역할이 범위별 확인",
+      "related_findings": [
+        "F06"
+      ]
+    },
+    {
+      "criterion_id": "Q-MOTION-01",
+      "criterion_version": "0.1.1",
+      "title": "정보 완성과 읽기 유지",
+      "applies": "적용",
+      "required_level": "필수",
+      "reason": "정의·값·단위가 완성된 뒤 비교하며 읽어야 함",
+      "target_id": "REV-A",
+      "target_version": "0.1.0",
+      "locations": [
+        "01",
+        "02",
+        "04"
+      ],
+      "progress": "제공 문서 범위 검토 완료",
+      "verdict": "수정필요",
+      "confirmed": "UI 참고 180 ms를 모든 자막/설명 노출로 전용할 근거 없음. 실제 필요한 유지 시간은 미확정.",
+      "unconfirmed": "등장·완성·유지·퇴장 시간과 실제 시청 조건",
+      "render_progress": "미검수",
+      "render_verdict": "판단보류(해당 실제 표시/재생 범위)",
+      "human_role": "디자인/영상 검수자·필요시 시청자",
+      "evidence_refs": [
+        "02_원칙과레이아웃/모션원칙_심화카드.json#AP-09,IP-09,MR-04",
+        "02_원칙과레이아웃/09_문구와화면비_검토사례.md#LS-11"
+      ],
+      "limits": "문서 적용성 판정이며 렌더/효과/사람 내용 승인으로 승계하지 않음",
+      "recheck": "수정 판본 및 해당 미확인 자료를 확보해 지정 역할이 범위별 확인",
+      "related_findings": [
+        "F03"
+      ]
+    },
+    {
+      "criterion_id": "Q-MOTION-03",
+      "criterion_version": "0.1.1",
+      "title": "이징·과장·장식의 역할",
+      "applies": "적용",
+      "required_level": "선택 적용",
+      "reason": "06의 장식 수량·모션 강제 주장 검토",
+      "target_id": "REV-A",
+      "target_version": "0.1.0",
+      "locations": [
+        "02",
+        "06"
+      ],
+      "progress": "제공 문서 범위 검토 완료",
+      "verdict": "수정필요",
+      "confirmed": "정지 정의도 유효하며 모션 수량을 품질 기준으로 삼을 근거 없음. 실제 이징의 품질은 확인하지 않음.",
+      "unconfirmed": "장식 도입 시 목적·시계열·실제 재생",
+      "render_progress": "미검수",
+      "render_verdict": "판단보류(해당 실제 표시/재생 범위)",
+      "human_role": "디자인/모션 검수자",
+      "evidence_refs": [
+        "02_원칙과레이아웃/04_모션원칙_충돌과예외.md#MC-06",
+        "05_출처와검토/스킬심층검토/02_원문과참조_검토결과.md#LottieFiles motion-design"
+      ],
+      "limits": "문서 적용성 판정이며 렌더/효과/사람 내용 승인으로 승계하지 않음",
+      "recheck": "수정 판본 및 해당 미확인 자료를 확보해 지정 역할이 범위별 확인",
+      "related_findings": [
+        "F07"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "F01",
+      "locations": [
+        "REV-A 03 / SCRIPT-A S1"
+      ],
+      "cause": "부정어 전사 불일치",
+      "impact": "유입 발생 여부를 반대로 전달",
+      "minimal_fix": "‘침투수 유입이 발생하지 않는다.’를 원문 대응 ‘침투수 유입이 발생한다.’로 정정 제안.",
+      "recheck": "수정 판본의 표시문구·자막·음성을 S1과 대조",
+      "criteria": [
+        "Q-INFO-02"
+      ]
+    },
+    {
+      "id": "F02",
+      "locations": [
+        "REV-A 03 / SCRIPT-A S2"
+      ],
+      "cause": "소수점 전사 불일치",
+      "impact": "균열 폭을 원문의 1/10로 전달",
+      "minimal_fix": "‘균열 폭 0.035 mm’를 ‘균열 폭 0.35 mm’로 정정 제안. 원자료 단위·정밀도 임의 변환 금지.",
+      "recheck": "수정 판본 모든 수치 표현을 S2와 대조",
+      "criteria": [
+        "Q-INFO-02",
+        "Q-TEXT-02"
+      ]
+    },
+    {
+      "id": "F03",
+      "locations": [
+        "REV-A 04"
+      ],
+      "cause": "UI 동작 시간을 읽기 유지 시간으로 일반화",
+      "impact": "정보 완성 뒤 읽기·비교 시간 근거 상실",
+      "minimal_fix": "180 ms 일괄 규칙 삭제 제안. 등장/완성/유지/퇴장을 구분하고 실제 문구·발화·출력·시청 조건으로 유지 시간을 검토.",
+      "recheck": "실제 타이밍과 재생 자료, 필요시 대상 시청자 확인. 대체 고정 초수·CPS 임의 설정 없음.",
+      "criteria": [
+        "Q-MOTION-01",
+        "Q-CAP-02"
+      ]
+    },
+    {
+      "id": "F04",
+      "locations": [
+        "REV-A 04"
+      ],
+      "cause": "중복 조절의 음성 중심 조건을 무음에 전용",
+      "impact": "무음에서 정의·유입 발생·정확한 수치·비교 조건 손실 가능",
+      "minimal_fix": "자막 전부 삭제 제안 철회. 본문/자막의 역할을 나누되 무음에도 S1-S3의 필수 의미·값·단위·한계가 전달되도록 유지.",
+      "recheck": "시각 정보 목록과 양 화면비 무음 재생 대조. 필요한 발화/소리 자막은 오디오 확보 뒤 확인.",
+      "criteria": [
+        "Q-CAP-03",
+        "Q-CAP-01"
+      ]
+    },
+    {
+      "id": "F05",
+      "locations": [
+        "REV-A 05 전반"
+      ],
+      "cause": "부서로 사전지식 추정",
+      "impact": "기술어 의미 손실·혼합 대상 설명 깊이 오판",
+      "minimal_fix": "‘기획실이면 초보’와 전문어 전부 삭제 규칙 철회. ‘침투수’ 등 필수 용어를 정의와 연결하고 실제 사전지식은 unknown으로 둠.",
+      "recheck": "주제별 사전지식 자료·필수 용어 목록과 내용 담당자 근거",
+      "criteria": [
+        "Q-INFO-01",
+        "Q-TEXT-01"
+      ]
+    },
+    {
+      "id": "F06",
+      "locations": [
+        "REV-A 05 후반"
+      ],
+      "cause": "화면비 변환을 검수 완료로 취급",
+      "impact": "A/B 양쪽·단위·정의·자막이 세로형에서 손실될 가능성",
+      "minimal_fix": "중앙 크롭만으로 완료 문구 삭제. 9:16의 상하 대응 재배치 등 후보를 검토하고 A/B 값·순서·척도·단위·동시 비교를 보존.",
+      "recheck": "16:9·9:16 각각 실제 출력·크롭/리사이즈 내역·배포 UI에서 확인. 현재 실제 잘림은 미관측.",
+      "criteria": [
+        "Q-SCREEN-07"
+      ]
+    },
+    {
+      "id": "F07",
+      "locations": [
+        "REV-A 06"
+      ],
+      "cause": "미적 선호·외부 수량 조언의 보편 규칙화",
+      "impact": "동등 비교를 깨거나 정의 장면에 불필요한 시각 경쟁 유발",
+      "minimal_fix": "카드/중앙 금지와 사진4장·모션8개 의무 삭제 제안. 내용 관계와 장면 목적에 필요한 경우만 선택.",
+      "recheck": "선택 이유·핵심 정보 손실·실제 밀도 검토. 장식의 실제 효과는 주장하지 않음.",
+      "criteria": [
+        "Q-SCREEN-02",
+        "Q-MOTION-03"
+      ]
+    },
+    {
+      "id": "F08",
+      "locations": [
+        "REV-A 07"
+      ],
+      "cause": "미관 총점으로 핵심 오류·미확인 상쇄",
+      "impact": "의미 반전·값 오류가 있는 초안을 사용 가능으로 오판",
+      "minimal_fix": "미관90 총점 승인 규칙 삭제. 항목별 수정필요·판단보류·미검수와 다음 검토 조건을 병기.",
+      "recheck": "F01-F07 수정 대조와 필수 보류/미검수 해소 근거 검토. 납품·배포 승인은 별도.",
+      "criteria": [
+        "13_품질검수/03_판정운영기준.md#준비상태"
+      ]
+    }
+  ],
+  "keep": [
+    {
+      "id": "K01",
+      "location": "REV-A 01",
+      "recommendation": "같은 조건 A/B의 공통 구조 카드·동등 비교·단위/척도 정렬 유지",
+      "condition": "S3 유량 범위만. A 0.80 L/s·B 0.65 L/s를 보존하고 비용/현장 우열로 확대하지 않음",
+      "evidence": "SCRIPT-A S3; MC-02; Impeccable 선택 참조"
+    },
+    {
+      "id": "K02",
+      "location": "REV-A 01",
+      "recommendation": "중앙 핵심 수치 배치 허용",
+      "condition": "유일한 정답은 아니며 라벨·단위·대응·실표시 검수 필요",
+      "evidence": "SCREEN-HIERARCHY·SCREEN-CHOICE"
+    },
+    {
+      "id": "K03",
+      "location": "REV-A 02",
+      "recommendation": "주제명 ‘침투수 유입 경로’와 텍스트/단순 경로 정지 설명 유지",
+      "condition": "정의/위치 설명 목적에 맞는 선택. 실제 흐름 방향·읽기·가독성은 미검수",
+      "evidence": "MC-06; Presentations 분야 발췌"
+    }
+  ],
+  "not_selected": [
+    {
+      "ids": [
+        "Q-INFO-04",
+        "Q-SCREEN-05"
+      ],
+      "status": "현 초안 주장 검토에 비적용",
+      "reason": "시계열·카운트·결측·비례 그래프 제안이 없음. 유량 카드의 값/단위는 Q-INFO-02·03/Q-TEXT-02로 검토. 그래프 채택 시 재선정"
+    },
+    {
+      "ids": [
+        "Q-SCREEN-06"
+      ],
+      "status": "현 문서 검토에 비적용",
+      "reason": "실제 UI·도면 위치/변환을 주장하지 않는 단순 개념 경로 계획. 이후 실제 도면 인용 시 적용 재검토"
+    },
+    {
+      "ids": [
+        "Q-BRAND-01",
+        "Q-BRAND-02"
+      ],
+      "status": "현 초안에 비적용",
+      "reason": "회사명·로고·CI·한맥 웹색 선택 주장이 없음. 관련 미정으로 전체 차단하지 않음"
+    },
+    {
+      "ids": [
+        "Q-CAP-04",
+        "Q-MOTION-02",
+        "Q-MOTION-04"
+      ],
+      "status": "이번 지침 주장 검토에서 미선정; 실제 영상 미검수",
+      "reason": "발화/음악·연속 동작·섬광을 판정할 대상/자료와 요청이 없음. 영상 자체 비적용·안전 통과를 의미하지 않으며 제작본 검수 설계에서 재선정"
+    },
+    {
+      "ids": [
+        "Q-TRUST-01",
+        "Q-TRUST-02"
+      ],
+      "status": "독립 영상 분석 품질 판정은 미선정",
+      "reason": "실제 영상 분석 기록이 아님. 문서 근거·판본·미확인 및 일반화 금지는 보고 전체의 기록 원칙으로 준수"
+    }
+  ],
+  "human_questions": [
+    {
+      "id": "H01",
+      "type": "사실·내용 확인 / 자유 답변·근거 요청",
+      "target": "SCRIPT-A v0.1.0 S1-S3 / REV-A v0.1.0 03·05",
+      "role": "기술/업무 내용 담당자",
+      "confirmed": "문서 대조상 S1·S2 불일치와 S3 명시 범위",
+      "missing": "업무 사실의 기준 자료·필수 기술어의 정의/허용 요약·실제 내용 검수",
+      "question": "이 설명에 쓰는 기준 자료의 판본·위치와 반드시 보존해야 할 용어/메시지를 제시해 주세요. 제공 대본의 기술 내용에 정정 이력이 있다면 해당 근거와 범위를 자유롭게 남겨 주세요.",
+      "status": "질문 제안만 작성; 발송·회신 없음",
+      "answer": null
+    },
+    {
+      "id": "H02",
+      "type": "사실 확인 / 자유 답변·근거 요청",
+      "target": "브리프 / REV-A v0.1.0 05",
+      "role": "기획 책임자·대상 시청자 조사 담당자",
+      "confirmed": "기획실·현장 직원 혼합이며 사전지식 자료 미제공",
+      "missing": "해당 공법의 실제 사전지식·시청/해석 어려움 근거",
+      "question": "대상자들이 해당 공법에서 알고 있는 내용과 설명이 필요한 개념을 확인한 조사·인터뷰 등 자료가 있으면 그 대상·시점·범위를 제공해 주세요.",
+      "status": "질문 제안만 작성; 발송·회신 없음",
+      "answer": null
+    },
+    {
+      "id": "H03",
+      "type": "사실·출력 조건 확인 / 자유 답변·근거 요청",
+      "target": "브리프의 양 화면비·휴대전화 무음 / REV-A v0.1.0 04·05",
+      "role": "배포 담당자·디자인/자막 검수자",
+      "confirmed": "16:9·9:16와 무음 시청 포함",
+      "missing": "실제 플레이어·출력 해상도·오버레이·음성/의미 있는 소리 구성·자막 지원·타이밍·재생본",
+      "question": "예정된 배포 환경·표시 크기·UI/오버레이·자막 지원·오디오 구성 자료를 제공해 주세요. 후속 제작본이 생기면 두 비율 출력과 공통 시간축의 자막/오디오 자료를 연결해 주세요.",
+      "status": "질문 제안만 작성; 발송·회신 없음",
+      "answer": null
+    },
+    {
+      "id": "H04",
+      "type": "운영 선택",
+      "target": "REV-A v0.1.0 04 수정안 / 양 화면비 무음 전달 방식",
+      "role": "기획 책임자·디자인/자막 담당자",
+      "confirmed": "무음에서도 핵심 정보가 필요; 플레이어 지원 미확인",
+      "missing": "실제 선택·표시/재생 검수",
+      "question": "다음 전달 방식 중 운영할 방식을 검토해 주세요.",
+      "options": [
+        {
+          "key": "A",
+          "text": "핵심 본문과 별도로 필요한 발화를 담은 상시 자막을 함께 검토",
+          "tradeoff": "무음 경로를 출력에 포함하나 본문과 읽기 경쟁·가림 검수 필요",
+          "recommended": true
+        },
+        {
+          "key": "B",
+          "text": "핵심 본문 + 선택 가능한 별도 자막 트랙",
+          "tradeoff": "화면 밀도 조정 가능; 플레이어 지원·기본 노출·무음 접근성 확인 필요"
+        },
+        {
+          "key": "C",
+          "text": "필수 메시지를 본문에 통합한 무음 설명형",
+          "tradeoff": "중복을 줄일 수 있으나 의미 있는 발화/소리 누락 여부와 자막 요구 확인 필요"
+        },
+        {
+          "key": "D",
+          "text": "음성 중심본과 무음 전용본을 별도 관리",
+          "tradeoff": "조건별 조정 가능; 두 판본의 내용 일치·재검수·관리 부담"
+        }
+      ],
+      "recommendation": "A를 검토 시작안으로 추천. 현재 플레이어 지원을 모르므로 출력에서 확인 가능한 경로를 우선 제안하며, 최종 선택이나 충분성 승인은 아니다.",
+      "status": "질문 제안만 작성; 발송·회신 없음",
+      "answer": null
+    }
+  ],
+  "source_scope": {
+    "remote_opened": false,
+    "remote_latest_verified": false,
+    "research_catalog": "05_출처와검토/R7_02_품질항목_조사기록.json v0.1.1",
+    "external_transfer_excerpt": "05_출처와검토/스킬심층검토/02_원문과참조_검토결과.md의 분야별 다섯 절",
+    "limits": [
+      "DB 조사기록에 수록된 해당 절 요약·이식 한계만 사용",
+      "WEB-KO는 2026-03-21 초안; W3C 권고안 아님",
+      "WEB-SI는 9판 v4.01 EN 5.4.1·5.4.3–4만 참고",
+      "WEB-TRANSIENT는 Chapter21 출판사 공개 요약; 장 전문 미열람",
+      "WEB-MOTION은 Carbon v10 보존 UI 지침; 180 ms 출처 자체는 제공되지 않음",
+      "원격 원문·코드·회사 영상 효과를 이번에 확인하지 않음"
+    ]
+  },
+  "overall": {
+    "recommendation": "REV-A v0.1.0을 그대로 검토 기준으로 채택하지 않음. 유지 항목을 보존하며 확인된 규칙 오류를 최소 수정하고 필수 보류·미검수를 후속 확인",
+    "states": [
+      "수정필요",
+      "판단보류",
+      "실제 영상 미검수",
+      "사람 검수 미접수"
+    ],
+    "ready": false,
+    "total_score": null,
+    "ready_conditions": [
+      "문서 불일치와 규칙 F01-F08 수정 대조",
+      "사전지식·기술 사실·배포 조건 필요한 근거 확보",
+      "양 화면비 실제 표시와 무음 전달·읽기·필요시 자막/오디오 대응 확인"
+    ],
+    "approval": false
+  },
+  "actions": {
+    "inputs_modified": false,
+    "knowledge_modified": false,
+    "created_screen_or_video": false,
+    "human_contacted": false,
+    "tools_used": [
+      "functions.exec",
+      "exec_command PowerShell",
+      "apply_patch"
+    ],
+    "not_performed": [
+      "네트워크",
+      "CU",
+      "AE",
+      "API",
+      "Claude CLI",
+      "추가 에이전트",
+      "실제 질문·회신",
+      "PTS/OCR/좌표 획득",
+      "실영상 분석·제작",
+      "R4/R5/R6/R7 전체 검사",
+      "회사 승인·납품"
+    ],
+    "input_files_read": [
+      "수행사본_범위.json",
+      "실행스킬/video-guidance-reviewer/SKILL.md",
+      "실행스킬/video-guidance-reviewer/references/근거찾기와적용조건.md",
+      "실행스킬/video-guidance-reviewer/references/판정과사람검수.md",
+      "검토자료/브리프.md",
+      "검토자료/대본원문.md",
+      "검토자료/검토초안.md",
+      "13_품질검수/03_판정운영기준.md",
+      "13_품질검수/품질항목_정본.json",
+      "13_품질검수/항목별기준/02_한국어와단위.md",
+      "13_품질검수/항목별기준/03_자막과전달경로.md",
+      "13_품질검수/항목별기준/04_화면과도표.md",
+      "02_원칙과레이아웃/04_모션원칙_충돌과예외.md",
+      "02_원칙과레이아웃/08_화면설계_적용기준과반례.md",
+      "02_원칙과레이아웃/09_문구와화면비_검토사례.md",
+      "05_출처와검토/스킬심층검토/02_원문과참조_검토결과.md",
+      "05_출처와검토/R7_02_품질항목_조사기록.json",
+      "02_원칙과레이아웃/모션과정보전달원칙.json",
+      "02_원칙과레이아웃/모션원칙_심화카드.json",
+      "02_원칙과레이아웃/레이아웃_문구와화면비사례.json",
+      "02_원칙과레이아웃/화면설계원칙.json"
+    ]
+  }
+}

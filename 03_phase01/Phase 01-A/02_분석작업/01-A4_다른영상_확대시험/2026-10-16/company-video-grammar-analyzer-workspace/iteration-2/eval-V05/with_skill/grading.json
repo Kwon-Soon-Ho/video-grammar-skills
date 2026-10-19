@@ -1,0 +1,48 @@
+{
+  "grader": "root inline source/ROI comparison",
+  "human_approved": false,
+  "expectations": [
+    {
+      "text": "한글 타이틀 조각별 등장→영문 리빌→본문→큰 G→왼 UI→오른 UI 순서",
+      "passed": true,
+      "evidence": "재시험 heading/en/body/G/UI 사건의 순서와 중첩을 원본 기본/보강 표본으로 확인.",
+      "post_hoc": false
+    },
+    {
+      "text": "영문 주변 십자 커서와 점선 사각형의 확장/수축 및 영문 연해짐을 분리",
+      "passed": true,
+      "evidence": "rect/en 사건은 2.6~3.3초 우하단 수축·같은 크기의 옅은 영문 잔존을 분리. root가 ROI2.6/2.8/3.0/3.1을 직접 대조. 좌변2511/2690/3033/3658px 증가량179/343/625는 진행 중 가속 경향.",
+      "post_hoc": false
+    },
+    {
+      "text": "큰 G의 형태가 드러나는 변화와 곡선/십자 가이드 선을 기록; E와 같은 동작으로 답 복사 금지",
+      "passed": true,
+      "evidence": "G의 가시성과 원호·십자 가이드 변화 분리. G를 E와 같은 조각 슬라이드라고 쓰지 않음.",
+      "post_hoc": false
+    },
+    {
+      "text": "두 UI의 이동·확대·겹침/빛 강조·하단 설명 순서를 분리",
+      "passed": true,
+      "evidence": "좌 CAD 확대·우하향과 별도 광점, 우 CAD 우향 이동/내부 도면→속성패널 리빌 분리. 가려진 전체 폭은 미확정.",
+      "post_hoc": false
+    },
+    {
+      "text": "배경 모니터 UI의 실제 변화/정지 검사 및 가감속별 근거; 문서없음/오디오미검수 유지",
+      "passed": true,
+      "evidence": "배경 UI 선택 행의 초·중·말 비교 및 속성별 근거. 문서 없음/오디오 미검수. 초기/후기 두 진행 구간을 가진 감속 근거를 재대조.",
+      "post_hoc": false
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1
+  },
+  "interpretation": "targeted reanalysis only; known development cases, not held-out accuracy",
+  "remaining_limits": [
+    "개별 획·원호의 정확한 곡선",
+    "배경/카드 일부 시각 추정의 정밀 오차",
+    "가려진 좌변과 표본 사이 UI 변화"
+  ]
+}

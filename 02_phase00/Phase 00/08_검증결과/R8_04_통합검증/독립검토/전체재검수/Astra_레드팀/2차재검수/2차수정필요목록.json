@@ -1,0 +1,15 @@
+{
+  "audit": "first-correction-independent-static-recheck",
+  "date": "2026-10-15",
+  "new_P1_P2_findings": 0,
+  "whole_phase_complete": false,
+  "behavior_test_materials_read": false,
+  "items": [
+    {"id":"S-01","severity":"P3","kind":"current-state-wording","files":["01_진행현황.md:14","14_스킬재구성/R8_현재사용안내.md:3","14_스킬재구성/진행상태.json:65"],"finding":"2차보완 진행 중과 second_correction not_started의 단계 표현 불일치","fix":"실제 적용 시점에 맞춰 사람/기계 상태 일치; 최종 게시에서 R8_4_substages도 실제 착수 상태 대조","regression":"전체완료false/행동시험잔여/기본경로유지와 모순 없음","blocks_whole_phase_bounded_technical_closure_alone":false},
+    {"id":"S-02","severity":"P3","kind":"navigation-improvement","files":["14_스킬재구성/R8_현재사용안내.md:5","01_진행현황.md:20"],"finding":"3 sidecar를 basename으로만 설명하며 현재 안내의 직접 링크가 없음","fix":"새 현재 안내에 각 sidecar의 정확 상대링크 3개 추가; 과거 봉인보고 수정 금지","regression":"링크3개 대상 존재/회신 일치; 원래 receipt 및 report SHA 불변","blocks_whole_phase_bounded_technical_closure_alone":false},
+    {"id":"S-03","severity":"P3","kind":"preventive-clarification","files":["14_스킬재구성/현재상태_정정표.json:27","14_스킬재구성/R8_현재사용안내.md:9"],"finding":"현재 source/basis 해시 모두 일치하나 명시적 변경보류 문구는 source만 명명","fix":"source 또는 basis 누락/해시차이면 해당 정정만 보류, 자동 재고정 금지 명시 권고","regression":"원문과 근거 각각 고정 기대값으로 검사; 기존 R7pin 유지","blocks_whole_phase_bounded_technical_closure_alone":false}
+  ],
+  "remaining_planned_validation":["정확 후보 SHA의 독립 행동 결과","허용 쓰기/타인변경/부분실패/복구 및 미복구의 역할별 관측 근거","새 최종 R8 문맥 고정과 현재 정정/회신 연결","원래 R7pin130 및 기존 세스킬/평가계획 불변","한정 기술 종료/사람판단/기본채택/회사승인/실영상효과 분리"],
+  "human_decisions_scope":["R8-4 최종 결과의 실제 출력/구성·분량에 대한 대상·판본별 피드백은 기존 R8-1/2/3 회신으로 대체 불가","새 후보 기본 사용 위치를 바꿀 경우에만 해당 선택 판단; 유지 정책에 대한 반복 승인은 요구하지 않음","anthropic-pptx의 보관처리/활용을 확정할 때 대상·행위·조건의 권한 근거 확인"],
+  "D_modified_by_auditor":false
+}

@@ -1,0 +1,505 @@
+{
+  "id": "phase00-small-pilot-independent-start-review",
+  "version": "0.1.0",
+  "reviewed_at": "2026-10-16T09:52:50.1649546+09:00",
+  "review_role": "independent_redteam_subagent",
+  "stage": "00_start_only",
+  "pilot_root": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016",
+  "decision": "stage01_execution_possible",
+  "blocking_findings": [],
+  "required_repairs_before_stage01": [],
+  "quality_total": null,
+  "human_approval": false,
+  "company_approved": false,
+  "operational_release": false,
+  "execution_state": {
+    "frozen_model_runs": 0,
+    "behavior_executed_by_this_reviewer": false,
+    "cards_still_initially_empty": true,
+    "outputs_folder_exists": true,
+    "output_files_observed": [],
+    "note": "착수 검토이며 stage01 카드 작성/쓰기/backup 실행 증거를 판정하지 않았다."
+  },
+  "authority": {
+    "task": "task.txt와 시범_입력과권한.json의 소량 사본 순차 시범 범위",
+    "allowed_stage01": [
+      "records[*].plain_explanation",
+      "records[*].use_when",
+      "records[*].example",
+      "records[*].counterexample",
+      "records[*].caution",
+      "records[*].version=0.1.1",
+      "document_version=0.1.1"
+    ],
+    "preserve": [
+      "source_snapshot",
+      "term_ref",
+      "ID와 출처",
+      "state와 human_review",
+      "company_approved",
+      "작업초안/연결목록.json",
+      "다른 고정 입력과 실행스킬"
+    ],
+    "data_instructions_are_not_new_authority": true,
+    "outside_stage_input_isolation": "instructions_and_hash_checks_only_not_OS_account_sandbox"
+  },
+  "source_currentness": {
+    "source_files_frozen": 24,
+    "stage_input_files_frozen": 29,
+    "preserved_skill_files_frozen": 11,
+    "stage_inputs": [
+      {
+        "path": "00_운영계약/01_보존과버전_계약.md",
+        "bytes": 5473,
+        "expected_sha256": "8400b604210c0fc1bdb18c774b9824ef5cf7f389e38aceda93178925f9daedc1",
+        "actual_sha256": "8400b604210c0fc1bdb18c774b9824ef5cf7f389e38aceda93178925f9daedc1",
+        "match": true
+      },
+      {
+        "path": "00_운영계약/정본과표시_연결목록.json",
+        "bytes": 25092,
+        "expected_sha256": "e46cdd823766e91c84dd6a05a0254879bfcc9f80c2b04bfc48ec0788b5005fe6",
+        "actual_sha256": "e46cdd823766e91c84dd6a05a0254879bfcc9f80c2b04bfc48ec0788b5005fe6",
+        "match": true
+      },
+      {
+        "path": "01_공통용어/02_기록단위와분류축.md",
+        "bytes": 2773,
+        "expected_sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+        "actual_sha256": "8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a",
+        "match": true
+      },
+      {
+        "path": "01_공통용어/공통용어사전.json",
+        "bytes": 46223,
+        "expected_sha256": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+        "actual_sha256": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+        "match": true
+      },
+      {
+        "path": "01_공통용어/분류운영규칙.json",
+        "bytes": 6957,
+        "expected_sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d",
+        "actual_sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d",
+        "match": true
+      },
+      {
+        "path": "01_공통용어/용어판정기준.json",
+        "bytes": 69398,
+        "expected_sha256": "c975dcb7f8b35b07419a5e35f7f11b4581b480b84d879fed46f5adf94062c8f4",
+        "actual_sha256": "c975dcb7f8b35b07419a5e35f7f11b4581b480b84d879fed46f5adf94062c8f4",
+        "match": true
+      },
+      {
+        "path": "02_원칙과레이아웃/07_레이아웃별_선택조건과반례.md",
+        "bytes": 36754,
+        "expected_sha256": "945fa1ec974bd73899d71de9b4019edf0d465d3c32443a9fe8ee610d56c471dd",
+        "actual_sha256": "945fa1ec974bd73899d71de9b4019edf0d465d3c32443a9fe8ee610d56c471dd",
+        "match": true
+      },
+      {
+        "path": "02_원칙과레이아웃/레이아웃_심화지식.json",
+        "bytes": 59116,
+        "expected_sha256": "5d6378eb954b6b75f94be2a0988254a1406f6dacc8a6c44060c6a05ff56aa14c",
+        "actual_sha256": "5d6378eb954b6b75f94be2a0988254a1406f6dacc8a6c44060c6a05ff56aa14c",
+        "match": true
+      },
+      {
+        "path": "02_원칙과레이아웃/레이아웃지식.json",
+        "bytes": 11255,
+        "expected_sha256": "0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306",
+        "actual_sha256": "0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306",
+        "match": true
+      },
+      {
+        "path": "03_한맥디자인/한맥디자인정본.json",
+        "bytes": 74107,
+        "expected_sha256": "dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed",
+        "actual_sha256": "dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed",
+        "match": true
+      },
+      {
+        "path": "03_한맥디자인/회사별_디자인연결_현황.json",
+        "bytes": 42906,
+        "expected_sha256": "f5a2913c38dc5651e714d48467a558565051bc878ac07b943cfddf48ae7a15ec",
+        "actual_sha256": "f5a2913c38dc5651e714d48467a558565051bc878ac07b943cfddf48ae7a15ec",
+        "match": true
+      },
+      {
+        "path": "04_기록규격/06_통합최소기록_규격_v0.2.md",
+        "bytes": 6462,
+        "expected_sha256": "3c301c7f874921a3bd7bc3e5922ca8cb7c16ddc950f78ecc9850251b9474df74",
+        "actual_sha256": "3c301c7f874921a3bd7bc3e5922ca8cb7c16ddc950f78ecc9850251b9474df74",
+        "match": true
+      },
+      {
+        "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+        "bytes": 28451,
+        "expected_sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+        "actual_sha256": "d10de5fb306bb0ca78d0af31649ce1b3ec152593b1df35a890e86cef2036cb37",
+        "match": true
+      },
+      {
+        "path": "07_실행도구/자료검증.py",
+        "bytes": 4622,
+        "expected_sha256": "0abd4cba7f1ba3a69011ef67758dbcc6f5c9599785aa0ae5ed5fd6cd0e434ec4",
+        "actual_sha256": "0abd4cba7f1ba3a69011ef67758dbcc6f5c9599785aa0ae5ed5fd6cd0e434ec4",
+        "match": true
+      },
+      {
+        "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+        "bytes": 7002,
+        "expected_sha256": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+        "actual_sha256": "005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac",
+        "match": true
+      },
+      {
+        "path": "09_다음단계인계/R7_01-A_구현전_인계.md",
+        "bytes": 3514,
+        "expected_sha256": "438dc5bb19e7a4356436869aa67704712e5e2257084d89cd15fc3bbfe8d2f0b4",
+        "actual_sha256": "438dc5bb19e7a4356436869aa67704712e5e2257084d89cd15fc3bbfe8d2f0b4",
+        "match": true
+      },
+      {
+        "path": "09_다음단계인계/R7_R8_스킬재구성_인계.md",
+        "bytes": 3602,
+        "expected_sha256": "7d7abac31fc1501c48fd17d2e1df0fff368057bedbf90bbb270e47baf12872ac",
+        "actual_sha256": "7d7abac31fc1501c48fd17d2e1df0fff368057bedbf90bbb270e47baf12872ac",
+        "match": true
+      },
+      {
+        "path": "13_품질검수/03_판정운영기준.md",
+        "bytes": 8000,
+        "expected_sha256": "2a8e21f028e18398ab2a6544cc429e585ab6a0a59abd370dbacd7991e141b7c1",
+        "actual_sha256": "2a8e21f028e18398ab2a6544cc429e585ab6a0a59abd370dbacd7991e141b7c1",
+        "match": true
+      },
+      {
+        "path": "13_품질검수/품질항목_정본.json",
+        "bytes": 57474,
+        "expected_sha256": "c5b9e91e902747a1d657fbbaee19c4b2b97e96dcf58f0ae2bb032384f29ce60f",
+        "actual_sha256": "c5b9e91e902747a1d657fbbaee19c4b2b97e96dcf58f0ae2bb032384f29ce60f",
+        "match": true
+      },
+      {
+        "path": "14_스킬재구성/R8_현재사용안내.md",
+        "bytes": 5152,
+        "expected_sha256": "2389ff50cb88d00c353c469df388a967ad6bde36166eac67b332a1af26306e09",
+        "actual_sha256": "2389ff50cb88d00c353c469df388a967ad6bde36166eac67b332a1af26306e09",
+        "match": true
+      },
+      {
+        "path": "14_스킬재구성/제한소스_보관과활용_미정.json",
+        "bytes": 950,
+        "expected_sha256": "55ec79d9b7ae879b6d4ab61f12d09bd7365ab5a2af46c9029fd7f4d6155ccca9",
+        "actual_sha256": "55ec79d9b7ae879b6d4ab61f12d09bd7365ab5a2af46c9029fd7f4d6155ccca9",
+        "match": true
+      },
+      {
+        "path": "14_스킬재구성/현재상태_정정표.json",
+        "bytes": 6382,
+        "expected_sha256": "edf2ac8d3b35af757619c0cec9d52caae5f65c815f63fd64ed7f4b17585e6ce0",
+        "actual_sha256": "edf2ac8d3b35af757619c0cec9d52caae5f65c815f63fd64ed7f4b17585e6ce0",
+        "match": true
+      },
+      {
+        "path": "작업초안/쉬운말_지식카드.json",
+        "bytes": 4262,
+        "expected_sha256": "9aaaa77ee0ab7f64db58db3276cdc8f0056f8169471ef05711c36679557963a2",
+        "actual_sha256": "9aaaa77ee0ab7f64db58db3276cdc8f0056f8169471ef05711c36679557963a2",
+        "match": true
+      },
+      {
+        "path": "작업초안/연결목록.json",
+        "bytes": 1681,
+        "expected_sha256": "2a2471e8e26c1e85953ede0bd6c514912dfc3e0e81b7996624b0118b81681147",
+        "actual_sha256": "2a2471e8e26c1e85953ede0bd6c514912dfc3e0e81b7996624b0118b81681147",
+        "match": true
+      },
+      {
+        "path": "05_출처와검토/검수와사용범위/07_한맥디자인과_CI_확인현황.md",
+        "bytes": 2244,
+        "expected_sha256": "872b4cf10790af7142a6438252f0da6206cd25233823050d3fafd8f412bbc226",
+        "actual_sha256": "872b4cf10790af7142a6438252f0da6206cd25233823050d3fafd8f412bbc226",
+        "match": true
+      },
+      {
+        "path": "14_스킬재구성/사람피드백/R8-3_적용성검토자_검토답변.json",
+        "bytes": 1181,
+        "expected_sha256": "e7906857aa075179a0947489a8dfa3fba267145df035c177972c76f20f788a1d",
+        "actual_sha256": "e7906857aa075179a0947489a8dfa3fba267145df035c177972c76f20f788a1d",
+        "match": true
+      },
+      {
+        "path": "실행스킬/video-knowledge-curator/SKILL.md",
+        "bytes": 7683,
+        "expected_sha256": "8287c1eff5e55547dfdcde4e6ae8be37d546b6e9d7df86f831ee4e0d39c9411a",
+        "actual_sha256": "8287c1eff5e55547dfdcde4e6ae8be37d546b6e9d7df86f831ee4e0d39c9411a",
+        "match": true
+      },
+      {
+        "path": "실행스킬/video-knowledge-curator/references/작업기준.md",
+        "bytes": 4021,
+        "expected_sha256": "97338ff41bb1133d107c44989bbae0c7fd3edea14ab6c882025a9d13262fe41c",
+        "actual_sha256": "97338ff41bb1133d107c44989bbae0c7fd3edea14ab6c882025a9d13262fe41c",
+        "match": true
+      },
+      {
+        "path": "실행스킬/video-knowledge-curator/references/출력지침.md",
+        "bytes": 1226,
+        "expected_sha256": "61fc05cba69677f574500c10791e2746b7db90ed43270cb5e9043462d310a2a2",
+        "actual_sha256": "61fc05cba69677f574500c10791e2746b7db90ed43270cb5e9043462d310a2a2",
+        "match": true
+      }
+    ],
+    "preserved_skills": [
+      {
+        "path": "video-knowledge-curator/SKILL.md",
+        "expected_sha256": "8287c1eff5e55547dfdcde4e6ae8be37d546b6e9d7df86f831ee4e0d39c9411a",
+        "actual_sha256": "8287c1eff5e55547dfdcde4e6ae8be37d546b6e9d7df86f831ee4e0d39c9411a",
+        "match": true
+      },
+      {
+        "path": "video-knowledge-curator/references/작업기준.md",
+        "expected_sha256": "97338ff41bb1133d107c44989bbae0c7fd3edea14ab6c882025a9d13262fe41c",
+        "actual_sha256": "97338ff41bb1133d107c44989bbae0c7fd3edea14ab6c882025a9d13262fe41c",
+        "match": true
+      },
+      {
+        "path": "video-knowledge-curator/references/출력지침.md",
+        "expected_sha256": "61fc05cba69677f574500c10791e2746b7db90ed43270cb5e9043462d310a2a2",
+        "actual_sha256": "61fc05cba69677f574500c10791e2746b7db90ed43270cb5e9043462d310a2a2",
+        "match": true
+      },
+      {
+        "path": "video-record-steward/SKILL.md",
+        "expected_sha256": "451bbfd215cb22bf5efa85c63cff2bedcf5ef50dae5fe60e62127c6f05868334",
+        "actual_sha256": "451bbfd215cb22bf5efa85c63cff2bedcf5ef50dae5fe60e62127c6f05868334",
+        "match": true
+      },
+      {
+        "path": "video-record-steward/references/기록연결기준.md",
+        "expected_sha256": "413f84662e7e452f3e86119c25d2effbab544c88dd8f8248c264dd9deb759592",
+        "actual_sha256": "413f84662e7e452f3e86119c25d2effbab544c88dd8f8248c264dd9deb759592",
+        "match": true
+      },
+      {
+        "path": "video-record-steward/references/보고지침.md",
+        "expected_sha256": "c1092ee7077f38e7d8918e525fc0054fc1cc8044797a518320ad9a63371d4583",
+        "actual_sha256": "c1092ee7077f38e7d8918e525fc0054fc1cc8044797a518320ad9a63371d4583",
+        "match": true
+      },
+      {
+        "path": "video-record-steward/references/수정과복구.md",
+        "expected_sha256": "7b14bb63d1b69a568871e1aab76c217f661832c30a57f58871a440705c33ac70",
+        "actual_sha256": "7b14bb63d1b69a568871e1aab76c217f661832c30a57f58871a440705c33ac70",
+        "match": true
+      },
+      {
+        "path": "video-record-steward/scripts/판본대조.py",
+        "expected_sha256": "b5eadb2d9f42ebb3e6d02dbd5a87448e558e78ef9bc7ffeb1807b79f507d03e7",
+        "actual_sha256": "b5eadb2d9f42ebb3e6d02dbd5a87448e558e78ef9bc7ffeb1807b79f507d03e7",
+        "match": true
+      },
+      {
+        "path": "video-guidance-reviewer/SKILL.md",
+        "expected_sha256": "1885f3166d405d6519615f418351eb8b6092219e06c5e5ec558409b6c039dd6b",
+        "actual_sha256": "1885f3166d405d6519615f418351eb8b6092219e06c5e5ec558409b6c039dd6b",
+        "match": true
+      },
+      {
+        "path": "video-guidance-reviewer/references/근거찾기와적용조건.md",
+        "expected_sha256": "cc8985460df26bb9e223eb5747f2694c6703df38921ecee7ce2bf76f6fe7c1b8",
+        "actual_sha256": "cc8985460df26bb9e223eb5747f2694c6703df38921ecee7ce2bf76f6fe7c1b8",
+        "match": true
+      },
+      {
+        "path": "video-guidance-reviewer/references/판정과사람검수.md",
+        "expected_sha256": "86617f5d2c9ee44d876cf76c3a697c3413e493874df4600b10e67503be059f86",
+        "actual_sha256": "86617f5d2c9ee44d876cf76c3a697c3413e493874df4600b10e67503be059f86",
+        "match": true
+      }
+    ],
+    "selected_skill_versions": {
+      "curator": "0.2.0-draft.3",
+      "steward": "0.2.0-draft.5",
+      "reviewer": "0.2.0-draft.4"
+    },
+    "latest_claim_scope": "명시적으로 선택·고정한 세 후보 사본의 동일성. 운영 D의 live 최신성/전체 출처 현재성을 이번 독립검토에서 재검증한 것은 아님.",
+    "reparse_points_in_stage_input": [],
+    "errata_files_exist_and_hash_match": [
+      {
+        "correction_id": "ST-R4",
+        "path": "04_기록규격/06_통합최소기록_규격_v0.2.md",
+        "exists": true,
+        "sha256_match": true
+      },
+      {
+        "correction_id": "ST-R4",
+        "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+        "exists": true,
+        "sha256_match": true
+      },
+      {
+        "correction_id": "ST-R4",
+        "path": "07_실행도구/자료검증.py",
+        "exists": true,
+        "sha256_match": true
+      },
+      {
+        "correction_id": "ST-R2",
+        "path": "01_공통용어/02_기록단위와분류축.md",
+        "exists": true,
+        "sha256_match": true
+      },
+      {
+        "correction_id": "ST-R2",
+        "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+        "exists": true,
+        "sha256_match": true
+      },
+      {
+        "correction_id": "ST-R2",
+        "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+        "exists": true,
+        "sha256_match": true
+      },
+      {
+        "correction_id": "ST-R2-JSON",
+        "path": "01_공통용어/분류운영규칙.json",
+        "exists": true,
+        "sha256_match": true
+      },
+      {
+        "correction_id": "ST-R2-JSON",
+        "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+        "exists": true,
+        "sha256_match": true
+      },
+      {
+        "correction_id": "ST-HANDOFF",
+        "path": "09_다음단계인계/R7_01-A_구현전_인계.md",
+        "exists": true,
+        "sha256_match": true
+      },
+      {
+        "correction_id": "ST-HANDOFF",
+        "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+        "exists": true,
+        "sha256_match": true
+      },
+      {
+        "correction_id": "ST-HANDOFF",
+        "path": "01_공통용어/02_기록단위와분류축.md",
+        "exists": true,
+        "sha256_match": true
+      },
+      {
+        "correction_id": "ST-R7-R8",
+        "path": "09_다음단계인계/R7_R8_스킬재구성_인계.md",
+        "exists": true,
+        "sha256_match": true
+      },
+      {
+        "correction_id": "ST-R7-R8",
+        "path": "14_스킬재구성/사람피드백/R8-3_적용성검토자_검토답변.json",
+        "exists": true,
+        "sha256_match": true
+      }
+    ],
+    "errata_content_scope": [
+      "ST-R4: 원문 후보 표시와 R4 완료 보고·현재 자료검증.py의 v0.2 기본 진입점 문장이 대응함. 도구는 실행하지 않음.",
+      "ST-R2/ST-R2-JSON/ST-HANDOFF: 원문의 역사 저장상태와 설명용 JSON의 screen_state, beat의 segment parent, related_state_refs를 직접 대조함.",
+      "ST-R7-R8: 인계의 미실시 문구가 역사 상태인 점과 R8-3 실제 출력 피드백 사본은 확인. 그 사본 하나만으로 R8-1/2·최종 재검수 완료 또는 새 카드 승인을 확정하지 않음."
+    ],
+    "notice_links_omitted_from_small_copy": "진행현황/최종보고/전체 회신·full R6/R7 원문·출처보관소 등은 제공 사본의 완전성/현재성 조회로 확대하지 않음. 한정 카드 작성에 전체 원문 재확보는 요구하지 않음."
+  },
+  "goal_material_fit": {
+    "purpose": "기존 세 용어의 쉬운말 지식카드 작성→연결 갱신→조건부 적용성 검토",
+    "card_source_checks": [
+      {
+        "card_id": "시범카드001",
+        "term_id": "LAYOUT-PROCESS-LINE",
+        "term_matches_unique": true,
+        "source_snapshot_matches": true,
+        "term_version_matches": true,
+        "source_file_hash_matches": true,
+        "requested_fields_initially_empty": true
+      },
+      {
+        "card_id": "시범카드002",
+        "term_id": "FUNCTION-FOCUS",
+        "term_matches_unique": true,
+        "source_snapshot_matches": true,
+        "term_version_matches": true,
+        "source_file_hash_matches": true,
+        "requested_fields_initially_empty": true
+      },
+      {
+        "card_id": "시범카드003",
+        "term_id": "PROPERTY-VISIBILITY",
+        "term_matches_unique": true,
+        "source_snapshot_matches": true,
+        "term_version_matches": true,
+        "source_file_hash_matches": true,
+        "requested_fields_initially_empty": true
+      }
+    ],
+    "semantic_guards": [
+      "LAYOUT-PROCESS-LINE: 순서/연결의 레이아웃이며 가로·세로 방향은 별도. 선만 보고 기간/분기 없는 실제 절차를 확정하지 않음.",
+      "FUNCTION-FOCUS: 설명 대상으로 강조를 옮기는 기능. 모든 위치 이동/실제 시청자 시선 효과와 동일시하지 않음.",
+      "PROPERTY-VISIBILITY: 보이는 범위/강도 변화. 관측과 opacity/마스크/합성/배경 원인을 분리."
+    ],
+    "source_reading_depth": "세 사전 항목과 용어판정기준 해당 guides, 선형 프로세스의 지식·심화카드·선택조건 절을 직접 읽음. 외부 링크 원문은 새로 열지 않음."
+  },
+  "frozen_criteria": {
+    "path": "검수기준_고정.json",
+    "sha256": "9d253bd87538326f24d703c7c6f2d6efc55be6d50ea842cd13ab3af28a5fc787",
+    "matches_authorization_manifest": true,
+    "changed_by_reviewer": false,
+    "assessment": "목적에 맞는 단계별 의미/보존/쓰기증거/정직보고 기준이다. 비교우위·실영상 성능·품질총점의 평가계획으로 사용하지 않는다.",
+    "expected_faults_use": "expected_faults=0은 정상 소량 시범의 설계 설명이며 오류 없음 판정의 근거로 사용하지 않았다."
+  },
+  "nonblocking_followups": [
+    {
+      "id": "N-01",
+      "scope": "stage02 준비",
+      "finding": "보존된 판본대조.py content_edit는 R4 record_id 또는 R5 application_id와 schema_version을 요구한다. 이번 local_knowledge_index는 그 입력 규격이 아니다.",
+      "minimal_action": "stage02에서 실제 연결목록의 자체 version·ID·상류 draft_ref 판본/SHA·불변 필드를 좁게 전후 대조한다. 필요 도구 한계를 그대로 보고하며 R4/R5용 필드를 추가하거나 full R4 통과라 부르지 않는다.",
+      "blocks_stage01": false
+    },
+    {
+      "id": "N-02",
+      "scope": "실제 사람 질문이 발생할 경우",
+      "finding": "task의 4선택지 지시와 검토 스킬/판정운영기준의 사실 확인 자유답변 원칙을 구분해 적용해야 한다.",
+      "minimal_action": "운영/채택 선택은 구체 4대안과 추천안을 제공하고, 사실 확인은 대상/판본/근거를 명시해 자유 근거를 받을 수 있게 한다. 새 판단이 없으면 추가 승인을 만들지 않는다.",
+      "blocks_stage01": false
+    },
+    {
+      "id": "N-03",
+      "scope": "후속 단계 인계",
+      "finding": "착수 범위에서는 stage02/03의 실제 task·상류 산출물이 아직 독립 검토되지 않았다.",
+      "minimal_action": "각 단계 실행 전에 앞 단계의 독립검토 결과·실제 산출물 bytes/SHA·허용변경을 연결하고, 해당 단계의 결과를 별도로 검토한다. 초기 입력고정/기대조건은 소급 수정하지 않는다.",
+      "blocks_stage01": false
+    }
+  ],
+  "not_performed": [
+    "stage01/02/03 역할 행동 실행",
+    "카드/연결목록/스킬/고정 입력의 변경",
+    "쓰기전 backup·실제 쓰기 실패·복구·동시 수정 시험",
+    "전체 R4/R6/R7 검사 또는 전체 정정의 운영 live 재검증",
+    "운영 D 조회·수정 및 전역 스킬 설치/기본 전환",
+    "네트워크/API/CU/AE/영상 분석·PTS/OCR/좌표/효과 측정",
+    "기존/후보 비교성능·시간절감·통계적 일반화",
+    "사람 내용검수·신원/회사/납품/사용권한 승인"
+  ],
+  "auditor_notes": [
+    "PowerShell 파일 읽기/JSON 확인/Get-FileHash로만 확인. 제공된 자료검증.py와 판본대조.py의 코드는 읽었으나 실행하지 않음.",
+    "한 읽기 명령에서 계산한 루트가 실행 폴더를 중복해 task/metadata 조회 오류가 났다. 해당 null 비교 결과는 폐기하고 명시 절대루트로 재조회했다. task와 metadata.prompt는 CRLF/LF만 달라 정규화한 내용은 동일함.",
+    "수량/해시 일치는 파일 식별 근거이며 의미 진실성·실영상 성과·승인의 점수가 아니다."
+  ],
+  "write_scope": [
+    "독립검토/00_착수검토.md",
+    "독립검토/00_착수검토.json"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "stage": "R7-4-2 추가 내용/CLI 발견",
+  "findings": [
+    {
+      "id": "F3",
+      "priority": "P2",
+      "basis": "13_품질검수/03_판정운영기준.md 항목 결과에 필요한 정보: 판단 방법과 담당 역할",
+      "affected": "품질검수_작성양식.json blank_fields",
+      "finding": "방법/담당 역할 필드가없고 findings에담으라는명시규칙도없음. human_review_scope/state와구분필요",
+      "suggestion": "review_method/reviewer_role 빈칸추가 또는 findings의필수하위구조명시; 역할선언은실제신원인증이아님"
+    },
+    {
+      "id": "F4",
+      "priority": "P2",
+      "basis": "CLI ensure_ascii=False + FileNotFoundError includes arbitrary base path",
+      "input": "nonexistent C base path containing emoji; PYTHONIOENCODING=cp949",
+      "actual": "exit1 but UnicodeEncodeError/no JSON output",
+      "suggestion": "CLI ensure_ascii=True for serialized diagnostics; do not normalize original source"
+    }
+  ],
+  "earlier65conditions": "pass65/65/exception0 at v0.1.2 remains historical structure test, not full final content pass",
+  "evidence": [
+    {
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R7_독립검토\\R7_04_02_최종_독립반례코드.py",
+      "sha256": "b10bf1eac79aa62f4f3f9fc30a9be26863893338c59cd3f0a60d59eba05376a4"
+    },
+    {
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R7_독립검토\\R7_04_02_최종_독립반례결과.json",
+      "sha256": "11b2602334252cc81828a64537fd84af8b7332dfb12560a5cd4b9ae00c991a20"
+    },
+    {
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R7_독립검토\\R7_04_02_CLI_인코딩반례.py",
+      "sha256": "0de68197285f3f3f4a89f43e43706dfa3321577c3a33eefb6b700a460c9d7870"
+    },
+    {
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R7_독립검토\\R7_04_02_CLI_인코딩_초기반례.json",
+      "sha256": "92c2dd33bc42b5bb37c9e86f93056c0171982a34a773b720ef0c7fd1c95c33a3"
+    }
+  ]
+}

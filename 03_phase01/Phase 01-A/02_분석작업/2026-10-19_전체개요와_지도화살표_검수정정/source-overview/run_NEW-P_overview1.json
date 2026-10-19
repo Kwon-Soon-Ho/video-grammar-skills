@@ -1,0 +1,8 @@
+{
+  "id": "NEW-P",
+  "phase": "overview1",
+  "exit": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\tools\\extract.py\", line 145, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\tools\\extract.py\", line 135, in main\n    if len(sys.argv)==4 and sys.argv[1]=='worker':worker(sys.argv[2],sys.argv[3]);return\n                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\tools\\extract.py\", line 104, in worker\n    for packet in c.demux(s):\n                  ^^^^^^^^^^\n  File \"av/container/input.py\", line 209, in demux\n    self.err_check(ret)\n\n  File \"av/container/core.py\", line 361, in av.container.core.Container.err_check\n    return err_check(value, filename=self.name)\n^^^^^^^\n  File \"av/error.py\", line 325, in av.error.err_check\n    raise exc_info[1].with_traceback(exc_info[2])\n^^^\n  File \"av/container/pyio.py\", line 105, in av.container.pyio.pyio_read_gil\n    res = self.fread(buf_size)\n^^^^^^^\n  File \"C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\tools\\extract.py\", line 26, in read\n    if n<0 or n>4*1024**2: raise ValueError('read_request_limit')\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: read_request_limit\n",
+  "elapsed_seconds": 15.343999999999141
+}

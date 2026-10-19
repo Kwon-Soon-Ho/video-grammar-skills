@@ -1,0 +1,26 @@
+--- 해시보완전
++++ 현재
+@@ -14,10 +14,10 @@
+ assert {p for p,h in initial.items() if sha(BASE/p)!=h}==allowed_prior
+ archived={}
+ def exact(src,dst):
+-    dst=safe(dst);dst.parent.mkdir(parents=True,exist_ok=True)
+-    if dst.exists():assert sha(dst)==sha(src),str(dst)
+-    else:shutil.copy2(src,'\\\\?\\'+str(dst))
+-    archived[dst.relative_to(BASE).as_posix()]=sha(dst)
++    dst=safe(dst);io_dst=Path('\\\\?\\'+str(dst));io_dst.parent.mkdir(parents=True,exist_ok=True)
++    if io_dst.exists():assert sha(io_dst)==sha(src),str(dst)
++    else:shutil.copy2(src,io_dst)
++    archived[dst.relative_to(BASE).as_posix()]=sha(io_dst)
+ # Retain all real trials, failures, preparation histories, version snapshots and evaluation source package.
+ for source,label in [(W,'video-record-steward-workspace'),(LOCAL/'R8_시험/video-record-steward','video-record-steward')]:
+     for p in sorted(source.rglob('*')):
+@@ -79,7 +79,7 @@
+ 
+ 최종 기존 스킬의 backup 실패 과제에서는 수행 코드의 키 해석 오류(KeyError)를 같은 시행 안에서 고쳐 다시 실행한 이력도 transcript에 보존했다. 이는 별도 모델 시행이나 무효 시행이 아니며, 위 사실검사 도구의 줄바꿈 오류와도 구분한다.
+ 
+-결과를 D 폴더에 정리할 때 긴 Windows 경로로 원문 backup 복사가 중단된 이력도 독립검토/게시보완이력에 보존했다. 이미 복사된 3,644파일은 원문 SHA와 같았고 보고서/진행 현황은 변경 전이었다. 이름을 줄이거나 결과를 바꾸지 않고 긴 경로 지정으로 복사 도구만 보완했다. 모델 시행 수에는 포함하지 않는다.
++결과를 D 폴더에 정리할 때 긴 Windows 경로로 원문 backup 복사가 중단되고, 복사를 보완한 다음 일반 경로로 SHA를 다시 읽는 과정도 중단된 두 이력을 독립검토/게시보완이력에 보존했다. 처음 복사된 3,644파일은 원문 SHA와 같았고 두 중단 모두 보고서/진행 현황 변경 전이었다. 이름을 줄이거나 결과를 바꾸지 않고 복사·존재 확인·SHA 읽기에 일관된 긴 경로 지정을 적용했다. 이는 게시 도구 수정이며 모델 시행 수에는 포함하지 않는다.
+ 
+ ## 지금 검토할 부분과 남은 일
+ 

@@ -1,0 +1,49 @@
+[
+  {
+    "test": "valid",
+    "expected_accept": true,
+    "errors": [],
+    "correct": true
+  },
+  {
+    "test": "cross_source",
+    "expected_accept": false,
+    "errors": [
+      "cross-source evidence f0"
+    ],
+    "correct": true
+  },
+  {
+    "test": "wrong_time",
+    "expected_accept": false,
+    "errors": [
+      "evidence time differs from extraction f0"
+    ],
+    "correct": true
+  },
+  {
+    "test": "conflicting_catalog",
+    "expected_accept": false,
+    "errors": [
+      "conflicting catalog frame",
+      "cross-source evidence f0"
+    ],
+    "correct": true
+  },
+  {
+    "test": "PNG_hash_mismatch",
+    "expected_accept": false,
+    "errors": [
+      "evidence file changed f0"
+    ],
+    "correct": true
+  },
+  {
+    "test": "unregistered_frame",
+    "expected_accept": false,
+    "errors": [
+      "frame not in verified catalog f0"
+    ],
+    "correct": true
+  }
+]

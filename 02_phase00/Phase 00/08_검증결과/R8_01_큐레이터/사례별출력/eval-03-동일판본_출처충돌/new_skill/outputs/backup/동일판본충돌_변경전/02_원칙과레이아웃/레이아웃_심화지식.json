@@ -1,0 +1,992 @@
+{
+  "id": "r3-layout-deep-knowledge",
+  "version": "0.1.2",
+  "authority": "project_draft_not_company_rule",
+  "company_approved": false,
+  "actual_video_test": false,
+  "core_refs": [
+    {
+      "path": "02_원칙과레이아웃/레이아웃지식.json",
+      "version": "0.1.1",
+      "sha256": "0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306"
+    },
+    {
+      "path": "01_공통용어/공통용어사전.json",
+      "version": "0.1.1",
+      "sha256": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2"
+    },
+    {
+      "path": "02_원칙과레이아웃/화면설계원칙.json",
+      "version": "0.1.1",
+      "sha256": "281fe61151dfc96649a070b6fd3ae653c0353b7513f3209534140ce1f54e6b96"
+    }
+  ],
+  "design_reference": {
+    "path": "03_한맥디자인/한맥디자인정본.json",
+    "profile_ref": "hanmac-video@0.1.0",
+    "sha256": "dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed",
+    "authority": "영상 레이아웃·폰트 크기·간격·안전영역의 승인 규칙 아님",
+    "use": "확정된 가족사·CI·출처색은 R1에서 찾고 실제 적용 조건은R5에서 확인. 모양을 위한 임의 CI 변형·전 가족사 동일 팔레트 강제 금지."
+  },
+  "layout_cards": [
+    {
+      "id": "KNOW-LAYOUT-SINGLE-FOCUS",
+      "term_id": "LAYOUT-SINGLE-FOCUS",
+      "name_ko": "단일 초점",
+      "status": "draft",
+      "company_approved": false,
+      "definition_origin": "SRC-PROJECT-TAXONOMY",
+      "definition": "핵심 대상·문장 중심의 구성",
+      "application_origin": "project_synthetic_transfer_not_source_example",
+      "fit_relation_ids": [],
+      "relation_policy": "조건부 선택 후보. 모양만으로 정보 관계를 자동 부여하지 않음.",
+      "fit_when": "핵심 메시지가 하나이며 나머지는 근거·맥락일 때",
+      "reading_order": "요점→대표 대상→필요한 근거",
+      "composition_decisions": "대표 대상, 요점 문장, 보조 설명을 역할로 구분한다. 초점 위치는 중앙·삼분할 모두 후보다.",
+      "positive_example": "침투수의 주요 경로를 하나의 단면도와 짧은 요점으로 설명한다.",
+      "counterexample": "동등하게 비교해야 할 A/B 중 A만 거대하게 배치해 우열을 암시한다.",
+      "acceptable_variation": "한 문장 옆에 단면도·범례·출처가 함께 있어도 요점 역할이 하나면 후보가 된다.",
+      "alternative_when": "핵심이 여러 개면 비교·분할·구간 분절을 먼저 검토한다.",
+      "korean_text_adjustment": "긴 제목을 영역에 맞춰 의미 단위로 줄바꿈하고 근거 문구와 역할을 나눈다.",
+      "landscape_adjustment": "내용 역할을 나눈 영역의 폭을 조절한다. 화면 전체를 꽉 채울 의무는 없다. 핵심·단위·출처가 읽히는 완성 상태를 확인한다.",
+      "portrait_adjustment": "대표 대상 위·아래에 요점을 재배치하되 단면과 라벨 대응을 유지한다.",
+      "square_adjustment": "필수 내용·관계·비례를 잃는 중앙 크롭만으로 해결하지 않는다. 손실 없는 크롭·영역 재배치·구간 분절도 후보로 비교하고 실제 문구와 표시 조건을 확인한다.",
+      "temporal_conditions": "정보가 완성된 상태와 유지 시간을 별도로 확인한다. 읽기 가능한 대비·가림·배치가 유지되는 구간인지 보고 모션 자체의 길이로 대체하지 않는다.",
+      "abstain_when": "한 요점을 판단할 입력이 없으면 보이는 배치만 남기고 전달 성공은 보류한다.",
+      "minimum_inputs": [
+        "설명 목적·핵심 주장",
+        "정보 항목·대응 관계와 출처",
+        "대상 시청자·시청 환경",
+        "출력 화면비·해상도·배포 UI",
+        "실제 문구·숫자·단위·자산"
+      ],
+      "source_refs": [
+        "SRC-L2-CARBON-GRID",
+        "SRC-L2-NNG-VISUAL",
+        "SRC-L2-NNG-PROXIMITY"
+      ],
+      "source_locator_refs": [
+        {
+          "source_id": "SRC-L2-CARBON-GRID",
+          "locator": "Contrast / Style models / Adaptive aspect ratios"
+        },
+        {
+          "source_id": "SRC-L2-NNG-VISUAL",
+          "locator": "2. Visual Hierarchy / 3. Balance"
+        },
+        {
+          "source_id": "SRC-L2-NNG-PROXIMITY",
+          "locator": "Place Related Elements near Each Other / Proximity May Shift in Responsive Designs"
+        }
+      ],
+      "numeric_default": null,
+      "case_kind": "synthetic_not_company_video",
+      "auto_relation_assignment": false
+    },
+    {
+      "id": "KNOW-LAYOUT-SPLIT-COMPARE",
+      "term_id": "LAYOUT-SPLIT-COMPARE",
+      "name_ko": "분할 비교",
+      "status": "draft",
+      "company_approved": false,
+      "definition_origin": "SRC-PROJECT-TAXONOMY",
+      "definition": "둘 이상의 대상을 공통 기준으로 나눈 구성",
+      "application_origin": "project_synthetic_transfer_not_source_example",
+      "fit_relation_ids": [
+        "REL-PARALLEL"
+      ],
+      "relation_policy": "조건부 선택 후보. 모양만으로 정보 관계를 자동 부여하지 않음.",
+      "fit_when": "비교 대상과 공통 비교 항목·조건이 확인됐을 때",
+      "reading_order": "비교 질문→A/B 명칭→같은 항목의 대응→차이 요약",
+      "composition_decisions": "대응 항목의 순서·단위·척도·촬영 조건을 맞춘다. 비교 중요도에 따라 공정하게 강조한다.",
+      "positive_example": "가상의 두 공법에 비용·공기 같은 동일 항목을 같은 줄에 배치한다.",
+      "counterexample": "A는 비용, B는 내구성만 보여 주고 종합 우열을 결론낸다.",
+      "acceptable_variation": "서로 다른 역할의 영상/본문 두 영역은 일반 분할이다. 공통 기준이 있으면 분할 비교를 추가한다.",
+      "alternative_when": "동일 대상의 시간 전후는 전후 대응도 검토한다. 긴 다항 비교는 표 후보를 별도 검토한다.",
+      "korean_text_adjustment": "긴 항목명 때문에 한쪽만 잘리면 명칭 영역을 넓히거나 공통 항목을 중앙에 둔다.",
+      "landscape_adjustment": "내용 역할을 나눈 영역의 폭을 조절한다. 화면 전체를 꽉 채울 의무는 없다. 핵심·단위·출처가 읽히는 완성 상태를 확인한다.",
+      "portrait_adjustment": "좌우를 상하로 옮길 수 있으나 해당 비교 시점에는 양쪽 근거가 함께 읽히도록 유지한다.",
+      "square_adjustment": "필수 내용·관계·비례를 잃는 중앙 크롭만으로 해결하지 않는다. 손실 없는 크롭·영역 재배치·구간 분절도 후보로 비교하고 실제 문구와 표시 조건을 확인한다.",
+      "temporal_conditions": "정보가 완성된 상태와 유지 시간을 별도로 확인한다. 읽기 가능한 대비·가림·배치가 유지되는 구간인지 보고 모션 자체의 길이로 대체하지 않는다.",
+      "abstain_when": "대상·조건·항목 기준이 없으면 비교 레이아웃 후보와 비교 주장 승인을 분리한다.",
+      "minimum_inputs": [
+        "설명 목적·핵심 주장",
+        "정보 항목·대응 관계와 출처",
+        "대상 시청자·시청 환경",
+        "출력 화면비·해상도·배포 UI",
+        "실제 문구·숫자·단위·자산"
+      ],
+      "source_refs": [
+        "SRC-L2-CARBON-GRID",
+        "SRC-L2-NNG-VISUAL",
+        "SRC-L2-NNG-PROXIMITY"
+      ],
+      "source_locator_refs": [
+        {
+          "source_id": "SRC-L2-CARBON-GRID",
+          "locator": "Contrast / Style models / Adaptive aspect ratios"
+        },
+        {
+          "source_id": "SRC-L2-NNG-VISUAL",
+          "locator": "2. Visual Hierarchy / 3. Balance"
+        },
+        {
+          "source_id": "SRC-L2-NNG-PROXIMITY",
+          "locator": "Place Related Elements near Each Other / Proximity May Shift in Responsive Designs"
+        }
+      ],
+      "numeric_default": null,
+      "case_kind": "synthetic_not_company_video",
+      "auto_relation_assignment": false
+    },
+    {
+      "id": "KNOW-LAYOUT-BEFORE-AFTER",
+      "term_id": "LAYOUT-BEFORE-AFTER",
+      "name_ko": "전후 대응",
+      "status": "draft",
+      "company_approved": false,
+      "definition_origin": "SRC-PROJECT-TAXONOMY",
+      "definition": "같은 대상의 전후 상태를 대응한 구성",
+      "application_origin": "project_synthetic_transfer_not_source_example",
+      "fit_relation_ids": [
+        "REL-TIME"
+      ],
+      "relation_policy": "조건부 선택 후보. 모양만으로 정보 관계를 자동 부여하지 않음.",
+      "fit_when": "동일 대상의 이전·이후 상태와 대응 조건이 확인됐을 때",
+      "reading_order": "대상·기준→이전/이후→달라진 부위→한계",
+      "composition_decisions": "같은 기준 부위와 배율·각도·조명을 가능한 한 맞추고 다르면 밝힌다. 전후가 개선 원인 증명은 아니다.",
+      "positive_example": "같은 부위의 처리 전후 상태를 명칭과 대응 표식으로 표시한다.",
+      "counterexample": "서로 다른 현장 사진을 전후로 묶어 공법의 개선 효과라고 한다.",
+      "acceptable_variation": "전후 모두 한 화면에 있을 필요는 없지만 지금 확인할 상태와 대응 대상은 명확해야 한다.",
+      "alternative_when": "서로 다른 대상의 공통 항목 비교면 분할 비교를 택한다.",
+      "korean_text_adjustment": "이전·이후 상태 명칭과 촬영 조건을 서로 다른 글자 역할로 둔다.",
+      "landscape_adjustment": "내용 역할을 나눈 영역의 폭을 조절한다. 화면 전체를 꽉 채울 의무는 없다. 핵심·단위·출처가 읽히는 완성 상태를 확인한다.",
+      "portrait_adjustment": "상하 대응 또는 상태 전환을 후보로 하되 이전 근거를 재참조할 방법을 고려한다.",
+      "square_adjustment": "필수 내용·관계·비례를 잃는 중앙 크롭만으로 해결하지 않는다. 손실 없는 크롭·영역 재배치·구간 분절도 후보로 비교하고 실제 문구와 표시 조건을 확인한다.",
+      "temporal_conditions": "정보가 완성된 상태와 유지 시간을 별도로 확인한다. 읽기 가능한 대비·가림·배치가 유지되는 구간인지 보고 모션 자체의 길이로 대체하지 않는다.",
+      "abstain_when": "동일 대상·시간·조건 근거가 없으면 전후 또는 개선 효과 확정을 보류한다.",
+      "minimum_inputs": [
+        "설명 목적·핵심 주장",
+        "정보 항목·대응 관계와 출처",
+        "대상 시청자·시청 환경",
+        "출력 화면비·해상도·배포 UI",
+        "실제 문구·숫자·단위·자산"
+      ],
+      "source_refs": [
+        "SRC-L2-CARBON-GRID",
+        "SRC-L2-NNG-VISUAL",
+        "SRC-L2-NNG-PROXIMITY"
+      ],
+      "source_locator_refs": [
+        {
+          "source_id": "SRC-L2-CARBON-GRID",
+          "locator": "Contrast / Style models / Adaptive aspect ratios"
+        },
+        {
+          "source_id": "SRC-L2-NNG-VISUAL",
+          "locator": "2. Visual Hierarchy / 3. Balance"
+        },
+        {
+          "source_id": "SRC-L2-NNG-PROXIMITY",
+          "locator": "Place Related Elements near Each Other / Proximity May Shift in Responsive Designs"
+        }
+      ],
+      "numeric_default": null,
+      "case_kind": "synthetic_not_company_video",
+      "auto_relation_assignment": false
+    },
+    {
+      "id": "KNOW-LAYOUT-PROCESS-LINE",
+      "term_id": "LAYOUT-PROCESS-LINE",
+      "name_ko": "선형 프로세스",
+      "status": "draft",
+      "company_approved": false,
+      "definition_origin": "SRC-PROJECT-TAXONOMY",
+      "definition": "단계를 선·방향으로 연결한 구성",
+      "application_origin": "project_synthetic_transfer_not_source_example",
+      "fit_relation_ids": [
+        "REL-ORDER"
+      ],
+      "relation_policy": "조건부 선택 후보. 모양만으로 정보 관계를 자동 부여하지 않음.",
+      "fit_when": "업무·공정 단계의 순서가 의미를 가지며 분기가 주요 내용이 아닐 때",
+      "reading_order": "시작 조건→단계와 연결 방향→종료·산출물",
+      "composition_decisions": "단계 이름과 화살표가 실제 절차를 표현하게 하고 현재 단계와 전체 진행 위치를 구분한다.",
+      "positive_example": "접수→검토→승인 흐름을 단계 이름·방향과 함께 표현한다.",
+      "counterexample": "자료 공개 순서만 보고 실제 업무가 그 순서라고 연결하거나 분기·회귀를 숨긴다.",
+      "acceptable_variation": "한 방향 선은 순서일 수 있으나 반드시 시간 길이를 나타내지는 않는다.",
+      "alternative_when": "실제 기간이면 시간축, 조건 분기가 중요하면 연결 구성·확장 후보를 검토한다.",
+      "korean_text_adjustment": "긴 단계명을 축약할 때 의미를 검토하고 작은 단위 설명은 현재 단계에 가까이 둔다.",
+      "landscape_adjustment": "내용 역할을 나눈 영역의 폭을 조절한다. 화면 전체를 꽉 채울 의무는 없다. 핵심·단위·출처가 읽히는 완성 상태를 확인한다.",
+      "portrait_adjustment": "수직 재배열 시 단계 번호·방향을 유지한다. 폭이 좁다고 순서를 뒤집지 않는다.",
+      "square_adjustment": "필수 내용·관계·비례를 잃는 중앙 크롭만으로 해결하지 않는다. 손실 없는 크롭·영역 재배치·구간 분절도 후보로 비교하고 실제 문구와 표시 조건을 확인한다.",
+      "temporal_conditions": "정보가 완성된 상태와 유지 시간을 별도로 확인한다. 읽기 가능한 대비·가림·배치가 유지되는 구간인지 보고 모션 자체의 길이로 대체하지 않는다.",
+      "abstain_when": "시나리오의 선후·분기 근거가 없으면 절차 순서를 확정하지 않는다.",
+      "minimum_inputs": [
+        "설명 목적·핵심 주장",
+        "정보 항목·대응 관계와 출처",
+        "대상 시청자·시청 환경",
+        "출력 화면비·해상도·배포 UI",
+        "실제 문구·숫자·단위·자산"
+      ],
+      "source_refs": [
+        "SRC-L2-CARBON-GRID",
+        "SRC-L2-NNG-VISUAL",
+        "SRC-L2-NNG-PROXIMITY"
+      ],
+      "source_locator_refs": [
+        {
+          "source_id": "SRC-L2-CARBON-GRID",
+          "locator": "Contrast / Style models / Adaptive aspect ratios"
+        },
+        {
+          "source_id": "SRC-L2-NNG-VISUAL",
+          "locator": "2. Visual Hierarchy / 3. Balance"
+        },
+        {
+          "source_id": "SRC-L2-NNG-PROXIMITY",
+          "locator": "Place Related Elements near Each Other / Proximity May Shift in Responsive Designs"
+        }
+      ],
+      "numeric_default": null,
+      "case_kind": "synthetic_not_company_video",
+      "auto_relation_assignment": false
+    },
+    {
+      "id": "KNOW-LAYOUT-TIMELINE",
+      "term_id": "LAYOUT-TIMELINE",
+      "name_ko": "시간축",
+      "status": "draft",
+      "company_approved": false,
+      "definition_origin": "SRC-PROJECT-TAXONOMY",
+      "definition": "실제 시간·기간에 대응한 배치",
+      "application_origin": "project_synthetic_transfer_not_source_example",
+      "fit_relation_ids": [
+        "REL-TIME"
+      ],
+      "relation_policy": "조건부 선택 후보. 모양만으로 정보 관계를 자동 부여하지 않음.",
+      "fit_when": "사건 날짜나 기간이 정보의 핵심일 때",
+      "reading_order": "시간 단위·축 방식→사건→기간·차이",
+      "composition_decisions": "연속 시간의 간격을 표현할지 날짜 순서만 보여 줄지 명시한다. 압축·비례 아님·결측을 밝힌다.",
+      "positive_example": "가상의 2020·2021·2025 사건을 날짜 표식으로 표시하고 비례축이면 간격 차이를 반영한다.",
+      "counterexample": "2020→2021과2021→2025를 같은 폭으로 두고 기간 차이를 실측 축이라고 한다.",
+      "acceptable_variation": "날짜가 있는 비례 아닌 사건 목록도 가능하다. 축의 의미를 숨기지 않는다.",
+      "alternative_when": "순서만 중요하면 선형 프로세스, 값의 추세는 차트 후보를 검토한다.",
+      "korean_text_adjustment": "연도·월·일 표기의 수준을 맞추고 긴 사건 제목이 축 표식을 가리지 않게 둔다.",
+      "landscape_adjustment": "내용 역할을 나눈 영역의 폭을 조절한다. 화면 전체를 꽉 채울 의무는 없다. 핵심·단위·출처가 읽히는 완성 상태를 확인한다.",
+      "portrait_adjustment": "수직 축 또는 구간 분절로 바꾸되 시간 증가 방향과 축 의미를 유지한다.",
+      "square_adjustment": "필수 내용·관계·비례를 잃는 중앙 크롭만으로 해결하지 않는다. 손실 없는 크롭·영역 재배치·구간 분절도 후보로 비교하고 실제 문구와 표시 조건을 확인한다.",
+      "temporal_conditions": "정보가 완성된 상태와 유지 시간을 별도로 확인한다. 읽기 가능한 대비·가림·배치가 유지되는 구간인지 보고 모션 자체의 길이로 대체하지 않는다.",
+      "abstain_when": "실제 시점·기간 또는 비례 여부가 없으면 시간 해석은 unknown으로 둔다.",
+      "minimum_inputs": [
+        "설명 목적·핵심 주장",
+        "정보 항목·대응 관계와 출처",
+        "대상 시청자·시청 환경",
+        "출력 화면비·해상도·배포 UI",
+        "실제 문구·숫자·단위·자산"
+      ],
+      "source_refs": [
+        "SRC-L2-CARBON-GRID",
+        "SRC-L2-NNG-VISUAL",
+        "SRC-L2-NNG-PROXIMITY",
+        "SRC-L2-CARBON-AXIS"
+      ],
+      "source_locator_refs": [
+        {
+          "source_id": "SRC-L2-CARBON-GRID",
+          "locator": "Contrast / Style models / Adaptive aspect ratios"
+        },
+        {
+          "source_id": "SRC-L2-NNG-VISUAL",
+          "locator": "2. Visual Hierarchy / 3. Balance"
+        },
+        {
+          "source_id": "SRC-L2-NNG-PROXIMITY",
+          "locator": "Place Related Elements near Each Other / Proximity May Shift in Responsive Designs"
+        },
+        {
+          "source_id": "SRC-L2-CARBON-AXIS",
+          "locator": "Starting at zero / Gaps in data / Time series: Consistent increments"
+        }
+      ],
+      "numeric_default": null,
+      "case_kind": "synthetic_not_company_video",
+      "auto_relation_assignment": false
+    },
+    {
+      "id": "KNOW-LAYOUT-HIERARCHY",
+      "term_id": "LAYOUT-HIERARCHY",
+      "name_ko": "계층 구성",
+      "status": "draft",
+      "company_approved": false,
+      "definition_origin": "SRC-PROJECT-TAXONOMY",
+      "definition": "상하·종속 관계를 배치로 표현",
+      "application_origin": "project_synthetic_transfer_not_source_example",
+      "fit_relation_ids": [
+        "REL-HIERARCHY"
+      ],
+      "relation_policy": "조건부 선택 후보. 모양만으로 정보 관계를 자동 부여하지 않음.",
+      "fit_when": "상하·종속·구성의 위계가 자료로 확인됐을 때",
+      "reading_order": "최상위 의미→부모/자식 연결→필요한 하위 항목",
+      "composition_decisions": "같은 수준과 상하 수준을 배치·선·명칭으로 구분한다. 단순 중요도 위계와 실제 조직 위계를 나눈다.",
+      "positive_example": "문서에 확인된 부서와 팀의 상하 관계를 연결한다.",
+      "counterexample": "8개 가족사를 이름 확인만으로 모회사·자회사 조직도에 배치한다.",
+      "acceptable_variation": "같은 크기의 카드로 하위 항목을 표현할 수 있으나 카드 모양이 종속 관계의 근거는 아니다.",
+      "alternative_when": "다중 관계·회귀가 있으면 연결 구성, 단순 동등 항목이면 카드·분할을 검토한다.",
+      "korean_text_adjustment": "긴 법인명은 공식명을 보존하고 약칭은 확인 후 사용한다.",
+      "landscape_adjustment": "내용 역할을 나눈 영역의 폭을 조절한다. 화면 전체를 꽉 채울 의무는 없다. 핵심·단위·출처가 읽히는 완성 상태를 확인한다.",
+      "portrait_adjustment": "하위 그룹을 나누고 상위 위치 표식을 반복하되 실제 부모를 바꾸지 않는다.",
+      "square_adjustment": "필수 내용·관계·비례를 잃는 중앙 크롭만으로 해결하지 않는다. 손실 없는 크롭·영역 재배치·구간 분절도 후보로 비교하고 실제 문구와 표시 조건을 확인한다.",
+      "temporal_conditions": "정보가 완성된 상태와 유지 시간을 별도로 확인한다. 읽기 가능한 대비·가림·배치가 유지되는 구간인지 보고 모션 자체의 길이로 대체하지 않는다.",
+      "abstain_when": "실제 종속·소유·조직 관계 출처가 없으면 계층 주장과 배치 후보를 분리한다.",
+      "minimum_inputs": [
+        "설명 목적·핵심 주장",
+        "정보 항목·대응 관계와 출처",
+        "대상 시청자·시청 환경",
+        "출력 화면비·해상도·배포 UI",
+        "실제 문구·숫자·단위·자산"
+      ],
+      "source_refs": [
+        "SRC-L2-CARBON-GRID",
+        "SRC-L2-NNG-VISUAL",
+        "SRC-L2-NNG-PROXIMITY"
+      ],
+      "source_locator_refs": [
+        {
+          "source_id": "SRC-L2-CARBON-GRID",
+          "locator": "Contrast / Style models / Adaptive aspect ratios"
+        },
+        {
+          "source_id": "SRC-L2-NNG-VISUAL",
+          "locator": "2. Visual Hierarchy / 3. Balance"
+        },
+        {
+          "source_id": "SRC-L2-NNG-PROXIMITY",
+          "locator": "Place Related Elements near Each Other / Proximity May Shift in Responsive Designs"
+        }
+      ],
+      "numeric_default": null,
+      "case_kind": "synthetic_not_company_video",
+      "auto_relation_assignment": false
+    },
+    {
+      "id": "KNOW-LAYOUT-NETWORK",
+      "term_id": "LAYOUT-NETWORK",
+      "name_ko": "연결 구성",
+      "status": "draft",
+      "company_approved": false,
+      "definition_origin": "SRC-PROJECT-TAXONOMY",
+      "definition": "연결·관계를 배치로 표현",
+      "application_origin": "project_synthetic_transfer_not_source_example",
+      "fit_relation_ids": [
+        "REL-CORRELATION",
+        "REL-CAUSE",
+        "REL-SPACE"
+      ],
+      "relation_policy": "조건부 선택 후보. 모양만으로 정보 관계를 자동 부여하지 않음.",
+      "fit_when": "여러 대상 사이의 관계·흐름·인과가 설명의 대상일 때",
+      "reading_order": "노드의 의미→선/방향 범례→핵심 연결→다른 관계",
+      "composition_decisions": "선 종류·방향·라벨로 관계를 표시한다. 겹침을 줄이되 위치가 실제 공간인지 개념 배치인지 나눈다.",
+      "positive_example": "시나리오가 설명하는 침투 경로와 압력 관계를 관계 라벨이 있는 연결도로 표현한다.",
+      "counterexample": "관련 선 하나를 그렸다는 이유로 과학적 인과가 증명됐다고 기록한다.",
+      "acceptable_variation": "관계를 강조한 개념 위치는 허용하지만 실제 시설 위치와 혼동되면 별도 공간도로 둔다.",
+      "alternative_when": "직선 순서가 중심이면 프로세스, 실제 위치가 중심이면 공간 표식을 검토한다.",
+      "korean_text_adjustment": "노드명·선의 관계명·단위를 분리하고 교차선의 설명이 어느 선에 붙는지 확인한다.",
+      "landscape_adjustment": "내용 역할을 나눈 영역의 폭을 조절한다. 화면 전체를 꽉 채울 의무는 없다. 핵심·단위·출처가 읽히는 완성 상태를 확인한다.",
+      "portrait_adjustment": "부분 연결을 나눌 때 전체 맥락·공유 노드 식별·돌아가는 연결을 유지한다.",
+      "square_adjustment": "필수 내용·관계·비례를 잃는 중앙 크롭만으로 해결하지 않는다. 손실 없는 크롭·영역 재배치·구간 분절도 후보로 비교하고 실제 문구와 표시 조건을 확인한다.",
+      "temporal_conditions": "정보가 완성된 상태와 유지 시간을 별도로 확인한다. 읽기 가능한 대비·가림·배치가 유지되는 구간인지 보고 모션 자체의 길이로 대체하지 않는다.",
+      "abstain_when": "관계 종류·방향·실제 인과 근거가 없으면 관련이라는 관측과 인과 주장을 구분한다.",
+      "minimum_inputs": [
+        "설명 목적·핵심 주장",
+        "정보 항목·대응 관계와 출처",
+        "대상 시청자·시청 환경",
+        "출력 화면비·해상도·배포 UI",
+        "실제 문구·숫자·단위·자산"
+      ],
+      "source_refs": [
+        "SRC-L2-CARBON-GRID",
+        "SRC-L2-NNG-VISUAL",
+        "SRC-L2-NNG-PROXIMITY"
+      ],
+      "source_locator_refs": [
+        {
+          "source_id": "SRC-L2-CARBON-GRID",
+          "locator": "Contrast / Style models / Adaptive aspect ratios"
+        },
+        {
+          "source_id": "SRC-L2-NNG-VISUAL",
+          "locator": "2. Visual Hierarchy / 3. Balance"
+        },
+        {
+          "source_id": "SRC-L2-NNG-PROXIMITY",
+          "locator": "Place Related Elements near Each Other / Proximity May Shift in Responsive Designs"
+        }
+      ],
+      "numeric_default": null,
+      "case_kind": "synthetic_not_company_video",
+      "auto_relation_assignment": false
+    },
+    {
+      "id": "KNOW-LAYOUT-OVERVIEW-DETAIL",
+      "term_id": "LAYOUT-OVERVIEW-DETAIL",
+      "name_ko": "전체와 상세",
+      "status": "draft",
+      "company_approved": false,
+      "definition_origin": "SRC-PROJECT-TAXONOMY",
+      "definition": "전체 맥락과 선택 부분 상세를 함께 표현",
+      "application_origin": "project_synthetic_transfer_not_source_example",
+      "fit_relation_ids": [
+        "REL-PART"
+      ],
+      "relation_policy": "조건부 선택 후보. 모양만으로 정보 관계를 자동 부여하지 않음.",
+      "fit_when": "전체와 선택 부분의 대응을 유지하며 상세를 설명할 때",
+      "reading_order": "전체 위치→선택 부위→상세→전체에 미치는 관계",
+      "composition_decisions": "선택 위치·연결선·배율 또는 개념 확대 여부로 전체/상세 대응을 드러낸다.",
+      "positive_example": "교량 전체도에서 특정 접합부를 표시하고 같은 접합부 상세를 옆에 둔다.",
+      "counterexample": "상세도와 다른 현장의 전체도를 가까이 두어 같은 부위처럼 보이게 한다.",
+      "acceptable_variation": "상세의 배율이 달라도 개념 확대 표시와 부위 대응이 있으면 후보가 된다.",
+      "alternative_when": "위치 라벨 중심이면 공간 표식, 두 대상의 독립 설명이면 일반 분할을 검토한다.",
+      "korean_text_adjustment": "상세명·전체 위치명·확대 설명을 구별하고 작은 전체도의 식별성을 확인한다.",
+      "landscape_adjustment": "내용 역할을 나눈 영역의 폭을 조절한다. 화면 전체를 꽉 채울 의무는 없다. 핵심·단위·출처가 읽히는 완성 상태를 확인한다.",
+      "portrait_adjustment": "전체 위치를 작은 앵커로 남기거나 전후 상태 사이 같은 부위의 식별 정보를 보존한다.",
+      "square_adjustment": "필수 내용·관계·비례를 잃는 중앙 크롭만으로 해결하지 않는다. 손실 없는 크롭·영역 재배치·구간 분절도 후보로 비교하고 실제 문구와 표시 조건을 확인한다.",
+      "temporal_conditions": "정보가 완성된 상태와 유지 시간을 별도로 확인한다. 읽기 가능한 대비·가림·배치가 유지되는 구간인지 보고 모션 자체의 길이로 대체하지 않는다.",
+      "abstain_when": "전체/부분 동일성·부위 근거가 없으면 대응의 적합성을 확정하지 않는다.",
+      "minimum_inputs": [
+        "설명 목적·핵심 주장",
+        "정보 항목·대응 관계와 출처",
+        "대상 시청자·시청 환경",
+        "출력 화면비·해상도·배포 UI",
+        "실제 문구·숫자·단위·자산"
+      ],
+      "source_refs": [
+        "SRC-L2-CARBON-GRID",
+        "SRC-L2-NNG-VISUAL",
+        "SRC-L2-NNG-PROXIMITY"
+      ],
+      "source_locator_refs": [
+        {
+          "source_id": "SRC-L2-CARBON-GRID",
+          "locator": "Contrast / Style models / Adaptive aspect ratios"
+        },
+        {
+          "source_id": "SRC-L2-NNG-VISUAL",
+          "locator": "2. Visual Hierarchy / 3. Balance"
+        },
+        {
+          "source_id": "SRC-L2-NNG-PROXIMITY",
+          "locator": "Place Related Elements near Each Other / Proximity May Shift in Responsive Designs"
+        }
+      ],
+      "numeric_default": null,
+      "case_kind": "synthetic_not_company_video",
+      "auto_relation_assignment": false
+    },
+    {
+      "id": "KNOW-LAYOUT-SPACE-CALLOUT",
+      "term_id": "LAYOUT-SPACE-CALLOUT",
+      "name_ko": "공간과 설명 표식",
+      "status": "draft",
+      "company_approved": false,
+      "definition_origin": "SRC-PROJECT-TAXONOMY",
+      "definition": "지도·구조·공간 대상에 명칭·주석을 연결",
+      "application_origin": "project_synthetic_transfer_not_source_example",
+      "fit_relation_ids": [
+        "REL-SPACE",
+        "REL-PART"
+      ],
+      "relation_policy": "조건부 선택 후보. 모양만으로 정보 관계를 자동 부여하지 않음.",
+      "fit_when": "위치·시설·부품과 명칭의 대응이 중요한 경우",
+      "reading_order": "기준 공간→대상 위치→라벨·주석→관계 설명",
+      "composition_decisions": "라벨을 대응 대상에 가깝게 두고 혼잡하면 리더라인을 사용한다. 실측 좌표·개념도·투영을 구분한다.",
+      "positive_example": "시설 도면의 대상에 번호와 명칭을 연결하고 중첩 라벨을 분산한다.",
+      "counterexample": "보기 좋게 하려고 실제 위치를 옮기거나 연결선이 다른 시설을 가리킨다.",
+      "acceptable_variation": "이소메트릭·정면·실사 위 주석은 표현 속성이며 그 자체로 새로운 레이아웃 이름은 아니다.",
+      "alternative_when": "세부 확대가 중심이면 전체/상세, 비공간 관계는 연결 구성을 검토한다.",
+      "korean_text_adjustment": "긴 기술명은 라벨 영역을 늘리거나 번호+범례로 분담하고 부위 이름을 임의 줄이지 않는다.",
+      "landscape_adjustment": "내용 역할을 나눈 영역의 폭을 조절한다. 화면 전체를 꽉 채울 의무는 없다. 핵심·단위·출처가 읽히는 완성 상태를 확인한다.",
+      "portrait_adjustment": "같은 공간을 유지할지 상세 뷰로 분절할지 선택하고 실제 위치 이동은 피한다.",
+      "square_adjustment": "필수 내용·관계·비례를 잃는 중앙 크롭만으로 해결하지 않는다. 손실 없는 크롭·영역 재배치·구간 분절도 후보로 비교하고 실제 문구와 표시 조건을 확인한다.",
+      "temporal_conditions": "정보가 완성된 상태와 유지 시간을 별도로 확인한다. 읽기 가능한 대비·가림·배치가 유지되는 구간인지 보고 모션 자체의 길이로 대체하지 않는다.",
+      "abstain_when": "위치·좌표·도면 버전·라벨 대응이 없으면 실측 공간 정확성을 주장하지 않는다.",
+      "minimum_inputs": [
+        "설명 목적·핵심 주장",
+        "정보 항목·대응 관계와 출처",
+        "대상 시청자·시청 환경",
+        "출력 화면비·해상도·배포 UI",
+        "실제 문구·숫자·단위·자산"
+      ],
+      "source_refs": [
+        "SRC-L2-CARBON-GRID",
+        "SRC-L2-NNG-VISUAL",
+        "SRC-L2-NNG-PROXIMITY"
+      ],
+      "source_locator_refs": [
+        {
+          "source_id": "SRC-L2-CARBON-GRID",
+          "locator": "Contrast / Style models / Adaptive aspect ratios"
+        },
+        {
+          "source_id": "SRC-L2-NNG-VISUAL",
+          "locator": "2. Visual Hierarchy / 3. Balance"
+        },
+        {
+          "source_id": "SRC-L2-NNG-PROXIMITY",
+          "locator": "Place Related Elements near Each Other / Proximity May Shift in Responsive Designs"
+        }
+      ],
+      "numeric_default": null,
+      "case_kind": "synthetic_not_company_video",
+      "auto_relation_assignment": false
+    },
+    {
+      "id": "KNOW-LAYOUT-DATA-CHART",
+      "term_id": "LAYOUT-DATA-CHART",
+      "name_ko": "데이터 시각화",
+      "status": "draft",
+      "company_approved": false,
+      "definition_origin": "SRC-PROJECT-TAXONOMY",
+      "definition": "데이터 관계를 차트로 구성",
+      "application_origin": "project_synthetic_transfer_not_source_example",
+      "fit_relation_ids": [
+        "REL-PARALLEL",
+        "REL-TIME",
+        "REL-PART",
+        "REL-CORRELATION"
+      ],
+      "relation_policy": "조건부 선택 후보. 모양만으로 정보 관계를 자동 부여하지 않음.",
+      "fit_when": "수치의 비교·변화·분포·부분전체를 읽어야 할 때",
+      "reading_order": "질문·수량 의미→축·단위·범위→데이터→핵심 해석",
+      "composition_decisions": "질문에 맞는 차트 후보를 선택한다. 막대 비교의 기준축, 추세선의 범위, 결측·출처를 구분한다.",
+      "positive_example": "가상의 공법 비용을 같은 단위·0 기준 막대로 비교하고 값과 조건을 표시한다.",
+      "counterexample": "막대 길이의 비율 비교에서0기준을 잘라 작은 차이를 과장하거나, 다른 단위·기간을 같은 막대로 비교하거나, 자료 없는 중간값을 실측처럼 연결한다.",
+      "acceptable_variation": "추세선의 잘린 범위는 명시하고 검토할 수 있다. 모든 차트에 0 시작을 강제하지 않는다.",
+      "alternative_when": "정확한 여러 값 조회는 표 후보, 하나의 값만 강조하면 단일 초점을 검토한다.",
+      "korean_text_adjustment": "수치·단위·축 라벨을 서로 대응하고 긴 범주명은 방향·차트 종류 변경을 고려한다.",
+      "landscape_adjustment": "내용 역할을 나눈 영역의 폭을 조절한다. 화면 전체를 꽉 채울 의무는 없다. 핵심·단위·출처가 읽히는 완성 상태를 확인한다.",
+      "portrait_adjustment": "범주/축을 재배치할 때 값·단위·범위·비율을 보존한다. 글자만 줄여 해결하지 않는다.",
+      "square_adjustment": "필수 내용·관계·비례를 잃는 중앙 크롭만으로 해결하지 않는다. 손실 없는 크롭·영역 재배치·구간 분절도 후보로 비교하고 실제 문구와 표시 조건을 확인한다.",
+      "temporal_conditions": "정보가 완성된 상태와 유지 시간을 별도로 확인한다. 읽기 가능한 대비·가림·배치가 유지되는 구간인지 보고 모션 자체의 길이로 대체하지 않는다.",
+      "abstain_when": "데이터·단위·기간·척도·보간 구분이 없으면 차트의 사실성 통과를 보류한다.",
+      "minimum_inputs": [
+        "설명 목적·핵심 주장",
+        "정보 항목·대응 관계와 출처",
+        "대상 시청자·시청 환경",
+        "출력 화면비·해상도·배포 UI",
+        "실제 문구·숫자·단위·자산"
+      ],
+      "source_refs": [
+        "SRC-L2-CARBON-GRID",
+        "SRC-L2-NNG-VISUAL",
+        "SRC-L2-NNG-PROXIMITY",
+        "SRC-L2-CARBON-CHART",
+        "SRC-L2-CARBON-AXIS",
+        "SRC-L2-BIPM-SI",
+        "SRC-L2-W3C-COLOR"
+      ],
+      "source_locator_refs": [
+        {
+          "source_id": "SRC-L2-CARBON-GRID",
+          "locator": "Contrast / Style models / Adaptive aspect ratios"
+        },
+        {
+          "source_id": "SRC-L2-NNG-VISUAL",
+          "locator": "2. Visual Hierarchy / 3. Balance"
+        },
+        {
+          "source_id": "SRC-L2-NNG-PROXIMITY",
+          "locator": "Place Related Elements near Each Other / Proximity May Shift in Responsive Designs"
+        },
+        {
+          "source_id": "SRC-L2-CARBON-CHART",
+          "locator": "Purpose introduction / relevant chart families"
+        },
+        {
+          "source_id": "SRC-L2-CARBON-AXIS",
+          "locator": "Starting at zero / Gaps in data / Time series: Consistent increments"
+        },
+        {
+          "source_id": "SRC-L2-BIPM-SI",
+          "locator": "5.4.3 Formatting the value of a quantity"
+        },
+        {
+          "source_id": "SRC-L2-W3C-COLOR",
+          "locator": "SC 1.4.1 / Intent"
+        }
+      ],
+      "numeric_default": null,
+      "case_kind": "synthetic_not_company_video",
+      "auto_relation_assignment": false
+    },
+    {
+      "id": "KNOW-LAYOUT-UI-ANNOTATION",
+      "term_id": "LAYOUT-UI-ANNOTATION",
+      "name_ko": "실제 UI와 설명",
+      "status": "draft",
+      "company_approved": false,
+      "definition_origin": "SRC-PROJECT-TAXONOMY",
+      "definition": "제품 화면과 설명·초점·표식을 결합",
+      "application_origin": "project_synthetic_transfer_not_source_example",
+      "fit_relation_ids": [],
+      "relation_policy": "조건부 선택 후보. 모양만으로 정보 관계를 자동 부여하지 않음.",
+      "fit_when": "실제 제품 화면 출처가 확인되고 특정 조작·기능 설명이 필요할 때",
+      "reading_order": "작업 목적→실제 UI 기준 화면→대상 조작→결과",
+      "composition_decisions": "제품 화면의 버전·기능·선택 영역을 유지하고 실제 UI와 외부 주석을 구별한다.",
+      "positive_example": "제공된 실제 프로그램 화면에서 저장 버튼과 결과 영역을 표식으로 설명한다.",
+      "counterexample": "새로 그린 가상 버튼을 실제 제품 기능으로 보여 주거나 클릭 후 결과를 임의 합성한다.",
+      "acceptable_variation": "실제 UI 주위에 외부 설명판을 추가할 수 있으나 제품 안의 문구로 오인되지 않게 구분한다.",
+      "alternative_when": "단순 화면/본문 역할 분리는 분할, 영상 안 작은 실제 화면은 PIP와 복합 가능하다.",
+      "korean_text_adjustment": "작은 UI 전체를 읽히려 하지 말고 작업에 필요한 명칭과 영역을 확대·설명한다.",
+      "landscape_adjustment": "내용 역할을 나눈 영역의 폭을 조절한다. 화면 전체를 꽉 채울 의무는 없다. 핵심·단위·출처가 읽히는 완성 상태를 확인한다.",
+      "portrait_adjustment": "전체 메뉴를 유지할 필요와 대상 확대 필요를 비교한다. 버튼 위치·기능을 재디자인하지 않는다.",
+      "square_adjustment": "필수 내용·관계·비례를 잃는 중앙 크롭만으로 해결하지 않는다. 손실 없는 크롭·영역 재배치·구간 분절도 후보로 비교하고 실제 문구와 표시 조건을 확인한다.",
+      "temporal_conditions": "정보가 완성된 상태와 유지 시간을 별도로 확인한다. 읽기 가능한 대비·가림·배치가 유지되는 구간인지 보고 모션 자체의 길이로 대체하지 않는다.",
+      "abstain_when": "제품 버전·화면 출처·실제 기능 근거가 없으면 실제 UI 태그·기능 주장을 보류한다.",
+      "minimum_inputs": [
+        "설명 목적·핵심 주장",
+        "정보 항목·대응 관계와 출처",
+        "대상 시청자·시청 환경",
+        "출력 화면비·해상도·배포 UI",
+        "실제 문구·숫자·단위·자산"
+      ],
+      "source_refs": [
+        "SRC-L2-CARBON-GRID",
+        "SRC-L2-NNG-VISUAL",
+        "SRC-L2-NNG-PROXIMITY",
+        "SRC-L2-ADOBE-SAFE"
+      ],
+      "source_locator_refs": [
+        {
+          "source_id": "SRC-L2-CARBON-GRID",
+          "locator": "Contrast / Style models / Adaptive aspect ratios"
+        },
+        {
+          "source_id": "SRC-L2-NNG-VISUAL",
+          "locator": "2. Visual Hierarchy / 3. Balance"
+        },
+        {
+          "source_id": "SRC-L2-NNG-PROXIMITY",
+          "locator": "Place Related Elements near Each Other / Proximity May Shift in Responsive Designs"
+        },
+        {
+          "source_id": "SRC-L2-ADOBE-SAFE",
+          "locator": "View safe zones / Note / Tip"
+        }
+      ],
+      "numeric_default": null,
+      "case_kind": "synthetic_not_company_video",
+      "auto_relation_assignment": false
+    },
+    {
+      "id": "KNOW-LAYOUT-CARD-GROUP",
+      "term_id": "LAYOUT-CARD-GROUP",
+      "name_ko": "카드 그룹",
+      "status": "draft",
+      "company_approved": false,
+      "definition_origin": "SRC-PROJECT-TAXONOMY",
+      "definition": "독립 항목들을 카드 형상으로 묶음",
+      "application_origin": "project_synthetic_transfer_not_source_example",
+      "fit_relation_ids": [
+        "REL-PARALLEL",
+        "REL-ORDER"
+      ],
+      "relation_policy": "조건부 선택 후보. 모양만으로 정보 관계를 자동 부여하지 않음.",
+      "fit_when": "같은 역할의 독립 항목을 반복 구조로 묶으면 읽기에 도움이 될 때",
+      "reading_order": "그룹 제목→항목 명칭→공통 역할 정보→차이",
+      "composition_decisions": "카드의 경계가 그룹을 돕는지 확인한다. 같은 역할은 같은 정보 순서, 서로 다른 관계는 연결·배치로 표현한다.",
+      "positive_example": "동등한 사업 분야를 명칭·대표 이미지·짧은 설명이 같은 순서인 카드로 정리한다.",
+      "counterexample": "한 과정의 원인·결과를 독립 카드로 떼어 놓아 관계를 숨기거나 카드 자체를 항상 금지한다.",
+      "acceptable_variation": "카드 안에 차트·단계·비교가 있을 수 있다. 카드라는 모양과 관계를 분리한다.",
+      "alternative_when": "관계선이 핵심이면 연결 구성, 긴 정밀 비교는 표 후보, 핵심 하나면 단일 초점을 검토한다.",
+      "korean_text_adjustment": "긴 카드 제목은 영역·줄바꿈을 조절하고 한 카드만 작은 글자를 쓰지 않는다.",
+      "landscape_adjustment": "내용 역할을 나눈 영역의 폭을 조절한다. 화면 전체를 꽉 채울 의무는 없다. 핵심·단위·출처가 읽히는 완성 상태를 확인한다.",
+      "portrait_adjustment": "개수를 줄여 구간을 나눌 수 있으나 항목이 동등하다는 역할과 전체 개수를 잃지 않는다.",
+      "square_adjustment": "필수 내용·관계·비례를 잃는 중앙 크롭만으로 해결하지 않는다. 손실 없는 크롭·영역 재배치·구간 분절도 후보로 비교하고 실제 문구와 표시 조건을 확인한다.",
+      "temporal_conditions": "정보가 완성된 상태와 유지 시간을 별도로 확인한다. 읽기 가능한 대비·가림·배치가 유지되는 구간인지 보고 모션 자체의 길이로 대체하지 않는다.",
+      "abstain_when": "독립·동등한 항목인지 불분명하면 반복 모양만 관측하고 정보 관계는 보류한다.",
+      "minimum_inputs": [
+        "설명 목적·핵심 주장",
+        "정보 항목·대응 관계와 출처",
+        "대상 시청자·시청 환경",
+        "출력 화면비·해상도·배포 UI",
+        "실제 문구·숫자·단위·자산"
+      ],
+      "source_refs": [
+        "SRC-L2-CARBON-GRID",
+        "SRC-L2-NNG-VISUAL",
+        "SRC-L2-NNG-PROXIMITY",
+        "SRC-L2-NNG-REGION"
+      ],
+      "source_locator_refs": [
+        {
+          "source_id": "SRC-L2-CARBON-GRID",
+          "locator": "Contrast / Style models / Adaptive aspect ratios"
+        },
+        {
+          "source_id": "SRC-L2-NNG-VISUAL",
+          "locator": "2. Visual Hierarchy / 3. Balance"
+        },
+        {
+          "source_id": "SRC-L2-NNG-PROXIMITY",
+          "locator": "Place Related Elements near Each Other / Proximity May Shift in Responsive Designs"
+        },
+        {
+          "source_id": "SRC-L2-NNG-REGION",
+          "locator": "Definition / grouping by boundaries"
+        }
+      ],
+      "numeric_default": null,
+      "case_kind": "synthetic_not_company_video",
+      "auto_relation_assignment": false
+    },
+    {
+      "id": "KNOW-LAYOUT-SPLIT",
+      "term_id": "LAYOUT-SPLIT",
+      "name_ko": "분할 구성",
+      "status": "draft",
+      "company_approved": false,
+      "definition_origin": "SRC-PROJECT-TAXONOMY",
+      "definition": "서로 다른 역할의 화면 영역을 나눈 구성",
+      "application_origin": "project_synthetic_transfer_not_source_example",
+      "fit_relation_ids": [],
+      "relation_policy": "조건부 선택 후보. 모양만으로 정보 관계를 자동 부여하지 않음.",
+      "fit_when": "화면과 설명 등 서로 다른 역할을 나눠 동시에 참조할 필요가 있을 때",
+      "reading_order": "주 대상→연결된 설명→필요한 추가 맥락",
+      "composition_decisions": "영역의 읽는 역할과 대응을 명확히 한다. 같은 폭·다른 폭을 역할에 따라 후보로 둔다.",
+      "positive_example": "공법 단면도 옆에 해당 부위의 설명을 두고 색·번호로 대응한다.",
+      "counterexample": "왼쪽은 A 공법 사진, 오른쪽은 회사 소개문인데 비교 화면이라고 한다.",
+      "acceptable_variation": "반반 배치 자체가 비교는 아니다. 동등 비교 항목이 확인되면 비교 태그를 추가한다.",
+      "alternative_when": "전체/부분 동일성이 있으면 전체/상세, 작은 중첩이면 PIP를 검토한다.",
+      "korean_text_adjustment": "긴 본문은 요점·지원 정보를 나누되 사실과 필수 정보는 임의 삭제하지 않는다.",
+      "landscape_adjustment": "내용 역할을 나눈 영역의 폭을 조절한다. 화면 전체를 꽉 채울 의무는 없다. 핵심·단위·출처가 읽히는 완성 상태를 확인한다.",
+      "portrait_adjustment": "상하 재배열에서 그림과 설명의 대응을 유지하고 본문이 자막과 충돌하지 않게 둔다.",
+      "square_adjustment": "필수 내용·관계·비례를 잃는 중앙 크롭만으로 해결하지 않는다. 손실 없는 크롭·영역 재배치·구간 분절도 후보로 비교하고 실제 문구와 표시 조건을 확인한다.",
+      "temporal_conditions": "정보가 완성된 상태와 유지 시간을 별도로 확인한다. 읽기 가능한 대비·가림·배치가 유지되는 구간인지 보고 모션 자체의 길이로 대체하지 않는다.",
+      "abstain_when": "영역 역할과 대응 대상이 없으면 적합한 읽는 순서를 확정하지 않는다.",
+      "minimum_inputs": [
+        "설명 목적·핵심 주장",
+        "정보 항목·대응 관계와 출처",
+        "대상 시청자·시청 환경",
+        "출력 화면비·해상도·배포 UI",
+        "실제 문구·숫자·단위·자산"
+      ],
+      "source_refs": [
+        "SRC-L2-CARBON-GRID",
+        "SRC-L2-NNG-VISUAL",
+        "SRC-L2-NNG-PROXIMITY"
+      ],
+      "source_locator_refs": [
+        {
+          "source_id": "SRC-L2-CARBON-GRID",
+          "locator": "Contrast / Style models / Adaptive aspect ratios"
+        },
+        {
+          "source_id": "SRC-L2-NNG-VISUAL",
+          "locator": "2. Visual Hierarchy / 3. Balance"
+        },
+        {
+          "source_id": "SRC-L2-NNG-PROXIMITY",
+          "locator": "Place Related Elements near Each Other / Proximity May Shift in Responsive Designs"
+        }
+      ],
+      "numeric_default": null,
+      "case_kind": "synthetic_not_company_video",
+      "auto_relation_assignment": false
+    },
+    {
+      "id": "KNOW-LAYOUT-PIP",
+      "term_id": "LAYOUT-PIP",
+      "name_ko": "화면 속 화면",
+      "status": "draft",
+      "company_approved": false,
+      "definition_origin": "SRC-PROJECT-TAXONOMY",
+      "definition": "주 화면 안에 별도 화면을 중첩",
+      "application_origin": "project_synthetic_transfer_not_source_example",
+      "fit_relation_ids": [],
+      "relation_policy": "조건부 선택 후보. 모양만으로 정보 관계를 자동 부여하지 않음.",
+      "fit_when": "주 화면을 유지하며 보조 화면·발표자·다른 관점을 함께 보여 줄 때",
+      "reading_order": "주 화면의 과제→보조 화면의 역할→둘의 대응",
+      "composition_decisions": "삽입 위치·크기가 주 화면의 필수 정보·자막·조작을 가리지 않게 하고 보조 화면을 읽어야 하는지 확인한다.",
+      "positive_example": "실제 제품 시연의 주화면 안에 작은 발표자 창을 삽입하고 중요한 버튼·자막이 없는 위치에 둔다.",
+      "counterexample": "작은 발표자 창이 제품의 저장 버튼이나 핵심 수치를 가린다.",
+      "acceptable_variation": "작게 중첩했다고 보조 역할인 것은 아니다. 어느 정보가 핵심인지 입력으로 확인한다.",
+      "alternative_when": "두 화면을 모두 상세하게 읽어야 하면 일반 분할이나 구간 분절을 고려한다.",
+      "korean_text_adjustment": "삽입 화면 속 긴 텍스트는 확대·별도 장면 후보로 검토하고 무조건 작게 유지하지 않는다.",
+      "landscape_adjustment": "내용 역할을 나눈 영역의 폭을 조절한다. 화면 전체를 꽉 채울 의무는 없다. 핵심·단위·출처가 읽히는 완성 상태를 확인한다.",
+      "portrait_adjustment": "주/보조 역할을 유지하되 삽입 위치를 옮기거나 별도 장면으로 전환해 가림을 피한다.",
+      "square_adjustment": "필수 내용·관계·비례를 잃는 중앙 크롭만으로 해결하지 않는다. 손실 없는 크롭·영역 재배치·구간 분절도 후보로 비교하고 실제 문구와 표시 조건을 확인한다.",
+      "temporal_conditions": "정보가 완성된 상태와 유지 시간을 별도로 확인한다. 읽기 가능한 대비·가림·배치가 유지되는 구간인지 보고 모션 자체의 길이로 대체하지 않는다.",
+      "abstain_when": "자막·플레이어 UI·중요 버튼의 위치를 모르면 최종 가림 검수를 보류한다.",
+      "minimum_inputs": [
+        "설명 목적·핵심 주장",
+        "정보 항목·대응 관계와 출처",
+        "대상 시청자·시청 환경",
+        "출력 화면비·해상도·배포 UI",
+        "실제 문구·숫자·단위·자산"
+      ],
+      "source_refs": [
+        "SRC-L2-CARBON-GRID",
+        "SRC-L2-NNG-VISUAL",
+        "SRC-L2-NNG-PROXIMITY",
+        "SRC-L2-ADOBE-SAFE"
+      ],
+      "source_locator_refs": [
+        {
+          "source_id": "SRC-L2-CARBON-GRID",
+          "locator": "Contrast / Style models / Adaptive aspect ratios"
+        },
+        {
+          "source_id": "SRC-L2-NNG-VISUAL",
+          "locator": "2. Visual Hierarchy / 3. Balance"
+        },
+        {
+          "source_id": "SRC-L2-NNG-PROXIMITY",
+          "locator": "Place Related Elements near Each Other / Proximity May Shift in Responsive Designs"
+        },
+        {
+          "source_id": "SRC-L2-ADOBE-SAFE",
+          "locator": "View safe zones / Note / Tip"
+        }
+      ],
+      "numeric_default": null,
+      "case_kind": "synthetic_not_company_video",
+      "auto_relation_assignment": false
+    }
+  ],
+  "screen_cards": [
+    {
+      "id": "SCREEN-HIERARCHY",
+      "name_ko": "정보 위계",
+      "status": "draft",
+      "company_approved": false,
+      "project_interpretation": "관련 정보의 크기·대비·위치를 종합해 역할을 구분한다.",
+      "positive_example": "비교의 공통 항목 제목은 통일하고 차이 설명을 별도로 강조한다.",
+      "counterexample": "모든 화면에 거대 제목과 단일 초점만 강제한다.",
+      "source_refs": [
+        "SRC-L2-NNG-VISUAL",
+        "SRC-L2-CARBON-TYPE"
+      ],
+      "numeric_default": null,
+      "case_kind": "synthetic_not_company_video",
+      "abstain_when": "입력·실제 표시·시간·해상도·출처 중 해당 판단에 필요한 근거가 없으면 그 판단만 보류한다. 배치 관측이 충분하면 관측은 남긴다."
+    },
+    {
+      "id": "SCREEN-GROUP",
+      "name_ko": "근접·정렬",
+      "status": "draft",
+      "company_approved": false,
+      "project_interpretation": "근접·정렬·영역의 신호가 의미상 그룹과 맞는지 본다.",
+      "positive_example": "같은 부품의 명칭·주석을 묶고 다른 부품 정보와 간격을 구분한다.",
+      "counterexample": "영역을 좁히며 제목이 이전 그룹 본문과 더 가까워져 대응이 바뀐다.",
+      "source_refs": [
+        "SRC-L2-NNG-PROXIMITY",
+        "SRC-L2-NNG-REGION"
+      ],
+      "numeric_default": null,
+      "case_kind": "synthetic_not_company_video",
+      "abstain_when": "입력·실제 표시·시간·해상도·출처 중 해당 판단에 필요한 근거가 없으면 그 판단만 보류한다. 배치 관측이 충분하면 관측은 남긴다."
+    },
+    {
+      "id": "SCREEN-DENSITY",
+      "name_ko": "밀도·여백",
+      "status": "draft",
+      "company_approved": false,
+      "project_interpretation": "정보량·시청 거리·읽기 시간·움직일 영역을 같이 고려한다.",
+      "positive_example": "상세 도면은 필요한 부위만 설명하고 전체 위치를 남긴다.",
+      "counterexample": "여백이 많으면 고급이라는 이유로 필요한 단위를 작은 구석으로 밀어낸다.",
+      "source_refs": [
+        "SRC-L2-CARBON-GRID",
+        "SRC-L2-IMPECCABLE-LAYOUT"
+      ],
+      "numeric_default": null,
+      "case_kind": "synthetic_not_company_video",
+      "abstain_when": "입력·실제 표시·시간·해상도·출처 중 해당 판단에 필요한 근거가 없으면 그 판단만 보류한다. 배치 관측이 충분하면 관측은 남긴다."
+    },
+    {
+      "id": "SCREEN-TYPE-KO",
+      "name_ko": "한국어 타이포",
+      "status": "draft",
+      "company_approved": false,
+      "project_interpretation": "실제 한글·영문·숫자·단위·부호·대체 글꼴로 줄바꿈을 확인한다.",
+      "positive_example": "긴 기술명은 의미 단위로 나누고 숫자와 단위를 같은 덩어리로 읽게 하며 SI 표기의 공백도 유지한다.",
+      "counterexample": "무조건32자·2줄·16px로 맞추거나 단위와 지수를 다른 줄에 떼어 놓는다.",
+      "source_refs": [
+        "SRC-L2-KLREQ",
+        "SRC-L2-BIPM-SI",
+        "SRC-L2-IMPECCABLE-TYPE"
+      ],
+      "numeric_default": null,
+      "case_kind": "synthetic_not_company_video",
+      "abstain_when": "입력·실제 표시·시간·해상도·출처 중 해당 판단에 필요한 근거가 없으면 그 판단만 보류한다. 배치 관측이 충분하면 관측은 남긴다."
+    },
+    {
+      "id": "SCREEN-COLOR",
+      "name_ko": "색의 역할",
+      "status": "draft",
+      "company_approved": false,
+      "project_interpretation": "브랜드·구분·강조 역할과 실제 배경 대비를 따로 본다.",
+      "positive_example": "계열을 색·라벨·선 형태로 같이 표시하고 자막 배경이 움직일 때도 확인한다.",
+      "counterexample": "CI색으로 그린 글자는 대비 검수 없이 통과시키거나 로고 예외를 본문에 적용한다.",
+      "source_refs": [
+        "SRC-L2-W3C-COLOR",
+        "SRC-L2-W3C-CONTRAST"
+      ],
+      "numeric_default": null,
+      "case_kind": "synthetic_not_company_video",
+      "abstain_when": "입력·실제 표시·시간·해상도·출처 중 해당 판단에 필요한 근거가 없으면 그 판단만 보류한다. 배치 관측이 충분하면 관측은 남긴다."
+    },
+    {
+      "id": "SCREEN-TIME-READ",
+      "name_ko": "시간적 가독성",
+      "status": "draft",
+      "company_approved": false,
+      "project_interpretation": "읽을 대상이 완성돼 가림 없이 유지되는 구간을 평가한다.",
+      "positive_example": "비교 수치가 모두 공개된 뒤 같은 화면에서 읽을 상태를 유지한다.",
+      "counterexample": "등장 모션이300ms라서 긴 설명을 읽을 시간이 확보됐다고 한다.",
+      "source_refs": [
+        "SRC-CAM-TRANSIENT",
+        "SRC-CAM-EXTRANEOUS"
+      ],
+      "numeric_default": null,
+      "case_kind": "synthetic_not_company_video",
+      "abstain_when": "입력·실제 표시·시간·해상도·출처 중 해당 판단에 필요한 근거가 없으면 그 판단만 보류한다. 배치 관측이 충분하면 관측은 남긴다."
+    },
+    {
+      "id": "SCREEN-DATA",
+      "name_ko": "데이터 사실성",
+      "status": "draft",
+      "company_approved": false,
+      "project_interpretation": "표현의 단위·축·기간·출처·보간과 실제 데이터 관계를 확인한다.",
+      "positive_example": "같은 단위의 값은 공통 기준으로 그리며 결측은 결측이라고 표시한다.",
+      "counterexample": "막대의0축을 잘라 성과를 부풀리거나 모든 선형 추세에도0축을 강제한다.",
+      "source_refs": [
+        "SRC-L2-CARBON-AXIS",
+        "SRC-L2-CARBON-CHART",
+        "SRC-L2-BIPM-SI"
+      ],
+      "numeric_default": null,
+      "case_kind": "synthetic_not_company_video",
+      "abstain_when": "입력·실제 표시·시간·해상도·출처 중 해당 판단에 필요한 근거가 없으면 그 판단만 보류한다. 배치 관측이 충분하면 관측은 남긴다."
+    },
+    {
+      "id": "SCREEN-CHOICE",
+      "name_ko": "내용 기반 구도",
+      "status": "draft",
+      "company_approved": false,
+      "project_interpretation": "내용 관계에서 후보와 대안을 비교하고 선택 이유를 남긴다.",
+      "positive_example": "두 값의 비교는 비교형, 위치 찾기는 공간 표식형으로 목적에 맞춰 대조한다.",
+      "counterexample": "AI답지 않게 만들려고 모든 카드를 금지하거나 무작위 비대칭을 강제한다.",
+      "source_refs": [
+        "SRC-L2-CARBON-CHART",
+        "SRC-L2-IMPECCABLE-LAYOUT",
+        "SRC-L2-NNG-VISUAL"
+      ],
+      "numeric_default": null,
+      "case_kind": "synthetic_not_company_video",
+      "abstain_when": "입력·실제 표시·시간·해상도·출처 중 해당 판단에 필요한 근거가 없으면 그 판단만 보류한다. 배치 관측이 충분하면 관측은 남긴다."
+    }
+  ],
+  "universal_numeric_defaults": null,
+  "automatic_selection": false,
+  "text_edit_policy": "영상 관측 기록에서는 원문 문자열·숫자·단위·오류도 보존한다. 새 디자인의 표기 정리는 별도 제안과 변경 이유로 남긴다. 값·단위·정밀도·의미 변경은 자동 수행하지 않는다."
+}

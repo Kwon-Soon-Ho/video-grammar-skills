@@ -1,0 +1,114 @@
+{
+  "company_id": "hanmac",
+  "status": "observed_not_official",
+  "canonical_sha256": "c95a79a81a422fc23f4275a8dd878016f209fdaff171d73f44d3cff7387b7097",
+  "palette": {
+    "company_id": "hanmac",
+    "colors": [
+      {
+        "company_id": "hanmac",
+        "color_id": "ci.observed.raster.1",
+        "record_version": "0.1.0",
+        "revision_state": "current",
+        "ci_asset_ref": {
+          "asset_id": "CI-SOURCE-013",
+          "record_version": "0.1.0",
+          "sha256": "8bf20af63dbec973ee5da65fb4da5c6fdd818c63d3a45611665c077ac44f2585"
+        },
+        "evidence_asset_ref": {
+          "asset_id": "CI-SOURCE-013",
+          "record_version": "0.1.0",
+          "sha256": "8bf20af63dbec973ee5da65fb4da5c6fdd818c63d3a45611665c077ac44f2585"
+        },
+        "source_level": "raster_sample",
+        "label_in_source": "공식 색 이름 없음: 불투명 픽셀 대표색 1",
+        "raw_value": {
+          "notation": "RGB",
+          "value": [
+            219,
+            49,
+            54
+          ],
+          "declared_color_space": null
+        },
+        "screen_value": {
+          "color_space": "srgb",
+          "hex": "#DB3136",
+          "alpha": 1
+        },
+        "normalization": {
+          "method": "raster_sample",
+          "source_profile": null,
+          "notes": "원본 PNG에 ICC 없음. 채널값을 보존하고 화면 표시만 sRGB 가정. 빈도·색간거리로 대표 관측색 선정; 그라디언트 전체 의미나 브랜드 색 이름 아님."
+        },
+        "observation": {
+          "region": "파일 전체에서 alpha=255 픽셀 집계; 좌상단 기준 대표 좌표 x=75, y=3; 동일 RGB 픽셀 3429개",
+          "alpha_handling": "alpha=255인 픽셀만 사용; 반투명·안티앨리어싱 경계 제외",
+          "background_handling": "투명배경을 흰색/검정과 합성하지 않음",
+          "profile_assumption": "ICC/sRGB 청크 없음 여부는 ICC 확인 기준. ICC 프로필 없음, sRGB 표시 가정; 공식 디지털 색 인증 아님"
+        },
+        "evidence_locator": "PNG 원본 픽셀 (75, 3) RGBA=[219, 49, 54, 255]",
+        "verification": {
+          "state": "source_checked",
+          "checked_by": "Codex 원본 픽셀 대조",
+          "checked_at": "2026-10-14T04:38:22.419544+00:00",
+          "notes": "RGBA 채널·좌표·빈도 재현 확인. 담당자 승인/공식 지정색 확인 아님."
+        },
+        "notes": "페이지 디자인의 강조/배경 역할은 후속 제안. 현재 색을 회사 필수값으로 정하지 않음."
+      },
+      {
+        "company_id": "hanmac",
+        "color_id": "ci.observed.raster.2",
+        "record_version": "0.1.0",
+        "revision_state": "current",
+        "ci_asset_ref": {
+          "asset_id": "CI-SOURCE-013",
+          "record_version": "0.1.0",
+          "sha256": "8bf20af63dbec973ee5da65fb4da5c6fdd818c63d3a45611665c077ac44f2585"
+        },
+        "evidence_asset_ref": {
+          "asset_id": "CI-SOURCE-013",
+          "record_version": "0.1.0",
+          "sha256": "8bf20af63dbec973ee5da65fb4da5c6fdd818c63d3a45611665c077ac44f2585"
+        },
+        "source_level": "raster_sample",
+        "label_in_source": "공식 색 이름 없음: 불투명 픽셀 대표색 2",
+        "raw_value": {
+          "notation": "RGB",
+          "value": [
+            55,
+            73,
+            140
+          ],
+          "declared_color_space": null
+        },
+        "screen_value": {
+          "color_space": "srgb",
+          "hex": "#37498C",
+          "alpha": 1
+        },
+        "normalization": {
+          "method": "raster_sample",
+          "source_profile": null,
+          "notes": "원본 PNG에 ICC 없음. 채널값을 보존하고 화면 표시만 sRGB 가정. 빈도·색간거리로 대표 관측색 선정; 그라디언트 전체 의미나 브랜드 색 이름 아님."
+        },
+        "observation": {
+          "region": "파일 전체에서 alpha=255 픽셀 집계; 좌상단 기준 대표 좌표 x=149, y=3; 동일 RGB 픽셀 3423개",
+          "alpha_handling": "alpha=255인 픽셀만 사용; 반투명·안티앨리어싱 경계 제외",
+          "background_handling": "투명배경을 흰색/검정과 합성하지 않음",
+          "profile_assumption": "ICC/sRGB 청크 없음 여부는 ICC 확인 기준. ICC 프로필 없음, sRGB 표시 가정; 공식 디지털 색 인증 아님"
+        },
+        "evidence_locator": "PNG 원본 픽셀 (149, 3) RGBA=[55, 73, 140, 255]",
+        "verification": {
+          "state": "source_checked",
+          "checked_by": "Codex 원본 픽셀 대조",
+          "checked_at": "2026-10-14T04:38:22.419544+00:00",
+          "notes": "RGBA 채널·좌표·빈도 재현 확인. 담당자 승인/공식 지정색 확인 아님."
+        },
+        "notes": "페이지 디자인의 강조/배경 역할은 후속 제안. 현재 색을 회사 필수값으로 정하지 않음."
+      }
+    ],
+    "reason": null,
+    "authority": "원문대조/관측/제안의 기록. 회사 필수화·페이지 품질 승인 아님."
+  }
+}

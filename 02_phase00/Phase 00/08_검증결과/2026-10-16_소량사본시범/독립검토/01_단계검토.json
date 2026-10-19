@@ -1,0 +1,754 @@
+{
+  "id": "phase00-small-pilot-stage01-independent-review",
+  "version": "0.1.0",
+  "date": "2026-10-16",
+  "stage": "01",
+  "reviewer_role": "independent_redteam_subagent",
+  "ready_for_next_stage": true,
+  "next_stage": "02_record_steward_link_update_only",
+  "unresolved_blocking_findings": [],
+  "findings": [
+    {
+      "id": "S01-I01",
+      "severity": "information",
+      "blocking": false,
+      "scope": "시범카드001/002/003@0.1.1",
+      "finding": "직접 원문 대조에서 의미 왜곡·축 혼합·근거 없는 효과/원인 확정은 발견하지 않았다. 15 설명 필드의 분량은 각 1~2문장이며 가상 예와 조건/반례/주의를 유지한다.",
+      "minimal_change_required": null
+    },
+    {
+      "id": "S01-I02",
+      "severity": "expected_handoff",
+      "blocking": false,
+      "scope": "작업초안/연결목록.json#/items/*/draft_ref",
+      "finding": "연결목록은 0.1.0과 이전 카드 SHA를 가리킨다. stage01 task가 수정을 금지했으므로 정상적인 순차 인계 상태다.",
+      "next_action": "stage02에서 실제 전달된 카드 v0.1.1/각 record v0.1.1/실제 파일 SHA를 조회해 연결목록의 허용 참조와 자체 version만 갱신한다.",
+      "minimal_change_required": "stage01 수정 없음"
+    },
+    {
+      "id": "S01-I03",
+      "severity": "scope_limit",
+      "blocking": false,
+      "scope": "human_review 및 회사/실영상 주장",
+      "finding": "human_review=pending과 company_approved=false는 유지한다. 이는 사람 내용 승인 전 상태이며 메타데이터 연결 작업의 차단 사유는 아니다.",
+      "next_action": "사람 확인이 필요한 사실/운영 판단이 생기면 정확한 대상·판본·근거로 국소 질문을 남긴다. 기존 출력의 A~D는 미발송 제안이며 새 승인으로 취급하지 않는다.",
+      "minimal_change_required": null
+    }
+  ],
+  "criteria_source": {
+    "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase00-build/시범운영_20261016/검수기준_고정.json",
+    "stage": "01",
+    "sha256": "9d253bd87538326f24d703c7c6f2d6efc55be6d50ea842cd13ab3af28a5fc787",
+    "changed": false,
+    "expectations": [
+      {
+        "text": "최신curator3와현재자료를실제조회",
+        "passed": true,
+        "evidence": "outputs/01_자료확인.py는 지정 inputs/Phase00의 curator SKILL.md·작업기준·출력지침과 현재 안내/정정표를 실제 read_bytes한다. 01 stdout에 세 스킬·안내·정정표의 원문 전체가 포함되는 것을 현재 파일과 대조했다. 시작 SHA 23개와 정정 원문/근거 13참조, 01 실행.json exit0가 있다. 선택된 curator는 0.2.0-draft.3이며 운영 D live/full 현재성 확인으로 확대하지 않는다."
+      },
+      {
+        "text": "3카드모두짧고충실한설명저장",
+        "passed": true,
+        "evidence": "실제 작업초안과 저장후보의 bytes가 같고 6388 bytes/SHA 254bd6423812859452c60b7247bc0cdcfe7e626ff6a62b698a8218957655645f다. 세 카드의 다섯 설명 필드 15개를 직접 읽었다. 각 1~2문장, 가상 예 표시, 사용 조건·반례·주의가 있고 원문/관련 기준을 충실히 요약했다. 사실검사 pass만으로 내용 판정을 대신하지 않았다."
+      },
+      {
+        "text": "가로/세로·기능/속성·관측/원인구분유지",
+        "passed": true,
+        "evidence": "시범카드001 caution은 가로/세로를 별도 방향 속성으로 두고 선 길이≠소요시간·선후/분기 근거 조건을 유지한다. 시범카드002는 움직임의 역할로 설명하고 모든 이동과 구별하며 실제 시선 효과를 별도 검토한다. 시범카드003은 보이는 범위/정도의 변화와 불투명도·마스크·합성·배경 원인을 분리하고 관측이 충분하면 태그는 유지한다. 사전 3항목·용어판정기준 guides 3항목·선형 프로세스 관련 지식과 직접 대조했다."
+      },
+      {
+        "text": "원문/ID/상태/승인/미검수및다른입력보존",
+        "passed": true,
+        "evidence": "독립 재계산에서 원입력 29파일 중 작업초안/쉬운말_지식카드.json만 변경됐다. backup→실제 JSON diff는 설명15필드+문서/카드 판본4필드만이다. source_snapshot/term_ref/source_file/ID/state/example_kind와 human_review=pending, company_approved=false가 보존됐다. 연결목록 SHA 2a2471e8e26c1e85953ede0bd6c514912dfc3e0e81b7996624b0118b81681147의 옛 참조는 task의 정상 후속 인계이며 이번 위반이 아니다."
+      },
+      {
+        "text": "쓰기전bytebackup/전후SHA/허용diff",
+        "passed": true,
+        "evidence": "4262 bytes backup의 SHA 9aaaa77ee0ab7f64db58db3276cdc8f0056f8169471ef05711c36679557963a2가 원래 입력고정값과 일치한다. 03 코드는 backup xb 생성→byte/SHA 동일성 확인→직전 target/ID/판본·읽은 source 재대조→target 저장→실제 bytes/허용diff 순서다. 실제 backup·작업전_snapshot·쓰기직전 재대조·감사로그·03 stdout/exit0·실제 저장후 bytes가 대응한다. 독립 JSON 경로 비교도 정확히 허용19경로이며 전체 원자성/동시성 보장은 주장하지 않는다."
+      },
+      {
+        "text": "실행과미실시범위정직보고",
+        "passed": true,
+        "evidence": "01~04 실행 코드/runner/실행.json/stdout/stderr/transcript가 있고 네 Python 종료는0, stderr는 빈 파일이다. 바깥 PowerShell InitializeDefaultDrives 메시지는 transcript에 구분 보존했다. 결과.md/json은 실제 카드 저장과 미실시 R4/full R6R7/영상/API/회사 승인/성능·효과 측정, 사본의 생략 경로를 구분한다. 사람 선택지는 제안만 있고 회신/승인을 만들지 않았다. 로그의 선언과 실제 bytes 확인 범위도 구분했다."
+      }
+    ]
+  },
+  "semantic_review": [
+    {
+      "card": "시범카드001",
+      "source": "LAYOUT-PROCESS-LINE@0.1.0; 용어판정기준 v0.1.2 guides 해당 항목; KNOW-LAYOUT-PROCESS-LINE; 심화지식/선택조건의 해당 절",
+      "judgment": "다음 연결 검토 가능",
+      "reason": "순서 있는 단계의 화면 배치라는 정의와 분기가 주요하지 않을 때의 사용 조건을 보존했다. 가로/세로·기간·분기/회귀·근거 부족을 주의와 반례로 구별한다."
+    },
+    {
+      "card": "시범카드002",
+      "source": "FUNCTION-FOCUS@0.1.0; 용어판정기준 v0.1.2 guides 해당 항목",
+      "judgment": "다음 연결 검토 가능",
+      "reason": "눈길을 안내하는 역할은 기능 설명이다. 모든 이동을 기능으로 판정하지 않고 시간 변화+설명 맥락과 대상 근거를 요구한다. 실제 시청자 시선 효과는 별도라는 caution이 있어 효과 측정 주장으로 읽지 않는다."
+    },
+    {
+      "card": "시범카드003",
+      "source": "PROPERTY-VISIBILITY@0.1.0; 용어판정기준 v0.1.2 guides 해당 항목/claim_scope_note",
+      "judgment": "다음 연결 검토 가능",
+      "reason": "보이는 범위/강도의 시간 변화를 쉬운말로 설명했다. 같은 대상/시간 범위가 필요하고 opacity 등 원인은 미확정 가능하되 관측이 충분하면 가시성 변화 기록은 유지한다."
+    }
+  ],
+  "independent_file_checks": {
+    "input_original_count": 29,
+    "changed_originals": [
+      {
+        "path": "작업초안/쉬운말_지식카드.json",
+        "before_sha256": "9aaaa77ee0ab7f64db58db3276cdc8f0056f8169471ef05711c36679557963a2",
+        "after_sha256": "254bd6423812859452c60b7247bc0cdcfe7e626ff6a62b698a8218957655645f"
+      }
+    ],
+    "independent_json_diff_paths": [
+      "/document_version",
+      "/records/0/caution",
+      "/records/0/counterexample",
+      "/records/0/example",
+      "/records/0/plain_explanation",
+      "/records/0/use_when",
+      "/records/0/version",
+      "/records/1/caution",
+      "/records/1/counterexample",
+      "/records/1/example",
+      "/records/1/plain_explanation",
+      "/records/1/use_when",
+      "/records/1/version",
+      "/records/2/caution",
+      "/records/2/counterexample",
+      "/records/2/example",
+      "/records/2/plain_explanation",
+      "/records/2/use_when",
+      "/records/2/version"
+    ],
+    "exact_allowed_path_set": true,
+    "backup_bytes": 4262,
+    "backup_sha256": "9aaaa77ee0ab7f64db58db3276cdc8f0056f8169471ef05711c36679557963a2",
+    "target_bytes": 6388,
+    "target_sha256": "254bd6423812859452c60b7247bc0cdcfe7e626ff6a62b698a8218957655645f",
+    "candidate_equals_actual": true,
+    "artifact_manifest_checks": [
+      {
+        "path": "01_자료확인.py",
+        "sha_matches": true,
+        "bytes_match": true
+      },
+      {
+        "path": "01_자료확인.stderr.txt",
+        "sha_matches": true,
+        "bytes_match": true
+      },
+      {
+        "path": "01_자료확인.stdout.txt",
+        "sha_matches": true,
+        "bytes_match": true
+      },
+      {
+        "path": "01_자료확인.실행.json",
+        "sha_matches": true,
+        "bytes_match": true
+      },
+      {
+        "path": "02_근거발췌.py",
+        "sha_matches": true,
+        "bytes_match": true
+      },
+      {
+        "path": "02_근거발췌.stderr.txt",
+        "sha_matches": true,
+        "bytes_match": true
+      },
+      {
+        "path": "02_근거발췌.stdout.txt",
+        "sha_matches": true,
+        "bytes_match": true
+      },
+      {
+        "path": "02_근거발췌.실행.json",
+        "sha_matches": true,
+        "bytes_match": true
+      },
+      {
+        "path": "03_카드작성과검사.py",
+        "sha_matches": true,
+        "bytes_match": true
+      },
+      {
+        "path": "03_카드작성과검사.stderr.txt",
+        "sha_matches": true,
+        "bytes_match": true
+      },
+      {
+        "path": "03_카드작성과검사.stdout.txt",
+        "sha_matches": true,
+        "bytes_match": true
+      },
+      {
+        "path": "03_카드작성과검사.실행.json",
+        "sha_matches": true,
+        "bytes_match": true
+      },
+      {
+        "path": "04_로그정리.py",
+        "sha_matches": true,
+        "bytes_match": true
+      },
+      {
+        "path": "transcript.md",
+        "sha_matches": true,
+        "bytes_match": true
+      },
+      {
+        "path": "결과.json",
+        "sha_matches": true,
+        "bytes_match": true
+      },
+      {
+        "path": "결과.md",
+        "sha_matches": true,
+        "bytes_match": true
+      },
+      {
+        "path": "내용근거_확인절과판본.json",
+        "sha_matches": true,
+        "bytes_match": true
+      },
+      {
+        "path": "변경diff.json",
+        "sha_matches": true,
+        "bytes_match": true
+      },
+      {
+        "path": "변경diff.patch",
+        "sha_matches": true,
+        "bytes_match": true
+      },
+      {
+        "path": "쉬운말_지식카드_저장후보_v0.1.1.json",
+        "sha_matches": true,
+        "bytes_match": true
+      },
+      {
+        "path": "실행.ps1",
+        "sha_matches": true,
+        "bytes_match": true
+      },
+      {
+        "path": "실행로그_보존확인.json",
+        "sha_matches": true,
+        "bytes_match": true
+      },
+      {
+        "path": "쓰기와검사_감사로그.json",
+        "sha_matches": true,
+        "bytes_match": true
+      },
+      {
+        "path": "쓰기직전_재대조.json",
+        "sha_matches": true,
+        "bytes_match": true
+      },
+      {
+        "path": "연결목록_후속관리_차이.json",
+        "sha_matches": true,
+        "bytes_match": true
+      },
+      {
+        "path": "읽은입력_저장후_SHA보존검사.json",
+        "sha_matches": true,
+        "bytes_match": true
+      },
+      {
+        "path": "입력_SHA_작업시작.json",
+        "sha_matches": true,
+        "bytes_match": true
+      },
+      {
+        "path": "작업전_snapshot.json",
+        "sha_matches": true,
+        "bytes_match": true
+      },
+      {
+        "path": "정정별_원문과근거_SHA검사.json",
+        "sha_matches": true,
+        "bytes_match": true
+      },
+      {
+        "path": "참조범위_존재확인.json",
+        "sha_matches": true,
+        "bytes_match": true
+      }
+    ],
+    "execution_records": [
+      {
+        "executable": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+        "arguments": [
+          "-B",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\01_자료확인.py"
+        ],
+        "cwd": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기",
+        "environment": {
+          "PYTHONUTF8": "1",
+          "PYTHONDONTWRITEBYTECODE": "1",
+          "PYTHONIOENCODING": "utf-8"
+        },
+        "stdout": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\01_자료확인.stdout.txt",
+        "stderr": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\01_자료확인.stderr.txt",
+        "exit_code": 0
+      },
+      {
+        "executable": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+        "arguments": [
+          "-B",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\02_근거발췌.py"
+        ],
+        "cwd": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기",
+        "environment": {
+          "PYTHONIOENCODING": "utf-8",
+          "PYTHONDONTWRITEBYTECODE": "1",
+          "PYTHONUTF8": "1"
+        },
+        "stdout": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\02_근거발췌.stdout.txt",
+        "stderr": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\02_근거발췌.stderr.txt",
+        "exit_code": 0
+      },
+      {
+        "executable": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+        "arguments": [
+          "-B",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\03_카드작성과검사.py"
+        ],
+        "cwd": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기",
+        "environment": {
+          "PYTHONIOENCODING": "utf-8",
+          "PYTHONUTF8": "1",
+          "PYTHONDONTWRITEBYTECODE": "1"
+        },
+        "stdout": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\03_카드작성과검사.stdout.txt",
+        "stderr": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\03_카드작성과검사.stderr.txt",
+        "exit_code": 0
+      },
+      {
+        "executable": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+        "arguments": [
+          "-B",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\04_로그정리.py"
+        ],
+        "cwd": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기",
+        "environment": {
+          "PYTHONDONTWRITEBYTECODE": "1",
+          "PYTHONUTF8": "1",
+          "PYTHONIOENCODING": "utf-8"
+        },
+        "stdout": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\04_로그정리.stdout.txt",
+        "stderr": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\04_로그정리.stderr.txt",
+        "exit_code": 0
+      }
+    ],
+    "prewrite": {
+      "target_sha256": "9aaaa77ee0ab7f64db58db3276cdc8f0056f8169471ef05711c36679557963a2",
+      "signature_unchanged": true,
+      "sources_count": 22,
+      "sources_unchanged": true
+    },
+    "postwrite": {
+      "sources_count": 22,
+      "sources_unchanged": true
+    },
+    "read_log_checks": [
+      {
+        "path": "실행스킬/video-knowledge-curator/SKILL.md",
+        "actual_file_sha_in_read_log": true,
+        "named_in_read_log": true
+      },
+      {
+        "path": "실행스킬/video-knowledge-curator/references/작업기준.md",
+        "actual_file_sha_in_read_log": true,
+        "named_in_read_log": true
+      },
+      {
+        "path": "실행스킬/video-knowledge-curator/references/출력지침.md",
+        "actual_file_sha_in_read_log": true,
+        "named_in_read_log": true
+      },
+      {
+        "path": "00_운영계약/01_보존과버전_계약.md",
+        "actual_file_sha_in_read_log": true,
+        "named_in_read_log": true
+      },
+      {
+        "path": "00_운영계약/정본과표시_연결목록.json",
+        "actual_file_sha_in_read_log": true,
+        "named_in_read_log": true
+      },
+      {
+        "path": "14_스킬재구성/R8_현재사용안내.md",
+        "actual_file_sha_in_read_log": true,
+        "named_in_read_log": true
+      },
+      {
+        "path": "14_스킬재구성/현재상태_정정표.json",
+        "actual_file_sha_in_read_log": true,
+        "named_in_read_log": true
+      },
+      {
+        "path": "01_공통용어/공통용어사전.json",
+        "actual_file_sha_in_read_log": true,
+        "named_in_read_log": true
+      },
+      {
+        "path": "01_공통용어/분류운영규칙.json",
+        "actual_file_sha_in_read_log": true,
+        "named_in_read_log": true
+      },
+      {
+        "path": "01_공통용어/용어판정기준.json",
+        "actual_file_sha_in_read_log": true,
+        "named_in_read_log": true
+      },
+      {
+        "path": "02_원칙과레이아웃/레이아웃지식.json",
+        "actual_file_sha_in_read_log": true,
+        "named_in_read_log": true
+      },
+      {
+        "path": "02_원칙과레이아웃/레이아웃_심화지식.json",
+        "actual_file_sha_in_read_log": true,
+        "named_in_read_log": true
+      },
+      {
+        "path": "02_원칙과레이아웃/07_레이아웃별_선택조건과반례.md",
+        "actual_file_sha_in_read_log": true,
+        "named_in_read_log": true
+      },
+      {
+        "path": "작업초안/쉬운말_지식카드.json",
+        "actual_file_sha_in_read_log": true,
+        "named_in_read_log": true
+      },
+      {
+        "path": "작업초안/연결목록.json",
+        "actual_file_sha_in_read_log": true,
+        "named_in_read_log": true
+      },
+      {
+        "path": "04_기록규격/06_통합최소기록_규격_v0.2.md",
+        "actual_file_sha_in_read_log": true,
+        "named_in_read_log": true
+      },
+      {
+        "path": "08_검증결과/R4_04_보완결과와레드팀.md",
+        "actual_file_sha_in_read_log": true,
+        "named_in_read_log": true
+      },
+      {
+        "path": "07_실행도구/자료검증.py",
+        "actual_file_sha_in_read_log": true,
+        "named_in_read_log": true
+      },
+      {
+        "path": "01_공통용어/02_기록단위와분류축.md",
+        "actual_file_sha_in_read_log": true,
+        "named_in_read_log": true
+      },
+      {
+        "path": "04_기록규격/통합최소기록_설명용_v0.2.json",
+        "actual_file_sha_in_read_log": true,
+        "named_in_read_log": true
+      },
+      {
+        "path": "09_다음단계인계/R7_01-A_구현전_인계.md",
+        "actual_file_sha_in_read_log": true,
+        "named_in_read_log": true
+      },
+      {
+        "path": "09_다음단계인계/R7_R8_스킬재구성_인계.md",
+        "actual_file_sha_in_read_log": true,
+        "named_in_read_log": true
+      },
+      {
+        "path": "14_스킬재구성/사람피드백/R8-3_적용성검토자_검토답변.json",
+        "actual_file_sha_in_read_log": true,
+        "named_in_read_log": true
+      }
+    ],
+    "selected_evidence_in_stdout02": true,
+    "source_section_headers": [
+      "FILE 실행스킬/video-knowledge-curator/SKILL.md\r",
+      "FILE 실행스킬/video-knowledge-curator/references/작업기준.md\r",
+      "FILE 실행스킬/video-knowledge-curator/references/출력지침.md\r",
+      "FILE 00_운영계약/01_보존과버전_계약.md\r",
+      "FILE 00_운영계약/정본과표시_연결목록.json\r",
+      "FILE 14_스킬재구성/R8_현재사용안내.md\r",
+      "FILE 14_스킬재구성/현재상태_정정표.json\r",
+      "FILE 01_공통용어/공통용어사전.json\r",
+      "FILE 01_공통용어/분류운영규칙.json\r",
+      "FILE 01_공통용어/용어판정기준.json\r",
+      "FILE 02_원칙과레이아웃/레이아웃지식.json\r",
+      "FILE 02_원칙과레이아웃/레이아웃_심화지식.json\r",
+      "FILE 02_원칙과레이아웃/07_레이아웃별_선택조건과반례.md\r",
+      "FILE 작업초안/쉬운말_지식카드.json\r",
+      "FILE 작업초안/연결목록.json\r",
+      "CORRECTION SOURCE/BASIS CONTENT 04_기록규격/06_통합최소기록_규격_v0.2.md\r",
+      "CORRECTION SOURCE/BASIS CONTENT 08_검증결과/R4_04_보완결과와레드팀.md\r",
+      "CORRECTION SOURCE/BASIS CONTENT 07_실행도구/자료검증.py\r",
+      "CORRECTION SOURCE/BASIS CONTENT 01_공통용어/02_기록단위와분류축.md\r",
+      "CORRECTION SOURCE/BASIS CONTENT 04_기록규격/통합최소기록_설명용_v0.2.json\r",
+      "CORRECTION SOURCE/BASIS CONTENT 01_공통용어/분류운영규칙.json\r",
+      "CORRECTION SOURCE/BASIS CONTENT 09_다음단계인계/R7_01-A_구현전_인계.md\r",
+      "CORRECTION SOURCE/BASIS CONTENT 09_다음단계인계/R7_R8_스킬재구성_인계.md\r",
+      "CORRECTION SOURCE/BASIS CONTENT 14_스킬재구성/사람피드백/R8-3_적용성검토자_검토답변.json\r"
+    ],
+    "human_review": "pending",
+    "company_approved": false,
+    "all_example_kind_preserved": true
+  },
+  "actual_read_scope": {
+    "task_and_criteria": "원래 task.txt 및 검수기준_고정.json stage01의 여섯 문장 직접 읽기. 입력고정은 전 항목 파싱/실제 파일 SHA 대조.",
+    "prior_outputs_inventory": [
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\01_자료확인.실행.json",
+        "bytes": 990,
+        "sha256": "6d90c66e8ef1058e5646d6b400280542275d0119791a8e9a8d17405e94377c4b"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\01_자료확인.py",
+        "bytes": 6912,
+        "sha256": "838305ec6bc1f2e8e3cb0a072d99ab96df0ba0493fb3ba0db98f7a6e95fcc1df"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\01_자료확인.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\01_자료확인.stdout.txt",
+        "bytes": 194682,
+        "sha256": "020d0fd2da03273487395b4493dc53e9f4094f9d23c52c37fe8c15a7ae9f51b4"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\02_근거발췌.실행.json",
+        "bytes": 990,
+        "sha256": "e4a720fdb2e801cfd702e617b4e7f18e561e7c8d440fd76d5f7716a5bf716dca"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\02_근거발췌.py",
+        "bytes": 3102,
+        "sha256": "a4795983f569dd2e83d0407eede208ee3be94fbc6e31a875185aab381a9c07f7"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\02_근거발췌.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\02_근거발췌.stdout.txt",
+        "bytes": 32202,
+        "sha256": "5a52db42cc9c06c85facd622575bc29306ebd6330ec129dcae634f4e8c3f56db"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\03_카드작성과검사.실행.json",
+        "bytes": 1017,
+        "sha256": "9355d00980e2096835562ff140624a9134c8bf634967528c622de98f251e2268"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\03_카드작성과검사.py",
+        "bytes": 25004,
+        "sha256": "85ec3dd251b48d3d2d2cb5884f4bc19a4f97093c64024e9bd3f8c9175850a113"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\03_카드작성과검사.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\03_카드작성과검사.stdout.txt",
+        "bytes": 2495,
+        "sha256": "e0a2dc4ec43887395c1d870b2366911c0aec7a998e69d8d07db0d980fcaf5c46"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\04_로그정리.실행.json",
+        "bytes": 990,
+        "sha256": "36ce1ffa1d5436856d4acda4ad91d1c9938152e361fcb202de089ace05ebe444"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\04_로그정리.py",
+        "bytes": 9260,
+        "sha256": "88120fad4666e35bbd72cce8840824ce6e9fb61091991eed82ec19b0074699ca"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\04_로그정리.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\04_로그정리.stdout.txt",
+        "bytes": 1058,
+        "sha256": "14e92c97e524dbe98df500865f2d5e5e2f18c88b84e8e531b4ec40d1e7ac46c5"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\결과.json",
+        "bytes": 6003,
+        "sha256": "dfa84ae11bb6c2f35555a6a18bef7fc767c7c629d1e258add6f5c0c400ec8922"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\결과.md",
+        "bytes": 5508,
+        "sha256": "92632fb0549d0c23f1a015fcec0398ab5396046b6e8cfa44e0e9b7e475e2c612"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\내용근거_확인절과판본.json",
+        "bytes": 10469,
+        "sha256": "482e4d1b174ade349487d567beba12fd63cc5e9bde73f7d170bcf2938cd91aac"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\변경diff.json",
+        "bytes": 3782,
+        "sha256": "eeac6a1a717403815eb54be32241f12af5ad175043a72f01237da486cbde151f"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\변경diff.patch",
+        "bytes": 4634,
+        "sha256": "e8d892f6df58d30dee7bb2ef1647a42d4a7b36c6a77ed694bfc99462392ca725"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\산출물목록_SHA.json",
+        "bytes": 5146,
+        "sha256": "3de24d9f1804b2317ef8703e408e9c22f0ac052591e626487f6a9347d5c60a55"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\쉬운말_지식카드_저장후보_v0.1.1.json",
+        "bytes": 6388,
+        "sha256": "254bd6423812859452c60b7247bc0cdcfe7e626ff6a62b698a8218957655645f"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\실행.ps1",
+        "bytes": 1597,
+        "sha256": "61735e6fbe4fd42eecd5223abcee126d8a38daf99e73309992276053bd68c390"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\실행로그_보존확인.json",
+        "bytes": 2950,
+        "sha256": "6caaabc47e25bd6c01e2aff88ce48846da7b82e709d17ccfc69cba793d805b69"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\쓰기와검사_감사로그.json",
+        "bytes": 1854,
+        "sha256": "38db033ebefc70d184003f609e93c7c0e721161e76aac519d08d0e511880afb5"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\쓰기직전_재대조.json",
+        "bytes": 6624,
+        "sha256": "8c3d2329256041f61886b8b3fbf800d0e816f466fbb7d3b7a71111a80441a20f"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\연결목록_후속관리_차이.json",
+        "bytes": 1653,
+        "sha256": "02cc40b6274eaede0d59ddea1108555fbf759408676bacb075304ec46011e586"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\읽은입력_저장후_SHA보존검사.json",
+        "bytes": 6146,
+        "sha256": "699dc0f5c5b38fec50dab7bcbb0df1ea5a35bb65e6879289f6be3622eee09da1"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\입력_SHA_작업시작.json",
+        "bytes": 3824,
+        "sha256": "2871e162cb5a9e2acb4eb28bc34158cfa726b9e9485a585c866c8a0f4fc112b4"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\작업전_snapshot.json",
+        "bytes": 1436,
+        "sha256": "197f19d05d5f19ef09632b2cf036a845ee2a60129315f75058750421655129ac"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\정정별_원문과근거_SHA검사.json",
+        "bytes": 5710,
+        "sha256": "e1384e321ca7e8e63d8a16138760f1945240e000547abd770177c0d050711782"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\참조범위_존재확인.json",
+        "bytes": 460,
+        "sha256": "a0fb869e160ffaa79ff2fc83cff58e69a424896d5d016c8afa753b23bb1c86e2"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\transcript.md",
+        "bytes": 6376,
+        "sha256": "a951c2133d8c9e499a53a69da57c1af15bb89b88cacccb37e43cc9166766439c"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\transcript.txt",
+        "bytes": 2695,
+        "sha256": "fb5168400f1de77547d2a6f86672c25e42af51ab21be75e42a1d8822490d1354"
+      }
+    ],
+    "full_text_read": [
+      "결과.md",
+      "결과.json",
+      "transcript.md",
+      "transcript.txt",
+      "실행.ps1",
+      "01_자료확인.py",
+      "02_근거발췌.py",
+      "03_카드작성과검사.py",
+      "04_로그정리.py",
+      "쉬운말_지식카드_저장후보_v0.1.1.json",
+      "내용근거_확인절과판본.json",
+      "변경diff.json",
+      "변경diff.patch",
+      "쓰기와검사_감사로그.json",
+      "작업전_snapshot.json",
+      "연결목록_후속관리_차이.json",
+      "실행로그_보존확인.json",
+      "산출물목록_SHA.json",
+      "03_카드작성과검사.stdout.txt",
+      "04_로그정리.stdout.txt"
+    ],
+    "full_json_machine_parse": [
+      "01~04 *.실행.json",
+      "입력_SHA_작업시작.json",
+      "쓰기직전_재대조.json",
+      "읽은입력_저장후_SHA보존검사.json",
+      "정정별_원문과근거_SHA검사.json",
+      "참조범위_존재확인.json",
+      "입력고정.json",
+      "검증/01_파일사실검사.json"
+    ],
+    "large_stdout_scope": "01 stdout(194682 bytes)·02 stdout(32202 bytes)의 전체 bytes/hash와 구성 절을 확인했다. 01의 실행스킬3·현재 안내/정정표 원문 포함 여부, 23 읽은 경로/SHA와 02의 세 용어/선형 프로세스 근거 JSON 포함을 실제 자료와 기계 대조했다. 내용 판정은 해당 세 항목/관련 절만 읽었으며 다른 모든 용어/역사 원문 전수 의미 검수로 주장하지 않는다.",
+    "source_scope": "동일 대화의 착수검토에서 직접 읽은 사전3/용어판정기준3/선형 프로세스 지식·심화·선택조건 절과 이번 actual target/candidate를 대조했다. 해당 source 입력은 초기 freeze SHA 그대로임을 재확인했다.",
+    "backup_and_target": "actual target/candidate byte 동일성, 실제 backup의 원고정 SHA 및 원문/허용필드 독립 JSON diff 확인.",
+    "facts_file_use": "검증/01_파일사실검사.json은 구조 사실의 보조 근거로 읽고 독립 diff/해시를 재계산했다. 의미와 실무 표현은 직접 따로 검토했다.",
+    "not_read_or_executed": [
+      "운영 D 데이터",
+      "외부 원문/네트워크/API/CU/AE",
+      "full R4/R6/R7 실행",
+      "role behavior 재실행",
+      "Creator grader.md: 이번에는 미사용"
+    ]
+  },
+  "prior_outputs_unchanged": true,
+  "preservation_check": {
+    "existing_files_checked": 72,
+    "existing_outputs_checked": 35,
+    "changed_during_review": [],
+    "scope": "검토 시작/종료 SHA와 byte 크기 대조. 원래 35 output, stage inputs+backup, task/입력고정/metadata/timing, criteria/권한/facts 파일 포함."
+  },
+  "human_approval": false,
+  "company_approved": false,
+  "quality_total": null,
+  "comparative_superiority_claim": false,
+  "actual_video_performance_verified": false,
+  "limits": [
+    "후보 단독의 이 소량 지식 정리/인계 준비 판단이다. 사람 승인·채택/기본 전환·실영상 정확도·성능 우위로 일반화하지 않는다.",
+    "실행 기록과 현재 bytes가 대응함을 검토했으며 발생하지 않은 쓰기 실패/복구/경쟁을 새로 시험하지 않았다.",
+    "provided transcript의 최초 대화 도구 호출은 재현된 서술이며 해당 원시 도구 출력 전체가 파일 보존됐다고 보지 않는다. 파일로 남은 후속 stdout/command/exit와 현재 디스크 증거를 사용했다."
+  ],
+  "files_written_by_this_review": [
+    "독립검토/01_단계검토.md",
+    "독립검토/01_단계검토.json",
+    "실행/eval-01-큐레이터/candidate/run/grading.json"
+  ]
+}
+

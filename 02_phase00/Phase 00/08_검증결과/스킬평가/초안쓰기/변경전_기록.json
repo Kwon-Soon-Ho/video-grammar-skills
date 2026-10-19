@@ -1,0 +1,129 @@
+{
+  "schema_version": "0.1.0",
+  "record_id": "EXAMPLE-PROCESS-001",
+  "version": "0.1.0",
+  "asset": {
+    "id": "EXAMPLE-ASSET-001",
+    "path": null,
+    "sha256": null,
+    "duration_s": null,
+    "source_type": "synthetic_example",
+    "metadata": null
+  },
+  "taxonomy_ref": "company-video-taxonomy@0.1.1",
+  "run": null,
+  "scenario_segments": [
+    {
+      "id": "EXAMPLE-SCRIPT-001",
+      "kind": "example_request",
+      "text": "6단계 업무의 전체 흐름과 현재 단계를 설명한다.",
+      "period": {
+        "start_s": null,
+        "end_s": null,
+        "time_basis": "unknown",
+        "uncertainty_s": null
+      },
+      "source_ref": "SRC-PROJECT-GUIDANCE"
+    }
+  ],
+  "segments": [
+    {
+      "id": "EXAMPLE-SEGMENT-001",
+      "kind": "example_scene",
+      "period": {
+        "start_s": null,
+        "end_s": null,
+        "time_basis": "unknown",
+        "uncertainty_s": null
+      },
+      "scenario_refs": [
+        "EXAMPLE-SCRIPT-001"
+      ],
+      "classification": {
+        "layout": []
+      },
+      "unclassified_reason": null,
+      "frames": [],
+      "beats": [
+        {
+          "id": "EXAMPLE-BEAT-001",
+          "target": "설명 중인 단계",
+          "property_ids": [
+            "PROPERTY-SIZE"
+          ],
+          "function_ids": [
+            "FUNCTION-FOCUS",
+            "FUNCTION-CONTEXT"
+          ],
+          "timing_ids": [
+            "TIME-SEQUENCE",
+            "TIME-HOLD"
+          ],
+          "direction": "increase",
+          "period": {
+            "start_s": null,
+            "end_s": null,
+            "time_basis": "unknown",
+            "uncertainty_s": null
+          },
+          "support_mode": "not_observed_example",
+          "evidence_refs": [],
+          "measurement": null,
+          "limitations": "구조 설명용 계획 예. 실제 화면·시간·키프레임을 관측하지 않았다."
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "EXAMPLE-EVIDENCE-001",
+      "kind": "example_description",
+      "locator": "이 파일의 설명용 요청",
+      "source_ref": "SRC-PROJECT-GUIDANCE",
+      "sha256": null,
+      "version": "0.1.0",
+      "target_id": null,
+      "period": {
+        "start_s": null,
+        "end_s": null,
+        "time_basis": "unknown",
+        "uncertainty_s": null
+      }
+    }
+  ],
+  "claims": [
+    {
+      "id": "EXAMPLE-CLAIM-001",
+      "version": "0.1.0",
+      "statement": "전체 맥락을 유지하면서 현재 단계로 주목을 이동하는 표현을 검토한다.",
+      "support_mode": "numerical_estimate",
+      "evidence_refs": [
+        "EXAMPLE-EVIDENCE-001"
+      ],
+      "confidence_basis": "설계 연결을 설명하는 예시이며 실제 검증 결과가 아니다.",
+      "limitations": "회사 문법 승인·실영상 사례로 사용하지 않는다.",
+      "measurement": null
+    }
+  ],
+  "design": {
+    "profile_ref": "hanmac-video@0.1.0",
+    "palette_role_bindings": {
+      "background": "HM-COLOR-NOT-EXIST",
+      "main_text": "HM-COLOR-NEUTRAL-GREEN-100",
+      "emphasis": "HM-COLOR-YELLOW"
+    },
+    "optional_style_refs": [],
+    "project_overrides": []
+  },
+  "review": {
+    "state": "approved",
+    "reviewer": "AI",
+    "reviewed_at": null,
+    "object_version": "0.1.0",
+    "approved_scope": "회사 영상 문법",
+    "evidence_versions": {},
+    "approval_kind": "company_rule",
+    "decision_ref": null
+  },
+  "notes": "source_type=synthetic_example. 회사 승인 검색에서 제외. 원본 영상은 제공되지 않았다."
+}

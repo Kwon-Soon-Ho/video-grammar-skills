@@ -1,0 +1,75 @@
+{
+  "run_id": "2026-10-14_표본검토",
+  "reviewed_at": "2026-10-14T02:54:56.735816+00:00",
+  "decision_ref": "DECISION-SKILL-PILOT",
+  "mode": "sample_review_no_canonical_change",
+  "requested_scope": "기존 용어·지식·설명용 기록의 소량 정합성 검토",
+  "reviews": [
+    {
+      "skill": "video-knowledge-curator",
+      "ids": [
+        "PROPERTY-VISIBILITY",
+        "PROPERTY-OPACITY",
+        "PROPERTY-SIZE",
+        "TIME-SEQUENCE"
+      ],
+      "outcome": "retain_draft",
+      "reason": "가시성·opacity 구현·겉보기 크기·등장 순서를 서로 다른 개념으로 유지. 원본 키프레임 확인이나 의미 병합을 생성하지 않음."
+    },
+    {
+      "skill": "video-guidance-reviewer",
+      "ids": [
+        "AP-06",
+        "IP-03",
+        "IP-10"
+      ],
+      "outcome": "retain_reference_and_pending",
+      "reason": "선형 모션 예외와 무음·접근성 자막 조건을 유지. IP-10은 정의 확인 대기이며 회사 필수 규칙으로 승격하지 않음."
+    },
+    {
+      "skill": "video-record-steward",
+      "target": "04_기록규격/설명용_단계구성_예시.json",
+      "outcome": "structurally_valid_draft",
+      "reason": "설명용 예의 형식·버전·한맥 연결 검사. 실영상 관측·사람 승인 확인 아님."
+    }
+  ],
+  "input_hashes": {
+    "01_공통용어/공통용어사전.json": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+    "02_원칙과레이아웃/모션과정보전달원칙.json": "eeab661a33c7261777511b86939f26bad3e15ec555626dbaffa76a50a77f9b26",
+    "04_기록규격/설명용_단계구성_예시.json": "fc906a18a785b4e51ab5d5714483a6c0033d5726847556bd89cf613795509a47",
+    "03_한맥디자인/한맥디자인정본.json": "dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed"
+  },
+  "after_hashes": {
+    "01_공통용어/공통용어사전.json": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+    "02_원칙과레이아웃/모션과정보전달원칙.json": "eeab661a33c7261777511b86939f26bad3e15ec555626dbaffa76a50a77f9b26",
+    "04_기록규격/설명용_단계구성_예시.json": "fc906a18a785b4e51ab5d5714483a6c0033d5726847556bd89cf613795509a47",
+    "03_한맥디자인/한맥디자인정본.json": "dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed"
+  },
+  "backup_root": "backup\\2026-10-14_표본검토\\입력스냅샷",
+  "backup_hashes_match": true,
+  "canonical_unchanged": true,
+  "validation": {
+    "command": [
+      "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+      "-B",
+      "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\07_실행도구\\자료검증.py"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"valid\": true,\n  \"errors\": [],\n  \"scope\": \"Phase 00 \\ub370\\uc774\\ud130\\u00b7\\uae30\\ub85d \\uacc4\\uc57d. \\uc2e4\\uc601\\uc0c1 \\uc815\\ud655\\ub3c4/\\ud6a8\\uacfc \\uac80\\uc99d \\uc544\\ub2d8.\"\n}\n",
+    "stderr": "",
+    "parsed_result": {
+      "valid": true,
+      "errors": [],
+      "scope": "Phase 00 데이터·기록 계약. 실영상 정확도/효과 검증 아님."
+    }
+  },
+  "internal_redteam": {
+    "meaning_merge": false,
+    "measurement_invented": false,
+    "company_rule_approval_created": false,
+    "phase01a_video_analysis_performed": false,
+    "mandatory_web_rules_created": false
+  },
+  "outcome": "completed",
+  "limits": "표本 관리 절차 확인. 스킬 우월성·실영상 분석 정확도·업무효과는 미검증."
+}

@@ -1,0 +1,1338 @@
+{
+  "purpose": "A1 합성 자료 기술 진단용 격리 후보. 기본 도입/재배포 승인 아님",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "av_version": "19.0.1",
+  "module": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\__init__.py",
+  "ffmpeg_version_info": "9.0.2",
+  "library_meta": {
+    "libavutil": {
+      "version": [
+        61,
+        1,
+        102
+      ],
+      "configuration": "--disable-static --enable-shared --libdir=/c/cibw/vendor/lib --prefix=/c/cibw/vendor --disable-programs --disable-doc --disable-libxml2 --disable-lzma --disable-libtheora --disable-libfreetype --disable-libfontconfig --disable-libbluray --disable-libopenjpeg --enable-mediafoundation --enable-version3 --disable-alsa --disable-gnutls --enable-libdav1d --enable-libmp3lame --enable-libopus --enable-libsvtav1 --enable-libvmaf --enable-libvpx --enable-libwebp --disable-libxcb --enable-zlib --enable-libx265 --enable-libx264 --enable-nvenc --enable-nvdec --enable-amf --enable-libvpl --disable-encoder='avui,dca,mlp,opus,s302m,sonic,sonic_ls,truehd' --disable-decoder=sonic --disable-libjack --disable-indev=jack --disable-filter=gfxcapture",
+      "license": "LGPL version 3 or later"
+    },
+    "libavcodec": {
+      "version": [
+        63,
+        1,
+        102
+      ],
+      "configuration": "--disable-static --enable-shared --libdir=/c/cibw/vendor/lib --prefix=/c/cibw/vendor --disable-programs --disable-doc --disable-libxml2 --disable-lzma --disable-libtheora --disable-libfreetype --disable-libfontconfig --disable-libbluray --disable-libopenjpeg --enable-mediafoundation --enable-version3 --disable-alsa --disable-gnutls --enable-libdav1d --enable-libmp3lame --enable-libopus --enable-libsvtav1 --enable-libvmaf --enable-libvpx --enable-libwebp --disable-libxcb --enable-zlib --enable-libx265 --enable-libx264 --enable-nvenc --enable-nvdec --enable-amf --enable-libvpl --disable-encoder='avui,dca,mlp,opus,s302m,sonic,sonic_ls,truehd' --disable-decoder=sonic --disable-libjack --disable-indev=jack --disable-filter=gfxcapture",
+      "license": "LGPL version 3 or later"
+    },
+    "libavformat": {
+      "version": [
+        63,
+        1,
+        102
+      ],
+      "configuration": "--disable-static --enable-shared --libdir=/c/cibw/vendor/lib --prefix=/c/cibw/vendor --disable-programs --disable-doc --disable-libxml2 --disable-lzma --disable-libtheora --disable-libfreetype --disable-libfontconfig --disable-libbluray --disable-libopenjpeg --enable-mediafoundation --enable-version3 --disable-alsa --disable-gnutls --enable-libdav1d --enable-libmp3lame --enable-libopus --enable-libsvtav1 --enable-libvmaf --enable-libvpx --enable-libwebp --disable-libxcb --enable-zlib --enable-libx265 --enable-libx264 --enable-nvenc --enable-nvdec --enable-amf --enable-libvpl --disable-encoder='avui,dca,mlp,opus,s302m,sonic,sonic_ls,truehd' --disable-decoder=sonic --disable-libjack --disable-indev=jack --disable-filter=gfxcapture",
+      "license": "LGPL version 3 or later"
+    },
+    "libavdevice": {
+      "version": [
+        63,
+        1,
+        102
+      ],
+      "configuration": "--disable-static --enable-shared --libdir=/c/cibw/vendor/lib --prefix=/c/cibw/vendor --disable-programs --disable-doc --disable-libxml2 --disable-lzma --disable-libtheora --disable-libfreetype --disable-libfontconfig --disable-libbluray --disable-libopenjpeg --enable-mediafoundation --enable-version3 --disable-alsa --disable-gnutls --enable-libdav1d --enable-libmp3lame --enable-libopus --enable-libsvtav1 --enable-libvmaf --enable-libvpx --enable-libwebp --disable-libxcb --enable-zlib --enable-libx265 --enable-libx264 --enable-nvenc --enable-nvdec --enable-amf --enable-libvpl --disable-encoder='avui,dca,mlp,opus,s302m,sonic,sonic_ls,truehd' --disable-decoder=sonic --disable-libjack --disable-indev=jack --disable-filter=gfxcapture",
+      "license": "LGPL version 3 or later"
+    },
+    "libavfilter": {
+      "version": [
+        12,
+        1,
+        102
+      ],
+      "configuration": "--disable-static --enable-shared --libdir=/c/cibw/vendor/lib --prefix=/c/cibw/vendor --disable-programs --disable-doc --disable-libxml2 --disable-lzma --disable-libtheora --disable-libfreetype --disable-libfontconfig --disable-libbluray --disable-libopenjpeg --enable-mediafoundation --enable-version3 --disable-alsa --disable-gnutls --enable-libdav1d --enable-libmp3lame --enable-libopus --enable-libsvtav1 --enable-libvmaf --enable-libvpx --enable-libwebp --disable-libxcb --enable-zlib --enable-libx265 --enable-libx264 --enable-nvenc --enable-nvdec --enable-amf --enable-libvpl --disable-encoder='avui,dca,mlp,opus,s302m,sonic,sonic_ls,truehd' --disable-decoder=sonic --disable-libjack --disable-indev=jack --disable-filter=gfxcapture",
+      "license": "LGPL version 3 or later"
+    },
+    "libswscale": {
+      "version": [
+        10,
+        1,
+        102
+      ],
+      "configuration": "--disable-static --enable-shared --libdir=/c/cibw/vendor/lib --prefix=/c/cibw/vendor --disable-programs --disable-doc --disable-libxml2 --disable-lzma --disable-libtheora --disable-libfreetype --disable-libfontconfig --disable-libbluray --disable-libopenjpeg --enable-mediafoundation --enable-version3 --disable-alsa --disable-gnutls --enable-libdav1d --enable-libmp3lame --enable-libopus --enable-libsvtav1 --enable-libvmaf --enable-libvpx --enable-libwebp --disable-libxcb --enable-zlib --enable-libx265 --enable-libx264 --enable-nvenc --enable-nvdec --enable-amf --enable-libvpl --disable-encoder='avui,dca,mlp,opus,s302m,sonic,sonic_ls,truehd' --disable-decoder=sonic --disable-libjack --disable-indev=jack --disable-filter=gfxcapture",
+      "license": "LGPL version 3 or later"
+    },
+    "libswresample": {
+      "version": [
+        7,
+        1,
+        102
+      ],
+      "configuration": "--disable-static --enable-shared --libdir=/c/cibw/vendor/lib --prefix=/c/cibw/vendor --disable-programs --disable-doc --disable-libxml2 --disable-lzma --disable-libtheora --disable-libfreetype --disable-libfontconfig --disable-libbluray --disable-libopenjpeg --enable-mediafoundation --enable-version3 --disable-alsa --disable-gnutls --enable-libdav1d --enable-libmp3lame --enable-libopus --enable-libsvtav1 --enable-libvmaf --enable-libvpx --enable-libwebp --disable-libxcb --enable-zlib --enable-libx265 --enable-libx264 --enable-nvenc --enable-nvdec --enable-amf --enable-libvpl --disable-encoder='avui,dca,mlp,opus,s302m,sonic,sonic_ls,truehd' --disable-decoder=sonic --disable-libjack --disable-indev=jack --disable-filter=gfxcapture",
+      "license": "LGPL version 3 or later"
+    }
+  },
+  "global_install": false,
+  "company_files_opened": 0,
+  "network_requests_in_this_script": 0,
+  "archive_sha256": "906fc3db09288319a75ea23ffefb59961c7dbe0d1c074601507a89de7d8593d8",
+  "extracted_files": [
+    {
+      "file": "av/about.py",
+      "bytes": 24,
+      "sha256": "acf98ba21baa871c49701372d6fa429eba5f4dff8b13b52c5a7aadaa3e8d0daa"
+    },
+    {
+      "file": "av/bitstream.pxd",
+      "bytes": 195,
+      "sha256": "bbf5db06174d4e264d2cb93b18bd1da6d92758cc5a047abf9f13706f2e532581"
+    },
+    {
+      "file": "av/bitstream.py",
+      "bytes": 4481,
+      "sha256": "977abf05a404c9ceeb8bd19619ce41c9a9be822ac0ed6dfd2c0550a86ebfe01a"
+    },
+    {
+      "file": "av/bitstream.pyd",
+      "bytes": 32256,
+      "sha256": "2fa8e6891382dba591f9774ecaf2669ab47ed048baf565885beb2095f0df496a"
+    },
+    {
+      "file": "av/bitstream.pyi",
+      "bytes": 443,
+      "sha256": "4c024d694f4cf70939d1d71c0ddc6d4f00956c522dbc6f68316792468efb4296"
+    },
+    {
+      "file": "av/buffer.pxd",
+      "bytes": 379,
+      "sha256": "9eb0f624960dcc6478286a3862bfc5d7fe80be13d3fd522ed27ecf277cdf6275"
+    },
+    {
+      "file": "av/buffer.py",
+      "bytes": 3000,
+      "sha256": "696d147e03eded1c44c79e2a8c799e9299a44c304c191a49ad7424a85e2ba280"
+    },
+    {
+      "file": "av/buffer.pyd",
+      "bytes": 35840,
+      "sha256": "33fa3c86b5961b3542e053f3815cc9289a25305d456eca91266fc0552b20f6b1"
+    },
+    {
+      "file": "av/buffer.pyi",
+      "bytes": 286,
+      "sha256": "7b2ed329f8467b3f76dfc8b8e53fc6093695120c35e0534632c2f1ddc3f01159"
+    },
+    {
+      "file": "av/datasets.py",
+      "bytes": 3123,
+      "sha256": "44ebf1ec86cbc611f67bea79aa76d92278759590230b45693fd6410877768597"
+    },
+    {
+      "file": "av/device.py",
+      "bytes": 6559,
+      "sha256": "e42045a34c7b222175babe6c2502eeaff584ed37b93db93308869f955cc6fb79"
+    },
+    {
+      "file": "av/device.pyd",
+      "bytes": 44032,
+      "sha256": "06cf9c887d66c888b20b681c4485187f28b47af95863ce5ff70219f10b7795a1"
+    },
+    {
+      "file": "av/device.pyi",
+      "bytes": 535,
+      "sha256": "4e7c07304605d82d18288edd1e143f1590d9229e877747277dbd6283bd22e209"
+    },
+    {
+      "file": "av/dictionary.pxd",
+      "bytes": 176,
+      "sha256": "c06b147d7fa9f1401445ccb19f9cc2834a8bf49ddd351c41bb76722cbdd6bc25"
+    },
+    {
+      "file": "av/dictionary.py",
+      "bytes": 2377,
+      "sha256": "6472e6b3d4d0dcfdba07a1f19a4cd5df0b58edfad29ad2c7c65e43e896c83d54"
+    },
+    {
+      "file": "av/dictionary.pyd",
+      "bytes": 48640,
+      "sha256": "3d3e040021bd30eda424834facce9115d23fff73ed36a18bdb3b2339d1e975c0"
+    },
+    {
+      "file": "av/dictionary.pyi",
+      "bytes": 632,
+      "sha256": "1b2467d09f7cc06a3a1e39cfd2f38f6e74ee741040c6e165daa891f0bdc865cf"
+    },
+    {
+      "file": "av/error.pxd",
+      "bytes": 90,
+      "sha256": "e576f8bd3ff49d57ca2b9c0246b0f57d098b7f1a1ed0c2831e0517ba6d9bf844"
+    },
+    {
+      "file": "av/error.py",
+      "bytes": 10872,
+      "sha256": "4314e41edf280b6e8c5fa20ebe9a06914caa6532ce878f331d5132857acf9eac"
+    },
+    {
+      "file": "av/error.pyd",
+      "bytes": 79360,
+      "sha256": "dcac905a55798802326c5bee3585ffcd2287df1cf1d41f7b104c19d3259e9531"
+    },
+    {
+      "file": "av/error.pyi",
+      "bytes": 3344,
+      "sha256": "2e5e588490d18671ef9bd5441c4ebbea3adb7ae411d0423853c5c7658ce1b2f3"
+    },
+    {
+      "file": "av/format.pxd",
+      "bytes": 270,
+      "sha256": "d2a54d175cb7bf5e333f1387b05c4938d197f52464d09fe712b128cddfe9075f"
+    },
+    {
+      "file": "av/format.py",
+      "bytes": 6077,
+      "sha256": "6218425ae84939f6dae358462296d4138c685f046ef6f9590d0ae8fc53389b80"
+    },
+    {
+      "file": "av/format.pyd",
+      "bytes": 35328,
+      "sha256": "f7619c1c1e24afa1a353bb1f1c8d3b282cb87bc23915c8f2db1e69202b54379f"
+    },
+    {
+      "file": "av/format.pyi",
+      "bytes": 1640,
+      "sha256": "de82301122e81cef018465a6d4bdef06d706600711f84ff0726dd8bd1711285a"
+    },
+    {
+      "file": "av/frame.pxd",
+      "bytes": 346,
+      "sha256": "1de2d6960636a132d39932ea24a0930557d9db6efbb0dea155559a8ede2a27bc"
+    },
+    {
+      "file": "av/frame.py",
+      "bytes": 6259,
+      "sha256": "c3ed6ac787cb38995a1b63f11695d2319ddb16af76b76d7670fecd115c7a456b"
+    },
+    {
+      "file": "av/frame.pyd",
+      "bytes": 36352,
+      "sha256": "1b8bfcf51b97d9dd10dedfa42634b1a45c12143b3763bc8f3deacaad05a4709f"
+    },
+    {
+      "file": "av/frame.pyi",
+      "bytes": 708,
+      "sha256": "20db7cefbf9d7b2d3381f49b706062b0b8d871338e565d4c1e331d18f318d810"
+    },
+    {
+      "file": "av/index.pxd",
+      "bytes": 321,
+      "sha256": "dac8a2a03726b0ac3f00e141832c7984609c1b08303d2a3b528e18cca53bd2d7"
+    },
+    {
+      "file": "av/index.py",
+      "bytes": 4729,
+      "sha256": "c20498000f2c69f6258d4fc4bb732b8aa5bd2cea95bea7d1a849bd08238ff879"
+    },
+    {
+      "file": "av/index.pyd",
+      "bytes": 58880,
+      "sha256": "bc8f772d6d4d0a05cae7b915fa289b63ff3043b95859e7d44560039402e86f9c"
+    },
+    {
+      "file": "av/index.pyi",
+      "bytes": 608,
+      "sha256": "b80c09c4281c63ae76cbc3968c139eb72206ec877fb89513f80003cd2017df95"
+    },
+    {
+      "file": "av/logging.pxd",
+      "bytes": 331,
+      "sha256": "c40259088d8e178d11ee896af1419d105fdc5d0404b9728128bded8b47561f6a"
+    },
+    {
+      "file": "av/logging.py",
+      "bytes": 10794,
+      "sha256": "e483fec669f4dc9d4a14109f3090dcb46d82dae42a727e787a91bdd0a401bd11"
+    },
+    {
+      "file": "av/logging.pyd",
+      "bytes": 56832,
+      "sha256": "617723da212856f7c5d2617b641435aee5867e360f4d495a5062f9ac97381b2f"
+    },
+    {
+      "file": "av/logging.pyi",
+      "bytes": 946,
+      "sha256": "7c746aad35cc0e97e06a08a9f3f76bb4b2cb6c7983e93e8fc7dfea0cec27c0ff"
+    },
+    {
+      "file": "av/opaque.pxd",
+      "bytes": 311,
+      "sha256": "9cece072825452f7d413c5fc1a071fbd0aacfca7de8d9d31eb3cc1ad5585a04f"
+    },
+    {
+      "file": "av/opaque.py",
+      "bytes": 2147,
+      "sha256": "8f91e46c1a0870ffcd143b0428a4366d517dcd088e366c3851ab9589255576e0"
+    },
+    {
+      "file": "av/opaque.pyd",
+      "bytes": 25088,
+      "sha256": "4cac6b9e1a1a8fd0afeb285e980637a959ff9a2758c3142928fc6d408b62d92f"
+    },
+    {
+      "file": "av/packet.pxd",
+      "bytes": 589,
+      "sha256": "64bdb5c0f88a81216ae813426013dec78658fbca59ea1c6b3f32ceefd23e7d80"
+    },
+    {
+      "file": "av/packet.py",
+      "bytes": 15472,
+      "sha256": "d9fa69126452a8a20e4eb967fe3bbcd8ed65a34433b7e0b7c394f1f57a7290db"
+    },
+    {
+      "file": "av/packet.pyd",
+      "bytes": 77824,
+      "sha256": "307bb2894b297fef4f96de3c548ecc81909c86dca264745cbfa5c5cb88c9c21d"
+    },
+    {
+      "file": "av/packet.pyi",
+      "bytes": 3667,
+      "sha256": "22227aac4d6aa2d4e24de59ecd1c1cbedd945922c3e269e2b02ee249c168a985"
+    },
+    {
+      "file": "av/plane.pxd",
+      "bytes": 203,
+      "sha256": "3815e625e2e499065ccb2191fdaacd9234fba4ab2f76f2f1feaf3907bda1560a"
+    },
+    {
+      "file": "av/plane.py",
+      "bytes": 650,
+      "sha256": "e90d21bc6d379cf0cbbfdd25a9e104ac504099225bc4dace48435d9385efe26d"
+    },
+    {
+      "file": "av/plane.pyd",
+      "bytes": 30208,
+      "sha256": "5783024b12c2def07bf22d2d11c8e978db5ecac3a222dd3e17b8f930f45ca775"
+    },
+    {
+      "file": "av/plane.pyi",
+      "bytes": 177,
+      "sha256": "b232c0596af7b92bef2252cb3a5762970360e7d4c20c761381c510ae31351507"
+    },
+    {
+      "file": "av/py.typed",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "av/rational.pxd",
+      "bytes": 195,
+      "sha256": "6cda3e8a03dcd328c12e1643d8d04359e53da03e3c00c5bb546d6854b3f5ffc4"
+    },
+    {
+      "file": "av/rational.py",
+      "bytes": 7716,
+      "sha256": "af160b4963198561e24b6f66d36b75dc987ad0ac4d5b6cf82405f6144b66b07f"
+    },
+    {
+      "file": "av/rational.pyd",
+      "bytes": 53248,
+      "sha256": "557a31dba8765745f2bf6b206bebaed1e229107c6d1fee268fc1ff76b55cb3db"
+    },
+    {
+      "file": "av/rational.pyi",
+      "bytes": 1604,
+      "sha256": "580883c9ce58d6f3acc1613bef2bbf1aa66cd29720a3d2c58bcab37c806eaad5"
+    },
+    {
+      "file": "av/stream.pxd",
+      "bytes": 772,
+      "sha256": "8818218659af56fd2feb3e1c7dc072442b0fc0493127b261289e9a5cc8eb817b"
+    },
+    {
+      "file": "av/stream.py",
+      "bytes": 11279,
+      "sha256": "ac01786d26285eb7ff5ab0571cf93ba6361c748d2afc917938e2fccdf4757628"
+    },
+    {
+      "file": "av/stream.pyd",
+      "bytes": 54272,
+      "sha256": "48d32354dc6203a8239e8d7cb17692a7cc76f4786940a64ed1b5404d2a7da091"
+    },
+    {
+      "file": "av/stream.pyi",
+      "bytes": 2220,
+      "sha256": "6a2dbeefd506bd5ec42e9db567d1d28a14b6e6f3976986d9be7d5f3dd85a45fd"
+    },
+    {
+      "file": "av/utils.pxd",
+      "bytes": 263,
+      "sha256": "1aea5f65a5405628b966677ecc69d577c1d5e5f76ec45e0201e929a9183bf895"
+    },
+    {
+      "file": "av/utils.py",
+      "bytes": 1770,
+      "sha256": "5a2289d944f5a76e99bb688dc72dd28821031cf6fea81927294059a774ec8232"
+    },
+    {
+      "file": "av/utils.pyd",
+      "bytes": 29184,
+      "sha256": "347d99fbed00ddd5189a5ae1c6dc8028bb20593a9110af7491f4c4e95a2d815d"
+    },
+    {
+      "file": "av/_core.pxd",
+      "bytes": 367,
+      "sha256": "13a2b8a846349b00796519f5e0bd8f3a3faab87cb046c5b3d93e7bc95f4f137c"
+    },
+    {
+      "file": "av/_core.py",
+      "bytes": 2010,
+      "sha256": "77e29ddaa2fbb7a109d649b56deae5fdf117c397e6aad7a45e6be31cfd01a8f6"
+    },
+    {
+      "file": "av/_core.pyd",
+      "bytes": 29184,
+      "sha256": "3b55bb08de07a2abb94263903184ebb44a58c36525627e54e9870912f26c25cc"
+    },
+    {
+      "file": "av/_core.pyi",
+      "bytes": 263,
+      "sha256": "c872cae200b7affc9ec5e3990a0963fee140c26d51839db10cb479d943a91a42"
+    },
+    {
+      "file": "av/_cyutil.pyd",
+      "bytes": 142336,
+      "sha256": "4a9094eff7e9d00a53638fd2859a77476b1979c7220c873eb44460daf862a39b"
+    },
+    {
+      "file": "av/__init__.pxd",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "av/__init__.py",
+      "bytes": 2678,
+      "sha256": "7ea62d466188607c71617e57dd0fd6071f95947d8c15bf20c99d4af1266296fa"
+    },
+    {
+      "file": "av/__main__.py",
+      "bytes": 1622,
+      "sha256": "e31ea37b82a822d316262c7af99ed7aebaa835515c27fc217a3ee7008308aabc"
+    },
+    {
+      "file": "av/audio/codeccontext.pxd",
+      "bytes": 345,
+      "sha256": "e0ea7580c2e4e7007e3d48dca087e6e1d7c93b120902e404f59a3e0512a6357d"
+    },
+    {
+      "file": "av/audio/codeccontext.py",
+      "bytes": 3575,
+      "sha256": "ba94f73e5cabf259b65ed4a8e531d3d067175836b62d3a6c5516fb2c6633b589"
+    },
+    {
+      "file": "av/audio/codeccontext.pyd",
+      "bytes": 35840,
+      "sha256": "fff7ab73fb4d92fbc685bc8b8e9d45dbc343c5baad6b6a6cc55f4a95877e4e4c"
+    },
+    {
+      "file": "av/audio/codeccontext.pyi",
+      "bytes": 1125,
+      "sha256": "ce2dfd741a739a6de1dd2e0ea15b95a9367cef8dd91ab2d28e51651343d595bf"
+    },
+    {
+      "file": "av/audio/fifo.pxd",
+      "bytes": 480,
+      "sha256": "2ac5d1b63b56d90316f77e6430663097f1746ccecd21161f1e4cd71abf894e48"
+    },
+    {
+      "file": "av/audio/fifo.py",
+      "bytes": 7431,
+      "sha256": "c1a98c1764d579aa1bdf4976c17e48ec39bf5e03220411dfcafa8397da88daf5"
+    },
+    {
+      "file": "av/audio/fifo.pyd",
+      "bytes": 42496,
+      "sha256": "c553a43fdd64a393a7dd92095943c2434fbe8f7ddbe79e67bd7949046990d97d"
+    },
+    {
+      "file": "av/audio/fifo.pyi",
+      "bytes": 734,
+      "sha256": "d60e2a97f7d03592105d8da6878c952c8352fdf64d558c93e9a583ab979ceee6"
+    },
+    {
+      "file": "av/audio/format.pxd",
+      "bytes": 155,
+      "sha256": "4cbd018310573166b33b0db4a959ef293ac81588cfd7c9279ef4d0c07507e272"
+    },
+    {
+      "file": "av/audio/format.py",
+      "bytes": 3774,
+      "sha256": "80e562e292d5dd29f296cb223a91aae8b91c470b18debaf8ebba763151c574e7"
+    },
+    {
+      "file": "av/audio/format.pyd",
+      "bytes": 30720,
+      "sha256": "ae6c199151f468a937748aabaaa4bdf9c77f6cf40d3478d31147063b805fd761"
+    },
+    {
+      "file": "av/audio/format.pyi",
+      "bytes": 247,
+      "sha256": "c8a64de7b317b08fa900138914af5fe969d5edb32be4f7456cca32b9f2d08cba"
+    },
+    {
+      "file": "av/audio/frame.pxd",
+      "bytes": 780,
+      "sha256": "447fa9756ace4c19903f7e79d26d6fc7203dc4b089e0eece46ae84fff0220428"
+    },
+    {
+      "file": "av/audio/frame.py",
+      "bytes": 6337,
+      "sha256": "6b54e5254cdcfa8741a48fd56a647055ba335966d07550892610756649852c6e"
+    },
+    {
+      "file": "av/audio/frame.pyd",
+      "bytes": 52736,
+      "sha256": "5aeb3a8224fc2b7e26fdda0c974c7c8c3abc1ac2776a2b6e9490bbb043d88663"
+    },
+    {
+      "file": "av/audio/frame.pyi",
+      "bytes": 1459,
+      "sha256": "6148bc1aa432a6f517573a53c3a6ee06571d8855eb3789577ef099994d619fe5"
+    },
+    {
+      "file": "av/audio/layout.pxd",
+      "bytes": 155,
+      "sha256": "ca110ba67d6587ce017494ec7138f2901eef3c97a4780d54e07fdf600c49c1aa"
+    },
+    {
+      "file": "av/audio/layout.py",
+      "bytes": 3350,
+      "sha256": "ad4691f68cb7f37452a71f105f946b05136291b405773a18d4f0bf2f1184e4ee"
+    },
+    {
+      "file": "av/audio/layout.pyd",
+      "bytes": 35328,
+      "sha256": "45cbea01f84b39efd3857fe91113577054aa5b78743342842cc6c11aa0e76d80"
+    },
+    {
+      "file": "av/audio/layout.pyi",
+      "bytes": 262,
+      "sha256": "3b0c8548ed8eb223ce7c3bc5fa5998a761fab7371d128ce6a011bfef572f398d"
+    },
+    {
+      "file": "av/audio/plane.pxd",
+      "bytes": 100,
+      "sha256": "a01da30c6e2a683c7ae840d3a79adb75d8fb3b1003c720a3d74104b55f00bf2e"
+    },
+    {
+      "file": "av/audio/plane.py",
+      "bytes": 642,
+      "sha256": "7a05df4051c853d173f0a13267c02bd506c6dea8cc74a1c6ce0547974e0389b4"
+    },
+    {
+      "file": "av/audio/plane.pyd",
+      "bytes": 31232,
+      "sha256": "41c922fdf9c065aad2336d2dc358c4839e9b412f2558794e84d94ec63a22e223"
+    },
+    {
+      "file": "av/audio/plane.pyi",
+      "bytes": 60,
+      "sha256": "925141246aebcc13b61c2b6a35416dce422135970c5d730e01a6f5dc7db7c9d1"
+    },
+    {
+      "file": "av/audio/resampler.pxd",
+      "bytes": 519,
+      "sha256": "473dc76de3e1f72b7863db28a465accc30f1729d7e1432aec778b2618c0225b3"
+    },
+    {
+      "file": "av/audio/resampler.py",
+      "bytes": 5181,
+      "sha256": "3188b010be1a458729fbbecfc3952bc87b6a35c1bbf80f7de5665250c7ddf7c3"
+    },
+    {
+      "file": "av/audio/resampler.pyd",
+      "bytes": 51200,
+      "sha256": "96c31f11daea781cf06e4e1aeb3ba7eb4c3adcc7a5d3b000f22c6b79923ac28c"
+    },
+    {
+      "file": "av/audio/resampler.pyi",
+      "bytes": 690,
+      "sha256": "b76a506b69cbef728570387603978457a44c88eaf5dcab6bb69b76803fe9976c"
+    },
+    {
+      "file": "av/audio/stream.pxd",
+      "bytes": 218,
+      "sha256": "0afc9763998549a12166f38b7ab9a5f19e16d3ca45ac0a51c407e7c2874fef87"
+    },
+    {
+      "file": "av/audio/stream.py",
+      "bytes": 1992,
+      "sha256": "c2d7df051cec909fed0a08bea4d995b4df49d8bf7e92f40b2fa80f1fc6ea8fc5"
+    },
+    {
+      "file": "av/audio/stream.pyd",
+      "bytes": 34816,
+      "sha256": "a89abafab5accb286f0925138033b9fb7e590a79f414f5ff38c7ea7832a4f312"
+    },
+    {
+      "file": "av/audio/stream.pyi",
+      "bytes": 1021,
+      "sha256": "7d4110dd65d2fdf1eadbd3971688b86e85cbf5bd3508587cd2ed9c4c6ffd7bf5"
+    },
+    {
+      "file": "av/audio/__init__.pxd",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "av/audio/__init__.py",
+      "bytes": 93,
+      "sha256": "d70804891a6ee90e373107625c044a349dd47f8702687174f9e209e70c90a3e2"
+    },
+    {
+      "file": "av/audio/__init__.pyi",
+      "bytes": 2150,
+      "sha256": "285915c4262577db107f8f83e7808279059a8e05f9f176f9f8bdd73c5326ca64"
+    },
+    {
+      "file": "av/codec/codec.pxd",
+      "bytes": 303,
+      "sha256": "ee33a5fc41994d6b693b4d4e589b3388378d6deebb8c40eba42dbc5d91a2916a"
+    },
+    {
+      "file": "av/codec/codec.py",
+      "bytes": 16509,
+      "sha256": "24cd0c2024f6cad45ccc757808493151d44700833cf9d5b4ef08069cd21d6c43"
+    },
+    {
+      "file": "av/codec/codec.pyd",
+      "bytes": 67072,
+      "sha256": "4d581622dd9b32c4a8fae2a0f7538f55c470403465691e172549f5ca0dc7b473"
+    },
+    {
+      "file": "av/codec/codec.pyi",
+      "bytes": 5444,
+      "sha256": "9005a5cc25a1b7c606e179260b78da6eabca56fc67dd0e642a1f9fac0f90b240"
+    },
+    {
+      "file": "av/codec/context.pxd",
+      "bytes": 2155,
+      "sha256": "d2484d142607266fffa0dfc2a73f203593efcdecfe4f3fc2c1a8185b43456aa3"
+    },
+    {
+      "file": "av/codec/context.py",
+      "bytes": 42629,
+      "sha256": "fd23af151616fdc22aaf27625f8255f76bb2785008f3e6230189dcce1276cf86"
+    },
+    {
+      "file": "av/codec/context.pyd",
+      "bytes": 124928,
+      "sha256": "7940420aa3afdb892e2dd9cf761659350149ae8ff598c342ed6de5d911655dd4"
+    },
+    {
+      "file": "av/codec/context.pyi",
+      "bytes": 6886,
+      "sha256": "a176231fe7c504343bde5291a6a2b99da80f70a81acd07320e4e5e3e481a3401"
+    },
+    {
+      "file": "av/codec/hwaccel.pxd",
+      "bytes": 761,
+      "sha256": "d953cfe56e2bedc44bb6bbba4e8295ace18c7291b0afa9337ba1b8aba8e5cfac"
+    },
+    {
+      "file": "av/codec/hwaccel.py",
+      "bytes": 10605,
+      "sha256": "d115a1a5d7054671de42cb0277983a7a1655040fecaf211d58fcdfa7f3c0e800"
+    },
+    {
+      "file": "av/codec/hwaccel.pyd",
+      "bytes": 62464,
+      "sha256": "ad23ca77230578a74e613f41f15055ea20e17c6eb76ac1fc51a78c6e25eeba4a"
+    },
+    {
+      "file": "av/codec/hwaccel.pyi",
+      "bytes": 2088,
+      "sha256": "e7fd939003cdac5c029e66543e0d5b68a91f9fe0e3a7f239aff24082b9b61935"
+    },
+    {
+      "file": "av/codec/__init__.pxd",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "av/codec/__init__.py",
+      "bytes": 351,
+      "sha256": "a38d3b98b5792eafaa2e1698148f2d060a06c361318dd51c8593b4050c13ccec"
+    },
+    {
+      "file": "av/container/core.pxd",
+      "bytes": 1249,
+      "sha256": "86e90c901622fd6c4f9a7945e63e8b3f70f67120cd1f4085a566184156adbdcc"
+    },
+    {
+      "file": "av/container/core.py",
+      "bytes": 22747,
+      "sha256": "3b59bb074796c048342841b5268e0788cce0a3f2adfd28a5abb21b09ecc194f2"
+    },
+    {
+      "file": "av/container/core.pyd",
+      "bytes": 87040,
+      "sha256": "76f5a2ab99e77dd65624ade1925fdec4b6e43c5c429d7426c8d84d7877e58d38"
+    },
+    {
+      "file": "av/container/core.pyi",
+      "bytes": 4996,
+      "sha256": "ca87c72d287e8de93392aa8eabd564e6a91798a7ddcac87a53366164a5c6bccd"
+    },
+    {
+      "file": "av/container/input.pxd",
+      "bytes": 175,
+      "sha256": "2fcd4dde5c6609241329b17c698c5b04a18f13817e3f5481222e91b6577db9de"
+    },
+    {
+      "file": "av/container/input.py",
+      "bytes": 12881,
+      "sha256": "6b0a9235c3fe6e4938fe79c3f374991af35ad81043c63a10075975cab1f3816c"
+    },
+    {
+      "file": "av/container/input.pyd",
+      "bytes": 66048,
+      "sha256": "a50696827e98496fa57a651fc90715e0915dd66fc076d38b040a1b4970febc26"
+    },
+    {
+      "file": "av/container/input.pyi",
+      "bytes": 3154,
+      "sha256": "2f19f8d7f8826a96c1eae253795594cf1bca162a4eb109d615f482d9d65ba5e4"
+    },
+    {
+      "file": "av/container/output.pxd",
+      "bytes": 638,
+      "sha256": "f069d2b1efb85702ed400af902a2c1874cf294f98f88458f2697b09f22d1e131"
+    },
+    {
+      "file": "av/container/output.py",
+      "bytes": 35370,
+      "sha256": "8d809a6b8fcd38908ba792f2ef48c64a7eb333b5980597344d673219d05c5b66"
+    },
+    {
+      "file": "av/container/output.pyd",
+      "bytes": 82432,
+      "sha256": "615a67a130f5df8e5cf0c8d5d8b760b98a3d69b18409da9e85be5addfd10c355"
+    },
+    {
+      "file": "av/container/output.pyi",
+      "bytes": 2646,
+      "sha256": "80eed83ef0c1e76e9a15140a301bf7af52a45e14efa49dfc2b2e4b57cdb2a71e"
+    },
+    {
+      "file": "av/container/pyio.pxd",
+      "bytes": 756,
+      "sha256": "ec4fd3268d7adf2cdab0f4dd0738caa091a57231946045ef6be60a91bb37f97c"
+    },
+    {
+      "file": "av/container/pyio.py",
+      "bytes": 6545,
+      "sha256": "1ac05e739decb1dadb5f5774320fb14eacd74bcae0f79475fcaec57b4fcf1486"
+    },
+    {
+      "file": "av/container/pyio.pyd",
+      "bytes": 35328,
+      "sha256": "128336790725b382f1b13bb044dfa595d4b269414363411b4ff71fced00a00a7"
+    },
+    {
+      "file": "av/container/streams.pxd",
+      "bytes": 167,
+      "sha256": "f8792d94e81869f2a854022b7476afa0c307fcf62ef39e00b2ea629b5b6898fe"
+    },
+    {
+      "file": "av/container/streams.py",
+      "bytes": 5499,
+      "sha256": "904d6433e82401d7d44b734feafbc78b38ae4e7b93b204efd04ff854ea58399b"
+    },
+    {
+      "file": "av/container/streams.pyd",
+      "bytes": 66048,
+      "sha256": "4005ec60c48f389f86fefeec798623ecf736a04bedf8c9cb86a6c31397360204"
+    },
+    {
+      "file": "av/container/streams.pyi",
+      "bytes": 1202,
+      "sha256": "697d1efe2eb9974b9c1576fc28e6a9ee6619537a6cbb22a1d31908522bd21899"
+    },
+    {
+      "file": "av/container/__init__.pxd",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "av/container/__init__.py",
+      "bytes": 151,
+      "sha256": "904581607af75e0742c85fe90f4f40439d5be6a1949010dddbf2ca45ee671fb3"
+    },
+    {
+      "file": "av/container/__init__.pyi",
+      "bytes": 66,
+      "sha256": "5ed45b788c7e601b023b79a5746d19152215201fe269cc0bdee129e6a3353c20"
+    },
+    {
+      "file": "av/filter/context.pxd",
+      "bytes": 378,
+      "sha256": "94bc338c5984846c4016649b439085925afc022e2b062216c20d8bf48357eebe"
+    },
+    {
+      "file": "av/filter/context.py",
+      "bytes": 6389,
+      "sha256": "53bef93feae2a8fa0fe93dcc115065401059f091152a2e3891db863fb16b9700"
+    },
+    {
+      "file": "av/filter/context.pyd",
+      "bytes": 50176,
+      "sha256": "57585c8d763b74d9a2d045e68bfc1f25f691a543dd57045e737bd15153564b0a"
+    },
+    {
+      "file": "av/filter/context.pyi",
+      "bytes": 827,
+      "sha256": "717e64f93d9ae294037de8a95dc885d58127392fef66a09b86ce125fb2efb37c"
+    },
+    {
+      "file": "av/filter/filter.pxd",
+      "bytes": 134,
+      "sha256": "af02f6cc6addec024bab3f2ea58d06b420bdb08752e273e05142640c1ecaca86"
+    },
+    {
+      "file": "av/filter/filter.py",
+      "bytes": 1563,
+      "sha256": "0e07d13f67b0d09429d9ecbe4aa7d6e4707bd148b80d396a155e678f64258b5c"
+    },
+    {
+      "file": "av/filter/filter.pyd",
+      "bytes": 28160,
+      "sha256": "f6d6e9534d5ef5d4eadf04da7bb0e091a1ab7d924dde05e9d91821683a2058c8"
+    },
+    {
+      "file": "av/filter/filter.pyi",
+      "bytes": 315,
+      "sha256": "9e20e2acc7076098fd741e4715f9d1d7136d971297354b2660453676159e6224"
+    },
+    {
+      "file": "av/filter/graph.pxd",
+      "bytes": 843,
+      "sha256": "a953024b80221f60b7e4426745ee6a15185fa241a2b061507efef1a35bf67b78"
+    },
+    {
+      "file": "av/filter/graph.py",
+      "bytes": 11969,
+      "sha256": "770f3471a70b547d55695dc2da63c529789cfa764c139ec40bbfdd9864268c0c"
+    },
+    {
+      "file": "av/filter/graph.pyd",
+      "bytes": 68608,
+      "sha256": "09567a53db79990d7dc9e5e9c326ee0e571c3c95022dad455faa33e2fdfdca48"
+    },
+    {
+      "file": "av/filter/graph.pyi",
+      "bytes": 1972,
+      "sha256": "ecfca09034665c6e5387f7e85ea2ce72e0db6d13f189b71f93d611f6e5c95c02"
+    },
+    {
+      "file": "av/filter/link.pxd",
+      "bytes": 710,
+      "sha256": "d22507dcfb2ab6325c537de802392ae8066479c6e90191fd0d02288ca331d339"
+    },
+    {
+      "file": "av/filter/link.py",
+      "bytes": 5565,
+      "sha256": "9455de6653d3a5387913444f7f590aa8f894f9e87f683e351a26abb408f90c3c"
+    },
+    {
+      "file": "av/filter/link.pyd",
+      "bytes": 44544,
+      "sha256": "64cecff7637fa9b8c681ae7f62467cd8388d47a641343b7bc6dabf992e85678e"
+    },
+    {
+      "file": "av/filter/link.pyi",
+      "bytes": 816,
+      "sha256": "f2cca72ee7b6fb763ebaa5ada8eaf96395aeadc48b3a43b1abe4f738b08fe5cf"
+    },
+    {
+      "file": "av/filter/loudnorm.pxd",
+      "bytes": 483,
+      "sha256": "fda5b1d2455d85a84cda8688d10aa2f1255c8fa21d055e6d1a7f6d5ce0fab514"
+    },
+    {
+      "file": "av/filter/loudnorm.py",
+      "bytes": 1464,
+      "sha256": "4659b2003c31840f955483b653297371eea1c55adc51794cf1fc9b0de9ec7771"
+    },
+    {
+      "file": "av/filter/loudnorm.pyd",
+      "bytes": 32256,
+      "sha256": "97aca245c5140dc4e70e17ff79405b7cab1c2b02d7286b08a582ba07d6f4c86f"
+    },
+    {
+      "file": "av/filter/loudnorm.pyi",
+      "bytes": 109,
+      "sha256": "53d3f9ff6e618afedfa75e7c2faf27acdb2b2b8ea113a895f4fa9206fb418d94"
+    },
+    {
+      "file": "av/filter/loudnorm_impl.c",
+      "bytes": 5763,
+      "sha256": "d0d05fe026171ca0e75d0e8332dfa13ab4b50a5a00e8fbb667c165c354abb450"
+    },
+    {
+      "file": "av/filter/loudnorm_impl.h",
+      "bytes": 251,
+      "sha256": "fe4273770ab95eaf40043ff67e7197ca325a6d5ef195c39e2759c65447121be0"
+    },
+    {
+      "file": "av/filter/__init__.pxd",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "av/filter/__init__.py",
+      "bytes": 120,
+      "sha256": "5bc038cae2d83eb29ce8fda87ac98e9e7d61271221d8cab5d5556b2a4e262989"
+    },
+    {
+      "file": "av/filter/__init__.pyi",
+      "bytes": 94,
+      "sha256": "ee58cb837041f88157f28f9b5d9e0b44e700e86e35b6e450e43d97d442223ed2"
+    },
+    {
+      "file": "av/sidedata/encparams.pxd",
+      "bytes": 192,
+      "sha256": "eab9c9dd424727a7f13d34ca65e53f045e5ef283e1db0435104beade33a551bc"
+    },
+    {
+      "file": "av/sidedata/encparams.py",
+      "bytes": 6363,
+      "sha256": "66c79bd46b93d213fe23835f2240f946fcc0004c723fde52fee48191b994f427"
+    },
+    {
+      "file": "av/sidedata/encparams.pyd",
+      "bytes": 48128,
+      "sha256": "c1b8adb3161ec595bfab0c1c79171d714aad73416bf9557b72281293b9921299"
+    },
+    {
+      "file": "av/sidedata/encparams.pyi",
+      "bytes": 598,
+      "sha256": "046eb83d3203a89c1a0b3ac4bdf428fb5479346c6e8f0395a4f8b42df8894b0e"
+    },
+    {
+      "file": "av/sidedata/motionvectors.pxd",
+      "bytes": 259,
+      "sha256": "4caf80c2753bd8402f0ea6a1d87f308d78421772556cbfb1a46e303ea0b3f0c4"
+    },
+    {
+      "file": "av/sidedata/motionvectors.py",
+      "bytes": 3560,
+      "sha256": "64e956b83278938834e212d52d15a3aef424603b71a365334441740883131d1c"
+    },
+    {
+      "file": "av/sidedata/motionvectors.pyd",
+      "bytes": 57856,
+      "sha256": "af993be63fa9ef9791f7ec5fa98ab515447b72064e07e901d9ba7f1be371fc6b"
+    },
+    {
+      "file": "av/sidedata/motionvectors.pyi",
+      "bytes": 546,
+      "sha256": "e824199a51811bdebe151b47813754df9ef085df052ec800be64c41f6efd3a06"
+    },
+    {
+      "file": "av/sidedata/sidedata.pxd",
+      "bytes": 476,
+      "sha256": "a9ae021661acb96d2a1d00c95a08dae720080a260625f8c9bd0a0eca771597e4"
+    },
+    {
+      "file": "av/sidedata/sidedata.py",
+      "bytes": 6041,
+      "sha256": "5da81a6e9b599475e91951bc7549029635bcb4d2ca8166a85fdd41316046bb71"
+    },
+    {
+      "file": "av/sidedata/sidedata.pyd",
+      "bytes": 55808,
+      "sha256": "3f296558c946b1e8db96b9a6062377a6db43266d474aad1a5d1853f4ba870c3c"
+    },
+    {
+      "file": "av/sidedata/sidedata.pyi",
+      "bytes": 2149,
+      "sha256": "cfdbf88817b6a987ffc2a58f422d6a016a033841c3518a16ccd8692e153987f5"
+    },
+    {
+      "file": "av/sidedata/__init__.pxd",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "av/sidedata/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "av/subtitles/codeccontext.pxd",
+      "bytes": 241,
+      "sha256": "6f2e9d28076315b5320d2919cb43664240aa9128585034c96adaac9bf96ede1f"
+    },
+    {
+      "file": "av/subtitles/codeccontext.py",
+      "bytes": 4887,
+      "sha256": "8f364fdfcee68d6104fed668e994d81d84f2fd20d74cdbde871ca04c7cecb1eb"
+    },
+    {
+      "file": "av/subtitles/codeccontext.pyd",
+      "bytes": 34816,
+      "sha256": "13e24d708c5a755980e6708dca551e5d550d8b926e9e3e2231f94f0b51680fa1"
+    },
+    {
+      "file": "av/subtitles/codeccontext.pyi",
+      "bytes": 396,
+      "sha256": "0f49cc5728adffe1f13c5be28998ed8bea34eb1b319b201cde66d69a1e2e5397"
+    },
+    {
+      "file": "av/subtitles/stream.pxd",
+      "bytes": 143,
+      "sha256": "5298847df2a3aac7c3e11947c9682e2206cc741fb8fa0e236b09e0e59ea9aa3a"
+    },
+    {
+      "file": "av/subtitles/stream.py",
+      "bytes": 711,
+      "sha256": "85ce77215118a23c62fcdf14a16c9991ff94df1436f4ade8a0d9889065de24b6"
+    },
+    {
+      "file": "av/subtitles/stream.pyd",
+      "bytes": 28672,
+      "sha256": "b91fd8b95f8777ce220995538bab96c9380aeb511241793ba8eee13e6dd5b962"
+    },
+    {
+      "file": "av/subtitles/stream.pyi",
+      "bytes": 443,
+      "sha256": "ef07b82e442ab1c0c9c41278fb8dcedb71cb268540931941b6fb8eba9b29e9ce"
+    },
+    {
+      "file": "av/subtitles/subtitle.pxd",
+      "bytes": 619,
+      "sha256": "f86f78b358b0b125dc97c8c3bd16252b58caf7d1677d4992cbe89a190c89ae11"
+    },
+    {
+      "file": "av/subtitles/subtitle.py",
+      "bytes": 10500,
+      "sha256": "2216d68973b1658e3dbb786e27d2d454e3c03ae94ed4e8963041da29e8584b48"
+    },
+    {
+      "file": "av/subtitles/subtitle.pyd",
+      "bytes": 78848,
+      "sha256": "f9b55374a6e4257de52b33ac32c8232ceb63f8c5f5dbcbebc5d883271a4a0fee"
+    },
+    {
+      "file": "av/subtitles/subtitle.pyi",
+      "bytes": 1070,
+      "sha256": "9311a5cb3b003c0b91186f5664eda0de696439216879f1acf63cf03653996b3b"
+    },
+    {
+      "file": "av/subtitles/__init__.pxd",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "av/subtitles/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "av/subtitles/__init__.pyi",
+      "bytes": 336,
+      "sha256": "db54096f0adba24e2b45d894956f626eca997b3950f2784032728451186d6715"
+    },
+    {
+      "file": "av/video/codeccontext.pxd",
+      "bytes": 963,
+      "sha256": "88f221483a4c4ea09588afa5c0f3444ce307a384bc3ec4010d286ec80cca206c"
+    },
+    {
+      "file": "av/video/codeccontext.py",
+      "bytes": 18283,
+      "sha256": "3752a9886b22c9aa730eb7f0579eebbc428652fac3eae2099596559e33fcda8e"
+    },
+    {
+      "file": "av/video/codeccontext.pyd",
+      "bytes": 59392,
+      "sha256": "70301f4e60528aba3b3569bab34270b6bb93a7e5e1e6d4e90364e7ed28899200"
+    },
+    {
+      "file": "av/video/codeccontext.pyi",
+      "bytes": 1799,
+      "sha256": "e534c47ac4d0b4488300661fd8ee1198575a5d4b8f690bda5eec202f3c50c5cd"
+    },
+    {
+      "file": "av/video/format.pxd",
+      "bytes": 711,
+      "sha256": "de1b526124a18db8aa7e21c57dd7935e276525ded2ddeb240fbedd49283b12d3"
+    },
+    {
+      "file": "av/video/format.py",
+      "bytes": 6637,
+      "sha256": "a2070eda1398217b6472fbf72db6ccba6f9f0192da7a9996e1ed270432f9c22c"
+    },
+    {
+      "file": "av/video/format.pyd",
+      "bytes": 58880,
+      "sha256": "155d3701b36379c483f904189af7bf0c09678080685ceb0832cf65f3ff783962"
+    },
+    {
+      "file": "av/video/format.pyi",
+      "bytes": 870,
+      "sha256": "b2636a9410b683e4fb1dc015fb0778b5c46c39b73907fa9535e2acf8203d2341"
+    },
+    {
+      "file": "av/video/frame.pxd",
+      "bytes": 917,
+      "sha256": "41bf2f116eee8a4b6f8606366f71480c13d399c43d7a75fdf45154f6681d616a"
+    },
+    {
+      "file": "av/video/frame.py",
+      "bytes": 75959,
+      "sha256": "fa00fb1bab3c48a95f9cceff16d3106724b0413df4c28f111f21949a5beb09fc"
+    },
+    {
+      "file": "av/video/frame.pyd",
+      "bytes": 221184,
+      "sha256": "8aed81d676a0ee15324af3dd72e0bd5e8fb31772498ae44d56b2418580187e2f"
+    },
+    {
+      "file": "av/video/frame.pyi",
+      "bytes": 3594,
+      "sha256": "eb7efd4a9f3a1935a8ff08f515c000062e7ee29f6d84095124ad0ff31dfafe19"
+    },
+    {
+      "file": "av/video/plane.pxd",
+      "bytes": 810,
+      "sha256": "a531732db15fa91fa9fa690c8515b77b0186a2a9c2908c6c477d17de8d05beee"
+    },
+    {
+      "file": "av/video/plane.py",
+      "bytes": 13885,
+      "sha256": "8687d89a6eabd968dc2016fb1942cd77f58b8feba247b7d32dff229a215c68fc"
+    },
+    {
+      "file": "av/video/plane.pyd",
+      "bytes": 46592,
+      "sha256": "f9c492d6d42a0628c1ada0108e22b27b63933e0ea576843a6ca9cc7902344de4"
+    },
+    {
+      "file": "av/video/plane.pyi",
+      "bytes": 400,
+      "sha256": "23cc22ff7b266991cc3bdacd2046ae843f207951cffc71428938f4f961f8342b"
+    },
+    {
+      "file": "av/video/reformatter.pxd",
+      "bytes": 1629,
+      "sha256": "7ab443c59de3825834305f5a422ea5c53446c724232491c3e3c8e78555b30f86"
+    },
+    {
+      "file": "av/video/reformatter.py",
+      "bytes": 16484,
+      "sha256": "61ad5edd33ed9e4f03f191e5f618566f0ee9586d412b6f24510a87072c8c1d9f"
+    },
+    {
+      "file": "av/video/reformatter.pyd",
+      "bytes": 52224,
+      "sha256": "255b83a8aef5caceedf36f321e7de7954413a0bed264b2e4b49585fda0b2f642"
+    },
+    {
+      "file": "av/video/reformatter.pyi",
+      "bytes": 3241,
+      "sha256": "30aafbf9ab0f5b51f69636c72138c231186abbee6106fc05bf131d5a23850dae"
+    },
+    {
+      "file": "av/video/stream.pxd",
+      "bytes": 551,
+      "sha256": "0303a5b24ede90350a0b1e5eea9442e8072e3893f9f7a38ed497cdb9aadb5a28"
+    },
+    {
+      "file": "av/video/stream.py",
+      "bytes": 7411,
+      "sha256": "8a8c9eb90bc1944dede6c447a4e078515882fd570f68e5b9cbdc65901ff72707"
+    },
+    {
+      "file": "av/video/stream.pyd",
+      "bytes": 47616,
+      "sha256": "b366b99e53b20e6c9f471651a2d34617ada091e2cfa4bb04b925452d46e06109"
+    },
+    {
+      "file": "av/video/stream.pyi",
+      "bytes": 1446,
+      "sha256": "9babf36ace76e1971f597e15ea2bf3aa02c5d6473a8f6f2d3b368ae58cf2f256"
+    },
+    {
+      "file": "av/video/__init__.pxd",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "av/video/__init__.py",
+      "bytes": 93,
+      "sha256": "221a68c0fbb27f27de71dc9aa99d96bf1e67fa58a41aa9afac940f4a346764c7"
+    },
+    {
+      "file": "av/video/__init__.pyi",
+      "bytes": 3248,
+      "sha256": "2f002164238c8d4a9ebb365b4f82f426d753883535bcf49bfac31026d46844eb"
+    },
+    {
+      "file": "av.libs/avcodec-63-2756d4fffb772585dcdece87427716a4.dll",
+      "bytes": 19569664,
+      "sha256": "8e13fdedbeefb6a8b5d22b567122ec3c00384add569de9e589e53a86bd08422c"
+    },
+    {
+      "file": "av.libs/avdevice-63-2b26d22512639c049532c0bc6f6c022f.dll",
+      "bytes": 156160,
+      "sha256": "43247c1bdaaec40977738037fdea7e8b779b3e93213dd529b1d25735b3099d8c"
+    },
+    {
+      "file": "av.libs/avfilter-12-87c7677b784d3ea4ecceb3e6cae9c9f1.dll",
+      "bytes": 5956608,
+      "sha256": "a9b9e84178dd73162f47a3a531c321fad955ca3a7ff04a9517db7e7c78bf9ab2"
+    },
+    {
+      "file": "av.libs/avformat-63-e8c4f8fc30664f2b7e85dcc683bd4b0d.dll",
+      "bytes": 2888704,
+      "sha256": "49759edae5286f10e4b11a442f51fb70bacde1f92b7b876038231c4d8140c506"
+    },
+    {
+      "file": "av.libs/avutil-61-e540ec7976bbd26a4a94dc737be3001c.dll",
+      "bytes": 1157632,
+      "sha256": "ff2ba1b0d884336d53f1aee7b05873c5a3bbb987d0ffc79a49b92ed77579cd19"
+    },
+    {
+      "file": "av.libs/libdav1d-5469d6ef7baf7426269a9483c24587b7.dll",
+      "bytes": 2203136,
+      "sha256": "5469d6ef7baf7426269a9483c24587b77bf6cb6a005f2bd98443a396f528e82b"
+    },
+    {
+      "file": "av.libs/libgcc_s_seh-1-3e3b83c1f8de213bb810010a5622b180.dll",
+      "bytes": 150016,
+      "sha256": "502e8318a096f0bfb26d9f628f768bfab72853eabc1b6b262f2412263aad605b"
+    },
+    {
+      "file": "av.libs/libiconv-2-5e7e51fe6a6e182df6c9f30f41700345.dll",
+      "bytes": 1141248,
+      "sha256": "5e7e51fe6a6e182df6c9f30f4170034575acd10d2079c3f1098411d21a311619"
+    },
+    {
+      "file": "av.libs/libopus-0-278e2dd25a2793d306204c9d966fe0de.dll",
+      "bytes": 482816,
+      "sha256": "278e2dd25a2793d306204c9d966fe0dee6b4f56659b1ea7b759897e406980d79"
+    },
+    {
+      "file": "av.libs/libsharpyuv-90c3f670f207c806d3e44db799e78832.dll",
+      "bytes": 51712,
+      "sha256": "90c3f670f207c806d3e44db799e78832750826c47a0cf8dea907603d240f9dbe"
+    },
+    {
+      "file": "av.libs/libstdc++-6-7ad22040206bf70776b13a24ec3f87b2.dll",
+      "bytes": 2660352,
+      "sha256": "1cba2ca3b6f410fa4b03b01b479f7663493ea9903857cd753dc8dbc772f67447"
+    },
+    {
+      "file": "av.libs/libSvtAv1Enc-7a2b2046575991edd70ef501ca085458.dll",
+      "bytes": 7724032,
+      "sha256": "7a2b2046575991edd70ef501ca085458ebdff3bf96282350057ae1dee0afaf9f"
+    },
+    {
+      "file": "av.libs/libvmaf-e1698aa5c58a07400697833b5f19b0a3.dll",
+      "bytes": 1639936,
+      "sha256": "12e93e157295be651758eee56af4ed95c6a2ee5b3b91c65a83c8c6818af4c35f"
+    },
+    {
+      "file": "av.libs/libvpl-45cd70cb42c579529a30ad6fc282c626.dll",
+      "bytes": 444416,
+      "sha256": "1a0bc607afbd8a224cc0c2db6fd5efa51245d7715ff1b659c16b47e773009115"
+    },
+    {
+      "file": "av.libs/libvpx-1-dd81d2b55a771749d485047772201cc1.dll",
+      "bytes": 2583552,
+      "sha256": "738629b026940c256dfe988a62062bdc96ae5065d13163bf7e579dc95a4634f4"
+    },
+    {
+      "file": "av.libs/libwebp-abac96c4759f9eb9b31588c8a839816c.dll",
+      "bytes": 759296,
+      "sha256": "e253a4adb1c133a690662e46d8c41e0a3b81b0e62d0f3a5e1a1109484a020dca"
+    },
+    {
+      "file": "av.libs/libwebpmux-0b9545d83accdb1110a7efa5d1c54007.dll",
+      "bytes": 78336,
+      "sha256": "ce17228391b86192f201da1ce9c345ff5f7a9c1eca95ab04150491c24032f74e"
+    },
+    {
+      "file": "av.libs/libwinpthread-1-3e9f18fdf7e856e1e9fedd138e84e874.dll",
+      "bytes": 62464,
+      "sha256": "3e9f18fdf7e856e1e9fedd138e84e874542e8717272fa7fdae5d0d826e88658c"
+    },
+    {
+      "file": "av.libs/libx264-165-0f71f37cf3f3ee0e2ecac2b06829e9ff.dll",
+      "bytes": 2267648,
+      "sha256": "0f71f37cf3f3ee0e2ecac2b06829e9ff3cf2b3e237f25bb14aef6b8de14cd777"
+    },
+    {
+      "file": "av.libs/libx265-ee9d492f3fb55d0a3b564bb1bf4f6822.dll",
+      "bytes": 12830720,
+      "sha256": "efe075f1ee008c722eb71adfe00d926071836d777cc9ef23b59c9ecb9db7d57f"
+    },
+    {
+      "file": "av.libs/swresample-7-4f9462a1fb73b949ccad2774dd941624.dll",
+      "bytes": 180736,
+      "sha256": "a8bfee136c4c4e49d95b4439b1b80136504b2783cf93638f64bd3ad7de8e0ebe"
+    },
+    {
+      "file": "av.libs/swscale-10-9af0a10ad7003982e48548ff39e98465.dll",
+      "bytes": 2124800,
+      "sha256": "f2956978470b3ed26c4f5db80b45d4c3a9188a4a8622133f73ded71504df85d6"
+    },
+    {
+      "file": "av.libs/zlib1-4d767210e087ff082d94ef0a09ddc7f8.dll",
+      "bytes": 126464,
+      "sha256": "4d767210e087ff082d94ef0a09ddc7f8c04316c64d69d5a7b9ee802ceab407dd"
+    },
+    {
+      "file": "av-19.0.1.dist-info/DELVEWHEEL",
+      "bytes": 434,
+      "sha256": "c92a3c869338b701defb4031cafbdbe0940a93b958bb3a6bd1a8c0329cf0a230"
+    },
+    {
+      "file": "av-19.0.1.dist-info/entry_points.txt",
+      "bytes": 42,
+      "sha256": "dd731d337d2287aef79cb4915730ec1cb066198365b7bc10d71c96f31a070338"
+    },
+    {
+      "file": "av-19.0.1.dist-info/METADATA",
+      "bytes": 5131,
+      "sha256": "0d61178cd723ea0d03df8caa2168c0c1653b07acdfcc0258f292a0a754a144f3"
+    },
+    {
+      "file": "av-19.0.1.dist-info/RECORD",
+      "bytes": 19989,
+      "sha256": "951f7f346e3d2b0c4af234fc572f8465b2b431b9f1e47fd1e75c1a1a0d306c2f"
+    },
+    {
+      "file": "av-19.0.1.dist-info/top_level.txt",
+      "bytes": 3,
+      "sha256": "4ee405facb6f14737c8a57ebdfa72da9ceff311e483a152aad1d22ea2e60351f"
+    },
+    {
+      "file": "av-19.0.1.dist-info/WHEEL",
+      "bytes": 100,
+      "sha256": "fb15081bd8f07be6e75c8c4ef0d9d5b930d00c6670c9a9359c27f833e09e66f3"
+    },
+    {
+      "file": "av-19.0.1.dist-info/licenses/AUTHORS.py",
+      "bytes": 5863,
+      "sha256": "a69d8ff2559cf3da0e390c7d9f5f648d9db0333a00f9d4989a330a7180cca910"
+    },
+    {
+      "file": "av-19.0.1.dist-info/licenses/AUTHORS.rst",
+      "bytes": 6472,
+      "sha256": "2abfebe175cefe78fcb14db260a3c8972d3b52156f50dedd0bc416ac4f884a96"
+    },
+    {
+      "file": "av-19.0.1.dist-info/licenses/LICENSE.txt",
+      "bytes": 1528,
+      "sha256": "f32ebcb6007dcc05eea369b3820e6391b0a7ef1ed763f30f1aca15dfdbacbe96"
+    }
+  ]
+}

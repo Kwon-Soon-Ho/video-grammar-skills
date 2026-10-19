@@ -1,0 +1,166 @@
+# 작업 transcript
+
+실제 순서를 기록했다. CLI 원문 로그는 subprocess가 받은 bytes를 그대로 저장했다. 호출 래퍼의 프로세스 exit는 0이며, 각 지정 CLI의 실제 exit는 아래에 따로 표시한다. 래퍼 exit 0을 검사 통과로 해석하지 않는다.
+
+## 사전 읽기와 준비
+
+1. PowerShell Get-Content -LiteralPath <run>/task.txt -Raw (exit 0).
+2. PowerShell Get-Content로 자료/IO사용안내.md 및 자료/작업범위.json을 순서대로 읽음 (같은 shell 호출, exit 0).
+3. PowerShell Get-Content로 지정 video-guidance-reviewer/SKILL.md를 읽음 (exit 0).
+4. PowerShell Get-ChildItem -LiteralPath <DB> -Name (exit 0). 출력 이름: 00_운영계약, 01_공통용어, 02_원칙과레이아웃, 03_한맥디자인, 05_출처와검토, 10_공용자산, 13_품질검수, 실행스킬, 자료, 작업초안.
+5. 지정 스킬 references/근거찾기와적용조건.md, references/판정과사람검수.md를 순서대로 Get-Content -Raw 읽음 (각 exit 0). 다른 스킬을 활성화하거나 읽지 않음.
+6. outputs/run_task.py를 outputs에 생성. 지정 CLI read 후 prepare에서 원문 SHA를 비교하고 후보·diff·요청JSON 생성. prepare exit 0. 두 필드 외 동일 검증.
+
+모든 PowerShell tool 응답에는 `Attempting to perform the InitializeDefaultDrives operation on the FileSystem provider failed.` 초기화 메시지가 있었으나 위 명령은 exit 0으로 내용을 반환했다. 이 메시지는 지정 CLI subprocess stderr가 아니며 각 CLI stderr는 빈 bytes였다. 읽은 문서 원문은 읽은자료원문/, 매핑과 SHA는 읽은자료목록.json에 보존했다.
+
+## 실제 지정 CLI 실행
+
+### 01-read
+
+실행 argv (shell 재해석 없는 배열):
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+요청 JSON:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+실제 CLI exit: 0
+
+원문 stdout:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+원문 stderr: 빈 bytes
+
+stdout/stderr 원문 파일: `01-read.stdout.txt`, `01-read.stderr.txt`.
+
+### 02-backup
+
+실행 argv (shell 재해석 없는 배열):
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+요청 JSON:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+실제 CLI exit: 0
+
+원문 stdout:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+원문 stderr: 빈 bytes
+
+stdout/stderr 원문 파일: `02-backup.stdout.txt`, `02-backup.stderr.txt`.
+
+### 03-write
+
+실행 argv (shell 재해석 없는 배열):
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+요청 JSON:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+실제 CLI exit: 0
+
+원문 stdout:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+원문 stderr: 빈 bytes
+
+stdout/stderr 원문 파일: `03-write.stdout.txt`, `03-write.stderr.txt`.
+
+### 04-validate
+
+실행 argv (shell 재해석 없는 배열):
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+요청 JSON:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+실제 CLI exit: 2
+
+원문 stdout:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+원문 stderr: 빈 bytes
+
+stdout/stderr 원문 파일: `04-validate.stdout.txt`, `04-validate.stderr.txt`.
+
+검사 실패를 확인하고 재쓰기하지 않았다. 현재 파일 read와 소유 바이트 확인으로 복구 가능 여부를 판단하기로 했다.
+
+### 05-read-after-failure
+
+실행 argv (shell 재해석 없는 배열):
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+요청 JSON:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+실제 CLI exit: 0
+
+원문 stdout:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+원문 stderr: 빈 bytes
+
+stdout/stderr 원문 파일: `05-read-after-failure.stdout.txt`, `05-read-after-failure.stderr.txt`.
+
+복구 전 실제 bytes를 outputs/검사실패후_복구전원문.json에 보존했다. 그 SHA는 write 응답 owned_written_sha256 및 후보 SHA와 일치했고 bytes도 후보와 동일했다. 외부 변경은 이 시점 대상에서 관측되지 않았으며 restore 요청의 expected_sha256으로 재확인하도록 했다.
+
+### 06-restore
+
+실행 argv (shell 재해석 없는 배열):
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+요청 JSON:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+실제 CLI exit: 0
+
+원문 stdout:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+원문 stderr: 빈 bytes
+
+stdout/stderr 원문 파일: `06-restore.stdout.txt`, `06-restore.stderr.txt`.
+
+### 07-read-final
+
+실행 argv (shell 재해석 없는 배열):
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+요청 JSON:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+실제 CLI exit: 0
+
+원문 stdout:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+원문 stderr: 빈 bytes
+
+stdout/stderr 원문 파일: `07-read-final.stdout.txt`, `07-read-final.stderr.txt`.
+
+### 08-validate-restored
+
+실행 argv (shell 재해석 없는 배열):
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+요청 JSON:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+실제 CLI exit: 0
+
+원문 stdout:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+원문 stderr: 빈 bytes
+
+stdout/stderr 원문 파일: `08-validate-restored.stdout.txt`, `08-validate-restored.stderr.txt`.
+
+## 최종 확인과 기록
+
+일반 파일 읽기로 현재 대상·변경 전 원문·CLI 백업 bytes가 모두 동일함을 확인했다. SHA-256: 851857164896eb05174617fb3a6571b46617f5e69ecf6889b386d08c6273e554. outputs/최종원문.json에 최종 바이트를 보존했다.
+
+복구 완료, 원본 0.1.0 유지. 0.1.1은 후보로만 남음. 미복구/부분 파일을 관측하지 않음. 전체 DB의 파일별 차이 검사는 미실시이므로 전체 DB 검증 통과를 주장하지 않음.
+
+결과.md/결과.json과 이 transcript는 outputs에만 일반 쓰기로 생성. 지정 DB 쓰기·백업·복구·환경 검사는 CLI로만 수행. 서비스상태·시험설정·다른 run·실제 D DB·평가/기대 자료를 읽거나 변경하지 않음. 서비스이벤트는 읽지 않았으며 CLI 응답을 결과 근거로 사용.
+
+사람 회신, 추가 에이전트, 네트워크, CU, AE, API를 사용하지 않음. 시간·토큰 한도는 미제공으로 기록하고 추정하지 않음.

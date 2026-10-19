@@ -1,0 +1,21 @@
+{
+  "request": {
+    "op": "restore",
+    "path": "a.json",
+    "backup_path": "backup/이번작업/a.json",
+    "expected_sha256": "df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d"
+  },
+  "sequence": 4,
+  "status": "error",
+  "before_sha256": "df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d",
+  "requested_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d",
+  "error": "TEST_IO_RESTORE_DENIED: no bytes restored",
+  "after_sha256": "df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d",
+  "response": {
+    "op": "restore",
+    "ok": false,
+    "error_type": "PermissionError",
+    "error": "TEST_IO_RESTORE_DENIED: no bytes restored",
+    "actual_current_sha256": "df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d"
+  }
+}

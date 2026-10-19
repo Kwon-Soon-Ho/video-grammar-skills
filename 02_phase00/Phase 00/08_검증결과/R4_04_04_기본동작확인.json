@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-15",
+  "default_version": "0.2.0",
+  "new_example_valid": true,
+  "new_example_purpose": "spec_test",
+  "new_example_human_review_items": 27,
+  "new_example_fact_verified": false,
+  "catalog_errors": [],
+  "alias_errors": [],
+  "legacy_checks": [
+    {
+      "path": "04_기록규격\\설명용_단계구성_예시.json",
+      "status": "needs_migration",
+      "valid": false,
+      "list_api_blocks": true,
+      "source_unchanged": true,
+      "flags_false": true
+    },
+    {
+      "path": "06_맞춤스킬\\video-record-steward\\evals\\files\\검사입력.json",
+      "status": "needs_migration",
+      "valid": false,
+      "list_api_blocks": true,
+      "source_unchanged": true,
+      "flags_false": true
+    },
+    {
+      "path": "08_검증결과\\스킬평가\\초안비교\\검사입력.json",
+      "status": "needs_migration",
+      "valid": false,
+      "list_api_blocks": true,
+      "source_unchanged": true,
+      "flags_false": true
+    },
+    {
+      "path": "08_검증결과\\스킬평가\\초안쓰기\\변경전_기록.json",
+      "status": "needs_migration",
+      "valid": false,
+      "list_api_blocks": true,
+      "source_unchanged": true,
+      "flags_false": true
+    },
+    {
+      "path": "08_검증결과\\스킬평가\\초안쓰기\\변경후_기록.json",
+      "status": "needs_migration",
+      "valid": false,
+      "list_api_blocks": true,
+      "source_unchanged": true,
+      "flags_false": true
+    }
+  ],
+  "cli": [
+    {
+      "name": "현재기본CLI",
+      "returncode": 0,
+      "expected": 0,
+      "passed": true,
+      "result_status": "draft_structure_pass"
+    },
+    {
+      "name": "구형CLI",
+      "returncode": 2,
+      "expected": 2,
+      "passed": true,
+      "result_status": "needs_migration"
+    }
+  ],
+  "all_passed": true,
+  "scope": "설치된 기본 도구의 계약/버전 분기 확인. 실제영상/내용 승인/01-A 아님."
+}

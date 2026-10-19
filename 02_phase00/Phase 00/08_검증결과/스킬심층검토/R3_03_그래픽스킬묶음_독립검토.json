@@ -1,0 +1,539 @@
+{
+  "review_id": "R3-03-graphic-design-suite-independent",
+  "review_date": "2026-10-14",
+  "reviewer": "foundation_redteam",
+  "status": "조건부 지식 이식 가능 / 원본 전체 활성화 및 실행 도구 채택 보류",
+  "source_root": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 00/backup/2026-10-14_R3_03_편집화면확장/스킬원본/graphic-design-suite",
+  "method": {
+    "static_full_text_review": "선택한 10개 SKILL, 실제 확보된 6개 스크립트, 루트 5개 문서를 전문 정적 읽기. 호출된 도구 코드는 실행하거나 import하지 않았다.",
+    "tree_depth": "확보트리의 commit/truncated/path 목록만 확인. 전체 트리의 모든 항목 내용을 검토했다는 뜻은 아니다.",
+    "executed": [],
+    "installed": [],
+    "remote_calls": [],
+    "d_modified": false,
+    "actual_video_effect": "미검증",
+    "runtime_compatibility": "미검증",
+    "source_claims_verified_online": false,
+    "file_count_is_understanding_evidence": false
+  },
+  "provenance": {
+    "repository": "ArnavPuri/designskills",
+    "commit_evidence": "원본확보목록 repositories[id=graphic-design-suite].commit (부모의 commits API 확보명세). 이 독립검토에서는 원격 commits API를 재호출하지 않음.",
+    "license": "MIT / Copyright (c) 2026 Arnav Puri",
+    "reuse_condition": "실질적 원문·코드 재사용 시 MIT 저작권·허가 고지를 함께 보존. 설치된 외부 의존성과 서체·이미지 자산의 개별 라이선스까지 이 MIT가 포괄하지 않는다.",
+    "limits": "정적 확보 묶음의 SHA는 로컬 파일 식별자다. 서명 검증·전체 저장소 재현 설치·공급망 감사는 수행하지 않았다. AGENTS.md/CLAUDE.md의 생성·설치 명령은 연구 자료로만 읽었고 현재 작업 권한으로 삼지 않았다.",
+    "commit": "c7873015add8571ca95043febad0d9e6c97ee5c6",
+    "tree_sha": "c7873015add8571ca95043febad0d9e6c97ee5c6",
+    "tree_evidence": "확보트리.json Git trees response.sha / truncated=false. tree 응답 sha 자체를 commit 증거로 취급하지 않음."
+  },
+  "support_inventory": {
+    "selected_entrypoints": 10,
+    "secured_script_files": [
+      "skills/color-palette/scripts/palette.py",
+      "skills/design-context/scripts/contrast.py",
+      "skills/design-critique/scripts/audit.mjs",
+      "skills/graphic-design/scripts/render.mjs",
+      "skills/image-generation/scripts/gemini-generate.py",
+      "skills/image-generation/scripts/export-sizes.py"
+    ],
+    "standalone_references_in_selected_packages": "선택 묶음에는 별도 references 파일이 없으며 지침·예시는 SKILL 본문에 포함되어 있다.",
+    "known_support": "6개 호출 스크립트는 실제 로컬 파일과 구현을 확보해 읽었다. 누락 스크립트로 처리하지 않는다. stdlib만 쓰는 palette.py/contrast.py와 외부 런타임이 필요한 다른 4개를 구분한다.",
+    "unsecured_referenced_branches": [
+      "design-system",
+      "presentation-design",
+      "brand-identity",
+      "landing-page-design",
+      "ui-design",
+      "social-media-graphic",
+      "thumbnail-design",
+      "ad-creative-design",
+      "banner-design",
+      "product-mockup",
+      "dark-mode",
+      "icon-design"
+    ],
+    "unsecured_branch_meaning": "선택된 10개 밖의 상호 참조다. upstream에 존재하지 않는다고 판정하지 않았다. 전체 28개 중 비선택 18개·evals·showcase·호환성 wrapper의 내용은 미검토다.",
+    "package_files": "확보 묶음에 root package.json/lockfile/requirements.txt 없음. 트리에는 evals/fixtures/package.json이 보이나 확보·내용 검토하지 않았다.",
+    "runtime_dependencies": [
+      "Node.js/npm",
+      "Playwright와 Chromium",
+      "axe-core 또는 jsDelivr CDN",
+      "google-genai",
+      "Pillow",
+      "브라우저가 읽는 HTML/CSS/웹서체 및 외부 자원"
+    ],
+    "marketing_vs_test": "README의 10x 표현은 검증 결과로 채택하지 않는다. 자체 showcase는 한 번씩의 비교이며 이 검토에서 실제 산출물·평가를 재현하지 않았다. Glittr는 향후 지원 설명으로 읽었다."
+  },
+  "selected_skill_reviews": [
+    {
+      "skill": "graphic-design",
+      "understood_content": "매체·목적별 스킬 라우팅, Gemini와 코드 출력 선택, 스타일 템플릿, 구조화 프롬프트, 정확한 문구 검증과 코드 오버레이, render.mjs 호출.",
+      "phase00_adopt": "목적·수용자·출력 조건을 먼저 적기, 정보 위계·정렬·여백·시각 언어의 용어와 판단 질문, 정확한 로고·문구 보존.",
+      "condition_or_exclude": "기존 한맥 정본과 token ID 우선. .agents/design-context.md를 새 정본으로 만들지 않음. 1/3 구도·1.618·60/30/10·주색 3개·헤드라인 3배는 선택 예시이며 강제 아님. 기본 Gemini·Inter·blue-violet-amber 및 생성·렌더 실행은 Phase00에 이식하지 않음.",
+      "counterexample": "병렬 A/B 비교나 구조도는 동등 위계·중앙 정렬이 목적에 맞을 수 있다. 이를 한 초점·비중앙 규칙으로 고치면 관계를 왜곡한다.",
+      "unverified": "프롬프트의 exact hex/CI 문구만으로 생성 이미지가 정확한 로고·색·형상을 보장하지 않는다."
+    },
+    {
+      "skill": "layout-composition",
+      "understood_content": "12열 그리드, auto-fit, grid-area, Flexbox, Bento, container query, responsive 재배치, screenshot 검증 예.",
+      "phase00_adopt": "판면·정렬선·영역·읽기 순서·근접·반응형 재배치 개념과 후보 선택 조건.",
+      "condition_or_exclude": "4/8px·375/768/1440px·65ch·2배 여백·60/40·12열은 웹 예시. 영상 크기와 시청 거리로 재검토. split은 비교 관계의 증거가 아니고 Bento가 회사의 기본 화면이 되지 않음.",
+      "counterexample": "명칭이 긴 한글 기술 설명을 12열과 고정 60/40 분할에 맞추려 원문을 축약하면 LS-01과 충돌.",
+      "known_support": "선택 design-context/color-palette와 render.mjs 존재. design-system/presentation-design 분기는 비선택이며 npx Playwright 예시는 런타임 미확보."
+    },
+    {
+      "skill": "typography",
+      "understood_content": "모듈러 스케일·광학 조정·서체 조합·font loading·줄 길이·행간·웹 clamp 및 기존 context 존중.",
+      "phase00_adopt": "서체 역할·크기 위계·행간/자간·줄바꿈·대체 글꼴의 용어와 실제 문자열 검토 질문.",
+      "condition_or_exclude": "Latin 추천 서체·45~75자/65ch·12px 최소·16~18px 본문·1.5~1.75행간·음수 자간·대문자·2~3서체는 한국어 영상 표준이 아니다. 실제 한글·영문 모델명·m²·기호 대체와 잘림을 검사해야 한다. Google/Fontshare에 대한 원문의 라이선스 설명은 실제 사용 서체 라이선스를 대신하지 않는다.",
+      "counterexample": "긴 한글 기술명에 음수 자간과 제목 1.1행간을 고정하면 글리프·위첨자가 잘릴 수 있다. 원문/단위 보존 정책과 LS-01/12 우선.",
+      "unverified": "production-ready라는 자체 표현과 수학적 스케일은 실제 한글 가독성 검증이 아니다."
+    },
+    {
+      "skill": "design-critique",
+      "understood_content": "캡처→위계·색·타입·간격·접근성·반응형·성능 검토→근거와 심각도→수정·재검증. 4개 평가축 25%씩, Critical/High 점수 상한, 정적 이미지는 DOM 검사 제외.",
+      "phase00_adopt": "문제/근거/영향/수정안/제외 조건, 실제 결과 없으면 화면 품질 통과를 보류하는 검토 언어.",
+      "condition_or_exclude": "모든 디자인이 한 행동/CTA·F/Z 흐름·가장 큰 요소 하나를 가져야 한다는 체크는 기술 설명/비교/회의 화면에 조건부. 원본 25% 가중치·5초 관찰·4px·폰트 개수로 회사 영상 품질 점수를 확정하지 않음. Phase00는 원문 지침 감사이므로 원문의 '코드만으로 비평 금지/항상 캡처/항상 코드 수정'을 실행 권한으로 삼지 않는다.",
+      "counterexample": "중립적인 A/B 기술 비교에 한쪽을 더 크게 만들거나 강한 CTA 색을 넣으면 설명의 공정성을 해친다.",
+      "known_support": "audit.mjs 구현 확보. 위반 없음/종료0을 시각·접근성 전체 통과로 취급할 수 없는 구현 한계 있음."
+    },
+    {
+      "skill": "design-context",
+      "understood_content": ".agents 디자인 문맥 정본, 브랜드 역할·폰트·스타일·규모·대비 연결, existing context를 존중하고 원색 변경을 제안으로 남김.",
+      "phase00_adopt": "출처색/역할/파생색/미정값의 분리, 브랜드 입력이 없음을 명시, 변경 후보와 원값 보존.",
+      "condition_or_exclude": "CSS·Tailwind 추출과 로고 픽셀 색은 관측 자료이며 공식 CI 승인으로 승격하지 않음. .agents 파일 우선 및 default blue/semantic 팔레트 생성은 기존 한맥 JSON 참조로 교체. 가족사 전체 동일색 강제 금지.",
+      "counterexample": "웹 사이트의 CSS 파란색 한 개를 8개 회사의 공식 영상 주색으로 저장하면 LS-08과 충돌.",
+      "known_support": "contrast.py 확보, 불투명 단색 sRGB 기준의 제한된 검사만 가능."
+    },
+    {
+      "skill": "color-palette",
+      "understood_content": "OKLCH hue/chroma 기반50~950, light/dark 파생, semantic 역할, sRGB 대비, palette.py 호출.",
+      "phase00_adopt": "색 공간·명도/채도/색상·대비·브랜드/의미/장식 역할 어휘, 파생 제안과 공식 CI 분리.",
+      "condition_or_exclude": "팔레트 생성으로 한맥 원색/token값을 교체하지 않음. 60/30/10·녹색=성공 등의 맥락은 문화·자료 역할과 대조. 이 원문의 큰 글자 기준은 24px 또는18.66px bold로 표기되어 있어 이전 다른 스킬의18px 단위 오류와 혼동하지 않음.",
+      "counterexample": "--from 원색을 넣어 생성된500을 그대로 공식primary에 저장하면 원색 밝기가 달라질 수 있다.",
+      "known_support": "palette.py의 원밝기 미보존·hex/oklch 불일치·반올림 등급 판정 결함은 아래 개별 기록."
+    },
+    {
+      "skill": "poster-design",
+      "understood_content": "출력매체·목적·정보 위계·중앙/Z/분할/그리드/겹침 선택, 포스터 생성, exact ratio/copy 확인, 인쇄 bleed/trim/DPI/ICC.",
+      "phase00_adopt": "판형·주목 정보·보조 정보·안전 여백·그리드·인쇄와 화면의 차이, 정확한 날짜/주소/가격 보존.",
+      "condition_or_exclude": "3mm/300DPI/인쇄 ICC는 인쇄 조건이다. 영상 프레임 규칙에 복사하지 않음. 럭셔리 serif/흑금·minimal2색·Swiss 등은 선택 스타일이며 모든 화면/사진/서체의 절대 규칙이 아니다. 로고는 생성 모델로 대체하지 않음.",
+      "counterexample": "포스터의 겹침·tight leading·대문자 스타일을 한글 공법명과 정확한 시설 도면에 전용하면 잘림과 의미 손실이 생긴다.",
+      "unverified": "4K 생성이나300DPI 메타데이터만으로 실제 인쇄 품질을 보장하지 않는다."
+    },
+    {
+      "skill": "image-treatment",
+      "understood_content": "object-fit/crop·filter·duotone·blend·mask·overlay·responsive picture와 소스 이미지 처리.",
+      "phase00_adopt": "처리·마스크·톤·합성·원본/파생자산·크롭 한계의 명칭과 분리 기록.",
+      "condition_or_exclude": "회사색에 맞추려 실제 증거 사진의 색/재질/시설 위치를 바꾸지 않음. cover/clip은 내용 제거 여부를 검사. CSS duotone과 혼합 예를 정확한 물리 색상 매핑으로 선언하지 않음. 이미지 처리 실행은02.",
+      "counterexample": "침투수/양압 표식이 있는 도면을 center-crop하거나 hue-rotate해 실제 영역·뜻을 바꾸면 LS-03/04와 충돌. 투명 text-mask의 미지원 fallback은 글자가 안 보일 수 있다.",
+      "known_support": "별도 실행 스크립트 없이 inline CSS/SVG 예와 image-generation 호출. 실제 브라우저 호환·색 출력 미검증."
+    },
+    {
+      "skill": "infographic",
+      "understood_content": "공정/비교/통계/타임라인/목록/차트/아이콘그리드 선택, 실측 데이터는 SVG·코드 기하, 모델 chart geometry는 illustrative라고 명시.",
+      "phase00_adopt": "정보 관계별 표현 후보·값/단위/출처/정밀도·범례·차트 기하와 장식 구분.",
+      "condition_or_exclude": "8개 라벨·6색 등의 수치는 정보량 후보. 주색으로 '중요한 데이터'를 강조할 때 편향을 검토. 데이터 미제공을 예시 값이나 모델 생성 결과로 채우지 않음.",
+      "counterexample": "같은 간격 사건 카드를 기간 비례 시간축으로 기록하거나 연결선으로 사실상 인과를 단정하면 LS-07/공통 용어의 관계축과 충돌.",
+      "positive": "Gemini 도표는 정확한 데이터 기하가 아니므로 코드 사용하라는 원문의 명시적 경고는 유의미하게 채택."
+    },
+    {
+      "skill": "image-generation",
+      "understood_content": "Gemini3.1FlashImagePreview API, 구조화 프롬프트, reference image, multi-turn, exact ratio·center crop·resize, 플랫폼 export 예와 Batch 안내.",
+      "phase00_adopt": "원본/생성/파생 자산 구분, 생성 결과의 exact text·CI·data 검증 한계, 프롬프트와 결과 증거를 구분하는 기록 언어.",
+      "condition_or_exclude": "GEMINI_API_KEY/GOOGLE_API_KEY·pip·CLI·API 호출·.env 설정은 Phase00에 이식하지 않음. 실행 도구는02의 별도 목적과 허용된 네이티브 도구 정책 아래 검토. 현재 환경 API 값을 읽지 않았다.",
+      "counterexample": "정확한 좌우 비교 화면을 가운데 크롭해 한쪽을 없애거나 생성된 회사 UI를 실제 제품 증거로 저장하면 LS-04/10에 위반.",
+      "known_support": "gemini-generate.py는 동기 generate_content와 chat 구현. 본문 Batch API 안내는 실제 이 CLI의 기능이 아니다. export-sizes.py는 Pillow 파생 정지 이미지이며 영상 편집기가 아니다."
+    }
+  ],
+  "material_findings": [
+    {
+      "id": "GD-01",
+      "severity": "high",
+      "source": "skills/color-palette/scripts/palette.py",
+      "evidence": "--from이 L,C,H를 얻어도 build_scale에는 H,C만 전달. STOPS의500L=.55. gamut fit은 C를 줄이지만 oklch 문자열은 요청 C로 출력.",
+      "risk": "원 CI와 파생500 혼동 및 같은 token의 hex/oklch 상충.",
+      "minimum_fix": "공식 원값과 역할 유지. 파생은 candidate로 분리. 향후 도구 채택 전 실제 gamut-adjusted C 기록과 두 표현 일치 검사.",
+      "verification": "정적 코드 경로 확인. 실제 실행 미수행."
+    },
+    {
+      "id": "GD-02",
+      "severity": "high",
+      "source": "skills/color-palette/scripts/palette.py",
+      "evidence": "on_white/on_black를 round(...,2)한 후 grade의4.5/3 임계값 비교.",
+      "risk": "4.499와 같이 임계값 미만이4.50 표시로 합격 가능.",
+      "minimum_fix": "등급은 원 실수값 비교, 표시만 반올림. 실제 색 경계 회귀는 후속 도구 테스트.",
+      "verification": "정적 산술 반례이며 특정 색쌍을 실행 재현하지 않음."
+    },
+    {
+      "id": "GD-03",
+      "severity": "high",
+      "source": "skills/design-context/scripts/contrast.py",
+      "evidence": "누락된 역할쌍은 SKIP. 결과가빈배열이어도 all(results.pass)는true라 종료0.",
+      "risk": "검사 0건을 대비 통과로 오인.",
+      "minimum_fix": "checked_count/skipped_count/unknown을 출력하고0건은 insufficient_input. 종료코드 자체를 통과 증거로 사용하지 않음.",
+      "verification": "정적 제어 흐름 반례. 실행 재현 아님."
+    },
+    {
+      "id": "GD-04",
+      "severity": "high",
+      "source": "skills/design-critique/scripts/audit.mjs",
+      "evidence": "computed text color parse는rgb/rgba만 지원. 현대 color()/oklch는누락 가능. opacity0만 제외하고 부분투명/조상opacity/실제합성은 반영하지 못함.",
+      "risk": "불완전 DOM 대비를 실제 픽셀 가독성·WCAG 전체 판정으로 확대.",
+      "minimum_fix": "도구 관측과 actual pixel measurement를 분리. 미지원 color/합성은 unknown. 모든 적용 조건·면제를 별도 확인.",
+      "verification": "정적 함수·분기 확인. 특정 웹 페이지 판정 결과를 재현하지 않음."
+    },
+    {
+      "id": "GD-05",
+      "severity": "high",
+      "source": "skills/design-critique/scripts/audit.mjs / skills/graphic-design/scripts/render.mjs",
+      "evidence": "Playwright/global npm 경로 탐색과 Chromium 필요. audit는axe없을때CDNscript추가. URL/로컬HTML의외부자원 접근 가능. PNG/PDF/report 디렉터리 생성·쓰기.",
+      "risk": "읽기 연구가 브라우저·네트워크·외부 스크립트 실행으로 전환될 수 있음.",
+      "minimum_fix": "원본 실행·자동 설치·CDNfallback을Phase00맞춤스킬에서 호출하지 않음. 향후 검사 도구는 의존성·네트워크·쓰기 경계 명시.",
+      "verification": "정적 실행 의존성 확인. 이번 검토에서 실행·브라우저·네트워크 없음."
+    },
+    {
+      "id": "GD-06",
+      "severity": "medium",
+      "source": "skills/design-critique/scripts/audit.mjs / skills/graphic-design/scripts/render.mjs",
+      "evidence": "audit는위반을출력해도process실패판정없음. CSSreduced-motion문자열존재로구조검사.375/390모두mobile이어서사용자폭목록에서파일/결과이름충돌가능. render는scroll메트릭으로overflow확인하며고정animationseek없음.",
+      "risk": "종료0·한스크린샷·CSS문자열을 전체품질·모션완료·가림없음 증거로 오인.",
+      "minimum_fix": "검사범위/폭/시점/위반상태를 분리하고비검사항목unknown. 반복폭파일명에숫자포함. 실제동작시간 검증01-A/02로 분리.",
+      "verification": "정적 제어 흐름. 실행·영상검사 없음."
+    },
+    {
+      "id": "GD-07",
+      "severity": "high",
+      "source": "skills/image-generation/scripts/gemini-generate.py",
+      "evidence": "MODEL하드코딩,envkey존재확인,genai.Client(),입력이미지/API전송,model/chat호출,출력저장. --resize양수검증없음;BatchCLI없음.",
+      "risk": "지식 큐레이션에 API비용·자료전송·생성·파일쓰기 권한이 끼어듦. 본문 기능과CLI지원 혼동.",
+      "minimum_fix": "Phase00는 provider/API 프롬프트 실행을 제외. 모델/SDK제약은출처시점값으로만 기록. 향후 실제 기능별 검증 필요.",
+      "verification": "코드만 읽음. 키 값 조회·설정·API연결을 하지 않음."
+    },
+    {
+      "id": "GD-08",
+      "severity": "medium",
+      "source": "skills/image-generation/scripts/export-sizes.py / gemini-generate.py",
+      "evidence": "center/focal crop→Lanczos resize. 극단비율은<50%보존/upscale경고만있고처리계속. 양수size검증없음. PNG/JPG/WebP저장시원본ICC/EXIF를명시보존하지않음.",
+      "risk": "시설·단위·A/B가림 및 원본색관리 손실. export video 그룹은정지image프리셋명이며영상생성아님.",
+      "minimum_fix": "원본·파생·크롭변환기록, 핵심영역/라벨보존 확인. 화면비별재배치와크롭구분. 플랫폼크기는회사정본아님.",
+      "verification": "정적코드확인;색관리·Pillow호환성·플랫폼현재규격미검증."
+    },
+    {
+      "id": "GD-09",
+      "severity": "high",
+      "source": "10 selected SKILL / context priority",
+      "evidence": "여러스킬이.agents/design-context.md를브랜드판정우선자료로삼고웹수치와영문폰트/스타일템플릿을기본제시.",
+      "risk": "한맥JSON정본을별도문서가대체하거나관측CSS색·AI취향이회사필수규칙으로승격.",
+      "minimum_fix": "profile_ref/tokenID를유일참조로유지. 조건부지식카드에웹/인쇄/영상/한국어와회사미승인을표기.",
+      "verification": "선택SKILL전문과기존3맞춤SKILL·R3정책을대조."
+    }
+  ],
+  "existing_canonical_conflict_review": {
+    "layout_version": "0.1.2",
+    "layout_policy": "project_draft_not_company_rule / company_approved=false / actual_video_test=false / universal_numeric_defaults=null / automatic_selection=false",
+    "text_policy": "원문 문자열·숫자·단위·오류도 보존. 새 표기 제안은 변경 이유와 별도 기록. 값/정밀도/의미 변경 자동 금지.",
+    "matched_examples": [
+      "LS-01 긴한글",
+      "LS-02 단위",
+      "LS-03 공간정확도",
+      "LS-04 재배치/크롭",
+      "LS-06 차트축",
+      "LS-07 결측/비례시간",
+      "LS-08 회사병렬/CI",
+      "LS-10 실제UI",
+      "LS-11 시간가독성",
+      "LS-12 글꼴대체",
+      "MC-01 실측등속",
+      "MC-02 동등비교",
+      "MC-03 필요한자막",
+      "MC-04 장식카운트",
+      "MC-08 웹플레이어/고정영상"
+    ],
+    "result": "외부수치/미학의전역필수화와원본생성·브라우저실행만제외하면지식참조로정본과공존가능. 편집·화면제작이Phase00허용으로승격되지는않는다."
+  },
+  "custom_skill_transfer": [
+    {
+      "skill": "video-knowledge-curator",
+      "adopt": [
+        "격자·판면·타입·이미지처리의명칭/별칭/조건부개념",
+        "원문스타일템플릿과프로젝트해석분리",
+        "외부수치의매체/언어/시점/제외조건",
+        "MIT원문과확보SHA연결"
+      ],
+      "allowed_action": "승인된 지식 범위 안에서 backup 후 draft 카드/출처 정리. 새 도표·포스터·HTML·시나리오 생성은 제외.",
+      "decision_gate": "의미병합·회사필수화·범위확장에는최소4선택지+추천안. 이미승인된동일범위재질문없음."
+    },
+    {
+      "skill": "video-record-steward",
+      "adopt": [
+        "공식token/파생candidate/픽셀관측의분리",
+        "검사건수0·미지원color·도구위반·반올림한계",
+        "source/generated/derived자산및crop변환구분",
+        "원문숫자/단위/precision과actualdata/illustration분리"
+      ],
+      "allowed_action": "스키마·ID·출처·정본 연결·버전 기록만 검사. 원문색·값교체/픽셀측정/API생성/HTML런타임실행은하지않음.",
+      "decision_gate": "변경정본의필수schema확장/승인상태/값의미변경은제안. 종료0이사람승인·실영상효과를증명하지않음."
+    },
+    {
+      "skill": "video-guidance-reviewer",
+      "adopt": [
+        "근거→영향→수정안→제외조건검토",
+        "웹/인쇄/영상/한국어적합성",
+        "CI보존·공정비교·실측기하·긴명칭·폰트대체",
+        "최종완성상태와읽을수있는시간구분"
+      ],
+      "allowed_action": "지침초안의채택/수정/보류검토. 실제결과없으면시각품질/대비/읽기시간통과선언금지. 원본25%점수/CTA/한초점/서체/2색/스위스양식을회사전역규칙으로채택하지않음.",
+      "decision_gate": "목적변경·필수화는최소4선택지+추천안. 실제영상수용자효과는후속실증."
+    }
+  ],
+  "phase_boundary": {
+    "00": "공통어휘·정보관계·판면/화면지식·출처/라이선스·조건부검수언어·기록계약·맞춤스킬지침",
+    "01-A": "실제 영상 프레임/OCR/시간/픽셀/모션 측정·추출 구현 및 검증",
+    "01-B": "회사 사례의 문법·패턴 검수/승인",
+    "02": "새 기획·포스터/화면/도표/이미지/영상 제작·API생성·렌더·실제결과검수"
+  },
+  "minimum_completion": [
+    "10개 모두 조건부 개념과 예/반례로 큐레이션하고 외부 원본을 통째 활성화하지 않는다.",
+    "회사 정본/원색/문구/값을 보존하며 파생 candidate와 측정·관측·추정을 분리한다.",
+    "실제 확보 6스크립트와 비선택 호출분기를 구분하고 실행환경/누락deps/네트워크/쓰기 경계를 남긴다.",
+    "도구 결함은 지식 이식 조건에 반영하며 실제 코드 고침·런타임 재현은 별도 후속 작업으로 둔다.",
+    "외부 원문 이해 검토 완료와 실제 영상 효과·회사 승인·도구 성능 검증 완료를 분리해 보고한다."
+  ],
+  "source_files": [
+    {
+      "not_verified": "runtime / actual output / upstream signature / external dependencies",
+      "bytes": 35860,
+      "read_depth": "metadata_path_inventory_only",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\graphic-design-suite\\확보트리.json",
+      "sha256": "c3a9e74e4fbf4e2e581b4b936b2dfd65a6393467859929278fbc22e168ac62c9",
+      "relative_path": "확보트리.json"
+    },
+    {
+      "not_verified": "runtime / actual output / upstream signature / external dependencies",
+      "bytes": 1529,
+      "read_depth": "full_document",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\graphic-design-suite\\AGENTS.md",
+      "sha256": "06f42d81c47cc315ccf2be564e913190d26957c13569518b11ab416cac8ac792",
+      "relative_path": "AGENTS.md"
+    },
+    {
+      "not_verified": "runtime / actual output / upstream signature / external dependencies",
+      "bytes": 3237,
+      "read_depth": "full_document",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\graphic-design-suite\\CLAUDE.md",
+      "sha256": "c34f684478cef8f486f94ec520f47c442c65a6348d90540419b5d5185baf102a",
+      "relative_path": "CLAUDE.md"
+    },
+    {
+      "not_verified": "runtime / actual output / upstream signature / external dependencies",
+      "bytes": 4075,
+      "read_depth": "full_document",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\graphic-design-suite\\CONTRIBUTING.md",
+      "sha256": "4a6acfd7d99264c98f730289337006e84f20210b06283ddbb97ff5af0e521c90",
+      "relative_path": "CONTRIBUTING.md"
+    },
+    {
+      "not_verified": "runtime / actual output / upstream signature / external dependencies",
+      "bytes": 1067,
+      "read_depth": "full_document",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\graphic-design-suite\\LICENSE",
+      "sha256": "79e8d31951779e602e2b1973a7c2608653948ae4b79217258a2174b47f07b89d",
+      "relative_path": "LICENSE"
+    },
+    {
+      "not_verified": "runtime / actual output / upstream signature / external dependencies",
+      "bytes": 7762,
+      "read_depth": "full_document",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\graphic-design-suite\\README.md",
+      "sha256": "d5f7fb0c9630f23cd425ed663a38273dbe4024ea449cf4202dfb6160c159ea73",
+      "relative_path": "README.md"
+    },
+    {
+      "not_verified": "runtime / actual output / upstream signature / external dependencies",
+      "bytes": 5535,
+      "read_depth": "full_static_code_and_calls_no_execution",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\graphic-design-suite\\skills\\color-palette\\scripts\\palette.py",
+      "sha256": "e9991aea48cb0f000fe0b383a2630c2c1de581bb6fb7bd4373a4895793f19ea0",
+      "relative_path": "skills/color-palette/scripts/palette.py"
+    },
+    {
+      "not_verified": "runtime / actual output / upstream signature / external dependencies",
+      "bytes": 18444,
+      "read_depth": "full_entrypoint_inline_examples_and_call_routes",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\graphic-design-suite\\skills\\color-palette\\SKILL.md",
+      "sha256": "837ba16bac86a7ec2d4d2f0aa1f43db7955933a53c2d53f7ca0521554bfc6128",
+      "relative_path": "skills/color-palette/SKILL.md"
+    },
+    {
+      "not_verified": "runtime / actual output / upstream signature / external dependencies",
+      "bytes": 8439,
+      "read_depth": "full_static_code_and_calls_no_execution",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\graphic-design-suite\\skills\\design-context\\scripts\\contrast.py",
+      "sha256": "a3aec366656331ce901982d7f15a8d3d17016a21aad25098bec42dad9c4a854c",
+      "relative_path": "skills/design-context/scripts/contrast.py"
+    },
+    {
+      "not_verified": "runtime / actual output / upstream signature / external dependencies",
+      "bytes": 12777,
+      "read_depth": "full_entrypoint_inline_examples_and_call_routes",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\graphic-design-suite\\skills\\design-context\\SKILL.md",
+      "sha256": "0d4e21b0938992cb2f423f837d4f968e724ef116645e7b6d0e0b05c3c3057805",
+      "relative_path": "skills/design-context/SKILL.md"
+    },
+    {
+      "not_verified": "runtime / actual output / upstream signature / external dependencies",
+      "bytes": 10754,
+      "read_depth": "full_static_code_and_calls_no_execution",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\graphic-design-suite\\skills\\design-critique\\scripts\\audit.mjs",
+      "sha256": "5592b34a002be1bd96a970562997bb8656a4d34872120fb4832b352a72e388df",
+      "relative_path": "skills/design-critique/scripts/audit.mjs"
+    },
+    {
+      "not_verified": "runtime / actual output / upstream signature / external dependencies",
+      "bytes": 18861,
+      "read_depth": "full_entrypoint_inline_examples_and_call_routes",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\graphic-design-suite\\skills\\design-critique\\SKILL.md",
+      "sha256": "72e4d3d53b35ba48eddf8254cc7f07aeaeb2fc639a25801927f4efa51bb1f8db",
+      "relative_path": "skills/design-critique/SKILL.md"
+    },
+    {
+      "not_verified": "runtime / actual output / upstream signature / external dependencies",
+      "bytes": 6807,
+      "read_depth": "full_static_code_and_calls_no_execution",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\graphic-design-suite\\skills\\graphic-design\\scripts\\render.mjs",
+      "sha256": "e170cad741f0e3d49f696e3c04449055cbdd968445bf2fec6d8af6f991b72daf",
+      "relative_path": "skills/graphic-design/scripts/render.mjs"
+    },
+    {
+      "not_verified": "runtime / actual output / upstream signature / external dependencies",
+      "bytes": 16797,
+      "read_depth": "full_entrypoint_inline_examples_and_call_routes",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\graphic-design-suite\\skills\\graphic-design\\SKILL.md",
+      "sha256": "475fee44fda33b8a90ee424ea4b4d9042a5eb66d176ec8b69aa0e5a03f5d90d4",
+      "relative_path": "skills/graphic-design/SKILL.md"
+    },
+    {
+      "not_verified": "runtime / actual output / upstream signature / external dependencies",
+      "bytes": 6379,
+      "read_depth": "full_static_code_and_calls_no_execution",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\graphic-design-suite\\skills\\image-generation\\scripts\\export-sizes.py",
+      "sha256": "2a328d44e60611434271d25586e4ddc939500653faa3baf61b57d3ed32fd8545",
+      "relative_path": "skills/image-generation/scripts/export-sizes.py"
+    },
+    {
+      "not_verified": "runtime / actual output / upstream signature / external dependencies",
+      "bytes": 7497,
+      "read_depth": "full_static_code_and_calls_no_execution",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\graphic-design-suite\\skills\\image-generation\\scripts\\gemini-generate.py",
+      "sha256": "76a5c37cdf4f21b54bc06a6b6b264fcdd4b46f7fa24ed1d1ed501b4676b7f960",
+      "relative_path": "skills/image-generation/scripts/gemini-generate.py"
+    },
+    {
+      "not_verified": "runtime / actual output / upstream signature / external dependencies",
+      "bytes": 12952,
+      "read_depth": "full_entrypoint_inline_examples_and_call_routes",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\graphic-design-suite\\skills\\image-generation\\SKILL.md",
+      "sha256": "54143e07b8e475c92fc68118a958bb74d44fdbed1ada3659a10fa4662d3f0f60",
+      "relative_path": "skills/image-generation/SKILL.md"
+    },
+    {
+      "not_verified": "runtime / actual output / upstream signature / external dependencies",
+      "bytes": 15131,
+      "read_depth": "full_entrypoint_inline_examples_and_call_routes",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\graphic-design-suite\\skills\\image-treatment\\SKILL.md",
+      "sha256": "5c40bc56afff9dbb1d3c2f471d02ca1646e9b82a0b0d9879eac52cc46a2b5565",
+      "relative_path": "skills/image-treatment/SKILL.md"
+    },
+    {
+      "not_verified": "runtime / actual output / upstream signature / external dependencies",
+      "bytes": 11639,
+      "read_depth": "full_entrypoint_inline_examples_and_call_routes",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\graphic-design-suite\\skills\\infographic\\SKILL.md",
+      "sha256": "45e8b7095e203b07d5cd64b05442bef5c68cff90edc703a830ba6168c8178ebe",
+      "relative_path": "skills/infographic/SKILL.md"
+    },
+    {
+      "not_verified": "runtime / actual output / upstream signature / external dependencies",
+      "bytes": 9877,
+      "read_depth": "full_entrypoint_inline_examples_and_call_routes",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\graphic-design-suite\\skills\\layout-composition\\SKILL.md",
+      "sha256": "284ae3d8eb51961e3e06c1232020816bcea0d15d56ec21646d4c30e556452547",
+      "relative_path": "skills/layout-composition/SKILL.md"
+    },
+    {
+      "not_verified": "runtime / actual output / upstream signature / external dependencies",
+      "bytes": 15277,
+      "read_depth": "full_entrypoint_inline_examples_and_call_routes",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\graphic-design-suite\\skills\\poster-design\\SKILL.md",
+      "sha256": "ec55a7d0fc0b5bb3428a0d02e8577362ac2d9da23ab2bf9b080b512cdf64cf06",
+      "relative_path": "skills/poster-design/SKILL.md"
+    },
+    {
+      "not_verified": "runtime / actual output / upstream signature / external dependencies",
+      "bytes": 16631,
+      "read_depth": "full_entrypoint_inline_examples_and_call_routes",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\graphic-design-suite\\skills\\typography\\SKILL.md",
+      "sha256": "747a51a6acec5a72672847c72ad94bfa8ab3c50d8ec43c05317aac57cf2c8cb5",
+      "relative_path": "skills/typography/SKILL.md"
+    }
+  ],
+  "comparison_files": [
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\02_원칙과레이아웃\\04_모션원칙_충돌과예외.md",
+      "read_depth": "full_document",
+      "sha256": "a21649e3c6c16e778464ee0d76ebfe1bd9ffddd55cb076fa449efbf5371c353f"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\02_원칙과레이아웃\\09_문구와화면비_검토사례.md",
+      "read_depth": "full_document",
+      "sha256": "1a4067d5455af7b4208c7578064448acc33a360b6f730f932e5f2367ccd3c2dd"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\02_원칙과레이아웃\\레이아웃_심화지식.json",
+      "read_depth": "selected_top_level_policy_only; version,authority,company_approved,actual_video_test,design_reference,universal_numeric_defaults,automatic_selection,text_edit_policy; cards_not_full_reread",
+      "sha256": "5d6378eb954b6b75f94be2a0988254a1406f6dacc8a6c44060c6a05ff56aa14c"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\06_맞춤스킬\\video-knowledge-curator\\SKILL.md",
+      "read_depth": "full_document",
+      "sha256": "233db126b7240f2ce95ed0c66d28963747d29033aae170b0da2be7458d68eb6e"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\06_맞춤스킬\\video-knowledge-curator\\references\\작업기준.md",
+      "read_depth": "full_document",
+      "sha256": "2cd84d36a6a0e9f1a43686d507229e42db3374343c2e8d4ea4d0454e30f06049"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\06_맞춤스킬\\video-record-steward\\SKILL.md",
+      "read_depth": "full_document",
+      "sha256": "a1f4b2a75d4b97b84e208bdf81f8d7261af3e4cff59a10d49fdee5fe3bab6bcc"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\06_맞춤스킬\\video-record-steward\\references\\작업기준.md",
+      "read_depth": "full_document",
+      "sha256": "2cd84d36a6a0e9f1a43686d507229e42db3374343c2e8d4ea4d0454e30f06049"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\06_맞춤스킬\\video-guidance-reviewer\\SKILL.md",
+      "read_depth": "full_document",
+      "sha256": "73741029082b93694d450703f8c910ed61329d0dc46434a5b0b7be55a76e4fad"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\06_맞춤스킬\\video-guidance-reviewer\\references\\작업기준.md",
+      "read_depth": "full_document",
+      "sha256": "2cd84d36a6a0e9f1a43686d507229e42db3374343c2e8d4ea4d0454e30f06049"
+    }
+  ],
+  "counts": {
+    "comparison_files": 9,
+    "tree_metadata_only": 1,
+    "full_comparison_documents": 8,
+    "full_scripts": 6,
+    "source_files": 22,
+    "full_source_texts": 21,
+    "selected_skills": 10,
+    "full_root_documents": 5,
+    "comparison_selected_policy_only": 1
+  }
+}

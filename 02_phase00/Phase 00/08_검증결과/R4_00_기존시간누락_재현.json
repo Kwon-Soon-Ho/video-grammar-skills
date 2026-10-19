@@ -1,0 +1,170 @@
+{
+  "scope": "Read-only catalogs and memory-only fictional structural fixtures; no video analysis, file-content verification, approval, or D writes.",
+  "catalog_errors": [],
+  "current_example_errors": [],
+  "fixture": {
+    "schema_version": "0.1.0",
+    "record_id": "EXAMPLE-PROCESS-001",
+    "version": "0.1.0",
+    "asset": {
+      "id": "EXAMPLE-ASSET-001",
+      "path": "fixture-only.mp4",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "duration_s": 10,
+      "source_type": "internal",
+      "metadata": {}
+    },
+    "taxonomy_ref": "company-video-taxonomy@0.1.1",
+    "run": null,
+    "scenario_segments": [
+      {
+        "id": "EXAMPLE-SCRIPT-001",
+        "kind": "original_scenario",
+        "text": "6단계 업무의 전체 흐름과 현재 단계를 설명한다.",
+        "period": {
+          "start_s": null,
+          "end_s": null,
+          "time_basis": "unknown",
+          "uncertainty_s": null
+        },
+        "source_ref": "SRC-PROJECT-GUIDANCE"
+      }
+    ],
+    "segments": [
+      {
+        "id": "EXAMPLE-SEGMENT-001",
+        "kind": "continuous_scene",
+        "period": {
+          "start_s": 0,
+          "end_s": 1,
+          "time_basis": "presentation_timeline",
+          "uncertainty_s": 0.01
+        },
+        "scenario_refs": [
+          "EXAMPLE-SCRIPT-001"
+        ],
+        "classification": {
+          "communication_purpose": [
+            "PURPOSE-PROCESS"
+          ],
+          "information_relation": [
+            "REL-ORDER"
+          ],
+          "layout": [
+            "LAYOUT-PROCESS-LINE",
+            "LAYOUT-CARD-GROUP"
+          ]
+        },
+        "unclassified_reason": null,
+        "frames": [
+          {
+            "id": "REAUDIT-FRAME",
+            "kind": "extracted",
+            "path": "fixture-only.png",
+            "source_pts": 0,
+            "time_base": {
+              "num": 1,
+              "den": 24
+            },
+            "source_frame_ordinal": 0,
+            "requested_s": 0,
+            "actual_s": 0,
+            "transform_ref": null
+          }
+        ],
+        "beats": []
+      }
+    ],
+    "evidence": [
+      {
+        "id": "EXAMPLE-EVIDENCE-001",
+        "kind": "frame",
+        "locator": "fixture-only.png",
+        "source_ref": "SRC-PROJECT-GUIDANCE",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "version": "0.1.0",
+        "target_id": "REAUDIT-FRAME",
+        "period": {
+          "start_s": 0,
+          "end_s": 1,
+          "time_basis": "presentation_timeline",
+          "uncertainty_s": 0.01
+        }
+      }
+    ],
+    "claims": [
+      {
+        "id": "EXAMPLE-CLAIM-001",
+        "version": "0.1.0",
+        "statement": "전체 맥락을 유지하면서 현재 단계로 주목을 이동하는 표현을 검토한다.",
+        "support_mode": "rendered_observation",
+        "evidence_refs": [
+          "EXAMPLE-EVIDENCE-001"
+        ],
+        "confidence_basis": "설계 연결을 설명하는 예시이며 실제 검증 결과가 아니다.",
+        "limitations": "회사 문법 승인·실영상 사례로 사용하지 않는다.",
+        "measurement": null
+      }
+    ],
+    "design": {
+      "profile_ref": "hanmac-video@0.1.0",
+      "palette_role_bindings": {
+        "background": "HM-COLOR-GREEN-500",
+        "main_text": "HM-COLOR-NEUTRAL-GREEN-100",
+        "emphasis": "HM-COLOR-YELLOW"
+      },
+      "optional_style_refs": [],
+      "project_overrides": []
+    },
+    "review": {
+      "state": "draft",
+      "reviewer": null,
+      "reviewed_at": null,
+      "object_version": "0.1.0",
+      "approved_scope": null,
+      "evidence_versions": {},
+      "approval_kind": null,
+      "decision_ref": null
+    },
+    "notes": "source_type=synthetic_example. 회사 승인 검색에서 제외. 원본 영상은 제공되지 않았다."
+  },
+  "tests": [
+    {
+      "name": "normal memory fixture",
+      "expected_valid": true,
+      "actual_valid": true,
+      "gap_reproduced": false,
+      "errors": []
+    },
+    {
+      "name": "frame actual_s=100 exceeds asset duration_s=10",
+      "expected_valid": false,
+      "actual_valid": true,
+      "gap_reproduced": true,
+      "errors": []
+    },
+    {
+      "name": "frame actual_s=2 exceeds containing segment end_s=1",
+      "expected_valid": false,
+      "actual_valid": true,
+      "gap_reproduced": true,
+      "errors": []
+    },
+    {
+      "name": "evidence period start_s=9 exceeds end_s=1",
+      "expected_valid": false,
+      "actual_valid": true,
+      "gap_reproduced": true,
+      "errors": []
+    },
+    {
+      "name": "evidence period end_s=100 exceeds asset duration_s=10",
+      "expected_valid": false,
+      "actual_valid": true,
+      "gap_reproduced": true,
+      "errors": []
+    }
+  ],
+  "audit_date": "2026-10-15",
+  "warning": "출력 fixture는 internal을 흉내 내는 가짜 구조 입력. 실사례 DB 등록/회사문법 조회에 사용 금지."
+}

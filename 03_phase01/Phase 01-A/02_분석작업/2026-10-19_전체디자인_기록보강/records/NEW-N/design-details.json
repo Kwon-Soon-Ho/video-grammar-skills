@@ -1,0 +1,517 @@
+{
+  "schema_version": "design-details-0.1",
+  "case_id": "DEV-NEW-N-REFERENCE-20261019",
+  "source": {
+    "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\한맥 영상\\노듈러거더 홍보 영상\\노듈러거더홍보영상_한맥(KR)_260622.mp4",
+    "sha256": "42d87e0cc8c507ccb2a8924ae3252d689ef103d4ca3b1219ec1e588f6f474a03"
+  },
+  "base_record": {
+    "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\records\\NEW-N\\observations-linked.json",
+    "sha256": "85024e9b5cb5808d6a922a910ef1837b69aac03ce0dacab8278f87d0d611c088"
+  },
+  "pattern_ids": [
+    "PAT-DETAIL-0002",
+    "PAT-DETAIL-0003",
+    "PAT-DETAIL-0004",
+    "PAT-FLOW-0002",
+    "PAT-LAYOUT-0002",
+    "PAT-TEXT-0002"
+  ],
+  "scope": {
+    "record_window_seconds": [
+      166,
+      181
+    ],
+    "snapshot_seconds": [
+      177
+    ],
+    "new_continuous_video_coverage": false,
+    "content_status": "AI observed development candidate; user selected density/classification policy, not content approval",
+    "limits": "기존 분석 창 안의 선택 정착/변화 화면을 보강. 전 프레임 디자인 검수·회사 표준 확정·음성 검수·재제작 성공을 뜻하지 않음."
+  },
+  "frames": [
+    {
+      "id": "N177",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\extraction\\cases\\NEW-N\\scout\\f_05310_177.000.png",
+      "sha256": "ccbb53e7413456141e76cb8bd210ec7aa3e560afaba99e8230afdcdaf1e9d6ff",
+      "canvas": [
+        7680,
+        2160
+      ],
+      "seconds": 177,
+      "crops": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\inspection\\N177-header.png",
+          "sha256": "3e33242a430b8da62cf80e62292330e75446f0e32a689ca37b206ee770a40c2b",
+          "box_ltrb": [
+            0,
+            30,
+            1300,
+            255
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\inspection\\N177-label_left.png",
+          "sha256": "927a61d2ecc8d277604ff52b9f8de44e177c83a226f65122994e3111e6162a49",
+          "box_ltrb": [
+            1250,
+            230,
+            2900,
+            410
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\inspection\\N177-label_right.png",
+          "sha256": "da8af0626629e5082f0a8d06ae30a2589c82853e1e162aebf085606da5213b86",
+          "box_ltrb": [
+            5150,
+            230,
+            6750,
+            410
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\inspection\\N177-caption.png",
+          "sha256": "c12571309dc6656dfc08342367f46cd823440e48a85ec04717a7132251f5cf27",
+          "box_ltrb": [
+            2350,
+            1920,
+            5350,
+            2100
+          ]
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\inspection\\N177-section.png",
+          "sha256": "a737f96635acf899bcc5775a740e7dd7a05d4080519da12190183dc061411b59",
+          "box_ltrb": [
+            4900,
+            700,
+            6900,
+            1550
+          ]
+        }
+      ]
+    }
+  ],
+  "regions": [
+    {
+      "id": "header",
+      "frame": "N177",
+      "bbox_ltrb": [
+        0,
+        60,
+        1190,
+        240
+      ],
+      "precision": "estimated",
+      "basis_kind": "observed",
+      "coordinate_system": "native decoded frame pixels, origin upper-left, half-open LTRB",
+      "method": "manual boundary reading on native full frame and 1:1 crops; glow/soft edges excluded where practical",
+      "error_px": 6,
+      "description": "좌상단 흰 HANMAC 로고 오각형/사선 접합과 남색→청색 리본. 아래 가는 밝은 선, 오른쪽 사선 끝.",
+      "reuse_reason": "장 제목 배치와 좌측 브랜딩 여백을 복원할 기준",
+      "normalized_xywh": [
+        0.0,
+        0.02778,
+        0.15495,
+        0.08333
+      ],
+      "bbox_canvas_area_percent": 1.29
+    },
+    {
+      "id": "long-model",
+      "frame": "N177",
+      "bbox_ltrb": [
+        940,
+        185,
+        3560,
+        2030
+      ],
+      "precision": "estimated",
+      "basis_kind": "observed",
+      "coordinate_system": "native decoded frame pixels, origin upper-left, half-open LTRB",
+      "method": "manual boundary reading on native full frame and 1:1 crops; glow/soft edges excluded where practical",
+      "error_px": 20,
+      "description": "왼쪽 긴 거더의 투영 외접 범위. 앞 단면에서 오른쪽 위로 수렴하며 철근·바닥판·청록 강조가 겹침.",
+      "reuse_reason": "오른쪽 단면과의 시각 비중·사이 여백; 불규칙 3D의 실면적 아님",
+      "normalized_xywh": [
+        0.1224,
+        0.08565,
+        0.34115,
+        0.85417
+      ],
+      "bbox_canvas_area_percent": 29.14
+    },
+    {
+      "id": "section-model",
+      "frame": "N177",
+      "bbox_ltrb": [
+        5030,
+        720,
+        6870,
+        1540
+      ],
+      "precision": "estimated",
+      "basis_kind": "observed",
+      "coordinate_system": "native decoded frame pixels, origin upper-left, half-open LTRB",
+      "method": "manual boundary reading on native full frame and 1:1 crops; glow/soft edges excluded where practical",
+      "error_px": 15,
+      "description": "오른쪽 단면의 콘크리트 형상 범위. 주변 곡선 화살표는 포함하지 않음.",
+      "reuse_reason": "모델과 별도 화살표의 범위를 분리",
+      "normalized_xywh": [
+        0.65495,
+        0.33333,
+        0.23958,
+        0.37963
+      ],
+      "bbox_canvas_area_percent": 9.1
+    },
+    {
+      "id": "section-arrows",
+      "frame": "N177",
+      "bbox_ltrb": [
+        5160,
+        540,
+        6740,
+        1750
+      ],
+      "precision": "estimated",
+      "basis_kind": "observed",
+      "coordinate_system": "native decoded frame pixels, origin upper-left, half-open LTRB",
+      "method": "manual boundary reading on native full frame and 1:1 crops; glow/soft edges excluded where practical",
+      "error_px": 15,
+      "description": "오른쪽 단면 양옆의 녹색 곡선 화살표 묶음 범위.",
+      "reuse_reason": "형상 면에 붙는 청록 강조와 독립 외곽 동작을 혼동하지 않음",
+      "normalized_xywh": [
+        0.67188,
+        0.25,
+        0.20573,
+        0.56019
+      ],
+      "bbox_canvas_area_percent": 11.52
+    },
+    {
+      "id": "left-label",
+      "frame": "N177",
+      "bbox_ltrb": [
+        1334,
+        253,
+        2808,
+        370
+      ],
+      "precision": "estimated",
+      "basis_kind": "observed",
+      "coordinate_system": "native decoded frame pixels, origin upper-left, half-open LTRB",
+      "method": "manual boundary reading on native full frame and 1:1 crops; glow/soft edges excluded where practical",
+      "error_px": 3,
+      "description": "어두운 청록 띠, 양끝 청록 세로선, 단일 행 흰 글자.",
+      "reuse_reason": "독립 TEXT 패턴의 현 장면 폭/패딩 변형",
+      "normalized_xywh": [
+        0.1737,
+        0.11713,
+        0.19193,
+        0.05417
+      ],
+      "bbox_canvas_area_percent": 1.04
+    },
+    {
+      "id": "right-label",
+      "frame": "N177",
+      "bbox_ltrb": [
+        5226,
+        253,
+        6699,
+        370
+      ],
+      "precision": "estimated",
+      "basis_kind": "observed",
+      "coordinate_system": "native decoded frame pixels, origin upper-left, half-open LTRB",
+      "method": "manual boundary reading on native full frame and 1:1 crops; glow/soft edges excluded where practical",
+      "error_px": 4,
+      "description": "왼쪽과 같은 틀의 설명 띠. 짧은 문구가 가운데에 놓임.",
+      "reuse_reason": "글자 길이가 달라도 같은 틀을 사용하는지 확인",
+      "normalized_xywh": [
+        0.68047,
+        0.11713,
+        0.1918,
+        0.05417
+      ],
+      "bbox_canvas_area_percent": 1.04
+    },
+    {
+      "id": "caption",
+      "frame": "N177",
+      "bbox_ltrb": [
+        2455,
+        1956,
+        5228,
+        2074
+      ],
+      "precision": "estimated",
+      "basis_kind": "observed",
+      "coordinate_system": "native decoded frame pixels, origin upper-left, half-open LTRB",
+      "method": "manual boundary reading on native full frame and 1:1 crops; glow/soft edges excluded where practical",
+      "error_px": 5,
+      "description": "하단 중앙 별도 진청 사각 자막판, 흰 본문과 어두운 그림자.",
+      "reuse_reason": "모델 영역/하단 안전 여백/가독성 관계",
+      "normalized_xywh": [
+        0.31966,
+        0.90556,
+        0.36107,
+        0.05463
+      ],
+      "bbox_canvas_area_percent": 1.97
+    }
+  ],
+  "typography": [
+    {
+      "id": "N-header",
+      "frame": "N177",
+      "roi_ltrb": [
+        350,
+        105,
+        1020,
+        210
+      ],
+      "bbox_ltrb": [
+        384,
+        128,
+        976,
+        186
+      ],
+      "visible_glyph_height_px": 58,
+      "selected_glyph_span_px": 592,
+      "text_scope": "complete visible line",
+      "method": "native RGB: min(R,G,B)>170 and max-min<45; union of selected pixels inside manually isolated text ROI",
+      "error": "threshold/antialias envelope approx ±2 px; excludes dark shadow. Not original font size, font family or weight setting.",
+      "precision": "measured",
+      "crop_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\inspection\\N-header-glyphs.png",
+      "crop_sha256": "fdbdbc2f41b52118a5d10ed1a293ed96e0dce6bd4030e192def8fd83780a6947"
+    },
+    {
+      "id": "N-label-left",
+      "frame": "N177",
+      "roi_ltrb": [
+        1400,
+        265,
+        2750,
+        360
+      ],
+      "bbox_ltrb": [
+        1460,
+        275,
+        2673,
+        350
+      ],
+      "visible_glyph_height_px": 75,
+      "selected_glyph_span_px": 1213,
+      "text_scope": "complete visible line",
+      "method": "native RGB: min(R,G,B)>170 and max-min<45; union of selected pixels inside manually isolated text ROI",
+      "error": "threshold/antialias envelope approx ±2 px; excludes dark shadow. Not original font size, font family or weight setting.",
+      "precision": "measured",
+      "crop_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\inspection\\N-label-left-glyphs.png",
+      "crop_sha256": "af5cf0cf6cbcaf0ff8fa8b2f0b317e1aa633a48156ca8ecd4a120ac7004de1bb"
+    },
+    {
+      "id": "N-label-right",
+      "frame": "N177",
+      "roi_ltrb": [
+        5370,
+        265,
+        6600,
+        360
+      ],
+      "bbox_ltrb": [
+        5466,
+        278,
+        6455,
+        354
+      ],
+      "visible_glyph_height_px": 76,
+      "selected_glyph_span_px": 989,
+      "text_scope": "complete visible line",
+      "method": "native RGB: min(R,G,B)>170 and max-min<45; union of selected pixels inside manually isolated text ROI",
+      "error": "threshold/antialias envelope approx ±2 px; excludes dark shadow. Not original font size, font family or weight setting.",
+      "precision": "measured",
+      "crop_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\inspection\\N-label-right-glyphs.png",
+      "crop_sha256": "1587bc8e7c5c6bc325b4cd28dc825578c6cf8e93106924b8f294249440bab5f3"
+    },
+    {
+      "id": "N-caption",
+      "frame": "N177",
+      "roi_ltrb": [
+        2435,
+        1945,
+        5245,
+        2070
+      ],
+      "bbox_ltrb": [
+        2469,
+        1969,
+        5209,
+        2061
+      ],
+      "visible_glyph_height_px": 92,
+      "selected_glyph_span_px": 2740,
+      "text_scope": "complete visible line",
+      "method": "native RGB: min(R,G,B)>170 and max-min<45; union of selected pixels inside manually isolated text ROI",
+      "error": "threshold/antialias envelope approx ±2 px; excludes dark shadow. Not original font size, font family or weight setting.",
+      "precision": "measured",
+      "crop_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\inspection\\N-caption-glyphs.png",
+      "crop_sha256": "d95145871512e007edf1a2850ada5287422cca1446eff54004005ef7237f444b"
+    }
+  ],
+  "relations": [
+    {
+      "id": "model-balance",
+      "region_ids": [
+        "long-model",
+        "section-model"
+      ],
+      "value": [
+        34.1,
+        24.0
+      ],
+      "unit": "percent of canvas width",
+      "basis_kind": "calculated",
+      "precision": "estimated",
+      "method": "각 투영 외접 폭 / 7680 × 100",
+      "error": "약 ±0.5 percentage points",
+      "meaning": "왼쪽 긴 모델과 오른쪽 단면의 폭 비중. 외접 상자 면적을 실제 물체 면적으로 부르지 않는다."
+    },
+    {
+      "id": "inter-model-gap",
+      "region_ids": [
+        "long-model",
+        "section-model"
+      ],
+      "value": 1470,
+      "unit": "native px",
+      "basis_kind": "calculated",
+      "precision": "estimated",
+      "method": "오른쪽 단면 left5030 - 왼쪽 모델 right3560",
+      "error": "약 ±35 px",
+      "meaning": "177초 모델 외접 범위 사이 여백; 19.1%W. 광선/배경선이 없는 빈 픽셀 수가 아님."
+    },
+    {
+      "id": "left-label-padding",
+      "region_ids": [
+        "left-label"
+      ],
+      "value": [
+        126,
+        135
+      ],
+      "unit": "native px",
+      "basis_kind": "calculated",
+      "precision": "estimated",
+      "method": "글자 bbox1460..2673와 띠1334..2808의 좌/우 차",
+      "error": "약 ±5 px",
+      "meaning": "문구와 양끝선 바깥 경계 사이 가시적 여백. 실제 AE text box padding 아님."
+    },
+    {
+      "id": "right-label-padding",
+      "region_ids": [
+        "right-label"
+      ],
+      "value": [
+        240,
+        244
+      ],
+      "unit": "native px",
+      "basis_kind": "calculated",
+      "precision": "estimated",
+      "method": "글자 bbox5466..6455와 띠5226..6699의 좌/우 차",
+      "error": "약 ±6 px",
+      "meaning": "짧은 문구의 여백이 더 넓음. 두 라벨은 이 정착 화면에서 사실상 같은 폭."
+    },
+    {
+      "id": "type-height-ratio",
+      "region_ids": [],
+      "value": [
+        1,
+        1.29,
+        1.31,
+        1.59
+      ],
+      "unit": "ratio to header visible glyph height",
+      "basis_kind": "calculated",
+      "precision": "estimated",
+      "method": "58/75/76/92px를58로 나눔",
+      "error": "임계값 약 ±2 px/항목; 비율은 근사",
+      "meaning": "제목/왼쪽 라벨/오른쪽 라벨/자막. 글자의 가시 높이이며 폰트 크기 원값 아님."
+    },
+    {
+      "id": "caption-bottom",
+      "region_ids": [
+        "caption"
+      ],
+      "value": 86,
+      "unit": "native px",
+      "basis_kind": "calculated",
+      "precision": "estimated",
+      "method": "2160 - 자막판 bottom2074",
+      "error": "약 ±5 px",
+      "meaning": "하단 여백 약4.0%H; 자막폭 약36.1%W."
+    }
+  ],
+  "dimensions": {
+    "hierarchy": {
+      "description": "32:9. 좌상단 장 제목, 왼쪽 큰 사시도와 오른쪽 작은 정면 단면의 비교 구도. 두 설명 띠는 같은 y의 상단, 공통 자막은 하단 중앙. 제목이 가장 큰 글자라는 전제를 두지 않는다.",
+      "basis_kind": "observed",
+      "precision": "qualitative"
+    },
+    "alignment": {
+      "description": "177초 양 라벨은 y253..370으로 상단선이 맞는다. 오른쪽 단면과 설명 띠는 대략 중심을 공유한다. 왼쪽 모델은 원근 방향 때문에 라벨 중심과 기하 중심이 일치하지 않으며 이를 오류 정렬로 바꾸지 않는다.",
+      "basis_kind": "observed",
+      "precision": "qualitative"
+    },
+    "spacing": {
+      "description": "왼쪽 모델 외접 폭34.1%W, 오른쪽24.0%W, 두 모델 사이 약19.1%W의 투영 여백. 라벨은 각각 약19.2%W. 왼쪽 글자 좌우 여백126/135px, 오른쪽240/244px. 자막판 하단 여백86px. 배경 장식은 이 사이에도 존재한다.",
+      "basis_kind": "observed",
+      "precision": "qualitative"
+    },
+    "typography": {
+      "description": "흰 산세리프 한글. 가시 글자 높이는 제목58px, 왼쪽75px, 오른쪽76px, 자막92px(177초). 왼쪽 라벨의 “켄틸레버 바닥판”과 “동바리 역할 수행”이 굵게 보이고 “시공시”는 상대적으로 가늘다. 자막 앞 “켄틸레버 바닥판”도 뒤 문장보다 굵게 보인다. 서체명/포인트 크기/weight 수치는 미확정. 표기 켄틸레버·시공시/시공 시를 유지한다.",
+      "basis_kind": "observed",
+      "precision": "qualitative"
+    },
+    "color": {
+      "description": "남청/청색 기술 배경, 흰·회색 콘크리트/검은 내부 구멍, 흰 글자. 라벨과 모델 면·모서리는 청록, 오른쪽 외곽 화살표는 녹색 계열로 분리한다. 화면 색을 원본 색 토큰으로 확정하지 않는다.",
+      "basis_kind": "observed",
+      "precision": "qualitative"
+    },
+    "background": {
+      "description": "기저의 어두운 남청 그라데이션 위에 좌상단 점열, 좌하단 노드와 망, 하단~우측 곡선 다발과 청색 발광 교차점이 보인다. 라벨 아래로 배경/모델이 비치는 외관이 있으나 opacity 값은 미상. 앞 단계의 밝아짐과177초 배경 상태를 구분한다.",
+      "basis_kind": "observed",
+      "precision": "qualitative"
+    },
+    "shapes": {
+      "description": "로고 사선 흰 면+외곽선+청색 리본을 한 사각형으로 단순화하지 않는다. 라벨은 직각 띠+양끝 가는 수직선이며 둥근 카드가 아니다. CG는 날개/원형 정착부/중공/철근/판의 겹침을 보존한다. 녹색 화살표는 양쪽 곡선·화살촉, 청록 강조는 형상에 밀착한 모서리/면이다. 자막은 설명 띠와 다른 별도 사각판이다.",
+      "basis_kind": "observed",
+      "precision": "qualitative"
+    }
+  },
+  "layers": [
+    "배경 남청 기저",
+    "점·망·곡선·작은 발광점(상호 제작 레이어 순서는 미확정)",
+    "철근/슬래브/거더 모델의 가림 관계",
+    "모델 면·모서리 청록 강조와 바깥 녹색 화살표",
+    "설명 띠와 흰 문구, 상단 로고/리본",
+    "하단 자막판·흰 글자·어두운 그림자"
+  ],
+  "unknowns": [
+    "서체명·폰트 크기·행간·자간의 원본 값",
+    "양 라벨의 생성 중 폭 변화 함수는 같다고 확정하지 않음",
+    "정확 RGB/그라데이션 stop·투명도·광선 효과·원본 레이어 구조",
+    "앞/뒤 곡선 화살표의 정확 강도 곡선과 원본 동기화 설정(기존 열린 쟁점 유지)"
+  ],
+  "implementation_hypotheses": [
+    {
+      "basis_kind": "inferred",
+      "proposal": "두 라벨은 같은 정착 틀에 문구 길이와 굵기 구간을 바꿔 담는 템플릿 후보.",
+      "reason": "177초 가시 폭은1474/1473px로 차이가 오차 범위 안. 기존 TEXT-0002 번호 유지.",
+      "verification_needed": "다른 장면의 라벨 정착 폭과 긴 문구 대응·실제 재제작 확인"
+    }
+  ]
+}

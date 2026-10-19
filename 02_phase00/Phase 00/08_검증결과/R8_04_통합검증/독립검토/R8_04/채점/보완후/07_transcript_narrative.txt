@@ -1,0 +1,99 @@
+# 실제 작업 transcript
+
+## 사전 읽기와 실행 범위
+
+지정 run의 task.txt를 Get-Content -LiteralPath -Raw로 읽었다. 이어 DB 자료/IO사용안내.md, 자료/작업범위.json, 지정 video-guidance-reviewer/SKILL.md 및 두 references, 대상 원문, R8_현재사용안내.md, 현재상태_정정표.json, 00_운영계약/01_보존과버전_계약.md를 읽었다. 지정 DB 파일 목록과 전후 SHA만 확인했다. 다른 run/평가·채점/시험설정·서비스상태/다른 스킬/실제 D DB는 읽지 않았다. PowerShell 선행 도구 출력에는 InitializeDefaultDrives FileSystem 경고가 있었고 각 호출 exit는 0이었다.
+
+outputs/workflow.py는 일반 쓰기가 허용된 outputs 전용 후보/로그 작성기와 지정 CLI 호출 wrapper이다. DB 수정/backup/저장 후 검사는 시험IO.py로만 실행했다. Python은 모두 지정 실행 파일에 -B -X utf8로 실행하고 하위 CLI에 PYTHONUTF8=1/PYTHONDONTWRITEBYTECODE=1을 설정했다.
+
+prepare: 전후 비교용 baseline, 원문 bytes, 두 필드만 변경한 후보, 후보.diff, plan.json 저장 후 read.
+backup: 원문 expected_sha256를 전달해 지정 backup 생성.
+write: backup 성공/해시 일치 확인 후 동일 expected_sha256로 후보 쓰기.
+read-after: write 응답의 owned_written_sha256와 actual_current_sha256 불일치를 확인하고 바로 현재 파일을 읽음.
+validate: 현재 외부 notes를 보존한 상태로 저장 후 환경 검사 실행. 실패 exit 2.
+snapshot: 실제 현재 원시 bytes 및 전체 DB 기존 파일 해시 비교, 서비스이벤트 원본 복사.
+복구/재쓰기: 미실시. 현재 SHA가 내 쓰기 바이트와 다르므로 복구하면 외부 변경을 덮는다.
+
+wrapper 프로세스는 하위 CLI의 실패를 로그로 반환하므로 validate wrapper의 shell exit 0은 검사 성공이 아니다. 실제 검사 CLI exit 2가 아래 원시 기록의 값이다. 요청 파일명 05-read-after가 04-validate보다 먼저 실행되었으며 실제 순서는 아래와 서비스이벤트 sequence가 기준이다.
+
+## 지정 CLI 실제 인수·요청·stdout/stderr·종료
+
+### 실제 순서 1: read
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+### 실제 순서 2: backup
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+### 실제 순서 3: write
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+### 실제 순서 4: read
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+### 실제 순서 5: validate
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 실제 서비스 로그
+
+### 001.json
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+### 002.json
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+### 003.json
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+### 004.json
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+### 005.json
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 확인한 최종 현재 상태
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+# 결과: 저장 후 검사 실패 · 외부 변경 보존 · 미복구
+
+요청한 guidance와 자체 version 0.1.1은 현재 초안에 실제 존재한다. 그러나 저장 직후 다른 작업자의 notes가 추가되어 현재 바이트가 내 후보와 다르며, 지정 CLI 저장 후 환경 검사는 exit 2로 실패했다. 따라서 작업 완료/검사 통과로 보고하지 않는다. 복구·추가 쓰기를 실시하지 않아 외부 변경이 포함된 현재 파일은 미복구 상태로 남아 있다.
+
+- 대상: `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-07-검토자_외부변경\candidate\inputs\Phase00\작업초안\검토지식.json` / LOCAL-REPEAT-DRAFT / draft
+- 변경 전: v0.1.0, SHA256 `851857164896eb05174617fb3a6571b46617f5e69ecf6889b386d08c6273e554`
+- 내 후보 및 서비스가 쓴 바이트: v0.1.1, SHA256 `884d7693232d05f325bc7f895dfe031aa4a66258bccc703792ceb64e60c196a6`
+- 현재: v0.1.1, SHA256 `5e895932a8d41333928147b25e78b24d5bb9ee9b54f86780a296b6ac87160d46`
+- 실제 원본 보존 backup: `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-07-검토자_외부변경\candidate\inputs\Phase00\backup\이번작업\reviewer-guidance-0.1.1\변경전.json`. CLI backup exit 0, 원본과 SHA 일치.
+- 현재 guidance: 동등한 조건의 비교에서는 대응 항목의 위치·단위·척도를 일관되게 유지할 수 있다.
+- 외부 notes: 다른 작업자의 동시 수정 — 보존해야 하는 합성 바이트
+- 원본의 나머지 필드 id, status, purpose, counterexample, source_scope 값은 유지됐다. 내 후보는 guidance/version만 변경했다.
+- 전후 DB 해시 목록에서 기존 다른 파일 변경은 없고 지정 backup만 추가됐다. 정본·검수 기록은 그대로다.
+
+## 필수 확인과 판정
+
+이번 대상은 동등 비교의 설명용 지식 초안이다. 최소 필드 변경·자체 판본 구분·변경 전 backup·현재 바이트 소유 확인·환경 검사를 필수로 선정했다. 매체/시청자 사전지식/무음/화면비는 미제공이며, 실제 영상 평가 항목의 관측은 실시하지 않았다.
+
+| 필수 항목 | 결과 및 근거 |
+|---|---|
+| 최소 수정·판본 구분 | 후보 통과: 후보.diff, plan.json. 실제 현재에는 외부 notes도 존재하므로 전체를 내 최소 수정이라고 주장하지 않음 |
+| 변경 전 backup | 통과: 02-backup.command.json, 서비스이벤트/002.json |
+| 외부 바이트 보호 | 확인: 서비스이벤트/003.json의 requested/service_owned/external_actor SHA와 현재 SHA 비교. 외부 notes를 삭제하거나 복구로 덮지 않음 |
+| 저장 후 환경 검사 | 실패: 04-validate.command.json, 서비스이벤트/005.json. JSON 파싱은 true지만 환경 거절 |
+| 전체 완료·내용 승인 | 판단보류: 검사 실패/외부 변경 조율 미해결. 회사 승인·실영상 효과는 미검수 |
+
+## 남은 조치
+
+현재 파일과 backup, 후보, 실제 diff를 보존했다. 동시 수정 담당자에게 현재 notes와 두 필드의 유지 범위를 사실 확인하고, 환경 검사 실패 원인을 확인한 뒤 해결된 조건에서 지정 CLI로 재검사해야 한다. 자유 답변/근거 요청: 현재 notes를 추가한 작업과 유지해야 할 범위는 무엇인가? 환경 검사 거절의 확인 가능한 원인은 무엇인가? 실제 회신은 생성하지 않았다.
+
+R8 현재 안내/정정표를 읽었으나 이 좁은 변경에 R2/R4 단계 정정을 적용할 필요가 없어 다른 원문/기대값으로 확장하지 않았다. full R4/R5/R6/R7 검사·실영상·회사/내용 승인은 미실시이며 full 통과를 주장하지 않는다. 시간/token 한도는 미제공으로 추정하지 않았다.
+
+후보/요청 JSON·각 실제 CLI 인수와 stdout/stderr/exit·서비스이벤트 원본 복사·전후 해시·현재 원시 바이트는 이 outputs에 보존했다. 상세 실행 순서는 transcript.md, 기계 판독 결과는 결과.json이다.

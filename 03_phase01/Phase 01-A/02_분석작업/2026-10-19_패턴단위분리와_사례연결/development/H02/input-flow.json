@@ -1,0 +1,81 @@
+{
+  "definition_version": "video-pattern-definition-0.2",
+  "category": "FLOW",
+  "name": "주제 유지와 기능 예시 교체 흐름",
+  "source": {
+    "case_id": "DEV-H02-PARTS-20261019",
+    "source_sha256": "786e900ac768e43e546d6b979c31d3e33fbf5046902fe0174ef30156045fd8cc",
+    "observation_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\development\\H02\\observations-first-detail.json",
+    "observation_sha256": "4ef3bffb62a8996daaaa8139c68f87367251abf938d3b080e48541c9cdc9741d",
+    "claim_ids": [
+      "c008",
+      "c014",
+      "c015",
+      "c018",
+      "c020",
+      "c021",
+      "c023",
+      "c026",
+      "c027",
+      "c029",
+      "c030"
+    ],
+    "unknown_ids": [
+      "u01",
+      "u02",
+      "u04"
+    ]
+  },
+  "definition": {
+    "summary": "기존 예시를 줄이고 새 기능 예시를 제시한 뒤 회수하는 전체 시간 구조",
+    "stages": [
+      {
+        "name": "기존 예시 이동·축소",
+        "timing": "12초대 선택 표본",
+        "claim_ids": [
+          "c020",
+          "c021"
+        ]
+      },
+      {
+        "name": "새 UI 이동·확대",
+        "timing": "12.4~13.6초 표본",
+        "claim_ids": [
+          "c014",
+          "c015"
+        ]
+      },
+      {
+        "name": "테두리·표제·본문 전개",
+        "timing": "13초대 이후; 정확 경계 미확정",
+        "claim_ids": [
+          "c023",
+          "c026",
+          "c029"
+        ]
+      },
+      {
+        "name": "유지 뒤 문구·UI 회수",
+        "timing": "17초대~18.8초 표본",
+        "claim_ids": [
+          "c018",
+          "c027",
+          "c030"
+        ]
+      }
+    ],
+    "overlap_notes": [
+      "UI 정착과 테두리·표제 출현은 일부 겹침. 화살표는 완전 직렬 시간표가 아님."
+    ],
+    "stable_context": "대중교통 분석 상위 주제와 배경은 예시 교체 중에도 유지 관측"
+  },
+  "applicability": "원본 한 사례에서 정리한 재사용 후보. 새 문구·화면비·정보 관계·시간 조건에서 재검증한다.",
+  "counterexamples": [
+    "다른 장면의 실제 적용·가독성·제작 결과는 미시험"
+  ],
+  "status": "draft",
+  "supersedes": null,
+  "derived_from": [
+    "PAT-CARD-0001"
+  ]
+}

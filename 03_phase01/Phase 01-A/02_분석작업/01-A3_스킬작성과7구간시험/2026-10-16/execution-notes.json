@@ -1,0 +1,18 @@
+{
+  "recoverable_setup_issues": [
+    {
+      "issue": "helper test system temp directory write denied before fixture creation",
+      "resolution": "fixture outputs moved into authorized workspace; no escalation needed"
+    },
+    {
+      "issue": "bundled Python quick_validate dependency yaml unavailable",
+      "resolution": "existing Phase00 Python environment used for metadata validator; no new install"
+    }
+  ],
+  "approval_rejection": false,
+  "decoding_errors": [],
+  "timing_tokens_available": false,
+  "criteria_frozen_before_final_outputs": true,
+  "first_outputs_immutable": true,
+  "comparison_limits": "single run and agent batch variation; no causal/general accuracy estimate"
+}

@@ -1,0 +1,48 @@
+{
+  "case_id": "T04",
+  "condition": "with_skill",
+  "recorded_at": "2026-10-16T06:33:55.516469+00:00",
+  "grader": "root source/meaning review; not independent human",
+  "reference_level": "human_confirmed",
+  "expectations": [
+    {
+      "text": "수주→매출→이익의 데이터 변화 순서",
+      "passed": true,
+      "evidence": "각 대상 수주8~9.2, 매출15.5~16.6, 이익16.7~17.6의 순서와 유지 상태를 기록."
+    },
+    {
+      "text": "막대 상향 성장·원형 시계방향 채움·숫자 증가를 각각 식별",
+      "passed": true,
+      "evidence": "각 카드 막대/금액과 원호/퍼센트를 분리. 바닥상향·12시 시계방향·수치증가를 native ROI와 대조."
+    },
+    {
+      "text": "정착부 감속 관측",
+      "passed": true,
+      "evidence": "수주는12/20→22/37→38/63→47/79→52/88→55/91→55/92, 매출은9/14→22/34→31/48→36/56→38/60→39/61, 이익1/7→3/41→4/60→5/68→5/71을 자기카드 근거로 사용. 각 후반둔화와 원본 일치."
+    },
+    {
+      "text": "카드 틀 등장을 데이터 동작 순서와 혼동하지 않음",
+      "passed": true,
+      "evidence": "목표·틀 선행을 공통 state로 분리하고 내부 실제데이터 순서를 따로 기록."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4
+  },
+  "case_status": "requirements_satisfied",
+  "notes": [
+    "v1 다른카드 수치 반복 문제 해소. observations.json 각 easing.basis가 해당 카드 수치와 연결된다. root가16.8 1억7%,8.2 22억37%,17.2 4억60% native ROI 추가 대조.",
+    "숫자 반올림·시각적 막대/원호 비교이며 정확한 원본 보간은 미확정."
+  ],
+  "timing": null,
+  "tokens": null,
+  "telemetry_note": "per-run telemetry unavailable; no synthesized averages",
+  "eval_feedback": {
+    "suggestions": [
+      "Known exposed windows, one run per condition, same agent batches; this is regression evidence, not generalization accuracy."
+    ]
+  },
+  "additional_content_issues": []
+}

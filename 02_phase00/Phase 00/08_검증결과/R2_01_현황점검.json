@@ -1,0 +1,63 @@
+{
+  "version": "0.1.0",
+  "taxonomy_ref": "company-video-taxonomy@0.1.1",
+  "taxonomy_sha256": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+  "total_terms": 76,
+  "current_terms": 75,
+  "deprecated_terms": 1,
+  "axes": {
+    "video_type": 7,
+    "communication_purpose": 9,
+    "information_relation": 8,
+    "layout": 14,
+    "motion_function": 8,
+    "motion_property": 11,
+    "timing": 13,
+    "art_direction": 6
+  },
+  "read_scope": "76개용어의정의/별칭/포함/제외/축/상위/폐기/출처와현재분류조회·최소기록필드 읽기. 실제영상평가아님.",
+  "gaps": [
+    {
+      "id": "G1",
+      "issue": "영상/구간/화면상태/동작의 태그 범위 미정",
+      "repair": "A안4단위와 축별 기록 범위; 컷은 보조정보",
+      "stage": "R2-2"
+    },
+    {
+      "id": "G2",
+      "issue": "75개 현재용어의 개별 설명용 예·반례 없음",
+      "repair": "용어별 판정기준과 기권조건",
+      "stage": "R2-3"
+    },
+    {
+      "id": "G3",
+      "issue": "레이아웃·정보관계·동시/순차발생 혼동",
+      "repair": "혼동쌍과 대상/범위별 복합 예",
+      "stage": "R2-3/4"
+    },
+    {
+      "id": "G4",
+      "issue": "보이는 가시성/크기 변화와 Opacity/Scale/Camera 구현을 혼동할 수 있음",
+      "repair": "관측/추정/원본근거의 주장범위 구분",
+      "stage": "R2-3"
+    },
+    {
+      "id": "G5",
+      "issue": "현재안내 null+이유와 기존 classification 배열형식 차이",
+      "repair": "R2 의미상태·R4 실제필드 연결안 분리; 기존스키마/예시 미변경",
+      "stage": "R2-4"
+    },
+    {
+      "id": "G6",
+      "issue": "W3C State와 프로젝트 화면상태는 다른 개념",
+      "repair": "외부원문·프로젝트운영용어의 적용범위 기록",
+      "stage": "R2-2"
+    },
+    {
+      "id": "G7",
+      "issue": "용어의 대부분은 자체 설계이며 국제표준처럼 보일 수 있음",
+      "repair": "출처 위치·읽은절·자체해석·미검토표시",
+      "stage": "R2-1"
+    }
+  ]
+}

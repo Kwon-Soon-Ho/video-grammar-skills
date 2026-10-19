@@ -1,0 +1,50 @@
+{
+  "id": "r3-layout-extension-candidates",
+  "version": "0.1.0",
+  "status": "proposal_not_new_taxonomy",
+  "company_approved": false,
+  "decision_ref": "DECISION-R3-LAYOUT-SCOPE-A",
+  "case_kind": "synthetic_not_company_video",
+  "source_origin": "project_structural_candidates_not_international_standard",
+  "candidates": [
+    {
+      "candidate_id": "LAYOUT-CAND-TABLE",
+      "name_ko": "표·매트릭스",
+      "fit_when": "여러 대상의 여러 항목을 정확히 조회·대조할 때",
+      "reading_order": "행·열 제목→대상과 항목의 교차 셀→단위·주석→선택한 차이",
+      "composition_decisions": "같은 항목의 단위·기준·기간을 맞추고 빈칸·미제공·0을 구분한다. 좁은 화면에서는 항목 구간을 나누되 공통 행/열 머리를 유지한다.",
+      "positive_example": "가상의 공법 A/B를 비용·공기·조건 열로 대응하고 각 열의 단위를 표시한다.",
+      "counterexample": "보기 좋게 빈셀을0으로 채우거나 다른 단위를 한열로 비교하고 카드처럼 꾸몄다는 이유로 의미 없이 카드ID를 부여한다.",
+      "alternative_when": "정확한 값 조회가 목적이 아니면 차트·분할비교·단일초점을 함께 검토한다.",
+      "existing_id_connection_rule": "행열 표 자체를 카드 그룹으로 자동 기록하지 않는다. 분할 비교의 실제 정의를 만족한 범위만 비교 후보로 연결할 수 있다.",
+      "unclassified_policy": "정보가 맞지 않으면R2의other_candidate/미분류와후보설명을유지한다. 이candidate_id는taxonomy term_id가아니다.",
+      "abstain_when": "행·열 기준과 단위·미제공 의미가 없으면 정밀 비교 적합성을 보류한다."
+    },
+    {
+      "candidate_id": "LAYOUT-CAND-CYCLE",
+      "name_ko": "순환·반복 흐름",
+      "fit_when": "마지막 단계에서 앞 단계로 돌아가는 의미가 자료로 확인될 때",
+      "reading_order": "출발·현재 단계→진행 방향→돌아가는 연결과 재시작 조건",
+      "composition_decisions": "원형은 후보다. 반복의 방향·종료 또는 재시작 조건을 명칭으로 표현하고 단계의시간길이가 같다고 암시하지 않는다.",
+      "positive_example": "점검→조치→재점검으로 돌아가는 절차를 복귀 화살표와 반복 조건으로 설명한다.",
+      "counterexample": "단발 접수→검토→승인을 원형으로 배치해 승인 뒤 다시 접수해야 하는 것처럼 보이게 한다.",
+      "alternative_when": "종료가 있는 일회성 흐름이면 선형 프로세스, 복잡한 반복·여러 연결은 연결 구성 후보를 검토한다.",
+      "existing_id_connection_rule": "노드·연결 구조가기존연결구성정의에맞으면해당범위의NETWORK후보만연결한다. 닫힌순환전체를PROCESS-LINE으로강제하지않는다.",
+      "unclassified_policy": "기존ID가맞지않는부분은후보유지. 새순환taxonomyID를등록하지않는다.",
+      "abstain_when": "실제 복귀·반복·종료 근거가 없으면 순환 의미는 보류한다."
+    },
+    {
+      "candidate_id": "LAYOUT-CAND-BRANCH",
+      "name_ko": "조건 분기·판단 흐름",
+      "fit_when": "조건에 따라 다른 경로로 갈리는 절차를 설명할 때",
+      "reading_order": "입력→조건 질문→각 경로의 라벨→결과·합류",
+      "composition_decisions": "조건 이름과 각 경로의 의미를 적는다. 배치·도형과 실제 조건 근거를 나누며 예/아니오 방향을 바꾸면 라벨도 함께 검토한다.",
+      "positive_example": "검토 결과에 따라 승인 또는 보완 요청으로 나뉘는 경로를 조건과 함께 보여 준다.",
+      "counterexample": "실제 검토 자료가 없는데 마름모를 그려 승인 조건을 지어내거나 예/아니오를뒤집는다.",
+      "alternative_when": "조건이 없고 순서만 있으면 선형 프로세스, 관계 소개만이면 연결 구성 후보를 검토한다.",
+      "existing_id_connection_rule": "확인된노드·관계구조가NETWORK정의에맞는범위만연결한다. 분기도형을그렸다는이유로REL-CAUSE나절차진실을확정하지않는다.",
+      "unclassified_policy": "새분기taxonomyID는없고지원지식후보로남긴다. 맞지않으면부분미분류를허용한다.",
+      "abstain_when": "조건·경로·결과의 시나리오 근거가 없으면 절차 의미는 보류한다."
+    }
+  ]
+}

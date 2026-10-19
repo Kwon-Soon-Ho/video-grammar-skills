@@ -1,0 +1,1627 @@
+# 실제 작업 기록
+시간과 token: 미수집(null). 작업 순서는 호출 순서이며 시각을 추정하지 않음.
+사전 읽기: task.txt를 읽고 IO사용안내/작업범위를 처음 run/자료에서 찾았으나 파일 부재. DB 루트/자료의 두 파일을 읽어 정정했다. 이 초기 Get-Content 호출은 PowerShell exit0 안에 두 경로 오류를 출력했으며 DB 쓰기는 없었다.
+사용 스킬: DB/실행스킬/video-record-steward/SKILL.md, references/수정과복구.md·기록연결기준.md·보고지침.md. 대상 원문, 보존/버전 계약, 로컬 검사기와 BASE, R8 현재안내/정정표를 읽었다. 정정표가 참조하는 과거 결과나 별도 평가자료는 열지 않았고 이번 판단에 적용하지 않았다. 다른 DB/스킬/설정/상태는 열지 않았다.
+outputs/execute.py를 지정 Python -B -X utf8로 실행: runner exit0. 변경 전 bytes, 엄격 JSON, 후보(버전 0.1.1), 두 필드 diff 생성 후 아래 01~05 수행.
+outputs/post_save.py를 동일 Python 옵션으로 실행: runner exit0은 로깅 스크립트 종료이며 하위 환경검사/복구 성공이 아니다. 아래 06~09 수행.
+outputs/report.py를 동일 Python 옵션으로 실행하여 아래 10~11 및 실제 서비스 로그 복사와 결과 작성. DB 수정은 지정 CLI만 수행했다.
+
+## 01_변경전구조검사
+
+인수 (JSON argv):
+[
+  "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+  "-B",
+  "-X",
+  "utf8",
+  "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\inputs\\Phase00\\07_실행도구\\자료검증.py",
+  "--record",
+  "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\inputs\\Phase00\\12_통합기록\\작업초안.json"
+]
+
+cwd: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-11-기록관리자_복구거부\candidate
+
+exit: 0
+
+stdout 원문:
+{
+
+  "valid": true,
+
+  "errors": [],
+
+  "unresolved": [],
+
+  "human_review_queue": [
+
+    {
+
+      "claim_id": "CL-ONE",
+
+      "claim_version": "0.1.0",
+
+      "priority": "normal",
+
+      "reasons": [
+
+        "\uc8fc\uc7a5 \ub0b4\uc6a9 \uc0ac\ub78c \uac80\uc218 \ud544\uc694"
+
+      ],
+
+      "status": "specimen_only",
+
+      "routing": "\uc2e4\uc81c \uc790\ub8cc \ud655\ubcf4 \ud6c4 \uc0ac\uc6a9\uc790 \ub610\ub294 \uc9c0\uc815 \uc81c\uc791\uc790/\ub514\uc790\uc774\ub108 \uac80\uc218. \uc774 \uac80\uc0ac\uae30\ub294 \ub300\uc2e0 \uc2b9\uc778\ud558\uc9c0 \uc54a\uc74c."
+
+    },
+
+    {
+
+      "item_id": "SP-ROOT",
+
+      "status": "specimen_only",
+
+      "reason": "\ud574\uc0c1\ub3c4\u00b7SAR\u00b7\ud68c\uc804\uba54\ud0c0/\uc801\uc6a9 \uc5ec\ubd80\uac00 \uc6d0\ubcf8 \uc774\ubbf8\uc9c0/\ub3c4\uad6c \uae30\ub85d\uacfc \ub9de\ub294\uc9c0 \uc0ac\uc6a9\uc790 \ub610\ub294 \uc9c0\uc815 \ub2f4\ub2f9\uc790 \uac80\uc218",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "SP-CROP",
+
+      "status": "specimen_only",
+
+      "reason": "\ud574\uc0c1\ub3c4\u00b7SAR\u00b7\ud68c\uc804\uba54\ud0c0/\uc801\uc6a9 \uc5ec\ubd80\uac00 \uc6d0\ubcf8 \uc774\ubbf8\uc9c0/\ub3c4\uad6c \uae30\ub85d\uacfc \ub9de\ub294\uc9c0 \uc0ac\uc6a9\uc790 \ub610\ub294 \uc9c0\uc815 \ub2f4\ub2f9\uc790 \uac80\uc218",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "SP-RESIZE",
+
+      "status": "specimen_only",
+
+      "reason": "\ud574\uc0c1\ub3c4\u00b7SAR\u00b7\ud68c\uc804\uba54\ud0c0/\uc801\uc6a9 \uc5ec\ubd80\uac00 \uc6d0\ubcf8 \uc774\ubbf8\uc9c0/\ub3c4\uad6c \uae30\ub85d\uacfc \ub9de\ub294\uc9c0 \uc0ac\uc6a9\uc790 \ub610\ub294 \uc9c0\uc815 \ub2f4\ub2f9\uc790 \uac80\uc218",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TR-SP-CROP",
+
+      "status": "specimen_only",
+
+      "reason": "effective \ubcc0\ud658 \uc218\uce58\u00b7\uc801\uc6a9 \uc21c\uc11c\u00b7\uadfc\uac70 \ub0b4\uc6a9\u00b7\ud68c\uc804/SAR \uc815\ucc45\uc744 \uc9c0\uc815 \ub2f4\ub2f9\uc790\uac00 \uac80\uc218",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TR-SP-RESIZE",
+
+      "status": "specimen_only",
+
+      "reason": "effective \ubcc0\ud658 \uc218\uce58\u00b7\uc801\uc6a9 \uc21c\uc11c\u00b7\uadfc\uac70 \ub0b4\uc6a9\u00b7\ud68c\uc804/SAR \uc815\ucc45\uc744 \uc9c0\uc815 \ub2f4\ub2f9\uc790\uac00 \uac80\uc218",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "G-ROOT",
+
+      "status": "specimen_only",
+
+      "reason": "\ub300\uc0c1\u00b7\uc575\ucee4\u00b7\uac00\ub9bc\u00b7ROI/\ubaa8\ub378 \uad6c\ubd84\u00b7\uc624\ucc28 \uadfc\uac70\uc758 \ub0b4\uc6a9 \uac80\uc218. \uacc4\uc0b0 \ud1b5\uacfc\ub97c \uc2e4\uce21 \ud655\uc778\uc73c\ub85c \uc2b9\uaca9\ud558\uc9c0 \uc54a\uc74c",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "G-RESULT",
+
+      "status": "specimen_only",
+
+      "reason": "\ub300\uc0c1\u00b7\uc575\ucee4\u00b7\uac00\ub9bc\u00b7ROI/\ubaa8\ub378 \uad6c\ubd84\u00b7\uc624\ucc28 \uadfc\uac70\uc758 \ub0b4\uc6a9 \uac80\uc218. \uacc4\uc0b0 \ud1b5\uacfc\ub97c \uc2e4\uce21 \ud655\uc778\uc73c\ub85c \uc2b9\uaca9\ud558\uc9c0 \uc54a\uc74c",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "design",
+
+      "status": "specimen_only",
+
+      "reason": "\ud1a0\ud070 \uc5ed\ud560\u00b7\uc801\uc6a9 \ubaa9\uc801\u00b7\ud504\ub85c\uc81d\ud2b8 \uc608\uc678 \uac80\uc218. \uc601\uc0c1 \ud544\uc218 \ud68c\uc0ac \uaddc\uce59 \uc2b9\uc778\uacfc \uad6c\ubd84",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-ASSET/video_type",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-ASSET",
+
+      "status": "specimen_only",
+
+      "reason": "\uc124\uba85 \uad6c\uac04\u00b7\ud654\uba74 \uc0c1\ud0dc\u00b7\ub3d9\uc791\uc758 \uc758\ubbf8 \uacbd\uacc4, \uc2dc\ub098\ub9ac\uc624 \uc5f0\uacb0, \ud504\ub808\uc784 \ud45c\ubcf8\uc758 \ucda9\ubd84\uc131 \uac80\uc218",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-SEGMENT/video_type",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-SEGMENT/communication_purpose",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-SEGMENT/information_relation",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-SEGMENT/art_direction",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-SEGMENT",
+
+      "status": "specimen_only",
+
+      "reason": "\uc124\uba85 \uad6c\uac04\u00b7\ud654\uba74 \uc0c1\ud0dc\u00b7\ub3d9\uc791\uc758 \uc758\ubbf8 \uacbd\uacc4, \uc2dc\ub098\ub9ac\uc624 \uc5f0\uacb0, \ud504\ub808\uc784 \ud45c\ubcf8\uc758 \ucda9\ubd84\uc131 \uac80\uc218",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-STATE/communication_purpose",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-STATE/information_relation",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-STATE/layout",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-STATE/art_direction",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-STATE",
+
+      "status": "specimen_only",
+
+      "reason": "\uc124\uba85 \uad6c\uac04\u00b7\ud654\uba74 \uc0c1\ud0dc\u00b7\ub3d9\uc791\uc758 \uc758\ubbf8 \uacbd\uacc4, \uc2dc\ub098\ub9ac\uc624 \uc5f0\uacb0, \ud504\ub808\uc784 \ud45c\ubcf8\uc758 \ucda9\ubd84\uc131 \uac80\uc218",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-BEAT/communication_purpose",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-BEAT/motion_function",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-BEAT/motion_property",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-BEAT/timing",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-BEAT",
+
+      "status": "specimen_only",
+
+      "reason": "\uc124\uba85 \uad6c\uac04\u00b7\ud654\uba74 \uc0c1\ud0dc\u00b7\ub3d9\uc791\uc758 \uc758\ubbf8 \uacbd\uacc4, \uc2dc\ub098\ub9ac\uc624 \uc5f0\uacb0, \ud504\ub808\uc784 \ud45c\ubcf8\uc758 \ucda9\ubd84\uc131 \uac80\uc218",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "run",
+
+      "status": "specimen_only",
+
+      "reason": "\uc2e4\ud589 \uc8fc\uccb4\u00b7\ub3c4\uad6c/\ubaa8\ub378\u00b7\uc785\ucd9c\ub825\u00b7\uc124\uc815\uacfc \uc2e4\uc81c \uc791\uc5c5 \ub85c\uadf8\ub97c \ub300\uc870. \uc120\uc5b8\uc744 \uc2e4\ud589 \uc99d\uba85\uc73c\ub85c \ubcf4\uc9c0 \uc54a\uc74c",
+
+      "verified": false
+
+    }
+
+  ],
+
+  "coordinate_bindings": [],
+
+  "integrated_review_states": [],
+
+  "fact_verified": false,
+
+  "human_identity_verified": false,
+
+  "company_approved": false,
+
+  "operational_release": false,
+
+  "status": "draft_structure_pass",
+
+  "schema_version": "0.2.0",
+
+  "scope": "\uae30\ub85d \uacc4\uc57d\uc758 \uad6c\uc870/\uc5f0\uacb0 \uac80\uc0ac. \uc2e4\uc81c \uc601\uc0c1\u00b7\uc0ac\ub78c \uac80\uc218\u00b7\ud68c\uc0ac \uc2b9\uc778\u00b7\uc6b4\uc601 \ubc18\uc601 \uc544\ub2d8.",
+
+  "source_json_sha256": "8f14c54fed046bc9782746d1efd3333da4a9394c4f95a2063c006d872dca95c5"
+
+}
+
+
+
+stderr 원문:
+
+
+## 02_후보구조검사
+
+인수 (JSON argv):
+[
+  "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+  "-B",
+  "-X",
+  "utf8",
+  "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\inputs\\Phase00\\07_실행도구\\자료검증.py",
+  "--record",
+  "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\outputs\\후보.json"
+]
+
+cwd: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-11-기록관리자_복구거부\candidate
+
+exit: 0
+
+stdout 원문:
+{
+
+  "valid": true,
+
+  "errors": [],
+
+  "unresolved": [],
+
+  "human_review_queue": [
+
+    {
+
+      "claim_id": "CL-ONE",
+
+      "claim_version": "0.1.0",
+
+      "priority": "normal",
+
+      "reasons": [
+
+        "\uc8fc\uc7a5 \ub0b4\uc6a9 \uc0ac\ub78c \uac80\uc218 \ud544\uc694"
+
+      ],
+
+      "status": "specimen_only",
+
+      "routing": "\uc2e4\uc81c \uc790\ub8cc \ud655\ubcf4 \ud6c4 \uc0ac\uc6a9\uc790 \ub610\ub294 \uc9c0\uc815 \uc81c\uc791\uc790/\ub514\uc790\uc774\ub108 \uac80\uc218. \uc774 \uac80\uc0ac\uae30\ub294 \ub300\uc2e0 \uc2b9\uc778\ud558\uc9c0 \uc54a\uc74c."
+
+    },
+
+    {
+
+      "item_id": "SP-ROOT",
+
+      "status": "specimen_only",
+
+      "reason": "\ud574\uc0c1\ub3c4\u00b7SAR\u00b7\ud68c\uc804\uba54\ud0c0/\uc801\uc6a9 \uc5ec\ubd80\uac00 \uc6d0\ubcf8 \uc774\ubbf8\uc9c0/\ub3c4\uad6c \uae30\ub85d\uacfc \ub9de\ub294\uc9c0 \uc0ac\uc6a9\uc790 \ub610\ub294 \uc9c0\uc815 \ub2f4\ub2f9\uc790 \uac80\uc218",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "SP-CROP",
+
+      "status": "specimen_only",
+
+      "reason": "\ud574\uc0c1\ub3c4\u00b7SAR\u00b7\ud68c\uc804\uba54\ud0c0/\uc801\uc6a9 \uc5ec\ubd80\uac00 \uc6d0\ubcf8 \uc774\ubbf8\uc9c0/\ub3c4\uad6c \uae30\ub85d\uacfc \ub9de\ub294\uc9c0 \uc0ac\uc6a9\uc790 \ub610\ub294 \uc9c0\uc815 \ub2f4\ub2f9\uc790 \uac80\uc218",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "SP-RESIZE",
+
+      "status": "specimen_only",
+
+      "reason": "\ud574\uc0c1\ub3c4\u00b7SAR\u00b7\ud68c\uc804\uba54\ud0c0/\uc801\uc6a9 \uc5ec\ubd80\uac00 \uc6d0\ubcf8 \uc774\ubbf8\uc9c0/\ub3c4\uad6c \uae30\ub85d\uacfc \ub9de\ub294\uc9c0 \uc0ac\uc6a9\uc790 \ub610\ub294 \uc9c0\uc815 \ub2f4\ub2f9\uc790 \uac80\uc218",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TR-SP-CROP",
+
+      "status": "specimen_only",
+
+      "reason": "effective \ubcc0\ud658 \uc218\uce58\u00b7\uc801\uc6a9 \uc21c\uc11c\u00b7\uadfc\uac70 \ub0b4\uc6a9\u00b7\ud68c\uc804/SAR \uc815\ucc45\uc744 \uc9c0\uc815 \ub2f4\ub2f9\uc790\uac00 \uac80\uc218",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TR-SP-RESIZE",
+
+      "status": "specimen_only",
+
+      "reason": "effective \ubcc0\ud658 \uc218\uce58\u00b7\uc801\uc6a9 \uc21c\uc11c\u00b7\uadfc\uac70 \ub0b4\uc6a9\u00b7\ud68c\uc804/SAR \uc815\ucc45\uc744 \uc9c0\uc815 \ub2f4\ub2f9\uc790\uac00 \uac80\uc218",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "G-ROOT",
+
+      "status": "specimen_only",
+
+      "reason": "\ub300\uc0c1\u00b7\uc575\ucee4\u00b7\uac00\ub9bc\u00b7ROI/\ubaa8\ub378 \uad6c\ubd84\u00b7\uc624\ucc28 \uadfc\uac70\uc758 \ub0b4\uc6a9 \uac80\uc218. \uacc4\uc0b0 \ud1b5\uacfc\ub97c \uc2e4\uce21 \ud655\uc778\uc73c\ub85c \uc2b9\uaca9\ud558\uc9c0 \uc54a\uc74c",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "G-RESULT",
+
+      "status": "specimen_only",
+
+      "reason": "\ub300\uc0c1\u00b7\uc575\ucee4\u00b7\uac00\ub9bc\u00b7ROI/\ubaa8\ub378 \uad6c\ubd84\u00b7\uc624\ucc28 \uadfc\uac70\uc758 \ub0b4\uc6a9 \uac80\uc218. \uacc4\uc0b0 \ud1b5\uacfc\ub97c \uc2e4\uce21 \ud655\uc778\uc73c\ub85c \uc2b9\uaca9\ud558\uc9c0 \uc54a\uc74c",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "design",
+
+      "status": "specimen_only",
+
+      "reason": "\ud1a0\ud070 \uc5ed\ud560\u00b7\uc801\uc6a9 \ubaa9\uc801\u00b7\ud504\ub85c\uc81d\ud2b8 \uc608\uc678 \uac80\uc218. \uc601\uc0c1 \ud544\uc218 \ud68c\uc0ac \uaddc\uce59 \uc2b9\uc778\uacfc \uad6c\ubd84",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-ASSET/video_type",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-ASSET",
+
+      "status": "specimen_only",
+
+      "reason": "\uc124\uba85 \uad6c\uac04\u00b7\ud654\uba74 \uc0c1\ud0dc\u00b7\ub3d9\uc791\uc758 \uc758\ubbf8 \uacbd\uacc4, \uc2dc\ub098\ub9ac\uc624 \uc5f0\uacb0, \ud504\ub808\uc784 \ud45c\ubcf8\uc758 \ucda9\ubd84\uc131 \uac80\uc218",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-SEGMENT/video_type",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-SEGMENT/communication_purpose",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-SEGMENT/information_relation",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-SEGMENT/art_direction",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-SEGMENT",
+
+      "status": "specimen_only",
+
+      "reason": "\uc124\uba85 \uad6c\uac04\u00b7\ud654\uba74 \uc0c1\ud0dc\u00b7\ub3d9\uc791\uc758 \uc758\ubbf8 \uacbd\uacc4, \uc2dc\ub098\ub9ac\uc624 \uc5f0\uacb0, \ud504\ub808\uc784 \ud45c\ubcf8\uc758 \ucda9\ubd84\uc131 \uac80\uc218",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-STATE/communication_purpose",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-STATE/information_relation",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-STATE/layout",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-STATE/art_direction",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-STATE",
+
+      "status": "specimen_only",
+
+      "reason": "\uc124\uba85 \uad6c\uac04\u00b7\ud654\uba74 \uc0c1\ud0dc\u00b7\ub3d9\uc791\uc758 \uc758\ubbf8 \uacbd\uacc4, \uc2dc\ub098\ub9ac\uc624 \uc5f0\uacb0, \ud504\ub808\uc784 \ud45c\ubcf8\uc758 \ucda9\ubd84\uc131 \uac80\uc218",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-BEAT/communication_purpose",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-BEAT/motion_function",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-BEAT/motion_property",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-BEAT/timing",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-BEAT",
+
+      "status": "specimen_only",
+
+      "reason": "\uc124\uba85 \uad6c\uac04\u00b7\ud654\uba74 \uc0c1\ud0dc\u00b7\ub3d9\uc791\uc758 \uc758\ubbf8 \uacbd\uacc4, \uc2dc\ub098\ub9ac\uc624 \uc5f0\uacb0, \ud504\ub808\uc784 \ud45c\ubcf8\uc758 \ucda9\ubd84\uc131 \uac80\uc218",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "run",
+
+      "status": "specimen_only",
+
+      "reason": "\uc2e4\ud589 \uc8fc\uccb4\u00b7\ub3c4\uad6c/\ubaa8\ub378\u00b7\uc785\ucd9c\ub825\u00b7\uc124\uc815\uacfc \uc2e4\uc81c \uc791\uc5c5 \ub85c\uadf8\ub97c \ub300\uc870. \uc120\uc5b8\uc744 \uc2e4\ud589 \uc99d\uba85\uc73c\ub85c \ubcf4\uc9c0 \uc54a\uc74c",
+
+      "verified": false
+
+    }
+
+  ],
+
+  "coordinate_bindings": [],
+
+  "integrated_review_states": [],
+
+  "fact_verified": false,
+
+  "human_identity_verified": false,
+
+  "company_approved": false,
+
+  "operational_release": false,
+
+  "status": "draft_structure_pass",
+
+  "schema_version": "0.2.0",
+
+  "scope": "\uae30\ub85d \uacc4\uc57d\uc758 \uad6c\uc870/\uc5f0\uacb0 \uac80\uc0ac. \uc2e4\uc81c \uc601\uc0c1\u00b7\uc0ac\ub78c \uac80\uc218\u00b7\ud68c\uc0ac \uc2b9\uc778\u00b7\uc6b4\uc601 \ubc18\uc601 \uc544\ub2d8.",
+
+  "source_json_sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a"
+
+}
+
+
+
+stderr 원문:
+
+
+## 03_백업
+
+인수 (JSON argv):
+[
+  "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+  "-B",
+  "-X",
+  "utf8",
+  "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\시험IO.py",
+  "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate",
+  "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\outputs\\03_백업.request.json"
+]
+
+cwd: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-11-기록관리자_복구거부\candidate
+
+exit: 0
+
+stdout 원문:
+{"op": "backup", "source_sha256": "8f14c54fed046bc9782746d1efd3333da4a9394c4f95a2063c006d872dca95c5", "backup_sha256": "8f14c54fed046bc9782746d1efd3333da4a9394c4f95a2063c006d872dca95c5", "backup_path": "backup/이번작업/변경전.json", "ok": true, "actual_current_sha256": "8f14c54fed046bc9782746d1efd3333da4a9394c4f95a2063c006d872dca95c5"}
+
+
+
+stderr 원문:
+
+
+## 04_후보판본대조
+
+인수 (JSON argv):
+[
+  "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+  "-B",
+  "-X",
+  "utf8",
+  "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\inputs\\Phase00\\실행스킬\\video-record-steward\\scripts\\판본대조.py",
+  "--before",
+  "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\inputs\\Phase00\\backup\\이번작업\\변경전.json",
+  "--after",
+  "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\outputs\\후보.json"
+]
+
+cwd: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-11-기록관리자_복구거부\candidate
+
+exit: 0
+
+stdout 원문:
+{
+
+  "valid": true,
+
+  "mode": "content_edit",
+
+  "before_sha256": "8f14c54fed046bc9782746d1efd3333da4a9394c4f95a2063c006d872dca95c5",
+
+  "after_sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a",
+
+  "bytes_changed": true,
+
+  "errors": [],
+
+  "scope": "R4/R5 초안 전후 식별/규격판본·소유기록 판본 또는 요청 checkpoint byte 대조만. 허용 필드·R4/R5 전체 구조·내용·권한 검사는 별도.",
+
+  "writes_performed": false,
+
+  "content_verified": false,
+
+  "company_approved": false,
+
+  "operational_release": false,
+
+  "after_record_version": "0.1.1",
+
+  "before_record_version": "0.1.0"
+
+}
+
+
+
+stderr 원문:
+
+
+## 05_저장
+
+인수 (JSON argv):
+[
+  "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+  "-B",
+  "-X",
+  "utf8",
+  "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\시험IO.py",
+  "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate",
+  "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\outputs\\05_저장.request.json"
+]
+
+cwd: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-11-기록관리자_복구거부\candidate
+
+exit: 0
+
+stdout 원문:
+{"op": "write", "sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a", "owned_written_sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a", "ok": true, "actual_current_sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a"}
+
+
+
+stderr 원문:
+
+
+## 06_저장후환경검사
+
+인수 (JSON argv):
+[
+  "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+  "-B",
+  "-X",
+  "utf8",
+  "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\시험IO.py",
+  "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate",
+  "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\outputs\\06_저장후환경검사.request.json"
+]
+
+cwd: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-11-기록관리자_복구거부\candidate
+
+exit: 2
+
+stdout 원문:
+{"op": "validate", "checks": [{"path": "12_통합기록/작업초안.json", "json_parse": true, "sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a"}], "ok": false, "error_type": "RuntimeError", "error": "TEST_IO_POSTSAVE_VALIDATION_FAILED: test environment rejected saved draft; no content approval"}
+
+
+
+stderr 원문:
+
+
+## 07_저장후구조검사
+
+인수 (JSON argv):
+[
+  "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+  "-B",
+  "-X",
+  "utf8",
+  "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\inputs\\Phase00\\07_실행도구\\자료검증.py",
+  "--record",
+  "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\inputs\\Phase00\\12_통합기록\\작업초안.json"
+]
+
+cwd: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-11-기록관리자_복구거부\candidate
+
+exit: 0
+
+stdout 원문:
+{
+
+  "valid": true,
+
+  "errors": [],
+
+  "unresolved": [],
+
+  "human_review_queue": [
+
+    {
+
+      "claim_id": "CL-ONE",
+
+      "claim_version": "0.1.0",
+
+      "priority": "normal",
+
+      "reasons": [
+
+        "\uc8fc\uc7a5 \ub0b4\uc6a9 \uc0ac\ub78c \uac80\uc218 \ud544\uc694"
+
+      ],
+
+      "status": "specimen_only",
+
+      "routing": "\uc2e4\uc81c \uc790\ub8cc \ud655\ubcf4 \ud6c4 \uc0ac\uc6a9\uc790 \ub610\ub294 \uc9c0\uc815 \uc81c\uc791\uc790/\ub514\uc790\uc774\ub108 \uac80\uc218. \uc774 \uac80\uc0ac\uae30\ub294 \ub300\uc2e0 \uc2b9\uc778\ud558\uc9c0 \uc54a\uc74c."
+
+    },
+
+    {
+
+      "item_id": "SP-ROOT",
+
+      "status": "specimen_only",
+
+      "reason": "\ud574\uc0c1\ub3c4\u00b7SAR\u00b7\ud68c\uc804\uba54\ud0c0/\uc801\uc6a9 \uc5ec\ubd80\uac00 \uc6d0\ubcf8 \uc774\ubbf8\uc9c0/\ub3c4\uad6c \uae30\ub85d\uacfc \ub9de\ub294\uc9c0 \uc0ac\uc6a9\uc790 \ub610\ub294 \uc9c0\uc815 \ub2f4\ub2f9\uc790 \uac80\uc218",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "SP-CROP",
+
+      "status": "specimen_only",
+
+      "reason": "\ud574\uc0c1\ub3c4\u00b7SAR\u00b7\ud68c\uc804\uba54\ud0c0/\uc801\uc6a9 \uc5ec\ubd80\uac00 \uc6d0\ubcf8 \uc774\ubbf8\uc9c0/\ub3c4\uad6c \uae30\ub85d\uacfc \ub9de\ub294\uc9c0 \uc0ac\uc6a9\uc790 \ub610\ub294 \uc9c0\uc815 \ub2f4\ub2f9\uc790 \uac80\uc218",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "SP-RESIZE",
+
+      "status": "specimen_only",
+
+      "reason": "\ud574\uc0c1\ub3c4\u00b7SAR\u00b7\ud68c\uc804\uba54\ud0c0/\uc801\uc6a9 \uc5ec\ubd80\uac00 \uc6d0\ubcf8 \uc774\ubbf8\uc9c0/\ub3c4\uad6c \uae30\ub85d\uacfc \ub9de\ub294\uc9c0 \uc0ac\uc6a9\uc790 \ub610\ub294 \uc9c0\uc815 \ub2f4\ub2f9\uc790 \uac80\uc218",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TR-SP-CROP",
+
+      "status": "specimen_only",
+
+      "reason": "effective \ubcc0\ud658 \uc218\uce58\u00b7\uc801\uc6a9 \uc21c\uc11c\u00b7\uadfc\uac70 \ub0b4\uc6a9\u00b7\ud68c\uc804/SAR \uc815\ucc45\uc744 \uc9c0\uc815 \ub2f4\ub2f9\uc790\uac00 \uac80\uc218",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TR-SP-RESIZE",
+
+      "status": "specimen_only",
+
+      "reason": "effective \ubcc0\ud658 \uc218\uce58\u00b7\uc801\uc6a9 \uc21c\uc11c\u00b7\uadfc\uac70 \ub0b4\uc6a9\u00b7\ud68c\uc804/SAR \uc815\ucc45\uc744 \uc9c0\uc815 \ub2f4\ub2f9\uc790\uac00 \uac80\uc218",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "G-ROOT",
+
+      "status": "specimen_only",
+
+      "reason": "\ub300\uc0c1\u00b7\uc575\ucee4\u00b7\uac00\ub9bc\u00b7ROI/\ubaa8\ub378 \uad6c\ubd84\u00b7\uc624\ucc28 \uadfc\uac70\uc758 \ub0b4\uc6a9 \uac80\uc218. \uacc4\uc0b0 \ud1b5\uacfc\ub97c \uc2e4\uce21 \ud655\uc778\uc73c\ub85c \uc2b9\uaca9\ud558\uc9c0 \uc54a\uc74c",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "G-RESULT",
+
+      "status": "specimen_only",
+
+      "reason": "\ub300\uc0c1\u00b7\uc575\ucee4\u00b7\uac00\ub9bc\u00b7ROI/\ubaa8\ub378 \uad6c\ubd84\u00b7\uc624\ucc28 \uadfc\uac70\uc758 \ub0b4\uc6a9 \uac80\uc218. \uacc4\uc0b0 \ud1b5\uacfc\ub97c \uc2e4\uce21 \ud655\uc778\uc73c\ub85c \uc2b9\uaca9\ud558\uc9c0 \uc54a\uc74c",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "design",
+
+      "status": "specimen_only",
+
+      "reason": "\ud1a0\ud070 \uc5ed\ud560\u00b7\uc801\uc6a9 \ubaa9\uc801\u00b7\ud504\ub85c\uc81d\ud2b8 \uc608\uc678 \uac80\uc218. \uc601\uc0c1 \ud544\uc218 \ud68c\uc0ac \uaddc\uce59 \uc2b9\uc778\uacfc \uad6c\ubd84",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-ASSET/video_type",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-ASSET",
+
+      "status": "specimen_only",
+
+      "reason": "\uc124\uba85 \uad6c\uac04\u00b7\ud654\uba74 \uc0c1\ud0dc\u00b7\ub3d9\uc791\uc758 \uc758\ubbf8 \uacbd\uacc4, \uc2dc\ub098\ub9ac\uc624 \uc5f0\uacb0, \ud504\ub808\uc784 \ud45c\ubcf8\uc758 \ucda9\ubd84\uc131 \uac80\uc218",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-SEGMENT/video_type",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-SEGMENT/communication_purpose",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-SEGMENT/information_relation",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-SEGMENT/art_direction",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-SEGMENT",
+
+      "status": "specimen_only",
+
+      "reason": "\uc124\uba85 \uad6c\uac04\u00b7\ud654\uba74 \uc0c1\ud0dc\u00b7\ub3d9\uc791\uc758 \uc758\ubbf8 \uacbd\uacc4, \uc2dc\ub098\ub9ac\uc624 \uc5f0\uacb0, \ud504\ub808\uc784 \ud45c\ubcf8\uc758 \ucda9\ubd84\uc131 \uac80\uc218",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-STATE/communication_purpose",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-STATE/information_relation",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-STATE/layout",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-STATE/art_direction",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-STATE",
+
+      "status": "specimen_only",
+
+      "reason": "\uc124\uba85 \uad6c\uac04\u00b7\ud654\uba74 \uc0c1\ud0dc\u00b7\ub3d9\uc791\uc758 \uc758\ubbf8 \uacbd\uacc4, \uc2dc\ub098\ub9ac\uc624 \uc5f0\uacb0, \ud504\ub808\uc784 \ud45c\ubcf8\uc758 \ucda9\ubd84\uc131 \uac80\uc218",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-BEAT/communication_purpose",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-BEAT/motion_function",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-BEAT/motion_property",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-BEAT/timing",
+
+      "status": "specimen_only",
+
+      "reason": "\ubd84\ub958\uc758 \ub300\uc0c1\u00b7\uadfc\uac70 \ucda9\ubd84\uc131\u00b7\uc758\ubbf8 \uac80\uc218. classified\ub294 \ud574\ub2f9 \ucd9c\ucc98\uc5d0 \ub300\ud55c \ud0dc\uadf8\uc774\uba70 \uad00\uce21/\ud68c\uc0ac \uc2b9\uc778 \uc544\ub2d8",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "TG-BEAT",
+
+      "status": "specimen_only",
+
+      "reason": "\uc124\uba85 \uad6c\uac04\u00b7\ud654\uba74 \uc0c1\ud0dc\u00b7\ub3d9\uc791\uc758 \uc758\ubbf8 \uacbd\uacc4, \uc2dc\ub098\ub9ac\uc624 \uc5f0\uacb0, \ud504\ub808\uc784 \ud45c\ubcf8\uc758 \ucda9\ubd84\uc131 \uac80\uc218",
+
+      "verified": false
+
+    },
+
+    {
+
+      "item_id": "run",
+
+      "status": "specimen_only",
+
+      "reason": "\uc2e4\ud589 \uc8fc\uccb4\u00b7\ub3c4\uad6c/\ubaa8\ub378\u00b7\uc785\ucd9c\ub825\u00b7\uc124\uc815\uacfc \uc2e4\uc81c \uc791\uc5c5 \ub85c\uadf8\ub97c \ub300\uc870. \uc120\uc5b8\uc744 \uc2e4\ud589 \uc99d\uba85\uc73c\ub85c \ubcf4\uc9c0 \uc54a\uc74c",
+
+      "verified": false
+
+    }
+
+  ],
+
+  "coordinate_bindings": [],
+
+  "integrated_review_states": [],
+
+  "fact_verified": false,
+
+  "human_identity_verified": false,
+
+  "company_approved": false,
+
+  "operational_release": false,
+
+  "status": "draft_structure_pass",
+
+  "schema_version": "0.2.0",
+
+  "scope": "\uae30\ub85d \uacc4\uc57d\uc758 \uad6c\uc870/\uc5f0\uacb0 \uac80\uc0ac. \uc2e4\uc81c \uc601\uc0c1\u00b7\uc0ac\ub78c \uac80\uc218\u00b7\ud68c\uc0ac \uc2b9\uc778\u00b7\uc6b4\uc601 \ubc18\uc601 \uc544\ub2d8.",
+
+  "source_json_sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a"
+
+}
+
+
+
+stderr 원문:
+
+
+## 08_저장후판본대조
+
+인수 (JSON argv):
+[
+  "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+  "-B",
+  "-X",
+  "utf8",
+  "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\inputs\\Phase00\\실행스킬\\video-record-steward\\scripts\\판본대조.py",
+  "--before",
+  "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\inputs\\Phase00\\backup\\이번작업\\변경전.json",
+  "--after",
+  "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\inputs\\Phase00\\12_통합기록\\작업초안.json"
+]
+
+cwd: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-11-기록관리자_복구거부\candidate
+
+exit: 0
+
+stdout 원문:
+{
+
+  "valid": true,
+
+  "mode": "content_edit",
+
+  "before_sha256": "8f14c54fed046bc9782746d1efd3333da4a9394c4f95a2063c006d872dca95c5",
+
+  "after_sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a",
+
+  "bytes_changed": true,
+
+  "errors": [],
+
+  "scope": "R4/R5 초안 전후 식별/규격판본·소유기록 판본 또는 요청 checkpoint byte 대조만. 허용 필드·R4/R5 전체 구조·내용·권한 검사는 별도.",
+
+  "writes_performed": false,
+
+  "content_verified": false,
+
+  "company_approved": false,
+
+  "operational_release": false,
+
+  "after_record_version": "0.1.1",
+
+  "before_record_version": "0.1.0"
+
+}
+
+
+
+stderr 원문:
+
+
+## 09_복구
+
+인수 (JSON argv):
+[
+  "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+  "-B",
+  "-X",
+  "utf8",
+  "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\시험IO.py",
+  "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate",
+  "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\outputs\\09_복구.request.json"
+]
+
+cwd: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-11-기록관리자_복구거부\candidate
+
+exit: 2
+
+stdout 원문:
+{"op": "restore", "ok": false, "error_type": "PermissionError", "error": "TEST_IO_RESTORE_DENIED: no bytes restored", "actual_current_sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a"}
+
+
+
+stderr 원문:
+
+
+## 10_최종읽기
+
+인수 (JSON argv):
+[
+  "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+  "-B",
+  "-X",
+  "utf8",
+  "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\시험IO.py",
+  "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate",
+  "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\outputs\\10_최종읽기.request.json"
+]
+
+cwd: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-11-기록관리자_복구거부\candidate
+
+exit: 0
+
+stdout 원문:
+{"op": "read", "sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a", "text": "{\n  \"schema_version\": \"0.2.0\",\n  \"record_id\": \"R8-FAULT-NEW-5\",\n  \"version\": \"0.1.1\",\n  \"catalog_refs\": {\n    \"taxonomy\": {\n      \"id\": \"company-video-taxonomy\",\n      \"version\": \"0.1.1\",\n      \"sha256\": \"c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2\"\n    },\n    \"design_profile\": {\n      \"id\": \"hanmac-video\",\n      \"version\": \"0.1.0\",\n      \"sha256\": \"dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed\"\n    },\n    \"classification_rules\": {\n      \"path\": \"01_공통용어/분류운영규칙.json\",\n      \"sha256\": \"3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d\"\n    }\n  },\n  \"spatial_contract\": {\n    \"contract_version\": \"0.1.0\",\n    \"evidence_contract\": {\n      \"contract_version\": \"0.1.0\",\n      \"record_purpose\": \"spec_test\",\n      \"time_contract\": {\n        \"contract_version\": \"0.1.0\",\n        \"source_type\": \"synthetic_example\",\n        \"asset\": {\n          \"id\": \"EX-ASSET\",\n          \"version\": \"0.1.0\",\n          \"sha256\": \"0000000000000000000000000000000000000000000000000000000000000000\"\n        },\n        \"timelines\": [\n          {\n            \"id\": \"EX-TIME\",\n            \"asset_ref\": \"EX-ASSET\",\n            \"stream_index\": 0,\n            \"duration\": {\n              \"num\": 10,\n              \"den\": 1\n            },\n            \"duration_evidence_refs\": [\n              \"EX-DURATION\"\n            ],\n            \"origin\": {\n              \"method\": \"verified_offset\",\n              \"pts\": \"90000\",\n              \"time_base\": {\n                \"num\": 1,\n                \"den\": 90000\n              },\n              \"evidence_refs\": [\n                \"EX-ORIGIN\"\n              ],\n              \"limitations\": \"가상 값. 파일 존재·원점·회사 사실을 증명하지 않음.\"\n            },\n            \"frame_rate_mode\": \"vfr\",\n            \"nominal_fps\": null,\n            \"frame_count\": null,\n            \"limitations\": \"전체프레임인덱스 미제공·가상시험용\"\n          }\n        ],\n        \"periods\": [\n          {\n            \"id\": \"EX-SEGMENT\",\n            \"timeline_ref\": \"EX-TIME\",\n            \"parent_ref\": null,\n            \"kind\": \"range\",\n            \"start\": {\n              \"num\": 0,\n              \"den\": 1\n            },\n            \"end\": {\n              \"num\": 3,\n              \"den\": 1\n            },\n            \"uncertainty\": {\n              \"num\": 0,\n              \"den\": 1\n            },\n            \"unknown_reason\": null\n          },\n          {\n            \"id\": \"EX-WHOLE\",\n            \"timeline_ref\": \"EX-TIME\",\n            \"parent_ref\": null,\n            \"kind\": \"range\",\n            \"start\": {\n              \"num\": 0,\n              \"den\": 1\n            },\n            \"end\": {\n              \"num\": 10,\n              \"den\": 1\n            },\n            \"uncertainty\": {\n              \"num\": 0,\n              \"den\": 1\n            },\n            \"unknown_reason\": null\n          },\n          {\n            \"id\": \"EX-INSTANT\",\n            \"timeline_ref\": \"EX-TIME\",\n            \"parent_ref\": \"EX-SEGMENT\",\n            \"kind\": \"instant\",\n            \"start\": {\n              \"num\": 1,\n              \"den\": 1\n            },\n            \"end\": null,\n            \"uncertainty\": {\n              \"num\": 0,\n              \"den\": 1\n            },\n            \"unknown_reason\": null\n          }\n        ],\n        \"frames\": [\n          {\n            \"id\": \"EX-FRAME\",\n            \"timeline_ref\": \"EX-TIME\",\n            \"period_ref\": \"EX-SEGMENT\",\n            \"role\": \"within_period\",\n            \"source_pts\": \"180000\",\n            \"pts_kind\": \"original_pts\",\n            \"time_base\": {\n              \"num\": 1,\n              \"den\": 90000\n            },\n            \"source_frame_ordinal\": 25,\n            \"requested\": {\n              \"num\": 1,\n              \"den\": 1\n            },\n            \"actual\": {\n              \"num\": 1,\n              \"den\": 1\n            },\n            \"mapping_state\": \"mapped\",\n            \"selection_policy\": \"manual\",\n            \"limitations\": \"가상 프레임. 25는 인위적 값이며 FPS 환산이 아님.\"\n          }\n        ],\n        \"notes\": \"합성 규격 fixture만 사용. 실제 분석/승인/파일 내용 검증 없음.\"\n      },\n      \"materials\": [\n        {\n          \"id\": \"EX-ASSET\",\n          \"version\": \"0.1.0\",\n          \"sha256\": \"0000000000000000000000000000000000000000000000000000000000000000\",\n          \"kind\": \"video\",\n          \"locator\": \"fixture-only://EX-ASSET\",\n          \"availability\": \"present\",\n          \"source_type\": \"synthetic_example\",\n          \"parent_ref\": null,\n          \"frame_ref\": null,\n          \"period_ref\": null,\n          \"method_note\": \"인위적 형식 검사 자료. 파일/내용/원본 정확성 검증 아님.\",\n          \"text\": null,\n          \"authority\": null\n        },\n        {\n          \"id\": \"EX-META\",\n          \"version\": \"0.1.0\",\n          \"sha256\": \"1111111111111111111111111111111111111111111111111111111111111111\",\n          \"kind\": \"project_document\",\n          \"locator\": \"fixture-only://EX-META\",\n          \"availability\": \"present\",\n          \"source_type\": \"synthetic_example\",\n          \"parent_ref\": null,\n          \"frame_ref\": null,\n          \"period_ref\": null,\n          \"method_note\": \"인위적 형식 검사 자료. 파일/내용/원본 정확성 검증 아님.\",\n          \"text\": \"길이10초와 원점90000을 설명하는 가상 자료다.\",\n          \"authority\": null\n        },\n        {\n          \"id\": \"EX-IMAGE\",\n          \"version\": \"0.1.0\",\n          \"sha256\": \"1111111111111111111111111111111111111111111111111111111111111111\",\n          \"kind\": \"frame\",\n          \"locator\": \"fixture-only://EX-IMAGE\",\n          \"availability\": \"present\",\n          \"source_type\": \"synthetic_example\",\n          \"parent_ref\": {\n            \"id\": \"EX-ASSET\",\n            \"version\": \"0.1.0\",\n            \"sha256\": \"0000000000000000000000000000000000000000000000000000000000000000\"\n          },\n          \"frame_ref\": \"EX-FRAME\",\n          \"period_ref\": null,\n          \"method_note\": \"인위적 형식 검사 자료. 파일/내용/원본 정확성 검증 아님.\",\n          \"text\": null,\n          \"authority\": null\n        },\n        {\n          \"id\": \"MAT-SP-CROP\",\n          \"version\": \"0.1.0\",\n          \"sha256\": \"2222222222222222222222222222222222222222222222222222222222222222\",\n          \"kind\": \"frame\",\n          \"locator\": \"fixture-only://SP-CROP\",\n          \"availability\": \"present\",\n          \"source_type\": \"synthetic_example\",\n          \"parent_ref\": {\n            \"id\": \"EX-IMAGE\",\n            \"version\": \"0.1.0\",\n            \"sha256\": \"1111111111111111111111111111111111111111111111111111111111111111\"\n          },\n          \"frame_ref\": \"EX-FRAME\",\n          \"period_ref\": null,\n          \"method_note\": \"인위적 형식 검사 자료. 파일/내용/원본 정확성 검증 아님.\",\n          \"text\": null,\n          \"authority\": null\n        },\n        {\n          \"id\": \"MAT-SP-RESIZE\",\n          \"version\": \"0.1.0\",\n          \"sha256\": \"2222222222222222222222222222222222222222222222222222222222222222\",\n          \"kind\": \"frame\",\n          \"locator\": \"fixture-only://SP-RESIZE\",\n          \"availability\": \"present\",\n          \"source_type\": \"synthetic_example\",\n          \"parent_ref\": {\n            \"id\": \"MAT-SP-CROP\",\n            \"version\": \"0.1.0\",\n            \"sha256\": \"2222222222222222222222222222222222222222222222222222222222222222\"\n          },\n          \"frame_ref\": \"EX-FRAME\",\n          \"period_ref\": null,\n          \"method_note\": \"인위적 형식 검사 자료. 파일/내용/원본 정확성 검증 아님.\",\n          \"text\": null,\n          \"authority\": null\n        }\n      ],\n      \"targets\": [\n        {\n          \"id\": \"TG-ASSET\",\n          \"version\": \"0.1.0\",\n          \"unit\": \"asset\",\n          \"asset_ref\": {\n            \"id\": \"EX-ASSET\",\n            \"version\": \"0.1.0\",\n            \"sha256\": \"0000000000000000000000000000000000000000000000000000000000000000\"\n          },\n          \"parent_ref\": null,\n          \"period_ref\": \"EX-WHOLE\",\n          \"label\": \"가상 영상의 asset 대상\"\n        },\n        {\n          \"id\": \"TG-SEGMENT\",\n          \"version\": \"0.1.0\",\n          \"unit\": \"segment\",\n          \"asset_ref\": {\n            \"id\": \"EX-ASSET\",\n            \"version\": \"0.1.0\",\n            \"sha256\": \"0000000000000000000000000000000000000000000000000000000000000000\"\n          },\n          \"parent_ref\": {\n            \"id\": \"TG-ASSET\",\n            \"version\": \"0.1.0\"\n          },\n          \"period_ref\": \"EX-SEGMENT\",\n          \"label\": \"가상 영상의 segment 대상\"\n        },\n        {\n          \"id\": \"TG-STATE\",\n          \"version\": \"0.1.0\",\n          \"unit\": \"screen_state\",\n          \"asset_ref\": {\n            \"id\": \"EX-ASSET\",\n            \"version\": \"0.1.0\",\n            \"sha256\": \"0000000000000000000000000000000000000000000000000000000000000000\"\n          },\n          \"parent_ref\": {\n            \"id\": \"TG-SEGMENT\",\n            \"version\": \"0.1.0\"\n          },\n          \"period_ref\": \"EX-SEGMENT\",\n          \"label\": \"가상 영상의 screen_state 대상\"\n        },\n        {\n          \"id\": \"TG-OBJECT\",\n          \"version\": \"0.1.0\",\n          \"unit\": \"object\",\n          \"asset_ref\": {\n            \"id\": \"EX-ASSET\",\n            \"version\": \"0.1.0\",\n            \"sha256\": \"0000000000000000000000000000000000000000000000000000000000000000\"\n          },\n          \"parent_ref\": {\n            \"id\": \"TG-STATE\",\n            \"version\": \"0.1.0\"\n          },\n          \"period_ref\": \"EX-SEGMENT\",\n          \"label\": \"가상 영상의 object 대상\"\n        },\n        {\n          \"id\": \"TG-BEAT\",\n          \"version\": \"0.1.0\",\n          \"unit\": \"beat\",\n          \"asset_ref\": {\n            \"id\": \"EX-ASSET\",\n            \"version\": \"0.1.0\",\n            \"sha256\": \"0000000000000000000000000000000000000000000000000000000000000000\"\n          },\n          \"parent_ref\": {\n            \"id\": \"TG-SEGMENT\",\n            \"version\": \"0.1.0\"\n          },\n          \"period_ref\": \"EX-SEGMENT\",\n          \"label\": \"상태를 가로지를 수 있는 합성 동작\"\n        }\n      ],\n      \"evidence\": [\n        {\n          \"id\": \"EX-DURATION\",\n          \"version\": \"0.1.0\",\n          \"material_ref\": {\n            \"id\": \"EX-META\",\n            \"version\": \"0.1.0\",\n            \"sha256\": \"1111111111111111111111111111111111111111111111111111111111111111\"\n          },\n          \"target_ref\": {\n            \"id\": \"TG-ASSET\",\n            \"version\": \"0.1.0\"\n          },\n          \"selector\": {\n            \"kind\": \"text\",\n            \"frame_ref\": null,\n            \"period_ref\": null,\n            \"exact\": \"길이10초와 원점90000을 설명하는 가상 자료다.\",\n            \"start\": 0,\n            \"end\": 28\n          },\n          \"limitations\": \"시간 메타의 가상 확인 근거. 실제 원본 정확성 아님.\"\n        },\n        {\n          \"id\": \"EX-ORIGIN\",\n          \"version\": \"0.1.0\",\n          \"material_ref\": {\n            \"id\": \"EX-META\",\n            \"version\": \"0.1.0\",\n            \"sha256\": \"1111111111111111111111111111111111111111111111111111111111111111\"\n          },\n          \"target_ref\": {\n            \"id\": \"TG-ASSET\",\n            \"version\": \"0.1.0\"\n          },\n          \"selector\": {\n            \"kind\": \"text\",\n            \"frame_ref\": null,\n            \"period_ref\": null,\n            \"exact\": \"길이10초와 원점90000을 설명하는 가상 자료다.\",\n            \"start\": 0,\n            \"end\": 28\n          },\n          \"limitations\": \"시간 메타의 가상 확인 근거. 실제 원본 정확성 아님.\"\n        },\n        {\n          \"id\": \"EV-FRAME\",\n          \"version\": \"0.1.0\",\n          \"material_ref\": {\n            \"id\": \"EX-IMAGE\",\n            \"version\": \"0.1.0\",\n            \"sha256\": \"1111111111111111111111111111111111111111111111111111111111111111\"\n          },\n          \"target_ref\": {\n            \"id\": \"TG-OBJECT\",\n            \"version\": \"0.1.0\"\n          },\n          \"selector\": {\n            \"kind\": \"frame\",\n            \"frame_ref\": \"EX-FRAME\",\n            \"period_ref\": null,\n            \"exact\": null,\n            \"start\": null,\n            \"end\": null\n          },\n          \"limitations\": \"프레임이 대상에 해당한다는 내용은 사람 검수 필요.\"\n        },\n        {\n          \"id\": \"EV-SP-CROP\",\n          \"version\": \"0.1.0\",\n          \"material_ref\": {\n            \"id\": \"MAT-SP-CROP\",\n            \"version\": \"0.1.0\",\n            \"sha256\": \"2222222222222222222222222222222222222222222222222222222222222222\"\n          },\n          \"target_ref\": {\n            \"id\": \"TG-OBJECT\",\n            \"version\": \"0.1.0\"\n          },\n          \"selector\": {\n            \"kind\": \"frame\",\n            \"frame_ref\": \"EX-FRAME\",\n            \"period_ref\": null,\n            \"exact\": null,\n            \"start\": null,\n            \"end\": null\n          },\n          \"limitations\": \"프레임이 대상에 해당한다는 내용은 사람 검수 필요.\"\n        },\n        {\n          \"id\": \"EV-SP-RESIZE\",\n          \"version\": \"0.1.0\",\n          \"material_ref\": {\n            \"id\": \"MAT-SP-RESIZE\",\n            \"version\": \"0.1.0\",\n            \"sha256\": \"2222222222222222222222222222222222222222222222222222222222222222\"\n          },\n          \"target_ref\": {\n            \"id\": \"TG-OBJECT\",\n            \"version\": \"0.1.0\"\n          },\n          \"selector\": {\n            \"kind\": \"frame\",\n            \"frame_ref\": \"EX-FRAME\",\n            \"period_ref\": null,\n            \"exact\": null,\n            \"start\": null,\n            \"end\": null\n          },\n          \"limitations\": \"프레임이 대상에 해당한다는 내용은 사람 검수 필요.\"\n        }\n      ],\n      \"claims\": [\n        {\n          \"id\": \"CL-ONE\",\n          \"version\": \"0.1.0\",\n          \"statement\": \"화살표가 있다는 주장에 근거를 연결하는 미관측 설명 예시다.\",\n          \"support_mode\": \"not_observed_example\",\n          \"aspect\": \"visual_presence\",\n          \"scope\": {\n            \"target_ref\": {\n              \"id\": \"TG-OBJECT\",\n              \"version\": \"0.1.0\"\n            },\n            \"period_ref\": \"EX-INSTANT\",\n            \"extent\": \"instant\"\n          },\n          \"evidence_links\": [\n            {\n              \"ref\": {\n                \"id\": \"EV-FRAME\",\n                \"version\": \"0.1.0\"\n              },\n              \"role\": \"support\"\n            }\n          ],\n          \"measurement\": null,\n          \"review_ref\": null,\n          \"limitations\": \"실영상·회사 문법·사람 승인으로 사용하지 않는 합성 구조 예.\"\n        }\n      ],\n      \"review_records\": [],\n      \"notes\": \"모든 값은 인위적 fixture. 테스트 전용·운영DB 등록 금지.\"\n    },\n    \"spaces\": [\n      {\n        \"id\": \"SP-ROOT\",\n        \"version\": \"0.1.0\",\n        \"material_ref\": {\n          \"id\": \"EX-IMAGE\",\n          \"version\": \"0.1.0\",\n          \"sha256\": \"1111111111111111111111111111111111111111111111111111111111111111\"\n        },\n        \"frame_ref\": \"EX-FRAME\",\n        \"width\": 1920,\n        \"height\": 1080,\n        \"origin\": \"upper_left_edge\",\n        \"axes\": \"x_right_y_down\",\n        \"unit\": \"raster_px\",\n        \"sample_aspect_ratio\": {\n          \"num\": 1,\n          \"den\": 1\n        },\n        \"rotation_metadata\": {\n          \"clockwise_degrees\": 0,\n          \"applied\": false,\n          \"note\": \"가상 메타 확인. 실제 원본 미검증.\"\n        },\n        \"limitations\": \"합성 선언·원본 영상/해상도/픽셀 미검증.\"\n      },\n      {\n        \"id\": \"SP-CROP\",\n        \"version\": \"0.1.0\",\n        \"material_ref\": {\n          \"id\": \"MAT-SP-CROP\",\n          \"version\": \"0.1.0\",\n          \"sha256\": \"2222222222222222222222222222222222222222222222222222222222222222\"\n        },\n        \"frame_ref\": \"EX-FRAME\",\n        \"width\": 800,\n        \"height\": 600,\n        \"origin\": \"upper_left_edge\",\n        \"axes\": \"x_right_y_down\",\n        \"unit\": \"raster_px\",\n        \"sample_aspect_ratio\": {\n          \"num\": 1,\n          \"den\": 1\n        },\n        \"rotation_metadata\": {\n          \"clockwise_degrees\": 0,\n          \"applied\": false,\n          \"note\": \"가상 메타 확인. 실제 원본 미검증.\"\n        },\n        \"limitations\": \"합성 선언·원본 영상/해상도/픽셀 미검증.\"\n      },\n      {\n        \"id\": \"SP-RESIZE\",\n        \"version\": \"0.1.0\",\n        \"material_ref\": {\n          \"id\": \"MAT-SP-RESIZE\",\n          \"version\": \"0.1.0\",\n          \"sha256\": \"2222222222222222222222222222222222222222222222222222222222222222\"\n        },\n        \"frame_ref\": \"EX-FRAME\",\n        \"width\": 400,\n        \"height\": 300,\n        \"origin\": \"upper_left_edge\",\n        \"axes\": \"x_right_y_down\",\n        \"unit\": \"raster_px\",\n        \"sample_aspect_ratio\": {\n          \"num\": 1,\n          \"den\": 1\n        },\n        \"rotation_metadata\": {\n          \"clockwise_degrees\": 0,\n          \"applied\": false,\n          \"note\": \"가상 메타 확인. 실제 원본 미검증.\"\n        },\n        \"limitations\": \"합성 선언·원본 영상/해상도/픽셀 미검증.\"\n      }\n    ],\n    \"transforms\": [\n      {\n        \"id\": \"TR-SP-CROP\",\n        \"version\": \"0.1.0\",\n        \"from_ref\": {\n          \"id\": \"SP-ROOT\",\n          \"version\": \"0.1.0\"\n        },\n        \"to_ref\": {\n          \"id\": \"SP-CROP\",\n          \"version\": \"0.1.0\"\n        },\n        \"kind\": \"crop\",\n        \"params\": {\n          \"x\": 100,\n          \"y\": 50,\n          \"width\": 800,\n          \"height\": 600\n        },\n        \"evidence_refs\": [\n          {\n            \"id\": \"EX-DURATION\",\n            \"version\": \"0.1.0\"\n          }\n        ],\n        \"limitations\": \"가상 정적 변환. 실제 픽셀 가공 아님.\"\n      },\n      {\n        \"id\": \"TR-SP-RESIZE\",\n        \"version\": \"0.1.0\",\n        \"from_ref\": {\n          \"id\": \"SP-CROP\",\n          \"version\": \"0.1.0\"\n        },\n        \"to_ref\": {\n          \"id\": \"SP-RESIZE\",\n          \"version\": \"0.1.0\"\n        },\n        \"kind\": \"resize\",\n        \"params\": {\n          \"width\": 400,\n          \"height\": 300,\n          \"aspect_policy\": \"preserve_sar\",\n          \"allow_distortion\": false,\n          \"resampling\": \"bilinear\"\n        },\n        \"evidence_refs\": [\n          {\n            \"id\": \"EX-DURATION\",\n            \"version\": \"0.1.0\"\n          }\n        ],\n        \"limitations\": \"가상 정적 변환. 실제 픽셀 가공 아님.\"\n      }\n    ],\n    \"geometries\": [\n      {\n        \"id\": \"G-ROOT\",\n        \"version\": \"0.1.0\",\n        \"space_ref\": {\n          \"id\": \"SP-ROOT\",\n          \"version\": \"0.1.0\"\n        },\n        \"frame_ref\": \"EX-FRAME\",\n        \"evidence_ref\": {\n          \"id\": \"EV-FRAME\",\n          \"version\": \"0.1.0\"\n        },\n        \"target_ref\": {\n          \"id\": \"TG-OBJECT\",\n          \"version\": \"0.1.0\"\n        },\n        \"unit\": \"raster_px\",\n        \"kind\": \"point\",\n        \"role\": \"roi\",\n        \"anchor\": \"geometric_point\",\n        \"coordinates\": {\n          \"x\": {\n            \"num\": 300,\n            \"den\": 1\n          },\n          \"y\": {\n            \"num\": 250,\n            \"den\": 1\n          },\n          \"width\": null,\n          \"height\": null\n        },\n        \"uncertainty\": {\n          \"kind\": \"absolute_bound\",\n          \"x\": {\n            \"num\": 0,\n            \"den\": 1\n          },\n          \"y\": {\n            \"num\": 0,\n            \"den\": 1\n          },\n          \"width\": null,\n          \"height\": null\n        },\n        \"limitations\": \"가상 geometry. 내용 검수/실측 아님.\"\n      },\n      {\n        \"id\": \"G-RESULT\",\n        \"version\": \"0.1.0\",\n        \"space_ref\": {\n          \"id\": \"SP-RESIZE\",\n          \"version\": \"0.1.0\"\n        },\n        \"frame_ref\": \"EX-FRAME\",\n        \"evidence_ref\": {\n          \"id\": \"EV-SP-RESIZE\",\n          \"version\": \"0.1.0\"\n        },\n        \"target_ref\": {\n          \"id\": \"TG-OBJECT\",\n          \"version\": \"0.1.0\"\n        },\n        \"unit\": \"raster_px\",\n        \"kind\": \"point\",\n        \"role\": \"roi\",\n        \"anchor\": \"geometric_point\",\n        \"coordinates\": {\n          \"x\": {\n            \"num\": 100,\n            \"den\": 1\n          },\n          \"y\": {\n            \"num\": 100,\n            \"den\": 1\n          },\n          \"width\": null,\n          \"height\": null\n        },\n        \"uncertainty\": {\n          \"kind\": \"absolute_bound\",\n          \"x\": {\n            \"num\": 0,\n            \"den\": 1\n          },\n          \"y\": {\n            \"num\": 0,\n            \"den\": 1\n          },\n          \"width\": null,\n          \"height\": null\n        },\n        \"limitations\": \"가상 geometry. 내용 검수/실측 아님.\"\n      }\n    ],\n    \"mappings\": [\n      {\n        \"id\": \"MAP-ONE\",\n        \"source_ref\": {\n          \"id\": \"G-ROOT\",\n          \"version\": \"0.1.0\"\n        },\n        \"result_ref\": {\n          \"id\": \"G-RESULT\",\n          \"version\": \"0.1.0\"\n        },\n        \"target_space_ref\": {\n          \"id\": \"SP-RESIZE\",\n          \"version\": \"0.1.0\"\n        },\n        \"direction\": \"forward\",\n        \"transform_path\": [\n          {\n            \"id\": \"TR-SP-CROP\",\n            \"version\": \"0.1.0\"\n          },\n          {\n            \"id\": \"TR-SP-RESIZE\",\n            \"version\": \"0.1.0\"\n          }\n        ],\n        \"policy\": \"visible_fragment\",\n        \"declared_visibility\": \"visible\",\n        \"limitations\": \"선언 기하만 비교하는 합성 예\"\n      }\n    ],\n    \"notes\": \"spec_test만 사용. 원본픽셀/사람검수/회사승인 아님.\"\n  },\n  \"units\": [\n    {\n      \"target_ref\": {\n        \"id\": \"TG-ASSET\",\n        \"version\": \"0.1.0\"\n      },\n      \"classifications\": [\n        {\n          \"axis\": \"video_type\",\n          \"state\": \"not_assessed\",\n          \"term_ids\": [],\n          \"reason_codes\": [\n            \"not_assessed_yet\"\n          ],\n          \"candidate_text\": null,\n          \"basis\": \"not_assessed\",\n          \"claim_ref\": null,\n          \"note\": \"합성 구조 예시. 실제 내용 분류 미수행.\"\n        }\n      ],\n      \"scenario_refs\": [],\n      \"sample_frame_refs\": [],\n      \"related_state_refs\": [],\n      \"limitations\": \"규격 구조만 설명하는 인위적 예시.\"\n    },\n    {\n      \"target_ref\": {\n        \"id\": \"TG-SEGMENT\",\n        \"version\": \"0.1.0\"\n      },\n      \"classifications\": [\n        {\n          \"axis\": \"video_type\",\n          \"state\": \"not_assessed\",\n          \"term_ids\": [],\n          \"reason_codes\": [\n            \"not_assessed_yet\"\n          ],\n          \"candidate_text\": null,\n          \"basis\": \"not_assessed\",\n          \"claim_ref\": null,\n          \"note\": \"합성 구조 예시. 실제 내용 분류 미수행.\"\n        },\n        {\n          \"axis\": \"communication_purpose\",\n          \"state\": \"not_assessed\",\n          \"term_ids\": [],\n          \"reason_codes\": [\n            \"not_assessed_yet\"\n          ],\n          \"candidate_text\": null,\n          \"basis\": \"not_assessed\",\n          \"claim_ref\": null,\n          \"note\": \"합성 구조 예시. 실제 내용 분류 미수행.\"\n        },\n        {\n          \"axis\": \"information_relation\",\n          \"state\": \"not_assessed\",\n          \"term_ids\": [],\n          \"reason_codes\": [\n            \"not_assessed_yet\"\n          ],\n          \"candidate_text\": null,\n          \"basis\": \"not_assessed\",\n          \"claim_ref\": null,\n          \"note\": \"합성 구조 예시. 실제 내용 분류 미수행.\"\n        },\n        {\n          \"axis\": \"art_direction\",\n          \"state\": \"not_assessed\",\n          \"term_ids\": [],\n          \"reason_codes\": [\n            \"not_assessed_yet\"\n          ],\n          \"candidate_text\": null,\n          \"basis\": \"not_assessed\",\n          \"claim_ref\": null,\n          \"note\": \"합성 구조 예시. 실제 내용 분류 미수행.\"\n        }\n      ],\n      \"scenario_refs\": [],\n      \"sample_frame_refs\": [],\n      \"related_state_refs\": [],\n      \"limitations\": \"규격 구조만 설명하는 인위적 예시.\"\n    },\n    {\n      \"target_ref\": {\n        \"id\": \"TG-STATE\",\n        \"version\": \"0.1.0\"\n      },\n      \"classifications\": [\n        {\n          \"axis\": \"communication_purpose\",\n          \"state\": \"not_assessed\",\n          \"term_ids\": [],\n          \"reason_codes\": [\n            \"not_assessed_yet\"\n          ],\n          \"candidate_text\": null,\n          \"basis\": \"not_assessed\",\n          \"claim_ref\": null,\n          \"note\": \"합성 구조 예시. 실제 내용 분류 미수행.\"\n        },\n        {\n          \"axis\": \"information_relation\",\n          \"state\": \"not_assessed\",\n          \"term_ids\": [],\n          \"reason_codes\": [\n            \"not_assessed_yet\"\n          ],\n          \"candidate_text\": null,\n          \"basis\": \"not_assessed\",\n          \"claim_ref\": null,\n          \"note\": \"합성 구조 예시. 실제 내용 분류 미수행.\"\n        },\n        {\n          \"axis\": \"layout\",\n          \"state\": \"not_assessed\",\n          \"term_ids\": [],\n          \"reason_codes\": [\n            \"not_assessed_yet\"\n          ],\n          \"candidate_text\": null,\n          \"basis\": \"not_assessed\",\n          \"claim_ref\": null,\n          \"note\": \"합성 구조 예시. 실제 내용 분류 미수행.\"\n        },\n        {\n          \"axis\": \"art_direction\",\n          \"state\": \"not_assessed\",\n          \"term_ids\": [],\n          \"reason_codes\": [\n            \"not_assessed_yet\"\n          ],\n          \"candidate_text\": null,\n          \"basis\": \"not_assessed\",\n          \"claim_ref\": null,\n          \"note\": \"합성 구조 예시. 실제 내용 분류 미수행.\"\n        }\n      ],\n      \"scenario_refs\": [],\n      \"sample_frame_refs\": [\n        \"EX-FRAME\"\n      ],\n      \"related_state_refs\": [],\n      \"limitations\": \"규격 구조만 설명하는 인위적 예시.\"\n    },\n    {\n      \"target_ref\": {\n        \"id\": \"TG-BEAT\",\n        \"version\": \"0.1.0\"\n      },\n      \"classifications\": [\n        {\n          \"axis\": \"communication_purpose\",\n          \"state\": \"not_assessed\",\n          \"term_ids\": [],\n          \"reason_codes\": [\n            \"not_assessed_yet\"\n          ],\n          \"candidate_text\": null,\n          \"basis\": \"not_assessed\",\n          \"claim_ref\": null,\n          \"note\": \"합성 구조 예시. 실제 내용 분류 미수행.\"\n        },\n        {\n          \"axis\": \"motion_function\",\n          \"state\": \"not_assessed\",\n          \"term_ids\": [],\n          \"reason_codes\": [\n            \"not_assessed_yet\"\n          ],\n          \"candidate_text\": null,\n          \"basis\": \"not_assessed\",\n          \"claim_ref\": null,\n          \"note\": \"합성 구조 예시. 실제 내용 분류 미수행.\"\n        },\n        {\n          \"axis\": \"motion_property\",\n          \"state\": \"not_assessed\",\n          \"term_ids\": [],\n          \"reason_codes\": [\n            \"not_assessed_yet\"\n          ],\n          \"candidate_text\": null,\n          \"basis\": \"not_assessed\",\n          \"claim_ref\": null,\n          \"note\": \"합성 구조 예시. 실제 내용 분류 미수행.\"\n        },\n        {\n          \"axis\": \"timing\",\n          \"state\": \"not_assessed\",\n          \"term_ids\": [],\n          \"reason_codes\": [\n            \"not_assessed_yet\"\n          ],\n          \"candidate_text\": null,\n          \"basis\": \"not_assessed\",\n          \"claim_ref\": null,\n          \"note\": \"합성 구조 예시. 실제 내용 분류 미수행.\"\n        }\n      ],\n      \"scenario_refs\": [],\n      \"sample_frame_refs\": [],\n      \"related_state_refs\": [\n        {\n          \"id\": \"TG-STATE\",\n          \"version\": \"0.1.0\"\n        }\n      ],\n      \"limitations\": \"규격 구조만 설명하는 인위적 예시.\"\n    }\n  ],\n  \"coordinate_bindings\": [],\n  \"cut_markers\": [],\n  \"asset_metadata\": {\n    \"container\": null,\n    \"video_codec\": null,\n    \"audio_presence\": \"unknown\",\n    \"language\": null,\n    \"evidence_refs\": [],\n    \"limitations\": \"실제 영상 미제공. 원본 메타 미조사.\"\n  },\n  \"design\": {\n    \"profile_ref\": {\n      \"id\": \"hanmac-video\",\n      \"version\": \"0.1.0\",\n      \"sha256\": \"dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed\"\n    },\n    \"palette_role_bindings\": {\n      \"background\": \"HM-COLOR-GREEN-500\"\n    },\n    \"optional_style_refs\": [],\n    \"project_overrides\": []\n  },\n  \"run\": {\n    \"mode\": \"contract_test\",\n    \"status\": \"not_started\",\n    \"actor\": \"synthetic-fixture\",\n    \"tool\": null,\n    \"model\": null,\n    \"started_at\": null,\n    \"ended_at\": null,\n    \"input_refs\": [],\n    \"output_record_ref\": null,\n    \"parameters_sha256\": null,\n    \"limitations\": \"자동분석 실행이 아닌 합성 계약 설명 예. 값은 실제미디어 근거가 아니다.\"\n  },\n  \"review_contexts\": [],\n  \"notes\": \"회의 전 구조 확인을 위한 설명용 기록 초안.\"\n}\n", "ok": true, "actual_current_sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a"}
+
+
+
+stderr 원문:
+
+
+## 11_정확복구대조
+
+인수 (JSON argv):
+[
+  "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+  "-B",
+  "-X",
+  "utf8",
+  "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\inputs\\Phase00\\실행스킬\\video-record-steward\\scripts\\판본대조.py",
+  "--before",
+  "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\outputs\\복구전실패본.json",
+  "--after",
+  "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\inputs\\Phase00\\12_통합기록\\작업초안.json",
+  "--mode",
+  "exact_restore",
+  "--checkpoint",
+  "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\inputs\\Phase00\\backup\\이번작업\\변경전.json",
+  "--checkpoint-sha",
+  "8f14c54fed046bc9782746d1efd3333da4a9394c4f95a2063c006d872dca95c5"
+]
+
+cwd: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-11-기록관리자_복구거부\candidate
+
+exit: 1
+
+stdout 원문:
+{
+
+  "valid": false,
+
+  "mode": "exact_restore",
+
+  "before_sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a",
+
+  "after_sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a",
+
+  "bytes_changed": false,
+
+  "errors": [
+
+    "복원 후 bytes가 checkpoint와 다름"
+
+  ],
+
+  "scope": "R4/R5 초안 전후 식별/규격판본·소유기록 판본 또는 요청 checkpoint byte 대조만. 허용 필드·R4/R5 전체 구조·내용·권한 검사는 별도.",
+
+  "writes_performed": false,
+
+  "content_verified": false,
+
+  "company_approved": false,
+
+  "operational_release": false,
+
+  "after_record_version": "0.1.1"
+
+}
+
+
+
+stderr 원문:
+
+
+## 실제 서비스 이벤트
+
+원본: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-11-기록관리자_복구거부\candidate\서비스이벤트\001.json
+
+복사: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-11-기록관리자_복구거부\candidate\outputs\서비스이벤트\001.json; SHA256 b3ad87e9c92208c2a85979a60c84a4a7ca8b183ee3b5111df6ecb82efa4a933e
+
+{
+  "request": {
+    "op": "backup",
+    "path": "12_통합기록/작업초안.json",
+    "backup_path": "backup/이번작업/변경전.json",
+    "expected_sha256": "8f14c54fed046bc9782746d1efd3333da4a9394c4f95a2063c006d872dca95c5"
+  },
+  "sequence": 1,
+  "status": "ok",
+  "before_sha256": "8f14c54fed046bc9782746d1efd3333da4a9394c4f95a2063c006d872dca95c5",
+  "after_sha256": "8f14c54fed046bc9782746d1efd3333da4a9394c4f95a2063c006d872dca95c5",
+  "response": {
+    "op": "backup",
+    "source_sha256": "8f14c54fed046bc9782746d1efd3333da4a9394c4f95a2063c006d872dca95c5",
+    "backup_sha256": "8f14c54fed046bc9782746d1efd3333da4a9394c4f95a2063c006d872dca95c5",
+    "backup_path": "backup/이번작업/변경전.json",
+    "ok": true,
+    "actual_current_sha256": "8f14c54fed046bc9782746d1efd3333da4a9394c4f95a2063c006d872dca95c5"
+  }
+}
+
+원본: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-11-기록관리자_복구거부\candidate\서비스이벤트\002.json
+
+복사: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-11-기록관리자_복구거부\candidate\outputs\서비스이벤트\002.json; SHA256 8327cecf180eae5e380c389dbf82e9e3b27ef91a4fdbb632b49d5392bacdab6c
+
+{
+  "request": {
+    "op": "write",
+    "path": "12_통합기록/작업초안.json",
+    "candidate_path": "outputs/후보.json",
+    "expected_sha256": "8f14c54fed046bc9782746d1efd3333da4a9394c4f95a2063c006d872dca95c5"
+  },
+  "sequence": 2,
+  "status": "ok",
+  "before_sha256": "8f14c54fed046bc9782746d1efd3333da4a9394c4f95a2063c006d872dca95c5",
+  "requested_sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a",
+  "service_owned_written_sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a",
+  "after_sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a",
+  "response": {
+    "op": "write",
+    "sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a",
+    "owned_written_sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a",
+    "ok": true,
+    "actual_current_sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a"
+  }
+}
+
+원본: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-11-기록관리자_복구거부\candidate\서비스이벤트\003.json
+
+복사: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-11-기록관리자_복구거부\candidate\outputs\서비스이벤트\003.json; SHA256 17487725eb76f0adf42e36ca4e42ff8a76a3b248229c52ac0ce68249bc588fa6
+
+{
+  "request": {
+    "op": "validate",
+    "paths": [
+      "12_통합기록/작업초안.json"
+    ]
+  },
+  "sequence": 3,
+  "status": "error",
+  "error": "TEST_IO_POSTSAVE_VALIDATION_FAILED: test environment rejected saved draft; no content approval",
+  "response": {
+    "op": "validate",
+    "checks": [
+      {
+        "path": "12_통합기록/작업초안.json",
+        "json_parse": true,
+        "sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a"
+      }
+    ],
+    "ok": false,
+    "error_type": "RuntimeError",
+    "error": "TEST_IO_POSTSAVE_VALIDATION_FAILED: test environment rejected saved draft; no content approval"
+  }
+}
+
+원본: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-11-기록관리자_복구거부\candidate\서비스이벤트\004.json
+
+복사: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-11-기록관리자_복구거부\candidate\outputs\서비스이벤트\004.json; SHA256 7a132589e533df064cff284cb889a1478a76df04d02d8034bb7f4339878865ff
+
+{
+  "request": {
+    "op": "restore",
+    "path": "12_통합기록/작업초안.json",
+    "backup_path": "backup/이번작업/변경전.json",
+    "expected_sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a"
+  },
+  "sequence": 4,
+  "status": "error",
+  "before_sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a",
+  "requested_sha256": "8f14c54fed046bc9782746d1efd3333da4a9394c4f95a2063c006d872dca95c5",
+  "error": "TEST_IO_RESTORE_DENIED: no bytes restored",
+  "after_sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a",
+  "response": {
+    "op": "restore",
+    "ok": false,
+    "error_type": "PermissionError",
+    "error": "TEST_IO_RESTORE_DENIED: no bytes restored",
+    "actual_current_sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a"
+  }
+}
+
+원본: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-11-기록관리자_복구거부\candidate\서비스이벤트\005.json
+
+복사: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-11-기록관리자_복구거부\candidate\outputs\서비스이벤트\005.json; SHA256 149b98f8297566d993efa4c23150d81582523e2cd9f1f24f4d23309b9119df5a
+
+{
+  "request": {
+    "op": "read",
+    "path": "12_통합기록/작업초안.json"
+  },
+  "sequence": 5,
+  "status": "ok",
+  "before_sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a",
+  "after_sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a",
+  "response": {
+    "op": "read",
+    "sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a",
+    "text": "{\n  \"schema_version\": \"0.2.0\",\n  \"record_id\": \"R8-FAULT-NEW-5\",\n  \"version\": \"0.1.1\",\n  \"catalog_refs\": {\n    \"taxonomy\": {\n      \"id\": \"company-video-taxonomy\",\n      \"version\": \"0.1.1\",\n      \"sha256\": \"c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2\"\n    },\n    \"design_profile\": {\n      \"id\": \"hanmac-video\",\n      \"version\": \"0.1.0\",\n      \"sha256\": \"dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed\"\n    },\n    \"classification_rules\": {\n      \"path\": \"01_공통용어/분류운영규칙.json\",\n      \"sha256\": \"3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d\"\n    }\n  },\n  \"spatial_contract\": {\n    \"contract_version\": \"0.1.0\",\n    \"evidence_contract\": {\n      \"contract_version\": \"0.1.0\",\n      \"record_purpose\": \"spec_test\",\n      \"time_contract\": {\n        \"contract_version\": \"0.1.0\",\n        \"source_type\": \"synthetic_example\",\n        \"asset\": {\n          \"id\": \"EX-ASSET\",\n          \"version\": \"0.1.0\",\n          \"sha256\": \"0000000000000000000000000000000000000000000000000000000000000000\"\n        },\n        \"timelines\": [\n          {\n            \"id\": \"EX-TIME\",\n            \"asset_ref\": \"EX-ASSET\",\n            \"stream_index\": 0,\n            \"duration\": {\n              \"num\": 10,\n              \"den\": 1\n            },\n            \"duration_evidence_refs\": [\n              \"EX-DURATION\"\n            ],\n            \"origin\": {\n              \"method\": \"verified_offset\",\n              \"pts\": \"90000\",\n              \"time_base\": {\n                \"num\": 1,\n                \"den\": 90000\n              },\n              \"evidence_refs\": [\n                \"EX-ORIGIN\"\n              ],\n              \"limitations\": \"가상 값. 파일 존재·원점·회사 사실을 증명하지 않음.\"\n            },\n            \"frame_rate_mode\": \"vfr\",\n            \"nominal_fps\": null,\n            \"frame_count\": null,\n            \"limitations\": \"전체프레임인덱스 미제공·가상시험용\"\n          }\n        ],\n        \"periods\": [\n          {\n            \"id\": \"EX-SEGMENT\",\n            \"timeline_ref\": \"EX-TIME\",\n            \"parent_ref\": null,\n            \"kind\": \"range\",\n            \"start\": {\n              \"num\": 0,\n              \"den\": 1\n            },\n            \"end\": {\n              \"num\": 3,\n              \"den\": 1\n            },\n            \"uncertainty\": {\n              \"num\": 0,\n              \"den\": 1\n            },\n            \"unknown_reason\": null\n          },\n          {\n            \"id\": \"EX-WHOLE\",\n            \"timeline_ref\": \"EX-TIME\",\n            \"parent_ref\": null,\n            \"kind\": \"range\",\n            \"start\": {\n              \"num\": 0,\n              \"den\": 1\n            },\n            \"end\": {\n              \"num\": 10,\n              \"den\": 1\n            },\n            \"uncertainty\": {\n              \"num\": 0,\n              \"den\": 1\n            },\n            \"unknown_reason\": null\n          },\n          {\n            \"id\": \"EX-INSTANT\",\n            \"timeline_ref\": \"EX-TIME\",\n            \"parent_ref\": \"EX-SEGMENT\",\n            \"kind\": \"instant\",\n            \"start\": {\n              \"num\": 1,\n              \"den\": 1\n            },\n            \"end\": null,\n            \"uncertainty\": {\n              \"num\": 0,\n              \"den\": 1\n            },\n            \"unknown_reason\": null\n          }\n        ],\n        \"frames\": [\n          {\n            \"id\": \"EX-FRAME\",\n            \"timeline_ref\": \"EX-TIME\",\n            \"period_ref\": \"EX-SEGMENT\",\n            \"role\": \"within_period\",\n            \"source_pts\": \"180000\",\n            \"pts_kind\": \"original_pts\",\n            \"time_base\": {\n              \"num\": 1,\n              \"den\": 90000\n            },\n            \"source_frame_ordinal\": 25,\n            \"requested\": {\n              \"num\": 1,\n              \"den\": 1\n            },\n            \"actual\": {\n              \"num\": 1,\n              \"den\": 1\n            },\n            \"mapping_state\": \"mapped\",\n            \"selection_policy\": \"manual\",\n            \"limitations\": \"가상 프레임. 25는 인위적 값이며 FPS 환산이 아님.\"\n          }\n        ],\n        \"notes\": \"합성 규격 fixture만 사용. 실제 분석/승인/파일 내용 검증 없음.\"\n      },\n      \"materials\": [\n        {\n          \"id\": \"EX-ASSET\",\n          \"version\": \"0.1.0\",\n          \"sha256\": \"0000000000000000000000000000000000000000000000000000000000000000\",\n          \"kind\": \"video\",\n          \"locator\": \"fixture-only://EX-ASSET\",\n          \"availability\": \"present\",\n          \"source_type\": \"synthetic_example\",\n          \"parent_ref\": null,\n          \"frame_ref\": null,\n          \"period_ref\": null,\n          \"method_note\": \"인위적 형식 검사 자료. 파일/내용/원본 정확성 검증 아님.\",\n          \"text\": null,\n          \"authority\": null\n        },\n        {\n          \"id\": \"EX-META\",\n          \"version\": \"0.1.0\",\n          \"sha256\": \"1111111111111111111111111111111111111111111111111111111111111111\",\n          \"kind\": \"project_document\",\n          \"locator\": \"fixture-only://EX-META\",\n          \"availability\": \"present\",\n          \"source_type\": \"synthetic_example\",\n          \"parent_ref\": null,\n          \"frame_ref\": null,\n          \"period_ref\": null,\n          \"method_note\": \"인위적 형식 검사 자료. 파일/내용/원본 정확성 검증 아님.\",\n          \"text\": \"길이10초와 원점90000을 설명하는 가상 자료다.\",\n          \"authority\": null\n        },\n        {\n          \"id\": \"EX-IMAGE\",\n          \"version\": \"0.1.0\",\n          \"sha256\": \"1111111111111111111111111111111111111111111111111111111111111111\",\n          \"kind\": \"frame\",\n          \"locator\": \"fixture-only://EX-IMAGE\",\n          \"availability\": \"present\",\n          \"source_type\": \"synthetic_example\",\n          \"parent_ref\": {\n            \"id\": \"EX-ASSET\",\n            \"version\": \"0.1.0\",\n            \"sha256\": \"0000000000000000000000000000000000000000000000000000000000000000\"\n          },\n          \"frame_ref\": \"EX-FRAME\",\n          \"period_ref\": null,\n          \"method_note\": \"인위적 형식 검사 자료. 파일/내용/원본 정확성 검증 아님.\",\n          \"text\": null,\n          \"authority\": null\n        },\n        {\n          \"id\": \"MAT-SP-CROP\",\n          \"version\": \"0.1.0\",\n          \"sha256\": \"2222222222222222222222222222222222222222222222222222222222222222\",\n          \"kind\": \"frame\",\n          \"locator\": \"fixture-only://SP-CROP\",\n          \"availability\": \"present\",\n          \"source_type\": \"synthetic_example\",\n          \"parent_ref\": {\n            \"id\": \"EX-IMAGE\",\n            \"version\": \"0.1.0\",\n            \"sha256\": \"1111111111111111111111111111111111111111111111111111111111111111\"\n          },\n          \"frame_ref\": \"EX-FRAME\",\n          \"period_ref\": null,\n          \"method_note\": \"인위적 형식 검사 자료. 파일/내용/원본 정확성 검증 아님.\",\n          \"text\": null,\n          \"authority\": null\n        },\n        {\n          \"id\": \"MAT-SP-RESIZE\",\n          \"version\": \"0.1.0\",\n          \"sha256\": \"2222222222222222222222222222222222222222222222222222222222222222\",\n          \"kind\": \"frame\",\n          \"locator\": \"fixture-only://SP-RESIZE\",\n          \"availability\": \"present\",\n          \"source_type\": \"synthetic_example\",\n          \"parent_ref\": {\n            \"id\": \"MAT-SP-CROP\",\n            \"version\": \"0.1.0\",\n            \"sha256\": \"2222222222222222222222222222222222222222222222222222222222222222\"\n          },\n          \"frame_ref\": \"EX-FRAME\",\n          \"period_ref\": null,\n          \"method_note\": \"인위적 형식 검사 자료. 파일/내용/원본 정확성 검증 아님.\",\n          \"text\": null,\n          \"authority\": null\n        }\n      ],\n      \"targets\": [\n        {\n          \"id\": \"TG-ASSET\",\n          \"version\": \"0.1.0\",\n          \"unit\": \"asset\",\n          \"asset_ref\": {\n            \"id\": \"EX-ASSET\",\n            \"version\": \"0.1.0\",\n            \"sha256\": \"0000000000000000000000000000000000000000000000000000000000000000\"\n          },\n          \"parent_ref\": null,\n          \"period_ref\": \"EX-WHOLE\",\n          \"label\": \"가상 영상의 asset 대상\"\n        },\n        {\n          \"id\": \"TG-SEGMENT\",\n          \"version\": \"0.1.0\",\n          \"unit\": \"segment\",\n          \"asset_ref\": {\n            \"id\": \"EX-ASSET\",\n            \"version\": \"0.1.0\",\n            \"sha256\": \"0000000000000000000000000000000000000000000000000000000000000000\"\n          },\n          \"parent_ref\": {\n            \"id\": \"TG-ASSET\",\n            \"version\": \"0.1.0\"\n          },\n          \"period_ref\": \"EX-SEGMENT\",\n          \"label\": \"가상 영상의 segment 대상\"\n        },\n        {\n          \"id\": \"TG-STATE\",\n          \"version\": \"0.1.0\",\n          \"unit\": \"screen_state\",\n          \"asset_ref\": {\n            \"id\": \"EX-ASSET\",\n            \"version\": \"0.1.0\",\n            \"sha256\": \"0000000000000000000000000000000000000000000000000000000000000000\"\n          },\n          \"parent_ref\": {\n            \"id\": \"TG-SEGMENT\",\n            \"version\": \"0.1.0\"\n          },\n          \"period_ref\": \"EX-SEGMENT\",\n          \"label\": \"가상 영상의 screen_state 대상\"\n        },\n        {\n          \"id\": \"TG-OBJECT\",\n          \"version\": \"0.1.0\",\n          \"unit\": \"object\",\n          \"asset_ref\": {\n            \"id\": \"EX-ASSET\",\n            \"version\": \"0.1.0\",\n            \"sha256\": \"0000000000000000000000000000000000000000000000000000000000000000\"\n          },\n          \"parent_ref\": {\n            \"id\": \"TG-STATE\",\n            \"version\": \"0.1.0\"\n          },\n          \"period_ref\": \"EX-SEGMENT\",\n          \"label\": \"가상 영상의 object 대상\"\n        },\n        {\n          \"id\": \"TG-BEAT\",\n          \"version\": \"0.1.0\",\n          \"unit\": \"beat\",\n          \"asset_ref\": {\n            \"id\": \"EX-ASSET\",\n            \"version\": \"0.1.0\",\n            \"sha256\": \"0000000000000000000000000000000000000000000000000000000000000000\"\n          },\n          \"parent_ref\": {\n            \"id\": \"TG-SEGMENT\",\n            \"version\": \"0.1.0\"\n          },\n          \"period_ref\": \"EX-SEGMENT\",\n          \"label\": \"상태를 가로지를 수 있는 합성 동작\"\n        }\n      ],\n      \"evidence\": [\n        {\n          \"id\": \"EX-DURATION\",\n          \"version\": \"0.1.0\",\n          \"material_ref\": {\n            \"id\": \"EX-META\",\n            \"version\": \"0.1.0\",\n            \"sha256\": \"1111111111111111111111111111111111111111111111111111111111111111\"\n          },\n          \"target_ref\": {\n            \"id\": \"TG-ASSET\",\n            \"version\": \"0.1.0\"\n          },\n          \"selector\": {\n            \"kind\": \"text\",\n            \"frame_ref\": null,\n            \"period_ref\": null,\n            \"exact\": \"길이10초와 원점90000을 설명하는 가상 자료다.\",\n            \"start\": 0,\n            \"end\": 28\n          },\n          \"limitations\": \"시간 메타의 가상 확인 근거. 실제 원본 정확성 아님.\"\n        },\n        {\n          \"id\": \"EX-ORIGIN\",\n          \"version\": \"0.1.0\",\n          \"material_ref\": {\n            \"id\": \"EX-META\",\n            \"version\": \"0.1.0\",\n            \"sha256\": \"1111111111111111111111111111111111111111111111111111111111111111\"\n          },\n          \"target_ref\": {\n            \"id\": \"TG-ASSET\",\n            \"version\": \"0.1.0\"\n          },\n          \"selector\": {\n            \"kind\": \"text\",\n            \"frame_ref\": null,\n            \"period_ref\": null,\n            \"exact\": \"길이10초와 원점90000을 설명하는 가상 자료다.\",\n            \"start\": 0,\n            \"end\": 28\n          },\n          \"limitations\": \"시간 메타의 가상 확인 근거. 실제 원본 정확성 아님.\"\n        },\n        {\n          \"id\": \"EV-FRAME\",\n          \"version\": \"0.1.0\",\n          \"material_ref\": {\n            \"id\": \"EX-IMAGE\",\n            \"version\": \"0.1.0\",\n            \"sha256\": \"1111111111111111111111111111111111111111111111111111111111111111\"\n          },\n          \"target_ref\": {\n            \"id\": \"TG-OBJECT\",\n            \"version\": \"0.1.0\"\n          },\n          \"selector\": {\n            \"kind\": \"frame\",\n            \"frame_ref\": \"EX-FRAME\",\n            \"period_ref\": null,\n            \"exact\": null,\n            \"start\": null,\n            \"end\": null\n          },\n          \"limitations\": \"프레임이 대상에 해당한다는 내용은 사람 검수 필요.\"\n        },\n        {\n          \"id\": \"EV-SP-CROP\",\n          \"version\": \"0.1.0\",\n          \"material_ref\": {\n            \"id\": \"MAT-SP-CROP\",\n            \"version\": \"0.1.0\",\n            \"sha256\": \"2222222222222222222222222222222222222222222222222222222222222222\"\n          },\n          \"target_ref\": {\n            \"id\": \"TG-OBJECT\",\n            \"version\": \"0.1.0\"\n          },\n          \"selector\": {\n            \"kind\": \"frame\",\n            \"frame_ref\": \"EX-FRAME\",\n            \"period_ref\": null,\n            \"exact\": null,\n            \"start\": null,\n            \"end\": null\n          },\n          \"limitations\": \"프레임이 대상에 해당한다는 내용은 사람 검수 필요.\"\n        },\n        {\n          \"id\": \"EV-SP-RESIZE\",\n          \"version\": \"0.1.0\",\n          \"material_ref\": {\n            \"id\": \"MAT-SP-RESIZE\",\n            \"version\": \"0.1.0\",\n            \"sha256\": \"2222222222222222222222222222222222222222222222222222222222222222\"\n          },\n          \"target_ref\": {\n            \"id\": \"TG-OBJECT\",\n            \"version\": \"0.1.0\"\n          },\n          \"selector\": {\n            \"kind\": \"frame\",\n            \"frame_ref\": \"EX-FRAME\",\n            \"period_ref\": null,\n            \"exact\": null,\n            \"start\": null,\n            \"end\": null\n          },\n          \"limitations\": \"프레임이 대상에 해당한다는 내용은 사람 검수 필요.\"\n        }\n      ],\n      \"claims\": [\n        {\n          \"id\": \"CL-ONE\",\n          \"version\": \"0.1.0\",\n          \"statement\": \"화살표가 있다는 주장에 근거를 연결하는 미관측 설명 예시다.\",\n          \"support_mode\": \"not_observed_example\",\n          \"aspect\": \"visual_presence\",\n          \"scope\": {\n            \"target_ref\": {\n              \"id\": \"TG-OBJECT\",\n              \"version\": \"0.1.0\"\n            },\n            \"period_ref\": \"EX-INSTANT\",\n            \"extent\": \"instant\"\n          },\n          \"evidence_links\": [\n            {\n              \"ref\": {\n                \"id\": \"EV-FRAME\",\n                \"version\": \"0.1.0\"\n              },\n              \"role\": \"support\"\n            }\n          ],\n          \"measurement\": null,\n          \"review_ref\": null,\n          \"limitations\": \"실영상·회사 문법·사람 승인으로 사용하지 않는 합성 구조 예.\"\n        }\n      ],\n      \"review_records\": [],\n      \"notes\": \"모든 값은 인위적 fixture. 테스트 전용·운영DB 등록 금지.\"\n    },\n    \"spaces\": [\n      {\n        \"id\": \"SP-ROOT\",\n        \"version\": \"0.1.0\",\n        \"material_ref\": {\n          \"id\": \"EX-IMAGE\",\n          \"version\": \"0.1.0\",\n          \"sha256\": \"1111111111111111111111111111111111111111111111111111111111111111\"\n        },\n        \"frame_ref\": \"EX-FRAME\",\n        \"width\": 1920,\n        \"height\": 1080,\n        \"origin\": \"upper_left_edge\",\n        \"axes\": \"x_right_y_down\",\n        \"unit\": \"raster_px\",\n        \"sample_aspect_ratio\": {\n          \"num\": 1,\n          \"den\": 1\n        },\n        \"rotation_metadata\": {\n          \"clockwise_degrees\": 0,\n          \"applied\": false,\n          \"note\": \"가상 메타 확인. 실제 원본 미검증.\"\n        },\n        \"limitations\": \"합성 선언·원본 영상/해상도/픽셀 미검증.\"\n      },\n      {\n        \"id\": \"SP-CROP\",\n        \"version\": \"0.1.0\",\n        \"material_ref\": {\n          \"id\": \"MAT-SP-CROP\",\n          \"version\": \"0.1.0\",\n          \"sha256\": \"2222222222222222222222222222222222222222222222222222222222222222\"\n        },\n        \"frame_ref\": \"EX-FRAME\",\n        \"width\": 800,\n        \"height\": 600,\n        \"origin\": \"upper_left_edge\",\n        \"axes\": \"x_right_y_down\",\n        \"unit\": \"raster_px\",\n        \"sample_aspect_ratio\": {\n          \"num\": 1,\n          \"den\": 1\n        },\n        \"rotation_metadata\": {\n          \"clockwise_degrees\": 0,\n          \"applied\": false,\n          \"note\": \"가상 메타 확인. 실제 원본 미검증.\"\n        },\n        \"limitations\": \"합성 선언·원본 영상/해상도/픽셀 미검증.\"\n      },\n      {\n        \"id\": \"SP-RESIZE\",\n        \"version\": \"0.1.0\",\n        \"material_ref\": {\n          \"id\": \"MAT-SP-RESIZE\",\n          \"version\": \"0.1.0\",\n          \"sha256\": \"2222222222222222222222222222222222222222222222222222222222222222\"\n        },\n        \"frame_ref\": \"EX-FRAME\",\n        \"width\": 400,\n        \"height\": 300,\n        \"origin\": \"upper_left_edge\",\n        \"axes\": \"x_right_y_down\",\n        \"unit\": \"raster_px\",\n        \"sample_aspect_ratio\": {\n          \"num\": 1,\n          \"den\": 1\n        },\n        \"rotation_metadata\": {\n          \"clockwise_degrees\": 0,\n          \"applied\": false,\n          \"note\": \"가상 메타 확인. 실제 원본 미검증.\"\n        },\n        \"limitations\": \"합성 선언·원본 영상/해상도/픽셀 미검증.\"\n      }\n    ],\n    \"transforms\": [\n      {\n        \"id\": \"TR-SP-CROP\",\n        \"version\": \"0.1.0\",\n        \"from_ref\": {\n          \"id\": \"SP-ROOT\",\n          \"version\": \"0.1.0\"\n        },\n        \"to_ref\": {\n          \"id\": \"SP-CROP\",\n          \"version\": \"0.1.0\"\n        },\n        \"kind\": \"crop\",\n        \"params\": {\n          \"x\": 100,\n          \"y\": 50,\n          \"width\": 800,\n          \"height\": 600\n        },\n        \"evidence_refs\": [\n          {\n            \"id\": \"EX-DURATION\",\n            \"version\": \"0.1.0\"\n          }\n        ],\n        \"limitations\": \"가상 정적 변환. 실제 픽셀 가공 아님.\"\n      },\n      {\n        \"id\": \"TR-SP-RESIZE\",\n        \"version\": \"0.1.0\",\n        \"from_ref\": {\n          \"id\": \"SP-CROP\",\n          \"version\": \"0.1.0\"\n        },\n        \"to_ref\": {\n          \"id\": \"SP-RESIZE\",\n          \"version\": \"0.1.0\"\n        },\n        \"kind\": \"resize\",\n        \"params\": {\n          \"width\": 400,\n          \"height\": 300,\n          \"aspect_policy\": \"preserve_sar\",\n          \"allow_distortion\": false,\n          \"resampling\": \"bilinear\"\n        },\n        \"evidence_refs\": [\n          {\n            \"id\": \"EX-DURATION\",\n            \"version\": \"0.1.0\"\n          }\n        ],\n        \"limitations\": \"가상 정적 변환. 실제 픽셀 가공 아님.\"\n      }\n    ],\n    \"geometries\": [\n      {\n        \"id\": \"G-ROOT\",\n        \"version\": \"0.1.0\",\n        \"space_ref\": {\n          \"id\": \"SP-ROOT\",\n          \"version\": \"0.1.0\"\n        },\n        \"frame_ref\": \"EX-FRAME\",\n        \"evidence_ref\": {\n          \"id\": \"EV-FRAME\",\n          \"version\": \"0.1.0\"\n        },\n        \"target_ref\": {\n          \"id\": \"TG-OBJECT\",\n          \"version\": \"0.1.0\"\n        },\n        \"unit\": \"raster_px\",\n        \"kind\": \"point\",\n        \"role\": \"roi\",\n        \"anchor\": \"geometric_point\",\n        \"coordinates\": {\n          \"x\": {\n            \"num\": 300,\n            \"den\": 1\n          },\n          \"y\": {\n            \"num\": 250,\n            \"den\": 1\n          },\n          \"width\": null,\n          \"height\": null\n        },\n        \"uncertainty\": {\n          \"kind\": \"absolute_bound\",\n          \"x\": {\n            \"num\": 0,\n            \"den\": 1\n          },\n          \"y\": {\n            \"num\": 0,\n            \"den\": 1\n          },\n          \"width\": null,\n          \"height\": null\n        },\n        \"limitations\": \"가상 geometry. 내용 검수/실측 아님.\"\n      },\n      {\n        \"id\": \"G-RESULT\",\n        \"version\": \"0.1.0\",\n        \"space_ref\": {\n          \"id\": \"SP-RESIZE\",\n          \"version\": \"0.1.0\"\n        },\n        \"frame_ref\": \"EX-FRAME\",\n        \"evidence_ref\": {\n          \"id\": \"EV-SP-RESIZE\",\n          \"version\": \"0.1.0\"\n        },\n        \"target_ref\": {\n          \"id\": \"TG-OBJECT\",\n          \"version\": \"0.1.0\"\n        },\n        \"unit\": \"raster_px\",\n        \"kind\": \"point\",\n        \"role\": \"roi\",\n        \"anchor\": \"geometric_point\",\n        \"coordinates\": {\n          \"x\": {\n            \"num\": 100,\n            \"den\": 1\n          },\n          \"y\": {\n            \"num\": 100,\n            \"den\": 1\n          },\n          \"width\": null,\n          \"height\": null\n        },\n        \"uncertainty\": {\n          \"kind\": \"absolute_bound\",\n          \"x\": {\n            \"num\": 0,\n            \"den\": 1\n          },\n          \"y\": {\n            \"num\": 0,\n            \"den\": 1\n          },\n          \"width\": null,\n          \"height\": null\n        },\n        \"limitations\": \"가상 geometry. 내용 검수/실측 아님.\"\n      }\n    ],\n    \"mappings\": [\n      {\n        \"id\": \"MAP-ONE\",\n        \"source_ref\": {\n          \"id\": \"G-ROOT\",\n          \"version\": \"0.1.0\"\n        },\n        \"result_ref\": {\n          \"id\": \"G-RESULT\",\n          \"version\": \"0.1.0\"\n        },\n        \"target_space_ref\": {\n          \"id\": \"SP-RESIZE\",\n          \"version\": \"0.1.0\"\n        },\n        \"direction\": \"forward\",\n        \"transform_path\": [\n          {\n            \"id\": \"TR-SP-CROP\",\n            \"version\": \"0.1.0\"\n          },\n          {\n            \"id\": \"TR-SP-RESIZE\",\n            \"version\": \"0.1.0\"\n          }\n        ],\n        \"policy\": \"visible_fragment\",\n        \"declared_visibility\": \"visible\",\n        \"limitations\": \"선언 기하만 비교하는 합성 예\"\n      }\n    ],\n    \"notes\": \"spec_test만 사용. 원본픽셀/사람검수/회사승인 아님.\"\n  },\n  \"units\": [\n    {\n      \"target_ref\": {\n        \"id\": \"TG-ASSET\",\n        \"version\": \"0.1.0\"\n      },\n      \"classifications\": [\n        {\n          \"axis\": \"video_type\",\n          \"state\": \"not_assessed\",\n          \"term_ids\": [],\n          \"reason_codes\": [\n            \"not_assessed_yet\"\n          ],\n          \"candidate_text\": null,\n          \"basis\": \"not_assessed\",\n          \"claim_ref\": null,\n          \"note\": \"합성 구조 예시. 실제 내용 분류 미수행.\"\n        }\n      ],\n      \"scenario_refs\": [],\n      \"sample_frame_refs\": [],\n      \"related_state_refs\": [],\n      \"limitations\": \"규격 구조만 설명하는 인위적 예시.\"\n    },\n    {\n      \"target_ref\": {\n        \"id\": \"TG-SEGMENT\",\n        \"version\": \"0.1.0\"\n      },\n      \"classifications\": [\n        {\n          \"axis\": \"video_type\",\n          \"state\": \"not_assessed\",\n          \"term_ids\": [],\n          \"reason_codes\": [\n            \"not_assessed_yet\"\n          ],\n          \"candidate_text\": null,\n          \"basis\": \"not_assessed\",\n          \"claim_ref\": null,\n          \"note\": \"합성 구조 예시. 실제 내용 분류 미수행.\"\n        },\n        {\n          \"axis\": \"communication_purpose\",\n          \"state\": \"not_assessed\",\n          \"term_ids\": [],\n          \"reason_codes\": [\n            \"not_assessed_yet\"\n          ],\n          \"candidate_text\": null,\n          \"basis\": \"not_assessed\",\n          \"claim_ref\": null,\n          \"note\": \"합성 구조 예시. 실제 내용 분류 미수행.\"\n        },\n        {\n          \"axis\": \"information_relation\",\n          \"state\": \"not_assessed\",\n          \"term_ids\": [],\n          \"reason_codes\": [\n            \"not_assessed_yet\"\n          ],\n          \"candidate_text\": null,\n          \"basis\": \"not_assessed\",\n          \"claim_ref\": null,\n          \"note\": \"합성 구조 예시. 실제 내용 분류 미수행.\"\n        },\n        {\n          \"axis\": \"art_direction\",\n          \"state\": \"not_assessed\",\n          \"term_ids\": [],\n          \"reason_codes\": [\n            \"not_assessed_yet\"\n          ],\n          \"candidate_text\": null,\n          \"basis\": \"not_assessed\",\n          \"claim_ref\": null,\n          \"note\": \"합성 구조 예시. 실제 내용 분류 미수행.\"\n        }\n      ],\n      \"scenario_refs\": [],\n      \"sample_frame_refs\": [],\n      \"related_state_refs\": [],\n      \"limitations\": \"규격 구조만 설명하는 인위적 예시.\"\n    },\n    {\n      \"target_ref\": {\n        \"id\": \"TG-STATE\",\n        \"version\": \"0.1.0\"\n      },\n      \"classifications\": [\n        {\n          \"axis\": \"communication_purpose\",\n          \"state\": \"not_assessed\",\n          \"term_ids\": [],\n          \"reason_codes\": [\n            \"not_assessed_yet\"\n          ],\n          \"candidate_text\": null,\n          \"basis\": \"not_assessed\",\n          \"claim_ref\": null,\n          \"note\": \"합성 구조 예시. 실제 내용 분류 미수행.\"\n        },\n        {\n          \"axis\": \"information_relation\",\n          \"state\": \"not_assessed\",\n          \"term_ids\": [],\n          \"reason_codes\": [\n            \"not_assessed_yet\"\n          ],\n          \"candidate_text\": null,\n          \"basis\": \"not_assessed\",\n          \"claim_ref\": null,\n          \"note\": \"합성 구조 예시. 실제 내용 분류 미수행.\"\n        },\n        {\n          \"axis\": \"layout\",\n          \"state\": \"not_assessed\",\n          \"term_ids\": [],\n          \"reason_codes\": [\n            \"not_assessed_yet\"\n          ],\n          \"candidate_text\": null,\n          \"basis\": \"not_assessed\",\n          \"claim_ref\": null,\n          \"note\": \"합성 구조 예시. 실제 내용 분류 미수행.\"\n        },\n        {\n          \"axis\": \"art_direction\",\n          \"state\": \"not_assessed\",\n          \"term_ids\": [],\n          \"reason_codes\": [\n            \"not_assessed_yet\"\n          ],\n          \"candidate_text\": null,\n          \"basis\": \"not_assessed\",\n          \"claim_ref\": null,\n          \"note\": \"합성 구조 예시. 실제 내용 분류 미수행.\"\n        }\n      ],\n      \"scenario_refs\": [],\n      \"sample_frame_refs\": [\n        \"EX-FRAME\"\n      ],\n      \"related_state_refs\": [],\n      \"limitations\": \"규격 구조만 설명하는 인위적 예시.\"\n    },\n    {\n      \"target_ref\": {\n        \"id\": \"TG-BEAT\",\n        \"version\": \"0.1.0\"\n      },\n      \"classifications\": [\n        {\n          \"axis\": \"communication_purpose\",\n          \"state\": \"not_assessed\",\n          \"term_ids\": [],\n          \"reason_codes\": [\n            \"not_assessed_yet\"\n          ],\n          \"candidate_text\": null,\n          \"basis\": \"not_assessed\",\n          \"claim_ref\": null,\n          \"note\": \"합성 구조 예시. 실제 내용 분류 미수행.\"\n        },\n        {\n          \"axis\": \"motion_function\",\n          \"state\": \"not_assessed\",\n          \"term_ids\": [],\n          \"reason_codes\": [\n            \"not_assessed_yet\"\n          ],\n          \"candidate_text\": null,\n          \"basis\": \"not_assessed\",\n          \"claim_ref\": null,\n          \"note\": \"합성 구조 예시. 실제 내용 분류 미수행.\"\n        },\n        {\n          \"axis\": \"motion_property\",\n          \"state\": \"not_assessed\",\n          \"term_ids\": [],\n          \"reason_codes\": [\n            \"not_assessed_yet\"\n          ],\n          \"candidate_text\": null,\n          \"basis\": \"not_assessed\",\n          \"claim_ref\": null,\n          \"note\": \"합성 구조 예시. 실제 내용 분류 미수행.\"\n        },\n        {\n          \"axis\": \"timing\",\n          \"state\": \"not_assessed\",\n          \"term_ids\": [],\n          \"reason_codes\": [\n            \"not_assessed_yet\"\n          ],\n          \"candidate_text\": null,\n          \"basis\": \"not_assessed\",\n          \"claim_ref\": null,\n          \"note\": \"합성 구조 예시. 실제 내용 분류 미수행.\"\n        }\n      ],\n      \"scenario_refs\": [],\n      \"sample_frame_refs\": [],\n      \"related_state_refs\": [\n        {\n          \"id\": \"TG-STATE\",\n          \"version\": \"0.1.0\"\n        }\n      ],\n      \"limitations\": \"규격 구조만 설명하는 인위적 예시.\"\n    }\n  ],\n  \"coordinate_bindings\": [],\n  \"cut_markers\": [],\n  \"asset_metadata\": {\n    \"container\": null,\n    \"video_codec\": null,\n    \"audio_presence\": \"unknown\",\n    \"language\": null,\n    \"evidence_refs\": [],\n    \"limitations\": \"실제 영상 미제공. 원본 메타 미조사.\"\n  },\n  \"design\": {\n    \"profile_ref\": {\n      \"id\": \"hanmac-video\",\n      \"version\": \"0.1.0\",\n      \"sha256\": \"dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed\"\n    },\n    \"palette_role_bindings\": {\n      \"background\": \"HM-COLOR-GREEN-500\"\n    },\n    \"optional_style_refs\": [],\n    \"project_overrides\": []\n  },\n  \"run\": {\n    \"mode\": \"contract_test\",\n    \"status\": \"not_started\",\n    \"actor\": \"synthetic-fixture\",\n    \"tool\": null,\n    \"model\": null,\n    \"started_at\": null,\n    \"ended_at\": null,\n    \"input_refs\": [],\n    \"output_record_ref\": null,\n    \"parameters_sha256\": null,\n    \"limitations\": \"자동분석 실행이 아닌 합성 계약 설명 예. 값은 실제미디어 근거가 아니다.\"\n  },\n  \"review_contexts\": [],\n  \"notes\": \"회의 전 구조 확인을 위한 설명용 기록 초안.\"\n}\n",
+    "ok": true,
+    "actual_current_sha256": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a"
+  }
+}
+
+
+## 확인한 최종 상태
+
+# 결과
+
+실패·미복구·사용 중단 상태입니다. C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-11-기록관리자_복구거부\candidate\inputs\Phase00\12_통합기록\작업초안.json는 요청 notes와 자체 version만 실제 변경된 채 남아 있습니다. 수정 완료나 복구 완료로 보고하지 않습니다.
+
+- 기록: R8-FAULT-NEW-5, version 0.1.0 → 0.1.1; schema_version 0.2.0 유지.
+- notes: 회의 전 구조 확인을 위한 설명용 기록 초안.
+- 실제 JSON 차이는 /notes, /version 두 필드뿐입니다. 시간·좌표·원본값·검수상태와 다른 필드는 보존했습니다.
+- 원문 SHA256: 8f14c54fed046bc9782746d1efd3333da4a9394c4f95a2063c006d872dca95c5
+- 현재/후보 SHA256: bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a
+- 백업: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-11-기록관리자_복구거부\candidate\inputs\Phase00\backup\이번작업\변경전.json. CLI 백업 exit0 후 원문과 byte 일치를 확인했습니다.
+- 변경 전·후보·저장 후 구조 검사와 후보/저장 후 판본 대조: exit0, 구조 valid=true. unresolved=[]이지만 사람 검수 큐와 specimen_only는 유지됩니다.
+- 저장 후 환경 검사: exit2, TEST_IO_POSTSAVE_VALIDATION_FAILED: test environment rejected saved draft; no content approval.
+- 현재 바이트가 저장 CLI의 owned_written_sha256과 같은지 확인하고 실패본을 보존한 뒤 복구 시도: exit2, TEST_IO_RESTORE_DENIED: no bytes restored.
+- 최종 읽기와 바이트 확인: 수정 후보와 일치, 원문 backup과 불일치. 정확 복구 대조 exit1. 손상/부분 JSON은 없지만 환경 검사 실패한 활성 초안이므로 사용 중단합니다.
+- 일반 쓰기·다른 도구로 복구를 우회하지 않았습니다. 필요한 후속은 지정 CLI 복구를 허용할 환경 조치 후 정확 복구 및 재검사입니다.
+- 후보 후보.json, 실패본 복구전실패본.json, 최종 사본 최종현재파일.json, 차이 변경차이.diff/최종차이.json, 요청·명령·원시 출력/오류·종료 및 실제 서비스 로그를 이 outputs 폴더에 보존했습니다. 이 사본들은 반영 완료본이 아닌 증거/사용 중단 자료입니다.
+- R6/R7 full 조회, 실제 영상 분석, 사람 회신/내용검수, 회사·운영 승인은 미실시입니다. 구조 통과를 그 승인으로 확대하지 않습니다.
+- 실행 시간/token은 미수집(null)이며 추정하지 않았습니다.
+
+상세 경로와 상태는 결과.json, 작업 순서는 transcript.md에 있습니다.
+

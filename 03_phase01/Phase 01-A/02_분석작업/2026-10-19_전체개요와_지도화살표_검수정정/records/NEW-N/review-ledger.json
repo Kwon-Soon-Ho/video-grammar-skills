@@ -1,0 +1,57 @@
+{
+  "schema_version": "video-review-ledger-0.1",
+  "revision": 1,
+  "before": {
+    "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\detail-results\\NEW-N\\observations-property-reviewed.json",
+    "sha256": "ffd25230825e67ea1c763ee995aa706cef6984bd7ab8effc615a06e52cd3bcf9"
+  },
+  "after": {
+    "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\records\\NEW-N\\observations.json",
+    "sha256": "8b62d3cb512e7983d1836e9188e1272d9c7c82a23d23f5ec9fd1687708f5bee7"
+  },
+  "reviewer": {
+    "kind": "same_agent_context",
+    "name": "Codex",
+    "method": "원본 픽셀 ROI·시각 순서 대조, 수치 정합의 가림/강조 예외 검토. 사람/독립 AI 아님."
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "question": "확인한 좌측 점·망사 ROI와 오른쪽 푸른 배경 ROI에서는 166→168→170초에 더 밝아지고 170/172/174초 표본은 유사한 밝기다. 같은 무늬의 위치는 대체로 유지된다. 전체 배경의 미세 이동·밝기 곡선·실제 opacity 구현은 이 표본으로 확정하지 않는다.",
+      "requirements": [
+        {
+          "object_id": "background",
+          "property": "color",
+          "dimension": "local-brightness-evolution"
+        }
+      ],
+      "required_basis_kind": "observed",
+      "before_claim_ids": [],
+      "state": "addressed",
+      "resolution_claim_ids": [
+        "c033"
+      ],
+      "reason": "지정 ROI를 실제 비교하여 확인한 새 사실. 전체 발견 완전성/구현 확정과 구분.",
+      "next_probe": ""
+    },
+    {
+      "id": "F2",
+      "question": "먼 끝 ROI는 168.5초에 곡선이 뚜렷하지 않고 169초에 희미한 일부, 169.5초에 더 분명한 곡선, 170~173초 표본에 청록 쌍 곡선이 보인다. 173.5초에는 약해지고 174초 문맥 표본에는 보이지 않는다. 정확 출현·소실 시각은 인접 표본 사이이며 전체 주기와 가감속은 미확정이다.",
+      "requirements": [
+        {
+          "object_id": "rear-arcs",
+          "property": "visibility",
+          "dimension": "sampled-onset-and-exit"
+        }
+      ],
+      "required_basis_kind": "observed",
+      "before_claim_ids": [],
+      "state": "addressed",
+      "resolution_claim_ids": [
+        "c034"
+      ],
+      "reason": "지정 ROI를 실제 비교하여 확인한 새 사실. 전체 발견 완전성/구현 확정과 구분.",
+      "next_probe": ""
+    }
+  ]
+}

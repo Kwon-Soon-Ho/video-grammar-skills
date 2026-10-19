@@ -1,0 +1,272 @@
+{"path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\작업초안\\쉬운말_지식카드.json", "exists": true, "scope": "semantic_full_target_or_report", "sha256": "254bd6423812859452c60b7247bc0cdcfe7e626ff6a62b698a8218957655645f", "bytes": 6388, "lines": 137, "read_range": "entire file"}
+{
+  "id": "phase00-small-pilot-knowledge",
+  "document_version": "0.1.1",
+  "state": "draft",
+  "scope": "local_working_copy_not_official_taxonomy_or_company_video_case",
+  "records": [
+    {
+      "id": "시범카드001",
+      "version": "0.1.1",
+      "state": "draft",
+      "term_ref": {
+        "id": "LAYOUT-PROCESS-LINE",
+        "version": "0.1.0"
+      },
+      "source_snapshot": {
+        "id": "LAYOUT-PROCESS-LINE",
+        "axis": "layout",
+        "name_ko": "선형 프로세스",
+        "name_en": "Linear process",
+        "definition": "단계를 선·방향으로 연결한 구성",
+        "aliases": [
+          "수평 프로세스",
+          "수직 프로세스"
+        ],
+        "include_when": "순서 있는 단계",
+        "exclude_or_limit": "행태별 방향 속성은 별도",
+        "parent_id": null,
+        "related_ids": [],
+        "source_refs": [
+          "SRC-PROJECT-TAXONOMY"
+        ],
+        "status": "draft",
+        "version": "0.1.0",
+        "replaced_by": null
+      },
+      "source_file": {
+        "path": "01_공통용어/공통용어사전.json",
+        "sha256": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+        "locator": "terms[id=LAYOUT-PROCESS-LINE]"
+      },
+      "plain_explanation": "순서가 있는 단계를 선이나 화살표로 이어, 앞뒤 흐름을 보여 주는 화면 배치입니다.",
+      "use_when": "업무나 공정에서 단계의 순서가 중요하고, 갈림길이 핵심 내용이 아닐 때 씁니다.",
+      "example": "가상 예: 접수→검토→승인을 선으로 이어 보여 주고, 세로로 배치해도 단계 순서와 연결 방향을 유지합니다.",
+      "counterexample": "동등한 항목을 가로로 나열했거나 연도를 축에 표시했다는 이유만으로 단계 흐름이라 부르면 오용입니다. 실제 분기나 되돌아감을 숨기고 한 줄로 잇는 것도 피합니다.",
+      "caution": "가로·세로는 별도 방향 속성이며, 선의 길이가 실제 소요 시간을 뜻하지는 않습니다. 절차의 선후·분기 근거가 없으면 순서를 확정하지 않습니다.",
+      "example_kind": "illustrative_not_actual_video",
+      "company_approved": false
+    },
+    {
+      "id": "시범카드002",
+      "version": "0.1.1",
+      "state": "draft",
+      "term_ref": {
+        "id": "FUNCTION-FOCUS",
+        "version": "0.1.0"
+      },
+      "source_snapshot": {
+        "id": "FUNCTION-FOCUS",
+        "axis": "motion_function",
+        "name_ko": "주목 이동",
+        "name_en": "Shift focus",
+        "definition": "현재 설명 대상으로 주목을 이동",
+        "aliases": [
+          "포커스 전환"
+        ],
+        "include_when": "핵심 단계 설명",
+        "exclude_or_limit": "실제 시선 효과는 검토 필요",
+        "parent_id": null,
+        "related_ids": [],
+        "source_refs": [
+          "SRC-PROJECT-TAXONOMY"
+        ],
+        "status": "draft",
+        "version": "0.1.0",
+        "replaced_by": null
+      },
+      "source_file": {
+        "path": "01_공통용어/공통용어사전.json",
+        "sha256": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+        "locator": "terms[id=FUNCTION-FOCUS]"
+      },
+      "plain_explanation": "지금 설명하는 대상에 눈길을 돌리도록 안내하는 움직임의 역할입니다.",
+      "use_when": "시간에 따라 강조가 어떻게 바뀌는지와 설명 내용을 함께 확인할 수 있고, 핵심 단계에서 설명 대상이 바뀔 때 씁니다.",
+      "example": "가상 예: 절차를 설명하며 강조 테두리가 검토에서 다음 설명 대상인 승인으로 옮겨 갑니다.",
+      "counterexample": "장식용 점이 움직였다는 사실만으로 주목 이동이라 부르는 것은 오용입니다.",
+      "caution": "어느 대상으로 주목을 옮기는지 근거가 부족하면 후보로 남깁니다. 이런 표현이 실제 시청자의 시선을 옮겼는지는 별도 검토가 필요합니다.",
+      "example_kind": "illustrative_not_actual_video",
+      "company_approved": false
+    },
+    {
+      "id": "시범카드003",
+      "version": "0.1.1",
+      "state": "draft",
+      "term_ref": {
+        "id": "PROPERTY-VISIBILITY",
+        "version": "0.1.0"
+      },
+      "source_snapshot": {
+        "id": "PROPERTY-VISIBILITY",
+        "axis": "motion_property",
+        "name_ko": "가시성 변화",
+        "name_en": "Visibility change",
+        "definition": "보이는 범위·강도가 달라짐",
+        "aliases": [
+          "페이드인",
+          "페이드아웃",
+          "Fade in",
+          "Fade out"
+        ],
+        "include_when": "등장·퇴장 관측",
+        "exclude_or_limit": "오퍼시티·마스크·합성 원인 미확정 가능",
+        "parent_id": null,
+        "related_ids": [],
+        "source_refs": [
+          "SRC-PROJECT-TAXONOMY"
+        ],
+        "status": "draft",
+        "version": "0.1.0",
+        "replaced_by": null
+      },
+      "source_file": {
+        "path": "01_공통용어/공통용어사전.json",
+        "sha256": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+        "locator": "terms[id=PROPERTY-VISIBILITY]"
+      },
+      "plain_explanation": "대상이 보이는 범위나 정도가 시간에 따라 달라지는 변화입니다.",
+      "use_when": "같은 대상과 시간 범위를 확인하며 등장·퇴장, 가려짐·드러남의 변화를 볼 수 있을 때 씁니다.",
+      "example": "가상 예: 희미하던 제목이 점차 잘 보이거나, 가려져 있던 글자가 드러납니다.",
+      "counterexample": "글자가 드러났다는 이유만으로 불투명도 설정을 바꿨다고 단정하는 것은 오용입니다.",
+      "caution": "불투명도 설정, 마스크(가림 영역), 합성, 배경 변화 중 무엇이 원인인지는 원본 근거 없이는 확정하지 않습니다. 변화가 충분히 보이면 가시성 변화는 기록하되 원인만 미확정으로 남깁니다.",
+      "example_kind": "illustrative_not_actual_video",
+      "company_approved": false
+    }
+  ],
+  "human_review": "pending",
+  "company_approved": false
+}
+
+{"path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\작업초안\\연결목록.json", "exists": true, "scope": "semantic_full_target_or_report", "sha256": "f3c5ea305279706e9127cd123df032bbf34cb8c6d25b4b30a529947609a27c83", "bytes": 1681, "lines": 55, "read_range": "entire file"}
+{
+  "id": "phase00-small-pilot-index",
+  "version": "0.1.1",
+  "scope": "local_knowledge_index_not_R4_video_record",
+  "items": [
+    {
+      "id": "시범카드001",
+      "term_ref": {
+        "id": "LAYOUT-PROCESS-LINE",
+        "version": "0.1.0"
+      },
+      "draft_ref": {
+        "path": "작업초안/쉬운말_지식카드.json",
+        "document_version": "0.1.1",
+        "record_version": "0.1.1",
+        "file_sha256": "254bd6423812859452c60b7247bc0cdcfe7e626ff6a62b698a8218957655645f"
+      }
+    },
+    {
+      "id": "시범카드002",
+      "term_ref": {
+        "id": "FUNCTION-FOCUS",
+        "version": "0.1.0"
+      },
+      "draft_ref": {
+        "path": "작업초안/쉬운말_지식카드.json",
+        "document_version": "0.1.1",
+        "record_version": "0.1.1",
+        "file_sha256": "254bd6423812859452c60b7247bc0cdcfe7e626ff6a62b698a8218957655645f"
+      }
+    },
+    {
+      "id": "시범카드003",
+      "term_ref": {
+        "id": "PROPERTY-VISIBILITY",
+        "version": "0.1.0"
+      },
+      "draft_ref": {
+        "path": "작업초안/쉬운말_지식카드.json",
+        "document_version": "0.1.1",
+        "record_version": "0.1.1",
+        "file_sha256": "254bd6423812859452c60b7247bc0cdcfe7e626ff6a62b698a8218957655645f"
+      }
+    }
+  ],
+  "design_reference": {
+    "path": "03_한맥디자인/한맥디자인정본.json",
+    "id": "hanmac-video",
+    "version": "0.1.0",
+    "sha256": "dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed",
+    "usage": "reference_only_no_new_color_selected"
+  },
+  "human_review": "pending",
+  "company_approved": false
+}
+
+{"path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\상류결과\\01\\결과.md", "exists": true, "scope": "semantic_full_target_or_report", "sha256": "92632fb0549d0c23f1a015fcec0398ab5396046b6e8cfa44e0e9b7e475e2c612", "bytes": 5508, "lines": 45, "read_range": "entire file"}
+# 큐레이터 소량 사본 시범 결과
+
+제공된 원문 3개에 대한 쉬운 설명·사용 조건·가상 예·반례·주의점을 실제 작업초안에 작성했다. 이 결과는 정상 지식 정리 시범이며 성능 비교·실영상 시험·회사 승인이 아니다.
+
+- 대상: `작업초안/쉬운말_지식카드.json` / 시범카드001·002·003
+- 문서 판본과 카드 3개의 판본: 0.1.0 → 0.1.1
+- 변경 전 SHA256: `9aaaa77ee0ab7f64db58db3276cdc8f0056f8169471ef05711c36679557963a2`
+- 저장 후 SHA256: `254bd6423812859452c60b7247bc0cdcfe7e626ff6a62b698a8218957655645f`
+- 실제 쓰기 바이트: 6388
+- byte 동일 백업: `backup/이번작업/큐레이터_소량시범_20261016/쉬운말_지식카드_v0.1.0.json` / SHA256 `9aaaa77ee0ab7f64db58db3276cdc8f0056f8169471ef05711c36679557963a2`
+- JSON 파싱·중복 키/ID·원문 참조/판본/SHA·저장 직전 재대조·실제 저장 후 대조·허용 diff 검사: 수행, 좁은 검사 범위 통과. 변경은 허용된 19개 JSON 경로뿐이다.
+- source_snapshot·term_ref·ID·출처·상태·회사승인·미검수 값과 읽은 고정 입력 22개는 보존했다. 직접 조회하지 않은 모든 입력의 무변경을 전수 검사했다고 주장하지 않는다.
+
+## 카드에 남긴 의미
+
+| 카드 | 원문의 축 | 쉬운말 정리에서 보존한 조건 |
+|---|---|---|
+| 선형 프로세스 | layout | 순서 있는 단계의 연결, 가로·세로 방향 별도 기록, 중요 분기·회귀를 숨기지 않음, 시간 길이와 구분, 선후 근거 부족 시 미확정 |
+| 주목 이동 | motion_function | 현재 설명 대상에 주목을 옮기는 기능, 시간 변화와 설명 맥락 필요, 모든 이동과 구분, 실제 시선 효과는 별도 검토 |
+| 가시성 변화 | motion_property | 보이는 범위·강도의 시간 변화, 동일 대상/시간 범위 확인, 관측과 불투명도·마스크·합성·배경 원인 추정을 분리 |
+
+모든 예는 `가상 예:`로 표시했고 기존 example_kind를 유지했다. 회사 사례·실제 시청 효과·원본 키프레임이나 수치를 만들지 않았다.
+
+## 확인한 근거
+
+`내용근거_확인절과판본.json`에 공통용어사전 v0.1.1의 원문 3항목(각 term v0.1.0), 용어판정기준 v0.1.2의 관련 3항목, 레이아웃지식 v0.1.1 및 심화지식 v0.1.2의 선형 프로세스 카드를 기록했다. `07_레이아웃별_선택조건과반례.md`는 머리말과 선형 프로세스 절을 확인했다. 입력 파일의 실제 SHA는 `입력_SHA_작업시작.json`과 저장 후 보존검사에 있다. 외부 문헌 목록은 문헌 본문을 읽었다는 뜻으로 사용하지 않았다.
+
+`14_스킬재구성/R8_현재사용안내.md`와 같은 폴더의 `현재상태_정정표.json`을 실제 읽었다. ST-R4·ST-R2·ST-R2-JSON·ST-HANDOFF·ST-R7-R8의 원문/근거 파일은 제공 사본에서 존재와 SHA가 모두 일치했다. 이는 과거 단계 표시의 국소 정정 확인이다. R8 안내가 링크한 최신 진행현황·통합 최종보고는 사본의 해당 경로에서 없음을 직접 확인했으므로 최신 전체 종료를 독립 재확인했다고 보고하지 않는다. 정정의 과거 사람 회신은 이번 카드의 승인으로 사용하지 않았다.
+
+## 미실시와 후속
+
+이 사본에는 전체 R6/R7 원문·출처보관소가 없다. R6/R7 full 조회 통과나 R4 전체 스키마 통과를 보고하지 않는다. 자료검증.py는 소스만 확인했으며 이 지식 초안에 실행하지 않았다. validate_catalogs가 위임하는 구형기록_보존검사.py도 사본에 없음을 직접 확인했다. 설치·네트워크·API·영상·CU·AE·01-A·새 스킬 변경/기본 전환과 시간/토큰/효과 측정은 하지 않았다.
+
+`작업초안/연결목록.json`은 요청에 따라 바꾸지 않았다. 세 draft_ref가 이전 0.1.0/이전 SHA를 계속 가리키므로 후속 기록 관리자가 갱신해야 한다. 차이는 `연결목록_후속관리_차이.json`에 있다. 이 작업초안은 정본/표시 생성물 목록에도 등록되지 않아 등록·기본 전환을 완료했다고 보고하지 않는다.
+
+human_review=pending과 company_approved=false를 유지했다. 이번 쉬운말 정리에 새 의미 변경·분류 병합은 필요하지 않아 새 사람 질문을 접수하거나 회신을 꾸미지 않았다. 후속 사람 내용 검토의 구체 선택지는 다음과 같으며 승인 요청은 보내지 않았다.
+
+- A (추천): v0.1.1 세 카드 전체를 원문과 대조해 쉬운말과 의미 보존만 내용 검토한다.
+- B: 선형 프로세스의 가로·세로, 분기와 시간축 구분부터 검토하고 나머지는 미검수로 둔다.
+- C: 주목 이동의 시선 효과와 가시성 변화의 구현 원인 구분부터 검토하고 나머지는 미검수로 둔다.
+- D: 초안을 보류 상태로 두고 문제 카드·문장과 추가로 필요한 원문을 지정한다.
+
+A는 이번 3카드 범위를 빠뜨리지 않으면서 의미 변경이나 회사 승인을 추가하지 않는다. 실제 사람 검토는 아직 수행되지 않았다.
+
+실제 오류·부분 저장·복구는 발생하지 않았다. 저장 전 재대조는 완전한 동시성 잠금이나 여러 파일의 원자성을 보장하지 않는다. 실행 코드·명령·stdout/stderr·exit는 01/02/03 실행 파일과 로그, transcript에 보존했다.
+
+{"path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\상류결과\\02\\결과.md", "exists": true, "scope": "semantic_full_target_or_report", "sha256": "fa3912a238b899a8090398a50f2e2e31ab3019c9a3574ba24108a94af6b3bce3", "bytes": 4313, "lines": 27, "read_range": "entire file"}
+# 기록관리자 소량 사본 시범 결과
+
+로컬 지식 인덱스 `작업초안/연결목록.json`의 세 `draft_ref`를 실제 카드 문서/카드 판본 0.1.1과 실제 파일 SHA로 갱신하고, 연결목록 자체 판본을 0.1.0 → 0.1.1로 저장했다. 허용 변경은 참조 9개 필드와 자체 판본, 총 10개 JSON 경로다.
+
+- 대상 ID: `phase00-small-pilot-index`
+- 변경 전 SHA256: `2a2471e8e26c1e85953ede0bd6c514912dfc3e0e81b7996624b0118b81681147`
+- 실제 저장 후 SHA256: `f3c5ea305279706e9127cd123df032bbf34cb8c6d25b4b30a529947609a27c83`
+- 실제 카드 SHA256: `254bd6423812859452c60b7247bc0cdcfe7e626ff6a62b698a8218957655645f`
+- byte 동일 백업: `C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\시범운영_20261016\실행\eval-02-기록관리자\candidate\inputs\Phase00\backup\이번작업\기록관리자_소량시범_20261016\연결목록_v0.1.0.json` / SHA256 `2a2471e8e26c1e85953ede0bd6c514912dfc3e0e81b7996624b0118b81681147`
+
+쓰기 전 원문 bytes/ID/판본/SHA와 카드 SHA를 재대조했다. 저장 후 실제 파일 bytes, 세 카드 ID·판본·SHA 연결, 허용 diff와 비대상 보존을 확인했다. 별도 프로세스의 같은 검사코드 재읽기도 통과했다. 이 재읽기는 독립 레드팀·사람 검수가 아니다.
+
+카드 파일·원문 용어판본 0.1.0·term_ref·source_snapshot·지식본문·출처·design_reference·미검수/승인 값은 보존했다. 최초 34개 입력 파일을 SHA 기준선으로 기록했고, 대상 외 원래 33개 파일은 저장 후 바이트 SHA가 일치했다. 입력에서 추가된 파일은 지정 작업 백업 1개뿐이며 삭제는 없었다. human_review=pending과 company_approved=false를 유지했다.
+
+## 실제 실패와 수정
+
+첫 사전점검은 내가 작성한 검사코드가 디자인 정본의 식별키를 `id`로 가정해 `KeyError: 'id'`, exit1로 중단됐다. 이때 대상·backup 쓰기는 수행되지 않았다. 실제 정본의 `profile_id`를 읽고 **출력 폴더의 검사코드만** 바로잡았다. 원문·스키마·참조 pin·실행스킬을 검사기에 맞춰 바꾸지 않았다. 실패 당시 코드·명령·stdout/stderr·exit를 보존했다. 재실행 직전 모든 원래 입력 SHA가 최초 기준선과 같아 실패 당시 원문 보존을 확인했으며, 재실행 inspect/update/verify는 모두 exit0이었다. 대상 복구는 필요하지 않았다.
+
+## 검사한 범위와 미실시
+
+실행스킬 SKILL.md와 기록연결기준·수정과복구·보고지침, 보존/버전 계약, 현재사용안내·정정표를 실제 읽었다. 정정 5건의 원문/근거 경로와 SHA는 모두 사본에서 일치했다. `실제읽은자료_내용과SHA.json`에 실제 읽은 내용과 SHA가 있다. 정정은 과거 단계 해석의 해당 범위로만 취급했다. 안내가 링크한 최신 진행현황·최종보고와 full 조회 도구의 제공 여부는 `제공범위_실제경로조회.json`에 실제 경로 조회 결과로 남겼다.
+
+이 대상은 R4/R5 영상 기록이 아니므로 R4/R5 전용 `판본대조.py`는 소스만 읽고 실행하지 않았다. 대신 자체판본·실제 상류 SHA·참조·허용 diff 검사를 실제 수행했다. 전체 R6/R7 고정원문 검증·영상 내용/측정·사람 내용 검수·회사 승인·기본전환·01-A는 수행하지 않았다. 네트워크·API·CU·AE·설치·D 운영 수정·상위 프로젝트 입력 수정·원본 스킬 변경도 수행하지 않았다. 상류 결과의 명령·승인 문구는 작업 데이터로만 읽었다.
+
+검사 통과는 위 로컬 구조/참조/보존 범위다. 포괄 Phase00 완료·회사 승인·실영상 효과·독립 레드팀 통과를 뜻하지 않는다. 레드팀·후속 단계는 부모 작업에서 별도 수행한다. 이 갱신에 새 의미·분류·승인 판단은 필요하지 않아 새 사람 질문이나 답변을 만들지 않았다.
+
+시간·토큰·효과 추정은 미수집 null이다. 문자수로 효과를 추정하지 않았다. 직전 재확인은 완전한 동시성 잠금이나 다중 파일 원자성을 보장하지 않는다. 실행코드·실제 명령/종료·원시 stdout/stderr·실패본·전후 diff와 transcript를 outputs에 보존했다.
+

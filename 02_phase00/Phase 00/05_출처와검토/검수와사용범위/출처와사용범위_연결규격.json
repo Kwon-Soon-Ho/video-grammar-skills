@@ -1,0 +1,703 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "const": "r6-source-use-links"
+    },
+    "version": {
+      "const": "0.1.0"
+    },
+    "scope": {
+      "const": "bounded_reference_index_not_permission_or_content_approval"
+    },
+    "source_pins": {
+      "type": "object",
+      "properties": {
+        "legacy_sources": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "file_reviews": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "skill_cards": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "assets": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "legacy_policy": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "legacy_decisions": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "recovery": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "human_intake_policy": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "r5_policy": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "research_0": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "research_1": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "research_2": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "research_3": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "research_4": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "research_5": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "research_6": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "research_7": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "research_r6": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$",
+              "maxLength": 64
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "legacy_sources",
+        "file_reviews",
+        "skill_cards",
+        "assets",
+        "legacy_policy",
+        "legacy_decisions",
+        "recovery",
+        "human_intake_policy",
+        "r5_policy",
+        "research_0",
+        "research_1",
+        "research_2",
+        "research_3",
+        "research_4",
+        "research_5",
+        "research_6",
+        "research_7",
+        "research_r6"
+      ],
+      "additionalProperties": false
+    },
+    "links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "link_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "kind": {
+            "enum": [
+              "legacy_source",
+              "research_context",
+              "research_source",
+              "file_review",
+              "skill_card",
+              "workflow_policy"
+            ]
+          },
+          "source_key": {
+            "enum": [
+              "legacy_sources",
+              "file_reviews",
+              "skill_cards",
+              "assets",
+              "legacy_policy",
+              "legacy_decisions",
+              "recovery",
+              "human_intake_policy",
+              "r5_policy",
+              "research_0",
+              "research_1",
+              "research_2",
+              "research_3",
+              "research_4",
+              "research_5",
+              "research_6",
+              "research_7",
+              "research_r6"
+            ]
+          },
+          "pointer": {
+            "type": "string"
+          },
+          "original_record": {},
+          "fresh_content_review": {
+            "const": false
+          },
+          "permission_grant_created": {
+            "const": false
+          }
+        },
+        "required": [
+          "link_id",
+          "kind",
+          "source_key",
+          "pointer",
+          "original_record",
+          "fresh_content_review",
+          "permission_grant_created"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "file_checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "review_pointer": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "original_path": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$",
+            "maxLength": 64
+          },
+          "preserved_snapshot": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reported_depth": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "execution_declared": {
+            "type": "boolean"
+          },
+          "review_scope": {
+            "const": "original_file_ledger_only"
+          },
+          "runtime_effectiveness_verified": {
+            "const": false
+          }
+        },
+        "required": [
+          "review_pointer",
+          "original_path",
+          "sha256",
+          "preserved_snapshot",
+          "reported_depth",
+          "execution_declared",
+          "review_scope",
+          "runtime_effectiveness_verified"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "asset_usage": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "asset_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "record_version": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "source_pointer": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "recorded_usage": {
+            "type": "object"
+          },
+          "file": {
+            "type": "object"
+          },
+          "interpretation": {
+            "const": "documented_internal_reference_context"
+          },
+          "broader_use_confirmed": {
+            "const": false
+          }
+        },
+        "required": [
+          "asset_id",
+          "record_version",
+          "source_pointer",
+          "recorded_usage",
+          "file",
+          "interpretation",
+          "broader_use_confirmed"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "coverage": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "identity_authenticated": {
+      "const": false
+    },
+    "company_approved": {
+      "const": false
+    },
+    "operational_release": {
+      "const": false
+    }
+  },
+  "required": [
+    "id",
+    "version",
+    "scope",
+    "source_pins",
+    "links",
+    "file_checks",
+    "asset_usage",
+    "coverage",
+    "identity_authenticated",
+    "company_approved",
+    "operational_release"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:hanmac:phase00:r6-source-use:0.1.0",
+  "title": "R6 출처·사용범위 참조 색인"
+}

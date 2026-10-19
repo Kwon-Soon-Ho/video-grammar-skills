@@ -1,0 +1,370 @@
+{
+  "schema_version": "0.1",
+  "scope": {
+    "자료005": [
+      0,
+      24
+    ],
+    "자료013": [
+      0,
+      15.5
+    ]
+  },
+  "discovery_basis": "spatial partition, forward temporal sheets, reverse settled-state tracing; prior corrections used as known regressions, not blind tests",
+  "required_axes": [
+    "이동",
+    "크기",
+    "형태와회전",
+    "가시성과공개",
+    "색과광량",
+    "내부변화",
+    "중첩",
+    "등퇴장과순서",
+    "가감속"
+  ],
+  "subjects": [
+    {
+      "id": "J-intro-text",
+      "asset": "자료005",
+      "name": "도입 CI·연도·제목",
+      "window": "0~6",
+      "role": "support"
+    },
+    {
+      "id": "J-intro-photo",
+      "asset": "자료005",
+      "name": "도입 교량·제품·구름·수면",
+      "window": "0~6",
+      "role": "support"
+    },
+    {
+      "id": "J-transition",
+      "asset": "자료005",
+      "name": "장면 교체 전체",
+      "window": "6~6.4 / 21~21.4",
+      "role": "support"
+    },
+    {
+      "id": "J-base",
+      "asset": "자료005",
+      "name": "실적 장면 배경·좌측 제목·하단 주석",
+      "window": "6.4~21",
+      "role": "support"
+    },
+    {
+      "id": "J-cards",
+      "asset": "자료005",
+      "name": "세 카드 테두리·제목·기준선",
+      "window": "6.4~21",
+      "role": "support"
+    },
+    {
+      "id": "J-order-goal",
+      "asset": "자료005",
+      "name": "수주 목표 막대·목표 수치",
+      "window": "6.4~21",
+      "role": "support"
+    },
+    {
+      "id": "J-order-actual",
+      "asset": "자료005",
+      "name": "수주 실적 막대",
+      "window": "8~9.3",
+      "role": "support"
+    },
+    {
+      "id": "J-order-ring",
+      "asset": "자료005",
+      "name": "수주 원형 진행",
+      "window": "8~9.3",
+      "role": "support"
+    },
+    {
+      "id": "J-order-numbers",
+      "asset": "자료005",
+      "name": "수주 금액과 퍼센트",
+      "window": "8~9.3",
+      "role": "support"
+    },
+    {
+      "id": "J-sales-goal",
+      "asset": "자료005",
+      "name": "매출 목표 막대·목표 수치",
+      "window": "6.4~21",
+      "role": "support"
+    },
+    {
+      "id": "J-sales-actual",
+      "asset": "자료005",
+      "name": "매출 실적 막대",
+      "window": "15.5~16.7",
+      "role": "support"
+    },
+    {
+      "id": "J-sales-ring",
+      "asset": "자료005",
+      "name": "매출 원형 진행",
+      "window": "15.5~16.7",
+      "role": "support"
+    },
+    {
+      "id": "J-sales-numbers",
+      "asset": "자료005",
+      "name": "매출 금액과 퍼센트",
+      "window": "15.5~16.7",
+      "role": "support"
+    },
+    {
+      "id": "J-profit-goal",
+      "asset": "자료005",
+      "name": "영업이익 목표 막대·목표 수치",
+      "window": "6.4~21",
+      "role": "support"
+    },
+    {
+      "id": "J-profit-actual",
+      "asset": "자료005",
+      "name": "영업이익 실적 막대",
+      "window": "16.8~17.8",
+      "role": "support"
+    },
+    {
+      "id": "J-profit-ring",
+      "asset": "자료005",
+      "name": "영업이익 원형 진행",
+      "window": "16.8~17.8",
+      "role": "support"
+    },
+    {
+      "id": "J-profit-numbers",
+      "asset": "자료005",
+      "name": "영업이익 금액과 퍼센트",
+      "window": "16.8~17.8",
+      "role": "support"
+    },
+    {
+      "id": "J-sector-bg",
+      "asset": "자료005",
+      "name": "매출처·사업분야 배경·제목·주석",
+      "window": "21.4~24",
+      "role": "support"
+    },
+    {
+      "id": "J-sector-ring",
+      "asset": "자료005",
+      "name": "매출처 차트 색 영역",
+      "window": "21.3~22.6",
+      "role": "primary"
+    },
+    {
+      "id": "J-sector-labels",
+      "asset": "자료005",
+      "name": "매출처·사업분야 외부 라벨·연결선",
+      "window": "21.4~24",
+      "role": "support"
+    },
+    {
+      "id": "J-sector-percent",
+      "asset": "자료005",
+      "name": "가족사 비중 숫자·강조 화살표",
+      "window": "21.3~22.6",
+      "role": "support"
+    },
+    {
+      "id": "J-business-ring",
+      "asset": "자료005",
+      "name": "사업분야 회색 원형",
+      "window": "21.4~24",
+      "role": "support"
+    },
+    {
+      "id": "E-glow",
+      "asset": "자료013",
+      "name": "배경 광량·비네트",
+      "window": "0~15.5",
+      "role": "ambient"
+    },
+    {
+      "id": "E-grid",
+      "asset": "자료013",
+      "name": "배경 격자·큰 사각 경계",
+      "window": "0~15.5",
+      "role": "ambient"
+    },
+    {
+      "id": "E-early-upper",
+      "asset": "자료013",
+      "name": "도입 어두운 E 위쪽 조각",
+      "window": "약0.2~1.2",
+      "role": "support"
+    },
+    {
+      "id": "E-early-middle",
+      "asset": "자료013",
+      "name": "도입 어두운 E 가운데 조각",
+      "window": "약0.2~1.2",
+      "role": "support"
+    },
+    {
+      "id": "E-early-lower",
+      "asset": "자료013",
+      "name": "도입 어두운 E 아래쪽 조각",
+      "window": "약0.2~1.2",
+      "role": "support"
+    },
+    {
+      "id": "E-outline-light",
+      "asset": "자료013",
+      "name": "E 주변 얇은 선·수평 발광 부분",
+      "window": "도입 및 배경 유지",
+      "role": "ambient"
+    },
+    {
+      "id": "E-cursor",
+      "asset": "자료013",
+      "name": "CAD 같은 십자 커서와 중앙 작은 사각형",
+      "window": "약1~3.6",
+      "role": "support"
+    },
+    {
+      "id": "E-selection",
+      "asset": "자료013",
+      "name": "점선 사각 선택 영역",
+      "window": "약1.9~3.6",
+      "role": "support"
+    },
+    {
+      "id": "E-value",
+      "asset": "자료013",
+      "name": "큰 Value of 밝은 글자와 연한 잔존 글자",
+      "window": "약1.9~15.5",
+      "role": "support"
+    },
+    {
+      "id": "E-title",
+      "asset": "자료013",
+      "name": "작은 EG-BIM 개별 문자",
+      "window": "약2.8~15.5",
+      "role": "support"
+    },
+    {
+      "id": "E-subtitle",
+      "asset": "자료013",
+      "name": "영문 부제",
+      "window": "약3~15.5",
+      "role": "support"
+    },
+    {
+      "id": "E-body-upper",
+      "asset": "자료013",
+      "name": "한글 본문 위쪽 두 줄",
+      "window": "약3.15~15.5",
+      "role": "support"
+    },
+    {
+      "id": "E-body-lower",
+      "asset": "자료013",
+      "name": "한글 본문 아래쪽 두 줄",
+      "window": "약3.3~15.5",
+      "role": "support"
+    },
+    {
+      "id": "E-hero-upper",
+      "asset": "자료013",
+      "name": "전경 E 위쪽 조각",
+      "window": "약3.5~5.5",
+      "role": "primary"
+    },
+    {
+      "id": "E-hero-middle",
+      "asset": "자료013",
+      "name": "전경 E 가운데 조각",
+      "window": "약3.5~5.5",
+      "role": "primary"
+    },
+    {
+      "id": "E-hero-lower",
+      "asset": "자료013",
+      "name": "전경 E 아래쪽 조각",
+      "window": "약3.5~5.5",
+      "role": "primary"
+    },
+    {
+      "id": "E-hero-dim",
+      "asset": "자료013",
+      "name": "정착 후 금빛 E의 광량",
+      "window": "약5~8",
+      "role": "support"
+    },
+    {
+      "id": "E-texture",
+      "asset": "자료013",
+      "name": "E 내부 선무늬·격자",
+      "window": "약4.2~15.5",
+      "role": "support"
+    },
+    {
+      "id": "E-ui1",
+      "asset": "자료013",
+      "name": "첫 관리 UI 이미지와 노란 테두리",
+      "window": "약6.9~15.5",
+      "role": "support"
+    },
+    {
+      "id": "E-ui1-inside",
+      "asset": "자료013",
+      "name": "첫 UI 안 목록·작은 도면·커서 여부",
+      "window": "정착8~10.4",
+      "role": "support"
+    },
+    {
+      "id": "E-ui1-row",
+      "asset": "자료013",
+      "name": "첫 UI 상단 표의 선택행",
+      "window": "약8.2~10.4",
+      "role": "support"
+    },
+    {
+      "id": "E-ui1-thumb",
+      "asset": "자료013",
+      "name": "첫 UI 하단 도면 미리보기의 주황 테두리",
+      "window": "약7.7~10.4",
+      "role": "support"
+    },
+    {
+      "id": "E-ui2",
+      "asset": "자료013",
+      "name": "두 번째 도면 UI와 노란 테두리",
+      "window": "약11.2~15.5",
+      "role": "support"
+    },
+    {
+      "id": "E-ui2-inside",
+      "asset": "자료013",
+      "name": "두 번째 도면 내부 형상·주석·좌표",
+      "window": "약12~15.5",
+      "role": "support"
+    },
+    {
+      "id": "E-model",
+      "asset": "자료013",
+      "name": "밖으로 나오는 철근 모델 본체",
+      "window": "약12.9~15.5",
+      "role": "primary"
+    },
+    {
+      "id": "E-connector",
+      "asset": "자료013",
+      "name": "도면과 전경 모델 사이 반투명 연결면",
+      "window": "약13~15.5",
+      "role": "support"
+    },
+    {
+      "id": "E-flare",
+      "asset": "자료013",
+      "name": "모델 광점·수평 빛띠",
+      "window": "약14.3~15.5",
+      "role": "support"
+    }
+  ]
+}

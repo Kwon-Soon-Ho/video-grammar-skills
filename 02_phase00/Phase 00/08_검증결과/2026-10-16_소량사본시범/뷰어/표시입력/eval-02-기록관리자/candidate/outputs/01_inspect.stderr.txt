@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\시범운영_20261016\실행\eval-02-기록관리자\candidate\outputs\01_기록관리_실행.py", line 323, in <module>
+    {'inspect': inspect, 'update': update, 'verify': verify}[sys.argv[1]]()
+  File "C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\시범운영_20261016\실행\eval-02-기록관리자\candidate\outputs\01_기록관리_실행.py", line 197, in inspect
+    links = validate_links(before, card, card_raw, '0.1.0')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\시범운영_20261016\실행\eval-02-기록관리자\candidate\outputs\01_기록관리_실행.py", line 143, in validate_links
+    assert design['id'] == design_ref['id'] and design['version'] == design_ref['version']
+           ~~~~~~^^^^^^
+KeyError: 'id'

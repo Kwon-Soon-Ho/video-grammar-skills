@@ -1,0 +1,41 @@
+{
+  "grader": "root inline AI visual review",
+  "human_approved": false,
+  "expectations": [
+    {
+      "text": "녹색 작업 반경 면/선과 R=9.7m 표기 등장",
+      "passed": true,
+      "evidence": "radius: 반경 면·선과 R9.7m 등장; outputs/observations.json 및 원본 ROI 대조"
+    },
+    {
+      "text": "표 9.7m 행의 색·폭/크기 강조 및 JIS/69,000 셀 강조 분리",
+      "passed": true,
+      "evidence": "table: 45m열→9.7행→JIS69,000셀 분리; outputs/observations.json 및 원본 ROI 대조"
+    },
+    {
+      "text": "정격하중 화살표·라벨·69ton 숫자의 순차 등장; 숫자 리빌을 근거 없이 카운트업으로 설명하지 않음",
+      "passed": true,
+      "evidence": "rating: 화살표/정격하중/69ton 등장, 카운트업 단정 없음; outputs/observations.json 및 원본 ROI 대조"
+    },
+    {
+      "text": "크레인/배경과 오버레이 변화 분리; 문서 예정130초 장면과 영상 불일치",
+      "passed": true,
+      "evidence": "DOC063 slide9 85–100초와 actual130–138초 불일치; outputs/observations.json 및 원본 ROI 대조"
+    },
+    {
+      "text": "가감속/수치·단위는 해당 대상 근거, 안전성 진위 판단 아님",
+      "passed": true,
+      "evidence": "with는 반경·행 강조의 감속, baseline은 곡선 유보; 안전성 진위 판단 없음; outputs/observations.json 및 원본 ROI 대조"
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "interpretation": "이 기준에 한정된 진단. 일반 정확도·독립표본 합격률 아님. JSON/카탈로그 통과와 내용판정 별개.",
+  "eval_feedback": {
+    "overall": "자막 전환 기준은 최초 동결 목록에 없던 실제 오류로 양쪽 결과에 동일하게 사후 추가. V04 기준의 필터 오기는 폴더로 해석. 세밀한 이징 유보는 근거가 부족하면 실패로 강제하지 않음."
+  }
+}

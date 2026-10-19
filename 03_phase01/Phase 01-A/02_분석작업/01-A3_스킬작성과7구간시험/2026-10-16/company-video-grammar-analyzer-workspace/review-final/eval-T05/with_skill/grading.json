@@ -1,0 +1,42 @@
+{
+  "case_id": "T05",
+  "condition": "with_skill",
+  "recorded_at": "2026-10-16T06:25:14.605847+00:00",
+  "grader": "root source/meaning review; not independent human",
+  "reference_level": "human_confirmed",
+  "expectations": [
+    {
+      "text": "겹쳐 바뀌는 크로스페이드를 식별",
+      "passed": true,
+      "evidence": "기존/신규 로고·장면의 동시 노출과 반대 방향 가시성 변화를 기록; native 전환 시퀀스 일치."
+    },
+    {
+      "text": "슬라이드·카메라 이동으로 잘못 확정하지 않음",
+      "passed": true,
+      "evidence": "서로 다른 크기의 로고 중첩을 한 로고 축소/카메라 이동으로 오인하지 않음."
+    },
+    {
+      "text": "혼합 진행량의 감속형을 관측 속성에 연결",
+      "passed": true,
+      "evidence": "RGB혼합 proxy .2007@6.033,.5243@6.1,.8248@6.2,.9587@6.3,.9936@6.4에 근거한 감속. 위치속도와 명시 분리."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3
+  },
+  "case_status": "requirements_satisfied",
+  "notes": [
+    "RGB proxy는 원본 opacity가 아님. 색/gamma/잔차 오차 미상 보존."
+  ],
+  "timing": null,
+  "tokens": null,
+  "telemetry_note": "per-run telemetry unavailable; no synthesized averages",
+  "eval_feedback": {
+    "suggestions": [
+      "Known exposed windows, one run per condition, same agent batches; this is regression evidence, not generalization accuracy."
+    ]
+  },
+  "additional_content_issues": []
+}

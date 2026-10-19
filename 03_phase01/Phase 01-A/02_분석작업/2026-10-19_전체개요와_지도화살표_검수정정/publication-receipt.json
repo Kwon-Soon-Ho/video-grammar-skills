@@ -1,0 +1,1882 @@
+{
+  "utc": "2026-10-19T02:51:49.393458+00:00",
+  "working_skill": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\03_분석스킬\\company-video-grammar-analyzer",
+  "working_version": "0.1.0-draft.8",
+  "prior_working_copy": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\99_백업\\2026-10-19_draft8_수정전\\원본폴더\\company-video-grammar-analyzer_draft7",
+  "backup_zip": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\99_백업\\2026-10-19_draft8_수정전\\draft7-before-coverage.zip",
+  "backup_zip_sha256": "5f233321f611fd0fb919a4b6289124c1cfa9883978bed7981f97bf7c0347f58b",
+  "old_working_files_preserved": [
+    {
+      "relative": "SKILL.md",
+      "sha256": "00bb71050fc1c5bd2d8d5a6da7d22f3c90ef99c9ef6603d13ff4a6b3e1f908da"
+    },
+    {
+      "relative": "agents/openai.yaml",
+      "sha256": "38256f18ecb1eb10175fafa10dcd37400a42a8934bdf88ff70d79c12b9445b53"
+    },
+    {
+      "relative": "references/design-and-patterns.md",
+      "sha256": "a97d4920a5eb5b6d5c94583ce3c9332eea7354c181ef0dd1b4a7bf5a79a25cf7"
+    },
+    {
+      "relative": "references/evidence-and-records.md",
+      "sha256": "ed093b9616b49466f85362672c12f24a909ce577f4af542eec0f92f3f97d9ac5"
+    },
+    {
+      "relative": "references/judgment-handoff.md",
+      "sha256": "afe495b0a2524f18e55293270161514cf33a822369f3dc47c4237ad12ac1cf5b"
+    },
+    {
+      "relative": "references/motion-review.md",
+      "sha256": "7a71fd41f230f636a7aaefd9866e6ec7f039b79e916d8d1c44b9d2d8e7b08819"
+    },
+    {
+      "relative": "references/output-contract.md",
+      "sha256": "66782470f10941e8cbe6301f46a33f97e2ded75df3bef8aefaafce012925b4fe"
+    },
+    {
+      "relative": "references/pattern-composition.md",
+      "sha256": "1895f5b7f3ee294019e16df94db7d20ca2065d912e4801adac24240daccecfc5"
+    },
+    {
+      "relative": "references/review-ledger.md",
+      "sha256": "6819a590eddf91d5ee73e3d45b5a6f8b719d13c611b8dc7bf2722961b4065421"
+    },
+    {
+      "relative": "scripts/check_record.py",
+      "sha256": "14c7b1052c78c8607a718e92b2d052b088680508fbd4ae1a1157da802f619474"
+    },
+    {
+      "relative": "scripts/evidence_catalog.py",
+      "sha256": "3f82f0273f0db79a63d120c1c2d54c155110f37eb6e4861450bc65d9bf285785"
+    },
+    {
+      "relative": "scripts/pattern_library.py",
+      "sha256": "5ecaf89af368f30c17b98e6f95b8934014f05120405cb1e9c7e9c4ba205f3574"
+    },
+    {
+      "relative": "scripts/render_observations.py",
+      "sha256": "64464453e6a5c0f9e91ecf2ddff51a3b2577111aabcff4cb76aa554261890f75"
+    },
+    {
+      "relative": "scripts/reuse_map.py",
+      "sha256": "fb70d389041a4391b2c1a0a9a9b3dda7661c4f3b9a44d6e21c48959555c95ba9"
+    },
+    {
+      "relative": "scripts/review_ledger.py",
+      "sha256": "942a1a7fe275eb9288943098e836bb8142aabe91506f45dcdc272c9bf93e09be"
+    }
+  ],
+  "new_working_files": [
+    {
+      "relative": "SKILL.md",
+      "sha256": "925318e81ad7d00397554039307d4378de1ed04c2fa5db878e477c6272d4090f"
+    },
+    {
+      "relative": "agents/openai.yaml",
+      "sha256": "38256f18ecb1eb10175fafa10dcd37400a42a8934bdf88ff70d79c12b9445b53"
+    },
+    {
+      "relative": "references/design-and-patterns.md",
+      "sha256": "a97d4920a5eb5b6d5c94583ce3c9332eea7354c181ef0dd1b4a7bf5a79a25cf7"
+    },
+    {
+      "relative": "references/evidence-and-records.md",
+      "sha256": "ed093b9616b49466f85362672c12f24a909ce577f4af542eec0f92f3f97d9ac5"
+    },
+    {
+      "relative": "references/judgment-handoff.md",
+      "sha256": "afe495b0a2524f18e55293270161514cf33a822369f3dc47c4237ad12ac1cf5b"
+    },
+    {
+      "relative": "references/motion-review.md",
+      "sha256": "d14a68424a8a7265f68bd6aa037a76965729e8cbf8124140eb1772221f50814d"
+    },
+    {
+      "relative": "references/output-contract.md",
+      "sha256": "bce4158f657ae73f7b67ef87d7280db9ed8af4d6b28cd8e5631c1ee20e9ffade"
+    },
+    {
+      "relative": "references/pattern-composition.md",
+      "sha256": "1895f5b7f3ee294019e16df94db7d20ca2065d912e4801adac24240daccecfc5"
+    },
+    {
+      "relative": "references/review-ledger.md",
+      "sha256": "6819a590eddf91d5ee73e3d45b5a6f8b719d13c611b8dc7bf2722961b4065421"
+    },
+    {
+      "relative": "references/source-coverage.md",
+      "sha256": "92ecb1730278ffa0781bf6d0c3fc3caa4f94738eacbfbce9c683dfee476e44d2"
+    },
+    {
+      "relative": "scripts/check_record.py",
+      "sha256": "53ae1d5ee78c22eb8ef780911526213191e21950e429a58ee724c036327070bd"
+    },
+    {
+      "relative": "scripts/evidence_catalog.py",
+      "sha256": "c550df61b4f69ef475d4c9245e3cbf98a07b5cb91f2333aa0d65e6a750b82ab3"
+    },
+    {
+      "relative": "scripts/pattern_library.py",
+      "sha256": "a4f63a35c6f589f63e4d5305db450ad7d375e1007f81c76ca7095b57663015db"
+    },
+    {
+      "relative": "scripts/render_observations.py",
+      "sha256": "64464453e6a5c0f9e91ecf2ddff51a3b2577111aabcff4cb76aa554261890f75"
+    },
+    {
+      "relative": "scripts/reuse_map.py",
+      "sha256": "3e79f60870890479776449f928acab8a2c8cf5073cdb7438e008d8c7d47b41ea"
+    },
+    {
+      "relative": "scripts/review_ledger.py",
+      "sha256": "5168f898893955a977a80c5a10d4caeac26b72e70ff2316061325490989fc271"
+    },
+    {
+      "relative": "scripts/source_coverage.py",
+      "sha256": "36950fea3d297981c0376e86fa6b5b3bfe49afbc7938c81def07e519fb64c18e"
+    }
+  ],
+  "candidate_snapshot": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\03_분석스킬\\수정후보\\2026-10-19_draft8\\company-video-grammar-analyzer",
+  "records": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정",
+  "current_notice": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\00_진행안내\\2026-10-19_스킬수정_현재작업본.md",
+  "prior_394_local_sources_unchanged": true,
+  "prior_394_published_bytes_preserved": true,
+  "published_files": [
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\00_현재위치와_다음작업.md",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\00_현재위치와_다음작업.md",
+      "sha256": "7a7303be1f0c1f4d6cb6adb36f7bf214640ea2727a91fb7fc0010d716cb7f139"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\backup\\draft7-before-coverage.zip",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\backup\\draft7-before-coverage.zip",
+      "sha256": "5f233321f611fd0fb919a4b6289124c1cfa9883978bed7981f97bf7c0347f58b"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\backup\\manifest.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\backup\\manifest.json",
+      "sha256": "6cb25cbbed3d6120a01bfbd0192b301b53b6be3cf33182cfdb17dc61b2e45ff5"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\build_records.py",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\build_records.py",
+      "sha256": "8b0963b30b1d4752365719e1c5c78b3effda72ecfccbf0ee6daa1abb4ea0120c"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\build_report.py",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\build_report.py",
+      "sha256": "2353450a8a454ca4c51620a49a29e25b899142d124c2773275e98f1d8fce181e"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\agents\\openai.yaml",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\03_분석스킬\\수정후보\\2026-10-19_draft8\\company-video-grammar-analyzer\\agents\\openai.yaml",
+      "sha256": "38256f18ecb1eb10175fafa10dcd37400a42a8934bdf88ff70d79c12b9445b53"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\references\\design-and-patterns.md",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\03_분석스킬\\수정후보\\2026-10-19_draft8\\company-video-grammar-analyzer\\references\\design-and-patterns.md",
+      "sha256": "a97d4920a5eb5b6d5c94583ce3c9332eea7354c181ef0dd1b4a7bf5a79a25cf7"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\references\\evidence-and-records.md",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\03_분석스킬\\수정후보\\2026-10-19_draft8\\company-video-grammar-analyzer\\references\\evidence-and-records.md",
+      "sha256": "ed093b9616b49466f85362672c12f24a909ce577f4af542eec0f92f3f97d9ac5"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\references\\judgment-handoff.md",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\03_분석스킬\\수정후보\\2026-10-19_draft8\\company-video-grammar-analyzer\\references\\judgment-handoff.md",
+      "sha256": "afe495b0a2524f18e55293270161514cf33a822369f3dc47c4237ad12ac1cf5b"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\references\\motion-review.md",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\03_분석스킬\\수정후보\\2026-10-19_draft8\\company-video-grammar-analyzer\\references\\motion-review.md",
+      "sha256": "d14a68424a8a7265f68bd6aa037a76965729e8cbf8124140eb1772221f50814d"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\references\\output-contract.md",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\03_분석스킬\\수정후보\\2026-10-19_draft8\\company-video-grammar-analyzer\\references\\output-contract.md",
+      "sha256": "bce4158f657ae73f7b67ef87d7280db9ed8af4d6b28cd8e5631c1ee20e9ffade"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\references\\pattern-composition.md",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\03_분석스킬\\수정후보\\2026-10-19_draft8\\company-video-grammar-analyzer\\references\\pattern-composition.md",
+      "sha256": "1895f5b7f3ee294019e16df94db7d20ca2065d912e4801adac24240daccecfc5"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\references\\review-ledger.md",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\03_분석스킬\\수정후보\\2026-10-19_draft8\\company-video-grammar-analyzer\\references\\review-ledger.md",
+      "sha256": "6819a590eddf91d5ee73e3d45b5a6f8b719d13c611b8dc7bf2722961b4065421"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\references\\source-coverage.md",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\03_분석스킬\\수정후보\\2026-10-19_draft8\\company-video-grammar-analyzer\\references\\source-coverage.md",
+      "sha256": "92ecb1730278ffa0781bf6d0c3fc3caa4f94738eacbfbce9c683dfee476e44d2"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\check_record.py",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\03_분석스킬\\수정후보\\2026-10-19_draft8\\company-video-grammar-analyzer\\scripts\\check_record.py",
+      "sha256": "53ae1d5ee78c22eb8ef780911526213191e21950e429a58ee724c036327070bd"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\evidence_catalog.py",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\03_분석스킬\\수정후보\\2026-10-19_draft8\\company-video-grammar-analyzer\\scripts\\evidence_catalog.py",
+      "sha256": "c550df61b4f69ef475d4c9245e3cbf98a07b5cb91f2333aa0d65e6a750b82ab3"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\pattern_library.py",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\03_분석스킬\\수정후보\\2026-10-19_draft8\\company-video-grammar-analyzer\\scripts\\pattern_library.py",
+      "sha256": "a4f63a35c6f589f63e4d5305db450ad7d375e1007f81c76ca7095b57663015db"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\render_observations.py",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\03_분석스킬\\수정후보\\2026-10-19_draft8\\company-video-grammar-analyzer\\scripts\\render_observations.py",
+      "sha256": "64464453e6a5c0f9e91ecf2ddff51a3b2577111aabcff4cb76aa554261890f75"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\reuse_map.py",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\03_분석스킬\\수정후보\\2026-10-19_draft8\\company-video-grammar-analyzer\\scripts\\reuse_map.py",
+      "sha256": "3e79f60870890479776449f928acab8a2c8cf5073cdb7438e008d8c7d47b41ea"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\review_ledger.py",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\03_분석스킬\\수정후보\\2026-10-19_draft8\\company-video-grammar-analyzer\\scripts\\review_ledger.py",
+      "sha256": "5168f898893955a977a80c5a10d4caeac26b72e70ff2316061325490989fc271"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\source_coverage.py",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\03_분석스킬\\수정후보\\2026-10-19_draft8\\company-video-grammar-analyzer\\scripts\\source_coverage.py",
+      "sha256": "36950fea3d297981c0376e86fa6b5b3bfe49afbc7938c81def07e519fb64c18e"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\SKILL.md",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\03_분석스킬\\수정후보\\2026-10-19_draft8\\company-video-grammar-analyzer\\SKILL.md",
+      "sha256": "925318e81ad7d00397554039307d4378de1ed04c2fa5db878e477c6272d4090f"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\configure.py",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\configure.py",
+      "sha256": "6715a8fe55cf2688809fd974f00b425c57e39e0f5cd6c01eab8ff69cd47fe53a"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\coverage-result.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\coverage-result.json",
+      "sha256": "fe929f6843baf4e9a39bcd9c23e8cfcdb4f3ca9f0a1f157085310db5c03c9b75"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\evidence-catalog.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\evidence-catalog.json",
+      "sha256": "056ab2ac96e37159c4fe1405b5c5c3e4d13709cdf8f84014a1b01a7d9be157c8"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\measure_map_registration.py",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\measure_map_registration.py",
+      "sha256": "2bd95fbee5355bd800f6f1e8e24e2a85b961eabe71d4e5decd5af7fa2285ca38"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\overview-plan.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\overview-plan.json",
+      "sha256": "75a6013c76c33e0afbb113a78dfde9db2c452f2751b8a56f31aa8654d5cf20e2"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\prepare.py",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\prepare.py",
+      "sha256": "eb8c6cdaca12a86a9906c2dcc121a8b3943a08cd043a12ed3fadc80c80d63ff2"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probe_rois.py",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probe_rois.py",
+      "sha256": "d5c547b6fe0ce2ab62a6234a2a6b1cc23ab782a807a834a25660c5181ea95bcd"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\crop-inputs.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\crop-inputs.json",
+      "sha256": "adf0383c9b00beb52ac47ffc09ab7032c92b2fe952c5146983ee9a402d0350de"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\line-crop-inputs.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\line-crop-inputs.json",
+      "sha256": "5e4b9898ca18019dc74cf0b320b3d84502951a82bc50951d44f7f053335b1daf"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\line-frame-0.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\line-frame-0.png",
+      "sha256": "6a05a9b932e7607081871af0bedd6ba394f3db4e861b571d82415bf0dd8930b0"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\line-frame-1.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\line-frame-1.png",
+      "sha256": "8b5f04fd66407e5745a2143ffad379ed662e9c0dcb2de24df16c0684f17acab8"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\line-frame-2.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\line-frame-2.png",
+      "sha256": "4386fb55f73fc3f0bbf793a7b39055c20a2dfe20db50d78aab9bee4b8756dbcb"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\line-frame-3.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\line-frame-3.png",
+      "sha256": "d6834b704f034b8fc3d7063e22402b6f926068601b3798f51856555735dc5127"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\line-frame-4.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\line-frame-4.png",
+      "sha256": "a698ad0ea6d7df8a3f2b35d5e139c35e234f3890067c8f1f557fde7dbefaa69c"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\line-frame-5.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\line-frame-5.png",
+      "sha256": "d7f821def225c78ed8437c20b5e92eb3b33c26bb58087b91ed049b5a3b2663cd"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\line-frame-6.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\line-frame-6.png",
+      "sha256": "fe40036e4a9d6cec6637de9874f3b9f8329059933101bbec8c95d8660f35ae5b"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\line-frame-7.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\line-frame-7.png",
+      "sha256": "7a65be7d3f1dbdb26a7ffa84cf7eaea70dc5ba55c8c115525ae099be346bfc02"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\line-frame-8.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\line-frame-8.png",
+      "sha256": "e5bf952d9798911235f97bce66d94e06401c1a57d77df1be0c0a2ef5bd8d16bc"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\line-frame-9.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\line-frame-9.png",
+      "sha256": "35f7604e18b35db4351fffbc24a939f838ebd8a786d4235f71aa030455803145"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\map-landmark-matches.jpg",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\map-landmark-matches.jpg",
+      "sha256": "35bf3c1a67a5543bec86da8061835c642a3bbfc13edfe6af775acc1345db414d"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\map-registration.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\map-registration.json",
+      "sha256": "e7f5402163d621723946639bc78c9df2a60e477f722e79866d47179b736ae9b4"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\map-static-anchors.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\map-static-anchors.json",
+      "sha256": "d23810d060f7d942347fb8a4a9b97dc3cd336a17bb7fb4f816aa12ccdd0164c2"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-background-left-166.0.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\N-background-left-166.0.png",
+      "sha256": "300fc62cf7c2ac785e114c572fbff58a53f24d0883e8ccf18714984e9158054c"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-background-left-168.0.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\N-background-left-168.0.png",
+      "sha256": "ea43c8b91cd7cc83382a10356c49bb9354c3fbf60e87188e1246f97d4067fd2e"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-background-left-170.0.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\N-background-left-170.0.png",
+      "sha256": "9251e8df478ef78f26555dae7199d2884fa9f45c01288b46ac1a1629ca4ff0a7"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-background-left-172.0.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\N-background-left-172.0.png",
+      "sha256": "cf36984bef900dacb5ad73ecd5428cc44ff617c4bd7538cc3f14fbd991e64028"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-background-left-174.0.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\N-background-left-174.0.png",
+      "sha256": "8fd69601491eed28a22e2dfb9484dd32cbea1db032eda1f0b71ebc32adf65a41"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-background-left.jpg",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\N-background-left.jpg",
+      "sha256": "bdb134d189312ea14442e91e70af9c5b0c613d8ad45f88a0219d45b69366f712"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-background-right-166.0.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\N-background-right-166.0.png",
+      "sha256": "b487d68858534ad87f64bdf53eda80705d4b85690bcf758af4c2ec6b59156ee8"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-background-right-168.0.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\N-background-right-168.0.png",
+      "sha256": "e8271cfa90f41e398cb762dd731bce767d0c573a09ecd974866b40499b7b91eb"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-background-right-170.0.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\N-background-right-170.0.png",
+      "sha256": "dcbe02f73d55b1b13e8125dd0786e274dadf9af4b3599a90458a456eacdac640"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-background-right-172.0.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\N-background-right-172.0.png",
+      "sha256": "9556cca71f5a0ab06e873ddae92db5d41f5408a80a16c9fa2826b4f460822847"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-background-right-174.0.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\N-background-right-174.0.png",
+      "sha256": "6e6d9234a678924844340047d2333272d25cac30b85c805faf1aecd60eb08e81"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-background-right.jpg",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\N-background-right.jpg",
+      "sha256": "31e29c87f5f074322654a1d8919c9e5f8918be8f099bb5776060f7b9fb09cd58"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-rear-168.5.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\N-rear-168.5.png",
+      "sha256": "3f8645487c86882429c4ca8d9e379acf5f2da6b8b693f2c3a582ec44e4ba91ce"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-rear-169.0.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\N-rear-169.0.png",
+      "sha256": "17c41bbd5845893b496b0e33487f02d0cdb3760d2e2137c6b9954ef3cff650fc"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-rear-169.5.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\N-rear-169.5.png",
+      "sha256": "1d67cc1a2f09be098576d5430f5e402d41cdbc63b24a28514dea0fd5af0cb35c"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-rear-170.0.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\N-rear-170.0.png",
+      "sha256": "58457d62e39f7022e380d5c6eda72a910db69484618940ffac0acf497a0323d0"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-rear-170.5.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\N-rear-170.5.png",
+      "sha256": "38ed7f95d3c522b1485a3a65344ef269cd08a5e3bff54a99d4cf038d18ea40cb"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-rear-171.0.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\N-rear-171.0.png",
+      "sha256": "33bc37eb5261287920fe76bfad9e4714246126e7c33b4da005d3df2ef6b4d52a"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-rear-171.5.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\N-rear-171.5.png",
+      "sha256": "a902f73222cd803ef7f674c7758a6a6416e5728fc66e4666f34ce3594ec38dbd"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-rear-172.0.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\N-rear-172.0.png",
+      "sha256": "8aa72bdccee785232c7d7ea458646cb3328320e3be63c3cb076e06b2f2f40603"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-rear-172.5.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\N-rear-172.5.png",
+      "sha256": "19a12de23bc32d1154f79782b605c6b42ad4a16d760a88a746de027bccabbaf5"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-rear-173.0.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\N-rear-173.0.png",
+      "sha256": "d2a14f436b1de44441212fe71c59158d89cce9ad0f6afd97ce2e46709a2d4a53"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-rear-173.5.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\N-rear-173.5.png",
+      "sha256": "2855dfacccfc1be607d59540c07702d2ed09d6a96a2aa9f0de34c37d6c30336e"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-rear-174.0.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\N-rear-174.0.png",
+      "sha256": "5ba03e3fe5f2d2e2c074aad857d8003bce09ec2da0e2e8a7f341ec888e2dfc96"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\N-rear.jpg",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\N-rear.jpg",
+      "sha256": "8a3223996d1443c25ffb2d359a099cac86ef78867c1c8d3c41cd489f0c8c9d04"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\P-connector-43.8.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\P-connector-43.8.png",
+      "sha256": "3b4cc761b814c7062a596d8ace4a03dc9ed5ebb9507d52c5b4cc2477c6866918"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\P-connector-43.9.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\P-connector-43.9.png",
+      "sha256": "e6e6966d4b65a5ef86190e23eadd36c0a3d550fc2c058f59404df72f9f97fcc7"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\P-connector-44.0.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\P-connector-44.0.png",
+      "sha256": "6a05a9b932e7607081871af0bedd6ba394f3db4e861b571d82415bf0dd8930b0"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\P-connector-44.1.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\P-connector-44.1.png",
+      "sha256": "d6834b704f034b8fc3d7063e22402b6f926068601b3798f51856555735dc5127"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\P-connector-44.2.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\P-connector-44.2.png",
+      "sha256": "fe40036e4a9d6cec6637de9874f3b9f8329059933101bbec8c95d8660f35ae5b"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\P-connector-44.3.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\P-connector-44.3.png",
+      "sha256": "35f7604e18b35db4351fffbc24a939f838ebd8a786d4235f71aa030455803145"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\P-connector-44.4.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\P-connector-44.4.png",
+      "sha256": "3bb02a4c65e2eca8908d9e4cab588fe1d7ca9fe4de5c5f8275882ea2be108596"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\P-connector-44.5.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\P-connector-44.5.png",
+      "sha256": "c33987d735cb14e07bd34fc4fd78a02b1b4b673a1b22b1af43f3b0cbd9142d5f"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\P-connector-45.0.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\P-connector-45.0.png",
+      "sha256": "dc632c2cae8564bf854373b82f9a8fe508d1bcce9a1c5f9bf8f9292d10ded423"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\P-connector-45.1.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\P-connector-45.1.png",
+      "sha256": "7075d8c7e8a605f7e23d3032eeac3cbb33b3952ac1538a61b88ade1be1e96ff2"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\P-connector-45.2.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\P-connector-45.2.png",
+      "sha256": "b98a645178662c6f13577f07d47b275d0f747041cc5f6958d77e41c66bff6c16"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\P-connector-45.3.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\P-connector-45.3.png",
+      "sha256": "0928c3bce32c21d01ddf7e6f1aa64155ec0ae45ed05da30b81c4f75a77b7b127"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\P-connector.jpg",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\P-connector.jpg",
+      "sha256": "7d300dbce82c424041228a2749fa3e3547791ac64a5253112bf6de91f9d63e69"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\P-line-framewise.jpg",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\P-line-framewise.jpg",
+      "sha256": "62746e78f514b2cc7b5add53f13e84d0de5c5714be9f80667a3a62c766ad1f99"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\probes\\pixel-difference-aid.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\probes\\pixel-difference-aid.json",
+      "sha256": "48a00c59d7cb67319da62027982de15acac541337a80ba63bd8f30db04ca21bb"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\publish.py",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\publish.py",
+      "sha256": "b8b35ca3b6e62ddea1ff5ff5ef18c6b8a7cb2e252586b7fd9972957d46e1c1c3"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\records\\NEW-N\\observations.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\records\\NEW-N\\observations.json",
+      "sha256": "8b62d3cb512e7983d1836e9188e1272d9c7c82a23d23f5ec9fd1687708f5bee7"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\records\\NEW-N\\observations.md",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\records\\NEW-N\\observations.md",
+      "sha256": "4a8e23c7d7518e4c3c3eab01f0d3e6c2f51de80fd47bd7d1af53a34a08d844e8"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\records\\NEW-N\\review-ledger.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\records\\NEW-N\\review-ledger.json",
+      "sha256": "9ea5ab49350bd63ff2f7291b529bf8264ac213ad8dfaafc6295e042b9c12bec1"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\records\\NEW-N\\validation.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\records\\NEW-N\\validation.json",
+      "sha256": "cc5fd5cbabb2dba480b99994aa427a9f22ca1e3fd955e0b9264317a6421c6503"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\records\\NEW-P\\observations.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\records\\NEW-P\\observations.json",
+      "sha256": "89c2fce3d10ff5a226d9b651a842f167cabbcd34d9764a8cbd484429ebd00a73"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\records\\NEW-P\\observations.md",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\records\\NEW-P\\observations.md",
+      "sha256": "7a7af6b10947684c068fe0052c8716582ef62c9a516e1b3ecabc908f5dfe221b"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\records\\NEW-P\\review-ledger.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\records\\NEW-P\\review-ledger.json",
+      "sha256": "6d9a9450d048fba51130794209f19cffd23dc51fb9328757eefdd04583627865"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\records\\NEW-P\\validation.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\records\\NEW-P\\validation.json",
+      "sha256": "cc5fd5cbabb2dba480b99994aa427a9f22ca1e3fd955e0b9264317a6421c6503"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\regression-composition.py",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\regression-composition.py",
+      "sha256": "a1d4f006e57827bef8c70d204191e4ee43aa54236de32650d99fb0fa18afdccb"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\regression-core.py",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\regression-core.py",
+      "sha256": "ad4d1edb2ee7a0c57540914bbd606a6bbc90206398eef4f1dc237bf9210f8210"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\report-qa.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\report-qa.json",
+      "sha256": "e25acb3aa6c760526a2aa03ed29dfd8179ad569f38342404ea2092b9de81a923"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-coverage.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-coverage.json",
+      "sha256": "bde34d183ddfea54c7bb89967b2bf26fd3b470f20783baeb54d49cd137c621d4"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\adapter-scope.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\adapter-scope.json",
+      "sha256": "cd199e938759d0a43f4a197665faeec64da2518fa72d439dbd15411658ace750"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\board-1.jpg",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\board-1.jpg",
+      "sha256": "6fcd8d2f1b733c3e786529f0326583f14f840ff8fe4a0ffbc0765f91ea14aad2"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\board-2.jpg",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\board-2.jpg",
+      "sha256": "cb39a762572c4dfed54e8fea69661425c30f86def11d7d399160ec0c07ae7846"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\board-3.jpg",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\board-3.jpg",
+      "sha256": "a228ed03ff56060de0fe6d53a3238b2682c859fd990ee5cc8ffa4dd73e070603"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\f_00000_000.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\f_00000_000.000.png",
+      "sha256": "6b8b03de7c2dda538eabc4211c7164c5606ce11319161eee167a624c98e6cf9b"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\f_00150_005.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\f_00150_005.000.png",
+      "sha256": "3e81253312be562d0724086eacefb134e6bc20079d33bed80b68b70aa029050d"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\f_00300_010.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\f_00300_010.000.png",
+      "sha256": "2f39c7ad2d6c4863ca7d2627a40e4110e626556f3acc01eebf19d2a9bb96598c"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\f_00450_015.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\f_00450_015.000.png",
+      "sha256": "2fe3898fdf31289365f444870ffde2d83b96b127db136a0c3dd97d215d963ebd"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\f_00600_020.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\f_00600_020.000.png",
+      "sha256": "f2926f19fe9208202f1b3778330ab5f36a67bca6789e1ab363c31e59f13c9516"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\f_00750_025.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\f_00750_025.000.png",
+      "sha256": "187a00cb2e029536c3ec5b2288bd51a4e3132a4d336a199ee94475f099975ceb"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\f_00900_030.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\f_00900_030.000.png",
+      "sha256": "858559f3b0316d825fb5c045af75840fa8a2e2f52149293feb038712392ee9ec"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\f_01050_035.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\f_01050_035.000.png",
+      "sha256": "61dc058f9efae32c2e319aacb2fbe5f576fa3fac4fcacef904cdf584aef3e346"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\f_01200_040.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\f_01200_040.000.png",
+      "sha256": "0b9a111bc4725297d71957036fae6bc30089d8c4cd7f6103509626d27db73abc"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\f_01350_045.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\f_01350_045.000.png",
+      "sha256": "7ab307410750fe43176c2ef96c9701103ca95b3f01fa2f74169ce06b83c3b534"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\f_01500_050.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\f_01500_050.000.png",
+      "sha256": "b9df9c7771c45d724d9410801607a513b2a921412c50f1e1182e14ae1861ab8b"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\f_01650_055.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\f_01650_055.000.png",
+      "sha256": "5c8f83f4a20be2a723c945f8a0b2d1941b1a9670265379c6965e802847f710d5"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\f_01800_060.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\f_01800_060.000.png",
+      "sha256": "de91115ab82b745d5cb8b5dea1ca007214f820d66b9d4771e74336ae914b82de"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\f_01950_065.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\f_01950_065.000.png",
+      "sha256": "d5cf2ab2a434c5a8b088e569f2af296f8ca72f48319b9a09d1434923f2f7aea1"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\f_02100_070.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\f_02100_070.000.png",
+      "sha256": "a512392d8da3c7e024690e5f9546581a5f57d35e53e486e8b32830a5438652fe"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\f_02250_075.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\f_02250_075.000.png",
+      "sha256": "599151ea9d8a6780cf39bc07177dd41a1773760bc3648c8acb47a8b40e55a49b"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\f_02400_080.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\f_02400_080.000.png",
+      "sha256": "93d1834f4111da762b530a8c5123b140332c43d07f2b37ed8636f9066d8e9727"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\f_02550_085.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\f_02550_085.000.png",
+      "sha256": "fa9e11e633b01dbe40b7cf4bd006cbbd63626efabce970c1d4ef1056b5e33b2b"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\f_02700_090.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\f_02700_090.000.png",
+      "sha256": "a0f565033e909eb5e744b5440a08bb0f35f10baa5f11954ec91fc3d4f298d415"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\f_02850_095.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\f_02850_095.000.png",
+      "sha256": "922833cddd8d7ef7b6d2110dea6f19777a45e26870ac91e258535cdb99dd4785"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\f_03000_100.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\f_03000_100.000.png",
+      "sha256": "c559df96e667dc1a045b6aec82e966b660e7f3d843f1678f0b137878c8ba1bc3"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\f_03150_105.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\f_03150_105.000.png",
+      "sha256": "84824d6bb92ecda5060e94ad166f224937cdac71e6be8de9dd2523e136c5503f"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\f_03300_110.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\f_03300_110.000.png",
+      "sha256": "93bf00c896c306946093182287ec54a889253be1f07b2eb180bc6b924c44444c"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\f_03450_115.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\f_03450_115.000.png",
+      "sha256": "51390d0f9b7bfd12f45c4112b4f4171da8b0fb56f026ffdca11151c0f99aed80"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\f_03600_120.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\f_03600_120.000.png",
+      "sha256": "1f25cfa74593f60ae7526b9b5ddc778b36c4f080e3db9434537d58cde5a20df3"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\f_03750_125.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\f_03750_125.000.png",
+      "sha256": "60e412e5fa38f44098f60e01966867111f7431ec1c81a3aac2199d3af8d62945"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\f_03900_130.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\f_03900_130.000.png",
+      "sha256": "a5db0f38d68ece9b2da73df04453010b964b0c412dfea3a972d2fddeb6446d03"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\f_04050_135.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\f_04050_135.000.png",
+      "sha256": "29ef33c88049f578830b36aa4bf7876a8e7785237b47016077cea02b90fc8a81"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\f_04200_140.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\f_04200_140.000.png",
+      "sha256": "abf9de312f6ab9a1d45d0c65575a689f10e7540012ff690a2bd43db327bcb5c6"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\f_04350_145.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\f_04350_145.000.png",
+      "sha256": "e5573052504078b7194d865d91fe82c5e8507acf697e3d4c7e2e92ff95b92e8c"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\디코딩전_메타데이터.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\디코딩전_메타데이터.json",
+      "sha256": "e3e4baacdf1b9cb135b087a4d02fe49136e33037ee1eded115f95319f45b823f"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview1\\실행기록.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview1\\실행기록.json",
+      "sha256": "6ffe1766fa170a6da45cd4521d47f8c0fb6b44a72ab2a856ab1464f3567b45f4"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\board-1.jpg",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\board-1.jpg",
+      "sha256": "9779e3896c9774e31da01dcd7d1b3adb2bb768f17f82b1d4877dfa3bd4060b29"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\board-2.jpg",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\board-2.jpg",
+      "sha256": "bf0b9621203d479902553f760132b55c685750146fe9155942a18e3c05bf4819"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\board-3.jpg",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\board-3.jpg",
+      "sha256": "6e150626956a54e800102c610e81afa832f3df751e650b98e5507fcfd028f064"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\f_04500_150.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\f_04500_150.000.png",
+      "sha256": "053cae2a46eb5197b8c9f43d812e0cfecb9c8b3f7a510b0c2c4444b525b447f3"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\f_04650_155.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\f_04650_155.000.png",
+      "sha256": "c7aab17c6867aa907c78e198715601075a518cd8b197fa6d8ce1be0eb90ceb92"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\f_04800_160.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\f_04800_160.000.png",
+      "sha256": "4e5d17fba19fd79228b16ae6f8a5c94d9aa0afa05464ff6c75361240c6502072"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\f_04950_165.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\f_04950_165.000.png",
+      "sha256": "c7a7271ba7d9237305400c24cbf04ff8d0eef40a6a827b136921fff192c75341"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\f_05100_170.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\f_05100_170.000.png",
+      "sha256": "9f85a861999c88ef19770459cde0431bf3fefc907c729ab673a61714fb7eba3f"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\f_05250_175.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\f_05250_175.000.png",
+      "sha256": "96d96f211bc4269dc519d1c7e50b7a879cb9d5c1e522adc0958fc551eae1ad95"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\f_05400_180.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\f_05400_180.000.png",
+      "sha256": "022314a910706edc8e769ebd77ada3e51d7986be41e0ad375a114c32c02b6257"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\f_05550_185.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\f_05550_185.000.png",
+      "sha256": "331ea31bd1aae4d468560b2f72458331f97d88afb2d2b0ba72e5df9f3c510e1c"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\f_05700_190.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\f_05700_190.000.png",
+      "sha256": "5349271fcf471462b9fa1dd47c306f065e75ce790d3b93cb652a021d9b91a17b"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\f_05850_195.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\f_05850_195.000.png",
+      "sha256": "1989562e25bcc5c490778feb7590252a3f2ca5c4139b19e82288f0406e544713"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\f_06000_200.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\f_06000_200.000.png",
+      "sha256": "96c75bd99eadf50149a09c278a6319cd01d171668b9c2f057ffa90726358db89"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\f_06150_205.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\f_06150_205.000.png",
+      "sha256": "7197a5dc8a90867c01f0029ce537b6d74ff3c40cc30abe840886acb81343ae0c"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\f_06300_210.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\f_06300_210.000.png",
+      "sha256": "eec0c63a1a9d225fb801015ef5d611c22bfdc526f767ea5ad6585fb441f7322e"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\f_06450_215.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\f_06450_215.000.png",
+      "sha256": "abcd3907b196eafeb2f67a4871e8a89a10aaa0f6fce9b4fc74e1c4689b8608a5"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\f_06600_220.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\f_06600_220.000.png",
+      "sha256": "bc64ee0a986e34dccb8272b3eb7ee8c78dadcab6f03d758aae5a47615fe88a7e"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\f_06750_225.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\f_06750_225.000.png",
+      "sha256": "8471ccd2a3e9408b026c2dfa8edc6429bd83a5bf91b5baea9701186dadf3f6f3"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\f_06900_230.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\f_06900_230.000.png",
+      "sha256": "1c2729df7b6d2c667f9396dab887c52962530c8378c4c1337423d38bc4314703"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\f_07050_235.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\f_07050_235.000.png",
+      "sha256": "019a36c13d221eaf3fa6fad53bbcbc65f513ca6532f553e379727c35bfd5cefa"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\f_07200_240.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\f_07200_240.000.png",
+      "sha256": "9b5a65cd67a60aca5d5a585150a0360ee98abe92f55a6579f6a4cb31bee6a969"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\f_07350_245.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\f_07350_245.000.png",
+      "sha256": "1f5e213fa900362fae26cc111cc4f8ad04446abf56c1887282813e3201816abe"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\f_07500_250.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\f_07500_250.000.png",
+      "sha256": "154b17bb0350dc05e4623f89fd604ab2f93e3a477f177c54126568d99be19203"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\f_07650_255.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\f_07650_255.000.png",
+      "sha256": "4e7781cbc592cf43d1d859033edbbfeaf30f1f1d4e3665905d6cfc3cd26e48f3"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\f_07800_260.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\f_07800_260.000.png",
+      "sha256": "00cff7522cf5e2d332fabd79a52b42527d201e1aa521cb3810e161ada57bef16"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\f_07950_265.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\f_07950_265.000.png",
+      "sha256": "93068be7ad3d550789bb95a98bbb461676b58edc1039b3a2cc92e9ba5f316c83"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\f_08100_270.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\f_08100_270.000.png",
+      "sha256": "e329f2f985829e05b27af23ec03c7f051952bc3c57a72dd356b01ca0e24c15af"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\f_08250_275.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\f_08250_275.000.png",
+      "sha256": "f0dc1263716a18c0ac292dde977fef00413993216f701f4a40dca467588b7ddd"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\f_08400_280.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\f_08400_280.000.png",
+      "sha256": "bcff458ed8dd93032ce6e0ec81289c45d7b36bfb8c77ac4499e245a741078866"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\f_08550_285.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\f_08550_285.000.png",
+      "sha256": "5212c89ef2687c0520991e2a5b400f28c62f5760ae5d1ef932787a39c8b7a0b7"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\f_08700_290.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\f_08700_290.000.png",
+      "sha256": "f707bd8e42365ccde897febaed7133f722fa30a6b02091e6cf66c30e11a507e7"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\f_08850_295.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\f_08850_295.000.png",
+      "sha256": "cdff5b00ce411c2be8339881a6e570dd591a54da4fd3c9ba03f4a6ccf3f6b23d"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\디코딩전_메타데이터.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\디코딩전_메타데이터.json",
+      "sha256": "f88a0bd9be04fd840cb71561e29ce369c44f1288f73b364fe8fe2b6378dd978a"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview2\\실행기록.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview2\\실행기록.json",
+      "sha256": "6016024cd7923f93e5caf652cbb225c4a6294c6f1684192f1a05d548bbf861cf"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview3\\board-1.jpg",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview3\\board-1.jpg",
+      "sha256": "ce2bab40a3292b7ff52bbcf5376f7e6e5ee4087c89a9eefb28175d57ef9f7102"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview3\\board-2.jpg",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview3\\board-2.jpg",
+      "sha256": "43feb5c4d847135dc993417fd91506a03fb07e5f5e479fae187f56d1b321cd32"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview3\\board-3.jpg",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview3\\board-3.jpg",
+      "sha256": "e29993c17256da17ca9a7cdf75846affcbb94c9755818b8d050b04dd34e50f2b"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview3\\f_09000_300.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview3\\f_09000_300.000.png",
+      "sha256": "9439aca2845d5b2f26caca80ee58664cd5984a31df2f375e4886b91a9ec1ead9"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview3\\f_09150_305.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview3\\f_09150_305.000.png",
+      "sha256": "791a61b8018fd4054d01997f1fbe7c8844d440047abab95c1c3f0fb56f125da8"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview3\\f_09300_310.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview3\\f_09300_310.000.png",
+      "sha256": "70c542c6b58cde804a88f670333e69e1ec9e62a8c9883c8604f57eaf13206b87"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview3\\f_09450_315.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview3\\f_09450_315.000.png",
+      "sha256": "6176510fffdcc85cd95f7f902d779f7775efcecdf72cccaaa7cd14bcdffb2339"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview3\\f_09600_320.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview3\\f_09600_320.000.png",
+      "sha256": "459362a99bc06fa5798fcd5eceeaf35d2ec9f5243a3eb709e1280a873f78804c"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview3\\f_09750_325.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview3\\f_09750_325.000.png",
+      "sha256": "1342475274062cb5cb445e42cb055830a60b273fa5ca0c554d0b02603ac089b0"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview3\\f_09900_330.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview3\\f_09900_330.000.png",
+      "sha256": "7fea32bc6c42e73a45789b7619041ca9f0ed837c76835a0dcd2895e4a81e79d9"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview3\\f_10050_335.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview3\\f_10050_335.000.png",
+      "sha256": "c2b58276b63438e722a38d161e73ad763778689cf66ffea21f6ee3bc720a0a46"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview3\\f_10200_340.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview3\\f_10200_340.000.png",
+      "sha256": "0363b902850488ab9ba1778abb68336871c88dfcf811a09690b68a6d37fef9ca"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview3\\f_10350_345.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview3\\f_10350_345.000.png",
+      "sha256": "121834337aa2518172d38582bc1786444b0680a18423d08fb77250ce755176db"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview3\\f_10500_350.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview3\\f_10500_350.000.png",
+      "sha256": "2d7ec16e714bcf1a6c5cfe9b338b23c58d1e9992691ff441235fbbf7780455c3"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview3\\f_10650_355.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview3\\f_10650_355.000.png",
+      "sha256": "b486ff251a3038d0008193aff8e079d82a447842dcee26f89afcf598c4a954fb"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview3\\f_10800_360.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview3\\f_10800_360.000.png",
+      "sha256": "d95af95e91dff0dd65afcd873888af6cd19ab63ba58115d07ad7b2a32e9a5839"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview3\\f_10950_365.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview3\\f_10950_365.000.png",
+      "sha256": "5022fc2fb306e9173622eac279d12fe85f136373ab3fb9fe6d834901db975555"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview3\\f_11100_370.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview3\\f_11100_370.000.png",
+      "sha256": "523501cffd1b3d3614c3fc06d9835f677de97bca0bc4211129587eb3876d747a"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview3\\f_11250_375.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview3\\f_11250_375.000.png",
+      "sha256": "808274a35d917c069be59cacda7d56a25d92811d0200ca327fd50ad7204882b8"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview3\\f_11400_380.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview3\\f_11400_380.000.png",
+      "sha256": "cc69952d2a461d3cc4c4e6004a757f1435d572066734a63465ccaa0fb53232d2"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview3\\f_11550_385.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview3\\f_11550_385.000.png",
+      "sha256": "0516e199511b1caf53805b1d664a00581230f52cc21eec50dd5a6e0831c4b20d"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview3\\f_11700_390.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview3\\f_11700_390.000.png",
+      "sha256": "b203910b05ac357ad256b5fb4984a0a05467cf87e292591051f45a17eca45748"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview3\\f_11850_395.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview3\\f_11850_395.000.png",
+      "sha256": "d642ee4549f25631ce1ff1abad6c78e4ea95efb38180b3beee07d146183ccff9"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview3\\f_12000_400.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview3\\f_12000_400.000.png",
+      "sha256": "5d00e136aa6fc2782d8ade0c66cec66cd12a71b7426f348015c64357fb7a637a"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview3\\f_12150_405.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview3\\f_12150_405.000.png",
+      "sha256": "80738d1a66be10978359b6da4e41b7dae9c3cc45f99896b6cb98fc58732d8587"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview3\\f_12300_410.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview3\\f_12300_410.000.png",
+      "sha256": "8fdb1fdfd7b271034960298a06ac60362555881b4b5a762e2197b5c4667e2143"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview3\\f_12450_415.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview3\\f_12450_415.000.png",
+      "sha256": "9d8dfe8fcb5c33a8f1ff0224a65e41903ba419694d2825bf497094800e26e851"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview3\\f_12549_418.300.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview3\\f_12549_418.300.png",
+      "sha256": "dfdfba8ec328d2a04adc99973dcf10a8885841dcbcc4cadf150cfa57ce7f8a1d"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview3\\디코딩전_메타데이터.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview3\\디코딩전_메타데이터.json",
+      "sha256": "d136a008abc67d2ae7cdbd2e69334ff132fc578b308f1c4c11d710bf47f6886f"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-N\\overview3\\실행기록.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-N\\overview3\\실행기록.json",
+      "sha256": "a81e2efb405401f659d3ce011adfe5699f43ab919f513e7146d1dcca900a2fe5"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1\\f_00000_000.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1\\f_00000_000.000.png",
+      "sha256": "3d26f3463a1a524f26ab0f7e66d03f6e2b24b1160d1fd9120ebb47c38a595716"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1\\f_00150_005.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1\\f_00150_005.000.png",
+      "sha256": "7630f68c25b1d3c82752e6f8f0ef40366c58e3b06f5773f24b9b8a876ecd43c7"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1\\f_00300_010.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1\\f_00300_010.000.png",
+      "sha256": "0d29c17d45ef1dabdef22b72ab6b8ea4a0416b5a45e122450750177f4ae77eb7"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1\\f_00450_015.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1\\f_00450_015.000.png",
+      "sha256": "fe6fbd562cfb4e929f36952830b4c51efd3dee7d1d8041e74145d3f82058d565"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1\\f_00600_020.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1\\f_00600_020.000.png",
+      "sha256": "1a86b2756e647959b637005c51ac667f923a34a1e5b6a812f3b08f652bbffeaa"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1\\f_00750_025.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1\\f_00750_025.000.png",
+      "sha256": "b0c7b02e5b871784cc48a5f5119f05c7a2931cdcf5c78398ef1d6aa555fe5301"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1\\f_00900_030.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1\\f_00900_030.000.png",
+      "sha256": "d740f6375db8bbfa9e6ee006df7c1e4962cf53f0587b556921168e9c21b6332e"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1\\f_01050_035.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1\\f_01050_035.000.png",
+      "sha256": "bfd56e75ebfac664f14e1b68850564a5705c25359c4f6c8228f9552fec1eec8e"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1\\f_01200_040.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1\\f_01200_040.000.png",
+      "sha256": "05991fa350765df832b20dfced196991f2a80ef75f11e7210d21bce11c6edd28"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1\\f_01350_045.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1\\f_01350_045.000.png",
+      "sha256": "dcf7ba75a5f92ad9c64f7de7fed75eec53abbd7aa743e9cb78855b5e5cf276a9"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1\\f_01500_050.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1\\f_01500_050.000.png",
+      "sha256": "ef0169d102b8ab4c853d02745eef7fce57305b366ea4b59b9249c4b59131c8c6"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1\\f_01650_055.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1\\f_01650_055.000.png",
+      "sha256": "adefd2b360d452a06ece9db3f33a37185cc411ad8d36534e2bbd5e9d23e17bcd"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1\\f_01800_060.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1\\f_01800_060.000.png",
+      "sha256": "59de439b83dab8754205a473a28255cf2aba9d3c4bfd3b6da0ebdf621cd6c5e3"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1\\f_01950_065.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1\\f_01950_065.000.png",
+      "sha256": "15f740869035293d47f47bc768784e1b24c20eb322a35e027ad7bd6b4dfde75b"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1\\f_02100_070.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1\\f_02100_070.000.png",
+      "sha256": "657289c00b7f727b229122e1c83a653f33e7cbd756c2e1c41f043a1f14e393f6"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1\\f_02250_075.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1\\f_02250_075.000.png",
+      "sha256": "78cf6b1f8657f45ebb6e9ec89ef3bf15add79675b11cada14238d79699df1671"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1\\f_02400_080.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1\\f_02400_080.000.png",
+      "sha256": "056c89a1ab4d32287dc9a983bd55cafa057bc7c8a664b62d357ebf18ac73ade8"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1\\f_02550_085.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1\\f_02550_085.000.png",
+      "sha256": "f617ec65d8682b50892a61a9553f2b679f5a6569a5975ead8ded00ac204dd08d"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1\\f_02700_090.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1\\f_02700_090.000.png",
+      "sha256": "69cf6613757dd6fa6594ed1b095e05d0e3345bc846483e00343dbf66465f197b"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1\\f_02850_095.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1\\f_02850_095.000.png",
+      "sha256": "10871d9ac93cefbca4a8874833e92ad8d80e21c51299458f429a07b46241c0c4"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1\\디코딩전_메타데이터.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1\\디코딩전_메타데이터.json",
+      "sha256": "543030e97738cdc59f954c450bb5352e6989700e10a512a8844290c6c61dc2b7"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\board-1.jpg",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\board-1.jpg",
+      "sha256": "9ff9142e7fbf5cc9616306a34e5a74c6abaea2e34e0d0be951ec25a81cfdfb08"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\board-2.jpg",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\board-2.jpg",
+      "sha256": "3c14ce9daf56ca71c0395978745891f43b3c312027c6b1f0a2da6dcfdddf6955"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\board-3.jpg",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\board-3.jpg",
+      "sha256": "06068812ccdf80e641829727dd797e5daf355455ed227a64365a36fb708c953b"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_00000_000.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_00000_000.000.png",
+      "sha256": "3d26f3463a1a524f26ab0f7e66d03f6e2b24b1160d1fd9120ebb47c38a595716"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_00150_005.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_00150_005.000.png",
+      "sha256": "7630f68c25b1d3c82752e6f8f0ef40366c58e3b06f5773f24b9b8a876ecd43c7"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_00300_010.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_00300_010.000.png",
+      "sha256": "0d29c17d45ef1dabdef22b72ab6b8ea4a0416b5a45e122450750177f4ae77eb7"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_00450_015.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_00450_015.000.png",
+      "sha256": "fe6fbd562cfb4e929f36952830b4c51efd3dee7d1d8041e74145d3f82058d565"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_00600_020.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_00600_020.000.png",
+      "sha256": "1a86b2756e647959b637005c51ac667f923a34a1e5b6a812f3b08f652bbffeaa"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_00750_025.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_00750_025.000.png",
+      "sha256": "b0c7b02e5b871784cc48a5f5119f05c7a2931cdcf5c78398ef1d6aa555fe5301"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_00900_030.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_00900_030.000.png",
+      "sha256": "d740f6375db8bbfa9e6ee006df7c1e4962cf53f0587b556921168e9c21b6332e"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_01050_035.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_01050_035.000.png",
+      "sha256": "bfd56e75ebfac664f14e1b68850564a5705c25359c4f6c8228f9552fec1eec8e"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_01200_040.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_01200_040.000.png",
+      "sha256": "05991fa350765df832b20dfced196991f2a80ef75f11e7210d21bce11c6edd28"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_01350_045.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_01350_045.000.png",
+      "sha256": "dcf7ba75a5f92ad9c64f7de7fed75eec53abbd7aa743e9cb78855b5e5cf276a9"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_01500_050.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_01500_050.000.png",
+      "sha256": "ef0169d102b8ab4c853d02745eef7fce57305b366ea4b59b9249c4b59131c8c6"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_01650_055.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_01650_055.000.png",
+      "sha256": "adefd2b360d452a06ece9db3f33a37185cc411ad8d36534e2bbd5e9d23e17bcd"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_01800_060.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_01800_060.000.png",
+      "sha256": "59de439b83dab8754205a473a28255cf2aba9d3c4bfd3b6da0ebdf621cd6c5e3"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_01950_065.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_01950_065.000.png",
+      "sha256": "15f740869035293d47f47bc768784e1b24c20eb322a35e027ad7bd6b4dfde75b"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_02100_070.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_02100_070.000.png",
+      "sha256": "657289c00b7f727b229122e1c83a653f33e7cbd756c2e1c41f043a1f14e393f6"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_02250_075.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_02250_075.000.png",
+      "sha256": "78cf6b1f8657f45ebb6e9ec89ef3bf15add79675b11cada14238d79699df1671"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_02400_080.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_02400_080.000.png",
+      "sha256": "056c89a1ab4d32287dc9a983bd55cafa057bc7c8a664b62d357ebf18ac73ade8"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_02550_085.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_02550_085.000.png",
+      "sha256": "f617ec65d8682b50892a61a9553f2b679f5a6569a5975ead8ded00ac204dd08d"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_02700_090.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_02700_090.000.png",
+      "sha256": "69cf6613757dd6fa6594ed1b095e05d0e3345bc846483e00343dbf66465f197b"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_02850_095.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_02850_095.000.png",
+      "sha256": "10871d9ac93cefbca4a8874833e92ad8d80e21c51299458f429a07b46241c0c4"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_03000_100.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_03000_100.000.png",
+      "sha256": "ff6cb6a501055860656e520d6695330eace4a98a2d57ad3c7ab54b8e39da7cd9"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_03150_105.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_03150_105.000.png",
+      "sha256": "2a711477bb47889b332c6bd224418790e25f05089641bf015f91c47e92b95b3d"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_03300_110.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_03300_110.000.png",
+      "sha256": "da1f1bbeea88514a4f22425d08e24e44f74bd8a56b92e011a76994fd87a1e259"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_03450_115.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_03450_115.000.png",
+      "sha256": "71ab93d62010b5ee78b9bd863c2ce26f069b607b511fa0d04e9f8c0afa2405a7"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_03600_120.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_03600_120.000.png",
+      "sha256": "7d2a2890ec1ec7fb25ed879eeee13355c65d822b2c2bc1d5d5b48d18680727ac"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_03750_125.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_03750_125.000.png",
+      "sha256": "e16b1d1644488a9a93600907c4c97a52c2750ac0a6ac1b177d200d8ea5ee0780"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_03900_130.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_03900_130.000.png",
+      "sha256": "c059a9c78184c4e97b06d1c1d6cac2e82c2256085ab92729c53dd66e61883a48"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_04050_135.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_04050_135.000.png",
+      "sha256": "9eb185d4be3c412edfba7ac4c3e3d482a4dd89dbc6293487c0a389a5758f4753"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_04200_140.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_04200_140.000.png",
+      "sha256": "906f2906b925253b401fc332c6ecec2907fac034a6579f36392ca0e5b8763bcc"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_04350_145.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\f_04350_145.000.png",
+      "sha256": "26f19f6cad7027028754005b7880d643a89a94ccffb11986bfaa540d570498ef"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\디코딩전_메타데이터.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\디코딩전_메타데이터.json",
+      "sha256": "03c98dcf452826665dd7b07476680f244771b020754ff08c461d7d11e10c8c7e"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\실행기록.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview1_retry1\\실행기록.json",
+      "sha256": "e80e163c1faa8ba321d29ab872a8bab48dd1c374328045dd2c7c68f0e8cf6617"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview2\\board-1.jpg",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview2\\board-1.jpg",
+      "sha256": "556ad4d2c3c960e2cd19477b43669ded5ef95fcc4a2c1668a3f30058fb52060b"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview2\\board-2.jpg",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview2\\board-2.jpg",
+      "sha256": "b301fde621a7ae06303baa005cb4163464bb2a17210b6185fae63bda43a9ef1d"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview2\\f_04500_150.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview2\\f_04500_150.000.png",
+      "sha256": "2562b8a344f4a254807c74163e7ee840dc285a87e8175fc1990a71ad3e926d8a"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview2\\f_04650_155.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview2\\f_04650_155.000.png",
+      "sha256": "1a2a4e056cc649133e84927d7bb0cf021c08c61eddb214dd62ab2ae946fa697d"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview2\\f_04800_160.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview2\\f_04800_160.000.png",
+      "sha256": "67f8dfcc3a3f47f6ce28f4546f2b66db9198877d92bbd56becac42ef3a7b1a4e"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview2\\f_04950_165.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview2\\f_04950_165.000.png",
+      "sha256": "c34bb39e24f485b9026bda623c08688ffe83778cc8083ef8f25f91a8b7322bad"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview2\\f_05100_170.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview2\\f_05100_170.000.png",
+      "sha256": "5d0d635ea6abdc3df9d5cc4ec839930664e85a7043c8861eda44b451c695a90a"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview2\\f_05250_175.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview2\\f_05250_175.000.png",
+      "sha256": "81c20db227eab43b537993525780d911eda8f9279ba9d96b5ebe5598eaf375ce"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview2\\f_05400_180.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview2\\f_05400_180.000.png",
+      "sha256": "339df23217f3dfe168b4f49aa9ba763fc3dd027ce0a56d12122032dd5df11e9b"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview2\\f_05550_185.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview2\\f_05550_185.000.png",
+      "sha256": "3b911331d624faf302f325a0993f7a738b2d9f6f298ce96fb70f441d34e2fe0f"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview2\\f_05700_190.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview2\\f_05700_190.000.png",
+      "sha256": "b7f1d7cda008d566b0e3d78cbab26406770cf5aeb44037b84d33c44fbc8152ce"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview2\\f_05850_195.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview2\\f_05850_195.000.png",
+      "sha256": "6168dacc4e42aa90ad37d9bdb9ef3580bac342a6742228983b789b238bea9106"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview2\\f_06000_200.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview2\\f_06000_200.000.png",
+      "sha256": "3b6f741f99d8dbf900b748a59006a23c91273457b98838bb49bf8a192903f269"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview2\\f_06150_205.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview2\\f_06150_205.000.png",
+      "sha256": "04071911ebfbf908eb54244e2bd3232f8c4f339b1f43f8de6bd0143e5a5dad2d"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview2\\f_06300_210.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview2\\f_06300_210.000.png",
+      "sha256": "53b709a6a6f265b806fc5933ab42c538f34c469928c38d49ffd0bab2c66ddc6c"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview2\\f_06348_211.600.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview2\\f_06348_211.600.png",
+      "sha256": "72aaac5861432be098352c7693c04a46b6f9afbe484118de833b41864b63659e"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview2\\디코딩전_메타데이터.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview2\\디코딩전_메타데이터.json",
+      "sha256": "0552e26d2f5550ce0ec0e2e7a1d9d4ff4e57c6eab0a62743c74db69b907b31f9"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview2\\실행기록.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\overview2\\실행기록.json",
+      "sha256": "9d875f3d71778ff70a4c49c712c25bd6f4c46044470ea25aca73914bfd24d4b1"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\probe_line\\f_01320_044.000.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\probe_line\\f_01320_044.000.png",
+      "sha256": "8d39ad99130d558a1257c0e43aa177f7d2fb90bcc22db75344c4ed735f9ffee5"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\probe_line\\f_01321_044.033.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\probe_line\\f_01321_044.033.png",
+      "sha256": "f1a6da5a16339f78ff1c3c3c03b264ba77b1eac7e62ae6cb1d4e20ea8bc80538"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\probe_line\\f_01322_044.067.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\probe_line\\f_01322_044.067.png",
+      "sha256": "e2ff5229b6622c2b9e0aeb0fbdfdbca6f01a34b8e188aab668e72bc42572863a"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\probe_line\\f_01323_044.100.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\probe_line\\f_01323_044.100.png",
+      "sha256": "751c229158eea05a8910b17767240b252ddb566ca7d17c07e1f0b1c5e79e630a"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\probe_line\\f_01324_044.133.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\probe_line\\f_01324_044.133.png",
+      "sha256": "6ede1bf3ab18fb00110bbb510a579c8eed5906fb17f3727fa20231c3158932ac"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\probe_line\\f_01325_044.167.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\probe_line\\f_01325_044.167.png",
+      "sha256": "511c33886c11b5ff0534f7ec85f7ce835be89937abe1c7afcfb1a1a7e0979d32"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\probe_line\\f_01326_044.200.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\probe_line\\f_01326_044.200.png",
+      "sha256": "68523ba0b2c71d23d282afbf4f87514ebd03164079590aee516f68221b88c167"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\probe_line\\f_01327_044.233.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\probe_line\\f_01327_044.233.png",
+      "sha256": "fc284e6da98516384cdc1af35d1fde85a9121a16fbe8e7739a87dc542fc50f3c"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\probe_line\\f_01328_044.267.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\probe_line\\f_01328_044.267.png",
+      "sha256": "862e58327d40dc5d797cd2e8ceafab5bbe210a5879abff98d141668bbc2c7084"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\probe_line\\f_01329_044.300.png",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\probe_line\\f_01329_044.300.png",
+      "sha256": "4be23d16e316b45036e46637e0a9a4454eb67ece9a230f81c285296415879424"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\probe_line\\디코딩전_메타데이터.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\probe_line\\디코딩전_메타데이터.json",
+      "sha256": "c8f3dfd1ef6e1cc363b40b6f11592f2ebedc3fb806695602832b1df24d693d04"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\probe_line\\실행기록.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\cases\\NEW-P\\probe_line\\실행기록.json",
+      "sha256": "85c21401cca8d4398d9a9f3af63f37da4af7738112c9f2442f20e7f85b8b8a3a"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\chunk-read-change.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\chunk-read-change.json",
+      "sha256": "4a9e2ada04d7827aad344e59e964f776b71388871ae10850ffe489e2dc7fa880"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\manifest.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\manifest.json",
+      "sha256": "66bc13b5430e9eda8a519eca59ba93817427a1d0049d42a86c2a1a57fc05ca10"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\requests\\NEW-N-overview1.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\requests\\NEW-N-overview1.json",
+      "sha256": "ede5994106773cda1c1041853a3b300b1665485dfe23ade0b638531d4d4e5255"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\requests\\NEW-N-overview2.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\requests\\NEW-N-overview2.json",
+      "sha256": "699dcdf881730a63c26e0f24c8b52a96c2909da1429813106cd8066500ac8ed5"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\requests\\NEW-N-overview3.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\requests\\NEW-N-overview3.json",
+      "sha256": "e78cc4a1b2e65f98a31052158e4a46e51cf63e37ef1860ac869b64432d0ce294"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\requests\\NEW-P-overview1.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\requests\\NEW-P-overview1.json",
+      "sha256": "ede5994106773cda1c1041853a3b300b1665485dfe23ade0b638531d4d4e5255"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\requests\\NEW-P-overview1_retry1.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\requests\\NEW-P-overview1_retry1.json",
+      "sha256": "ede5994106773cda1c1041853a3b300b1665485dfe23ade0b638531d4d4e5255"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\requests\\NEW-P-overview2.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\requests\\NEW-P-overview2.json",
+      "sha256": "ebb1c2d9fc2f6b368f0249aeaf8f955b79c8ad3fa339352a12cb6371972d9dd3"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\requests\\NEW-P-probe_line.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\requests\\NEW-P-probe_line.json",
+      "sha256": "9c24c171369dbfb525d8681108105ae0555bc79f7f2f2a985c6f5b566af5a75d"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\run_NEW-N_overview1.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\run_NEW-N_overview1.json",
+      "sha256": "62440c7ffe32d64fd27b2928e8141d314dc035275207e3c0659b7c57a5b320b8"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\run_NEW-N_overview2.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\run_NEW-N_overview2.json",
+      "sha256": "9f729ea9d4e696a6f3f403c5f5a5c29dc56c4316ecf727b9c07deea920f5fc5a"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\run_NEW-N_overview3.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\run_NEW-N_overview3.json",
+      "sha256": "f4d236dba9519095ba39e83e92dd35f49a9ee73cfa6d79149fa44a6e35501f28"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\run_NEW-P_overview1.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\run_NEW-P_overview1.json",
+      "sha256": "909bc763d161ab33e07994ad3dfd3e6b19d1270547b0323f37726dc61ab8d1de"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\run_NEW-P_overview1_retry1.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\run_NEW-P_overview1_retry1.json",
+      "sha256": "23f247186c1b5633c05f1a2bc5e48d5d409b460af9f023d7d6cf30729605ff5a"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\run_NEW-P_overview2.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\run_NEW-P_overview2.json",
+      "sha256": "8fc5679748658f737b7d2082c1a9aaae7c6e60bafd2afe770f3afbc1acbb45f8"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\run_NEW-P_probe_line.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\run_NEW-P_probe_line.json",
+      "sha256": "05d671f1cd1b779d0e324d9e0b81670a7b1ecd000e19722188b2c82b06a493f3"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\tools\\extract.before-chunk-read.py",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\tools\\extract.before-chunk-read.py",
+      "sha256": "61c7ae3d54a3f28883589d17539980c0ac6cdc63aea4e66d1bc3e7aa5e2989fa"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\tools\\extract.py",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\tools\\extract.py",
+      "sha256": "3b00be7a0d5c634785c64f11e31fb0fb831bd50b9f38459558859c8988d7783b"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\tools\\prepare.py",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\source-overview\\tools\\prepare.py",
+      "sha256": "8ce39235c8114e5830318c7956c00e236fe814ad51e5b58891f01b127f8ff8aa"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\validate_changes.py",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\validate_changes.py",
+      "sha256": "9c9c38d6770489305bdd404705c4a807390d4dd92ff22f2725a8db0a6db1c244"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\validation\\results.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\validation\\results.json",
+      "sha256": "23bfe2e6a6edf1ade01bee999ccf34d4bb786d2b2bdad7d4fcd8311a829b8d33"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\validation-composition\\checks.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\validation-composition\\checks.json",
+      "sha256": "f320492b9cfdee1e309c4e9ca2fe8b75bed0ccd9070caddfb390b75623016a75"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\validation-composition\\definition_cannot_claim_another_source_atom.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\validation-composition\\definition_cannot_claim_another_source_atom.json",
+      "sha256": "3f14cbeed3418f981919e3b886143cc23a313dbd2366f8681d0f9568c676517c"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\validation-composition\\derivation_target_must_exist.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\validation-composition\\derivation_target_must_exist.json",
+      "sha256": "77b5b204ae48f2e9d222f0ae967f715c94b8a5d6cd0681367676a3fa0e5069cf"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\validation-composition\\detail_cannot_occupy_layout_category.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\validation-composition\\detail_cannot_occupy_layout_category.json",
+      "sha256": "75f0ec91dfd79409b2b8e63226d3c68f34d71af6f24a322d6638cc96e46fd66b"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\validation-composition\\first_observation_pin_must_match.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\validation-composition\\first_observation_pin_must_match.json",
+      "sha256": "249c46372550d6b586074426d46f9e42a03be72ba3cc721debd89199ccb9d0bc"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\validation-composition\\no_automatic_approval.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\validation-composition\\no_automatic_approval.json",
+      "sha256": "36a5d463e3a99c3847b83327500c84bb2341e17e18558b9e5fb1d2b9bb5601ec"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\validation-composition\\source_unknown_must_exist.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\validation-composition\\source_unknown_must_exist.json",
+      "sha256": "76461627303e52f0af5b03b437779bb669fbee3de18eaee0c75a232faa09004a"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\validation-composition\\unknown_number_cannot_be_filled_with_zero.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\validation-composition\\unknown_number_cannot_be_filled_with_zero.json",
+      "sha256": "119b8353266586bb4cc524c394ae798ca66a8445654a1c5bbb94165bc14ef590"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\validation-composition-run1\\checks.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\validation-composition-run1\\checks.json",
+      "sha256": "92e5b8445e55f5a1e9fca2777011ef3776fbbe0ee3ac303ad380e1096ee1c3ac"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\validation-composition-run1\\definition_cannot_claim_another_source_atom.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\validation-composition-run1\\definition_cannot_claim_another_source_atom.json",
+      "sha256": "3f14cbeed3418f981919e3b886143cc23a313dbd2366f8681d0f9568c676517c"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\validation-composition-run1\\derivation_target_must_exist.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\validation-composition-run1\\derivation_target_must_exist.json",
+      "sha256": "77b5b204ae48f2e9d222f0ae967f715c94b8a5d6cd0681367676a3fa0e5069cf"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\validation-composition-run1\\detail_cannot_occupy_layout_category.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\validation-composition-run1\\detail_cannot_occupy_layout_category.json",
+      "sha256": "75f0ec91dfd79409b2b8e63226d3c68f34d71af6f24a322d6638cc96e46fd66b"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\validation-composition-run1\\first_observation_pin_must_match.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\validation-composition-run1\\first_observation_pin_must_match.json",
+      "sha256": "249c46372550d6b586074426d46f9e42a03be72ba3cc721debd89199ccb9d0bc"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\validation-composition-run1\\no_automatic_approval.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\validation-composition-run1\\no_automatic_approval.json",
+      "sha256": "36a5d463e3a99c3847b83327500c84bb2341e17e18558b9e5fb1d2b9bb5601ec"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\validation-composition-run1\\source_unknown_must_exist.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\validation-composition-run1\\source_unknown_must_exist.json",
+      "sha256": "76461627303e52f0af5b03b437779bb669fbee3de18eaee0c75a232faa09004a"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\validation-composition-run1\\unknown_number_cannot_be_filled_with_zero.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\validation-composition-run1\\unknown_number_cannot_be_filled_with_zero.json",
+      "sha256": "119b8353266586bb4cc524c394ae798ca66a8445654a1c5bbb94165bc14ef590"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\validation-core\\checks.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\validation-core\\checks.json",
+      "sha256": "efaa04904dc7f9e9668d1e7d75272f7cb18a9fbc836c0178c20e03655ceeb37e"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\validation-core\\synthetic-observations.md",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\validation-core\\synthetic-observations.md",
+      "sha256": "53f65f8acedd721b0d207f671332a81ad8be9b6e41630f09ef10a486e2a0db5b"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\validation-core\\synthetic-pattern-input.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\validation-core\\synthetic-pattern-input.json",
+      "sha256": "b9065b984e15878b3304989ac872355836b0af542e58d92f43b210c007f130aa"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\validation-core\\synthetic-pattern-library-snapshots\\29b8134e0b3db823074efeab494ee16dd4b6ccf598cea370ce6ddc2e4030899f.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\validation-core\\synthetic-pattern-library-snapshots\\29b8134e0b3db823074efeab494ee16dd4b6ccf598cea370ce6ddc2e4030899f.json",
+      "sha256": "29b8134e0b3db823074efeab494ee16dd4b6ccf598cea370ce6ddc2e4030899f"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\validation-core\\synthetic-pattern-library-snapshots\\f87182dc0c95c98da96a73c1bc2891b1ae64e19b70b7a79a837039959e3734a5.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\validation-core\\synthetic-pattern-library-snapshots\\f87182dc0c95c98da96a73c1bc2891b1ae64e19b70b7a79a837039959e3734a5.json",
+      "sha256": "f87182dc0c95c98da96a73c1bc2891b1ae64e19b70b7a79a837039959e3734a5"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\validation-core\\synthetic-pattern-library.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\validation-core\\synthetic-pattern-library.json",
+      "sha256": "29b8134e0b3db823074efeab494ee16dd4b6ccf598cea370ce6ddc2e4030899f"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\validation-core\\synthetic-record.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\validation-core\\synthetic-record.json",
+      "sha256": "c43dd349e60bfa84806105fc971c12f5a58ca5787418f9dad1b73d7be26c2b05"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\validation-core-run1\\checks.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\validation-core-run1\\checks.json",
+      "sha256": "82d3cb3211bf79423085e2b61515b5fb771362fad18b167c31a3b2478cee11e8"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\validation-core-run1\\synthetic-observations.md",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\validation-core-run1\\synthetic-observations.md",
+      "sha256": "53f65f8acedd721b0d207f671332a81ad8be9b6e41630f09ef10a486e2a0db5b"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\validation-core-run1\\synthetic-pattern-input.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\validation-core-run1\\synthetic-pattern-input.json",
+      "sha256": "a7dfe15e78cecec609cacef641f76e3a08ce2015e5078bc9df31598e46193f2c"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\validation-core-run1\\synthetic-pattern-library-snapshots\\0fe7405f0feaeb958ae1655397bb156ba1b4e7744b7297cdbd9078b5b4f815e8.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\validation-core-run1\\synthetic-pattern-library-snapshots\\0fe7405f0feaeb958ae1655397bb156ba1b4e7744b7297cdbd9078b5b4f815e8.json",
+      "sha256": "0fe7405f0feaeb958ae1655397bb156ba1b4e7744b7297cdbd9078b5b4f815e8"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\validation-core-run1\\synthetic-pattern-library-snapshots\\989efa5d92cc7dc171d5ba30f21abbf70b724e2719993b75a50be048dd3b45f3.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\validation-core-run1\\synthetic-pattern-library-snapshots\\989efa5d92cc7dc171d5ba30f21abbf70b724e2719993b75a50be048dd3b45f3.json",
+      "sha256": "989efa5d92cc7dc171d5ba30f21abbf70b724e2719993b75a50be048dd3b45f3"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\validation-core-run1\\synthetic-pattern-library.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\validation-core-run1\\synthetic-pattern-library.json",
+      "sha256": "989efa5d92cc7dc171d5ba30f21abbf70b724e2719993b75a50be048dd3b45f3"
+    },
+    {
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\validation-core-run1\\synthetic-record.json",
+      "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\02_분석작업\\2026-10-19_전체개요와_지도화살표_검수정정\\validation-core-run1\\synthetic-record.json",
+      "sha256": "5e993885de1c8458480353bff68bc3873478f3c3215e1a2df500c093a715ad1e"
+    }
+  ],
+  "published_file_count": 335,
+  "pdf": {
+    "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\output\\pdf\\20261019_internal_video_scope_and_motion_correction.pdf",
+    "destination": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\작업 보고서(pdf)\\01_제출보고서\\Phase 01-A\\2026-10-19_전체개요와_지도화살표_검수정정\\2026-10-19_사내영상_전체범위와_지도화살표_검수정정.pdf",
+    "sha256": "c4b76008eb69f1cbeff100353c621ad766af6073454ee6d5b1c274ce10d60d58",
+    "pages": 3,
+    "title": "사내 영상 전체 범위 정리와 지도·화살표 검수 정정",
+    "action": "copy",
+    "dry_run": false,
+    "verified": true,
+    "archive_pdf_count": 48,
+    "receipt": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\작업 보고서(pdf)\\99_보관이력\\자동접수\\20261019T025148682374Z_c4b76008eb69.json"
+  },
+  "whole_research_completed": false,
+  "whole_internal_video_analysis_complete": false,
+  "global_skill_installed": false,
+  "coverage": {
+    "structure_passed": true,
+    "sources": [
+      {
+        "id": "NEW-N",
+        "duration_seconds": "156928/375",
+        "planning_groups": 18,
+        "groups_with_some_record": 1,
+        "groups_without_record": 17,
+        "record_count": 1,
+        "recorded_union_seconds": "8",
+        "outside_recorded_windows_seconds": "153928/375",
+        "open_unknown_entries": 3,
+        "records_with_incomplete_claim_denominator": 1
+      },
+      {
+        "id": "NEW-P",
+        "duration_seconds": "79424/375",
+        "planning_groups": 11,
+        "groups_with_some_record": 1,
+        "groups_without_record": 10,
+        "record_count": 1,
+        "recorded_union_seconds": "8",
+        "outside_recorded_windows_seconds": "76424/375",
+        "open_unknown_entries": 2,
+        "records_with_incomplete_claim_denominator": 1
+      }
+    ],
+    "planning_groups": 29,
+    "recorded_union_seconds": "16",
+    "outside_recorded_windows_seconds": "76784/125",
+    "total_duration_seconds": "78784/125",
+    "fine_review_completion": "not_assessed",
+    "source_duration_verified_by_tool": false,
+    "discovery_completeness_verified": false,
+    "note": "Overview samples and declared record intervals only. No completion percentage, no continuous-view claim, no quality acceptance. Unknown counts are entries, not deduplicated issues."
+  },
+  "tests": {
+    "new": 23,
+    "core": 38,
+    "composition": 34,
+    "visual_accuracy_score": null
+  },
+  "project_rules_updated": true
+}

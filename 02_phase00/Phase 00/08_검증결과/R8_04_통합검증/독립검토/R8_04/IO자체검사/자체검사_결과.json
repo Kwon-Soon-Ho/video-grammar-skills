@@ -1,0 +1,32 @@
+{
+  "io_sha256": "b2a94872abd17cff5c337ff2feb1a3e4d4e967154013074be5e94290d43729f0",
+  "checks": [
+    {
+      "mode": "normal",
+      "checks_passed": true,
+      "actual_events": 5
+    },
+    {
+      "mode": "validation_after_write",
+      "checks_passed": true,
+      "actual_events": 5
+    },
+    {
+      "mode": "partial_second_write",
+      "checks_passed": true,
+      "actual_events": 6
+    },
+    {
+      "mode": "external_after_write",
+      "checks_passed": true,
+      "actual_events": 5
+    },
+    {
+      "mode": "restore_denied",
+      "checks_passed": true,
+      "actual_events": 5
+    }
+  ],
+  "skill_model_trials": 0,
+  "scope": "deterministic service branches, not skill behavior or production guarantees"
+}

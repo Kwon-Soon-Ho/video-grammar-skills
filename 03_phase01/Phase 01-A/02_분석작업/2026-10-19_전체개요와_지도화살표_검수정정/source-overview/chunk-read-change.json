@@ -1,0 +1,11 @@
+{
+  "failure": "NEW-P overview1 / read_request_limit",
+  "preserved_before": "tools/extract.before-chunk-read.py",
+  "change": "Reject unbounded reads; return at most 4MiB for any positive request. Total read bytes, time, memory, frame count and allowlist limits retained.",
+  "validation": {
+    "actual_retry": "passed",
+    "log": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\source-overview\\cases\\NEW-P\\overview1_retry1\\실행기록.json",
+    "frames": 30,
+    "scope": "새 개요 추출 보조 어댑터만 변경. 범용 디코더/정본 런타임 수리 주장 아님."
+  }
+}

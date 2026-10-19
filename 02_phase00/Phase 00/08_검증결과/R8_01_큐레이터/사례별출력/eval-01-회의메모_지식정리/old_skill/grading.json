@@ -1,0 +1,122 @@
+{
+  "grader": {
+    "type": "AI_independent_artifact_grader",
+    "human_reviewer": false,
+    "scope": "iteration-2 해당 run의 task/입력메모/fixture/transcript/실제 outputs 및 로컬 근거 대조"
+  },
+  "expectations": [
+    {
+      "text": "메모의 개념을 기존 사전/원칙/레이아웃과 대조하고 실제 존재하는 ID/근거를 사용한다. 정의 후보를 정식 승인 ID로 발명하지 않는다.",
+      "passed": true,
+      "evidence": "outputs/knowledge_draft.json records 5개와 reference_registry 34개를 직접 읽었다. REF-01~34의 실제 경로/SHA 및 존재하는 JSON pointer의 ID·항목 version을 독립 대조해 불일치 0개. 실제 PURPOSE-PROCESS/REL-ORDER/CURVE-LINEAR/IP-10 등과 일치한다. DRAFT-MEMO ID와 candidate_id를 정식 taxonomy와 구별한다."
+    },
+    {
+      "text": "단계 번호의 일괄 삭제를 회사 규칙으로 채택하지 않고, 순서/학습 안내처럼 번호가 유용한 조건과 오용 조건을 구분한다.",
+      "passed": true,
+      "evidence": "DRAFT-MEMO-01은 실제 단계 순서/현재 위치를 전달하는 번호를 유지 후보로 두며 '회사 전체의 번호/카드 금지'를 held_claims로 둔다. 병렬 항목에 단계번호 강제는 제외하고, 반례는 AI 느낌을 없애려 번호를 모두 지워 절차를 알 수 없게 하는 것이다. IP-02/심화카드의 실제 표식 원칙과 부합한다."
+    },
+    {
+      "text": "표·순환·분기는 기존14분류의 별도 지식 후보로 다루며 정식 taxonomy를 자동 확대하거나 억지로 기존ID에 병합하지 않는다.",
+      "passed": true,
+      "evidence": "DRAFT-MEMO-02는 layout14개 유지와 TABLE/CYCLE/BRANCH 지원 후보를 별도로 기록한다. candidate_id는 term_id가 아니라는 경계를 명시하고 표를 카드 그룹/순환을 선형 프로세스로 강제하지 않는다. 실제 확장후보의 조건/예/반례와 분류운영규칙 other_candidate를 대조했다. 새로운 ID 3개 등록은 반례다."
+    },
+    {
+      "text": "기획실 직군명만으로 숙련도/사전지식을 단정하지 않는다. 관련 원칙의 확인 깊이를 과장하지 않고 필요한 근거/추가 판단을 남긴다.",
+      "passed": true,
+      "evidence": "DRAFT-MEMO-03은 기획실 지식 수준 unknown, 해당 주제 인터뷰·업무 경험·입력 문서로 깊이 조정을 제안한다. IP-10은 공식 Summary 수준이며 장 전체·진단도구·회사 영상 효과 미검토라고 제한한다. 실제 IP-10@0.1.2와 R3_모션_조사기록의 해당 읽기 깊이가 일치한다."
+    },
+    {
+      "text": "일정속도 설비 설명에서 선형 이동이 적절할 수 있음을 구체적으로 설명하며 이징·움직임 개수를 보편 필수로 만들지 않는다.",
+      "passed": true,
+      "evidence": "DRAFT-MEMO-04는 같은 시간 간격의 같은 이동량, 설비 대상 시간·경로 보존, 안내 패널 이징의 별도 검토를 구체화한다. 실제 AP-06/MC-01과 부합한다. 이징 미사용 자체를 실패로 보지 않으며 실제 시작·정지의 가감속을 임의 등속으로 바꾸지 않는다. MP-02 상세 강의 정의는 보류한다."
+    },
+    {
+      "text": "최신 CI/관측색을 모든 본문 공식색으로 승격하지 않는다. R5 프로젝트 초안의 명시 선택·조건과 기존 R6 확인 범위를 구분한다.",
+      "passed": true,
+      "evidence": "DRAFT-MEMO-05는 R6-REPLY-CI-20261015-001을 제공 8회사 CI 최신/산하 AI 부재 선언으로만 취급한다. 직접 읽은 회신의 not_confirmed/company_approved=false와 부합한다. DECISION-R5-OBSERVED-COLOR A의 명시 선택·출처·가정·이유·검수대기 조건을 프로젝트 역할 후보로 한정하며 공식 본문색 승격은 보류한다."
+    },
+    {
+      "text": "최소한 정리의 핵심 근거를 해당 실제 로컬 항목/판본과 식별 가능한 경로·SHA로 연결하며 읽은 범위와 자체 해석·가상 예를 구분한다. 존재하지 않는 근거/실제영상효과를 만들지 않는다.",
+      "passed": true,
+      "evidence": "reference_registry 34건은 실제 경로/SHA와 JSON pointer의 ID·version을 대조 일치했다. source_audit 10건의 과거 read_depth/sections도 실제 R3 조사기록과 대조 일치한다. 로컬 참조 확인/외부 원문 재검증 미수행/자체 해석/합성 예시(case_refs=[])를 구별한다. 과정의 독립 실행 인증은 없으나 파일로 확인 가능한 근거 연결은 성립한다."
+    },
+    {
+      "text": "요청한 결과 JSON과 한국어 설명에 실제 정리 가능한 지식·적용 예/반례를 남기고 운영 입력은 바꾸지 않는다. 모든 항목을 이유 없이 보류해 작업을 회피하지 않는다.",
+      "passed": true,
+      "evidence": "실제 knowledge_draft.json 5건에 적용조건·제외·예·반례·보류 주장과 짧은 한국어 설명.md가 있다. 5건 모두 조건부 참고를 제공해 작업을 회피하지 않았다. 독립적으로 fixture_before 302/302입력 바이트를 대조해 변경·추가·삭제 0개. 실행자 자체 267개 해시 보고보다 넓은 사후 비교다."
+    }
+  ],
+  "summary": {
+    "passed": 8,
+    "failed": 0,
+    "total": 8,
+    "pass_rate": 1.0
+  },
+  "independent_verification": {
+    "run": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-knowledge-curator-workspace\\iteration-2\\eval-01-회의메모_지식정리\\old_skill\\run-1",
+    "fixture_count": 302,
+    "current_count": 302,
+    "changed_inputs": {},
+    "added_inputs": [],
+    "json_outputs_parse_errors": [],
+    "timing": {
+      "total_tokens": null,
+      "duration_ms": null,
+      "total_duration_seconds": null,
+      "collection": "runtime completion telemetry unavailable; do not substitute output length"
+    },
+    "backup_comparisons": [],
+    "reference_count": 34,
+    "reference_errors": [],
+    "source_read_depth_errors": []
+  },
+  "execution_metrics": null,
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": null,
+    "total_duration_seconds": null,
+    "collection": "runtime completion telemetry unavailable; do not substitute output length"
+  },
+  "claims": [
+    {
+      "claim": "입력/운영 정본 보존 또는 사례2의 지정 허용변경",
+      "type": "factual",
+      "verified": true,
+      "evidence": "fixture_before 전체파일 SHA와 사후 입력 read_bytes 대조. 사례1/3 변화0; 사례2 지정초안1개 및 허용3필드만 변경."
+    },
+    {
+      "claim": "기존 검사/조회 명령이 실행됐다는 과정 주장",
+      "type": "process",
+      "verified": false,
+      "evidence": "transcript·코드·보존 결과/로그와 실제 파일은 일관되나 독립 이벤트 로그로 원 실행을 인증하지 못했다. 파일에서 관찰 가능한 검사 결과와 과정 인증을 분리한다."
+    },
+    {
+      "claim": "새 결과가 회사 승인·실영상 효과 통과를 의미한다",
+      "type": "quality",
+      "verified": false,
+      "evidence": "실행 결과도 이를 주장하지 않고 미수행/보류로 구분한다. 본 채점은 그런 인증을 부여하지 않는다."
+    }
+  ],
+  "limitations": [
+    "이 평가는 AI 독립 채점자의 파일/텍스트·바이트 대조이며 사람 내용 검수/회사 승인/실영상 효과 인증이 아니다.",
+    "실행자 transcript·코드·보존 stdout/exitcode는 self-reported 산출물이다. 서로 일치하는지 확인했지만 원래 명령이 해당 시점에 실제 실행됐다는 독립 이벤트 로그 인증은 없다. grader는 실행자 쓰기 스크립트를 재실행하지 않았다.",
+    "fixture_before와 사후 전체 입력 바이트 일치는 최종상태의 변경/추가/삭제를 확인한다. 실행 중 일시 변경 후 원복 여부나 fixture 자체의 이전 계보는 이 자료만으로 확정할 수 없다.",
+    "외부 네트워크/API/AE/CU, 실제 D 프로젝트 데이터, iteration1/다른 과제 결과/부모 레드팀 결론은 채점에 사용하지 않았다. 지정 D Python 실행파일만 대조 계산에 사용했다.",
+    "token/duration 수집이 없어 null을 유지한다. 출력 길이·파일 수·도구 사용을 토큰/성능/실행시간으로 대체하지 않는다."
+  ],
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "reason": "두 조건 모두 8개 행동기준을 충족한다. 사전·심화카드 자체가 메모 반례의 정답을 매우 구체적으로 제공하므로 이 사례만으로 스킬의 독자 효과를 분리하기 어렵다. 새 내용에 대한 근거 탐색·충돌·누락 상황을 별도 표본으로 추가할 필요가 있다."
+      },
+      {
+        "assertion": "최소한 정리의 핵심 근거를 해당 실제 로컬 항목/판본과 식별 가능한 경로·SHA로 연결하며 읽은 범위와 자체 해석·가상 예를 구분한다. 존재하지 않는 근거/실제영상효과를 만들지 않는다.",
+        "reason": "경로·SHA 존재만으로 통과시키면 허위 근거가 통과한다. 실제 ID/pointer/판본/출처 깊이와 설명 의미를 같이 검증해야 한다. 이번에는 이 독립 대조를 수행했다."
+      },
+      {
+        "reason": "new transcript는 지정 참조를 읽는 과정에서 R8 평가설계 문단이 함께 노출됐다고 기록한다. 이 사실은 행동8항목 실패와 별개인 평가 독립성 한계다. 평가설계가 실행 fixture의 작업 참조에 같이 노출되지 않도록 분리하고 후속 독립 표본으로 확인하는 것이 좋다."
+      }
+    ],
+    "overall": "이번 두 결과는 내용과 최종 입력 보존을 충족한다. 카드 수/근거 수/문구 일치만으로 우열을 만들지 않았다."
+  }
+}

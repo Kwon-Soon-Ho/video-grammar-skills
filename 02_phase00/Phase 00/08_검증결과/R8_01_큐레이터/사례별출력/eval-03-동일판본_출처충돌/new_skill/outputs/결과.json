@@ -1,0 +1,246 @@
+{
+  "task": "현재 자료와 기존 등록 근거에 따른 단일 초점 최신 지식 초안",
+  "state": "draft_saved_operational_application_held",
+  "conflict": {
+    "id": "layout-guidance",
+    "path": "02_원칙과레이아웃/레이아웃지식.json",
+    "current_version": "0.1.1",
+    "registered_version": "0.1.1",
+    "registered_sha256": "0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306",
+    "actual_sha256": "b83fcc5cbb62d4fea94784c596b85287564da1e5fc04d6353305b5796b2ef9a2",
+    "same_version_different_sha256": true,
+    "registered_checks": [
+      {
+        "context": "버전목록",
+        "id": "layout-guidance",
+        "kind": "knowledge",
+        "version": "0.1.1",
+        "path": "02_원칙과레이아웃/레이아웃지식.json",
+        "sha256": "0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306",
+        "state": "current_draft_or_reference",
+        "company_approved": false
+      },
+      {
+        "context": "정본과표시 연결목록",
+        "id": "layout-guidance",
+        "version": "0.1.1",
+        "path": "02_원칙과레이아웃/레이아웃지식.json",
+        "role": "current_canonical",
+        "sha256": "0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306"
+      },
+      {
+        "context": "심화지식 core_refs",
+        "path": "02_원칙과레이아웃/레이아웃지식.json",
+        "version": "0.1.1",
+        "sha256": "0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306"
+      }
+    ],
+    "current_field": {
+      "item_id": "KNOW-LAYOUT-SINGLE-FOCUS",
+      "field": "limits",
+      "value": "회사 최신 기준: 모든 단일 초점 화면은 반드시 중앙 배치한다."
+    },
+    "other_local_evidence": {
+      "term_exclude_or_limit": "반드시 중앙 배치 아님",
+      "deep_composition_decisions": "대표 대상, 요점 문장, 보조 설명을 역할로 구분한다. 초점 위치는 중앙·삼분할 모두 후보다."
+    },
+    "conclusion": "동일 ID·버전의 바이트 충돌. 현재 파일의 중앙 배치 의무 주장은 검증된 회사 규칙으로 채택하지 않음.",
+    "cause": "unknown",
+    "previous_registered_bytes_recovered": false,
+    "previous_exact_field_value": "등록 해시만으로 과거 limits 문장을 복원하지 않음. 사전·심화지식과의 의미 차이만 확인.",
+    "action": "고정 해시·운영 정본·과거 참조 보존. 별도 신규 판본 초안 작성, 운영 반영 보류."
+  },
+  "knowledge_card_file": "단일초점_지식카드_v0.1.2.json",
+  "draft_file": "레이아웃지식_단일초점_초안_v0.1.2.json",
+  "parent": {
+    "logical_id": "layout-guidance",
+    "path": "02_원칙과레이아웃/레이아웃지식.json",
+    "version": "0.1.1",
+    "actual_sha256": "b83fcc5cbb62d4fea94784c596b85287564da1e5fc04d6353305b5796b2ef9a2",
+    "registered_sha256": "0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306",
+    "state": "same_version_conflict_not_trusted_as_registered_bytes"
+  },
+  "candidate": {
+    "logical_id": "layout-guidance",
+    "version": "0.1.2",
+    "sha256": "7edc0740cb000e3b9c259d8d8100ef3181569bbacbc8068eb3e54a958e2260a2",
+    "state": "unregistered_draft_not_default",
+    "company_approved": false
+  },
+  "evidence": [
+    {
+      "path": "02_원칙과레이아웃/레이아웃지식.json",
+      "version": "0.1.1",
+      "sha256": "b83fcc5cbb62d4fea94784c596b85287564da1e5fc04d6353305b5796b2ef9a2",
+      "read_scope": "해당 JSON 관련 항목만 해석; 전체 파일 바이트는 SHA/backup용. 안내 MD는 단일 초점 절.",
+      "external_original_read_in_this_run": false
+    },
+    {
+      "path": "02_원칙과레이아웃/레이아웃_심화지식.json",
+      "version": "0.1.2",
+      "sha256": "5d6378eb954b6b75f94be2a0988254a1406f6dacc8a6c44060c6a05ff56aa14c",
+      "read_scope": "해당 JSON 관련 항목만 해석; 전체 파일 바이트는 SHA/backup용. 안내 MD는 단일 초점 절.",
+      "external_original_read_in_this_run": false
+    },
+    {
+      "path": "01_공통용어/공통용어사전.json",
+      "version": "0.1.1",
+      "sha256": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+      "read_scope": "해당 JSON 관련 항목만 해석; 전체 파일 바이트는 SHA/backup용. 안내 MD는 단일 초점 절.",
+      "external_original_read_in_this_run": false
+    },
+    {
+      "path": "02_원칙과레이아웃/화면설계원칙.json",
+      "version": "0.1.1",
+      "sha256": "281fe61151dfc96649a070b6fd3ae653c0353b7513f3209534140ce1f54e6b96",
+      "read_scope": "해당 JSON 관련 항목만 해석; 전체 파일 바이트는 SHA/backup용. 안내 MD는 단일 초점 절.",
+      "external_original_read_in_this_run": false
+    },
+    {
+      "path": "05_출처와검토/버전목록.json",
+      "version": "0.1.11",
+      "sha256": "a31ba13f0e1fa17a6772b94a5441cbb13fba35e96a0fe7e2647d292ff79c34d2",
+      "read_scope": "해당 JSON 관련 항목만 해석; 전체 파일 바이트는 SHA/backup용. 안내 MD는 단일 초점 절.",
+      "external_original_read_in_this_run": false
+    },
+    {
+      "path": "00_운영계약/정본과표시_연결목록.json",
+      "version": "0.3.16",
+      "sha256": "e46cdd823766e91c84dd6a05a0254879bfcc9f80c2b04bfc48ec0788b5005fe6",
+      "read_scope": "해당 JSON 관련 항목만 해석; 전체 파일 바이트는 SHA/backup용. 안내 MD는 단일 초점 절.",
+      "external_original_read_in_this_run": false
+    },
+    {
+      "path": "05_출처와검토/R3_레이아웃_조사기록.json",
+      "version": "0.1.1",
+      "sha256": "faed3dd1e34e95935962b0973ebcf6e2d2eae31db505e5f93da5cab9d1c7c961",
+      "read_scope": "해당 JSON 관련 항목만 해석; 전체 파일 바이트는 SHA/backup용. 안내 MD는 단일 초점 절.",
+      "external_original_read_in_this_run": false
+    },
+    {
+      "path": "05_출처와검토/출처목록.json",
+      "version": "0.1.1",
+      "sha256": "0fd8c405a36f67a4255be34c198b29fa499fde5d52b7998fd2b0af754bcaec2f",
+      "read_scope": "해당 JSON 관련 항목만 해석; 전체 파일 바이트는 SHA/backup용. 안내 MD는 단일 초점 절.",
+      "external_original_read_in_this_run": false
+    },
+    {
+      "path": "02_원칙과레이아웃/07_레이아웃별_선택조건과반례.md",
+      "version": null,
+      "sha256": "945fa1ec974bd73899d71de9b4019edf0d465d3c32443a9fe8ee610d56c471dd",
+      "read_scope": "해당 JSON 관련 항목만 해석; 전체 파일 바이트는 SHA/backup용. 안내 MD는 단일 초점 절.",
+      "external_original_read_in_this_run": false
+    },
+    {
+      "path": "입력메모.json",
+      "version": "0.1.0",
+      "sha256": "1a95e8d2718a035d18d3788fe564549d493e4efe09b73cbce89a9cbdaa018e1f",
+      "read_scope": "해당 JSON 관련 항목만 해석; 전체 파일 바이트는 SHA/backup용. 안내 MD는 단일 초점 절.",
+      "external_original_read_in_this_run": false
+    }
+  ],
+  "preservation": {
+    "backup": "backup/동일판본충돌_변경전",
+    "backup_same_sha256": true,
+    "diff": "변경.diff",
+    "selected_inputs_unchanged": true,
+    "operational_input_writes": false,
+    "historical_records_deleted": false,
+    "frozen_hashes_replaced": false,
+    "existing_draft_overwritten": false
+  },
+  "checks": {
+    "narrow_candidate": "초안_검사결과.json",
+    "executions": [
+      {
+        "name": "기존_지식조회",
+        "argv": [
+          "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+          "-B",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-knowledge-curator-workspace\\iteration-2\\eval-03-동일판본_출처충돌\\new_skill\\run-1\\inputs\\Phase00\\07_실행도구\\지식조회.py",
+          "단일 초점"
+        ],
+        "exit_code": 0,
+        "stdout_file": "기존_지식조회.stdout.txt",
+        "stderr_file": "기존_지식조회.stderr.txt",
+        "scope": "기존 입력 목록 조회/검사. 새 초안·해시 현재성·내용 승인 통과 아님."
+      },
+      {
+        "name": "기존_목록검사",
+        "argv": [
+          "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+          "-B",
+          "-c",
+          "import sys,json;sys.path.insert(0,sys.argv[1]);import 자료검증; e=자료검증.validate_catalogs(); print(json.dumps({'errors':e,'scope':'existing_catalogs_schema_and_reference_only'},ensure_ascii=False));sys.exit(1 if e else 0)",
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-knowledge-curator-workspace\\iteration-2\\eval-03-동일판본_출처충돌\\new_skill\\run-1\\inputs\\Phase00\\07_실행도구"
+        ],
+        "exit_code": 0,
+        "stdout_file": "기존_목록검사.stdout.txt",
+        "stderr_file": "기존_목록검사.stderr.txt",
+        "scope": "기존 입력 목록 조회/검사. 새 초안·해시 현재성·내용 승인 통과 아님."
+      }
+    ],
+    "not_run": [
+      "R4 영상 기록 검사: 지식 초안에 해당하지 않음",
+      "R3 전체 검사: 외부 스킬 원문 접근 및 미포함 자산 요구로 미실행",
+      "R6 통합 조회/전체 원문·자산 검사 미실행",
+      "R7 전체 연결 검사 미실행",
+      "실제 영상·시선·가독성 효과 및 사람 검수 미실행"
+    ]
+  },
+  "confirmed": [
+    "등록목록·연결목록·심화지식 core_refs가 같은 기존 SHA를 지시함",
+    "현재 동일 버전 파일의 실제 SHA는 그 값과 다름",
+    "현재 중앙 의무 문구는 로컬 사전 및 기존 심화지식과 충돌함",
+    "기존 출처의 권한은 프로젝트 초안이며 회사 표준 승인이 아님"
+  ],
+  "unknown": [
+    "누가 언제 어떤 이유로 바이트를 바꿨는지",
+    "등록 SHA에 해당하는 과거 원본 바이트와 정확한 문장",
+    "중앙 배치 의무를 승인한 회사 문서의 실재·범위",
+    "외부 원문 최신성 및 실제 영상 효과"
+  ],
+  "required_questions": [
+    {
+      "to": "자료 소유자/등록 관리자",
+      "question": "layout-guidance@0.1.1 등록 SHA에 해당하는 원본 사본과 변경 이력을 제공할 수 있는가?"
+    },
+    {
+      "to": "회사 기준 승인 담당",
+      "question": "중앙 배치 의무를 승인한 문서가 있다면 ID·버전·승인 범위·적용 예외를 확인할 수 있는가?"
+    },
+    {
+      "to": "지식 등록 검토 담당",
+      "question": "충돌 해소 후 v0.1.2 후보의 조건부 지침과 출처를 검토하고 정식 등록할 것인가?"
+    }
+  ],
+  "decision_options": {
+    "question": "등록된 원본과 변경 경위를 확보한 뒤 충돌 파일을 어떻게 처리할 것인가?",
+    "options": [
+      {
+        "id": "A",
+        "recommend": true,
+        "action": "원래 바이트/변경 이력을 대조하고 현재 충돌을 유지 기록한 채 신규 판본 초안을 검토한다."
+      },
+      {
+        "id": "B",
+        "action": "현재 파일을 별도 미확인 파생자료로 보관하고 확인된 등록 바이트로 운영본 복구를 별도 검토한다."
+      },
+      {
+        "id": "C",
+        "action": "회사 승인 문서를 확보하면 중앙 의무의 적용 범위·예외를 분리한 신규 판본을 검토한다."
+      },
+      {
+        "id": "D",
+        "action": "원본이나 승인 근거가 없으면 최신성 판정과 운영 적용을 보류하고 조건부 초안만 유지한다."
+      }
+    ],
+    "selected_operational_action": null
+  },
+  "limitations": [
+    "새 버전은 이 작업의 별도 후보이며 공식 최신 정본으로 등록되지 않음",
+    "등록 해시 불일치만으로 기존 바이트나 변경 의도를 복원하지 않음",
+    "06/08 과거평가 파일 직접 열람 안 함. 다른 스킬·설정·실제 D 프로젝트 자료 읽지 않음. 지정 D Python 실행파일만 사용.",
+    "실제 토큰 사용량·전체 소요시간은 수집하지 않았음"
+  ]
+}

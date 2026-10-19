@@ -1,0 +1,47 @@
+{
+  "grader": "root inline AI visual review",
+  "human_approved": false,
+  "expectations": [
+    {
+      "text": "좌우 다른 화면과 우측 야경 시점 이동 후 녹색 배경으로 전환",
+      "passed": true,
+      "evidence": "scene: 주간/야경 병치와 우측 시점 변화; outputs/observations.json 및 원본 ROI 대조"
+    },
+    {
+      "text": "좌측 세로 공사목표 제목→안전→품질→공기→효율 순차 등장",
+      "passed": true,
+      "evidence": "target/cards: 세로 제목→네 가치 순서; outputs/observations.json 및 원본 ROI 대조"
+    },
+    {
+      "text": "카드 이미지/아이콘/라벨·빛/선의 세부 동작 검사",
+      "passed": false,
+      "evidence": "일반적인 발광/통신 장식과 구성 묶음만 기록. 카드 내부의 별도 변화는 미해결로 남음.; outputs/observations.json 및 원본 ROI 대조"
+    },
+    {
+      "text": "싱글과 대응 앵커·지연·배치차를 기록; 전체 영상 일정 오프셋으로 일반화 금지",
+      "passed": true,
+      "evidence": "variant-comparison: 같은 상태 앵커, 일정 지연 일반화 안함; outputs/observations.json 및 원본 ROI 대조"
+    },
+    {
+      "text": "픽셀 해상도 7680x2160과 검사 범위·가감속 유보 명시",
+      "passed": true,
+      "evidence": "7680x2160 raster와 창 끝 제한, 곡선 유보; outputs/observations.json 및 원본 ROI 대조"
+    },
+    {
+      "text": "[추가 발견 기준] 후반 자막 전환의 바로 직전 문구가 4대 핵심가치임을 해당 시각에 연결하며 초기 경관 자막과 혼합하지 않음",
+      "passed": true,
+      "evidence": "caption 사건은 핵심가치→프레임워크로 정확히 연결. W249/249.5 원본 native 자막 ROI와 대조",
+      "post_hoc": true
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 1,
+    "total": 6,
+    "pass_rate": 0.8333333333333334
+  },
+  "interpretation": "이 기준에 한정된 진단. 일반 정확도·독립표본 합격률 아님. JSON/카탈로그 통과와 내용판정 별개.",
+  "eval_feedback": {
+    "overall": "자막 전환 기준은 최초 동결 목록에 없던 실제 오류로 양쪽 결과에 동일하게 사후 추가. V04 기준의 필터 오기는 폴더로 해석. 세밀한 이징 유보는 근거가 부족하면 실패로 강제하지 않음."
+  }
+}

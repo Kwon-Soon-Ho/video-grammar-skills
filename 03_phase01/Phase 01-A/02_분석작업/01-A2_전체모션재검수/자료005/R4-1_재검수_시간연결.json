@@ -1,0 +1,1501 @@
+{
+  "contract_version": "0.1.0",
+  "source_type": "internal",
+  "asset": {
+    "id": "자료005",
+    "version": "sha256-e866f805853b",
+    "sha256": "e866f805853b2d50fe7b03b3dc8567a1bf977274e94aaa46f5bdc34d62986827"
+  },
+  "timelines": [
+    {
+      "id": "자료005-T",
+      "asset_ref": "자료005",
+      "stream_index": 0,
+      "duration": {
+        "num": 90,
+        "den": 1
+      },
+      "duration_evidence_refs": [
+        "A2-MP4-PREFLIGHT-자료005"
+      ],
+      "origin": {
+        "method": "verified_offset",
+        "pts": "1024",
+        "time_base": {
+          "num": 1,
+          "den": 15360
+        },
+        "evidence_refs": [
+          "A2-MP4-PREFLIGHT-자료005",
+          "A2-DECODE-CROSSCHECK-자료005"
+        ],
+        "limitations": "Only a single rate-1 edit, no empty edit, progressive MP4. Not support for arbitrary edits or verified audio sync."
+      },
+      "frame_rate_mode": "unknown",
+      "nominal_fps": null,
+      "frame_count": null,
+      "limitations": "Frame-count table metadata is recorded separately; full video decoding not performed."
+    }
+  ],
+  "periods": [
+    {
+      "id": "자료005-SAMPLED",
+      "timeline_ref": "자료005-T",
+      "parent_ref": null,
+      "kind": "range",
+      "start": {
+        "num": 0,
+        "den": 1
+      },
+      "end": {
+        "num": 721,
+        "den": 30
+      },
+      "uncertainty": null,
+      "unknown_reason": null
+    }
+  ],
+  "frames": [
+    {
+      "id": "자료005-scan-0",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "1024",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 0,
+      "requested": {
+        "num": 0,
+        "den": 1
+      },
+      "actual": {
+        "num": 0,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-scan-23",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "12800",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 23,
+      "requested": {
+        "num": 3,
+        "den": 4
+      },
+      "actual": {
+        "num": 23,
+        "den": 30
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-scan-45",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "24064",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 45,
+      "requested": {
+        "num": 3,
+        "den": 2
+      },
+      "actual": {
+        "num": 3,
+        "den": 2
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-scan-68",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "35840",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 68,
+      "requested": {
+        "num": 9,
+        "den": 4
+      },
+      "actual": {
+        "num": 34,
+        "den": 15
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-scan-90",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "47104",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 90,
+      "requested": {
+        "num": 3,
+        "den": 1
+      },
+      "actual": {
+        "num": 3,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-scan-113",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "58880",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 113,
+      "requested": {
+        "num": 15,
+        "den": 4
+      },
+      "actual": {
+        "num": 113,
+        "den": 30
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-scan-135",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "70144",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 135,
+      "requested": {
+        "num": 9,
+        "den": 2
+      },
+      "actual": {
+        "num": 9,
+        "den": 2
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-scan-158",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "81920",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 158,
+      "requested": {
+        "num": 21,
+        "den": 4
+      },
+      "actual": {
+        "num": 79,
+        "den": 15
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-scan-180",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "93184",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 180,
+      "requested": {
+        "num": 6,
+        "den": 1
+      },
+      "actual": {
+        "num": 6,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-scan-203",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "104960",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 203,
+      "requested": {
+        "num": 27,
+        "den": 4
+      },
+      "actual": {
+        "num": 203,
+        "den": 30
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-scan-225",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "116224",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 225,
+      "requested": {
+        "num": 15,
+        "den": 2
+      },
+      "actual": {
+        "num": 15,
+        "den": 2
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-scan-248",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "128000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 248,
+      "requested": {
+        "num": 33,
+        "den": 4
+      },
+      "actual": {
+        "num": 124,
+        "den": 15
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-scan-270",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "139264",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 270,
+      "requested": {
+        "num": 9,
+        "den": 1
+      },
+      "actual": {
+        "num": 9,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-scan-293",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "151040",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 293,
+      "requested": {
+        "num": 39,
+        "den": 4
+      },
+      "actual": {
+        "num": 293,
+        "den": 30
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-scan-315",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "162304",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 315,
+      "requested": {
+        "num": 21,
+        "den": 2
+      },
+      "actual": {
+        "num": 21,
+        "den": 2
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-scan-338",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "174080",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 338,
+      "requested": {
+        "num": 45,
+        "den": 4
+      },
+      "actual": {
+        "num": 169,
+        "den": 15
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-scan-360",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "185344",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 360,
+      "requested": {
+        "num": 12,
+        "den": 1
+      },
+      "actual": {
+        "num": 12,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-scan-383",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "197120",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 383,
+      "requested": {
+        "num": 51,
+        "den": 4
+      },
+      "actual": {
+        "num": 383,
+        "den": 30
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-scan-405",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "208384",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 405,
+      "requested": {
+        "num": 27,
+        "den": 2
+      },
+      "actual": {
+        "num": 27,
+        "den": 2
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-scan-428",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "220160",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 428,
+      "requested": {
+        "num": 57,
+        "den": 4
+      },
+      "actual": {
+        "num": 214,
+        "den": 15
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-scan-450",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "231424",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 450,
+      "requested": {
+        "num": 15,
+        "den": 1
+      },
+      "actual": {
+        "num": 15,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-scan-473",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "243200",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 473,
+      "requested": {
+        "num": 63,
+        "den": 4
+      },
+      "actual": {
+        "num": 473,
+        "den": 30
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-scan-495",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "254464",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 495,
+      "requested": {
+        "num": 33,
+        "den": 2
+      },
+      "actual": {
+        "num": 33,
+        "den": 2
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-scan-518",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "266240",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 518,
+      "requested": {
+        "num": 69,
+        "den": 4
+      },
+      "actual": {
+        "num": 259,
+        "den": 15
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-scan-540",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "277504",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 540,
+      "requested": {
+        "num": 18,
+        "den": 1
+      },
+      "actual": {
+        "num": 18,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-scan-563",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "289280",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 563,
+      "requested": {
+        "num": 75,
+        "den": 4
+      },
+      "actual": {
+        "num": 563,
+        "den": 30
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-scan-585",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "300544",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 585,
+      "requested": {
+        "num": 39,
+        "den": 2
+      },
+      "actual": {
+        "num": 39,
+        "den": 2
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-scan-608",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "312320",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 608,
+      "requested": {
+        "num": 81,
+        "den": 4
+      },
+      "actual": {
+        "num": 304,
+        "den": 15
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-scan-630",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "323584",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 630,
+      "requested": {
+        "num": 21,
+        "den": 1
+      },
+      "actual": {
+        "num": 21,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-scan-653",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "335360",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 653,
+      "requested": {
+        "num": 87,
+        "den": 4
+      },
+      "actual": {
+        "num": 653,
+        "den": 30
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-scan-675",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "346624",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 675,
+      "requested": {
+        "num": 45,
+        "den": 2
+      },
+      "actual": {
+        "num": 45,
+        "den": 2
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-scan-698",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "358400",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 698,
+      "requested": {
+        "num": 93,
+        "den": 4
+      },
+      "actual": {
+        "num": 349,
+        "den": 15
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-scan-720",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "369664",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 720,
+      "requested": {
+        "num": 24,
+        "den": 1
+      },
+      "actual": {
+        "num": 24,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-jh_detail-0",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "1024",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 0,
+      "requested": {
+        "num": 0,
+        "den": 1
+      },
+      "actual": {
+        "num": 0,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-jh_detail-60",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "31744",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 60,
+      "requested": {
+        "num": 2,
+        "den": 1
+      },
+      "actual": {
+        "num": 2,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-jh_detail-120",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "62464",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 120,
+      "requested": {
+        "num": 4,
+        "den": 1
+      },
+      "actual": {
+        "num": 4,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-jh_detail-180",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "93184",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 180,
+      "requested": {
+        "num": 6,
+        "den": 1
+      },
+      "actual": {
+        "num": 6,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-jh_detail-181",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "93696",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 181,
+      "requested": {
+        "num": 181,
+        "den": 30
+      },
+      "actual": {
+        "num": 181,
+        "den": 30
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-jh_detail-182",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "94208",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 182,
+      "requested": {
+        "num": 91,
+        "den": 15
+      },
+      "actual": {
+        "num": 91,
+        "den": 15
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-jh_detail-183",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "94720",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 183,
+      "requested": {
+        "num": 61,
+        "den": 10
+      },
+      "actual": {
+        "num": 61,
+        "den": 10
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-jh_detail-186",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "96256",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 186,
+      "requested": {
+        "num": 31,
+        "den": 5
+      },
+      "actual": {
+        "num": 31,
+        "den": 5
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-jh_detail-192",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "99328",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 192,
+      "requested": {
+        "num": 32,
+        "den": 5
+      },
+      "actual": {
+        "num": 32,
+        "den": 5
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-jh_detail-198",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "102400",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 198,
+      "requested": {
+        "num": 33,
+        "den": 5
+      },
+      "actual": {
+        "num": 33,
+        "den": 5
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-jh_detail-237",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "122368",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 237,
+      "requested": {
+        "num": 79,
+        "den": 10
+      },
+      "actual": {
+        "num": 79,
+        "den": 10
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-jh_detail-243",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "125440",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 243,
+      "requested": {
+        "num": 81,
+        "den": 10
+      },
+      "actual": {
+        "num": 81,
+        "den": 10
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-jh_detail-249",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "128512",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 249,
+      "requested": {
+        "num": 83,
+        "den": 10
+      },
+      "actual": {
+        "num": 83,
+        "den": 10
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-jh_detail-255",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "131584",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 255,
+      "requested": {
+        "num": 17,
+        "den": 2
+      },
+      "actual": {
+        "num": 17,
+        "den": 2
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-jh_detail-261",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "134656",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 261,
+      "requested": {
+        "num": 87,
+        "den": 10
+      },
+      "actual": {
+        "num": 87,
+        "den": 10
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-jh_detail-270",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "139264",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 270,
+      "requested": {
+        "num": 9,
+        "den": 1
+      },
+      "actual": {
+        "num": 9,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-jh_detail-279",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "143872",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 279,
+      "requested": {
+        "num": 93,
+        "den": 10
+      },
+      "actual": {
+        "num": 93,
+        "den": 10
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-jh_detail-630",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "323584",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 630,
+      "requested": {
+        "num": 21,
+        "den": 1
+      },
+      "actual": {
+        "num": 21,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-jh_detail-636",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "326656",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 636,
+      "requested": {
+        "num": 106,
+        "den": 5
+      },
+      "actual": {
+        "num": 106,
+        "den": 5
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-jh_detail-642",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "329728",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 642,
+      "requested": {
+        "num": 107,
+        "den": 5
+      },
+      "actual": {
+        "num": 107,
+        "den": 5
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-jh_detail-648",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "332800",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 648,
+      "requested": {
+        "num": 108,
+        "den": 5
+      },
+      "actual": {
+        "num": 108,
+        "den": 5
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-jh_detail-654",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "335872",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 654,
+      "requested": {
+        "num": 109,
+        "den": 5
+      },
+      "actual": {
+        "num": 109,
+        "den": 5
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-jh_detail-660",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "338944",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 660,
+      "requested": {
+        "num": 22,
+        "den": 1
+      },
+      "actual": {
+        "num": 22,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-jh_detail-666",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "342016",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 666,
+      "requested": {
+        "num": 111,
+        "den": 5
+      },
+      "actual": {
+        "num": 111,
+        "den": 5
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-jh_detail-675",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "346624",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 675,
+      "requested": {
+        "num": 45,
+        "den": 2
+      },
+      "actual": {
+        "num": 45,
+        "den": 2
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-jh_detail-690",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "354304",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 690,
+      "requested": {
+        "num": 23,
+        "den": 1
+      },
+      "actual": {
+        "num": 23,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    },
+    {
+      "id": "자료005-jh_detail-720",
+      "timeline_ref": "자료005-T",
+      "period_ref": "자료005-SAMPLED",
+      "role": "within_period",
+      "source_pts": "369664",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 15360
+      },
+      "source_frame_ordinal": 720,
+      "requested": {
+        "num": 24,
+        "den": 1
+      },
+      "actual": {
+        "num": 24,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "snapshot in full-motion recheck. CTS is reconstructed from original MP4 sample tables with verified single edit offset; source-native identity/time index also checked on every decoded proxy frame. Content interpretation is separate."
+    }
+  ],
+  "notes": "A2 full-motion snapshot subrecord. Not merged with previous records as duplicate timelines. Uncertainty unknown. 480px all-frame proxy is separately indexed; this record contains PNG snapshots only."
+}

@@ -1,0 +1,125 @@
+{
+  "stage": "R7-2 독립 공개원문 부분대조",
+  "checked_on": "2026-10-15",
+  "scope": "열람한10출처 지정부분의 대조. 작성자의15원문 전체열람/깊이를 인증하거나10실험을 수행했다는 뜻이 아님. 원문복제/재배포권한 판정 없음.",
+  "records": [
+    {
+      "source_id": "WEB-CAP",
+      "url": "https://www.w3.org/WAI/media/av/captions/",
+      "independent_read_scope": "Does My Media Need Captions?; Automatic Captions; Positioning",
+      "primary_content_summary": "무의미한 배경음/무음과 필요한 음성정보를 구분하고 자동자막 오류/부정어 누락을 다룬다.",
+      "comparison": "Q-CAP-01의 조건부 비적용과 필요한 소리 대조는 부합. 요구 미확인을 비적용으로 바꾸면 안 됨.",
+      "full_text_review": false,
+      "remote_content_hash": null,
+      "raw_fulltext_archived": false
+    },
+    {
+      "source_id": "WEB-KO",
+      "url": "https://www.w3.org/TR/2026/DNOTE-klreq-20260321/",
+      "independent_read_scope": "Status;6.6.1;7.1.1~7.1.4",
+      "primary_content_summary": "Group Note Draft 2026-03-21, 한글 글자/어절 줄바꿈 선택 및 수열·첨자 등 분리 제한을 확인.",
+      "comparison": "고정 글자 크기/줄수/모든어절 분리 금지로 만들지 않는 조건부 해석이 적절.",
+      "full_text_review": false,
+      "remote_content_hash": null,
+      "raw_fulltext_archived": false
+    },
+    {
+      "source_id": "WEB-SI",
+      "url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf/2d2b50bf-f2b4-9661-f402-5f9d66e4b507?version=7.0",
+      "independent_read_scope": "공식소개→영어PDF v4.01;5.4.1 해당 표머리글 부분,5.4.3~4 printed144~145/PDF33~34",
+      "primary_content_summary": "단위 분리 공백,평면각 예외,°C,소수점/소수쉼표 문맥,0접두표기,숫자그룹 예외와 표머리글 단위 표현을 확인.",
+      "comparison": "원문 전사보존/담당 검수/소수구분미상을 유지하는 예·반례와 부합. 전체SI/GUM 검토 아님.",
+      "full_text_review": false,
+      "remote_content_hash": null,
+      "raw_fulltext_archived": false
+    },
+    {
+      "source_id": "WEB-CONTRAST",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "independent_read_scope": "SC/Intent,large-scale threshold,rounding,anti-aliasing",
+      "primary_content_summary": "웹 텍스트 대비 기준과 예외,크기 판정 문맥,반올림 금지,실표시 한계를 확인.",
+      "comparison": "Q-SCREEN-03의 계산값·가정/실영상 가독성 구분 필요. 한국어 영상px를 큰글자로 자동판정하지 않음.",
+      "full_text_review": false,
+      "remote_content_hash": null,
+      "raw_fulltext_archived": false
+    },
+    {
+      "source_id": "WEB-NONTEXT",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html",
+      "independent_read_scope": "Graphical Objects/essential exception/testing principles",
+      "primary_content_summary": "의미이해에 필요한 부분·대체정보·필수 원형 예외와 인접색 검토 조건을 확인.",
+      "comparison": "필수선/장식 구분 및 CI자동재색칠금지,본문에 로고예외전용금지와 부합. 전체WCAG평가 아님.",
+      "full_text_review": false,
+      "remote_content_hash": null,
+      "raw_fulltext_archived": false
+    },
+    {
+      "source_id": "WEB-FLASH",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold.html",
+      "independent_read_scope": "SC/Intent 특히 최대재생46,비sRGB/최고동적범위47~48,loop49; Key Terms",
+      "primary_content_summary": "횟수와 면적/일반·적색 조건,최대재생·색공간/동적범위·반복경계 조건을 확인.",
+      "comparison": "초안의 loop/HDR 누락을 지적했으며 보완 후보가 조건을 추가함. 실제섬광도구/인체/안전인증 없음.",
+      "full_text_review": false,
+      "remote_content_hash": null,
+      "raw_fulltext_archived": false
+    },
+    {
+      "source_id": "WEB-CHART",
+      "url": "https://v10.carbondesignsystem.com/data-visualization/axes-and-labels/",
+      "independent_read_scope": "Starting at zero;Gaps in data;Breaks in axes;Time series",
+      "primary_content_summary": "막대/면적의0기준 권고와 추세선의 제한범위,결측과 축압축·문서WIP 표기를 확인.",
+      "comparison": "일괄0축/16px·0.5px 전용 금지 적절. 원문의 결측보간 금지와 프로젝트의 명시적 모델 추정 예외는 서로 동일한 원문명령으로 취급하지 않음.",
+      "full_text_review": false,
+      "remote_content_hash": null,
+      "raw_fulltext_archived": false
+    },
+    {
+      "source_id": "WEB-CHOREO",
+      "url": "https://v10.carbondesignsystem.com/guidelines/motion/choreography/",
+      "independent_read_scope": "Paths;Composition/Consistency/Continuity/Sequence",
+      "primary_content_summary": "원문은 Carbon UI 격자·대각선·stagger 규칙과 UI 의미/공간연속성을 다룸.",
+      "comparison": "영상 기술경로/동시비교에 대각선금지·stagger를 강제하지 않는 전이 한계가 적절. 코드예제실행 없음.",
+      "full_text_review": false,
+      "remote_content_hash": null,
+      "raw_fulltext_archived": false
+    },
+    {
+      "source_id": "WEB-TRANSIENT",
+      "url": "https://www.cambridge.org/core/books/abs/cambridge-handbook-of-multimedia-learning/transient-information-principle-in-multimedia-learning/670D96C3B9520320CE558AA855A49EE9",
+      "independent_read_scope": "Chapter21 title/author/2021 date,Summary,pp268~274/DOI",
+      "primary_content_summary": "공개 Summary에서 사라지는 정보와 계속접근 가능한 정보의 대비를 확인.",
+      "comparison": "Q-MOTION-01은 고정정지/모든텍스트유지로 확대하지 않아 범위 적절. 장전문·인용실험은 읽지 않음.",
+      "full_text_review": false,
+      "remote_content_hash": null,
+      "raw_fulltext_archived": false
+    },
+    {
+      "source_id": "WEB-TABLE",
+      "url": "https://design-system.service.gov.uk/components/table/",
+      "independent_read_scope": "When to use/not use;captions;headers;numbers",
+      "primary_content_summary": "행열 비교,표제와머리글 의미,숫자열정렬의 HTML컴포넌트 문맥을 확인.",
+      "comparison": "영상에 HTML/grid/반응형 의무로 옮기지 않고 R3후보/내용관계참고로 한정해 적절. 구현코드실행 없음.",
+      "full_text_review": false,
+      "remote_content_hash": null,
+      "raw_fulltext_archived": false
+    }
+  ],
+  "catalog_external_count": 15,
+  "independently_checked_catalog_sources": 10,
+  "not_independently_reopened_source_ids": [
+    "WEB-AV",
+    "WEB-DESC",
+    "WEB-COLOR",
+    "WEB-VISUAL",
+    "WEB-MOTION"
+  ],
+  "access_notes": [
+    {
+      "source_id": "WEB-SI",
+      "initial_exact_URL_attempt": "web open Internal Error",
+      "recovery": "BIPM 공식 소개 페이지의 영어PDF link를 click하여 동일제목9th/v4.01 EN/102pages와해당절 확인. 실패를 단독열람완료로 바꾸지 않음."
+    }
+  ],
+  "real_video_test": false,
+  "company_authority": false
+}

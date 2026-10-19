@@ -1,0 +1,92 @@
+{
+  "id": "phase01a-development-plan",
+  "version": "0.1",
+  "date": "2026-10-16",
+  "state": "planning_only_pending_user_review",
+  "canonical_document": "00기획/07_Phase01-A_진행계획.md",
+  "input_bundling_complete": true,
+  "reask_input_pairing": false,
+  "proposed_skill_name": "company-video-grammar-analyzer",
+  "skill_created": false,
+  "actual_media_analysis_runs": 0,
+  "media_analysis_api_calls": 0,
+  "implementation_started": false,
+  "default_skill_promotion": false,
+  "phase00_modified": false,
+  "approved": false,
+  "first_step_after_approval": "01-A1 only",
+  "stages": [
+    "01-A1",
+    "01-A2",
+    "01-A3",
+    "01-A4",
+    "01-A5a",
+    "01-A5b",
+    "01-A6"
+  ],
+  "sample_proposals": [
+    {
+      "role": "첫 예비",
+      "id": "자료005",
+      "video": "장헌_최종.mp4",
+      "input_mode": "재구성 원고 있음",
+      "locked": false
+    },
+    {
+      "role": "초기 무문서 시범",
+      "id": "자료013",
+      "video": "01_(E).mp4",
+      "input_mode": "별도 시나리오 없음",
+      "locked": false
+    },
+    {
+      "role": "확대 예비",
+      "id": "자료010",
+      "video": "1.크레인 작업 반경, 물류·인양 안정성 검토.mp4",
+      "locked": false
+    },
+    {
+      "role": "확대 예비",
+      "id": "자료017",
+      "video": "[EG-Bim]소개영상.mp4",
+      "locked": false
+    },
+    {
+      "role": "변형판 스트레스",
+      "id": "자료022",
+      "video": "싱글·듀얼",
+      "locked": false
+    },
+    {
+      "role": "별도 확인 후보",
+      "id": "자료014",
+      "video": "TOVA 홈페이지 묶음",
+      "locked": false
+    },
+    {
+      "role": "별도 확인 후보",
+      "id": "자료011",
+      "video": "K-GEO FESTA_250919_3.mp4",
+      "locked": false
+    }
+  ],
+  "numeric_thresholds": null,
+  "final_evaluation_sample_count": null,
+  "locked_sample_sets": 0,
+  "ground_truth_items": 0,
+  "actual_scores": null,
+  "redteam_execution_performed": false,
+  "plan_review_type": "작성자의 반대 관점 계획 검토. 독립 실행/레드팀 완료 아님.",
+  "choices": {
+    "recommended": "A",
+    "A": "장헌→무문서SW→복합→별도확인",
+    "B": "무문서SW우선→장헌→확대",
+    "C": "장헌·SW의작은기능으로범위축소",
+    "D": "수정후검토·착수보류"
+  },
+  "unchanged_management_skill_versions": {
+    "video-knowledge-curator": "0.2.0-draft.3",
+    "video-record-steward": "0.2.0-draft.5",
+    "video-guidance-reviewer": "0.2.0-draft.4"
+  }
+}

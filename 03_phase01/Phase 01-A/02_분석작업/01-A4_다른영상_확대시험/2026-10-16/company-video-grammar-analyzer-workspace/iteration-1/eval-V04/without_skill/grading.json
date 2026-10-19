@@ -1,0 +1,41 @@
+{
+  "grader": "root inline AI visual review",
+  "human_approved": false,
+  "expectations": [
+    {
+      "text": "01 사용자 지정필터→02 열람하고자 하는 도면정보 선택 탭 강조 교체",
+      "passed": true,
+      "evidence": "tabs: 01→02 활성화 전환 기록. frozen 기준의 지정필터는 작성자 오기이며 화면은 사용자 지정폴더; outputs/observations.json 및 원본 ROI 대조"
+    },
+    {
+      "text": "도면번호 범위 강조·점선 화살표/손 표식과 하단 썸네일 상태를 기록",
+      "passed": true,
+      "evidence": "edit: 선택범위/손·화살표/썸네일 기록; outputs/observations.json 및 원본 ROI 대조"
+    },
+    {
+      "text": "선택창이 나타나 확대/이동하며 배경 선택 행도 바뀜; 팝업과 배경 별도 추적",
+      "passed": true,
+      "evidence": "popup: 확대·이동과 뒤쪽 선택행 추가 분리; outputs/observations.json 및 원본 ROI 대조"
+    },
+    {
+      "text": "상단 설명/오른쪽 설명·초록 보조 문구의 교체·소멸",
+      "passed": true,
+      "evidence": "tabs: 설명 교체와 초록 문구 소멸 기록; outputs/observations.json 및 원본 ROI 대조"
+    },
+    {
+      "text": "문서 기능 대응과 관측 시각 분리; 구현/선택 입력·정확 이징 과장 금지",
+      "passed": true,
+      "evidence": "with는 팝업 폭의 감속, baseline은 유보; 실제 드래그/토글 단정 없음; outputs/observations.json 및 원본 ROI 대조"
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "interpretation": "이 기준에 한정된 진단. 일반 정확도·독립표본 합격률 아님. JSON/카탈로그 통과와 내용판정 별개.",
+  "eval_feedback": {
+    "overall": "자막 전환 기준은 최초 동결 목록에 없던 실제 오류로 양쪽 결과에 동일하게 사후 추가. V04 기준의 필터 오기는 폴더로 해석. 세밀한 이징 유보는 근거가 부족하면 실패로 강제하지 않음."
+  }
+}

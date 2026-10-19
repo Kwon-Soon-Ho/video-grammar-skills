@@ -1,0 +1,83 @@
+{
+  "definition_version": "video-pattern-definition-0.2",
+  "category": "DETAIL",
+  "name": "연결된 기관 묶음의 수평 재배치",
+  "source": {
+    "case_id": "DEV-NEW-P-REFERENCE-20261019",
+    "source_sha256": "8d5bf71b3d739c6bf3e758da1c1d7db51becbab4dd77eab4389ee9d0a48a04c3",
+    "observation_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\records\\NEW-P\\observations.json",
+    "observation_sha256": "0b7effd009cc209db069706e1a549721cbf11a1308f6d313708cf918989e383c",
+    "claim_ids": [
+      "c044",
+      "c050",
+      "c051",
+      "c052",
+      "c053",
+      "c054",
+      "c055",
+      "c057"
+    ],
+    "unknown_ids": []
+  },
+  "definition": {
+    "summary": "기관 카드·설명·연결선을 함께 옮기고 기존 지도/다른 기관 기준점은 유지한다.",
+    "target_role": "소속 관계를 가진 시각 그룹",
+    "phases": [
+      {
+        "name": "기존 맥락 유지",
+        "property": "size",
+        "observed_change": "지도/경찰청 ROI는 같은 native 위치",
+        "claim_ids": [
+          "c044",
+          "c057"
+        ]
+      },
+      {
+        "name": "그룹 이동",
+        "property": "position",
+        "observed_change": "51.5~53초 분홍 묶음이 오른쪽으로 이동",
+        "claim_ids": [
+          "c050",
+          "c051",
+          "c052",
+          "c053",
+          "c054",
+          "c055"
+        ]
+      }
+    ],
+    "parameters": [
+      {
+        "name": "movement_direction",
+        "status": "observed",
+        "value": "right",
+        "unit_or_type": "screen direction"
+      },
+      {
+        "name": "original_parent_rig",
+        "status": "unknown",
+        "value": null,
+        "unit_or_type": "AE parenting/camera"
+      },
+      {
+        "name": "original_AE_implementation",
+        "status": "unknown",
+        "value": null,
+        "unit_or_type": "source controls/curves/effects"
+      }
+    ],
+    "preserve_constraints": [
+      "문구·색·배치를 먼저 동작 원리와 분리한다.",
+      "관측된 중간 상태·순서·중첩·유지 차이를 보존한다.",
+      "미확인 구현값을 원본 값으로 채우지 않는다."
+    ]
+  },
+  "applicability": "관측한 동작 구조의 초안. 새 목적·문구 길이·화면비·대상 형태에서 근거·차이·가독성·성공 여부를 다시 확인. 수치·문구는 이 사례의 변형값이며 보편 기준 아님.",
+  "counterexamples": [
+    "새 영상·새 문구로 재제작/렌더 검증하지 않음.",
+    "원본 구현 설정·원제작 의도는 영상만으로 확정하지 않음."
+  ],
+  "status": "draft",
+  "supersedes": null,
+  "derived_from": []
+}

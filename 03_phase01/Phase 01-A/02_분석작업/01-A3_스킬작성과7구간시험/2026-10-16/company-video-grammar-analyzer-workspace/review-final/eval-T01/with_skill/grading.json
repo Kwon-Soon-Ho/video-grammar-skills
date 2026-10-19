@@ -1,0 +1,42 @@
+{
+  "case_id": "T01",
+  "condition": "with_skill",
+  "recorded_at": "2026-10-16T06:25:14.597849+00:00",
+  "grader": "root source/meaning review; not independent human",
+  "reference_level": "human_confirmed",
+  "expectations": [
+    {
+      "text": "E를 한 덩어리 색 전환으로만 쓰지 않고 조각별 진입을 식별",
+      "passed": true,
+      "evidence": "E조각 object에서 높이별 띠의 시차 우향 진입을 식별. 원본3.5~4.8과 일치."
+    },
+    {
+      "text": "좌→우 이동",
+      "passed": true,
+      "evidence": "direction_order 좌→우; native E 외곽과 대조."
+    },
+    {
+      "text": "초반 빠르고 끝에서 느려짐을 관측 곡선군으로 기록",
+      "passed": true,
+      "evidence": "동일 상단 외곽4.4~4.9 x2078→2112→2135→2148→2154→2154, 후반 감소. measurements/native crops와 근거 연결."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3
+  },
+  "case_status": "requirements_satisfied",
+  "notes": [
+    "E 내부 격자/밝기 진행을 추가 발견. root가 T01_eglow_board.jpg의4.7~5.5 원본 기반 시퀀스에서 우향 강조를 확인; AI 신규 관측이며 사람 승인으로 승격하지 않음."
+  ],
+  "timing": null,
+  "tokens": null,
+  "telemetry_note": "per-run telemetry unavailable; no synthesized averages",
+  "eval_feedback": {
+    "suggestions": [
+      "Known exposed windows, one run per condition, same agent batches; this is regression evidence, not generalization accuracy."
+    ]
+  },
+  "additional_content_issues": []
+}

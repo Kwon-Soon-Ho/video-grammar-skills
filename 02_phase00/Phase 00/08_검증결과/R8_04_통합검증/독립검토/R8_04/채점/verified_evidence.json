@@ -1,0 +1,1633 @@
+[
+  {
+    "run": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\1_새사례\\eval-01-용어초안_지정판본과없는근거\\candidate",
+    "checks": [
+      {
+        "name": "original backup fixture SHA",
+        "passed": true,
+        "evidence": {
+          "backup_sha": "847002623e7956be46d91f62b47c59133351d2701cb92002df3bab22e75ea912",
+          "fixture_sha": "847002623e7956be46d91f62b47c59133351d2701cb92002df3bab22e75ea912"
+        }
+      },
+      {
+        "name": "candidate actual bytes",
+        "passed": true,
+        "evidence": "dffa60cf41f747562bbf6bf1601dbcdde9a9d6ca2e1b9bbfd10f3b4aa082e9bb"
+      }
+    ],
+    "command_checks": [],
+    "observations": [
+      {
+        "candidate_changes": [
+          "/records/1/version",
+          "/records/1/examples",
+          "/records/1/evidence_scope",
+          "/records/1/counterexamples"
+        ]
+      }
+    ],
+    "transcript_sha": "d1694544ef76d432c618ba71ae76d1a1ef9d56e36f1ef8383f69c3d5de6d765e",
+    "timing": {
+      "total_tokens": null,
+      "duration_ms": null,
+      "reason": "not supplied; no output length proxy"
+    }
+  },
+  {
+    "run": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\1_새사례\\eval-02-정상기록_미수정과국소보류\\candidate",
+    "checks": [
+      {
+        "name": "r4 structural stdout",
+        "passed": true,
+        "evidence": {
+          "valid": true,
+          "errors": [],
+          "human_review_queue_count": 27
+        }
+      },
+      {
+        "name": "r5 structural stdout",
+        "passed": true,
+        "evidence": {
+          "valid": true,
+          "errors": [],
+          "human_review_queue_count": 7
+        }
+      }
+    ],
+    "command_checks": [],
+    "observations": [],
+    "transcript_sha": "14d07a4c8ab223591049bba2635fe19eb96d33016568765aa9c1ae8f5b201bde",
+    "timing": {
+      "total_tokens": null,
+      "duration_ms": null,
+      "reason": "not supplied; no output length proxy"
+    }
+  },
+  {
+    "run": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\1_새사례\\eval-03-정상비교_맞는해시와다른판본회신\\candidate",
+    "checks": [
+      {
+        "name": "registered source exact SHA",
+        "passed": true,
+        "evidence": {
+          "path": "자료/출처본문.md",
+          "id": "NOTE-PAIR",
+          "version": "0.1.0",
+          "sha256": "5360e7075eb38f7cca11565be2ce6e019d24f4b85f79311309e9971c50b40234",
+          "read_depth": "provided full synthetic memo; no academic paper"
+        }
+      }
+    ],
+    "command_checks": [],
+    "observations": [
+      {
+        "quality_cards_total": 26,
+        "report_selected_criteria": 11
+      }
+    ],
+    "transcript_sha": "3eb0130215d4350d25b2b127e9ecc8b45499ba9436459af49eb9baf7783847a8",
+    "timing": {
+      "total_tokens": null,
+      "duration_ms": null,
+      "reason": "not supplied; no output length proxy"
+    }
+  },
+  {
+    "run": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-01-큐레이터_저장후실패\\candidate",
+    "checks": [
+      {
+        "name": "event 1 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "01_read",
+            "execution": "01_read.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          },
+          {
+            "label": "06_read_current",
+            "execution": "06_read_current.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "name": "event 2 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "02_backup",
+            "execution": "02_backup.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "name": "event 3 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "03_write",
+            "execution": "03_write.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "name": "event 4 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "04_validate",
+            "execution": "04_validate.execution.json",
+            "exit": 2,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          },
+          {
+            "label": "07_validate_current",
+            "execution": "07_validate_current.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": false,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": false
+          }
+        ]
+      },
+      {
+        "name": "event 5 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "05_restore",
+            "execution": "05_restore.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "name": "event 6 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "01_read",
+            "execution": "01_read.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          },
+          {
+            "label": "06_read_current",
+            "execution": "06_read_current.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "name": "event 7 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "04_validate",
+            "execution": "04_validate.execution.json",
+            "exit": 2,
+            "stdout_equals_event_response": false,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": false
+          },
+          {
+            "label": "07_validate_current",
+            "execution": "07_validate_current.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "name": "backup exact 작업초안/검토지식.json",
+        "passed": true,
+        "evidence": {
+          "backup_sha": "851857164896eb05174617fb3a6571b46617f5e69ecf6889b386d08c6273e554",
+          "fixture_sha": "851857164896eb05174617fb3a6571b46617f5e69ecf6889b386d08c6273e554"
+        }
+      },
+      {
+        "name": "candidate request SHA 작업초안/검토지식.json",
+        "passed": true,
+        "evidence": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-01-큐레이터_저장후실패\\candidate\\outputs\\후보.json"
+      }
+    ],
+    "command_checks": [],
+    "observations": [
+      {
+        "target": "작업초안/검토지식.json",
+        "candidate_sha": "884d7693232d05f325bc7f895dfe031aa4a66258bccc703792ceb64e60c196a6",
+        "event_requested_sha": "884d7693232d05f325bc7f895dfe031aa4a66258bccc703792ceb64e60c196a6",
+        "candidate_json_changed_paths": [
+          "/guidance",
+          "/version"
+        ],
+        "final_sha": "851857164896eb05174617fb3a6571b46617f5e69ecf6889b386d08c6273e554",
+        "backup_sha": "851857164896eb05174617fb3a6571b46617f5e69ecf6889b386d08c6273e554"
+      }
+    ],
+    "event_order": [
+      {
+        "seq": 1,
+        "op": "read",
+        "status": "ok",
+        "error": null
+      },
+      {
+        "seq": 2,
+        "op": "backup",
+        "status": "ok",
+        "error": null
+      },
+      {
+        "seq": 3,
+        "op": "write",
+        "status": "ok",
+        "error": null
+      },
+      {
+        "seq": 4,
+        "op": "validate",
+        "status": "error",
+        "error": "TEST_IO_POSTSAVE_VALIDATION_FAILED: test environment rejected saved draft; no content approval"
+      },
+      {
+        "seq": 5,
+        "op": "restore",
+        "status": "ok",
+        "error": null
+      },
+      {
+        "seq": 6,
+        "op": "read",
+        "status": "ok",
+        "error": null
+      },
+      {
+        "seq": 7,
+        "op": "validate",
+        "status": "ok",
+        "error": null
+      }
+    ],
+    "transcript_sha": "5caba05dfee39e2c44a0d5a9793e6f967ef46bdaf4adc8c228323f8a4762f823",
+    "timing": {
+      "total_tokens": null,
+      "duration_ms": null,
+      "reason": "actual telemetry unavailable"
+    }
+  },
+  {
+    "run": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-02-검토자_명시초안수정후실패\\candidate",
+    "checks": [
+      {
+        "name": "event 1 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "01-read",
+            "execution": "01-read.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          },
+          {
+            "label": "05-read-after-failure",
+            "execution": "05-read-after-failure.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": false,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": false
+          },
+          {
+            "label": "07-read-final",
+            "execution": "07-read-final.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "name": "event 2 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "02-backup",
+            "execution": "02-backup.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "name": "event 3 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "03-write",
+            "execution": "03-write.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "name": "event 4 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "04-validate",
+            "execution": "04-validate.execution.json",
+            "exit": 2,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          },
+          {
+            "label": "08-validate-restored",
+            "execution": "08-validate-restored.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": false,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": false
+          }
+        ]
+      },
+      {
+        "name": "event 5 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "01-read",
+            "execution": "01-read.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": false,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": false
+          },
+          {
+            "label": "05-read-after-failure",
+            "execution": "05-read-after-failure.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          },
+          {
+            "label": "07-read-final",
+            "execution": "07-read-final.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": false,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": false
+          }
+        ]
+      },
+      {
+        "name": "event 6 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "06-restore",
+            "execution": "06-restore.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "name": "event 7 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "01-read",
+            "execution": "01-read.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          },
+          {
+            "label": "05-read-after-failure",
+            "execution": "05-read-after-failure.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": false,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": false
+          },
+          {
+            "label": "07-read-final",
+            "execution": "07-read-final.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "name": "event 8 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "04-validate",
+            "execution": "04-validate.execution.json",
+            "exit": 2,
+            "stdout_equals_event_response": false,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": false
+          },
+          {
+            "label": "08-validate-restored",
+            "execution": "08-validate-restored.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "name": "backup exact 작업초안/검토지식.json",
+        "passed": true,
+        "evidence": {
+          "backup_sha": "851857164896eb05174617fb3a6571b46617f5e69ecf6889b386d08c6273e554",
+          "fixture_sha": "851857164896eb05174617fb3a6571b46617f5e69ecf6889b386d08c6273e554"
+        }
+      },
+      {
+        "name": "candidate request SHA 작업초안/검토지식.json",
+        "passed": true,
+        "evidence": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-02-검토자_명시초안수정후실패\\candidate\\outputs\\후보.json"
+      }
+    ],
+    "command_checks": [],
+    "observations": [
+      {
+        "target": "작업초안/검토지식.json",
+        "candidate_sha": "884d7693232d05f325bc7f895dfe031aa4a66258bccc703792ceb64e60c196a6",
+        "event_requested_sha": "884d7693232d05f325bc7f895dfe031aa4a66258bccc703792ceb64e60c196a6",
+        "candidate_json_changed_paths": [
+          "/guidance",
+          "/version"
+        ],
+        "final_sha": "851857164896eb05174617fb3a6571b46617f5e69ecf6889b386d08c6273e554",
+        "backup_sha": "851857164896eb05174617fb3a6571b46617f5e69ecf6889b386d08c6273e554"
+      }
+    ],
+    "event_order": [
+      {
+        "seq": 1,
+        "op": "read",
+        "status": "ok",
+        "error": null
+      },
+      {
+        "seq": 2,
+        "op": "backup",
+        "status": "ok",
+        "error": null
+      },
+      {
+        "seq": 3,
+        "op": "write",
+        "status": "ok",
+        "error": null
+      },
+      {
+        "seq": 4,
+        "op": "validate",
+        "status": "error",
+        "error": "TEST_IO_POSTSAVE_VALIDATION_FAILED: test environment rejected saved draft; no content approval"
+      },
+      {
+        "seq": 5,
+        "op": "read",
+        "status": "ok",
+        "error": null
+      },
+      {
+        "seq": 6,
+        "op": "restore",
+        "status": "ok",
+        "error": null
+      },
+      {
+        "seq": 7,
+        "op": "read",
+        "status": "ok",
+        "error": null
+      },
+      {
+        "seq": 8,
+        "op": "validate",
+        "status": "ok",
+        "error": null
+      }
+    ],
+    "transcript_sha": "4f0516c7fc665d138c71031bcc023011e79b1fe3db570890a9b088ca5bbb2057",
+    "timing": {
+      "total_tokens": null,
+      "duration_ms": null,
+      "reason": "actual telemetry unavailable"
+    }
+  },
+  {
+    "run": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-03-기록관리자_여러파일일부저장\\candidate",
+    "checks": [
+      {
+        "name": "event 1 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "04-R4백업",
+            "execution": "04-R4백업.command.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "name": "event 2 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "04-R5백업",
+            "execution": "04-R5백업.command.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "name": "event 3 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "05-R4저장",
+            "execution": "05-R4저장.command.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "name": "event 4 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "07-R4저장후환경",
+            "execution": "07-R4저장후환경.command.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "name": "event 5 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "09-R5저장",
+            "execution": "09-R5저장.command.json",
+            "exit": 2,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "name": "event 6 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "11-두파일환경",
+            "execution": "11-두파일환경.command.json",
+            "exit": 2,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          },
+          {
+            "label": "15-복구후환경",
+            "execution": "15-복구후환경.command.json",
+            "exit": 0,
+            "stdout_equals_event_response": false,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": false
+          }
+        ]
+      },
+      {
+        "name": "event 7 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "14-R5복구",
+            "execution": "14-R5복구.command.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "name": "event 8 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "14-R4복구",
+            "execution": "14-R4복구.command.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "name": "event 9 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "11-두파일환경",
+            "execution": "11-두파일환경.command.json",
+            "exit": 2,
+            "stdout_equals_event_response": false,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": false
+          },
+          {
+            "label": "15-복구후환경",
+            "execution": "15-복구후환경.command.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "name": "backup exact 12_통합기록/작업초안.json",
+        "passed": true,
+        "evidence": {
+          "backup_sha": "c5d0295783c3ce02b650a72a1f62c5c558caef6f7d9d7ea45580c72fc3876ddc",
+          "fixture_sha": "c5d0295783c3ce02b650a72a1f62c5c558caef6f7d9d7ea45580c72fc3876ddc"
+        }
+      },
+      {
+        "name": "backup exact 작업초안/디자인연결.json",
+        "passed": true,
+        "evidence": {
+          "backup_sha": "94524a9c69fcc0972288c4522538b67d95cec937cf1e3274ef5a0cac658e99ca",
+          "fixture_sha": "94524a9c69fcc0972288c4522538b67d95cec937cf1e3274ef5a0cac658e99ca"
+        }
+      },
+      {
+        "name": "candidate request SHA 12_통합기록/작업초안.json",
+        "passed": true,
+        "evidence": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-03-기록관리자_여러파일일부저장\\candidate\\outputs\\R4_후보.json"
+      },
+      {
+        "name": "candidate request SHA 작업초안/디자인연결.json",
+        "passed": true,
+        "evidence": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-03-기록관리자_여러파일일부저장\\candidate\\outputs\\R5_후보.json"
+      },
+      {
+        "name": "R5 link actual new R4 bytes",
+        "passed": true,
+        "evidence": {
+          "path": "12_통합기록/작업초안.json",
+          "record_id": "R8-FAULT-NEW-3",
+          "version": "0.1.1",
+          "sha256": "991bf598f7e28d06c9c48947213afa8695d032115e7d2aca48ebef83ccd2ba39"
+        }
+      },
+      {
+        "name": "partial actual prefix",
+        "passed": true,
+        "evidence": {
+          "bytes": 927,
+          "sha": "a65c32199d7cc079f45deead196ed1d4fa85a7590869a7dd56b395dca699bf9f"
+        }
+      }
+    ],
+    "command_checks": [],
+    "observations": [
+      {
+        "target": "12_통합기록/작업초안.json",
+        "candidate_sha": "991bf598f7e28d06c9c48947213afa8695d032115e7d2aca48ebef83ccd2ba39",
+        "event_requested_sha": "991bf598f7e28d06c9c48947213afa8695d032115e7d2aca48ebef83ccd2ba39",
+        "candidate_json_changed_paths": [
+          "/notes",
+          "/version"
+        ],
+        "final_sha": "c5d0295783c3ce02b650a72a1f62c5c558caef6f7d9d7ea45580c72fc3876ddc",
+        "backup_sha": "c5d0295783c3ce02b650a72a1f62c5c558caef6f7d9d7ea45580c72fc3876ddc"
+      },
+      {
+        "target": "작업초안/디자인연결.json",
+        "candidate_sha": "248c4c619a522786de59c8bd9a1c93031b8b08e545196379c2d9170ab8fbec8d",
+        "event_requested_sha": "248c4c619a522786de59c8bd9a1c93031b8b08e545196379c2d9170ab8fbec8d",
+        "candidate_json_changed_paths": [
+          "/version",
+          "/linked_r4_record/version",
+          "/linked_r4_record/sha256"
+        ],
+        "final_sha": "94524a9c69fcc0972288c4522538b67d95cec937cf1e3274ef5a0cac658e99ca",
+        "backup_sha": "94524a9c69fcc0972288c4522538b67d95cec937cf1e3274ef5a0cac658e99ca"
+      }
+    ],
+    "event_order": [
+      {
+        "seq": 1,
+        "op": "backup",
+        "status": "ok",
+        "error": null
+      },
+      {
+        "seq": 2,
+        "op": "backup",
+        "status": "ok",
+        "error": null
+      },
+      {
+        "seq": 3,
+        "op": "write",
+        "status": "ok",
+        "error": null
+      },
+      {
+        "seq": 4,
+        "op": "validate",
+        "status": "ok",
+        "error": null
+      },
+      {
+        "seq": 5,
+        "op": "write",
+        "status": "error",
+        "error": "TEST_IO_PARTIAL_WRITE: candidate prefix written; inspect actual bytes"
+      },
+      {
+        "seq": 6,
+        "op": "validate",
+        "status": "error",
+        "error": "JSON parse validation failed"
+      },
+      {
+        "seq": 7,
+        "op": "restore",
+        "status": "ok",
+        "error": null
+      },
+      {
+        "seq": 8,
+        "op": "restore",
+        "status": "ok",
+        "error": null
+      },
+      {
+        "seq": 9,
+        "op": "validate",
+        "status": "ok",
+        "error": null
+      }
+    ],
+    "transcript_sha": "95dd871a4b87f0d5109f6dd961eee63a05844beda948b4d8385594f917680b26",
+    "timing": {
+      "total_tokens": null,
+      "duration_ms": null,
+      "reason": "actual telemetry unavailable"
+    }
+  },
+  {
+    "run": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate",
+    "checks": [
+      {
+        "name": "event 1 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "01_read",
+            "execution": "01_read.command.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          },
+          {
+            "label": "06_prewrite_read",
+            "execution": "06_prewrite_read.command.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          },
+          {
+            "label": "09_current_read",
+            "execution": "09_current_read.command.json",
+            "exit": 0,
+            "stdout_equals_event_response": false,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": false
+          }
+        ]
+      },
+      {
+        "name": "event 2 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "05_backup",
+            "execution": "05_backup.command.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "name": "event 3 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "01_read",
+            "execution": "01_read.command.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          },
+          {
+            "label": "06_prewrite_read",
+            "execution": "06_prewrite_read.command.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          },
+          {
+            "label": "09_current_read",
+            "execution": "09_current_read.command.json",
+            "exit": 0,
+            "stdout_equals_event_response": false,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": false
+          }
+        ]
+      },
+      {
+        "name": "event 4 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "07_write",
+            "execution": "07_write.command.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "name": "event 5 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "08_postvalidate",
+            "execution": "08_postvalidate.command.json",
+            "exit": 2,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "name": "event 6 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "01_read",
+            "execution": "01_read.command.json",
+            "exit": 0,
+            "stdout_equals_event_response": false,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": false
+          },
+          {
+            "label": "06_prewrite_read",
+            "execution": "06_prewrite_read.command.json",
+            "exit": 0,
+            "stdout_equals_event_response": false,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": false
+          },
+          {
+            "label": "09_current_read",
+            "execution": "09_current_read.command.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "name": "backup exact 12_통합기록/작업초안.json",
+        "passed": true,
+        "evidence": {
+          "backup_sha": "1f0271b62a7f0ee2c4fb2bf788639f75350d7ed62b2a5089f4e90a2afa40bf21",
+          "fixture_sha": "1f0271b62a7f0ee2c4fb2bf788639f75350d7ed62b2a5089f4e90a2afa40bf21"
+        }
+      },
+      {
+        "name": "candidate request SHA 12_통합기록/작업초안.json",
+        "passed": true,
+        "evidence": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate\\outputs\\후보.json"
+      },
+      {
+        "name": "external final bytes preserved without restore",
+        "passed": true,
+        "evidence": {
+          "final": "7aa5c95c80c38f5b32af2a3775d37f2ad6684d565b83681d5f0be76d0f170123",
+          "external": "7aa5c95c80c38f5b32af2a3775d37f2ad6684d565b83681d5f0be76d0f170123",
+          "restore_count": 0
+        }
+      }
+    ],
+    "command_checks": [],
+    "observations": [
+      {
+        "target": "12_통합기록/작업초안.json",
+        "candidate_sha": "dd3576f2831554bc42e5ac53cdb84912d2a0c94c6abb0d8124e7696476704251",
+        "event_requested_sha": "dd3576f2831554bc42e5ac53cdb84912d2a0c94c6abb0d8124e7696476704251",
+        "candidate_json_changed_paths": [
+          "/notes",
+          "/version"
+        ],
+        "final_sha": "7aa5c95c80c38f5b32af2a3775d37f2ad6684d565b83681d5f0be76d0f170123",
+        "backup_sha": "1f0271b62a7f0ee2c4fb2bf788639f75350d7ed62b2a5089f4e90a2afa40bf21"
+      }
+    ],
+    "event_order": [
+      {
+        "seq": 1,
+        "op": "read",
+        "status": "ok",
+        "error": null
+      },
+      {
+        "seq": 2,
+        "op": "backup",
+        "status": "ok",
+        "error": null
+      },
+      {
+        "seq": 3,
+        "op": "read",
+        "status": "ok",
+        "error": null
+      },
+      {
+        "seq": 4,
+        "op": "write",
+        "status": "ok",
+        "error": null
+      },
+      {
+        "seq": 5,
+        "op": "validate",
+        "status": "error",
+        "error": "TEST_IO_POSTSAVE_VALIDATION_FAILED: test environment rejected saved draft; no content approval"
+      },
+      {
+        "seq": 6,
+        "op": "read",
+        "status": "ok",
+        "error": null
+      }
+    ],
+    "transcript_sha": "cb7f9ca84cdc97ec84625b1815d05ff306e140e0e7d9a68f1ecfe949c2ea9ed7",
+    "timing": {
+      "total_tokens": null,
+      "duration_ms": null,
+      "reason": "actual telemetry unavailable"
+    }
+  },
+  {
+    "run": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-05-기록관리자_복구불가\\candidate",
+    "checks": [
+      {
+        "name": "event 1 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "01_read_before",
+            "execution": "01_read_before.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          },
+          {
+            "label": "06_read_prewrite",
+            "execution": "06_read_prewrite.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          },
+          {
+            "label": "09_read_postwrite",
+            "execution": "09_read_postwrite.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": false,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": false
+          },
+          {
+            "label": "12_read_prerestore",
+            "execution": "12_read_prerestore.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": false,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": false
+          },
+          {
+            "label": "14_read_after_restore",
+            "execution": "14_read_after_restore.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": false,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": false
+          }
+        ]
+      },
+      {
+        "name": "event 2 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "04_backup",
+            "execution": "04_backup.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "name": "event 3 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "01_read_before",
+            "execution": "01_read_before.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          },
+          {
+            "label": "06_read_prewrite",
+            "execution": "06_read_prewrite.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          },
+          {
+            "label": "09_read_postwrite",
+            "execution": "09_read_postwrite.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": false,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": false
+          },
+          {
+            "label": "12_read_prerestore",
+            "execution": "12_read_prerestore.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": false,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": false
+          },
+          {
+            "label": "14_read_after_restore",
+            "execution": "14_read_after_restore.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": false,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": false
+          }
+        ]
+      },
+      {
+        "name": "event 4 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "07_write",
+            "execution": "07_write.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "name": "event 5 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "08_validate_postwrite",
+            "execution": "08_validate_postwrite.execution.json",
+            "exit": 2,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          },
+          {
+            "label": "15_validate_final",
+            "execution": "15_validate_final.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": false,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": false
+          }
+        ]
+      },
+      {
+        "name": "event 6 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "01_read_before",
+            "execution": "01_read_before.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": false,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": false
+          },
+          {
+            "label": "06_read_prewrite",
+            "execution": "06_read_prewrite.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": false,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": false
+          },
+          {
+            "label": "09_read_postwrite",
+            "execution": "09_read_postwrite.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          },
+          {
+            "label": "12_read_prerestore",
+            "execution": "12_read_prerestore.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          },
+          {
+            "label": "14_read_after_restore",
+            "execution": "14_read_after_restore.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "name": "event 7 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "01_read_before",
+            "execution": "01_read_before.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": false,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": false
+          },
+          {
+            "label": "06_read_prewrite",
+            "execution": "06_read_prewrite.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": false,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": false
+          },
+          {
+            "label": "09_read_postwrite",
+            "execution": "09_read_postwrite.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          },
+          {
+            "label": "12_read_prerestore",
+            "execution": "12_read_prerestore.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          },
+          {
+            "label": "14_read_after_restore",
+            "execution": "14_read_after_restore.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "name": "event 8 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "13_restore",
+            "execution": "13_restore.execution.json",
+            "exit": 2,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "name": "event 9 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "01_read_before",
+            "execution": "01_read_before.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": false,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": false
+          },
+          {
+            "label": "06_read_prewrite",
+            "execution": "06_read_prewrite.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": false,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": false
+          },
+          {
+            "label": "09_read_postwrite",
+            "execution": "09_read_postwrite.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          },
+          {
+            "label": "12_read_prerestore",
+            "execution": "12_read_prerestore.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          },
+          {
+            "label": "14_read_after_restore",
+            "execution": "14_read_after_restore.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "name": "event 10 actual CLI correlation",
+        "passed": true,
+        "evidence": [
+          {
+            "label": "08_validate_postwrite",
+            "execution": "08_validate_postwrite.execution.json",
+            "exit": 2,
+            "stdout_equals_event_response": false,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": false
+          },
+          {
+            "label": "15_validate_final",
+            "execution": "15_validate_final.execution.json",
+            "exit": 0,
+            "stdout_equals_event_response": true,
+            "stderr_bytes": 0,
+            "correct_cli_and_request": true,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "name": "backup exact 12_통합기록/작업초안.json",
+        "passed": true,
+        "evidence": {
+          "backup_sha": "8f14c54fed046bc9782746d1efd3333da4a9394c4f95a2063c006d872dca95c5",
+          "fixture_sha": "8f14c54fed046bc9782746d1efd3333da4a9394c4f95a2063c006d872dca95c5"
+        }
+      },
+      {
+        "name": "candidate request SHA 12_통합기록/작업초안.json",
+        "passed": true,
+        "evidence": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-05-기록관리자_복구불가\\candidate\\outputs\\후보.json"
+      },
+      {
+        "name": "no write or restore after denied",
+        "passed": true,
+        "evidence": [
+          {
+            "seq": 1,
+            "op": "read",
+            "status": "ok",
+            "error": null
+          },
+          {
+            "seq": 2,
+            "op": "backup",
+            "status": "ok",
+            "error": null
+          },
+          {
+            "seq": 3,
+            "op": "read",
+            "status": "ok",
+            "error": null
+          },
+          {
+            "seq": 4,
+            "op": "write",
+            "status": "ok",
+            "error": null
+          },
+          {
+            "seq": 5,
+            "op": "validate",
+            "status": "error",
+            "error": "TEST_IO_POSTSAVE_VALIDATION_FAILED: test environment rejected saved draft; no content approval"
+          },
+          {
+            "seq": 6,
+            "op": "read",
+            "status": "ok",
+            "error": null
+          },
+          {
+            "seq": 7,
+            "op": "read",
+            "status": "ok",
+            "error": null
+          },
+          {
+            "seq": 8,
+            "op": "restore",
+            "status": "error",
+            "error": "TEST_IO_RESTORE_DENIED: no bytes restored"
+          },
+          {
+            "seq": 9,
+            "op": "read",
+            "status": "ok",
+            "error": null
+          },
+          {
+            "seq": 10,
+            "op": "validate",
+            "status": "ok",
+            "error": null
+          }
+        ]
+      }
+    ],
+    "command_checks": [],
+    "observations": [
+      {
+        "target": "12_통합기록/작업초안.json",
+        "candidate_sha": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a",
+        "event_requested_sha": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a",
+        "candidate_json_changed_paths": [
+          "/notes",
+          "/version"
+        ],
+        "final_sha": "bc502334e31b07f27c5b20f9043d54c3f81fd0facd3b09a3b6a5f40ca4668a9a",
+        "backup_sha": "8f14c54fed046bc9782746d1efd3333da4a9394c4f95a2063c006d872dca95c5"
+      }
+    ],
+    "event_order": [
+      {
+        "seq": 1,
+        "op": "read",
+        "status": "ok",
+        "error": null
+      },
+      {
+        "seq": 2,
+        "op": "backup",
+        "status": "ok",
+        "error": null
+      },
+      {
+        "seq": 3,
+        "op": "read",
+        "status": "ok",
+        "error": null
+      },
+      {
+        "seq": 4,
+        "op": "write",
+        "status": "ok",
+        "error": null
+      },
+      {
+        "seq": 5,
+        "op": "validate",
+        "status": "error",
+        "error": "TEST_IO_POSTSAVE_VALIDATION_FAILED: test environment rejected saved draft; no content approval"
+      },
+      {
+        "seq": 6,
+        "op": "read",
+        "status": "ok",
+        "error": null
+      },
+      {
+        "seq": 7,
+        "op": "read",
+        "status": "ok",
+        "error": null
+      },
+      {
+        "seq": 8,
+        "op": "restore",
+        "status": "error",
+        "error": "TEST_IO_RESTORE_DENIED: no bytes restored"
+      },
+      {
+        "seq": 9,
+        "op": "read",
+        "status": "ok",
+        "error": null
+      },
+      {
+        "seq": 10,
+        "op": "validate",
+        "status": "ok",
+        "error": null
+      }
+    ],
+    "transcript_sha": "4946891c573f33c9ca70f3c9159f21e58f24ca64efb0e97ff9c685eee1b430ed",
+    "timing": {
+      "total_tokens": null,
+      "duration_ms": null,
+      "reason": "actual telemetry unavailable"
+    }
+  }
+]

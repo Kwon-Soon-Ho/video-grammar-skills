@@ -1,0 +1,194 @@
+{
+  "pattern": {
+    "id": "PAT-DETAIL-0001",
+    "definition_version": "video-pattern-definition-0.2",
+    "category": "DETAIL",
+    "name": "대상 외곽의 노란 테두리 전개",
+    "source": {
+      "case_id": "DEV-H02-PARTS-20261019",
+      "source_sha256": "786e900ac768e43e546d6b979c31d3e33fbf5046902fe0174ef30156045fd8cc",
+      "observation_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\development\\H02\\observations-first-detail.json",
+      "observation_sha256": "4ef3bffb62a8996daaaa8139c68f87367251abf938d3b080e48541c9cdc9741d",
+      "claim_ids": [
+        "c022",
+        "c023",
+        "c024"
+      ],
+      "unknown_ids": [
+        "u01"
+      ]
+    },
+    "definition": {
+      "summary": "대상 둘레에 강조 선을 전개하는 세부 동작. 원본의 전체 배치를 함께 적용하지 않는다.",
+      "target_role": "강조할 대상의 외곽선",
+      "phases": [
+        {
+          "name": "전개",
+          "property": "shape",
+          "observed_change": "왼쪽·상단부터 강조선이 추가되어 전체 둘레 형성",
+          "claim_ids": [
+            "c023"
+          ]
+        },
+        {
+          "name": "유지와 회수",
+          "property": "visibility",
+          "observed_change": "UI 강조를 유지하다 대상 축소·소실과 함께 보이지 않게 됨",
+          "claim_ids": [
+            "c024"
+          ]
+        }
+      ],
+      "parameters": [
+        {
+          "name": "원본 강조색",
+          "status": "observed",
+          "value": "노랑",
+          "unit_or_type": "정성 색 분류; 공식 CI값 아님"
+        },
+        {
+          "name": "정확 선폭·리빌 시간",
+          "status": "unknown",
+          "value": null,
+          "unit_or_type": "pixels / seconds"
+        }
+      ],
+      "preserve_constraints": [
+        "대상 외곽과의 연결 유지",
+        "색과 선폭은 새 배경 대비에 맞춰 재검토"
+      ]
+    },
+    "applicability": "원본 한 사례에서 정리한 재사용 후보. 새 문구·화면비·정보 관계·시간 조건에서 재검증한다.",
+    "counterexamples": [
+      "다른 장면의 실제 적용·가독성·제작 결과는 미시험"
+    ],
+    "status": "draft",
+    "supersedes": null,
+    "derived_from": [
+      "PAT-CARD-0001"
+    ],
+    "created_utc": "2026-10-19T01:17:45.549585+00:00",
+    "sha256": "f3be82d49f7260171b68aa18cb53ef0a4a7afebc0289424dd41d12c7b0b0ef0c"
+  },
+  "library_sha256": "141ab547e44a2cc9f01cd4dffcb97a7e1360793c8b922d9f4c881d0ed4cdf8f9",
+  "source_claims": [
+    {
+      "id": "c022",
+      "object_id": "yellow-outline",
+      "property": "identity",
+      "facet": "identity",
+      "time_seconds": [
+        12,
+        20
+      ],
+      "statement": "지도 UI의 노란 강조 테두리 형태/대상으로 식별한다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f00",
+        "f21"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c023",
+      "object_id": "yellow-outline",
+      "property": "shape",
+      "facet": "order",
+      "time_seconds": [
+        12,
+        20
+      ],
+      "statement": "지도 UI가 정착할 무렵 왼쪽·상단부터 노란 강조 테두리가 추가되어 둘레를 이룬다. 기존 ROI와 개요 표본을 대조한 범위다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f10",
+        "f14",
+        "f18",
+        "f21"
+      ],
+      "content_review": "supported"
+    },
+    {
+      "id": "c024",
+      "object_id": "yellow-outline",
+      "property": "visibility",
+      "facet": "presence",
+      "time_seconds": [
+        12,
+        20
+      ],
+      "statement": "정착한 지도 UI의 노란 둘레 강조는 유지 후 예시창 축소·소실과 함께 화면에서 사라진다.",
+      "basis_kind": "observed",
+      "evidence_ids": [
+        "f16",
+        "f21",
+        "f43",
+        "f65"
+      ],
+      "content_review": "supported"
+    }
+  ],
+  "source_evidence": [
+    {
+      "id": "f00",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-A\\H02\\f_00720_012.000.png",
+      "actual_seconds": "12",
+      "role": "within"
+    },
+    {
+      "id": "f10",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-A\\H02-r1-with_skill-extra1\\f_00780_013.000.png",
+      "actual_seconds": "13",
+      "role": "within"
+    },
+    {
+      "id": "f14",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-A\\H02-r1-with_skill-extra1\\f_00804_013.400.png",
+      "actual_seconds": "67/5",
+      "role": "within"
+    },
+    {
+      "id": "f16",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-A\\H02\\f_00816_013.600.png",
+      "actual_seconds": "68/5",
+      "role": "within"
+    },
+    {
+      "id": "f18",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-A\\H02-r1-with_skill-extra1\\f_00828_013.800.png",
+      "actual_seconds": "69/5",
+      "role": "within"
+    },
+    {
+      "id": "f21",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-A\\H02\\f_00864_014.400.png",
+      "actual_seconds": "72/5",
+      "role": "within"
+    },
+    {
+      "id": "f43",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-A\\H02\\f_01056_017.600.png",
+      "actual_seconds": "88/5",
+      "role": "within"
+    },
+    {
+      "id": "f65",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\cases\\A5-A\\H02\\f_01128_018.800.png",
+      "actual_seconds": "94/5",
+      "role": "within"
+    }
+  ],
+  "source_unknowns": [
+    {
+      "id": "u01",
+      "object_id": "main-ui",
+      "question": "정확한 확대율·속도 곡선·진입/퇴장 경계는 무엇인가?",
+      "state": "open",
+      "reason": "현재 개발 재열람의 표본·해상도 또는 검수 범위로 확정하지 않음",
+      "required_basis_kind": "observed",
+      "next_probe": "해당 원본 ROI와 시간 경계의 기존 표본을 우선 보강·대조",
+      "resolution_claim_ids": []
+    }
+  ],
+  "scope_note": "Selected definition only; derivation source and whole-scene patterns are not automatically applied."
+}

@@ -1,0 +1,73 @@
+{
+  "version": "0.1.0",
+  "date": "2026-10-15",
+  "scope": "R4-1 선택한 공식 문서의 관련 절 정독. 전체 표준·영상 실행 검토가 아님.",
+  "user_decision": "A: 재생0초 + 원본PTS/변환근거보존",
+  "sources": [
+    {
+      "id": "R4-W3C-TIME",
+      "url": "https://www.w3.org/TR/media-frags/",
+      "section": "4.2.1 Temporal Dimension",
+      "read_depth": "관련 절 본문",
+      "verified": [
+        "half-open interval",
+        "NPT 표시 시각",
+        "문자열 표시가 프레임 정확성을 보장하지 않음"
+      ],
+      "project_adaptation": [
+        "range/instant/unknown 구분",
+        "DB null에 URI 기본값 대입 금지"
+      ]
+    },
+    {
+      "id": "R4-FFMPEG-FRAME",
+      "url": "https://ffmpeg.org/doxygen/7.1/structAVFrame.html",
+      "section": "pts/time_base/best_effort_timestamp",
+      "read_depth": "관련 필드 정의 본문",
+      "verified": [
+        "PTS는 time_base 단위의 표시 시각",
+        "best_effort는 휴리스틱 추정"
+      ],
+      "unreviewed": [
+        "전체 디코더 동작",
+        "실제 프로젝트 미디어 시간축",
+        "현재 설치 버전"
+      ],
+      "project_adaptation": [
+        "원점 매핑 근거 요구",
+        "원본64비트 PTS 문자열 보존"
+      ]
+    },
+    {
+      "id": "R4-JSON-VALIDATION",
+      "url": "https://json-schema.org/draft/2020-12/json-schema-validation",
+      "section": "구조 검증·7.2 format 어휘",
+      "read_depth": "관련 절 본문",
+      "verified": [
+        "format annotation/assertion 구분"
+      ],
+      "project_adaptation": [
+        "필드간 의미검사 분리"
+      ]
+    },
+    {
+      "id": "R4-FFMPEG-TIME-CONSTANT",
+      "url": "https://ffmpeg.org/doxygen/7.1/group__lavu__time.html",
+      "section": "AV_NOPTS_VALUE",
+      "read_depth": "상수 정의와 설명 본문",
+      "verified": [
+        "미정 timestamp 표시 값"
+      ],
+      "project_adaptation": [
+        "음수PTS 허용과 sentinel 거부를 구분",
+        "null/unknown 보존"
+      ]
+    }
+  ],
+  "limitations": [
+    "원점/PTS의 실제 정확성 미검증",
+    "근거 ID 해석 R4-2 대기",
+    "좌표와 전체 최소DB 통합 대기",
+    "01-A 분석 구현 없음"
+  ]
+}

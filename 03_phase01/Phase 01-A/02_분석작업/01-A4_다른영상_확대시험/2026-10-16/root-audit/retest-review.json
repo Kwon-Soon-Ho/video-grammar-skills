@@ -1,0 +1,42 @@
+{
+  "V05": {
+    "content_issue_resolved": true,
+    "criterion_notes": [
+      "재시험 heading/en/body/G/UI 사건의 순서와 중첩을 원본 기본/보강 표본으로 확인.",
+      "rect/en 사건은 2.6~3.3초 우하단 수축·같은 크기의 옅은 영문 잔존을 분리. root가 ROI2.6/2.8/3.0/3.1을 직접 대조. 좌변2511/2690/3033/3658px 증가량179/343/625는 진행 중 가속 경향.",
+      "G의 가시성과 원호·십자 가이드 변화 분리. G를 E와 같은 조각 슬라이드라고 쓰지 않음.",
+      "좌 CAD 확대·우하향과 별도 광점, 우 CAD 우향 이동/내부 도면→속성패널 리빌 분리. 가려진 전체 폭은 미확정.",
+      "배경 UI 선택 행의 초·중·말 비교 및 속성별 근거. 문서 없음/오디오 미검수. 초기/후기 두 진행 구간을 가진 감속 근거를 재대조."
+    ],
+    "remaining_limits": ["개별 획·원호의 정확한 곡선", "배경/카드 일부 시각 추정의 정밀 오차", "가려진 좌변과 표본 사이 UI 변화"],
+    "review_type": "fresh context targeted rerun, root visual review; not human gold"
+  },
+  "V06S": {
+    "content_issue_resolved": true,
+    "criterion_notes": [
+      "old_scene에 시점·주야 변화와235.0 중첩→235.1 새 배경 연결. 3D 카메라 구현은 유보.",
+      "상단 가로 제목의 공사/CONSTRUCTION→공사목표/TARGETS 중간 상태와 안전→품질→공기→효율 순서. root가 S_title 원본 ROI 시트 직접 대조.",
+      "safety_network, quality_scan, schedule_inside, efficiency_connections를 별도 기록. 사진 소실/아이콘 잔존과 창 끝 소폭 재배치의 미완료 상태를 분리. root가 안전/효율/자막 ROI 및 기본 종료 프레임 대조.",
+      "비교 보고서는 W의 좌측 세로판과 주야 병치를 S와 구별. 동일 초나 고정 오프셋으로 대응하지 않음.",
+      "파일별 특징점·시각 근거와 오차 기록. 검수 후 S 작업보고 문서는 변화율 차이 근거 부족으로 unknown으로 보정, 나머지 정착부 감속도 해당 대상의 진행 표본에 한정.",
+      "subtitles는 경관→없음→4대 핵심가치→BIM 프레임워크를 연결. root의244/244.2/244.5 native 자막 대조로 후반 직전 상태 혼입 해소 확인."
+    ],
+    "remaining_limits": ["매우 짧은 주기/UI 변화", "정확한 곡선·광량 분리", "전체 문서 배치/오디오/전체 영상"],
+    "report_summary": "싱글 재시험은 경관 자막→잠시 없음→4대 핵심가치→BIM 프레임워크의 상태를 구분하고, 후반 전환을(244,244.2]초로 좁혔습니다.",
+    "review_type": "fresh context targeted rerun followed by disclosed root-review correction; pre-correction report preserved"
+  },
+  "V06W": {
+    "content_issue_resolved": true,
+    "criterion_notes": [
+      "좌측 주간/우측 야경과 시점 변화 분리.239.300→239.333333 인접 프레임 컷은 root가 두 원본 프레임 직접 확인.",
+      "좌측 세로 제목판→네 가치 순차 등장 및 TARGET 단수 판독. root가 W_title ROI 대조.",
+      "카드 사진과 통신선/스캔/벽 화면/말풍선·점선·느낌표를 분리. 효율 화면은 아래→위 리빌이며 벽 자체 이동으로 단정하지 않음. W_effscreen native ROI 시트 대조.",
+      "S/W 상태별 앵커를 따로 기록. 기준점별 차이4.4~5.4초를 전체 고정 오프셋으로 확장하지 않음.",
+      "7680x2160 raster와 SAR 미상 명시. 검수 후 작업보고15/0/0은 감속→unknown으로 수정.250의 제목 어두워짐은 context_after로 보존.",
+      "subtitles는 핵심가치→BIM 프레임워크 전환을(249.2,249.4]로 연결. root의249/249.4/249.5 native 자막 대조로 초기 경관 문구와 혼입하지 않음을 확인."
+    ],
+    "remaining_limits": ["작업보고 문서의 가감속", "일부 아이콘 각도·광량 곡선", "250 이후 사진 퇴장 여부", "실제 표시비·AE 구현·오디오"],
+    "report_summary": "듀얼도 같은 문구 순서를 파일 자체의(249.2,249.4]초 근거로 연결했습니다. 사진/내부 그래픽의 별도 등장과 싱글의 사진 소실·아이콘 잔존, 듀얼 창 끝의 사진 유지를 구별했습니다. 재시험 검수에서 작업보고 문서의 감속 과장을 낮추고 경계 다음 제목색 반환도 표시했습니다.",
+    "review_type": "fresh context targeted rerun followed by disclosed root-review correction; pre-correction report preserved"
+  }
+}

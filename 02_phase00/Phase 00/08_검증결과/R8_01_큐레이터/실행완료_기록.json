@@ -1,0 +1,174 @@
+{
+  "id": "r8-curator-execution-completion",
+  "version": "0.1.0",
+  "date": "2026-10-15",
+  "attempts": [
+    {
+      "run": "iteration-1/eval-01-회의메모_지식정리/new_skill/run-1",
+      "state": "completed_infrastructure_invalid",
+      "completion_basis": "executor completion message + actual transcript and output files; no elapsed/token telemetry supplied",
+      "transcript_sha256": "79ad55a0e0fadf97c70e752671e2bb4e19bccf93bcab42f8b7698d6a33b0ed32",
+      "output_hashes": {
+        "outputs/confirmed_evidence.json": "e409e0e72b402480fd5de8d19013c2471984a5b174db60bf4c5f8343d34b294f",
+        "outputs/existing_core_reference_check.json": "2842c8efa2462fc1c603444ba33bb9d35baf2dae0318118cced382274bd82b5d",
+        "outputs/input_manifest_after.json": "f3b7265e44418e97e5dd0fc739d1ce7594834f751565e18a805840e026730598",
+        "outputs/input_manifest_before.json": "591a3e900e130d581242c25c4bed01fd27c763c0a51d39f574ade5b9fd8c07b5",
+        "outputs/output_hashes.json": "2d1489e02c34416ab8eac80db8d227c7cb1b836da603f2dfa6d3d5ad468792b0",
+        "outputs/result.json": "53c0afa82021db809231e2a9ada4d671a0a04623053e0b36a6ad79ac84f447c3",
+        "outputs/validation.json": "322cdaf1dcc3d22c41d627452af72255753d670508c82d70040f8959c3215b50",
+        "outputs/설명.md": "f5fcd15fb44ec616936b5a8ed97d779bf71639c88d80630d01300036925422ef"
+      },
+      "duration_ms": null,
+      "total_tokens": null
+    },
+    {
+      "run": "iteration-1/eval-01-회의메모_지식정리/old_skill/run-1",
+      "state": "completed_infrastructure_invalid",
+      "completion_basis": "executor completion message + actual transcript and output files; no elapsed/token telemetry supplied",
+      "transcript_sha256": "2f8b224136baa8e45d5c113d5d9f991da0f5ee8c6f87b3357300fdd43c449cbb",
+      "output_hashes": {
+        "outputs/knowledge_draft.json": "d37613e629a26110dae333996c5670832ecfbc366d3a9454564fd90e35828990",
+        "outputs/validation.json": "0d2e05271f4ee2d8e6e034732f36cfbfb1b1e0a1f1191a0a993601807bb75937",
+        "outputs/설명.md": "a8ea78465911f2d1d130c72a7b6871a50b21ce65d48bf00a904c0f350b547a42"
+      },
+      "duration_ms": null,
+      "total_tokens": null
+    },
+    {
+      "run": "iteration-2/eval-01-회의메모_지식정리/new_skill/run-1",
+      "state": "completed_comparison_eligible",
+      "completion_basis": "executor completion message + actual transcript and output files; no elapsed/token telemetry supplied",
+      "transcript_sha256": "471cd83b0efd954f82f4536e8a1115387eef2865de20487d2c34e963cbb02b4f",
+      "output_hashes": {
+        "outputs/backup/회의메모_공통지식초안_v0.1.0.json": "bb505778b3f2ec336fec279aea882e78096d3b809ac2729d7f19df8db46618e7",
+        "outputs/catalog_validation.json": "d447119103531348fa77ce65a6cde0fd713548677f577b422882a7aa5c0d08f3",
+        "outputs/draft_v0.1.0_to_v0.1.1.diff": "e6ddf2f8b214f514b058e6c7e6bbe794f5ee4594ae8366b2f852340b7b541425",
+        "outputs/draft_validation.json": "cd8d48014e29ec6354e03ccc28c2a363039fb6cb0140ca517aa16889ef5d712a",
+        "outputs/input_hashes_after.json": "b49c6411788c0eba7ea031a231b2cf82ff0bc29aff81f45a84c761237203b061",
+        "outputs/input_hashes_before.json": "b49c6411788c0eba7ea031a231b2cf82ff0bc29aff81f45a84c761237203b061",
+        "outputs/lookup_results.json": "93a1cd87269ee32bc51dfcb4f1c23df63fd4bba8e51cd3833f03bbc1ec7e48e0",
+        "outputs/설명.md": "c88ff47e8602717375ffe14d48bc9abc5176d775d698488f94751d0ffbe6af50",
+        "outputs/회의메모_공통지식초안.json": "1e4266c3445ffe980a6b82633d94916023a213c17cfa198305892396777d1fd0"
+      },
+      "duration_ms": null,
+      "total_tokens": null
+    },
+    {
+      "run": "iteration-2/eval-01-회의메모_지식정리/old_skill/run-1",
+      "state": "completed_comparison_eligible",
+      "completion_basis": "executor completion message + actual transcript and output files; no elapsed/token telemetry supplied",
+      "transcript_sha256": "bc777c30598c849cb3b25ab7cacc3abe21c41cec3169d18f5a71934252113548",
+      "output_hashes": {
+        "outputs/build_draft.py": "425614694642c99b327077a5416f9a1591c7628c484f1c8774b6933f3700b385",
+        "outputs/existing_motion_check.json": "150d93d45f678c0401804c902b5c7263f361e1fa405ab7a3a2db2f7e8a27eda4",
+        "outputs/input_hashes_after.json": "4741dd35af1b97885c0f271e2deeb2bad494eadf67438d73989666e9baddec76",
+        "outputs/input_hashes_before.json": "4741dd35af1b97885c0f271e2deeb2bad494eadf67438d73989666e9baddec76",
+        "outputs/knowledge_draft.json": "7b9471a5e23a01bfd9694e01da1be4bbcc03d0617efc7f251b8463e10e5cb17f",
+        "outputs/validation.json": "b1e35074c0767ddb00535406be5964f3bb6b91c0ea51cde228b00e0955d08819",
+        "outputs/설명.md": "87921758e38f4becec4ea493d8a6226ed68f7c8137ddb9a830d57dc2b1ae8ae2"
+      },
+      "duration_ms": null,
+      "total_tokens": null
+    },
+    {
+      "run": "iteration-2/eval-02-지식초안_실제수정/new_skill/run-1",
+      "state": "completed_comparison_eligible",
+      "completion_basis": "executor completion message + actual transcript and output files; no elapsed/token telemetry supplied",
+      "transcript_sha256": "a0d8488cee693f8ecbde3593cecda497f1ee7c2a5b5bda16816265003a69f5e7",
+      "output_hashes": {
+        "outputs/backup/지식문구수정_01/레이아웃지식_초안_v0.1.1.json": "0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306",
+        "outputs/레이아웃지식_초안_v0.1.2.json": "b3ce2109c82c28e9267cb87908ef692d189ec0f32c766a2c33567087db90ee0c",
+        "outputs/변경.diff": "b35f7e035d9fea550ff0e17e4a268d63d1d582104bff05f5d2f70b3221d15ab4",
+        "outputs/설명.md": "f17f03d6a2a9a25fa74007ddad1596de21e74453fe96d41f022318efcacffb63",
+        "outputs/수정과검사.py": "cb1007cde284fd6814774387ba8a1f9b487cad8542c491d6820a6276ef333a4f",
+        "outputs/실제결과.json": "86cff041a5cedc8118d19fba8c12b88a1a2543221f7bb2da3df5cb69028be739",
+        "outputs/실행_exitcode.txt": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+        "outputs/실행_stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "outputs/실행_stdout.txt": "ade33125ed1a39a1748224d87b5ba83ec6a3ca4add426c73d3ea6f76e3a78e36"
+      },
+      "duration_ms": null,
+      "total_tokens": null
+    },
+    {
+      "run": "iteration-2/eval-02-지식초안_실제수정/old_skill/run-1",
+      "state": "completed_comparison_eligible",
+      "completion_basis": "executor completion message + actual transcript and output files; no elapsed/token telemetry supplied",
+      "transcript_sha256": "f5523db0a8e9690b2d5ae6f511e719c03cc3f7dc5bdf68de4f9488d6092fa5c2",
+      "output_hashes": {
+        "outputs/레이아웃지식_초안_v0.1.2-draft.1.json": "e22e3ed9936b73db448134586b016f71b26c921196ce4f96e4f8b25f2ea1160b",
+        "outputs/변경내역.json": "9b6cc1a89b82caf9d393463fabb9363ea882736278a3c399eab17e670c9f7b0c",
+        "outputs/설명.md": "a56dc0e6db65f6cda02714642cf4a173e5c295fbcbfecade493414e397bc106f",
+        "outputs/수행.py": "eaa1daff7b9d5dc289408f91f275734a7c489bcf93797a3545c7f4027d40894e",
+        "outputs/실제결과.json": "43554cfdc3bcc40f69bb19268bf9fc0f458b17016c88189c0e66e63d77b3eeee",
+        "outputs/초안조회.md": "d133da5b5eb44644830d6fc4b3bd448b26a6c908a93c919ca8c56d93fa27ae53",
+        "outputs/확인결과.json": "96a78cc63bb60d6a0739a02356755ebb0c6d209005e3feb994c02cf44cfdecf9"
+      },
+      "duration_ms": null,
+      "total_tokens": null
+    },
+    {
+      "run": "iteration-2/eval-03-동일판본_출처충돌/new_skill/run-1",
+      "state": "completed_comparison_eligible",
+      "completion_basis": "executor completion message + actual transcript and output files; no elapsed/token telemetry supplied",
+      "transcript_sha256": "5dfbe4802d8bef71a59a8751bb8e914ca548ae1f9339972ed23690c57de9d8dd",
+      "output_hashes": {
+        "outputs/backup/동일판본충돌_변경전/00_운영계약/정본과표시_연결목록.json": "e46cdd823766e91c84dd6a05a0254879bfcc9f80c2b04bfc48ec0788b5005fe6",
+        "outputs/backup/동일판본충돌_변경전/01_공통용어/공통용어사전.json": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+        "outputs/backup/동일판본충돌_변경전/02_원칙과레이아웃/07_레이아웃별_선택조건과반례.md": "945fa1ec974bd73899d71de9b4019edf0d465d3c32443a9fe8ee610d56c471dd",
+        "outputs/backup/동일판본충돌_변경전/02_원칙과레이아웃/레이아웃_심화지식.json": "5d6378eb954b6b75f94be2a0988254a1406f6dacc8a6c44060c6a05ff56aa14c",
+        "outputs/backup/동일판본충돌_변경전/02_원칙과레이아웃/레이아웃지식.json": "b83fcc5cbb62d4fea94784c596b85287564da1e5fc04d6353305b5796b2ef9a2",
+        "outputs/backup/동일판본충돌_변경전/02_원칙과레이아웃/화면설계원칙.json": "281fe61151dfc96649a070b6fd3ae653c0353b7513f3209534140ce1f54e6b96",
+        "outputs/backup/동일판본충돌_변경전/05_출처와검토/R3_레이아웃_조사기록.json": "faed3dd1e34e95935962b0973ebcf6e2d2eae31db505e5f93da5cab9d1c7c961",
+        "outputs/backup/동일판본충돌_변경전/05_출처와검토/버전목록.json": "a31ba13f0e1fa17a6772b94a5441cbb13fba35e96a0fe7e2647d292ff79c34d2",
+        "outputs/backup/동일판본충돌_변경전/05_출처와검토/출처목록.json": "0fd8c405a36f67a4255be34c198b29fa499fde5d52b7998fd2b0af754bcaec2f",
+        "outputs/backup/동일판본충돌_변경전/입력메모.json": "1a95e8d2718a035d18d3788fe564549d493e4efe09b73cbce89a9cbdaa018e1f",
+        "outputs/결과.json": "83919532063042369ff11bb7f1125cefac0e5b7f1af7a39cc7794d3744b0a89b",
+        "outputs/기존_목록검사.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "outputs/기존_목록검사.stdout.txt": "630fa66a55f2b18f5dd5fd46b839d5ced8302a8463d2c8cb0809cc51b3150b2a",
+        "outputs/기존_지식조회.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "outputs/기존_지식조회.stdout.txt": "d3433b16243b1ff4e2a66ef5de92349f9bbccae192dad45f445c78f7a45e5369",
+        "outputs/단일초점_지식카드_v0.1.2.json": "862cb2f22e877b631009add5dcf17ba82383a708fee7d2bfcd1d90bd0bcdb2e1",
+        "outputs/동일판본_출처충돌.json": "825ff7faef8b3797c5d706d42ba54308376465cd95ea5929fa34c189fcb201fe",
+        "outputs/레이아웃지식_단일초점_초안_v0.1.2.json": "7edc0740cb000e3b9c259d8d8100ef3181569bbacbc8068eb3e54a958e2260a2",
+        "outputs/변경.diff": "ab2dbdb846fe43f60fad47622ac9e7c3fb434e17ac521ba06087b225719d0882",
+        "outputs/설명.md": "bb2bab9803bab360a89b2e8ffb28cbf2727338382c755baa9b1f3d33f6fc6df2",
+        "outputs/작업전_입력해시.json": "3b720c5da75db7e7da2f6e2a645dbdc8d9206f2b2984efba8538b4258191bd10",
+        "outputs/초안_검사결과.json": "edb27d08b1e64e856407a7dd2562f7d9636f4bfcfe39aeb79ceea2b9d9d98deb"
+      },
+      "duration_ms": null,
+      "total_tokens": null
+    },
+    {
+      "run": "iteration-2/eval-03-동일판본_출처충돌/old_skill/run-1",
+      "state": "completed_comparison_eligible",
+      "completion_basis": "executor completion message + actual transcript and output files; no elapsed/token telemetry supplied",
+      "transcript_sha256": "db5480230e3cf5f50adc2a62e31296fcc558190487199489295856656abfea86",
+      "output_hashes": {
+        "outputs/curation_result.json": "e59cdd9d8c821b55557a7f9a9b495f2e32253df4ddcdade89a7e7769937497f6",
+        "outputs/existing_lookup_stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "outputs/existing_lookup_stdout.txt": "d3433b16243b1ff4e2a66ef5de92349f9bbccae192dad45f445c78f7a45e5369",
+        "outputs/single_focus_draft.json": "f881eaf98a6d3a1346ca8fa8b589f94b9c38e12be2498a3c562efb3636bcd687",
+        "outputs/source_conflict.json": "a0dd418ae5537a79f654f68d9d6ecb4435cf13e0f8704c5385fee086681bc9c9",
+        "outputs/validation_results.json": "8656eebe463fb18d6ea1f4cf7f4e42e73c5ef622406332bf4375616f810038f4",
+        "outputs/결과설명.md": "97fff5a711fe3bfb5be4dbf6f7aff23ea6419ed4b23f5ee384874af6d1830544"
+      },
+      "duration_ms": null,
+      "total_tokens": null
+    }
+  ],
+  "prepared_but_not_executed": [
+    "iteration-1/eval-02-지식초안_실제수정/new_skill/run-1",
+    "iteration-1/eval-02-지식초안_실제수정/old_skill/run-1",
+    "iteration-1/eval-03-동일판본_출처충돌/new_skill/run-1",
+    "iteration-1/eval-03-동일판본_출처충돌/old_skill/run-1"
+  ],
+  "executor_attempt_count": 8,
+  "comparison_eligible_count": 6,
+  "infrastructure_invalid_count": 2,
+  "preflight_code_failure_episodes_not_model_trials": 1,
+  "dispatch_files_are_initial_preparation_snapshots_not_current_completion_status": true,
+  "scope": "합성 개발사례. 채점/사람검수/채택 상태와 구분.",
+  "actual_video_trials": 0,
+  "human_feedback_received": false,
+  "candidate_adopted": false
+}

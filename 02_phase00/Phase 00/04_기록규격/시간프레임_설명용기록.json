@@ -1,0 +1,87 @@
+{
+  "contract_version": "0.1.0",
+  "source_type": "synthetic_example",
+  "asset": {
+    "id": "EX-ASSET",
+    "version": "0.1.0",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "timelines": [
+    {
+      "id": "EX-TIME",
+      "asset_ref": "EX-ASSET",
+      "stream_index": 0,
+      "duration": {
+        "num": 10,
+        "den": 1
+      },
+      "duration_evidence_refs": [
+        "EX-DURATION"
+      ],
+      "origin": {
+        "method": "verified_offset",
+        "pts": "90000",
+        "time_base": {
+          "num": 1,
+          "den": 90000
+        },
+        "evidence_refs": [
+          "EX-ORIGIN"
+        ],
+        "limitations": "가상 값. 파일 존재·원점·회사 사실을 증명하지 않음."
+      },
+      "frame_rate_mode": "vfr",
+      "nominal_fps": null,
+      "frame_count": null,
+      "limitations": "전체프레임인덱스 미제공·가상시험용"
+    }
+  ],
+  "periods": [
+    {
+      "id": "EX-SEGMENT",
+      "timeline_ref": "EX-TIME",
+      "parent_ref": null,
+      "kind": "range",
+      "start": {
+        "num": 0,
+        "den": 1
+      },
+      "end": {
+        "num": 3,
+        "den": 1
+      },
+      "uncertainty": {
+        "num": 0,
+        "den": 1
+      },
+      "unknown_reason": null
+    }
+  ],
+  "frames": [
+    {
+      "id": "EX-FRAME",
+      "timeline_ref": "EX-TIME",
+      "period_ref": "EX-SEGMENT",
+      "role": "within_period",
+      "source_pts": "180000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 90000
+      },
+      "source_frame_ordinal": 25,
+      "requested": {
+        "num": 1,
+        "den": 1
+      },
+      "actual": {
+        "num": 1,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "manual",
+      "limitations": "가상 프레임. 25는 인위적 값이며 FPS 환산이 아님."
+    }
+  ],
+  "notes": "합성 규격 fixture만 사용. 실제 분석/승인/파일 내용 검증 없음."
+}

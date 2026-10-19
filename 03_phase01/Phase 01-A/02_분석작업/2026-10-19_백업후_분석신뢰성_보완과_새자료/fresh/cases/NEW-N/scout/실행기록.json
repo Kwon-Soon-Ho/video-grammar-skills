@@ -1,0 +1,191 @@
+{
+  "id": "NEW-N",
+  "phase": "scout",
+  "input_sha256": "42d87e0cc8c507ccb2a8924ae3252d689ef103d4ca3b1219ec1e588f6f474a03",
+  "limits": {
+    "wall_seconds_per_worker": 60,
+    "max_read_bytes": 268435456,
+    "max_seeks": 20000,
+    "max_packets": 4000,
+    "max_frames": 1600,
+    "max_pixels": 16588800,
+    "max_output_images": 40,
+    "memory_process_bytes": 2147483648
+  },
+  "tool": {
+    "av": "19.0.1",
+    "libraries": "{'libavutil': (61, 1, 102), 'libavcodec': (63, 1, 102), 'libavformat': (63, 1, 102), 'libavdevice': (63, 1, 102), 'libavfilter': (12, 1, 102), 'libswscale': (10, 1, 102), 'libswresample': (7, 1, 102)}"
+  },
+  "frames": [
+    {
+      "frame_id": "NEW-N-scout-2511",
+      "requested_playback_seconds": "156928/1875",
+      "actual_playback_seconds": "837/10",
+      "reported_pts": "2511000",
+      "time_base": "1/30000",
+      "display_ordinal_zero_based": 2511,
+      "container_cts_ticks": "2512000",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\scout\\f_02511_083.700.png",
+      "sha256": "c646bb2232ddf1d278926512574cf4348dd31b545114e4e0b79e8a487b13d32e",
+      "raster": [
+        7680,
+        2160
+      ],
+      "derived_size": [
+        7680,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        }
+      ],
+      "human_review": "not_requested_AI_observation"
+    },
+    {
+      "frame_id": "NEW-N-scout-5022",
+      "requested_playback_seconds": "313856/1875",
+      "actual_playback_seconds": "837/5",
+      "reported_pts": "5022000",
+      "time_base": "1/30000",
+      "display_ordinal_zero_based": 5022,
+      "container_cts_ticks": "5023000",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\scout\\f_05022_167.400.png",
+      "sha256": "8edb7f2516e48cc2ed3549e0400d87e70563c4351d2075477a16ff8df28727dc",
+      "raster": [
+        7680,
+        2160
+      ],
+      "derived_size": [
+        7680,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        }
+      ],
+      "human_review": "not_requested_AI_observation"
+    },
+    {
+      "frame_id": "NEW-N-scout-7533",
+      "requested_playback_seconds": "156928/625",
+      "actual_playback_seconds": "2511/10",
+      "reported_pts": "7533000",
+      "time_base": "1/30000",
+      "display_ordinal_zero_based": 7533,
+      "container_cts_ticks": "7534000",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\fresh\\cases\\NEW-N\\scout\\f_07533_251.100.png",
+      "sha256": "db0652b86963526f9fa144fd12d826b57ba1443776c98350336cb1add82a09f5",
+      "raster": [
+        7680,
+        2160
+      ],
+      "derived_size": [
+        7680,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        }
+      ],
+      "human_review": "not_requested_AI_observation"
+    }
+  ],
+  "audio_status": "track_metadata_only_not_decoded_not_listened_not_transcribed",
+  "separate_api_calls": 0,
+  "genpts_disabled": true,
+  "timing_status": "all_decoded_frame_pts_match_reconstructed_sample_tables_in_this_window",
+  "ai_model_id": "host_not_exposed",
+  "ai_internal_resize": "unknown",
+  "container": {
+    "start_time": 0,
+    "duration": 418433333,
+    "time_unit": "microseconds",
+    "format": "mov",
+    "metadata": {
+      "major_brand": "mp42",
+      "minor_version": "0",
+      "compatible_brands": "mp42mp41",
+      "creation_time": "2026-06-22T06:44:08.000000Z"
+    },
+    "flags": 2097280
+  },
+  "streams": [
+    {
+      "index": 0,
+      "type": "video",
+      "codec": "h264",
+      "time_base": "1/30000",
+      "start_time": "0",
+      "duration": "12553000",
+      "frames_reported": 12553,
+      "metadata": {
+        "creation_time": "2026-06-22T06:44:08.000000Z",
+        "language": "eng",
+        "handler_name": "\u001fMainconcept Video Media Handler",
+        "encoder": "AVC Coding"
+      },
+      "width": 7680,
+      "height": 2160,
+      "sample_aspect_ratio": "0/1",
+      "average_rate": "30/1",
+      "has_b_frames": true,
+      "format": "<av.VideoFormat yuv420p, 7680x2160>",
+      "color_range": "1",
+      "colorspace": "1"
+    },
+    {
+      "index": 1,
+      "type": "audio",
+      "codec": "aac",
+      "time_base": "1/48000",
+      "start_time": "0",
+      "duration": "20084800",
+      "frames_reported": 19616,
+      "metadata": {
+        "creation_time": "2026-06-22T06:44:08.000000Z",
+        "language": "eng",
+        "handler_name": "#Mainconcept MP4 Sound Media Handler"
+      },
+      "sample_rate": 48000,
+      "layout": "<av.AudioLayout 'stereo'>"
+    }
+  ],
+  "sar_status": "unknown",
+  "sar_limit": "raw raster resized proportionally; no display-aspect/precise spatial claim",
+  "timing_mapping": {
+    "basis": "single rate-1 elst, stts+ctts table reconstructed, then compared to displayed decoded PTS",
+    "edit_media_offset": "1/30",
+    "playback_zero_movie_ticks": "0",
+    "first_expected_presentation": "0",
+    "video_media_scale": 30000,
+    "sample_count": 12553,
+    "raw_container_cts_of_playback_zero": "1000",
+    "movie_timescale": 90000,
+    "container_duration_vs_video_edit_difference_seconds": "31/750"
+  },
+  "decoded_frames": 27,
+  "packets": 30,
+  "io_requested_bytes": 4285492,
+  "seeks": 14,
+  "orientation": {
+    "rotation_reported_ccw": 0,
+    "raw_raster": [
+      7680,
+      2160
+    ],
+    "matrix_basis": "tkhd identity",
+    "rotation_applied": false
+  },
+  "complete_target_selection": true,
+  "selection": "seek backward to keyframe, validate every decoded PTS against sample table and select first presentation >= requested",
+  "input_sha256_after": "42d87e0cc8c507ccb2a8924ae3252d689ef103d4ca3b1219ec1e588f6f474a03"
+}

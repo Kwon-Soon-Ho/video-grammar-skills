@@ -1,0 +1,49 @@
+{
+  "status": "verified",
+  "checks": [
+    {
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-1\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\inputs\\Phase00\\12_통합기록\\통합기록_작업초안.json",
+      "actual_sha256": "015d061abd10150f9453fa345fb88bdac147d1de86fcb5528a9b1acf237d64f3",
+      "backup_sha256": "8418459bae850424724d12ad0cc4cc1471b94bcee6c4613578e3e3613908c27d",
+      "candidate_bytes_match": true
+    },
+    {
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-1\\eval-01-통합기록과_디자인연결_수정\\new_skill\\run-1\\inputs\\Phase00\\작업초안\\디자인적용_초안.json",
+      "actual_sha256": "dbc45e0c7badeeea606072b4d31945d18192afb525f945138ce4c9566a67c115",
+      "backup_sha256": "8e9ccad2d9af6c3732f74bce8dde7e0daf9ad9d256d5f7ee5a9340bd752dd580",
+      "candidate_bytes_match": true
+    }
+  ],
+  "r4_changes": [
+    {
+      "path": "/version",
+      "before": "0.1.0",
+      "after": "0.1.1"
+    },
+    {
+      "path": "/units/2/target_ref/version",
+      "before": "0.9.9",
+      "after": "0.1.0"
+    }
+  ],
+  "r5_changes": [
+    {
+      "path": "/linked_r4_record/version",
+      "before": "0.1.0",
+      "after": "0.1.1"
+    },
+    {
+      "path": "/linked_r4_record/sha256",
+      "before": "8418459bae850424724d12ad0cc4cc1471b94bcee6c4613578e3e3613908c27d",
+      "after": "015d061abd10150f9453fa345fb88bdac147d1de86fcb5528a9b1acf237d64f3"
+    }
+  ],
+  "r4_final_errors": [],
+  "r5_final_errors": [],
+  "r4_unresolved_count": 0,
+  "r5_human_review_queue_count": 7,
+  "baseline_r4_exit": 1,
+  "baseline_r4_errors": [
+    "TG-STATE: 참조 버전/hash 불일치"
+  ]
+}

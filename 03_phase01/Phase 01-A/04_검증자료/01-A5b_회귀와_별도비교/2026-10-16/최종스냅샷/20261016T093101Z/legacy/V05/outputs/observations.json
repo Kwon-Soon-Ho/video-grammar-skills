@@ -1,0 +1,1590 @@
+{
+  "schema_version": "a3-observation-0.1",
+  "case_id": "V05",
+  "source": {
+    "id": "A4-G",
+    "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\한맥 영상\\SW 홈페이지 영상\\EG-BIM\\02_(G).mp4",
+    "sha256": "cac0fec71366130e576e8909dcafdf63fbe6962e16049ebc76081b02bdd1c1b5"
+  },
+  "window_seconds": [
+    0,
+    10.9666666667
+  ],
+  "method": "기본 보드 3장으로 시간순 전체를 훑고 정착 상태에서 역추적. 원본 전체 PNG 10장과 기존 raw log PNG에서 무배율 RGB native crop 40개를 실제 열람. 첫 29개 중 패널 ROI의 상단이 잘린 한계를 발견하여 11개 fullpanel ROI를 추가해 같은 원본 특징을 대조. 새 영상/음성 디코딩 없음. 시각은 로그 actual_playback_seconds를 사용. 가감속은 같은 대상·속성의 육안 raster 위치/폭 추정만 채택.",
+  "document_mode": "none",
+  "audio_reviewed": false,
+  "evidence": [
+    {
+      "id": "c1",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-01_title_0.400.png",
+      "actual_seconds": "2/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00024_000.400.png",
+      "crop_xyxy_native_pixels": [
+        2300,
+        780,
+        3840,
+        1480
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c2",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-02_title_0.600.png",
+      "actual_seconds": "3/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05_retest_more\\f_00036_000.600.png",
+      "crop_xyxy_native_pixels": [
+        2300,
+        780,
+        3840,
+        1480
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c3",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-03_title_0.800.png",
+      "actual_seconds": "4/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00048_000.800.png",
+      "crop_xyxy_native_pixels": [
+        2300,
+        780,
+        3840,
+        1480
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c4",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-04_title_1.000.png",
+      "actual_seconds": "1",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05_retest_more\\f_00060_001.000.png",
+      "crop_xyxy_native_pixels": [
+        2300,
+        780,
+        3840,
+        1480
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c5",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-05_title_1.200.png",
+      "actual_seconds": "6/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00072_001.200.png",
+      "crop_xyxy_native_pixels": [
+        2300,
+        780,
+        3840,
+        1480
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c6",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-06_title_1.600.png",
+      "actual_seconds": "8/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00096_001.600.png",
+      "crop_xyxy_native_pixels": [
+        2300,
+        780,
+        3840,
+        1480
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c7",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-07_title_2.000.png",
+      "actual_seconds": "2",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00120_002.000.png",
+      "crop_xyxy_native_pixels": [
+        2300,
+        780,
+        3840,
+        1480
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c8",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-08_title_2.400.png",
+      "actual_seconds": "12/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00144_002.400.png",
+      "crop_xyxy_native_pixels": [
+        2300,
+        780,
+        3840,
+        1480
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c9",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-09_title_2.800.png",
+      "actual_seconds": "14/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00168_002.800.png",
+      "crop_xyxy_native_pixels": [
+        2300,
+        780,
+        3840,
+        1480
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c10",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-10_title_3.200.png",
+      "actual_seconds": "16/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00192_003.200.png",
+      "crop_xyxy_native_pixels": [
+        2300,
+        780,
+        3840,
+        1480
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c11",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-11_panels_5.800.png",
+      "actual_seconds": "29/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05_retest_more\\f_00348_005.800.png",
+      "crop_xyxy_native_pixels": [
+        300,
+        850,
+        2200,
+        1650
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c12",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-12_panels_6.000.png",
+      "actual_seconds": "6",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00360_006.000.png",
+      "crop_xyxy_native_pixels": [
+        300,
+        850,
+        2200,
+        1650
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c13",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-13_panels_6.100.png",
+      "actual_seconds": "61/10",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05_retest_more\\f_00366_006.100.png",
+      "crop_xyxy_native_pixels": [
+        300,
+        850,
+        2200,
+        1650
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c14",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-14_panels_6.200.png",
+      "actual_seconds": "31/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05_retest_more\\f_00372_006.200.png",
+      "crop_xyxy_native_pixels": [
+        300,
+        850,
+        2200,
+        1650
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c15",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-15_panels_6.300.png",
+      "actual_seconds": "63/10",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05_retest_more\\f_00378_006.300.png",
+      "crop_xyxy_native_pixels": [
+        300,
+        850,
+        2200,
+        1650
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c16",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-16_panels_6.400.png",
+      "actual_seconds": "32/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00384_006.400.png",
+      "crop_xyxy_native_pixels": [
+        300,
+        850,
+        2200,
+        1650
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c17",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-17_panels_6.600.png",
+      "actual_seconds": "33/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05_retest_more\\f_00396_006.600.png",
+      "crop_xyxy_native_pixels": [
+        300,
+        850,
+        2200,
+        1650
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c18",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-18_panels_6.800.png",
+      "actual_seconds": "34/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00408_006.800.png",
+      "crop_xyxy_native_pixels": [
+        300,
+        850,
+        2200,
+        1650
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c19",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-19_panels_7.000.png",
+      "actual_seconds": "7",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05_retest_more\\f_00420_007.000.png",
+      "crop_xyxy_native_pixels": [
+        300,
+        850,
+        2200,
+        1650
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c20",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-20_panels_7.200.png",
+      "actual_seconds": "36/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00432_007.200.png",
+      "crop_xyxy_native_pixels": [
+        300,
+        850,
+        2200,
+        1650
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c21",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-21_panels_7.400.png",
+      "actual_seconds": "37/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05_retest_more\\f_00444_007.400.png",
+      "crop_xyxy_native_pixels": [
+        300,
+        850,
+        2200,
+        1650
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c22",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-22_panels_7.600.png",
+      "actual_seconds": "38/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00456_007.600.png",
+      "crop_xyxy_native_pixels": [
+        300,
+        850,
+        2200,
+        1650
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c23",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-23_panels_7.800.png",
+      "actual_seconds": "39/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05_retest_more\\f_00468_007.800.png",
+      "crop_xyxy_native_pixels": [
+        300,
+        850,
+        2200,
+        1650
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c24",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-24_panels_8.000.png",
+      "actual_seconds": "8",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00480_008.000.png",
+      "crop_xyxy_native_pixels": [
+        300,
+        850,
+        2200,
+        1650
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c25",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-25_panels_8.200.png",
+      "actual_seconds": "41/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05_retest_more\\f_00492_008.200.png",
+      "crop_xyxy_native_pixels": [
+        300,
+        850,
+        2200,
+        1650
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c26",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-26_panels_8.400.png",
+      "actual_seconds": "42/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00504_008.400.png",
+      "crop_xyxy_native_pixels": [
+        300,
+        850,
+        2200,
+        1650
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c27",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-27_panels_8.600.png",
+      "actual_seconds": "43/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05_with_more\\f_00516_008.600.png",
+      "crop_xyxy_native_pixels": [
+        300,
+        850,
+        2200,
+        1650
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c28",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-28_panels_9.600.png",
+      "actual_seconds": "48/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00576_009.600.png",
+      "crop_xyxy_native_pixels": [
+        300,
+        850,
+        2200,
+        1650
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c29",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-29_panels_10.933.png",
+      "actual_seconds": "164/15",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00656_010.933.png",
+      "crop_xyxy_native_pixels": [
+        300,
+        850,
+        2200,
+        1650
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c30",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-30_fullpanel_6.000.png",
+      "actual_seconds": "6",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00360_006.000.png",
+      "crop_xyxy_native_pixels": [
+        250,
+        450,
+        2200,
+        1500
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c31",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-31_fullpanel_6.200.png",
+      "actual_seconds": "31/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05_retest_more\\f_00372_006.200.png",
+      "crop_xyxy_native_pixels": [
+        250,
+        450,
+        2200,
+        1500
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c32",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-32_fullpanel_6.400.png",
+      "actual_seconds": "32/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00384_006.400.png",
+      "crop_xyxy_native_pixels": [
+        250,
+        450,
+        2200,
+        1500
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c33",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-33_fullpanel_6.600.png",
+      "actual_seconds": "33/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05_retest_more\\f_00396_006.600.png",
+      "crop_xyxy_native_pixels": [
+        250,
+        450,
+        2200,
+        1500
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c34",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-34_fullpanel_7.200.png",
+      "actual_seconds": "36/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00432_007.200.png",
+      "crop_xyxy_native_pixels": [
+        250,
+        450,
+        2200,
+        1500
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c35",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-35_fullpanel_7.600.png",
+      "actual_seconds": "38/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00456_007.600.png",
+      "crop_xyxy_native_pixels": [
+        250,
+        450,
+        2200,
+        1500
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c36",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-36_fullpanel_7.800.png",
+      "actual_seconds": "39/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05_retest_more\\f_00468_007.800.png",
+      "crop_xyxy_native_pixels": [
+        250,
+        450,
+        2200,
+        1500
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c37",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-37_fullpanel_8.000.png",
+      "actual_seconds": "8",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00480_008.000.png",
+      "crop_xyxy_native_pixels": [
+        250,
+        450,
+        2200,
+        1500
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c38",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-38_fullpanel_8.400.png",
+      "actual_seconds": "42/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00504_008.400.png",
+      "crop_xyxy_native_pixels": [
+        250,
+        450,
+        2200,
+        1500
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c39",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-39_fullpanel_9.600.png",
+      "actual_seconds": "48/5",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00576_009.600.png",
+      "crop_xyxy_native_pixels": [
+        250,
+        450,
+        2200,
+        1500
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "c40",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-40_fullpanel_10.933.png",
+      "actual_seconds": "164/15",
+      "role": "within",
+      "parent_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00656_010.933.png",
+      "crop_xyxy_native_pixels": [
+        250,
+        450,
+        2200,
+        1500
+      ],
+      "transform": "native RGB crop; no resize"
+    },
+    {
+      "id": "f0",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00000_000.000.png",
+      "actual_seconds": "0",
+      "role": "within"
+    },
+    {
+      "id": "f3_6",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00216_003.600.png",
+      "actual_seconds": "18/5",
+      "role": "within"
+    },
+    {
+      "id": "f4",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00240_004.000.png",
+      "actual_seconds": "4",
+      "role": "within"
+    },
+    {
+      "id": "f4_4",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00264_004.400.png",
+      "actual_seconds": "22/5",
+      "role": "within"
+    },
+    {
+      "id": "f4_8",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00288_004.800.png",
+      "actual_seconds": "24/5",
+      "role": "within"
+    },
+    {
+      "id": "f5_2",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00312_005.200.png",
+      "actual_seconds": "26/5",
+      "role": "within"
+    },
+    {
+      "id": "f5_6",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00336_005.600.png",
+      "actual_seconds": "28/5",
+      "role": "within"
+    },
+    {
+      "id": "f6",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00360_006.000.png",
+      "actual_seconds": "6",
+      "role": "within"
+    },
+    {
+      "id": "f6_4",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00384_006.400.png",
+      "actual_seconds": "32/5",
+      "role": "within"
+    },
+    {
+      "id": "f8",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00480_008.000.png",
+      "actual_seconds": "8",
+      "role": "within"
+    }
+  ],
+  "objects": [
+    {
+      "id": "bg",
+      "name": "야간 책상·듀얼 모니터 배경",
+      "parent": null,
+      "events": [
+        {
+          "description": "도시 야경, 두 모니터, 책상·키보드·전화·마우스를 가진 어두운 실내 배경. 왼 모니터는 CAD 도면, 오른 모니터는 도면 목록과 미리보기 그리드이다. 초반의 흐림·어두움이 약해져 3.6초에는 비교적 선명해진다. 모니터 외곽이 소폭 우하 방향으로 커 보이는 변화도 있으나 카메라와 합성 배경 변환은 분리 불가.",
+          "properties": [
+            "visibility",
+            "brightness",
+            "sharpness",
+            "position"
+          ],
+          "time_seconds": [
+            0,
+            3.6
+          ],
+          "evidence_ids": [
+            "f0",
+            "c1",
+            "c5",
+            "f3_6"
+          ],
+          "direction_order": "어둡고 흐린 배경 → 더 밝고 선명한 배경",
+          "easing": {
+            "property": "visibility,brightness,sharpness,position",
+            "classification": "unknown",
+            "basis": "선택 표본에서 변화는 확인하였으나 진행 중 변화율을 충분히 분리하지 못함."
+          },
+          "status": "observed",
+          "limitations": []
+        },
+        {
+          "description": "배경의 왼 CAD 도면과 오른 목록의 주황 선택 행은 3.6/6/8초에서 큰 배치가 유지된다. 전경 그래픽이 겹쳐 보이는 범위를 가린다. 제공 표본에서 배경 UI 조작을 확정할 만한 전환은 찾지 못했다.",
+          "properties": [
+            "internal_content"
+          ],
+          "time_seconds": [
+            3.6,
+            8
+          ],
+          "evidence_ids": [
+            "f3_6",
+            "f6",
+            "f8"
+          ],
+          "direction_order": "모니터 내부 주요 도면·선택행 유지",
+          "easing": {
+            "property": "internal_content",
+            "classification": "not_applicable",
+            "basis": "이 사건은 선택 표본 간 상태 비교이며 속도 분류 대상이 아님."
+          },
+          "status": "observed",
+          "limitations": [
+            "가려진 영역과 표본 사이의 짧은 내부 변화는 미검수"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ko",
+      "name": "국문 주제 제목 인터페이스",
+      "parent": null,
+      "events": [
+        {
+          "description": "0초에는 전경 제목이 보이지 않는다. 0.4초에는 분리된 자소 일부가 낮거나 다른 밝기로 떠 있고 0.6/0.8/1.0/1.2초로 가며 자소가 채워져 인터페이스가 된다. 글자 사이 간격도 좁아져 읽을 수 있는 한 단어로 모인다.",
+          "properties": [
+            "position",
+            "visibility",
+            "character_assembly"
+          ],
+          "time_seconds": [
+            0,
+            1.6
+          ],
+          "evidence_ids": [
+            "f0",
+            "c1",
+            "c2",
+            "c3",
+            "c4",
+            "c5",
+            "c6"
+          ],
+          "direction_order": "분산된 자소/넓은 간격 → 완성 단어/좁은 간격",
+          "easing": {
+            "property": "position,visibility,character_assembly",
+            "classification": "unknown",
+            "basis": "자소별 가시성과 간격 변화는 보이나 글자마다 동일 특징을 수치 추적하지 않아 속도 분류는 미확정."
+          },
+          "status": "observed",
+          "limitations": [
+            "c1~c3은 왼 가장자리 일부가 ROI 밖이다. 전체 위치는 기본 보드로 교차 확인했다."
+          ]
+        },
+        {
+          "description": "완성된 흰색 굵은 인터페이스가 화면 오른쪽의 주제 제목으로 유지된다. 영문 단어는 이 제목 위쪽 배후에 더 크게 놓인다. 5.6초 등 일부 표본에서는 제목 왼부분이 직선 경계로 잘린 상태이고 뒤 표본에서 복원된다. 영구 퇴장이 아니다.",
+          "properties": [
+            "visibility",
+            "position"
+          ],
+          "time_seconds": [
+            1.6,
+            10.9333333333
+          ],
+          "evidence_ids": [
+            "c6",
+            "c10",
+            "f5_6",
+            "f6",
+            "f8",
+            "c40"
+          ],
+          "direction_order": "주제 제목 유지; 중간 부분 가림/복원",
+          "easing": {
+            "property": "visibility,position",
+            "classification": "unknown",
+            "basis": "정착 후 간헐적 부분 가시성 변화이며 연속 이동 곡선은 추적하지 않음."
+          },
+          "status": "observed",
+          "limitations": []
+        }
+      ],
+      "text": "인터페이스"
+    },
+    {
+      "id": "en",
+      "name": "영문 Interface와 녹색 직사각 리빌 영역",
+      "parent": null,
+      "events": [
+        {
+          "description": "1.2초 국문 뒤에 없던 영문이 1.6초에는 Interfa…로 부분 노출되고 2초에는 Interface 전체가 보인다. 짙은 녹색 사각 영역과 흰 점선 테두리의 오른쪽 경계가 오른쪽으로 진행하며 글자를 드러낸다. 글자 자체 크기 변화와 사각 영역 확장을 동일시하지 않는다.",
+          "properties": [
+            "reveal",
+            "frame_width",
+            "visibility"
+          ],
+          "time_seconds": [
+            1.2,
+            2.4
+          ],
+          "evidence_ids": [
+            "c5",
+            "c6",
+            "c7",
+            "c8"
+          ],
+          "direction_order": "왼쪽 영문부터 오른쪽 끝까지 드러남",
+          "easing": {
+            "property": "reveal,frame_width,visibility",
+            "classification": "unknown",
+            "basis": "두 진행 상태의 영역 확장을 확인했으나 초반/후반 진행 변화율을 비교할 표본이 부족."
+          },
+          "status": "observed",
+          "limitations": []
+        },
+        {
+          "description": "2.4초에는 완전한 녹색 영역과 점선 테두리가 유지되다가 2.8초에는 왼 I가 어두워지고 왼 경계가 오른쪽으로 들어온다. 3.2초에는 사각 면과 점선이 거의 사라지며 영문 전체가 반투명한 회색 잔상처럼 남는다. 3.6초 이후에도 큰 회색 영문이 남아 있다.",
+          "properties": [
+            "reveal",
+            "visibility",
+            "brightness"
+          ],
+          "time_seconds": [
+            2.4,
+            6
+          ],
+          "evidence_ids": [
+            "c8",
+            "c9",
+            "c10",
+            "f3_6",
+            "f6"
+          ],
+          "direction_order": "사각 영역 왼쪽부터 걷힘 → 큰 회색 영문 잔존",
+          "easing": {
+            "property": "reveal,visibility,brightness",
+            "classification": "unknown",
+            "basis": "사각 리빌과 글자 밝기가 함께 변하므로 단일 opacity나 위치 이징으로 환원 불가."
+          },
+          "status": "observed",
+          "limitations": [
+            "실제 마스크/opacity 속성 및 정확한 곡선 미확정"
+          ]
+        }
+      ],
+      "text": "Interface"
+    },
+    {
+      "id": "en_cross",
+      "name": "영문 리빌 사각 영역의 빨강/초록 십자·작은 사각 표식",
+      "parent": "en",
+      "events": [
+        {
+          "description": "1.6초 영문 오른끝 부근에 빨강 가로선이, 2/2.4초에는 우하단 경계의 빨강 작은 사각과 긴 초록 세로선·빨강 가로선이 보인다. 3.2초에는 흐린 선·사각 일부만 남는다.",
+          "properties": [
+            "position",
+            "visibility",
+            "brightness"
+          ],
+          "time_seconds": [
+            1.6,
+            3.2
+          ],
+          "evidence_ids": [
+            "c6",
+            "c7",
+            "c8",
+            "c9",
+            "c10"
+          ],
+          "direction_order": "리빌 진행 중 경계 표식 등장 → 약화",
+          "easing": {
+            "property": "position,visibility,brightness",
+            "classification": "unknown",
+            "basis": "미세 선의 밝기와 경계 위치가 함께 바뀌어 독립 가감속 미확정."
+          },
+          "status": "observed",
+          "limitations": []
+        }
+      ]
+    },
+    {
+      "id": "paragraph",
+      "name": "오른쪽 주제 설명 3행",
+      "parent": null,
+      "events": [
+        {
+          "description": "2.4초에는 없던 설명이 2.8초에 첫 행부터 낮은 밝기로 등장하고 3.2초에는 3행이 서로 다른 밝기로 보이며 3.6초에는 전체가 밝아진다. 줄 단위로 위에서 아래로 읽히도록 등장한다. 일부 핵심 문구는 굵다.",
+          "properties": [
+            "visibility",
+            "brightness",
+            "line_order"
+          ],
+          "time_seconds": [
+            2.4,
+            3.6
+          ],
+          "evidence_ids": [
+            "c8",
+            "c9",
+            "c10",
+            "f3_6"
+          ],
+          "direction_order": "1행 → 2행 → 3행",
+          "easing": {
+            "property": "visibility,brightness,line_order",
+            "classification": "unknown",
+            "basis": "행별 혼합/밝기 차이는 확인되지만 정확한 시작과 곡선은 선택 표본 사이에 있음."
+          },
+          "status": "observed",
+          "limitations": []
+        },
+        {
+          "description": "내용은 사용자 경험과 편의성, 메뉴 단순화, 듀얼모니터를 활용한 새로운 작업공간을 연결한다. 끝 표본까지 오른쪽 제목 아래에 유지된다.",
+          "properties": [
+            "content",
+            "information_relation"
+          ],
+          "time_seconds": [
+            3.6,
+            8
+          ],
+          "evidence_ids": [
+            "f3_6",
+            "f6",
+            "f8"
+          ],
+          "direction_order": "주제 아래 설명, 왼쪽 두 UI 예시의 설명 근거",
+          "easing": {
+            "property": "content,information_relation",
+            "classification": "not_applicable",
+            "basis": "정착 문구와 정보 관계 관찰."
+          },
+          "status": "observed",
+          "limitations": []
+        }
+      ],
+      "text": "사용자 경험을 바탕으로 사용자의 편의성을 최우선적으로 고려하여\n기존의 복잡한 인터페이스에서 벗어나 메뉴를 단순화하고,\n듀얼모니터기능을 활용한 새로운 작업공간을 제공합니다."
+    },
+    {
+      "id": "g",
+      "name": "화면 왼쪽을 크게 차지하는 녹색 G",
+      "parent": null,
+      "events": [
+        {
+          "description": "3.6초에는 곡선 조각과 점선이 먼저 보이고 4초에는 큰 G 형태의 희미한 면/선이 나타난다. 4.4→4.8→5.2초에는 같은 외곽의 녹색 면이 점점 강해진다. G의 위·아래는 화면 밖으로 잘린 큰 크기이고 가로 획이 중앙을 가로지른다. 이 표본들에서는 큰 G 자체의 확장/회전을 확인하지 못했다.",
+          "properties": [
+            "visibility",
+            "brightness",
+            "shape"
+          ],
+          "time_seconds": [
+            3.6,
+            5.2
+          ],
+          "evidence_ids": [
+            "f3_6",
+            "f4",
+            "f4_4",
+            "f4_8",
+            "f5_2"
+          ],
+          "direction_order": "가이드 곡선 → 희미한 G → 녹색 면 강화",
+          "easing": {
+            "property": "visibility,brightness,shape",
+            "classification": "unknown",
+            "basis": "면의 명도/혼합 비율을 수치 추적하지 않아 곡선 미확정."
+          },
+          "status": "observed",
+          "limitations": [
+            "큰 화면 점유 면적은 등장/밝기 변화이며 크기 확대라고 단정하지 않음"
+          ]
+        },
+        {
+          "description": "5.2초 뒤 큰 G의 녹색 면과 위치는 유지되면서 5.6/6초에 밝은 민트색 윤곽선 일부가 진행해 나타난다. 우상단 잘린 끝과 내측 곡선을 따라 선이 보인다. 9.6/10.933초에도 G와 윤곽·내부 곡선이 남아 있다.",
+          "properties": [
+            "outline_reveal",
+            "visibility"
+          ],
+          "time_seconds": [
+            5.2,
+            10.9333333333
+          ],
+          "evidence_ids": [
+            "f5_2",
+            "f5_6",
+            "f6",
+            "c39",
+            "c40"
+          ],
+          "direction_order": "녹색 면 유지 + 밝은 윤곽선 드러남",
+          "easing": {
+            "property": "outline_reveal,visibility",
+            "classification": "unknown",
+            "basis": "윤곽 진행을 충분히 촘촘히 보지 않아 선 길이 곡선은 미확정."
+          },
+          "status": "observed",
+          "limitations": []
+        }
+      ]
+    },
+    {
+      "id": "g_guides",
+      "name": "G 주변의 흰 실선/점선 원호",
+      "parent": "g",
+      "events": [
+        {
+          "description": "3.6초에는 여러 곡선 조각, 4초에는 외곽 큰 점선 호와 내측 실선 호가 보인다. 4.4/4.8초에는 G 오른쪽과 화면 왼아래를 가로지르는 곡선들이 다른 길이/위치로 겹친다. 5.2초에는 외곽의 긴 얇은 실선이 남고 5.6초에는 상당 부분 약해진다.",
+          "properties": [
+            "position",
+            "reveal",
+            "visibility"
+          ],
+          "time_seconds": [
+            3.6,
+            5.6
+          ],
+          "evidence_ids": [
+            "f3_6",
+            "f4",
+            "f4_4",
+            "f4_8",
+            "f5_2",
+            "f5_6"
+          ],
+          "direction_order": "조각 호 출현 → 확장된 원호 중첩 → 잔여 선 약화",
+          "easing": {
+            "property": "position,reveal,visibility",
+            "classification": "unknown",
+            "basis": "복수 선과 G면의 중첩으로 같은 선 끝점의 연속 이동인지 리빌인지 분리 불가."
+          },
+          "status": "observed",
+          "limitations": [
+            "선을 전부 하나의 회전 물체로 분류하지 않음"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g_cross",
+      "name": "G 내부 호를 따라 이동하는 CAD식 십자 표식과 궤적",
+      "parent": "g",
+      "events": [
+        {
+          "description": "5.6초 G 위쪽에 빨강 가로선과 작은 원형 중심 표식이 생긴다. 6초 이후에는 빨강 사각 중심·가로선과 초록 세로선의 표식이 왼쪽으로 내려와 6.1→6.2→6.3초에 왼쪽 아래에서 오른쪽 아래로 굽는 호를 따라 진행한다. 표식 뒤로 흰 실선 궤적이 길어지고 위쪽 호는 노란 점선으로 보인다. 8초에는 표식이 아래 호 끝에 도달한 상태다.",
+          "properties": [
+            "position",
+            "path_reveal",
+            "visibility"
+          ],
+          "time_seconds": [
+            5.6,
+            8
+          ],
+          "evidence_ids": [
+            "f5_6",
+            "c12",
+            "c13",
+            "c14",
+            "c15",
+            "c16",
+            "f8"
+          ],
+          "direction_order": "G 상부 → 왼 측면 → 좌하단 → 아래쪽 오른방향",
+          "easing": {
+            "property": "position,path_reveal,visibility",
+            "classification": "decelerate",
+            "basis": "동일한 빨강 작은 사각 중심을 native crop에서 육안 추정: t=6.0 (536,868), 6.1 (535,1155), 6.2 (590,1376), 6.3 (669,1541), 단위 원본 raster px. 0.1초당 이동 약287,228,183px로 감소. 표식 위치 추정 오차 약±10px; 경로 전체의 단일 보간함수는 미확정."
+          },
+          "status": "observed",
+          "limitations": [
+            "위 수치는 native raster 좌표이며 SAR 미상으로 정밀 표시공간 좌표는 아님",
+            "상부 원형 표식과 하부 사각 표식의 완전한 동일 객체 여부는 별도 미확정"
+          ]
+        },
+        {
+          "description": "9.6/10.933초에는 흰 호와 희미한 아래 표식의 잔존이 보인다. 끝까지 가이드가 완전히 사라지지는 않는다.",
+          "properties": [
+            "visibility"
+          ],
+          "time_seconds": [
+            9.6,
+            10.9333333333
+          ],
+          "evidence_ids": [
+            "c39",
+            "c40"
+          ],
+          "direction_order": "흰 호/표식 희미한 잔존",
+          "easing": {
+            "property": "visibility",
+            "classification": "not_applicable",
+            "basis": "분석 창 끝 잔존 상태 관찰."
+          },
+          "status": "observed",
+          "limitations": []
+        }
+      ]
+    },
+    {
+      "id": "left_panel",
+      "name": "전경 왼쪽 CAD UI 패널과 노란 둥근 프레임",
+      "parent": null,
+      "events": [
+        {
+          "description": "5.8초 ROI에는 아직 전경 패널이 없고 6초에는 위쪽 왼편에 작은 패널이 있다. 6.2/6.4/6.6초로 가며 패널이 커지고 중심이 아래·오른쪽으로 옮겨져 7.2초에는 큰 CAD 화면으로 정착한다. 패널 안은 위쪽 평면/선형도와 아래쪽 종단·수치표로 구성된다.",
+          "properties": [
+            "position",
+            "scale",
+            "visibility"
+          ],
+          "time_seconds": [
+            5.8,
+            7.2
+          ],
+          "evidence_ids": [
+            "c11",
+            "c30",
+            "c31",
+            "c32",
+            "c33",
+            "c34"
+          ],
+          "direction_order": "작은 상단 패널 → 확대하면서 아래·오른쪽 → 정착",
+          "easing": {
+            "property": "position,scale,visibility",
+            "classification": "decelerate",
+            "basis": "동일 노란 외곽의 native raster 폭을 육안 추정: 6.0초 약410px, 6.2초 약795px, 6.4초 약858px, 6.6초 약856px. 진행중 두 증가량 약385/63px로 감소해 크기에는 감속 성격. 중심 y도 약677→819→908→956px로 0.2초 이동량이 감소한다. 오차 약±10px. x의 변화율은 가변이고 동일 감속으로 분류하지 않는다."
+          },
+          "status": "observed",
+          "limitations": [
+            "scale 감속 및 중심 y 하강 감속의 시각 추정. AE 키프레임, 정확한 최종 배율/곡선 미확정"
+          ]
+        },
+        {
+          "description": "7.2초 이후 왼쪽 패널의 노란 프레임과 도면 주요 특징은 정착 위치를 유지한다. 7.4초 뒤 우측 패널이 뒤에서 전개되어도 왼쪽 패널이 함께 밀려나거나 축소되는 것으로 보이지 않는다.",
+          "properties": [
+            "position",
+            "scale"
+          ],
+          "time_seconds": [
+            7.2,
+            10.9333333333
+          ],
+          "evidence_ids": [
+            "c34",
+            "c35",
+            "c36",
+            "c37",
+            "c38",
+            "c39",
+            "c40"
+          ],
+          "direction_order": "왼 패널 고정, 두 번째 패널만 오른쪽으로 노출",
+          "easing": {
+            "property": "position,scale",
+            "classification": "not_applicable",
+            "basis": "왼 프레임 왼/위/아래 모서리와 CAD 상단 곡선이 같은 위치를 유지하는 표본 비교."
+          },
+          "status": "observed",
+          "limitations": []
+        }
+      ]
+    },
+    {
+      "id": "left_glow",
+      "name": "왼 패널 상단을 따라 변하는 황색 빛",
+      "parent": "left_panel",
+      "events": [
+        {
+          "description": "6초 작은 패널 상단 중앙 쪽에 있던 노란 번짐이 6.2초에는 상단의 왼쪽 부근에서 강한 별모양 빛으로 보인다. 6.4/6.6/7.2초에는 왼 위 모서리에 붙어 있고 상단 테두리를 따라 밝은 가로 띠가 있다. 이후에도 왼 위 밝은 점이 남아 있다. 빛 위치와 패널 위치를 구분한다.",
+          "properties": [
+            "position",
+            "brightness",
+            "light_extent"
+          ],
+          "time_seconds": [
+            6,
+            10.9333333333
+          ],
+          "evidence_ids": [
+            "c30",
+            "c31",
+            "c32",
+            "c33",
+            "c34",
+            "c40"
+          ],
+          "direction_order": "상단 중앙 부근 번짐 → 좌상단 별모양/가로빛 → 잔존",
+          "easing": {
+            "property": "position,brightness,light_extent",
+            "classification": "unknown",
+            "basis": "패널 확대·이동을 제거한 빛의 독립 궤적을 수치 추적하지 않았으므로 이징 미확정."
+          },
+          "status": "observed",
+          "limitations": []
+        }
+      ]
+    },
+    {
+      "id": "left_inside",
+      "name": "왼 패널 내부 메뉴·명령 영역",
+      "parent": "left_panel",
+      "events": [
+        {
+          "description": "6.6/7.2초의 같은 도면 구성이 유지되면서 상단 메뉴·하단 명령 영역의 갈색/노란 강조가 7.0/7.2/7.6초에는 강하고 8.6/9.6/10.933초에는 더 어둡게 보인다. 내부의 넓은 작업 도면과 바깥 프레임이 고정되어도 메뉴 영역의 밝기 변화는 별개다.",
+          "properties": [
+            "internal_content",
+            "brightness"
+          ],
+          "time_seconds": [
+            6.6,
+            10.9333333333
+          ],
+          "evidence_ids": [
+            "c33",
+            "c19",
+            "c34",
+            "c35",
+            "c27",
+            "c39",
+            "c40"
+          ],
+          "direction_order": "메뉴·명령 영역 황색 강조 강화 → 어두운 상태",
+          "easing": {
+            "property": "internal_content,brightness",
+            "classification": "unknown",
+            "basis": "강조 영역 밝기 변화는 확인하였으나 선택 상태나 명령 실행으로 연결할 UI 표식은 판독하지 못함."
+          },
+          "status": "observed",
+          "limitations": [
+            "실제 소프트웨어 조작 여부, 메뉴별 선택 이동, 데이터 값 갱신은 미확정"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "left_caption",
+      "name": "왼쪽 예시 제목·설명",
+      "parent": null,
+      "events": [
+        {
+          "description": "6.6초에는 없고 6.8초에는 노란 띠 위 단순한 메뉴…가 왼쪽부터 노출된다. 7초에는 넓은 작업…까지, 7.2초에는 전체 제목이 보인다. 아래 첫 설명 행은 7.2초, 두 번째 행은 7.6초에 확인된다.",
+          "properties": [
+            "reveal",
+            "visibility",
+            "line_order"
+          ],
+          "time_seconds": [
+            6.6,
+            7.6
+          ],
+          "evidence_ids": [
+            "c17",
+            "c18",
+            "c19",
+            "c20",
+            "c21",
+            "c22"
+          ],
+          "direction_order": "제목 왼→오른쪽 리빌 → 설명 1행 → 설명 2행",
+          "easing": {
+            "property": "reveal,visibility,line_order",
+            "classification": "unknown",
+            "basis": "제목 가림 경계와 줄 등장 순서는 확인. 경계 진행/글자 밝기 곡선은 미확정."
+          },
+          "status": "observed",
+          "limitations": []
+        },
+        {
+          "description": "8.2/8.6초 등 일부 표본에서는 제목과 설명의 오른쪽 끝이 사각 경계처럼 중간에서 잘려 있다가 8.4/9.6/10.933초에는 다시 전체가 보인다. 문구 교체나 영구 퇴장으로 기록하지 않는다.",
+          "properties": [
+            "visibility",
+            "partial_occlusion"
+          ],
+          "time_seconds": [
+            8.2,
+            10.9333333333
+          ],
+          "evidence_ids": [
+            "c25",
+            "c26",
+            "c27",
+            "c28",
+            "c29"
+          ],
+          "direction_order": "오른쪽 일부 잘림 ↔ 전체 복원",
+          "easing": {
+            "property": "visibility,partial_occlusion",
+            "classification": "unknown",
+            "basis": "간헐적인 부분 가시성 변화만 확인. 제작 의도/마스크 원인은 미확정."
+          },
+          "status": "observed",
+          "limitations": []
+        }
+      ],
+      "text": "단순한 메뉴구성 / 넓은 작업공간\n꼭 필요한 기능으로만 단순화한 메뉴구성\n메뉴의 효율적인 공간배치로 넓은 작업공간 확보",
+      "information_relation": "왼 CAD 예시에 메뉴 단순화·작업공간 확보의 두 이점을 설명"
+    },
+    {
+      "id": "right_panel",
+      "name": "두 번째 CAD UI 패널과 노란 프레임",
+      "parent": null,
+      "events": [
+        {
+          "description": "7.2초에는 왼 패널만 보이고 7.4초 왼 패널 오른쪽 뒤에 두 번째 노란 테두리가 드러난다. 7.6초에는 검은 내부가 먼저 크게 보이고 7.8초에는 왼측 도면 일부, 8초에는 다수의 도면/표, 8.2초에는 오른쪽 흰 속성 패널이 부분 노출되고 8.4초에 완전히 읽을 수 있는 두 패널 나란한 상태가 된다. 창의 상하 높이는 거의 같고 오른쪽 모서리 및 창 버튼은 오른쪽으로 옮겨간다. 왼 패널의 가림이 풀리며 오른 패널의 내부 노출도 늘어난다.",
+          "properties": [
+            "position",
+            "reveal",
+            "internal_content",
+            "visibility"
+          ],
+          "time_seconds": [
+            7.2,
+            8.4
+          ],
+          "evidence_ids": [
+            "c34",
+            "c21",
+            "c35",
+            "c36",
+            "c37",
+            "c25",
+            "c38"
+          ],
+          "direction_order": "왼 패널 뒤 얇은 테두리 → 오른쪽 전개 → CAD내용 → 흰 속성 패널",
+          "easing": {
+            "property": "position,reveal,internal_content,visibility",
+            "classification": "decelerate",
+            "basis": "동일 오른쪽 노란 수직 프레임을 native crop에서 추정한 x: 7.6초 약1480, 7.8초 약1865, 8.0초 약2048, 8.2초 약2110, 8.4초 약2125px. 같은 0.2초 간격 이동량 약385/183/62/15px로 감소. 오차 약±10px. 가려진 왼 외곽은 비교할 수 없으므로 패널 전체 크기 변화는 미확정."
+          },
+          "status": "observed",
+          "limitations": [
+            "노출 면적 증가와 패널 자체 확대를 구분. 내부 도면이 실제 편집된 것으로 단정하지 않음"
+          ]
+        },
+        {
+          "description": "8.4/9.6/10.933초에서 두 번째 패널은 왼쪽에 평면/종단도, 오른쪽에 작은 표·단면도, 더 오른쪽에 밝은 속성창이 배치된 상태로 유지된다. 속성창의 작은 색상 항목은 판독이 불안정하여 수치 전사를 채택하지 않는다. 확실히 읽히는 도형 수치는 지름 8.1502, 반지름 4.0526, 면적 51.5962이다. 이는 내부 UI 표시값일 뿐 영상 전체 계산 결과를 뜻하지 않는다.",
+          "properties": [
+            "internal_content",
+            "position"
+          ],
+          "time_seconds": [
+            8.4,
+            10.9333333333
+          ],
+          "evidence_ids": [
+            "c38",
+            "c39",
+            "c40"
+          ],
+          "direction_order": "두 패널 정착, 오른 속성창 유지",
+          "easing": {
+            "property": "internal_content,position",
+            "classification": "not_applicable",
+            "basis": "선택된 정착 프레임의 UI 상태 비교."
+          },
+          "status": "observed",
+          "limitations": [
+            "내부 선택표식의 미세 변화·실제 계산 갱신·모든 수치 전사 미검수"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "right_caption",
+      "name": "오른쪽 듀얼모니터 제목·설명",
+      "parent": null,
+      "events": [
+        {
+          "description": "7.6초에는 오른쪽 아래에 가느다란 노란 세로 조각, 7.8초에는 모니터, 8초에는 듀얼모니터가 보인다. 노란 제목 띠는 오른 끝을 거의 유지하며 왼쪽으로 펼쳐져 글자가 오른쪽부터 역방향으로 드러난다. 8.2초 설명 첫 행, 8.4초 두 번째 행 조각, 8.6초에 전체 두 행이 보인다.",
+          "properties": [
+            "reveal",
+            "visibility",
+            "line_order"
+          ],
+          "time_seconds": [
+            7.6,
+            8.6
+          ],
+          "evidence_ids": [
+            "c22",
+            "c23",
+            "c24",
+            "c25",
+            "c26",
+            "c27"
+          ],
+          "direction_order": "제목 오른쪽→왼쪽 리빌 → 설명 1행 → 2행",
+          "easing": {
+            "property": "reveal,visibility,line_order",
+            "classification": "unknown",
+            "basis": "방향과 순서는 확인. 제목 리빌 폭/행별 밝기 곡선을 수치 추적하지 않아 이징은 미확정."
+          },
+          "status": "observed",
+          "limitations": []
+        },
+        {
+          "description": "9.6/10.933초에도 오른쪽 정렬된 노란 제목과 흰 두 행 설명이 유지된다. 두 번째 행의 더욱 넓어진 작업공간이 굵다.",
+          "properties": [
+            "visibility",
+            "information_relation"
+          ],
+          "time_seconds": [
+            9.6,
+            10.9333333333
+          ],
+          "evidence_ids": [
+            "c28",
+            "c29"
+          ],
+          "direction_order": "듀얼모니터 기능 → 분리/연동 → 작업공간 확대",
+          "easing": {
+            "property": "visibility,information_relation",
+            "classification": "not_applicable",
+            "basis": "정착 문구와 정보 관계 관찰."
+          },
+          "status": "observed",
+          "limitations": []
+        }
+      ],
+      "text": "듀얼모니터\n듀얼모니터의 화면 분리 및 연동기능으로\n더욱 넓어진 작업공간 제공"
+    },
+    {
+      "id": "layout",
+      "name": "전체 정보 계층 및 구간 말 상태",
+      "parent": null,
+      "events": [
+        {
+          "description": "주제 소개는 오른쪽 인터페이스 제목·설명으로 먼저 정착하고 왼쪽에는 큰 녹색 G와 기술 도형 가이드가 겹친다. 그 위 노란 프레임의 UI 예시 하나가 먼저 커져 들어온 뒤 두 번째 패널이 오른쪽으로 분리 전개된다. 두 예시에 각각 노란 소제목과 흰 설명이 붙는다. 주제 설명이 주장, UI 패널과 하단 문구가 기능 사례의 관계다.",
+          "properties": [
+            "information_relation",
+            "sequence"
+          ],
+          "time_seconds": [
+            0,
+            10.9333333333
+          ],
+          "evidence_ids": [
+            "f0",
+            "c6",
+            "f3_6",
+            "f4_4",
+            "c34",
+            "c35",
+            "c38",
+            "c40"
+          ],
+          "direction_order": "제목 → 영문/설명 → G/가이드 → 왼 UI/설명 → 오른 UI/설명",
+          "easing": {
+            "property": "information_relation,sequence",
+            "classification": "not_applicable",
+            "basis": "개별 사건의 근거를 연결한 관측 순서. 기능 실제 검증이나 회사 의도 추론은 하지 않음."
+          },
+          "status": "observed",
+          "limitations": []
+        },
+        {
+          "description": "마지막 10.933초 표본까지 제목·G·두 UI·하단 문구가 남아 있다. 지정 창 안에서 전체 퇴장은 관측되지 않았다. 끝 경계는 10.9666666667초 미포함이며 그 사이 약0.033초는 직접 보지 않았다.",
+          "properties": [
+            "visibility"
+          ],
+          "time_seconds": [
+            9.6,
+            10.9666666667
+          ],
+          "evidence_ids": [
+            "c39",
+            "c40"
+          ],
+          "direction_order": "구간 말 정착 유지",
+          "easing": {
+            "property": "visibility",
+            "classification": "not_applicable",
+            "basis": "마지막 제공 표본까지의 존재 확인."
+          },
+          "status": "observed",
+          "limitations": []
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "overview": "0~10.933333초: 기본 29시각/보드3장 전체, 원본 전체10장 직접 확대 열람. 0~10.9666666667초 요청 창 끝 중 마지막 약0.033초는 표본 없음.",
+    "secondary_details": "영문 사각 프레임·십자, G 주변 원호/점선·십자 궤적, 노란 UI 프레임과 좌상단 빛, 하단 문구의 리빌/부분 가시성을 native crop에서 확인.",
+    "internal_content": "배경 듀얼 모니터의 CAD/목록 상태, 전경 왼 CAD 메뉴 강조와 내부 도면, 오른 창이 검은 공간에서 CAD/흰 속성창으로 드러나는 순서 및 구간 말 유지 확인.",
+    "unresolved": [
+      "국문 각 자소·영문 사각 리빌·밝기·G 면·선·빛 각각의 가감속 함수는 미확정",
+      "G 외곽이 정지한 동안의 일부 윤곽 진행 방향과 완전한 소실 경계는 모든 프레임을 보지 않아 미확정",
+      "간헐적인 문구 부분 잘림의 제작 의도/원인 미확정",
+      "배경 및 전경 내부 UI의 미세 선택 변화와 실제 명령 실행 미확정",
+      "정확한 원본 AE 키프레임/마스크/불투명도 구현과 회사 공통 문법·의도는 미확정"
+    ]
+  },
+  "hypotheses": [],
+  "limitations": [
+    "무문서 경로: 제작 전 원고/문서 대조 대상 없음",
+    "음성은 범위 밖이며 듣기/디코딩/전사/싱크 검수 없음",
+    "원본 MP4는 접근/재해시하지 않고 제공 추출 로그의 고정 원본 해시와 PNG 해시·표시시각 provenance를 helper로 연결",
+    "SAR unknown, raw raster RGB 변환의 range_accuracy_validated=false. 공식색/정밀 표시공간 치수로 해석하지 않음",
+    "선택 프레임 분석으로 짧은 중간 상태 누락 가능. 전 구간 연속 재생 또는 모든 프레임 검수 아님",
+    "일부 초기 crop의 상단/왼쪽이 잘려 있음을 11개 보강 crop 및 전체 원본으로 보완. 생성/열람 총40개로 한도 도달",
+    "가감속 수치는 시각적 대략치이며 ±10px 추정 오차, AE easing influence/보간함수 복원 아님",
+    "직접근거 crop은 parent_path와 native xyxy를 기록하여 helper --crops로 RGB 픽셀 일치 검증"
+  ],
+  "files_read": [
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\input.json",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\common-task.md",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\common-output-format.md",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\candidate\\company-video-grammar-analyzer\\SKILL.md",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\candidate\\company-video-grammar-analyzer\\references\\evidence-and-records.md",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\candidate\\company-video-grammar-analyzer\\references\\motion-review.md",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\candidate\\company-video-grammar-analyzer\\references\\output-contract.md",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\실행기록.json",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05_retest_more\\실행기록.json",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05_with_more\\실행기록.json",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\board-1.jpg",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\board-2.jpg",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\board-3.jpg",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-01_title_0.400.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-02_title_0.600.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-03_title_0.800.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-04_title_1.000.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-05_title_1.200.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-06_title_1.600.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-07_title_2.000.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-08_title_2.400.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-09_title_2.800.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-10_title_3.200.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-11_panels_5.800.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-12_panels_6.000.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-13_panels_6.100.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-14_panels_6.200.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-15_panels_6.300.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-16_panels_6.400.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-17_panels_6.600.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-18_panels_6.800.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-19_panels_7.000.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-20_panels_7.200.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-21_panels_7.400.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-22_panels_7.600.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-23_panels_7.800.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-24_panels_8.000.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-25_panels_8.200.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-26_panels_8.400.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-27_panels_8.600.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-28_panels_9.600.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-29_panels_10.933.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-30_fullpanel_6.000.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-31_fullpanel_6.200.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-32_fullpanel_6.400.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-33_fullpanel_6.600.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-34_fullpanel_7.200.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-35_fullpanel_7.600.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-36_fullpanel_7.800.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-37_fullpanel_8.000.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-38_fullpanel_8.400.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-39_fullpanel_9.600.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\legacy\\V05\\analysis-support\\crop-40_fullpanel_10.933.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00000_000.000.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00216_003.600.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00240_004.000.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00264_004.400.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00288_004.800.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00312_005.200.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00336_005.600.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00360_006.000.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00384_006.400.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00480_008.000.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00024_000.400.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05_retest_more\\f_00036_000.600.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00048_000.800.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05_retest_more\\f_00060_001.000.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00072_001.200.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00096_001.600.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00120_002.000.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00144_002.400.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00168_002.800.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00192_003.200.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05_retest_more\\f_00348_005.800.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05_retest_more\\f_00366_006.100.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05_retest_more\\f_00372_006.200.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05_retest_more\\f_00378_006.300.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05_retest_more\\f_00396_006.600.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00408_006.800.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05_retest_more\\f_00420_007.000.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00432_007.200.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05_retest_more\\f_00444_007.400.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00456_007.600.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05_retest_more\\f_00468_007.800.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05_retest_more\\f_00492_008.200.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00504_008.400.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05_with_more\\f_00516_008.600.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00576_009.600.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a4\\cases\\A4-G\\V05\\f_00656_010.933.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\candidate\\company-video-grammar-analyzer\\scripts\\check_observations.py",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\candidate\\company-video-grammar-analyzer\\scripts\\evidence_catalog.py"
+  ],
+  "review_log": {
+    "substantive_review_started_utc": "2026-10-16T08:18:08Z",
+    "crop_created_count": 40,
+    "crop_visually_read_count": 40,
+    "native_full_frame_directly_viewed_count": 10,
+    "overview_boards_viewed_count": 3,
+    "raw_extraction_logs_read_count": 3,
+    "new_decoded_frames": 0,
+    "human_review": "none; AI observation only",
+    "prior_outputs_or_grading_read": false,
+    "analysis_completed_utc": "2026-10-16T08:25:14.604065+00:00"
+  }
+}

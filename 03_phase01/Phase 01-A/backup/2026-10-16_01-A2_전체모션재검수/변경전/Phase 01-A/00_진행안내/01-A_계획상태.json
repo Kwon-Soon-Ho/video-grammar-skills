@@ -1,0 +1,138 @@
+{
+  "id": "phase01a-development-plan",
+  "version": "0.5",
+  "date": "2026-10-16",
+  "state": "A2_presented_content_confirmed_motion_omission_corrected",
+  "canonical_document": "00기획/07_Phase01-A_진행계획.md",
+  "input_bundling_complete": true,
+  "reask_input_pairing": false,
+  "proposed_skill_name": "company-video-grammar-analyzer",
+  "skill_created": false,
+  "actual_media_analysis_runs": 2,
+  "media_analysis_api_calls": 0,
+  "implementation_started": true,
+  "default_skill_promotion": false,
+  "phase00_modified": false,
+  "approved": true,
+  "first_step_after_approval": "01-A1 only",
+  "stages": [
+    "01-A1",
+    "01-A2",
+    "01-A3",
+    "01-A4",
+    "01-A5a",
+    "01-A5b",
+    "01-A6"
+  ],
+  "sample_proposals": [
+    {
+      "role": "첫 예비",
+      "id": "자료005",
+      "video": "장헌_최종.mp4",
+      "input_mode": "재구성 원고 있음",
+      "locked": false
+    },
+    {
+      "role": "초기 무문서 시범",
+      "id": "자료013",
+      "video": "01_(E).mp4",
+      "input_mode": "별도 시나리오 없음",
+      "locked": false
+    },
+    {
+      "role": "확대 예비",
+      "id": "자료010",
+      "video": "1.크레인 작업 반경, 물류·인양 안정성 검토.mp4",
+      "locked": false
+    },
+    {
+      "role": "확대 예비",
+      "id": "자료017",
+      "video": "[EG-Bim]소개영상.mp4",
+      "locked": false
+    },
+    {
+      "role": "변형판 스트레스",
+      "id": "자료022",
+      "video": "싱글·듀얼",
+      "locked": false
+    },
+    {
+      "role": "별도 확인 후보",
+      "id": "자료014",
+      "video": "TOVA 홈페이지 묶음",
+      "locked": false
+    },
+    {
+      "role": "별도 확인 후보",
+      "id": "자료011",
+      "video": "K-GEO FESTA_250919_3.mp4",
+      "locked": false
+    }
+  ],
+  "numeric_thresholds": null,
+  "final_evaluation_sample_count": null,
+  "locked_sample_sets": 0,
+  "ground_truth_items": 2,
+  "actual_scores": null,
+  "redteam_execution_performed": true,
+  "plan_review_type": "작성자의 반대 관점 계획 검토. 독립 실행/레드팀 완료 아님.",
+  "choices": {
+    "recommended": "A",
+    "A": "장헌→무문서SW→복합→별도확인",
+    "B": "무문서SW우선→장헌→확대",
+    "C": "장헌·SW의작은기능으로범위축소",
+    "D": "수정후검토·착수보류"
+  },
+  "unchanged_management_skill_versions": {
+    "video-knowledge-curator": "0.2.0-draft.3",
+    "video-record-steward": "0.2.0-draft.5",
+    "video-guidance-reviewer": "0.2.0-draft.4"
+  },
+  "approved_choice": "A",
+  "approval_record": "06_도구와계약/01-A1_도구와입출력검토/사용자선택_기록.json",
+  "approved_execution_scope": "01-A1 결과 완료. 사용자 최신 회신으로 01-A2 경로 A 실행 승인. A3 이후는 후속 검토",
+  "current_stage": "01-A2",
+  "stage_A1_status": "completed_review_and_bounded_synthetic_diagnostics",
+  "stage_A1_report": "06_도구와계약/01-A1_도구와입출력검토/00_검토결과_쉽게보기.md",
+  "stage_A2_started": true,
+  "stage_A2_authorized": true,
+  "analyzer_implementation_started": false,
+  "diagnostic_code_created": true,
+  "diagnostic_case_results": {
+    "first_passed": 16,
+    "first_total": 17,
+    "retest_passed": 18,
+    "retest_total": 18
+  },
+  "implementation_started_definition": "실제 회사 영상 분석 도구·스킬 구현. A1 고정 합성 진단 코드는 별도",
+  "redteam_execution_scope": "A1 고정 합성 검토와 A2 자체 반대 관점 검토. 후속 사용자 정정으로 E 모션 누락 보완",
+  "independent_redteam_performed": false,
+  "self_review_performed": true,
+  "public_package_network_downloads": true,
+  "company_media_opened_this_stage": 2,
+  "runtime_install_scope": "격리 작업폴더 wheel 추출/import만. 전역 설치 없음",
+  "human_content_reviews_pending": 0,
+  "next_decision": "한정 예비 검수 결과 보고. 후속 범위 별도 검토; A3 자동 착수 없음",
+  "full_runtime_validation_completed": false,
+  "stage_A2_status": "①~⑥ 한정 사람 내용 검수 완료. E조각 슬라이드·감속 누락 보완/재시험. 전체 영상·음성·정밀 곡선은 미확인",
+  "stage_A2_route": "A: 로컬 추출 + 현재 Codex 화면 검토. 필요 시 음성 API 범위 별도 검토",
+  "stage_A2_approval_record": "00_진행안내/14_01-A2_A안_선택기록.json",
+  "A2_route_choice_pending": false,
+  "current_thread_media_work_stopped": true,
+  "handoff_document": "00_진행안내/새채팅인계/00_새채팅_이어하기.md",
+  "handoff_note": "계획·A1 결과의 기존 선택대기 문구는 작성 당시 이력. 새 채팅 생성 정보는 별도 기록",
+  "stage_A2_report": "05_결과보고/07_01-A2_작은예비분석_보고.md",
+  "stage_A2_current_notice": "00_진행안내/15_01-A2_실행결과_현재안내.json",
+  "human_content_reviews_pending_unit": "only six presented screen-review groups; other scopes remain unreviewed",
+  "implementation_scope": "A2용 제한 로컬 추출 보조 도구만. 분석 스킬 A3 미생성",
+  "stage_A2_primary_extraction_jobs": 5,
+  "stage_A2_retest_extraction_jobs": 5,
+  "stage_A2_images": 97,
+  "stage_A2_unique_times": 83,
+  "ground_truth_items_unit": "user-confirmed frame numeric sets only, not independent generalization samples",
+  "human_content_review_record": "04_검증자료/01-A2_작은예비/사람확인_6묶음과_E모션보완_회신.json",
+  "stage_A2_motion_correction": true,
+  "human_confirmed_review_groups": 6,
+  "A3_started": false
+}

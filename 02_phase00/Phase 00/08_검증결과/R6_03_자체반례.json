@@ -1,0 +1,1016 @@
+{
+  "scope": "대부분은 파일해시 전수대조를 생략한 명시적 메타데이터 의존성 검사. 첫 실제대장검사는 전체파일확인. 합성응답은 C메모리에서만 생성했고 실제events는불변. 실제사람답변발생/진실성/권한을시험한것아님.",
+  "total": 41,
+  "passed": 41,
+  "cases": [
+    {
+      "name": "실제대장_현재답변수와대기분리",
+      "pass": true,
+      "result": {
+        "structural_valid": true,
+        "errors": [],
+        "queue": [
+          {
+            "request_id": "R6-REQ-CI-STATUS",
+            "title": "8회사 CI의 공식 최신판·사용 가이드 확인 상태",
+            "state": "declared_answer_recorded",
+            "question": "현재 정리한 8회사 CI에 대해 공식 최신본과 사용 가이드가 확인된 회사가 있나요? 확인한 회사와 근거 파일/담당자 안내가 있으면 그 범위만 알려주세요.",
+            "latest_event_id": "HUMAN-R6-CI-20261015-001",
+            "outcome": "limited_statement",
+            "covered_scope_ids": [
+              "hanmac:latest_material",
+              "saman:latest_material",
+              "jangheon-industry:latest_material",
+              "ptc:latest_material",
+              "halla:latest_material",
+              "baron:latest_material",
+              "sanha:latest_material",
+              "jangheon:latest_material"
+            ],
+            "unresolved_scope_ids": [
+              "hanmac:usage_guide",
+              "saman:usage_guide",
+              "jangheon-industry:usage_guide",
+              "ptc:usage_guide",
+              "halla:usage_guide",
+              "baron:usage_guide",
+              "sanha:usage_guide",
+              "jangheon:usage_guide"
+            ],
+            "human_followup_required": true,
+            "identity_authenticated": false,
+            "company_approved": false
+          },
+          {
+            "request_id": "R6-REQ-SAMAN-VALUES",
+            "title": "삼안 선언후보4개와 실제 화면색·적용 자격",
+            "state": "needs_material",
+            "question": "삼안 문서의 선언후보4개가 현재 공식 화면색 기준인지, sRGB 표시값과 변환 조건까지 확인할 수 있나요?",
+            "latest_event_id": null,
+            "outcome": null,
+            "covered_scope_ids": [],
+            "unresolved_scope_ids": [
+              "ci.declared.draft.gray.hex",
+              "ci.declared.draft.orange.hex",
+              "ci.declared.draft.gray.pantone",
+              "ci.declared.draft.orange.pantone"
+            ],
+            "human_followup_required": true,
+            "identity_authenticated": false,
+            "company_approved": false
+          },
+          {
+            "request_id": "R6-REQ-SKILL-USE",
+            "title": "직접 채택할 외부 스킬 파일의 사용 범위",
+            "state": "not_due",
+            "question": "실제 채택할 파일/행위가 정해지면 고지·파일별 범위·의존성·사용 조건을 확인할 수 있나요?",
+            "latest_event_id": null,
+            "outcome": null,
+            "covered_scope_ids": [],
+            "unresolved_scope_ids": [
+              "chosen_file_use_scope"
+            ],
+            "human_followup_required": true,
+            "identity_authenticated": false,
+            "company_approved": false
+          },
+          {
+            "request_id": "R6-REQ-ACTUAL-CONTENT",
+            "title": "실제 영상 주장·관측·의도와 근거의 내용 검수",
+            "state": "needs_material",
+            "question": "자료 접수 후 특정 주장과 프레임/시나리오 근거가 일치하고 해석 범위가 타당한지 확인해 주세요.",
+            "latest_event_id": null,
+            "outcome": null,
+            "covered_scope_ids": [],
+            "unresolved_scope_ids": [
+              "actual_claim_evidence"
+            ],
+            "human_followup_required": true,
+            "identity_authenticated": false,
+            "company_approved": false
+          }
+        ],
+        "recorded_answer_count": 1,
+        "identity_authenticated": false,
+        "content_verified": false,
+        "company_approved": false,
+        "permission_granted": false,
+        "operational_release": false,
+        "source_artifact_identity_checked": true,
+        "active_declared_answer_count": 1,
+        "specimen_only": false
+      }
+    },
+    {
+      "name": "설명용응답연결_실제답변으로미집계",
+      "pass": true,
+      "result": {
+        "structural_valid": true,
+        "errors": [],
+        "queue": [
+          {
+            "request_id": "R6-REQ-CI-STATUS",
+            "title": "8회사 CI의 공식 최신판·사용 가이드 확인 상태",
+            "state": "declared_answer_recorded",
+            "question": "현재 정리한 8회사 CI에 대해 공식 최신본과 사용 가이드가 확인된 회사가 있나요? 확인한 회사와 근거 파일/담당자 안내가 있으면 그 범위만 알려주세요.",
+            "latest_event_id": "SPEC-ANSWER-001",
+            "outcome": "limited_statement",
+            "covered_scope_ids": [
+              "hanmac:latest_material",
+              "hanmac:usage_guide",
+              "saman:latest_material",
+              "saman:usage_guide",
+              "jangheon-industry:latest_material",
+              "jangheon-industry:usage_guide",
+              "ptc:latest_material",
+              "ptc:usage_guide",
+              "halla:latest_material",
+              "halla:usage_guide",
+              "baron:latest_material",
+              "baron:usage_guide",
+              "sanha:latest_material",
+              "sanha:usage_guide",
+              "jangheon:latest_material",
+              "jangheon:usage_guide"
+            ],
+            "unresolved_scope_ids": [],
+            "human_followup_required": false,
+            "identity_authenticated": false,
+            "company_approved": false
+          },
+          {
+            "request_id": "R6-REQ-SAMAN-VALUES",
+            "title": "삼안 선언후보4개와 실제 화면색·적용 자격",
+            "state": "needs_material",
+            "question": "삼안 문서의 선언후보4개가 현재 공식 화면색 기준인지, sRGB 표시값과 변환 조건까지 확인할 수 있나요?",
+            "latest_event_id": null,
+            "outcome": null,
+            "covered_scope_ids": [],
+            "unresolved_scope_ids": [
+              "ci.declared.draft.gray.hex",
+              "ci.declared.draft.orange.hex",
+              "ci.declared.draft.gray.pantone",
+              "ci.declared.draft.orange.pantone"
+            ],
+            "human_followup_required": true,
+            "identity_authenticated": false,
+            "company_approved": false
+          },
+          {
+            "request_id": "R6-REQ-SKILL-USE",
+            "title": "직접 채택할 외부 스킬 파일의 사용 범위",
+            "state": "not_due",
+            "question": "실제 채택할 파일/행위가 정해지면 고지·파일별 범위·의존성·사용 조건을 확인할 수 있나요?",
+            "latest_event_id": null,
+            "outcome": null,
+            "covered_scope_ids": [],
+            "unresolved_scope_ids": [
+              "chosen_file_use_scope"
+            ],
+            "human_followup_required": true,
+            "identity_authenticated": false,
+            "company_approved": false
+          },
+          {
+            "request_id": "R6-REQ-ACTUAL-CONTENT",
+            "title": "실제 영상 주장·관측·의도와 근거의 내용 검수",
+            "state": "needs_material",
+            "question": "자료 접수 후 특정 주장과 프레임/시나리오 근거가 일치하고 해석 범위가 타당한지 확인해 주세요.",
+            "latest_event_id": null,
+            "outcome": null,
+            "covered_scope_ids": [],
+            "unresolved_scope_ids": [
+              "actual_claim_evidence"
+            ],
+            "human_followup_required": true,
+            "identity_authenticated": false,
+            "company_approved": false
+          }
+        ],
+        "recorded_answer_count": 0,
+        "identity_authenticated": false,
+        "content_verified": false,
+        "company_approved": false,
+        "permission_granted": false,
+        "operational_release": false,
+        "source_artifact_identity_checked": false,
+        "active_declared_answer_count": 0,
+        "specimen_only": true
+      }
+    },
+    {
+      "name": "연결통과로내용신원권한승격없음",
+      "pass": true,
+      "result": null
+    },
+    {
+      "name": "부분확인_후속사람검수유지",
+      "pass": true,
+      "result": {
+        "structural_valid": true,
+        "errors": [],
+        "queue": [
+          {
+            "request_id": "R6-REQ-CI-STATUS",
+            "title": "8회사 CI의 공식 최신판·사용 가이드 확인 상태",
+            "state": "declared_answer_recorded",
+            "question": "현재 정리한 8회사 CI에 대해 공식 최신본과 사용 가이드가 확인된 회사가 있나요? 확인한 회사와 근거 파일/담당자 안내가 있으면 그 범위만 알려주세요.",
+            "latest_event_id": "SPEC-ANSWER-001",
+            "outcome": "limited_statement",
+            "covered_scope_ids": [
+              "hanmac:latest_material",
+              "hanmac:usage_guide",
+              "saman:latest_material",
+              "saman:usage_guide",
+              "jangheon-industry:latest_material",
+              "jangheon-industry:usage_guide",
+              "ptc:latest_material",
+              "ptc:usage_guide",
+              "halla:latest_material",
+              "halla:usage_guide",
+              "baron:latest_material",
+              "baron:usage_guide",
+              "sanha:latest_material",
+              "sanha:usage_guide",
+              "jangheon:latest_material"
+            ],
+            "unresolved_scope_ids": [
+              "jangheon:usage_guide"
+            ],
+            "human_followup_required": true,
+            "identity_authenticated": false,
+            "company_approved": false
+          },
+          {
+            "request_id": "R6-REQ-SAMAN-VALUES",
+            "title": "삼안 선언후보4개와 실제 화면색·적용 자격",
+            "state": "needs_material",
+            "question": "삼안 문서의 선언후보4개가 현재 공식 화면색 기준인지, sRGB 표시값과 변환 조건까지 확인할 수 있나요?",
+            "latest_event_id": null,
+            "outcome": null,
+            "covered_scope_ids": [],
+            "unresolved_scope_ids": [
+              "ci.declared.draft.gray.hex",
+              "ci.declared.draft.orange.hex",
+              "ci.declared.draft.gray.pantone",
+              "ci.declared.draft.orange.pantone"
+            ],
+            "human_followup_required": true,
+            "identity_authenticated": false,
+            "company_approved": false
+          },
+          {
+            "request_id": "R6-REQ-SKILL-USE",
+            "title": "직접 채택할 외부 스킬 파일의 사용 범위",
+            "state": "not_due",
+            "question": "실제 채택할 파일/행위가 정해지면 고지·파일별 범위·의존성·사용 조건을 확인할 수 있나요?",
+            "latest_event_id": null,
+            "outcome": null,
+            "covered_scope_ids": [],
+            "unresolved_scope_ids": [
+              "chosen_file_use_scope"
+            ],
+            "human_followup_required": true,
+            "identity_authenticated": false,
+            "company_approved": false
+          },
+          {
+            "request_id": "R6-REQ-ACTUAL-CONTENT",
+            "title": "실제 영상 주장·관측·의도와 근거의 내용 검수",
+            "state": "needs_material",
+            "question": "자료 접수 후 특정 주장과 프레임/시나리오 근거가 일치하고 해석 범위가 타당한지 확인해 주세요.",
+            "latest_event_id": null,
+            "outcome": null,
+            "covered_scope_ids": [],
+            "unresolved_scope_ids": [
+              "actual_claim_evidence"
+            ],
+            "human_followup_required": true,
+            "identity_authenticated": false,
+            "company_approved": false
+          }
+        ],
+        "recorded_answer_count": 0,
+        "identity_authenticated": false,
+        "content_verified": false,
+        "company_approved": false,
+        "permission_granted": false,
+        "operational_release": false,
+        "source_artifact_identity_checked": false,
+        "active_declared_answer_count": 0,
+        "specimen_only": true
+      }
+    },
+    {
+      "name": "답변상태_needs_material",
+      "pass": true,
+      "result": {
+        "structural_valid": true,
+        "errors": [],
+        "queue": [
+          {
+            "request_id": "R6-REQ-CI-STATUS",
+            "title": "8회사 CI의 공식 최신판·사용 가이드 확인 상태",
+            "state": "declared_answer_recorded",
+            "question": "현재 정리한 8회사 CI에 대해 공식 최신본과 사용 가이드가 확인된 회사가 있나요? 확인한 회사와 근거 파일/담당자 안내가 있으면 그 범위만 알려주세요.",
+            "latest_event_id": "SPEC-ANSWER-001",
+            "outcome": "needs_material",
+            "covered_scope_ids": [
+              "hanmac:latest_material",
+              "hanmac:usage_guide",
+              "saman:latest_material",
+              "saman:usage_guide",
+              "jangheon-industry:latest_material",
+              "jangheon-industry:usage_guide",
+              "ptc:latest_material",
+              "ptc:usage_guide",
+              "halla:latest_material",
+              "halla:usage_guide",
+              "baron:latest_material",
+              "baron:usage_guide",
+              "sanha:latest_material",
+              "sanha:usage_guide",
+              "jangheon:latest_material",
+              "jangheon:usage_guide"
+            ],
+            "unresolved_scope_ids": [],
+            "human_followup_required": true,
+            "identity_authenticated": false,
+            "company_approved": false
+          },
+          {
+            "request_id": "R6-REQ-SAMAN-VALUES",
+            "title": "삼안 선언후보4개와 실제 화면색·적용 자격",
+            "state": "needs_material",
+            "question": "삼안 문서의 선언후보4개가 현재 공식 화면색 기준인지, sRGB 표시값과 변환 조건까지 확인할 수 있나요?",
+            "latest_event_id": null,
+            "outcome": null,
+            "covered_scope_ids": [],
+            "unresolved_scope_ids": [
+              "ci.declared.draft.gray.hex",
+              "ci.declared.draft.orange.hex",
+              "ci.declared.draft.gray.pantone",
+              "ci.declared.draft.orange.pantone"
+            ],
+            "human_followup_required": true,
+            "identity_authenticated": false,
+            "company_approved": false
+          },
+          {
+            "request_id": "R6-REQ-SKILL-USE",
+            "title": "직접 채택할 외부 스킬 파일의 사용 범위",
+            "state": "not_due",
+            "question": "실제 채택할 파일/행위가 정해지면 고지·파일별 범위·의존성·사용 조건을 확인할 수 있나요?",
+            "latest_event_id": null,
+            "outcome": null,
+            "covered_scope_ids": [],
+            "unresolved_scope_ids": [
+              "chosen_file_use_scope"
+            ],
+            "human_followup_required": true,
+            "identity_authenticated": false,
+            "company_approved": false
+          },
+          {
+            "request_id": "R6-REQ-ACTUAL-CONTENT",
+            "title": "실제 영상 주장·관측·의도와 근거의 내용 검수",
+            "state": "needs_material",
+            "question": "자료 접수 후 특정 주장과 프레임/시나리오 근거가 일치하고 해석 범위가 타당한지 확인해 주세요.",
+            "latest_event_id": null,
+            "outcome": null,
+            "covered_scope_ids": [],
+            "unresolved_scope_ids": [
+              "actual_claim_evidence"
+            ],
+            "human_followup_required": true,
+            "identity_authenticated": false,
+            "company_approved": false
+          }
+        ],
+        "recorded_answer_count": 0,
+        "identity_authenticated": false,
+        "content_verified": false,
+        "company_approved": false,
+        "permission_granted": false,
+        "operational_release": false,
+        "source_artifact_identity_checked": false,
+        "active_declared_answer_count": 0,
+        "specimen_only": true
+      }
+    },
+    {
+      "name": "답변상태_unable_to_determine",
+      "pass": true,
+      "result": {
+        "structural_valid": true,
+        "errors": [],
+        "queue": [
+          {
+            "request_id": "R6-REQ-CI-STATUS",
+            "title": "8회사 CI의 공식 최신판·사용 가이드 확인 상태",
+            "state": "declared_answer_recorded",
+            "question": "현재 정리한 8회사 CI에 대해 공식 최신본과 사용 가이드가 확인된 회사가 있나요? 확인한 회사와 근거 파일/담당자 안내가 있으면 그 범위만 알려주세요.",
+            "latest_event_id": "SPEC-ANSWER-001",
+            "outcome": "unable_to_determine",
+            "covered_scope_ids": [
+              "hanmac:latest_material",
+              "hanmac:usage_guide",
+              "saman:latest_material",
+              "saman:usage_guide",
+              "jangheon-industry:latest_material",
+              "jangheon-industry:usage_guide",
+              "ptc:latest_material",
+              "ptc:usage_guide",
+              "halla:latest_material",
+              "halla:usage_guide",
+              "baron:latest_material",
+              "baron:usage_guide",
+              "sanha:latest_material",
+              "sanha:usage_guide",
+              "jangheon:latest_material",
+              "jangheon:usage_guide"
+            ],
+            "unresolved_scope_ids": [],
+            "human_followup_required": true,
+            "identity_authenticated": false,
+            "company_approved": false
+          },
+          {
+            "request_id": "R6-REQ-SAMAN-VALUES",
+            "title": "삼안 선언후보4개와 실제 화면색·적용 자격",
+            "state": "needs_material",
+            "question": "삼안 문서의 선언후보4개가 현재 공식 화면색 기준인지, sRGB 표시값과 변환 조건까지 확인할 수 있나요?",
+            "latest_event_id": null,
+            "outcome": null,
+            "covered_scope_ids": [],
+            "unresolved_scope_ids": [
+              "ci.declared.draft.gray.hex",
+              "ci.declared.draft.orange.hex",
+              "ci.declared.draft.gray.pantone",
+              "ci.declared.draft.orange.pantone"
+            ],
+            "human_followup_required": true,
+            "identity_authenticated": false,
+            "company_approved": false
+          },
+          {
+            "request_id": "R6-REQ-SKILL-USE",
+            "title": "직접 채택할 외부 스킬 파일의 사용 범위",
+            "state": "not_due",
+            "question": "실제 채택할 파일/행위가 정해지면 고지·파일별 범위·의존성·사용 조건을 확인할 수 있나요?",
+            "latest_event_id": null,
+            "outcome": null,
+            "covered_scope_ids": [],
+            "unresolved_scope_ids": [
+              "chosen_file_use_scope"
+            ],
+            "human_followup_required": true,
+            "identity_authenticated": false,
+            "company_approved": false
+          },
+          {
+            "request_id": "R6-REQ-ACTUAL-CONTENT",
+            "title": "실제 영상 주장·관측·의도와 근거의 내용 검수",
+            "state": "needs_material",
+            "question": "자료 접수 후 특정 주장과 프레임/시나리오 근거가 일치하고 해석 범위가 타당한지 확인해 주세요.",
+            "latest_event_id": null,
+            "outcome": null,
+            "covered_scope_ids": [],
+            "unresolved_scope_ids": [
+              "actual_claim_evidence"
+            ],
+            "human_followup_required": true,
+            "identity_authenticated": false,
+            "company_approved": false
+          }
+        ],
+        "recorded_answer_count": 0,
+        "identity_authenticated": false,
+        "content_verified": false,
+        "company_approved": false,
+        "permission_granted": false,
+        "operational_release": false,
+        "source_artifact_identity_checked": false,
+        "active_declared_answer_count": 0,
+        "specimen_only": true
+      }
+    },
+    {
+      "name": "답변상태_disagrees",
+      "pass": true,
+      "result": {
+        "structural_valid": true,
+        "errors": [],
+        "queue": [
+          {
+            "request_id": "R6-REQ-CI-STATUS",
+            "title": "8회사 CI의 공식 최신판·사용 가이드 확인 상태",
+            "state": "declared_answer_recorded",
+            "question": "현재 정리한 8회사 CI에 대해 공식 최신본과 사용 가이드가 확인된 회사가 있나요? 확인한 회사와 근거 파일/담당자 안내가 있으면 그 범위만 알려주세요.",
+            "latest_event_id": "SPEC-ANSWER-001",
+            "outcome": "disagrees",
+            "covered_scope_ids": [
+              "hanmac:latest_material",
+              "hanmac:usage_guide",
+              "saman:latest_material",
+              "saman:usage_guide",
+              "jangheon-industry:latest_material",
+              "jangheon-industry:usage_guide",
+              "ptc:latest_material",
+              "ptc:usage_guide",
+              "halla:latest_material",
+              "halla:usage_guide",
+              "baron:latest_material",
+              "baron:usage_guide",
+              "sanha:latest_material",
+              "sanha:usage_guide",
+              "jangheon:latest_material",
+              "jangheon:usage_guide"
+            ],
+            "unresolved_scope_ids": [],
+            "human_followup_required": false,
+            "identity_authenticated": false,
+            "company_approved": false
+          },
+          {
+            "request_id": "R6-REQ-SAMAN-VALUES",
+            "title": "삼안 선언후보4개와 실제 화면색·적용 자격",
+            "state": "needs_material",
+            "question": "삼안 문서의 선언후보4개가 현재 공식 화면색 기준인지, sRGB 표시값과 변환 조건까지 확인할 수 있나요?",
+            "latest_event_id": null,
+            "outcome": null,
+            "covered_scope_ids": [],
+            "unresolved_scope_ids": [
+              "ci.declared.draft.gray.hex",
+              "ci.declared.draft.orange.hex",
+              "ci.declared.draft.gray.pantone",
+              "ci.declared.draft.orange.pantone"
+            ],
+            "human_followup_required": true,
+            "identity_authenticated": false,
+            "company_approved": false
+          },
+          {
+            "request_id": "R6-REQ-SKILL-USE",
+            "title": "직접 채택할 외부 스킬 파일의 사용 범위",
+            "state": "not_due",
+            "question": "실제 채택할 파일/행위가 정해지면 고지·파일별 범위·의존성·사용 조건을 확인할 수 있나요?",
+            "latest_event_id": null,
+            "outcome": null,
+            "covered_scope_ids": [],
+            "unresolved_scope_ids": [
+              "chosen_file_use_scope"
+            ],
+            "human_followup_required": true,
+            "identity_authenticated": false,
+            "company_approved": false
+          },
+          {
+            "request_id": "R6-REQ-ACTUAL-CONTENT",
+            "title": "실제 영상 주장·관측·의도와 근거의 내용 검수",
+            "state": "needs_material",
+            "question": "자료 접수 후 특정 주장과 프레임/시나리오 근거가 일치하고 해석 범위가 타당한지 확인해 주세요.",
+            "latest_event_id": null,
+            "outcome": null,
+            "covered_scope_ids": [],
+            "unresolved_scope_ids": [
+              "actual_claim_evidence"
+            ],
+            "human_followup_required": true,
+            "identity_authenticated": false,
+            "company_approved": false
+          }
+        ],
+        "recorded_answer_count": 0,
+        "identity_authenticated": false,
+        "content_verified": false,
+        "company_approved": false,
+        "permission_granted": false,
+        "operational_release": false,
+        "source_artifact_identity_checked": false,
+        "active_declared_answer_count": 0,
+        "specimen_only": true
+      }
+    },
+    {
+      "name": "미지원요청답변",
+      "pass": true,
+      "result": [
+        "unknown_review_request"
+      ]
+    },
+    {
+      "name": "다른대상요청버전재사용",
+      "pass": true,
+      "result": [
+        "stale_request_version"
+      ]
+    },
+    {
+      "name": "질문내용변경후옛답변",
+      "pass": true,
+      "result": [
+        "stale_request_content"
+      ]
+    },
+    {
+      "name": "근거문맥변경후옛답변",
+      "pass": true,
+      "result": [
+        "stale_review_context"
+      ]
+    },
+    {
+      "name": "실제회사승인조작",
+      "pass": true,
+      "result": [
+        "schema: False was expected"
+      ]
+    },
+    {
+      "name": "실제사용권한조작",
+      "pass": true,
+      "result": [
+        "schema: False was expected"
+      ]
+    },
+    {
+      "name": "신원인증조작",
+      "pass": true,
+      "result": [
+        "schema: False was expected"
+      ]
+    },
+    {
+      "name": "작업정책프로비넌스가내용검수로입력",
+      "pass": true,
+      "result": [
+        "schema: 'workflow_policy' is not one of ['current_conversation_manual', 'specimen']"
+      ]
+    },
+    {
+      "name": "대화문맥미대조",
+      "pass": true,
+      "result": [
+        "schema: True was expected"
+      ]
+    },
+    {
+      "name": "잘못된접수일",
+      "pass": true,
+      "result": [
+        "schema: '2026-02-31' is not a 'date'"
+      ]
+    },
+    {
+      "name": "공백답변",
+      "pass": true,
+      "result": [
+        "schema: ' ' does not match '\\\\S'"
+      ]
+    },
+    {
+      "name": "제외범위누락",
+      "pass": true,
+      "result": [
+        "schema: [] should be non-empty"
+      ]
+    },
+    {
+      "name": "확인했다면서확인범위없음",
+      "pass": true,
+      "result": [
+        "limited_statement_needs_scope"
+      ]
+    },
+    {
+      "name": "비적용이유없음",
+      "pass": true,
+      "result": [
+        "not_applicable_outcome_requires_all_units_with_reason",
+        "non_applicability_reason_required"
+      ]
+    },
+    {
+      "name": "요청질문몰래변경",
+      "pass": true,
+      "result": [
+        "request_catalog_differs"
+      ]
+    },
+    {
+      "name": "사람검수요청삭제",
+      "pass": true,
+      "result": [
+        "request_catalog_differs"
+      ]
+    },
+    {
+      "name": "요청목록해시변조",
+      "pass": true,
+      "result": [
+        "stale_request_catalog"
+      ]
+    },
+    {
+      "name": "접수입력pin오래됨",
+      "pass": true,
+      "result": [
+        "stale_review_inputs"
+      ]
+    },
+    {
+      "name": "검수자료전미리답변",
+      "pass": true,
+      "result": [
+        "scope_partition_must_cover_registered_units_once",
+        "answer_before_materials_or_adoption"
+      ]
+    },
+    {
+      "name": "정정이력정상연결",
+      "pass": true,
+      "result": {
+        "structural_valid": true,
+        "errors": [],
+        "queue": [
+          {
+            "request_id": "R6-REQ-CI-STATUS",
+            "title": "8회사 CI의 공식 최신판·사용 가이드 확인 상태",
+            "state": "declared_answer_recorded",
+            "question": "현재 정리한 8회사 CI에 대해 공식 최신본과 사용 가이드가 확인된 회사가 있나요? 확인한 회사와 근거 파일/담당자 안내가 있으면 그 범위만 알려주세요.",
+            "latest_event_id": "SPEC-ANSWER-002",
+            "outcome": "needs_material",
+            "covered_scope_ids": [
+              "hanmac:latest_material",
+              "hanmac:usage_guide",
+              "saman:latest_material",
+              "saman:usage_guide",
+              "jangheon-industry:latest_material",
+              "jangheon-industry:usage_guide",
+              "ptc:latest_material",
+              "ptc:usage_guide",
+              "halla:latest_material",
+              "halla:usage_guide",
+              "baron:latest_material",
+              "baron:usage_guide",
+              "sanha:latest_material",
+              "sanha:usage_guide",
+              "jangheon:latest_material",
+              "jangheon:usage_guide"
+            ],
+            "unresolved_scope_ids": [],
+            "human_followup_required": true,
+            "identity_authenticated": false,
+            "company_approved": false
+          },
+          {
+            "request_id": "R6-REQ-SAMAN-VALUES",
+            "title": "삼안 선언후보4개와 실제 화면색·적용 자격",
+            "state": "needs_material",
+            "question": "삼안 문서의 선언후보4개가 현재 공식 화면색 기준인지, sRGB 표시값과 변환 조건까지 확인할 수 있나요?",
+            "latest_event_id": null,
+            "outcome": null,
+            "covered_scope_ids": [],
+            "unresolved_scope_ids": [
+              "ci.declared.draft.gray.hex",
+              "ci.declared.draft.orange.hex",
+              "ci.declared.draft.gray.pantone",
+              "ci.declared.draft.orange.pantone"
+            ],
+            "human_followup_required": true,
+            "identity_authenticated": false,
+            "company_approved": false
+          },
+          {
+            "request_id": "R6-REQ-SKILL-USE",
+            "title": "직접 채택할 외부 스킬 파일의 사용 범위",
+            "state": "not_due",
+            "question": "실제 채택할 파일/행위가 정해지면 고지·파일별 범위·의존성·사용 조건을 확인할 수 있나요?",
+            "latest_event_id": null,
+            "outcome": null,
+            "covered_scope_ids": [],
+            "unresolved_scope_ids": [
+              "chosen_file_use_scope"
+            ],
+            "human_followup_required": true,
+            "identity_authenticated": false,
+            "company_approved": false
+          },
+          {
+            "request_id": "R6-REQ-ACTUAL-CONTENT",
+            "title": "실제 영상 주장·관측·의도와 근거의 내용 검수",
+            "state": "needs_material",
+            "question": "자료 접수 후 특정 주장과 프레임/시나리오 근거가 일치하고 해석 범위가 타당한지 확인해 주세요.",
+            "latest_event_id": null,
+            "outcome": null,
+            "covered_scope_ids": [],
+            "unresolved_scope_ids": [
+              "actual_claim_evidence"
+            ],
+            "human_followup_required": true,
+            "identity_authenticated": false,
+            "company_approved": false
+          }
+        ],
+        "recorded_answer_count": 0,
+        "identity_authenticated": false,
+        "content_verified": false,
+        "company_approved": false,
+        "permission_granted": false,
+        "operational_release": false,
+        "source_artifact_identity_checked": false,
+        "active_declared_answer_count": 0,
+        "specimen_only": true
+      }
+    },
+    {
+      "name": "철회이력_대기유지",
+      "pass": true,
+      "result": {
+        "structural_valid": true,
+        "errors": [],
+        "queue": [
+          {
+            "request_id": "R6-REQ-CI-STATUS",
+            "title": "8회사 CI의 공식 최신판·사용 가이드 확인 상태",
+            "state": "withdrawn",
+            "question": "현재 정리한 8회사 CI에 대해 공식 최신본과 사용 가이드가 확인된 회사가 있나요? 확인한 회사와 근거 파일/담당자 안내가 있으면 그 범위만 알려주세요.",
+            "latest_event_id": "SPEC-WITHDRAW-003",
+            "outcome": "withdrawn",
+            "covered_scope_ids": [],
+            "unresolved_scope_ids": [
+              "hanmac:latest_material",
+              "hanmac:usage_guide",
+              "saman:latest_material",
+              "saman:usage_guide",
+              "jangheon-industry:latest_material",
+              "jangheon-industry:usage_guide",
+              "ptc:latest_material",
+              "ptc:usage_guide",
+              "halla:latest_material",
+              "halla:usage_guide",
+              "baron:latest_material",
+              "baron:usage_guide",
+              "sanha:latest_material",
+              "sanha:usage_guide",
+              "jangheon:latest_material",
+              "jangheon:usage_guide"
+            ],
+            "human_followup_required": true,
+            "identity_authenticated": false,
+            "company_approved": false
+          },
+          {
+            "request_id": "R6-REQ-SAMAN-VALUES",
+            "title": "삼안 선언후보4개와 실제 화면색·적용 자격",
+            "state": "needs_material",
+            "question": "삼안 문서의 선언후보4개가 현재 공식 화면색 기준인지, sRGB 표시값과 변환 조건까지 확인할 수 있나요?",
+            "latest_event_id": null,
+            "outcome": null,
+            "covered_scope_ids": [],
+            "unresolved_scope_ids": [
+              "ci.declared.draft.gray.hex",
+              "ci.declared.draft.orange.hex",
+              "ci.declared.draft.gray.pantone",
+              "ci.declared.draft.orange.pantone"
+            ],
+            "human_followup_required": true,
+            "identity_authenticated": false,
+            "company_approved": false
+          },
+          {
+            "request_id": "R6-REQ-SKILL-USE",
+            "title": "직접 채택할 외부 스킬 파일의 사용 범위",
+            "state": "not_due",
+            "question": "실제 채택할 파일/행위가 정해지면 고지·파일별 범위·의존성·사용 조건을 확인할 수 있나요?",
+            "latest_event_id": null,
+            "outcome": null,
+            "covered_scope_ids": [],
+            "unresolved_scope_ids": [
+              "chosen_file_use_scope"
+            ],
+            "human_followup_required": true,
+            "identity_authenticated": false,
+            "company_approved": false
+          },
+          {
+            "request_id": "R6-REQ-ACTUAL-CONTENT",
+            "title": "실제 영상 주장·관측·의도와 근거의 내용 검수",
+            "state": "needs_material",
+            "question": "자료 접수 후 특정 주장과 프레임/시나리오 근거가 일치하고 해석 범위가 타당한지 확인해 주세요.",
+            "latest_event_id": null,
+            "outcome": null,
+            "covered_scope_ids": [],
+            "unresolved_scope_ids": [
+              "actual_claim_evidence"
+            ],
+            "human_followup_required": true,
+            "identity_authenticated": false,
+            "company_approved": false
+          }
+        ],
+        "recorded_answer_count": 0,
+        "identity_authenticated": false,
+        "content_verified": false,
+        "company_approved": false,
+        "permission_granted": false,
+        "operational_release": false,
+        "source_artifact_identity_checked": false,
+        "active_declared_answer_count": 0,
+        "specimen_only": true
+      }
+    },
+    {
+      "name": "이전분기로철회시도거절",
+      "pass": true,
+      "result": [
+        "invalid_event_chain"
+      ]
+    },
+    {
+      "name": "첫답변이임의이전이벤트참조",
+      "pass": true,
+      "result": [
+        "response_requires_correction_event"
+      ]
+    },
+    {
+      "name": "두번째답변으로정정없이덮기",
+      "pass": true,
+      "result": [
+        "response_requires_correction_event"
+      ]
+    },
+    {
+      "name": "철회상태와이벤트종류모순",
+      "pass": true,
+      "result": [
+        "withdrawal_event_required"
+      ]
+    },
+    {
+      "name": "입력자료형거절_[]",
+      "pass": true,
+      "result": [
+        "schema: [] is not of type 'object'"
+      ]
+    },
+    {
+      "name": "입력자료형거절_0",
+      "pass": true,
+      "result": [
+        "schema: 0 is not of type 'object'"
+      ]
+    },
+    {
+      "name": "입력자료형거절_'untrusted'",
+      "pass": true,
+      "result": [
+        "schema: 'untrusted' is not of type 'object'"
+      ]
+    },
+    {
+      "name": "실제대장검사전후불변",
+      "pass": true,
+      "result": null
+    },
+    {
+      "name": "합성이벤트실제대장단순복사거절",
+      "pass": true,
+      "result": [
+        "specimen_actual_origin_mismatch",
+        "provenance_actual_scope_mismatch",
+        "actual_reply_evidence_required"
+      ]
+    },
+    {
+      "name": "정정날짜역행거절",
+      "pass": true,
+      "result": [
+        "event_date_before_parent"
+      ]
+    },
+    {
+      "name": "부분누락에full표시거절",
+      "pass": true,
+      "result": [
+        "scope_coverage_conflicts_with_unresolved_units"
+      ]
+    },
+    {
+      "name": "coverage중복거절",
+      "pass": true,
+      "result": [
+        "scope_partition_must_cover_registered_units_once"
+      ]
+    },
+    {
+      "name": "coverage모르는대상거절",
+      "pass": true,
+      "result": [
+        "scope_partition_must_cover_registered_units_once"
+      ]
+    }
+  ]
+}

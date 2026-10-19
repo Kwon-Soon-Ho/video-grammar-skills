@@ -1,0 +1,1483 @@
+{
+  "schema_version": "a3-observation-0.1",
+  "case_id": "T02",
+  "source": {
+    "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\한맥 영상\\SW 홈페이지 영상\\EG-BIM\\01_(E).mp4",
+    "sha256": "31c4c47744b8cdfef935b167a1b04df80e13523cfc8550205a8495b4267cc192",
+    "hash_provenance": "제공 추출 로그의 전후 원본 해시 일치 및 등록 해시 일치. 현재 원본을 다시 해싱하거나 디코딩하지 않음."
+  },
+  "window_seconds": [
+    0,
+    1.4
+  ],
+  "method": "시간순 개요 시트의 모든 제공 표본을 열람한 뒤 정착 화면에서 역추적. 3840×2160 PNG에서 좌표를 보존한 원본 크롭과 시간별 크롭 시트를 열람. 선택 픽셀 측정으로 방향/속도 해석 보강. 연속 동영상 재생/오디오 분석은 하지 않음. 추가 디코딩 없이 기존 표본 사용.",
+  "document_mode": "none",
+  "audio_reviewed": false,
+  "evidence": [
+    {
+      "id": "자료013-T02-0",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00000_000.000.png",
+      "actual_seconds": "0",
+      "requested_seconds": "0",
+      "role": "within",
+      "viewed_via": "제공 시간순 contact sheet; 선택된 프레임은 원본 해상도 crop으로 추가 열람",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        },
+        {
+          "op": "resize",
+          "effective_size": [
+            3840,
+            2160
+          ],
+          "scale_x": "1",
+          "scale_y": "1",
+          "filter": "Pillow LANCZOS",
+          "crop": null,
+          "padding": null,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "자료013-T02-3",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00003_000.050.png",
+      "actual_seconds": "1/20",
+      "requested_seconds": "1/20",
+      "role": "within",
+      "viewed_via": "제공 시간순 contact sheet; 선택된 프레임은 원본 해상도 crop으로 추가 열람",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        },
+        {
+          "op": "resize",
+          "effective_size": [
+            3840,
+            2160
+          ],
+          "scale_x": "1",
+          "scale_y": "1",
+          "filter": "Pillow LANCZOS",
+          "crop": null,
+          "padding": null,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "자료013-T02-6",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00006_000.100.png",
+      "actual_seconds": "1/10",
+      "requested_seconds": "1/10",
+      "role": "within",
+      "viewed_via": "제공 시간순 contact sheet; 선택된 프레임은 원본 해상도 crop으로 추가 열람",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        },
+        {
+          "op": "resize",
+          "effective_size": [
+            3840,
+            2160
+          ],
+          "scale_x": "1",
+          "scale_y": "1",
+          "filter": "Pillow LANCZOS",
+          "crop": null,
+          "padding": null,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "자료013-T02-9",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00009_000.150.png",
+      "actual_seconds": "3/20",
+      "requested_seconds": "3/20",
+      "role": "within",
+      "viewed_via": "제공 시간순 contact sheet; 선택된 프레임은 원본 해상도 crop으로 추가 열람",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        },
+        {
+          "op": "resize",
+          "effective_size": [
+            3840,
+            2160
+          ],
+          "scale_x": "1",
+          "scale_y": "1",
+          "filter": "Pillow LANCZOS",
+          "crop": null,
+          "padding": null,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "자료013-T02-12",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00012_000.200.png",
+      "actual_seconds": "1/5",
+      "requested_seconds": "1/5",
+      "role": "within",
+      "viewed_via": "제공 시간순 contact sheet; 선택된 프레임은 원본 해상도 crop으로 추가 열람",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        },
+        {
+          "op": "resize",
+          "effective_size": [
+            3840,
+            2160
+          ],
+          "scale_x": "1",
+          "scale_y": "1",
+          "filter": "Pillow LANCZOS",
+          "crop": null,
+          "padding": null,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "자료013-T02-15",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00015_000.250.png",
+      "actual_seconds": "1/4",
+      "requested_seconds": "1/4",
+      "role": "within",
+      "viewed_via": "제공 시간순 contact sheet; 선택된 프레임은 원본 해상도 crop으로 추가 열람",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        },
+        {
+          "op": "resize",
+          "effective_size": [
+            3840,
+            2160
+          ],
+          "scale_x": "1",
+          "scale_y": "1",
+          "filter": "Pillow LANCZOS",
+          "crop": null,
+          "padding": null,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "자료013-T02-18",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00018_000.300.png",
+      "actual_seconds": "3/10",
+      "requested_seconds": "3/10",
+      "role": "within",
+      "viewed_via": "제공 시간순 contact sheet; 선택된 프레임은 원본 해상도 crop으로 추가 열람",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        },
+        {
+          "op": "resize",
+          "effective_size": [
+            3840,
+            2160
+          ],
+          "scale_x": "1",
+          "scale_y": "1",
+          "filter": "Pillow LANCZOS",
+          "crop": null,
+          "padding": null,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "자료013-T02-21",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00021_000.350.png",
+      "actual_seconds": "7/20",
+      "requested_seconds": "7/20",
+      "role": "within",
+      "viewed_via": "제공 시간순 contact sheet; 선택된 프레임은 원본 해상도 crop으로 추가 열람",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        },
+        {
+          "op": "resize",
+          "effective_size": [
+            3840,
+            2160
+          ],
+          "scale_x": "1",
+          "scale_y": "1",
+          "filter": "Pillow LANCZOS",
+          "crop": null,
+          "padding": null,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "자료013-T02-24",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00024_000.400.png",
+      "actual_seconds": "2/5",
+      "requested_seconds": "2/5",
+      "role": "within",
+      "viewed_via": "제공 시간순 contact sheet; 선택된 프레임은 원본 해상도 crop으로 추가 열람",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        },
+        {
+          "op": "resize",
+          "effective_size": [
+            3840,
+            2160
+          ],
+          "scale_x": "1",
+          "scale_y": "1",
+          "filter": "Pillow LANCZOS",
+          "crop": null,
+          "padding": null,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "자료013-T02-27",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00027_000.450.png",
+      "actual_seconds": "9/20",
+      "requested_seconds": "9/20",
+      "role": "within",
+      "viewed_via": "제공 시간순 contact sheet; 선택된 프레임은 원본 해상도 crop으로 추가 열람",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        },
+        {
+          "op": "resize",
+          "effective_size": [
+            3840,
+            2160
+          ],
+          "scale_x": "1",
+          "scale_y": "1",
+          "filter": "Pillow LANCZOS",
+          "crop": null,
+          "padding": null,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "자료013-T02-30",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00030_000.500.png",
+      "actual_seconds": "1/2",
+      "requested_seconds": "1/2",
+      "role": "within",
+      "viewed_via": "제공 시간순 contact sheet; 선택된 프레임은 원본 해상도 crop으로 추가 열람",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        },
+        {
+          "op": "resize",
+          "effective_size": [
+            3840,
+            2160
+          ],
+          "scale_x": "1",
+          "scale_y": "1",
+          "filter": "Pillow LANCZOS",
+          "crop": null,
+          "padding": null,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "자료013-T02-33",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00033_000.550.png",
+      "actual_seconds": "11/20",
+      "requested_seconds": "11/20",
+      "role": "within",
+      "viewed_via": "제공 시간순 contact sheet; 선택된 프레임은 원본 해상도 crop으로 추가 열람",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        },
+        {
+          "op": "resize",
+          "effective_size": [
+            3840,
+            2160
+          ],
+          "scale_x": "1",
+          "scale_y": "1",
+          "filter": "Pillow LANCZOS",
+          "crop": null,
+          "padding": null,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "자료013-T02-36",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00036_000.600.png",
+      "actual_seconds": "3/5",
+      "requested_seconds": "3/5",
+      "role": "within",
+      "viewed_via": "제공 시간순 contact sheet; 선택된 프레임은 원본 해상도 crop으로 추가 열람",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        },
+        {
+          "op": "resize",
+          "effective_size": [
+            3840,
+            2160
+          ],
+          "scale_x": "1",
+          "scale_y": "1",
+          "filter": "Pillow LANCZOS",
+          "crop": null,
+          "padding": null,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "자료013-T02-39",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00039_000.650.png",
+      "actual_seconds": "13/20",
+      "requested_seconds": "13/20",
+      "role": "within",
+      "viewed_via": "제공 시간순 contact sheet; 선택된 프레임은 원본 해상도 crop으로 추가 열람",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        },
+        {
+          "op": "resize",
+          "effective_size": [
+            3840,
+            2160
+          ],
+          "scale_x": "1",
+          "scale_y": "1",
+          "filter": "Pillow LANCZOS",
+          "crop": null,
+          "padding": null,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "자료013-T02-42",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00042_000.700.png",
+      "actual_seconds": "7/10",
+      "requested_seconds": "7/10",
+      "role": "within",
+      "viewed_via": "제공 시간순 contact sheet; 선택된 프레임은 원본 해상도 crop으로 추가 열람",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        },
+        {
+          "op": "resize",
+          "effective_size": [
+            3840,
+            2160
+          ],
+          "scale_x": "1",
+          "scale_y": "1",
+          "filter": "Pillow LANCZOS",
+          "crop": null,
+          "padding": null,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "자료013-T02-45",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00045_000.750.png",
+      "actual_seconds": "3/4",
+      "requested_seconds": "3/4",
+      "role": "within",
+      "viewed_via": "제공 시간순 contact sheet; 선택된 프레임은 원본 해상도 crop으로 추가 열람",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        },
+        {
+          "op": "resize",
+          "effective_size": [
+            3840,
+            2160
+          ],
+          "scale_x": "1",
+          "scale_y": "1",
+          "filter": "Pillow LANCZOS",
+          "crop": null,
+          "padding": null,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "자료013-T02-48",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00048_000.800.png",
+      "actual_seconds": "4/5",
+      "requested_seconds": "4/5",
+      "role": "within",
+      "viewed_via": "제공 시간순 contact sheet; 선택된 프레임은 원본 해상도 crop으로 추가 열람",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        },
+        {
+          "op": "resize",
+          "effective_size": [
+            3840,
+            2160
+          ],
+          "scale_x": "1",
+          "scale_y": "1",
+          "filter": "Pillow LANCZOS",
+          "crop": null,
+          "padding": null,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "자료013-T02-51",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00051_000.850.png",
+      "actual_seconds": "17/20",
+      "requested_seconds": "17/20",
+      "role": "within",
+      "viewed_via": "제공 시간순 contact sheet; 선택된 프레임은 원본 해상도 crop으로 추가 열람",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        },
+        {
+          "op": "resize",
+          "effective_size": [
+            3840,
+            2160
+          ],
+          "scale_x": "1",
+          "scale_y": "1",
+          "filter": "Pillow LANCZOS",
+          "crop": null,
+          "padding": null,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "자료013-T02-54",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00054_000.900.png",
+      "actual_seconds": "9/10",
+      "requested_seconds": "9/10",
+      "role": "within",
+      "viewed_via": "제공 시간순 contact sheet; 선택된 프레임은 원본 해상도 crop으로 추가 열람",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        },
+        {
+          "op": "resize",
+          "effective_size": [
+            3840,
+            2160
+          ],
+          "scale_x": "1",
+          "scale_y": "1",
+          "filter": "Pillow LANCZOS",
+          "crop": null,
+          "padding": null,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "자료013-T02-57",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00057_000.950.png",
+      "actual_seconds": "19/20",
+      "requested_seconds": "19/20",
+      "role": "within",
+      "viewed_via": "제공 시간순 contact sheet; 선택된 프레임은 원본 해상도 crop으로 추가 열람",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        },
+        {
+          "op": "resize",
+          "effective_size": [
+            3840,
+            2160
+          ],
+          "scale_x": "1",
+          "scale_y": "1",
+          "filter": "Pillow LANCZOS",
+          "crop": null,
+          "padding": null,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "자료013-T02-60",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00060_001.000.png",
+      "actual_seconds": "1",
+      "requested_seconds": "1",
+      "role": "within",
+      "viewed_via": "제공 시간순 contact sheet; 선택된 프레임은 원본 해상도 crop으로 추가 열람",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        },
+        {
+          "op": "resize",
+          "effective_size": [
+            3840,
+            2160
+          ],
+          "scale_x": "1",
+          "scale_y": "1",
+          "filter": "Pillow LANCZOS",
+          "crop": null,
+          "padding": null,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "자료013-T02-63",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00063_001.050.png",
+      "actual_seconds": "21/20",
+      "requested_seconds": "21/20",
+      "role": "within",
+      "viewed_via": "제공 시간순 contact sheet; 선택된 프레임은 원본 해상도 crop으로 추가 열람",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        },
+        {
+          "op": "resize",
+          "effective_size": [
+            3840,
+            2160
+          ],
+          "scale_x": "1",
+          "scale_y": "1",
+          "filter": "Pillow LANCZOS",
+          "crop": null,
+          "padding": null,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "자료013-T02-66",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00066_001.100.png",
+      "actual_seconds": "11/10",
+      "requested_seconds": "11/10",
+      "role": "within",
+      "viewed_via": "제공 시간순 contact sheet; 선택된 프레임은 원본 해상도 crop으로 추가 열람",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        },
+        {
+          "op": "resize",
+          "effective_size": [
+            3840,
+            2160
+          ],
+          "scale_x": "1",
+          "scale_y": "1",
+          "filter": "Pillow LANCZOS",
+          "crop": null,
+          "padding": null,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "자료013-T02-69",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00069_001.150.png",
+      "actual_seconds": "23/20",
+      "requested_seconds": "23/20",
+      "role": "within",
+      "viewed_via": "제공 시간순 contact sheet; 선택된 프레임은 원본 해상도 crop으로 추가 열람",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        },
+        {
+          "op": "resize",
+          "effective_size": [
+            3840,
+            2160
+          ],
+          "scale_x": "1",
+          "scale_y": "1",
+          "filter": "Pillow LANCZOS",
+          "crop": null,
+          "padding": null,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "자료013-T02-72",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00072_001.200.png",
+      "actual_seconds": "6/5",
+      "requested_seconds": "6/5",
+      "role": "within",
+      "viewed_via": "제공 시간순 contact sheet; 선택된 프레임은 원본 해상도 crop으로 추가 열람",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        },
+        {
+          "op": "resize",
+          "effective_size": [
+            3840,
+            2160
+          ],
+          "scale_x": "1",
+          "scale_y": "1",
+          "filter": "Pillow LANCZOS",
+          "crop": null,
+          "padding": null,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "자료013-T02-75",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00075_001.250.png",
+      "actual_seconds": "5/4",
+      "requested_seconds": "5/4",
+      "role": "within",
+      "viewed_via": "제공 시간순 contact sheet; 선택된 프레임은 원본 해상도 crop으로 추가 열람",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        },
+        {
+          "op": "resize",
+          "effective_size": [
+            3840,
+            2160
+          ],
+          "scale_x": "1",
+          "scale_y": "1",
+          "filter": "Pillow LANCZOS",
+          "crop": null,
+          "padding": null,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "자료013-T02-78",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00078_001.300.png",
+      "actual_seconds": "13/10",
+      "requested_seconds": "13/10",
+      "role": "within",
+      "viewed_via": "제공 시간순 contact sheet; 선택된 프레임은 원본 해상도 crop으로 추가 열람",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        },
+        {
+          "op": "resize",
+          "effective_size": [
+            3840,
+            2160
+          ],
+          "scale_x": "1",
+          "scale_y": "1",
+          "filter": "Pillow LANCZOS",
+          "crop": null,
+          "padding": null,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "자료013-T02-81",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00081_001.350.png",
+      "actual_seconds": "27/20",
+      "requested_seconds": "27/20",
+      "role": "within",
+      "viewed_via": "제공 시간순 contact sheet; 선택된 프레임은 원본 해상도 crop으로 추가 열람",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        },
+        {
+          "op": "resize",
+          "effective_size": [
+            3840,
+            2160
+          ],
+          "scale_x": "1",
+          "scale_y": "1",
+          "filter": "Pillow LANCZOS",
+          "crop": null,
+          "padding": null,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "자료013-T02-84",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00084_001.400.png",
+      "actual_seconds": "7/5",
+      "requested_seconds": "7/5",
+      "role": "context_after",
+      "viewed_via": "제공 시간순 contact sheet; 선택된 프레임은 원본 해상도 crop으로 추가 열람",
+      "raster": [
+        3840,
+        2160
+      ],
+      "transforms": [
+        {
+          "op": "colorspace_to_RGB",
+          "method": "PyAV to_image / swscale",
+          "range_accuracy_validated": false
+        },
+        {
+          "op": "resize",
+          "effective_size": [
+            3840,
+            2160
+          ],
+          "scale_x": "1",
+          "scale_y": "1",
+          "filter": "Pillow LANCZOS",
+          "crop": null,
+          "padding": null,
+          "rotation": null
+        }
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "id": "bg",
+      "name": "녹색 비네트 배경",
+      "parent": null,
+      "events": [
+        {
+          "description": "시작은 중앙이 밝고 주변이 어두운 녹색 바탕이다. 글자 없이 배경 요소가 겹쳐지며 화면이 구성된다.",
+          "properties": [
+            "color_brightness"
+          ],
+          "time_seconds": [
+            0,
+            1.4
+          ],
+          "evidence_ids": [
+            "자료013-T02-0",
+            "자료013-T02-12",
+            "자료013-T02-24",
+            "자료013-T02-48",
+            "자료013-T02-72",
+            "자료013-T02-84"
+          ],
+          "direction_order": "바탕→판/격자/광선→십자 표식의 중첩.",
+          "easing": {
+            "property": "color_brightness",
+            "classification": "not_applicable",
+            "basis": "바탕의 구성과 요소 관계 관찰이며 독립 배경색 이징은 미지정."
+          },
+          "status": "observed",
+          "limitations": []
+        }
+      ]
+    },
+    {
+      "id": "panels",
+      "name": "서로 다른 높이의 어두운 직사각 판",
+      "parent": null,
+      "events": [
+        {
+          "description": "0.2~0.3부터 왼쪽에서 어두운 가로 직사각 판들이 나타나 오른쪽으로 들어온다. 위쪽 긴 판, 중간의 짧은 판, 아래쪽 판 등이 각기 다른 길이로 겹친다. 0.3~0.6의 큰 이동 후 0.8~1.4에는 끝점 변화가 작아진다.",
+          "properties": [
+            "position",
+            "visibility"
+          ],
+          "time_seconds": [
+            0.2,
+            1.4
+          ],
+          "evidence_ids": [
+            "자료013-T02-12",
+            "자료013-T02-15",
+            "자료013-T02-18",
+            "자료013-T02-24",
+            "자료013-T02-30",
+            "자료013-T02-36",
+            "자료013-T02-48",
+            "자료013-T02-60",
+            "자료013-T02-72",
+            "자료013-T02-84"
+          ],
+          "direction_order": "왼쪽→오른쪽; 높이가 다른 판들이 시차를 두고 중첩.",
+          "easing": {
+            "property": "position",
+            "classification": "decelerate",
+            "basis": "같은 위쪽 판의 우측 끝이 0.3~0.5 크게 오른쪽으로 이동하고 0.6~0.9에서 이동량이 줄며 1.0 이후 거의 정착하는 시각 비교. 정확한 좌표 수치는 미측정."
+          },
+          "status": "observed",
+          "limitations": [
+            "각 판의 첫 출발 프레임/독립 가속 구간은 희미한 대비 때문에 미확정."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grid",
+      "name": "배경 격자와 이중 사각 외곽선",
+      "parent": null,
+      "events": [
+        {
+          "description": "0.3~0.6에 희미한 직교 격자와 바깥 이중 사각 선이 생기며 0.8 이후 더 읽힌다. 외곽선의 우상단은 조금 왼쪽/아래로 들어오는 듯하며 화면 속 격자 영역이 천천히 작아지는 변화가 함께 보인다.",
+          "properties": [
+            "visibility",
+            "scale"
+          ],
+          "time_seconds": [
+            0.3,
+            1.4
+          ],
+          "evidence_ids": [
+            "자료013-T02-18",
+            "자료013-T02-24",
+            "자료013-T02-36",
+            "자료013-T02-48",
+            "자료013-T02-60",
+            "자료013-T02-72",
+            "자료013-T02-84"
+          ],
+          "direction_order": "희미한 선→선명한 격자; 우상단 경계의 완만한 안쪽 이동.",
+          "easing": {
+            "property": "visibility",
+            "classification": "unknown",
+            "basis": "선 대비 변화와 위치 변화가 중첩되어 독립 scale 곡선을 측정하지 못함."
+          },
+          "status": "observed",
+          "limitations": [
+            "스케일 축소 해석은 시각 추정. 카메라 변화 또는 선 개별 이동이라는 구현으로 확정하지 않음."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "light",
+      "name": "상하 수평 녹색 빛띠",
+      "parent": null,
+      "events": [
+        {
+          "description": "0.4 부근부터 가늘고 길게 번진 수평 녹색 빛이 보이고 밝은 중심이 왼쪽에서 오른쪽으로 진행한다. 상단 띠와 하단 띠가 서로 다른 높이에서 배경 격자와 판을 강조한다.",
+          "properties": [
+            "position",
+            "color_brightness"
+          ],
+          "time_seconds": [
+            0.35,
+            1.4
+          ],
+          "evidence_ids": [
+            "자료013-T02-21",
+            "자료013-T02-24",
+            "자료013-T02-36",
+            "자료013-T02-48",
+            "자료013-T02-60",
+            "자료013-T02-72",
+            "자료013-T02-84"
+          ],
+          "direction_order": "수평 빛의 밝은 중심 왼쪽→오른쪽. 판의 외곽 정착 이후에도 밝기 분포가 변함.",
+          "easing": {
+            "property": "position",
+            "classification": "unknown",
+            "basis": "상단 y=150:450 원본 파생 크롭 0.2~1.4에서 방향을 확인. 넓고 희미한 광점과 밝기 증가가 혼합되어 균등 시간 이동량을 신뢰성 있게 분리 못함."
+          },
+          "status": "observed",
+          "limitations": [
+            "빛의 이동과 밝아지는 속도를 같은 속성으로 단정하지 않음. 하단 빛의 독립 속도곡선은 미확정."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cursor",
+      "name": "적색 수평선·녹색 수직선·중앙 사각 표식",
+      "parent": null,
+      "events": [
+        {
+          "description": "0.8~0.95 사이 상단 왼쪽에 녹색 수직선과 적색 수평선이 희미하게 나타난다. 1.2~1.4에는 중앙의 작은 적색 사각도 읽힌다. 십자 전체가 우하향 이동하며 대비가 커진다.",
+          "properties": [
+            "position"
+          ],
+          "time_seconds": [
+            0.8,
+            1.4
+          ],
+          "evidence_ids": [
+            "자료013-T02-51",
+            "자료013-T02-57",
+            "자료013-T02-60",
+            "자료013-T02-63",
+            "자료013-T02-66",
+            "자료013-T02-69",
+            "자료013-T02-72",
+            "자료013-T02-75",
+            "자료013-T02-78",
+            "자료013-T02-81",
+            "자료013-T02-84"
+          ],
+          "direction_order": "왼쪽 위→오른쪽 아래. 수직/수평선→중심 사각 가시화.",
+          "easing": {
+            "property": "position",
+            "classification": "accelerate",
+            "basis": "x 위치가 0.95~1.4에서 166→176→188→204→226→252→283→316→356→398로 이동, 같은 0.05초 변화량이 커진다. 가속 분류는 수평 성분에 한정. 수직 성분은 1.25 이후 증가량이 줄어 감속 양상이 함께 보임.",
+            "measurement": {
+              "method": "원본 상부 1500행에서 적색 우세의 행 합 최대값 및 녹색 우세 픽셀의 열 합 최대값을 native ROI와 시각 대조",
+              "units": "원본 pixel, seconds",
+              "samples_xy": [
+                [
+                  0.95,
+                  166,
+                  232
+                ],
+                [
+                  1.0,
+                  176,
+                  254
+                ],
+                [
+                  1.05,
+                  188,
+                  282
+                ],
+                [
+                  1.1,
+                  204,
+                  314
+                ],
+                [
+                  1.15,
+                  226,
+                  348
+                ],
+                [
+                  1.2,
+                  252,
+                  382
+                ],
+                [
+                  1.25,
+                  283,
+                  418
+                ],
+                [
+                  1.3,
+                  316,
+                  448
+                ],
+                [
+                  1.35,
+                  356,
+                  474
+                ],
+                [
+                  1.4,
+                  398,
+                  496
+                ]
+              ],
+              "estimated_error": "대략 ±3 px; 블러와 어두운 표본 편향 미상",
+              "limitation": "0.8~0.85의 임계 검출 0은 미검출이지 실제 좌표0이 아님. 이 값 제외"
+            }
+          },
+          "status": "observed",
+          "limitations": [
+            "창끝에도 이동 중. 최초 희미한 표식의 정확한 시작과 이후 정착은 이 창에서 미확정."
+          ]
+        },
+        {
+          "description": "십자의 수직 이동은 초반 증가량이 커진 뒤 약 1.2~1.3부터 줄어드는 성격이다.",
+          "properties": [
+            "position_y"
+          ],
+          "time_seconds": [
+            0.95,
+            1.4
+          ],
+          "evidence_ids": [
+            "자료013-T02-57",
+            "자료013-T02-60",
+            "자료013-T02-66",
+            "자료013-T02-72",
+            "자료013-T02-75",
+            "자료013-T02-78",
+            "자료013-T02-81",
+            "자료013-T02-84"
+          ],
+          "direction_order": "아래로 이동하되 수평 성분과 속도 변화가 다름.",
+          "easing": {
+            "property": "position_y",
+            "classification": "in_out",
+            "basis": "y 증분(0.05초)이 22→28→32→34→34→36 이후 30→26→22로 감소. 정착은 범위 밖."
+          },
+          "status": "observed",
+          "limitations": [
+            "전체 이동의 완전한 ease-in-out 완결을 뜻하지 않음. y 성분만의 국소 가속/감속."
+          ]
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "overview": "0~1.4, 0.05초 간격 29개 전체 표본과 끝 문맥 프레임 검사.",
+    "secondary_details": "배경 판·격자·이중 외곽·상하 빛띠·십자와 중심 사각을 각각 확인.",
+    "internal_content": "판 안의 격자/선 겹침을 살폈으며 텍스트나 실제 소프트웨어 조작 화면은 이 구간에서 관측하지 않음.",
+    "unresolved": [
+      "낮은 대비 판의 최초 시작 프레임",
+      "격자 크기 변화의 정확한 곡선",
+      "빛 이동의 가감속",
+      "1.4 이후 십자의 동작"
+    ]
+  },
+  "hypotheses": [
+    {
+      "status": "hypothesis",
+      "description": "리빌/명암 변화는 마스크, 매트, 색 합성, 투명도 애니메이션 등으로 만들 수 있으나 렌더만으로 실제 AE 속성·레이어·키프레임·함수는 확정하지 않음."
+    }
+  ],
+  "limitations": [
+    "시각 범위는 지정 창에 한정하며 마지막 경계 표본은 context_after이다. 영상 전체 최종 상태나 회사 공통 규칙으로 확장하지 않음.",
+    "프레임 표시시각은 로그의 actual_playback_seconds 및 PTS 매핑을 사용했다. 파일명 ordinal에서 역산하지 않음.",
+    "PNG 해시 및 로그 시간 순서 검사는 통과했으나 구조/해시 검사가 시각적 정답을 보장하지 않음.",
+    "색은 압축 영상 RGB 변환 결과이며 range_accuracy_validated=false이다. SAR/회전 의미의 독립 검증, 공식 색상값 복원은 하지 않음.",
+    "Phase 00 정본 사전은 제공되지 않아 ID를 추정 부여하지 않았다. 원고·오디오·사용자 확인은 없음.",
+    "정확한 이징 함수와 AE Influence 값은 미상. 작은 잔상/두께 차이는 모션 블러·압축의 영향이 가능하다."
+  ],
+  "files_read": [
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\board_1.jpg",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\board_2.jpg",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\board_3.jpg",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00000_000.000.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00003_000.050.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00006_000.100.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00009_000.150.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00012_000.200.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00015_000.250.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00018_000.300.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00021_000.350.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00024_000.400.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00027_000.450.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00030_000.500.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00033_000.550.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00036_000.600.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00039_000.650.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00042_000.700.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00045_000.750.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00048_000.800.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00051_000.850.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00054_000.900.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00057_000.950.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00060_001.000.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00063_001.050.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00066_001.100.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00069_001.150.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00072_001.200.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00075_001.250.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00078_001.300.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00081_001.350.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00084_001.400.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\실행기록.json",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\analysis_input\\cases.json",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\analysis_input\\inspect_more.py",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\company-video-grammar-analyzer\\SKILL.md",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\company-video-grammar-analyzer\\references\\evidence-and-records.md",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\company-video-grammar-analyzer\\references\\motion-review.md",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\company-video-grammar-analyzer\\references\\output-contract.md",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\company-video-grammar-analyzer\\scripts\\check_observations.py",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\company-video-grammar-analyzer\\scripts\\evidence_catalog.py",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\T02_cross_0.85.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\T02_cross_0.95.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\T02_cross_1.05.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\T02_cross_1.15.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\T02_cross_1.25.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\T02_cross_1.35.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\T02_cross_board.jpg",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\T02_toplight_0.20.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\T02_toplight_0.40.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\T02_toplight_0.60.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\T02_toplight_0.80.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\T02_toplight_1.00.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\T02_toplight_1.20.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\T02_toplight_1.40.png",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\T02_toplight_board.jpg",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\catalog.json",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\crops_manifest.json",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\make_crops.py",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\measure.py",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\measurements.json",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\more_crops.py"
+  ],
+  "crop_derivations": [
+    {
+      "case": "T02",
+      "time": 0.85,
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00051_000.850.png",
+      "crop_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\T02_cross_0.85.png",
+      "crop_xyxy": [
+        0,
+        0,
+        650,
+        850
+      ],
+      "resize": null
+    },
+    {
+      "case": "T02",
+      "time": 0.95,
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00057_000.950.png",
+      "crop_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\T02_cross_0.95.png",
+      "crop_xyxy": [
+        0,
+        0,
+        650,
+        850
+      ],
+      "resize": null
+    },
+    {
+      "case": "T02",
+      "time": 1.05,
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00063_001.050.png",
+      "crop_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\T02_cross_1.05.png",
+      "crop_xyxy": [
+        0,
+        0,
+        650,
+        850
+      ],
+      "resize": null
+    },
+    {
+      "case": "T02",
+      "time": 1.15,
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00069_001.150.png",
+      "crop_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\T02_cross_1.15.png",
+      "crop_xyxy": [
+        0,
+        0,
+        650,
+        850
+      ],
+      "resize": null
+    },
+    {
+      "case": "T02",
+      "time": 1.25,
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00075_001.250.png",
+      "crop_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\T02_cross_1.25.png",
+      "crop_xyxy": [
+        0,
+        0,
+        650,
+        850
+      ],
+      "resize": null
+    },
+    {
+      "case": "T02",
+      "time": 1.35,
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00081_001.350.png",
+      "crop_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\T02_cross_1.35.png",
+      "crop_xyxy": [
+        0,
+        0,
+        650,
+        850
+      ],
+      "resize": null
+    },
+    {
+      "case": "T02",
+      "time": 0.2,
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00012_000.200.png",
+      "crop_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\T02_toplight_0.20.png",
+      "crop_xyxy": [
+        0,
+        150,
+        3840,
+        450
+      ],
+      "resize": null
+    },
+    {
+      "case": "T02",
+      "time": 0.4,
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00024_000.400.png",
+      "crop_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\T02_toplight_0.40.png",
+      "crop_xyxy": [
+        0,
+        150,
+        3840,
+        450
+      ],
+      "resize": null
+    },
+    {
+      "case": "T02",
+      "time": 0.6,
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00036_000.600.png",
+      "crop_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\T02_toplight_0.60.png",
+      "crop_xyxy": [
+        0,
+        150,
+        3840,
+        450
+      ],
+      "resize": null
+    },
+    {
+      "case": "T02",
+      "time": 0.8,
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00048_000.800.png",
+      "crop_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\T02_toplight_0.80.png",
+      "crop_xyxy": [
+        0,
+        150,
+        3840,
+        450
+      ],
+      "resize": null
+    },
+    {
+      "case": "T02",
+      "time": 1.0,
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00060_001.000.png",
+      "crop_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\T02_toplight_1.00.png",
+      "crop_xyxy": [
+        0,
+        150,
+        3840,
+        450
+      ],
+      "resize": null
+    },
+    {
+      "case": "T02",
+      "time": 1.2,
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00072_001.200.png",
+      "crop_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\T02_toplight_1.20.png",
+      "crop_xyxy": [
+        0,
+        150,
+        3840,
+        450
+      ],
+      "resize": null
+    },
+    {
+      "case": "T02",
+      "time": 1.4,
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-retest\\analysis_input\\cases\\자료013\\T02\\f_00084_001.400.png",
+      "crop_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a3\\runs\\with_a\\T02_toplight_1.40.png",
+      "crop_xyxy": [
+        0,
+        150,
+        3840,
+        450
+      ],
+      "resize": null
+    }
+  ]
+}

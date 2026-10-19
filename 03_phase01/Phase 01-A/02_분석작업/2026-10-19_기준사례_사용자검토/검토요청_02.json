@@ -1,0 +1,87 @@
+{
+  "schema_version": "user-density-review-0.2",
+  "utc": "2026-10-19T03:54:23.142556+00:00",
+  "user_choice_question_id": "call_e30b9a8642c04a348ec585e9d2e1722b",
+  "user_choice": "① 보강 기록 사용자 검토 후 기준 조정 (추천): 보고서1~3쪽에서 빠진 디자인·관계와 기록 밀도를 검토받아 기준을 다듬는다. 다른 장면 확장 보류.",
+  "state": "awaiting_specific_density_or_omission_feedback",
+  "skill_version": "0.1.0-draft.9",
+  "scope_note": "사용자는 검토 단계를 선택했다. 아직 특정 관측 내용이나 현재 기록 밀도에 대한 합격/불합격 피드백을 준 것은 아니다. 기존 스킬·관측·패턴은 수정하지 않는다.",
+  "report": {
+    "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\작업 보고서(pdf)\\01_제출보고서\\Phase 01-A\\2026-10-19_전체디자인_기록보강\\2026-10-19_전체디자인_기록보강과_draft9_반영.pdf",
+    "sha256": "c88d8973d59a99cdbede21d984213bc79f866e3d172a7e41352a20e4a2971dcf"
+  },
+  "cases": [
+    {
+      "case": "NEW-N",
+      "record": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\records\\NEW-N\\observations.json",
+        "sha256": "ab478c533ce83010b16ff6704786b56f7d77942d58a847d0c7a32c77ec0bcbe9"
+      },
+      "design_details": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\records\\NEW-N\\design-details.json",
+        "sha256": "a2ad2722b209896e2785133eb0d82320b55a243fa09276a6cb378436f73c6cfa"
+      }
+    },
+    {
+      "case": "NEW-P",
+      "record": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\records\\NEW-P\\observations.json",
+        "sha256": "509d52d1b28367b4110b9f95fbdecaafc93d2fe3651abd661df5ba26239d7548"
+      },
+      "design_details": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\records\\NEW-P\\design-details.json",
+        "sha256": "d6cc3e39dad9c96d91b3b2730708544a7a3928ea7c82a3a1f55550424cc5c795"
+      }
+    }
+  ],
+  "review_focus": [
+    {
+      "id": "N-label",
+      "frame_seconds": 177,
+      "question": "굵은/가는 문구 구간, 반투명 외관 띠와 양끝선, 글자-띠 여백 기록에 빠진 구성이 있는가?",
+      "image": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\inspection\\N177-label_left.png",
+        "sha256": "927a61d2ecc8d277604ff52b9f8de44e177c83a226f65122994e3111e6162a49"
+      }
+    },
+    {
+      "id": "P-frame",
+      "frame_seconds": 47,
+      "question": "바깥 선틀/색 모서리,안쪽 판/흰 표시,정책 띠/분리 꺾쇠,접점과 연결선의 구성 기록에 누락이 있는가?",
+      "image": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\inspection\\P47-regional_frame.png",
+        "sha256": "2302476b95e401c8dbeaba7b77c4706d7afc1eec17b324efdf34d0cd5085dcdf"
+      }
+    },
+    {
+      "id": "P-state-change",
+      "frame_seconds": [
+        47,
+        53
+      ],
+      "question": "패널 약85%축소와 카드 크기 유지를 따로 기록하는 방식이 충분한가? 정확한 시점/가감속은 여전히 미확인.",
+      "images": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\inspection\\P47-comparison-native.png",
+          "sha256": "cc3c24b732b39df93fb809403ed12e8ac2850ffdf4029e538273b25a1b2644f2"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\design-record-enrichment-20261019\\inspection\\P53-comparison-native.png",
+          "sha256": "d784b80b1b93b4de33f79f05cc7e0b6f53d8e0b116fc33b61ccb497978b7537f"
+        }
+      ]
+    }
+  ],
+  "feedback_options": [
+    "① 현재 밀도를 기준으로 유지 (추천): 전체 구성·관계와 재사용에 중요한 수치를 함께 기록하고 정확한 원본 설정은 미확정으로 둔다.",
+    "② 누락된 디자인 요소 보강 우선: 사용자가 짚은 요소와 주변/내부 구성을 다시 확인해 보완한다.",
+    "③ 형태와 수치 정밀도 강화: 선/모서리/띠 형상,간격,색·밝기 변화 중 재제작에 부족한 항목을 더 측정한다.",
+    "④ 읽기 쉬운 기록으로 재구성: 상세 근거는 유지하고 전체 구성→구성요소→핵심 수치→미확인 순서의 표로 정리한다."
+  ],
+  "content_feedback_received": false,
+  "runtime_changed": false,
+  "pattern_classification_changed": false,
+  "current_record_seconds": 28,
+  "outside_record_seconds": 602.272,
+  "next_after_feedback": "정확한 사용자 피드백을 해당 화면/기록에 연결하고 필요한 경우에만 다음 판본으로 반영. 다른 장면 확장은 보류."
+}

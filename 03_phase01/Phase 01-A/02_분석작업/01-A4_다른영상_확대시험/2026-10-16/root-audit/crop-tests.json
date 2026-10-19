@@ -1,0 +1,37 @@
+[
+  {
+    "test": "valid",
+    "expected_accept": true,
+    "accepted": true,
+    "correct": true,
+    "detail": "accepted"
+  },
+  {
+    "test": "wrong_size",
+    "expected_accept": false,
+    "accepted": false,
+    "correct": true,
+    "detail": "crop mode or size"
+  },
+  {
+    "test": "wrong_pixels_same_size",
+    "expected_accept": false,
+    "accepted": false,
+    "correct": true,
+    "detail": "crop pixels do not match parent"
+  },
+  {
+    "test": "unknown_parent",
+    "expected_accept": false,
+    "accepted": false,
+    "correct": true,
+    "detail": "crop parent not in extraction catalog"
+  },
+  {
+    "test": "out_of_bounds",
+    "expected_accept": false,
+    "accepted": false,
+    "correct": true,
+    "detail": "crop bounds"
+  }
+]

@@ -1,0 +1,1058 @@
+{
+  "schema_version": "source-adoption-trace-0.1",
+  "current_skill_version": "0.1.0-draft.8",
+  "initial_survey_method": "Static source inspection only. No third-party code, test suite, model benchmark or video analysis was executed. Selected means selected sections, not whole-file or whole-repository audit.",
+  "review_scope_counts": {
+    "full": 17,
+    "selected": 24
+  },
+  "record_count": 41,
+  "classification_counts": {
+    "지침·형식 반영": 10,
+    "코드 일부 반영": 21,
+    "직접 이식 제외·평가 참고": 6,
+    "미구현": 4
+  },
+  "counts_are_not_completion_percentages": true,
+  "third_party_test_execution": false,
+  "whole_original_candidate_list_exhaustively_reviewed": false,
+  "candidate_coverage_note": "41개는 선별한 10개 저장소의 소스 검토 항목. 이전 11개 조사와 합산한 19개 이력은 최초 대화의 모든 후보·내부 스킬을 전수 분해했다는 뜻이 아님. Agency Agents/wshobson/Awesome Copilot/Claude Skills 등 소개 후보 전체의 직접 소스 재감사는 이 41개 목록에 포함되지 않음.",
+  "records": [
+    {
+      "id": "P1",
+      "repository": "DietrichGebert/ponytail",
+      "upstream": {
+        "commit": "09c434ab73ca43761c5d8b0c5d341926c2fba710",
+        "path": "skills/ponytail/SKILL.md",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\ponytail-09c434ab73ca43761c5d8b0c5d341926c2fba710\\skills\\ponytail\\SKILL.md",
+        "sha256": "9badd22a32e19cb884e46dfa8d3aae82bb81dfa5484105b8b4f0262df823a509",
+        "review_scope": "full",
+        "url": "https://github.com/DietrichGebert/ponytail/blob/09c434ab73ca43761c5d8b0c5d341926c2fba710/skills/ponytail/SKILL.md#L19"
+      },
+      "finding": "판단 사다리와 생략 금지 조건",
+      "historical_draft5_status": "지침·형식 반영",
+      "current_classification": "지침·형식 반영",
+      "adoption_rationale": "관측을 충분히 축적한 뒤 기존 지식 재사용을 우선하는 판단을 참고. 적게 기록하기를 목표로 삼지 않음.",
+      "current_evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\references\\judgment-handoff.md",
+          "sha256": "afe495b0a2524f18e55293270161514cf33a822369f3dc47c4237ad12ac1cf5b"
+        }
+      ],
+      "remaining_or_exclusion": "선택 순서는 지침으로만 존재. 실제 후보 조회·대안 평가·선택 실행기는 없음.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "P2",
+      "repository": "DietrichGebert/ponytail",
+      "upstream": {
+        "commit": "09c434ab73ca43761c5d8b0c5d341926c2fba710",
+        "path": "hooks/ponytail-map.js",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\ponytail-09c434ab73ca43761c5d8b0c5d341926c2fba710\\hooks\\ponytail-map.js",
+        "sha256": "c876b087accb6655d04f7f48bda85d8304941d0ac0fb78c0c164eb9ec7d35e69",
+        "review_scope": "full",
+        "url": "https://github.com/DietrichGebert/ponytail/blob/09c434ab73ca43761c5d8b0c5d341926c2fba710/hooks/ponytail-map.js#L22"
+      },
+      "finding": "색인의 범위·한글 경로·길이 제한",
+      "historical_draft5_status": "코드 일부 반영",
+      "current_classification": "코드 일부 반영",
+      "adoption_rationale": "관측을 충분히 축적한 뒤 기존 지식 재사용을 우선하는 판단을 참고. 적게 기록하기를 목표로 삼지 않음.",
+      "current_evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\pattern_library.py",
+          "sha256": "a4f63a35c6f589f63e4d5305db450ad7d375e1007f81c76ca7095b57663015db"
+        }
+      ],
+      "remaining_or_exclusion": "이후 번호/스냅샷/조합에 단순 키워드 AND 검색 추가. 의미·조건 적합성 검색과 재사용 성공 판단은 아직 없음.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "P3",
+      "repository": "DietrichGebert/ponytail",
+      "upstream": {
+        "commit": "09c434ab73ca43761c5d8b0c5d341926c2fba710",
+        "path": "hooks/ponytail-activate.js",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\ponytail-09c434ab73ca43761c5d8b0c5d341926c2fba710\\hooks\\ponytail-activate.js",
+        "sha256": "6e492e997aa3e01560046daaed288b1cf68c596cc2b227744ec8b9fbdb5a230a",
+        "review_scope": "full",
+        "url": "https://github.com/DietrichGebert/ponytail/blob/09c434ab73ca43761c5d8b0c5d341926c2fba710/hooks/ponytail-activate.js#L68"
+      },
+      "finding": "활성화와 색인 실패 처리",
+      "historical_draft5_status": "직접 이식 제외·평가 참고",
+      "current_classification": "직접 이식 제외·평가 참고",
+      "adoption_rationale": "관측을 충분히 축적한 뒤 기존 지식 재사용을 우선하는 판단을 참고. 적게 기록하기를 목표로 삼지 않음.",
+      "current_evidence": [],
+      "remaining_or_exclusion": "전역 활성화 훅·원본 코드 색인기는 의도적으로 설치하지 않음.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "P4",
+      "repository": "DietrichGebert/ponytail",
+      "upstream": {
+        "commit": "09c434ab73ca43761c5d8b0c5d341926c2fba710",
+        "path": "skills/ponytail-review/SKILL.md",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\ponytail-09c434ab73ca43761c5d8b0c5d341926c2fba710\\skills\\ponytail-review\\SKILL.md",
+        "sha256": "33fe4ebe22a460924e5d4a261e223df22e409cc94ab76182bee9fb91a3ef022e",
+        "review_scope": "full",
+        "url": "https://github.com/DietrichGebert/ponytail/blob/09c434ab73ca43761c5d8b0c5d341926c2fba710/skills/ponytail-review/SKILL.md#L59"
+      },
+      "finding": "구체 사례를 요구하는 리뷰",
+      "historical_draft5_status": "지침·형식 반영",
+      "current_classification": "지침·형식 반영",
+      "adoption_rationale": "관측을 충분히 축적한 뒤 기존 지식 재사용을 우선하는 판단을 참고. 적게 기록하기를 목표로 삼지 않음.",
+      "current_evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\SKILL.md",
+          "sha256": "925318e81ad7d00397554039307d4378de1ed04c2fa5db878e477c6272d4090f"
+        }
+      ],
+      "remaining_or_exclusion": "구체 주장·근거 대조 지침. 자동 의미 검수와 전문가 리뷰 실행기는 없음.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "P5",
+      "repository": "DietrichGebert/ponytail",
+      "upstream": {
+        "commit": "09c434ab73ca43761c5d8b0c5d341926c2fba710",
+        "path": "skills/ponytail-debt/SKILL.md",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\ponytail-09c434ab73ca43761c5d8b0c5d341926c2fba710\\skills\\ponytail-debt\\SKILL.md",
+        "sha256": "b5ec2762f6ba8c4af9ea7173aa6c9f91b88655a25e43f9de0264f6ce8722b25f",
+        "review_scope": "full",
+        "url": "https://github.com/DietrichGebert/ponytail/blob/09c434ab73ca43761c5d8b0c5d341926c2fba710/skills/ponytail-debt/SKILL.md#L10"
+      },
+      "finding": "생략의 한계와 재검토 조건",
+      "historical_draft5_status": "코드 일부 반영",
+      "current_classification": "코드 일부 반영",
+      "adoption_rationale": "관측을 충분히 축적한 뒤 기존 지식 재사용을 우선하는 판단을 참고. 적게 기록하기를 목표로 삼지 않음.",
+      "current_evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\check_record.py",
+          "sha256": "53ae1d5ee78c22eb8ef780911526213191e21950e429a58ee724c036327070bd"
+        }
+      ],
+      "remaining_or_exclusion": "미해결·한계 기록 검사 일부. 재검토 조건을 실행하는 비용/부채 관리기는 없음.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "P6",
+      "repository": "DietrichGebert/ponytail",
+      "upstream": {
+        "commit": "09c434ab73ca43761c5d8b0c5d341926c2fba710",
+        "path": "benchmarks/results/2026-10-07-agentic.md",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\ponytail-09c434ab73ca43761c5d8b0c5d341926c2fba710\\benchmarks\\results\\2026-10-07-agentic.md",
+        "sha256": "a985555ce1835e82c17aa425f2d3743e0373345c8e73ad761923a700dcc341e0",
+        "review_scope": "selected",
+        "url": "https://github.com/DietrichGebert/ponytail/blob/09c434ab73ca43761c5d8b0c5d341926c2fba710/benchmarks/results/2026-10-07-agentic.md#L61"
+      },
+      "finding": "제작자 실험의 품질 분모와 한계",
+      "historical_draft5_status": "직접 이식 제외·평가 참고",
+      "current_classification": "직접 이식 제외·평가 참고",
+      "adoption_rationale": "관측을 충분히 축적한 뒤 기존 지식 재사용을 우선하는 판단을 참고. 적게 기록하기를 목표로 삼지 않음.",
+      "current_evidence": [],
+      "remaining_or_exclusion": "원본 실험의 효과 수치를 영상 효과로 채택하지 않음. 우리 효과 비교는 미실행.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "P7",
+      "repository": "DietrichGebert/ponytail",
+      "upstream": {
+        "commit": "09c434ab73ca43761c5d8b0c5d341926c2fba710",
+        "path": "benchmarks/agentic/README.md",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\ponytail-09c434ab73ca43761c5d8b0c5d341926c2fba710\\benchmarks\\agentic\\README.md",
+        "sha256": "abf4e5e49487dc4eb1b6c4aaac03d3aa12fde159cbb10f5af9237d96eaaa9d38",
+        "review_scope": "selected",
+        "url": "https://github.com/DietrichGebert/ponytail/blob/09c434ab73ca43761c5d8b0c5d341926c2fba710/benchmarks/agentic/README.md#L197"
+      },
+      "finding": "기준선 오염·평가기 자체 검사",
+      "historical_draft5_status": "코드 일부 반영",
+      "current_classification": "코드 일부 반영",
+      "adoption_rationale": "관측을 충분히 축적한 뒤 기존 지식 재사용을 우선하는 판단을 참고. 적게 기록하기를 목표로 삼지 않음.",
+      "current_evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\check_record.py",
+          "sha256": "53ae1d5ee78c22eb8ef780911526213191e21950e429a58ee724c036327070bd"
+        }
+      ],
+      "remaining_or_exclusion": "자체 구조·참조·집계 오류 주입 및 회귀 검사. 독립 AI·새 조건 A/B·품질/공수 효과 검증은 여전히 없음.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "R1",
+      "repository": "morluto/rea",
+      "upstream": {
+        "commit": "95c8f57aa2eafab4c8d7d43482b33ceefaf96b16",
+        "path": "src/domain/evidence.ts",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\rea-95c8f57aa2eafab4c8d7d43482b33ceefaf96b16\\src\\domain\\evidence.ts",
+        "sha256": "4a92eedd48d416e37f9eacfae8d1296cc8bdc1c5d4a63840ce7d097eb959fb42",
+        "review_scope": "full",
+        "url": "https://github.com/morluto/rea/blob/95c8f57aa2eafab4c8d7d43482b33ceefaf96b16/src/domain/evidence.ts#L127"
+      },
+      "finding": "증거·분석기·관측 유형·의미 해시",
+      "historical_draft5_status": "코드 일부 반영",
+      "current_classification": "코드 일부 반영",
+      "adoption_rationale": "렌더 영상의 관측·근거·미해결·판정 범위를 분리하는 데 적용. 소프트웨어 역설계 전체 도메인 모델을 통째로 복제하지 않음.",
+      "current_evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\check_record.py",
+          "sha256": "53ae1d5ee78c22eb8ef780911526213191e21950e429a58ee724c036327070bd"
+        }
+      ],
+      "remaining_or_exclusion": "원본/프레임/시각/유형 연결 일부. provider/profile/authority/semantic evidence hash 전체 모델은 없음.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "R2",
+      "repository": "morluto/rea",
+      "upstream": {
+        "commit": "95c8f57aa2eafab4c8d7d43482b33ceefaf96b16",
+        "path": "src/domain/residualUnknown.ts",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\rea-95c8f57aa2eafab4c8d7d43482b33ceefaf96b16\\src\\domain\\residualUnknown.ts",
+        "sha256": "c12e3ee6005f7fba3ad8ea1ea2daf1478abe417848ce7ed9a696e94e620aa7ec",
+        "review_scope": "full",
+        "url": "https://github.com/morluto/rea/blob/95c8f57aa2eafab4c8d7d43482b33ceefaf96b16/src/domain/residualUnknown.ts#L81"
+      },
+      "finding": "미해결 질문과 판본",
+      "historical_draft5_status": "코드 일부 반영",
+      "current_classification": "코드 일부 반영",
+      "adoption_rationale": "렌더 영상의 관측·근거·미해결·판정 범위를 분리하는 데 적용. 소프트웨어 역설계 전체 도메인 모델을 통째로 복제하지 않음.",
+      "current_evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\check_record.py",
+          "sha256": "53ae1d5ee78c22eb8ef780911526213191e21950e429a58ee724c036327070bd"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\review_ledger.py",
+          "sha256": "5168f898893955a977a80c5a10d4caeac26b72e70ff2316061325490989fc271"
+        }
+      ],
+      "remaining_or_exclusion": "지적→변경 주장→근거 연결 review_ledger 추가. revision 필드는 있으나 동시 갱신 충돌 제어·상충 최신 판정 선택기는 없음.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "R3",
+      "repository": "morluto/rea",
+      "upstream": {
+        "commit": "95c8f57aa2eafab4c8d7d43482b33ceefaf96b16",
+        "path": "src/application/investigation/EvidenceLedger.ts",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\rea-95c8f57aa2eafab4c8d7d43482b33ceefaf96b16\\src\\application\\investigation\\EvidenceLedger.ts",
+        "sha256": "e0b870721aee65397a93a3dd1ece6e9d1f1e66702cd067a9b4d5418f3b9ebf42",
+        "review_scope": "selected",
+        "url": "https://github.com/morluto/rea/blob/95c8f57aa2eafab4c8d7d43482b33ceefaf96b16/src/application/investigation/EvidenceLedger.ts#L302"
+      },
+      "finding": "상태 변경 충돌과 종료/입증의 분리",
+      "historical_draft5_status": "코드 일부 반영",
+      "current_classification": "코드 일부 반영",
+      "adoption_rationale": "렌더 영상의 관측·근거·미해결·판정 범위를 분리하는 데 적용. 소프트웨어 역설계 전체 도메인 모델을 통째로 복제하지 않음.",
+      "current_evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\check_record.py",
+          "sha256": "53ae1d5ee78c22eb8ef780911526213191e21950e429a58ee724c036327070bd"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\review_ledger.py",
+          "sha256": "5168f898893955a977a80c5a10d4caeac26b72e70ff2316061325490989fc271"
+        }
+      ],
+      "remaining_or_exclusion": "수정 검수 장부가 요구 대상/속성/차원/근거 유형을 확인. 원본 REA의 expected_revision 충돌 제어는 이식하지 않음.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "R4",
+      "repository": "morluto/rea",
+      "upstream": {
+        "commit": "95c8f57aa2eafab4c8d7d43482b33ceefaf96b16",
+        "path": "src/domain/evidenceBundle.ts",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\rea-95c8f57aa2eafab4c8d7d43482b33ceefaf96b16\\src\\domain\\evidenceBundle.ts",
+        "sha256": "e0daab738dbbbda38d4d1f15faedb8571cd1afaccdc3972b0bddc32870bfc3e2",
+        "review_scope": "selected",
+        "url": "https://github.com/morluto/rea/blob/95c8f57aa2eafab4c8d7d43482b33ceefaf96b16/src/domain/evidenceBundle.ts#L489"
+      },
+      "finding": "증거 유형과 환경의 자격 검사",
+      "historical_draft5_status": "코드 일부 반영",
+      "current_classification": "코드 일부 반영",
+      "adoption_rationale": "렌더 영상의 관측·근거·미해결·판정 범위를 분리하는 데 적용. 소프트웨어 역설계 전체 도메인 모델을 통째로 복제하지 않음.",
+      "current_evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\check_record.py",
+          "sha256": "53ae1d5ee78c22eb8ef780911526213191e21950e429a58ee724c036327070bd"
+        }
+      ],
+      "remaining_or_exclusion": "관측/계산/추론과 supported 해소 주장 자격 일부. 환경·authority 자격 모델 없음.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "R5",
+      "repository": "morluto/rea",
+      "upstream": {
+        "commit": "95c8f57aa2eafab4c8d7d43482b33ceefaf96b16",
+        "path": "src/application/investigation/EvidenceLedger.residualUnknown.test.ts",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\rea-95c8f57aa2eafab4c8d7d43482b33ceefaf96b16\\src\\application\\investigation\\EvidenceLedger.residualUnknown.test.ts",
+        "sha256": "54cd3f732c39fe7cf1a72a0da4e027eded3c6a9427ee3cc44b345e7c77e446d4",
+        "review_scope": "selected",
+        "url": "https://github.com/morluto/rea/blob/95c8f57aa2eafab4c8d7d43482b33ceefaf96b16/src/application/investigation/EvidenceLedger.residualUnknown.test.ts#L289"
+      },
+      "finding": "추론만으로 관측 요구를 닫지 않는 테스트",
+      "historical_draft5_status": "코드 일부 반영",
+      "current_classification": "코드 일부 반영",
+      "adoption_rationale": "렌더 영상의 관측·근거·미해결·판정 범위를 분리하는 데 적용. 소프트웨어 역설계 전체 도메인 모델을 통째로 복제하지 않음.",
+      "current_evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\check_record.py",
+          "sha256": "53ae1d5ee78c22eb8ef780911526213191e21950e429a58ee724c036327070bd"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\review_ledger.py",
+          "sha256": "5168f898893955a977a80c5a10d4caeac26b72e70ff2316061325490989fc271"
+        }
+      ],
+      "remaining_or_exclusion": "추론만으로 관측 요구를 닫는 오류를 거부하는 자체 합성 검사. 시각 진실성 판정 아님.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "R6",
+      "repository": "morluto/rea",
+      "upstream": {
+        "commit": "95c8f57aa2eafab4c8d7d43482b33ceefaf96b16",
+        "path": "src/domain/reconstructionCoverage.ts",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\rea-95c8f57aa2eafab4c8d7d43482b33ceefaf96b16\\src\\domain\\reconstructionCoverage.ts",
+        "sha256": "9d019c5db6590857f50f928f21d536b94c433730739bad7be8df90110c6d9ced",
+        "review_scope": "selected",
+        "url": "https://github.com/morluto/rea/blob/95c8f57aa2eafab4c8d7d43482b33ceefaf96b16/src/domain/reconstructionCoverage.ts#L164"
+      },
+      "finding": "요구 목록·판정 경계·검증 계약",
+      "historical_draft5_status": "코드 일부 반영",
+      "current_classification": "코드 일부 반영",
+      "adoption_rationale": "렌더 영상의 관측·근거·미해결·판정 범위를 분리하는 데 적용. 소프트웨어 역설계 전체 도메인 모델을 통째로 복제하지 않음.",
+      "current_evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\check_record.py",
+          "sha256": "53ae1d5ee78c22eb8ef780911526213191e21950e429a58ee724c036327070bd"
+        }
+      ],
+      "remaining_or_exclusion": "선언한 대상×속성의 구간 공백·참조 검사. 전체 재구성 의무/구현 담당/검증 차원 관리 없음.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "R7",
+      "repository": "morluto/rea",
+      "upstream": {
+        "commit": "95c8f57aa2eafab4c8d7d43482b33ceefaf96b16",
+        "path": "src/domain/reconstructionCoverage.test.ts",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\rea-95c8f57aa2eafab4c8d7d43482b33ceefaf96b16\\src\\domain\\reconstructionCoverage.test.ts",
+        "sha256": "6f064e7f8e1fd624cb70733d033fdc397754a0b1787cf0aa6d30461a3ef11acf",
+        "review_scope": "selected",
+        "url": "https://github.com/morluto/rea/blob/95c8f57aa2eafab4c8d7d43482b33ceefaf96b16/src/domain/reconstructionCoverage.test.ts#L63"
+      },
+      "finding": "등록 검사 통과와 완전성의 구분",
+      "historical_draft5_status": "코드 일부 반영",
+      "current_classification": "코드 일부 반영",
+      "adoption_rationale": "렌더 영상의 관측·근거·미해결·판정 범위를 분리하는 데 적용. 소프트웨어 역설계 전체 도메인 모델을 통째로 복제하지 않음.",
+      "current_evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\check_record.py",
+          "sha256": "53ae1d5ee78c22eb8ef780911526213191e21950e429a58ee724c036327070bd"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\source_coverage.py",
+          "sha256": "36950fea3d297981c0376e86fa6b5b3bfe49afbc7938c81def07e519fb64c18e"
+        }
+      ],
+      "remaining_or_exclusion": "선언한 범위 검사를 보완하고 원본 전체/기록 창 집계 추가. 미발견 요소를 자동으로 찾거나 정밀 검수 완전성을 입증하지 않음.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "R8",
+      "repository": "morluto/rea",
+      "upstream": {
+        "commit": "95c8f57aa2eafab4c8d7d43482b33ceefaf96b16",
+        "path": "src/domain/reconstructionCoverageEvidence.ts",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\rea-95c8f57aa2eafab4c8d7d43482b33ceefaf96b16\\src\\domain\\reconstructionCoverageEvidence.ts",
+        "sha256": "ffa77fbe049cbf21ed40d370ea833bb79338a8e5fc0be4f22f6db503f3bd8cf8",
+        "review_scope": "full",
+        "url": "https://github.com/morluto/rea/blob/95c8f57aa2eafab4c8d7d43482b33ceefaf96b16/src/domain/reconstructionCoverageEvidence.ts#L36"
+      },
+      "finding": "해당 판정이 인용한 증거의 자격",
+      "historical_draft5_status": "코드 일부 반영",
+      "current_classification": "코드 일부 반영",
+      "adoption_rationale": "렌더 영상의 관측·근거·미해결·판정 범위를 분리하는 데 적용. 소프트웨어 역설계 전체 도메인 모델을 통째로 복제하지 않음.",
+      "current_evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\check_record.py",
+          "sha256": "53ae1d5ee78c22eb8ef780911526213191e21950e429a58ee724c036327070bd"
+        },
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\review_ledger.py",
+          "sha256": "5168f898893955a977a80c5a10d4caeac26b72e70ff2316061325490989fc271"
+        }
+      ],
+      "remaining_or_exclusion": "해소 주장 유형·동일 대상·검수 상태 검사 일부. 완전한 근거 권위/환경 검증 아님.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "R9",
+      "repository": "morluto/rea",
+      "upstream": {
+        "commit": "95c8f57aa2eafab4c8d7d43482b33ceefaf96b16",
+        "path": "src/domain/reconstructionCoverageVerifierResults.ts",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\rea-95c8f57aa2eafab4c8d7d43482b33ceefaf96b16\\src\\domain\\reconstructionCoverageVerifierResults.ts",
+        "sha256": "e64c84f7877f5b47c19c23f5d8fa6fff0cecd6af00a4bb0baebb2f47c1f23552",
+        "review_scope": "full",
+        "url": "https://github.com/morluto/rea/blob/95c8f57aa2eafab4c8d7d43482b33ceefaf96b16/src/domain/reconstructionCoverageVerifierResults.ts#L17"
+      },
+      "finding": "최신 판정 묶음과 충돌",
+      "historical_draft5_status": "미구현",
+      "current_classification": "미구현",
+      "adoption_rationale": "렌더 영상의 관측·근거·미해결·판정 범위를 분리하는 데 적용. 소프트웨어 역설계 전체 도메인 모델을 통째로 복제하지 않음.",
+      "current_evidence": [],
+      "remaining_or_exclusion": "상충 판정 보존·최신 유효 판정 선택 실행기는 여전히 없음. 기존 기록 보존/기각 표시는 그 전체 기능의 대체가 아님.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "R10",
+      "repository": "morluto/rea",
+      "upstream": {
+        "commit": "95c8f57aa2eafab4c8d7d43482b33ceefaf96b16",
+        "path": "src/domain/reconstructionVerificationSchemas.ts",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\rea-95c8f57aa2eafab4c8d7d43482b33ceefaf96b16\\src\\domain\\reconstructionVerificationSchemas.ts",
+        "sha256": "552cf944751455f2d3593c97752c240ad767547f10675d4bb06698b9e87fe083",
+        "review_scope": "selected",
+        "url": "https://github.com/morluto/rea/blob/95c8f57aa2eafab4c8d7d43482b33ceefaf96b16/src/domain/reconstructionVerificationSchemas.ts#L45"
+      },
+      "finding": "기존 재현 검사 유형의 범위",
+      "historical_draft5_status": "미구현",
+      "current_classification": "미구현",
+      "adoption_rationale": "렌더 영상의 관측·근거·미해결·판정 범위를 분리하는 데 적용. 소프트웨어 역설계 전체 도메인 모델을 통째로 복제하지 않음.",
+      "current_evidence": [],
+      "remaining_or_exclusion": "편집 가능한 재제작→렌더→원본 비교→내용 변경 검증은 여전히 미구현.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "R11",
+      "repository": "morluto/rea",
+      "upstream": {
+        "commit": "95c8f57aa2eafab4c8d7d43482b33ceefaf96b16",
+        "path": "src/application/binary/AnalysisSnapshotCache.ts",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\rea-95c8f57aa2eafab4c8d7d43482b33ceefaf96b16\\src\\application\\binary\\AnalysisSnapshotCache.ts",
+        "sha256": "a7eb960e48265ccdfcc8770e19f43e25c1d3f2e83aeb11b9c8c8d313d974c8d5",
+        "review_scope": "selected",
+        "url": "https://github.com/morluto/rea/blob/95c8f57aa2eafab4c8d7d43482b33ceefaf96b16/src/application/binary/AnalysisSnapshotCache.ts#L71"
+      },
+      "finding": "재사용 조건과 상태성 작업 제외",
+      "historical_draft5_status": "코드 일부 반영",
+      "current_classification": "코드 일부 반영",
+      "adoption_rationale": "렌더 영상의 관측·근거·미해결·판정 범위를 분리하는 데 적용. 소프트웨어 역설계 전체 도메인 모델을 통째로 복제하지 않음.",
+      "current_evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\pattern_library.py",
+          "sha256": "a4f63a35c6f589f63e4d5305db450ad7d375e1007f81c76ca7095b57663015db"
+        }
+      ],
+      "remaining_or_exclusion": "파일 해시와 고정 스냅샷만 일부. 분석 설정·시간 매핑·검수 판본에 따른 캐시 재사용 관리 없음.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "R12",
+      "repository": "morluto/rea",
+      "upstream": {
+        "commit": "95c8f57aa2eafab4c8d7d43482b33ceefaf96b16",
+        "path": "src/browser/PngVisualDiff.ts",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\rea-95c8f57aa2eafab4c8d7d43482b33ceefaf96b16\\src\\browser\\PngVisualDiff.ts",
+        "sha256": "dc8f20a731c1aac1ee9fad6ed2f22805845f6306e7eec28759019d4314249e4e",
+        "review_scope": "selected",
+        "url": "https://github.com/morluto/rea/blob/95c8f57aa2eafab4c8d7d43482b33ceefaf96b16/src/browser/PngVisualDiff.ts#L490"
+      },
+      "finding": "정지 픽셀 비교의 한계",
+      "historical_draft5_status": "직접 이식 제외·평가 참고",
+      "current_classification": "직접 이식 제외·평가 참고",
+      "adoption_rationale": "렌더 영상의 관측·근거·미해결·판정 범위를 분리하는 데 적용. 소프트웨어 역설계 전체 도메인 모델을 통째로 복제하지 않음.",
+      "current_evidence": [],
+      "remaining_or_exclusion": "정지 PNG 차이를 영상 의미·모션 성공 판정으로 이식하지 않음.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "R13",
+      "repository": "morluto/rea",
+      "upstream": {
+        "commit": "95c8f57aa2eafab4c8d7d43482b33ceefaf96b16",
+        "path": "src/browser/PlaywrightScenarioArtifacts.ts",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\rea-95c8f57aa2eafab4c8d7d43482b33ceefaf96b16\\src\\browser\\PlaywrightScenarioArtifacts.ts",
+        "sha256": "461986026f578ca5a0990c75702163aae41b71b061cd4ff0810b6879c0161e43",
+        "review_scope": "full",
+        "url": "https://github.com/morluto/rea/blob/95c8f57aa2eafab4c8d7d43482b33ceefaf96b16/src/browser/PlaywrightScenarioArtifacts.ts#L50"
+      },
+      "finding": "브라우저 캡처의 모션 제한",
+      "historical_draft5_status": "직접 이식 제외·평가 참고",
+      "current_classification": "직접 이식 제외·평가 참고",
+      "adoption_rationale": "렌더 영상의 관측·근거·미해결·판정 범위를 분리하는 데 적용. 소프트웨어 역설계 전체 도메인 모델을 통째로 복제하지 않음.",
+      "current_evidence": [],
+      "remaining_or_exclusion": "애니메이션을 비활성화하는 브라우저 캡처를 모션 검증으로 이식하지 않음.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "R14",
+      "repository": "morluto/rea",
+      "upstream": {
+        "commit": "95c8f57aa2eafab4c8d7d43482b33ceefaf96b16",
+        "path": "scripts/generate-skill-metadata.mjs",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\rea-95c8f57aa2eafab4c8d7d43482b33ceefaf96b16\\scripts\\generate-skill-metadata.mjs",
+        "sha256": "f2e1a50cb28c1e7c59d5eb951336b425ead4e874e1b7a712ffaa2f12fec2ae44",
+        "review_scope": "full",
+        "url": "https://github.com/morluto/rea/blob/95c8f57aa2eafab4c8d7d43482b33ceefaf96b16/scripts/generate-skill-metadata.mjs#L35"
+      },
+      "finding": "배포 지침과 실제 도구 판본 동기화",
+      "historical_draft5_status": "코드 일부 반영",
+      "current_classification": "코드 일부 반영",
+      "adoption_rationale": "렌더 영상의 관측·근거·미해결·판정 범위를 분리하는 데 적용. 소프트웨어 역설계 전체 도메인 모델을 통째로 복제하지 않음.",
+      "current_evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\check_record.py",
+          "sha256": "53ae1d5ee78c22eb8ef780911526213191e21950e429a58ee724c036327070bd"
+        }
+      ],
+      "remaining_or_exclusion": "프로젝트 D: 개발 작업본은 draft.8로 반영·백업·해시 확인. 전역 자동 설치·검증 완료 판본 승격은 없음.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "R15",
+      "repository": "morluto/rea",
+      "upstream": {
+        "commit": "95c8f57aa2eafab4c8d7d43482b33ceefaf96b16",
+        "path": "docs/reconstruction-obligation-ledgers.md",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\rea-95c8f57aa2eafab4c8d7d43482b33ceefaf96b16\\docs\\reconstruction-obligation-ledgers.md",
+        "sha256": "8d13dda69fae4b14ccb10e1c0318a7bec0efe802ca69059261aa29de41639400",
+        "review_scope": "full",
+        "url": "https://github.com/morluto/rea/blob/95c8f57aa2eafab4c8d7d43482b33ceefaf96b16/docs/reconstruction-obligation-ledgers.md#L11"
+      },
+      "finding": "의무·구현 담당·사례·검증 연결",
+      "historical_draft5_status": "코드 일부 반영",
+      "current_classification": "코드 일부 반영",
+      "adoption_rationale": "렌더 영상의 관측·근거·미해결·판정 범위를 분리하는 데 적용. 소프트웨어 역설계 전체 도메인 모델을 통째로 복제하지 않음.",
+      "current_evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\reuse_map.py",
+          "sha256": "3e79f60870890479776449f928acab8a2c8cf5073cdb7438e008d8c7d47b41ea"
+        }
+      ],
+      "remaining_or_exclusion": "사례와 패턴의 역할·관계 연결 일부. 요구→담당 구현→렌더 검증의 의무 장부 없음.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "T1",
+      "repository": "trailofbits/skills",
+      "upstream": {
+        "commit": "5c99c03fb8a9ea568432ecbcba5d86e9f4ac2bf0",
+        "path": "plugins/audit-context-building/skills/audit-context-building/SKILL.md",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\selected-sources\\trailofbits__skills-5c99c03fb8a9ea568432ecbcba5d86e9f4ac2bf0\\plugins\\audit-context-building\\skills\\audit-context-building\\SKILL.md",
+        "sha256": "33fa693dc6e166cfa4919e4373cb6578c009d296234c2ae7cb3cd4e79b443765",
+        "review_scope": "full",
+        "url": "https://github.com/trailofbits/skills/blob/5c99c03fb8a9ea568432ecbcba5d86e9f4ac2bf0/plugins/audit-context-building/skills/audit-context-building/SKILL.md#L68"
+      },
+      "finding": "이해 단계와 평가 단계 분리",
+      "historical_draft5_status": "지침·형식 반영",
+      "current_classification": "지침·형식 반영",
+      "adoption_rationale": "증거를 이해하는 과정과 평가 결론을 혼동하지 않기 위해 참고. 보안 도메인의 위험 분류를 영상 정답으로 쓰지 않음.",
+      "current_evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\references\\judgment-handoff.md",
+          "sha256": "afe495b0a2524f18e55293270161514cf33a822369f3dc47c4237ad12ac1cf5b"
+        }
+      ],
+      "remaining_or_exclusion": "관측과 추론, 분석과 판단의 분리 지침. 별도 이해/평가 실행 흐름은 없음.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "T2",
+      "repository": "trailofbits/skills",
+      "upstream": {
+        "commit": "5c99c03fb8a9ea568432ecbcba5d86e9f4ac2bf0",
+        "path": "plugins/audit-context-building/workflows/audit-context.js",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\selected-sources\\trailofbits__skills-5c99c03fb8a9ea568432ecbcba5d86e9f4ac2bf0\\plugins\\audit-context-building\\workflows\\audit-context.js",
+        "sha256": "71cd025216e2589fee1e1a0ffe215fb7bbeaf22751dc7417ca6ce74497e6d0b3",
+        "review_scope": "selected",
+        "url": "https://github.com/trailofbits/skills/blob/5c99c03fb8a9ea568432ecbcba5d86e9f4ac2bf0/plugins/audit-context-building/workflows/audit-context.js#L84"
+      },
+      "finding": "구조화 반환·예산·실패 필터링",
+      "historical_draft5_status": "미구현",
+      "current_classification": "미구현",
+      "adoption_rationale": "증거를 이해하는 과정과 평가 결론을 혼동하지 않기 위해 참고. 보안 도메인의 위험 분류를 영상 정답으로 쓰지 않음.",
+      "current_evidence": [],
+      "remaining_or_exclusion": "이번 자료에 한정한 제한 추출 보조 어댑터는 존재. 원본 전문 분석 배치/예산/실패 필터링 실행 흐름을 이식한 것은 아님.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "T3",
+      "repository": "trailofbits/skills",
+      "upstream": {
+        "commit": "5c99c03fb8a9ea568432ecbcba5d86e9f4ac2bf0",
+        "path": "plugins/audit-context-building/evals/continuity-across-calls/graders/unbounded-length-path.md",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\selected-sources\\trailofbits__skills-5c99c03fb8a9ea568432ecbcba5d86e9f4ac2bf0\\plugins\\audit-context-building\\evals\\continuity-across-calls\\graders\\unbounded-length-path.md",
+        "sha256": "b603f24e35f96273e1c74a1b278f68d8564046a57686a590855008c3dc30293e",
+        "review_scope": "full",
+        "url": "https://github.com/trailofbits/skills/blob/5c99c03fb8a9ea568432ecbcba5d86e9f4ac2bf0/plugins/audit-context-building/evals/continuity-across-calls/graders/unbounded-length-path.md#L9"
+      },
+      "finding": "핵심 실패를 분별하는 평가 조건",
+      "historical_draft5_status": "코드 일부 반영",
+      "current_classification": "코드 일부 반영",
+      "adoption_rationale": "증거를 이해하는 과정과 평가 결론을 혼동하지 않기 위해 참고. 보안 도메인의 위험 분류를 영상 정답으로 쓰지 않음.",
+      "current_evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\check_record.py",
+          "sha256": "53ae1d5ee78c22eb8ef780911526213191e21950e429a58ee724c036327070bd"
+        }
+      ],
+      "remaining_or_exclusion": "형식/근거/조합 오류를 분별하는 합성 시험. A/4 의미 오답을 자동 판별하지 못함.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "S1",
+      "repository": "obra/superpowers",
+      "upstream": {
+        "commit": "bb92a77741419a4ab5f06e711a283343f1ada0c3",
+        "path": "skills/writing-skills/SKILL.md",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\superpowers-bb92a77741419a4ab5f06e711a283343f1ada0c3\\skills\\writing-skills\\SKILL.md",
+        "sha256": "bbdfe742f853562e643a3d40d64476359d47881e39cef80a189283fa26d11ab9",
+        "review_scope": "selected",
+        "url": "https://github.com/obra/superpowers/blob/bb92a77741419a4ab5f06e711a283343f1ada0c3/skills/writing-skills/SKILL.md#L461"
+      },
+      "finding": "실패 종류에 맞는 지침 형태",
+      "historical_draft5_status": "코드 일부 반영",
+      "current_classification": "코드 일부 반영",
+      "adoption_rationale": "실제 실패를 바탕으로 수정·재검증하는 원칙을 적용. 지침 추가만으로 행동 개선이 입증됐다고 하지 않음.",
+      "current_evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\references\\output-contract.md",
+          "sha256": "bce4158f657ae73f7b67ef87d7280db9ed8af4d6b28cd8e5631c1ee20e9ffade"
+        }
+      ],
+      "remaining_or_exclusion": "실제 사내 영상에서 대상·속성·중간 상태를 보완 중. 같은 AI가 반복 확인하는 개발 사례이며 독립 개선 효과 입증은 없음.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "S2",
+      "repository": "obra/superpowers",
+      "upstream": {
+        "commit": "bb92a77741419a4ab5f06e711a283343f1ada0c3",
+        "path": "skills/verification-before-completion/SKILL.md",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\superpowers-bb92a77741419a4ab5f06e711a283343f1ada0c3\\skills\\verification-before-completion\\SKILL.md",
+        "sha256": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3",
+        "review_scope": "selected",
+        "url": "https://github.com/obra/superpowers/blob/bb92a77741419a4ab5f06e711a283343f1ada0c3/skills/verification-before-completion/SKILL.md#L22"
+      },
+      "finding": "완료 주장과 검증 근거 연결",
+      "historical_draft5_status": "코드 일부 반영",
+      "current_classification": "코드 일부 반영",
+      "adoption_rationale": "실제 실패를 바탕으로 수정·재검증하는 원칙을 적용. 지침 추가만으로 행동 개선이 입증됐다고 하지 않음.",
+      "current_evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\check_record.py",
+          "sha256": "53ae1d5ee78c22eb8ef780911526213191e21950e429a58ee724c036327070bd"
+        }
+      ],
+      "remaining_or_exclusion": "draft.8 구조 검사와 시각 내용 판단을 계속 구분. 검사 95개는 영상 품질 95건 평가가 아님.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "I1",
+      "repository": "pbakaus/impeccable",
+      "upstream": {
+        "commit": "2f46b7a8b059af00d20dd13b64dbe165e7c6a742",
+        "path": "skill/SKILL.src.md",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\selected-sources\\pbakaus__impeccable-2f46b7a8b059af00d20dd13b64dbe165e7c6a742\\skill\\SKILL.src.md",
+        "sha256": "cb182d7e9c5b4abf39ed6c480a3e4c2a3ce8ddea7691a3f146809751d7e95447",
+        "review_scope": "selected",
+        "url": "https://github.com/pbakaus/impeccable/blob/2f46b7a8b059af00d20dd13b64dbe165e7c6a742/skill/SKILL.src.md#L34"
+      },
+      "finding": "장면 목적별 판단과 기존 맥락",
+      "historical_draft5_status": "지침·형식 반영",
+      "current_classification": "지침·형식 반영",
+      "adoption_rationale": "장면 목적과 표현의 적합성을 판단할 구조로 참고. UI 기본 시간 수치나 웹 상태를 영상 기본값으로 이식하지 않음.",
+      "current_evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\references\\judgment-handoff.md",
+          "sha256": "afe495b0a2524f18e55293270161514cf33a822369f3dc47c4237ad12ac1cf5b"
+        }
+      ],
+      "remaining_or_exclusion": "목적/조건 인계 형식 수준. 목적별 설계 대안 생성→선택→결과 검증은 여전히 미구현.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "I2",
+      "repository": "pbakaus/impeccable",
+      "upstream": {
+        "commit": "2f46b7a8b059af00d20dd13b64dbe165e7c6a742",
+        "path": "skill/reference/critique.md",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\selected-sources\\pbakaus__impeccable-2f46b7a8b059af00d20dd13b64dbe165e7c6a742\\skill\\reference\\critique.md",
+        "sha256": "f2ece6380e378ab644d0508adf10e213eb2d6e241e3d7339727fb8e61cd2d39b",
+        "review_scope": "selected",
+        "url": "https://github.com/pbakaus/impeccable/blob/2f46b7a8b059af00d20dd13b64dbe165e7c6a742/skill/reference/critique.md#L5"
+      },
+      "finding": "판단·검출의 격리와 한계 공개",
+      "historical_draft5_status": "지침·형식 반영",
+      "current_classification": "지침·형식 반영",
+      "adoption_rationale": "장면 목적과 표현의 적합성을 판단할 구조로 참고. UI 기본 시간 수치나 웹 상태를 영상 기본값으로 이식하지 않음.",
+      "current_evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\references\\output-contract.md",
+          "sha256": "bce4158f657ae73f7b67ef87d7280db9ed8af4d6b28cd8e5631c1ee20e9ffade"
+        }
+      ],
+      "remaining_or_exclusion": "내용 검수 상태 필드와 AI 관찰은 있음. 독립 시각 비평·기계 검출을 격리한 실행기는 없음.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "I3",
+      "repository": "pbakaus/impeccable",
+      "upstream": {
+        "commit": "2f46b7a8b059af00d20dd13b64dbe165e7c6a742",
+        "path": "skill/reference/animate.md",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\selected-sources\\pbakaus__impeccable-2f46b7a8b059af00d20dd13b64dbe165e7c6a742\\skill\\reference\\animate.md",
+        "sha256": "59f38d50c799aa47ecd7288c69dce0245d8c3e3e2368b29499d583996b5030b3",
+        "review_scope": "full",
+        "url": "https://github.com/pbakaus/impeccable/blob/2f46b7a8b059af00d20dd13b64dbe165e7c6a742/skill/reference/animate.md#L25"
+      },
+      "finding": "모션 목적의 사전 명세",
+      "historical_draft5_status": "지침·형식 반영",
+      "current_classification": "지침·형식 반영",
+      "adoption_rationale": "장면 목적과 표현의 적합성을 판단할 구조로 참고. UI 기본 시간 수치나 웹 상태를 영상 기본값으로 이식하지 않음.",
+      "current_evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\references\\judgment-handoff.md",
+          "sha256": "afe495b0a2524f18e55293270161514cf33a822369f3dc47c4237ad12ac1cf5b"
+        }
+      ],
+      "remaining_or_exclusion": "목적·구현 제안 인계 형식. 모션 의도 명세와 결과 효과 대조 없음.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "I4",
+      "repository": "pbakaus/impeccable",
+      "upstream": {
+        "commit": "2f46b7a8b059af00d20dd13b64dbe165e7c6a742",
+        "path": "crates/context/src/critique_storage.rs",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\selected-sources\\pbakaus__impeccable-2f46b7a8b059af00d20dd13b64dbe165e7c6a742\\crates\\context\\src\\critique_storage.rs",
+        "sha256": "4f9eadd274ba31d1b8e093592f96cc7f0d91ac208c34149dabab6b1cf379f235",
+        "review_scope": "selected",
+        "url": "https://github.com/pbakaus/impeccable/blob/2f46b7a8b059af00d20dd13b64dbe165e7c6a742/crates/context/src/critique_storage.rs#L230"
+      },
+      "finding": "검수 대상의 실제 파일 지문",
+      "historical_draft5_status": "코드 일부 반영",
+      "current_classification": "코드 일부 반영",
+      "adoption_rationale": "장면 목적과 표현의 적합성을 판단할 구조로 참고. UI 기본 시간 수치나 웹 상태를 영상 기본값으로 이식하지 않음.",
+      "current_evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\pattern_library.py",
+          "sha256": "a4f63a35c6f589f63e4d5305db450ad7d375e1007f81c76ca7095b57663015db"
+        }
+      ],
+      "remaining_or_exclusion": "소스 파일 지문과 스냅샷 일부. 실제 생성 디자인/렌더별 비평 대상 고정은 미구현.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "I5",
+      "repository": "pbakaus/impeccable",
+      "upstream": {
+        "commit": "2f46b7a8b059af00d20dd13b64dbe165e7c6a742",
+        "path": "crates/detect/tests/regex_only_note.rs",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\selected-sources\\pbakaus__impeccable-2f46b7a8b059af00d20dd13b64dbe165e7c6a742\\crates\\detect\\tests\\regex_only_note.rs",
+        "sha256": "16c7601be12c5b5fe401f0ae33cc3b39b5dfead3e07532e24d86a060ab6fc716",
+        "review_scope": "selected",
+        "url": "https://github.com/pbakaus/impeccable/blob/2f46b7a8b059af00d20dd13b64dbe165e7c6a742/crates/detect/tests/regex_only_note.rs#L38"
+      },
+      "finding": "미실행 검사와 무결점의 구분",
+      "historical_draft5_status": "코드 일부 반영",
+      "current_classification": "코드 일부 반영",
+      "adoption_rationale": "장면 목적과 표현의 적합성을 판단할 구조로 참고. UI 기본 시간 수치나 웹 상태를 영상 기본값으로 이식하지 않음.",
+      "current_evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\check_record.py",
+          "sha256": "53ae1d5ee78c22eb8ef780911526213191e21950e429a58ee724c036327070bd"
+        }
+      ],
+      "remaining_or_exclusion": "미실행 내용 검사와 형식 통과의 구분. 시각 무결점 검사는 없음.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "G1",
+      "repository": "garrytan/gstack",
+      "upstream": {
+        "commit": "8640ab4ff43accda6676105868935903232d8c93",
+        "path": "plan-design-review/SKILL.md",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\gstack-8640ab4ff43accda6676105868935903232d8c93\\plan-design-review\\SKILL.md",
+        "sha256": "efc4367a024f4707e64efe7c74dc32bef100c5b63b17416b73fce5809d9c1a60",
+        "review_scope": "selected",
+        "url": "https://github.com/garrytan/gstack/blob/8640ab4ff43accda6676105868935903232d8c93/plan-design-review/SKILL.md#L1136"
+      },
+      "finding": "설계 결함·대안·재평가",
+      "historical_draft5_status": "지침·형식 반영",
+      "current_classification": "지침·형식 반영",
+      "adoption_rationale": "시각적 결함→대안→재평가를 향후 판단 기능에 적용할 후보. 장문의 원문 전체를 매번 강제 호출하지 않음.",
+      "current_evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\references\\judgment-handoff.md",
+          "sha256": "afe495b0a2524f18e55293270161514cf33a822369f3dc47c4237ad12ac1cf5b"
+        }
+      ],
+      "remaining_or_exclusion": "대안/반례/선택 이유 형식 수준. 시니어 디자인 비평의 실제 결과물 비교 과정은 미구현.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "G2",
+      "repository": "garrytan/gstack",
+      "upstream": {
+        "commit": "8640ab4ff43accda6676105868935903232d8c93",
+        "path": "plan-design-review/sections/review-sections.md",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\gstack-8640ab4ff43accda6676105868935903232d8c93\\plan-design-review\\sections\\review-sections.md",
+        "sha256": "ea53eeed2e3e28d10f524a761f12da49dbb9c10a6261ca79ca56873495d0ea74",
+        "review_scope": "selected",
+        "url": "https://github.com/garrytan/gstack/blob/8640ab4ff43accda6676105868935903232d8c93/plan-design-review/sections/review-sections.md#L85"
+      },
+      "finding": "상태 표와 검수 차원",
+      "historical_draft5_status": "지침·형식 반영",
+      "current_classification": "지침·형식 반영",
+      "adoption_rationale": "시각적 결함→대안→재평가를 향후 판단 기능에 적용할 후보. 장문의 원문 전체를 매번 강제 호출하지 않음.",
+      "current_evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\references\\design-and-patterns.md",
+          "sha256": "a97d4920a5eb5b6d5c94583ce3c9332eea7354c181ef0dd1b4a7bf5a79a25cf7"
+        }
+      ],
+      "remaining_or_exclusion": "디자인 차원과 검수 상태만 일부. 실제 다차원 전문가 리뷰와 변경 판정 없음.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "A1",
+      "repository": "anthropics/skills",
+      "upstream": {
+        "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+        "path": "skills/skill-creator/agents/grader.md",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\skills-dbd4588f9e1033efb41dad4bef2f7947c8993d44\\skills\\skill-creator\\agents\\grader.md",
+        "sha256": "57134da0c1a4eea33fbd74a1c9c44aa814f07d6bc64de303edb586f941e5d21a",
+        "review_scope": "selected",
+        "url": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/skill-creator/agents/grader.md#L43"
+      },
+      "finding": "사전 기준 밖 주장과 평가기 검토",
+      "historical_draft5_status": "코드 일부 반영",
+      "current_classification": "코드 일부 반영",
+      "adoption_rationale": "평가 분모·미실행 상태·평가기 검토를 참고. 구조 검사 수를 품질 점수로 바꾸지 않음.",
+      "current_evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\check_record.py",
+          "sha256": "53ae1d5ee78c22eb8ef780911526213191e21950e429a58ee724c036327070bd"
+        }
+      ],
+      "remaining_or_exclusion": "고유 주장과 검사기 오류 시험 일부. 기준 밖 의미 주장 전수 채점·독립 평가 없음.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "A2",
+      "repository": "anthropics/skills",
+      "upstream": {
+        "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+        "path": "skills/skill-creator/scripts/aggregate_benchmark.py",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\skills-dbd4588f9e1033efb41dad4bef2f7947c8993d44\\skills\\skill-creator\\scripts\\aggregate_benchmark.py",
+        "sha256": "123ef128ea5ccc01a4b1ac212ef5567f21e9c13d3d240609780beeb3200c49aa",
+        "review_scope": "selected",
+        "url": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/skill-creator/scripts/aggregate_benchmark.py#L153"
+      },
+      "finding": "누락값과 지표 대체 경로",
+      "historical_draft5_status": "미구현",
+      "current_classification": "미구현",
+      "adoption_rationale": "평가 분모·미실행 상태·평가기 검토를 참고. 구조 검사 수를 품질 점수로 바꾸지 않음.",
+      "current_evidence": [],
+      "remaining_or_exclusion": "null 보존은 결과 파일에 사용했으나 새 비교의 시간/토큰/품질 집계기는 구현하지 않음.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "M1",
+      "repository": "mattpocock/skills",
+      "upstream": {
+        "commit": "49dd158d1076134a641b33efb035946536778336",
+        "path": "skills/engineering/domain-modeling/SKILL.md",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\skills-49dd158d1076134a641b33efb035946536778336\\skills\\engineering\\domain-modeling\\SKILL.md",
+        "sha256": "7b925d7b1e341a2eeae33ad68a8a8c0ab889a38ddd22a7598e4c240e5a7556a3",
+        "review_scope": "full",
+        "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/domain-modeling/SKILL.md#L66"
+      },
+      "finding": "용어와 중요한 결정의 기록",
+      "historical_draft5_status": "지침·형식 반영",
+      "current_classification": "지침·형식 반영",
+      "adoption_rationale": "용어·구분·중요한 결정 이유의 일관성에 활용. 모든 사소한 선택마다 사용자 승인을 요구하지 않음.",
+      "current_evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\references\\design-and-patterns.md",
+          "sha256": "a97d4920a5eb5b6d5c94583ce3c9332eea7354c181ef0dd1b4a7bf5a79a25cf7"
+        }
+      ],
+      "remaining_or_exclusion": "사용자 선택과 분류 ID는 기록. 전체 파이프라인의 공통 용어집·별칭·규칙 개정 연결은 아직 부분적.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "E1",
+      "repository": "affaan-m/ECC",
+      "upstream": {
+        "commit": "76aaa77df6adc5b889e689007bf99b9a4f74af34",
+        "path": "skills/continuous-learning-v2/SKILL.md",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\ECC-76aaa77df6adc5b889e689007bf99b9a4f74af34\\skills\\continuous-learning-v2\\SKILL.md",
+        "sha256": "ddad12451a0d582c6ef1b197b7be193bef613cbc74eba4117fcb74fc7a4ecd00",
+        "review_scope": "selected",
+        "url": "https://github.com/affaan-m/ECC/blob/76aaa77df6adc5b889e689007bf99b9a4f74af34/skills/continuous-learning-v2/SKILL.md#L48"
+      },
+      "finding": "작은 규칙 후보·프로젝트 범위",
+      "historical_draft5_status": "코드 일부 반영",
+      "current_classification": "코드 일부 반영",
+      "adoption_rationale": "검증한 피드백에서 규칙 후보를 축적하는 방향만 채택. 빈도/점수만으로 회사 규칙 승격 금지.",
+      "current_evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\pattern_library.py",
+          "sha256": "a4f63a35c6f589f63e4d5305db450ad7d375e1007f81c76ca7095b57663015db"
+        }
+      ],
+      "remaining_or_exclusion": "draft 상태와 사례 축적. 수정 피드백에서 작은 규칙을 자동 추출·반례 검증하는 학습 루프는 없음.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "E2",
+      "repository": "affaan-m/ECC",
+      "upstream": {
+        "commit": "76aaa77df6adc5b889e689007bf99b9a4f74af34",
+        "path": "skills/continuous-learning-v2/scripts/instinct-cli.py",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\ECC-76aaa77df6adc5b889e689007bf99b9a4f74af34\\skills\\continuous-learning-v2\\scripts\\instinct-cli.py",
+        "sha256": "d5450455a0cb3a1fa57c960a503c6e47f72910e2bb065874674bd567212549d4",
+        "review_scope": "selected",
+        "url": "https://github.com/affaan-m/ECC/blob/76aaa77df6adc5b889e689007bf99b9a4f74af34/skills/continuous-learning-v2/scripts/instinct-cli.py#L128"
+      },
+      "finding": "점수·프로젝트 수 기반 승격 경로",
+      "historical_draft5_status": "직접 이식 제외·평가 참고",
+      "current_classification": "직접 이식 제외·평가 참고",
+      "adoption_rationale": "검증한 피드백에서 규칙 후보를 축적하는 방향만 채택. 빈도/점수만으로 회사 규칙 승격 금지.",
+      "current_evidence": [],
+      "remaining_or_exclusion": "점수·프로젝트 수만으로 회사 규칙을 자동 승인/전역 승격하는 경로는 의도적으로 제외.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "V1",
+      "repository": "vercel-labs/agent-skills",
+      "upstream": {
+        "commit": "063bee94c3f4df8453406c830b0a7df0f2860278",
+        "path": "skills/react-best-practices/rules/async-defer-await.md",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\agent-skills-063bee94c3f4df8453406c830b0a7df0f2860278\\skills\\react-best-practices\\rules\\async-defer-await.md",
+        "sha256": "f3c142d090615abdcc99d31c123be37b31f0f1ed8d9ec9f7789a3bc6883ae0fb",
+        "review_scope": "full",
+        "url": "https://github.com/vercel-labs/agent-skills/blob/063bee94c3f4df8453406c830b0a7df0f2860278/skills/react-best-practices/rules/async-defer-await.md#L4"
+      },
+      "finding": "조건·영향·예/반례를 묶은 규칙",
+      "historical_draft5_status": "지침·형식 반영",
+      "current_classification": "지침·형식 반영",
+      "adoption_rationale": "조건·영향·예/반례를 함께 적는 형식을 참고. React용 규칙과 원본 검증기를 영상에 그대로 실행하지 않음.",
+      "current_evidence": [
+        {
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\internal-video-audit-20261019\\candidate\\company-video-grammar-analyzer\\references\\pattern-composition.md",
+          "sha256": "1895f5b7f3ee294019e16df94db7d20ca2065d912e4801adac24240daccecfc5"
+        }
+      ],
+      "remaining_or_exclusion": "조건·반례·변형 기록 형식. 조건 검색·반례 시험으로 채택하는 실행 흐름은 없음.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    },
+    {
+      "id": "V2",
+      "repository": "vercel-labs/agent-skills",
+      "upstream": {
+        "commit": "063bee94c3f4df8453406c830b0a7df0f2860278",
+        "path": "packages/react-best-practices-build/src/validate.ts",
+        "local_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\research\\ponytail-rea-20261019\\snapshots\\agent-skills-063bee94c3f4df8453406c830b0a7df0f2860278\\packages\\react-best-practices-build\\src\\validate.ts",
+        "sha256": "9e6af88e36acaaad49458f5e0d0d55cc496570956b38ee489f108929a2cc85ce",
+        "review_scope": "selected",
+        "url": "https://github.com/vercel-labs/agent-skills/blob/063bee94c3f4df8453406c830b0a7df0f2860278/packages/react-best-practices-build/src/validate.ts#L55"
+      },
+      "finding": "문서 요구와 검사 조건의 차이",
+      "historical_draft5_status": "직접 이식 제외·평가 참고",
+      "current_classification": "직접 이식 제외·평가 참고",
+      "adoption_rationale": "조건·영향·예/반례를 함께 적는 형식을 참고. React용 규칙과 원본 검증기를 영상에 그대로 실행하지 않음.",
+      "current_evidence": [],
+      "remaining_or_exclusion": "원본 검사 조건의 한계 참고. 원본 검증기를 그대로 가져오지 않음.",
+      "decision_state": "first_selection_with_partial_implementation_not_final_quality_acceptance",
+      "full_upstream_function_implemented": false,
+      "independent_video_effect_proven": false
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "request": {
+    "op": "restore",
+    "path": "a.json",
+    "backup_path": "backup/a.json",
+    "expected_sha256": "df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d"
+  },
+  "sequence": 5,
+  "status": "error",
+  "before_sha256": "e5aa47f32e9daa5d0dfd2d293192a0286fce798e195ea523f1e9b25cbe336f39",
+  "error": "current bytes changed; write not applied",
+  "after_sha256": "e5aa47f32e9daa5d0dfd2d293192a0286fce798e195ea523f1e9b25cbe336f39",
+  "response": {
+    "op": "restore",
+    "ok": false,
+    "error_type": "AssertionError",
+    "error": "current bytes changed; write not applied",
+    "actual_current_sha256": "e5aa47f32e9daa5d0dfd2d293192a0286fce798e195ea523f1e9b25cbe336f39"
+  }
+}

@@ -1,0 +1,123 @@
+04_기록규격/06_통합최소기록_규격_v0.2.md 3c301c7f874921a3bd7bc3e5922ca8cb7c16ddc950f78ecc9850251b9474df74
+1: # 통합 최소 기록 규격 v0.2 — R4-4 후보
+3: 2026-10-15. 사용자 이관 A를 반영한 **2단계 후보**다. 기본 도구 전환·실제 이관·종료 판정은 검수 후 별도 단계에서 한다.
+12: | units | asset/segment/screen_state/beat 대상 참조와 단위별 분류·시나리오·표본·관련 상태 | R2의 state 의미를 R4의 screen_state 이름에 명시 대응 |
+19: 영상→설명 구간→화면 상태의 대상 관계는 근거 계약 targets에만 저장한다. units는 그 대상 ID/버전을 참조한다. 동작은 구간 소속이며 여러 상태를 related_state_refs로 가로지를 수 있다. 표본 프레임은 상태 자체가 아니다. R2의 단위별 허용축은 classified/unknown/not_applicable/other_candidate/not_assessed 중 하나를 빠짐없이 명시한다. 관측·계획·추론은 주장 종류로 구분하며 범위 밖 태그를 자동 상속하지 않는다.
+25: 유일한 공간 구조의 확장은 **좌표를 아직 기록하지 않은 경우 spaces=[]를 허용**하는 통합 프로필이다. 공간이 없으면 변환/기하/매핑은 참조 검사상 담을 수 없다. 시간·근거가 식별된 새 기록에 허위 프레임이나 공간을 만들 필요가 없다. 원본 identity 자체가 없는 구형 자료는 이 예외로 수용하지 않고 접수함에 보존한다.
+33: 시간에 따른 스칼라 표본은 같은 축을 사용하고, 프레임별 명시 공간 기준/변환 계열이 다르면 비교 미해결로 남긴다. 동일 크기 화면이라고 카메라/대상 추적이 검증됐다는 뜻은 아니다. 모델 위치·잘린 결과·미상/비영 오차는 관측 사실로 확정하지 않는다. single_sample_component의 단일 성분 결과/표본/단위 일치만 자동 검사한다. 다른 계산법·속도/가속도·오차 전파·추적은 내용 검수 대기다. 새로운 자동 영상 분석/수치 추출은 01-A에서 한다.
+39: review_contexts는 시간·근거·좌표·분류·한맥 참조·실행 선언·통합 스키마/하위 검사기 hash 전체를 고정한다. 기존 review_ref/context만 복사하면 통합 검사에서 빠짐 또는 stale로 남긴다. context 계산의 직렬화는 제공한 Python 함수의 sort_keys/UTF8/유한수 방식이며 다른 정규화 표준과 같다고 주장하지 않는다. R4-2 receipt의 기존 context 검사는 별도로 유지한다.
+43: [스키마 후보](통합최소기록_스키마_v0.2.json) · [통합 설명용 예](통합최소기록_설명용_v0.2.json) · [검사기](../07_실행도구/통합기록_규격검사.py) · [시험](../08_검증결과/R4_04_02_통합계약시험.json)
+08_검증결과/R4_04_보완결과와레드팀.md 005ed77b189561b0f82b736d9ebe79ee6687878e711455ae2629d5cc199767ac
+3: 2026-10-15. **시간·근거·좌표를 연결한 v0.2 기록 계약, 구형 원문 접수/누락 보고, 기본 검사 도구 전환 범위를 완료했다.** R4의 Phase 00 기록 기반 검수는 마쳤다. 전체 Phase 00은 R5~R8 잔여가 있으며 01-A는 시작하지 않았다.
+17: 데이터는 spatial_contract 안의 근거 계약, 그 안의 시간 계약에 한 번만 저장한다. units와 좌표 표본은 ID/버전을 참조한다. 별도 시간/근거 사본으로 모순을 만들지 않는다. 좌표 미기록 영상은 빈 공간 목록으로 보존할 수 있지만 원본 identity 미상을 가짜 값으로 채우지는 않는다.
+23: | 1. 착수 감사·연결 설계 | 구형 5후보·호출부·기존 누락 확인. 사용자 A 확정 | [1단계 보고](R4_04_01_결과보고.md) |
+26: | 4. 기본 도구·호환 인계 | 자체 24/24 · 독립 67/67 | [4단계 판정](R4_04_04_독립판정.json) |
+28: 같은 회귀를 실행하는 반례검사.py와 최종반례검사.py는 별칭이다. 별도 독립 시험으로 중복 합산하지 않았다. 시험 집합의 통과이며 모든 입력/실영상 정확성의 증명이 아니다.
+34: 현재 찾은 5개는 모두 설명용·스킬 시험·과거 평가 자료다. **5개 원문을 수정하지 않고 접수함에 사본·누락 보고로 보존했다.** 원본 영상 버전/hash·시간·화면 상태가 없어 실제 회사 영상 기록으로 바꾸지 않았다. JSON 원문 hash와 영상 hash를 구분했다. 동일ID라도 출처가 다른 파일을 별도로 보존하고 같은 원문의 재실행은 불변이다.
+36: v0.2 합성 설명 예시는 별도 규격 예다. 구형 예시에 가짜 hash/PTS를 채운 이관본이 아니다. 현재 자동 도구는 copy-only 접수·누락 진단·검사이며, 구형 의미 전체를 추정해 자동 변환하는 도구는 만들지 않았다. 원본과 의미 대응이 확인된 이후에만 새 통합 초안을 작성한다. 실제 회사 영상 분석 기록은 **0건**이다.
+44: 3. [기본 검사·구형 호환 사용 안내](../07_실행도구/R4_통합기록_사용안내.md)
+47: 기본 자료검증.py는 새 v0.2를 검사한다. 구형 v0.1은 needs_migration·valid=false·CLI exit2로 구분한다. 구형 검사에서 통과해도 새 DB 통과로 전달하지 않는다. 현재 최소기록_스키마.json은 v0.2 정본의 로컬 참조 진입점이다. 원문 v0.1 스키마/검사/과거 회귀는 변경 전 backup과 보존용 경로에 남겼다. 과거 평가 파일을 새 성적에 맞춰 수정하지 않았다.
+51: 구조 통과·좌표 연결·context 일치는 화면/대상 해석·시간/픽셀 실측·실행 사실·실제 사람 검수·회사 승인과 다르다. 필요한 내용은 대기 목록으로 남긴다. 실제 자료가 없어 이번에 실제 영상의 내용 검수나 검수자 인증은 하지 않았다. 공간 측정의 supported 보류도 유지하며 R6/R7의 권한·내용 검수로 인계한다. 속도/가속도 자동 분석·오차 전파·ROI/OCR/추적·영상 가공은 01-A다.
+01_공통용어/02_기록단위와분류축.md 8889d8d482add29ab4a61ea504bc9a2b12fd3168fad9c73c5b7fc2569975c87a
+14: 동작은 화면 상태 사이를 가로지를 수 있고 여러 동작이 겹쳐 발생할 수 있다. 그래서 모든 동작을 한 상태의 배타적인 자식으로 묶지 않는다. 레이아웃이 변하는 중에는 이전·이후 상태와 전환 동작을 구분하며, 중간 화면을 완성된 새 레이아웃으로 단정하지 않는다.
+16: 컷이 바뀌어도 같은 설명을 이어갈 수 있고, 컷 없이 설명 주제가 바뀔 수 있다. 경계가 불분명하면 후보와 이유를 남긴다. 프레임 간격이나 컷 검출만으로 설명 구간을 확정하지 않는다.
+27: 화면 일부에 붙인 태그를 영상 전체에 자동 상속하지 않는다. 관측이 충분하면 태그를 유지하고, 구현만 불명확한 경우 구현 주장을 별도로 남긴다. 예를 들어 확실한 크기 변화는 기록하면서 카메라/Scale 원인은 미확인으로 둘 수 있다.
+29: **프레임은 표본이며 화면 상태와 다르다.** 현재 DB에는 asset/segments/frames/beats가 있고 별도 state 필드는 없다. [분류 운영규칙](분류운영규칙.json)은 의미 기준이다. 실제 저장 필드·상태와 동작의 참조·시간 경계 검사는 [R4](../09_다음단계인계/R2_R4.md), 구현은01-A에서 연결한다.
+09_다음단계인계/R7_01-A_구현전_인계.md 438dc5bb19e7a4356436869aa67704712e5e2257084d89cd15fc3bbfe8d2f0b4
+1: # 01-A 구현 전 인계 — 실제 자료로 분석 스킬 검증하기
+3: 2026-10-15 · **후속 실행 계획이며 01-A 구현·모델/API 호출·실제 영상 분석은 미실시다.** Phase 00의 남은 R8과 최종 정리를 먼저 마친다. 영상 분석 전용 스킬과 관리용 세 스킬을 구분한다.
+7: [영상·시나리오 자료 준비 안내](01-A_자료준비안내.md)의 폴더를 따르면 된다. 먼저 최종 영상·해당 시나리오/콘티·자료 설명 한 묶음을 준비한다. 시나리오가 없거나 불일치하면 그 사실을 표시한다. 원래 제작 의도·시간표를 새로 꾸미지 않는다. 출력 목적·시청자/환경·버전 대응·자료별 외부 모델 처리 가능 여부·확인 담당자를 있는 만큼 적는다. 사용자가 PTS·해시·OCR·좌표를 수작업으로 만들 필요는 없다.
+23: 실제 입력 접수·처리 조건 확인 → 추출/모델/API·분석 스킬 후보의 별도 검토 → 필요한 도구 구현/검증 → 예비 자료의 사람 기준답안·기준 보정 → 수치/시행 계획 검토 → 다른 원본 묶음의 잠금 자료로 확인 → 한계·실패/미해결과 재시험 보고.
+25: 예비 자료로 스킬을 고쳤다면 그 원본 묶음/파생 자료를 미노출 검증 자료라고 부르지 않는다. 정답을 바꾸면 후보 양쪽을 같은 새 정답으로 재채점하고 잠금 자료 노출을 기록한다. 사람의 초기 의견 차이와 중재 뒤 합의를 별도로 남긴다. 인력이 한 명이면 단독 검토라고 표시한다.
+27: 표본 수·반복 수·시간/좌표 허용오차·지표 기준·사람 일치 판단/불확실성 방법은 아직 미정이다. 예비 근거를 제시해4지선다+추천안으로 검토받고 잠금 전에 고정한다. R7의 빈 템플릿·연결 확인 도구를 실제 평가 데이터나 구현된 평가기로 사용하지 않는다. 회사 공통 문법 추출·승인은01-B, 새 기획/창작은02의 별도 범위다.
+09_다음단계인계/R7_R8_스킬재구성_인계.md 7d7abac31fc1501c48fd17d2e1df0fff368057bedbf90bbb270e47baf12872ac
+3: 2026-10-15 · **계획 인계이며 스킬 수정·재평가는 아직 하지 않았다.** 기존 세 스킬의 목적·draft 권한과 소량 시범 승인 A안은 유지한다. [기존 스킬 안내](../06_맞춤스킬/00_스킬안내.md), [R4 호환 인계](R4_통합규격_스킬호환_인계.md), [R6 인계](R6_검수연결_인계.md)를 함께 읽는다.
+8: | video-record-steward | R4 통합 v0.2, R5 별도 적용 초안, R6 새 질문/답변 문맥, R7 별도 검수 참조·필수 항목/보류·현재성, 로그·backup·diff·복구 | 요청 범위의 draft 기록/검증. 옛 v0.1 작성 시범을 새 규격 호환 증명으로 재사용하지 않음 |
+15: 3. Anthropic Skill Creator의 현행 지침을 읽고 별도 작업 사본에서 맞춤 스킬을 재구성한다. 참조만으로 해결할 규칙을 대형 본문에 중복하지 않는다. Taste·웹 UI 규칙을 영상의 회사 필수 기준으로 복사하지 않는다.
+17: 5. 적용/반례·없는 근거·모호한 자료·오래된 버전·서로 다른 회신 문맥·필요 사람 검수·기권을 평가한다. 기록 수정에는 허용 파일 외 변경, 로그/backup/diff·복구, 검사 실패 후 중단을 포함한다. 기존 예시만 외워 통과하는 평가를 피하고 별도 미사용 사례를 둔다.
+C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\시범운영_20261016\실행\eval-03-적용성검토자\candidate\inputs\Phase00\03_한맥디자인\한맥디자인정본.json dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed
+{
+  "schema_version": "0.1.0",
+  "profile_id": "hanmac-video",
+  "version": "0.1.0",
+  "retrieved_on": "2026-10-14",
+  "timezone": "Asia/Seoul",
+  "status": "curated_seed",
+  "description": "영상 시스템 Phase 00용 디자인 지식 정본. 회사 영상 문법 DB 완성/실영상 검증을 뜻하지 않음.",
+  "provenance_limit": "수동 전사한 구조화 관측·정제 데이터. 원본 전체 HTML 스냅샷/배포 커밋은 확보하지 않았으며 라이브 페이지가 바뀔 수 있음."
+}
+DESIGN_ROOT_KEYS ['schema_version', 'profile_id', 'version', 'retrieved_on', 'timezone', 'status', 'description', 'source_selection', 'sources', 'color_tokens', 'gradients', 'references', 'rules', 'issues', 'semantic_roles', 'loading_policy', 'not_defined', 'provenance_limit', 'db_contract']
+sources [
+  {
+    "id": "SB-COLOR",
+    "url": "https://design.hmac.kr/?path=/story/foundation-color--all",
+    "locator": "Foundation / Color / Green, Brown, Orange",
+    "version": "페이지 버전 미표시",
+    "access": "브라우저 렌더링 텍스트 확인",
+    "retrieved_on": "2026-10-14",
+    "source_type": "company_design_reference"
+  },
+  {
+    "id": "SB-TYPE",
+    "url": "https://design.hmac.kr/?path=/story/foundation-typography--all",
+    "locator": "Foundation / Typography",
+    "version": "Current Typography Reference",
+    "access": "브라우저 렌더링 텍스트 확인",
+    "retrieved_on": "2026-10-14",
+    "source_type": "company_design_reference"
+  },
+  {
+    "id": "SB-LAYOUT",
+    "url": "https://design.hmac.kr/?path=/story/foundation-layout--all",
+    "locator": "Foundation / Layout",
+    "version": "CURRENT_STANDARD / CURRENT_USAGE_REFERENCE",
+    "access": "브라우저 렌더링 텍스트 확인",
+    "retrieved_on": "2026-10-14",
+    "source_type": "company_design_reference"
+  },
+  {
+    "id": "VC",
+    "url": "https://hanmac-designsystem.vercel.app/claude_app/index.html",
+    "locator": "개요, 컬러, 그라데이션, 타이포그래피, 간격, 그림자, 모서리 반경, Variables, 버튼, 입력 필드, 카드, 테이블",
+    "version": "헤더 v2.2.0 / 변경 이력 v2.3.0 병기",
+    "access": "각 메뉴 브라우저 렌더링 텍스트 확인",
+    "retrieved_on": "2026-10-14",
+    "source_type": "company_design_reference"
+  },
+  {
+    "id": "SB-TITLE",
+    "url": "https://design.hmac.kr/?path=/story/center-graphic-title--compositions",
+    "locator": "Center Graphic / Title / Overview",
+    "version": "SCOPED_DESIGN_APPROVAL / Resolution B TBD",
+    "access": "브라우저 렌더링 텍스트 확인",
+    "retrieved_on": "2026-10-14",
+    "source_type": "company_design_reference"
+  },
+  {
+    "id": "USER",
+    "url": null,
+    "locator": "2026-10-14 현재 대화: 컬러 전역 활용, UI 참고; Storybook 우선; 강조색·중립색 Vercel 적용",
+    "version": "현재 사용자 지시",
+    "access": "직접 지시",
+    "retrieved_on": "2026-10-14",
+    "source_type": "user_directive"
+  },
+  {
+    "id": "W3C-CONTRAST",
+    "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+    "locator": "SC 1.4.3 / contrast ratio and relative luminance",
+    "version": "WCAG 2.2 Understanding",
+    "retrieved_on": "2026-10-14",
+    "source_type": "external_principle",
+    "access": "공식 웹 문서 확인"
+  },
+  {
+    "id": "W3C-COLOR",
+    "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html",
+    "locator": "SC 1.4.1",
+    "version": "WCAG 2.2 Understanding",
+    "retrieved_on": "2026-10-14",
+    "source_type": "external_principle",
+    "access": "공식 웹 문서 확인"
+  }
+]

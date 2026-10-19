@@ -1,0 +1,946 @@
+{
+  "artifact_id": "meeting-note-common-knowledge-draft",
+  "version": "0.1.0",
+  "status": "draft",
+  "authority": "project_draft_not_company_rule",
+  "company_approved": false,
+  "operational_release": false,
+  "input": {
+    "path": "입력메모.json",
+    "sha256": "332e8841680783e520b280de8c1b6be7306ccb3666f68d37bd59677cb6b569d2",
+    "kind": "synthetic_test_material_not_actual_company_decision",
+    "note_count": 5
+  },
+  "scope": "회의 메모 5건의 기존 지식 대조와 신규 초안 주석. 정본/분류ID/회사 필수규칙 변경 없음.",
+  "summary": {
+    "new_draft_records": 5,
+    "modified_canonical_records": 0,
+    "new_taxonomy_ids": 0,
+    "ready_reference": "5건 모두 조건부 참고 내용을 제공. 각 메모의 일괄 규칙화·현실/승인 주장은 아래 항목별 보류.",
+    "pending_review_questions": 5
+  },
+  "records": [
+    {
+      "draft_id": "DRAFT-MEMO-01",
+      "input_note_index": 0,
+      "title": "단계 번호와 카드의 기능을 구분",
+      "disposition": "reference_ready_with_conditions",
+      "term_distinctions": {
+        "purpose": "단계 설명 PURPOSE-PROCESS",
+        "information_relation": "순서가 의미를 가지면 REL-ORDER",
+        "layout": "LAYOUT-CARD-GROUP과 LAYOUT-PROCESS-LINE은 복합 가능",
+        "style_claim": "AI처럼 보임은 이 메모의 인상이며 일반 금지 근거가 아님"
+      },
+      "confirmed_in_local_knowledge": "정보 표식은 핵심과 구조를 식별하게 돕는다. 카드 그룹은 독립 항목 묶음이며 단계 의미를 자동 부여하지 않는다. 내용 기반 구도는 일괄 카드 금지나 무작위 비대칭을 반례로 둔다.",
+      "project_interpretation": "단계 순서를 전달하는 번호는 유지 후보로 두고, 불필요하게 반복된 카드 테두리·장식은 목적에 맞게 줄이는 초안으로 정리한다.",
+      "apply_when": [
+        "작업 순서와 현재 위치를 식별할 필요가 있고 단계 근거가 제공될 때",
+        "동일 역할의 독립 항목에 카드 경계가 읽기를 도울 때"
+      ],
+      "exclude_or_hold": [
+        "실제 화면·시나리오 없이 모든 번호의 필요성을 확정하지 않는다.",
+        "병렬 항목에 단계를 암시하는 번호를 강제하지 않는다."
+      ],
+      "positive_example": "가상 접수→검토→완료 절차에 1·2·3과 현재 단계를 표시하되 카드 외곽선은 줄인다.",
+      "counterexample": "AI 느낌을 없애려고 번호를 모두 지워 절차 순서와 현재 위치를 알 수 없게 한다.",
+      "held_claims": [
+        "회사 전체의 번호/카드 금지",
+        "시선·이해도 개선 효과 입증"
+      ],
+      "reference_refs": [
+        "REF-01",
+        "REF-02",
+        "REF-03",
+        "REF-04",
+        "REF-10",
+        "REF-11",
+        "REF-22"
+      ],
+      "review_question_id": "Q1",
+      "status": "draft",
+      "company_approved": false,
+      "case_refs": [],
+      "case_kind": "synthetic_not_company_video",
+      "numeric_default": null,
+      "change_kind": "new_draft_annotation_only",
+      "canonical_mutation": false
+    },
+    {
+      "draft_id": "DRAFT-MEMO-02",
+      "input_note_index": 1,
+      "title": "표·순환·분기는 지원 지식 후보 유지",
+      "disposition": "candidate_reference_ready_formal_taxonomy_change_held",
+      "term_distinctions": {
+        "taxonomy": "기존 layout 14개 유지",
+        "candidate_ids": [
+          "LAYOUT-CAND-TABLE",
+          "LAYOUT-CAND-CYCLE",
+          "LAYOUT-CAND-BRANCH"
+        ],
+        "id_boundary": "candidate_id는 정식 taxonomy term_id가 아니다. 새 정식 ID를 발급하지 않았다."
+      },
+      "confirmed_in_local_knowledge": "DECISION-R3-LAYOUT-SCOPE-A는 14분류 유지·후보와 예/반례 별도 정리·새 분류ID 없음이다. 분류운영규칙은 other_candidate에서 빈 term_ids와 이유·자유후보를 허용한다.",
+      "project_interpretation": "정확한 값 대조는 표, 복귀가 확인된 흐름은 순환, 조건별 경로는 분기 후보를 참고한다. 맞는 범위에만 기존 ID를 연결하고 맞지 않으면 other_candidate로 남긴다.",
+      "apply_when": [
+        "표: 대상·열·행·단위·기간과 빈칸/미제공/0의 뜻이 확인될 때",
+        "순환: 복귀·반복·재시작 또는 종료 조건이 확인될 때",
+        "분기: 조건·각 경로 라벨·결과/합류가 확인될 때"
+      ],
+      "exclude_or_hold": [
+        "표를 카드 그룹에 자동 편입하지 않는다.",
+        "순환을 선형 프로세스로 강제하지 않는다.",
+        "노드·연결이 NETWORK 정의에 맞는 해당 범위만 연결한다.",
+        "마름모/화살표만으로 현실 조건·인과·절차 진실을 확정하지 않는다."
+      ],
+      "positive_example": "가상 공법 A/B 비용·공기를 같은 단위의 표로 대조한다. 점검→조치→재점검은 복귀 조건을, 승인/보완 분기는 각 조건 라벨을 붙인다.",
+      "counterexample": "빈 셀을 0으로 채우거나 일회성 승인을 원형으로 그린 뒤 새 정식 ID 3개를 바로 등록한다.",
+      "held_claims": [
+        "새 taxonomy ID 신설·기존 의미 병합은 범위 변경 검토가 필요하며 이번 작업에서 미수행"
+      ],
+      "reference_refs": [
+        "REF-28",
+        "REF-29",
+        "REF-25",
+        "REF-26",
+        "REF-27",
+        "REF-05",
+        "REF-06"
+      ],
+      "review_question_id": "Q2",
+      "status": "draft",
+      "company_approved": false,
+      "case_refs": [],
+      "case_kind": "synthetic_not_company_video",
+      "numeric_default": null,
+      "change_kind": "new_draft_annotation_only",
+      "canonical_mutation": false
+    },
+    {
+      "draft_id": "DRAFT-MEMO-03",
+      "input_note_index": 2,
+      "title": "시청자의 주제별 사전 지식에 맞춘 설명",
+      "disposition": "conditional_reference_ready_audience_level_unknown",
+      "term_distinctions": {
+        "source_concept": "숙련도별 설명 지원 조정 IP-10",
+        "audience_claim": "기획실이라는 부서명만으로 초보자 판정 불가",
+        "explanation": "핵심 용어 소개 IP-07과 모든 용어의 반복 풀이를 구별"
+      },
+      "confirmed_in_local_knowledge": "IP-10은 2021 공식 Summary에 근거한 조건부 참고이며 현재 기본 조회 범위에 포함돼 있다. 해당 주제 사전 지식 근거가 없으면 unknown이다. 초보자에게 유효한 지원이 전문가에게 방해될 수 있다는 요약 수준이다.",
+      "project_interpretation": "인터뷰·업무 경험·입력 문서 등으로 낯선 개념을 확인한 뒤 핵심 명칭/역할을 먼저 소개하고 숙련자에게는 짧은 요약을 비교 후보로 둔다.",
+      "apply_when": [
+        "시청자의 해당 주제 사전 지식 근거가 있을 때",
+        "용어 이해가 본 설명을 따라가는 데 필요할 때"
+      ],
+      "exclude_or_hold": [
+        "기획실 전체의 지식 수준은 unknown",
+        "필수 고지·정확한 기술 용어·접근성 자막·무음 시청 지원은 숙련도 이유로 자동 삭제하지 않는다.",
+        "학술 장 전체·진단도구·회사 영상 효과는 미검토"
+      ],
+      "positive_example": "가상 입문 시청자에게 펌프·밸브 역할을 한 번 소개하고 도면에서 대응시킨다. 익숙한 시청자에게는 요약과 필요한 용어표를 제공한다.",
+      "counterexample": "부서명만 보고 모든 용어를 매번 풀어 써 화면·음성·자막이 경쟁하게 만든다.",
+      "held_claims": [
+        "시청자 사전 지식 판정",
+        "모든 용어 항상 풀이의 회사 필수화",
+        "학습 효과 보장"
+      ],
+      "reference_refs": [
+        "REF-08",
+        "REF-12",
+        "REF-14",
+        "REF-16",
+        "REF-17",
+        "REF-29"
+      ],
+      "review_question_id": "Q3",
+      "status": "draft",
+      "company_approved": false,
+      "case_refs": [],
+      "case_kind": "synthetic_not_company_video",
+      "numeric_default": null,
+      "change_kind": "new_draft_annotation_only",
+      "canonical_mutation": false
+    },
+    {
+      "draft_id": "DRAFT-MEMO-04",
+      "input_note_index": 3,
+      "title": "등속 설비 설명에서는 선형 변화 허용",
+      "disposition": "reference_ready_with_conditions",
+      "term_distinctions": {
+        "timing": "CURVE-LINEAR는 일정한 변화율",
+        "path": "직선 경로와 시간상 등속은 다른 속성. 직선 위에서도 가감속할 수 있다.",
+        "principles": "AP-06과 MP-02는 관련되지만 별도 ID를 병합하지 않는다."
+      },
+      "confirmed_in_local_knowledge": "AP-06 적용 해석과 합성 충돌사례 MC-01은 등속 전달·기계 시뮬레이션에 선형이 적합할 수 있으며 측정 대상의 시간·경로를 보존하도록 한다. 이징 미사용 자체는 실패가 아니다.",
+      "project_interpretation": "설명 대상 설비는 같은 시간 간격에 같은 이동량을 주는 계획 후보로 두고, 안내 패널의 등장·정착 이징은 별도 검토한다. 실제 설비 데이터라는 판정은 입력 시간·거리 근거가 필요하다.",
+      "apply_when": [
+        "일정 속도의 운동을 설명하는 것이 목적이고 계획/측정의 범위를 명시할 때"
+      ],
+      "exclude_or_hold": [
+        "실제 시작·정지가 가감속이면 해당 구간을 등속으로 바꾸지 않는다.",
+        "시간 표본 없이 실제 렌더의 등속 관측이나 원본 AE Bézier 핸들값을 확정하지 않는다.",
+        "MP-02는 공개 강의 항목명 확인 수준이므로 강사의 상세 정의는 needs_primary_definition_review로 보류"
+      ],
+      "positive_example": "가상 컨베이어 설명의 등속 구간은 일정 변화율로 유지하고 옆 설명 패널만 감속 정착시킨다.",
+      "counterexample": "부드럽게 보이게 하려고 실제 등속 운동의 끝에 감속을 넣어 속도 설명을 바꾼다.",
+      "held_claims": [
+        "실제 설비의 측정값·시간 대응",
+        "원본 곡선/키프레임 복원",
+        "MP-02 강의 본문 상세 이론 정의"
+      ],
+      "reference_refs": [
+        "REF-07",
+        "REF-18",
+        "REF-19",
+        "REF-20",
+        "REF-21"
+      ],
+      "review_question_id": "Q4",
+      "status": "draft",
+      "company_approved": false,
+      "case_refs": [],
+      "case_kind": "synthetic_not_company_video",
+      "numeric_default": null,
+      "change_kind": "new_draft_annotation_only",
+      "canonical_mutation": false
+    },
+    {
+      "draft_id": "DRAFT-MEMO-05",
+      "input_note_index": 4,
+      "title": "최신 CI 선언·관측색·본문 역할 승인 분리",
+      "disposition": "reference_policy_ready_automatic_official_text_color_held",
+      "term_distinctions": {
+        "latest_material": "로컬 답변 전사에서 사용자 제공 8회사 CI 최신 확인",
+        "observed_color": "로컬 관측/표시 가정이 있는 색값",
+        "official_text_role": "모든 본문색으로의 공식 지정은 별도 범위·가독성·권한 판단",
+        "common_library": "한맥 공통 컬러와 회사별 CI색은 다른 자격"
+      },
+      "confirmed_in_local_knowledge": "R6-REPLY-CI-20261015-001은 제공 CI 8회사 최신 및 산하 Illustrator 원본 부재를 선언한다. 회사 승인·공식 sRGB값·사용 가이드 전체·실제 화면 적합성은 확인하지 않았다. DECISION-R5-OBSERVED-COLOR A는 디자이너 명시 선택·출처·가정·이유·검수 상태를 갖춘 프로젝트 초안 역할 후보만 허용한다.",
+      "project_interpretation": "대상 회사와 자산/색 버전을 정하고 현재·원문대조 완료·표시 sRGB가 있는 관측색을 역할 후보로 명시 선택한다. 본문은 실제 배경·크기/굵기·움직임·시청 조건에서 검수한다. 최신 선언으로 자동 기본색이나 공식 본문색으로 승격하지 않는다.",
+      "apply_when": [
+        "선택자 선언·회사/색 ID·버전·해시·출처·표시 가정·선택 이유·검수 대기가 남아 있을 때",
+        "한맥 30색은 공통 라이브러리로 명시 선택한 범위에서 사용"
+      ],
+      "exclude_or_hold": [
+        "이번 사본에는 CI 바이너리 전체가 없어 원본 대조를 재수행하지 않았다.",
+        "프로필 없는 CMYK/별색을 공식 sRGB로 환산하지 않는다.",
+        "로고의 대비 예외를 브랜드색 본문 전체에 적용하지 않는다.",
+        "CI 원색을 덮어쓰거나 한맥 공통색을 회사 CI색으로 바꾸지 않는다."
+      ],
+      "positive_example": "가상 프로젝트에서 회사별 관측색을 강조선 후보로 명시 선택하고 본문과 배경의 최종 조합을 검수 대기로 기록한다.",
+      "counterexample": "최신 CI라는 말만으로 밝은 관측색을 모든 본문에 자동 지정하고 로고 예외를 이유로 대비 검수를 생략한다.",
+      "held_claims": [
+        "공식 본문색 역할",
+        "선택자 신원 인증",
+        "최종 가독성·회사 승인"
+      ],
+      "reference_refs": [
+        "REF-31",
+        "REF-30",
+        "REF-32",
+        "REF-33",
+        "REF-34",
+        "REF-23"
+      ],
+      "review_question_id": "Q5",
+      "status": "draft",
+      "company_approved": false,
+      "case_refs": [],
+      "case_kind": "synthetic_not_company_video",
+      "numeric_default": null,
+      "change_kind": "new_draft_annotation_only",
+      "canonical_mutation": false
+    }
+  ],
+  "review_questions": [
+    {
+      "question_id": "Q1",
+      "question": "대상 화면에서 번호가 맡는 역할을 어떻게 검토할까?",
+      "options": [
+        {
+          "id": "A",
+          "text": "실제 단계 순서를 확인하고 필요한 번호 유지·장식만 조정",
+          "recommended": true
+        },
+        {
+          "id": "B",
+          "text": "번호 대신 방향/명칭으로 순서를 명확히 표현",
+          "recommended": false
+        },
+        {
+          "id": "C",
+          "text": "번호는 유지하되 카드 경계 축소 후보 비교",
+          "recommended": false
+        },
+        {
+          "id": "D",
+          "text": "화면·시나리오 확보 후 해당 판단 보류",
+          "recommended": false
+        }
+      ],
+      "status": "unanswered_recorded_only",
+      "selected": null
+    },
+    {
+      "question_id": "Q2",
+      "question": "표·순환·분기를 적용할 자료의 관계 근거는 무엇인가?",
+      "options": [
+        {
+          "id": "A",
+          "text": "행열/단위·복귀조건·분기조건을 확인하고 기존 후보 지식으로 기록",
+          "recommended": true
+        },
+        {
+          "id": "B",
+          "text": "정확한 값 조회만 필요한 표로 범위 한정",
+          "recommended": false
+        },
+        {
+          "id": "C",
+          "text": "일회성 순서라면 선형 후보 비교",
+          "recommended": false
+        },
+        {
+          "id": "D",
+          "text": "관계 근거가 없으므로 other_candidate와 확인 필요 사유 유지",
+          "recommended": false
+        }
+      ],
+      "status": "unanswered_recorded_only",
+      "selected": null
+    },
+    {
+      "question_id": "Q3",
+      "question": "시청자의 해당 주제 사전 지식은 어떻게 확인할까?",
+      "options": [
+        {
+          "id": "A",
+          "text": "간단한 인터뷰·업무 경험 자료로 낯선 핵심 개념 확인",
+          "recommended": true
+        },
+        {
+          "id": "B",
+          "text": "확인된 입문 집단에 핵심 명칭 사전 소개",
+          "recommended": false
+        },
+        {
+          "id": "C",
+          "text": "확인된 숙련 집단에 요약 후보 제공",
+          "recommended": false
+        },
+        {
+          "id": "D",
+          "text": "근거 확보 전 수준 unknown 유지",
+          "recommended": false
+        }
+      ],
+      "status": "unanswered_recorded_only",
+      "selected": null
+    },
+    {
+      "question_id": "Q4",
+      "question": "일정 속도 설명의 시간·거리 근거는 어떤 범위인가?",
+      "options": [
+        {
+          "id": "A",
+          "text": "제공 시간·경로와 등속 구간을 확인한 뒤 선형 계획",
+          "recommended": true
+        },
+        {
+          "id": "B",
+          "text": "실측이 아닌 개념 설명임을 표시하고 선형 예시",
+          "recommended": false
+        },
+        {
+          "id": "C",
+          "text": "시작/정지 가감속을 별도 구간으로 모델링",
+          "recommended": false
+        },
+        {
+          "id": "D",
+          "text": "자료 부족으로 실제 운동 판정 보류",
+          "recommended": false
+        }
+      ],
+      "status": "unanswered_recorded_only",
+      "selected": null
+    },
+    {
+      "question_id": "Q5",
+      "question": "CI 관측색을 어떤 화면 역할로 검토할까?",
+      "options": [
+        {
+          "id": "A",
+          "text": "대상 회사·버전·표시 가정을 pin하고 역할별 명시 선택 후 검수",
+          "recommended": true
+        },
+        {
+          "id": "B",
+          "text": "본문은 검수된 별도 중립색 후보와 조합",
+          "recommended": false
+        },
+        {
+          "id": "C",
+          "text": "해당 관측색을 강조/구분 후보로만 사용",
+          "recommended": false
+        },
+        {
+          "id": "D",
+          "text": "원본/가독성/사용 가이드 부족으로 색 역할 선택 보류",
+          "recommended": false
+        }
+      ],
+      "status": "unanswered_recorded_only",
+      "selected": null
+    }
+  ],
+  "reference_registry": [
+    {
+      "ref_id": "REF-01",
+      "path": "01_공통용어/공통용어사전.json",
+      "json_pointer": "/terms/7",
+      "id": "PURPOSE-PROCESS",
+      "version": "0.1.0",
+      "sha256": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+      "this_run_read_scope": "정의·별칭·적용/제외·상태·대체·버전 확인",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-02",
+      "path": "01_공통용어/공통용어사전.json",
+      "json_pointer": "/terms/16",
+      "id": "REL-ORDER",
+      "version": "0.1.0",
+      "sha256": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+      "this_run_read_scope": "정의·별칭·적용/제외·상태·대체·버전 확인",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-03",
+      "path": "01_공통용어/공통용어사전.json",
+      "json_pointer": "/terms/35",
+      "id": "LAYOUT-CARD-GROUP",
+      "version": "0.1.0",
+      "sha256": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+      "this_run_read_scope": "정의·별칭·적용/제외·상태·대체·버전 확인",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-04",
+      "path": "01_공통용어/공통용어사전.json",
+      "json_pointer": "/terms/27",
+      "id": "LAYOUT-PROCESS-LINE",
+      "version": "0.1.0",
+      "sha256": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+      "this_run_read_scope": "정의·별칭·적용/제외·상태·대체·버전 확인",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-05",
+      "path": "01_공통용어/공통용어사전.json",
+      "json_pointer": "/terms/30",
+      "id": "LAYOUT-NETWORK",
+      "version": "0.1.0",
+      "sha256": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+      "this_run_read_scope": "정의·별칭·적용/제외·상태·대체·버전 확인",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-06",
+      "path": "01_공통용어/공통용어사전.json",
+      "json_pointer": "/terms/25",
+      "id": "LAYOUT-SPLIT-COMPARE",
+      "version": "0.1.1",
+      "sha256": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+      "this_run_read_scope": "정의·별칭·적용/제외·상태·대체·버전 확인",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-07",
+      "path": "01_공통용어/공통용어사전.json",
+      "json_pointer": "/terms/53",
+      "id": "CURVE-LINEAR",
+      "version": "0.1.1",
+      "sha256": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+      "this_run_read_scope": "정의·별칭·적용/제외·상태·대체·버전 확인",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-08",
+      "path": "02_원칙과레이아웃/모션과정보전달원칙.json",
+      "json_pointer": "/principles/22",
+      "id": "IP-01",
+      "version": "0.1.1",
+      "sha256": "249ef6b9e7b14ff62f41352922be2f00e748c8b10debb4d4992b580364e0daa5",
+      "this_run_read_scope": "원칙 정의·적용/제외·출처·권한 확인",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-09",
+      "path": "02_원칙과레이아웃/모션원칙_심화카드.json",
+      "json_pointer": "/cards/22",
+      "id": "IP-01",
+      "version": null,
+      "sha256": "76b77be793d1ac56c5486a00e81133f68767c132846d8123c57a337b6c7fa066",
+      "this_run_read_scope": "로컬 심화카드의 출처 요약/자체 해석·예/반례·검토 깊이 확인",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-10",
+      "path": "02_원칙과레이아웃/모션과정보전달원칙.json",
+      "json_pointer": "/principles/23",
+      "id": "IP-02",
+      "version": "0.1.1",
+      "sha256": "249ef6b9e7b14ff62f41352922be2f00e748c8b10debb4d4992b580364e0daa5",
+      "this_run_read_scope": "원칙 정의·적용/제외·출처·권한 확인",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-11",
+      "path": "02_원칙과레이아웃/모션원칙_심화카드.json",
+      "json_pointer": "/cards/23",
+      "id": "IP-02",
+      "version": null,
+      "sha256": "76b77be793d1ac56c5486a00e81133f68767c132846d8123c57a337b6c7fa066",
+      "this_run_read_scope": "로컬 심화카드의 출처 요약/자체 해석·예/반례·검토 깊이 확인",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-12",
+      "path": "02_원칙과레이아웃/모션과정보전달원칙.json",
+      "json_pointer": "/principles/24",
+      "id": "IP-03",
+      "version": "0.1.1",
+      "sha256": "249ef6b9e7b14ff62f41352922be2f00e748c8b10debb4d4992b580364e0daa5",
+      "this_run_read_scope": "원칙 정의·적용/제외·출처·권한 확인",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-13",
+      "path": "02_원칙과레이아웃/모션원칙_심화카드.json",
+      "json_pointer": "/cards/24",
+      "id": "IP-03",
+      "version": null,
+      "sha256": "76b77be793d1ac56c5486a00e81133f68767c132846d8123c57a337b6c7fa066",
+      "this_run_read_scope": "로컬 심화카드의 출처 요약/자체 해석·예/반례·검토 깊이 확인",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-14",
+      "path": "02_원칙과레이아웃/모션과정보전달원칙.json",
+      "json_pointer": "/principles/28",
+      "id": "IP-07",
+      "version": "0.1.1",
+      "sha256": "249ef6b9e7b14ff62f41352922be2f00e748c8b10debb4d4992b580364e0daa5",
+      "this_run_read_scope": "원칙 정의·적용/제외·출처·권한 확인",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-15",
+      "path": "02_원칙과레이아웃/모션원칙_심화카드.json",
+      "json_pointer": "/cards/28",
+      "id": "IP-07",
+      "version": null,
+      "sha256": "76b77be793d1ac56c5486a00e81133f68767c132846d8123c57a337b6c7fa066",
+      "this_run_read_scope": "로컬 심화카드의 출처 요약/자체 해석·예/반례·검토 깊이 확인",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-16",
+      "path": "02_원칙과레이아웃/모션과정보전달원칙.json",
+      "json_pointer": "/principles/31",
+      "id": "IP-10",
+      "version": "0.1.2",
+      "sha256": "249ef6b9e7b14ff62f41352922be2f00e748c8b10debb4d4992b580364e0daa5",
+      "this_run_read_scope": "원칙 정의·적용/제외·출처·권한 확인",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-17",
+      "path": "02_원칙과레이아웃/모션원칙_심화카드.json",
+      "json_pointer": "/cards/31",
+      "id": "IP-10",
+      "version": null,
+      "sha256": "76b77be793d1ac56c5486a00e81133f68767c132846d8123c57a337b6c7fa066",
+      "this_run_read_scope": "로컬 심화카드의 출처 요약/자체 해석·예/반례·검토 깊이 확인",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-18",
+      "path": "02_원칙과레이아웃/모션과정보전달원칙.json",
+      "json_pointer": "/principles/5",
+      "id": "AP-06",
+      "version": "0.1.1",
+      "sha256": "249ef6b9e7b14ff62f41352922be2f00e748c8b10debb4d4992b580364e0daa5",
+      "this_run_read_scope": "원칙 정의·적용/제외·출처·권한 확인",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-19",
+      "path": "02_원칙과레이아웃/모션원칙_심화카드.json",
+      "json_pointer": "/cards/5",
+      "id": "AP-06",
+      "version": null,
+      "sha256": "76b77be793d1ac56c5486a00e81133f68767c132846d8123c57a337b6c7fa066",
+      "this_run_read_scope": "로컬 심화카드의 출처 요약/자체 해석·예/반례·검토 깊이 확인",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-20",
+      "path": "02_원칙과레이아웃/모션과정보전달원칙.json",
+      "json_pointer": "/principles/13",
+      "id": "MP-02",
+      "version": "0.1.1",
+      "sha256": "249ef6b9e7b14ff62f41352922be2f00e748c8b10debb4d4992b580364e0daa5",
+      "this_run_read_scope": "원칙 정의·적용/제외·출처·권한 확인",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-21",
+      "path": "02_원칙과레이아웃/모션원칙_심화카드.json",
+      "json_pointer": "/cards/13",
+      "id": "MP-02",
+      "version": null,
+      "sha256": "76b77be793d1ac56c5486a00e81133f68767c132846d8123c57a337b6c7fa066",
+      "this_run_read_scope": "로컬 심화카드의 출처 요약/자체 해석·예/반례·검토 깊이 확인",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-22",
+      "path": "02_원칙과레이아웃/레이아웃_심화지식.json",
+      "json_pointer": "/screen_cards/7",
+      "id": "SCREEN-CHOICE",
+      "version": null,
+      "sha256": "5d6378eb954b6b75f94be2a0988254a1406f6dacc8a6c44060c6a05ff56aa14c",
+      "this_run_read_scope": "화면설계 적용 해석·예/반례 확인; 외부 원문 미열람",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-23",
+      "path": "02_원칙과레이아웃/레이아웃_심화지식.json",
+      "json_pointer": "/screen_cards/4",
+      "id": "SCREEN-COLOR",
+      "version": null,
+      "sha256": "5d6378eb954b6b75f94be2a0988254a1406f6dacc8a6c44060c6a05ff56aa14c",
+      "this_run_read_scope": "화면설계 적용 해석·예/반례 확인; 외부 원문 미열람",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-24",
+      "path": "02_원칙과레이아웃/레이아웃_심화지식.json",
+      "json_pointer": "/screen_cards/2",
+      "id": "SCREEN-DENSITY",
+      "version": null,
+      "sha256": "5d6378eb954b6b75f94be2a0988254a1406f6dacc8a6c44060c6a05ff56aa14c",
+      "this_run_read_scope": "화면설계 적용 해석·예/반례 확인; 외부 원문 미열람",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-25",
+      "path": "02_원칙과레이아웃/레이아웃_확장후보.json",
+      "json_pointer": "/candidates/0",
+      "id": "LAYOUT-CAND-TABLE",
+      "version": null,
+      "sha256": "ca615a23e93b681e79eae845ee21c9b37a781c0f0e35af44217985f80e7702f8",
+      "this_run_read_scope": "후보 전체와 기존ID 연결/기권 규칙 확인; term_id가 아님",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-26",
+      "path": "02_원칙과레이아웃/레이아웃_확장후보.json",
+      "json_pointer": "/candidates/1",
+      "id": "LAYOUT-CAND-CYCLE",
+      "version": null,
+      "sha256": "ca615a23e93b681e79eae845ee21c9b37a781c0f0e35af44217985f80e7702f8",
+      "this_run_read_scope": "후보 전체와 기존ID 연결/기권 규칙 확인; term_id가 아님",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-27",
+      "path": "02_원칙과레이아웃/레이아웃_확장후보.json",
+      "json_pointer": "/candidates/2",
+      "id": "LAYOUT-CAND-BRANCH",
+      "version": null,
+      "sha256": "ca615a23e93b681e79eae845ee21c9b37a781c0f0e35af44217985f80e7702f8",
+      "this_run_read_scope": "후보 전체와 기존ID 연결/기권 규칙 확인; term_id가 아님",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-28",
+      "path": "01_공통용어/분류운영규칙.json",
+      "json_pointer": null,
+      "id": null,
+      "version": "0.1.1",
+      "sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d",
+      "this_run_read_scope": "로컬 규칙/결정/선언의 해당 범위 확인; 사람 신원·원본 자산·최종 디자인 검증 없음",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-29",
+      "path": "05_출처와검토/사용자결정.json",
+      "json_pointer": null,
+      "id": null,
+      "version": null,
+      "sha256": "feb1eae1da1e6801b8a2b61630968fcbe969582077f8b1970453abb38aff6452",
+      "this_run_read_scope": "로컬 규칙/결정/선언의 해당 범위 확인; 사람 신원·원본 자산·최종 디자인 검증 없음",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-30",
+      "path": "05_출처와검토/R5_적용정책_결정.json",
+      "json_pointer": null,
+      "id": null,
+      "version": null,
+      "sha256": "d8666f2212ae4e434d7d1209f0b64bdded4f0d562df9600a1bda74d136dd9da3",
+      "this_run_read_scope": "로컬 규칙/결정/선언의 해당 범위 확인; 사람 신원·원본 자산·최종 디자인 검증 없음",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-31",
+      "path": "05_출처와검토/검수와사용범위/사람답변원문/2026-10-15_8회사CI_최신자료와산하AI부재.json",
+      "json_pointer": null,
+      "id": null,
+      "version": "0.1.0",
+      "sha256": "e881c918fa374a046a436e6c1b4431f14bfbd11f1278a7c65a9a884fdafd27d2",
+      "this_run_read_scope": "로컬 규칙/결정/선언의 해당 범위 확인; 사람 신원·원본 자산·최종 디자인 검증 없음",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-32",
+      "path": "03_한맥디자인/07_회사CI와_화면역할_연결규칙.md",
+      "json_pointer": null,
+      "id": null,
+      "version": null,
+      "sha256": "be1baa8a5535d9f43f189bd7bab3f46320c81c5e7697a972f2a6a93320def83b",
+      "this_run_read_scope": "로컬 규칙/결정/선언의 해당 범위 확인; 사람 신원·원본 자산·최종 디자인 검증 없음",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-33",
+      "path": "03_한맥디자인/11_관측색_대비참고.md",
+      "json_pointer": null,
+      "id": null,
+      "version": null,
+      "sha256": "f77cb51badd2bed7a4160f1c7e46661fac71206988f29f1877707dd2aff3bec1",
+      "this_run_read_scope": "로컬 규칙/결정/선언의 해당 범위 확인; 사람 신원·원본 자산·최종 디자인 검증 없음",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    },
+    {
+      "ref_id": "REF-34",
+      "path": "03_한맥디자인/한맥디자인정본.json",
+      "json_pointer": null,
+      "id": null,
+      "version": "0.1.0",
+      "sha256": "dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed",
+      "this_run_read_scope": "hanmac-video@0.1.0의 팔레트 범위·규칙·관측과 역할 분리·권한 경계 확인; 외부 웹 원문 미열람",
+      "authority": "기존 자료 참조. 이번 실행의 새 승인이 아님"
+    }
+  ],
+  "source_audit": [
+    {
+      "source_id": "SRC-ADOBE-12",
+      "title": "Adobe 애니메이션 12원칙",
+      "url_recorded_in_db": "https://www.adobe.com/creativecloud/animation/discover/principles-of-animation.html",
+      "local_research_record": "05_출처와검토/R3_모션_조사기록.json",
+      "prior_recorded_read_depth": "public_article_sections",
+      "prior_recorded_sections": [
+        "History",
+        "1–12 principle headings and explanations"
+      ],
+      "prior_recorded_limits": [
+        "The Illusion of Life 책 전체 미검토",
+        "본문 삽입 영상 미시청"
+      ],
+      "this_run_verification": "로컬 지식·조사기록의 해당 항목 확인. 외부 원문·외부 스킬·웹 페이지 재열람 없음.",
+      "primary_definition_status": "prior_record_depth_only_not_reverified",
+      "remote_content_verified_this_run": false
+    },
+    {
+      "source_id": "SRC-JORGE-10",
+      "title": "Jorge 모션 10원칙",
+      "url_recorded_in_db": "https://www.learnsquared.com/courses/motion-design",
+      "local_research_record": "05_출처와검토/R3_모션_조사기록.json",
+      "prior_recorded_read_depth": "public_course_outline",
+      "prior_recorded_sections": [
+        "Lesson 2: The 10 Principles of Motion Design / 10 chapter titles"
+      ],
+      "prior_recorded_limits": [
+        "유료 강의 상세 설명·예제·프로젝트 파일 미확보",
+        "공개 제목 확인을 이론 상세 정의 확인으로 확대하지 않음"
+      ],
+      "this_run_verification": "로컬 지식·조사기록의 해당 항목 확인. 외부 원문·외부 스킬·웹 페이지 재열람 없음.",
+      "primary_definition_status": "needs_primary_definition_review",
+      "remote_content_verified_this_run": false
+    },
+    {
+      "source_id": "SRC-CAM-EXTRANEOUS",
+      "title": "Mayer·Fiorella 불필요 처리 감소",
+      "url_recorded_in_db": "https://www.cambridge.org/core/books/cambridge-handbook-of-multimedia-learning/principles-for-reducing-extraneous-processing-in-multimedia-learning/F29A19FCD34C542806F736E0661C05F5",
+      "local_research_record": "05_출처와검토/R3_모션_조사기록.json",
+      "prior_recorded_read_depth": "publisher_summary",
+      "prior_recorded_sections": [
+        "Chapter 14 Summary"
+      ],
+      "prior_recorded_limits": [
+        "장 전체·세부 실험·효과크기·경계조건 전체 미검토",
+        "회사 영상에 대한 효과 검증 없음"
+      ],
+      "this_run_verification": "로컬 지식·조사기록의 해당 항목 확인. 외부 원문·외부 스킬·웹 페이지 재열람 없음.",
+      "primary_definition_status": "prior_record_depth_only_not_reverified",
+      "remote_content_verified_this_run": false
+    },
+    {
+      "source_id": "SRC-CAM-ESSENTIAL",
+      "title": "Mayer·Fiorella 필수 처리 관리",
+      "url_recorded_in_db": "https://www.cambridge.org/core/books/abs/cambridge-handbook-of-multimedia-learning/principles-for-managing-essential-processing-in-multimedia-learning/A9E77D0172F905AC957689D1771E2888",
+      "local_research_record": "05_출처와검토/R3_모션_조사기록.json",
+      "prior_recorded_read_depth": "publisher_summary",
+      "prior_recorded_sections": [
+        "Chapter 19 Summary"
+      ],
+      "prior_recorded_limits": [
+        "장 전체·세부 실험·효과크기·경계조건 전체 미검토",
+        "회사 영상에 대한 효과 검증 없음"
+      ],
+      "this_run_verification": "로컬 지식·조사기록의 해당 항목 확인. 외부 원문·외부 스킬·웹 페이지 재열람 없음.",
+      "primary_definition_status": "prior_record_depth_only_not_reverified",
+      "remote_content_verified_this_run": false
+    },
+    {
+      "source_id": "SRC-R3-EXPERTISE-SUMMARY",
+      "title": "Kalyuga 숙련도 역전 원칙 — 2021 공식 요약",
+      "url_recorded_in_db": "https://www.cambridge.org/core/books/abs/cambridge-handbook-of-multimedia-learning/expertise-reversal-principle-in-multimedia-learning/F6793786D8F79519A22E967FC2563839",
+      "local_research_record": "05_출처와검토/R3_모션_조사기록.json",
+      "prior_recorded_read_depth": "publisher_summary",
+      "prior_recorded_sections": [
+        "Chapter 13 Summary / DOI 10.1017/9781108894333.017"
+      ],
+      "prior_recorded_limits": [
+        "장 전체·숙련도 진단도구 미검토",
+        "직급·직무명으로 시청자 지식을 추정하지 않음"
+      ],
+      "this_run_verification": "로컬 지식·조사기록의 해당 항목 확인. 외부 원문·외부 스킬·웹 페이지 재열람 없음.",
+      "primary_definition_status": "prior_record_depth_only_not_reverified",
+      "remote_content_verified_this_run": false
+    },
+    {
+      "source_id": "SRC-L2-CARBON-CHART",
+      "title": "Carbon v10 Chart types",
+      "url_recorded_in_db": "https://v10.carbondesignsystem.com/data-visualization/chart-types/",
+      "local_research_record": "05_출처와검토/R3_레이아웃_조사기록.json",
+      "prior_recorded_read_depth": "archived_guideline_selected_sections",
+      "prior_recorded_sections": [
+        "Purpose introduction",
+        "Comparisons / Trends / Part-to-whole / Correlations / Connections / Geospatial overlays"
+      ],
+      "prior_recorded_limits": [
+        "보관된 v10 분류",
+        "모든 후보가 동일하게 적합하거나 회사 표준이라는 뜻 아님"
+      ],
+      "this_run_verification": "로컬 지식·조사기록의 해당 항목 확인. 외부 원문·외부 스킬·웹 페이지 재열람 없음.",
+      "primary_definition_status": "prior_record_depth_only_not_reverified",
+      "remote_content_verified_this_run": false
+    },
+    {
+      "source_id": "SRC-L2-NNG-VISUAL",
+      "title": "NN/G 시각 디자인 5관점",
+      "url_recorded_in_db": "https://www.nngroup.com/articles/principles-visual-design/",
+      "local_research_record": "05_출처와검토/R3_레이아웃_조사기록.json",
+      "prior_recorded_read_depth": "author_guidance_selected_sections",
+      "prior_recorded_sections": [
+        "1. Scale",
+        "2. Visual Hierarchy",
+        "3. Balance",
+        "4. Contrast",
+        "5. Gestalt principles"
+      ],
+      "prior_recorded_limits": [
+        "저자의 디자인 해설이며 원래 심리학 실험 전수 검토가 아님",
+        "2–3 글자 크기·대칭/비대칭의 감정 설명을 회사 의무 규칙으로 쓰지 않음"
+      ],
+      "this_run_verification": "로컬 지식·조사기록의 해당 항목 확인. 외부 원문·외부 스킬·웹 페이지 재열람 없음.",
+      "primary_definition_status": "prior_record_depth_only_not_reverified",
+      "remote_content_verified_this_run": false
+    },
+    {
+      "source_id": "SRC-L2-W3C-COLOR",
+      "title": "W3C 색상만으로 정보 전달하지 않기",
+      "url_recorded_in_db": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html",
+      "local_research_record": "05_출처와검토/R3_레이아웃_조사기록.json",
+      "prior_recorded_read_depth": "understanding_selected_sections",
+      "prior_recorded_sections": [
+        "SC 1.4.1",
+        "Intent / Notes / Examples"
+      ],
+      "prior_recorded_limits": [
+        "Understanding은 해설. WCAG 전체 적합을 선언하지 않음",
+        "실제 회사 영상 색각·재생 환경 시험 없음"
+      ],
+      "this_run_verification": "로컬 지식·조사기록의 해당 항목 확인. 외부 원문·외부 스킬·웹 페이지 재열람 없음.",
+      "primary_definition_status": "prior_record_depth_only_not_reverified",
+      "remote_content_verified_this_run": false
+    },
+    {
+      "source_id": "SRC-L2-W3C-CONTRAST",
+      "title": "W3C 텍스트 대비",
+      "url_recorded_in_db": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "local_research_record": "05_출처와검토/R3_레이아웃_조사기록.json",
+      "prior_recorded_read_depth": "understanding_selected_sections",
+      "prior_recorded_sections": [
+        "SC 1.4.3 / large / incidental / logotypes",
+        "Intent"
+      ],
+      "prior_recorded_limits": [
+        "웹 CSS의 큰 글자 정의를 영상px로 바로 변환하지 않음",
+        "로고 예외를 모든 브랜드색 본문에 확대하지 않음",
+        "대비 수치만으로 시간적 가독성 통과를 주지 않음"
+      ],
+      "this_run_verification": "로컬 지식·조사기록의 해당 항목 확인. 외부 원문·외부 스킬·웹 페이지 재열람 없음.",
+      "primary_definition_status": "prior_record_depth_only_not_reverified",
+      "remote_content_verified_this_run": false
+    },
+    {
+      "source_id": "SRC-L2-IMPECCABLE-LAYOUT",
+      "title": "Impeccable layout 참고 파일",
+      "url_recorded_in_db": "https://github.com/pbakaus/impeccable/blob/2f98774f86bc05563876643db37e6c37c322850f/skill/reference/layout.md",
+      "local_research_record": "05_출처와검토/R3_레이아웃_조사기록.json",
+      "prior_recorded_read_depth": "local_reference_text_only",
+      "prior_recorded_sections": [
+        "Visitor mode",
+        "Layout assessment",
+        "Set spatial thesis",
+        "Apply / Verify"
+      ],
+      "prior_recorded_limits": [
+        "스킬 전체·호출참조·detector코드·의존성·라이선스의 심층 검토는R3-3",
+        "스크립트·설치·통신·스캔을 실행하지 않음",
+        "4unit·DOM·touch·scroll을 영상 의무 조건으로 복사하지 않음"
+      ],
+      "this_run_verification": "로컬 지식·조사기록의 해당 항목 확인. 외부 원문·외부 스킬·웹 페이지 재열람 없음.",
+      "primary_definition_status": "prior_record_depth_only_not_reverified",
+      "remote_content_verified_this_run": false
+    }
+  ],
+  "existing_decision_handling": "기존 A 선택을 확인한 동일 범위를 다시 승인 요청하지 않았다. Q1~Q5는 구체 적용에 필요한 미확인 입력을 위한 기록용 질문이다. 새 분류ID 신설·의미 병합·회사 필수화·승인은 미수행이다.",
+  "change_control": {
+    "canonical_modified": false,
+    "backup": "정본을 변경하지 않아 변경 전 backup 생성 비적용. 실행 전후 고정 바이트 해시를 별도 보존.",
+    "deprecation_or_merge": null,
+    "retroactive_application": false
+  },
+  "validation": {
+    "draft_check": "validation.json 참조: 이 결과물의 한정 구조/참조 검사",
+    "existing_motion_checker": "기존 R3_모션자료검사.py 실제 실행: exit_code 0, valid true, errors []. 기존 입력 모션 지식 구조 검사이며 신규 결과물/효과/승인 검증과 별개.",
+    "not_run": [
+      "R6_통합조회 전체 원문·자산 검사",
+      "R3_레이아웃자료검사 전체 실행: 외부 스킬/원문 해시 조회 경로를 포함하여 실행하지 않음",
+      "자료검증.py --record: 본 결과는 v0.2 통합 영상기록이 아니므로 적용하지 않음",
+      "최종 영상·가독성·시청자 효과·실제 CI 바이너리 검사"
+    ]
+  },
+  "limitations": [
+    "이번 실행은 로컬 사본만 확인했다. 조사기록에 적힌 과거 확인 깊이는 이번 원문 재검증과 다르다.",
+    "가상 메모·합성 예시는 실제 회사 영상 사례나 사람 승인 근거가 아니다.",
+    "06/08은 고정파일 바이트 해시 비교만 수행했으며 내용은 열람하지 않았다.",
+    "토큰 사용량과 전체 수행 시간은 측정하지 않았다."
+  ]
+}

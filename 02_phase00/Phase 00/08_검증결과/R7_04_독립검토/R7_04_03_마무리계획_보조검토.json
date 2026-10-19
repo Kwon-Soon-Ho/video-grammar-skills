@@ -1,0 +1,11 @@
+{
+  "scope": "C마무리계획정적보조검토.이스크립트를D대상으로실행하지않음",
+  "source_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R7_04_마무리.py",
+  "sha256": "4826eba1477cbf58494d6fd0478043bd54d928f4fab293ac77b26ebdf11f8ebf",
+  "finding": "세판정의true만확인하던계획에는최신검토입력과현재파일동일성preflight누락",
+  "fix_observed": "최신3단계after_hashes전부현재대조/착수128불변+130backup/등록hash대조를첫D쓰기이전에실행.후속변경은허용8경로로제한하고별도old/new기록",
+  "preflight_present": true,
+  "preflight_before_archive_and_first_save": true,
+  "post_review_allowlist_and_old_new": true,
+  "actual_D_finalization_executed_by_reviewer": false
+}

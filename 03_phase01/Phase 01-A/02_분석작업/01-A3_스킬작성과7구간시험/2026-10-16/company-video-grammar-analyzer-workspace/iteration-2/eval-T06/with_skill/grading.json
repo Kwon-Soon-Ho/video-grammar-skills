@@ -1,0 +1,49 @@
+{
+  "case_id": "T06",
+  "condition": "with_skill",
+  "recorded_at": "2026-10-16T06:33:55.530274+00:00",
+  "grader": "root source/meaning review; not independent human",
+  "reference_level": "human_confirmed",
+  "expectations": [
+    {
+      "text": "기존 창 재배치와 새 창 진입의 순서/중첩을 분리",
+      "passed": true,
+      "evidence": "기존 관리UI 우하축소→앞CAD 혼합/우향 진입→독립모델→CAD재배치→빛 순서와 겹침을 기록."
+    },
+    {
+      "text": "기존 창 우하단 축소와 새 창 오른쪽 진입을 구분",
+      "passed": true,
+      "evidence": "뒤 관리UI 상단 x264→405→479→511→522와 앞CAD x359→399→419→424를 서로 다른 특징으로 추적. 각 원본프레임 외곽과 일치."
+    },
+    {
+      "text": "모델 우하단 확대와 광점/빛띠 밝기를 분리",
+      "passed": true,
+      "evidence": "철근모델 우하확대와14.6이후빛 밝기증가/감소를 별도 대상·속성으로 기록."
+    },
+    {
+      "text": "가시성과 위치/크기의 가감속을 하나로 묶지 않음",
+      "passed": true,
+      "evidence": "창 위치 감속은 위치 수치, 모델 크기감속은 모델 ROI 시각비교, 빛 밝기는unknown. 실제AE곡선으로 확정하지 않음."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4
+  },
+  "case_status": "requirements_satisfied",
+  "notes": [
+    "v1 두창 모두 후반이동 오인 해소. 뒤관리UI 상단 x523/y약399 유지, 앞CAD top y451→505→534→546→550 변화와 가림해소를 구분. root T06-root-topedges.jpg와 일치.",
+    "앞CAD 후반 감속의 정량 표는 주로 위치 경계값이며 축소 감속은 원본 폭 변화의 시각적 판독으로 읽어야 한다. 크기함수의 정밀 추적/복원으로 확대하지 않는다.",
+    "빛의 정확곡선·가려진내부는 미확정 유지."
+  ],
+  "timing": null,
+  "tokens": null,
+  "telemetry_note": "per-run telemetry unavailable; no synthesized averages",
+  "eval_feedback": {
+    "suggestions": [
+      "Known exposed windows, one run per condition, same agent batches; this is regression evidence, not generalization accuracy."
+    ]
+  },
+  "additional_content_issues": []
+}

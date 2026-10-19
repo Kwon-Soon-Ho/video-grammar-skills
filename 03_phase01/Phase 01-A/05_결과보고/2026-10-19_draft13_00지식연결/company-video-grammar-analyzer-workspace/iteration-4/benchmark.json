@@ -1,0 +1,344 @@
+{
+  "metadata": {
+    "skill_name": "company-video-grammar-analyzer",
+    "timestamp": "2026-10-19T07:00:09.371166+00:00",
+    "evals_run": [
+      1,
+      2
+    ],
+    "runs_per_configuration": 1,
+    "rubric_version": "phase00-links-1",
+    "executor_model": null,
+    "analyzer_model": null
+  },
+  "runs": [
+    {
+      "eval_id": 1,
+      "eval_name": "static-knowledge-use-review",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "passed": 12,
+        "failed": 0,
+        "total": 12,
+        "pass_rate": 1.0
+      },
+      "expectations": [
+        {
+          "text": "134초 파랑 요청 좌→우와 초록 지원 우→좌, 두 역할판·로고8개 2열×4행·모니터3대 업무 묶음을 보존한다. 172초23.7억원–회사열–건물/기단과 지원4라벨의 귀속을 바꾸지 않는다.",
+          "passed": true,
+          "evidence": "00_사례요약.md/02_전체상세.md와 prior/02_전체상세.md에 파랑 요청 우향·초록 지원 좌향, 두 역할판, 로고 2×4 및 모니터3대를 보존한다. E2 23.7억원은 실제 투입 인력·비용 기준 가치창출성과 문구에 귀속되고 005명찰은 위 BIM 지원/좌 BIM 설계/우 디자인 지원/앞 해외사업 지원이다. 채점자가 입력 PNG 전체와 e1_arrows/e1_work/e1_logos/e2_logos/e2_building ROI를 직접 대조했다."
+        },
+        {
+          "text": "전체/하위 정보관계 레이아웃과 기하 격자를 구별하고, 두 역할판을 공통 지표 비교로 강제하지 않는다. 134 격자와172 원근열/HALLA·피티씨 순서 차이를 보존한다.",
+          "passed": true,
+          "evidence": "02_전체상세.md의 화면·격자 행과 knowledge-links.json F1/F2/F9/F10 및 K1/K2/K7은 역할 관계·분할/연결·하위 격자를 분리한다. 공통 척도가 없으므로 분할비교 제외라고 명시한다. 002타일의 U-C3/U-C4에는 2×4/원근8열 및 5피티씨6HALLA→5HALLA6피티씨 차이가 있다."
+        },
+        {
+          "text": "색/타입/형태·재질·공간의 역할과 조합을 기록해 표현 언어로 찾을 수 있다. 값/픽셀 목록이나 고급스럽다는 평가만으로 대체하지 않고 미상/조건·변형을 남긴다.",
+          "passed": true,
+          "evidence": "02_전체상세.md 타입·색·재질·깊이 및 facets F3/F7/F11/F15/F18/F20은 청/녹이 주체를 묶고 굵은 역할명/회색 설명이 위계를 만들며 유광·선반·반사가 전경/깊이를 구성한다고 구체 기록한다. STYLE-3D는 외관 태그이고 도구·효과원값·실제자산은 미상이다. 단순 값 목록이나 미적 평가가 아니다."
+        },
+        {
+          "text": "업무 이미지 묶음과 건물/기단을 독립 조회하고 소품은 하위 구성, 지원 명찰은 별도 단위로 연결한다. 단일 관측/반복/동일자산/정본 등록을 구별한다.",
+          "passed": true,
+          "evidence": "01_정의와사용처.md는 RC-COMP-007@v1/008@v1을 독립 정의하고 007의 모니터·책·화분/선반과 008의 창·조경 등을 하위로 둔다. 005지원명찰은 별도이고 composition_context에 anchors_to/overlaps로 연결된다. 단일관측/외형반복/동일자산 미확정/정본 미등록을 분리하며 실제 조회도 007·008을 반환한다."
+        },
+        {
+          "text": "정지 두 표본에 없는 화살표/수치/로고 이동·이징·음성/읽기시간을 관측된 모션으로 색인하지 않는다.",
+          "passed": true,
+          "evidence": "04_Phase00_지식선정.md와 prior/04_모션조사.md는 시간적 정지·카운트업·이징·음성을 미관측으로 유지한다. 채점자가 knowledge_links.py query --query 조사 --motion-only를 실행해 uses 0건, --include-unobserved로 Q-FLOW-001/Q-MOTION-001~003 4건을 확인했다. 0건을 모션 부재로 해석하지 않는다."
+        },
+        {
+          "text": "원본 관측/기존 기록 재사용/기능 해석/새 제안을 구분하고 실제 회사 규칙·원본 제작법·새 원본 관측이나 전편 완료를 근거 없이 만들지 않는다.",
+          "passed": true,
+          "evidence": "00_사례요약.md는 기존 수집 r2와 제공 PNG의 재대조 초안이라고 밝힌다. claims basis_kind observed/inferred, source_records, 기능 해석 문구와 미검증/미시험 조건을 구분한다. 03_근거와검토.md는 새 전편/원제작 의도/동일자산/회사승인을 확정하지 않으며 실제 제공 PNG에서의 재대조와 MP4 신규 관측을 구별한다."
+        },
+        {
+          "text": "사례 요약→전체 상세→근거를 읽을 수 있고 기존 상세/정확한 원본 파일·시각·해시·관측 방식/한계를 보존하거나 실제 원문으로 연결한다.",
+          "passed": true,
+          "evidence": "00_사례요약.md→02_전체상세.md→03_근거와검토.md의 활성 링크와 prior 전체상세/정의/기존근거 링크가 있다. 채점자 SHA 재계산에서 입력 static MD5개와 prior 사본5개가 모두 바이트 동일하다. E1/E2 정확 PNG 해시·134/172초·7680×2160·ROI 좌표와 crop-only·축소보기/PTS 미검증 한계가 보존된다. 과거 original/scratch 링크는 미제공 이력이라고 명시하고 현재 활성근거를 따로 제공한다."
+        },
+        {
+          "text": "기존 정의 ID/판본 또는 유일한 별칭을 유지하며 정의와 현재 사례/사용처·근거·차이·미검증을 왕복할 수 있다.",
+          "passed": true,
+          "evidence": "기존 레이아웃001/002와 부품001~008 @v1을 유지한다. 실제 업무이미지 조회는 007→U-C9→CASE001/134초→E1/e1_work/해시→detail_path/definition_path/원문 reference 및 differences/unverified를 반환한다. 건물008과 역할판LAYOUT001도 같은 왕복 필드를 반환한다. Q 조사ID도 미관측으로 보존되어 있다."
+        },
+        {
+          "text": "필요한 Phase00 지식을 실제 정본/심화의 정확ID·출처 위치/판본과 연결한다. 미분류는 이유와 남기며 원칙/용어를 가짜로 만들지 않는다.",
+          "passed": true,
+          "evidence": "knowledge-catalog.json 및 selected-concept-source.json은 실제 Phase00 원문의 LAYOUT-SPLIT/NETWORK/SPACE-CALLOUT, REL-PARALLEL, IP-04, Q-SCREEN-01 등을 정확 ID·경로·항목판본·해시로 연결한다. 채점자가 source_pins 전체의 실파일 SHA 일치를 확인했고 원문 정의/조건과 적용 이유를 대조했다. read-manifest는 선택심화 카드 읽기 범위를 한정한다. 양방향 업무관계는 자유기술로 남기고 가짜 정본ID를 만들지 않았다. 04 문서의 기본지식 판본 통칭 오기는 별도 claim에서 지적한다."
+        },
+        {
+          "text": "개념/유형 분류, 재사용 정의, 개별 사용처, 검토 관련 원칙과 실제 판정을 구별한다. 원칙 태그만으로 효과/승인을 선언하지 않는다.",
+          "passed": true,
+          "evidence": "knowledge-links.json은 units/uses/facets와 classified_as/review_relevant/evaluated_against/reviews를 분리한다. 03_근거와검토.md RV1~RV14의 pass는 정적 기록 대응만이고 데이터 타당성 hold·CI not_reviewed·시간가독성 hold가 따로 있다. 공간콜아웃을 실제층별 업무로, 원칙 태그를 효과/승인으로 확대하지 않는다."
+        },
+        {
+          "text": "실제 조회 명령/결과가 있고 요청한 단위/사례를 반환하며 반환에서 현재 내용·시각·근거·차이/미검증으로 이동할 수 있다. 파일 존재만으로 통과하지 않는다.",
+          "passed": true,
+          "evidence": "05_조회안내.md/run_queries.ps1/commands.json/queries에 실제 명령·결과가 있고 채점자가 읽기 전용 질의6개를 추가 실행해 모두 종료0을 확인했다. 업무1(007), 건물/기단2(LAYOUT002+008), 역할판2(LAYOUT001+007), SPACE-CALLOUT3, 관측모션0, 미관측조사4였다. 반환에는 현재 내용문맥/시각/근거파일·해시/차이/미검증/상세경로가 있다. 실행기록의 추가 히트 이름 설명은 틀렸지만 요청 단위 반환과 이동 기능은 실제 충족한다."
+        },
+        {
+          "text": "선택한 실제 검토 항목에는 대상·판정·이유·근거·검토 주체/범위가 있고 미검수/보류에는 다음 확인이 있다. 아직 안 본 것을 비적용/통과로 바꾸지 않는다.",
+          "passed": true,
+          "evidence": "03_근거와검토.md와 JSON reviews에 대상·기준·상태·이유·증거·reviewer·scope·next_probe가 있다. RV2/3는 정적 위계/라벨 대응 한정, RV4는 공간/가림 기술 한정이며 효과 검증을 제외한다. RV6/7/9/12 hold와 RV8 not_reviewed는 각각 산정표/전환창/실영상·발화/CI자산 등 다음 확인이 있다. 미검수 대상을 비적용/통과로 바꾸지 않았다."
+        }
+      ]
+    },
+    {
+      "eval_id": 1,
+      "eval_name": "static-knowledge-use-review",
+      "configuration": "old_skill",
+      "run_number": 1,
+      "result": {
+        "passed": 12,
+        "failed": 0,
+        "total": 12,
+        "pass_rate": 1.0
+      },
+      "expectations": [
+        {
+          "text": "134초 파랑 요청 좌→우와 초록 지원 우→좌, 두 역할판·로고8개 2열×4행·모니터3대 업무 묶음을 보존한다. 172초23.7억원–회사열–건물/기단과 지원4라벨의 귀속을 바꾸지 않는다.",
+          "passed": true,
+          "evidence": "00_읽는순서.md/01_수집기록.md와 preserved/02_전체상세.md가 파랑 요청 좌→우·초록 지원 우→좌, 두 역할판/로고8개2×4/모니터3대를 보존한다. REV-01/02/04/05/07은 수치·설명·라벨귀속·회사순서를 개별 대조한다. 채점자가 입력 전체PNG와 ROI를 직접 확인한 결과 E2 명찰은 위 BIM 지원/좌 BIM 설계/우 디자인 지원/앞 해외사업 지원과 일치한다."
+        },
+        {
+          "text": "전체/하위 정보관계 레이아웃과 기하 격자를 구별하고, 두 역할판을 공통 지표 비교로 강제하지 않는다. 134 격자와172 원근열/HALLA·피티씨 순서 차이를 보존한다.",
+          "passed": true,
+          "evidence": "02_지식연결과검수.md KL-001은 분할+연결 복합으로 두 역할판을 분류하고 동등 항목/척도 없음으로 분할비교 제외한다. KL-002는 병렬 정보관계·카드 외형·2×4 기하격자를 별도 축으로 둔다. USE-005/006과 REV-05는 134초 피티씨/HALLA 5·6순서가172초 HALLA/피티씨로 바뀌고 원근가로열이 됨을 보존한다."
+        },
+        {
+          "text": "색/타입/형태·재질·공간의 역할과 조합을 기록해 표현 언어로 찾을 수 있다. 값/픽셀 목록이나 고급스럽다는 평가만으로 대체하지 않고 미상/조건·변형을 남긴다.",
+          "passed": true,
+          "evidence": "00_읽는순서.md와 preserved 전체상세는 크림 공간/청녹 역할구분·굵은 제목과 회색 설명·유광판·반사·선반의 역할조합을 보존한다. KL-007/011은 STYLE-3D/STYLE-DIAGRAM을 표현 축으로 연결하고 실제3D도구/등각투영은 미확정으로 둔다. 채점자 실제 --knowledge STYLE-3D 조회가 LAYOUT001/LAYOUT002/건물008과 표현문맥·근거를 반환했다. 정확색/폰트/효과는 U-IMPLEMENTATION으로 남긴다."
+        },
+        {
+          "text": "업무 이미지 묶음과 건물/기단을 독립 조회하고 소품은 하위 구성, 지원 명찰은 별도 단위로 연결한다. 단일 관측/반복/동일자산/정본 등록을 구별한다.",
+          "passed": true,
+          "evidence": "01_수집기록.md는 007업무묶음/008건물기단 독립 정의·aliases·uses를 가지며 모니터/책/화분·창/조경은 하위 구성이다. 005지원명찰은 별도이며 USE-009의 anchors_to/overlaps/accompanies가 건물로 이어진다. 후보/외형반복/동일자산 미확정/정본 미등록 상태를 구분한다. 실제 query로 007과008을 독립 반환한다."
+        },
+        {
+          "text": "정지 두 표본에 없는 화살표/수치/로고 이동·이징·음성/읽기시간을 관측된 모션으로 색인하지 않는다.",
+          "passed": true,
+          "evidence": "각 occurrence의 temporal_relation=unobserved, 정의의 이동·이징·시간 미상, preserved/04_모션조사.md의 Q-FLOW/Q-MOTION 조사가 유지된다. KL-010/012·REV-13/14는 카운트업/읽기시간/연속성을 판단보류하고 미관측 조사와 등록 모션을 구별한다. 정지 두 장의 화살촉이나 순서차이를 이동으로 색인하지 않았다."
+        },
+        {
+          "text": "원본 관측/기존 기록 재사용/기능 해석/새 제안을 구분하고 실제 회사 규칙·원본 제작법·새 원본 관측이나 전편 완료를 근거 없이 만들지 않는다.",
+          "passed": true,
+          "evidence": "00_읽는순서.md는 제공PNG 두 화면의 정적 기록 대조/지식연결 초안이라고 명시한다. cases의 information_relation/inferred_function, source_manifest, knowledge source_kind 및 reviews를 분리한다. 01의 책등 문구 보강은 실제 PNG ROI에 보이는 새 정적 재대조로 한정한다. 회사규칙/원제작법/전편·모션 완료 주장은 없다."
+        },
+        {
+          "text": "사례 요약→전체 상세→근거를 읽을 수 있고 기존 상세/정확한 원본 파일·시각·해시·관측 방식/한계를 보존하거나 실제 원문으로 연결한다.",
+          "passed": true,
+          "evidence": "00_읽는순서.md→01_수집기록.md→02_지식연결과검수.md와 preserved 전체상세 연결이 작동한다. 채점자 SHA 비교에서 입력 static MD5개와 preserved5개가 모두 바이트 동일했다. E1/E2 원본PNG 절대경로/134·172초/SHA·7680×2160·ROI좌표·축소표시·crop-only·PTS로그 미제공을 보존한다. 미제공 original/collection과 과거 링크는 이력으로 명시하며 현재활성 근거를 제공한다."
+        },
+        {
+          "text": "기존 정의 ID/판본 또는 유일한 별칭을 유지하며 정의와 현재 사례/사용처·근거·차이·미검증을 왕복할 수 있다.",
+          "passed": true,
+          "evidence": "기존 레이아웃001/002·부품001~008 @v1과 Q 조사번호를 유지한다. 실제 query.py --query 업무 이미지 결과는007 정의/USE-011/CASE001/134초/전체PNG·ROI/상세·정의원문경로/current_difference/unverified/관련 검토를 반환한다. 008/005/역할판도 같은 양방향 색인을 갖는다. 독자구현이므로 후보의 JSON 형식 부재를 감점하지 않는다."
+        },
+        {
+          "text": "필요한 Phase00 지식을 실제 정본/심화의 정확ID·출처 위치/판본과 연결한다. 미분류는 이유와 남기며 원칙/용어를 가짜로 만들지 않는다.",
+          "passed": true,
+          "evidence": "knowledge_snapshot.json의 선택41개는 source_path/source_sha256/source_version/json_pointer/content를 포함한다. 채점자가 실파일에서41개 JSON pointer를 다시 따라가 content·SHA 전부 일치를 확인했다. 예: LAYOUT-SPLIT=/terms/64, IP-04=/principles/25, Q-SCREEN-01=/cards/11. KL-001~012가 조건·반례·미분류 이유를 실제 사례에 적용한다. 정본을 충분히 정확히 연결하며 심화의 별도 snapshot이나 후보 도구 사용을 의무로 삼지 않았다."
+        },
+        {
+          "text": "개념/유형 분류, 재사용 정의, 개별 사용처, 검토 관련 원칙과 실제 판정을 구별한다. 원칙 태그만으로 효과/승인을 선언하지 않는다.",
+          "passed": true,
+          "evidence": "index.json은 definitions/occurrences/knowledge_links/reviews 및 source_kind를 분리한다. KL-001/002/007/008은 분류·표현·검토관련성·공간표식 변형을 설명하고 REV는 analysis_record/self review의 한정판정이다. query.py는 case_context_only와 direct_target을 구별한다. 원칙ID만으로 전달효과/CI/회사승인을 선언하지 않는다."
+        },
+        {
+          "text": "실제 조회 명령/결과가 있고 요청한 단위/사례를 반환하며 반환에서 현재 내용·시각·근거·차이/미검증으로 이동할 수 있다. 파일 존재만으로 통과하지 않는다.",
+          "passed": true,
+          "evidence": "03_조회색인.md/query_execution.json/query_results에 실행명령/결과가 있다. 채점자가 query.py를 읽고 --query 업무 이미지/건물/역할판, --id RC-COMP-005@v1, --knowledge STYLE-3D를 출력파일 옵션 없이 직접 실행해 모두 종료0을 확인했다. 업무007 1개/역할판LAYOUT001+헤더003 2개/005 1개를 반환하며 occurrences→case 시각/evidence→path·hash/current_difference/definition unverified/원문경로로 이동된다. 넓은 건물 문자열은5개를 반환하므로 정확ID/별칭 조회와 구별한다."
+        },
+        {
+          "text": "선택한 실제 검토 항목에는 대상·판정·이유·근거·검토 주체/범위가 있고 미검수/보류에는 다음 확인이 있다. 아직 안 본 것을 비적용/통과로 바꾸지 않는다.",
+          "passed": true,
+          "evidence": "02_지식연결과검수.md REV-01~15와 index reviews는 target/criterion/evidence/reviewer/method/확인/제한을 갖는다. pass는 기록전사·공간관계 대응 한정이며 REV-06 CI,08 실UI,10 산식,13 읽기시간,14 수치변화,15 출력환경은 판단보류다. 공통 미상6개와 다음확인 표가 원자산/담당근거·실영상·환경 확보를 지정한다. 아직 안본 내용을 해당없음/통과로 바꾸지 않았다."
+        }
+      ]
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "motion-knowledge-use-review",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "passed": 12,
+        "failed": 0,
+        "total": 12,
+        "pass_rate": 1.0
+      },
+      "expectations": [
+        {
+          "text": "기존6개 표본 창 A-M1/A-M2/A-M3/B-M1/B-M2/B-M3을 내용/시각/근거와 연결하고 새 전편/원본 연속 관측으로 확대하지 않는다.",
+          "passed": true,
+          "evidence": "00_수집기록.md의 6개 상세 A-M1~B-M3가 각각 96–100/103–106/108–111/136–140/143–146/147–150초, 현재 내용, JPG와 원기록을 연결한다. 채점자가 6시트를 실제 열어 단계·동반 배경을 대조했다. 112초는 기존 연결 PNG 문맥으로 별도 표시하고 창 사이·전편/연속 재생은 미검수로 남겼다."
+        },
+        {
+          "text": "A-M3의0.8→10.8→12.9억원과끝값 가시경계(110,110.5]초, 도상111/112초 후속을 구별한다. B-M3의44→64→82%와끝값 경계(148.5,149]초 및149.5초 후속 카드/도넛/막대를 보존한다.",
+          "passed": true,
+          "evidence": "00_수집기록.md A-M3 및 C-A-M3/EA3-number에는 109.5=0.8,110=10.8,110.5=12.9억원과 (110,110.5] 경계,111 끝값·미완성 도상→112 완성 화살표를 구분한다. B-M3/C-B-M3/EB3-number는 148=44,148.5=64,149=82%, (148.5,149] 경계와149.5 도넛 분할색·3카드/디자인카드 크기·막대 후속을 보존한다. 두 시트와 기존112/150초 PNG의 실제 픽셀에 부합한다."
+        },
+        {
+          "text": "전체 흐름과 독립 세부 동작을 연결하고 대상별 선후/중첩/유지·수치 정착 이후 변화가 조회 가능한 형태다. 수치와 모든 도상의 동시 완료를 만들지 않는다.",
+          "passed": true,
+          "evidence": "motion.links.json의 부분 전체흐름 2개가 contains/precedes로 USE-A-M1~3/USE-B-M1~3에 연결된다. events/event_links에서 A-M2의 기존 두판 accompanies, B-M1 퇴장/새 수치 overlaps, EA3-icon 및 EB3-follow continues_after 수치가 보존된다. TIME-DELAY 실제 재실행은 A-M3/B-M3를 반환하고 단위 summary에서 끝값 뒤 변화를 읽을 수 있다. 모든 도상 동시 완료를 선언하지 않는다."
+        },
+        {
+          "text": "관측 속성/시간 관계·기능 분류·관련 원칙을 구별하며 정확 AE 키프레임/마스크/원본 곡선·시청 효과를 근거 없이 확정하지 않는다. 미관측/음성 미검수는 분리한다.",
+          "passed": true,
+          "evidence": "관측 claim은 observed, 기능/분류 연결은 inferred이고 PROPERTY/TIME/FUNCTION과 review_relevant를 구분한다. 정확한 이징/AE Scale·mask·opacity·키프레임·실제3D 제작은 각 단위 unverified/unknowns에 남는다. IP-05의 6행 not_reviewed와 AP-06/Q-MOTION-01 hold를 조회에서도 재확인했다. 음성 미검수와 창 사이 미관측을 별도로 기록했다."
+        },
+        {
+          "text": "숫자와 도상의 시차를 조회하면 해당 실제 관측 사례를 반환한다. 원본 관측이 아닌 VC-MOTION-03 가족사별→업무별 교체 제안을 관측 패턴으로 섞지 않는다.",
+          "passed": true,
+          "evidence": "읽은 knowledge_links.py query 경로는 읽기/해시 검증 후 stdout만 반환하며 쓰기를 수행하지 않는다. 채점자가 번들 Python -B -X utf8로 TIME-DELAY --motion-only를 실제 실행: 종료0, A-M3/B-M3 반환, 저장 query-TIME-DELAY.json과 객체 전체 동일. 가족사별 조회도 종료0/0건이며 전체 units/uses에는 VC-MOTION-03 제안이 없다. 원기록03은 해당 교체가 새 시안 제안이라고 명시한다."
+        },
+        {
+          "text": "원본 관측/기존 기록 재사용/기능 해석/새 제안을 구분하고 실제 회사 규칙·원본 제작법·새 원본 관측이나 전편 완료를 근거 없이 만들지 않는다.",
+          "passed": true,
+          "evidence": "C-A/B-Mn에는 [기존 관측 재사용+제공 시트 대조]가 있고 별도 interpretation claim은 분석자의 추론으로 표시된다. 기존 시범 VC-MOTION-02의 변형 후보와 동일 패턴 확정을 구별하고 VC-MOTION-03은 검색에 넣지 않는다. limitations/00/01은 회사 승인·정본 등록·새 제작·새 원본 연속관측·전편 완료를 주장하지 않는다."
+        },
+        {
+          "text": "사례 요약→전체 상세→근거를 읽을 수 있고 기존 상세/정확한 원본 파일·시각·해시·관측 방식/한계를 보존하거나 실제 원문으로 연결한다.",
+          "passed": true,
+          "evidence": "00은 사례 요약→전체 상세 원문 링크/6단위 상세→근거대조 순서다. 입력01/02/03/05의 실제 절대경로와 원문을 보존하며 SR1–SR4 해시가 현재 파일과 일치한다. 제공 MP4명/SHA·크기·fps는 물려받은 메타로 표시했다. 05의 개별 PNG명·0.5초 시각·SHA·기존 추출로그 경로는 실제 원문으로 연결되며 이번 재해시/전수검증이라고 주장하지 않는다."
+        },
+        {
+          "text": "기존 정의 ID/판본 또는 유일한 별칭을 유지하며 정의와 현재 사례/사용처·근거·차이·미검증을 왕복할 수 있다.",
+          "passed": true,
+          "evidence": "A-M1~A-M3/B-M1~B-M3 기존 ID·의미를 유지하고 local-motion-knowledge-review-0.1 판본 및 prior_definition_ref를 덧붙였다. use.definition_id/version과 unit 판본이 일치한다. A-M3 직접 조회를 실제 재실행해 해당 정의·USE-A-M3·VC-CASE-A/A-02·내용/시간·근거·차이/미검증을 반환했고 TIME-DELAY로 B-M3 사용처까지 왕복 가능하다."
+        },
+        {
+          "text": "필요한 Phase00 지식을 실제 정본/심화의 정확ID·출처 위치/판본과 연결한다. 미분류는 이유와 남기며 원칙/용어를 가짜로 만들지 않는다.",
+          "passed": true,
+          "evidence": "catalog source_pins를 실제 정본5파일과 대조해 해시/판본이 일치했다(용어0.1.1, 모션지식파일0.1.2 등). TIME-DELAY는 실제 정의 “대응 사건 사이 시작·완료 시각 차이”; MR-04/MR-08/AP-05/AP-06/IP-05의 실제 ID/정의와 심화카드 source_locator를 읽어 조건/보류가 부합함을 확인했다. knowledge_queries.json은 18개 선택ID 원문, catalog는 정확 source_path/hash/version 및 심화 문맥 path/hash를 제공한다. 미관측·곡선/음성 미상은 무리한 분류 대신 이유로 남는다."
+        },
+        {
+          "text": "개념/유형 분류, 재사용 정의, 개별 사용처, 검토 관련 원칙과 실제 판정을 구별한다. 원칙 태그만으로 효과/승인을 선언하지 않는다.",
+          "passed": true,
+          "evidence": "unit(정의)·uses(개별 사례)·facets/관측 claims·knowledge_links의 classified_as/review_relevant/evaluated_against·reviews를 구별한다. AP-05는 시간 차와 관련 질문만 연결하고 관성/효과 판정은 하지 않는다. MR-04 pass는 명시된 기록 일관성 자기검토 범위이며 읽기 전달효과/원제작 의도/회사 승인으로 확대하지 않는다."
+        },
+        {
+          "text": "실제 조회 명령/결과가 있고 요청한 단위/사례를 반환하며 반환에서 현재 내용·시각·근거·차이/미검증으로 이동할 수 있다. 파일 존재만으로 통과하지 않는다.",
+          "passed": true,
+          "evidence": "02_조회안내.md의 실제 명령을 코드 검토 후 재실행했다. TIME-DELAY=A-M3/B-M3, IP-05/MR-04/Q-MOTION-01=6단위, A-M3=A-M3, 가족사별=0건이며 각 저장 결과와 전체 객체가 동일했다. 반환에 definition_version,use.case_unit_id/region/content/time,differences,unverified,evidence.path/sha와 record_path/claim_ids가 있어 원기록/현재 상세와 시간 사건으로 이동 가능하다. 파일 존재나 validation=true만으로 판정하지 않았다."
+        },
+        {
+          "text": "선택한 실제 검토 항목에는 대상·판정·이유·근거·검토 주체/범위가 있고 미검수/보류에는 다음 확인이 있다. 아직 안 본 것을 비적용/통과로 바꾸지 않는다.",
+          "passed": true,
+          "evidence": "27개 reviews의 대상/criterion/status/reason/evidence_ids/claim_ids/reviewer/scope를 확인했다. 예 RV9는 A-M3/MR-04/pass/AI self-review/기존 기록 순서·중첩 보존에 한정한다. RV10 AP-06 hold는 동일 특징의 변화율 미측정과 다음 표본 비교, RV11 IP-05 not_reviewed는 음성 부재와 확보 후 검토, RV12 Q-MOTION-01 hold는 유지/퇴장/발화·시청조건 후속을 명시한다. 실제 재조회에서도 6단위 음성 not_reviewed·읽기 hold를 유지했다."
+        }
+      ]
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "motion-knowledge-use-review",
+      "configuration": "old_skill",
+      "run_number": 1,
+      "result": {
+        "passed": 12,
+        "failed": 0,
+        "total": 12,
+        "pass_rate": 1.0
+      },
+      "expectations": [
+        {
+          "text": "기존6개 표본 창 A-M1/A-M2/A-M3/B-M1/B-M2/B-M3을 내용/시각/근거와 연결하고 새 전편/원본 연속 관측으로 확대하지 않는다.",
+          "passed": true,
+          "evidence": "collection.md의 A-M1~B-M3 6절과 index.json uses가 기존 ID·내용·96~100/103~106/108~111/136~140/143~146/147~150초·각 sheet 및 원문으로 연결된다. 평가자가 prompt/files 원문4개와 6모음을 실제 대조했다. '기존0.5초 표본/제공시트 재대조. 연속 관측 아님' 및 창 사이 gaps/전편 미관측을 유지한다."
+        },
+        {
+          "text": "A-M3의0.8→10.8→12.9억원과끝값 가시경계(110,110.5]초, 도상111/112초 후속을 구별한다. B-M3의44→64→82%와끝값 경계(148.5,149]초 및149.5초 후속 카드/도넛/막대를 보존한다.",
+          "passed": true,
+          "evidence": "collection.md A-M3 stages에109.5=0.8,110=10.8,110.5=12.9억원과(110,110.5] 경계,111표본/112 prior-only 후속을 분리한다. B-M3는148=44,148.5=64,149=82%와(148.5,149],149.5 카드 확대·도넛 분할색 및150 막대 후속을 보존한다. 제공시트와 연결 PNG111/112/149/149.5/150을 직접 대조해111에는 화살표가 없고112에는 있으며,149 이후 카드/분할색/막대가 보강됨을 확인했다."
+        },
+        {
+          "text": "전체 흐름과 독립 세부 동작을 연결하고 대상별 선후/중첩/유지·수치 정착 이후 변화가 조회 가능한 형태다. 수치와 모든 도상의 동시 완료를 만들지 않는다.",
+          "passed": true,
+          "evidence": "LOCAL-FLOW-A-REVIEW-v1/B-REVIEW-v1의 sequence가6독립동작으로 연결되고 미관측 gaps를 명시한다. 각 use.relations에precedes/overlaps/holds/numeric-before-graphic와 대상·근거가 있다. 실제 시차 조회는 A-M3/B-M3를 반환하며 stages/relations에서 숫자 이후 도상 진행으로 이동한다. B-M1 138초 옛판+새값, B-M2 144초 총량+영상층, B-M3 배경/판 중첩도 시트와 일치한다."
+        },
+        {
+          "text": "관측 속성/시간 관계·기능 분류·관련 원칙을 구별하며 정확 AE 키프레임/마스크/원본 곡선·시청 효과를 근거 없이 확정하지 않는다. 미관측/음성 미검수는 분리한다.",
+          "passed": true,
+          "evidence": "index.json concept_assignments는 observed_properties/observed_time_relations/inferred_functions/unclassified를 나누고 principle_refs는related_review_question, outcome='not an adoption/effect pass'다. 모든 use에 원본 곡선/AE 키프레임/마스크/parent/3D·음성·연속원본 미검수를 남기며 가감속은 변화율 미측정으로 보류한다. 실제 시청효과나 원본 구현을 관측으로 확정한 근거는 없다."
+        },
+        {
+          "text": "숫자와 도상의 시차를 조회하면 해당 실제 관측 사례를 반환한다. 원본 관측이 아닌 VC-MOTION-03 가족사별→업무별 교체 제안을 관측 패턴으로 섞지 않는다.",
+          "passed": true,
+          "evidence": "query.py를 읽어 인덱스 읽기/필터/출력만 하는 안전한 조회임을 확인한 뒤 --relation numeric-before-graphic 및 --concept TIME-DELAY를 실행해 A-M3/B-M3 반환을 확인했다. --id VC-MOTION-03은 관측0건, --include-excluded를 추가해도 관측0건이며 별도 excluded_proposals에만 VC-MOTION-03이 나온다. 원문03 §4의 새시안 제안 구분과 일치한다."
+        },
+        {
+          "text": "원본 관측/기존 기록 재사용/기능 해석/새 제안을 구분하고 실제 회사 규칙·원본 제작법·새 원본 관측이나 전편 완료를 근거 없이 만들지 않는다.",
+          "passed": true,
+          "evidence": "collection.md와 index.json의 basis_kind='existing-record reuse + provided sheet visual readback', status='local candidate; not registered/approved' 및 기능 추론/제안 제외/음성 미검수/회사 승인 없음 구분을 확인했다. 수주17.5·비용8.7·매출12.9, 지원23.7·26건·BIM19.4·3건·약82%를 기존 기록과 대조했고 변경 시나리오 값을 혼입하지 않았다. 새 연속관측/회사 공통 규칙/원본 제작법을 완료로 주장하지 않는다."
+        },
+        {
+          "text": "사례 요약→전체 상세→근거를 읽을 수 있고 기존 상세/정확한 원본 파일·시각·해시·관측 방식/한계를 보존하거나 실제 원문으로 연결한다.",
+          "passed": true,
+          "evidence": "collection.md가 사례 요약→전체 상세→근거 순서를 안내하고 원문 상세4개를 preserved-input에 보존한다. 평가자 재계산에서 입력4개와 사본 바이트/SHA256가 모두 같고 evidence-manifest의46행 (시각,원본PNG경로,제공SHA)이 원문05의46행과 집합까지 정확 일치했다. source 메타데이터는MP4 이름/SHA/해상도/fps/길이를 제공값으로 표시하고 PTS/원본 해시 미재검증 한계를 남긴다. 112초 원본 링크는 보존 계약 원문에 유지된다."
+        },
+        {
+          "text": "기존 정의 ID/판본 또는 유일한 별칭을 유지하며 정의와 현재 사례/사용처·근거·차이·미검증을 왕복할 수 있다.",
+          "passed": true,
+          "evidence": "기존 A-M1~3/B-M1~3,VC-CASE-A/B 및 구역 ID를 유지하고 definition_version에 원문 SHA와§4/ID locator를 고정했다. definition_source/original_record/detail_link와 content/evidence/difference/unverified_dimensions가 각 사용처에 있어 원정의와 현재 사례를 왕복할 수 있다. A-M1/A-M2의 VC-MOTION-02는 동일성 확정이 아닌 변형 검토로, 로컬 FLOW는 기존VC-FLOW-01의 대체가 아닌 연결 ID로 구별한다."
+        },
+        {
+          "text": "필요한 Phase00 지식을 실제 정본/심화의 정확ID·출처 위치/판본과 연결한다. 미분류는 이유와 남기며 원칙/용어를 가짜로 만들지 않는다.",
+          "passed": true,
+          "evidence": "knowledge-pins.json의 terms12/principles8/deep_cards8/quality5를 실제 D:/…/Phase 00 정본4파일에서 ID별 원문 행과 대조해 모두 정확히 일치했고4파일 SHA도 실제 재계산값과 일치했다. 공통용어0.1.1, 원칙/심화0.1.2, 품질0.1.1의 path/version/locator 및 심화 source_refs/source_locator/source_read_depth를 유지한다. MP-07은public_course_outline 한계를 보존하고 미분류 curve/implementation은 측정/원본 부재라는 이유를 남긴다."
+        },
+        {
+          "text": "개념/유형 분류, 재사용 정의, 개별 사용처, 검토 관련 원칙과 실제 판정을 구별한다. 원칙 태그만으로 효과/승인을 선언하지 않는다.",
+          "passed": true,
+          "evidence": "index.json에서 관측 개념분류, 기존 로컬 정의/판본, 개별 use,principle_refs,별도 reviews가 구분된다. collection.md가 R2 속성/시간과 기능추론을 구별하고 R3 원칙을 효과통과 선언으로 쓰지 않는다. RV-01/03/04/05의 통과는 기록 분리/참조/확대주장 제한으로 좁혀 쓰고 원자료·인과·시청효과·제작법은 보류하므로 원칙 태그로 회사승인/효과를 선언하지 않는다."
+        },
+        {
+          "text": "실제 조회 명령/결과가 있고 요청한 단위/사례를 반환하며 반환에서 현재 내용·시각·근거·차이/미검증으로 이동할 수 있다. 파일 존재만으로 통과하지 않는다.",
+          "passed": true,
+          "evidence": "평가자가 안전성을 검토한query.py의7개 기록 명령을 실제 재실행했고 전부exit0 및 query-results.json.result와 내용까지 정확 일치했다. 시차/개념/ID/흐름/MR-08/제외제안 조회가 각각 요청 단위를 반환한다. 반환 uses에는 현재content/window/stages/boundary,원문/상세링크,46행 중 해당 근거 경로·시각·SHA,difference/unverified_dimensions 및 관련reviews가 포함되고 실제 연결 파일 접근도 확인했다. 의미검색/추천 성능 검증으로 확대하지 않는다."
+        },
+        {
+          "text": "선택한 실제 검토 항목에는 대상·판정·이유·근거·검토 주체/범위가 있고 미검수/보류에는 다음 확인이 있다. 아직 안 본 것을 비적용/통과로 바꾸지 않는다.",
+          "passed": true,
+          "evidence": "RV-01~06은 모두 대상IDs/criterion/judgment/reason/evidence/reviewer/scope/next를 갖춘다. RV-02는 읽기 충분성/발화/시청조건 부재로 보류, RV-06은MP4/오디오/시나리오 부재로 음성 미검수이며 다음 자료·검토자를 명시한다. 제공6모음의 중첩/숫자 구분에 한정한 기록 검토와 미실시 실제 내용/의도/회사/시청 검수를 구분한다. 아직 안 본 음성을 비적용·통과로 바꾸지 않았다."
+        }
+      ]
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "old_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.00"
+    }
+  },
+  "notes": [
+    "with_skill=draft.13; old_skill=draft.12. Each prompt/version executed once in fresh context; grading by separate AI agents, not blinded or human approval.",
+    "New prompts test knowledge-to-record-to-usage-to-review. Previous iteration used different prompts; previous outputs are not joined by reused eval IDs.",
+    "Runtime skill files stayed pinned during all four executions. Only eval metadata was finalized afterward; see eval-freeze-notes.json.",
+    "Both variants satisfy all 12 criteria for each known-material task. No superiority or broader perception accuracy is established.",
+    "Beyond the 12 criteria, new static self-report has two wrong extra-hit descriptions and one overly broad file-version label; old motion overstates unavailability of accessible 112-second evidence. See separate errata/claims.",
+    "Review fields/scope do not prove actual guidance applicability: new MR-04 pass is record-fidelity review. Further tests should distinguish that from answering the principle question.",
+    "Exact executor model/token/time telemetry is absent; no zeros or character proxies substitute for it. Execution.md is a self-report, not a full raw tool transcript.",
+    "Draft13 bundled catalog/check/index/query reduce task-specific helper duplication. Reuse is observed; time/cost savings were not measured.",
+    "Parent-edited pilot is separate from scored agent outputs. No canonical registration, active10 replacement, whole-video expansion, PDF or new design production."
+  ]
+}

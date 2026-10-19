@@ -1,0 +1,26 @@
+{
+  "id": "R8-2-steward-human-output-feedback",
+  "version": "0.1.1",
+  "origin": "actual_user_reply_in_this_conversation",
+  "question": "R8-2 기록·한맥 연결 관리자의 실제 출력 검토입니다. `Phase 00/08_검증결과/R8_02_기록관리자/00_결과안내.md`와 `기록관리자_출력검토.html`을 보고, 기록 수정·백업 실패·복구의 처리 방식과 설명 분량을 선택해 주세요. 후보는 재시험 3종의 22개 조건을 충족했지만 실제 영상 성능이나 전체 완료 판정은 아닙니다. 기존 목적·권한을 다시 묻는 질문이 아니라 이번 출력 피드백입니다.",
+  "answer": "A. 현재 구성·분량을 유지하고 R8-3로 진행 — 새 사례와 저장 후 실패·동시 수정 검증은 R8-4에서 필수 수행 (추천)",
+  "target_report": {
+    "path": "08_검증결과/R8_02_기록관리자/00_결과안내.md",
+    "sha256": "ad5214a91a2a2675dc12135105ef7c69e0a0f5329884c97faa6111d50c644497"
+  },
+  "candidate_version": "0.2.0-draft.3",
+  "confirmed_scope": [
+    "R8-2 구성·분량 유지",
+    "R8-3 진행",
+    "R8-4 새 사례·저장 후 실패·동시 수정 검증 필수 유지"
+  ],
+  "not_confirmed": [
+    "기본 전환",
+    "실영상 성능",
+    "R8-4 통과",
+    "R8/Phase00 완료",
+    "회사 승인"
+  ],
+  "question_summary": "R8-2 실제 출력의 기록 수정·백업 실패·복구 처리 방식과 설명 분량 검토; 기존 목적·권한 재승인 아님",
+  "question_item_id": "[\"request_user_input_async\",\"call_ddfc3d19c9654dc5900c20dc5a04b576\",0]"
+}

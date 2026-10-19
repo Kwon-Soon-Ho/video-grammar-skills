@@ -1,0 +1,156 @@
+# 실행 transcript
+
+DB 루트: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\5_경로보완회귀\eval-02-기록관리자_부분저장복구\candidate\inputs\Phase00
+실행 Python: D:\00작업\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\Phase 00\.환경\Scripts\python.exe -B
+
+task.txt → 지정 SKILL.md → 세 references → DB 자료/IO사용안내.md 및 작업범위.json → 현재 안내/정정표 → 보존·버전 계약과 현재 검사기 루트/입력 확인 순서로 읽었다. 최초 자료 조회는 run/자료로 잘못 시도하여 파일 없음 오류가 났고, inputs 범위에서 실제 DB/자료를 확인한 후 읽었다. 이 최초 조회 실패를 현재 안내 파일의 부재로 해석하지 않았다. inputs 전체 파일명 검색 출력은 길이 제한으로 잘렸으며 지정 필수 참조는 이후 따로 재조회했다.
+
+원문 strict JSON 파싱으로 중복 키·비유한수 거부, 경로 루트/연결점 경계 확인. 모든 DB backup/write/restore/저장 후 환경검사는 시험IO.py만 사용. 후보/로그/실패본은 outputs에만 일반 쓰기.
+
+## 실제 명령과 종료
+
+### 01-read-r4 · exit 0
+[원문기계블록은개별CLI로직접대조]
+원시 stdout: 01-read-r4.stdout.txt / stderr: 01-read-r4.stderr.txt
+
+### 01-read-r5 · exit 0
+[원문기계블록은개별CLI로직접대조]
+원시 stdout: 01-read-r5.stdout.txt / stderr: 01-read-r5.stderr.txt
+
+### 02-before-r4 · exit 0
+[원문기계블록은개별CLI로직접대조]
+원시 stdout: 02-before-r4.stdout.txt / stderr: 02-before-r4.stderr.txt
+
+### 02-before-r5 · exit 0
+[원문기계블록은개별CLI로직접대조]
+원시 stdout: 02-before-r5.stdout.txt / stderr: 02-before-r5.stderr.txt
+
+### 03-candidate-r4-version · exit 0
+[원문기계블록은개별CLI로직접대조]
+원시 stdout: 03-candidate-r4-version.stdout.txt / stderr: 03-candidate-r4-version.stderr.txt
+
+### 03-candidate-r5-version · exit 0
+[원문기계블록은개별CLI로직접대조]
+원시 stdout: 03-candidate-r5-version.stdout.txt / stderr: 03-candidate-r5-version.stderr.txt
+
+### 04-candidate-r4 · exit 0
+[원문기계블록은개별CLI로직접대조]
+원시 stdout: 04-candidate-r4.stdout.txt / stderr: 04-candidate-r4.stderr.txt
+
+### 04-candidate-r5-schema · exit 0
+[원문기계블록은개별CLI로직접대조]
+원시 stdout: 04-candidate-r5-schema.stdout.txt / stderr: 04-candidate-r5-schema.stderr.txt
+
+### 05-backup-r4 · exit 0
+[원문기계블록은개별CLI로직접대조]
+원시 stdout: 05-backup-r4.stdout.txt / stderr: 05-backup-r4.stderr.txt
+
+### 05-backup-r5 · exit 0
+[원문기계블록은개별CLI로직접대조]
+원시 stdout: 05-backup-r5.stdout.txt / stderr: 05-backup-r5.stderr.txt
+
+### 06-write-r4 · exit 0
+[원문기계블록은개별CLI로직접대조]
+원시 stdout: 06-write-r4.stdout.txt / stderr: 06-write-r4.stderr.txt
+
+### 07-saved-r4-version · exit 0
+[원문기계블록은개별CLI로직접대조]
+원시 stdout: 07-saved-r4-version.stdout.txt / stderr: 07-saved-r4-version.stderr.txt
+
+### 07-post-r4-environment · exit 0
+[원문기계블록은개별CLI로직접대조]
+원시 stdout: 07-post-r4-environment.stdout.txt / stderr: 07-post-r4-environment.stderr.txt
+
+### 07-saved-r4-structure · exit 0
+[원문기계블록은개별CLI로직접대조]
+원시 stdout: 07-saved-r4-structure.stdout.txt / stderr: 07-saved-r4-structure.stderr.txt
+
+### 08-candidate-r5-live-reference · exit 0
+[원문기계블록은개별CLI로직접대조]
+원시 stdout: 08-candidate-r5-live-reference.stdout.txt / stderr: 08-candidate-r5-live-reference.stderr.txt
+
+### 09-write-r5 · exit 2
+[원문기계블록은개별CLI로직접대조]
+원시 stdout: 09-write-r5.stdout.txt / stderr: 09-write-r5.stderr.txt
+
+### 10-after-save-read-r4 · exit 0
+[원문기계블록은개별CLI로직접대조]
+원시 stdout: 10-after-save-read-r4.stdout.txt / stderr: 10-after-save-read-r4.stderr.txt
+
+### 10-after-save-read-r5 · exit 0
+[원문기계블록은개별CLI로직접대조]
+원시 stdout: 10-after-save-read-r5.stdout.txt / stderr: 10-after-save-read-r5.stderr.txt
+
+### 10-after-save-environment · exit 2
+[원문기계블록은개별CLI로직접대조]
+원시 stdout: 10-after-save-environment.stdout.txt / stderr: 10-after-save-environment.stderr.txt
+
+### 10-after-save-r4 · exit 0
+[원문기계블록은개별CLI로직접대조]
+원시 stdout: 10-after-save-r4.stdout.txt / stderr: 10-after-save-r4.stderr.txt
+
+### 10-after-save-r5 · exit 1
+[원문기계블록은개별CLI로직접대조]
+원시 stdout: 10-after-save-r5.stdout.txt / stderr: 10-after-save-r5.stderr.txt
+
+### 11-restore-r5 · exit 0
+[원문기계블록은개별CLI로직접대조]
+원시 stdout: 11-restore-r5.stdout.txt / stderr: 11-restore-r5.stderr.txt
+
+### 12-restored-r5-exact · exit 0
+[원문기계블록은개별CLI로직접대조]
+원시 stdout: 12-restored-r5-exact.stdout.txt / stderr: 12-restored-r5-exact.stderr.txt
+
+### 11-restore-r4 · exit 0
+[원문기계블록은개별CLI로직접대조]
+원시 stdout: 11-restore-r4.stdout.txt / stderr: 11-restore-r4.stderr.txt
+
+### 12-restored-r4-exact · exit 0
+[원문기계블록은개별CLI로직접대조]
+원시 stdout: 12-restored-r4-exact.stdout.txt / stderr: 12-restored-r4-exact.stderr.txt
+
+### 13-final-environment · exit 0
+[원문기계블록은개별CLI로직접대조]
+원시 stdout: 13-final-environment.stdout.txt / stderr: 13-final-environment.stderr.txt
+
+### 13-final-r4 · exit 0
+[원문기계블록은개별CLI로직접대조]
+원시 stdout: 13-final-r4.stdout.txt / stderr: 13-final-r4.stderr.txt
+
+### 13-final-r5 · exit 0
+[원문기계블록은개별CLI로직접대조]
+원시 stdout: 13-final-r5.stdout.txt / stderr: 13-final-r5.stderr.txt
+
+### 14-final-read-r4 · exit 0
+[원문기계블록은개별CLI로직접대조]
+원시 stdout: 14-final-read-r4.stdout.txt / stderr: 14-final-read-r4.stderr.txt
+
+### 14-final-read-r5 · exit 0
+[원문기계블록은개별CLI로직접대조]
+원시 stdout: 14-final-read-r5.stdout.txt / stderr: 14-final-read-r5.stderr.txt
+
+## 서비스가 관측한 순서
+
+- 001: read 12_통합기록/작업초안.json; status=ok; before=c5d0295783c3ce02b650a72a1f62c5c558caef6f7d9d7ea45580c72fc3876ddc; after=c5d0295783c3ce02b650a72a1f62c5c558caef6f7d9d7ea45580c72fc3876ddc; service_owned=None; error=None
+- 002: read 작업초안/디자인연결.json; status=ok; before=94524a9c69fcc0972288c4522538b67d95cec937cf1e3274ef5a0cac658e99ca; after=94524a9c69fcc0972288c4522538b67d95cec937cf1e3274ef5a0cac658e99ca; service_owned=None; error=None
+- 003: backup 12_통합기록/작업초안.json; status=ok; before=c5d0295783c3ce02b650a72a1f62c5c558caef6f7d9d7ea45580c72fc3876ddc; after=c5d0295783c3ce02b650a72a1f62c5c558caef6f7d9d7ea45580c72fc3876ddc; service_owned=None; error=None
+- 004: backup 작업초안/디자인연결.json; status=ok; before=94524a9c69fcc0972288c4522538b67d95cec937cf1e3274ef5a0cac658e99ca; after=94524a9c69fcc0972288c4522538b67d95cec937cf1e3274ef5a0cac658e99ca; service_owned=None; error=None
+- 005: write 12_통합기록/작업초안.json; status=ok; before=c5d0295783c3ce02b650a72a1f62c5c558caef6f7d9d7ea45580c72fc3876ddc; after=a29079cee9a5165de1cd919e43028466cfa32ad2be2bf8184a3fbfff445d3782; service_owned=a29079cee9a5165de1cd919e43028466cfa32ad2be2bf8184a3fbfff445d3782; error=None
+- 006: validate ['12_통합기록/작업초안.json']; status=ok; before=None; after=None; service_owned=None; error=None
+- 007: write 작업초안/디자인연결.json; status=error; before=94524a9c69fcc0972288c4522538b67d95cec937cf1e3274ef5a0cac658e99ca; after=a65c32199d7cc079f45deead196ed1d4fa85a7590869a7dd56b395dca699bf9f; service_owned=a65c32199d7cc079f45deead196ed1d4fa85a7590869a7dd56b395dca699bf9f; error=TEST_IO_PARTIAL_WRITE: candidate prefix written; inspect actual bytes
+- 008: read 12_통합기록/작업초안.json; status=ok; before=a29079cee9a5165de1cd919e43028466cfa32ad2be2bf8184a3fbfff445d3782; after=a29079cee9a5165de1cd919e43028466cfa32ad2be2bf8184a3fbfff445d3782; service_owned=None; error=None
+- 009: read 작업초안/디자인연결.json; status=ok; before=a65c32199d7cc079f45deead196ed1d4fa85a7590869a7dd56b395dca699bf9f; after=a65c32199d7cc079f45deead196ed1d4fa85a7590869a7dd56b395dca699bf9f; service_owned=None; error=None
+- 010: validate ['12_통합기록/작업초안.json', '작업초안/디자인연결.json']; status=error; before=None; after=None; service_owned=None; error=JSON parse validation failed
+- 011: restore 작업초안/디자인연결.json; status=ok; before=a65c32199d7cc079f45deead196ed1d4fa85a7590869a7dd56b395dca699bf9f; after=94524a9c69fcc0972288c4522538b67d95cec937cf1e3274ef5a0cac658e99ca; service_owned=94524a9c69fcc0972288c4522538b67d95cec937cf1e3274ef5a0cac658e99ca; error=None
+- 012: restore 12_통합기록/작업초안.json; status=ok; before=a29079cee9a5165de1cd919e43028466cfa32ad2be2bf8184a3fbfff445d3782; after=c5d0295783c3ce02b650a72a1f62c5c558caef6f7d9d7ea45580c72fc3876ddc; service_owned=c5d0295783c3ce02b650a72a1f62c5c558caef6f7d9d7ea45580c72fc3876ddc; error=None
+- 013: validate ['12_통합기록/작업초안.json', '작업초안/디자인연결.json']; status=ok; before=None; after=None; service_owned=None; error=None
+- 014: read 12_통합기록/작업초안.json; status=ok; before=c5d0295783c3ce02b650a72a1f62c5c558caef6f7d9d7ea45580c72fc3876ddc; after=c5d0295783c3ce02b650a72a1f62c5c558caef6f7d9d7ea45580c72fc3876ddc; service_owned=None; error=None
+- 015: read 작업초안/디자인연결.json; status=ok; before=94524a9c69fcc0972288c4522538b67d95cec937cf1e3274ef5a0cac658e99ca; after=94524a9c69fcc0972288c4522538b67d95cec937cf1e3274ef5a0cac658e99ca; service_owned=None; error=None
+
+## 확인한 현재 상태
+
+R5 저장 exit2와 부분 기록 해시를 확인하고 R5 손상 JSON/환경 검사 실패를 별도 보존했다. 서비스이벤트 007의 service_owned_written_sha256이 현재 R5 바이트와 같고, 005의 실제 R4 저장 해시가 현재 R4와 같은지 복구 직전 확인했다. CLI restore는 R5→R4 순서로 각각 exit0. 원문 백업과 최종 바이트가 두 파일 모두 완전히 일치한다. 복원은 정확 원문 byte 복구이므로 자체 version 0.1.0을 유지했다. 이후 환경 JSON 검사 및 R4·R5 구조/현재 연결 검사는 exit0.
+
+수정 요청은 최종 미반영이다. 후보 자체 판본 0.1.1은 outputs에 보존했다. 실패·부분 파일은 outputs의 bytes 사본으로 보존했고 활성 초안에는 손상 파일이 남지 않았다. 반복 재시도나 서비스 재설정은 하지 않았다.
+
+시간·토큰은 미수집(null). 회사/운영 승인, 실제 사람·영상 사실, 파일시스템 전체 원자성이나 동시성 보장을 주장하지 않는다.

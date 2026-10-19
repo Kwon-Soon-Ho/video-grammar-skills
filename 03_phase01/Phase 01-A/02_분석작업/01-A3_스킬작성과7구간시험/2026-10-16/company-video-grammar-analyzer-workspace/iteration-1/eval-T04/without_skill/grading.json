@@ -1,0 +1,47 @@
+{
+  "case_id": "T04",
+  "condition": "without_skill",
+  "recorded_at": "2026-10-16T06:25:14.610847+00:00",
+  "grader": "root source/meaning review; not independent human",
+  "reference_level": "human_confirmed",
+  "expectations": [
+    {
+      "text": "수주→매출→이익의 데이터 변화 순서",
+      "passed": true,
+      "evidence": "O4/O6/O7 수주→매출→영업이익 순서."
+    },
+    {
+      "text": "막대 상향 성장·원형 시계방향 채움·숫자 증가를 각각 식별",
+      "passed": true,
+      "evidence": "O4의 막대 바닥상향/원호시계/수치, O6/O7의 후속증가를 식별."
+    },
+    {
+      "text": "정착부 감속 관측",
+      "passed": true,
+      "evidence": "개별 수치 시퀀스 증가폭 감소가 실제원본과 일치; implementation_inferences에 감속과 양립/정확곡선불명 표기."
+    },
+    {
+      "text": "카드 틀 등장을 데이터 동작 순서와 혼동하지 않음",
+      "passed": true,
+      "evidence": "O3의 목표값·틀 먼저/이후유지를 내부동작과 구분."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4
+  },
+  "case_status": "requirements_satisfied",
+  "notes": [
+    "가감속 근거 연결은 간략하지만 고정 필수 기준 충족."
+  ],
+  "timing": null,
+  "tokens": null,
+  "telemetry_note": "per-run telemetry unavailable; no synthesized averages",
+  "eval_feedback": {
+    "suggestions": [
+      "Known exposed windows, one run per condition, same agent batches; this is regression evidence, not generalization accuracy."
+    ]
+  },
+  "additional_content_issues": []
+}

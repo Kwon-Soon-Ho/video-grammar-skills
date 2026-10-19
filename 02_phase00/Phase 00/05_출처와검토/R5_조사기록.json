@@ -1,0 +1,66 @@
+{
+  "version": "0.1.1",
+  "date": "2026-10-15",
+  "stage": "R5-1",
+  "sources": [
+    {
+      "id": "R5-W3C-CONTRAST",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "depth": "관련 본문 확인",
+      "scope": "일반/큰 글자 대비, pt와 CSS px, 로고 예외, 대비 반올림 금지, 최종 표시 조건",
+      "notes": "스킬은 18px/14px로 적었지만 공식 문서는 18pt/14pt bold. 영상 픽셀의 큰 글자 경계로 복사하지 않음. 로고 예외를 가독성 검수 면제로 쓰지 않음."
+    },
+    {
+      "id": "R5-W3C-COLOR",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html",
+      "depth": "관련 본문 확인",
+      "scope": "정보 전달을 색만으로 구분하지 않는 원칙",
+      "notes": "회사 영상에서 라벨/번호/형태를 함께 쓰는 참고. 전체 WCAG 적합성 판정 아님."
+    },
+    {
+      "id": "R5-DTCG-FORMAT",
+      "url": "https://www.designtokens.org/tr/2025.10/format/",
+      "depth": "문서 접근·구조 개요 확인, 조항 심층 검토 대기",
+      "scope": "값/타입/참조 구분의 후속 검토 후보",
+      "notes": "현행 자체형식을 DTCG/W3C 준수라고 표기하지 않음."
+    },
+    {
+      "id": "R5-HMAC-LIVE",
+      "url": "https://design.hmac.kr/?path=/story/foundation-color--all",
+      "depth": "현재 웹 읽기 도구 접근 실패",
+      "scope": "기존 2026-10-14 전사 정본 재사용",
+      "notes": "라이브 최신성 재검증 아님. Computer Use/AE 연결 변경 없음."
+    },
+    {
+      "id": "R5-VC-LIVE",
+      "url": "https://hanmac-designsystem.vercel.app/claude_app/index.html",
+      "depth": "현재 웹 읽기 도구 접근 실패",
+      "scope": "기존 2026-10-14 전사 정본 재사용",
+      "notes": "라이브 최신성 재검증 아님."
+    },
+    {
+      "id": "R5-W3C-NONTEXT",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html",
+      "depth": "관련 본문 확인",
+      "scope": "필요한 비텍스트 형태와 인접색 대비·예외",
+      "notes": "웹 기준의 영상 참고. 전체 WCAG/영상 접근성 인증 아님."
+    },
+    {
+      "id": "R5-DTCG-COLOR",
+      "url": "https://www.designtokens.org/tr/2025.10/color/",
+      "depth": "접근 및 색공간/성분/알파 구조 관련 절 확인",
+      "scope": "색공간/값/알파 명시의 참고",
+      "notes": "현행 자체 형식의 표준 준수/CMYK 변환 구현 아님."
+    }
+  ],
+  "skill_reference": {
+    "name": "design-tokens",
+    "path": "C:/Users/User/.codex/skills/design-tokens/SKILL.md",
+    "sha256": "ae21a8e8d705c8e5b4df621383fd74fa073a6ba0ee465a649953fb7819de47ec",
+    "depth": "SKILL.md 전체 정적 검토. 참조/코드 실행 없음.",
+    "adaptation": "역할/원색 구분·대비 산식 검토. 자동 명암팔레트/4px·UI 타입/다크모드는 채택하지 않음. 대비 큰 글자 px/pt 오류는 공식문서 기준으로 보정.",
+    "installed_or_modified": false
+  },
+  "whole_standard_reviewed": false,
+  "actual_media_reviewed": false
+}

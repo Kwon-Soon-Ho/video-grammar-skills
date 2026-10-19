@@ -1,0 +1,61 @@
+[
+  {
+    "kind": "term",
+    "matched_query": "단일 초점",
+    "qualifiers": {
+      "direction": "unknown"
+    },
+    "data": {
+      "id": "LAYOUT-SINGLE-FOCUS",
+      "axis": "layout",
+      "name_ko": "단일 초점",
+      "name_en": "Single focus",
+      "definition": "핵심 대상·문장 중심의 구성",
+      "aliases": [
+        "중심 집중형"
+      ],
+      "include_when": "핵심 하나",
+      "exclude_or_limit": "반드시 중앙 배치 아님",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    }
+  },
+  {
+    "kind": "reference_knowledge",
+    "data": {
+      "id": "KNOW-LAYOUT-SINGLE-FOCUS",
+      "term_id": "LAYOUT-SINGLE-FOCUS",
+      "name_ko": "단일 초점",
+      "definition": "핵심 대상·문장 중심의 구성",
+      "fit_conditions": "핵심 하나",
+      "limits": "회사 최신 기준: 모든 단일 초점 화면은 반드시 중앙 배치한다.",
+      "variant_dimensions": [
+        "요소 수",
+        "문구 길이",
+        "출력 비율",
+        "정보 관계",
+        "읽기·유지 시간"
+      ],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "related_ids": [
+        "SCREEN-HIERARCHY",
+        "SCREEN-TYPE-KO",
+        "SCREEN-TIME-READ"
+      ],
+      "company_examples": [],
+      "status": "reference",
+      "version": "0.1.1",
+      "application_reference_refs": [
+        "SRC-IMPECCABLE"
+      ]
+    }
+  }
+]

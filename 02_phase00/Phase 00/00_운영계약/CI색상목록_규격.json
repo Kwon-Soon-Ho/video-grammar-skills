@@ -1,0 +1,334 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CI색상목록 등록 계약",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.2.0"
+    },
+    "record_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "scope": {
+      "enum": [
+        "actual_registry",
+        "synthetic_example"
+      ]
+    },
+    "colors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "color_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "record_version": {
+            "type": "string",
+            "pattern": "^\\d+\\.\\d+\\.\\d+$"
+          },
+          "revision_state": {
+            "enum": [
+              "current",
+              "historical"
+            ]
+          },
+          "company_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "ci_asset_ref": {
+            "type": "object",
+            "properties": {
+              "asset_id": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "record_version": {
+                "type": "string",
+                "pattern": "^\\d+\\.\\d+\\.\\d+$"
+              },
+              "sha256": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            },
+            "required": [
+              "asset_id",
+              "record_version",
+              "sha256"
+            ],
+            "additionalProperties": false
+          },
+          "evidence_asset_ref": {
+            "type": "object",
+            "properties": {
+              "asset_id": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "record_version": {
+                "type": "string",
+                "pattern": "^\\d+\\.\\d+\\.\\d+$"
+              },
+              "sha256": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            },
+            "required": [
+              "asset_id",
+              "record_version",
+              "sha256"
+            ],
+            "additionalProperties": false
+          },
+          "source_level": {
+            "enum": [
+              "official_declared",
+              "vector_literal",
+              "raster_sample",
+              "ui_proposal"
+            ]
+          },
+          "label_in_source": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "raw_value": {
+            "type": "object",
+            "properties": {
+              "notation": {
+                "enum": [
+                  "HEX",
+                  "RGB",
+                  "CMYK",
+                  "PANTONE"
+                ]
+              },
+              "value": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  },
+                  {
+                    "type": "array",
+                    "items": {
+                      "type": "number"
+                    }
+                  }
+                ]
+              },
+              "declared_color_space": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "notation",
+              "value",
+              "declared_color_space"
+            ],
+            "additionalProperties": false
+          },
+          "screen_value": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "color_space": {
+                    "const": "srgb"
+                  },
+                  "hex": {
+                    "type": "string",
+                    "pattern": "^#[0-9A-F]{6}$"
+                  },
+                  "alpha": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  }
+                },
+                "required": [
+                  "color_space",
+                  "hex",
+                  "alpha"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          },
+          "normalization": {
+            "type": "object",
+            "properties": {
+              "method": {
+                "enum": [
+                  "none",
+                  "exact_srgb_identity",
+                  "documented_conversion",
+                  "vector_value_read",
+                  "raster_sample"
+                ]
+              },
+              "source_profile": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "notes": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              }
+            },
+            "required": [
+              "method",
+              "source_profile",
+              "notes"
+            ],
+            "additionalProperties": false
+          },
+          "evidence_locator": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "verification": {
+            "type": "object",
+            "properties": {
+              "state": {
+                "enum": [
+                  "draft",
+                  "source_checked",
+                  "rejected"
+                ]
+              },
+              "checked_by": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "checked_at": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "format": "date-time"
+              },
+              "notes": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              }
+            },
+            "required": [
+              "state",
+              "checked_by",
+              "checked_at",
+              "notes"
+            ],
+            "additionalProperties": false
+          },
+          "notes": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "observation": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "region": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  },
+                  "alpha_handling": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  },
+                  "background_handling": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  },
+                  "profile_assumption": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  }
+                },
+                "required": [
+                  "region",
+                  "alpha_handling",
+                  "background_handling",
+                  "profile_assumption"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          }
+        },
+        "required": [
+          "color_id",
+          "record_version",
+          "revision_state",
+          "company_id",
+          "ci_asset_ref",
+          "evidence_asset_ref",
+          "source_level",
+          "label_in_source",
+          "raw_value",
+          "screen_value",
+          "normalization",
+          "evidence_locator",
+          "verification",
+          "notes"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "notes": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    }
+  },
+  "required": [
+    "schema_version",
+    "record_version",
+    "scope",
+    "colors",
+    "notes"
+  ],
+  "additionalProperties": false,
+  "x-contract-version": "0.2.0",
+  "$id": "urn:hanmac:phase00:r1:colors:0.2.0"
+}

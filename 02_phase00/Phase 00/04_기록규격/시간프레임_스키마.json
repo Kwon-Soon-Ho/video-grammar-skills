@@ -1,0 +1,568 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:hanmac:phase00:r4-time:0.1.0",
+  "title": "R4-1 시간·프레임 독립 계약 초안 — 최소 DB 통합 전",
+  "x-contract-version": "0.1.0",
+  "x-draft-revision": "2026-10-15-independent-redteam",
+  "type": "object",
+  "properties": {
+    "contract_version": {
+      "const": "0.1.0"
+    },
+    "source_type": {
+      "enum": [
+        "synthetic_example",
+        "internal",
+        "external"
+      ]
+    },
+    "asset": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "version": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        }
+      },
+      "required": [
+        "id",
+        "version",
+        "sha256"
+      ],
+      "additionalProperties": false
+    },
+    "timelines": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "asset_ref": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "stream_index": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991
+          },
+          "duration": {
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "num": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "den": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 9007199254740991
+                  }
+                },
+                "required": [
+                  "num",
+                  "den"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "duration_evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "\\S"
+            },
+            "uniqueItems": true
+          },
+          "origin": {
+            "type": "object",
+            "properties": {
+              "method": {
+                "enum": [
+                  "verified_offset",
+                  "unknown"
+                ]
+              },
+              "pts": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^(0|-?[1-9][0-9]*)(?![\\s\\S])",
+                    "maxLength": 20
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "time_base": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "num": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 9007199254740991
+                      },
+                      "den": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 9007199254740991
+                      }
+                    },
+                    "required": [
+                      "num",
+                      "den"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "evidence_refs": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "\\S"
+                },
+                "uniqueItems": true
+              },
+              "limitations": {
+                "type": "string",
+                "pattern": "\\S"
+              }
+            },
+            "required": [
+              "method",
+              "pts",
+              "time_base",
+              "evidence_refs",
+              "limitations"
+            ],
+            "additionalProperties": false
+          },
+          "frame_rate_mode": {
+            "enum": [
+              "cfr",
+              "vfr",
+              "unknown"
+            ]
+          },
+          "nominal_fps": {
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "num": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "den": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 9007199254740991
+                  }
+                },
+                "required": [
+                  "num",
+                  "den"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "frame_count": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "limitations": {
+            "type": "string",
+            "pattern": "\\S"
+          }
+        },
+        "required": [
+          "id",
+          "asset_ref",
+          "stream_index",
+          "duration",
+          "duration_evidence_refs",
+          "origin",
+          "frame_rate_mode",
+          "nominal_fps",
+          "frame_count",
+          "limitations"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "periods": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "timeline_ref": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "parent_ref": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "\\S"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "kind": {
+            "enum": [
+              "range",
+              "instant",
+              "unknown"
+            ]
+          },
+          "start": {
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "num": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "den": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 9007199254740991
+                  }
+                },
+                "required": [
+                  "num",
+                  "den"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "end": {
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "num": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "den": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 9007199254740991
+                  }
+                },
+                "required": [
+                  "num",
+                  "den"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "uncertainty": {
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "num": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "den": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 9007199254740991
+                  }
+                },
+                "required": [
+                  "num",
+                  "den"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "unknown_reason": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "\\S"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "timeline_ref",
+          "parent_ref",
+          "kind",
+          "start",
+          "end",
+          "uncertainty",
+          "unknown_reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "frames": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "timeline_ref": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "period_ref": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "\\S"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "role": {
+            "enum": [
+              "within_period",
+              "context_before",
+              "context_after",
+              "unassigned"
+            ]
+          },
+          "source_pts": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^(0|-?[1-9][0-9]*)(?![\\s\\S])",
+                "maxLength": 20
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "pts_kind": {
+            "enum": [
+              "original_pts",
+              "best_effort_estimate",
+              "unknown"
+            ]
+          },
+          "time_base": {
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "num": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "den": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 9007199254740991
+                  }
+                },
+                "required": [
+                  "num",
+                  "den"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "source_frame_ordinal": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "requested": {
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "num": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "den": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 9007199254740991
+                  }
+                },
+                "required": [
+                  "num",
+                  "den"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "actual": {
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "num": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "den": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 9007199254740991
+                  }
+                },
+                "required": [
+                  "num",
+                  "den"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "mapping_state": {
+            "enum": [
+              "mapped",
+              "unmapped"
+            ]
+          },
+          "selection_policy": {
+            "enum": [
+              "nearest",
+              "at_or_after",
+              "at_or_before",
+              "manual",
+              "unknown"
+            ]
+          },
+          "limitations": {
+            "type": "string",
+            "pattern": "\\S"
+          }
+        },
+        "required": [
+          "id",
+          "timeline_ref",
+          "period_ref",
+          "role",
+          "source_pts",
+          "pts_kind",
+          "time_base",
+          "source_frame_ordinal",
+          "requested",
+          "actual",
+          "mapping_state",
+          "selection_policy",
+          "limitations"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "notes": {
+      "type": "string",
+      "pattern": "\\S"
+    }
+  },
+  "required": [
+    "contract_version",
+    "source_type",
+    "asset",
+    "timelines",
+    "periods",
+    "frames",
+    "notes"
+  ],
+  "additionalProperties": false
+}

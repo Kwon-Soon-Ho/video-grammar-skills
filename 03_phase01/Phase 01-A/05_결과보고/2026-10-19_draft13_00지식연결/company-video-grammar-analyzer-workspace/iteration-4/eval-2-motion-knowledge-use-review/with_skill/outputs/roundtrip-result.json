@@ -1,0 +1,562 @@
+{
+  "scope": "actual query -> current definition/use -> original prior records and evidence pins -> temporal relation/review audit; no visual truth or company approval",
+  "passed": true,
+  "time_delay_hits": [
+    "A-M3",
+    "B-M3"
+  ],
+  "excluded_proposal_hits": 0,
+  "traces": [
+    {
+      "case": "VC-CASE-A",
+      "region": "A-02",
+      "definition": "A-M3",
+      "definition_version": "local-motion-knowledge-review-0.1",
+      "query_concept": "TIME-DELAY",
+      "content": "실제 발생 매출 12.9억원을 주황 금액으로 강조한다. 수주·매출 중복 제외 문구를 동반한다. 증가 중 표시 숫자는 해당 초의 실적 측정치가 아니다.",
+      "time": {
+        "start": 108,
+        "end": 112
+      },
+      "claims": [
+        {
+          "id": "C-A-M3",
+          "text": "[기존 관측 재사용+제공 시트 대조] 숫자 끝값 최초 관측 경계 (110,110.5]초. 110.5/111/112초 끝값 유지 표본이 있으나 연속 유지 전수 확인은 아님. 도상은 111초 상태→112초 완성 상태 차이가 있어 숫자보다 뒤에 완성된다. 도상의 정확 완료 경계는 이 두 표본 사이의 미검수 과정으로 남긴다. 표본: 108s 원형 받침이 보임 / 108.5s 받침/낮은 내부 형태 / 109s 낮은 막대 형태 / 109.5s 매출 0.8억원 및 막대 조립 진행 / 110s 10.8억원·막대 성장 / 110.5s 12.9억원 첫 표본 확인 / 111s 12.9억원 유지; 112초의 완성 상승 화살표와 다름 / 112s 기존 연결 PNG를 별도 확인: 12.9억원과 완성된 상승 화살표. 6개 창 밖 문맥 근거",
+          "basis_kind": "observed",
+          "evidence_ids": [
+            "E-A-M3",
+            "E-A112"
+          ],
+          "source_record_ids": [
+            "SR1",
+            "SR3",
+            "SR4"
+          ]
+        },
+        {
+          "id": "C-A-M3-interpretation",
+          "text": "실제 발생 매출 12.9억원을 주황 금액으로 강조한다. 수주·매출 중복 제외 문구를 동반한다. 증가 중 표시 숫자는 해당 초의 실적 측정치가 아니다. 기능·재사용 조건은 화면과 기존 기록에 기초한 분석자의 해석이며 원제작 의도 미확인.",
+          "basis_kind": "inferred",
+          "evidence_ids": [
+            "E-A-M3",
+            "E-A112"
+          ],
+          "source_record_ids": [
+            "SR1",
+            "SR3",
+            "SR4"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "id": "EA3-number",
+          "unit_id": "A-M3",
+          "title": "매출 표시 0.8→10.8→12.9억원 끝값 도달",
+          "status": "observed_sampled",
+          "time": {
+            "start": 109.5,
+            "end": 110.5
+          },
+          "claim_ids": [
+            "C-A-M3"
+          ],
+          "time_semantics": "sample-supported range; not exact event duration",
+          "end_bounds": [
+            110,
+            110.5
+          ]
+        },
+        {
+          "id": "EA3-icon",
+          "unit_id": "A-M3",
+          "title": "받침/막대→111 미완성→112 상승 화살표 완성",
+          "status": "observed_sampled",
+          "time": {
+            "start": 108,
+            "end": 112
+          },
+          "claim_ids": [
+            "C-A-M3"
+          ],
+          "time_semantics": "sample-supported range; not exact event duration",
+          "end_bounds": [
+            111,
+            112
+          ]
+        },
+        {
+          "id": "EA3-hold",
+          "unit_id": "A-M3",
+          "title": "12.9억원 유지 표본(연속 검수 아님)",
+          "status": "observed_sampled",
+          "time": {
+            "start": 110.5,
+            "end": 112
+          },
+          "claim_ids": [
+            "C-A-M3"
+          ],
+          "time_semantics": "sample-supported range; not exact event duration"
+        }
+      ],
+      "event_links": [
+        {
+          "from": "EA3-icon",
+          "to": "EA3-number",
+          "relation": "overlaps",
+          "basis_kind": "observed",
+          "claim_ids": [
+            "C-A-M3"
+          ]
+        },
+        {
+          "from": "EA3-icon",
+          "to": "EA3-number",
+          "relation": "continues_after",
+          "basis_kind": "observed",
+          "claim_ids": [
+            "C-A-M3"
+          ]
+        },
+        {
+          "from": "EA3-hold",
+          "to": "EA3-icon",
+          "relation": "accompanies",
+          "basis_kind": "observed",
+          "claim_ids": [
+            "C-A-M3"
+          ]
+        }
+      ],
+      "original_records": [
+        {
+          "id": "SR1",
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\motion\\01_계약_수집기록.md",
+          "sha256": "08c97ec66a4e4efe3d7e7f0bc5c5195aee1f4a3d753cfc1c8b174c1457950003",
+          "role": "prior_analysis_preserved"
+        },
+        {
+          "id": "SR3",
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\motion\\03_재사용단위_색인.md",
+          "sha256": "3c0371b70fd7df7f316e85140dd8aaac973571508fa4d5b104434ffa466f941d",
+          "role": "prior_analysis_preserved"
+        },
+        {
+          "id": "SR4",
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\motion\\05_근거와_실행기록.md",
+          "sha256": "b33895a6772203d8a06f3426b5428e8dbbe82be014776b8e160a98f9201f3e07",
+          "role": "prior_analysis_preserved"
+        }
+      ],
+      "current_evidence": [
+        {
+          "id": "E-A-M3",
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\motion\\evidence\\contract-number.jpg",
+          "sha256": "26dd1da7fc06c12f44f5a981799138b6106b40207b068c8d41c1e4e8bdfb37d5",
+          "time": {
+            "start": 108,
+            "end": 111
+          },
+          "kind": "provided_contact_sheet",
+          "sample_interval_seconds": 0.5,
+          "continuous_observation": false,
+          "time_mapping_status": "imported_labels_and_prior_record_not_revalidated_from_MP4",
+          "dimensions": {
+            "width": 2160,
+            "height": 705
+          },
+          "transform": "prior whole-frame proportional reduction/contact-sheet; original 7680x2160 per input; exact sheet assembly parameters unverified"
+        },
+        {
+          "id": "E-A112",
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\value-creation-pilot-20261019\\extraction\\cases\\VALUE\\contract\\f_03360_112.000.png",
+          "sha256": "03df45acfa4d8539b06511984c16e72e1802afafd34b5d29c72850d9cb3884f3",
+          "time": {
+            "start": 112,
+            "end": 112
+          },
+          "kind": "existing_linked_PNG_context",
+          "dimensions": {
+            "width": 7680,
+            "height": 2160
+          },
+          "time_mapping_status": "existing_filename_and_prior_analysis_not_MP4_pts_revalidation",
+          "continuous_observation": false
+        }
+      ],
+      "actual_reviews": [
+        {
+          "id": "RV9",
+          "unit_id": "A-M3",
+          "criterion_id": "MR-04",
+          "status": "pass",
+          "reason": "기존 기록의 누적/순서/겹침을 시트의 시작·중간·끝과 대조하여 현재 연결 기록에 보존했다. 읽기 순서의 전달 효과나 원본 의도 적합성 통과는 아님.",
+          "evidence_ids": [
+            "E-A-M3",
+            "E-A112"
+          ],
+          "claim_ids": [
+            "C-A-M3"
+          ],
+          "reviewer": "AI self-review, 2026-10-19",
+          "scope": "6개 기존 창의 기록 일관성·시간관계 보존에 대한 자기 검토",
+          "next_probe": "원본 연속 관찰이나 효과 검증은 별도 요청 시"
+        },
+        {
+          "id": "RV10",
+          "unit_id": "A-M3",
+          "criterion_id": "AP-06",
+          "status": "hold",
+          "reason": "추적한 동일 특징의 진행 중 변화율을 측정하지 않았다. 정착 또는 순서 확인만으로 이징/속도 적합성을 통과시킬 수 없다.",
+          "evidence_ids": [
+            "E-A-M3",
+            "E-A112"
+          ],
+          "claim_ids": [
+            "C-A-M3"
+          ],
+          "reviewer": "AI self-review, 2026-10-19",
+          "scope": "가감속 원값/곡선의 판정 가능성",
+          "next_probe": "해당 대상·같은 속성의 진행 중 표본을 별도 확인하고 오차 포함 변화율 비교"
+        },
+        {
+          "id": "RV11",
+          "unit_id": "A-M3",
+          "criterion_id": "IP-05",
+          "status": "not_reviewed",
+          "reason": "MP4·오디오·시나리오 입력이 없고 청취하지 않았다. 음성/설명과 동작 대응을 실제 검토하지 않았다.",
+          "evidence_ids": [
+            "E-A-M3",
+            "E-A112"
+          ],
+          "claim_ids": [
+            "C-A-M3"
+          ],
+          "reviewer": "AI self-review, 2026-10-19",
+          "scope": "실제 발화와 화면 시간 대응",
+          "next_probe": "별도 요청과 음성/시나리오 근거 확보 후 대응"
+        },
+        {
+          "id": "RV12",
+          "unit_id": "A-M3",
+          "criterion_id": "Q-MOTION-01",
+          "status": "hold",
+          "reason": "정보의 표본상 완성 차이는 기록했으나 완성 후 퇴장·발화·시청 조건이 없어 충분한 읽기 시간은 판정할 수 없다.",
+          "evidence_ids": [
+            "E-A-M3",
+            "E-A112"
+          ],
+          "claim_ids": [
+            "C-A-M3"
+          ],
+          "reviewer": "AI self-review, 2026-10-19",
+          "scope": "실제 시청에서 완성 정보의 읽기 유지 충분성",
+          "next_probe": "완성 이후 유지·퇴장/발화/시청 환경을 확보하고 디자인/필요시 시청자 검토"
+        },
+        {
+          "id": "RV13",
+          "unit_id": "A-M3",
+          "criterion_id": "MR-08",
+          "status": "pass",
+          "reason": "변화 중 숫자와 창 끝/끝값을 구별하고 중간 표시를 해당 초의 실적 데이터로 저장하지 않았다. 실제 집계 정확성은 검수하지 않았다.",
+          "evidence_ids": [
+            "E-A-M3",
+            "E-A112"
+          ],
+          "claim_ids": [
+            "C-A-M3"
+          ],
+          "reviewer": "AI self-review, 2026-10-19",
+          "scope": "분석 기록에서 값 변화의 의미를 과장하지 않았는지 검토",
+          "next_probe": "사업 집계 사실·분모는 내용 담당자 근거로 후속 검토"
+        }
+      ]
+    },
+    {
+      "case": "VC-CASE-B",
+      "region": "B-04→B-05",
+      "definition": "B-M3",
+      "definition_version": "local-motion-knowledge-review-0.1",
+      "query_concept": "TIME-DELAY",
+      "content": "프로젝트 지원 주요 활동: BIM 설계 19.4억원/3건·약82%가 핵심, BIM 지원 1.6억원/7건·해외사업 지원 1.3억원/1건·디자인 지원 1.4억원/15건이 보조이다. 총량과 하위 유형의 관계이며 금액/건수를 합쳐 하나의 단위로 만들지 않는다.",
+      "time": {
+        "start": 147,
+        "end": 150
+      },
+      "claims": [
+        {
+          "id": "C-B-M3",
+          "text": "[기존 관측 재사용+제공 시트 대조] 비중 끝값 최초 관측 (148.5,149]초. 149초 82%가 보인 뒤에도 149.5초 도넛 다른 분할색/보조 카드 구성이 보강된다. BIM 행과 작은 카드의 막대도 후속 표본에서 더 채워진다는 기존 기록을 보존하되 정확 길이·데이터 스케일은 측정하지 않았다. 완성 비중 숫자와 진행 중 도형/카드가 한 시점에 공존한다. 표본: 147s 세 영상 구획과 하단 라벨 / 147.5s 영상 3구획 유지 / 148s 오른쪽 정보판·미완성 제목·약44% / 148.5s 약64%·첫 보조 카드, 배경 지도/주 도로 중심으로 재구성 / 149s 약82%·추가 항목, 디자인 지원 카드는 작게 보임 / 149.5s 82% 유지·3카드가 더 채워짐·도넛의 보조 분할색이 추가·디자인 카드가 더 크게 보임 / 150s 대표 구성 상태. 기존 연결 원본 PNG에서 제목/금액·건수/막대/약82% 귀속을 확인",
+          "basis_kind": "observed",
+          "evidence_ids": [
+            "E-B-M3",
+            "E-B150"
+          ],
+          "source_record_ids": [
+            "SR2",
+            "SR3",
+            "SR4"
+          ]
+        },
+        {
+          "id": "C-B-M3-interpretation",
+          "text": "프로젝트 지원 주요 활동: BIM 설계 19.4억원/3건·약82%가 핵심, BIM 지원 1.6억원/7건·해외사업 지원 1.3억원/1건·디자인 지원 1.4억원/15건이 보조이다. 총량과 하위 유형의 관계이며 금액/건수를 합쳐 하나의 단위로 만들지 않는다. 기능·재사용 조건은 화면과 기존 기록에 기초한 분석자의 해석이며 원제작 의도 미확인.",
+          "basis_kind": "inferred",
+          "evidence_ids": [
+            "E-B-M3",
+            "E-B150"
+          ],
+          "source_record_ids": [
+            "SR2",
+            "SR3",
+            "SR4"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "id": "EB3-number",
+          "unit_id": "B-M3",
+          "title": "비중 약44→64→82% 도달",
+          "status": "observed_sampled",
+          "time": {
+            "start": 148,
+            "end": 149
+          },
+          "claim_ids": [
+            "C-B-M3"
+          ],
+          "time_semantics": "sample-supported range; not exact event duration",
+          "end_bounds": [
+            148.5,
+            149
+          ]
+        },
+        {
+          "id": "EB3-follow",
+          "unit_id": "B-M3",
+          "title": "도넛 분할색/카드·막대 보강이 82% 도달 뒤에도 이어짐",
+          "status": "observed_sampled",
+          "time": {
+            "start": 148.5,
+            "end": 150
+          },
+          "claim_ids": [
+            "C-B-M3"
+          ],
+          "time_semantics": "sample-supported range; not exact event duration"
+        },
+        {
+          "id": "EB3-size",
+          "unit_id": "B-M3",
+          "title": "디자인 지원 카드 겉보기 크기/가시성 차이",
+          "status": "observed_sampled",
+          "time": {
+            "start": 149,
+            "end": 149.5
+          },
+          "claim_ids": [
+            "C-B-M3"
+          ],
+          "time_semantics": "sample-supported range; not exact event duration"
+        },
+        {
+          "id": "EB3-bg",
+          "unit_id": "B-M3",
+          "title": "영상3구획→지도띠/주 도로 배경 재구성",
+          "status": "observed_sampled",
+          "time": {
+            "start": 147.5,
+            "end": 149
+          },
+          "claim_ids": [
+            "C-B-M3"
+          ],
+          "time_semantics": "sample-supported range; not exact event duration"
+        }
+      ],
+      "event_links": [
+        {
+          "from": "EB3-follow",
+          "to": "EB3-number",
+          "relation": "continues_after",
+          "basis_kind": "observed",
+          "claim_ids": [
+            "C-B-M3"
+          ]
+        },
+        {
+          "from": "EB3-follow",
+          "to": "EB3-number",
+          "relation": "overlaps",
+          "basis_kind": "observed",
+          "claim_ids": [
+            "C-B-M3"
+          ]
+        },
+        {
+          "from": "EB3-size",
+          "to": "EB3-follow",
+          "relation": "accompanies",
+          "basis_kind": "observed",
+          "claim_ids": [
+            "C-B-M3"
+          ]
+        },
+        {
+          "from": "EB3-bg",
+          "to": "EB3-number",
+          "relation": "overlaps",
+          "basis_kind": "observed",
+          "claim_ids": [
+            "C-B-M3"
+          ]
+        }
+      ],
+      "original_records": [
+        {
+          "id": "SR2",
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\motion\\02_프로젝트지원_수집기록.md",
+          "sha256": "ce5da90fd1093198f9905933b2ba00d405b27eeee6c6bb08bf6b947839cee633",
+          "role": "prior_analysis_preserved"
+        },
+        {
+          "id": "SR3",
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\motion\\03_재사용단위_색인.md",
+          "sha256": "3c0371b70fd7df7f316e85140dd8aaac973571508fa4d5b104434ffa466f941d",
+          "role": "prior_analysis_preserved"
+        },
+        {
+          "id": "SR4",
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\motion\\05_근거와_실행기록.md",
+          "sha256": "b33895a6772203d8a06f3426b5428e8dbbe82be014776b8e160a98f9201f3e07",
+          "role": "prior_analysis_preserved"
+        }
+      ],
+      "current_evidence": [
+        {
+          "id": "E-B-M3",
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\motion\\evidence\\project-panel.jpg",
+          "sha256": "7c8c4034b590f8f649dd296c60539a97e76d83d0075b7ad9f9369aaec494e66a",
+          "time": {
+            "start": 147,
+            "end": 150
+          },
+          "kind": "provided_contact_sheet",
+          "sample_interval_seconds": 0.5,
+          "continuous_observation": false,
+          "time_mapping_status": "imported_labels_and_prior_record_not_revalidated_from_MP4",
+          "dimensions": {
+            "width": 2160,
+            "height": 705
+          },
+          "transform": "prior whole-frame proportional reduction/contact-sheet; original 7680x2160 per input; exact sheet assembly parameters unverified"
+        },
+        {
+          "id": "E-B150",
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\value-creation-pilot-20261019\\extraction\\cases\\VALUE\\project\\f_04500_150.000.png",
+          "sha256": "104badec06b82828c80821ca03d0d95e0b3860c3f3b3627a7232a13149233bf4",
+          "time": {
+            "start": 150,
+            "end": 150
+          },
+          "kind": "existing_linked_PNG",
+          "dimensions": {
+            "width": 7680,
+            "height": 2160
+          },
+          "time_mapping_status": "existing_filename_and_prior_analysis_not_MP4_pts_revalidation",
+          "continuous_observation": false
+        }
+      ],
+      "actual_reviews": [
+        {
+          "id": "RV23",
+          "unit_id": "B-M3",
+          "criterion_id": "MR-04",
+          "status": "pass",
+          "reason": "기존 기록의 누적/순서/겹침을 시트의 시작·중간·끝과 대조하여 현재 연결 기록에 보존했다. 읽기 순서의 전달 효과나 원본 의도 적합성 통과는 아님.",
+          "evidence_ids": [
+            "E-B-M3",
+            "E-B150"
+          ],
+          "claim_ids": [
+            "C-B-M3"
+          ],
+          "reviewer": "AI self-review, 2026-10-19",
+          "scope": "6개 기존 창의 기록 일관성·시간관계 보존에 대한 자기 검토",
+          "next_probe": "원본 연속 관찰이나 효과 검증은 별도 요청 시"
+        },
+        {
+          "id": "RV24",
+          "unit_id": "B-M3",
+          "criterion_id": "AP-06",
+          "status": "hold",
+          "reason": "추적한 동일 특징의 진행 중 변화율을 측정하지 않았다. 정착 또는 순서 확인만으로 이징/속도 적합성을 통과시킬 수 없다.",
+          "evidence_ids": [
+            "E-B-M3",
+            "E-B150"
+          ],
+          "claim_ids": [
+            "C-B-M3"
+          ],
+          "reviewer": "AI self-review, 2026-10-19",
+          "scope": "가감속 원값/곡선의 판정 가능성",
+          "next_probe": "해당 대상·같은 속성의 진행 중 표본을 별도 확인하고 오차 포함 변화율 비교"
+        },
+        {
+          "id": "RV25",
+          "unit_id": "B-M3",
+          "criterion_id": "IP-05",
+          "status": "not_reviewed",
+          "reason": "MP4·오디오·시나리오 입력이 없고 청취하지 않았다. 음성/설명과 동작 대응을 실제 검토하지 않았다.",
+          "evidence_ids": [
+            "E-B-M3",
+            "E-B150"
+          ],
+          "claim_ids": [
+            "C-B-M3"
+          ],
+          "reviewer": "AI self-review, 2026-10-19",
+          "scope": "실제 발화와 화면 시간 대응",
+          "next_probe": "별도 요청과 음성/시나리오 근거 확보 후 대응"
+        },
+        {
+          "id": "RV26",
+          "unit_id": "B-M3",
+          "criterion_id": "Q-MOTION-01",
+          "status": "hold",
+          "reason": "정보의 표본상 완성 차이는 기록했으나 완성 후 퇴장·발화·시청 조건이 없어 충분한 읽기 시간은 판정할 수 없다.",
+          "evidence_ids": [
+            "E-B-M3",
+            "E-B150"
+          ],
+          "claim_ids": [
+            "C-B-M3"
+          ],
+          "reviewer": "AI self-review, 2026-10-19",
+          "scope": "실제 시청에서 완성 정보의 읽기 유지 충분성",
+          "next_probe": "완성 이후 유지·퇴장/발화/시청 환경을 확보하고 디자인/필요시 시청자 검토"
+        },
+        {
+          "id": "RV27",
+          "unit_id": "B-M3",
+          "criterion_id": "MR-08",
+          "status": "pass",
+          "reason": "변화 중 숫자와 창 끝/끝값을 구별하고 중간 표시를 해당 초의 실적 데이터로 저장하지 않았다. 실제 집계 정확성은 검수하지 않았다.",
+          "evidence_ids": [
+            "E-B-M3",
+            "E-B150"
+          ],
+          "claim_ids": [
+            "C-B-M3"
+          ],
+          "reviewer": "AI self-review, 2026-10-19",
+          "scope": "분석 기록에서 값 변화의 의미를 과장하지 않았는지 검토",
+          "next_probe": "사업 집계 사실·분모는 내용 담당자 근거로 후속 검토"
+        }
+      ]
+    }
+  ]
+}

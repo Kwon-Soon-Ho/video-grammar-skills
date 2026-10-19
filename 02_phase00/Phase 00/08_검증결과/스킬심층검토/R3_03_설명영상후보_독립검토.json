@@ -1,0 +1,538 @@
+{
+  "id": "R3-03-PRESENTATION-EXPLANATION-INDEPENDENT-REVIEW",
+  "reviewed_on": "2026-10-14",
+  "reviewer": "foundation_redteam",
+  "state": "source_read_review_complete_conditional_transfer",
+  "scope": "발표·설명·정보 그래픽 후보 9개 로컬 패키지의 entrypoint 및 해당 패키지에 실제 들어 있는 호출 참조를 정적 읽기했다. Phase 00에는 공통 언어·구조·기록·출처·검수 지식만 선별하고 영상 분석 구현은 01-A, 새 기획·창작은 02로 분리한다.",
+  "previous_review": "R3_03_모션로컬_독립검토.json은 유지. 이 문서는 발표·설명 분야의 추가 검토다.",
+  "actions_not_performed": [
+    "원문 코드 실행",
+    "스킬 설치",
+    "외부 통신",
+    "D 파일 수정",
+    "새 시나리오 작성",
+    "영상/PPT 제작",
+    "영상 분석 구현",
+    "실영상 효과/맞춤 스킬 성능 평가"
+  ],
+  "depth_policy": "full_text_static_review는 전문의 의미·조건·반례·내부 예제·의존성을 읽었다는 뜻이다. 실행·효과·출처 진실성 검증을 뜻하지 않는다. empty_file_verified는 내용 0바이트 확인이며 내용 검토 분모에서 제외한다. 미확보 scripts·외부 링크·추가 sibling skills는 별도로 표시한다.",
+  "source_and_runtime_audit": [
+    {
+      "packages": [
+        "creative-brief",
+        "explainer-video",
+        "presentation-video",
+        "animated-infographic",
+        "diagram-animation",
+        "chart-animation",
+        "motion-art-direction"
+      ],
+      "standalone_executable_present": false,
+      "embedded_examples_present": true,
+      "license_file_present": false,
+      "commit_in_package": null,
+      "provenance": "로컬 설치 복사본·SHA256. iart.ai footer는 상류 저장소·고정 커밋·허가 증거가 아님. real-world worked example도 실제 회사 사례로 확인된 것이 아니다.",
+      "dependencies_if_executed": [
+        "Node/npm/npx",
+        "React/ReactDOM",
+        "Remotion 및 @remotion/cli/transitions/media-utils",
+        "GSAP",
+        "D3/d3-scale/d3-shape",
+        "csv-parse",
+        "브라우저 DOM/Web Animations/requestAnimationFrame",
+        "Framer Motion",
+        "Playwright",
+        "Bash",
+        "음성 파일·TTS/녹음 도구",
+        "폰트·SVG·데이터"
+      ],
+      "missing_helpers": [
+        "explainer-video/presentation-video/animated-infographic/chart-animation: scripts/contact-sheet.sh, scripts/probe-mp4.sh, scripts/README.md",
+        "diagram-animation: scripts/seek-shot.sh, scripts/contact-sheet.sh, scripts/README.md",
+        "chart-animation 참조: scripts/build-props.mjs 및 외부 data/props/project fixture"
+      ],
+      "missing_helper_policy": "문서 안 예제는 읽었지만 패키지로 완비된 실행 파이프라인이라고 기록하지 않는다. 경로를 추측 생성하거나 다운로드·실행하지 않았다."
+    },
+    {
+      "packages": [
+        "visual-qa"
+      ],
+      "standalone_executable_present": false,
+      "embedded_examples_present": "도구 호출 예·프롬프트 텍스트",
+      "license_file_present": false,
+      "license_claim": "README MIT 표기만. 별도 copyright/permission notice·커밋 없음.",
+      "dependencies_if_executed": [
+        "실제 출력 이미지",
+        "시각 입력 모델",
+        "브라우저/화면 캡처 도구 또는 제공 이미지"
+      ],
+      "tool_compatibility": "browser/image/nodes/Peekaboo 문자열은 현재 Codex 도구 계약이 아니다. 이 검토에서 호출하지 않음.",
+      "provenance": "로컬 복사본의 파일 해시만 확인. 캡처 도구나 외부 모델 사용은 추가 실행 환경 검토 대상."
+    },
+    {
+      "packages": [
+        "visual-style-direction"
+      ],
+      "license_file_present": true,
+      "license_observed": "MIT; Copyright (c) 2026 generative-media-skills contributors. 상당량 재사용 시 notice 보존.",
+      "upstream_repository": "calesthio/generative-media-skills",
+      "upstream_commit": "8c85352d5d75d4dcbe58480bd138e37b9742bab1",
+      "local_adaptation": "SOURCE.json에는 2026-10-12 suite 1.2.0 Anthropic Skill Creator 기반 local_adaptation이 있다. adaptations=[]와 구분하며 현재 파일이 상류 원문과 byte-identical이라고 주장하지 않는다.",
+      "reference_status": "guide의 외부 표준·연구·법률 링크와 2026-07-09 확인 표기를 읽었다. 이번 검토는 외부 원문을 새로 조회하거나 최신성을 확인하지 않았다.",
+      "runtime": "독립 실행 코드 없음. JSON/DTCG·문서 예제와 생성/검수 작업 지침이 있으나 Phase 00에서는 실행하지 않는다."
+    }
+  ],
+  "material_findings": [
+    {
+      "id": "PE-01",
+      "priority": "high",
+      "source_paths": [
+        "presentation-video/SKILL.md",
+        "explainer-video/SKILL.md",
+        "creative-brief/SKILL.md"
+      ],
+      "finding": "내레이션이 시간을 소유·한 슬라이드 한 메시지·pitch tension→solution→proof→ask·항상 CTA·VO-first는 narrated marketing/pitch의 조건부 구조다. 비내레이션 발표·기술 설명·회의 의사결정·동등 비교·공정 교육까지 강제하면 필요한 정보를 삭제한다.",
+      "transfer": "시청 목적·관계·정보 완성/유지·내레이션 대응·끝맺음 역할을 기록한다. 기술·비교·연혁·설명·토론 유형은 자체 구조 후보로 둔다. 음성이 없으면 시각 정보의 읽기·동작 설명 기준을 사용한다.",
+      "positive_example": "토론 슬라이드에 선택지·판단 기준·근거를 함께 유지해 결정 목적을 지원한다.",
+      "counterexample": "두 공법 비교를 한 메시지로 줄이라며 B의 단점·단위·조건을 삭제하거나 기술 교육의 끝에 판매 CTA를 넣는다."
+    },
+    {
+      "id": "PE-02",
+      "priority": "high",
+      "source_paths": [
+        "presentation-video/SKILL.md",
+        "presentation-video/references/sequencing.md",
+        "presentation-video/references/slide-components.md"
+      ],
+      "finding": "presentation-video는 PPTX/Slides의 native 편집·추출 스킬이 아니라 deck outline/data를 Remotion으로 재제작하는 스킬이다. 제목·본문·도표·발표자 노트·animation build를 실제 deck에서 읽는 기능은 구현되어 있지 않다.",
+      "transfer": "Phase 00 지식에는 슬라이드 역할·제목 주장/라벨·도표·주석·발표자 노트·시간 build의 용어와 필요 입력을 선별한다. 실제 PPTX 읽기·변환 구현은 별도 도구 계약/후속 단계로 둔다. 신규 발표·대본 작성은 02다.",
+      "not_a_completion_claim": "이 9패키지를 읽은 것으로 PPT 운영 기능·완성도 검증까지 충족했다고 선언하지 않는다."
+    },
+    {
+      "id": "PE-03",
+      "priority": "high",
+      "source_paths": [
+        "presentation-video/references/sequencing.md",
+        "presentation-video/references/slide-components.md"
+      ],
+      "finding": "정적 코드상 total은 slide duration의 합인데 TransitionSeries overlap을 빼지 않는다. 추가 transition 예산 설명은 계산·assembly에 구현되어 있지 않다. title/section data에 audioUrl을 요구하지만 render 함수는 해당 오디오를 전달·마운트하지 않는다. 고정 index×8프레임 bullet reveal은 VO 단어와 정렬됐다는 증거가 아니다.",
+      "risk": "동시 음성/빈 마지막 구간/일부 음성 누락·문장과 build 불일치 가능. frame-deterministic과 semantic sync는 다른 검증이다.",
+      "transfer": "원본·발화·자막·화면 event·교차 구간·총길이를 별도 관계로 기록하는 검수 계약만 선별한다. 실제 동기화·렌더 성공은 후속 시험이며 source의 cannot drift를 성능 근거로 저장하지 않는다."
+    },
+    {
+      "id": "PE-04",
+      "priority": "high",
+      "source_paths": [
+        "chart-animation/references/data-pipeline.md",
+        "chart-animation/references/bar-chart-race.md",
+        "chart-animation/SKILL.md"
+      ],
+      "finding": "CSV Number('')가0을 반환하므로 finite 검사만으로 결측을 잡지 못한다. gap forward-fill/보간, 항목 묶기, 단위기호 제거는 데이터의 의미를 바꿀 수 있다. 같은 길이 row 시간·eased 중간값은 실제 시간·실측 중간값이 아니다.",
+      "transfer": "원본값/단위/기간/결측/집계·보간·표시값의 지위를 구분한다. 결측은 결측으로 보존하고 임의 보간을 실측에 합치지 않는다. 모든 관측을 시계열로 강제하지 않는다.",
+      "positive_example": "2019/2022 실측값만 있으면 중간 움직임을 연출 보간으로 표시하고 관측 연도별 자료를 보존한다.",
+      "counterexample": "빈 수치를0으로 바꾸거나 eased count-up의 중간 숫자를2020 실적으로 저장한다."
+    },
+    {
+      "id": "PE-05",
+      "priority": "high",
+      "source_paths": [
+        "chart-animation/references/bar-chart-race.md",
+        "chart-animation/references/data-pipeline.md",
+        "diagram-animation/references/diagram-and-chart-recipes.md"
+      ],
+      "finding": "rank를 매 프레임 정수로 정렬해 y=rank×간격에 대입하는 코드는 rank 보간이 아니며 overtaking 시 위치가 점프한다. leader-relative scale은 공통 시간 비교를 왜곡할 수 있고 예제에는 실제 axis/unit 표기가 없다. LineReveal은 scaleLinear를 d3-shape에서 import하여 같은 줄 주석의 d3-scale 지시와 불일치한다. palette(name,i)는index를사용해 dataset순서에 따라색이 바뀐다.",
+      "transfer": "값→기하학 mapping과 temporal interpolation을 분리하고 공통 축·척도 변화·범례·시간 대응·항목 식별·반례를 검수한다. 코드의 정합성·실제 차트 효과는 미검증으로 표시한다."
+    },
+    {
+      "id": "PE-06",
+      "priority": "high",
+      "source_paths": [
+        "animated-infographic/SKILL.md",
+        "animated-infographic/references/sequenced-infographic.md",
+        "diagram-animation/SKILL.md",
+        "diagram-animation/references/diagram-and-chart-recipes.md",
+        "explainer-video/SKILL.md"
+      ],
+      "finding": "always node→edge→label·never everything at once·고정 reveal hierarchy·3~5항목·한 counter·최소hold는 휴리스틱이다. spring이 bar 기하에 직접 곱해지면 수치를 일시 초과할 수 있고 unconditional Math.round는 소수 정밀도를 잃는다. 선을 그리거나 packet을 움직이는 것만으로 실제 공정·연결 방향·인과가 검증되지 않는다.",
+      "transfer": "기술 형상·공통 척도·실제 값 정밀도는 보존한다. 노드명/선명/범례가 먼저 필요한 장면과 동등 비교는 다른 reveal을 허용한다. count-up·flow는 연출인지 데이터인지 표시한다.",
+      "positive_example": "공정도를 단계별 강조하되 관련 명칭·관계·전체 흐름은 읽을 수 있게 유지한다.",
+      "counterexample": "명칭 없는 노드를 pop부터 시키거나 반례·병렬 관계를 누락하고, bridge 도면을 bounce로 찌그러뜨린다."
+    },
+    {
+      "id": "PE-07",
+      "priority": "medium",
+      "source_paths": [
+        "explainer-video/SKILL.md",
+        "presentation-video/SKILL.md",
+        "animated-infographic/references/sequenced-infographic.md",
+        "motion-art-direction/SKILL.md"
+      ],
+      "finding": "영문2.3words/s·42chars·2줄·Inter·28px·90%safe·6~10frame·base-unit배수·2curve·한wow·고정 archetype은 회사 영상 규격이 아니다. infographic duration은3단계 기준 상수라 step수/FPS를 바꿔도 같은 유지 시간을 보장하지 않는다.",
+      "transfer": "한국어 실제 문구·단위·서체·시청 거리·출력 조건·발화 시간·안정 유지 상태를 확인하고 수치 미확인 시 unknown. native 회사 CI·색 정본을 sample theme로 교체하지 않는다."
+    },
+    {
+      "id": "PE-08",
+      "priority": "medium",
+      "source_paths": [
+        "visual-qa/SKILL.md",
+        "visual-style-direction/references/visual-style-guide.md"
+      ],
+      "finding": "screenshot-first·관측/해석 분리·실제 출력 검수는 유효하다. 그러나 축소 캡처에서 정확32px/16px·WCAG pass·동작 timing·시청자 이해를 단정할 수 없고 1~10 점수는 표본·평가 계약 없이 효과 증명이 아니다. visual-style guide의 prose semantic source-of-truth·항상recompose는 현재 JSON정본·손실 없는crop 허용과 충돌할 수 있다.",
+      "transfer": "현재 프로젝트의 JSON정본/Markdown표시 계약을 유지한다. 캡처 출처·배율·시각·근거 범위와 측정/추정을 구분한다. 재배치·분절·손실없는crop은 조건별 후보, 효과는 후속 테스트로 둔다. 외부법률·복제 정책을 회사 공통규칙으로 자동 강제하지 않는다."
+    },
+    {
+      "id": "PE-09",
+      "priority": "medium",
+      "source_paths": [
+        "creative-brief/SKILL.md",
+        "creative-brief/references/worked-example.md"
+      ],
+      "finding": "11차원 완비·예산/날짜 없으면 모든 design BLOCK·확인메일 send·하나의message만유지·80%revision예방은 고객 마케팅 견적 절차 또는 미검증 주장이다. 예제는답변에없던 static end-frame·min2s legal super·no regulatory 항목을 확정 문구로 늘린다.",
+      "transfer": "준비물·미정·사실/가정·명시적 승인·범위 변경을 분리한다. Phase00 정리와 reversible 초안은 가능한 범위에서 계속하고 실제 필수 결정만 질문한다. 임의 업무효과/예산/규정/부서전달을 만들지 않는다. 검토 질문은 사용자 요구인 최소4지선다+추천안을 우선한다."
+    }
+  ],
+  "conditional_transfer_to_custom_skills": [
+    {
+      "skill": "video-knowledge-curator",
+      "include": [
+        "슬라이드/장면 역할·information_relation·diagram/chart 목적과 단위 구분",
+        "브리프 입력·부족 항목·시청 조건·실제 문구·회사 필수와 권고의 구분",
+        "누적/동시 비교/순차 과정/공간 표식 등 다양한 구조의 예·반례",
+        "소스와 프로젝트 해석·합성 예·미확인 효과의 지위"
+      ],
+      "exclude": [
+        "하나의 pitch/CTA/내레이션을 모든 영상의 필수로 등록",
+        "src worked-example의 수치·승인을 회사 사례로 기록",
+        "source license 미확인 문장/코드 상당량 통째복제"
+      ],
+      "example": "공정의 순서와 결과 비교는 다른 정보 관계로 두고 같은 자료의 PPT/영상 상태도 구분한다."
+    },
+    {
+      "skill": "video-record-steward",
+      "include": [
+        "시나리오 원문·전사·자막·화면·모션 사건·음성 timing의 다대다 근거 계약",
+        "정확한 원값·정밀도·단위·기간·결측과 변환/보간 provenance",
+        "차트척도·항목ID·축·범례·자료버전·한맥profile 연결",
+        "기술형상·연출값·계산값·관측/추정 구분"
+      ],
+      "exclude": [
+        "PPTX추출·OCR·음성측정·실영상 프레임분석 구현",
+        "결측0/자동보간·round로 정본수정",
+        "실제 음성이나 화면이 없는데 sync 완료 선언"
+      ],
+      "example": "값0과결측null을구분하고 가짜성공 데이터·키프레임 스프링 설정을 실측근거로 저장하지 않는다."
+    },
+    {
+      "skill": "video-guidance-reviewer",
+      "include": [
+        "발표/교육/기술/토론/마케팅별 목적·시청조건 검토",
+        "한글·단위·명칭·표/도표·전체와상세·시간가독성",
+        "의미가 맞는 reveal/동시비교/정지대안·축/척도·형상 정확성",
+        "실제출력·원문과구현·관측과추정·한맥브랜드·시험범위 분리"
+      ],
+      "exclude": [
+        "새대본/화면창작·판매CTA·항상stagger생성",
+        "틀린 정밀도/지워진근거를 보기좋다는 이유로 승인",
+        "3 still/육안점수로 실제 motion sync·이해효과 확정"
+      ],
+      "example": "기술명칭·동등조건·단위가 남아 있는지 먼저 검토하고 구도/색/모션의 취향은 그 다음으로 비교한다."
+    }
+  ],
+  "phase_boundary": {
+    "phase00": "용어·구조 후보·근거/기록 계약·원칙/예/반례·출처·범위/검수 지식과 기존3스킬의 조건부참조 보강",
+    "phase01A": "실제 영상/시나리오 읽기·추출·매칭·시간/좌표·데이터 분석 구현 및 정확도 검증. 실제 PPT 입력까지 채택하는 경우 native 추출·변환은 별도 구현계약으로 결정한다.",
+    "phase01B": "실제 회사 사례와 승인 문법·반례 축적",
+    "phase02": "새 시나리오·프레젠테이션·장면/화면/모션 후보 기획과 제작 인계. 소스 실행·실제 렌더 검증은 후속 실행계약"
+  },
+  "internal_comparison": "R3-1 MC-01 등속·MC-02 동시비교·MC-03 무음자막·MC-04 장식카운트·MC-05 관측/parenting분리·MC-08 웹/MP4범위와 R3-2 의미단위 줄바꿈·동등비교·losslesscrop·수치 기본값null를 유지한다. 추가 원문의 단일내러티브/항상stagger/수치표/새 sample theme는 이 기준을 덮어쓰지 않는다.",
+  "unreviewed_depth": [
+    "source 안 외부웹링크·1차논문/표준의 새조회",
+    "문서가호출하지만패키지에없는scripts·project/assets fixture",
+    "추가 sibling 구현스킬 remotion-video/after-effects/gsap-web/caption-animation 등의 전체 원문",
+    "실제PPTX/영상/시나리오",
+    "렌더/동기화/차트코드 실행 결과",
+    "맞춤스킬의 실제평가·사용자 이해효과"
+  ],
+  "file_reviews": [
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\로컬스킬\\animated-infographic\\README.md",
+      "relative_path": "animated-infographic/README.md",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "review_depth": "empty_file_verified",
+      "content_evidence": "0바이트README확인.실질내용/라이선스/provenance근거없음."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\로컬스킬\\animated-infographic\\SKILL.md",
+      "relative_path": "animated-infographic/SKILL.md",
+      "sha256": "f5714ba7a24535e85ac2d191ed317895bcee756ac92a130c344c722cf942bf88",
+      "bytes": 10893,
+      "review_depth": "full_text_static_review",
+      "content_evidence": "정보위계/정적완성/순차공개/icon/count/connector/hold·렌더계약전문.순서와정적판단은언어참고,항상3~5항목/onecounter/고정계층제외."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\로컬스킬\\animated-infographic\\references\\sequenced-infographic.md",
+      "relative_path": "animated-infographic/references/sequenced-infographic.md",
+      "sha256": "57a93391638e8e28cca03290a9585f481970d9080e0f5c27e961223f706edf13",
+      "bytes": 12770,
+      "review_depth": "full_text_static_review",
+      "content_evidence": "3stepRemotion·counter/icon/connector·DEMO·register·timingmap·batch·WAAPI전문.고정3단계duration/FPS·정수round·가상stat·화살표의정보의미검토필요."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\로컬스킬\\chart-animation\\README.md",
+      "relative_path": "chart-animation/README.md",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "review_depth": "empty_file_verified",
+      "content_evidence": "0바이트README확인.실질내용/라이선스/provenance근거없음."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\로컬스킬\\chart-animation\\SKILL.md",
+      "relative_path": "chart-animation/SKILL.md",
+      "sha256": "fec70fff93706652a395a8bbb28bb239af3db589e237af57b0c04a626a02af71",
+      "bytes": 10712,
+      "review_depth": "full_text_static_review",
+      "content_evidence": "frameclock/value→pixel·rank/format·pacing·annotation·batch·검수전문.정확한실측·정밀도·공통척도와eased연출값분리."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\로컬스킬\\chart-animation\\references\\bar-chart-race.md",
+      "relative_path": "chart-animation/references/bar-chart-race.md",
+      "sha256": "a69e491a0117a4be7017001865b33cd201a2d411d1ad2f9920f62a7e844113b2",
+      "bytes": 7733,
+      "review_depth": "full_text_static_review",
+      "content_evidence": "sparse rows·프레임값·정수rank y·leader-scale·date label·Canvas·duration전문.실제rank보간없음;희소/불규칙시간·동적척도·표기단위·introhold검증필요."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\로컬스킬\\chart-animation\\references\\data-pipeline.md",
+      "relative_path": "chart-animation/references/data-pipeline.md",
+      "sha256": "751f4b5269dbd8417a66ab7195513f30c4a669b8a6c4a409b33d8fcd9efe4f03",
+      "bytes": 7528,
+      "review_depth": "full_text_static_review",
+      "content_evidence": "CSV검사·결측처리·counter%/currency·line·theme·batch전문.Number빈값0·자동gap보간·scaleLinear import오류·indexpalette색유지문제."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\로컬스킬\\creative-brief\\README.md",
+      "relative_path": "creative-brief/README.md",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "review_depth": "empty_file_verified",
+      "content_evidence": "0바이트README확인.실질내용/라이선스/provenance근거없음."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\로컬스킬\\creative-brief\\SKILL.md",
+      "relative_path": "creative-brief/SKILL.md",
+      "sha256": "83839c259c46505238a9ee1d23f901569d21a3898a2963d7af6d1cee3921f269",
+      "bytes": 13559,
+      "review_depth": "full_text_static_review",
+      "content_evidence": "11축·부족항목·가정·scope triage 선별. one-message·budget/dateBLOCK·sendmail·80%개선주장 그대로채택금지.4지선다사용자요구우선."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\로컬스킬\\creative-brief\\references\\clarifying-questions.md",
+      "relative_path": "creative-brief/references/clarifying-questions.md",
+      "sha256": "891740d9e3db043abf7abb0e5611db5ebae439b3b61268ee208c07940f188f84",
+      "bytes": 3616,
+      "review_depth": "full_text_static_review",
+      "content_evidence": "goal/audience/message/tone/mandatories/delivery/placement/ref/date/budget/success 질문·메일본문전문. 실제전송권한아님.미정입력을무조건일정금액답으로꾸미지않음."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\로컬스킬\\creative-brief\\references\\vague-translator.md",
+      "relative_path": "creative-brief/references/vague-translator.md",
+      "sha256": "128d08f7f54a6a941a952a3c140648bf53c8935ef11370f9059ed47cc59d9078",
+      "bytes": 2322,
+      "review_depth": "full_text_static_review",
+      "content_evidence": "형용사를관측·조건부선택으로변환. 항상A/B·one-line강제는현재4지선다·선택지범위와대조."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\로컬스킬\\creative-brief\\references\\worked-example.md",
+      "relative_path": "creative-brief/references/worked-example.md",
+      "sha256": "0119a0283e39cfbe9b341e02d75dfee482ba41f2f7ec553df26c0631a2c899f0",
+      "bytes": 3737,
+      "review_depth": "full_text_static_review",
+      "content_evidence": "QuickInvoice 예제전문.실제회사사례미확인;답에없던staticframe·min2s legal·no regulatory가확정문구에추가된점주의."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\로컬스킬\\diagram-animation\\README.md",
+      "relative_path": "diagram-animation/README.md",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "review_depth": "empty_file_verified",
+      "content_evidence": "0바이트README확인.실질내용/라이선스/provenance근거없음."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\로컬스킬\\diagram-animation\\SKILL.md",
+      "relative_path": "diagram-animation/SKILL.md",
+      "sha256": "c321df088f0f0274cdf492660bce4e05ed5ff6bf7fd6bb7afcb528e2a3a0b2ca",
+      "bytes": 8625,
+      "review_depth": "full_text_static_review",
+      "content_evidence": "nodes/edges/labels·GSAP/CSS/D3/Framer/Remotion·HTMLseek지침전문.라인/packet움직임을실제흐름/인과로단정금지;항상같은reveal순서제외."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\로컬스킬\\diagram-animation\\references\\diagram-and-chart-recipes.md",
+      "relative_path": "diagram-animation/references/diagram-and-chart-recipes.md",
+      "sha256": "b5789057a05c8e01914b34352973b9a72582d0cfc7c3d76a35e14600cb851fb8",
+      "bytes": 9273,
+      "review_depth": "full_text_static_review",
+      "content_evidence": "영역/노드/선/라벨·lifeline·packet·bar/line/count·D3/Framer/Remotion·reduced지침전문.수치bar의spring초과·실행의존성·배경/축/라벨참조확인필요."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\로컬스킬\\explainer-video\\README.md",
+      "relative_path": "explainer-video/README.md",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "review_depth": "empty_file_verified",
+      "content_evidence": "0바이트README확인.실질내용/라이선스/provenance근거없음."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\로컬스킬\\explainer-video\\SKILL.md",
+      "relative_path": "explainer-video/SKILL.md",
+      "sha256": "320bb4ead9aacb7516b692f6e2c3f4ebb132770f15c69523cae292c4fd85a932",
+      "bytes": 10206,
+      "review_depth": "full_text_static_review",
+      "content_evidence": "문제/stakes/solution/how/payoff·VO·캡션·scenebuild·출력코드/검수전문.마케팅전제와영문속도/2줄/42자/CTA필수는조건부."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\로컬스킬\\explainer-video\\references\\script-to-screen-workflow.md",
+      "relative_path": "explainer-video/references/script-to-screen-workflow.md",
+      "sha256": "1aa910bd3c5775bddea56af5bc5530c8a2db1cd923a228d6c9d0af90f8bd553a",
+      "bytes": 6710,
+      "review_depth": "full_text_static_review",
+      "content_evidence": "실제VO/자막/시간대응·scene표·테마·카운터/노드코드전문.한국어word수식과1대1매칭강제/90%safe를표준으로대입금지."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\로컬스킬\\motion-art-direction\\README.md",
+      "relative_path": "motion-art-direction/README.md",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "review_depth": "empty_file_verified",
+      "content_evidence": "0바이트README확인.실질내용/라이선스/provenance근거없음."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\로컬스킬\\motion-art-direction\\SKILL.md",
+      "relative_path": "motion-art-direction/SKILL.md",
+      "sha256": "55f9297e2fcb34e2a100238360d62ba1ec20a1a353a7d6aa3ee91b5d8fc9bde6",
+      "bytes": 7708,
+      "review_depth": "full_text_static_review",
+      "content_evidence": "목적/톤/반복시스템/불필요모션억제·hierarchy·restraint·pacing전문.한hero/onewow/≤2curve·base배수·archetype·항상stagger는회사의무아님."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\로컬스킬\\motion-art-direction\\references\\direction-playbook.md",
+      "relative_path": "motion-art-direction/references/direction-playbook.md",
+      "sha256": "c8f4b8b71ac9781c36d4e84451998766e8d4000786d1a3e05e354b29eaa1df98",
+      "bytes": 9116,
+      "review_depth": "full_text_static_review",
+      "content_evidence": "5tone spec·brandadjective·샷ledger·2workedexamples·curve·pacing·checklist전문.숫자표준아님;수량overshoot금지와선형허용기술반례를조건부로보강."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\로컬스킬\\presentation-video\\README.md",
+      "relative_path": "presentation-video/README.md",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "review_depth": "empty_file_verified",
+      "content_evidence": "0바이트README확인.실질내용/라이선스/provenance근거없음."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\로컬스킬\\presentation-video\\SKILL.md",
+      "relative_path": "presentation-video/SKILL.md",
+      "sha256": "bfeacd008cdf2d1177339f476df4e50e37f96957b6c6d5d59d5b83837ca1ff14",
+      "bytes": 13882,
+      "review_depth": "full_text_static_review",
+      "content_evidence": "내레이션자동재생deck의Remotion재제작원문.비pitch·무음·토론의nativePPT기능아님.onepoint/CTA/VOclock조건부."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\로컬스킬\\presentation-video\\references\\sequencing.md",
+      "relative_path": "presentation-video/references/sequencing.md",
+      "sha256": "e41a645509bd4931d1ed3385a7154af5a7212bebb34b5a6033089d30b3e7ef76",
+      "bytes": 6837,
+      "review_depth": "full_text_static_review",
+      "content_evidence": "deck schema·audio길이·TransitionSeries·total계산·assembly·Bash본문정적읽기.실제로overlap총길이보정없고title/sectionaudio미마운트."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\로컬스킬\\presentation-video\\references\\slide-components.md",
+      "relative_path": "presentation-video/references/slide-components.md",
+      "sha256": "4321a0248dc88a1015d1966f7ac95014c27302dad226fa4d3134b497208b307d",
+      "bytes": 7081,
+      "review_depth": "full_text_static_review",
+      "content_evidence": "theme/useEnter/title/bullet/Slide/section컴포넌트전문.8프레임고정bullet은VO단어정렬아님;내용Slide에만Audio있음.실행미검증."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\로컬스킬\\visual-qa\\README.md",
+      "relative_path": "visual-qa/README.md",
+      "sha256": "996f568198a935807709c3950d2de3128198fe4eb7542aca229c9cb055ad384d",
+      "bytes": 1047,
+      "review_depth": "full_text_static_review",
+      "content_evidence": "실제이미지/vision/capture 의존성과MIT표기확인.별도LICENSE·고정커밋없음."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\로컬스킬\\visual-qa\\SKILL.md",
+      "relative_path": "visual-qa/SKILL.md",
+      "sha256": "d92cd1fc299a26433d67230a5a2c425b16b72b8d67af2b176cf15e120028d466",
+      "bytes": 10044,
+      "review_depth": "full_text_static_review",
+      "content_evidence": "7category·capture/model도구문자열·review/비교prompt·buildloop전문.실제화면근거만평가,영문45~75자/44px·정확gap·1~10점효과보장금지."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\로컬스킬\\visual-style-direction\\LICENSE",
+      "relative_path": "visual-style-direction/LICENSE",
+      "sha256": "27570f011a5a53e84412bcb6abcce17654c4e2b0e68c3522dca8885de7deaf93",
+      "bytes": 1093,
+      "review_depth": "full_text_static_review",
+      "content_evidence": "MIT·Copyright2026contributors·notice유지·AS IS전문확인."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\로컬스킬\\visual-style-direction\\SKILL.md",
+      "relative_path": "visual-style-direction/SKILL.md",
+      "sha256": "850c0a29869e4c873817c21141473ecba79be90e13cfbcc5e625053a47352e3d",
+      "bytes": 1802,
+      "review_depth": "full_text_static_review",
+      "content_evidence": "조건·참조·series/brand용선택읽기·원하는palette유지·native이미지/프롬프트workflow·실제output검수전문.00에이미지생성동작이식안함."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\로컬스킬\\visual-style-direction\\SOURCE.json",
+      "relative_path": "visual-style-direction/SOURCE.json",
+      "sha256": "e44d336e1187eb19fedba1b91f63d821705adfee8a0e5bf45e46df3886ed5d14",
+      "bytes": 897,
+      "review_depth": "full_text_static_review",
+      "content_evidence": "calesthio상류8c8535고정SHA·2026-10-06다운로드·2026-10-12로컬변형메타전문.원문byte동일/최신성검증아님."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\로컬스킬\\visual-style-direction\\references\\visual-style-guide.md",
+      "relative_path": "visual-style-direction/references/visual-style-guide.md",
+      "sha256": "6aeca15745f525523c459b92c2087c8cac75d504420aa4dcfe17c2cee65c1bbc",
+      "bytes": 42963,
+      "review_depth": "full_text_static_review",
+      "content_evidence": "780줄전문:근거3종·참조분해·원본/해석·contrast/routes·tokens·type/composition/material/light/camera/motion·continuity·accessibility/rights·handoff/gates/repair·2완성예·source한계.자체미검증수치/법률메타·prose정본/recompose강제는프로젝트JSON/조건부crop계약으로변형."
+    }
+  ],
+  "coverage": {
+    "packages": 9,
+    "files": 31,
+    "entrypoints": 9,
+    "actual_reference_documents": 12,
+    "empty_readmes": 7,
+    "nonempty_readmes": 1,
+    "license_files": 1,
+    "source_metadata": 1,
+    "unread_available_files": 0,
+    "runtime_tested": false
+  },
+  "comparison_reads": [
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\02_원칙과레이아웃\\04_모션원칙_충돌과예외.md",
+      "sha256": "a21649e3c6c16e778464ee0d76ebfe1bd9ffddd55cb076fa449efbf5371c353f",
+      "review_depth": "full_text_static_review",
+      "reviewed_selection": "MC01~08 전문"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\02_원칙과레이아웃\\09_문구와화면비_검토사례.md",
+      "sha256": "1a4067d5455af7b4208c7578064448acc33a360b6f730f932e5f2367ccd3c2dd",
+      "review_depth": "full_text_static_review",
+      "reviewed_selection": "LS01~12 전문"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\02_원칙과레이아웃\\레이아웃_심화지식.json",
+      "sha256": "5d6378eb954b6b75f94be2a0988254a1406f6dacc8a6c44060c6a05ff56aa14c",
+      "review_depth": "selected_fields_comparison",
+      "reviewed_selection": "id/version/universal_numeric_defaults/automatic_selection/text_edit_policy 및SCREEN-TYPE-KO/TIME-READ/DATA 해석·반례·기권"
+    }
+  ]
+}

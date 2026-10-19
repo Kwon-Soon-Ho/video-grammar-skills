@@ -1,0 +1,21 @@
+{
+  "stage": "R2",
+  "total_terms": 76,
+  "current_terms": 75,
+  "axes": 8,
+  "review": "내부 레드팀의 시간관계 누락·일반 분할 누락·인과 표현/사실 혼동을 수정. 추가로 경로 세부유형·PIP·방향한정어 보완.",
+  "status": "corrected_for_final_review",
+  "migration": [
+    {
+      "from": "0.1.0",
+      "to": "0.1.1",
+      "changes": [
+        "timing_curve 축을 timing으로 확장",
+        "STYLE-PIP는 LAYOUT-PIP로 대체, 기존 ID보존",
+        "일반 분할과 비교 구분",
+        "인과 표현과 사실 검증 분리",
+        "선 공개와 대상 경로 이동 구분"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,341 @@
+{
+  "id": "r3-layout-research",
+  "version": "0.1.1",
+  "sources": [
+    {
+      "id": "SRC-L2-KLREQ",
+      "title": "W3C 한국어 텍스트 레이아웃 요구사항",
+      "url": "https://www.w3.org/TR/klreq/",
+      "read_on": "2026-10-14",
+      "read_depth": "group_note_draft_selected_sections",
+      "sections": [
+        "Status: Group Note Draft, 21 March 2026",
+        "2.1 Purpose",
+        "7.1.1–7.1.4 line breaks / head / end / word restrictions",
+        "7.4.1 Line spacing",
+        "8.1.1.2 Page format elements"
+      ],
+      "summary_ko": "한글은 글자·어절 기준의 줄바꿈을 선택할 수 있다. 숫자와 문장부호의 분리, 행간과 판면을 함께 고려한다.",
+      "limits": [
+        "W3C 승인 권고안이 아닌 Group Note Draft",
+        "한국어 조판의 참고. 영상 자막의 글자수·크기·읽기 시간을 정한 규격 아님",
+        "문서 전체·모든 미해결 이슈 검토 아님"
+      ],
+      "remote_content_sha256": null,
+      "local_path": null,
+      "local_sha256": null,
+      "commit": null
+    },
+    {
+      "id": "SRC-L2-CARBON-GRID",
+      "title": "Carbon 2x Grid Guidelines",
+      "url": "https://www.carbondesignsystem.com/building-blocks/foundations/2x-grid/guidelines",
+      "read_on": "2026-10-14",
+      "read_depth": "product_guideline_selected_sections",
+      "sections": [
+        "Basic scaffolding / Denser layouts",
+        "Adaptive aspect ratios",
+        "Contrast",
+        "Style models"
+      ],
+      "summary_ko": "내용의 관계·위계·밀도에 맞춰 정렬과 영역을 선택한다. 같은 격자에 맞춘 것만으로 정보 위계가 생기는 것은 아니다.",
+      "limits": [
+        "IBM 웹·UI 시스템의 사례",
+        "4/16열·breakpoint·전체폭 모델을 영상 법칙으로 복사하지 않음",
+        "그림 예제의 실제 시선 효과 시험 없음"
+      ],
+      "remote_content_sha256": null,
+      "local_path": null,
+      "local_sha256": null,
+      "commit": null
+    },
+    {
+      "id": "SRC-L2-CARBON-TYPE",
+      "title": "Carbon Typography Overview",
+      "url": "https://www.carbondesignsystem.com/building-blocks/foundations/typography/overview",
+      "read_on": "2026-10-14",
+      "read_depth": "product_guideline_selected_sections",
+      "sections": [
+        "Type tokens and sets / Productive and expressive",
+        "Scale",
+        "Style / Weights"
+      ],
+      "summary_ko": "글자 역할과 크기·굵기를 함께 조절해 위계를 만든다. 제품용과 표현용 타입의 적용 맥락을 구분한다.",
+      "limits": [
+        "IBM Plex·px·제품 token을 한맥 영상 기본값으로 채택하지 않음",
+        "전체 언어별 글꼴 검토 아님"
+      ],
+      "remote_content_sha256": null,
+      "local_path": null,
+      "local_sha256": null,
+      "commit": null
+    },
+    {
+      "id": "SRC-L2-CARBON-CHART",
+      "title": "Carbon v10 Chart types",
+      "url": "https://v10.carbondesignsystem.com/data-visualization/chart-types/",
+      "read_on": "2026-10-14",
+      "read_depth": "archived_guideline_selected_sections",
+      "sections": [
+        "Purpose introduction",
+        "Comparisons / Trends / Part-to-whole / Correlations / Connections / Geospatial overlays"
+      ],
+      "summary_ko": "시각화 목적에서 차트 후보를 선택한다. 비교·추세·부분전체·연결·공간 관계를 구분한다.",
+      "limits": [
+        "보관된 v10 분류",
+        "모든 후보가 동일하게 적합하거나 회사 표준이라는 뜻 아님"
+      ],
+      "remote_content_sha256": null,
+      "local_path": null,
+      "local_sha256": null,
+      "commit": null
+    },
+    {
+      "id": "SRC-L2-CARBON-AXIS",
+      "title": "Carbon v10 Axes and labels",
+      "url": "https://v10.carbondesignsystem.com/data-visualization/axes-and-labels/",
+      "read_on": "2026-10-14",
+      "read_depth": "archived_guideline_selected_sections",
+      "sections": [
+        "Context and work-in-progress notice",
+        "Starting at zero",
+        "Gaps in data",
+        "Breaks in axes",
+        "Time series: Consistent increments"
+      ],
+      "summary_ko": "축·단위·범위는 차트 의미의 일부다. 막대의 길이 비교와 추세 선의 범위 선택을 구분하고 결측과 축 압축을 밝힌다.",
+      "limits": [
+        "work in progress / v10 보관 문서",
+        "축 break의16px·선0.5px 등 UI 수치를 전용하지 않음",
+        "모든 차트에 0축을 강제하지 않음"
+      ],
+      "remote_content_sha256": null,
+      "local_path": null,
+      "local_sha256": null,
+      "commit": null
+    },
+    {
+      "id": "SRC-L2-NNG-VISUAL",
+      "title": "NN/G 시각 디자인 5관점",
+      "url": "https://www.nngroup.com/articles/principles-visual-design/",
+      "read_on": "2026-10-14",
+      "read_depth": "author_guidance_selected_sections",
+      "sections": [
+        "1. Scale",
+        "2. Visual Hierarchy",
+        "3. Balance",
+        "4. Contrast",
+        "5. Gestalt principles"
+      ],
+      "summary_ko": "크기·대비·배치·그룹으로 읽는 위계를 설계하고 대칭 외 균형 방식도 검토한다.",
+      "limits": [
+        "저자의 디자인 해설이며 원래 심리학 실험 전수 검토가 아님",
+        "2–3 글자 크기·대칭/비대칭의 감정 설명을 회사 의무 규칙으로 쓰지 않음"
+      ],
+      "remote_content_sha256": null,
+      "local_path": null,
+      "local_sha256": null,
+      "commit": null
+    },
+    {
+      "id": "SRC-L2-NNG-PROXIMITY",
+      "title": "NN/G 근접성 적용 지침",
+      "url": "https://www.nngroup.com/articles/gestalt-proximity/",
+      "read_on": "2026-10-14",
+      "read_depth": "author_guidance_selected_sections",
+      "sections": [
+        "Definition",
+        "Place Related Elements near Each Other",
+        "Far-Away Elements Appear Unrelated",
+        "Proximity May Shift in Responsive Designs"
+      ],
+      "summary_ko": "관계 있는 정보는 가까이 묶고 다른 그룹은 구분한다. 화면이 좁아지면 관계를 유지하도록 재배치한다.",
+      "limits": [
+        "UI 디자인 해설. 근접성이 모든 시각 신호를 항상 이긴다는 법칙으로 쓰지 않음",
+        "시청자 이해 효과는 실제 자료 검증 전"
+      ],
+      "remote_content_sha256": null,
+      "local_path": null,
+      "local_sha256": null,
+      "commit": null
+    },
+    {
+      "id": "SRC-L2-NNG-REGION",
+      "title": "NN/G 공통 영역 적용 지침",
+      "url": "https://www.nngroup.com/articles/common-region/",
+      "read_on": "2026-10-14",
+      "read_depth": "author_guidance_selected_sections",
+      "sections": [
+        "Definition",
+        "Container grouping examples / common region versus proximity"
+      ],
+      "summary_ko": "경계나 배경이 그룹으로 읽히게 할 수 있다. 항목들이 실제로 같은 그룹인지 먼저 확인한다.",
+      "limits": [
+        "상자·카드가 실제 정보 관계를 증명하지 않음",
+        "카드 사용 금지·필수화 모두 채택하지 않음"
+      ],
+      "remote_content_sha256": null,
+      "local_path": null,
+      "local_sha256": null,
+      "commit": null
+    },
+    {
+      "id": "SRC-L2-W3C-COLOR",
+      "title": "W3C 색상만으로 정보 전달하지 않기",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html",
+      "read_on": "2026-10-14",
+      "read_depth": "understanding_selected_sections",
+      "sections": [
+        "SC 1.4.1",
+        "Intent / Notes / Examples"
+      ],
+      "summary_ko": "정보 구분에 색 외 문구·형태·패턴 같은 시각 신호를 함께 검토한다.",
+      "limits": [
+        "Understanding은 해설. WCAG 전체 적합을 선언하지 않음",
+        "실제 회사 영상 색각·재생 환경 시험 없음"
+      ],
+      "remote_content_sha256": null,
+      "local_path": null,
+      "local_sha256": null,
+      "commit": null
+    },
+    {
+      "id": "SRC-L2-W3C-CONTRAST",
+      "title": "W3C 텍스트 대비",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "read_on": "2026-10-14",
+      "read_depth": "understanding_selected_sections",
+      "sections": [
+        "SC 1.4.3 / large / incidental / logotypes",
+        "Intent"
+      ],
+      "summary_ko": "텍스트와 실제 배경의 대비를 확인하고 적용 예외를 구분한다.",
+      "limits": [
+        "웹 CSS의 큰 글자 정의를 영상px로 바로 변환하지 않음",
+        "로고 예외를 모든 브랜드색 본문에 확대하지 않음",
+        "대비 수치만으로 시간적 가독성 통과를 주지 않음"
+      ],
+      "remote_content_sha256": null,
+      "local_path": null,
+      "local_sha256": null,
+      "commit": null
+    },
+    {
+      "id": "SRC-L2-ADOBE-SAFE",
+      "title": "Adobe Premiere 안전영역 안내",
+      "url": "https://helpx.adobe.com/premiere/desktop/get-started/source-and-program-monitor-adjustments/view-safe-zones-in-the-monitors.html",
+      "read_on": "2026-10-14",
+      "read_depth": "official_tool_article_sections",
+      "sections": [
+        "View safe zones / Note / Tip"
+      ],
+      "summary_ko": "편집기 안전영역은 조정 가능한 참고 가이드이며 내보내는 그림에 포함되지 않는다.",
+      "limits": [
+        "10%/20%를 각 변의 보편 여백 또는 모든 플랫폼 안전영역으로 단정하지 않음",
+        "실제 납품처·플레이어 UI 규격 확인 필요"
+      ],
+      "remote_content_sha256": null,
+      "local_path": null,
+      "local_sha256": null,
+      "commit": null
+    },
+    {
+      "id": "SRC-L2-BIPM-SI",
+      "title": "BIPM SI Brochure 9th edition v4.01",
+      "url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9.pdf/fcf090b2-04e6-88cc-1149-c3e029ad8232",
+      "read_on": "2026-10-14",
+      "read_depth": "primary_pdf_selected_text",
+      "sections": [
+        "5.4.3 Formatting the value of a quantity / printed page144, PDF page146 (1-based)"
+      ],
+      "summary_ko": "SI 수치와 단위 기호 사이 공백, 평면각 기호의 예외와 °C 표기를 확인했다.",
+      "limits": [
+        "전권·모든 단위 규칙 검토 아님",
+        "물리량 표기 지침이며 회사의 비SI·편집 스타일 승인을 대체하지 않음"
+      ],
+      "remote_content_sha256": null,
+      "local_path": null,
+      "local_sha256": null,
+      "commit": null
+    },
+    {
+      "id": "SRC-L2-IMPECCABLE-LAYOUT",
+      "title": "Impeccable layout 참고 파일",
+      "url": "https://github.com/pbakaus/impeccable/blob/2f98774f86bc05563876643db37e6c37c322850f/skill/reference/layout.md",
+      "read_on": "2026-10-14",
+      "read_depth": "local_reference_text_only",
+      "sections": [
+        "Visitor mode",
+        "Layout assessment",
+        "Set spatial thesis",
+        "Apply / Verify"
+      ],
+      "summary_ko": "읽기 경로·그룹·밀도·내용 극단·화면 변화 관점을 비교했다.",
+      "limits": [
+        "스킬 전체·호출참조·detector코드·의존성·라이선스의 심층 검토는R3-3",
+        "스크립트·설치·통신·스캔을 실행하지 않음",
+        "4unit·DOM·touch·scroll을 영상 의무 조건으로 복사하지 않음"
+      ],
+      "remote_content_sha256": null,
+      "local_path": "backup/2026-10-14_R3_추가조사/스킬원본/impeccable/skill/reference/layout.md",
+      "local_sha256": "14ba132b6168bf0a7498f8c3fbbb41b73ff704da5dc3688fd842807446e54a05",
+      "commit": "2f98774f86bc05563876643db37e6c37c322850f"
+    },
+    {
+      "id": "SRC-L2-IMPECCABLE-TYPE",
+      "title": "Impeccable typeset 참고 파일",
+      "url": "https://github.com/pbakaus/impeccable/blob/2f98774f86bc05563876643db37e6c37c322850f/skill/reference/typeset.md",
+      "read_on": "2026-10-14",
+      "read_depth": "local_reference_text_only",
+      "sections": [
+        "Assessment / hierarchy / stress",
+        "Apply / Verify"
+      ],
+      "summary_ko": "확정 글꼴을 유지하며 역할·길이·언어·배경에 맞춘 검수 관점을 비교했다.",
+      "limits": [
+        "스킬 전체 검토·실행 평가 아님",
+        "45–75ch·16px·font loading·browser zoom을 영상표준으로 쓰지 않음"
+      ],
+      "remote_content_sha256": null,
+      "local_path": "backup/2026-10-14_R3_추가조사/스킬원본/impeccable/skill/reference/typeset.md",
+      "local_sha256": "bf0259f5b8363d09591885ca6b27ac97bbdf754c130fb2799b949d783a97186b",
+      "commit": "2f98774f86bc05563876643db37e6c37c322850f"
+    },
+    {
+      "id": "SRC-L2-SHOT-COMPOSITION",
+      "title": "로컬 shot-composition 참고 지침",
+      "url": null,
+      "read_on": "2026-10-14",
+      "read_depth": "local_entrypoint_text_only",
+      "sections": [
+        "SKILL.md entire entrypoint / decision tree / workflow / examples / checklist / reference list"
+      ],
+      "summary_ko": "격자·초점·여백·다중 화면비의 논의를 비교했다.",
+      "limits": [
+        "카메라·그리드 참조파일은 첫15줄만 확인. 호출망 전체·코드·원저장소·라이선스는R3-3",
+        "12열·8px·삼분할·단일초점·카메라1개·고정 안전여백을 회사 규칙으로 채택하지 않음"
+      ],
+      "remote_content_sha256": null,
+      "local_path": "C:\\Users\\User\\.codex\\skills\\shot-composition\\SKILL.md",
+      "local_sha256": "efdd254f4e769ee883420017003be685b95ad0eda5eab6e11b3f14b7871dcb27",
+      "commit": null
+    }
+  ],
+  "scope": "선택한 공개 텍스트·로컬 참고 파일의 지정 절만 조사. 실제회사영상·모든 학술연구·스킬 호출망 전체·코드실행은 미검토.",
+  "skill_execution": false,
+  "existing_layout_taxonomy_changed": false,
+  "reused_prior_sources": [
+    {
+      "id": "SRC-CAM-TRANSIENT",
+      "prior_research_path": "05_출처와검토/R3_모션_조사기록.json",
+      "prior_research_sha256": "430a296b9c4903dea564d540152d4a88a5d57bbe10572737819876b50cfa0aa2",
+      "read_scope": "R3-1의공식Summary확인을재사용. 이번에장전체를새로읽은것아님."
+    },
+    {
+      "id": "SRC-CAM-EXTRANEOUS",
+      "prior_research_path": "05_출처와검토/R3_모션_조사기록.json",
+      "prior_research_sha256": "430a296b9c4903dea564d540152d4a88a5d57bbe10572737819876b50cfa0aa2",
+      "read_scope": "R3-1의공식Summary확인을재사용. 이번에장전체를새로읽은것아님."
+    }
+  ]
+}

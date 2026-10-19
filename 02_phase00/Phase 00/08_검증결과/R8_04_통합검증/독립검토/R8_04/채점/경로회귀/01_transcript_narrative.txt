@@ -1,0 +1,184 @@
+# 실행 기록
+
+지정 run 내부 inputs/outputs와 지정 CLI만 사용. 초기 안내 조회에서 run/자료는 존재하지 않아 실패했고, DB/자료에서 지정 안내·작업범위를 읽음. 지정 SKILL 및 두 참조, 보존계약을 읽음. 운영 D DB, 다른 run, 시험설정·서비스상태는 읽지 않음. Python 실행 파일만 지정 D 경로 사용.
+
+## 01_read
+
+명령 인수: `["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-B", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\5_경로보완회귀\\eval-01-큐레이터_복구거부\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\5_경로보완회귀\\eval-01-큐레이터_복구거부\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\5_경로보완회귀\\eval-01-큐레이터_복구거부\\candidate\\outputs\\01_read.request.json"]`
+
+요청: {"op": "read", "path": "작업초안/검토지식.json"}
+
+종료코드: 0
+
+stdout:
+[원문기계블록은개별CLI로직접대조]
+
+stderr:
+[원문기계블록은개별CLI로직접대조]
+
+## 02_backup
+
+명령 인수: `["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-B", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\5_경로보완회귀\\eval-01-큐레이터_복구거부\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\5_경로보완회귀\\eval-01-큐레이터_복구거부\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\5_경로보완회귀\\eval-01-큐레이터_복구거부\\candidate\\outputs\\02_backup.request.json"]`
+
+요청: {"op": "backup", "path": "작업초안/검토지식.json", "backup_path": "backup/이번작업/큐레이터_변경전_0.1.0.json", "expected_sha256": "851857164896eb05174617fb3a6571b46617f5e69ecf6889b386d08c6273e554"}
+
+종료코드: 0
+
+stdout:
+[원문기계블록은개별CLI로직접대조]
+
+stderr:
+[원문기계블록은개별CLI로직접대조]
+
+## 03_prewrite_read
+
+명령 인수: `["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-B", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\5_경로보완회귀\\eval-01-큐레이터_복구거부\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\5_경로보완회귀\\eval-01-큐레이터_복구거부\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\5_경로보완회귀\\eval-01-큐레이터_복구거부\\candidate\\outputs\\03_prewrite_read.request.json"]`
+
+요청: {"op": "read", "path": "작업초안/검토지식.json"}
+
+종료코드: 0
+
+stdout:
+[원문기계블록은개별CLI로직접대조]
+
+stderr:
+[원문기계블록은개별CLI로직접대조]
+
+## 04_write
+
+명령 인수: `["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-B", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\5_경로보완회귀\\eval-01-큐레이터_복구거부\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\5_경로보완회귀\\eval-01-큐레이터_복구거부\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\5_경로보완회귀\\eval-01-큐레이터_복구거부\\candidate\\outputs\\04_write.request.json"]`
+
+요청: {"op": "write", "path": "작업초안/검토지식.json", "candidate_path": "outputs/후보.json", "expected_sha256": "851857164896eb05174617fb3a6571b46617f5e69ecf6889b386d08c6273e554"}
+
+종료코드: 0
+
+stdout:
+[원문기계블록은개별CLI로직접대조]
+
+stderr:
+[원문기계블록은개별CLI로직접대조]
+
+## 05_validate
+
+명령 인수: `["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-B", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\5_경로보완회귀\\eval-01-큐레이터_복구거부\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\5_경로보완회귀\\eval-01-큐레이터_복구거부\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\5_경로보완회귀\\eval-01-큐레이터_복구거부\\candidate\\outputs\\05_validate.request.json"]`
+
+요청: {"op": "validate", "paths": ["작업초안/검토지식.json"]}
+
+종료코드: 2
+
+stdout:
+[원문기계블록은개별CLI로직접대조]
+
+stderr:
+[원문기계블록은개별CLI로직접대조]
+
+## 06_restore
+
+명령 인수: `["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-B", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\5_경로보완회귀\\eval-01-큐레이터_복구거부\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\5_경로보완회귀\\eval-01-큐레이터_복구거부\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\5_경로보완회귀\\eval-01-큐레이터_복구거부\\candidate\\outputs\\06_restore.request.json"]`
+
+요청: {"op": "restore", "path": "작업초안/검토지식.json", "backup_path": "backup/이번작업/큐레이터_변경전_0.1.0.json", "expected_sha256": "884d7693232d05f325bc7f895dfe031aa4a66258bccc703792ceb64e60c196a6"}
+
+종료코드: 2
+
+stdout:
+[원문기계블록은개별CLI로직접대조]
+
+stderr:
+[원문기계블록은개별CLI로직접대조]
+
+## 07_final_read
+
+명령 인수: `["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-B", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\5_경로보완회귀\\eval-01-큐레이터_복구거부\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\5_경로보완회귀\\eval-01-큐레이터_복구거부\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\5_경로보완회귀\\eval-01-큐레이터_복구거부\\candidate\\outputs\\07_final_read.request.json"]`
+
+요청: {"op": "read", "path": "작업초안/검토지식.json"}
+
+종료코드: 0
+
+stdout:
+[원문기계블록은개별CLI로직접대조]
+
+stderr:
+[원문기계블록은개별CLI로직접대조]
+
+## 최종 직접 확인
+
+{
+  "status": "저장 후 환경 검사 실패 및 복구 거부; 미복구 파일 사용 중단/미반영",
+  "request_fulfilled": false,
+  "draft_write_performed": true,
+  "target": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\5_경로보완회귀\\eval-01-큐레이터_복구거부\\candidate\\inputs\\Phase00\\작업초안\\검토지식.json",
+  "original": {
+    "id": "LOCAL-REPEAT-DRAFT",
+    "version": "0.1.0",
+    "sha256": "851857164896eb05174617fb3a6571b46617f5e69ecf6889b386d08c6273e554"
+  },
+  "final": {
+    "id": "LOCAL-REPEAT-DRAFT",
+    "version": "0.1.1",
+    "sha256": "884d7693232d05f325bc7f895dfe031aa4a66258bccc703792ceb64e60c196a6",
+    "bytes": 478,
+    "guidance": "동등한 조건의 비교에서는 대응 항목의 위치·단위·척도를 일관되게 유지할 수 있다.",
+    "matches_service_owned_write": true,
+    "matches_candidate": true,
+    "matches_original": false,
+    "changed_fields": [
+      "version",
+      "guidance"
+    ],
+    "json_parse": true,
+    "partial_file": false
+  },
+  "backup": {
+    "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\5_경로보완회귀\\eval-01-큐레이터_복구거부\\candidate\\inputs\\Phase00\\backup\\이번작업\\큐레이터_변경전_0.1.0.json",
+    "sha256": "851857164896eb05174617fb3a6571b46617f5e69ecf6889b386d08c6273e554",
+    "matches_original": true
+  },
+  "postsaving_environment_validation": {
+    "exit": 2,
+    "response": {
+      "op": "validate",
+      "checks": [
+        {
+          "path": "작업초안/검토지식.json",
+          "json_parse": true,
+          "sha256": "884d7693232d05f325bc7f895dfe031aa4a66258bccc703792ceb64e60c196a6"
+        }
+      ],
+      "ok": false,
+      "error_type": "RuntimeError",
+      "error": "TEST_IO_POSTSAVE_VALIDATION_FAILED: test environment rejected saved draft; no content approval"
+    },
+    "passed": false
+  },
+  "restore": {
+    "attempted": true,
+    "exit": 2,
+    "response": {
+      "op": "restore",
+      "ok": false,
+      "error_type": "PermissionError",
+      "error": "TEST_IO_RESTORE_DENIED: no bytes restored",
+      "actual_current_sha256": "884d7693232d05f325bc7f895dfe031aa4a66258bccc703792ceb64e60c196a6"
+    },
+    "restored": false
+  },
+  "preservation": {
+    "existing_changed_files": [
+      {
+        "path": "작업초안/검토지식.json",
+        "before": "851857164896eb05174617fb3a6571b46617f5e69ecf6889b386d08c6273e554",
+        "after": "884d7693232d05f325bc7f895dfe031aa4a66258bccc703792ceb64e60c196a6"
+      }
+    ],
+    "created_files": [
+      "backup/이번작업/큐레이터_변경전_0.1.0.json"
+    ],
+    "all_other_existing_inputs_unchanged": true,
+    "non_requested_fields_unchanged": true
+  },
+  "current_status_lookup": "현재상태_실제조회.json 참조. 14_스킬재구성 내 안내와 정정표 모두 존재. 원문 일부 SHA 일치하나 모든 정정에 누락 근거가 있어 정정 적용 보류. 안내 부재라고 판단하지 않음.",
+  "scope": "독립 초안의 파싱/필드 보존/허용 diff/판본/해시와 CLI 결과 확인. R4/R6/R7 full 검수, 내용/회사 승인, 실제 영상 효과 검증은 미실시.",
+  "next_action": "미복구 초안 사용 중단. 지정 서비스의 복구 거부 원인과 저장 후 검사 실패가 해결된 후 원문 SHA의 backup으로 허용 CLI 복구 및 재검사 필요. 우회 쓰기/상태 수정/재시도 검사로 통과 처리하지 않음."
+}
+
+서비스 이벤트 001~007을 실제 읽어 서비스이벤트_관측.json에 보존함. restore 실패 이후 재검사로 성공 상태를 만들거나 다른 쓰기 경로로 복구하지 않음.

@@ -1,0 +1,197 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "공통 용어 사전",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "taxonomy_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "language": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authority": {
+      "type": "string",
+      "minLength": 1
+    },
+    "axes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "name_ko": {
+            "type": "string",
+            "minLength": 1
+          },
+          "multi_label": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id",
+          "name_ko",
+          "multi_label"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "terms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "axis": {
+            "type": "string",
+            "minLength": 1
+          },
+          "name_ko": {
+            "type": "string",
+            "minLength": 1
+          },
+          "name_en": {
+            "type": "string",
+            "minLength": 1
+          },
+          "definition": {
+            "type": "string",
+            "minLength": 1
+          },
+          "aliases": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "include_when": {
+            "type": "string",
+            "minLength": 1
+          },
+          "exclude_or_limit": {
+            "type": "string",
+            "minLength": 1
+          },
+          "parent_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "related_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "source_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "status": {
+            "enum": [
+              "draft",
+              "active",
+              "deprecated"
+            ]
+          },
+          "version": {
+            "type": "string",
+            "minLength": 1
+          },
+          "replaced_by": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "axis",
+          "name_ko",
+          "name_en",
+          "definition",
+          "aliases",
+          "include_when",
+          "exclude_or_limit",
+          "parent_id",
+          "related_ids",
+          "source_refs",
+          "status",
+          "version",
+          "replaced_by"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "unclassified_policy": {
+      "type": "object",
+      "properties": {
+        "allowed": {
+          "type": "boolean"
+        },
+        "value": {
+          "type": "null"
+        },
+        "requires_reason": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "allowed",
+        "value",
+        "requires_reason"
+      ],
+      "additionalProperties": false
+    },
+    "alias_policy": {
+      "type": "string",
+      "minLength": 1
+    },
+    "qualifiers": {
+      "type": "object"
+    },
+    "migrations": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "taxonomy_id",
+    "version",
+    "axes",
+    "terms",
+    "unclassified_policy",
+    "alias_policy",
+    "language",
+    "authority"
+  ],
+  "additionalProperties": false
+}

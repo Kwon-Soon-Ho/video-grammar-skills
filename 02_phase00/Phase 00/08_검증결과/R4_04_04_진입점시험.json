@@ -1,0 +1,128 @@
+{
+  "count": 24,
+  "passed": 24,
+  "all_passed": true,
+  "cases": [
+    {
+      "name": "기존정본catalog검사유지",
+      "passed": true,
+      "exception": null
+    },
+    {
+      "name": "구형보존검사 정상예유지",
+      "passed": true,
+      "exception": null
+    },
+    {
+      "name": "새기본은구형통과금지",
+      "passed": true,
+      "exception": null
+    },
+    {
+      "name": "구형listAPI도통과금지",
+      "passed": true,
+      "exception": null
+    },
+    {
+      "name": "읽기검사로원문접수쓰기없음",
+      "passed": true,
+      "exception": null
+    },
+    {
+      "name": "새기록정상API",
+      "passed": true,
+      "exception": null
+    },
+    {
+      "name": "기본alias 로컬참조 정상",
+      "passed": true,
+      "exception": null
+    },
+    {
+      "name": "기본alias 구형거부",
+      "passed": true,
+      "exception": null
+    },
+    {
+      "name": "기본검사사실승인flags거짓",
+      "passed": true,
+      "exception": null
+    },
+    {
+      "name": "미지원버전거부",
+      "passed": true,
+      "exception": null
+    },
+    {
+      "name": "list원문예외없이거부",
+      "passed": true,
+      "exception": null
+    },
+    {
+      "name": "구형누락내용확인",
+      "passed": true,
+      "exception": null
+    },
+    {
+      "name": "원문JSONhash 실바이트기준",
+      "passed": true,
+      "exception": null
+    },
+    {
+      "name": "구형검사후원문불변",
+      "passed": true,
+      "exception": null
+    },
+    {
+      "name": "중복key 입력기본도거부",
+      "passed": true,
+      "exception": null
+    },
+    {
+      "name": "깊이초과입력도기본에서격리",
+      "passed": true,
+      "exception": null
+    },
+    {
+      "name": "동일출력재실행불변",
+      "passed": true,
+      "exception": null
+    },
+    {
+      "name": "다른결과원본덮어쓰기금지",
+      "passed": true,
+      "exception": null
+    },
+    {
+      "name": "출력원본기록경로덮어쓰기차단",
+      "passed": true,
+      "exception": null
+    },
+    {
+      "name": "외부출력경계차단",
+      "passed": true,
+      "exception": null
+    },
+    {
+      "name": "새기본CLI",
+      "passed": true,
+      "exception": null
+    },
+    {
+      "name": "구형CLI",
+      "passed": true,
+      "exception": null
+    },
+    {
+      "name": "잘못된JSON_CLI",
+      "passed": true,
+      "exception": null
+    },
+    {
+      "name": "원문backup으로구형복구가능",
+      "passed": true,
+      "exception": null
+    }
+  ],
+  "scope": "C 임시 복사에서 버전 분기·로컬 alias·CLI·출력 보존 검사. 실제기본전환/미디어승인 아님."
+}

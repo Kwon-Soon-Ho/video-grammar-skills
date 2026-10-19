@@ -1,0 +1,61 @@
+{
+  "case_id": "T03",
+  "graded_at": "2026-10-16T14:58:33+09:00",
+  "grader": "parent Codex, source-aware content review; no independent human adjudication",
+  "frozen_reference_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\06_도구와계약\\01-A2_모션검수절차\\스킬작성전_재발시험\\채점전용\\실패사례와_내용대조기준.json",
+  "frozen_reference_sha256": "5e1385bdc9bddd8c547983d0332fb72b48963ddfd58e1d8d91b1e3c5c03d991c",
+  "raw_output_sha256": "36cd10a5f1f4fbc9b128b20fa3b8c358bc7291b2d1f6cdb9a7af0f13969e6306",
+  "expectations": [
+    {
+      "text": "십자 커서와 점선 사각형을 각각 식별",
+      "passed": true,
+      "evidence": "objects_and_events의 T03_crosshair와 T03_selection이 적색 수평·녹색 수직·중앙 사각 십자,백색 점선 테두리/반투명 사각을 별도 식별. 1.0/1.4/1.8초 및2.0초 원본 크롭에서 해당 형태를 대조했다."
+    },
+    {
+      "text": "선택 영역 확대에 따른 큰 영문 공개",
+      "passed": true,
+      "evidence": "T03_selection/value는 좌상단을 대체로 고정하고 우하단 경계를 확대하여 1.9~2.4초 V→Val→Value of가 공개된다고 기록. V/l 기준 위치와 크기를 역추적하여 글자 확대와 구분했다."
+    },
+    {
+      "text": "점선 영역 축소와 연한 문구 잔존의 순서",
+      "passed": true,
+      "evidence": "T03_selection/value는2.6~2.9홀드 뒤 좌측 경계 우향·상단 하향으로 영역이 수축하고3.6~3.8초 같은 위치의 어두운 문구가 잔존한다고 기록. T03_00204_left_title.png의 밝은 부분 제거와 연한 V 잔존에 부합."
+    },
+    {
+      "text": "글자 자체 크기 축소나 실제 AE Opacity/마스크 구성으로 단정하지 않음",
+      "passed": true,
+      "evidence": "원출력은 글자 자체 크기·위치가 유지되고 가시 경계만 줄어든다고 명시. 실제 마스크·밝은/어두운 별도 레이어·AE 속성은 observation_vs_implementation에서 가능한 가설로만 분리했다."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4
+  },
+  "claims": [
+    {
+      "claim": "큰 영문이 수축하는 대신 밝은 가시 영역이 줄어든다",
+      "type": "factual",
+      "verified": true,
+      "evidence": "T03_value의 고정 V/l 기준점과 선택영역의 왼쪽/상단 경계 좌표가 구분되며 원본 크롭의 공간적 소거에 부합.",
+      "critical_error": false
+    },
+    {
+      "claim": "브랜드 글자 수렴과 영문·한글의 순차 상향을 추가 관측했다",
+      "type": "factual",
+      "verified": true,
+      "evidence": "T03_brand/tagline/body1/body2는 글자 수평 수렴과 문단별 상향·밝기 증가를 나누고 정확한 구현·최초프레임 한계도 함께 남겼다.",
+      "critical_error": false
+    }
+  ],
+  "notes": [
+    "필수 사건 충족. 낮은 불투명도라는 표현은 렌더 가시성의 기술로 해석하며 실제 AE Opacity 값 복원으로 쓰지 않는다.",
+    "선택영역 확장/수축의 표본 간 가감속은 관측 양상까지만 남겼다."
+  ],
+  "source_review": "selected raw temporal PNGs/native crops and measurements; no audio or full realtime playback claim",
+  "scope": "known-case baseline regression, not new skill effectiveness or unseen-source accuracy",
+  "case_status": "충족",
+  "executor_tokens": null,
+  "executor_duration_seconds": null,
+  "telemetry_status": "not reported by collaboration tool; not estimated from output length"
+}

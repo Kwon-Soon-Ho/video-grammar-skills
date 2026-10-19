@@ -1,0 +1,152 @@
+{
+  "version": "1.0",
+  "completed_at": "2026-10-16T15:02:10+09:00",
+  "state": "A2_known_case_regression_passed_A3_user_decision_pending",
+  "run_type": "known-case baseline procedure regression; no new skill",
+  "new_procedure_behavior_replay": "performed",
+  "content_grading": "performed_after_first_output_hash_seals",
+  "case_results": [
+    {
+      "case_id": "T01",
+      "window": [
+        3.5,
+        5.5
+      ],
+      "case_status": "충족",
+      "requirements": {
+        "passed": 3,
+        "failed": 0,
+        "total": 3
+      },
+      "raw_output_sha256": "42d410371e092154fe0b575898ab09e6de1555efdc0b41c9147f6c51894e88bb",
+      "first_output_unchanged": true
+    },
+    {
+      "case_id": "T02",
+      "window": [
+        0,
+        1.4
+      ],
+      "case_status": "충족",
+      "requirements": {
+        "passed": 3,
+        "failed": 0,
+        "total": 3
+      },
+      "raw_output_sha256": "7e6aff89862a9d2a30a30593744ed96d328dcb4bf0d628094d263a709aa966c8",
+      "first_output_unchanged": true
+    },
+    {
+      "case_id": "T03",
+      "window": [
+        1,
+        3.8
+      ],
+      "case_status": "충족",
+      "requirements": {
+        "passed": 4,
+        "failed": 0,
+        "total": 4
+      },
+      "raw_output_sha256": "36cd10a5f1f4fbc9b128b20fa3b8c358bc7291b2d1f6cdb9a7af0f13969e6306",
+      "first_output_unchanged": true
+    },
+    {
+      "case_id": "T04",
+      "window": [
+        6,
+        18
+      ],
+      "case_status": "충족",
+      "requirements": {
+        "passed": 4,
+        "failed": 0,
+        "total": 4
+      },
+      "raw_output_sha256": "40444de0b34af44ef1a22d91fbf0646c3aa30bd145d5aa5ade76235f55acde88",
+      "first_output_unchanged": true
+    },
+    {
+      "case_id": "T05",
+      "window": [
+        5.9,
+        6.6
+      ],
+      "case_status": "충족",
+      "requirements": {
+        "passed": 3,
+        "failed": 0,
+        "total": 3
+      },
+      "raw_output_sha256": "5d73d0b72b0e75940ee2cbdf144968b868c6d0ce6e8ae8176a67a15701f11c6c",
+      "first_output_unchanged": true
+    },
+    {
+      "case_id": "T06",
+      "window": [
+        10.6,
+        15.5
+      ],
+      "case_status": "충족",
+      "requirements": {
+        "passed": 4,
+        "failed": 0,
+        "total": 4
+      },
+      "raw_output_sha256": "728b8f0cde9e92fff7f403da0901490d9beab6a325c99221d5c862a8d4bd5ded",
+      "first_output_unchanged": true
+    }
+  ],
+  "known_required_cases_all_satisfied": true,
+  "no_aggregate_accuracy_or_generalization_score": true,
+  "content_analysis_retries_after_feedback": 0,
+  "method_changed_after_grading": false,
+  "rerun_affected_cases_after_method_changes": "not_applicable_no_method_change_after_grading",
+  "fresh_selected_pngs": 228,
+  "fresh_base_pngs": 174,
+  "adaptive_native_pngs": 54,
+  "within_run_unique_source_times": 188,
+  "add_to_prior_unique_times": false,
+  "analysis_contexts": 3,
+  "new_human_confirmation_requests": 0,
+  "new_human_approval": false,
+  "prior_human_confirmations_preserved": true,
+  "unseen_source_evaluation": false,
+  "independent_human_grading": false,
+  "coverage_gaps": [
+    {
+      "window": "EG-BIM 8.2~10.4s",
+      "event": "UI table selection row / thumbnail selection changes",
+      "status": "not_in_this_six_case_run",
+      "reference_status": "prior_AI_candidate_not_human_gold",
+      "action": "add a separate case when designing A3 tests; do not claim this run validated it"
+    },
+    {
+      "event": "장헌0~5.9초 도입의 정지 대조 시험 및 전체 영상",
+      "status": "not_separately_retested_in_this_run; T05 only5.9~6.6s",
+      "action": "preserve current scope; whole-video/audio and expansion tests remain deferred"
+    }
+  ],
+  "acceptable_unknowns": [
+    "exact AE keyframe/handle/preset recovery",
+    "exact thin-light full route and mathematical easing",
+    "exact earliest/peak frames between supplied temporal samples"
+  ],
+  "A3_authoring_ready": true,
+  "A3_authoring_ready_scope": "only the six frozen A2 known-case requirements; recommendation to author a limited draft, not approval to start or overall motion accuracy",
+  "A3_started": false,
+  "skill_created": false,
+  "user_stage_decision": "pending per latest user instruction",
+  "recommended_next_step": "A3 limited skill draft plus these six regression cases and separate internal-UI-selection case, only after user stage decision",
+  "evidence_root": "Phase 01-A/02_분석작업/01-A2_스킬작성전_재시험/2026-10-16_첫실행",
+  "report": "Phase 01-A/05_결과보고/12_01-A2_스킬작성전_재시험_결과.md",
+  "viewer": "Phase 01-A/02_분석작업/01-A2_스킬작성전_재시험/2026-10-16_첫실행/재시험_검토화면.html",
+  "audit": "Phase 01-A/02_분석작업/01-A2_스킬작성전_재시험/2026-10-16_첫실행/실행감사.json",
+  "workflow_skill": "anthropic-skill-creator baseline-only evaluation workflow; no with_skill condition or benchmark advantage claimed",
+  "limits": [
+    "same two already-exposed originals, one procedure run per case, separate contexts not unseen-source independence",
+    "local source PNGs/temporal crops, not full real-time native video playback",
+    "self-reported analyst access lists, no OS secrecy boundary or complete tool telemetry claim",
+    "root graded content using frozen references and selected source evidence; not independent human adjudication"
+  ]
+}

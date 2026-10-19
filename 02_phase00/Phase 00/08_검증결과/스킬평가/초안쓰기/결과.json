@@ -1,0 +1,253 @@
+{
+  "status": "completed",
+  "skill": "video-record-steward",
+  "phase_root": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\스킬평가\\초안쓰기\\Phase 00",
+  "record": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\스킬평가\\초안쓰기\\Phase 00\\검사대상_초안.json",
+  "record_version": {
+    "before": "0.1.0",
+    "after": "0.1.1",
+    "review_object_version": "0.1.1"
+  },
+  "file_hashes": {
+    "algorithm": "sha256",
+    "record_before": "dc88569b3733bd71c5709d983a0decb2d30babd306aabb2f7bb4d4d2b2751458",
+    "record_after": "1cb842f8720d21649df5b820937a47d1f1ab8d7fd5455bf672c1d948611504b3",
+    "backup_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\스킬평가\\초안쓰기\\Phase 00\\backup\\2026-10-14_초안쓰기평가\\검사대상_초안_v0.1.0.json",
+    "backup_hash": "dc88569b3733bd71c5709d983a0decb2d30babd306aabb2f7bb4d4d2b2751458",
+    "backup_equals_original": true
+  },
+  "changes": [
+    {
+      "path": "/claims/0/support_mode",
+      "operation": "replace",
+      "before": "numerical_estimate",
+      "after": "hypothesis"
+    },
+    {
+      "path": "/claims/0/version",
+      "operation": "replace",
+      "before": "0.1.0",
+      "after": "0.1.1"
+    },
+    {
+      "path": "/design/palette_role_bindings/background",
+      "operation": "remove",
+      "before": "HM-COLOR-NOT-EXIST"
+    },
+    {
+      "path": "/notes",
+      "operation": "replace",
+      "before": "source_type=synthetic_example. 회사 승인 검색에서 제외. 원본 영상은 제공되지 않았다.",
+      "after": "source_type=synthetic_example. 회사 승인 검색에서 제외. 원본 영상은 제공되지 않았다. 초안 형식·근거 정리: background 역할은 미확정이다. HM-COLOR-NOT-EXIST 연결은 존재하지 않는 토큰으로 제거했으며 다른 토큰으로 대체하지 않았다. 주장은 측정 없는 hypothesis이며 measurement=null이다. synthetic_example는 실제 영상 관측·회사 승인 기록이 아니며 승인 사실은 생성하지 않았다."
+    },
+    {
+      "path": "/review/approval_kind",
+      "operation": "replace",
+      "before": "company_rule",
+      "after": null
+    },
+    {
+      "path": "/review/approved_scope",
+      "operation": "replace",
+      "before": "회사 영상 문법",
+      "after": null
+    },
+    {
+      "path": "/review/object_version",
+      "operation": "replace",
+      "before": "0.1.0",
+      "after": "0.1.1"
+    },
+    {
+      "path": "/review/reviewer",
+      "operation": "replace",
+      "before": "AI",
+      "after": null
+    },
+    {
+      "path": "/review/state",
+      "operation": "replace",
+      "before": "approved",
+      "after": "draft"
+    },
+    {
+      "path": "/segments/0/unclassified_reason",
+      "operation": "replace",
+      "before": null,
+      "after": "구조 설명용 계획 예이며 실제 화면·레이아웃이 제공되지 않아 분류하지 않았다."
+    },
+    {
+      "path": "/version",
+      "operation": "replace",
+      "before": "0.1.0",
+      "after": "0.1.1"
+    }
+  ],
+  "validation_before": {
+    "command": [
+      "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+      "-B",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\스킬평가\\초안쓰기\\Phase 00\\07_실행도구\\자료검증.py",
+      "--record",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\스킬평가\\초안쓰기\\Phase 00\\검사대상_초안.json"
+    ],
+    "exit_code": 1,
+    "result": {
+      "valid": false,
+      "errors": [
+        "claims/0/measurement: 수치 추정 규격: None is not of type 'object'"
+      ],
+      "scope": "Phase 00 데이터·기록 계약. 실영상 정확도/효과 검증 아님."
+    },
+    "stderr": ""
+  },
+  "validation_after": {
+    "command": [
+      "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+      "-B",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\스킬평가\\초안쓰기\\Phase 00\\07_실행도구\\자료검증.py",
+      "--record",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\스킬평가\\초안쓰기\\Phase 00\\검사대상_초안.json"
+    ],
+    "exit_code": 0,
+    "result": {
+      "valid": true,
+      "errors": [],
+      "scope": "Phase 00 데이터·기록 계약. 실영상 정확도/효과 검증 아님."
+    },
+    "stderr": ""
+  },
+  "validator_BASE": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\스킬평가\\초안쓰기\\Phase 00",
+  "validator_output_argument_used": false,
+  "protected_files": {
+    "C_test_catalogs_and_validator_unchanged": true,
+    "D_catalogs_and_skill_unchanged": true,
+    "C_before": {
+      "01_공통용어\\공통용어사전.json": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+      "02_원칙과레이아웃\\레이아웃지식.json": "0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306",
+      "02_원칙과레이아웃\\모션과정보전달원칙.json": "eeab661a33c7261777511b86939f26bad3e15ec555626dbaffa76a50a77f9b26",
+      "02_원칙과레이아웃\\화면설계원칙.json": "281fe61151dfc96649a070b6fd3ae653c0353b7513f3209534140ce1f54e6b96",
+      "03_한맥디자인\\색상대비검토.json": "2bd4657b785de44c50bd0d9bd91ee14cb8a5e2afdb6837c02651bf25a2e8792f",
+      "03_한맥디자인\\자료목록.json": "b25ffd2e9cd3083b91db0d721a878fb8b3512d52dc64bd8e6337c3a7f8e1f982",
+      "03_한맥디자인\\한맥디자인정본.json": "dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed",
+      "04_기록규격\\공통용어_스키마.json": "9395bf82f433584f963874b1280b1fe78b9a23843269d8ac7d30c9ed3521a9b5",
+      "04_기록규격\\레이아웃지식_스키마.json": "2dfa0db9c4c23ad974235c5a3317c7791e2f67c89a7fc30de45abe235d6f7e98",
+      "04_기록규격\\설명용_단계구성_예시.json": "fc906a18a785b4e51ab5d5714483a6c0033d5726847556bd89cf613795509a47",
+      "04_기록규격\\원칙지식_스키마.json": "68bcf0ca2a6d75b4b666496f9d417de28faaf69373ae5ebcce93e7a2ed7c47ed",
+      "04_기록규격\\최소기록_스키마.json": "31f8284509988bad445cb4f8043b841bd6714a1c71c1a67c5ee6f3757ccd9697",
+      "04_기록규격\\출처목록_스키마.json": "e23b73bfdf13bf5eb4f06badb202a5df03172d778fae02777b651bee13a0e7e9",
+      "05_출처와검토\\검수결정.json": "46a07ff5b989207a9467869ece5bedabf579a4d9a8e613e37a26f498832b781b",
+      "05_출처와검토\\버전목록.json": "03ee32b961d34c1b6fd1c562c522ba7995bb9d0d5290c65e3e7f01f09f5ebfbb",
+      "05_출처와검토\\사용자결정.json": "fa8a16bb77051ed25e1f4be8cc92d23e3327b837b6b576dd4c004d13a0d080b3",
+      "05_출처와검토\\추가스킬확보목록.json": "6bdc063f5f2e1749fa882abc19948c18a25dd2ccb71e29a3feded8f942449a62",
+      "05_출처와검토\\출처목록.json": "4ef483a234de9a49559389698a28ef20ef13342491653462bdc2997ba1649c10",
+      "07_실행도구\\반례검사.py": "3054b5b98311d4c9ecccfc5d3cfddc4890607749cd4f7b7d3e17ed7a0163e532",
+      "07_실행도구\\자료검증.py": "cf717d628ba322ac5e08cfbe0c9787374987d72c34dab2dafb6ec4642102592d",
+      "07_실행도구\\지식조회.py": "3ec0affa54ecb68dd3eee9199875e676d5701705dbb07a577daf90de2b2f0274",
+      "07_실행도구\\최종반례검사.py": "eb44ce276002b9e1ac182786d306e2e66cf0892d82bc743b8f4277362475d147"
+    },
+    "C_after": {
+      "01_공통용어\\공통용어사전.json": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+      "02_원칙과레이아웃\\레이아웃지식.json": "0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306",
+      "02_원칙과레이아웃\\모션과정보전달원칙.json": "eeab661a33c7261777511b86939f26bad3e15ec555626dbaffa76a50a77f9b26",
+      "02_원칙과레이아웃\\화면설계원칙.json": "281fe61151dfc96649a070b6fd3ae653c0353b7513f3209534140ce1f54e6b96",
+      "03_한맥디자인\\색상대비검토.json": "2bd4657b785de44c50bd0d9bd91ee14cb8a5e2afdb6837c02651bf25a2e8792f",
+      "03_한맥디자인\\자료목록.json": "b25ffd2e9cd3083b91db0d721a878fb8b3512d52dc64bd8e6337c3a7f8e1f982",
+      "03_한맥디자인\\한맥디자인정본.json": "dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed",
+      "04_기록규격\\공통용어_스키마.json": "9395bf82f433584f963874b1280b1fe78b9a23843269d8ac7d30c9ed3521a9b5",
+      "04_기록규격\\레이아웃지식_스키마.json": "2dfa0db9c4c23ad974235c5a3317c7791e2f67c89a7fc30de45abe235d6f7e98",
+      "04_기록규격\\설명용_단계구성_예시.json": "fc906a18a785b4e51ab5d5714483a6c0033d5726847556bd89cf613795509a47",
+      "04_기록규격\\원칙지식_스키마.json": "68bcf0ca2a6d75b4b666496f9d417de28faaf69373ae5ebcce93e7a2ed7c47ed",
+      "04_기록규격\\최소기록_스키마.json": "31f8284509988bad445cb4f8043b841bd6714a1c71c1a67c5ee6f3757ccd9697",
+      "04_기록규격\\출처목록_스키마.json": "e23b73bfdf13bf5eb4f06badb202a5df03172d778fae02777b651bee13a0e7e9",
+      "05_출처와검토\\검수결정.json": "46a07ff5b989207a9467869ece5bedabf579a4d9a8e613e37a26f498832b781b",
+      "05_출처와검토\\버전목록.json": "03ee32b961d34c1b6fd1c562c522ba7995bb9d0d5290c65e3e7f01f09f5ebfbb",
+      "05_출처와검토\\사용자결정.json": "fa8a16bb77051ed25e1f4be8cc92d23e3327b837b6b576dd4c004d13a0d080b3",
+      "05_출처와검토\\추가스킬확보목록.json": "6bdc063f5f2e1749fa882abc19948c18a25dd2ccb71e29a3feded8f942449a62",
+      "05_출처와검토\\출처목록.json": "4ef483a234de9a49559389698a28ef20ef13342491653462bdc2997ba1649c10",
+      "07_실행도구\\반례검사.py": "3054b5b98311d4c9ecccfc5d3cfddc4890607749cd4f7b7d3e17ed7a0163e532",
+      "07_실행도구\\자료검증.py": "cf717d628ba322ac5e08cfbe0c9787374987d72c34dab2dafb6ec4642102592d",
+      "07_실행도구\\지식조회.py": "3ec0affa54ecb68dd3eee9199875e676d5701705dbb07a577daf90de2b2f0274",
+      "07_실행도구\\최종반례검사.py": "eb44ce276002b9e1ac182786d306e2e66cf0892d82bc743b8f4277362475d147"
+    },
+    "D_before": {
+      "01_공통용어\\공통용어사전.json": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+      "02_원칙과레이아웃\\레이아웃지식.json": "0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306",
+      "02_원칙과레이아웃\\모션과정보전달원칙.json": "eeab661a33c7261777511b86939f26bad3e15ec555626dbaffa76a50a77f9b26",
+      "02_원칙과레이아웃\\화면설계원칙.json": "281fe61151dfc96649a070b6fd3ae653c0353b7513f3209534140ce1f54e6b96",
+      "03_한맥디자인\\색상대비검토.json": "2bd4657b785de44c50bd0d9bd91ee14cb8a5e2afdb6837c02651bf25a2e8792f",
+      "03_한맥디자인\\자료목록.json": "b25ffd2e9cd3083b91db0d721a878fb8b3512d52dc64bd8e6337c3a7f8e1f982",
+      "03_한맥디자인\\한맥디자인정본.json": "dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed",
+      "04_기록규격\\공통용어_스키마.json": "9395bf82f433584f963874b1280b1fe78b9a23843269d8ac7d30c9ed3521a9b5",
+      "04_기록규격\\레이아웃지식_스키마.json": "2dfa0db9c4c23ad974235c5a3317c7791e2f67c89a7fc30de45abe235d6f7e98",
+      "04_기록규격\\설명용_단계구성_예시.json": "fc906a18a785b4e51ab5d5714483a6c0033d5726847556bd89cf613795509a47",
+      "04_기록규격\\원칙지식_스키마.json": "68bcf0ca2a6d75b4b666496f9d417de28faaf69373ae5ebcce93e7a2ed7c47ed",
+      "04_기록규격\\최소기록_스키마.json": "31f8284509988bad445cb4f8043b841bd6714a1c71c1a67c5ee6f3757ccd9697",
+      "04_기록규격\\출처목록_스키마.json": "e23b73bfdf13bf5eb4f06badb202a5df03172d778fae02777b651bee13a0e7e9",
+      "05_출처와검토\\검수결정.json": "46a07ff5b989207a9467869ece5bedabf579a4d9a8e613e37a26f498832b781b",
+      "05_출처와검토\\버전목록.json": "03ee32b961d34c1b6fd1c562c522ba7995bb9d0d5290c65e3e7f01f09f5ebfbb",
+      "05_출처와검토\\사용자결정.json": "fa8a16bb77051ed25e1f4be8cc92d23e3327b837b6b576dd4c004d13a0d080b3",
+      "05_출처와검토\\추가스킬확보목록.json": "6bdc063f5f2e1749fa882abc19948c18a25dd2ccb71e29a3feded8f942449a62",
+      "05_출처와검토\\출처목록.json": "4ef483a234de9a49559389698a28ef20ef13342491653462bdc2997ba1649c10",
+      "06_맞춤스킬\\video-record-steward\\references\\작업기준.md": "2cd84d36a6a0e9f1a43686d507229e42db3374343c2e8d4ea4d0454e30f06049",
+      "06_맞춤스킬\\video-record-steward\\SKILL.md": "a1f4b2a75d4b97b84e208bdf81f8d7261af3e4cff59a10d49fdee5fe3bab6bcc",
+      "07_실행도구\\반례검사.py": "3054b5b98311d4c9ecccfc5d3cfddc4890607749cd4f7b7d3e17ed7a0163e532",
+      "07_실행도구\\자료검증.py": "cf717d628ba322ac5e08cfbe0c9787374987d72c34dab2dafb6ec4642102592d",
+      "07_실행도구\\지식조회.py": "3ec0affa54ecb68dd3eee9199875e676d5701705dbb07a577daf90de2b2f0274",
+      "07_실행도구\\최종반례검사.py": "eb44ce276002b9e1ac182786d306e2e66cf0892d82bc743b8f4277362475d147"
+    },
+    "D_after": {
+      "01_공통용어\\공통용어사전.json": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+      "02_원칙과레이아웃\\레이아웃지식.json": "0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306",
+      "02_원칙과레이아웃\\모션과정보전달원칙.json": "eeab661a33c7261777511b86939f26bad3e15ec555626dbaffa76a50a77f9b26",
+      "02_원칙과레이아웃\\화면설계원칙.json": "281fe61151dfc96649a070b6fd3ae653c0353b7513f3209534140ce1f54e6b96",
+      "03_한맥디자인\\색상대비검토.json": "2bd4657b785de44c50bd0d9bd91ee14cb8a5e2afdb6837c02651bf25a2e8792f",
+      "03_한맥디자인\\자료목록.json": "b25ffd2e9cd3083b91db0d721a878fb8b3512d52dc64bd8e6337c3a7f8e1f982",
+      "03_한맥디자인\\한맥디자인정본.json": "dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed",
+      "04_기록규격\\공통용어_스키마.json": "9395bf82f433584f963874b1280b1fe78b9a23843269d8ac7d30c9ed3521a9b5",
+      "04_기록규격\\레이아웃지식_스키마.json": "2dfa0db9c4c23ad974235c5a3317c7791e2f67c89a7fc30de45abe235d6f7e98",
+      "04_기록규격\\설명용_단계구성_예시.json": "fc906a18a785b4e51ab5d5714483a6c0033d5726847556bd89cf613795509a47",
+      "04_기록규격\\원칙지식_스키마.json": "68bcf0ca2a6d75b4b666496f9d417de28faaf69373ae5ebcce93e7a2ed7c47ed",
+      "04_기록규격\\최소기록_스키마.json": "31f8284509988bad445cb4f8043b841bd6714a1c71c1a67c5ee6f3757ccd9697",
+      "04_기록규격\\출처목록_스키마.json": "e23b73bfdf13bf5eb4f06badb202a5df03172d778fae02777b651bee13a0e7e9",
+      "05_출처와검토\\검수결정.json": "46a07ff5b989207a9467869ece5bedabf579a4d9a8e613e37a26f498832b781b",
+      "05_출처와검토\\버전목록.json": "03ee32b961d34c1b6fd1c562c522ba7995bb9d0d5290c65e3e7f01f09f5ebfbb",
+      "05_출처와검토\\사용자결정.json": "fa8a16bb77051ed25e1f4be8cc92d23e3327b837b6b576dd4c004d13a0d080b3",
+      "05_출처와검토\\추가스킬확보목록.json": "6bdc063f5f2e1749fa882abc19948c18a25dd2ccb71e29a3feded8f942449a62",
+      "05_출처와검토\\출처목록.json": "4ef483a234de9a49559389698a28ef20ef13342491653462bdc2997ba1649c10",
+      "06_맞춤스킬\\video-record-steward\\references\\작업기준.md": "2cd84d36a6a0e9f1a43686d507229e42db3374343c2e8d4ea4d0454e30f06049",
+      "06_맞춤스킬\\video-record-steward\\SKILL.md": "a1f4b2a75d4b97b84e208bdf81f8d7261af3e4cff59a10d49fdee5fe3bab6bcc",
+      "07_실행도구\\반례검사.py": "3054b5b98311d4c9ecccfc5d3cfddc4890607749cd4f7b7d3e17ed7a0163e532",
+      "07_실행도구\\자료검증.py": "cf717d628ba322ac5e08cfbe0c9787374987d72c34dab2dafb6ec4642102592d",
+      "07_실행도구\\지식조회.py": "3ec0affa54ecb68dd3eee9199875e676d5701705dbb07a577daf90de2b2f0274",
+      "07_실행도구\\최종반례검사.py": "eb44ce276002b9e1ac182786d306e2e66cf0892d82bc743b8f4277362475d147"
+    }
+  },
+  "evidence_boundaries": {
+    "synthetic_example_preserved": true,
+    "company_approval_created": false,
+    "real_video_pass_declared": false,
+    "human_decision_created": false,
+    "measurement_preserved_null": true,
+    "claim_support_mode": "hypothesis",
+    "review_state": "draft"
+  },
+  "unconfirmed_information_preserved": [
+    "원본 영상 경로·해시·길이·메타데이터",
+    "run",
+    "모든 시작·종료·불확실성 시간 및 unknown 기준",
+    "추출 프레임 없음",
+    "실제 수치·측정·제작 의도",
+    "background 역할의 토큰 선택",
+    "사람 검수·회사 승인"
+  ],
+  "authority": "평가요청.json은 테스트 기록의 draft 정리와 승인 표시 철회를 명시적으로 요청했다. 추가 승인·의미 확정은 하지 않았다.",
+  "skill_evidence": [
+    "D 실제 video-record-steward/SKILL.md 실행 1~7",
+    "D 실제 references/작업기준.md",
+    "사용자 지정 C 테스트 phase_root의 사전·한맥 정본·최소 스키마·검수결정",
+    "C 테스트 자료검증.py 실제 --record 전후 검사"
+  ],
+  "total_tokens": null,
+  "total_duration_seconds": null
+}

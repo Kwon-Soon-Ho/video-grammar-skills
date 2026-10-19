@@ -1,0 +1,64 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "const": "r6-integrated-review-context"
+    },
+    "version": {
+      "const": "0.1.0"
+    },
+    "scope": {
+      "const": "reference_and_declared_review_context_only"
+    },
+    "pins": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$",
+            "maxLength": 64
+          }
+        },
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "spatial_supported_unlocked": {
+      "const": false
+    },
+    "company_approved": {
+      "const": false
+    },
+    "permission_granted": {
+      "const": false
+    },
+    "operational_release": {
+      "const": false
+    }
+  },
+  "required": [
+    "id",
+    "version",
+    "scope",
+    "pins",
+    "spatial_supported_unlocked",
+    "company_approved",
+    "permission_granted",
+    "operational_release"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:hanmac:phase00:r6-review-context:0.1.0",
+  "title": "R6 통합 검수 연결 입력 고정"
+}

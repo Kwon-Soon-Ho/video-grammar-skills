@@ -1,0 +1,79 @@
+{
+  "schema_version": "video-pattern-library-0.1",
+  "patterns": [
+    {
+      "id": "PAT-TEXT-0001",
+      "category": "TEXT",
+      "name": "합성 검사 전용 - 실제 패턴 아님",
+      "source": {
+        "case_id": "SYNTHETIC-CHECK-ONLY",
+        "source_sha256": "786e900ac768e43e546d6b979c31d3e33fbf5046902fe0174ef30156045fd8cc",
+        "observation_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-revision-20261019\\validation\\synthetic-record.json",
+        "observation_sha256": "bda9e5f255e892c1b77413b3293ca6916cea406cc814c5431c7a379755ff1c3a",
+        "claim_ids": [
+          "c1",
+          "c2",
+          "c3"
+        ]
+      },
+      "design_spec": {
+        "layout": "합성 전체 레이아웃",
+        "typography": "합성 타이포",
+        "color": "합성 색",
+        "information_relation": "합성 관계"
+      },
+      "motion_spec": {
+        "flow": "합성 흐름",
+        "detail": "합성 세부",
+        "timing": "합성 시간",
+        "properties": "합성 속성",
+        "unknowns": []
+      },
+      "applicability": "검사기에서만 사용",
+      "counterexamples": [
+        "실제 영상에 사용 금지"
+      ],
+      "status": "draft",
+      "supersedes": null,
+      "created_utc": "2026-10-19T01:00:23.007736+00:00",
+      "sha256": "f66306f28a0f22c1897b0b30aab8ea42cad329e4d2da1102761535003a838a44"
+    },
+    {
+      "id": "PAT-TEXT-0002",
+      "category": "TEXT",
+      "name": "합성 다음 판본",
+      "source": {
+        "case_id": "SYNTHETIC-CHECK-ONLY",
+        "source_sha256": "786e900ac768e43e546d6b979c31d3e33fbf5046902fe0174ef30156045fd8cc",
+        "observation_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-revision-20261019\\validation\\synthetic-record.json",
+        "observation_sha256": "bda9e5f255e892c1b77413b3293ca6916cea406cc814c5431c7a379755ff1c3a",
+        "claim_ids": [
+          "c1",
+          "c2",
+          "c3"
+        ]
+      },
+      "design_spec": {
+        "layout": "합성 전체 레이아웃",
+        "typography": "합성 타이포",
+        "color": "합성 색",
+        "information_relation": "합성 관계"
+      },
+      "motion_spec": {
+        "flow": "합성 흐름",
+        "detail": "합성 세부",
+        "timing": "합성 시간",
+        "properties": "합성 속성",
+        "unknowns": []
+      },
+      "applicability": "검사기에서만 사용",
+      "counterexamples": [
+        "실제 영상에 사용 금지"
+      ],
+      "status": "draft",
+      "supersedes": "PAT-TEXT-0001",
+      "created_utc": "2026-10-19T01:00:23.012932+00:00",
+      "sha256": "286aa26690afd2e98fdc87afd52dfc152424c35acef5ce2ccf16cf9d93e82f7a"
+    }
+  ]
+}

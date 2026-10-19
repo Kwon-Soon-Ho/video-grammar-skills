@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-15",
+  "stage": "R4-4",
+  "status": "integrated_contract_copy_only_legacy_intake_and_default_entrypoint_review_complete",
+  "scope": "기록 규격·copy-only 접수/누락·기본 도구 전환·합성/독립 검수 범위",
+  "user_decision": "A: 새 v0.2 기본, 부족한 구형은 원문/누락 접수함 보존",
+  "r4_complete": true,
+  "r4_completion_boundary": "Phase 00 최소 DB 계약·설명용/합성 검수. 실제 분석·내용/권한·회사/운영 승인은 아님.",
+  "phase00_complete": false,
+  "phase01a_started": false,
+  "legacy_sources_preserved": 5,
+  "legacy_sources_semantically_auto_converted": 0,
+  "actual_video_records_migrated": 0,
+  "actual_human_content_review_performed": false,
+  "real_media_accuracy_verified": false,
+  "existing_skill_rebuild_or_new_schema_evaluation_performed": false,
+  "spatial_supported_content_governance_hold_preserved": true,
+  "fact_verified": false,
+  "company_approved": false,
+  "operational_release": false,
+  "tests": {
+    "integration": {
+      "builtin": {
+        "count": 61,
+        "passed": 61
+      },
+      "independent": {
+        "count": 42,
+        "passed": 42
+      }
+    },
+    "intake": {
+      "builtin": {
+        "count": 31,
+        "passed": 31
+      },
+      "independent": {
+        "count": 47,
+        "passed": 47
+      }
+    },
+    "entrypoint": {
+      "builtin": {
+        "count": 24,
+        "passed": 24
+      },
+      "independent": {
+        "count": 67,
+        "passed": 67
+      }
+    }
+  },
+  "remaining": [
+    "R5 회사/CI·디자인 적용 계약",
+    "R6 출처·권한·검수 결정 연결",
+    "R7 품질/조회·검수 기준과 실제 평가 계획",
+    "R8 맞춤 스킬 재구성·v0.2 호환/쓰기/기권 평가"
+  ],
+  "next": "R5 한맥/가족사 CI와 디자인 적용 연결"
+}

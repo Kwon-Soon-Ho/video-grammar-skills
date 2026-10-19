@@ -1,0 +1,177 @@
+{
+  "id": "01-A5a-recommended-A-design-v1",
+  "date": "2026-10-16",
+  "status": "design_pinned_pending_user_A5b_decision",
+  "authorization": {
+    "A5a": true,
+    "A5b": false,
+    "01B": false,
+    "02": false
+  },
+  "reference_thread": "01a14397-ee06-7362-8b1c-35c0166c32df",
+  "selected_option": "A",
+  "purpose": "문법 추출에 필요한 구조·문구·시간 관측의 반복성, 오류·기권, 검수 부담을 제한된 별도 자료에서 확인",
+  "skill_version": "0.1.0-draft.3",
+  "candidate_pins": "candidate-pins.json",
+  "comparison": {
+    "project_groups": 2,
+    "windows_per_group": 2,
+    "windows_total": 4,
+    "repeats": 2,
+    "conditions": [
+      "with_skill",
+      "without_skill"
+    ],
+    "planned_primary_runs": 16,
+    "with_skill_runs": 8,
+    "legacy_regression_runs": 3,
+    "maximum_technical_retries": 2,
+    "maximum_execution_attempts_including_retries": 21,
+    "independence_unit": "project_group",
+    "repetition_is_new_project": false
+  },
+  "selection": {
+    "windows": "windows.json",
+    "metadata": "materials-metadata.json",
+    "exposure": "exposure.json",
+    "total_distinct_visual_seconds": 36,
+    "video_files": 3,
+    "document_files": 1,
+    "selection_frozen_before_pixels": true,
+    "post_failure_substitution": false,
+    "whole_video_or_audio_scope": false
+  },
+  "reference": {
+    "stage": "A5b preparation before any primary output",
+    "candidate_answers_visible_to_reference_author": false,
+    "expected_core_atoms_per_window": [
+      6,
+      10
+    ],
+    "expected_detail_atoms_per_window": [
+      6,
+      10
+    ],
+    "minimum_core_atoms_for_scope_claim": 6,
+    "minimum_detail_atoms_for_scope_claim": 6,
+    "atom_fields": [
+      "source_id",
+      "window_id",
+      "target",
+      "property_or_relation",
+      "state_or_direction_or_order",
+      "time_bracket",
+      "evidence",
+      "tier",
+      "judgable",
+      "reason_if_unjudgable"
+    ],
+    "reference_author_type_default": "AI reference with separate audit; not human gold",
+    "reference_seal_before_runs": true,
+    "do_not_invent_atoms_to_meet_minimum": true,
+    "insufficient_reference_result": "scope_inconclusive; preserve original windows and report actual denominator"
+  },
+  "quality_gates": {
+    "critical_errors_max": 0,
+    "structure_or_provenance_errors_max": 0,
+    "core_coverage_min": 1.0,
+    "detail_coverage_min": 0.9,
+    "asserted_claim_precision_min": 0.95,
+    "avoidable_abstention_fraction_max": 0.1,
+    "repeat_joint_detail_coverage_min": 0.9,
+    "boundary_interval_distance_seconds_max": 0.2,
+    "reported_boundary_bracket_width_seconds_max": 0.4,
+    "reference_boundary_bracket_width_seconds_max": 0.2,
+    "applies_to": "each of the 8 fixed-skill primary runs; repeat joint coverage for each window; no averaging away a failed run",
+    "critical_error_examples": [
+      "원본·회사·대상·시각 혼동",
+      "수치·단위·부정어·문구 순서 변경으로 뜻 왜곡",
+      "근거 없는 이동·가감속·AE 구현 확정",
+      "미검수 음성을 무음/청취완료로 기재",
+      "새 AI 관측을 기존 사용자 승인으로 기재"
+    ],
+    "threshold_status": "prospective engineering acceptance limits, not A4 empirical performance estimates or statistical guarantees"
+  },
+  "metric_definitions": {
+    "core_coverage": "correct matched judgable core atoms / all judgable core reference atoms",
+    "detail_coverage": "correct matched judgable detail atoms / all judgable detail reference atoms",
+    "asserted_claim_precision": "supported unique asserted factual atoms / all unique asserted factual atoms, including claims outside the reference list",
+    "avoidable_abstention_fraction": "judgable core+detail atoms marked unknown despite available permitted evidence / all judgable core+detail reference atoms; these also remain missed coverage atoms",
+    "repeat_joint_detail_coverage": "judgable detail atoms correctly matched in both repeats / all judgable detail reference atoms",
+    "boundary_interval_distance": "max(0, reference_start - reported_end, reported_start - reference_end); exact evidence PTS identity is a separate zero-error provenance gate",
+    "uncertainty": "genuine evidence-indeterminate easing may remain unknown without penalty; direction/order/existence remain scored; definite unsupported claims are errors",
+    "duplicates_and_conflicts": "duplicate semantic claims count once; contradiction is not cured by also writing a correct alternative; critical contradictions fail the zero-error gate",
+    "rounding": "success counts must meet ceil(threshold * denominator); maximum counts use floor(threshold * denominator); no rounding up a ratio to pass",
+    "zero_denominator": "null plus reason and scope-inconclusive; never treat 0/0 as 100 percent",
+    "inapplicable": "judge before looking at run results, state reason, preserve count; do not remove a failed item after scoring"
+  },
+  "observation_budget": {
+    "base_step_seconds": 0.4,
+    "base_frames_per_window_max": 32,
+    "adaptive_rounds_per_run_max": 2,
+    "adaptive_native_frames_per_round_max": 24,
+    "adaptive_native_frames_per_run_max": 48,
+    "reference_and_dispute_extra_native_frames_max": 64,
+    "adapter_diagnostic_native_frames_max": 8,
+    "new_native_frames_global_max": 1000,
+    "derived_RGB_crops_per_run_max": 40,
+    "disk_bytes_global_max": 8589934592,
+    "candidate_wall_minutes_per_run_max": 15,
+    "legacy_wall_minutes_per_run_max": 10,
+    "new_external_paid_API_calls_max": 0
+  },
+  "decoder_worker_limits": {
+    "file_bytes_max": 3221225472,
+    "pixels_max": 16588800,
+    "memory_bytes_max": 2147483648,
+    "wall_seconds_max": 60,
+    "read_bytes_max": 268435456,
+    "output_images_max": 40,
+    "max_packets": 4000,
+    "max_decoded_frames": 1600
+  },
+  "review_budget": {
+    "reference_check_minutes": 40,
+    "blinded_run_review_minutes": 32,
+    "dispute_minutes": 18,
+    "review_total_minutes_max": 90,
+    "user_questions_max": 6,
+    "user_active_minutes_max_included_in_review": 20,
+    "rechecking_already_confirmed_A2_items": false,
+    "time_kind": "review task elapsed time with unrelated waiting paused; actual human active time and AI elapsed time recorded separately"
+  },
+  "overall_resource_budget": {
+    "primary_run_wall_minutes_max": 240,
+    "legacy_run_wall_minutes_max": 30,
+    "technical_preparation_minutes_max": 30,
+    "review_minutes_max": 90,
+    "total_task_minutes_max": 390,
+    "technical_retries_share_existing_caps": true,
+    "overlap_is_not_calendar_time": true,
+    "calendar_deadline_promised": false,
+    "missing_telemetry": "null plus reason; no inferred historical human time or token cost"
+  },
+  "value_comparison": {
+    "quality_gate_independent_of_cost": true,
+    "like_quality_review_cost_ratio_target_max": 1.2,
+    "if_baseline_cost_zero_or_unmeasured": "ratio null, absolute effort only",
+    "if_baseline_quality_fails": "do not advertise a cheap inaccurate baseline as equal-quality comparator",
+    "if_quality_passes_but_value_unproved": "quality pass / benefit inconclusive; no automatic default promotion"
+  },
+  "stop_policy": {
+    "legacy_failure": "stop before exposing the new videos; preserve output and report candidate revision required",
+    "critical_primary_failure": "critical error in with_skill stops all remaining analyses in this batch; baseline errors alone do not stop candidate evaluation; preserve outputs and report planned-versus-actual counts",
+    "noncritical_failure": "continue only frozen runs within resource caps; no mid-test skill or criterion editing",
+    "budget_exhaustion": "stop at cap, record unresolved coverage as incomplete/inconclusive, do not silently extend",
+    "unscorable_reference": "scope-inconclusive; no invented truth or replacement samples",
+    "revision_after_new_material_seen": "that material becomes development/regression material; no fresh-heldout relabel on rerun"
+  },
+  "actual_execution": {
+    "legacy_runs": 0,
+    "primary_runs": 0,
+    "video_frames_decoded": 0,
+    "new_reference_atoms_created": 0,
+    "human_new_content_approvals": 0,
+    "actual_scores": null
+  }
+}

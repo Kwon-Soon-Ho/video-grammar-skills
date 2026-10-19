@@ -1,0 +1,82 @@
+{
+  "execution": {
+    "name": "legacy_readonly_check",
+    "argv": [
+      "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-03-정확한_체크포인트_복구\\new_skill\\run-1\\inputs\\Phase00\\07_실행도구\\자료검증.py",
+      "--record",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-03-정확한_체크포인트_복구\\new_skill\\run-1\\inputs\\Phase00\\작업초안\\구형_추가자료.json"
+    ],
+    "cwd": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-03-정확한_체크포인트_복구\\new_skill\\run-1\\inputs\\Phase00",
+    "exit_code": 2,
+    "stdout_path": "legacy_readonly_check.stdout.txt",
+    "stderr_path": "legacy_readonly_check.stderr.txt"
+  },
+  "result": {
+    "valid": false,
+    "status": "needs_migration",
+    "schema_version": "0.1.0",
+    "errors": [
+      "구형 v0.1.0은 새 통합 기록으로 통과시키지 않음. 기록접수.py로 원문·누락 보존 후 명시 이관 필요."
+    ],
+    "unresolved": [],
+    "legacy_shape_errors": [],
+    "missing_or_review_items": [
+      {
+        "pointer": "/asset/version",
+        "reason": "원본 영상 identity 미확인. JSON/파일명에서 추정 금지",
+        "automatic_fill_allowed": false
+      },
+      {
+        "pointer": "/asset/sha256",
+        "reason": "원본 영상 identity 미확인. JSON/파일명에서 추정 금지",
+        "automatic_fill_allowed": false
+      },
+      {
+        "pointer": "/asset/duration_s",
+        "reason": "재생 길이와 확인 근거 미확인",
+        "automatic_fill_allowed": false
+      },
+      {
+        "pointer": "/time_contract",
+        "reason": "원점·PTS·구간/프레임·근거를 새 시간 계약에 명시 연결해야 함",
+        "automatic_fill_allowed": false
+      },
+      {
+        "pointer": "/targets",
+        "reason": "원본/설명 구간/화면 상태/동작·대상의 범위와 버전 연결 필요",
+        "automatic_fill_allowed": false
+      },
+      {
+        "pointer": "/evidence",
+        "reason": "자료 pin·선택 부분·주장 범위/근거 역할 연결 필요",
+        "automatic_fill_allowed": false
+      },
+      {
+        "pointer": "/segments/*/classification",
+        "reason": "구형 태그는 출처와 범위를 검토할 후보. 상태/관측 사실 자동 생성 금지",
+        "automatic_fill_allowed": false
+      },
+      {
+        "pointer": "/run",
+        "reason": "실제 수행 기록 미작성. 미실행과 구분해 보존",
+        "automatic_fill_allowed": false
+      },
+      {
+        "pointer": "/review",
+        "reason": "구형 검수/승인 상태는 새 통합 context로 자동 이전하지 않음",
+        "automatic_fill_allowed": false
+      }
+    ],
+    "analysis_search_allowed": false,
+    "company_rule_search_allowed": false,
+    "fact_verified": false,
+    "human_identity_verified": false,
+    "company_approved": false,
+    "operational_release": false,
+    "source_json_sha256": "fc906a18a785b4e51ab5d5714483a6c0033d5726847556bd89cf613795509a47"
+  }
+}

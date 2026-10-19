@@ -1,0 +1,544 @@
+{
+  "id": "REVIEW-SAMAN-REV-B-001",
+  "version": "0.1.0",
+  "review_date": "2026-10-15",
+  "scope": "합성 개발시험 문서 적용성 검토; 실제 렌더/사내 승인 아님",
+  "target": {
+    "id_provided": false,
+    "id": "삼안 검토용 메모 REV-B",
+    "version": "0.1.0",
+    "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase00-build/R8_시험/video-guidance-reviewer-workspace/iteration-1/eval-02-회사CI_회신범위와_사용조건/new_skill/run-1/inputs/Phase00/검토자료/프로젝트메모.md",
+    "sha256": "9d298e42eb1d9d7dae22fbe406e7aabd0191a4b580919497f0c059d168728b2e",
+    "company_id": "saman",
+    "company_scope": "삼안 단독",
+    "purpose": "CI 배경/강조·한맥 회색 글자 후보 적용 조건",
+    "audience_knowledge": "미제공",
+    "medium": "미제공",
+    "silent_mode": "미제공",
+    "aspect_ratio": "미제공",
+    "output_and_viewing_environment": "미제공",
+    "synthetic": true
+  },
+  "selection": {
+    "timing": "대상/회신 범위 확인 후 항목 결과 작성 전",
+    "criteria": [
+      {
+        "id": "Q-BRAND-02",
+        "required": true,
+        "reason": "삼안/한맥 색의 출처·선택·역할 조건이 요청 핵심",
+        "applicable": true,
+        "version": "0.1.1",
+        "source": "13_품질검수/품질항목_정본.json",
+        "selection_changed": false
+      },
+      {
+        "id": "Q-BRAND-01",
+        "required": true,
+        "reason": "B3가 CI 원형/공식형 자동 변경을 제안하므로 원형 보존 검토",
+        "applicable": true,
+        "version": "0.1.1",
+        "source": "13_품질검수/품질항목_정본.json",
+        "selection_changed": false
+      },
+      {
+        "id": "Q-TRUST-02",
+        "required": true,
+        "reason": "B1·B4·B5의 승인·총점·부재·회사 범위 확대 검토",
+        "applicable": true,
+        "version": "0.1.1",
+        "source": "13_품질검수/품질항목_정본.json",
+        "selection_changed": false
+      },
+      {
+        "id": "Q-SCREEN-03",
+        "required": true,
+        "reason": "회색 글자 대비 조건 검토; 최종 가독성에는 실제 합성/표시 근거 필요",
+        "applicable": true,
+        "version": "0.1.1",
+        "source": "13_품질검수/품질항목_정본.json",
+        "selection_changed": false
+      }
+    ],
+    "changes": [],
+    "other_items": "26항목 일괄선정 안 함. 자막·음량·모션·도표·좌표·크롭 등 이번 문서 판정 미선정; 실제 렌더는 미검수"
+  },
+  "findings": [
+    {
+      "id": "F01",
+      "locations": [
+        "프로젝트메모 B1"
+      ],
+      "criteria": [
+        "Q-TRUST-02",
+        "Q-BRAND-01"
+      ],
+      "status": "문서대조완료",
+      "judgment": "수정필요",
+      "cause": "회신 범위 확대",
+      "impact": "자료 최신성 확인을 시안 승인·검수 완료로 오인",
+      "confirmed": "R6 실제 원문/이벤트는 latest_material 8개와 산하 AI부재 진술; 사용가이드8개 unresolved",
+      "evidence": [
+        "사람답변원문 R6-REPLY-CI-20261015-001@0.1.0 /reply,/not_confirmed",
+        "사람검수_접수대장0.1.1 /events/0"
+      ],
+      "counterevidence_limit": "기존 최신성 회신은 유효하게 사용하며 미확인으로 되돌리지 않음",
+      "minimal_change": "최신성은 확인, 실제 시안·세부 가이드·색 자격·사용권한은 별도 대기로 문구 교체 제안",
+      "recheck": "같은 대상·판본·범위 실제 검수/근거 확인"
+    },
+    {
+      "id": "F02",
+      "locations": [
+        "프로젝트메모 B2"
+      ],
+      "criteria": [
+        "Q-BRAND-02"
+      ],
+      "status": "문서대조완료",
+      "judgment": "수정필요",
+      "cause": "웹 관측 라이브러리의 공식 CI 승격",
+      "impact": "출처와 회사 권위 혼동",
+      "confirmed": "hanmac-video0.1.0은 웹 정제 참고·공통 라이브러리; 프로젝트 명시 선택 조건",
+      "evidence": [
+        "한맥디자인정본0.1.0 /source_selection,/color_tokens,/db_contract",
+        "회사CI와_화면역할_연결규칙 연결순서4~6",
+        "DECISION-R5-OBSERVED-COLOR /rule"
+      ],
+      "counterevidence_limit": "공통 라이브러리 참고는 가능; 구체 회색 토큰 미선택",
+      "minimal_change": "공식색 등록 대신 프로젝트 글자색 후보로 출처·토큰판본·알파·선택 이유·상태를 명시하도록 제안",
+      "recheck": "실제 토큰/역할 선택과 조건 자료 확보"
+    },
+    {
+      "id": "F03",
+      "locations": [
+        "프로젝트메모 B3"
+      ],
+      "criteria": [
+        "Q-BRAND-01",
+        "Q-BRAND-02"
+      ],
+      "status": "문서대조완료",
+      "judgment": "수정필요",
+      "cause": "대비 우려에 따른 원형 변경",
+      "impact": "CI 원색 훼손·새 공식형 오인",
+      "confirmed": "원색 자동 어둡게/형태 수정 금지, 배경판·글자색·배치·허용형 검토",
+      "evidence": [
+        "회사CI와_화면역할_연결규칙 8회사 현재 연결",
+        "CI와색상_기록절차 자료받는순서5~6/페이지에서가져오기"
+      ],
+      "counterevidence_limit": "허용된 변형은 근거 연결 후 가능; 실제 저대비 여부는 미확인",
+      "minimal_change": "원색 보존·배경판/글자/배치/역할 대안 비교로 교체, 응용값 필요 시 project_literal 분리",
+      "recheck": "실제 조합/사용형·조건 근거 검토"
+    },
+    {
+      "id": "F04",
+      "locations": [
+        "프로젝트메모 B4"
+      ],
+      "criteria": [
+        "Q-TRUST-02"
+      ],
+      "status": "문서대조완료",
+      "judgment": "수정필요",
+      "cause": "총점으로 필수 오류와 미확인 상쇄",
+      "impact": "전체 사용 준비상태 오인",
+      "confirmed": "총점94 산정근거 없음; 공통 운영기준 단일총점 금지·필수오류/대기 우선",
+      "evidence": [
+        "03_판정운영기준 준비상태1~4"
+      ],
+      "counterevidence_limit": "94 자체를 재계산하지 않았으며 실제 미관 평가도 하지 않음",
+      "minimal_change": "총점 기반 사용 가능 삭제 제안; 항목별 오류/보류/미검수와 해결조건 병기",
+      "recheck": "필수오류 수정과 해당 필수보류 해소"
+    },
+    {
+      "id": "F05",
+      "locations": [
+        "프로젝트메모 B5 전면중단 의견",
+        "프로젝트메모 B5 최신성 재질문 의견"
+      ],
+      "criteria": [
+        "Q-TRUST-02"
+      ],
+      "status": "문서대조완료",
+      "judgment": "수정필요",
+      "cause": "관련없는 회사 미정을 전체 차단하거나 확인범위 중복 질문",
+      "impact": "가능한 삼안 검토 중단·불필요한 반복 확인",
+      "confirmed": "삼안 단독·산하 미사용; 최신성과 산하AI부재 기존 원문 존재",
+      "evidence": [
+        "프로젝트메모 대상회사 문단",
+        "R6 원문 reply",
+        "03_판정운영기준 준비상태4"
+      ],
+      "counterevidence_limit": "삼안 실제 적용에 필요한 미정 조건은 유지",
+      "minimal_change": "삼안 후보 검토 계속·사용할 삼안 범위만 추가확인. 산하 AI 반복요청/임의생성 없음",
+      "recheck": "실제 사용 회사·자산·판본 변경 시 영향범위만 재검토"
+    },
+    {
+      "id": "H01",
+      "locations": [
+        "프로젝트메모 목적 문단"
+      ],
+      "criteria": [
+        "Q-BRAND-02"
+      ],
+      "status": "문서조건검토완료_자료대기",
+      "judgment": "판단보류",
+      "cause": "명시 선택/역할 조건 미제공",
+      "impact": "특정 색 적용 적합성 확정 불가",
+      "confirmed": "메모에 선택 선언·최종 조합 없음; 정책A는 이미 선택됨",
+      "evidence": [
+        "프로젝트메모 목적 문단",
+        "회사CI와_화면역할_연결규칙 연결순서3~6"
+      ],
+      "counterevidence_limit": "관측색 후보 검토는 가능; 공식 화면값 자동승격 불가",
+      "minimal_change": "색ID/토큰·판본·출처/프로필·알파·역할·이유·가정·선언·검수상태 보완 제안",
+      "recheck": "해당 프로젝트 명시 선택 자료 확보"
+    },
+    {
+      "id": "H02",
+      "locations": [
+        "회색 글자 후보·B3 대비 우려"
+      ],
+      "criteria": [
+        "Q-SCREEN-03"
+      ],
+      "status": "문서조건검토완료_실제렌더미검수",
+      "judgment": "판단보류",
+      "cause": "최종 합성·표시 조건 미제공",
+      "impact": "대비/가독성 통과 또는 저대비 확정 불가",
+      "confirmed": "정확 회색·배경·알파·크기·글꼴·시간/표시 조건 없음",
+      "evidence": [
+        "Q-SCREEN-03@0.1.1 /required_evidence,/hold_when",
+        "프로젝트메모 목적 문단"
+      ],
+      "counterevidence_limit": "웹 대비는 조건부 참고; 영상px·회사 규칙으로 자동이식 금지",
+      "minimal_change": "최종 조건 확보 후 검수하도록 보류 표시",
+      "recheck": "실제 합성/배경 변화·재생/시청 자료 확인"
+    },
+    {
+      "id": "P01",
+      "locations": [
+        "R6 회신 원문·접수 이벤트·현재 확인현황"
+      ],
+      "criteria": [
+        "Q-TRUST-02"
+      ],
+      "status": "제공문서대조완료",
+      "judgment": "통과",
+      "cause": "해당범위기존근거활용",
+      "impact": "최신성/산하부재 재질문 방지",
+      "confirmed": "삼안 latest_material과 산하 AI원본부재 진술은 일치",
+      "evidence": [
+        "R6-REPLY-CI-20261015-001@0.1.0",
+        "HUMAN-R6-CI-20261015-001",
+        "07_한맥디자인과_CI_확인현황 표"
+      ],
+      "counterevidence_limit": "로컬 제공본 문서상 범위만; 전체R6/신원/회사승인 통과 아님",
+      "minimal_change": "기존 근거 유지",
+      "recheck": "자료/판본/질문 범위 변경 시 해당 부분"
+    }
+  ],
+  "existing_reply": {
+    "id": "R6-REPLY-CI-20261015-001",
+    "version": "0.1.0",
+    "event": "HUMAN-R6-CI-20261015-001",
+    "request": "R6-REQ-CI-STATUS@0.1.0",
+    "coverage": "partial",
+    "covered": [
+      "8회사 제공 CI자료 최신성",
+      "산하 Illustrator원본부재 추가진술"
+    ],
+    "unresolved": [
+      "8회사 CI세부 사용가이드",
+      "공식 화면색/프로필",
+      "개별 시안 적합성",
+      "외부업로드/재배포 권한·회사승인"
+    ],
+    "reuse": "삼안 최신성·산하부재 원래 범위만 활용; 재질문 불필요",
+    "request_status_caveat": "요청목록 awaiting_response 문자열과 작성당시 최신성미확인 문구는 이벤트/원문/현재확인현황과 함께 해석",
+    "new_reply_generated": false
+  },
+  "color_scope": {
+    "observed": {
+      "company_id": "saman",
+      "record_version": "0.1.0",
+      "raster": [
+        "ci.observed.raster.1 #F5821F",
+        "ci.observed.raster.2 #F9A159",
+        "ci.observed.raster.3 #FCC28F"
+      ],
+      "state": "current·source_checked; ICC없음·sRGB표시가정·공식색인증아님",
+      "allowed": "기존정책A에따라 명시선택한 프로젝트초안역할후보",
+      "selection_completed": false,
+      "vector": "vector.1/2 CMYK원문; screen_value=null; 프로필없는HEX변환금지"
+    },
+    "declared": {
+      "pointers": [
+        "/colors/91",
+        "/colors/92",
+        "/colors/93",
+        "/colors/94"
+      ],
+      "values": [
+        "#4D4D4D",
+        "#F58220",
+        "Pantone Cool Gray 10C",
+        "Pantone 165C"
+      ],
+      "state": "draft; screen_value=null",
+      "request": "R6-REQ-SAMAN-VALUES@0.1.0 needs_material",
+      "official_srgb_confirmed": false,
+      "merge_with_observed": false
+    },
+    "hanmac": {
+      "profile": "hanmac-video@0.1.0",
+      "scope": "공통 웹 관측/정제 라이브러리·UI선택참고",
+      "gray_token_selected": false,
+      "company_ci_registration": false
+    }
+  },
+  "nonapplicable": [
+    {
+      "target": "산하 로고/가이드 적용 검수",
+      "reason": "삼안 단독·명시 미사용; 누락자료 때문이 아님"
+    }
+  ],
+  "operational_options": {
+    "question_type": "작업순서 선택 제안; 기존목적/draft권한/정책A 재승인아님",
+    "options": [
+      {
+        "key": "A",
+        "text": "관측색후보 유지·선택/조합조건 우선 정리",
+        "recommended": true
+      },
+      {
+        "key": "B",
+        "text": "선언색 공식화면자격 자료확보 우선",
+        "recommended": false
+      },
+      {
+        "key": "C",
+        "text": "원형 참조 유지·글자/배경분리 대안 문서비교 우선",
+        "recommended": false
+      },
+      {
+        "key": "D",
+        "text": "특정 역할선택 보류·출처/회신범위 문구만 수정",
+        "recommended": false
+      }
+    ],
+    "recommendation_reason": "가능한 후보검토 지속과 미확인조건 보존",
+    "actual_user_choice": null
+  },
+  "human_questions": [
+    {
+      "id": "Q1",
+      "role": "프로젝트 디자이너",
+      "target": "REV-B0.1.0 목적/B2/B3",
+      "known": "기존정책A",
+      "missing": "정확 색ID/토큰·역할·출처/가정·실제선택선언",
+      "question": "선택한 색/토큰·판본·값/알파·역할·이유·가정과 미정항목을 자료로 제시해 주세요.",
+      "type": "자유답변/근거요청",
+      "state": "제안_미발송",
+      "response": null
+    },
+    {
+      "id": "Q2",
+      "role": "삼안CI/색관리조건담당",
+      "target": "CI색상목록0.3.1 /colors/91~94 개별0.1.0; R6-REQ-SAMAN-VALUES0.1.0",
+      "known": "원문전사값·자료최신성",
+      "missing": "공식화면자격·색공간/프로필·변환조건",
+      "question": "각 선언후보의 화면표시 자격/조건을 확인할 수 있는 가이드 판본·절/근거와 미확인범위를 알려 주세요.",
+      "type": "자유답변/근거요청",
+      "state": "제안_미발송_needs_material",
+      "response": null
+    },
+    {
+      "id": "Q3",
+      "role": "디자인검수자·필요시실제시청자",
+      "target": "REV-B0.1.0 회색글자 Q-SCREEN-03",
+      "known": "후보검토목적",
+      "missing": "최종합성·재생·표시·화면비·무음·사전지식조건",
+      "question": "자료가 정해지면 읽힘/어려움의 조건·구간과 근거를 확인해 주세요.",
+      "type": "자유답변/근거요청",
+      "state": "제안_미발송_자료대기",
+      "response": null
+    },
+    {
+      "id": "Q4",
+      "role": "삼안사용규칙/권한담당",
+      "target": "REV-B0.1.0에서 실제 채택할 삼안적용형/용도만",
+      "known": "최신성회신은 사용규칙/권한확인 아님",
+      "missing": "필요한 보호공간/최소크기/허용형·행위별권한근거",
+      "question": "해당 사용형이 선택되면 적용조건 근거를 알려 주세요. 외부배포 등 행위가 정해질 때 그 권한근거는 별도 확인합니다.",
+      "type": "자유답변/근거요청",
+      "state": "제안_미발송_실제사용범위정의시",
+      "response": null
+    }
+  ],
+  "readiness": {
+    "overall_ready_recommended": false,
+    "total_score": null,
+    "confirmed_errors": [
+      "F01",
+      "F02",
+      "F03",
+      "F04",
+      "F05"
+    ],
+    "holds": [
+      "H01",
+      "H02"
+    ],
+    "can_continue": "문서출처정리·조건부후보검토",
+    "resolution": "B1~B5수정과 대상판본의 명시선택/필요CI조건/최종합성·시청자료 검토",
+    "company_approved": false,
+    "permission_granted": false,
+    "human_review_completed": false,
+    "actual_media_review_completed": false
+  },
+  "source_manifest": [
+    {
+      "path": "수행사본_범위.json",
+      "sha256": "2fa6b7663ff53fa081bbea9a2d39ae62a9cf80af70692712eb710a087c3ff344",
+      "absolute_path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase00-build/R8_시험/video-guidance-reviewer-workspace/iteration-1/eval-02-회사CI_회신범위와_사용조건/new_skill/run-1/inputs/Phase00/수행사본_범위.json",
+      "verification": "로컬 파일 SHA256 계산; 내용은 주장별 지정 부분 대조. 전체 R6 현재성/서명/신원 인증 아님"
+    },
+    {
+      "path": "검토자료/프로젝트메모.md",
+      "sha256": "9d298e42eb1d9d7dae22fbe406e7aabd0191a4b580919497f0c059d168728b2e",
+      "absolute_path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase00-build/R8_시험/video-guidance-reviewer-workspace/iteration-1/eval-02-회사CI_회신범위와_사용조건/new_skill/run-1/inputs/Phase00/검토자료/프로젝트메모.md",
+      "verification": "로컬 파일 SHA256 계산; 내용은 주장별 지정 부분 대조. 전체 R6 현재성/서명/신원 인증 아님"
+    },
+    {
+      "path": "실행스킬/video-guidance-reviewer/SKILL.md",
+      "sha256": "275d6f6cab10509e6162d00441b09d2f701d9d31d20597f4056f616fa05dcffb",
+      "absolute_path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase00-build/R8_시험/video-guidance-reviewer-workspace/iteration-1/eval-02-회사CI_회신범위와_사용조건/new_skill/run-1/inputs/Phase00/실행스킬/video-guidance-reviewer/SKILL.md",
+      "verification": "로컬 파일 SHA256 계산; 내용은 주장별 지정 부분 대조. 전체 R6 현재성/서명/신원 인증 아님"
+    },
+    {
+      "path": "실행스킬/video-guidance-reviewer/references/근거찾기와적용조건.md",
+      "sha256": "cc8985460df26bb9e223eb5747f2694c6703df38921ecee7ce2bf76f6fe7c1b8",
+      "absolute_path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase00-build/R8_시험/video-guidance-reviewer-workspace/iteration-1/eval-02-회사CI_회신범위와_사용조건/new_skill/run-1/inputs/Phase00/실행스킬/video-guidance-reviewer/references/근거찾기와적용조건.md",
+      "verification": "로컬 파일 SHA256 계산; 내용은 주장별 지정 부분 대조. 전체 R6 현재성/서명/신원 인증 아님"
+    },
+    {
+      "path": "실행스킬/video-guidance-reviewer/references/판정과사람검수.md",
+      "sha256": "86617f5d2c9ee44d876cf76c3a697c3413e493874df4600b10e67503be059f86",
+      "absolute_path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase00-build/R8_시험/video-guidance-reviewer-workspace/iteration-1/eval-02-회사CI_회신범위와_사용조건/new_skill/run-1/inputs/Phase00/실행스킬/video-guidance-reviewer/references/판정과사람검수.md",
+      "verification": "로컬 파일 SHA256 계산; 내용은 주장별 지정 부분 대조. 전체 R6 현재성/서명/신원 인증 아님"
+    },
+    {
+      "path": "03_한맥디자인/07_회사CI와_화면역할_연결규칙.md",
+      "sha256": "be1baa8a5535d9f43f189bd7bab3f46320c81c5e7697a972f2a6a93320def83b",
+      "absolute_path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase00-build/R8_시험/video-guidance-reviewer-workspace/iteration-1/eval-02-회사CI_회신범위와_사용조건/new_skill/run-1/inputs/Phase00/03_한맥디자인/07_회사CI와_화면역할_연결규칙.md",
+      "verification": "로컬 파일 SHA256 계산; 내용은 주장별 지정 부분 대조. 전체 R6 현재성/서명/신원 인증 아님"
+    },
+    {
+      "path": "05_출처와검토/검수와사용범위/06_사람검수_요청과답변_접수안내.md",
+      "sha256": "945b8b09cc5ed8cfc6884d4acaeda33dfb5fc383b9890cc859a1b64a9cd2efe5",
+      "absolute_path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase00-build/R8_시험/video-guidance-reviewer-workspace/iteration-1/eval-02-회사CI_회신범위와_사용조건/new_skill/run-1/inputs/Phase00/05_출처와검토/검수와사용범위/06_사람검수_요청과답변_접수안내.md",
+      "verification": "로컬 파일 SHA256 계산; 내용은 주장별 지정 부분 대조. 전체 R6 현재성/서명/신원 인증 아님"
+    },
+    {
+      "path": "05_출처와검토/검수와사용범위/07_한맥디자인과_CI_확인현황.md",
+      "sha256": "872b4cf10790af7142a6438252f0da6206cd25233823050d3fafd8f412bbc226",
+      "absolute_path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase00-build/R8_시험/video-guidance-reviewer-workspace/iteration-1/eval-02-회사CI_회신범위와_사용조건/new_skill/run-1/inputs/Phase00/05_출처와검토/검수와사용범위/07_한맥디자인과_CI_확인현황.md",
+      "verification": "로컬 파일 SHA256 계산; 내용은 주장별 지정 부분 대조. 전체 R6 현재성/서명/신원 인증 아님"
+    },
+    {
+      "path": "05_출처와검토/검수와사용범위/08_R4_R5와_검수연결_사용안내.md",
+      "sha256": "908ef03e100fb8d9d153677861499a16c7890fdfc4f4dfe899f232847cf27c1b",
+      "absolute_path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase00-build/R8_시험/video-guidance-reviewer-workspace/iteration-1/eval-02-회사CI_회신범위와_사용조건/new_skill/run-1/inputs/Phase00/05_출처와검토/검수와사용범위/08_R4_R5와_검수연결_사용안내.md",
+      "verification": "로컬 파일 SHA256 계산; 내용은 주장별 지정 부분 대조. 전체 R6 현재성/서명/신원 인증 아님"
+    },
+    {
+      "path": "13_품질검수/03_판정운영기준.md",
+      "sha256": "2a8e21f028e18398ab2a6544cc429e585ab6a0a59abd370dbacd7991e141b7c1",
+      "absolute_path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase00-build/R8_시험/video-guidance-reviewer-workspace/iteration-1/eval-02-회사CI_회신범위와_사용조건/new_skill/run-1/inputs/Phase00/13_품질검수/03_판정운영기준.md",
+      "verification": "로컬 파일 SHA256 계산; 내용은 주장별 지정 부분 대조. 전체 R6 현재성/서명/신원 인증 아님"
+    },
+    {
+      "path": "13_품질검수/항목별기준/06_브랜드와출처.md",
+      "sha256": "115b1fa93cbc0d8ef21a468a1b25a27eae0bb9cc2077b9a1c5a48217762631bb",
+      "absolute_path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase00-build/R8_시험/video-guidance-reviewer-workspace/iteration-1/eval-02-회사CI_회신범위와_사용조건/new_skill/run-1/inputs/Phase00/13_품질검수/항목별기준/06_브랜드와출처.md",
+      "verification": "로컬 파일 SHA256 계산; 내용은 주장별 지정 부분 대조. 전체 R6 현재성/서명/신원 인증 아님"
+    },
+    {
+      "path": "13_품질검수/항목별기준/07_분석신뢰도.md",
+      "sha256": "913573ab7251705ade6d24b540be00fc6c77a0ea3098f1355fd7133e65c62901",
+      "absolute_path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase00-build/R8_시험/video-guidance-reviewer-workspace/iteration-1/eval-02-회사CI_회신범위와_사용조건/new_skill/run-1/inputs/Phase00/13_품질검수/항목별기준/07_분석신뢰도.md",
+      "verification": "로컬 파일 SHA256 계산; 내용은 주장별 지정 부분 대조. 전체 R6 현재성/서명/신원 인증 아님"
+    },
+    {
+      "path": "10_공용자산/회사목록.json",
+      "sha256": "0b011a9c2962459a3b42067c3f7120602cde9e541c466647fa880a0a298dda2a",
+      "absolute_path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase00-build/R8_시험/video-guidance-reviewer-workspace/iteration-1/eval-02-회사CI_회신범위와_사용조건/new_skill/run-1/inputs/Phase00/10_공용자산/회사목록.json",
+      "verification": "로컬 파일 SHA256 계산; 내용은 주장별 지정 부분 대조. 전체 R6 현재성/서명/신원 인증 아님"
+    },
+    {
+      "path": "10_공용자산/CI색상목록.json",
+      "sha256": "c95a79a81a422fc23f4275a8dd878016f209fdaff171d73f44d3cff7387b7097",
+      "absolute_path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase00-build/R8_시험/video-guidance-reviewer-workspace/iteration-1/eval-02-회사CI_회신범위와_사용조건/new_skill/run-1/inputs/Phase00/10_공용자산/CI색상목록.json",
+      "verification": "로컬 파일 SHA256 계산; 내용은 주장별 지정 부분 대조. 전체 R6 현재성/서명/신원 인증 아님"
+    },
+    {
+      "path": "10_공용자산/자산목록.json",
+      "sha256": "5f4cc581df387e8948bc3071aa9f93bd34fb88a2ffc406aaf72de9f3e8e940a0",
+      "absolute_path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase00-build/R8_시험/video-guidance-reviewer-workspace/iteration-1/eval-02-회사CI_회신범위와_사용조건/new_skill/run-1/inputs/Phase00/10_공용자산/자산목록.json",
+      "verification": "로컬 파일 SHA256 계산; 내용은 주장별 지정 부분 대조. 전체 R6 현재성/서명/신원 인증 아님"
+    },
+    {
+      "path": "03_한맥디자인/한맥디자인정본.json",
+      "sha256": "dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed",
+      "absolute_path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase00-build/R8_시험/video-guidance-reviewer-workspace/iteration-1/eval-02-회사CI_회신범위와_사용조건/new_skill/run-1/inputs/Phase00/03_한맥디자인/한맥디자인정본.json",
+      "verification": "로컬 파일 SHA256 계산; 내용은 주장별 지정 부분 대조. 전체 R6 현재성/서명/신원 인증 아님"
+    },
+    {
+      "path": "05_출처와검토/R5_적용정책_결정.json",
+      "sha256": "d8666f2212ae4e434d7d1209f0b64bdded4f0d562df9600a1bda74d136dd9da3",
+      "absolute_path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase00-build/R8_시험/video-guidance-reviewer-workspace/iteration-1/eval-02-회사CI_회신범위와_사용조건/new_skill/run-1/inputs/Phase00/05_출처와검토/R5_적용정책_결정.json",
+      "verification": "로컬 파일 SHA256 계산; 내용은 주장별 지정 부분 대조. 전체 R6 현재성/서명/신원 인증 아님"
+    },
+    {
+      "path": "05_출처와검토/검수와사용범위/사람검수_요청목록.json",
+      "sha256": "18141680b32cdf8ff061646eb68d740e17acef8e1eda2623bb7f7236d2d29337",
+      "absolute_path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase00-build/R8_시험/video-guidance-reviewer-workspace/iteration-1/eval-02-회사CI_회신범위와_사용조건/new_skill/run-1/inputs/Phase00/05_출처와검토/검수와사용범위/사람검수_요청목록.json",
+      "verification": "로컬 파일 SHA256 계산; 내용은 주장별 지정 부분 대조. 전체 R6 현재성/서명/신원 인증 아님"
+    },
+    {
+      "path": "05_출처와검토/검수와사용범위/사람검수_접수대장.json",
+      "sha256": "a01dcbeea028f046fd47410628007afb69b20ca91f96ecf749b35c0f4095a21d",
+      "absolute_path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase00-build/R8_시험/video-guidance-reviewer-workspace/iteration-1/eval-02-회사CI_회신범위와_사용조건/new_skill/run-1/inputs/Phase00/05_출처와검토/검수와사용범위/사람검수_접수대장.json",
+      "verification": "로컬 파일 SHA256 계산; 내용은 주장별 지정 부분 대조. 전체 R6 현재성/서명/신원 인증 아님"
+    },
+    {
+      "path": "05_출처와검토/검수와사용범위/사람답변원문/2026-10-15_8회사CI_최신자료와산하AI부재.json",
+      "sha256": "e881c918fa374a046a436e6c1b4431f14bfbd11f1278a7c65a9a884fdafd27d2",
+      "absolute_path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase00-build/R8_시험/video-guidance-reviewer-workspace/iteration-1/eval-02-회사CI_회신범위와_사용조건/new_skill/run-1/inputs/Phase00/05_출처와검토/검수와사용범위/사람답변원문/2026-10-15_8회사CI_최신자료와산하AI부재.json",
+      "verification": "로컬 파일 SHA256 계산; 내용은 주장별 지정 부분 대조. 전체 R6 현재성/서명/신원 인증 아님"
+    },
+    {
+      "path": "13_품질검수/품질항목_정본.json",
+      "sha256": "c5b9e91e902747a1d657fbbaee19c4b2b97e96dcf58f0ae2bb032384f29ce60f",
+      "absolute_path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase00-build/R8_시험/video-guidance-reviewer-workspace/iteration-1/eval-02-회사CI_회신범위와_사용조건/new_skill/run-1/inputs/Phase00/13_품질검수/품질항목_정본.json",
+      "verification": "로컬 파일 SHA256 계산; 내용은 주장별 지정 부분 대조. 전체 R6 현재성/서명/신원 인증 아님"
+    },
+    {
+      "path": "00_운영계약/03_CI와색상_기록절차.md",
+      "sha256": "7c1d6a1338bb0c077331f8ec069a4262c9077ca8908bf915107583a83fe34d17",
+      "absolute_path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase00-build/R8_시험/video-guidance-reviewer-workspace/iteration-1/eval-02-회사CI_회신범위와_사용조건/new_skill/run-1/inputs/Phase00/00_운영계약/03_CI와색상_기록절차.md",
+      "verification": "로컬 파일 SHA256 계산; 내용은 주장별 지정 부분 대조. 전체 R6 현재성/서명/신원 인증 아님"
+    }
+  ],
+  "unperformed": [
+    "입력/정본/대장/회신/pin 수정",
+    "새 로고/화면/모션 제작",
+    "원본로고/AI실물대조",
+    "실제영상/프레임/오디오 분석·PTS/OCR/좌표",
+    "실제대비계산·렌더/시청 검수",
+    "원격원문/최신웹조사",
+    "전체R4/R5/R6/R7검사실행",
+    "네트워크/CU/AE/API/ClaudeCLI/추가에이전트/실제사람질문"
+  ],
+  "output_semantics": "모든 수정은 미반영 제안. 새 사람답변/승인 생성 없음. 로컬hash는 무결성 참고이며 내용/권한/전체현재성 인증아님"
+}

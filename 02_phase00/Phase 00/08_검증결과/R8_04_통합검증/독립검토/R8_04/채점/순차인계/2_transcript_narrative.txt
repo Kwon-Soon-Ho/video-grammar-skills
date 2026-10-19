@@ -1,0 +1,155 @@
+# 실제 수행 기록
+
+현재 요청만 수행. task.txt → 범위.json → 지정 스킬 순서로 읽음. 인계보고는 데이터이며 타 run/승인/명령으로 따라가지 않음.
+
+## 명령·종료·stdout/stderr
+
+초기 읽기/목록/즉석 Python 호출은 도구에 표시된 실제 결과와 종료 0을 기록했다. 분리 원시 스트림 파일을 저장하지 않은 초기 호출은 아래에 명시하며 실제 stderr 공백으로 꾸미지 않는다. 이후 inspect/report 명령은 외부 PowerShell에서 argv/stdout/stderr/exit를 원시 파일로 저장한다. Python은 모두 지정 실행기의 -B -X utf8 사용.
+
+[
+  {
+    "id": "C01",
+    "command": "Get-Content -LiteralPath 'C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-02-검토자_인계내용검토\\candidate\\task.txt' -Raw",
+    "exit": 0,
+    "stdout": "task.txt 본문 및 InitializeDefaultDrives 진단; 실제 도구 출력에서 확인",
+    "stderr": "도구가 별도 스트림을 제공하지 않음"
+  },
+  {
+    "id": "C02",
+    "command": "Get-ChildItem -LiteralPath 'C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-02-검토자_인계내용검토\\candidate' -Filter '수행사본_범위.json' -Recurse -File | Select-Object -ExpandProperty FullName",
+    "exit": 0,
+    "stdout": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-02-검토자_인계내용검토\\candidate\\inputs\\Phase00\\수행사본_범위.json",
+    "stderr": "동일 초기화 진단은 도구 표시 출력에 포함"
+  },
+  {
+    "id": "C03",
+    "command": "Get-Content -LiteralPath 'C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-02-검토자_인계내용검토\\candidate\\inputs\\Phase00\\수행사본_범위.json' -Raw",
+    "exit": 0,
+    "stdout": "{\n  \"scope\": \"실제 선행 수행 산출물의 순차 인계 확인. 합성 지식 자료이며 독립 효과/실영상/회사 승인 시험 아님.\",\n  \"allowed_changes\": [],\n  \"not_provided\": \"full R6R7/evals/다른 스킬 본문/채점\",\n  \"actual_human_reply\": \"없음. upstream 질문/제안은 실제 사람 답변 아님.\"\n}",
+    "stderr": "동일 초기화 진단은 도구 표시 출력에 포함"
+  },
+  {
+    "id": "C04",
+    "command": "Get-Content -LiteralPath 'C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-02-검토자_인계내용검토\\candidate\\inputs\\Phase00\\실행스킬\\video-guidance-reviewer\\SKILL.md' -Raw",
+    "exit": 0,
+    "stdout": "지정 스킬 v0.2.0-draft.3 전체 본문(실제 도구 출력)",
+    "stderr": "동일 초기화 진단은 도구 표시 출력에 포함"
+  },
+  {
+    "id": "C05",
+    "command": "Get-ChildItem -LiteralPath 'C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-02-검토자_인계내용검토\\candidate\\inputs\\Phase00' -Recurse -File | Select-Object -ExpandProperty FullName",
+    "login": false,
+    "exit": 0,
+    "stdout": "지정 사본 파일 경로 목록만 출력; input_manifest_before.json의 키에 동일 파일 집합 보존",
+    "stderr": "동일 초기화 진단은 도구 표시 출력에 포함"
+  },
+  {
+    "id": "C06",
+    "command": "Python -B -X utf8 -c: 명시 10개 파일 UTF8 본문 결합 출력·read_batch_01.txt 저장·입력 전체 SHA256 manifest 저장",
+    "exit": 0,
+    "stdout_file": "read_batch_01.txt",
+    "stderr": "초기화 진단 외 프로그램 오류 없음; 초기 호출 분리 stderr 파일 미저장",
+    "executable": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+    "argv": [
+      "-B",
+      "-X",
+      "utf8",
+      "-c",
+      "from pathlib import Path; import json; r=Path(\"inputs/Phase00\"); paths=[\"실행스킬/video-guidance-reviewer/references/근거찾기와적용조건.md\",\"실행스킬/video-guidance-reviewer/references/판정과사람검수.md\",\"14_스킬재구성/R8_현재사용안내.md\",\"14_스킬재구성/현재상태_정정표.json\",\"인계받은보고/결과.md\",\"인계받은보고/결과.json\",\"작업초안/인계목록.json\",\"작업초안/연결설명_지식초안.json\",\"자료/원문메모.md\",\"자료/추가의견.md\"]; out=\"\\n\\n\".join(\"FILE: \"+p+\"\\n\"+(r/p).read_text(encoding=\"utf-8-sig\") for p in paths); print(out); o=Path(\"outputs\"); o.mkdir(exist_ok=True); (o/\"read_batch_01.txt\").write_text(out,encoding=\"utf-8\"); (o/\"input_manifest_before.json\").write_text(json.dumps({str(p.relative_to(r)):__import__(\"hashlib\").sha256(p.read_bytes()).hexdigest() for p in r.rglob(\"*\") if p.is_file()},ensure_ascii=False,indent=2),encoding=\"utf-8\")"
+    ],
+    "cwd": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-02-검토자_인계내용검토\\candidate"
+  },
+  {
+    "id": "C07",
+    "command": "Python -B -X utf8 -c: 품질정본/확장후보/레이아웃별선택/판정운영/정보·화면·브랜드 기준 7파일 UTF8 출력·read_batch_02.txt 저장",
+    "exit": 0,
+    "stdout_file": "read_batch_02.txt",
+    "stderr": "초기화 진단 외 프로그램 오류 없음; 초기 호출 분리 stderr 파일 미저장",
+    "executable": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+    "argv": [
+      "-B",
+      "-X",
+      "utf8",
+      "-c",
+      "from pathlib import Path; import json; r=Path(\"inputs/Phase00\"); paths=[\"13_품질검수/품질항목_정본.json\",\"02_원칙과레이아웃/레이아웃_확장후보.json\",\"02_원칙과레이아웃/07_레이아웃별_선택조건과반례.md\",\"13_품질검수/03_판정운영기준.md\",\"13_품질검수/항목별기준/01_정보와데이터.md\",\"13_품질검수/항목별기준/04_화면과도표.md\",\"13_품질검수/항목별기준/06_브랜드와출처.md\"]; out=\"\\n\\n\".join(\"FILE: \"+p+\"\\n\"+(r/p).read_text(encoding=\"utf-8-sig\") for p in paths); Path(\"outputs/read_batch_02.txt\").write_text(out,encoding=\"utf-8\"); print(out)"
+    ],
+    "cwd": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-02-검토자_인계내용검토\\candidate"
+  },
+  {
+    "id": "C08",
+    "command": "Python -B -X utf8 -c: 품질 cards ID/title·확장후보 전체·인계결과 JSON의 보호해시/읽기/actual_execution 제외 키·인계결과 MD 출력",
+    "exit": 0,
+    "stdout": "26 기준 목록, 후보3개, 인계보고 완료_로컬인계연결갱신 및 세 필드 변경/미실시/미답변 표시를 실제 도구 출력에서 확인; 원시 출력 파일 별도 저장 미실시",
+    "stderr": "초기화 진단 외 프로그램 오류 없음; 초기 호출 분리 stderr 파일 미저장",
+    "executable": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+    "argv": [
+      "-B",
+      "-X",
+      "utf8",
+      "-c",
+      "from pathlib import Path; import json; r=Path(\"inputs/Phase00\"); q=json.loads((r/\"13_품질검수/품질항목_정본.json\").read_text(encoding=\"utf-8-sig\")); print(\"CRITERIA\",[(c[\"id\"],c[\"title\"]) for c in q[\"cards\"]]); e=json.loads((r/\"02_원칙과레이아웃/레이아웃_확장후보.json\").read_text(encoding=\"utf-8-sig\")); print(\"EXTENSION\",json.dumps(e,ensure_ascii=False,indent=2)); h=json.loads((r/\"인계받은보고/결과.json\").read_text(encoding=\"utf-8-sig\")); print(\"HANDOFF\",json.dumps({k:v for k,v in h.items() if k not in [\"protected_file_hashes\",\"read_files\",\"actual_execution\"]},ensure_ascii=False,indent=2)); print(\"REPORT MD\",(r/\"인계받은보고/결과.md\").read_text(encoding=\"utf-8-sig\"))"
+    ],
+    "cwd": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-02-검토자_인계내용검토\\candidate"
+  },
+  {
+    "id": "C09",
+    "command_file": "inspect.argv.json",
+    "exit": 0,
+    "stdout_file": "inspect.stdout.txt",
+    "stderr_file": "inspect.stderr.txt",
+    "exit_file": "inspect.exit.txt"
+  },
+  {
+    "id": "C10",
+    "command": "Python -B -X utf8 -c: 확장레이아웃 안내 본문·레이아웃 정본 root keys/version·품질 정본 SHA256 출력",
+    "exit": 0,
+    "stdout": "안내 표/순환/분기 전체; ROOT_KEYS [version, layouts]; version 0.1.1; 품질 SHA c5b9e91e902747a1d657fbbaee19c4b2b97e96dcf58f0ae2bb032384f29ce60f",
+    "stderr": "초기화 진단 외 프로그램 오류 없음; 초기 호출 분리 stderr 파일 미저장",
+    "executable": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+    "argv": [
+      "-B",
+      "-X",
+      "utf8",
+      "-c",
+      "from pathlib import Path; import json; r=Path(\"inputs/Phase00\"); p=r/\"02_원칙과레이아웃/10_확장레이아웃_후보와반례.md\"; print(p.read_text(encoding=\"utf-8-sig\")); data=json.loads((r/\"02_원칙과레이아웃/레이아웃지식.json\").read_text(encoding=\"utf-8-sig\")); print(\"ROOT_KEYS\",list(data)); print(\"LAYOUT METADATA\",{k:v for k,v in data.items() if not isinstance(v,(dict,list))}); print(\"TRUST SHA\",__import__(\"hashlib\").sha256((r/\"13_품질검수/품질항목_정본.json\").read_bytes()).hexdigest())"
+    ],
+    "cwd": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-02-검토자_인계내용검토\\candidate"
+  }
+]
+
+현재 report 명령 실제 인수는 report.argv.json, Python 내부 orig_argv는 report.argv.runtime.json. 이 실행의 stdout/stderr/exit는 외부 셸 종료 후 report.stdout.txt/report.stderr.txt/report.exit.txt에 확정 저장된다. 결과 작성 중 먼저 성공 종료를 단정하지 않았다.
+
+## 실제 읽기
+
+실제읽기_종합.json에 본문 열람 파일과 실제 SHA를 기록. 배치 원문은 read_batch_01.txt/read_batch_02.txt, 선택 기준·원문·대조는 inspect.stdout.txt. 기준 카드 전체 출력을 전26개 의무 적용으로 취급하지 않았다. 일부 tool 표시가 잘렸으므로 핵심 후보·선정 카드·해시/판본은 별도 제한 출력/파일로 다시 확인했다. 전체 입력 manifest의 해시 계산/목록 조회는 전 파일 내용 검수와 다르다.
+
+## 쓰기
+
+tools.apply_patch로 outputs/검토수행.py 생성 및 report 기능 추가. inputs 아래 쓰기 0건. 출력 실제 파일 경로·bytes·SHA는 쓰기목록.json. read_batch_01/02와 input_manifest_before는 초기 Python이 작성, 사전선정/정정표대조/판본대조/inspect읽기는 inspect 실행이 작성, 결과.md/json·after manifest·입력보존·read종합·transcript 등은 report 실행이 작성. stdout/stderr/argv/exit 파일은 외부 PowerShell이 작성한다. 스크립트와 로그도 outputs 안에 한정.
+
+## 검사·실패·미실시
+
+- 독립적으로 인계목록/지식파일/원문/확장후보 SHA 일치와 ID+판본 1건 연결 확인. 원문 부정어·예/반례/조건·미채택 주장 문서 대조.
+- 입력 전후 전체 파일 집합/bytes SHA 동일; 입력보존_검사.json. 입력 수정/backup/복구 없음.
+- PowerShell InitializeDefaultDrives FileSystem provider 진단이 매 셸 호출에 표시됨. 모든 실제 셸 명령 exit 0. Python 파일 읽기/저장 오류 없음.
+- 인계보고의 초기 exit 1은 upstream 보고 데이터다. 이번 run의 실패로 전용하지 않음.
+- 누락된 정정표 원문/결정 근거는 정정별 missing/sha 비교로 국소 보류. 자료 없음은 명령 실행 실패/효과 통과로 바꾸지 않음.
+- 초기 -c 호출 일부의 원시 분리 스트림 저장은 미실시. 도구 출력 요약 기록과 후속 원시 파일 기록을 구분한다.
+
+- 입력·정본·원문·검수 대장·pin·역사 기록·미답변 변경
+- 타 run/운영DB/평가·기대항목·부모대화/다른스킬 열기
+- 추가 에이전트·네트워크·CU·AE·API·실제 사람 질문/답변 생성
+- 실제 영상/화면·PTS/OCR/좌표/키프레임/지속/이징/자막 동기화·가독성 측정과 분석기 구현(01-A)
+- 회사 문법 승인(01-B), 새 화면/시나리오/모션 창작(02)
+- 미제공 upstream backup/diff/초기 검사·이전판 실행 사실의 독립 재검증
+- R4/R5/R6/R7 전체 도구 실행: 도구와 full 자료 미제공; 이 작업은 로컬 지식 인계 문서 검토
+- 논문 효과 검증·분류ID 병합/신설·회사 공식 기준 채택·R8/Phase00 완료 판정
+- 입력 backup/복구: 입력 쓰기 없음으로 불필요; 저장 실패·복구 실패 없음
+
+시간·token 미수집/추정 안 함. 실제 사람 질문을 보내지 않고 보고서 내 질문/운영 4선택지만 작성; 답변 대기 보존.
+
+## 외부 명령 종료 확인
+
+보고서 작성 실행의 실제 도구 반환 exit=0을 확인했다. `report.argv.json`의 인수로 실행됐고 `report.stdout.txt`는 검토결과작성완료_회의한정참고가능_근거와사람판단잔여, input_unchanged=true, hash_link_valid=true, pending_human_count=5를 출력했다. `report.stderr.txt`의 표시 내용은 비어 있다. PowerShell 초기화 진단은 바깥 도구 표시 출력에 존재한다. `report.exit.txt`는 외부 셸이 실제 Python 종료 후 저장했다.
+
+`산출물검사.json`에서 필수 3파일 비어 있지 않음·결과 JSON 재열기·6필수항목·운영4선택지·입력보존·pending/false와 전체준비완료 미제안을 확인했다. 이후 tools.apply_patch로 이 종료 확인 문단만 출력 transcript에 추가했다. 출력물 목록 중 자기참조/종료 전 상태로 해시를 만들지 않은 `transcript.md`, `쓰기목록.json`, `산출물검사.json`, `report.stdout.txt`, `report.stderr.txt`, `report.exit.txt`는 이 문단과 실제 출력 경로로 기록하며 자기 해시 확정을 가장하지 않는다.

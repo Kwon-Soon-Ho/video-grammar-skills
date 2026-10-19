@@ -1,0 +1,52 @@
+{
+  "case_id": "T07",
+  "condition": "with_skill",
+  "recorded_at": "2026-10-16T06:25:14.608847+00:00",
+  "grader": "root source/meaning review; not independent human",
+  "reference_level": "AI_source_observation_not_human_gold",
+  "expectations": [
+    {
+      "text": "외곽이 거의 고정인 동안 내부 선택 상태 변화를 식별",
+      "passed": true,
+      "evidence": "외곽 위치/크기 유지와 내부 선택 변화를 각각 기록."
+    },
+    {
+      "text": "표 선택행의 위→아래 순차 변경",
+      "passed": true,
+      "evidence": "표1→2→3→4 아래 방향, 실제8.2/8.5/9.5/10.4 native와 일치."
+    },
+    {
+      "text": "썸네일 선택 테두리의 왼쪽→오른쪽 1→2→3→4 변경",
+      "passed": true,
+      "evidence": "썸네일1→2→3→4 오른쪽 방향을 표와 대응."
+    },
+    {
+      "text": "상태 중첩/연해짐을 연속 위치 이동이나 스크롤로 단정하지 않음",
+      "passed": true,
+      "evidence": "8.25~8.4/9.1~9.3/9.9~10.1 두 상태 색 중첩을 기록하고 연속 표식 이동/스크롤을 단정하지 않음."
+    },
+    {
+      "text": "선택 교체와 위치 가감속을 구분하고 AE 보간값을 만들지 않음",
+      "passed": true,
+      "evidence": "위치곡선 아닌 상태 혼합으로 분류, 정확한 혼합 이징/클릭 미상으로 보존."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5
+  },
+  "case_status": "requirements_satisfied",
+  "notes": [
+    "AI 원본 대조 참고 기준이다. 사용자 N1~N8 승인에 포함시키지 않음."
+  ],
+  "timing": null,
+  "tokens": null,
+  "telemetry_note": "per-run telemetry unavailable; no synthesized averages",
+  "eval_feedback": {
+    "suggestions": [
+      "Known exposed windows, one run per condition, same agent batches; this is regression evidence, not generalization accuracy."
+    ]
+  },
+  "additional_content_issues": []
+}

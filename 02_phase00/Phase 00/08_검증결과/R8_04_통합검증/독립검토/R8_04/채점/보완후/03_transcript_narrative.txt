@@ -1,0 +1,125 @@
+# 실행 transcript
+
+범위: task.txt, 지정 DB 내 허용 원문/스킬 및 IO 안내만 읽고 작업했다. 네트워크·CU·AE·API·추가 에이전트·사람 질문을 사용하지 않았다.
+
+초기 읽기: task.txt → 자료/IO사용안내.md 및 작업범위.json → 지정 SKILL.md → 해당 references/작업기준.md·출력지침.md 및 대상 초안. PowerShell Get-Content -LiteralPath <각 명시 경로> -Raw로 실행, 각 exit 0. 읽은 본문 및 raw SHA는 read_context.json에 보존. 지정 스킬의 보존 계약·관련 원칙·R8 현재 안내/정정표도 원문 읽기만 수행했다. R8의 다른 링크/평가 결과/부모 대화 등은 따라 읽지 않았고 단독 초안 편집에 무관한 상태 정정을 적용하지 않았다.
+
+각 PowerShell 호출의 환경 경고: Attempting to perform the InitializeDefaultDrives operation on the FileSystem provider failed. Python/CLI 명령은 아래 exit와 별개로 기록한다.
+
+Python 실행 규격: 지정 python.exe -B -X utf8. 후보/요청/로그만 outputs 일반 쓰기. DB backup/write/환경 validate는 모두 지정 시험IO.py CLI로 수행.
+
+준비 실패: 02_prepare_failed_execution.json. 첫 준비 script exit 1, stderr AssertionError (stdin line 15), stdout 없음. CLI text의 LF 정규화와 원문 CRLF 차이를 02_raw_read_diagnostic.json으로 확인. DB mutation 전 실패. 원문 raw 바이트와 초기 CLI SHA가 일치함을 확인하고 개행을 보존해 다시 준비했다.
+
+교정한 준비: 후보.json/원문바이트_snapshot.json/변경.diff/02_preflight.json 작성, JSON/단일 ID·중복 key/기존 필드 보존 검사 통과. 이후 실행 순서는 아래 6개 CLI 기록이다.
+
+## 01_read
+
+실제 argv (배열, 각 항목이 하나의 인수):
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+요청:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+실제 exit: 0
+
+stdout 원시 파일: 01_read_stdout.txt
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stderr 원시 파일: 01_read_stderr.txt
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 03_backup
+
+실제 argv (배열, 각 항목이 하나의 인수):
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+요청:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+실제 exit: 0
+
+stdout 원시 파일: 03_backup_stdout.txt
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stderr 원시 파일: 03_backup_stderr.txt
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 04_prewrite_read
+
+실제 argv (배열, 각 항목이 하나의 인수):
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+요청:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+실제 exit: 0
+
+stdout 원시 파일: 04_prewrite_read_stdout.txt
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stderr 원시 파일: 04_prewrite_read_stderr.txt
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 05_write
+
+실제 argv (배열, 각 항목이 하나의 인수):
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+요청:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+실제 exit: 0
+
+stdout 원시 파일: 05_write_stdout.txt
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stderr 원시 파일: 05_write_stderr.txt
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 06_validate
+
+실제 argv (배열, 각 항목이 하나의 인수):
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+요청:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+실제 exit: 2
+
+stdout 원시 파일: 06_validate_stdout.txt
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stderr 원시 파일: 06_validate_stderr.txt
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 07_after_read
+
+실제 argv (배열, 각 항목이 하나의 인수):
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+요청:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+실제 exit: 0
+
+stdout 원시 파일: 07_after_read_stdout.txt
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stderr 원시 파일: 07_after_read_stderr.txt
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 판단 및 마지막 확인 상태
+
+backup source/backup SHA 모두 `851857164896eb05174617fb3a6571b46617f5e69ecf6889b386d08c6273e554`. 저장 직전 read의 ID/판본/SHA가 처음 snapshot과 같았다. write exit 0. 서비스 owned_written_sha256 `884d7693232d05f325bc7f895dfe031aa4a66258bccc703792ceb64e60c196a6`는 후보 SHA와 같다. write 반환 직후 actual_current_sha256은 `5e895932a8d41333928147b25e78b24d5bb9ee9b54f86780a296b6ac87160d46`로 달랐다. validate exit 2 이후 read exit 0으로 현재 notes 추가 및 같은 현재 SHA를 확인했다.
+
+서비스이벤트/001.json~006.json 원시 바이트를 outputs/service_event_*.json에 보존하고 source path 및 SHA를 service_events_manifest.json에 남겼다. 이벤트 004의 external_actor_sha256이 현재 SHA와 일치한다.
+
+restore 미실시: 현재 바이트가 내 작업이 쓴 바이트와 다르므로 타인 변경을 덮을 수 없다. 재저장·재검사·일반 DB 쓰기 우회 없음. 사용 중단·반영 보류 및 미복구 경로는 결과.md/결과.json에 명시했다.
+
+미실시: R4 전체/R6·R7 full 감사, 회사·영상 효과/사람 검수, 정본 등록/기본 전환, 시간/token 추정. 다른 필드의 현재 notes는 외부 변경이고 자체 후보 변경은 두 필드뿐이다. 전체 DB 불변을 주장할 전수 검사도 하지 않았다.

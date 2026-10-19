@@ -1,0 +1,39 @@
+{
+  "version": "0.1",
+  "scope": "A2 local regression before A3 authoring; not full A4/A5 performance evaluation",
+  "frozen_at": "2026-10-16T14:37:18+09:00",
+  "must_complete": [
+    "freeze_neutral_input_and_reference_versions",
+    "save_new_procedure_execution_output_before_grading",
+    "compare_video_claims_with_reference_content_and_evidence",
+    "resolve_all_critical_failures_in_confirmed_known_cases",
+    "rerun_affected_cases_after_method_changes",
+    "record_limits_exposure_and_human_burden"
+  ],
+  "not_sufficient": [
+    "49 object names present",
+    "441 cells filled",
+    "source hashes match",
+    "six structural fault injections caught",
+    "old corrected reports copied as a new run",
+    "all properties marked unknown"
+  ],
+  "fail_closed_conditions": [
+    "no new behavior run",
+    "content grading not performed",
+    "required confirmed event omitted",
+    "wrong direction/order asserted",
+    "unexplained residual region closed as static",
+    "unsupported exact AE implementation",
+    "new detail inherits previous human approval"
+  ],
+  "acceptable_deferred_scope": [
+    "exact thin-light path/curve when not established by the reference",
+    "exact AE keyframe/preset/handle recovery",
+    "whole-video/audio or A4/A5 generalization claims"
+  ],
+  "no_aggregate_score_or_invented_pass_rate": true,
+  "A4_A5_plan_preserved": true,
+  "human_confirmation_for_same_details_not_reasked": true,
+  "A3_authoring_is_separate_user_stage_decision": true
+}

@@ -1,0 +1,105 @@
+{
+  "expectations": [
+    {
+      "text": "복구요청의 대상·현재 실패본 SHA·checkpoint 경로/SHA를 확인하고 지정 활성 R4 초안을 정상 checkpoint 바이트 그대로 실제 복원한다.",
+      "passed": true,
+      "evidence": "복구요청.json의 target_path=12_통합기록/통합기록_작업초안.json, failed_current_sha256=f94804859022f09c248c5c73ef9e014649fdbab06dcec16f83aa6afe94ec14b9, checkpoint_path=backup/이전작업/통합기록_정상체크포인트.json, checkpoint_sha256=4f309bf8061d4973956f82fa36b74b587403995cdf93545c54411209139b4ec2를 실제 파일/fixture와 독립 대조했다. 최종 활성 파일 전체 바이트가 checkpoint와 정확히 같고 SHA=4f309bf8061d4973956f82fa36b74b587403995cdf93545c54411209139b4ec2다. ID=R8-DEV-STEW-03도 일치한다."
+    },
+    {
+      "text": "복구 전 실패본 바이트와 SHA가 일치하는 새 보존 사본이 있고 기존 checkpoint/복구 요청·원문·타 입력은 바꾸지 않는다.",
+      "passed": true,
+      "evidence": "독립 전체 270개 원래 입력 해시 비교에서 기존 변경은 지정 활성 R4 한 개, 새 추가는 backup/복구_20261015T073438Z_2882f959/실패한_통합기록_작업초안.json 한 개, 삭제0이다. 새 보존 사본의 실제 SHA=f94804859022f09c248c5c73ef9e014649fdbab06dcec16f83aa6afe94ec14b9가 실행 전 fixture 활성파일 SHA 및 복구요청 failed_current_sha256과 일치한다. 기존 checkpoint/복구요청/legacy·원문·타 입력은 동일 바이트다."
+    },
+    {
+      "text": "정확 복원에서 임의 재직렬화·버전 상승·시간/좌표/수치 보정·다른 개선을 섞지 않고 복구 전후 SHA와 상태를 보고한다.",
+      "passed": true,
+      "evidence": "최종 파일을 정상 checkpoint와 전체 바이트로 비교해 정확 일치 확인했다. final/checkpoint version=0.1.0이다. 실패본→복원본 JSON 변화는 잘못 저장된 x.num 301→checkpoint300 및 version0.1.1→checkpoint0.1.0뿐이며 새 판본상승/임의 직렬화·추가개선이 없다. 결과/설명/로그는 실패 SHA f9480485...에서 정상 SHA4f309bf8...로 복구 및 exact restored 상태를 기록한다. 이는 좌표 재측정이나 임의 수치 보정이 아니라 요청된 원바이트 복원이다."
+    },
+    {
+      "text": "복원한 R4의 실제 구조/참조 검사와 최종 파일 대조를 남기며 독립 검사에서도 유효하다. 구조 정상과 실제 내용/회사 승인은 구분한다.",
+      "passed": true,
+      "evidence": "실행자는 복구 후 실제 자료검증 명령·종료0·원시 stdout/stderr·결과 JSON을 남겼다. 독립 C 읽기 전용 inspect_file로 실제 복원 R4를 검사해 valid=true/status=draft_structure_pass/errors=[]와 최종 source SHA를 확인했다. 정상 구조와 실제 내용/측정/사람·회사/운영 승인을 구분하며 승인 플래그false·사람검수 대기27개를 유지한다."
+    },
+    {
+      "text": "같이 받은 구형 v0.1 자료는 검사만 하고 needs_migration/valid=false와 누락/추가 확인을 알린다. 접수·이관·수정/가짜 identity·시간값 채우기를 실행하지 않는다.",
+      "passed": true,
+      "evidence": "실제 legacy 파일 SHA=fc906a18a785b4e51ab5d5714483a6c0033d5726847556bd89cf613795509a47가 fixture와 동일하다. 저장된 읽기 검사와 독립 inspect_file 모두 schema0.1.0/status=needs_migration/valid=false이며 원본 version·SHA·duration, time_contract, targets, evidence, 분류 범위, run, review의 9개 누락/검토항목을 남긴다. JSON/설명에도 접수·이관·수정 미실시를 명시하고 입력/대장 불변·추가파일이 실패본backup뿐이므로 가짜identity/시간 채움·접수/이관 출력은 관측되지 않는다."
+    },
+    {
+      "text": "복구/검사 결과 JSON·짧은 한국어 설명·작업 로그를 남기고 실제 실패·미해결/사람 대기·합성 범위와 R6/R7 완전검증 미실시를 구분한다.",
+      "passed": true,
+      "evidence": "outputs에 검사결과.json·결과설명.md·개별 복구전/후·legacy검사 JSON/원시출력·보존_검증 및 transcript를 남겼다. 고의 실패본의 core MAP-ONE 오류와 복구 후 해소를 구분하고 legacy needs_migration/사람검수 대기·합성 구조검사 한계·R6/R7 full 미실시를 명시한다. 내용/회사 승인이나 운영 완료로 승격하지 않는다."
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": null,
+  "timing": {
+    "executor_duration_seconds": null,
+    "grader_duration_seconds": null,
+    "total_duration_seconds": null,
+    "total_tokens": null
+  },
+  "claims": [
+    {
+      "claim": "정상 checkpoint 바이트 그대로 실제 복원했다.",
+      "type": "factual",
+      "verified": true,
+      "evidence": "독립 전체 바이트 직접 비교 및 SHA=4f309bf8061d4973956f82fa36b74b587403995cdf93545c54411209139b4ec2 일치. JSON 재직렬화로 기대값을 재구성하지 않았다."
+    },
+    {
+      "claim": "실패본은 새 backup으로 보존하고 다른 기존 입력은 바꾸지 않았다.",
+      "type": "factual",
+      "verified": true,
+      "evidence": "새 backup SHA=f94804859022f09c248c5c73ef9e014649fdbab06dcec16f83aa6afe94ec14b9가 실행 전 fixture·요청과 일치. 원래 입력 중 활성1개 외 전부 불변."
+    },
+    {
+      "claim": "복원된 R4 구조/참조는 유효하다.",
+      "type": "factual",
+      "verified": true,
+      "evidence": "실행자 결과와 별도 독립 read-only inspect_file valid=true/errors=[]; 사실/회사 승인은false."
+    },
+    {
+      "claim": "구형자료는 검사만 했고 needs_migration 및 누락을 남겼다.",
+      "type": "factual",
+      "verified": true,
+      "evidence": "실제legacy bytes 불변, 독립 needs_migration/valid=false/누락9개·automatic_fill_allowed=false와 저장결과 일치."
+    },
+    {
+      "claim": "R6/R7 full 검증과 실제 영상/회사 승인 검사는 수행하지 않았다.",
+      "type": "process",
+      "verified": true,
+      "evidence": "transcript/결과의 미실시 범위 명시 및 full 통과 주장 없음. 모든 외부 호출 부재의 원시 감사 인증을 뜻하지 않는다."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [
+      "legacy 원본identity/시간계약/대상/근거/run/review 누락.",
+      "실영상·내용·사람/회사승인 미검수, R6/R7 full 자료 일부 생략."
+    ],
+    "needs_review": [
+      "실제 자료가 확보된 후 필요한 내용/사람 검수. legacy 접수/이관은 별도 명시 요청이 필요함."
+    ],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "reason": "원시 전체 호출 이벤트 없이 요약 transcript를 제공하므로 접수/이관 CLI 미실시 등 과정 부재는 파일불변 관측과 구별해야 한다. 이후 원시 호출기록 보존으로 강화 가능하다."
+      }
+    ],
+    "overall": "6조건은 exact restore와 새 내용수정의 차이·실패본 원바이트 보존·구형 검사only를 실질적으로 구별한다. 양쪽 모두 충족. helper의 존재/좁은 unit검사로 pass를 대체하지 않았다."
+  },
+  "independent_evidence": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_02_독립검토\\채점\\steward_iteration2_case3_old_skill_observation.json",
+  "grading_history_and_limits": [
+    "초기 보존설계와 현재 cases22개 문자열이 같음을 직접확인. 두 run 실제 task/fixture/transcript/결과·입력 파일에 근거.",
+    "초기 R1 계약 추가근거 전달 이력이 있어 맹검 채점이 아님. 실영상·스킬 독자효과·사람/회사승인 검증 아님.",
+    "main의 별도 사실검사 코드가 case1 baseline 재구성 assert에서 중단됐다는 통보를 받았다. 이는 모델 시행의 결함으로 세지 않았으며 이 채점은 fixture 원문SHA·실제backup/checkpoint 직접대조에 근거한다. 본 채점 시점 main의 최종 사실검사 파일은 아직 제공되지 않았고 이를 근거로 사용하지 않았다.",
+    "초기4회 및 iteration2 case1/2 판정을 수정하지 않음. 변경스크립트 재실행 없이 읽기전용 API/해시/파싱만 수행.",
+    "실제 시간/token telemetry null, 문자수 대체없음."
+  ]
+}

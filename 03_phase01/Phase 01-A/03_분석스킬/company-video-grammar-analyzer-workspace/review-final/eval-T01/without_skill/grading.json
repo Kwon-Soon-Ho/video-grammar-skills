@@ -1,0 +1,41 @@
+{
+  "case_id": "T01",
+  "condition": "without_skill",
+  "recorded_at": "2026-10-16T06:18:08.555580+00:00",
+  "grader": "root source/meaning review; not independent human",
+  "reference_level": "human_confirmed",
+  "expectations": [
+    {
+      "text": "E를 한 덩어리 색 전환으로만 쓰지 않고 조각별 진입을 식별",
+      "passed": true,
+      "evidence": "O3: 서로 어긋난 다섯 수평 구간의 진입과 조립을 기록. T01 board1에서 높이별 경계 차이를 확인."
+    },
+    {
+      "text": "좌→우 이동",
+      "passed": true,
+      "evidence": "O3: 왼쪽 경계→오른쪽. 3.6/3.9/4.2 프레임과 일치."
+    },
+    {
+      "text": "초반 빠르고 끝에서 느려짐을 관측 곡선군으로 기록",
+      "passed": true,
+      "evidence": "O4: 4.2→4.5→4.8→5.1에서 이동량이 줄어듦을 관측. 실제 E 외곽 정착과 일치."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3
+  },
+  "case_status": "requirements_satisfied",
+  "notes": [
+    "정확한 키프레임은 가설/미상으로 보존. 스킬 없이도 이 사건을 발견했다."
+  ],
+  "timing": null,
+  "tokens": null,
+  "telemetry_note": "per-run telemetry unavailable; no synthesized averages",
+  "eval_feedback": {
+    "suggestions": [
+      "Known exposed windows, one run per condition, same agent batches; this is regression evidence, not generalization accuracy."
+    ]
+  }
+}

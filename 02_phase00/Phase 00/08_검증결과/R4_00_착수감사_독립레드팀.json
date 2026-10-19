@@ -1,0 +1,45 @@
+{
+  "version": "0.1.0",
+  "date": "2026-10-15",
+  "reviewer": "foundation_redteam",
+  "scope": "기존 파일 직접 읽기 + -B 메모리 합성반례 재현. 실제 분석기/파일 내용 검증 아님.",
+  "findings": [
+    {
+      "severity": "P0",
+      "finding": "프레임 actual이 자산/부모 범위 밖이어도 통과",
+      "evidence": "자료검증.py validate_record frame loop / 기존반례2개",
+      "action": "새 시간계약에서 검사. 기존v0.1 검증기는 R4-4 이관까지 미보완 표시"
+    },
+    {
+      "severity": "P0",
+      "finding": "근거 period 역전/자산길이 초과 통과",
+      "evidence": "자료검증.py evidence loop는 time_check 호출 없음 / 기존반례2개",
+      "action": "새 period검사 준비. 실제evidence대상연결은 R4-2, 기존DB에 반영은 R4-4"
+    },
+    {
+      "severity": "P1",
+      "finding": "R2 4단위/5판정/주장대상 연결 미완",
+      "evidence": "최소기록 스키마에는 screen_states/asset.classification/claims.scope 없음; beat.target 임의문자열",
+      "action": "R4-2 대상별근거·주장 계약, R4-4 DB 통합"
+    },
+    {
+      "severity": "P1",
+      "finding": "좌표/변환 참조 규격 전무",
+      "evidence": "frame.transform_ref 문자열만 있음",
+      "action": "R4-3"
+    },
+    {
+      "severity": "P1",
+      "finding": "run/metadata 무제약",
+      "evidence": "메모리 run={invented:true,status:success} 통과",
+      "action": "R4-4 최소실행/자산메타 계약"
+    },
+    {
+      "severity": "P1",
+      "finding": "합성반례 internal 태그로 실사례 오인 위험",
+      "evidence": "fixture-only 경로/0해시/EXAMPLE-ID/notes와 internal/extracted/rendered_observation 혼재",
+      "action": "재현출력 감사 전용 격리; 새설명용계약 source_type=synthetic_example 강제예시"
+    }
+  ],
+  "result": "착수 감사 완료; 시간 A 사용자 결정 반영. R4 전체 미완료."
+}

@@ -1,0 +1,522 @@
+{
+  "taxonomy": {
+    "path": "01_공통용어/공통용어사전.json",
+    "version": "0.1.1",
+    "read_depth": "three full term records, axes and source metadata",
+    "records": [
+      {
+        "id": "LAYOUT-PROCESS-LINE",
+        "axis": "layout",
+        "name_ko": "선형 프로세스",
+        "name_en": "Linear process",
+        "definition": "단계를 선·방향으로 연결한 구성",
+        "aliases": [
+          "수평 프로세스",
+          "수직 프로세스"
+        ],
+        "include_when": "순서 있는 단계",
+        "exclude_or_limit": "행태별 방향 속성은 별도",
+        "parent_id": null,
+        "related_ids": [],
+        "source_refs": [
+          "SRC-PROJECT-TAXONOMY"
+        ],
+        "status": "draft",
+        "version": "0.1.0",
+        "replaced_by": null
+      },
+      {
+        "id": "FUNCTION-FOCUS",
+        "axis": "motion_function",
+        "name_ko": "주목 이동",
+        "name_en": "Shift focus",
+        "definition": "현재 설명 대상으로 주목을 이동",
+        "aliases": [
+          "포커스 전환"
+        ],
+        "include_when": "핵심 단계 설명",
+        "exclude_or_limit": "실제 시선 효과는 검토 필요",
+        "parent_id": null,
+        "related_ids": [],
+        "source_refs": [
+          "SRC-PROJECT-TAXONOMY"
+        ],
+        "status": "draft",
+        "version": "0.1.0",
+        "replaced_by": null
+      },
+      {
+        "id": "PROPERTY-VISIBILITY",
+        "axis": "motion_property",
+        "name_ko": "가시성 변화",
+        "name_en": "Visibility change",
+        "definition": "보이는 범위·강도가 달라짐",
+        "aliases": [
+          "페이드인",
+          "페이드아웃",
+          "Fade in",
+          "Fade out"
+        ],
+        "include_when": "등장·퇴장 관측",
+        "exclude_or_limit": "오퍼시티·마스크·합성 원인 미확정 가능",
+        "parent_id": null,
+        "related_ids": [],
+        "source_refs": [
+          "SRC-PROJECT-TAXONOMY"
+        ],
+        "status": "draft",
+        "version": "0.1.0",
+        "replaced_by": null
+      }
+    ]
+  },
+  "criteria": {
+    "path": "01_공통용어/용어판정기준.json",
+    "version": "0.1.2",
+    "interpretation": "기존용어의의미를병합/승격하지않고적용조건을보완한프로젝트초안. 모든예는설명용합성상황. 원문사실·실영상검증아님.",
+    "read_depth": "three full guide records",
+    "records": [
+      {
+        "term_id": "LAYOUT-PROCESS-LINE",
+        "axis": "layout",
+        "name_ko": "선형 프로세스",
+        "record_version": "0.1.1",
+        "status": "project_draft",
+        "units": [
+          "state"
+        ],
+        "minimum_evidence": "visible_scope",
+        "positive_example": "실행단계를 방향 있는 선으로 연결한 구성.",
+        "negative_example": "가로 카드나 연도축을 무조건 프로세스로 분류.",
+        "abstain_when": "순서/연결 의미와 실제시간축 여부를 구분.",
+        "source_refs": [
+          "R2-PROJECT"
+        ],
+        "example_origin": "synthetic_example",
+        "company_approved": false,
+        "claim_scope_note": "관측태그와구현/원인/의도/출처주장을분리한다. 구현만불명이어도충분한관측태그는유지; 이항목의정의에필수인증거가부족하면기권."
+      },
+      {
+        "term_id": "FUNCTION-FOCUS",
+        "axis": "motion_function",
+        "name_ko": "주목 이동",
+        "record_version": "0.1.1",
+        "status": "project_draft",
+        "units": [
+          "beat"
+        ],
+        "minimum_evidence": "temporal_change_plus_message_context",
+        "positive_example": "기존정보 사이 강조표식이 다음 설명대상으로 이동.",
+        "negative_example": "모든이동을 주목이동 기능으로 기록.",
+        "abstain_when": "어떤대상으로 초점이 바뀌었는지 근거 부족 시 후보.",
+        "source_refs": [
+          "R2-PROJECT"
+        ],
+        "example_origin": "synthetic_example",
+        "company_approved": false,
+        "claim_scope_note": "관측태그와구현/원인/의도/출처주장을분리한다. 구현만불명이어도충분한관측태그는유지; 이항목의정의에필수인증거가부족하면기권."
+      },
+      {
+        "term_id": "PROPERTY-VISIBILITY",
+        "axis": "motion_property",
+        "name_ko": "가시성 변화",
+        "record_version": "0.1.1",
+        "status": "project_draft",
+        "units": [
+          "beat"
+        ],
+        "minimum_evidence": "tracked_target_and_temporal_scope",
+        "positive_example": "문자가 서서히 보이거나 가려졌다가 드러남.",
+        "negative_example": "흰배경과 섞여보이므로 Opacity0→100 확정.",
+        "abstain_when": "밝기/가림/합성/배경변화의 원인은 미확정.",
+        "source_refs": [
+          "R2-PROJECT",
+          "R2-W3C-OPACITY"
+        ],
+        "example_origin": "synthetic_example",
+        "company_approved": false,
+        "claim_scope_note": "관측태그와구현/원인/의도/출처주장을분리한다. 구현만불명이어도충분한관측태그는유지; 이항목의정의에필수인증거가부족하면기권."
+      }
+    ]
+  },
+  "layout": {
+    "path": "02_원칙과레이아웃/레이아웃지식.json",
+    "version": "0.1.1",
+    "read_depth": "linear process full record",
+    "records": [
+      {
+        "id": "KNOW-LAYOUT-PROCESS-LINE",
+        "term_id": "LAYOUT-PROCESS-LINE",
+        "name_ko": "선형 프로세스",
+        "definition": "단계를 선·방향으로 연결한 구성",
+        "fit_conditions": "순서 있는 단계",
+        "limits": "행태별 방향 속성은 별도",
+        "variant_dimensions": [
+          "요소 수",
+          "문구 길이",
+          "출력 비율",
+          "정보 관계",
+          "읽기·유지 시간"
+        ],
+        "source_refs": [
+          "SRC-PROJECT-TAXONOMY"
+        ],
+        "related_ids": [
+          "SCREEN-HIERARCHY",
+          "SCREEN-TYPE-KO",
+          "SCREEN-TIME-READ"
+        ],
+        "company_examples": [],
+        "status": "reference",
+        "version": "0.1.1",
+        "application_reference_refs": [
+          "SRC-IMPECCABLE"
+        ]
+      }
+    ]
+  },
+  "layout_deep": {
+    "path": "02_원칙과레이아웃/레이아웃_심화지식.json",
+    "version": "0.1.2",
+    "authority": "project_draft_not_company_rule",
+    "read_depth": "linear process full card and root authority/approval metadata",
+    "records": [
+      {
+        "id": "KNOW-LAYOUT-PROCESS-LINE",
+        "term_id": "LAYOUT-PROCESS-LINE",
+        "name_ko": "선형 프로세스",
+        "status": "draft",
+        "company_approved": false,
+        "definition_origin": "SRC-PROJECT-TAXONOMY",
+        "definition": "단계를 선·방향으로 연결한 구성",
+        "application_origin": "project_synthetic_transfer_not_source_example",
+        "fit_relation_ids": [
+          "REL-ORDER"
+        ],
+        "relation_policy": "조건부 선택 후보. 모양만으로 정보 관계를 자동 부여하지 않음.",
+        "fit_when": "업무·공정 단계의 순서가 의미를 가지며 분기가 주요 내용이 아닐 때",
+        "reading_order": "시작 조건→단계와 연결 방향→종료·산출물",
+        "composition_decisions": "단계 이름과 화살표가 실제 절차를 표현하게 하고 현재 단계와 전체 진행 위치를 구분한다.",
+        "positive_example": "접수→검토→승인 흐름을 단계 이름·방향과 함께 표현한다.",
+        "counterexample": "자료 공개 순서만 보고 실제 업무가 그 순서라고 연결하거나 분기·회귀를 숨긴다.",
+        "acceptable_variation": "한 방향 선은 순서일 수 있으나 반드시 시간 길이를 나타내지는 않는다.",
+        "alternative_when": "실제 기간이면 시간축, 조건 분기가 중요하면 연결 구성·확장 후보를 검토한다.",
+        "korean_text_adjustment": "긴 단계명을 축약할 때 의미를 검토하고 작은 단위 설명은 현재 단계에 가까이 둔다.",
+        "landscape_adjustment": "내용 역할을 나눈 영역의 폭을 조절한다. 화면 전체를 꽉 채울 의무는 없다. 핵심·단위·출처가 읽히는 완성 상태를 확인한다.",
+        "portrait_adjustment": "수직 재배열 시 단계 번호·방향을 유지한다. 폭이 좁다고 순서를 뒤집지 않는다.",
+        "square_adjustment": "필수 내용·관계·비례를 잃는 중앙 크롭만으로 해결하지 않는다. 손실 없는 크롭·영역 재배치·구간 분절도 후보로 비교하고 실제 문구와 표시 조건을 확인한다.",
+        "temporal_conditions": "정보가 완성된 상태와 유지 시간을 별도로 확인한다. 읽기 가능한 대비·가림·배치가 유지되는 구간인지 보고 모션 자체의 길이로 대체하지 않는다.",
+        "abstain_when": "시나리오의 선후·분기 근거가 없으면 절차 순서를 확정하지 않는다.",
+        "minimum_inputs": [
+          "설명 목적·핵심 주장",
+          "정보 항목·대응 관계와 출처",
+          "대상 시청자·시청 환경",
+          "출력 화면비·해상도·배포 UI",
+          "실제 문구·숫자·단위·자산"
+        ],
+        "source_refs": [
+          "SRC-L2-CARBON-GRID",
+          "SRC-L2-NNG-VISUAL",
+          "SRC-L2-NNG-PROXIMITY"
+        ],
+        "source_locator_refs": [
+          {
+            "source_id": "SRC-L2-CARBON-GRID",
+            "locator": "Contrast / Style models / Adaptive aspect ratios"
+          },
+          {
+            "source_id": "SRC-L2-NNG-VISUAL",
+            "locator": "2. Visual Hierarchy / 3. Balance"
+          },
+          {
+            "source_id": "SRC-L2-NNG-PROXIMITY",
+            "locator": "Place Related Elements near Each Other / Proximity May Shift in Responsive Designs"
+          }
+        ],
+        "numeric_default": null,
+        "case_kind": "synthetic_not_company_video",
+        "auto_relation_assignment": false
+      }
+    ]
+  }
+}
+
+CORRECTION RELEVANT TEXT
+
+FILE 04_기록규격/06_통합최소기록_규격_v0.2.md
+# 통합 최소 기록 규격 v0.2 — R4-4 후보
+
+2026-10-15. 사용자 이관 A를 반영한 **2단계 후보**다. 기본 도구 전환·실제 이관·종료 판정은 검수 후 별도 단계에서 한다.
+
+## 기록 구조
+
+| 부분 | 저장하는 것 | 기준 |
+|---|---|---|
+| record_id/version | 이 통합 기록의 식별자와 버전 | 영상 파일 ID/버전과 구분 |
+| catalog_refs/design | 현행 용어·분류 규칙·한맥 profile의 ID/version/hash, 토큰 역할·선택 스타일·초안 예외 | 회사 필수 규칙/공식CI 승인으로 승격하지 않음 |
+| spatial_contract | R4-3의 공간/변환/기하와 그 안의 R4-2 근거, 다시 그 안의 R4-1 시간 | 실제 데이터는 한 번만 저장. 동등한 최상위 사본 금지 |
+| units | asset/segment/screen_state/beat 대상 참조와 단위별 분류·시나리오·표본·관련 상태 | R2의 state 의미를 R4의 screen_state 이름에 명시 대응 |
+| coordinate_bindings | 수치 주장의 각 공간 표본 ↔ geometry ↔ 성분/단위/필요시 mapping | 문자열 공간 ID의 존재만으로 확인 완료 금지 |
+| cut_markers | 계획/관측을 구분한 컷 보조 표식과 주장·순간 | 컷마다 설명 구간 자동 생성 금지 |
+| asset_metadata | container/codec/오디오 유무/언어·근거·한계 | 시간·해상도·좌표/승인 정본을 자유객체로 중복하지 않음 |
+| run | 작업 종류·선언 상태·주체·도구/모델 식별·시각·입력 pin·출력 기록 버전·설정 hash·한계 | API key/비밀정보 저장 금지. 선언을 실제 실행 증명으로 보지 않음 |
+| review_contexts | 근거 검수 receipt ↔ 통합 기록 전체와 규격/검사기 hash | 구형 receipt를 무조건 재사용하지 않음 |
+
+영상→설명 구간→화면 상태의 대상 관계는 근거 계약 targets에만 저장한다. units는 그 대상 ID/버전을 참조한다. 동작은 구간 소속이며 여러 상태를 related_state_refs로 가로지를 수 있다. 표본 프레임은 상태 자체가 아니다. R2의 단위별 허용축은 classified/unknown/not_applicable/other_candidate/not_assessed 중 하나를 빠짐없이 명시한다. 관측·계획·추론은 주장 종류로 구분하며 범위 밖 태그를 자동 상속하지 않는다.
+
+## 세 규격 재사용과 통합 프로필
+
+시간·근거 정본과 검사기는 변경하지 않는다. 공간 정본도 변경하지 않는다. 통합 스키마는 세 규격을 로컬 본문으로 포함하고 원문 hash를 고정한다. 현재 원문에 원격 $ref가 없어 네트워크 조회가 필요하지 않다. 동일 본문을 여기저기 독립 수정하지 않도록 통합 스키마의 원문 pin을 검사한다.
+
+유일한 공간 구조의 확장은 **좌표를 아직 기록하지 않은 경우 spaces=[]를 허용**하는 통합 프로필이다. 공간이 없으면 변환/기하/매핑은 참조 검사상 담을 수 없다. 시간·근거가 식별된 새 기록에 허위 프레임이나 공간을 만들 필요가 없다. 원본 identity 자체가 없는 구형 자료는 이 예외로 수용하지 않고 접수함에 보존한다.
+
+## 좌표 표본 연결과 한계
+
+R4-2의 공간 표본 px와 R4-3의 raster_px는 해당 raster 성분에 한해 같은 단위로 대응한다. normalized는 그대로 구분한다. geometry의 표본 근거·대상·원본 프레임, x/y/width/height 성분, 단위, 실제 공간 ID/버전을 대조한다. mapping을 쓸 때는 source geometry와 결과 geometry까지 따라간다. R4-3 mapping 자체에는 version이 없어 참조 version은 소유한 공간 계약 버전에 고정한다. 통합 context는 실제 mapping 내용도 hash에 포함한다.
+
+표본 숫자는 geometry의 유리수 성분과 정확히 대조한다. 소수로 표현할 때는 exact_decimal 또는 자리수 0~12를 명시한 rounded_decimal(half-even)을 쓴다. 이것은 저장 표현의 반올림이며 측정 불확실성/허용 오차가 아니다. px 변환·단위 변환을 임의로 추정하지 않는다.
+
+시간에 따른 스칼라 표본은 같은 축을 사용하고, 프레임별 명시 공간 기준/변환 계열이 다르면 비교 미해결로 남긴다. 동일 크기 화면이라고 카메라/대상 추적이 검증됐다는 뜻은 아니다. 모델 위치·잘린 결과·미상/비영 오차는 관측 사실로 확정하지 않는다. single_sample_component의 단일 성분 결과/표본/단위 일치만 자동 검사한다. 다른 계산법·속도/가속도·오차 전파·추적은 내용 검수 대기다. 새로운 자동 영상 분석/수치 추출은 01-A에서 한다.
+
+**R4-2의 공간 supported 보류는 유지한다.** R4-4에서 표본 연결을 실제 검사하지만, 연결 검사를 사람의 측정 내용·권한·승인 대신 사용하지 않는다. 공간 연결 상태 linked도 사실/오차 검증을 뜻하지 않는다. 사람 내용 검수·검수자/행위·권한과 운영 승인은 R6/R7 및 실제 자료 확보 후 인계한다.
+
+## 검수 문맥과 도구 결과
+
+review_contexts는 시간·근거·좌표·분류·한맥 참조·실행 선언·통합 스키마/하위 검사기 hash 전체를 고정한다. 기존 review_ref/context만 복사하면 통합 검사에서 빠짐 또는 stale로 남긴다. context 계산의 직렬화는 제공한 Python 함수의 sort_keys/UTF8/유한수 방식이며 다른 정규화 표준과 같다고 주장하지 않는다. R4-2 receipt의 기존 context 검사는 별도로 유지한다.
+
+valid(구조), unresolved(연결/내용 미확인), 사람 검수 대기, 사실 확인·회사 승인·운영 반영은 별개다. fact_verified/human_identity_verified/company_approved/operational_release는 이 검사기에서 false다. spec_test는 실제 DB·회사 문법 검색에서 제외한다.
+
+[스키마 후보](통합최소기록_스키마_v0.2.json) · [통합 설명용 예](통합최소기록_설명용_v0.2.json) · [검사기](../07_실행도구/통합기록_규격검사.py) · [시험](../08_검증결과/R4_04_02_통합계약시험.json)
+
+스키마 결합은 JSON Schema 공식 문서의 [모듈 구조와 참조](https://json-schema.org/understanding-json-schema/structuring), [닫힌 스키마 확장](https://json-schema.org/understanding-json-schema/reference/object#extending-closed-schemas)을 확인했다. 통합 필드·이관 정책·검수 보류는 프로젝트 설계다.
+
+
+FILE 08_검증결과/R4_04_보완결과와레드팀.md
+# R4-4 통합·이관 결과와 레드팀
+
+2026-10-15. **시간·근거·좌표를 연결한 v0.2 기록 계약, 구형 원문 접수/누락 보고, 기본 검사 도구 전환 범위를 완료했다.** R4의 Phase 00 기록 기반 검수는 마쳤다. 전체 Phase 00은 R5~R8 잔여가 있으며 01-A는 시작하지 않았다.
+
+## 무엇이 달라졌는가
+
+예전에는 ‘구간에 태그·프레임·모션을 적는 JSON’이었다. 지금은 **영상 전체 → 설명 구간 → 화면 상태**, 그리고 상태를 가로지를 수 있는 **짧은 동작**의 대상을 나누고 시간·근거·좌표와 연결한다. 프레임은 화면 상태를 확인하는 표본이며 상태 자체가 아니다.
+
+| 연결한 것 | 적용 예 | 막는 반례 |
+|---|---|---|
+| 시간 | 재생 0초와 원본 PTS·구간/프레임을 같은 정본으로 연결 | 다른 시각·구간 제외 끝점·원점 모순을 근거로 사용 |
+| 근거 | 원본/파생 자료 pin → 대상/선택 부분 → 지지·반대·문맥 주장 | 파일/대상 ID만 있어 관측·의도 확인으로 처리 |
+| 좌표 | 표본 → geometry → x/y/폭/높이 → 단위/필요시 변환 결과 | px/normalized 혼용·없는 공간·서로 다른 성분·오차 누락 |
+| 분류 | 단위별 허용축과 classified/unknown/not_applicable/other_candidate/not_assessed | 구간 태그를 화면 상태로 상속·미상을 정답으로 채움 |
+| 실행·검수 | 구조화 run/metadata·한맥/용어 pin·통합 context | 임의 run 객체를 실행 증명으로 사용·옛 receipt를 변경 후 재사용 |
+
+데이터는 spatial_contract 안의 근거 계약, 그 안의 시간 계약에 한 번만 저장한다. units와 좌표 표본은 ID/버전을 참조한다. 별도 시간/근거 사본으로 모순을 만들지 않는다. 좌표 미기록 영상은 빈 공간 목록으로 보존할 수 있지만 원본 identity 미상을 가짜 값으로 채우지는 않는다.
+
+## 단계별 수행과 레드팀
+
+| 단계 | 결과 | 근거 |
+|---|---|---|
+| 1. 착수 감사·연결 설계 | 구형 5후보·호출부·기존 누락 확인. 사용자 A 확정 | [1단계 보고](R4_04_01_결과보고.md) |
+| 2. 통합 기록 계약 | 자체 61/61 · 독립 42/42 | [2단계 보고](R4_04_02_결과보고.md) |
+| 3. 접수함·현재 원문 보존 | 자체 31/31 · 독립 47/47 · 실제5/5 bytes/재실행 불변 | [3단계 보고](R4_04_03_결과보고.md) |
+| 4. 기본 도구·호환 인계 | 자체 24/24 · 독립 67/67 | [4단계 판정](R4_04_04_독립판정.json) |
+
+같은 회귀를 실행하는 반례검사.py와 최종반례검사.py는 별칭이다. 별도 독립 시험으로 중복 합산하지 않았다. 시험 집합의 통과이며 모든 입력/실영상 정확성의 증명이 아니다.
+
+2단계에서는 날짜 표기 예외, 컷·상태/동작의 시간 범위, 정지 화면을 컷 변화 근거로 쓰는 문제, 변환 원본 오차의 출력 전달을 보완했다. 3단계에서는 저장 메타 재접수 검수, 출처 경계·Windows 대소문자, 빈 역할, 유니코드 오류 진단, 필수schema, 파서 깊이 처리를 보완했다. 초기 실패 코드/입력/결과를 덮어쓰지 않고 최종 재검수와 함께 보존했다. 4단계의 상세 판단과 검토자 시험 코드의 보완은 원문 판정을 따른다.
+
+## 실제 구형 자료는 어떻게 처리했는가
+
+현재 찾은 5개는 모두 설명용·스킬 시험·과거 평가 자료다. **5개 원문을 수정하지 않고 접수함에 사본·누락 보고로 보존했다.** 원본 영상 버전/hash·시간·화면 상태가 없어 실제 회사 영상 기록으로 바꾸지 않았다. JSON 원문 hash와 영상 hash를 구분했다. 동일ID라도 출처가 다른 파일을 별도로 보존하고 같은 원문의 재실행은 불변이다.
+
+v0.2 합성 설명 예시는 별도 규격 예다. 구형 예시에 가짜 hash/PTS를 채운 이관본이 아니다. 현재 자동 도구는 copy-only 접수·누락 진단·검사이며, 구형 의미 전체를 추정해 자동 변환하는 도구는 만들지 않았다. 원본과 의미 대응이 확인된 이후에만 새 통합 초안을 작성한다. 실제 회사 영상 분석 기록은 **0건**이다.
+
+[접수함 안내/5원문](../11_기록접수함/00_접수함안내.md) · [실접수 결과](R4_04_03_실접수결과.json) · [새 기록 보관 안내](../12_통합기록/00_통합기록안내.md)
+
+## 앞으로 사용하는 파일
+
+1. [통합 최소 기록 규격](../04_기록규격/06_통합최소기록_규격_v0.2.md)
+2. [v0.2 설명용 예시](../04_기록규격/통합최소기록_설명용_v0.2.json)
+3. [기본 검사·구형 호환 사용 안내](../07_실행도구/R4_통합기록_사용안내.md)
+4. [최종 단계 판정](R4_04_단계판정.json) · [파일/참조 정합성](R4_04_자료정합성검사.json)
+
+기본 자료검증.py는 새 v0.2를 검사한다. 구형 v0.1은 needs_migration·valid=false·CLI exit2로 구분한다. 구형 검사에서 통과해도 새 DB 통과로 전달하지 않는다. 현재 최소기록_스키마.json은 v0.2 정본의 로컬 참조 진입점이다. 원문 v0.1 스키마/검사/과거 회귀는 변경 전 backup과 보존용 경로에 남겼다. 과거 평가 파일을 새 성적에 맞춰 수정하지 않았다.
+
+## 사람 검수·남은 일
+
+구조 통과·좌표 연결·context 일치는 화면/대상 해석·시간/픽셀 실측·실행 사실·실제 사람 검수·회사 승인과 다르다. 필요한 내용은 대기 목록으로 남긴다. 실제 자료가 없어 이번에 실제 영상의 내용 검수나 검수자 인증은 하지 않았다. 공간 측정의 supported 보류도 유지하며 R6/R7의 권한·내용 검수로 인계한다. 속도/가속도 자동 분석·오차 전파·ROI/OCR/추적·영상 가공은 01-A다.
+
+세 스킬의 본문·참조·평가 입력은 원래 hash를 유지했다. 새 규격의 쓰기/기권 호환·로그/backup 재평가는 [R8 인계](../09_다음단계인계/R4_통합규격_스킬호환_인계.md)에 남겼다. 과거 비교 점수를 새 호환 검증으로 쓰지 않는다.
+
+다음은 R5의 한맥/가족사 CI·디자인 적용 연결이다. R6 출처·권한·검수 결정, R7 품질/조회 검수 기준, R8 맞춤 스킬 재구성과 평가까지 보완한 뒤 전체 Phase 00을 판정한다.
+
+[전체 독립 원문 보존 목록](../backup/2026-10-15_R4_04_독립검토/전체_보존목록.json). 스키마 모듈/참조·닫힌 구조 결합은 [JSON Schema 공식 모듈 설명](https://json-schema.org/understanding-json-schema/structuring)과 [닫힌 스키마 확장](https://json-schema.org/understanding-json-schema/reference/object#extending-closed-schemas)의 관련 본문을 확인했다. 통합 필드·이관 정책·검수 보류는 프로젝트 설계다. 기존 R4-1/2/3 출처는 그대로 재사용했으며 전체 표준 전수·실영상 실험 조사를 주장하지 않는다.
+
+
+FILE 01_공통용어/02_기록단위와분류축.md
+# 무엇에 이름을 붙이는지 구분하기
+
+사용자가 선택한 A안에 따라 영상 전체·설명 구간·화면 상태·짧은 동작을 구분한다. 컷 전환은 보조 정보다. 아래 단위는 모션그래픽을 기록하기 위한 프로젝트 기준이다.
+
+| 단위 | 쉬운 예 | 나누는 기준 |
+|---|---|---|
+| 영상 전체 | 한 편의 기술 설명 영상 | 제공 파일과 버전 |
+| 설명 구간 | 침투수의 원인을 설명하는 부분 | 설명하는 주제·질문이 바뀌는지 |
+| 화면 상태 | 제목만 보임 → 제목과 도표가 함께 보임 | 정보 역할·배치·주석 대상이 달라지는지 |
+| 짧은 동작 | 도표 공개·강조 이동·숫자 변화·정보 유지 | 어느 대상이 어느 시간에 변하거나 유지되는지 |
+
+화면 상태는 완전히 멈춘 화면이 아니다. 제목을 읽는 동안 배경 입자가 움직여도 같은 정보 구성이 유지될 수 있다. 짧은 동작에는 움직임뿐 아니라 특정 대상의 유지·정지 같은 시간 사건도 포함한다. 이름이 고정된 최대 길이를 뜻하지는 않는다.
+
+동작은 화면 상태 사이를 가로지를 수 있고 여러 동작이 겹쳐 발생할 수 있다. 그래서 모든 동작을 한 상태의 배타적인 자식으로 묶지 않는다. 레이아웃이 변하는 중에는 이전·이후 상태와 전환 동작을 구분하며, 중간 화면을 완성된 새 레이아웃으로 단정하지 않는다.
+
+컷이 바뀌어도 같은 설명을 이어갈 수 있고, 컷 없이 설명 주제가 바뀔 수 있다. 경계가 불분명하면 후보와 이유를 남긴다. 프레임 간격이나 컷 검출만으로 설명 구간을 확정하지 않는다.
+
+| 분류축 | 기록하는 단위 |
+|---|---|
+| 영상 유형 | 영상 전체·설명 구간 |
+| 전달 목적 | 설명 구간·화면 상태·짧은 동작 |
+| 정보 관계 | 설명 구간·화면 상태 |
+| 화면 레이아웃 | 화면 상태 |
+| 모션 기능·관측 속성·시간 특성 | 짧은 동작 |
+| 표현 속성 | 화면 상태·설명 구간 |
+
+화면 일부에 붙인 태그를 영상 전체에 자동 상속하지 않는다. 관측이 충분하면 태그를 유지하고, 구현만 불명확한 경우 구현 주장을 별도로 남긴다. 예를 들어 확실한 크기 변화는 기록하면서 카메라/Scale 원인은 미확인으로 둘 수 있다.
+
+**프레임은 표본이며 화면 상태와 다르다.** 현재 DB에는 asset/segments/frames/beats가 있고 별도 state 필드는 없다. [분류 운영규칙](분류운영규칙.json)은 의미 기준이다. 실제 저장 필드·상태와 동작의 참조·시간 경계 검사는 [R4](../09_다음단계인계/R2_R4.md), 구현은01-A에서 연결한다.
+
+
+JSON CONTRACT SELECTED: /spatial_contract/evidence_contract/targets and /units target_ref/related_state_refs
+{
+  "targets": [
+    {
+      "id": "TG-ASSET",
+      "version": "0.1.0",
+      "unit": "asset",
+      "asset_ref": {
+        "id": "EX-ASSET",
+        "version": "0.1.0",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "parent_ref": null,
+      "period_ref": "EX-WHOLE",
+      "label": "가상 영상의 asset 대상"
+    },
+    {
+      "id": "TG-SEGMENT",
+      "version": "0.1.0",
+      "unit": "segment",
+      "asset_ref": {
+        "id": "EX-ASSET",
+        "version": "0.1.0",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "parent_ref": {
+        "id": "TG-ASSET",
+        "version": "0.1.0"
+      },
+      "period_ref": "EX-SEGMENT",
+      "label": "가상 영상의 segment 대상"
+    },
+    {
+      "id": "TG-STATE",
+      "version": "0.1.0",
+      "unit": "screen_state",
+      "asset_ref": {
+        "id": "EX-ASSET",
+        "version": "0.1.0",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "parent_ref": {
+        "id": "TG-SEGMENT",
+        "version": "0.1.0"
+      },
+      "period_ref": "EX-SEGMENT",
+      "label": "가상 영상의 screen_state 대상"
+    },
+    {
+      "id": "TG-OBJECT",
+      "version": "0.1.0",
+      "unit": "object",
+      "asset_ref": {
+        "id": "EX-ASSET",
+        "version": "0.1.0",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "parent_ref": {
+        "id": "TG-STATE",
+        "version": "0.1.0"
+      },
+      "period_ref": "EX-SEGMENT",
+      "label": "가상 영상의 object 대상"
+    },
+    {
+      "id": "TG-BEAT",
+      "version": "0.1.0",
+      "unit": "beat",
+      "asset_ref": {
+        "id": "EX-ASSET",
+        "version": "0.1.0",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "parent_ref": {
+        "id": "TG-SEGMENT",
+        "version": "0.1.0"
+      },
+      "period_ref": "EX-SEGMENT",
+      "label": "상태를 가로지를 수 있는 합성 동작"
+    }
+  ],
+  "units": [
+    {
+      "target_ref": {
+        "id": "TG-ASSET",
+        "version": "0.1.0"
+      },
+      "related_state_refs": []
+    },
+    {
+      "target_ref": {
+        "id": "TG-SEGMENT",
+        "version": "0.1.0"
+      },
+      "related_state_refs": []
+    },
+    {
+      "target_ref": {
+        "id": "TG-STATE",
+        "version": "0.1.0"
+      },
+      "related_state_refs": []
+    },
+    {
+      "target_ref": {
+        "id": "TG-BEAT",
+        "version": "0.1.0"
+      },
+      "related_state_refs": [
+        {
+          "id": "TG-STATE",
+          "version": "0.1.0"
+        }
+      ]
+    }
+  ]
+}
+
+SOURCE TOOL ROOT AND ENTRYPOINT EXCERPTS ONLY; NOT EXECUTED
+18:  return [str(list(e.path))+': '+e.message[:400] for e in Draft202012Validator(schema,registry=registry,format_checker=FormatChecker()).iter_errors(instance)]
+19: def validate_catalogs():return load('구형기록_보존검사.py').validate_catalogs()
+20: def catalogs():return load('구형기록_보존검사.py').catalogs()
+21: def inspect_record(data):
+22:  flags={'fact_verified':False,'human_identity_verified':False,'company_approved':False,'operational_release':False}
+23:  if not isinstance(data,dict):return {'valid':False,'status':'invalid','errors':['기록 객체 필요'],'unresolved':[],**flags}
+24:  version=data.get('schema_version')
+25:  if version=='0.1.0':
+26:   intake=load('기록접수.py');legacy=load('구형기록_보존검사.py')
+27:   try:prior_errors=legacy.validate_record(data)
+28:   except Exception as e:prior_errors=['보존 진단 예외: '+type(e).__name__]
+29:   return {'valid':False,'status':'needs_migration','schema_version':version,'errors':['구형 v0.1.0은 새 통합 기록으로 통과시키지 않음. 기록접수.py로 원문·누락 보존 후 명시 이관 필요.'],'unresolved':[],'legacy_shape_errors':prior_errors,'missing_or_review_items':intake.diagnose(data),'analysis_search_allowed':False,'company_rule_search_allowed':False,**flags}
+30:  if version!='0.2.0':return {'valid':False,'status':'unsupported_version','errors':['지원하지 않는 기록 버전'],'unresolved':[],**flags}
+31:  result=load('통합기록_규격검사.py').validate(data)
+32:  catalog_errors=validate_catalogs();result['errors'].extend('catalog: '+e for e in catalog_errors);result['valid']=not result['errors']
+33:  result.update({'status':'invalid' if not result['valid'] else 'draft_with_unresolved' if result['unresolved'] else 'draft_structure_pass','schema_version':version,'scope':'기록 계약의 구조/연결 검사. 실제 영상·사람 검수·회사 승인·운영 반영 아님.'})
+53:  print(json.dumps(result,ensure_ascii=True,indent=2));return 0 if result['valid'] else 2 if result['status']=='needs_migration' else 1
+54: if __name__=='__main__':raise SystemExit(main())

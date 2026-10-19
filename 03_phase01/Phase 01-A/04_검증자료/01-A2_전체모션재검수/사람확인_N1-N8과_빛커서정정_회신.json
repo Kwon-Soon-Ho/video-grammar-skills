@@ -1,0 +1,50 @@
+{
+  "id": "A2-HUMAN-N1-N8-CURSOR-LIGHT-REPLY",
+  "recorded_at": "2026-10-16T14:07:39+09:00",
+  "reply_verbatim": "N1~N8 모두 맞아. 검수 기록에 반영하고, 이번에 놓친 부분이 좀 더 있는데 \"처음에 등장하는 큰E 주변으로 얇은 빛 테두리가 지나가고, 큰 영문은 케드 커서 같은 십자 커서로 점선 사각형테두리로 등장시키고 그 점선이 축소되면서 텍스트가 오퍼시티로 연해지는거야.\" 이 부분은 놓친거야? 아니면 기록을 그냥 안 한거야? 니가 파악할 수 있는 부분이야?",
+  "approved_groups": [
+    "N1",
+    "N2",
+    "N3",
+    "N4",
+    "N5",
+    "N6",
+    "N7",
+    "N8"
+  ],
+  "prior_six_approvals_preserved": true,
+  "request_path": "Phase 01-A/04_검증자료/01-A2_전체모션재검수/추가모션_8항목_검수요청.json",
+  "request_sha256_before_reply": "a54dbcfac367675be24c2d32e4eae2593c82e1d36810584dce195e1fd502283d",
+  "context_sha256": "d292eb79adf206bb1bb295a52348737c42f67e039554e51e15295082cdfd6f47",
+  "guide_sha256_at_confirmation": "652d970352eac3bfafaa7344d5c7a06bca35a2b07cb0e1f3fe99adb5ad734525",
+  "observation_sha256_at_confirmation": "4970dfaa3f713a62ce5e380bcb962510f457829abb7af89f946fb56b3ab81484",
+  "new_user_corrections": [
+    {
+      "id": "C1-E-outline-light",
+      "human_statement": "처음 큰 E 주변으로 얇은 빛 테두리가 지나감",
+      "prior_record": "S-EG-ambient에 저대비 광선을 일반적으로 적었지만, E 주변 빛의 통과를 별도 사건으로 식별하지 못함",
+      "classification": "분석 누락; 단순 기록 생략이 아님",
+      "video_observation": "약0.5~1.25초 비교에서 큰 E 주변의 얇은 녹색 발광선/수평 빛과 밝은 부분의 통과가 보임. E 본체 조각 슬라이드와 별개로 구분",
+      "curve": "미분류: 고정 테두리의 밝기 변화와 이동하는 발광 부분이 중첩. 경로 전체·속도곡선을 측정 완료했다고 하지 않음",
+      "human_status": "user_provided_correction_recorded",
+      "ai_status": "visible_supporting_motion_reidentified_after_user_cue"
+    },
+    {
+      "id": "C2-CAD-cursor-box",
+      "human_statement": "CAD 같은 십자 커서로 점선 사각형 테두리를 나타내 큰 영문을 공개하고, 점선이 축소되면서 글자가 opacity로 연해짐",
+      "prior_record": "N4는 공개/소실 경계와 연한 문구 잔존만 적음. 커서·점선 선택 영역을 독립 대상으로 식별하지 않음",
+      "classification": "분석 누락 및 설명 과도 단순화",
+      "video_observation": "적색 가로선·녹색 세로선·중앙 작은 사각형의 십자 커서가 보이고, 그에 연결된 듯한 점선 사각 영역이 확대되며 Value of를 공개. 약3.2~3.5초 영역의 왼쪽 경계가 오른쪽으로, 위쪽 경계가 아래로 이동해 우하단 쪽으로 축소되며 연한 전체 문구가 남음. 글자 자체가 작아지는 현상과 구분",
+      "curve": "기존 N4의 공개 ease-in-out/밝은 영역 소실 ease-in은 경계 진행량의 관측 후보로 유지. 전체 텍스트 opacity 속도곡선으로 바꾸어 부르지 않음",
+      "human_status": "user_provided_correction_recorded",
+      "ai_status": "cursor_and_dashed_region_and_faint_text_visually_confirmed; actual_AE_opacity_or_matte_implementation_unverified"
+    }
+  ],
+  "scope": "N1–N8 visible direction/order/curve-family descriptions confirmed, with N4 additionally clarified by C2. Not exact AE values or complete-video approval. C1/C2 are direct user corrections, not answers to an invented new request.",
+  "pending_new_human_questions": [],
+  "remaining_AI_uncertainties": [
+    "C1 full moving-light path and curve unclassified",
+    "C2 original AE opacity/matte implementation and exact curve unknown"
+  ],
+  "A3_started": false
+}

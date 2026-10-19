@@ -1,0 +1,1696 @@
+{
+  "id": "r3-skill-deep-review",
+  "version": "0.1.6",
+  "date": "2026-10-14",
+  "scope": "초기8저장소+발표추가5패키지(Anthropic중복범위)+편집화면추가5저장소, 로컬16패키지, 호스트Presentations1선택절. 선택 SKILL/호출참조/선택코드·의존성·라이선스의정적검토. 전체저장소/세계모든스킬/전이의존성·binary·실행성능·권리전수·실영상검증 아님.",
+  "state": "selected_static_review_and_transfer_plan_complete",
+  "user_decision": {
+    "id": "DECISION-R3-SKILL-IMPORT-A",
+    "status": "accepted",
+    "choice": "A",
+    "date": "2026-10-14",
+    "user_reply": "A안으로 하자. 지금 조사한 스킬외 추가할만한거 없어? 그건 01-a에서 하면 되나? 화면 구성을 어떻게 할건지 uxui 말고도 ppt작성이나 이런 여러 스킬들이 있을텐데 이런거 다 검토하고 지금 나온거지?",
+    "meaning": "맞춤3스킬 목적/시범 운영은 유지. 외부 지식/절차 선별 이식 설계, upstream 실행 보류, R8에서 Anthropic Skill Creator 재구성·평가. PPT/발표/인포그래픽/설명영상 분야를 Phase00 R3-3에 추가 조사."
+  },
+  "upstream_code_executed": false,
+  "global_skill_installation": false,
+  "existing_connections_modified": false,
+  "company_approval_created": false,
+  "custom_skills_changed": false,
+  "cards": [
+    {
+      "id": "taste-main",
+      "source_package": "taste",
+      "name": "Taste / design-taste-frontend",
+      "purpose": "기본 카드·중앙 스택을 반복하는 이유를 되묻고 내용에서 구조를 도출하는 절차 검토",
+      "entrypoints": [
+        "skills/taste-skill/SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "실제 입력·대상·정보 목적을 먼저 확인",
+        "주장과 근거를 연결",
+        "자체 의도보다 보이는 결과를 검토",
+        "대체안의 정보 적합성을 설명"
+      ],
+      "exclude_or_rewrite": [
+        "8~12개의 고유 소재 의무·무작위 방향 강제",
+        "4사진·8움직임의 최저 수량과 Awwwards 점수 캡",
+        "두 줄·32영문자·웹px·폰트 수·선·번호·특정 색·동일 모듈 일괄 금지"
+      ],
+      "application_example": "기술 원리를 설명할 때 먼저 입력 근거와 관계를 정리하고, 개념도/단면 중 무엇이 맞는지 이유를 기록한다.",
+      "counterexample": "7개 절차를 단계 번호 없이 장식 사진 4개와 움직임 8개로 바꾸면 과정과 읽기 시간이 손상된다.",
+      "license_note": "루트 MIT. 데이터의 외부 사이트·사진·폰트 권리는 별도. 묶음 라이선스를 개별 자산 권리로 해석하지 않음.",
+      "unresolved": [
+        "웹 갤러리의 저자 보고·모델 평가; 회사 영상·한국어·사람 대상 효과 미검증",
+        "library 레코드는 전수 의미 검토/영상 후보 등록을 하지 않음"
+      ],
+      "target_skills": [
+        "video-knowledge-curator",
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "not_selected_now; if_substantial_copy_later_preserve_notices_and_verify_file_scope",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "taste-redesign",
+      "source_package": "taste",
+      "name": "Redesign / redesign-existing-projects",
+      "purpose": "같은 저장소 안의 상충 규칙과 수정 권한 검토",
+      "entrypoints": [
+        "skills/redesign-skill/SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "기존 기능·브랜드·값 보존",
+        "실제 줄바꿈·정렬·원문 전달 확인",
+        "국소 변경 범위 명시"
+      ],
+      "exclude_or_rewrite": [
+        "숫자·날짜를 자연스럽게 보이도록 임의 변경",
+        "회사 글꼴을 취향으로 교체",
+        "항상 grain·glass·spring·smooth scroll 추가",
+        "주 Taste의 flat/무그라데이션 규칙과 병용 강제"
+      ],
+      "application_example": "회사명이 긴 비교 표를 현재 회사 글꼴로 재배치하는 수정 제안만 한다.",
+      "counterexample": "47.2%처럼 그럴듯한 값을 만들거나 블로그 날짜를 무작위로 바꾸는 조항은 실제 회사 자료 정리에 사용할 수 없다.",
+      "license_note": "루트 MIT. 외부 폰트·사진·아이콘은 별도 권리.",
+      "unresolved": [
+        "원문 두 스킬의 표면·모션·레이아웃 규칙은 서로 상충하므로 패키지 전체를 단일 기준으로 채택할 수 없음"
+      ],
+      "target_skills": [
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "not_selected_now; if_substantial_copy_later_preserve_notices_and_verify_file_scope",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "impeccable",
+      "source_package": "impeccable",
+      "name": "Impeccable 선택 참조",
+      "purpose": "레이아웃·타이포·정보 이해 목적과 감각 판단/기계 검사 분리",
+      "entrypoints": [
+        "skill/SKILL.src.md"
+      ],
+      "retain_as_proposal": [
+        "layout: 관계·읽기 순서·그룹·밀도·반복의 목적",
+        "typeset: 역할·실제 언어·내용 극단·대체 글꼴",
+        "operate: 친숙함과 일관성",
+        "critique: 구체 근거·우선순위·해당 없는 항목 분리"
+      ],
+      "exclude_or_rewrite": [
+        "런처 자동 다운로드·hooks·doctor·live 주입",
+        "new-work 창작/방향 경쟁/이미지/컴포넌트 구현",
+        "정본 DESIGN 교체·자동 추출/마이그레이션",
+        "항상 4항목 이하·시선효과 보증·웹 수치 강제"
+      ],
+      "application_example": "같은 조건의 공법 두 개를 같은 구조로 비교하는 반복은 인정하고, 라벨과 척도·언어 가독성만 검토한다.",
+      "counterexample": "반복이 뻔하다는 이유로 비교 두 화면의 구조를 다르게 만들면 비교가 어려워진다. 과업 UI의 200ms를 설명 화면의 읽기 시간으로 쓰지 않는다.",
+      "license_note": "Apache-2.0 + 실제 NOTICE.md. iOS/Android 참조는 별도 MIT 기원 고지. 런처 바이너리/전이 패키지는 전수 감사 아님.",
+      "unresolved": [
+        "모든 명령·호출 가지·엔진 바이너리/이미지 생성/폰트 전수 검토 미완료",
+        "선택 참조의 native/live/new-work 연결은 제외된 경로로 기록"
+      ],
+      "target_skills": [
+        "video-knowledge-curator",
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "not_selected_now; if_substantial_copy_later_preserve_notices_and_verify_file_scope",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "anthropic-frontend",
+      "source_package": "anthropic",
+      "name": "Anthropic frontend-design",
+      "purpose": "맥락에 맞는 시각 방향과 덜 자동적인 선택 절차",
+      "entrypoints": [
+        "skills/frontend-design/SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "목적·대상·제약과 구체 방향 연결",
+        "종류가 다른 프로젝트에 같은 미적 해법을 재사용하지 않는 질문"
+      ],
+      "exclude_or_rewrite": [
+        "웹 UI 구현 지시",
+        "과도한 파격·장식·애니메이션을 회사 화면에 강제",
+        "코드 생성/성능 검증을 Phase00 수행으로 표시"
+      ],
+      "application_example": "새 지식 카드의 목적과 예·반례가 서로 다른지 검토한다.",
+      "counterexample": "모든 설명 영상에 파격적인 대형 영문·비대칭을 넣으면 한국어 기술명과 안정된 비교가 손상된다.",
+      "license_note": "선택 패키지 LICENSE.txt Apache-2.0. 출력/외부 자산 권리는 이 표시만으로 확정되지 않음.",
+      "unresolved": [
+        "한국어 설명 영상 효과는 별도 검증"
+      ],
+      "target_skills": [
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "not_selected_now; if_substantial_copy_later_preserve_notices_and_verify_file_scope",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "anthropic-canvas",
+      "source_package": "anthropic",
+      "name": "Anthropic canvas-design",
+      "purpose": "공간·형태·리듬을 말로 설명하는 비평 절차",
+      "entrypoints": [
+        "skills/canvas-design/SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "시각 의도와 실제 형태의 대응",
+        "주요 질량·공간·역할의 설명"
+      ],
+      "exclude_or_rewrite": [
+        "90%시각/10%문구 같은 미술형 비율",
+        "포스터/PDF 제작 실행",
+        "모든 bundled font 재배포/활성화"
+      ],
+      "application_example": "밀도 카드에서 무엇을 읽고 무엇을 쉬게 하는지 구체적으로 설명한다.",
+      "counterexample": "텍스트 최소화를 위해 기술 조건과 단위를 삭제하면 설명 영상의 정확성을 잃는다.",
+      "license_note": "스킬 Apache-2.0. 폰트 파일의 개별 OFL/고지와 권리는 별도; 바이너리 검토 제외.",
+      "unresolved": [
+        "폰트별 전체 라이선스·렌더·배포 경로 미검증"
+      ],
+      "target_skills": [
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "not_selected_now; if_substantial_copy_later_preserve_notices_and_verify_file_scope",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "anthropic-brand",
+      "source_package": "anthropic",
+      "name": "Anthropic brand-guidelines",
+      "purpose": "브랜드를 역할·참조·대체 조건으로 기록하는 구조",
+      "entrypoints": [
+        "skills/brand-guidelines/SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "브랜드 원본과 적용 역할 분리",
+        "대체 폰트 사용 조건과 근거를 남김"
+      ],
+      "exclude_or_rewrite": [
+        "Anthropic 컬러/글꼴/회사 정체성 복사",
+        "CI 원색의 자동 보정·회사 승인 승격"
+      ],
+      "application_example": "가족사 CI 원색과 본문/배경에 적용할 파생색을 별도 필드와 승인 상태로 관리한다.",
+      "counterexample": "Anthropic의 오렌지·폰트를 한맥 영상 기본값으로 등록하거나 CI를 대비에 맞춰 자동 어둡게 바꾸면 권한을 넘는다.",
+      "license_note": "선택 패키지 Apache-2.0. 회사 상표 사용 권리를 부여하는 뜻 아님.",
+      "unresolved": [
+        "한맥 영상용 역할과 확정 값은 R5 검토"
+      ],
+      "target_skills": [
+        "video-record-steward",
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "not_selected_now; if_substantial_copy_later_preserve_notices_and_verify_file_scope",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "anthropic-creator",
+      "source_package": "anthropic",
+      "name": "Anthropic Skill Creator",
+      "purpose": "재구성·평가 방법과 코드의 실제 작동 경로 검토",
+      "entrypoints": [
+        "skills/skill-creator/SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "목적/트리거/권한/출력 계약 분리",
+        "with-skill vs baseline·원문 결과 보존",
+        "선택용 validation과 최종 holdout 분리",
+        "개선 후 사용자 검토와 기권/쓰기 반례"
+      ],
+      "exclude_or_rewrite": [
+        "Claude CLI용 평가 코드를 Codex에서 동일하게 된다고 가정",
+        "포트 점유 프로세스 소유권 미확인 종료",
+        "test 점수로 고른 best를 최종 독립 검증이라고 보고",
+        "이 단계의 정적 읽기를 실제 스킬 생성/성능 개선으로 보고"
+      ],
+      "application_example": "R8에서 정본 읽기·draft 쓰기·승인 보류를 평가하고 학습/선택에 쓰지 않은 마지막 fixture로 검증한다.",
+      "counterexample": "run_loop의 test 최고안을 고르고 같은 test 성적을 독립 성능으로 발표하거나 viewer가 기존 포트를 종료하도록 실행하면 검증과 세션 보존이 깨진다.",
+      "license_note": "선택 패키지 Apache-2.0. SDK/Claude CLI/호스트 의존성 및 서비스 조건 별도.",
+      "unresolved": [
+        "R8에서 Codex 실행 경로·평가 데이터·정적 viewer 대안을 설계/시험",
+        "외부 SDK/API로 회사 자료 전송하는 실행 없음"
+      ],
+      "target_skills": [
+        "video-knowledge-curator",
+        "video-record-steward",
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "not_selected_now; if_substantial_copy_later_preserve_notices_and_verify_file_scope",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "lottie",
+      "source_package": "lottiefiles",
+      "name": "LottieFiles motion-design",
+      "purpose": "목적·서사·주/보조 동작·검수 질문 심층 비교",
+      "entrypoints": [
+        "skills/motion-design/SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "동작을 상태/관계/의미로 설명",
+        "주/보조/배경 역할을 분리해 검토",
+        "방향·타이밍·검수 질문 조건화"
+      ],
+      "exclude_or_rewrite": [
+        "always 3 layers·등속 금지·1/3·stagger 상한 보편화",
+        "배경/중경/전경을 정보 주/보조/ambient와 동일시",
+        "UI ms를 읽기 시간으로 강제"
+      ],
+      "application_example": "새 대상 등장 중 어떤 정보가 바뀌는지와 비교 척도가 유지되는지 검토한다.",
+      "counterexample": "동시에 비교할 두 수치를 억지로 순차 공개하거나 등속 이동 설명에 ease를 강제하면 관계/물리 의미를 왜곡한다.",
+      "license_note": "루트 MIT. 참조의 원칙을 학술 검증/실영상 효과로 승격하지 않음.",
+      "unresolved": [
+        "구현 예의 CSS/React/GSAP 등은 후속 실행 영역; 지금 패키지에는 실행 스크립트 없음"
+      ],
+      "target_skills": [
+        "video-knowledge-curator",
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "not_selected_now; if_substantial_copy_later_preserve_notices_and_verify_file_scope",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "design-system",
+      "source_package": "design-system",
+      "name": "allonsy design-system",
+      "purpose": "명명·원시/역할 토큰·참조 구조·국제화 검토",
+      "entrypoints": [
+        "skills/design-system/SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "원시값/의미/컴포넌트 역할 구분",
+        "일관된 명명·버전·가정/미확정 관리",
+        "국제화/접근성/참조 구조"
+      ],
+      "exclude_or_rewrite": [
+        "웹 컴포넌트 taxonomy를 영상 taxonomy로 덮어쓰기",
+        "DTCG 즉시 마이그레이션",
+        "tokens를 실제 CI 확정 값으로 만들기"
+      ],
+      "application_example": "관측 CI색을 원시 후보로 두고 영상 정보 역할 연결은 R5의 별도 제안으로 남긴다.",
+      "counterexample": "UI button/card 분류를 R2의 화면 상태/짧은 동작 ID에 끼워 넣으면 분류 의미가 달라진다.",
+      "license_note": "루트 MPL-2.0. 복사/수정 파일의 원출처와 라이선스 보존; 외부 배포 범위는 별도 확인.",
+      "unresolved": [
+        "공개 표준의 현행 절·실제 schema 연결은 R4/R5",
+        "원문 직접 복사 파일 범위는 아직 확정하지 않음"
+      ],
+      "target_skills": [
+        "video-knowledge-curator",
+        "video-record-steward"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "not_selected_now; if_substantial_copy_later_preserve_notices_and_verify_file_scope",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "authoring",
+      "source_package": "design-author-review",
+      "name": "authoring-design-system",
+      "purpose": "설계 문서 작성과 확정 값/가정/변경 범위 관리",
+      "entrypoints": [
+        "skills/authoring-design-system/SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "가정과 확정 입력 분리",
+        "버전/변경 범위·근거·검수 상태 기록",
+        "최소 변경"
+      ],
+      "exclude_or_rewrite": [
+        "DTCG-at-any-size·AAA focus 같은 작성자 house rule 회사 의무화",
+        "제공되지 않은 token 생성·승인",
+        "웹 컴포넌트 전수 구축"
+      ],
+      "application_example": "누락 CI 공식 규격은 질문/미확정으로 남기고 등록 구조만 만든다.",
+      "counterexample": "디자인 가이드에 없는 안전여백을 확정값으로 작성하면 관측과 회사 규칙을 섞는다.",
+      "license_note": "루트 MIT. 실제 SKILL.md+참조 패키지가 있으므로 과거의 문서만 있다는 분류는 정정.",
+      "unresolved": [
+        "source refs는 저자의 안내; 모든 외부 표준 절 전수 검토를 의미하지 않음"
+      ],
+      "target_skills": [
+        "video-record-steward"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "not_selected_now; if_substantial_copy_later_preserve_notices_and_verify_file_scope",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "reviewing",
+      "source_package": "design-author-review",
+      "name": "reviewing-design-system",
+      "purpose": "작성과 검수 분리·국소 변경/구체 revise 검토",
+      "entrypoints": [
+        "skills/reviewing-design-system/SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "수정 대상/근거/권한을 항목별 지정",
+        "정본-조회 불일치·버전·출처의 교차 검토",
+        "충분한 근거가 없으면 보류"
+      ],
+      "exclude_or_rewrite": [
+        "웹 buildability 전 항목을 영상에 강제",
+        "자기 점수만으로 승인",
+        "작성/검수 agent 분리만으로 외부전문가 검증이라 주장"
+      ],
+      "application_example": "토큰 제안의 근거파일과 회사별 역할이 맞는지 검토하며 확정은 사용자에게 남긴다.",
+      "counterexample": "컴포넌트 구현 가능한 JSON이라는 이유만으로 회사 디자인 승인 완료로 표시하면 안 된다.",
+      "license_note": "루트 MIT. 원문 참조/표준은 각각 별도 권리와 적용 범위.",
+      "unresolved": [
+        "회사 담당자의 실제 승인 없음"
+      ],
+      "target_skills": [
+        "video-record-steward",
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "not_selected_now; if_substantial_copy_later_preserve_notices_and_verify_file_scope",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "critique-suite",
+      "source_package": "design-critique",
+      "name": "taste-skills 디자인 비평·근거 후보 11개",
+      "purpose": "관측/추정·트레이드오프·지식 태깅/참조 라이브러리 구조 탐색",
+      "entrypoints": [
+        "skills/analysis/decision-tracing/SKILL.md",
+        "skills/analysis/system-deconstruction/SKILL.md",
+        "skills/articulation/critique-vocabulary/SKILL.md",
+        "skills/articulation/written-critique/SKILL.md",
+        "skills/interaction/motion-design/SKILL.md",
+        "skills/judgment/constraint-evaluation/SKILL.md",
+        "skills/judgment/tradeoff-assessment/SKILL.md",
+        "skills/reference-building/library-architecture/SKILL.md",
+        "skills/reference-building/principle-tagging/SKILL.md",
+        "skills/typography/type-systems/SKILL.md",
+        "skills/visual-language/hierarchy-principles/SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "관측과 해석을 구분하는 절차 후보",
+        "제약별 장단점·포기 이유·미확정 기록 후보",
+        "비평은 대상·위치·영향·근거로 적는 방향 후보"
+      ],
+      "exclude_or_rewrite": [
+        "단일 focus/정해진 배율/모션 mandatory 같은 미적 단정",
+        "개인 취향을 회사 DB 사실로 저장",
+        "라이선스 이름만 보고 원문 통째 복사/활성화"
+      ],
+      "application_example": "대칭 비교에 대한 관측과 단조롭다는 취향 판단을 별도 기록한다. 이 절차는 기존 공개 원칙에서 자체 작성할 수도 있다.",
+      "counterexample": "추정한 의도를 실제 의도로 기록하거나 예시 비율을 실측/회사 기준으로 등록하면 지식 DB가 오염된다.",
+      "license_note": "MIT LICENSE와 TERMS/DISCLAIMER가 병존. 추가 human review/indemnification/arbitration/변경조건 문구 존재. 법적 유효성이나 우선순위 판정 없이 직접 이식·설치 보류.",
+      "unresolved": [
+        "README/package 저장소명 0xDragoon과 실제 Dragoon0x 불일치",
+        "같은 이름의 Leonxlnx Taste와 다른 저장소",
+        "조건 확인 전 직접 복사/라이선스 결합 제외"
+      ],
+      "target_skills": [
+        "video-knowledge-curator",
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "blocked_until_provenance_and_rights_resolved",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "data-cleaning",
+      "source_package": "data-cleaning",
+      "name": "data-cleaning",
+      "purpose": "원본/파생·변경 로그·검증·불일치 기록 검토",
+      "entrypoints": [
+        "data-cleaning/SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "원본 보존·변환 규칙 명시",
+        "행/키 단위 provenance와 불일치 기록",
+        "검증된 결과와 unresolved 분리"
+      ],
+      "exclude_or_rewrite": [
+        "자동 trim/coerce/dedupe/날짜 파싱으로 의미 병합",
+        "기존 출력 파일 덮어쓰기",
+        "JSONL 지원 설명을 코드가 보장한다고 가정"
+      ],
+      "application_example": "색상 문자열 정리 후보를 원문과 함께 draft로 남기고 정규화 이유·되돌리기 경로를 기록한다.",
+      "counterexample": "037을 37로 강제 변환하거나 같은 회사의 비슷한 두 CI를 자동 중복 제거하면 자산 ID와 의미를 손상시킨다.",
+      "license_note": "루트 LICENSE.md MIT; Magnus Hedemark 2026. 선택 패키지 표준 Python 실행부와 다른 폴더의 라이선스/의존성은 별도.",
+      "unresolved": [
+        "정적 코드 검토만 수행; 실제 입력/출력 정상·실패 시험 미수행",
+        "JSONL reconciliation은 원문 설명과 구현 차이 있음"
+      ],
+      "target_skills": [
+        "video-knowledge-curator",
+        "video-record-steward"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "not_selected_now; if_substantial_copy_later_preserve_notices_and_verify_file_scope",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "local-animation-principles",
+      "source_package": "local:animation-principles",
+      "name": "animation-principles",
+      "purpose": "12원칙·easing/Graph Editor",
+      "entrypoints": [
+        "SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "연출 목적·관찰/추정·정확한 도형 보존"
+      ],
+      "exclude_or_rewrite": [
+        "모든 대상에 overshoot/bounce/등속 금지"
+      ],
+      "application_example": "정확한 수치 도표는 형태를 유지하고 강조만 검토한다.",
+      "counterexample": "구조물 형상을 squash/stretch하면 기술 의미가 달라진다.",
+      "license_note": "로컬 사본에 LICENSE 없음. upstream commit/변형 이력 불명. 스킬 설명에 이름이 있어도 복사·배포 라이선스가 확인됐다는 뜻 아님.",
+      "unresolved": [
+        "직접 원문 복사/배포는 출처·권리 확인 전 보류",
+        "실제 runtime과 시청자 효과 미검증"
+      ],
+      "target_skills": [
+        "video-knowledge-curator",
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "blocked_until_provenance_and_rights_resolved",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "local-brand-motion-guidelines",
+      "source_package": "local:brand-motion-guidelines",
+      "name": "brand-motion-guidelines",
+      "purpose": "모션 토큰·일관성·허용/금지 문서 구조",
+      "entrypoints": [
+        "SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "역할·조건·예/반례·변경/승인 기록"
+      ],
+      "exclude_or_rewrite": [
+        "원문 duration을 회사 확정 토큰으로 등록"
+      ],
+      "application_example": "모션 후보의 의미와 적용 조건을 기록하고 값은 미정으로 둔다.",
+      "counterexample": "UI hover 180ms를 내레이션 읽기 시간으로 바꾸면 안 된다.",
+      "license_note": "로컬 사본에 LICENSE 없음. upstream commit/변형 이력 불명. 스킬 설명에 이름이 있어도 복사·배포 라이선스가 확인됐다는 뜻 아님.",
+      "unresolved": [
+        "직접 원문 복사/배포는 출처·권리 확인 전 보류",
+        "실제 runtime과 시청자 효과 미검증"
+      ],
+      "target_skills": [
+        "video-knowledge-curator",
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "blocked_until_provenance_and_rights_resolved",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "local-accessible-animation",
+      "source_package": "local:accessible-animation",
+      "name": "accessible-animation",
+      "purpose": "접근성·재생 조건",
+      "entrypoints": [
+        "SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "정적/저자극 대안에서도 의미 유지·재생 제어 질문"
+      ],
+      "exclude_or_rewrite": [
+        "누락 스크립트와 충돌 CSS·SSR 예제를 그대로 실행"
+      ],
+      "application_example": "정지 대안에서도 관계·숫자·핵심 조건이 보이는지 검토한다.",
+      "counterexample": "전역 !important duration을 넣고 특정 tier만 일반 CSS로 복구해도 동작이 복구되지 않는다.",
+      "license_note": "로컬 사본에 LICENSE 없음. upstream commit/변형 이력 불명. 스킬 설명에 이름이 있어도 복사·배포 라이선스가 확인됐다는 뜻 아님.",
+      "unresolved": [
+        "직접 원문 복사/배포는 출처·권리 확인 전 보류",
+        "실제 runtime과 시청자 효과 미검증"
+      ],
+      "target_skills": [
+        "video-knowledge-curator",
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "blocked_until_provenance_and_rights_resolved",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "local-shot-composition",
+      "source_package": "local:shot-composition",
+      "name": "shot-composition",
+      "purpose": "격자·구도·다중 화면비",
+      "entrypoints": [
+        "SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "언어/형상/관계·필수영역 손실 없는 재구성"
+      ],
+      "exclude_or_rewrite": [
+        "삼등분·비율·초점 하나의 의무화"
+      ],
+      "application_example": "세로 변환 시 원문 조건과 화살표 끝이 유지되는지 검토한다.",
+      "counterexample": "가로 단면을 중앙 크롭해 지지 구조를 잘라 놓으면 잘못된 화면이다.",
+      "license_note": "로컬 사본에 LICENSE 없음. upstream commit/변형 이력 불명. 스킬 설명에 이름이 있어도 복사·배포 라이선스가 확인됐다는 뜻 아님.",
+      "unresolved": [
+        "직접 원문 복사/배포는 출처·권리 확인 전 보류",
+        "실제 runtime과 시청자 효과 미검증"
+      ],
+      "target_skills": [
+        "video-knowledge-curator",
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "blocked_until_provenance_and_rights_resolved",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "local-design-tokens",
+      "source_package": "local:design-tokens",
+      "name": "design-tokens",
+      "purpose": "타입/색/간격·토큰 계산 절차",
+      "entrypoints": [
+        "SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "원시색/역할/파생값 구분·대비 실측 질문"
+      ],
+      "exclude_or_rewrite": [
+        "shade번호로 AA/AAA 단정·px/pt 혼용·CI자동 보정"
+      ],
+      "application_example": "CI 원색은 보존하고 파생 표면 조합의 대비를 별도 검사한다.",
+      "counterexample": "18px/14px를 곧바로 WCAG 큰 글자로 취급하거나 blue-500이면 AA라고 확정하면 안 된다.",
+      "license_note": "로컬 사본에 LICENSE 없음. upstream commit/변형 이력 불명. 스킬 설명에 이름이 있어도 복사·배포 라이선스가 확인됐다는 뜻 아님.",
+      "unresolved": [
+        "직접 원문 복사/배포는 출처·권리 확인 전 보류",
+        "실제 runtime과 시청자 효과 미검증"
+      ],
+      "target_skills": [
+        "video-record-steward",
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "blocked_until_provenance_and_rights_resolved",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "anthropic-pptx",
+      "source_package": "anthropic-pptx",
+      "name": "Anthropic pptx",
+      "purpose": "실제 PPTX 생성/편집과 화면구성 지침은 별개임을 비교",
+      "entrypoints": [
+        "skills/pptx/SKILL.md"
+      ],
+      "retain_as_proposal": [],
+      "exclude_or_rewrite": [
+        "고유 LICENSE의 보관·복제·파생·배포 제한을 확인해 직접 이식/재구성 제외. 코드 실행·포팅 없음."
+      ],
+      "application_example": "회사 화면설계는 기존 공개 원칙에서 자체 작성하고, PPT 파일 제작 도구 도입은 별도 업무로 남긴다.",
+      "counterexample": "동일 Anthropic 저장소라는 이유로 skill-creator의 Apache-2.0이 pptx에도 적용된다고 판단한다.",
+      "license_note": "고유 LICENSE의 보관·복제·파생·배포 제한을 확인해 직접 이식/재구성 제외. 코드 실행·포팅 없음.",
+      "unresolved": [
+        "추가 분야 실제 코드/참조/의존성 검토 깊이는 별도 파일기록을 따름; 모든 실행 검증은 미수행"
+      ],
+      "target_skills": [
+        "video-knowledge-curator",
+        "video-guidance-reviewer"
+      ],
+      "status": "excluded_from_direct_or_derivative_reconstruction",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "blocked_until_provenance_and_rights_resolved",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "presentation-narrative",
+      "source_package": "presentation-narrative",
+      "name": "Presentation Narrative",
+      "purpose": "대상·발표 목적·장면간 논리 연결과 근거를 검토",
+      "entrypoints": [
+        "패키지내용/powerpoint-keynote-presentation/SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "정보 목적/관계·근거·표현 대응을 비교하는 개념 검토"
+      ],
+      "exclude_or_rewrite": [
+        "README는 MIT 표기지만 실제 LICENSE 파일이 없음. archive SKILL은 narrative-only description과 basic generation 본문이 상충. 3항목/CTA/항상설득/헤지금지와 폰트/스타일 강제 제외. transpose Q4 Revenue180→98 오류를 이식하지 않음."
+      ],
+      "application_example": "회의 토론에서는 확정한 사실과 선택할 쟁점을 연결하되 미결 결론을 미리 정하지 않는다.",
+      "counterexample": "교육 영상에 판매 pitch와 행동 촉구를 강제하거나 원문 통계의 불확실성을 지워 결론을 과장한다.",
+      "license_note": "README는 MIT 표기지만 실제 LICENSE 파일이 없음. archive SKILL은 narrative-only description과 basic generation 본문이 상충. 3항목/CTA/항상설득/헤지금지와 폰트/스타일 강제 제외. transpose Q4 Revenue180→98 오류를 이식하지 않음.",
+      "unresolved": [
+        "추가 분야 실제 코드/참조/의존성 검토 깊이는 별도 파일기록을 따름; 모든 실행 검증은 미수행"
+      ],
+      "target_skills": [
+        "video-knowledge-curator",
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "blocked_until_provenance_and_rights_resolved",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "academic-presentation",
+      "source_package": "academic-presentation",
+      "name": "Academic PPTX",
+      "purpose": "기술·학술형 설명의 주장/근거·전시물·출처·설명 순서를 검토",
+      "entrypoints": [
+        "SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "정보 목적/관계·근거·표현 대응을 비교하는 개념 검토"
+      ],
+      "exclude_or_rewrite": [
+        "루트 MIT와 frontmatter Proprietary/LICENSE.txt 표기가 충돌. 권리 확인 전 직접 복사 제외. 고정 pt/여백·모든 주장형제목·패턴과 자체 규칙의 불일치를 제외."
+      ],
+      "application_example": "기술 메커니즘 화면에서는 주제명 제목과 근거 있는 단면을 사용하고 결과 화면만 검증된 결론으로 표현한다.",
+      "counterexample": "조건을 설명하는 화면을 억지로 성과 주장으로 바꾸거나 축·단위를 줄여 보기에 간결하게 만든다.",
+      "license_note": "루트 MIT와 frontmatter Proprietary/LICENSE.txt 표기가 충돌. 권리 확인 전 직접 복사 제외. 고정 pt/여백·모든 주장형제목·패턴과 자체 규칙의 불일치를 제외.",
+      "unresolved": [
+        "추가 분야 실제 코드/참조/의존성 검토 깊이는 별도 파일기록을 따름; 모든 실행 검증은 미수행"
+      ],
+      "target_skills": [
+        "video-knowledge-curator",
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "blocked_until_provenance_and_rights_resolved",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "presentation-builder",
+      "source_package": "presentation-builder",
+      "name": "Presentation Builder",
+      "purpose": "스토리보드의 메시지/정보/그래픽 관계와 비교·표·행렬 구성 검토",
+      "entrypoints": [
+        "SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "정보 목적/관계·근거·표현 대응을 비교하는 개념 검토"
+      ],
+      "exclude_or_rewrite": [
+        "루트 MIT. HTML/PDF 생성 스킬이며 편집 가능한 PPTX 보장 아님. 1920고정/fullwidth/sidebar·그래프우선·빈공간채움 강제 제외. 불완전 인치 변환·overflow hidden·수치만의 대비·본문/ref PDF 명령 충돌 제외."
+      ],
+      "application_example": "비교가 목적이면 같은 척도와 조건의 두 도표/표를 쓰고, 빈 영역을 억지로 장식으로 채우지 않는다.",
+      "counterexample": "모든 화면을 본문+사이드바 구조로 만들거나 1920웹 캔버스를 zoom해 17x11 종이에 내보냈다고 16:9 영상을 검증했다고 주장한다.",
+      "license_note": "루트 MIT. HTML/PDF 생성 스킬이며 편집 가능한 PPTX 보장 아님. 1920고정/fullwidth/sidebar·그래프우선·빈공간채움 강제 제외. 불완전 인치 변환·overflow hidden·수치만의 대비·본문/ref PDF 명령 충돌 제외.",
+      "unresolved": [
+        "추가 분야 실제 코드/참조/의존성 검토 깊이는 별도 파일기록을 따름; 모든 실행 검증은 미수행"
+      ],
+      "target_skills": [
+        "video-knowledge-curator",
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "not_selected_now; if_substantial_copy_later_preserve_notices_and_verify_file_scope",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "antv-infographic",
+      "source_package": "antv-infographic",
+      "name": "AntV Infographic 선택 스킬",
+      "purpose": "정보 관계·데이터 구조와 list/sequence/compare/hierarchy/relation/chart 템플릿 대응 검토",
+      "entrypoints": [
+        "skills/infographic-creator/SKILL.md",
+        "skills/infographic-item-creator/SKILL.md",
+        "skills/infographic-structure-creator/SKILL.md",
+        "skills/infographic-syntax-creator/SKILL.md",
+        "skills/infographic-template-updater/SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "정보 목적/관계·근거·표현 대응을 비교하는 개념 검토"
+      ],
+      "exclude_or_rewrite": [
+        "원문 라이선스/실제 refs·호출은 추가 감사에서 확인. @latest CDN과 엔진/전체 deps는 보류. 템플릿 매칭을 데이터 의미/한국어·회사 승인으로 오인하지 않음."
+      ],
+      "application_example": "순서·비교·분기 관계를 먼저 기록하고 이를 표현할 도표 종류의 후보를 남긴다.",
+      "counterexample": "단순 list 템플릿으로 조건 분기의 Yes/No를 지우거나 renderer가 그렸다는 이유로 정확한 도표라고 승인한다.",
+      "license_note": "루트 LICENSE MIT. 선택 SKILL/참조와 실제 renderer/CDN·dependencies·아이콘·폰트는 별도.",
+      "unresolved": [
+        "추가 분야 실제 코드/참조/의존성 검토 깊이는 별도 파일기록을 따름; 모든 실행 검증은 미수행"
+      ],
+      "target_skills": [
+        "video-knowledge-curator",
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "not_selected_now; if_substantial_copy_later_preserve_notices_and_verify_file_scope",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "local-creative-brief",
+      "source_package": "expanded-local:creative-brief",
+      "name": "creative-brief",
+      "purpose": "제작 요청의 목적·대상·확정/미확정 제약",
+      "entrypoints": [
+        "SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "제작 요청의 목적·대상·확정/미확정 제약"
+      ],
+      "exclude_or_rewrite": [
+        "11질문·무조건blocked·완성 brief/승인 의무화"
+      ],
+      "application_example": "정보 역할과 관계를 실제 입력에 근거해 draft로 기록하고 제작/승인은 후속 단계로 남긴다.",
+      "counterexample": "확인하지 않은 시간·의도·원본값·회사 승인·코드 동작을 확정 사실로 기록한다.",
+      "license_note": "로컬 사본의 LICENSE/provenance 여부는 독립 보고에 따름. 확인 전 직접 원문 복사·배포 제외.",
+      "unresolved": [
+        "실제 영상·원문 예제 코드 실행·성능은 미검증"
+      ],
+      "target_skills": [
+        "video-knowledge-curator",
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "blocked_until_provenance_and_rights_resolved",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "local-explainer-video",
+      "source_package": "expanded-local:explainer-video",
+      "name": "explainer-video",
+      "purpose": "정보의 원인/과정/결과와 장면/문구/시간 대응",
+      "entrypoints": [
+        "SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "정보의 원인/과정/결과와 장면/문구/시간 대응"
+      ],
+      "exclude_or_rewrite": [
+        "항상문제-해결/CTA·고정영상길이·재제작 실행"
+      ],
+      "application_example": "정보 역할과 관계를 실제 입력에 근거해 draft로 기록하고 제작/승인은 후속 단계로 남긴다.",
+      "counterexample": "확인하지 않은 시간·의도·원본값·회사 승인·코드 동작을 확정 사실로 기록한다.",
+      "license_note": "로컬 사본의 LICENSE/provenance 여부는 독립 보고에 따름. 확인 전 직접 원문 복사·배포 제외.",
+      "unresolved": [
+        "실제 영상·원문 예제 코드 실행·성능은 미검증"
+      ],
+      "target_skills": [
+        "video-knowledge-curator",
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "blocked_until_provenance_and_rights_resolved",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "local-presentation-video",
+      "source_package": "expanded-local:presentation-video",
+      "name": "presentation-video",
+      "purpose": "슬라이드 메시지와 시간 관계",
+      "entrypoints": [
+        "SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "슬라이드 메시지와 시간 관계"
+      ],
+      "exclude_or_rewrite": [
+        "VO길이만/항상pitch·CTA·고정stagger·Remotion재제작"
+      ],
+      "application_example": "정보 역할과 관계를 실제 입력에 근거해 draft로 기록하고 제작/승인은 후속 단계로 남긴다.",
+      "counterexample": "확인하지 않은 시간·의도·원본값·회사 승인·코드 동작을 확정 사실로 기록한다.",
+      "license_note": "로컬 사본의 LICENSE/provenance 여부는 독립 보고에 따름. 확인 전 직접 원문 복사·배포 제외.",
+      "unresolved": [
+        "실제 영상·원문 예제 코드 실행·성능은 미검증"
+      ],
+      "target_skills": [
+        "video-knowledge-curator",
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "blocked_until_provenance_and_rights_resolved",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "local-animated-infographic",
+      "source_package": "expanded-local:animated-infographic",
+      "name": "animated-infographic",
+      "purpose": "정보 그룹과 순서·모션 역할",
+      "entrypoints": [
+        "SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "정보 그룹과 순서·모션 역할"
+      ],
+      "exclude_or_rewrite": [
+        "장식 인트로·고정8frame/동작·실제수치 overshoot"
+      ],
+      "application_example": "정보 역할과 관계를 실제 입력에 근거해 draft로 기록하고 제작/승인은 후속 단계로 남긴다.",
+      "counterexample": "확인하지 않은 시간·의도·원본값·회사 승인·코드 동작을 확정 사실로 기록한다.",
+      "license_note": "로컬 사본의 LICENSE/provenance 여부는 독립 보고에 따름. 확인 전 직접 원문 복사·배포 제외.",
+      "unresolved": [
+        "실제 영상·원문 예제 코드 실행·성능은 미검증"
+      ],
+      "target_skills": [
+        "video-knowledge-curator",
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "blocked_until_provenance_and_rights_resolved",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "local-diagram-animation",
+      "source_package": "expanded-local:diagram-animation",
+      "name": "diagram-animation",
+      "purpose": "관계/방향/의존·선/라벨/순서",
+      "entrypoints": [
+        "SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "관계/방향/의존·선/라벨/순서"
+      ],
+      "exclude_or_rewrite": [
+        "단계강제·실제도형 변형·숫자 초과spring"
+      ],
+      "application_example": "정보 역할과 관계를 실제 입력에 근거해 draft로 기록하고 제작/승인은 후속 단계로 남긴다.",
+      "counterexample": "확인하지 않은 시간·의도·원본값·회사 승인·코드 동작을 확정 사실로 기록한다.",
+      "license_note": "로컬 사본의 LICENSE/provenance 여부는 독립 보고에 따름. 확인 전 직접 원문 복사·배포 제외.",
+      "unresolved": [
+        "실제 영상·원문 예제 코드 실행·성능은 미검증"
+      ],
+      "target_skills": [
+        "video-knowledge-curator",
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "blocked_until_provenance_and_rights_resolved",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "local-chart-animation",
+      "source_package": "expanded-local:chart-animation",
+      "name": "chart-animation",
+      "purpose": "축·값·단위·결측·시간 범위의 관측/검수",
+      "entrypoints": [
+        "SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "축·값·단위·결측·시간 범위의 관측/검수"
+      ],
+      "exclude_or_rewrite": [
+        "Number빈문자0·임의fill·소수반올림·실제값초과"
+      ],
+      "application_example": "정보 역할과 관계를 실제 입력에 근거해 draft로 기록하고 제작/승인은 후속 단계로 남긴다.",
+      "counterexample": "확인하지 않은 시간·의도·원본값·회사 승인·코드 동작을 확정 사실로 기록한다.",
+      "license_note": "로컬 사본의 LICENSE/provenance 여부는 독립 보고에 따름. 확인 전 직접 원문 복사·배포 제외.",
+      "unresolved": [
+        "실제 영상·원문 예제 코드 실행·성능은 미검증"
+      ],
+      "target_skills": [
+        "video-knowledge-curator",
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "blocked_until_provenance_and_rights_resolved",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "local-motion-art-direction",
+      "source_package": "expanded-local:motion-art-direction",
+      "name": "motion-art-direction",
+      "purpose": "대상별 시각·모션 일관성과 검토 기준",
+      "entrypoints": [
+        "SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "대상별 시각·모션 일관성과 검토 기준"
+      ],
+      "exclude_or_rewrite": [
+        "모든장면활발·고정genre/ease/pace"
+      ],
+      "application_example": "정보 역할과 관계를 실제 입력에 근거해 draft로 기록하고 제작/승인은 후속 단계로 남긴다.",
+      "counterexample": "확인하지 않은 시간·의도·원본값·회사 승인·코드 동작을 확정 사실로 기록한다.",
+      "license_note": "로컬 사본의 LICENSE/provenance 여부는 독립 보고에 따름. 확인 전 직접 원문 복사·배포 제외.",
+      "unresolved": [
+        "실제 영상·원문 예제 코드 실행·성능은 미검증"
+      ],
+      "target_skills": [
+        "video-knowledge-curator",
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "blocked_until_provenance_and_rights_resolved",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "local-visual-qa",
+      "source_package": "expanded-local:visual-qa",
+      "name": "visual-qa",
+      "purpose": "실제 캡처·내용·기준의 비교와 구체 위치 지적",
+      "entrypoints": [
+        "SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "실제 캡처·내용·기준의 비교와 구체 위치 지적"
+      ],
+      "exclude_or_rewrite": [
+        "한캡처로모션·시선·광과민·회사톤/효과 승인"
+      ],
+      "application_example": "정보 역할과 관계를 실제 입력에 근거해 draft로 기록하고 제작/승인은 후속 단계로 남긴다.",
+      "counterexample": "확인하지 않은 시간·의도·원본값·회사 승인·코드 동작을 확정 사실로 기록한다.",
+      "license_note": "로컬 사본의 LICENSE/provenance 여부는 독립 보고에 따름. 확인 전 직접 원문 복사·배포 제외.",
+      "unresolved": [
+        "실제 영상·원문 예제 코드 실행·성능은 미검증"
+      ],
+      "target_skills": [
+        "video-knowledge-curator",
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "blocked_until_provenance_and_rights_resolved",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "local-visual-style-direction",
+      "source_package": "expanded-local:visual-style-direction",
+      "name": "visual-style-direction",
+      "purpose": "출처역할·내용·브랜드·표현·파생의 분리",
+      "entrypoints": [
+        "SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "출처역할·내용·브랜드·표현·파생의 분리"
+      ],
+      "exclude_or_rewrite": [
+        "참조스타일복제·관측을의도로·근거없는company토큰"
+      ],
+      "application_example": "정보 역할과 관계를 실제 입력에 근거해 draft로 기록하고 제작/승인은 후속 단계로 남긴다.",
+      "counterexample": "확인하지 않은 시간·의도·원본값·회사 승인·코드 동작을 확정 사실로 기록한다.",
+      "license_note": "로컬 LICENSE MIT + SOURCE.json 고정 출처가 있음. local_adaptation2026-10-12로 변형돼 upstream와 byte동일/동일runtime임을 단정하지 않는다.",
+      "unresolved": [
+        "실제 영상·원문 예제 코드 실행·성능은 미검증"
+      ],
+      "target_skills": [
+        "video-knowledge-curator",
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "not_selected_now; verified_local_adaptation_reference_only",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "host-presentations",
+      "source_package": "host-bundled:Presentations",
+      "name": "Presentations (호스트 제공)",
+      "purpose": "PPT 화면 구성·템플릿·정보 정확성·편집 가능한 도표와 실제 결과 검수 비교",
+      "entrypoints": [
+        "SKILL.md selected sections"
+      ],
+      "retain_as_proposal": [
+        "내용이 요구하는 표·도표·문구·주제명 제목",
+        "제공된 브랜드/양식 유지·근거 보존",
+        "캡처·실제 표시 크기·편집성 검수"
+      ],
+      "exclude_or_rewrite": [
+        "호스트 API를 독립 customskill에 복제",
+        "문장 부호/그림/카드 기본 취향을 회사 의무화",
+        "웹/슬라이드 pt를 영상 가독성 값으로 자동 변환"
+      ],
+      "application_example": "정의 화면은 명사형 주제, 검증된 결과 화면은 근거 있는 요점 제목으로 구분한다.",
+      "counterexample": "항상 결론형 제목과 장식 그림을 요구해 미확정 내용이나 숫자를 과장한다.",
+      "license_note": "앱 제공 설치본 참고. 재배포/포팅 라이선스는 확보하지 않았으며 원문 복제/독립 런타임 채택 제외.",
+      "unresolved": [
+        "전체 API/코드/런타임/외부 도구·플랫폼 연결 미검토"
+      ],
+      "target_skills": [
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "source_review_ref": "검토파일목록.json",
+      "direct_copy_policy": "blocked_until_provenance_and_rights_resolved",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": false
+    },
+    {
+      "id": "graphic-suite",
+      "source_package": "graphic-design-suite",
+      "name": "Graphic Design 묶음 10개",
+      "purpose": "격자·판면·타이포·이미지/문구·색 역할·포스터·정보그래픽의 화면 판단 지식",
+      "entrypoints": [
+        "skills/color-palette/SKILL.md",
+        "skills/design-context/SKILL.md",
+        "skills/design-critique/SKILL.md",
+        "skills/graphic-design/SKILL.md",
+        "skills/image-generation/SKILL.md",
+        "skills/image-treatment/SKILL.md",
+        "skills/infographic/SKILL.md",
+        "skills/layout-composition/SKILL.md",
+        "skills/poster-design/SKILL.md",
+        "skills/typography/SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "layout-composition: 내용 관계·읽기 경로·균형",
+        "typography: 실제 글꼴/언어·위계·줄바꿈/숫자·대체",
+        "graphic-design/poster/infographic: 목적과 시각 요소의 대응",
+        "context/critique: 브랜드 locks·차이·검토 근거",
+        "image-treatment/color: 원본과 처리·역할 구분"
+      ],
+      "exclude_or_rewrite": [
+        "Gemini 이미지/API 생성/키·브라우저audit 실행",
+        "CI --from 파생색을 원 CI로 덮어쓰기",
+        "전역 색비율/글꼴 교체·레이아웃·이미지 의무화",
+        "palette/contrast/audit 결과를 영상품질·브랜드 승인으로 사용"
+      ],
+      "application_example": "공법 비교의 제목·조건·단면·지표를 의미에 맞춰 같은 축에 놓고, 시각 요소마다 역할을 적는다.",
+      "counterexample": "palette.py의500생성색으로 원CI색을 교체하거나 대비검사역할0개에exit0을 품질통과로 기록하면 안 된다.",
+      "license_note": "루트MIT. 실제6scripts 포함, 외부 SDK/API/CDN·fonts/images는 별도 권리.",
+      "unresolved": [
+        "10개본문/6스크립트/루트5문서 정적 검토",
+        "형제SKILL·eval·SDK/브라우저·실영상 실행은 미검토"
+      ],
+      "target_skills": [
+        "video-knowledge-curator",
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "direct_copy_policy": "not_selected_now; verify_license_and_notice_for_substantial_reuse",
+      "source_review_ref": "검토파일목록.json",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "editorial-information",
+      "source_package": "editorial-information",
+      "name": "Infographic Editorial Design",
+      "purpose": "정보와 근거에서 판면을 결정하는 편집디자인 절차",
+      "entrypoints": [
+        "SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "원고/다단/모듈/베이스라인/시간축/공간/네트워크/근거구획 격자의 선택 조건",
+        "비교·순서·경계·결측·근거와 해석의 역할 분리",
+        "색/타입/주석/출처와 데이터 변환의 대응",
+        "공통14분류와 격자 설계 축을 별도로 비교"
+      ],
+      "exclude_or_rewrite": [
+        "6근거lane·모노라벨·eyebrow·1stviewport·고정px/pt·모든문서styleprovenance 의무화",
+        "hover/scroll/inspector로 MP4의 필수 근거를 숨기기",
+        "미확보 자료의 공간을 실제0/역사적없음으로 처리",
+        "국가/시대별 스타일 분류를 검증된 디자인사·효과로 주장"
+      ],
+      "application_example": "같은척도의 두실험을 다단/모듈로 비교하고 미확정 조건은 바로 옆에 읽을 수 있게 남긴다.",
+      "counterexample": "참조논문이 없다는 이유로 도표막대를0으로 그리거나6개lane을 매장면에 넣으면 근거와 정보밀도를 왜곡한다.",
+      "license_note": "루트MIT + 제3자자료/브랜드/데이터/완성판면권리 제외 명시. 저자/고지 보존; source별권리 별도.",
+      "unresolved": [
+        "본문·8참조·README/LICENSE·metadata12개 전문",
+        "실행코드 없음, validator 명령/외부서적/저자 field-tested 주장·효과 평가 미확인"
+      ],
+      "target_skills": [
+        "video-knowledge-curator",
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "direct_copy_policy": "not_selected_now; verify_license_and_notice_for_substantial_reuse",
+      "source_review_ref": "검토파일목록.json",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "editorial-vision",
+      "source_package": "editorial-vision",
+      "name": "Editorial Vision Studio",
+      "purpose": "잡지/포스터/스프레드의 시각 구조·스타일·이미지 프롬프트 파이프라인 비교",
+      "entrypoints": [
+        "SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "레이아웃·타입·색·재질·공간·스타일·참조 역할 분리",
+        "브랜드 locked값과 exploratory형식을 구분",
+        "관측/계획/평가 상태와 지점별 QC 개념"
+      ],
+      "exclude_or_rewrite": [
+        "이름 있는 잡지/브랜드 양식·영문시적짧은제목·작은타입·반가독 zine을 회사 기본값으로",
+        "이미지프롬프트를 편집가능한판면/실제UI 기능으로 표시",
+        "필수한글문구를 illegible script로 낮추는 회복",
+        "projection/element_kinds·preset source_region/palette의 계약 불일치를 그대로 이식"
+      ],
+      "application_example": "포스터의 주제·이미지·설명 역할과 CI locked값을 참고 기록하고 스타일 적용은 별도 제안으로 남긴다.",
+      "counterexample": "사내지표를 이미지 모델이 그럴듯하게 렌더했다는 이유로 값/한글/편집성을 통과시키면 안 된다.",
+      "license_note": "루트MIT. namedstyle·fonts·models/이미지자산의 권리를 제공하는 뜻 아님.",
+      "unresolved": [
+        "78문서/metadata·실제 호출 프롬프트/명세까지 정적 읽기",
+        "language en|zh·필수문구회복·공간 전달/preset 계약 미완",
+        "결정적validator/이미지생성/모델parameter/실행효과 검증 없음"
+      ],
+      "target_skills": [
+        "video-knowledge-curator",
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "direct_copy_policy": "not_selected_now; verify_license_and_notice_for_substantial_reuse",
+      "source_review_ref": "검토파일목록.json",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "swiss-design",
+      "source_package": "swiss-design",
+      "name": "Swiss Design",
+      "purpose": "격자·타입·정렬의 규칙과 웹 스타일 강제의 구분",
+      "entrypoints": [
+        "SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "관련요소 정렬·타입의 역할·거시/미시여백·반복 규칙",
+        "전통의 방법과 완성identity를 구분"
+      ],
+      "exclude_or_rewrite": [
+        "정해진 비대칭/1accent/폰트금지·grain/eyebrow·Lenis/ambient/customcursor 의무",
+        "미고정CDN·reduced와loop/cursor예제의 실행 보장",
+        "Swiss웹스타일을 인쇄판면/영상구도 정본으로"
+      ],
+      "application_example": "정렬선이 비교관계와 라벨을 분명히 하는지 검토한다.",
+      "counterexample": "가족사CI가여러색이라는 이유로 단색으로바꾸거나 같은두대상 비교의 대칭을 금지하면 안 된다.",
+      "license_note": "루트MIT. 상용폰트·사이트/서적 참조 권리·런타임은 별도.",
+      "unresolved": [
+        "SKILL44KB/README/MIT 전문 정적 검토",
+        "외부서적·웹사이트의 사례 전수검토/기능실행 없음"
+      ],
+      "target_skills": [
+        "video-knowledge-curator",
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "direct_copy_policy": "not_selected_now; verify_license_and_notice_for_substantial_reuse",
+      "source_review_ref": "검토파일목록.json",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "graphic-role",
+      "source_package": "graphic-designer-role",
+      "name": "Graphic Designer 역할 스킬",
+      "purpose": "기획·브랜드·편집디자인·조판·제작 매체를 연결하는 실무 판단",
+      "entrypoints": [
+        "roles/graphic-designer/SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "타입 위계·색대비/의미·판면·형식/출력 매체/자산 규칙",
+        "원본CI locks와 새CI 개발의시험을 구분",
+        "명세/자산/예·반례를 전달 가능한 자료로 남김"
+      ],
+      "exclude_or_rewrite": [
+        "역할페르소나를 실제 전문가/회사 승인으로 표시",
+        "CMYK/bleed/인쇄 dpi를 RGB영상의 기준으로",
+        "예시28px/18pt의 단위혼동",
+        "새CI흑백시험으로 기존CI 임의변형 승인"
+      ],
+      "application_example": "출력매체가영상인지인쇄물인지 구분하고 CI/본문/배경의 역할·제약을 기록한다.",
+      "counterexample": "CMYK 인쇄대비설정이나 single-color시험을 근거로 한맥영상CI의 색과형상을 바꾸면 안 된다.",
+      "license_note": "루트MIT. O*NET등 외부출처/브랜드원본/서체/출력도구는 별도.",
+      "unresolved": [
+        "선택역할SKILL/참조3/LICENSE/package6개전문,READMEko선택절",
+        "다언어루트README와형제직무/외부근거/전문효과 전수검토 아님"
+      ],
+      "target_skills": [
+        "video-knowledge-curator",
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "direct_copy_policy": "not_selected_now; verify_license_and_notice_for_substantial_reuse",
+      "source_review_ref": "검토파일목록.json",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "local-pixel",
+      "source_package": "editorial-local:pixel",
+      "name": "Pixel 화면 분해·측정",
+      "purpose": "참조 화면을 구성·위치·타입·색·레이어로 기록하는 설계 비교",
+      "entrypoints": [
+        "SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "실측/추정·좌표원점/단위·source crop·원문/파생 분리",
+        "화면의 상대크기/간격·가림·역할/타입 매핑",
+        "평가 기준과 실제 관측 증거의 비교"
+      ],
+      "exclude_or_rewrite": [
+        "임의90%·계산불일치/DesignSpec미비교 예시를 통과정본으로",
+        "이미지한장으로모션/의도/원본AE속성 확정",
+        "14개공유계약미확보 상태에서 자동실행"
+      ],
+      "application_example": "가로참조의 제목과지표영역을 정규화좌표와오차범위로 기록하고 한글판에서의 적용은 보류한다.",
+      "counterexample": "추정한x/y를실측으로, 한프레임 위치로 easing/읽기시간을 확정하면 분석DB가 오염된다.",
+      "license_note": "UPSTREAM_LICENSE MIT. SOURCE와UPSTREAM_SKILL/로컬AE변형은별도해시·범위로검토. 전체공유계약·코드/외부자산의권리·효과는미확인.",
+      "unresolved": [
+        "본문/참조전문,공유14계약/외부도구 미검토",
+        "화면픽셀검수/영상분석/렌더/성능 없음"
+      ],
+      "target_skills": [
+        "video-knowledge-curator",
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "direct_copy_policy": "not_selected_now; verify_license_and_notice_for_substantial_reuse",
+      "source_review_ref": "검토파일목록.json",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    },
+    {
+      "id": "local-drawio",
+      "source_package": "editorial-local:drawio-reconstruction",
+      "name": "Draw.io Reconstruction",
+      "purpose": "관계도와 참조의 도형·연결·문구를 재구성하는 원칙",
+      "entrypoints": [
+        "SKILL.md"
+      ],
+      "retain_as_proposal": [
+        "관측·관계·정확한문구·원본/파생의구분을비교검토하는개념. 회사맞춤스킬은기존공개R3원칙에서자체작성; 제한원문/방법론직접이식은보류."
+      ],
+      "exclude_or_rewrite": [
+        "ID의존/빈XML/페이지초과기권·한국어폭 추정 검사를 정확도통과로",
+        "PNG/XML 해시만으로 그림 의미/실제재현 승인",
+        "batch동일stem output 덮어쓰기/preview-audit완료의 자동승격"
+      ],
+      "application_example": "조건분기의Yes/No와화살표방향을 유지해 요소별 근거를 기록한다.",
+      "counterexample": "같은 파일stem이나도형ID를 근거로 다른원본을덮어쓰거나 한글영역추정폭만으로 잘림없음을 확정한다.",
+      "license_note": "로컬README/LICENSE는MIT, UPSTREAM_LICENSE는방법론CC BY-NC-SA4.0, source.json은NOASSERTION. 고지적용부분/상업적사용권을한종류로확정하지않음. 원문·방법론직접이식보류. 개행변형1건도본문동일/byte상이로기록.",
+      "unresolved": [
+        "5스크립트정적읽기·3사례XML구조·9PNG해시만(이미지는보지않음)",
+        "원문실행·preview/도구/브라우저/편집결과 검증 없음"
+      ],
+      "target_skills": [
+        "video-knowledge-curator",
+        "video-guidance-reviewer"
+      ],
+      "status": "static_review_complete_conditional_proposal",
+      "company_mandatory": false,
+      "installed_by_this_review": false,
+      "runtime_verified": false,
+      "upstream_runtime_adoption": "held",
+      "direct_copy_policy": "blocked_pending_dual_license_scope",
+      "source_review_ref": "검토파일목록.json",
+      "direct_upstream_copy_into_custom_skill_or_product_performed": false,
+      "audit_source_snapshot_available": true
+    }
+  ],
+  "authority": [
+    "사용자가 이미 승인한 Phase00 목적·draft 권한",
+    "회사에서 확정한 원자료/규칙 및 적용 범위",
+    "R2와 R3-1/2의 조건부 참고 정본",
+    "원문 출처/코드의 실제 지원 범위",
+    "외부 작성자 취향: 조건부 참고"
+  ],
+  "boundaries": [
+    "R3-3은 비교/위험/이식 설계",
+    "R4는 실제 DB schema·시간·좌표 계약",
+    "R5는 한맥·8회사 CI 적용 권한/역할",
+    "R8은 Anthropic Skill Creator 활용한 재구성·평가·사용자 검토",
+    "01-A는 실제 영상 분석 스킬 구현/테스트"
+  ],
+  "runtime_hold": [
+    "Taste draw/assets/inspect 및 linter 원문 코드",
+    "Impeccable launcher/engine/hooks/live/build",
+    "Anthropic run_eval/run_loop/기본 viewer 서버",
+    "data-cleaning 원문 profile/reconcile",
+    "새 후보 CLI·로컬 누락 호출 스크립트"
+  ],
+  "acceptance_tests_proposed": [
+    "회사 CI값·원문 숫자/단위는 보존",
+    "정지/등속/동시비교/같은 모듈의 타당한 예는 허용",
+    "자료 없으면 관측·의도·읽기 시간·승인을 만들지 않음",
+    "draft 쓰기만·정본/원본 승인 변경은 제안",
+    "선택용 검증셋과 최종 검증셋을 분리",
+    "쓰기 diff/log/backup·범위·rollback 검증",
+    "출처 불명 로컬과 TERMS 후보 직접복사 보류",
+    "브라우저/포트/프로세스·전역 연결에 영향 없는 실행 경로"
+  ],
+  "coverage_gap_acknowledged": "초기UI중심·PPT누락과이후편집/화면분야누락을사용자가지적했다. 두추가분야선택후보의본문/참조/정적코드·라이선스검토를보완했으며모든스킬전수조사라고표시하지않는다.",
+  "functional_coverage": [
+    {
+      "area": "목적·대상·제약",
+      "candidates": [
+        "creative-brief",
+        "visual-style-direction",
+        "motion-art-direction"
+      ],
+      "phase00": "의미/권한·미확정 필드와 검수 질문",
+      "later": "실제 brief/시나리오 기획은02"
+    },
+    {
+      "area": "발표 논리·슬라이드 순서",
+      "candidates": [
+        "presentation-narrative",
+        "academic-presentation",
+        "presentation-builder",
+        "presentation-video"
+      ],
+      "phase00": "발표/교육/설명/토론의 목적별 조건과 예/반례",
+      "later": "새 영상/슬라이드의 실제기획은02"
+    },
+    {
+      "area": "편집디자인·판면·조판·참조측정",
+      "candidates": [
+        "Graphic Design10",
+        "Infographic Editorial Design",
+        "Editorial Vision",
+        "Swiss Design",
+        "Graphic Designer",
+        "pixel",
+        "drawio-reconstruction"
+      ],
+      "phase00": "정보→판면·격자/타입/색·실측/추정·시각/편집성검수조건",
+      "later": "실제관측획득01-A,화면/포스터/이미지/3D제작02"
+    },
+    {
+      "area": "레이아웃·문구·타이포·화면비",
+      "candidates": [
+        "Taste",
+        "Impeccable",
+        "shot-composition",
+        "Presentations"
+      ],
+      "phase00": "R3-2 지식 정본과 영상 적용 조건 비교",
+      "later": "실제 관측/분석 구현01-A,창작02"
+    },
+    {
+      "area": "도표·다이어그램·정보관계",
+      "candidates": [
+        "AntV Infographic",
+        "animated-infographic",
+        "diagram-animation",
+        "chart-animation"
+      ],
+      "phase00": "순서/비교/분기/계층·축/값·정확성의 표현 기준",
+      "later": "실제 분석01-A,도표 생성·렌더02"
+    },
+    {
+      "area": "모션·시간·재생·접근성",
+      "candidates": [
+        "LottieFiles",
+        "animation-principles",
+        "brand-motion-guidelines",
+        "accessible-animation",
+        "presentation-video"
+      ],
+      "phase00": "관측·조건·기권·목적과 R3-1 대응",
+      "later": "01-A관측추출/02제작"
+    },
+    {
+      "area": "회사 자산·디자인 시스템",
+      "candidates": [
+        "brand-guidelines",
+        "design-system",
+        "authoring/reviewing",
+        "design-tokens"
+      ],
+      "phase00": "R1관리·R5적용·권한·원본/파생 구분",
+      "later": "새 회사 확정은승인"
+    },
+    {
+      "area": "DB 품질·출처·검수",
+      "candidates": [
+        "data-cleaning",
+        "critique 후보",
+        "visual-qa"
+      ],
+      "phase00": "draft·출처·버전·판정·반례·한계",
+      "later": "R4/R6/R7계약연결"
+    },
+    {
+      "area": "맞춤스킬 재구성·평가",
+      "candidates": [
+        "Anthropic Skill Creator"
+      ],
+      "phase00": "R3-3원본심층비교, R8customskill생성/평가",
+      "later": "01-A분석스킬은별도"
+    }
+  ],
+  "evidence_reports": [
+    {
+      "path": "08_검증결과/스킬심층검토/R3_03_모션로컬_독립검토.json",
+      "sha256": "fd5ac86513bb0fb00e56f898244a82e11417e8965f645cff90221f4e04e2ba67"
+    },
+    {
+      "path": "08_검증결과/스킬심층검토/R3_03_지식후보_독립검토.json",
+      "sha256": "56b10c68d3d889241b989fe56e9d4a6b64ebb130b20a1e6c66459eb554996def"
+    },
+    {
+      "path": "08_검증결과/스킬심층검토/R3_03_실행코드_독립검토.json",
+      "sha256": "232ab4879b8f88beaaa8d431838c82abff42a633e1920e11539ffb8bb84585d9"
+    },
+    {
+      "path": "08_검증결과/스킬심층검토/R3_03_발표인포_독립검토.json",
+      "sha256": "1c91086120c74b86d5575d99087a6e675a2b31f785f52bed63b694c0bc4ffefa"
+    },
+    {
+      "path": "08_검증결과/스킬심층검토/R3_03_설명영상후보_독립검토.json",
+      "sha256": "58a505c63af7edc4486485844388e691fe1472b02a5a5b2aa7af77770d1f02a1"
+    },
+    {
+      "path": "08_검증결과/스킬심층검토/R3_03_PPT도구_독립검토.json",
+      "sha256": "19e0b20b762e5a8159fa697ad6f91d43cbda26ed16ede1757adea607b3e2ebd8"
+    },
+    {
+      "path": "08_검증결과/스킬심층검토/R3_03_그래픽스킬묶음_독립검토.json",
+      "sha256": "d8211f3008107cc92451389b3bea49aca6b2c29227a61ee1497bd94c5f31b05f"
+    },
+    {
+      "path": "08_검증결과/스킬심층검토/R3_03_편집아트_독립검토.json",
+      "sha256": "09e4cb0ba333ea0ca8c5a968f64b0df3f0ac971ff247d641c416f136e1588eb3"
+    },
+    {
+      "path": "08_검증결과/스킬심층검토/R3_03_격자와화면측정_독립검토.json",
+      "sha256": "3d94867b325d1f9940fa7694f24ee97f0a202d615b9c0f51b7ee6d2d5639fc86"
+    }
+  ],
+  "review_file_ledger": "검토파일목록.json",
+  "counts": {
+    "candidate_groups": 40,
+    "external_selected_skill_entrypoints": 46,
+    "local_selected_skill_entrypoints": 16,
+    "host_bundled_entrypoint_selected_sections": 1,
+    "meaning": "선택진입본문과서브스킬의고유수량. upstream/local추가원본SKILL과fixture는중복계산하지 않음."
+  },
+  "completion": {
+    "selected_knowledge_review_complete": true,
+    "original_tool_runtime_adoption_complete": false,
+    "all_existing_skills_survey_complete": false,
+    "custom_skill_reconstruction_complete": false,
+    "whole_phase00_complete": false,
+    "phase01a_started": false,
+    "meaning": "사용자A의선택지식·절차심층검토와이식설계범위완료.실행도구/맞춤스킬구현평가/회사승인은별도."
+  }
+}

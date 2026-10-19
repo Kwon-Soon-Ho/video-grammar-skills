@@ -1,0 +1,1320 @@
+{
+  "variant": "new_skill",
+  "independent_observation": true,
+  "changed_files": [
+    "12_통합기록/통합기록_작업초안.json",
+    "작업초안/디자인적용_초안.json"
+  ],
+  "missing_files": [],
+  "added_files": [],
+  "inventory_count": 269,
+  "12_통합기록/통합기록_작업초안.json": {
+    "fixture_sha256": "8418459bae850424724d12ad0cc4cc1471b94bcee6c4613578e3e3613908c27d",
+    "backup_sha256": "8418459bae850424724d12ad0cc4cc1471b94bcee6c4613578e3e3613908c27d",
+    "backup_matches_fixture": true,
+    "final_sha256": "015d061abd10150f9453fa345fb88bdac147d1de86fcb5528a9b1acf237d64f3",
+    "before_version": "0.1.0",
+    "after_version": "0.1.1",
+    "json_diff": [
+      {
+        "path": "/units/2/target_ref/version",
+        "before": "0.9.9",
+        "after": "0.1.0"
+      },
+      {
+        "path": "/version",
+        "before": "0.1.0",
+        "after": "0.1.1"
+      }
+    ],
+    "actual_final_data": {
+      "schema_version": "0.2.0",
+      "record_id": "R8-DEV-STEW-01",
+      "version": "0.1.1",
+      "catalog_refs": {
+        "taxonomy": {
+          "id": "company-video-taxonomy",
+          "version": "0.1.1",
+          "sha256": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2"
+        },
+        "design_profile": {
+          "id": "hanmac-video",
+          "version": "0.1.0",
+          "sha256": "dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed"
+        },
+        "classification_rules": {
+          "path": "01_공통용어/분류운영규칙.json",
+          "sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d"
+        }
+      },
+      "spatial_contract": {
+        "contract_version": "0.1.0",
+        "evidence_contract": {
+          "contract_version": "0.1.0",
+          "record_purpose": "spec_test",
+          "time_contract": {
+            "contract_version": "0.1.0",
+            "source_type": "synthetic_example",
+            "asset": {
+              "id": "EX-ASSET",
+              "version": "0.1.0",
+              "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            "timelines": [
+              {
+                "id": "EX-TIME",
+                "asset_ref": "EX-ASSET",
+                "stream_index": 0,
+                "duration": {
+                  "num": 10,
+                  "den": 1
+                },
+                "duration_evidence_refs": [
+                  "EX-DURATION"
+                ],
+                "origin": {
+                  "method": "verified_offset",
+                  "pts": "90000",
+                  "time_base": {
+                    "num": 1,
+                    "den": 90000
+                  },
+                  "evidence_refs": [
+                    "EX-ORIGIN"
+                  ],
+                  "limitations": "가상 값. 파일 존재·원점·회사 사실을 증명하지 않음."
+                },
+                "frame_rate_mode": "vfr",
+                "nominal_fps": null,
+                "frame_count": null,
+                "limitations": "전체프레임인덱스 미제공·가상시험용"
+              }
+            ],
+            "periods": [
+              {
+                "id": "EX-SEGMENT",
+                "timeline_ref": "EX-TIME",
+                "parent_ref": null,
+                "kind": "range",
+                "start": {
+                  "num": 0,
+                  "den": 1
+                },
+                "end": {
+                  "num": 3,
+                  "den": 1
+                },
+                "uncertainty": {
+                  "num": 0,
+                  "den": 1
+                },
+                "unknown_reason": null
+              },
+              {
+                "id": "EX-WHOLE",
+                "timeline_ref": "EX-TIME",
+                "parent_ref": null,
+                "kind": "range",
+                "start": {
+                  "num": 0,
+                  "den": 1
+                },
+                "end": {
+                  "num": 10,
+                  "den": 1
+                },
+                "uncertainty": {
+                  "num": 0,
+                  "den": 1
+                },
+                "unknown_reason": null
+              },
+              {
+                "id": "EX-INSTANT",
+                "timeline_ref": "EX-TIME",
+                "parent_ref": "EX-SEGMENT",
+                "kind": "instant",
+                "start": {
+                  "num": 1,
+                  "den": 1
+                },
+                "end": null,
+                "uncertainty": {
+                  "num": 0,
+                  "den": 1
+                },
+                "unknown_reason": null
+              }
+            ],
+            "frames": [
+              {
+                "id": "EX-FRAME",
+                "timeline_ref": "EX-TIME",
+                "period_ref": "EX-SEGMENT",
+                "role": "within_period",
+                "source_pts": "180000",
+                "pts_kind": "original_pts",
+                "time_base": {
+                  "num": 1,
+                  "den": 90000
+                },
+                "source_frame_ordinal": 25,
+                "requested": {
+                  "num": 1,
+                  "den": 1
+                },
+                "actual": {
+                  "num": 1,
+                  "den": 1
+                },
+                "mapping_state": "mapped",
+                "selection_policy": "manual",
+                "limitations": "가상 프레임. 25는 인위적 값이며 FPS 환산이 아님."
+              }
+            ],
+            "notes": "합성 규격 fixture만 사용. 실제 분석/승인/파일 내용 검증 없음."
+          },
+          "materials": [
+            {
+              "id": "EX-ASSET",
+              "version": "0.1.0",
+              "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+              "kind": "video",
+              "locator": "fixture-only://EX-ASSET",
+              "availability": "present",
+              "source_type": "synthetic_example",
+              "parent_ref": null,
+              "frame_ref": null,
+              "period_ref": null,
+              "method_note": "인위적 형식 검사 자료. 파일/내용/원본 정확성 검증 아님.",
+              "text": null,
+              "authority": null
+            },
+            {
+              "id": "EX-META",
+              "version": "0.1.0",
+              "sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+              "kind": "project_document",
+              "locator": "fixture-only://EX-META",
+              "availability": "present",
+              "source_type": "synthetic_example",
+              "parent_ref": null,
+              "frame_ref": null,
+              "period_ref": null,
+              "method_note": "인위적 형식 검사 자료. 파일/내용/원본 정확성 검증 아님.",
+              "text": "길이10초와 원점90000을 설명하는 가상 자료다.",
+              "authority": null
+            },
+            {
+              "id": "EX-IMAGE",
+              "version": "0.1.0",
+              "sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+              "kind": "frame",
+              "locator": "fixture-only://EX-IMAGE",
+              "availability": "present",
+              "source_type": "synthetic_example",
+              "parent_ref": {
+                "id": "EX-ASSET",
+                "version": "0.1.0",
+                "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+              },
+              "frame_ref": "EX-FRAME",
+              "period_ref": null,
+              "method_note": "인위적 형식 검사 자료. 파일/내용/원본 정확성 검증 아님.",
+              "text": null,
+              "authority": null
+            },
+            {
+              "id": "MAT-SP-CROP",
+              "version": "0.1.0",
+              "sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+              "kind": "frame",
+              "locator": "fixture-only://SP-CROP",
+              "availability": "present",
+              "source_type": "synthetic_example",
+              "parent_ref": {
+                "id": "EX-IMAGE",
+                "version": "0.1.0",
+                "sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+              },
+              "frame_ref": "EX-FRAME",
+              "period_ref": null,
+              "method_note": "인위적 형식 검사 자료. 파일/내용/원본 정확성 검증 아님.",
+              "text": null,
+              "authority": null
+            },
+            {
+              "id": "MAT-SP-RESIZE",
+              "version": "0.1.0",
+              "sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+              "kind": "frame",
+              "locator": "fixture-only://SP-RESIZE",
+              "availability": "present",
+              "source_type": "synthetic_example",
+              "parent_ref": {
+                "id": "MAT-SP-CROP",
+                "version": "0.1.0",
+                "sha256": "2222222222222222222222222222222222222222222222222222222222222222"
+              },
+              "frame_ref": "EX-FRAME",
+              "period_ref": null,
+              "method_note": "인위적 형식 검사 자료. 파일/내용/원본 정확성 검증 아님.",
+              "text": null,
+              "authority": null
+            }
+          ],
+          "targets": [
+            {
+              "id": "TG-ASSET",
+              "version": "0.1.0",
+              "unit": "asset",
+              "asset_ref": {
+                "id": "EX-ASSET",
+                "version": "0.1.0",
+                "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+              },
+              "parent_ref": null,
+              "period_ref": "EX-WHOLE",
+              "label": "가상 영상의 asset 대상"
+            },
+            {
+              "id": "TG-SEGMENT",
+              "version": "0.1.0",
+              "unit": "segment",
+              "asset_ref": {
+                "id": "EX-ASSET",
+                "version": "0.1.0",
+                "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+              },
+              "parent_ref": {
+                "id": "TG-ASSET",
+                "version": "0.1.0"
+              },
+              "period_ref": "EX-SEGMENT",
+              "label": "가상 영상의 segment 대상"
+            },
+            {
+              "id": "TG-STATE",
+              "version": "0.1.0",
+              "unit": "screen_state",
+              "asset_ref": {
+                "id": "EX-ASSET",
+                "version": "0.1.0",
+                "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+              },
+              "parent_ref": {
+                "id": "TG-SEGMENT",
+                "version": "0.1.0"
+              },
+              "period_ref": "EX-SEGMENT",
+              "label": "가상 영상의 screen_state 대상"
+            },
+            {
+              "id": "TG-OBJECT",
+              "version": "0.1.0",
+              "unit": "object",
+              "asset_ref": {
+                "id": "EX-ASSET",
+                "version": "0.1.0",
+                "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+              },
+              "parent_ref": {
+                "id": "TG-STATE",
+                "version": "0.1.0"
+              },
+              "period_ref": "EX-SEGMENT",
+              "label": "가상 영상의 object 대상"
+            },
+            {
+              "id": "TG-BEAT",
+              "version": "0.1.0",
+              "unit": "beat",
+              "asset_ref": {
+                "id": "EX-ASSET",
+                "version": "0.1.0",
+                "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+              },
+              "parent_ref": {
+                "id": "TG-SEGMENT",
+                "version": "0.1.0"
+              },
+              "period_ref": "EX-SEGMENT",
+              "label": "상태를 가로지를 수 있는 합성 동작"
+            }
+          ],
+          "evidence": [
+            {
+              "id": "EX-DURATION",
+              "version": "0.1.0",
+              "material_ref": {
+                "id": "EX-META",
+                "version": "0.1.0",
+                "sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+              },
+              "target_ref": {
+                "id": "TG-ASSET",
+                "version": "0.1.0"
+              },
+              "selector": {
+                "kind": "text",
+                "frame_ref": null,
+                "period_ref": null,
+                "exact": "길이10초와 원점90000을 설명하는 가상 자료다.",
+                "start": 0,
+                "end": 28
+              },
+              "limitations": "시간 메타의 가상 확인 근거. 실제 원본 정확성 아님."
+            },
+            {
+              "id": "EX-ORIGIN",
+              "version": "0.1.0",
+              "material_ref": {
+                "id": "EX-META",
+                "version": "0.1.0",
+                "sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+              },
+              "target_ref": {
+                "id": "TG-ASSET",
+                "version": "0.1.0"
+              },
+              "selector": {
+                "kind": "text",
+                "frame_ref": null,
+                "period_ref": null,
+                "exact": "길이10초와 원점90000을 설명하는 가상 자료다.",
+                "start": 0,
+                "end": 28
+              },
+              "limitations": "시간 메타의 가상 확인 근거. 실제 원본 정확성 아님."
+            },
+            {
+              "id": "EV-FRAME",
+              "version": "0.1.0",
+              "material_ref": {
+                "id": "EX-IMAGE",
+                "version": "0.1.0",
+                "sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+              },
+              "target_ref": {
+                "id": "TG-OBJECT",
+                "version": "0.1.0"
+              },
+              "selector": {
+                "kind": "frame",
+                "frame_ref": "EX-FRAME",
+                "period_ref": null,
+                "exact": null,
+                "start": null,
+                "end": null
+              },
+              "limitations": "프레임이 대상에 해당한다는 내용은 사람 검수 필요."
+            },
+            {
+              "id": "EV-SP-CROP",
+              "version": "0.1.0",
+              "material_ref": {
+                "id": "MAT-SP-CROP",
+                "version": "0.1.0",
+                "sha256": "2222222222222222222222222222222222222222222222222222222222222222"
+              },
+              "target_ref": {
+                "id": "TG-OBJECT",
+                "version": "0.1.0"
+              },
+              "selector": {
+                "kind": "frame",
+                "frame_ref": "EX-FRAME",
+                "period_ref": null,
+                "exact": null,
+                "start": null,
+                "end": null
+              },
+              "limitations": "프레임이 대상에 해당한다는 내용은 사람 검수 필요."
+            },
+            {
+              "id": "EV-SP-RESIZE",
+              "version": "0.1.0",
+              "material_ref": {
+                "id": "MAT-SP-RESIZE",
+                "version": "0.1.0",
+                "sha256": "2222222222222222222222222222222222222222222222222222222222222222"
+              },
+              "target_ref": {
+                "id": "TG-OBJECT",
+                "version": "0.1.0"
+              },
+              "selector": {
+                "kind": "frame",
+                "frame_ref": "EX-FRAME",
+                "period_ref": null,
+                "exact": null,
+                "start": null,
+                "end": null
+              },
+              "limitations": "프레임이 대상에 해당한다는 내용은 사람 검수 필요."
+            }
+          ],
+          "claims": [
+            {
+              "id": "CL-ONE",
+              "version": "0.1.0",
+              "statement": "화살표가 있다는 주장에 근거를 연결하는 미관측 설명 예시다.",
+              "support_mode": "not_observed_example",
+              "aspect": "visual_presence",
+              "scope": {
+                "target_ref": {
+                  "id": "TG-OBJECT",
+                  "version": "0.1.0"
+                },
+                "period_ref": "EX-INSTANT",
+                "extent": "instant"
+              },
+              "evidence_links": [
+                {
+                  "ref": {
+                    "id": "EV-FRAME",
+                    "version": "0.1.0"
+                  },
+                  "role": "support"
+                }
+              ],
+              "measurement": null,
+              "review_ref": null,
+              "limitations": "실영상·회사 문법·사람 승인으로 사용하지 않는 합성 구조 예."
+            }
+          ],
+          "review_records": [],
+          "notes": "모든 값은 인위적 fixture. 테스트 전용·운영DB 등록 금지."
+        },
+        "spaces": [
+          {
+            "id": "SP-ROOT",
+            "version": "0.1.0",
+            "material_ref": {
+              "id": "EX-IMAGE",
+              "version": "0.1.0",
+              "sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+            },
+            "frame_ref": "EX-FRAME",
+            "width": 1920,
+            "height": 1080,
+            "origin": "upper_left_edge",
+            "axes": "x_right_y_down",
+            "unit": "raster_px",
+            "sample_aspect_ratio": {
+              "num": 1,
+              "den": 1
+            },
+            "rotation_metadata": {
+              "clockwise_degrees": 0,
+              "applied": false,
+              "note": "가상 메타 확인. 실제 원본 미검증."
+            },
+            "limitations": "합성 선언·원본 영상/해상도/픽셀 미검증."
+          },
+          {
+            "id": "SP-CROP",
+            "version": "0.1.0",
+            "material_ref": {
+              "id": "MAT-SP-CROP",
+              "version": "0.1.0",
+              "sha256": "2222222222222222222222222222222222222222222222222222222222222222"
+            },
+            "frame_ref": "EX-FRAME",
+            "width": 800,
+            "height": 600,
+            "origin": "upper_left_edge",
+            "axes": "x_right_y_down",
+            "unit": "raster_px",
+            "sample_aspect_ratio": {
+              "num": 1,
+              "den": 1
+            },
+            "rotation_metadata": {
+              "clockwise_degrees": 0,
+              "applied": false,
+              "note": "가상 메타 확인. 실제 원본 미검증."
+            },
+            "limitations": "합성 선언·원본 영상/해상도/픽셀 미검증."
+          },
+          {
+            "id": "SP-RESIZE",
+            "version": "0.1.0",
+            "material_ref": {
+              "id": "MAT-SP-RESIZE",
+              "version": "0.1.0",
+              "sha256": "2222222222222222222222222222222222222222222222222222222222222222"
+            },
+            "frame_ref": "EX-FRAME",
+            "width": 400,
+            "height": 300,
+            "origin": "upper_left_edge",
+            "axes": "x_right_y_down",
+            "unit": "raster_px",
+            "sample_aspect_ratio": {
+              "num": 1,
+              "den": 1
+            },
+            "rotation_metadata": {
+              "clockwise_degrees": 0,
+              "applied": false,
+              "note": "가상 메타 확인. 실제 원본 미검증."
+            },
+            "limitations": "합성 선언·원본 영상/해상도/픽셀 미검증."
+          }
+        ],
+        "transforms": [
+          {
+            "id": "TR-SP-CROP",
+            "version": "0.1.0",
+            "from_ref": {
+              "id": "SP-ROOT",
+              "version": "0.1.0"
+            },
+            "to_ref": {
+              "id": "SP-CROP",
+              "version": "0.1.0"
+            },
+            "kind": "crop",
+            "params": {
+              "x": 100,
+              "y": 50,
+              "width": 800,
+              "height": 600
+            },
+            "evidence_refs": [
+              {
+                "id": "EX-DURATION",
+                "version": "0.1.0"
+              }
+            ],
+            "limitations": "가상 정적 변환. 실제 픽셀 가공 아님."
+          },
+          {
+            "id": "TR-SP-RESIZE",
+            "version": "0.1.0",
+            "from_ref": {
+              "id": "SP-CROP",
+              "version": "0.1.0"
+            },
+            "to_ref": {
+              "id": "SP-RESIZE",
+              "version": "0.1.0"
+            },
+            "kind": "resize",
+            "params": {
+              "width": 400,
+              "height": 300,
+              "aspect_policy": "preserve_sar",
+              "allow_distortion": false,
+              "resampling": "bilinear"
+            },
+            "evidence_refs": [
+              {
+                "id": "EX-DURATION",
+                "version": "0.1.0"
+              }
+            ],
+            "limitations": "가상 정적 변환. 실제 픽셀 가공 아님."
+          }
+        ],
+        "geometries": [
+          {
+            "id": "G-ROOT",
+            "version": "0.1.0",
+            "space_ref": {
+              "id": "SP-ROOT",
+              "version": "0.1.0"
+            },
+            "frame_ref": "EX-FRAME",
+            "evidence_ref": {
+              "id": "EV-FRAME",
+              "version": "0.1.0"
+            },
+            "target_ref": {
+              "id": "TG-OBJECT",
+              "version": "0.1.0"
+            },
+            "unit": "raster_px",
+            "kind": "point",
+            "role": "roi",
+            "anchor": "geometric_point",
+            "coordinates": {
+              "x": {
+                "num": 300,
+                "den": 1
+              },
+              "y": {
+                "num": 250,
+                "den": 1
+              },
+              "width": null,
+              "height": null
+            },
+            "uncertainty": {
+              "kind": "absolute_bound",
+              "x": {
+                "num": 0,
+                "den": 1
+              },
+              "y": {
+                "num": 0,
+                "den": 1
+              },
+              "width": null,
+              "height": null
+            },
+            "limitations": "가상 geometry. 내용 검수/실측 아님."
+          },
+          {
+            "id": "G-RESULT",
+            "version": "0.1.0",
+            "space_ref": {
+              "id": "SP-RESIZE",
+              "version": "0.1.0"
+            },
+            "frame_ref": "EX-FRAME",
+            "evidence_ref": {
+              "id": "EV-SP-RESIZE",
+              "version": "0.1.0"
+            },
+            "target_ref": {
+              "id": "TG-OBJECT",
+              "version": "0.1.0"
+            },
+            "unit": "raster_px",
+            "kind": "point",
+            "role": "roi",
+            "anchor": "geometric_point",
+            "coordinates": {
+              "x": {
+                "num": 100,
+                "den": 1
+              },
+              "y": {
+                "num": 100,
+                "den": 1
+              },
+              "width": null,
+              "height": null
+            },
+            "uncertainty": {
+              "kind": "absolute_bound",
+              "x": {
+                "num": 0,
+                "den": 1
+              },
+              "y": {
+                "num": 0,
+                "den": 1
+              },
+              "width": null,
+              "height": null
+            },
+            "limitations": "가상 geometry. 내용 검수/실측 아님."
+          }
+        ],
+        "mappings": [
+          {
+            "id": "MAP-ONE",
+            "source_ref": {
+              "id": "G-ROOT",
+              "version": "0.1.0"
+            },
+            "result_ref": {
+              "id": "G-RESULT",
+              "version": "0.1.0"
+            },
+            "target_space_ref": {
+              "id": "SP-RESIZE",
+              "version": "0.1.0"
+            },
+            "direction": "forward",
+            "transform_path": [
+              {
+                "id": "TR-SP-CROP",
+                "version": "0.1.0"
+              },
+              {
+                "id": "TR-SP-RESIZE",
+                "version": "0.1.0"
+              }
+            ],
+            "policy": "visible_fragment",
+            "declared_visibility": "visible",
+            "limitations": "선언 기하만 비교하는 합성 예"
+          }
+        ],
+        "notes": "spec_test만 사용. 원본픽셀/사람검수/회사승인 아님."
+      },
+      "units": [
+        {
+          "target_ref": {
+            "id": "TG-ASSET",
+            "version": "0.1.0"
+          },
+          "classifications": [
+            {
+              "axis": "video_type",
+              "state": "not_assessed",
+              "term_ids": [],
+              "reason_codes": [
+                "not_assessed_yet"
+              ],
+              "candidate_text": null,
+              "basis": "not_assessed",
+              "claim_ref": null,
+              "note": "합성 구조 예시. 실제 내용 분류 미수행."
+            }
+          ],
+          "scenario_refs": [],
+          "sample_frame_refs": [],
+          "related_state_refs": [],
+          "limitations": "규격 구조만 설명하는 인위적 예시."
+        },
+        {
+          "target_ref": {
+            "id": "TG-SEGMENT",
+            "version": "0.1.0"
+          },
+          "classifications": [
+            {
+              "axis": "video_type",
+              "state": "not_assessed",
+              "term_ids": [],
+              "reason_codes": [
+                "not_assessed_yet"
+              ],
+              "candidate_text": null,
+              "basis": "not_assessed",
+              "claim_ref": null,
+              "note": "합성 구조 예시. 실제 내용 분류 미수행."
+            },
+            {
+              "axis": "communication_purpose",
+              "state": "not_assessed",
+              "term_ids": [],
+              "reason_codes": [
+                "not_assessed_yet"
+              ],
+              "candidate_text": null,
+              "basis": "not_assessed",
+              "claim_ref": null,
+              "note": "합성 구조 예시. 실제 내용 분류 미수행."
+            },
+            {
+              "axis": "information_relation",
+              "state": "not_assessed",
+              "term_ids": [],
+              "reason_codes": [
+                "not_assessed_yet"
+              ],
+              "candidate_text": null,
+              "basis": "not_assessed",
+              "claim_ref": null,
+              "note": "합성 구조 예시. 실제 내용 분류 미수행."
+            },
+            {
+              "axis": "art_direction",
+              "state": "not_assessed",
+              "term_ids": [],
+              "reason_codes": [
+                "not_assessed_yet"
+              ],
+              "candidate_text": null,
+              "basis": "not_assessed",
+              "claim_ref": null,
+              "note": "합성 구조 예시. 실제 내용 분류 미수행."
+            }
+          ],
+          "scenario_refs": [],
+          "sample_frame_refs": [],
+          "related_state_refs": [],
+          "limitations": "규격 구조만 설명하는 인위적 예시."
+        },
+        {
+          "target_ref": {
+            "id": "TG-STATE",
+            "version": "0.1.0"
+          },
+          "classifications": [
+            {
+              "axis": "communication_purpose",
+              "state": "not_assessed",
+              "term_ids": [],
+              "reason_codes": [
+                "not_assessed_yet"
+              ],
+              "candidate_text": null,
+              "basis": "not_assessed",
+              "claim_ref": null,
+              "note": "합성 구조 예시. 실제 내용 분류 미수행."
+            },
+            {
+              "axis": "information_relation",
+              "state": "not_assessed",
+              "term_ids": [],
+              "reason_codes": [
+                "not_assessed_yet"
+              ],
+              "candidate_text": null,
+              "basis": "not_assessed",
+              "claim_ref": null,
+              "note": "합성 구조 예시. 실제 내용 분류 미수행."
+            },
+            {
+              "axis": "layout",
+              "state": "not_assessed",
+              "term_ids": [],
+              "reason_codes": [
+                "not_assessed_yet"
+              ],
+              "candidate_text": null,
+              "basis": "not_assessed",
+              "claim_ref": null,
+              "note": "합성 구조 예시. 실제 내용 분류 미수행."
+            },
+            {
+              "axis": "art_direction",
+              "state": "not_assessed",
+              "term_ids": [],
+              "reason_codes": [
+                "not_assessed_yet"
+              ],
+              "candidate_text": null,
+              "basis": "not_assessed",
+              "claim_ref": null,
+              "note": "합성 구조 예시. 실제 내용 분류 미수행."
+            }
+          ],
+          "scenario_refs": [],
+          "sample_frame_refs": [
+            "EX-FRAME"
+          ],
+          "related_state_refs": [],
+          "limitations": "규격 구조만 설명하는 인위적 예시."
+        },
+        {
+          "target_ref": {
+            "id": "TG-BEAT",
+            "version": "0.1.0"
+          },
+          "classifications": [
+            {
+              "axis": "communication_purpose",
+              "state": "not_assessed",
+              "term_ids": [],
+              "reason_codes": [
+                "not_assessed_yet"
+              ],
+              "candidate_text": null,
+              "basis": "not_assessed",
+              "claim_ref": null,
+              "note": "합성 구조 예시. 실제 내용 분류 미수행."
+            },
+            {
+              "axis": "motion_function",
+              "state": "not_assessed",
+              "term_ids": [],
+              "reason_codes": [
+                "not_assessed_yet"
+              ],
+              "candidate_text": null,
+              "basis": "not_assessed",
+              "claim_ref": null,
+              "note": "합성 구조 예시. 실제 내용 분류 미수행."
+            },
+            {
+              "axis": "motion_property",
+              "state": "not_assessed",
+              "term_ids": [],
+              "reason_codes": [
+                "not_assessed_yet"
+              ],
+              "candidate_text": null,
+              "basis": "not_assessed",
+              "claim_ref": null,
+              "note": "합성 구조 예시. 실제 내용 분류 미수행."
+            },
+            {
+              "axis": "timing",
+              "state": "not_assessed",
+              "term_ids": [],
+              "reason_codes": [
+                "not_assessed_yet"
+              ],
+              "candidate_text": null,
+              "basis": "not_assessed",
+              "claim_ref": null,
+              "note": "합성 구조 예시. 실제 내용 분류 미수행."
+            }
+          ],
+          "scenario_refs": [],
+          "sample_frame_refs": [],
+          "related_state_refs": [
+            {
+              "id": "TG-STATE",
+              "version": "0.1.0"
+            }
+          ],
+          "limitations": "규격 구조만 설명하는 인위적 예시."
+        }
+      ],
+      "coordinate_bindings": [],
+      "cut_markers": [],
+      "asset_metadata": {
+        "container": null,
+        "video_codec": null,
+        "audio_presence": "unknown",
+        "language": null,
+        "evidence_refs": [],
+        "limitations": "실제 영상 미제공. 원본 메타 미조사."
+      },
+      "design": {
+        "profile_ref": {
+          "id": "hanmac-video",
+          "version": "0.1.0",
+          "sha256": "dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed"
+        },
+        "palette_role_bindings": {
+          "background": "HM-COLOR-GREEN-500"
+        },
+        "optional_style_refs": [],
+        "project_overrides": []
+      },
+      "run": {
+        "mode": "contract_test",
+        "status": "not_started",
+        "actor": "synthetic-fixture",
+        "tool": null,
+        "model": null,
+        "started_at": null,
+        "ended_at": null,
+        "input_refs": [],
+        "output_record_ref": null,
+        "parameters_sha256": null,
+        "limitations": "자동분석 실행이 아닌 합성 계약 설명 예. 값은 실제미디어 근거가 아니다."
+      },
+      "review_contexts": [],
+      "notes": "R8-2 합성 개발 과제 사본. 실제 회사 영상/관측/승인/운영 기록 아님."
+    }
+  },
+  "작업초안/디자인적용_초안.json": {
+    "fixture_sha256": "8e9ccad2d9af6c3732f74bce8dde7e0daf9ad9d256d5f7ee5a9340bd752dd580",
+    "backup_sha256": "8e9ccad2d9af6c3732f74bce8dde7e0daf9ad9d256d5f7ee5a9340bd752dd580",
+    "backup_matches_fixture": true,
+    "final_sha256": "dbc45e0c7badeeea606072b4d31945d18192afb525f945138ce4c9566a67c115",
+    "before_version": "0.1.0",
+    "after_version": "0.1.0",
+    "json_diff": [
+      {
+        "path": "/linked_r4_record/sha256",
+        "before": "8418459bae850424724d12ad0cc4cc1471b94bcee6c4613578e3e3613908c27d",
+        "after": "015d061abd10150f9453fa345fb88bdac147d1de86fcb5528a9b1acf237d64f3"
+      },
+      {
+        "path": "/linked_r4_record/version",
+        "before": "0.1.0",
+        "after": "0.1.1"
+      }
+    ],
+    "actual_final_data": {
+      "schema_version": "0.1.0",
+      "application_id": "R8-DEV-APPLY-01",
+      "version": "0.1.0",
+      "state": "project_draft",
+      "data_scope": "spec_example",
+      "purpose": "삼안 관측색을 강조 후보로 비교하는 설명용 초안. 실제 회사 영상/디자이너 검수 아님.",
+      "ownership": "single_company",
+      "company_ids": [
+        "saman"
+      ],
+      "source_pins": {
+        "companies": {
+          "path": "10_공용자산/회사목록.json",
+          "version": "0.3.1",
+          "sha256": "0b011a9c2962459a3b42067c3f7120602cde9e541c466647fa880a0a298dda2a"
+        },
+        "assets": {
+          "path": "10_공용자산/자산목록.json",
+          "version": "0.3.1",
+          "sha256": "5f4cc581df387e8948bc3071aa9f93bd34fb88a2ffc406aaf72de9f3e8e940a0"
+        },
+        "colors": {
+          "path": "10_공용자산/CI색상목록.json",
+          "version": "0.3.1",
+          "sha256": "c95a79a81a422fc23f4275a8dd878016f209fdaff171d73f44d3cff7387b7097"
+        },
+        "hanmac": {
+          "path": "03_한맥디자인/한맥디자인정본.json",
+          "version": "0.1.0",
+          "sha256": "dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed"
+        },
+        "policy": {
+          "path": "05_출처와검토/R5_적용정책_결정.json",
+          "version": "A@2026-10-15",
+          "sha256": "d8666f2212ae4e434d7d1209f0b64bdded4f0d562df9600a1bda74d136dd9da3"
+        }
+      },
+      "use_hanmac_library": false,
+      "logo_intent": "undecided",
+      "logos": [],
+      "color_roles": [
+        {
+          "role": "emphasis",
+          "company_id": "saman",
+          "source": {
+            "kind": "ci_color",
+            "color_id": "ci.observed.raster.1",
+            "record_version": "0.1.0",
+            "source_level": "raster_sample"
+          },
+          "selection": {
+            "kind": "synthetic_example",
+            "selected_by": "설명용 디자이너 역할, 실제 인물 아님",
+            "reason": "제공 PNG 관측색을 강조 후보로 비교한다. 공식 Orange 역할 선언 아님.",
+            "assumptions": "ICC 없는 원본의 sRGB 표시 가정. 원문의 #F58220와 병합/보정하지 않음.",
+            "declared_at": "2026-10-15T00:00:00+09:00"
+          },
+          "review_status": "pending"
+        }
+      ],
+      "optional_style_refs": [],
+      "output_context": {
+        "medium": "video",
+        "width": null,
+        "height": null,
+        "background_condition": "unknown",
+        "viewing_notes": "실제 시청 환경 미정. 최종 화면에서 글자/도형 조합 검수 필요."
+      },
+      "linked_r4_record": {
+        "path": "12_통합기록/통합기록_작업초안.json",
+        "record_id": "R8-DEV-STEW-01",
+        "version": "0.1.1",
+        "sha256": "015d061abd10150f9453fa345fb88bdac147d1de86fcb5528a9b1acf237d64f3"
+      },
+      "review_status": "pending",
+      "company_approved": false,
+      "operational_release": false
+    }
+  },
+  "link_check": {
+    "path": "12_통합기록/통합기록_작업초안.json",
+    "id_matches": true,
+    "version_matches": true,
+    "sha_matches": true,
+    "path_points_to_final": true
+  },
+  "independent_r4_check": {
+    "valid": true,
+    "errors": [],
+    "unresolved": [],
+    "human_review_queue": [
+      {
+        "claim_id": "CL-ONE",
+        "claim_version": "0.1.0",
+        "priority": "normal",
+        "reasons": [
+          "주장 내용 사람 검수 필요"
+        ],
+        "status": "specimen_only",
+        "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+      },
+      {
+        "item_id": "SP-ROOT",
+        "status": "specimen_only",
+        "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+        "verified": false
+      },
+      {
+        "item_id": "SP-CROP",
+        "status": "specimen_only",
+        "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+        "verified": false
+      },
+      {
+        "item_id": "SP-RESIZE",
+        "status": "specimen_only",
+        "reason": "해상도·SAR·회전메타/적용 여부가 원본 이미지/도구 기록과 맞는지 사용자 또는 지정 담당자 검수",
+        "verified": false
+      },
+      {
+        "item_id": "TR-SP-CROP",
+        "status": "specimen_only",
+        "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+        "verified": false
+      },
+      {
+        "item_id": "TR-SP-RESIZE",
+        "status": "specimen_only",
+        "reason": "effective 변환 수치·적용 순서·근거 내용·회전/SAR 정책을 지정 담당자가 검수",
+        "verified": false
+      },
+      {
+        "item_id": "G-ROOT",
+        "status": "specimen_only",
+        "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+        "verified": false
+      },
+      {
+        "item_id": "G-RESULT",
+        "status": "specimen_only",
+        "reason": "대상·앵커·가림·ROI/모델 구분·오차 근거의 내용 검수. 계산 통과를 실측 확인으로 승격하지 않음",
+        "verified": false
+      },
+      {
+        "item_id": "design",
+        "status": "specimen_only",
+        "reason": "토큰 역할·적용 목적·프로젝트 예외 검수. 영상 필수 회사 규칙 승인과 구분",
+        "verified": false
+      },
+      {
+        "item_id": "TG-ASSET/video_type",
+        "status": "specimen_only",
+        "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+        "verified": false
+      },
+      {
+        "item_id": "TG-ASSET",
+        "status": "specimen_only",
+        "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+        "verified": false
+      },
+      {
+        "item_id": "TG-SEGMENT/video_type",
+        "status": "specimen_only",
+        "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+        "verified": false
+      },
+      {
+        "item_id": "TG-SEGMENT/communication_purpose",
+        "status": "specimen_only",
+        "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+        "verified": false
+      },
+      {
+        "item_id": "TG-SEGMENT/information_relation",
+        "status": "specimen_only",
+        "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+        "verified": false
+      },
+      {
+        "item_id": "TG-SEGMENT/art_direction",
+        "status": "specimen_only",
+        "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+        "verified": false
+      },
+      {
+        "item_id": "TG-SEGMENT",
+        "status": "specimen_only",
+        "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+        "verified": false
+      },
+      {
+        "item_id": "TG-STATE/communication_purpose",
+        "status": "specimen_only",
+        "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+        "verified": false
+      },
+      {
+        "item_id": "TG-STATE/information_relation",
+        "status": "specimen_only",
+        "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+        "verified": false
+      },
+      {
+        "item_id": "TG-STATE/layout",
+        "status": "specimen_only",
+        "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+        "verified": false
+      },
+      {
+        "item_id": "TG-STATE/art_direction",
+        "status": "specimen_only",
+        "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+        "verified": false
+      },
+      {
+        "item_id": "TG-STATE",
+        "status": "specimen_only",
+        "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+        "verified": false
+      },
+      {
+        "item_id": "TG-BEAT/communication_purpose",
+        "status": "specimen_only",
+        "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+        "verified": false
+      },
+      {
+        "item_id": "TG-BEAT/motion_function",
+        "status": "specimen_only",
+        "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+        "verified": false
+      },
+      {
+        "item_id": "TG-BEAT/motion_property",
+        "status": "specimen_only",
+        "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+        "verified": false
+      },
+      {
+        "item_id": "TG-BEAT/timing",
+        "status": "specimen_only",
+        "reason": "분류의 대상·근거 충분성·의미 검수. classified는 해당 출처에 대한 태그이며 관측/회사 승인 아님",
+        "verified": false
+      },
+      {
+        "item_id": "TG-BEAT",
+        "status": "specimen_only",
+        "reason": "설명 구간·화면 상태·동작의 의미 경계, 시나리오 연결, 프레임 표본의 충분성 검수",
+        "verified": false
+      },
+      {
+        "item_id": "run",
+        "status": "specimen_only",
+        "reason": "실행 주체·도구/모델·입출력·설정과 실제 작업 로그를 대조. 선언을 실행 증명으로 보지 않음",
+        "verified": false
+      }
+    ],
+    "coordinate_bindings": [],
+    "integrated_review_states": [],
+    "fact_verified": false,
+    "human_identity_verified": false,
+    "company_approved": false,
+    "operational_release": false,
+    "status": "draft_structure_pass",
+    "schema_version": "0.2.0",
+    "scope": "기록 계약의 구조/연결 검사. 실제 영상·사람 검수·회사 승인·운영 반영 아님.",
+    "source_json_sha256": "015d061abd10150f9453fa345fb88bdac147d1de86fcb5528a9b1acf237d64f3"
+  },
+  "independent_r5_check": {
+    "valid": true,
+    "scope": "구조/현재 참조·정책 검수. 실제 디자인 품질·선택자 인증/회사 승인 아님.",
+    "errors": [],
+    "human_review_queue": [
+      "로고 필요 여부·선택 미정",
+      "saman emphasis: 관측색의 가정·역할 적합성·선택자/실제 선택 확인",
+      "R4 연결은 참조만 확인. 동영상 관측값 변경·가족사 토큰을 R4 한맥 필드에 삽입·품질 승인 안 됨",
+      "출력 해상도·최종 표시 크기 미정",
+      "로고/글자의 최종 배경 미정",
+      "최종 프레임·한국어/숫자·단위·자막·시청환경·움직이는 배경 검수",
+      "로컬 해시는 원문 무결성이다. 최신성/공식성/디자이너 identity·회사/운영 승인 증명 안 됨"
+    ],
+    "resolved_draft_candidates": [
+      {
+        "company_id": "saman",
+        "role": "emphasis",
+        "hex": "#F5821F",
+        "origin": "ci_color",
+        "use": "project_draft_candidate",
+        "review_status": "pending"
+      }
+    ],
+    "company_approved": false,
+    "fact_verified": false,
+    "human_selection_verified": false,
+    "operational_release": false
+  },
+  "inspection_did_not_change_inputs": true
+}

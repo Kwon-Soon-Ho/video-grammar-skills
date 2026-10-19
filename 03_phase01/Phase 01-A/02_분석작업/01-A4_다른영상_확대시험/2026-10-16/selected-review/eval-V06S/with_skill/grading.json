@@ -1,0 +1,54 @@
+{
+  "grader": "root inline source/ROI comparison",
+  "human_approved": false,
+  "expectations": [
+    {
+      "text": "전경 시점 이동·주야 변화 및 녹색 배경으로 전환",
+      "passed": true,
+      "evidence": "old_scene에 시점·주야 변화와235.0 중첩→235.1 새 배경 연결. 3D 카메라 구현은 유보.",
+      "post_hoc": false
+    },
+    {
+      "text": "상단 가로 공사목표 제목→안전→품질→공기→효율 순차 등장",
+      "passed": true,
+      "evidence": "상단 가로 제목의 공사/CONSTRUCTION→공사목표/TARGETS 중간 상태와 안전→품질→공기→효율 순서. root가 S_title 원본 ROI 시트 직접 대조.",
+      "post_hoc": false
+    },
+    {
+      "text": "카드 이미지/아이콘/라벨·주변 선·광량을 별도 검사; 종료부 이미지 퇴장과 아이콘 잔류",
+      "passed": true,
+      "evidence": "safety_network, quality_scan, schedule_inside, efficiency_connections를 별도 기록. 사진 소실/아이콘 잔존과 창 끝 소폭 재배치의 미완료 상태를 분리. root가 안전/효율/자막 ROI 및 기본 종료 프레임 대조.",
+      "post_hoc": false
+    },
+    {
+      "text": "듀얼은 좌측 세로 제목판으로 재배치되며 동일 초/일괄 스케일로 대응시키지 않음",
+      "passed": true,
+      "evidence": "비교 보고서는 W의 좌측 세로판과 주야 병치를 S와 구별. 동일 초나 고정 오프셋으로 대응하지 않음.",
+      "post_hoc": false
+    },
+    {
+      "text": "각 파일에서 장면 앵커 시각과 동작 근거/가감속을 따로 기록; 자료022 한 그룹",
+      "passed": true,
+      "evidence": "파일별 특징점·시각 근거와 오차 기록. 검수 후 S 작업보고 문서는 변화율 차이 근거 부족으로 unknown으로 보정, 나머지 정착부 감속도 해당 대상의 진행 표본에 한정.",
+      "post_hoc": false
+    },
+    {
+      "text": "[추가 발견 기준] 후반 자막 전환의 바로 직전 문구가 4대 핵심가치임을 해당 시각에 연결하며 초기 경관 자막과 혼합하지 않음",
+      "passed": true,
+      "evidence": "subtitles는 경관→없음→4대 핵심가치→BIM 프레임워크를 연결. root의244/244.2/244.5 native 자막 대조로 후반 직전 상태 혼입 해소 확인.",
+      "post_hoc": true
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1
+  },
+  "interpretation": "targeted reanalysis only; known development cases, not held-out accuracy",
+  "remaining_limits": [
+    "매우 짧은 주기/UI 변화",
+    "정확한 곡선·광량 분리",
+    "전체 문서 배치/오디오/전체 영상"
+  ]
+}

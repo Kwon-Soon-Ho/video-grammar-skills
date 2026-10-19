@@ -1,0 +1,84 @@
+{
+  "id": "R3-01-A-scope-independent-review",
+  "reviewed_on": "2026-10-14",
+  "result": "pass_with_scope_limits",
+  "scope": "사용자 A 결정의 좁은 반영만 재확인. 레이아웃·스킬 단계는 검토/진행하지 않음.",
+  "user_decision": {
+    "id": "DECISION-R3-MOTION-SCOPE-A",
+    "selected": "A",
+    "record_count": 1,
+    "company_rule_approval": false,
+    "authorization_basis": "root가 전달한 사용자 직접 A 답변과 사용자결정.json의 일치 확인. 검사기가 사용자 신원을 인증한다는 뜻은 아님."
+  },
+  "approved_scope": {
+    "ip10": "공식 공개 Summary 수준의 조건부 참고로 기본 조회 포함. 해당 주제 사전 지식 근거 없으면 unknown/설명 조정 보류.",
+    "ux12": "기존 원칙 연결 후보만 활용. 새 분류ID·의미 병합·회사 규칙 없음."
+  },
+  "checks": {
+    "core_version": "0.1.2",
+    "source_registry_version": "0.1.1",
+    "deep_cards_version": "0.1.2",
+    "research_log_version": "0.1.1",
+    "previous_core_path": "backup/2026-10-14_R3_01_A안반영/변경전/Phase 00/02_원칙과레이아웃/모션과정보전달원칙.json",
+    "changed_principle_ids": [
+      "IP-10"
+    ],
+    "unchanged_principle_records": 42,
+    "same_43_ids": true,
+    "core_reference_hash": "249ef6b9e7b14ff62f41352922be2f00e748c8b10debb4d4992b580364e0daa5",
+    "core_reference_hash_match": true,
+    "actual_default_lookup": {
+      "query": "IP-10",
+      "count": 1,
+      "kind": "reference_knowledge",
+      "status": "reference",
+      "method": "현재 지식조회.lookup 함수를 독립 호출. 조회 코드는 status에 따라 참고 항목을 반환하며 사전 지식의 실제 근거 확인은 반환된 계약을 사용하는 검토자의 책임."
+    },
+    "authority": {
+      "core_default_company_requirement": false,
+      "card_company_approved": false,
+      "card_actual_video_test": false,
+      "card_numeric_default": null
+    },
+    "abstention": "IP10 consider_when/planning_decisions/unknown_policy와 심화카드 abstain_when에 주제별 사전 지식 근거 요구. 직급·부서만으로 판단 금지. 접근성·필수 고지·정확성 정보를 숙련도로 삭제 금지.",
+    "research_depth": "publisher_summary 유지. 장 전체·진단도구·회사 효과 확인으로 승격하지 않음.",
+    "ux12_state": "proposal_not_new_taxonomy",
+    "ux12_count": 12,
+    "mc07": "조건부 참고 제안과 사용 범위 선택을 회사 영상 효과/규칙 승인과 분리. 사전 지식 없으면 unknown 유지.",
+    "independent_validator": {
+      "exit_code": 0,
+      "valid": true,
+      "errors": []
+    },
+    "independent_decision_ref_deletion": {
+      "blocked": true,
+      "errors": [
+        "심화카드 상위 누락·허용되지 않은 필드",
+        "조건부 참고 선택 근거 없음"
+      ]
+    },
+    "local_regression_log": {
+      "passed": 28,
+      "total": 28,
+      "scope": "기록된 자체 계약 회귀 결과 확인. 28건을 독립 재실행한 것으로 주장하지 않음."
+    }
+  },
+  "findings": [
+    {
+      "id": "A-DISPLAY-01",
+      "severity": "low",
+      "status": "resolved",
+      "location": "02_원칙과레이아웃/00_지식안내.md:48",
+      "evidence": "00_지식안내.md:48의 질문이 실제 정본 review_questions와 일치하고 상태가 reference — 공식 Summary, 조건부 참고로 갱신된 것을 직접 확인했다.",
+      "repair": "해당 행만 새 정본 review_questions와 reference 상태로 동기화한다. 이 수정은 승인 범위를 확장하지 않는 표시 정합성 보완이다."
+    }
+  ],
+  "scope_limits": [
+    "사용자 A는 참고 사용 범위의 승인이다. 학술 원문 전체·회사 규칙·학습 효과를 승인한 것으로 취급하지 않는다.",
+    "IP10이 기본 검색 결과에 포함된다는 것과 사전 지식 근거 없이 설명 축소/확대를 실행한다는 것은 다르다. 반환된 unknown/기권 조건을 후속 판단에서 유지한다.",
+    "decision_ref 삭제 차단은 참조 필드의 계약 확인이다. 검사 코드만으로 사용자결정 파일의 모든 내용·실제 사람 권한을 인증하지 않는다. 이번 감사에서 해당 결정 레코드를 별도로 읽어 대조했다.",
+    "공개 Summary의 정의는 앞선 독립 웹 대조를 활용했다. 이번에는 승인 반영과 조회·차이만 재검토했다."
+  ],
+  "conclusion": "A 승인 반영의 정본·조회·기권·UX12 범위와 안내표 표시 정합성 모두 통과. 회사 필수화·새 분류 확장·다른42개 정의 변경은 발견하지 않았다. 최종 후속 확인은 IP10 안내표 행만 수행했다.",
+  "modifications": "D 자료 수정 없음. C workspace 감사 결과만 신규 작성."
+}

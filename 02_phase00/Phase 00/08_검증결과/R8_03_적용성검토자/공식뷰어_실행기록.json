@@ -1,0 +1,103 @@
+{
+  "args": [
+    "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+    "-B",
+    "C:\\Users\\User\\.codex\\skills\\anthropic-skill-creator\\eval-viewer\\generate_review.py",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-guidance-reviewer-workspace\\iteration-1",
+    "--skill-name",
+    "video-guidance-reviewer",
+    "--static",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-guidance-reviewer-workspace\\원문보존\\공식뷰어_최종표시본.html",
+    "--benchmark",
+    "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-guidance-reviewer-workspace\\iteration-1\\benchmark.json"
+  ],
+  "returncode": 0,
+  "stdout": "\n  Static viewer written to: C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-guidance-reviewer-workspace\\원문보존\\공식뷰어_최종표시본.html\n\n",
+  "stderr": "",
+  "creator_script_sha256": "44d97a35be977331b13b04932927b3beb285862a173f0f15dd052d4f31de5c76",
+  "template_sha256": "46abd4e19e482b4aeebea24b135c2d88fb122a63346dbeab7fcecd83828a826d",
+  "display_adapter_sha256": "442f5bbc68e041d5fabdefb5b99bc66ad4e7339b3a47467b8f05b81f627b2e6b",
+  "mode": "official static only; no server/browser/CU",
+  "post_execution_display_metadata_copies": [
+    {
+      "source": "iteration-1/eval-01-한국어_수치_무음과_부분판정/eval_metadata.json",
+      "source_sha256": "8d4b3c4d4b6c1f1570a23d78fae8d4ed8c14499934d867dd5a83ed828ecec956",
+      "display_only_destination": "iteration-1/eval-01-한국어_수치_무음과_부분판정/new_skill/run-1/eval_metadata.json",
+      "sha256": "a391c044ffc9e67921cf023c6181989422741ceb85d614730353881f4713f864",
+      "selected_keys": [
+        "eval_id",
+        "eval_name",
+        "prompt"
+      ],
+      "assertions_not_copied": true,
+      "created_after_all_six_executor_and_grader_completions": true
+    },
+    {
+      "source": "iteration-1/eval-01-한국어_수치_무음과_부분판정/eval_metadata.json",
+      "source_sha256": "8d4b3c4d4b6c1f1570a23d78fae8d4ed8c14499934d867dd5a83ed828ecec956",
+      "display_only_destination": "iteration-1/eval-01-한국어_수치_무음과_부분판정/old_skill/run-1/eval_metadata.json",
+      "sha256": "a391c044ffc9e67921cf023c6181989422741ceb85d614730353881f4713f864",
+      "selected_keys": [
+        "eval_id",
+        "eval_name",
+        "prompt"
+      ],
+      "assertions_not_copied": true,
+      "created_after_all_six_executor_and_grader_completions": true
+    },
+    {
+      "source": "iteration-1/eval-02-회사CI_회신범위와_사용조건/eval_metadata.json",
+      "source_sha256": "7c7b89a443e0a44203b6ecd9621fbba9fdcd39bbb978e9ef85eb4719121a0ea0",
+      "display_only_destination": "iteration-1/eval-02-회사CI_회신범위와_사용조건/new_skill/run-1/eval_metadata.json",
+      "sha256": "2d16daff4af8894ecc6f202060280e5b0e50bc237fe8d9559ba9fb4c4f5be238",
+      "selected_keys": [
+        "eval_id",
+        "eval_name",
+        "prompt"
+      ],
+      "assertions_not_copied": true,
+      "created_after_all_six_executor_and_grader_completions": true
+    },
+    {
+      "source": "iteration-1/eval-02-회사CI_회신범위와_사용조건/eval_metadata.json",
+      "source_sha256": "7c7b89a443e0a44203b6ecd9621fbba9fdcd39bbb978e9ef85eb4719121a0ea0",
+      "display_only_destination": "iteration-1/eval-02-회사CI_회신범위와_사용조건/old_skill/run-1/eval_metadata.json",
+      "sha256": "2d16daff4af8894ecc6f202060280e5b0e50bc237fe8d9559ba9fb4c4f5be238",
+      "selected_keys": [
+        "eval_id",
+        "eval_name",
+        "prompt"
+      ],
+      "assertions_not_copied": true,
+      "created_after_all_six_executor_and_grader_completions": true
+    },
+    {
+      "source": "iteration-1/eval-03-외부지침_과잉일반화와_출처충돌/eval_metadata.json",
+      "source_sha256": "bdc2b857c55a07edd02f614904fec3305e095a68100a1fe4a1f9b4239762ef92",
+      "display_only_destination": "iteration-1/eval-03-외부지침_과잉일반화와_출처충돌/new_skill/run-1/eval_metadata.json",
+      "sha256": "e4de3deb582de2a97559224a5a6d81d92390e97a3ec16dbb971a664645ef1ce2",
+      "selected_keys": [
+        "eval_id",
+        "eval_name",
+        "prompt"
+      ],
+      "assertions_not_copied": true,
+      "created_after_all_six_executor_and_grader_completions": true
+    },
+    {
+      "source": "iteration-1/eval-03-외부지침_과잉일반화와_출처충돌/eval_metadata.json",
+      "source_sha256": "bdc2b857c55a07edd02f614904fec3305e095a68100a1fe4a1f9b4239762ef92",
+      "display_only_destination": "iteration-1/eval-03-외부지침_과잉일반화와_출처충돌/old_skill/run-1/eval_metadata.json",
+      "sha256": "e4de3deb582de2a97559224a5a6d81d92390e97a3ec16dbb971a664645ef1ce2",
+      "selected_keys": [
+        "eval_id",
+        "eval_name",
+        "prompt"
+      ],
+      "assertions_not_copied": true,
+      "created_after_all_six_executor_and_grader_completions": true
+    }
+  ],
+  "first_generation_preserved": "뷰어보완이력/첫생성본",
+  "reason": "official viewer searches run or parent metadata; case metadata originally two levels above"
+}

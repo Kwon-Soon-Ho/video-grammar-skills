@@ -1,0 +1,52 @@
+{
+  "case_id": "T04",
+  "condition": "with_skill",
+  "recorded_at": "2026-10-16T06:25:14.603847+00:00",
+  "grader": "root source/meaning review; not independent human",
+  "reference_level": "human_confirmed",
+  "expectations": [
+    {
+      "text": "수주→매출→이익의 데이터 변화 순서",
+      "passed": true,
+      "evidence": "수주8~9.667→매출15.333~16.7→이익16.7~18의 동작과 공통 틀 선행을 식별."
+    },
+    {
+      "text": "막대 상향 성장·원형 시계방향 채움·숫자 증가를 각각 식별",
+      "passed": true,
+      "evidence": "각 카드의 바닥 기준 막대 상향, 원호12시 시작 시계방향, 수치 증가를 별도 event로 식별."
+    },
+    {
+      "text": "정착부 감속 관측",
+      "passed": true,
+      "evidence": "세 카드의 실제 시간순 수치/원본 ROI가 후반 감속과 일치; 다만 설명의 대상 연결 오류는 아래 별도 보완 이슈."
+    },
+    {
+      "text": "카드 틀 등장을 데이터 동작 순서와 혼동하지 않음",
+      "passed": true,
+      "evidence": "공통 카드/목표 선행과 내부 실적 순서를 구분."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4
+  },
+  "case_status": "needs_revision",
+  "notes": [],
+  "timing": null,
+  "tokens": null,
+  "telemetry_note": "per-run telemetry unavailable; no synthesized averages",
+  "eval_feedback": {
+    "suggestions": [
+      "Known exposed windows, one run per condition, same agent batches; this is regression evidence, not generalization accuracy."
+    ]
+  },
+  "additional_content_issues": [
+    {
+      "severity": "record_revision_required",
+      "claim": "수주/영업이익의 easing.basis에 매출31→38→39,48→59→61을 반복",
+      "evidence": "각 카드 숫자 event에는 자기 수치가 있으나 공통 easing.basis는 다른 카드 예시를 그대로 사용. 같은 대상의 직접 근거로 읽힐 수 있어 최초본 채택 보류.",
+      "fix": "대상·속성별 직접 근거와 설명용 예를 분리하고 T04 재시험"
+    }
+  ]
+}

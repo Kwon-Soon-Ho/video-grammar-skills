@@ -1,0 +1,168 @@
+{
+  "stage": "R8-3",
+  "kind": "independent_byte_and_strict_json_audit_not_content_or_model_trial",
+  "initial174_count": 174,
+  "current_changed_paths": {
+    "00_시작안내.md": {
+      "initial": "604ef701b6ff1bc64df2c92b0995a5e36b0d265eedf44743e71b5498479b8188",
+      "current": "69815dfefc60f0f80e14c9c973487b0f0513c2fc0c1080b39c49e786c492b0fa"
+    },
+    "01_진행현황.md": {
+      "initial": "837d28e1e543be012c5c0aebfd121401b454af689e6f072233e8dd68af1f8be4",
+      "current": "86d6e47d5af1fe1efb573e38695607369c4ce58c97e111fac5ca286f046a1f00"
+    },
+    "08_검증결과/R8_02_기록관리자/00_결과안내.md": {
+      "initial": "ad5214a91a2a2675dc12135105ef7c69e0a0f5329884c97faa6111d50c644497",
+      "current": "6ef6619a32d3c7d5bcc24adfbcbc427ba7efce4b971a87ebc598a60aacf6cd58"
+    },
+    "14_스킬재구성/진행상태.json": {
+      "initial": "d1a4295c55eddc7a056a444df04cb93558a08879021c02ded8626c4a4157a193",
+      "current": "ab5fd3756200d5c5ed3ef89cf6288f14c87e7cb5a3eb5a3f4f9e210dc29270b0"
+    }
+  },
+  "only_expected4_changes_before_publication": true,
+  "initial174_backup_mismatches": [],
+  "R7_pin_count": 130,
+  "R7_pin_mismatches": [],
+  "old_skill_file_count": 14,
+  "old_skill_mismatches": [],
+  "candidate_instruction_file_count": 3,
+  "candidate_mismatches": [],
+  "run_count": 6,
+  "runs": [
+    {
+      "run": "iteration-1/eval-01-한국어_수치_무음과_부분판정/new_skill/run-1",
+      "input_count": 78,
+      "input_byte_mismatches": [],
+      "artifact_receipt_mismatches": [],
+      "output_files": [
+        "검토결과.md",
+        "검토기록.json"
+      ],
+      "unexpected_run_files": [],
+      "strict_output_json_parse_valid": true,
+      "true_boolean_paths": [
+        "/selection/no_single_score",
+        "/human_questions/3/options/0/recommended"
+      ],
+      "actual_completion_notification_recorded": true,
+      "telemetry_unavailable": true
+    },
+    {
+      "run": "iteration-1/eval-01-한국어_수치_무음과_부분판정/old_skill/run-1",
+      "input_count": 77,
+      "input_byte_mismatches": [],
+      "artifact_receipt_mismatches": [],
+      "output_files": [
+        "검토결과.md",
+        "검토기록.json"
+      ],
+      "unexpected_run_files": [],
+      "strict_output_json_parse_valid": true,
+      "true_boolean_paths": [
+        "/human_questions/operational_choice/options/0/recommended"
+      ],
+      "actual_completion_notification_recorded": true,
+      "telemetry_unavailable": true
+    },
+    {
+      "run": "iteration-1/eval-02-회사CI_회신범위와_사용조건/new_skill/run-1",
+      "input_count": 76,
+      "input_byte_mismatches": [],
+      "artifact_receipt_mismatches": [],
+      "output_files": [
+        "검토결과.md",
+        "검토기록.json"
+      ],
+      "unexpected_run_files": [],
+      "strict_output_json_parse_valid": true,
+      "true_boolean_paths": [
+        "/target/synthetic",
+        "/selection/criteria/0/required",
+        "/selection/criteria/0/applicable",
+        "/selection/criteria/1/required",
+        "/selection/criteria/1/applicable",
+        "/selection/criteria/2/required",
+        "/selection/criteria/2/applicable",
+        "/selection/criteria/3/required",
+        "/selection/criteria/3/applicable",
+        "/operational_options/options/0/recommended"
+      ],
+      "actual_completion_notification_recorded": true,
+      "telemetry_unavailable": true
+    },
+    {
+      "run": "iteration-1/eval-02-회사CI_회신범위와_사용조건/old_skill/run-1",
+      "input_count": 75,
+      "input_byte_mismatches": [],
+      "artifact_receipt_mismatches": [],
+      "output_files": [
+        "검토결과.md",
+        "검토기록.json"
+      ],
+      "unexpected_run_files": [],
+      "strict_output_json_parse_valid": true,
+      "true_boolean_paths": [
+        "/candidate_qualification/reference_only"
+      ],
+      "actual_completion_notification_recorded": true,
+      "telemetry_unavailable": true
+    },
+    {
+      "run": "iteration-1/eval-03-외부지침_과잉일반화와_출처충돌/new_skill/run-1",
+      "input_count": 78,
+      "input_byte_mismatches": [],
+      "artifact_receipt_mismatches": [],
+      "output_files": [
+        "검토결과.md",
+        "검토기록.json"
+      ],
+      "unexpected_run_files": [],
+      "strict_output_json_parse_valid": true,
+      "true_boolean_paths": [
+        "/criteria/selected/0/required",
+        "/criteria/selected/1/required",
+        "/criteria/selected/2/required",
+        "/criteria/selected/3/required",
+        "/criteria/selected/4/required",
+        "/criteria/selected/5/required",
+        "/criteria/selected/6/required",
+        "/findings/4/path_exists",
+        "/findings/4/record_version_match",
+        "/human_questions/2/options/0/recommended",
+        "/human_questions/2/not_required_for_current_review"
+      ],
+      "actual_completion_notification_recorded": true,
+      "telemetry_unavailable": true
+    },
+    {
+      "run": "iteration-1/eval-03-외부지침_과잉일반화와_출처충돌/old_skill/run-1",
+      "input_count": 77,
+      "input_byte_mismatches": [],
+      "artifact_receipt_mismatches": [],
+      "output_files": [
+        "검토결과.md",
+        "검토기록.json"
+      ],
+      "unexpected_run_files": [],
+      "strict_output_json_parse_valid": true,
+      "true_boolean_paths": [
+        "/scope/read_only_inputs",
+        "/source_integrity_check/path_exists",
+        "/source_integrity_check/principle_exists",
+        "/source_integrity_check/record_version_match",
+        "/source_integrity_check/claim_verification_separate",
+        "/human_questions/0/options/0/recommended"
+      ],
+      "actual_completion_notification_recorded": true,
+      "telemetry_unavailable": true
+    }
+  ],
+  "limits": [
+    "start/end bytes do not prove no temporary mutation",
+    "transcripts are executor-authored process accounts, not independently captured complete tool traces",
+    "notification receipt flags are main-observed metadata, not identity authentication",
+    "no D helper/query executed by this audit",
+    "no grading files read by this script"
+  ]
+}

@@ -1,0 +1,253 @@
+# 실제 작업 기록
+
+모든 DB backup/write/restore/저장 후 환경 검사는 지정 시험IO.py CLI를 사용했다. Python은 지정 실행파일의 -B -X utf8로 실행했다. 요청·후보·로그·증거 사본·보고서만 outputs에 일반 쓰기로 작성했다.
+
+## 사전 확인
+
+task.txt, 자료/IO사용안내.md, 자료/작업범위.json, 지정 curator SKILL.md와 references/작업기준.md·출력지침.md, 대상 원문, 00_운영계약/01_보존과버전_계약.md·정본과표시_연결목록.json, 14_스킬재구성/R8_현재사용안내.md를 읽었다. 원칙 정본 두 파일은 관련 항목/해시를 관련근거.json에 남겼다. 현재 안내의 다른 run·평가·과거보고 링크는 따라가지 않았다. 정정표는 이번 draft 내용에 적용하지 않았다.
+
+PowerShell 도구가 사전 읽기부터 InitializeDefaultDrives/FileSystem 경고를 표시했다. 지정 Python CLI들의 stderr는 개별 원시 파일에 보존했으며 CLI exit와 외부 PowerShell 도구 exit를 구분했다. 환경검사.py의 외부 도구 exit는 1로 보고됐지만 내부 실제 CLI exit는 2다.
+
+## 실제 CLI 순서와 원시 결과
+
+### 01-원문읽기
+
+인수 배열(실제 subprocess argv):
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+실제 CLI exit: 0
+
+요청:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stdout 원문:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stderr 원문:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+### 02-변경전백업
+
+인수 배열(실제 subprocess argv):
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+실제 CLI exit: 0
+
+요청:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stdout 원문:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stderr 원문:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+### 03-쓰기직전읽기
+
+인수 배열(실제 subprocess argv):
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+실제 CLI exit: 0
+
+요청:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stdout 원문:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stderr 원문:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+### 04-초안저장
+
+인수 배열(실제 subprocess argv):
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+실제 CLI exit: 0
+
+요청:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stdout 원문:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stderr 원문:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+### 05-저장후환경검사
+
+인수 배열(실제 subprocess argv):
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+실제 CLI exit: 2
+
+요청:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stdout 원문:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stderr 원문:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+### 06-복구전현재읽기
+
+인수 배열(실제 subprocess argv):
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+실제 CLI exit: 0
+
+요청:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stdout 원문:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stderr 원문:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+### 07-변경전복구
+
+인수 배열(실제 subprocess argv):
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+실제 CLI exit: 0
+
+요청:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stdout 원문:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stderr 원문:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+### 08-복구후읽기
+
+인수 배열(실제 subprocess argv):
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+실제 CLI exit: 0
+
+요청:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stdout 원문:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stderr 원문:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+### 09-복구후환경검사
+
+인수 배열(실제 subprocess argv):
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+실제 CLI exit: 0
+
+요청:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stdout 원문:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stderr 원문:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 실제 서비스 기록
+
+서비스이벤트/001.json~009.json을 원문 읽기로 확인하고 outputs/실제서비스이벤트에 바이트 그대로 보존했다. 이벤트 004 실제 쓰기 SHA, 005 환경 검사 실패, 006 현재 소유권 SHA 대조, 007 복구, 008 원문 해시, 009 복구후 환경 검사 ok를 확인했다. 목록·해시는 서비스이벤트_사본목록.json에 있다.
+
+## 현재 상태
+
+{
+  "status": "failed_postsave_validation_restored",
+  "requested_change_retained": false,
+  "actual_write_performed": true,
+  "target": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-02-큐레이터_저장후복구\\candidate\\inputs\\Phase00\\작업초안\\검토지식.json",
+  "candidate": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-02-큐레이터_저장후복구\\candidate\\outputs\\후보.json",
+  "before_version": "0.1.0",
+  "attempted_version": "0.1.1",
+  "final_version": "0.1.0",
+  "before_sha256": "851857164896eb05174617fb3a6571b46617f5e69ecf6889b386d08c6273e554",
+  "actual_written_sha256": "884d7693232d05f325bc7f895dfe031aa4a66258bccc703792ceb64e60c196a6",
+  "final_sha256": "851857164896eb05174617fb3a6571b46617f5e69ecf6889b386d08c6273e554",
+  "backup": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-02-큐레이터_저장후복구\\candidate\\inputs\\Phase00\\backup\\이번작업\\큐레이터_검토지식_0.1.0_변경전.json",
+  "save": {
+    "exit_code": 0,
+    "status": "실제 저장 성공"
+  },
+  "postsave_validation": {
+    "exit_code": 2,
+    "status": "실패",
+    "error": "TEST_IO_POSTSAVE_VALIDATION_FAILED: test environment rejected saved draft; no content approval"
+  },
+  "recovery": {
+    "exit_code": 0,
+    "status": "복구 완료",
+    "ownership_match_verified": true,
+    "original_byte_match": true
+  },
+  "postrestore_validation": {
+    "exit_code": 0,
+    "status": "통과",
+    "scope": "지정 환경 JSON 파싱·해시 확인; 내용/회사 승인 아님"
+  },
+  "unrecovered_paths": [],
+  "partial_files": [],
+  "not_performed": [
+    "실패 후 재저장·서비스 변경·다른 쓰기 우회",
+    "R4 통합 영상 검사·R6/R7 full 검사",
+    "사람/회사 승인·실제 영상 효과 검수",
+    "다른 DB·다른 run·평가/시험설정·서비스상태 조회"
+  ],
+  "next_condition": "환경 검사 실패 원인 해결 후 별도 저장·검사가 필요. 이번 변경은 최종 반영되지 않음.",
+  "artifacts": {
+    "diff": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-02-큐레이터_저장후복구\\candidate\\outputs\\변경.diff",
+    "transcript": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-02-큐레이터_저장후복구\\candidate\\outputs\\transcript.md",
+    "events": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-02-큐레이터_저장후복구\\candidate\\outputs\\실제서비스이벤트",
+    "checks": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-02-큐레이터_저장후복구\\candidate\\outputs\\최종직접검사.json"
+  }
+}
+
+## 직접 검사
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+시간·token 예산은 제공되지 않아 추정하지 않았다. 사람 회신 생성·추가 에이전트·네트워크·CU·AE·API·서비스상태/시험설정 조회를 수행하지 않았다.

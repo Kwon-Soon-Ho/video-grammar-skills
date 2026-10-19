@@ -1,0 +1,35 @@
+{
+  "private": true,
+  "name": "@allons-y/skill-design-system",
+  "version": "1.4.0",
+  "description": "Build, name, document, and audit UI components with expert ARIA, accessibility, design token, typography, and i18n guidance written by a Staff engineer with experience building design systems at scale.",
+  "type": "module",
+  "skill": {
+    "category": "Design",
+    "runtime": "node",
+    "triggers": [
+      "design system",
+      "component library",
+      "ARIA pattern",
+      "what should I call this component",
+      "review my component library"
+    ]
+  },
+  "scripts": {
+    "ci:test": "yarn coverage",
+    "coverage": "c8 yarn test",
+    "format": "yarn package:format",
+    "lint": "yarn package:lint",
+    "test": "node --test \"tests/**/*.test.js\""
+  },
+  "devDependencies": {
+    "c8": "^11.0.0"
+  },
+  "keywords": [
+    "design system",
+    "accessibility",
+    "design tokens",
+    "typography",
+    "i18n"
+  ]
+}

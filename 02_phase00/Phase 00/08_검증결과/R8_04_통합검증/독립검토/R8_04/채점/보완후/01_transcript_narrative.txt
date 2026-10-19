@@ -1,0 +1,91 @@
+# 실제 수행 로그
+지정 run의 task/DB만 사용. 결과 폴더 외 DB 변경은 시험IO CLI만 사용. 네트워크/다른 스킬/추가 에이전트/사람 회신 생성 없음.
+초기 탐색: PowerShell Get-Content로 task, 수행사본_범위, 지정 SKILL 및 두 references, 의뢰, IO안내, 대상 초안, 원문메모, 추가의견, 보존계약, 연결목록, R8 안내/정정표를 읽음. rg --files로 DB 내 경로 목록만 조회, rg -n -C 4로 네 레이아웃 자료의 순환/분기 관련 구절 조회. 각 호출 exit 0. PowerShell 공통 stderr성 출력: Attempting to perform the InitializeDefaultDrives operation on the FileSystem provider failed. 연결목록 포함 긴 화면 출력은 일부 잘림. 아래에 실제 원문을 바이트로 다시 보존하며 실제로 사용한 범위를 기록한다. 초기 도구의 stdout/stderr 구분은 도구가 합쳐 반환하므로 구분 불가.
+
+READ C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-01-큐레이터_정상판본정리\candidate\task.txt; 보존: read__task.txt
+READ C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-01-큐레이터_정상판본정리\candidate\inputs\Phase00\수행사본_범위.json
+bytes=609 SHA256=3b346a964a9add24faacef530fbff10e48cce5c852de16225393e82860845cfa; 전체 바이트 보존: read__수행사본_범위.json
+READ C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-01-큐레이터_정상판본정리\candidate\inputs\Phase00\실행스킬\video-knowledge-curator\SKILL.md
+bytes=7286 SHA256=6064cd066e6129637d451623c28fc2dd6a545cb272f3aa3eabe898baa075e25c; 전체 바이트 보존: read__실행스킬__video-knowledge-curator__SKILL.md
+READ C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-01-큐레이터_정상판본정리\candidate\inputs\Phase00\실행스킬\video-knowledge-curator\references\작업기준.md
+bytes=4021 SHA256=97338ff41bb1133d107c44989bbae0c7fd3edea14ab6c882025a9d13262fe41c; 전체 바이트 보존: read__실행스킬__video-knowledge-curator__references__작업기준.md
+READ C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-01-큐레이터_정상판본정리\candidate\inputs\Phase00\실행스킬\video-knowledge-curator\references\출력지침.md
+bytes=1226 SHA256=61fc05cba69677f574500c10791e2746b7db90ed43270cb5e9043462d310a2a2; 전체 바이트 보존: read__실행스킬__video-knowledge-curator__references__출력지침.md
+READ C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-01-큐레이터_정상판본정리\candidate\inputs\Phase00\자료\의뢰.md
+bytes=479 SHA256=90433844260f74e0be08f94a5f7500677aa16b7573061df8033f09828d99aff0; 전체 바이트 보존: read__자료__의뢰.md
+READ C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-01-큐레이터_정상판본정리\candidate\inputs\Phase00\자료\IO사용안내.md
+bytes=2038 SHA256=62a340894e26ca5fe1e0c03976126d6cae1f00636fe6d3da12e1861be2cc3c54; 전체 바이트 보존: read__자료__IO사용안내.md
+READ C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-01-큐레이터_정상판본정리\candidate\inputs\Phase00\자료\원문메모.md
+bytes=541 SHA256=b278a15449a2907b1833a8a8bb8097436655562582921dca08e55da947b4de88; 전체 바이트 보존: read__자료__원문메모.md
+READ C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-01-큐레이터_정상판본정리\candidate\inputs\Phase00\자료\추가의견.md
+bytes=381 SHA256=f3e26f2e6f3531073e0d64b83bbd181a610aaa780cc302cdd1b5e65cb6401d15; 전체 바이트 보존: read__자료__추가의견.md
+READ C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-01-큐레이터_정상판본정리\candidate\inputs\Phase00\00_운영계약\01_보존과버전_계약.md
+bytes=5473 SHA256=8400b604210c0fc1bdb18c774b9824ef5cf7f389e38aceda93178925f9daedc1; 전체 바이트 보존: read__00_운영계약__01_보존과버전_계약.md
+READ C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-01-큐레이터_정상판본정리\candidate\inputs\Phase00\00_운영계약\정본과표시_연결목록.json
+bytes=25092 SHA256=e46cdd823766e91c84dd6a05a0254879bfcc9f80c2b04bfc48ec0788b5005fe6; 전체 바이트 보존: read__00_운영계약__정본과표시_연결목록.json
+READ C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-01-큐레이터_정상판본정리\candidate\inputs\Phase00\14_스킬재구성\R8_현재사용안내.md
+bytes=4025 SHA256=c017141b6b266b96dbdde2d3cd92ccf216d41ca94d0e5e88b3c962c2cafc34c2; 전체 바이트 보존: read__14_스킬재구성__R8_현재사용안내.md
+READ C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-01-큐레이터_정상판본정리\candidate\inputs\Phase00\14_스킬재구성\현재상태_정정표.json
+bytes=4675 SHA256=b6675701a6355f9bdb25256d924d2e98696b8b929f75fab0d3e2f99a870c40e3; 전체 바이트 보존: read__14_스킬재구성__현재상태_정정표.json
+READ C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-01-큐레이터_정상판본정리\candidate\inputs\Phase00\02_원칙과레이아웃\레이아웃지식.json
+bytes=11255 SHA256=0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306; 전체 바이트 보존: read__02_원칙과레이아웃__레이아웃지식.json
+READ C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-01-큐레이터_정상판본정리\candidate\inputs\Phase00\02_원칙과레이아웃\레이아웃_심화지식.json
+bytes=59116 SHA256=5d6378eb954b6b75f94be2a0988254a1406f6dacc8a6c44060c6a05ff56aa14c; 전체 바이트 보존: read__02_원칙과레이아웃__레이아웃_심화지식.json
+READ C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-01-큐레이터_정상판본정리\candidate\inputs\Phase00\02_원칙과레이아웃\레이아웃_확장후보.json
+bytes=4547 SHA256=ca615a23e93b681e79eae845ee21c9b37a781c0f0e35af44217985f80e7702f8; 전체 바이트 보존: read__02_원칙과레이아웃__레이아웃_확장후보.json
+READ C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-01-큐레이터_정상판본정리\candidate\inputs\Phase00\02_원칙과레이아웃\10_확장레이아웃_후보와반례.md
+bytes=4007 SHA256=b248bf4907543f600a1580f7717e449c52af7d75951e7944d15cce775605e610; 전체 바이트 보존: read__02_원칙과레이아웃__10_확장레이아웃_후보와반례.md
+READ C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-01-큐레이터_정상판본정리\candidate\inputs\Phase00\작업초안\연결설명_지식초안.json
+bytes=898 SHA256=847002623e7956be46d91f62b47c59133351d2701cb92002df3bab22e75ea912; 전체 바이트 보존: read__대상_변경전.json
+CLI 01_시작조회
+argv=["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-B", "-X", "utf8", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-01-큐레이터_정상판본정리\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-01-큐레이터_정상판본정리\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-01-큐레이터_정상판본정리\\candidate\\outputs\\01_시작조회.request.json"]
+exit=0
+stdout:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+stderr:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+WRITE outputs 후보.json/후보검사.json/변경.diff/별도검토메모.md. 후보 SHA256=12ca3ff198a384694aa49869df82b35d11aa394d98abf8b8714a885817bd5d60; 후보 좁은 범위 검사 통과. 문서 metadata, 역사판본, 다른 항목 동일. 정본 미등록 draft 유지. 정본/회사/효과 승인 미실시.
+CLI 02_변경전백업
+argv=["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-B", "-X", "utf8", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-01-큐레이터_정상판본정리\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-01-큐레이터_정상판본정리\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-01-큐레이터_정상판본정리\\candidate\\outputs\\02_변경전백업.request.json"]
+exit=0
+stdout:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+stderr:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+CLI 03_첫쓰기직전조회
+argv=["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-B", "-X", "utf8", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-01-큐레이터_정상판본정리\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-01-큐레이터_정상판본정리\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-01-큐레이터_정상판본정리\\candidate\\outputs\\03_첫쓰기직전조회.request.json"]
+exit=0
+stdout:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+stderr:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+첫 쓰기 직전 원문 SHA 및 전체 ID/판본 시작 snapshot과 동일. expected_sha256 원자성 범위는 CLI에 위임; 여러 파일 동시성 보장 아님.
+CLI 04_초안저장
+argv=["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-B", "-X", "utf8", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-01-큐레이터_정상판본정리\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-01-큐레이터_정상판본정리\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-01-큐레이터_정상판본정리\\candidate\\outputs\\04_초안저장.request.json"]
+exit=0
+stdout:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+stderr:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+CLI 05_저장후환경검사
+argv=["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-B", "-X", "utf8", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-01-큐레이터_정상판본정리\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-01-큐레이터_정상판본정리\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-01-큐레이터_정상판본정리\\candidate\\outputs\\05_저장후환경검사.request.json"]
+exit=0
+stdout:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+stderr:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+CLI 06_저장후실제조회
+argv=["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-B", "-X", "utf8", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-01-큐레이터_정상판본정리\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-01-큐레이터_정상판본정리\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-01-큐레이터_정상판본정리\\candidate\\outputs\\06_저장후실제조회.request.json"]
+exit=0
+stdout:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+stderr:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+최종 상태: 완료_한정초안수정; 실패=[]; 복구=불필요; 결과.md/결과.json 생성. DB 쓰기는 지정 CLI backup 1회/write 1회만 요청. 결과 내용은 저장후 SHA/구조 확인에 근거. 회사/영상/사람/정본 등록 미실시.
+READ 실제 서비스이벤트 C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-01-큐레이터_정상판본정리\candidate\서비스이벤트\001.json; 전체 원문 보존 actual__서비스이벤트__001.json; SHA256=2f67fa09204c1be0c440a4f39414ea1225fbefa3224d719fcd1aeea55b5ac4a7
+READ 실제 서비스이벤트 C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-01-큐레이터_정상판본정리\candidate\서비스이벤트\002.json; 전체 원문 보존 actual__서비스이벤트__002.json; SHA256=26e0d6166c1dcf949c766c1b3f23702f455f81884c1d92253eec374d91c854d0
+READ 실제 서비스이벤트 C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-01-큐레이터_정상판본정리\candidate\서비스이벤트\003.json; 전체 원문 보존 actual__서비스이벤트__003.json; SHA256=757b836a03de20cf74a2cbed94304184d11b28100437a1d3da883c0c0f871122
+READ 실제 서비스이벤트 C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-01-큐레이터_정상판본정리\candidate\서비스이벤트\004.json; 전체 원문 보존 actual__서비스이벤트__004.json; SHA256=748d9a85ca7b0047b2b381e1fb2e8253b2b17b3325dcba872f9e8f193a07ce30
+READ 실제 서비스이벤트 C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-01-큐레이터_정상판본정리\candidate\서비스이벤트\005.json; 전체 원문 보존 actual__서비스이벤트__005.json; SHA256=cbe27c8a3fe47588b0af6bf34a69f6a51fccaad632949d8af83a0557d6f559f3
+READ 실제 서비스이벤트 C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\4_보완후재시험\eval-01-큐레이터_정상판본정리\candidate\서비스이벤트\006.json; 전체 원문 보존 actual__서비스이벤트__006.json; SHA256=a02ad60693e01e497a65552d0e97e722b263cb5850b0bb21e7284af24af899c1
+서비스이벤트가 디렉터리임을 허용된 해당 경로의 Get-ChildItem으로 확인(exit 0; 001.json~006.json). 최초 파일형 glob에서 이벤트 목록이 비어 있었으며 디렉터리 아래 여섯 원문을 보존하여 결과.json/목록 보완. 서비스 상태·시험설정은 조회하지 않음. 로그 수집은 DB 환경 재검사가 아님.

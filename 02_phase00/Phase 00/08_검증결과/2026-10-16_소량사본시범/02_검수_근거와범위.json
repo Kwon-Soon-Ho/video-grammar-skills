@@ -1,0 +1,435 @@
+{
+  "candidate_versions": {
+    "video-knowledge-curator": "0.2.0-draft.3",
+    "video-record-steward": "0.2.0-draft.5",
+    "video-guidance-reviewer": "0.2.0-draft.4"
+  },
+  "criteria_sha256": "9d253bd87538326f24d703c7c6f2d6efc55be6d50ea842cd13ab3af28a5fc787",
+  "authorization_manifest_sha256": "b4d07afeb59c3cc4394c2963b12c5612a512c8892f092c0e6abe807339abce95",
+  "ledger": {
+    "runs": {
+      "1": {
+        "agent": "/root/phase00_pilot_curator",
+        "run": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate",
+        "task_sha256": "26d393f64c8be76887ba0d4f5a12ae9090b794b37d5eb93ca05c0f735c00458b",
+        "input_manifest_sha256": "046cea7f1ba3a42abc51988b8d55cd1b733066bea6cf4ffaf1efde1201a99400",
+        "actual_spawn_notification_observed": true,
+        "duration_ms": null,
+        "total_tokens": null,
+        "status": "completed",
+        "actual_completion_notification_observed": true,
+        "outputs": {
+          "outputs/01_자료확인.py": "838305ec6bc1f2e8e3cb0a072d99ab96df0ba0493fb3ba0db98f7a6e95fcc1df",
+          "outputs/01_자료확인.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "outputs/01_자료확인.stdout.txt": "020d0fd2da03273487395b4493dc53e9f4094f9d23c52c37fe8c15a7ae9f51b4",
+          "outputs/01_자료확인.실행.json": "6d90c66e8ef1058e5646d6b400280542275d0119791a8e9a8d17405e94377c4b",
+          "outputs/02_근거발췌.py": "a4795983f569dd2e83d0407eede208ee3be94fbc6e31a875185aab381a9c07f7",
+          "outputs/02_근거발췌.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "outputs/02_근거발췌.stdout.txt": "5a52db42cc9c06c85facd622575bc29306ebd6330ec129dcae634f4e8c3f56db",
+          "outputs/02_근거발췌.실행.json": "e4a720fdb2e801cfd702e617b4e7f18e561e7c8d440fd76d5f7716a5bf716dca",
+          "outputs/03_카드작성과검사.py": "85ec3dd251b48d3d2d2cb5884f4bc19a4f97093c64024e9bd3f8c9175850a113",
+          "outputs/03_카드작성과검사.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "outputs/03_카드작성과검사.stdout.txt": "e0a2dc4ec43887395c1d870b2366911c0aec7a998e69d8d07db0d980fcaf5c46",
+          "outputs/03_카드작성과검사.실행.json": "9355d00980e2096835562ff140624a9134c8bf634967528c622de98f251e2268",
+          "outputs/04_로그정리.py": "88120fad4666e35bbd72cce8840824ce6e9fb61091991eed82ec19b0074699ca",
+          "outputs/04_로그정리.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "outputs/04_로그정리.stdout.txt": "14e92c97e524dbe98df500865f2d5e5e2f18c88b84e8e531b4ec40d1e7ac46c5",
+          "outputs/04_로그정리.실행.json": "36ce1ffa1d5436856d4acda4ad91d1c9938152e361fcb202de089ace05ebe444",
+          "outputs/transcript.md": "a951c2133d8c9e499a53a69da57c1af15bb89b88cacccb37e43cc9166766439c",
+          "outputs/transcript.txt": "fb5168400f1de77547d2a6f86672c25e42af51ab21be75e42a1d8822490d1354",
+          "outputs/결과.json": "dfa84ae11bb6c2f35555a6a18bef7fc767c7c629d1e258add6f5c0c400ec8922",
+          "outputs/결과.md": "92632fb0549d0c23f1a015fcec0398ab5396046b6e8cfa44e0e9b7e475e2c612",
+          "outputs/내용근거_확인절과판본.json": "482e4d1b174ade349487d567beba12fd63cc5e9bde73f7d170bcf2938cd91aac",
+          "outputs/변경diff.json": "eeac6a1a717403815eb54be32241f12af5ad175043a72f01237da486cbde151f",
+          "outputs/변경diff.patch": "e8d892f6df58d30dee7bb2ef1647a42d4a7b36c6a77ed694bfc99462392ca725",
+          "outputs/산출물목록_SHA.json": "3de24d9f1804b2317ef8703e408e9c22f0ac052591e626487f6a9347d5c60a55",
+          "outputs/쉬운말_지식카드_저장후보_v0.1.1.json": "254bd6423812859452c60b7247bc0cdcfe7e626ff6a62b698a8218957655645f",
+          "outputs/실행.ps1": "61735e6fbe4fd42eecd5223abcee126d8a38daf99e73309992276053bd68c390",
+          "outputs/실행로그_보존확인.json": "6caaabc47e25bd6c01e2aff88ce48846da7b82e709d17ccfc69cba793d805b69",
+          "outputs/쓰기와검사_감사로그.json": "38db033ebefc70d184003f609e93c7c0e721161e76aac519d08d0e511880afb5",
+          "outputs/쓰기직전_재대조.json": "8c3d2329256041f61886b8b3fbf800d0e816f466fbb7d3b7a71111a80441a20f",
+          "outputs/연결목록_후속관리_차이.json": "02cc40b6274eaede0d59ddea1108555fbf759408676bacb075304ec46011e586",
+          "outputs/읽은입력_저장후_SHA보존검사.json": "699dc0f5c5b38fec50dab7bcbb0df1ea5a35bb65e6879289f6be3622eee09da1",
+          "outputs/입력_SHA_작업시작.json": "2871e162cb5a9e2acb4eb28bc34158cfa726b9e9485a585c866c8a0f4fc112b4",
+          "outputs/작업전_snapshot.json": "197f19d05d5f19ef09632b2cf036a845ee2a60129315f75058750421655129ac",
+          "outputs/정정별_원문과근거_SHA검사.json": "e1384e321ca7e8e63d8a16138760f1945240e000547abd770177c0d050711782",
+          "outputs/참조범위_존재확인.json": "a0fb869e160ffaa79ff2fc83cff58e69a424896d5d016c8afa753b23bb1c86e2"
+        }
+      },
+      "2": {
+        "agent": "/root/phase00_pilot_steward",
+        "run": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-02-기록관리자\\candidate",
+        "task_sha256": "582e90c44a1f91cbd68f6d892143699bc2f16cea51ac0c1557c8180aadad6135",
+        "input_manifest_sha256": "712f41b9fbdfd81835135e6185a2ddf5707ba8190de986838324a1250bc13317",
+        "actual_spawn_notification_observed": true,
+        "duration_ms": null,
+        "total_tokens": null,
+        "status": "completed",
+        "actual_completion_notification_observed": true,
+        "outputs": {
+          "outputs/00_실행과로그.py": "6ff3a375cc43280cdc9f2cc77edca96698826c2877b2a7e0a79cd69644c8dfd9",
+          "outputs/00_실행과로그_첫실행.py": "25e2520610406825eb2389753ff18129bfe91899023d2dc43fabec8c1dc0e953",
+          "outputs/01_inspect.command.json": "38b3c8e7afa7e395506f1234ea997416e45f0cba7f2e1ce870d798e7c6fefc65",
+          "outputs/01_inspect.stderr.txt": "02d633ff3f82111634a172895d7747851fe39beac58c7d27153eafe2980f815a",
+          "outputs/01_inspect.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "outputs/01_기록관리_실행.py": "a15e5306764b1c56cbd43d66110e68e3ab63d27ceb59418eb4d0d9de42c4127f",
+          "outputs/01_기록관리_실행_실패당시.py": "dde19daa2aeeff72697f1ffa33b98b2b07af78bd5233c4c7f3459d8882b3a917",
+          "outputs/01_사전점검.json": "525a14656bb19ef548ef039c0009c22303545c34e412899738351c564025a3c4",
+          "outputs/02_보고서작성.py": "7322443800321027f1c947c9d5425ccb1ce99c4cfbd4876acab71d9898e29fd8",
+          "outputs/02_저장검사.json": "ab68aa22474d33d1d14a8114948ebfd56e25af25de919493cf9d18ee799a5b8e",
+          "outputs/03_별도프로세스_재읽기검사.json": "54283b83700c25074bc4a8e720782aa6fdc79db80e3cd38b95d558f9b176c1ac",
+          "outputs/03_보고서실행과로그.py": "a7624056704b1ce83f617c99dd63c0de8935779949e39a40681745c16b5169c1",
+          "outputs/04_finalize.command.json": "0ca96521102757621509e93d1765e98e7667781d60144242b546ac881f390125",
+          "outputs/04_finalize.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "outputs/04_finalize.stdout.txt": "64ac9c42e71a75133c8ed8f137a30e389368c5ce0b628f1aab24f401b859a8c1",
+          "outputs/retry02_01_inspect.command.json": "bd625ab91407a184dbf13bf5cb40041960f810653bda99a22d0dd63f58f9cd17",
+          "outputs/retry02_01_inspect.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "outputs/retry02_01_inspect.stdout.txt": "a8631435753bf6fc3186e204ef10bf84c08718b61fdcaafcfe581a57564848fd",
+          "outputs/retry02_02_update.command.json": "aac3cb780e8415e35b36c1fffe21e4603a84fa93d85756d483a1ec58313fa15d",
+          "outputs/retry02_02_update.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "outputs/retry02_02_update.stdout.txt": "073aeeae0d959eb1112efe3c2a17ab0833c393300fde73c83636ac38359b7089",
+          "outputs/retry02_03_verify.command.json": "2e53546770ea3211484a4c54a0b9ea447e0570d6514090b16dbcefd82f9497a5",
+          "outputs/retry02_03_verify.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "outputs/retry02_03_verify.stdout.txt": "0eb77bb2f27830d947eb55f794702e492244f5775105049a4c6083e14a85420c",
+          "outputs/retry02_실행명령_종료목록.json": "cd0223bb32b6f233135faa417bffa2ce24b2784ef494e7ccbfcd5735881f3be1",
+          "outputs/transcript.md": "cafa7acf5f81682eaf67cf3134e1729b9bece24a4e668424888e8ee20b52e671",
+          "outputs/결과.json": "26fa14346b92149e7ca5c19bab8b42779779e65f5a4a0dd63aa04006049185a4",
+          "outputs/결과.md": "fa3912a238b899a8090398a50f2e2e31ab3019c9a3574ba24108a94af6b3bce3",
+          "outputs/실제읽은자료_내용과SHA.json": "8b1f728fcf23d48f447a1f7752363e22c4426659ef1338fb418fb5078de52e76",
+          "outputs/실행명령_종료목록.json": "288a6febf95dedcbb299253aafcd91d4358af4858f2af368104ba072dbc1a66a",
+          "outputs/연결목록_저장후보.json": "f3c5ea305279706e9127cd123df032bbf34cb8c6d25b4b30a529947609a27c83",
+          "outputs/입력_SHA_작업시작.json": "5c5bd3b69f88f17c53509866530a00be7e8b2fb5923dc8230da627d3fecdb731",
+          "outputs/입력_SHA_저장후.json": "8dd9966dcc607b4c34c1fc09dcde11bdc93f8392c8d900b73b4bfe2b4190a868",
+          "outputs/제공범위_실제경로조회.json": "a4162fbe7f1d038b49d15b1e87d44061dc99e67347e369694b4df73a3c0325c2",
+          "outputs/직전대조_쓰기전.json": "4635031ef34a0b584b0e1a1846373a6b77304743a4a954f1769cb0aad88a2b83",
+          "outputs/허용diff_실제저장후.json": "ebe7deb81b3f988937528339d74fed0180c8489d8a5ce3d8c007d13caf57707d",
+          "outputs/허용diff_저장전.json": "ebe7deb81b3f988937528339d74fed0180c8489d8a5ce3d8c007d13caf57707d",
+          "outputs/현재안내_정정표_원문근거검사.json": "070ff2e0b7251dcbfa628a63d8e9e50d0abd63406dd5b0f386df3a6a0b64e561"
+        }
+      },
+      "3": {
+        "agent": "/root/phase00_pilot_reviewer",
+        "run": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate",
+        "task_sha256": "e37baf387704fcdf309d07a6cd7026eb69a28a32e8018f124e4c682da7889d17",
+        "input_manifest_sha256": "110167d656cf6cd5f3f3185524a3cd43982a90bdaf1bc1d3148d8c1f43e38d32",
+        "actual_spawn_notification_observed": true,
+        "duration_ms": null,
+        "total_tokens": null,
+        "status": "completed",
+        "actual_completion_notification_observed": true,
+        "outputs": {
+          "outputs/context_excerpt.execution.json": "7b2c211d7d3d7bb2b1a03e698883cf59e5dbe0c53e2253243f383f0e81a902c7",
+          "outputs/context_excerpt.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "outputs/context_excerpt.stdout.txt": "a181b515eca960f9cab4d4491275a2abc452d3b089a4c10972f1aa26d8aa8531",
+          "outputs/criteria_details.execution.json": "75fe4bdedf01dad54870a7aba3889da1be32c83231b1813c1fb9a8b99c3beeb2",
+          "outputs/criteria_details.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "outputs/criteria_details.stdout.txt": "66f13ce56eff62c8373cae0ab6e054e38fd72d882094db9a1d968c570cb61ebb",
+          "outputs/errata_check.execution.json": "2dcd15aeda120a5061f017fb955fefef5063f99751a53afc0c58f9d7c7b550fe",
+          "outputs/errata_check.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "outputs/errata_check.stdout.txt": "bf3d6989e58e5e4e26b1af49644f2c691f61869ca83be12078d6c8f60f24d2b0",
+          "outputs/errata_hash_checks.json": "49ba496436ae3928558c49ae30c9e9467caf2530760206734bb5a19588bd1eac",
+          "outputs/focus_exact.execution.json": "3cb98d7d84159ec0a68f9a48c6aec22d24bd8e9beb86381a0a6131c9eefd1d0b",
+          "outputs/focus_exact.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "outputs/focus_exact.stdout.txt": "3710f39da0d666d40fbde8a1d5377e64393f28f7ab8f4c1d52f68a6092394914",
+          "outputs/focus_sources.execution.json": "998a2778a0a876ca0550787539373bf82c75b9e330ff88baed36d38051fa933d",
+          "outputs/focus_sources.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "outputs/focus_sources.stdout.txt": "c68ff2d69de73a1fa14b3610c3aa8bfe548cec016e4924f6cd65c57e5e084071",
+          "outputs/focus_targets.execution.json": "d52f590104dc37da454190a610ea7cbda6269d3098b8e4e3d731f072ed12547e",
+          "outputs/focus_targets.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "outputs/focus_targets.stdout.txt": "d1be5bcc5ae382f137ee83357d8e3c328b42bdfbf03865e0f322ac09b95804e1",
+          "outputs/inputs_after.json": "e4a0d06b174f939e2187ecaee915dba20049a4f5120ab62a94fbcc1ae86a6e18",
+          "outputs/inputs_before.json": "e4a0d06b174f939e2187ecaee915dba20049a4f5120ab62a94fbcc1ae86a6e18",
+          "outputs/local_audit.execution.json": "19ff91ba856539f3f12bb89ba0cd81a1cef23e396ecbeb2728fa5917aaef63e0",
+          "outputs/local_audit.json": "e0a7a94da549f071cc2b12cfabb0aba92f76fe2926f20ac6b2fb392e5b8bc6e7",
+          "outputs/local_audit.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "outputs/local_audit.stdout.txt": "e0a7a94da549f071cc2b12cfabb0aba92f76fe2926f20ac6b2fb392e5b8bc6e7",
+          "outputs/prepare.execution.json": "48110d78d78b6a5d484f3fffe5261cbfc0e4c26b8537c1e80f539865dbc9c946",
+          "outputs/prepare.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "outputs/prepare.stdout.txt": "c77f3a969e2c5f3cd22dd9386861edd09092f3997c6bf5db1e34749909bebfe0",
+          "outputs/preselect.execution.json": "59284f748077e7d447d0ef2449705a328a26cb3a6b28f08fa8f3ff78e544aac5",
+          "outputs/preselect.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "outputs/preselect.stdout.txt": "673b4b29d62cab8dee836b8fdf41689a6d458effb2668ef03fe5df31d4e04624",
+          "outputs/readonly_verification.json": "fa83a887b47fce20266cb4f912870e97ddb16af8f2437016e8d2736a54fe53d8",
+          "outputs/read_evidence.jsonl": "09382e28778f9e92e97e2a71a179c56a0b7ba642d469ed90b4a698197b989511",
+          "outputs/review_execution.py": "357e7860d9df1b368cfa6bb685d33d06b6499ad267def1991b9c7e4dbe9bff0d",
+          "outputs/review_read.execution.json": "918709f2696a2c1ec8c009fde950b957c25c237125e80b494e615729b87195a8",
+          "outputs/review_read.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "outputs/review_read.stdout.txt": "018d3081ba980ed02ded293c2c9df2fcb8542350a195b6de3f7e2742a0864311",
+          "outputs/transcript.md": "0ff38022ca91b296cdce079f9f94003410e089bb3cf73b30e275141d5aff1aef",
+          "outputs/verify_unchanged.execution.json": "84cb2518ee9857b812567d9433a457c8489a17115c8dcb59997627454a49ed7e",
+          "outputs/verify_unchanged.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "outputs/verify_unchanged.stdout.txt": "fa83a887b47fce20266cb4f912870e97ddb16af8f2437016e8d2736a54fe53d8",
+          "outputs/write_report.execution.json": "327fe11f1547cdca1c9f91db6b2dc5a45461dcfc21083080b8df4dd6ffe8ed3e",
+          "outputs/write_report.py": "6f6c5e758dcb2f4999172a920e22a36b44761d6a7eea46ed066c0f6d722020e9",
+          "outputs/write_report.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "outputs/write_report.stdout.txt": "2a0dad698ccb19f4ac743d79f4393e6894eed06205cef44b4c4d68451a2be1a6",
+          "outputs/검수항목_사전선정.json": "673b4b29d62cab8dee836b8fdf41689a6d458effb2668ef03fe5df31d4e04624",
+          "outputs/결과.json": "baf255dc7e0865fcbc34083c1c55bcaba6fafcf69d903a9cdbbf551a6378eb41",
+          "outputs/결과.md": "67255ef23e1450add14f600dbfb4085d533f1d6ecd6dd6f51f57586d1e15f202",
+          "outputs/사람대기질문.md": "8bc33f591d219fa0d4784e0e3b0606d2cce45dfcb7c6d9b063ecf75d66d07226",
+          "outputs/수정제안.md": "15aafdabb293cb13d0698559ff3913456859cd650acc8043d2523edf596bac5c",
+          "outputs/실행명령.json": "f4fcbeda148a82ca109ddec11a99a6b1a513c82218203a099b24b0b54403134c"
+        }
+      }
+    },
+    "purpose": "latest_candidate_only_small_copy_pilot",
+    "timing_or_tokens": "not supplied; no estimation"
+  },
+  "facts": [
+    {
+      "stage": 1,
+      "input_files": 29,
+      "changed_originals": {
+        "작업초안/쉬운말_지식카드.json": {
+          "before": "9aaaa77ee0ab7f64db58db3276cdc8f0056f8169471ef05711c36679557963a2",
+          "after": "254bd6423812859452c60b7247bc0cdcfe7e626ff6a62b698a8218957655645f"
+        }
+      },
+      "added_backup_files": {
+        "backup/이번작업/큐레이터_소량시범_20261016/쉬운말_지식카드_v0.1.0.json": "9aaaa77ee0ab7f64db58db3276cdc8f0056f8169471ef05711c36679557963a2"
+      },
+      "diff_paths": {
+        "작업초안/쉬운말_지식카드.json": [
+          "/document_version",
+          "/records/0/version",
+          "/records/0/plain_explanation",
+          "/records/0/use_when",
+          "/records/0/example",
+          "/records/0/counterexample",
+          "/records/0/caution",
+          "/records/1/version",
+          "/records/1/plain_explanation",
+          "/records/1/use_when",
+          "/records/1/example",
+          "/records/1/counterexample",
+          "/records/1/caution",
+          "/records/2/version",
+          "/records/2/plain_explanation",
+          "/records/2/use_when",
+          "/records/2/example",
+          "/records/2/counterexample",
+          "/records/2/caution"
+        ]
+      },
+      "byte_exact_original_backups": {
+        "작업초안/쉬운말_지식카드.json": [
+          "backup/이번작업/큐레이터_소량시범_20261016/쉬운말_지식카드_v0.1.0.json"
+        ]
+      },
+      "knowledge_version": "0.1.1",
+      "index_version": "0.1.0",
+      "index_aligned_to_actual_knowledge": false,
+      "human_review_pending_preserved": true,
+      "company_approval_false_preserved": true,
+      "upstream_exact_transfers": 0,
+      "all_structural_checks_pass": true,
+      "scope": "own permitted bytes/versions/links only; semantic and human evaluation separate"
+    },
+    {
+      "stage": 2,
+      "input_files": 34,
+      "changed_originals": {
+        "작업초안/연결목록.json": {
+          "before": "2a2471e8e26c1e85953ede0bd6c514912dfc3e0e81b7996624b0118b81681147",
+          "after": "f3c5ea305279706e9127cd123df032bbf34cb8c6d25b4b30a529947609a27c83"
+        }
+      },
+      "added_backup_files": {
+        "backup/이번작업/기록관리자_소량시범_20261016/연결목록_v0.1.0.json": "2a2471e8e26c1e85953ede0bd6c514912dfc3e0e81b7996624b0118b81681147"
+      },
+      "diff_paths": {
+        "작업초안/연결목록.json": [
+          "/version",
+          "/items/0/draft_ref/document_version",
+          "/items/0/draft_ref/record_version",
+          "/items/0/draft_ref/file_sha256",
+          "/items/1/draft_ref/document_version",
+          "/items/1/draft_ref/record_version",
+          "/items/1/draft_ref/file_sha256",
+          "/items/2/draft_ref/document_version",
+          "/items/2/draft_ref/record_version",
+          "/items/2/draft_ref/file_sha256"
+        ]
+      },
+      "byte_exact_original_backups": {
+        "작업초안/연결목록.json": [
+          "backup/이번작업/기록관리자_소량시범_20261016/연결목록_v0.1.0.json"
+        ]
+      },
+      "knowledge_version": "0.1.1",
+      "index_version": "0.1.1",
+      "index_aligned_to_actual_knowledge": true,
+      "human_review_pending_preserved": true,
+      "company_approval_false_preserved": true,
+      "upstream_exact_transfers": 29,
+      "all_structural_checks_pass": true,
+      "scope": "own permitted bytes/versions/links only; semantic and human evaluation separate"
+    },
+    {
+      "stage": 3,
+      "input_files": 35,
+      "changed_originals": {},
+      "added_backup_files": {},
+      "diff_paths": {},
+      "byte_exact_original_backups": {},
+      "knowledge_version": "0.1.1",
+      "index_version": "0.1.1",
+      "index_aligned_to_actual_knowledge": true,
+      "human_review_pending_preserved": true,
+      "company_approval_false_preserved": true,
+      "upstream_exact_transfers": 34,
+      "all_structural_checks_pass": true,
+      "scope": "own permitted bytes/versions/links only; semantic and human evaluation separate"
+    }
+  ],
+  "redteam_files": [
+    {
+      "path": "독립검토/01_단계검토.json",
+      "sha256": "47b9fd876146625f488770d49c337ba8d897221fb985f4d7fa3ddc7741308aa5"
+    },
+    {
+      "path": "독립검토/02_단계검토.json",
+      "sha256": "b98ee4e8540b78d127ba69598d14123a70957362976ea7efd8473b909a2da8f8"
+    },
+    {
+      "path": "독립검토/03_단계검토.json",
+      "sha256": "df5142d7d363611fbf58bca79352992179e467cedd543d9f9740d2ee1ab1a33c"
+    }
+  ],
+  "checks": [
+    {
+      "stage": 1,
+      "expectations": [
+        {
+          "text": "최신curator3와현재자료를실제조회",
+          "passed": true,
+          "evidence": "outputs/01_자료확인.py는 지정 inputs/Phase00의 curator SKILL.md·작업기준·출력지침과 현재 안내/정정표를 실제 read_bytes한다. 01 stdout에 세 스킬·안내·정정표의 원문 전체가 포함되는 것을 현재 파일과 대조했다. 시작 SHA 23개와 정정 원문/근거 13참조, 01 실행.json exit0가 있다. 선택된 curator는 0.2.0-draft.3이며 운영 D live/full 현재성 확인으로 확대하지 않는다."
+        },
+        {
+          "text": "3카드모두짧고충실한설명저장",
+          "passed": true,
+          "evidence": "실제 작업초안과 저장후보의 bytes가 같고 6388 bytes/SHA 254bd6423812859452c60b7247bc0cdcfe7e626ff6a62b698a8218957655645f다. 세 카드의 다섯 설명 필드 15개를 직접 읽었다. 각 1~2문장, 가상 예 표시, 사용 조건·반례·주의가 있고 원문/관련 기준을 충실히 요약했다. 사실검사 pass만으로 내용 판정을 대신하지 않았다."
+        },
+        {
+          "text": "가로/세로·기능/속성·관측/원인구분유지",
+          "passed": true,
+          "evidence": "시범카드001 caution은 가로/세로를 별도 방향 속성으로 두고 선 길이≠소요시간·선후/분기 근거 조건을 유지한다. 시범카드002는 움직임의 역할로 설명하고 모든 이동과 구별하며 실제 시선 효과를 별도 검토한다. 시범카드003은 보이는 범위/정도의 변화와 불투명도·마스크·합성·배경 원인을 분리하고 관측이 충분하면 태그는 유지한다. 사전 3항목·용어판정기준 guides 3항목·선형 프로세스 관련 지식과 직접 대조했다."
+        },
+        {
+          "text": "원문/ID/상태/승인/미검수및다른입력보존",
+          "passed": true,
+          "evidence": "독립 재계산에서 원입력 29파일 중 작업초안/쉬운말_지식카드.json만 변경됐다. backup→실제 JSON diff는 설명15필드+문서/카드 판본4필드만이다. source_snapshot/term_ref/source_file/ID/state/example_kind와 human_review=pending, company_approved=false가 보존됐다. 연결목록 SHA 2a2471e8e26c1e85953ede0bd6c514912dfc3e0e81b7996624b0118b81681147의 옛 참조는 task의 정상 후속 인계이며 이번 위반이 아니다."
+        },
+        {
+          "text": "쓰기전bytebackup/전후SHA/허용diff",
+          "passed": true,
+          "evidence": "4262 bytes backup의 SHA 9aaaa77ee0ab7f64db58db3276cdc8f0056f8169471ef05711c36679557963a2가 원래 입력고정값과 일치한다. 03 코드는 backup xb 생성→byte/SHA 동일성 확인→직전 target/ID/판본·읽은 source 재대조→target 저장→실제 bytes/허용diff 순서다. 실제 backup·작업전_snapshot·쓰기직전 재대조·감사로그·03 stdout/exit0·실제 저장후 bytes가 대응한다. 독립 JSON 경로 비교도 정확히 허용19경로이며 전체 원자성/동시성 보장은 주장하지 않는다."
+        },
+        {
+          "text": "실행과미실시범위정직보고",
+          "passed": true,
+          "evidence": "01~04 실행 코드/runner/실행.json/stdout/stderr/transcript가 있고 네 Python 종료는0, stderr는 빈 파일이다. 바깥 PowerShell InitializeDefaultDrives 메시지는 transcript에 구분 보존했다. 결과.md/json은 실제 카드 저장과 미실시 R4/full R6R7/영상/API/회사 승인/성능·효과 측정, 사본의 생략 경로를 구분한다. 사람 선택지는 제안만 있고 회신/승인을 만들지 않았다. 로그의 선언과 실제 bytes 확인 범위도 구분했다."
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "expectations": [
+        {
+          "text": "실제상류파일/판본/SHA확인",
+          "passed": true,
+          "evidence": "실제 작업초안 카드와 단계01 저장 카드의 SHA가 254bd6423812859452c60b7247bc0cdcfe7e626ff6a62b698a8218957655645f로 같다. 문서·각 카드 판본은0.1.1, 원문 term_ref는0.1.0이다. 변경된 연결목록의 세 draft_ref를 실제 카드 ID·문서/record 판본·파일 SHA와 독립 대조해 모두 일치함을 확인했다. inspect/verify 코드·실제 읽기 내용/SHA·retry 로그가 대응한다."
+        },
+        {
+          "text": "연결목록만갱신하고자체판본갱신",
+          "passed": true,
+          "evidence": "입력고정34파일의 실제 SHA 재계산에서 작업초안/연결목록.json만 변경됐다. 실제 backup→저장 파일 독립 JSON diff는 items[0..2].draft_ref의 document_version/record_version/file_sha256 9경로와 자체 version 1경로뿐이다. 자체 version은0.1.0→0.1.1이고 index ID는 같다. 실제 파일은 저장후보와 byte 동일하다."
+        },
+        {
+          "text": "지식본문/원문/디자인참조/승인보존",
+          "passed": true,
+          "evidence": "대상 외 원입력33개는 초기 고정 SHA를 유지한다. 카드 SHA는 단계01과 같고 세 source_snapshot/term_ref는 실제 사전 원문/0.1.0과 일치한다. backup과 실제 연결목록의 design_reference는 동일하며 실제 한맥 profile_id=hanmac-video, version0.1.0, 파일 SHA와 맞는다. human_review=pending, company_approved=false와 연결목록의 다른 값도 보존됐다."
+        },
+        {
+          "text": "쓰기전backup/실제판본대조",
+          "passed": true,
+          "evidence": "실제 연결목록 backup은1681 bytes/SHA 2a2471e8e26c1e85953ede0bd6c514912dfc3e0e81b7996624b0118b81681147로 원 입력고정과 같다. update 코드는 원고정 전체 대조→byte backup 확인→쓰기 직전 ID/판본/bytes·카드SHA 재확인→저장→실제 bytes/참조/diff 검사 순서다. 실제 저장은0.1.1/SHA f3c5ea305279706e9127cd123df032bbf34cb8c6d25b4b30a529947609a27c83이며 별도 verify 로그와 현재 bytes가 대응한다. 최초 inspect KeyError는 입력 쓰기 함수 호출 전에 발생했고 첫 runner는 exit1에서 중단했다. retry는 기존 초기 baseline과 동일한34원입력을 확인한 뒤 진행했다."
+        },
+        {
+          "text": "검사범위를R4/fullR6R7/내용승인과구분",
+          "passed": true,
+          "evidence": "task가 로컬 지식 인덱스 전용 좁은 검사를 명시했고, 실제 코드는 자체ID/판본·실제상류 참조/SHA·허용diff·보존을 검사한다. R4/R5 전용 판본대조.py는 실제 읽기 기록에 소스가 있으나 호출하지 않았다. 결과/verify에서 full_R6_R7_verified=false, R4_R5_validator_executed=false, content_truth_or_human_approval_verified=false를 분리하며 미제공 현재진행/최종보고·조회도구를 해당 사본 범위로만 보고한다."
+        },
+        {
+          "text": "반영/보류/미검수읽기쉽게보고",
+          "passed": true,
+          "evidence": "결과.md는 갱신한 연결/자체판본과 전후SHA·backup, 보존한 본문/원문/디자인/승인, 최초실패와 출력코드수정/재시도를 구분한다. transcript와 raw command/stdout/stderr/exit는 최초 inspect1 및 retry inspect/update/verify0·보고서0을 보존한다. 미검수는pending, 새 사람 판단은불필요, 내용/회사 승인·실영상/성능 측정은미실시다. 시간/token/effect는null이고 같은 checker 재읽기를 독립 레드팀으로 부르지 않는다."
+        }
+      ]
+    },
+    {
+      "stage": 3,
+      "expectations": [
+        {
+          "text": "목적상항목선정후실제근거대조",
+          "passed": true,
+          "evidence": "검수항목_사전선정.json과 동일한 preselect.stdout에 Q-INFO-01/02,Q-SCREEN-02,Q-BRAND-02,Q-TRUST-01/02의 적용/필수 이유와 문서 범위가 있다. 실제 정본 v0.1.1의 해당6카드를 직접 읽어 목적 적합성을 확인했다. review_execution.py는 prepare/criteria_details에서 대상 내용을 열지 않으며 review_read는 선정 파일 존재를 요구한다. 실행목록·read_evidence 순서도 이에 대응한다. 초기 독립 raw 부재로 모든 초기 조회 순서를 OS 감사처럼 증명하지는 않으며 그 한계는 transcript에 명시됐다."
+        },
+        {
+          "text": "3카드구분/조건/예외의정확성검토",
+          "passed": true,
+          "evidence": "actual 15 설명 필드와 사전/용어판정기준의 3항목·관련 PROPERTY-OPACITY, 선형 프로세스 지식/심화/선택조건을 대조했다. card_reviews는 원문 JSON pointer·실제 문장·반례·허용 예외·미확인·재검토 조건을 구분한다. 방향/분기/기간, 기능/실제효과, 가시성관측/구현원인의 구분에 확인된 필수 오류가 없어 유지 제안은 정당하다. hash 통과만으로 의미를 판정하지 않았다."
+        },
+        {
+          "text": "실제영상/효과/원인/회사승인확정안함",
+          "passed": true,
+          "evidence": "결과.md/json·사람질문·수정제안은 문서 대조만 완료하며 실제 영상/가독성/모션/시선·학습효과/제작의도·원인/회사 승인·기본전환을 미실시로 둔다. 결과 outcome은 overall_ready=false, human_review=pending, company_approved=false, basic_skill_transition=false, actual_video_effect_verified=false이고 총점은null이다. 실제 사례/수치·효과를 만들지 않았다."
+        },
+        {
+          "text": "연결판본/해시와한맥/CI범위구분",
+          "passed": true,
+          "evidence": "독립 재계산에서 카드·연결목록 SHA가 2단계 실제 판본과 같고 세 ID/term_ref/source_snapshot/원문SHA·draft_ref 문서/record판본·파일SHA가 맞는다. 원문 term0.1.0과 카드/문서0.1.1을 구분했다. design_reference는 actual hanmac-video@0.1.0 profile_id/판본/SHA, reference_only_no_new_color_selected와 맞으며 웹 참고/CI 확인을 새 카드·공식색·회사 승인으로 승격하지 않는다."
+        },
+        {
+          "text": "정당한유지/필요수정/사람대기를국소보고",
+          "passed": true,
+          "evidence": "문서 의미/연결은 유지·필수수정없음으로 근거와 함께 보고하고 Q-INFO-01 실제 독자 적합성·이번 출력피드백만 판단보류한다. H-01은 대상3카드 v0.1.1/SHA·위치·확인/부족 범위를 적고 자유 답변을 요청하는 미발송/미접수 질문이다. A~D 운영범위 선택과 추천안을 사실 확인과 분리했다. 과거 R8 회신 재사용·26전체 강제·총점/전체준비완료가 없다."
+        },
+        {
+          "text": "입력보존/검토보고실제작성",
+          "passed": true,
+          "evidence": "원 입력35파일의 actual SHA가 입력고정과 모두 같고 파일집합·시작/종료 snapshot도 동일하다. 결과md/json·수정제안·사람대기질문·코드2·실행목록·stdout/stderr/metadata·read_evidence가 실제 존재한다. 모든 기존51 output은 이 독립검토 시작/종료에도 변경되지 않았다. 최초 부트스트랩4조회 독립raw 부재는 후속 재조회 증거와 구별해 기록했다. stage02의 최초 inspect exit1/KeyError 이력도 byte 동일한 상류결과와 focus_targets stdout에 보존된다."
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "date": "2026-10-16",
+    "stages": [
+      {
+        "role": "지식 큐레이터",
+        "summary": "3카드의 설명·조건·예/반례·주의 15필드와 판본만 수정. 원문과 출처 보존, 저장 전 백업·직전 대조·저장 후 검사 확인."
+      },
+      {
+        "role": "기록 관리자",
+        "summary": "상류 카드의 실제 판본·해시를 확인해 연결목록만 갱신. 원문 용어 판본과 카드 본문·디자인 참조·미검수 상태 보존."
+      },
+      {
+        "role": "적용성 검토자",
+        "summary": "관련 항목을 먼저 정하고 원문 의미·조건·반례와 실제 연결을 검토. 입력은 보존하고 사람 피드백과 실제 영상 판단은 남김."
+      }
+    ],
+    "redteam_summary": "기록 관리자 사전검사의 ID 키 가정을 실제 profile_id로 고치고 실패 코드·로그를 보존한 뒤 재검사했습니다. 게시 전에는 배타 생성과 생성 안내문까지 포함한 최종 해시 대조를 보완했습니다. 독립 재검토 후 미해결 차단 결함은 없습니다.",
+    "human_review_summary": "9쪽의 쉬운 설명과 전체 카드의 조건·반례가 팀원에게 읽기 쉬운지, 결과·근거 보고 분량이 실무에 맞는지 확인해 주세요. 이 피드백은 아직 받지 않았습니다.",
+    "next_decision": "기본 전환은 보류합니다. 우선 최신 후보를 명시한 소량 사본 사용을 유지하며 사람 출력 피드백을 받는 안을 추천합니다. 01-A는 시작하지 않았습니다.",
+    "actual_candidate_executions": 3,
+    "actual_video_executions": 0,
+    "default_promoted": false,
+    "phase01a_started": false,
+    "human_output_feedback_received": false,
+    "company_content_approved": false,
+    "duration_ms": null,
+    "total_tokens": null,
+    "scope": "sequential normal small-copy knowledge pilot only; no benchmark, efficiency claim, fresh failure injection or video performance test"
+  }
+}

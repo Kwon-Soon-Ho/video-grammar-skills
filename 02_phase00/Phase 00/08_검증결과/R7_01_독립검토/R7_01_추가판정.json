@@ -1,0 +1,254 @@
+{
+  "stage": "R7-1 정적 운영문서 두 건 추가검토",
+  "limited_completion_supported": true,
+  "unresolved_blocking_findings": [],
+  "additional_user_question_required": false,
+  "boundary": {
+    "included": [
+      "판정운영/미검수/적용필수 범위/사람질문/준비제안/판정기록 경계의 정적 검토",
+      "조사착수 메모가 선언한 부분열람·미검토·실패/규범 한계의 명시성 확인"
+    ],
+    "excluded": [
+      "웹10자료를 이번 검토에서 독립 열람하거나 저자의 실제 열람행위를 인증하는 일",
+      "개별 R7-2 품질기준·R7-3 평가조건 확정/시험 구현",
+      "실제 내용/영상·신원·회사/법적권한 검수",
+      "코드/DB/스킬/R6 입력변경·01-A·전체R7/Phase00완료"
+    ]
+  },
+  "verification": {
+    "static_conditions": 24,
+    "static_passed": 24,
+    "checks": {
+      "only_two_new_documents_reviewed": true,
+      "scope_quality_items_and_evaluation_remain_future": true,
+      "four_target_types_separate_accuracy_quality_structure": true,
+      "unreviewed_progress_not_false_outcome": true,
+      "missing_required_scope_cannot_bypass_readiness": true,
+      "required_scope_unknown_requires_clarification": true,
+      "version_and_partial_range_recorded": true,
+      "missing_evidence_is_hold_not_NA": true,
+      "no_evidence_no_confirmed_error": true,
+      "human_reply_absent_not_completed": true,
+      "required_unreviewed_or_human_pending_not_ready": true,
+      "multiple_findings_not_hidden_by_one_summary": true,
+      "scoped_next_review_proposal_not_approval": true,
+      "irrelevant_unknown_not_global_block": true,
+      "severity_separate_from_confidence": true,
+      "human_roles_not_actual_identity_or_existing_CI_scope_upgrade": true,
+      "operational_choices_fourplus_and_recommendation": true,
+      "content_review_free_answer_not_leading_fourchoice": true,
+      "hypothetical_cases_not_actual_validation": true,
+      "no_DB_or_fixed_R6_input_edit": true,
+      "research_is_partial_not_deep_review_complete": true,
+      "unread_and_failed_sources_not_asserted_read": true,
+      "web_reference_numbers_not_company_video_rules": true,
+      "implementation_and_real_effects_unverified": true
+    },
+    "scope_note": "문서감사 조건수이며 품질/영상 성능시험수가 아님.",
+    "source_unchanged": true,
+    "prior_verdict_unchanged": true
+  },
+  "findings": [],
+  "nonblocking_followup_notes": [
+    "R7-2/3에서 링크별 필요한 조항·실제 열람 위치/판본·원문 수치의 적용 조건과 반례를 개별 지식/품질항목에 연결할 것. 메모 자체로 열람깊이나 허가를 승격하지 않음.",
+    "현재운영문서의 제약은 아직 DB/실행검사에 구현된 것으로 주장하지 않으며 후속 schema/평가에서 all-NA·필수누락·부분검수·판정변경을 재현할 것."
+  ],
+  "prior_verdict": {
+    "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R7_독립검토\\R7_01_최종판정.json",
+    "sha256": "91b9826f957afcf5212dd9b0b17d01af7ca2055512ff5fc880bd218831dedb9a",
+    "scope": "그 판정의 after_hashes는 당시 snapshot이며 이후 진행안내/현황 갱신의 현재보증으로 취급하지 않음."
+  },
+  "read_depth": {
+    "13_품질검수/03_판정운영기준.md": "full_text_static_review",
+    "05_출처와검토/R7_조사착수메모.md": "full_text_static_review"
+  },
+  "line_evidence": {
+    "13_품질검수/03_판정운영기준.md": [
+      {
+        "line": 14,
+        "text": "검수 시작 전에 대상 ID·버전/해시, 목적·시청 대상·사용 환경, 요청 범위, 적용 기준과 버전, 필요한 입력을 적는다. 일부 범위만 검수했다면 일부 결과로 표시한다. 목적상 필수인 항목을 요청 범위에서 빼도 전체 준비 완료로 제안할 수 없다. 필수 범위를 정할 근거가 부족하면 범위 자체의 확인이 필요하다."
+      },
+      {
+        "line": 20,
+        "text": "| 통과 | 적용되는 기준을 필요한 근거와 검수 방식으로 확인했고 해결되지 않은 해당 오류가 없음 | 확인한 범위·근거·방법·검수자. 버전 변경 시 그대로 재사용하지 않음. |"
+      },
+      {
+        "line": 22,
+        "text": "| 판단보류 | 필요한 자료/조건/권한 있는 내용 판단이 없거나, 근거가 모순되거나, 해석이 갈림 | 무엇이 부족한지·해당 대상·질문·답할 사람의 역할·해결 조건. 확인한 부분은 별도로 기록. |"
+      },
+      {
+        "line": 25,
+        "text": "아직 검사하지 않은 항목은 위 네 가지의 완료 판정으로 만들지 않고 진행 상태를 ‘미검수’로 표시한다. 판정은 근거가 생길 때 기록한다. 사람 답변 대기 중인 항목은 판단보류로 남기되, 접수·담당·답변 상태는 판정과 구분한다."
+      },
+      {
+        "line": 29,
+        "text": "최소한 다음 정보를 함께 기록한다. 이 목록은 검수 설계이며 R4 DB 필드나 R6 고정 입력을 이번 단계에서 변경하는 것은 아니다."
+      },
+      {
+        "line": 32,
+        "text": "- 기준 ID/버전, 적용 이유 또는 비적용 이유, 해당 목적에서 필수인지와 그 근거."
+      },
+      {
+        "line": 33,
+        "text": "- 진행 상태, 항목 판정, 확인한 내용과 미확인 부분."
+      },
+      {
+        "line": 36,
+        "text": "- 사람 검수가 필요한 경우 질문 대상·버전·근거·판단 범위·대기 상태. 실제 답변이 있기 전에는 검수 완료로 적지 않는다."
+      },
+      {
+        "line": 37,
+        "text": "- 재검수 조건, 변경/정정 이력, 같은 원인·대상을 묶는 관련 오류 ID."
+      },
+      {
+        "line": 41,
+        "text": "단일 총점을 계산하지 않는다. 각 항목과 미검수/보류 목록을 먼저 보여주고 다음처럼 제안한다. 수정필요와 판단보류가 함께 있으면 둘 다 표시하며 한 상태로 숨기지 않는다."
+      },
+      {
+        "line": 43,
+        "text": "1. 적용되는 필수항목에 확인된 오류가 있으면 그 목적에 필요한 수정사항을 제시한다. 특히 잘못된 핵심 수치·의미 반전·근거 없는 주장은 미관의 장점으로 상쇄하지 않는다."
+      },
+      {
+        "line": 44,
+        "text": "2. 적용 필수항목이 미검수이거나 필요한 사람 판단·근거가 대기 중이면 아직 준비 완료로 제안하지 않는다. 부족한 부분과 해결 조건을 명시한다."
+      },
+      {
+        "line": 45,
+        "text": "3. 필수항목을 필요한 방식으로 확인했고 해결되지 않은 필수 오류/보류가 없으면, 명시된 버전·목적·범위에서 ‘다음 검토로 진행 가능’이라고 제안할 수 있다. 선택 항목의 개선점·잔여 위험은 같이 표시한다."
+      },
+      {
+        "line": 46,
+        "text": "4. 사용하지 않는 UI 방식이나 관련없는 회사의 미정 가이드까지 전체 작업의 차단 조건으로 삼지 않는다. 다만 해당 자료를 실제로 사용하기로 하면 적용 여부와 필수 조건을 다시 확인한다."
+      },
+      {
+        "line": 50,
+        "text": "## 우선순위와 사람 검수"
+      },
+      {
+        "line": 52,
+        "text": "심각도는 예쁜지의 점수가 아니라 해당 목적에서 발생하는 정보 손실과 오해의 영향으로 설명한다. 확인된 핵심 오류, 일반 수정, 선택 개선을 구분하되 획일적인 감점표는 만들지 않는다. 판단의 확실성과 오류의 영향은 별개다. 영향이 클 것 같아도 아직 의심이라면 판단보류로 기록하고 우선 확인을 요청한다."
+      },
+      {
+        "line": 54,
+        "text": "업무 사실·기획 의도는 해당 내용 담당자, 해석이 갈리는 화면/모션과 가독성은 디자인 검수자 및 필요한 경우 실제 대상 시청자, 회사 규정·사용 권한은 그 범위를 확인할 수 있는 담당자에게 맡긴다. 역할만 정했다고 실제 사람이 검수한 것으로 기록하지 않는다. 사용자의 자료 최신성 확인을 다른 내용·시안·배포 승인에 재사용하지 않는다."
+      },
+      {
+        "line": 56,
+        "text": "판단이 필요한 운영 선택은 구체적인 비교안과 최소 4개 선택지·추천안을 작성한다. 실제 내용 검수는 정답을 유도하는 네 가지 답에 억지로 맞추지 않고, 대상·버전·근거·질문 범위를 명시하여 자유 답변과 근거를 받을 수 있게 한다. 답변의 확인 범위만 보존하는 R6 정책을 따른다."
+      },
+      {
+        "line": 67,
+        "text": "| 전체 영상 검수를 요청했으나 자막 일부와 첫 프레임만 확인함 | 일부 검수 결과와 미검수 범위를 표시. 전체 영상 준비 완료 제안 불가. |"
+      }
+    ],
+    "05_출처와검토/R7_조사착수메모.md": [
+      {
+        "line": 3,
+        "text": "2026-10-15. R7-1 진행 중 다음 원문을 부분 열람했다. 여기의 링크 목록은 심층 조사 완료나 새 회사 기준 확정이 아니다. R7-2/3에서 필요한 조항·적용 범위·예·반례를 대조한 뒤 항목별 근거로 정리한다. R6의 고정 출처 목록·권한·스키마는 변경하지 않았다."
+      },
+      {
+        "line": 5,
+        "text": "| 자료 | 이번에 본 범위 | 아직 주장할 수 없는 것 |"
+      },
+      {
+        "line": 9,
+        "text": "| [W3C 색 사용 설명](https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html) | 색만으로 의미를 구분하는 경우와 중복 단서 | 모든 장식/CI 색의 강제 변경 |"
+      },
+      {
+        "line": 12,
+        "text": "| [W3C 한국어 조판 요구사항](https://www.w3.org/TR/klreq/) | 문서 상태·7.1 줄바꿈 관련 부분·6.6.1 위첨자 관련 부분 | W3C 권고안 전체 검증, 영상 서체/줄 수 고정값. 열람 당시 Group Note Draft이므로 상태를 함께 남길 것 |"
+      },
+      {
+        "line": 13,
+        "text": "| [BIPM SI Brochure](https://www.bipm.org/en/publications/si-brochure) | 공식 소개·갱신 표기·연결된 영어 PDF 제목/판본 확인 | 단위 표기 세부 조항을 새로 모두 검토했다는 주장. 해당 조항 추가 대조 필요 |"
+      },
+      {
+        "line": 16,
+        "text": "| [BBC 자막 가이드 주소](https://www.bbc.co.uk/accessibility/forproducts/guides/subtitles/) | 열람 시도 실패 | 본문을 읽거나 자막 수치를 확인했다는 주장. 이번 근거로 사용하지 않음 |"
+      },
+      {
+        "line": 18,
+        "text": "W3C Understanding 문서는 기준의 해설이며 문서별 적용 문맥을 확인해야 한다. 현재는 웹 가이드를 회사 영상 납품 규정으로 승격하지 않는다. 실제 영상·시나리오·시청 환경은 아직 없어 내용·가독성·동기화·섬광에 대한 실제 판정은 수행하지 않았다."
+      }
+    ]
+  },
+  "links": [
+    {
+      "file": "13_품질검수/03_판정운영기준.md",
+      "relative_path": "00_R7_단계별진행안내.md",
+      "exists": true
+    },
+    {
+      "file": "13_품질검수/03_판정운영기준.md",
+      "relative_path": "02_품질판정방식_검토안.md",
+      "exists": true
+    },
+    {
+      "file": "13_품질검수/03_판정운영기준.md",
+      "relative_path": "01_기존자료와_보완목록.md",
+      "exists": true
+    },
+    {
+      "file": "05_출처와검토/R7_조사착수메모.md",
+      "url": "https://www.w3.org/WAI/media/av/captions/",
+      "independently_opened_in_this_additional_review": false
+    },
+    {
+      "file": "05_출처와검토/R7_조사착수메모.md",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "independently_opened_in_this_additional_review": false
+    },
+    {
+      "file": "05_출처와검토/R7_조사착수메모.md",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html",
+      "independently_opened_in_this_additional_review": false
+    },
+    {
+      "file": "05_출처와검토/R7_조사착수메모.md",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html",
+      "independently_opened_in_this_additional_review": false
+    },
+    {
+      "file": "05_출처와검토/R7_조사착수메모.md",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold.html",
+      "independently_opened_in_this_additional_review": false
+    },
+    {
+      "file": "05_출처와검토/R7_조사착수메모.md",
+      "url": "https://www.w3.org/TR/klreq/",
+      "independently_opened_in_this_additional_review": false
+    },
+    {
+      "file": "05_출처와검토/R7_조사착수메모.md",
+      "url": "https://www.bipm.org/en/publications/si-brochure",
+      "independently_opened_in_this_additional_review": false
+    },
+    {
+      "file": "05_출처와검토/R7_조사착수메모.md",
+      "url": "https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall",
+      "independently_opened_in_this_additional_review": false
+    },
+    {
+      "file": "05_출처와검토/R7_조사착수메모.md",
+      "url": "https://scikit-learn.org/stable/common_pitfalls.html#data-leakage",
+      "independently_opened_in_this_additional_review": false
+    },
+    {
+      "file": "05_출처와검토/R7_조사착수메모.md",
+      "url": "https://www.bbc.co.uk/accessibility/forproducts/guides/subtitles/",
+      "independently_opened_in_this_additional_review": false
+    }
+  ],
+  "actual_human_content_review_performed": false,
+  "actual_video_analyzed": false,
+  "company_approved": false,
+  "permission_granted": false,
+  "before_hashes": {
+    "13_품질검수/03_판정운영기준.md": "2a8e21f028e18398ab2a6544cc429e585ab6a0a59abd370dbacd7991e141b7c1",
+    "05_출처와검토/R7_조사착수메모.md": "cac849316ee2378263bcdafd7d60c93d31adb96acdf9f2dcb09f1ae44b1a1fc1"
+  },
+  "after_hashes": {
+    "13_품질검수/03_판정운영기준.md": "2a8e21f028e18398ab2a6544cc429e585ab6a0a59abd370dbacd7991e141b7c1",
+    "05_출처와검토/R7_조사착수메모.md": "cac849316ee2378263bcdafd7d60c93d31adb96acdf9f2dcb09f1ae44b1a1fc1"
+  }
+}

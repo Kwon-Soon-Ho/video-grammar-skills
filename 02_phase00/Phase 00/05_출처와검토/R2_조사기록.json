@@ -1,0 +1,79 @@
+{
+  "version": "0.1.0",
+  "retrieved_on": "2026-10-14",
+  "sources": [
+    {
+      "id": "R2-AWS-SHOT",
+      "title": "AWS video segments",
+      "url": "https://docs.aws.amazon.com/rekognition/latest/dg/segments.html",
+      "sections": [
+        "Shot detection",
+        "Technical cues / Content"
+      ],
+      "scope": "촬영연속shot과기술구간검출. 설명내용구간과동일시하지않음.",
+      "used_for": "컷/촬영shot과논리구간의구분",
+      "not_used_for": "AWS기능채택·프레임정확도검증·사내영상분류전체의표준화"
+    },
+    {
+      "id": "R2-ADOBE-SHOT",
+      "title": "Adobe shot list",
+      "url": "https://www.adobe.com/creativecloud/video/discover/shot-list.html",
+      "sections": [
+        "What belongs on a shot list / Shot number and scene number"
+      ],
+      "scope": "촬영계획에서shot/scene구분. 모션그래픽의4단위는프로젝트설계.",
+      "used_for": "장면/촬영숏의범위혼동예방",
+      "not_used_for": "물리촬영단위를모든모션그래픽에강제"
+    },
+    {
+      "id": "R2-W3C-TARGET",
+      "title": "Web Annotation Data Model",
+      "url": "https://www.w3.org/TR/annotation-model/",
+      "sections": [
+        "4 Specific Resources",
+        "4.2.1 Fragment Selector"
+      ],
+      "scope": "원자료와선택범위의관계. W3C State는자료의원하는representation이며우리화면상태용어와다름.",
+      "used_for": "무엇의어느범위에태그를붙였는지구분",
+      "not_used_for": "우리DB의W3C준수·우리4단위표준인증"
+    },
+    {
+      "id": "R2-W3C-EASING",
+      "title": "CSS Easing Functions Level 1",
+      "url": "https://www.w3.org/TR/css-easing-1/",
+      "sections": [
+        "2 Easing functions",
+        "2.1 linear",
+        "2.2 cubic Bezier"
+      ],
+      "scope": "시간진행값과출력진행값의함수. 화면관측이CSS코드나정확한제어점을증명하지않음.",
+      "used_for": "시간곡선과여러사건의등장순서를구분",
+      "not_used_for": "웹기본베지어수치·회사모션시간채택"
+    },
+    {
+      "id": "R2-W3C-OPACITY",
+      "title": "SVG2 Rendering Model",
+      "url": "https://www.w3.org/TR/SVG2/render.html",
+      "sections": [
+        "2.6 Compositing and blending / opacity"
+      ],
+      "scope": "객체/그룹합성과불투명도. 결과픽셀에배경/합성/가림이영향을주므로표시변화와구현값구분.",
+      "used_for": "가시성·opacity추정·경계공개의판정한계",
+      "not_used_for": "SVG/AE구현을영상픽셀에서자동확정"
+    },
+    {
+      "id": "R2-PROJECT",
+      "title": "기존 용어사전과 사용자 선택",
+      "url": null,
+      "sections": [
+        "공통용어사전0.1.1 / 76개전문",
+        "2026-10-14 기록단위A안"
+      ],
+      "scope": "분류축/용어/4단위/예시의프로젝트설계. 회사규칙승인아님.",
+      "used_for": "75개운영용어의조건/설명용예",
+      "not_used_for": "실영상효과·실제제작의도검증"
+    }
+  ],
+  "depth": "웹원문의위명시절을읽고국내사내정보영상맥락으로해석. 외부문서전문·용어전수국제표준확인아님.",
+  "research_boundary": "애니메이션원칙/레이아웃미학/스킬실행코드의심층검토는R3. 실제분석API채택은01-A."
+}

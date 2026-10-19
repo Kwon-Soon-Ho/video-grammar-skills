@@ -1,0 +1,877 @@
+{
+  "contract_version": "0.1.0",
+  "source_type": "internal",
+  "asset": {
+    "id": "자료013",
+    "version": "sha256-31c4c47744b8",
+    "sha256": "31c4c47744b8cdfef935b167a1b04df80e13523cfc8550205a8495b4267cc192"
+  },
+  "timelines": [
+    {
+      "id": "자료013-T",
+      "asset_ref": "자료013",
+      "stream_index": 0,
+      "duration": {
+        "num": 971,
+        "den": 60
+      },
+      "duration_evidence_refs": [
+        "A2-MP4-PREFLIGHT-자료013"
+      ],
+      "origin": {
+        "method": "verified_offset",
+        "pts": "1000",
+        "time_base": {
+          "num": 1,
+          "den": 60000
+        },
+        "evidence_refs": [
+          "A2-MP4-PREFLIGHT-자료013",
+          "A2-DECODE-CROSSCHECK-자료013"
+        ],
+        "limitations": "Only a single rate-1 edit, no empty edit, progressive MP4. Not support for arbitrary edits or verified audio sync."
+      },
+      "frame_rate_mode": "unknown",
+      "nominal_fps": null,
+      "frame_count": null,
+      "limitations": "Frame-count table metadata is recorded separately; full video decoding not performed."
+    }
+  ],
+  "periods": [
+    {
+      "id": "자료013-SAMPLED",
+      "timeline_ref": "자료013-T",
+      "parent_ref": null,
+      "kind": "range",
+      "start": {
+        "num": 0,
+        "den": 1
+      },
+      "end": {
+        "num": 931,
+        "den": 60
+      },
+      "uncertainty": null,
+      "unknown_reason": null
+    }
+  ],
+  "frames": [
+    {
+      "id": "자료013-initial-0",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "1000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 0,
+      "requested": {
+        "num": 0,
+        "den": 1
+      },
+      "actual": {
+        "num": 0,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-initial-60",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "61000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 60,
+      "requested": {
+        "num": 1,
+        "den": 1
+      },
+      "actual": {
+        "num": 1,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-initial-120",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "121000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 120,
+      "requested": {
+        "num": 2,
+        "den": 1
+      },
+      "actual": {
+        "num": 2,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-initial-180",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "181000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 180,
+      "requested": {
+        "num": 3,
+        "den": 1
+      },
+      "actual": {
+        "num": 3,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-initial-240",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "241000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 240,
+      "requested": {
+        "num": 4,
+        "den": 1
+      },
+      "actual": {
+        "num": 4,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-initial-300",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "301000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 300,
+      "requested": {
+        "num": 5,
+        "den": 1
+      },
+      "actual": {
+        "num": 5,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-initial-360",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "361000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 360,
+      "requested": {
+        "num": 6,
+        "den": 1
+      },
+      "actual": {
+        "num": 6,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-initial-420",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "421000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 420,
+      "requested": {
+        "num": 7,
+        "den": 1
+      },
+      "actual": {
+        "num": 7,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-initial-480",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "481000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 480,
+      "requested": {
+        "num": 8,
+        "den": 1
+      },
+      "actual": {
+        "num": 8,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-initial-540",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "541000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 540,
+      "requested": {
+        "num": 9,
+        "den": 1
+      },
+      "actual": {
+        "num": 9,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-initial-600",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "601000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 600,
+      "requested": {
+        "num": 10,
+        "den": 1
+      },
+      "actual": {
+        "num": 10,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-initial-660",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "661000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 660,
+      "requested": {
+        "num": 11,
+        "den": 1
+      },
+      "actual": {
+        "num": 11,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-initial-720",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "721000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 720,
+      "requested": {
+        "num": 12,
+        "den": 1
+      },
+      "actual": {
+        "num": 12,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-initial-780",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "781000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 780,
+      "requested": {
+        "num": 13,
+        "den": 1
+      },
+      "actual": {
+        "num": 13,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-initial-840",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "841000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 840,
+      "requested": {
+        "num": 14,
+        "den": 1
+      },
+      "actual": {
+        "num": 14,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-initial-900",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "901000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 900,
+      "requested": {
+        "num": 15,
+        "den": 1
+      },
+      "actual": {
+        "num": 15,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-initial-930",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "931000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 930,
+      "requested": {
+        "num": 31,
+        "den": 2
+      },
+      "actual": {
+        "num": 31,
+        "den": 2
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-detail-180",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "181000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 180,
+      "requested": {
+        "num": 3,
+        "den": 1
+      },
+      "actual": {
+        "num": 3,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-detail-195",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "196000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 195,
+      "requested": {
+        "num": 13,
+        "den": 4
+      },
+      "actual": {
+        "num": 13,
+        "den": 4
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-detail-210",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "211000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 210,
+      "requested": {
+        "num": 7,
+        "den": 2
+      },
+      "actual": {
+        "num": 7,
+        "den": 2
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-detail-225",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "226000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 225,
+      "requested": {
+        "num": 15,
+        "den": 4
+      },
+      "actual": {
+        "num": 15,
+        "den": 4
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-detail-240",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "241000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 240,
+      "requested": {
+        "num": 4,
+        "den": 1
+      },
+      "actual": {
+        "num": 4,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-detail-255",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "256000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 255,
+      "requested": {
+        "num": 17,
+        "den": 4
+      },
+      "actual": {
+        "num": 17,
+        "den": 4
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-detail-270",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "271000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 270,
+      "requested": {
+        "num": 9,
+        "den": 2
+      },
+      "actual": {
+        "num": 9,
+        "den": 2
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-detail-285",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "286000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 285,
+      "requested": {
+        "num": 19,
+        "den": 4
+      },
+      "actual": {
+        "num": 19,
+        "den": 4
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-detail-300",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "301000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 300,
+      "requested": {
+        "num": 5,
+        "den": 1
+      },
+      "actual": {
+        "num": 5,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-detail-315",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "316000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 315,
+      "requested": {
+        "num": 21,
+        "den": 4
+      },
+      "actual": {
+        "num": 21,
+        "den": 4
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-detail-330",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "331000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 330,
+      "requested": {
+        "num": 11,
+        "den": 2
+      },
+      "actual": {
+        "num": 11,
+        "den": 2
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-detail-345",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "346000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 345,
+      "requested": {
+        "num": 23,
+        "den": 4
+      },
+      "actual": {
+        "num": 23,
+        "den": 4
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-detail-360",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "361000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 360,
+      "requested": {
+        "num": 6,
+        "den": 1
+      },
+      "actual": {
+        "num": 6,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-detail-375",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "376000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 375,
+      "requested": {
+        "num": 25,
+        "den": 4
+      },
+      "actual": {
+        "num": 25,
+        "den": 4
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-detail-390",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "391000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 390,
+      "requested": {
+        "num": 13,
+        "den": 2
+      },
+      "actual": {
+        "num": 13,
+        "den": 2
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-detail-405",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "406000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 405,
+      "requested": {
+        "num": 27,
+        "den": 4
+      },
+      "actual": {
+        "num": 27,
+        "den": 4
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    },
+    {
+      "id": "자료013-detail-420",
+      "timeline_ref": "자료013-T",
+      "period_ref": "자료013-SAMPLED",
+      "role": "within_period",
+      "source_pts": "421000",
+      "pts_kind": "original_pts",
+      "time_base": {
+        "num": 1,
+        "den": 60000
+      },
+      "source_frame_ordinal": 420,
+      "requested": {
+        "num": 7,
+        "den": 1
+      },
+      "actual": {
+        "num": 7,
+        "den": 1
+      },
+      "mapping_state": "mapped",
+      "selection_policy": "at_or_after",
+      "limitations": "source_pts is reconstructed original container CTS from stts/ctts, not PyAV edited PTS. All decoded PTS in this window crosschecked after elst offset. Sparse observation only; image hash in A2 sidecar."
+    }
+  ],
+  "notes": "Actual internal media timing draft only. Range denotes extraction extent, not continuous semantic analysis. Boundary/measurement uncertainty remains unknown. Human content review is separate; integrated R4-2/R4-3 record not built."
+}

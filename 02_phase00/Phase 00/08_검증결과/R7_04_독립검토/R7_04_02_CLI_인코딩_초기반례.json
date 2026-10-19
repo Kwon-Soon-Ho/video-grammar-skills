@@ -1,0 +1,8 @@
+{
+  "condition": "CLI invalid missing base path with emoji under cp949",
+  "exit_code": 1,
+  "structured_json_output": false,
+  "stdout_hex": "",
+  "stderr": "Traceback (most recent call last):\r\n  File \"D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\07_실행도구\\R7_연결확인.py\", line 164, in <module>\r\n    result=inspect(args.base);print(json.dumps(result,ensure_ascii=False,indent=2));raise SystemExit(0 if result['valid'] else 1)\r\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nUnicodeEncodeError: 'cp949' codec can't encode character '\\U0001f600' in position 296: illegal multibyte sequence\r\n",
+  "actual_video_analysis": false
+}

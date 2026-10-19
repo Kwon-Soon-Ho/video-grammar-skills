@@ -1,0 +1,89 @@
+{
+  "reviewed_at": "2026-10-14",
+  "reviewer": "독립 R2 레드팀 / r_audit_data",
+  "review_kind": "파일 독해·메모리 내 대조와 설명용 반례 검토",
+  "d_files_modified": false,
+  "taxonomy_ref": "company-video-taxonomy@0.1.1",
+  "taxonomy_sha256": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+  "excluded": [
+    "D 파일 수정",
+    "외부 웹 재탐색·원문 재확인",
+    "신규 스킬 실행",
+    "R4 스키마 변경",
+    "R3 품질 규칙 설계",
+    "01-A 분석 구현",
+    "실제 영상 판정·회사 승인"
+  ],
+  "stage": "R2-2",
+  "decision": "needs_clarification",
+  "targets": [
+    "01_공통용어/분류운영규칙.json",
+    "01_공통용어/02_기록단위와분류축.md"
+  ],
+  "coverage": {
+    "units_read": 4,
+    "axis_mappings_read": 8,
+    "classification_states_read": 5,
+    "reason_codes_read": 8,
+    "checked": "asset/segment/state/beat 경계, 컷 보조, 프레임과 상태 분리, 교차 상태 동작, 중첩 범위, 미분류 의미와 기존 배열 계약 분리",
+    "not_checked": "R4 실제 저장 필드·참조 무결성 구현과 R2-4 연습 기록은 본 단계 범위가 아니다."
+  },
+  "checks": [
+    {
+      "id": "frame_not_state",
+      "passed": true,
+      "evidence": "프레임은 표본이고 state의 명시 필드는 현재 없다고 분명히 기록."
+    },
+    {
+      "id": "cuts_are_auxiliary",
+      "passed": true,
+      "evidence": "컷 없이 주제가 바뀔 수 있고 컷이 있어도 같은 설명을 이어갈 수 있다고 명시."
+    },
+    {
+      "id": "axis_guide_units",
+      "passed": true,
+      "evidence": "75개 가이드의 axis와 units를 사전/axis_units에 메모리 대조. 불일치0."
+    },
+    {
+      "id": "no_schema_mutation_instruction",
+      "passed": true,
+      "evidence": "null은 의미 상태이며 기존 classification 배열에 null을 넣으라는 지시가 아니라고 명시."
+    },
+    {
+      "id": "scope_no_auto_inheritance",
+      "passed": true,
+      "evidence": "단위별 태그의 자동 합산/상속 금지. 같은 화면의 지역/겹친 상태는 대상 범위로 구분."
+    }
+  ],
+  "findings": [
+    {
+      "id": "R2-02-F1",
+      "severity": "medium",
+      "location": "분류운영규칙.json units[id=beat].meaning/boundary; axis_units.timing",
+      "term_ids": [
+        "TIME-HOLD",
+        "TIME-STILL"
+      ],
+      "problem": "beat는 하나의 동작 또는 동작 묶음으로 설명하지만 timing 용어에는 정보 유지와 변화 없음이 포함된다. 움직이지 않는 유지/정지 범위를 어느 동작에 붙일지 처음 사용자에게 불명확하다.",
+      "counterexample": "설명 문구가 5초 동안 그대로 유지되고 해당 영역은 정지한다. 생성된 움직임이 없다는 이유로 beat를 만들지 않으면 TIME-HOLD/STILL을 붙일 합법 단위가 없어진다.",
+      "suggested_fix": "사용자 A안의 쉬운 이름은 유지하되 beat 설명에 '변화뿐 아니라 유지/정지 등 의미 있는 시간 사건도 포함하며 고정된 최대 길이를 뜻하지 않는다'를 추가. state의 유지와 beat에서 평가하는 특정 대상/관측량의 지속·정지는 대상 범위로 구분.",
+      "requires_taxonomy_change": false
+    },
+    {
+      "id": "R2-02-F2",
+      "severity": "medium",
+      "location": "분류운영규칙.json states/reason_codes/unclassified_policy",
+      "term_ids": [
+        "PROPERTY-SIZE",
+        "PROPERTY-VISIBILITY",
+        "PROPERTY-MASK",
+        "PROPERTY-LINE-REVEAL",
+        "STYLE-3D"
+      ],
+      "problem": "implementation_unknown이 태그 자체의 미분류 이유인지, 이미 관측된 태그에 붙는 별도 한계인지 명시하지 않았다. 여러 가이드의 abstain_when도 구현 원인 미확정을 말하므로 전체 태그를 기권하는 것으로 오독할 수 있다.",
+      "counterexample": "동일 도형이 확실히 커졌지만 AE Scale인지 카메라 접근인지는 모른다. PROPERTY-SIZE까지 빈 term_ids/unknown으로 처리하면 관측 사실이 사라진다. 반대로 PROPERTY-OPACITY는 합성/원본 근거 없을 때 실제로 기권해야 한다.",
+      "suggested_fix": "'용어 판정 상태는 요청한 관측 주장에 대한 상태다. 관측은 충분하고 구현만 모르면 관측 태그는 classified로 유지하고 구현 주장은 미확정 한계로 남긴다. 관측량/대상/시간 자체가 부족하면 unknown'을 명시. PROPERTY-OPACITY·STYLE-PHOTO 등 출처가 정의에 필요한 항목은 해당 증거 부족 시 기권.",
+      "requires_taxonomy_change": false
+    }
+  ]
+}

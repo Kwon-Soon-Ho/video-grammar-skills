@@ -1,0 +1,41 @@
+{
+  "grader": "root inline AI visual review",
+  "human_approved": false,
+  "expectations": [
+    {
+      "text": "전경의 시점/원근 변화와 크레인 자체 동작을 구분; 후반 접근에 따른 확대·화면 위치 변화를 기록",
+      "passed": true,
+      "evidence": "scene/crane: 배경과 함께 확대, 독립 장비 운동 미확정; outputs/observations.json 및 원본 ROI 대조"
+    },
+    {
+      "text": "상단 제목의 왼쪽 선/패널→문구/밑제목 순서 및 테두리·색 변화",
+      "passed": false,
+      "evidence": "배너 색·크기와 문구는 기록했으나 배너 밖 얇은 외곽선이 따로 그려지는 동작은 누락. root V01 1.2/1.6/2/2.4 ROI와 대조.; outputs/observations.json 및 원본 ROI 대조"
+    },
+    {
+      "text": "수면의 시간 변화 등 주 대상 밖의 동작을 검사",
+      "passed": true,
+      "evidence": "water: 시점별 수면 변화; outputs/observations.json 및 원본 ROI 대조"
+    },
+    {
+      "text": "문서 Scene1 0–10초의 의도를 관측 근거로 대체하지 않고 실제 검사창 0–8초로 한정",
+      "passed": true,
+      "evidence": "DOC063 slide2와 부분 대응, 0–8초 검사창 명시; outputs/observations.json 및 원본 ROI 대조"
+    },
+    {
+      "text": "가감속 주장에는 같은 특징의 실제 시간 표본; 불명확한 원인·곡선은 유보",
+      "passed": true,
+      "evidence": "근거 부족한 곡선/카메라 구현 유보; outputs/observations.json 및 원본 ROI 대조"
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 1,
+    "total": 5,
+    "pass_rate": 0.8
+  },
+  "interpretation": "이 기준에 한정된 진단. 일반 정확도·독립표본 합격률 아님. JSON/카탈로그 통과와 내용판정 별개.",
+  "eval_feedback": {
+    "overall": "자막 전환 기준은 최초 동결 목록에 없던 실제 오류로 양쪽 결과에 동일하게 사후 추가. V04 기준의 필터 오기는 폴더로 해석. 세밀한 이징 유보는 근거가 부족하면 실패로 강제하지 않음."
+  }
+}

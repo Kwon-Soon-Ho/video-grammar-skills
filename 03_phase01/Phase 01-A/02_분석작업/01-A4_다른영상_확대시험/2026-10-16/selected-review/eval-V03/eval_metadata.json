@@ -1,0 +1,14 @@
+{
+  "eval_id": 3,
+  "eval_name": "V03",
+  "prompt": "V03: case-plan.json 지정 구간의 화면 구성·문구·정보 관계·모션(이동 방향·등장 순서·가감속, 주변/내부 동작)을 원본 근거와 연결해 분석하고 누락·오분석을 검토한다. 해당 문서가 있으면 영상과 대조하고, V06S/W는 동일 장면 상태 기준으로 변형을 비교한다. AE 키프레임은 제공되지 않는다.",
+  "prompt_record_kind": "normalized task summary; original dispatch retained in conversation",
+  "assertions": [
+    "기능별 그룹화→정보전달 방식의 이미지화 제목의 위/아래 행별 순차 교체",
+    "기존 빈 UI에서 원·호·십자·사선/화살표 및 오른쪽 속성 패널/노란 주석이 나타나는 변화",
+    "본문/불릿이 순차 선명해짐; UI 외곽 정지와 내부 전환 구별",
+    "그룹화/이미지화 문서 내용 대응과 실제 시간 차이를 분리",
+    "가감속은 실제 위치/가시성별 근거; 실제 소프트웨어 입력을 했다고 추정하지 않음"
+  ],
+  "criteria_origin": "root-audit/criteria-frozen.json; human gold 아님"
+}

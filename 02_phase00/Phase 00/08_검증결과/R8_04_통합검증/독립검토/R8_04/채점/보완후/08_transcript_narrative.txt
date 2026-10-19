@@ -1,0 +1,131 @@
+# 실제 작업 기록
+
+작업범위: 지정 격리 run의 작업초안/검토지식.json만. Python -B -X utf8.
+
+사전 읽기: task.txt, 지정 IO 안내와 작업범위, 지정 reviewer SKILL.md 및 두 references, 대상 초안, DB 현재안내/정정표, 레이아웃지식. 원문 열람만 수행. 다른 run/평가/설정/서비스상태/다른 스킬/운영 DB는 열지 않음.
+현재안내의 full 원문/근거 사본은 제공되지 않아 정정 적용 안 함. 기존 읽기 검사기(*검증*.py) 탐색 결과 없음. 내용/회사/영상 품질 검수는 수행하지 않음.
+후보 생성: 원문 bytes에서 version과 guidance만 교체. 다른 필드와 공백/개행 보존.
+
+## 01-read
+
+인수: `["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-B", "-X", "utf8", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-08-검토자_검사실패복구\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-08-검토자_검사실패복구\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-08-검토자_검사실패복구\\candidate\\outputs\\01-read.request.json"]`
+
+요청: {"op": "read", "path": "작업초안/검토지식.json"}
+
+exit: 0
+
+stdout:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stderr:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 02-backup
+
+인수: `["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-B", "-X", "utf8", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-08-검토자_검사실패복구\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-08-검토자_검사실패복구\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-08-검토자_검사실패복구\\candidate\\outputs\\02-backup.request.json"]`
+
+요청: {"op": "backup", "path": "작업초안/검토지식.json", "backup_path": "backup/이번작업/검토지식_변경전_0.1.0.json", "expected_sha256": "851857164896eb05174617fb3a6571b46617f5e69ecf6889b386d08c6273e554"}
+
+exit: 0
+
+stdout:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stderr:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 03-write
+
+인수: `["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-B", "-X", "utf8", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-08-검토자_검사실패복구\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-08-검토자_검사실패복구\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-08-검토자_검사실패복구\\candidate\\outputs\\03-write.request.json"]`
+
+요청: {"op": "write", "path": "작업초안/검토지식.json", "candidate_path": "outputs/후보.json", "expected_sha256": "851857164896eb05174617fb3a6571b46617f5e69ecf6889b386d08c6273e554"}
+
+exit: 0
+
+stdout:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stderr:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 04-validate
+
+인수: `["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-B", "-X", "utf8", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-08-검토자_검사실패복구\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-08-검토자_검사실패복구\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-08-검토자_검사실패복구\\candidate\\outputs\\04-validate.request.json"]`
+
+요청: {"op": "validate", "paths": ["작업초안/검토지식.json"]}
+
+exit: 2
+
+stdout:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stderr:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 05-current-before-restore
+
+인수: `["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-B", "-X", "utf8", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-08-검토자_검사실패복구\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-08-검토자_검사실패복구\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-08-검토자_검사실패복구\\candidate\\outputs\\05-current-before-restore.request.json"]`
+
+요청: {"op": "read", "path": "작업초안/검토지식.json"}
+
+exit: 0
+
+stdout:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stderr:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 06-restore
+
+인수: `["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-B", "-X", "utf8", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-08-검토자_검사실패복구\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-08-검토자_검사실패복구\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-08-검토자_검사실패복구\\candidate\\outputs\\06-restore.request.json"]`
+
+요청: {"op": "restore", "path": "작업초안/검토지식.json", "backup_path": "backup/이번작업/검토지식_변경전_0.1.0.json", "expected_sha256": "884d7693232d05f325bc7f895dfe031aa4a66258bccc703792ceb64e60c196a6"}
+
+exit: 0
+
+stdout:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stderr:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 07-read-restored
+
+인수: `["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-B", "-X", "utf8", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-08-검토자_검사실패복구\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-08-검토자_검사실패복구\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-08-검토자_검사실패복구\\candidate\\outputs\\07-read-restored.request.json"]`
+
+요청: {"op": "read", "path": "작업초안/검토지식.json"}
+
+exit: 0
+
+stdout:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stderr:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 08-validate-restored
+
+인수: `["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-B", "-X", "utf8", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-08-검토자_검사실패복구\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-08-검토자_검사실패복구\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-08-검토자_검사실패복구\\candidate\\outputs\\08-validate-restored.request.json"]`
+
+요청: {"op": "validate", "paths": ["작업초안/검토지식.json"]}
+
+exit: 0
+
+stdout:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stderr:
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+현재 상태 최종현재상태: {"sha256": "851857164896eb05174617fb3a6571b46617f5e69ecf6889b386d08c6273e554", "byte_length": 453, "content": {"id": "LOCAL-REPEAT-DRAFT", "version": "0.1.0", "status": "draft", "purpose": "동등 비교의 설명용 지식 초안", "guidance": "동등한 조건을 비교할 때 같은 위치·단위·척도를 유지할 수 있다.", "counterexample": "관계가 다를 때 같은 틀이 의미를 왜곡하면 다른 구조가 필요하다.", "source_scope": "제공된 회의 메모 범위. 설명용, 회사/효과 승인 아님."}, "json_parse": "pass"}
+
+정본/검수 해시 비교: {"checked_files": 70, "unchanged": true, "changes": []}
+
+## 실제 서비스 로그 및 최종 확인
+
+서비스이벤트/001.json~008.json을 결과 확인용으로 읽고 outputs/실제서비스이벤트에 원바이트로 보존. 설정/서비스상태는 열지 않음. 실제 로그의 후보 소유 SHA, 복구 전 현재 SHA, 복구 후 원본 SHA를 확인.
+
+작업 순서: 원문 읽기/후보 생성 → CLI read → backup → write → validate 실패(exit2) → 현재 read로 후보 소유 일치 확인 → restore → 복구 read → 복구 원본 validate 통과 → 원문 bytes/SHA 및 보호 자료 70개 해시 비교 → 실제 서비스 로그 보존 → 결과 작성.
+
+최종 파일은 원래 0.1.0과 동일, 원본 SHA 851857164896eb05174617fb3a6571b46617f5e69ecf6889b386d08c6273e554; 요청 변경은 미반영. 부분/미복구 상태 없음. 후보 통과/회사 승인으로 주장하지 않음. 실제 CLI 8회, 종료값 0,0,0,2,0,0,0,0. 모든 CLI 인수는 각 command.json과 위 본문에 보존됨.

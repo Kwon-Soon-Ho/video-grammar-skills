@@ -1,0 +1,96 @@
+{
+  "version": "0.1.0",
+  "date": "2026-10-15",
+  "user_decision": "A: 좌측위 화면경계(0,0),raster px 기본, pixel center(0.5,0.5), normalized 명시변환",
+  "scope": "선택한 공식 문서 관련 절의 본문 조사. 전체표준/전체필터/실영상실험 검토가 아님.",
+  "sources": [
+    {
+      "id": "R4-SP-W3C",
+      "url": "https://www.w3.org/TR/media-frags/",
+      "sections": [
+        "4.2.2 spatial dimension"
+      ],
+      "read_depth": "관련절본문",
+      "verified": [
+        "rect xywh와pixel/percent 구분",
+        "원점좌측위",
+        "영상표현/비율의적용고려"
+      ],
+      "project_adaptation": [
+        "DB는raw raster edge px와0~1 normalized를구분",
+        "W3C percent/표시좌표와자동동일시안함"
+      ]
+    },
+    {
+      "id": "R4-SP-SVG",
+      "url": "https://www.w3.org/TR/SVG2/coords.html",
+      "sections": [
+        "8.4 initial coordinate system",
+        "viewBox/preserveAspectRatio 관련 본문"
+      ],
+      "read_depth": "관련절본문",
+      "verified": [
+        "origin/xright/ydown",
+        "viewport/user좌표와변환구분",
+        "균등스케일과정렬/여백의별도관리"
+      ],
+      "project_adaptation": [
+        "CSS px가아닌명시된frame raster px",
+        "직교affine변환의순서와space ID"
+      ]
+    },
+    {
+      "id": "R4-SP-FFMPEG",
+      "url": "https://ffmpeg.org/ffmpeg-filters.html",
+      "sections": [
+        "crop/x/y/keep_aspect/exact",
+        "transpose/clock/cclock",
+        "scale/force_original_aspect_ratio/force_divisible_by/reset_sar"
+      ],
+      "read_depth": "관련옵션본문",
+      "verified": [
+        "crop의effective정수좌표/서브샘플링반올림주의",
+        "회전과뒤집기구분",
+        "비율유지·가분성·SAR보정은출력크기와관련"
+      ],
+      "project_adaptation": [
+        "params는요청값이아닌확인된effective값",
+        "알수없으면unknown",
+        "저장된프로젝트명시cw방향으로정규화"
+      ],
+      "unreviewed": [
+        "실제설치FFmpeg버전/명령실행",
+        "모든필터·픽셀보간·chroma/coded clean aperture 구현"
+      ]
+    },
+    {
+      "id": "R4-SP-LOCAL",
+      "paths": [
+        "04_기록규격/시간프레임_스키마.json",
+        "04_기록규격/근거주장_스키마.json"
+      ],
+      "read_depth": "기존계약/검사/인계본문",
+      "verified": [
+        "frame/time/material/target pin",
+        "coordinate_space_ref 현재미해결gate"
+      ],
+      "project_adaptation": [
+        "이전규격고치지않고독립공간계약",
+        "공간supported해제는R4-4통합검수전금지"
+      ]
+    }
+  ],
+  "unreviewed": [
+    "실제자료해상도/SAR/자동회전여부",
+    "색/알파/클리핑의실제픽셀",
+    "perspective/비선형/3D카메라/시간가변transform",
+    "원본과viewer/screenshot의DPR보정실측"
+  ],
+  "not_implemented": [
+    "영상메타추출",
+    "영상/이미지회전크롭리사이즈",
+    "OCR/대상탐지/추적",
+    "사람검수인증",
+    "회사규칙승인"
+  ]
+}

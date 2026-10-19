@@ -1,0 +1,402 @@
+{
+  "id": "r6-human-review-requests",
+  "version": "0.1.1",
+  "source_pins": {
+    "intake_policy": {
+      "path": "05_출처와검토/검수와사용범위/사람검수_접수정책.json",
+      "version": "0.1.0",
+      "sha256": "b0955d85248a9ee1f00ae0da78609836d0cf7bbeda9b941ca8923e35e243245d"
+    },
+    "r6_sources": {
+      "path": "05_출처와검토/검수와사용범위/출처와사용범위_연결목록.json",
+      "version": "0.1.0",
+      "sha256": "605c3d82be42e53499f72fcc7dff4fa99ce8c4904d1027727167b71ab45ec4d5"
+    },
+    "company_design": {
+      "path": "03_한맥디자인/회사별_디자인연결_현황.json",
+      "version": "0.1.0",
+      "sha256": "f5a2913c38dc5651e714d48467a558565051bc878ac07b943cfddf48ae7a15ec"
+    },
+    "companies": {
+      "path": "10_공용자산/회사목록.json",
+      "version": "0.3.1",
+      "sha256": "0b011a9c2962459a3b42067c3f7120602cde9e541c466647fa880a0a298dda2a"
+    },
+    "assets": {
+      "path": "10_공용자산/자산목록.json",
+      "version": "0.3.1",
+      "sha256": "5f4cc581df387e8948bc3071aa9f93bd34fb88a2ffc406aaf72de9f3e8e940a0"
+    },
+    "ci_colors": {
+      "path": "10_공용자산/CI색상목록.json",
+      "version": "0.3.1",
+      "sha256": "c95a79a81a422fc23f4275a8dd878016f209fdaff171d73f44d3cff7387b7097"
+    },
+    "r5_policy": {
+      "path": "05_출처와검토/R5_적용정책_결정.json",
+      "version": "unversioned",
+      "sha256": "d8666f2212ae4e434d7d1209f0b64bdded4f0d562df9600a1bda74d136dd9da3"
+    },
+    "r5_parameters": {
+      "path": "03_한맥디자인/영상전용_미정항목.json",
+      "version": "0.1.0",
+      "sha256": "1fc6d247124789b040db6710e8683fabe705eeee37c32a39932d5bae7cc69ad4"
+    },
+    "skill_cards": {
+      "path": "05_출처와검토/스킬심층검토/스킬심층검토정본.json",
+      "version": "0.1.6",
+      "sha256": "6f546221a91cd3b13fb0df02ae904910758c5daa626c1baacbdf041a8c6a1969"
+    },
+    "workflow_policy_links": {
+      "path": "05_출처와검토/검수와사용범위/작업정책_연결목록.json",
+      "version": "0.1.1",
+      "sha256": "90265bc4c09e3092695dc6ff7845564418e87806028e00dac6b607afa5b87992"
+    },
+    "hanmac_profile": {
+      "path": "03_한맥디자인/한맥디자인정본.json",
+      "version": "0.1.0",
+      "sha256": "dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed"
+    },
+    "hanmac_thread": {
+      "path": "05_출처와검토/검수와사용범위/한맥디자인_대화근거.json",
+      "version": "0.1.0",
+      "sha256": "c259c3462c342e5d9ba2a8113d76514545bb4fd2fc1a8b758b24d39a5106124d"
+    }
+  },
+  "requests": [
+    {
+      "request_id": "R6-REQ-CI-STATUS",
+      "version": "0.1.0",
+      "title": "8회사 CI의 공식 최신판·사용 가이드 확인 상태",
+      "kind": "source_status",
+      "readiness": "awaiting_response",
+      "dependency": "",
+      "applicability": "applicable",
+      "applicability_reason": "현재 제공 CI 자료의 공식성/최신성 확인 상태를 묻는 항목",
+      "targets": [
+        {
+          "source_key": "company_design",
+          "pointer": "/companies",
+          "scope": "한맥기술·삼안·장헌산업·피티씨·한라산업개발·바론컨설턴트·산하종합기술·㈜장헌 8회사 자료 연결 상태"
+        }
+      ],
+      "evidence": [
+        {
+          "source_key": "companies",
+          "pointer": "/companies",
+          "scope": "8회사 명단과 CI 자산 참조"
+        },
+        {
+          "source_key": "assets",
+          "pointer": "/records",
+          "scope": "등록135자산의 원문·출처·reference_only"
+        },
+        {
+          "source_key": "r5_policy",
+          "pointer": "",
+          "scope": "이미 선택된 관측색 초안 정책. 이번 내용 확인과 구분"
+        }
+      ],
+      "question": "현재 정리한 8회사 CI에 대해 공식 최신본과 사용 가이드가 확인된 회사가 있나요? 확인한 회사와 근거 파일/담당자 안내가 있으면 그 범위만 알려주세요.",
+      "requested_knowledge": "보유 자료의 출처·최신판/가이드 확인 상태를 아는 사람. 회사 승인권자 신원/직무 권한은 별도 근거.",
+      "included_scope": [
+        "현재 자료의 공식 최신본/사용 가이드 확인 여부",
+        "확인된 회사와 해당 근거 위치"
+      ],
+      "excluded_scope": [
+        "모든 CI의 실제 시각 정확성·sRGB값·로고 보호공간 확정",
+        "개별 화면 디자인 승인",
+        "외부 API 업로드·재배포 또는 회사 사용권한 승인"
+      ],
+      "options": [
+        {
+          "key": "A",
+          "label": "아직 공식 최신본·사용 가이드를 확인하지 못함 — 미확인 유지 (추천)",
+          "recommended": true
+        },
+        {
+          "key": "B",
+          "label": "8회사 모두 확인함 — 확인한 근거 위치를 함께 제시",
+          "recommended": false
+        },
+        {
+          "key": "C",
+          "label": "일부 회사만 확인함 — 회사명과 근거 위치를 함께 제시",
+          "recommended": false
+        },
+        {
+          "key": "D",
+          "label": "내가 확인하기 어려움 — 담당자 확인 필요",
+          "recommended": false
+        }
+      ],
+      "company_approval_requested": false
+    },
+    {
+      "request_id": "R6-REQ-SAMAN-VALUES",
+      "version": "0.1.0",
+      "title": "삼안 선언후보4개와 실제 화면색·적용 자격",
+      "kind": "content_check",
+      "readiness": "needs_material",
+      "dependency": "현재 공식 색 가이드·프로필/변환 조건 또는 담당자 확인 자료가 먼저 필요",
+      "applicability": "undetermined",
+      "applicability_reason": "실제 프로젝트에서 이 선언값을 화면 역할로 사용할 때 적용 여부를 판단",
+      "targets": [
+        {
+          "source_key": "ci_colors",
+          "pointer": "/colors/91",
+          "scope": "ci.declared.draft.gray.hex 선언후보의 원기록"
+        },
+        {
+          "source_key": "ci_colors",
+          "pointer": "/colors/92",
+          "scope": "ci.declared.draft.orange.hex 선언후보의 원기록"
+        },
+        {
+          "source_key": "ci_colors",
+          "pointer": "/colors/93",
+          "scope": "ci.declared.draft.gray.pantone 선언후보의 원기록"
+        },
+        {
+          "source_key": "ci_colors",
+          "pointer": "/colors/94",
+          "scope": "ci.declared.draft.orange.pantone 선언후보의 원기록"
+        }
+      ],
+      "evidence": [
+        {
+          "source_key": "company_design",
+          "pointer": "/companies",
+          "scope": "삼안 색/로고 참조 상태"
+        }
+      ],
+      "question": "삼안 문서의 선언후보4개가 현재 공식 화면색 기준인지, sRGB 표시값과 변환 조건까지 확인할 수 있나요?",
+      "requested_knowledge": "해당 회사 CI 가이드와 색 관리 조건을 확인할 수 있는 사람",
+      "included_scope": [
+        "지정 선언후보의 공식 판본/화면 표시 자격"
+      ],
+      "excluded_scope": [
+        "PNG 관측값과 선언값의 자동 병합",
+        "CMYK/별색의 임의 sRGB 변환",
+        "새 화면 전체의 디자인 승인"
+      ],
+      "options": [
+        {
+          "key": "A",
+          "label": "가이드 확보 전 미확인 유지 (추천)",
+          "recommended": true
+        },
+        {
+          "key": "B",
+          "label": "공식 가이드로 해당 범위를 확인 — 근거 필요",
+          "recommended": false
+        },
+        {
+          "key": "C",
+          "label": "일부 값/조건만 확인 — 항목과 근거 필요",
+          "recommended": false
+        },
+        {
+          "key": "D",
+          "label": "담당자에게도 확인이 어려워 후보 사용 보류",
+          "recommended": false
+        }
+      ],
+      "company_approval_requested": false
+    },
+    {
+      "request_id": "R6-REQ-SKILL-USE",
+      "version": "0.1.0",
+      "title": "직접 채택할 외부 스킬 파일의 사용 범위",
+      "kind": "usage_scope",
+      "readiness": "not_due",
+      "dependency": "직접 복사·변형·실행·배포할 실제 파일과 행위가 먼저 선택돼야 함. 현재 원문 실행/직접 복사 미선택·보류 유지",
+      "applicability": "undetermined",
+      "applicability_reason": "현재는 원문 선별 참고. 향후 직접 채택의 적용 여부 미정",
+      "targets": [
+        {
+          "source_key": "skill_cards",
+          "pointer": "/cards",
+          "scope": "40후보의 license_note·direct_copy_policy·runtime_hold"
+        }
+      ],
+      "evidence": [],
+      "question": "실제 채택할 파일/행위가 정해지면 고지·파일별 범위·의존성·사용 조건을 확인할 수 있나요?",
+      "requested_knowledge": "파일별 조건과 실제 사용 행위를 검토할 수 있는 담당자. 이 규격은 법적 판정을 대행하지 않음",
+      "included_scope": [
+        "지정 파일의 지정 사용 행위·조건 확인 필요 목록"
+      ],
+      "excluded_scope": [
+        "묶음 전체/외부 폰트·이미지 권리의 일괄 허가",
+        "라이선스 표기만으로 실행 안전/영상 효과 보증",
+        "외부 코드 실행 또는 설치"
+      ],
+      "options": [
+        {
+          "key": "A",
+          "label": "직접 채택할 때 파일·행위별 검토 (추천)",
+          "recommended": true
+        },
+        {
+          "key": "B",
+          "label": "조건 확인된 파일만 좁게 채택",
+          "recommended": false
+        },
+        {
+          "key": "C",
+          "label": "직접 복사 없이 자체 지침만 작성",
+          "recommended": false
+        },
+        {
+          "key": "D",
+          "label": "이번 파이프라인에서는 외부 실행 도구 제외",
+          "recommended": false
+        }
+      ],
+      "company_approval_requested": false
+    },
+    {
+      "request_id": "R6-REQ-ACTUAL-CONTENT",
+      "version": "0.1.0",
+      "title": "실제 영상 주장·관측·의도와 근거의 내용 검수",
+      "kind": "content_check",
+      "readiness": "needs_material",
+      "dependency": "아직 실제 영상·시나리오·주장/근거 기록이 접수되지 않음. 01-A 구현/분석은 현재 범위 밖",
+      "applicability": "undetermined",
+      "applicability_reason": "실제 분석 기록을 접수한 뒤 대상별 적용 여부 판단",
+      "targets": [],
+      "evidence": [],
+      "question": "자료 접수 후 특정 주장과 프레임/시나리오 근거가 일치하고 해석 범위가 타당한지 확인해 주세요.",
+      "requested_knowledge": "해당 원자료/기획 의도를 확인할 수 있는 사람. 구조검사로 내용 검수를 대체하지 않음",
+      "included_scope": [
+        "접수된 특정 버전의 주장·대상·근거·해석 범위"
+      ],
+      "excluded_scope": [
+        "현재 실제 영상 분석 완료 판정",
+        "제작 의도 추정의 사실화",
+        "회사 공통 문법 승인"
+      ],
+      "options": [
+        {
+          "key": "A",
+          "label": "자료 접수 후 대상별 검수 (추천)",
+          "recommended": true
+        },
+        {
+          "key": "B",
+          "label": "관측 사실 범위만 우선 검수",
+          "recommended": false
+        },
+        {
+          "key": "C",
+          "label": "기획 의도 확인을 따로 요청",
+          "recommended": false
+        },
+        {
+          "key": "D",
+          "label": "확인 가능한 근거가 없어 기권",
+          "recommended": false
+        }
+      ],
+      "company_approval_requested": false
+    }
+  ],
+  "coverage_units": {
+    "R6-REQ-CI-STATUS": [
+      {
+        "unit_id": "hanmac:latest_material",
+        "meaning": "한맥기술 제공 CI의 최신 자료 여부"
+      },
+      {
+        "unit_id": "hanmac:usage_guide",
+        "meaning": "한맥기술 사용 가이드 확인 상태"
+      },
+      {
+        "unit_id": "saman:latest_material",
+        "meaning": "삼안 제공 CI의 최신 자료 여부"
+      },
+      {
+        "unit_id": "saman:usage_guide",
+        "meaning": "삼안 사용 가이드 확인 상태"
+      },
+      {
+        "unit_id": "jangheon-industry:latest_material",
+        "meaning": "장헌산업 제공 CI의 최신 자료 여부"
+      },
+      {
+        "unit_id": "jangheon-industry:usage_guide",
+        "meaning": "장헌산업 사용 가이드 확인 상태"
+      },
+      {
+        "unit_id": "ptc:latest_material",
+        "meaning": "피티씨 제공 CI의 최신 자료 여부"
+      },
+      {
+        "unit_id": "ptc:usage_guide",
+        "meaning": "피티씨 사용 가이드 확인 상태"
+      },
+      {
+        "unit_id": "halla:latest_material",
+        "meaning": "한라산업개발 제공 CI의 최신 자료 여부"
+      },
+      {
+        "unit_id": "halla:usage_guide",
+        "meaning": "한라산업개발 사용 가이드 확인 상태"
+      },
+      {
+        "unit_id": "baron:latest_material",
+        "meaning": "바론컨설턴트 제공 CI의 최신 자료 여부"
+      },
+      {
+        "unit_id": "baron:usage_guide",
+        "meaning": "바론컨설턴트 사용 가이드 확인 상태"
+      },
+      {
+        "unit_id": "sanha:latest_material",
+        "meaning": "산하종합기술 제공 CI의 최신 자료 여부"
+      },
+      {
+        "unit_id": "sanha:usage_guide",
+        "meaning": "산하종합기술 사용 가이드 확인 상태"
+      },
+      {
+        "unit_id": "jangheon:latest_material",
+        "meaning": "㈜장헌 제공 CI의 최신 자료 여부"
+      },
+      {
+        "unit_id": "jangheon:usage_guide",
+        "meaning": "㈜장헌 사용 가이드 확인 상태"
+      }
+    ],
+    "R6-REQ-SAMAN-VALUES": [
+      {
+        "unit_id": "ci.declared.draft.gray.hex",
+        "meaning": "ci.declared.draft.gray.hex 선언후보의 원기록"
+      },
+      {
+        "unit_id": "ci.declared.draft.orange.hex",
+        "meaning": "ci.declared.draft.orange.hex 선언후보의 원기록"
+      },
+      {
+        "unit_id": "ci.declared.draft.gray.pantone",
+        "meaning": "ci.declared.draft.gray.pantone 선언후보의 원기록"
+      },
+      {
+        "unit_id": "ci.declared.draft.orange.pantone",
+        "meaning": "ci.declared.draft.orange.pantone 선언후보의 원기록"
+      }
+    ],
+    "R6-REQ-SKILL-USE": [
+      {
+        "unit_id": "chosen_file_use_scope",
+        "meaning": "채택한 파일/행위의 조건"
+      }
+    ],
+    "R6-REQ-ACTUAL-CONTENT": [
+      {
+        "unit_id": "actual_claim_evidence",
+        "meaning": "접수한 실제 주장/근거의 내용"
+      }
+    ]
+  }
+}

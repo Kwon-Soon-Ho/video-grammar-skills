@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-15",
+  "reviewer": "foundation_redteam",
+  "scope": "기존schema/도구/인계읽기·가짜메모리구조검사. 실제미디어/파일수정없음.",
+  "findings": [
+    "metadata임의객체:음수width/0height/unknownrotation허용",
+    "frame.transform_ref없는ID허용",
+    "공간/원본pin/해상도/원점/단위/변환목록미완",
+    "위치와길이·crop정보손실·SAR·자동회전구분필요"
+  ],
+  "correct_existing_gate": "R4-2 null/가짜coordinate_space_ref모두공간supported보류. R4-4전유지.",
+  "user_decision": "감사후A선택확인",
+  "boundary": "독립계약/합성검수. 실제획득·픽셀변환·탐지/추적은01-A."
+}

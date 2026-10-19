@@ -1,0 +1,41 @@
+{
+  "scope": "three illustrative knowledge cards; bounded direct checks, not R4/R6/R7 full validation or human/company approval",
+  "events": [
+    {
+      "event": "candidate_validated_before_write",
+      "sha256": "254bd6423812859452c60b7247bc0cdcfe7e626ff6a62b698a8218957655645f",
+      "bytes": 6388,
+      "changed_json_paths": 19
+    },
+    {
+      "event": "byte_identical_backup",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\inputs\\Phase00\\backup\\이번작업\\큐레이터_소량시범_20261016\\쉬운말_지식카드_v0.1.0.json",
+      "sha256": "9aaaa77ee0ab7f64db58db3276cdc8f0056f8169471ef05711c36679557963a2",
+      "bytes": 4262,
+      "exact_byte_equal": true
+    },
+    {
+      "event": "immediate_prewrite_recheck",
+      "sha256": "9aaaa77ee0ab7f64db58db3276cdc8f0056f8169471ef05711c36679557963a2",
+      "signature_equal": true,
+      "all_read_sources_unchanged": true
+    },
+    {
+      "event": "target_write",
+      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\inputs\\Phase00\\작업초안\\쉬운말_지식카드.json",
+      "bytes_requested": 6388,
+      "bytes_written": 6388,
+      "sha256_written_bytes": "254bd6423812859452c60b7247bc0cdcfe7e626ff6a62b698a8218957655645f",
+      "partial_file": false
+    },
+    {
+      "event": "post_save_bounded_checks_passed",
+      "actual_sha256": "254bd6423812859452c60b7247bc0cdcfe7e626ff6a62b698a8218957655645f",
+      "bytes": 6388,
+      "allowed_changed_paths": 19,
+      "preserved_read_input_count": 22
+    }
+  ],
+  "status": "draft_saved_bounded_direct_checks_passed",
+  "restore": "not_needed"
+}

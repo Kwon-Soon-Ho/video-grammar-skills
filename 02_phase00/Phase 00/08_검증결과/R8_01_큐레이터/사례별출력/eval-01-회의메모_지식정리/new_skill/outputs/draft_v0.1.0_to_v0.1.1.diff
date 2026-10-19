@@ -1,0 +1,711 @@
+--- draft_v0.1.0
++++ draft_v0.1.1
+@@ -1,7 +1,7 @@
+ {
+   "kind": "knowledge_draft_from_synthetic_meeting_notes",
+   "id": "meeting-knowledge-draft",
+-  "version": "0.1.0",
++  "version": "0.1.1",
+   "status": "draft_unregistered",
+   "company_approved": false,
+   "operational_release": false,
+@@ -66,7 +66,82 @@
+         "실제 카드 화면·목적·절차 원문이 없어 특정 번호의 삭제 여부와 가독성은 미확정"
+       ],
+       "actual_observation": null,
+-      "human_question": "내용 담당자: 실제 순서와 현재 위치를 식별해야 하는 장면인가?"
++      "human_question": "내용 담당자: 실제 순서와 현재 위치를 식별해야 하는 장면인가?",
++      "knowledge_versions": [
++        {
++          "id": "IP-02",
++          "version": "0.1.1",
++          "status": "reference"
++        },
++        {
++          "id": "SCREEN-CHOICE",
++          "version": "0.1.1",
++          "status": "reference"
++        },
++        {
++          "id": "SCREEN-GROUP",
++          "version": "0.1.1",
++          "status": "reference"
++        },
++        {
++          "id": "KNOW-LAYOUT-CARD-GROUP",
++          "version": "0.1.1",
++          "status": "reference"
++        },
++        {
++          "id": "KNOW-LAYOUT-PROCESS-LINE",
++          "version": "0.1.1",
++          "status": "reference"
++        }
++      ],
++      "term_versions": [
++        {
++          "id": "PURPOSE-PROCESS",
++          "version": "0.1.0",
++          "status": "draft"
++        },
++        {
++          "id": "REL-ORDER",
++          "version": "0.1.0",
++          "status": "draft"
++        },
++        {
++          "id": "LAYOUT-CARD-GROUP",
++          "version": "0.1.0",
++          "status": "draft"
++        },
++        {
++          "id": "LAYOUT-PROCESS-LINE",
++          "version": "0.1.0",
++          "status": "draft"
++        }
++      ],
++      "source_locators": [
++        {
++          "id": "SRC-CAM-EXTRANEOUS",
++          "catalog_version": "0.1.1",
++          "locator": "공개 요약의5원칙; 원문 전체 미확보",
++          "authority": "범용참고. 회사필수규칙아님.",
++          "depth": "이번에는 로컬 항목/조사 선언만 확인; 외부 원문 독립 미열람"
++        },
++        {
++          "id": "SRC-PROJECT-GUIDANCE",
++          "catalog_version": "0.1.1",
++          "locator": "2026-10-14 사용자 목적과 기존 DB 명세를 바탕으로 자체 작성",
++          "authority": "회사 승인 규칙 아님",
++          "depth": "이번에는 로컬 항목/조사 선언만 확인; 외부 원문 독립 미열람"
++        },
++        {
++          "id": "SRC-PROJECT-TAXONOMY",
++          "catalog_version": "0.1.1",
++          "locator": "backup/2026-10-14_기반정리전/02_지식DB_설계.md",
++          "authority": "프로젝트 초안. 회사 표준 승인 아님.",
++          "depth": "이번에는 로컬 항목/조사 선언만 확인; 외부 원문 독립 미열람"
++        }
++      ],
++      "example_kind": "synthetic_explanatory_not_actual_company_case",
++      "case_refs": [],
++      "company_examples": []
+     },
+     {
+       "id": "K02",
+@@ -108,7 +183,49 @@
+         "정식 분류 추가는 별도 판단"
+       ],
+       "actual_observation": null,
+-      "decision_ref": "D01"
++      "decision_ref": "D01",
++      "knowledge_versions": [
++        {
++          "id": "KNOW-LAYOUT-SPLIT-COMPARE",
++          "version": "0.1.1",
++          "status": "reference"
++        },
++        {
++          "id": "SCREEN-DATA",
++          "version": "0.1.1",
++          "status": "reference"
++        },
++        {
++          "id": "SCREEN-TYPE-KO",
++          "version": "0.1.1",
++          "status": "reference"
++        },
++        {
++          "id": "SCREEN-TIME-READ",
++          "version": "0.1.1",
++          "status": "reference"
++        }
++      ],
++      "term_versions": [],
++      "source_locators": [
++        {
++          "id": "SRC-PROJECT-TAXONOMY",
++          "catalog_version": "0.1.1",
++          "locator": "backup/2026-10-14_기반정리전/02_지식DB_설계.md",
++          "authority": "프로젝트 초안. 회사 표준 승인 아님.",
++          "depth": "이번에는 로컬 항목/조사 선언만 확인; 외부 원문 독립 미열람"
++        },
++        {
++          "id": "SRC-PROJECT-GUIDANCE",
++          "catalog_version": "0.1.1",
++          "locator": "2026-10-14 사용자 목적과 기존 DB 명세를 바탕으로 자체 작성",
++          "authority": "회사 승인 규칙 아님",
++          "depth": "이번에는 로컬 항목/조사 선언만 확인; 외부 원문 독립 미열람"
++        }
++      ],
++      "example_kind": "synthetic_explanatory_not_actual_company_case",
++      "case_refs": [],
++      "company_examples": []
+     },
+     {
+       "id": "K03",
+@@ -148,7 +265,32 @@
+         "원형 배치가 각 단계의 시간 길이가 같다는 뜻은 아님"
+       ],
+       "actual_observation": null,
+-      "decision_ref": "D01"
++      "decision_ref": "D01",
++      "knowledge_versions": [
++        {
++          "id": "KNOW-LAYOUT-NETWORK",
++          "version": "0.1.1",
++          "status": "reference"
++        },
++        {
++          "id": "KNOW-LAYOUT-PROCESS-LINE",
++          "version": "0.1.1",
++          "status": "reference"
++        }
++      ],
++      "term_versions": [],
++      "source_locators": [
++        {
++          "id": "SRC-PROJECT-TAXONOMY",
++          "catalog_version": "0.1.1",
++          "locator": "backup/2026-10-14_기반정리전/02_지식DB_설계.md",
++          "authority": "프로젝트 초안. 회사 표준 승인 아님.",
++          "depth": "이번에는 로컬 항목/조사 선언만 확인; 외부 원문 독립 미열람"
++        }
++      ],
++      "example_kind": "synthetic_explanatory_not_actual_company_case",
++      "case_refs": [],
++      "company_examples": []
+     },
+     {
+       "id": "K04",
+@@ -187,7 +329,32 @@
+         "실제 판단 기준·경로·합류 원문 미제공"
+       ],
+       "actual_observation": null,
+-      "decision_ref": "D01"
++      "decision_ref": "D01",
++      "knowledge_versions": [
++        {
++          "id": "KNOW-LAYOUT-NETWORK",
++          "version": "0.1.1",
++          "status": "reference"
++        },
++        {
++          "id": "KNOW-LAYOUT-PROCESS-LINE",
++          "version": "0.1.1",
++          "status": "reference"
++        }
++      ],
++      "term_versions": [],
++      "source_locators": [
++        {
++          "id": "SRC-PROJECT-TAXONOMY",
++          "catalog_version": "0.1.1",
++          "locator": "backup/2026-10-14_기반정리전/02_지식DB_설계.md",
++          "authority": "프로젝트 초안. 회사 표준 승인 아님.",
++          "depth": "이번에는 로컬 항목/조사 선언만 확인; 외부 원문 독립 미열람"
++        }
++      ],
++      "example_kind": "synthetic_explanatory_not_actual_company_case",
++      "case_refs": [],
++      "company_examples": []
+     },
+     {
+       "id": "K05",
+@@ -230,7 +397,73 @@
+       ],
+       "actual_observation": null,
+       "decision_ref": "D02",
+-      "human_question": "기획/내용 담당자와 실제 대상 시청자: 이 주제에서 이미 아는 용어와 처음 접하는 핵심 개념의 근거를 제공할 수 있는가? 부서명으로 대체하지 않는다."
++      "human_question": "기획/내용 담당자와 실제 대상 시청자: 이 주제에서 이미 아는 용어와 처음 접하는 핵심 개념의 근거를 제공할 수 있는가? 부서명으로 대체하지 않는다.",
++      "knowledge_versions": [
++        {
++          "id": "IP-07",
++          "version": "0.1.1",
++          "status": "reference"
++        },
++        {
++          "id": "IP-10",
++          "version": "0.1.2",
++          "status": "reference"
++        },
++        {
++          "id": "IP-03",
++          "version": "0.1.1",
++          "status": "reference"
++        },
++        {
++          "id": "IP-06",
++          "version": "0.1.1",
++          "status": "reference"
++        },
++        {
++          "id": "SCREEN-TYPE-KO",
++          "version": "0.1.1",
++          "status": "reference"
++        },
++        {
++          "id": "SCREEN-TIME-READ",
++          "version": "0.1.1",
++          "status": "reference"
++        }
++      ],
++      "term_versions": [],
++      "source_locators": [
++        {
++          "id": "SRC-CAM-ESSENTIAL",
++          "catalog_version": "0.1.1",
++          "locator": "공개 요약의3원칙; 원문 전체 미확보",
++          "authority": "범용참고. 회사필수규칙아님.",
++          "depth": "이번에는 로컬 항목/조사 선언만 확인; 외부 원문 독립 미열람"
++        },
++        {
++          "id": "SRC-R3-EXPERTISE-SUMMARY",
++          "catalog_version": "0.1.1",
++          "locator": "Chapter 13 Summary / DOI 10.1017/9781108894333.017",
++          "authority": "조건부 외부 참고. 사용자 A는 사용 범위 선택이며 회사 필수 규칙 승인 아님.",
++          "depth": "이번에는 로컬 항목/조사 선언만 확인; 외부 원문 독립 미열람"
++        },
++        {
++          "id": "SRC-CAM-EXTRANEOUS",
++          "catalog_version": "0.1.1",
++          "locator": "공개 요약의5원칙; 원문 전체 미확보",
++          "authority": "범용참고. 회사필수규칙아님.",
++          "depth": "이번에는 로컬 항목/조사 선언만 확인; 외부 원문 독립 미열람"
++        },
++        {
++          "id": "SRC-PROJECT-GUIDANCE",
++          "catalog_version": "0.1.1",
++          "locator": "2026-10-14 사용자 목적과 기존 DB 명세를 바탕으로 자체 작성",
++          "authority": "회사 승인 규칙 아님",
++          "depth": "이번에는 로컬 항목/조사 선언만 확인; 외부 원문 독립 미열람"
++        }
++      ],
++      "example_kind": "synthetic_explanatory_not_actual_company_case",
++      "case_refs": [],
++      "company_examples": []
+     },
+     {
+       "id": "K06",
+@@ -271,7 +504,62 @@
+         "실측 표본·키프레임·속도·프레임·AE 곡선값 없음"
+       ],
+       "actual_observation": null,
+-      "human_question": "기술 내용 담당자: 일정 속도 구간과 출발/정지 구간의 시간·경로 근거는 무엇인가?"
++      "human_question": "기술 내용 담당자: 일정 속도 구간과 출발/정지 구간의 시간·경로 근거는 무엇인가?",
++      "knowledge_versions": [
++        {
++          "id": "AP-06",
++          "version": "0.1.1",
++          "status": "reference"
++        },
++        {
++          "id": "MP-02",
++          "version": "0.1.1",
++          "status": "reference"
++        },
++        {
++          "id": "SCREEN-DATA",
++          "version": "0.1.1",
++          "status": "reference"
++        },
++        {
++          "id": "SCREEN-TIME-READ",
++          "version": "0.1.1",
++          "status": "reference"
++        }
++      ],
++      "term_versions": [
++        {
++          "id": "CURVE-LINEAR",
++          "version": "0.1.1",
++          "status": "draft"
++        }
++      ],
++      "source_locators": [
++        {
++          "id": "SRC-ADOBE-12",
++          "catalog_version": "0.1.1",
++          "locator": "공식 설명·명칭",
++          "authority": "범용참고. 회사필수규칙아님.",
++          "depth": "이번에는 로컬 항목/조사 선언만 확인; 외부 원문 독립 미열람"
++        },
++        {
++          "id": "SRC-JORGE-10",
++          "catalog_version": "0.1.1",
++          "locator": "공식 강의 목록의10제목; 유료 강의 본문 미확보",
++          "authority": "범용참고. 회사필수규칙아님.",
++          "depth": "이번에는 로컬 항목/조사 선언만 확인; 외부 원문 독립 미열람"
++        },
++        {
++          "id": "SRC-PROJECT-GUIDANCE",
++          "catalog_version": "0.1.1",
++          "locator": "2026-10-14 사용자 목적과 기존 DB 명세를 바탕으로 자체 작성",
++          "authority": "회사 승인 규칙 아님",
++          "depth": "이번에는 로컬 항목/조사 선언만 확인; 외부 원문 독립 미열람"
++        }
++      ],
++      "example_kind": "synthetic_explanatory_not_actual_company_case",
++      "case_refs": [],
++      "company_examples": []
+     },
+     {
+       "id": "K07",
+@@ -309,7 +597,68 @@
+       ],
+       "actual_observation": null,
+       "decision_ref": "D03",
+-      "human_question": "회사 CI 담당자: 대상 문서의 공식성·최신성·본문색 지정 범위와 근거는 무엇인가? 디자인 담당자: 해당 배경/문구에서 선택한 역할과 가독성 근거는 무엇인가?"
++      "human_question": "회사 CI 담당자: 대상 문서의 공식성·최신성·본문색 지정 범위와 근거는 무엇인가? 디자인 담당자: 해당 배경/문구에서 선택한 역할과 가독성 근거는 무엇인가?",
++      "knowledge_versions": [
++        {
++          "id": "SCREEN-COLOR",
++          "version": "0.1.1",
++          "status": "reference"
++        }
++      ],
++      "term_versions": [],
++      "source_locators": [
++        {
++          "id": "SRC-PROJECT-GUIDANCE",
++          "catalog_version": "0.1.1",
++          "locator": "2026-10-14 사용자 목적과 기존 DB 명세를 바탕으로 자체 작성",
++          "authority": "회사 승인 규칙 아님",
++          "depth": "이번에는 로컬 항목/조사 선언만 확인; 외부 원문 독립 미열람"
++        }
++      ],
++      "example_kind": "synthetic_explanatory_not_actual_company_case",
++      "case_refs": [],
++      "company_examples": [],
++      "company_rule_versions": [
++        {
++          "id": "HM-RULE-SCOPE",
++          "version": "0.1.0",
++          "review_status": "user_directed",
++          "origin": "user_policy",
++          "requirement_in_source": "required",
++          "source_refs": [
++            "USER"
++          ]
++        },
++        {
++          "id": "HM-RULE-OBSERVATION",
++          "version": "0.1.0",
++          "review_status": "draft",
++          "origin": "video_adaptation",
++          "requirement_in_source": "required",
++          "source_refs": []
++        },
++        {
++          "id": "HM-RULE-NEUTRAL",
++          "version": "0.1.0",
++          "review_status": "draft",
++          "origin": "source_interpretation",
++          "requirement_in_source": "recommended",
++          "source_refs": [
++            "VC"
++          ]
++        },
++        {
++          "id": "HM-RULE-READABILITY",
++          "version": "0.1.0",
++          "review_status": "draft",
++          "origin": "video_adaptation",
++          "requirement_in_source": "recommended",
++          "source_refs": [
++            "W3C-CONTRAST",
++            "W3C-COLOR"
++          ]
++        }
++      ]
+     }
+   ],
+   "decisions": [
+@@ -424,10 +773,282 @@
+   "change_record": {
+     "action": "new_separate_draft",
+     "parent": "입력 메모 및 참조 정본(아래 evidence_manifest)",
+-    "before_version": null,
+-    "after_version": "0.1.0",
+-    "backup": "새 파일 생성. 기존 초안을 덮어쓰지 않으므로 변경 전 사본 없음. 입력과 고정 정본 원문은 유지.",
++    "before_version": "0.1.0",
++    "after_version": "0.1.1",
++    "backup": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-knowledge-curator-workspace\\iteration-2\\eval-01-회의메모_지식정리\\new_skill\\run-1\\outputs\\backup\\회의메모_공통지식초안_v0.1.0.json",
+     "diff": "운영 정본 delta 없음. outputs에 새 지식 초안과 실행 근거만 추가.",
+-    "unregistered": "지식 정본/연결목록 미등록. 운영 등록·기본 전환 미수행."
+-  }
++    "unregistered": "지식 정본/연결목록 미등록. 운영 등록·기본 전환 미수행.",
++    "backup_sha256": "bb505778b3f2ec336fec279aea882e78096d3b809ac2729d7f19df8db46618e7",
++    "backup_hash_match": true,
++    "version_reason": "같은 작업에서 초기 지식 카드 v0.1.0을 보존하고 참조 판본·SHA와 실제 검사 범위를 보강한 v0.1.1",
++    "before_sha256": "bb505778b3f2ec336fec279aea882e78096d3b809ac2729d7f19df8db46618e7"
++  },
++  "evidence_manifest": [
++    {
++      "evidence_id": "E01",
++      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-knowledge-curator-workspace\\iteration-2\\eval-01-회의메모_지식정리\\new_skill\\run-1\\inputs\\Phase00\\입력메모.json",
++      "relative_path": "입력메모.json",
++      "id": null,
++      "version": "0.1.0",
++      "sha256": "332e8841680783e520b280de8c1b6be7306ccb3666f68d37bd59677cb6b569d2",
++      "locator": "전체 메모 5개",
++      "read_depth_this_run": "full_input",
++      "external_original_opened_this_run": false
++    },
++    {
++      "evidence_id": "E02",
++      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-knowledge-curator-workspace\\iteration-2\\eval-01-회의메모_지식정리\\new_skill\\run-1\\inputs\\Phase00\\01_공통용어\\공통용어사전.json",
++      "relative_path": "01_공통용어/공통용어사전.json",
++      "id": "company-video-taxonomy",
++      "version": "0.1.1",
++      "sha256": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
++      "locator": "분류축 및 관계/레이아웃/timing 관련 항목",
++      "read_depth_this_run": "selected_items; earlier full output truncated",
++      "external_original_opened_this_run": false
++    },
++    {
++      "evidence_id": "E03",
++      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-knowledge-curator-workspace\\iteration-2\\eval-01-회의메모_지식정리\\new_skill\\run-1\\inputs\\Phase00\\01_공통용어\\분류운영규칙.json",
++      "relative_path": "01_공통용어/분류운영규칙.json",
++      "id": null,
++      "version": "0.1.1",
++      "sha256": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d",
++      "locator": "상태/other_candidate/범위·근거 규칙",
++      "read_depth_this_run": "full_document",
++      "external_original_opened_this_run": false
++    },
++    {
++      "evidence_id": "E04",
++      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-knowledge-curator-workspace\\iteration-2\\eval-01-회의메모_지식정리\\new_skill\\run-1\\inputs\\Phase00\\02_원칙과레이아웃\\모션과정보전달원칙.json",
++      "relative_path": "02_원칙과레이아웃/모션과정보전달원칙.json",
++      "id": null,
++      "version": "0.1.2",
++      "sha256": "249ef6b9e7b14ff62f41352922be2f00e748c8b10debb4d4992b580364e0daa5",
++      "locator": "AP-06, MP-02, IP-02/03/06/07/10 등 선택 항목",
++      "read_depth_this_run": "selected_items; earlier batch output truncated",
++      "external_original_opened_this_run": false
++    },
++    {
++      "evidence_id": "E05",
++      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-knowledge-curator-workspace\\iteration-2\\eval-01-회의메모_지식정리\\new_skill\\run-1\\inputs\\Phase00\\02_원칙과레이아웃\\화면설계원칙.json",
++      "relative_path": "02_원칙과레이아웃/화면설계원칙.json",
++      "id": null,
++      "version": "0.1.1",
++      "sha256": "281fe61151dfc96649a070b6fd3ae653c0353b7513f3209534140ce1f54e6b96",
++      "locator": "SCREEN-CHOICE/GROUP/DATA/TYPE-KO/TIME-READ/COLOR 등",
++      "read_depth_this_run": "full_document",
++      "external_original_opened_this_run": false
++    },
++    {
++      "evidence_id": "E06",
++      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-knowledge-curator-workspace\\iteration-2\\eval-01-회의메모_지식정리\\new_skill\\run-1\\inputs\\Phase00\\02_원칙과레이아웃\\레이아웃지식.json",
++      "relative_path": "02_원칙과레이아웃/레이아웃지식.json",
++      "id": null,
++      "version": "0.1.1",
++      "sha256": "0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306",
++      "locator": "CARD-GROUP, PROCESS-LINE, NETWORK, SPLIT-COMPARE",
++      "read_depth_this_run": "selected_items",
++      "external_original_opened_this_run": false
++    },
++    {
++      "evidence_id": "E07",
++      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-knowledge-curator-workspace\\iteration-2\\eval-01-회의메모_지식정리\\new_skill\\run-1\\inputs\\Phase00\\02_원칙과레이아웃\\레이아웃_심화지식.json",
++      "relative_path": "02_원칙과레이아웃/레이아웃_심화지식.json",
++      "id": "r3-layout-deep-knowledge",
++      "version": "0.1.2",
++      "sha256": "5d6378eb954b6b75f94be2a0988254a1406f6dacc8a6c44060c6a05ff56aa14c",
++      "locator": "CARD-GROUP, PROCESS-LINE, NETWORK 등",
++      "read_depth_this_run": "selected_items; batch output partially truncated",
++      "external_original_opened_this_run": false
++    },
++    {
++      "evidence_id": "E08",
++      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-knowledge-curator-workspace\\iteration-2\\eval-01-회의메모_지식정리\\new_skill\\run-1\\inputs\\Phase00\\02_원칙과레이아웃\\레이아웃_확장후보.json",
++      "relative_path": "02_원칙과레이아웃/레이아웃_확장후보.json",
++      "id": "r3-layout-extension-candidates",
++      "version": "0.1.0",
++      "sha256": "ca615a23e93b681e79eae845ee21c9b37a781c0f0e35af44217985f80e7702f8",
++      "locator": "TABLE/CYCLE/BRANCH 전체",
++      "read_depth_this_run": "full_document",
++      "external_original_opened_this_run": false
++    },
++    {
++      "evidence_id": "E09",
++      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-knowledge-curator-workspace\\iteration-2\\eval-01-회의메모_지식정리\\new_skill\\run-1\\inputs\\Phase00\\02_원칙과레이아웃\\10_확장레이아웃_후보와반례.md",
++      "relative_path": "02_원칙과레이아웃/10_확장레이아웃_후보와반례.md",
++      "id": null,
++      "version": null,
++      "sha256": "b248bf4907543f600a1580f7717e449c52af7d75951e7944d15cce775605e610",
++      "locator": "표·순환·분기의 조건/예/반례/미분류 처리",
++      "read_depth_this_run": "full_document",
++      "external_original_opened_this_run": false
++    },
++    {
++      "evidence_id": "E10",
++      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-knowledge-curator-workspace\\iteration-2\\eval-01-회의메모_지식정리\\new_skill\\run-1\\inputs\\Phase00\\03_한맥디자인\\한맥디자인정본.json",
++      "relative_path": "03_한맥디자인/한맥디자인정본.json",
++      "id": "hanmac-video",
++      "version": "0.1.0",
++      "sha256": "dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed",
++      "locator": "프로필/규칙/미정/출처 한계; 값 전체 전사 아님",
++      "read_depth_this_run": "selected_fields",
++      "external_original_opened_this_run": false
++    },
++    {
++      "evidence_id": "E11",
++      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-knowledge-curator-workspace\\iteration-2\\eval-01-회의메모_지식정리\\new_skill\\run-1\\inputs\\Phase00\\03_한맥디자인\\07_회사CI와_화면역할_연결규칙.md",
++      "relative_path": "03_한맥디자인/07_회사CI와_화면역할_연결규칙.md",
++      "id": null,
++      "version": null,
++      "sha256": "be1baa8a5535d9f43f189bd7bab3f46320c81c5e7697a972f2a6a93320def83b",
++      "locator": "관측/선언/회사 승인·역할 선택·검수 대기",
++      "read_depth_this_run": "full_document",
++      "external_original_opened_this_run": false
++    },
++    {
++      "evidence_id": "E12",
++      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-knowledge-curator-workspace\\iteration-2\\eval-01-회의메모_지식정리\\new_skill\\run-1\\inputs\\Phase00\\02_원칙과레이아웃\\03_모션원칙_적용예와반례.md",
++      "relative_path": "02_원칙과레이아웃/03_모션원칙_적용예와반례.md",
++      "id": null,
++      "version": null,
++      "sha256": "4593c3e98d23f4191c943b8aa81a43a6866b190a44441400f1aa23544e0c1cb6",
++      "locator": "AP-06, MP-02, IP-02/07/10 절 재조회",
++      "read_depth_this_run": "selected_sections; initial full output truncated",
++      "external_original_opened_this_run": false
++    },
++    {
++      "evidence_id": "E13",
++      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-knowledge-curator-workspace\\iteration-2\\eval-01-회의메모_지식정리\\new_skill\\run-1\\inputs\\Phase00\\05_출처와검토\\R3_모션_조사기록.json",
++      "relative_path": "05_출처와검토/R3_모션_조사기록.json",
++      "id": "r3-motion-research",
++      "version": "0.1.1",
++      "sha256": "430a296b9c4903dea564d540152d4a88a5d57bbe10572737819876b50cfa0aa2",
++      "locator": "Adobe/Jorge/Cambridge 관련 이전 조사 선언",
++      "read_depth_this_run": "selected_sources; full list displayed with batch truncation",
++      "external_original_opened_this_run": false
++    },
++    {
++      "evidence_id": "E14",
++      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-knowledge-curator-workspace\\iteration-2\\eval-01-회의메모_지식정리\\new_skill\\run-1\\inputs\\Phase00\\05_출처와검토\\출처목록.json",
++      "relative_path": "05_출처와검토/출처목록.json",
++      "id": null,
++      "version": "0.1.1",
++      "sha256": "0fd8c405a36f67a4255be34c198b29fa499fde5d52b7998fd2b0af754bcaec2f",
++      "locator": "카드에서 참조한 SRC 항목",
++      "read_depth_this_run": "selected_entries",
++      "external_original_opened_this_run": false
++    },
++    {
++      "evidence_id": "E15",
++      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-knowledge-curator-workspace\\iteration-2\\eval-01-회의메모_지식정리\\new_skill\\run-1\\inputs\\Phase00\\09_다음단계인계\\R5_디자인연결_인계.md",
++      "relative_path": "09_다음단계인계/R5_디자인연결_인계.md",
++      "id": null,
++      "version": null,
++      "sha256": "b50eedd0ed5af946f7a7238b170a201a1cf04aaf07d27ccd850426cf8f4b7c23",
++      "locator": "R6/R7/01-A/01-B의 인계 범위",
++      "read_depth_this_run": "full_document",
++      "external_original_opened_this_run": false
++    },
++    {
++      "evidence_id": "E16",
++      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-knowledge-curator-workspace\\iteration-2\\eval-01-회의메모_지식정리\\new_skill\\run-1\\inputs\\Phase00\\13_품질검수\\03_판정운영기준.md",
++      "relative_path": "13_품질검수/03_판정운영기준.md",
++      "id": null,
++      "version": null,
++      "sha256": "2a8e21f028e18398ab2a6544cc429e585ab6a0a59abd370dbacd7991e141b7c1",
++      "locator": "구조/내용/사람 판단의 차이·미검수·보류",
++      "read_depth_this_run": "full_document",
++      "external_original_opened_this_run": false
++    },
++    {
++      "evidence_id": "E17",
++      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-knowledge-curator-workspace\\iteration-2\\eval-01-회의메모_지식정리\\new_skill\\run-1\\inputs\\Phase00\\02_원칙과레이아웃\\04_모션원칙_충돌과예외.md",
++      "relative_path": "02_원칙과레이아웃/04_모션원칙_충돌과예외.md",
++      "id": null,
++      "version": null,
++      "sha256": "a21649e3c6c16e778464ee0d76ebfe1bd9ffddd55cb076fa449efbf5371c353f",
++      "locator": "MC-01 재조회; MC-03/07 등 참고",
++      "read_depth_this_run": "selected_sections",
++      "external_original_opened_this_run": false
++    },
++    {
++      "evidence_id": "E18",
++      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-knowledge-curator-workspace\\iteration-2\\eval-01-회의메모_지식정리\\new_skill\\run-1\\inputs\\Phase00\\실행스킬\\video-knowledge-curator\\SKILL.md",
++      "relative_path": "실행스킬/video-knowledge-curator/SKILL.md",
++      "id": null,
++      "version": null,
++      "sha256": "db4cdd2fc8315459a343083fec149bf7e0a89c71927b94964f0d30955a03e945",
++      "locator": "실행스킬 전체",
++      "read_depth_this_run": "full_document",
++      "external_original_opened_this_run": false
++    },
++    {
++      "evidence_id": "E19",
++      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-knowledge-curator-workspace\\iteration-2\\eval-01-회의메모_지식정리\\new_skill\\run-1\\inputs\\Phase00\\실행스킬\\video-knowledge-curator\\references\\작업기준.md",
++      "relative_path": "실행스킬/video-knowledge-curator/references/작업기준.md",
++      "id": null,
++      "version": null,
++      "sha256": "97338ff41bb1133d107c44989bbae0c7fd3edea14ab6c882025a9d13262fe41c",
++      "locator": "자료 선택·검사 범위",
++      "read_depth_this_run": "full_document",
++      "external_original_opened_this_run": false
++    },
++    {
++      "evidence_id": "E20",
++      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-knowledge-curator-workspace\\iteration-2\\eval-01-회의메모_지식정리\\new_skill\\run-1\\inputs\\Phase00\\실행스킬\\video-knowledge-curator\\references\\출력지침.md",
++      "relative_path": "실행스킬/video-knowledge-curator/references/출력지침.md",
++      "id": null,
++      "version": null,
++      "sha256": "61fc05cba69677f574500c10791e2746b7db90ed43270cb5e9043462d310a2a2",
++      "locator": "출력·출처·backup/diff 지침",
++      "read_depth_this_run": "full_document",
++      "external_original_opened_this_run": false
++    },
++    {
++      "evidence_id": "E21",
++      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-knowledge-curator-workspace\\iteration-2\\eval-01-회의메모_지식정리\\new_skill\\run-1\\inputs\\Phase00\\07_실행도구\\지식조회.py",
++      "relative_path": "07_실행도구/지식조회.py",
++      "id": null,
++      "version": null,
++      "sha256": "3ec0affa54ecb68dd3eee9199875e676d5701705dbb07a577daf90de2b2f0274",
++      "locator": "코드 전체; 조회 루트/읽기 동작",
++      "read_depth_this_run": "full_code",
++      "external_original_opened_this_run": false
++    },
++    {
++      "evidence_id": "E22",
++      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-knowledge-curator-workspace\\iteration-2\\eval-01-회의메모_지식정리\\new_skill\\run-1\\inputs\\Phase00\\07_실행도구\\자료검증.py",
++      "relative_path": "07_실행도구/자료검증.py",
++      "id": null,
++      "version": null,
++      "sha256": "0abd4cba7f1ba3a69011ef67758dbcc6f5c9599785aa0ae5ed5fd6cd0e434ec4",
++      "locator": "코드 전체; validate_catalogs와 기록 검사 분리",
++      "read_depth_this_run": "full_code",
++      "external_original_opened_this_run": false
++    },
++    {
++      "evidence_id": "E23",
++      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-knowledge-curator-workspace\\iteration-2\\eval-01-회의메모_지식정리\\new_skill\\run-1\\inputs\\Phase00\\07_실행도구\\구형기록_보존검사.py",
++      "relative_path": "07_실행도구/구형기록_보존검사.py",
++      "id": null,
++      "version": null,
++      "sha256": "85a8941ae035fa5fdcae6b06a285ccca538a361f81e9b3410736c73d23f14a26",
++      "locator": "catalogs/validate_catalogs 및 끝 main guard",
++      "read_depth_this_run": "selected_code",
++      "external_original_opened_this_run": false
++    },
++    {
++      "evidence_id": "E24",
++      "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-knowledge-curator-workspace\\iteration-2\\eval-01-회의메모_지식정리\\new_skill\\run-1\\inputs\\Phase00\\05_출처와검토\\스킬심층검토\\05_세스킬_이식설계안.md",
++      "relative_path": "05_출처와검토/스킬심층검토/05_세스킬_이식설계안.md",
++      "id": null,
++      "version": null,
++      "sha256": "0c42fb415f4e195adc750c319b0bf22fe5d63431151917b015f2651c0e2041d2",
++      "locator": "큐레이터 권한/기능 표와 이식 경계",
++      "read_depth_this_run": "full_document_read; evaluation-related paragraphs not used for task decisions",
++      "external_original_opened_this_run": false
++    }
++  ],
++  "existing_catalog_validation_ref": "catalog_validation.json",
++  "draft_verification_scope": "독립 초안의 파싱·구조·중복ID·기존 참조ID/버전·출처ID·후보/분류 구분·합성 예 표식·운영 미등록 및 불변 확인. 실제 내용 검수·R4 전체 스키마·R6 자산 검사·R7 품질 판정 아님."
+ }

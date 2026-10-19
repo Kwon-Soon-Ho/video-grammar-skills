@@ -1,0 +1,287 @@
+{
+  "passed": 29,
+  "total": 29,
+  "tests": [
+    {
+      "name": "가상8회사·공용가이드·파일해시·sRGB 동일값 정상 대조",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "name": "확정명단7개를8개완료로처리차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "evidence": [
+        "확정 명단은 사용자 결정한 회사 수와 일치해야 함",
+        "FIXTURE-GUIDE@0.1.0 미확인/없는 회사ID",
+        "FIXTURE-LOGO7@0.1.0 미확인/없는 회사ID",
+        "FIXTURE-COLOR7@0.1.0 미확인/없는 회사ID"
+      ]
+    },
+    {
+      "name": "없는회사에자산연결차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "evidence": [
+        "FIXTURE-LOGO0@0.1.0 미확인/없는 회사ID"
+      ]
+    },
+    {
+      "name": "실제파일해시불일치차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "evidence": [
+        "FIXTURE-LOGO0@0.1.0 실제 파일해시 불일치",
+        "FIXTURE-C0 CI 대상 파일해시 불일치",
+        "FIXTURE-COLOR0@0.1.0 CI 대상 파일해시 불일치"
+      ]
+    },
+    {
+      "name": "등록된파일이없는경로차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "evidence": [
+        "FIXTURE-LOGO0@0.1.0 등록 파일 없음"
+      ]
+    },
+    {
+      "name": "루트밖경로차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "evidence": [
+        "FIXTURE-LOGO0@0.1.0 루트 밖/절대/상위 경로"
+      ]
+    },
+    {
+      "name": "절대Windows경로차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "evidence": [
+        "FIXTURE-LOGO0@0.1.0 루트 밖/절대/상위 경로"
+      ]
+    },
+    {
+      "name": "파일대기상태에가짜해시차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "evidence": [
+        "FIXTURE-LOGO0@0.1.0 파일없는 대기상태에 경로/해시 채움",
+        "FIXTURE-COLOR0@0.1.0 CI 실제 파일 등록 필요"
+      ]
+    },
+    {
+      "name": "설명예를실제자산등록차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "evidence": [
+        "FIXTURE-LOGO0@0.1.0 설명용 자산을 실제 목록에 등록",
+        "FIXTURE-LOGO0@0.1.0 설명용 출처 혼동"
+      ]
+    },
+    {
+      "name": "동일자산ID버전중복차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "evidence": [
+        "동일 자산ID·버전 중복/충돌",
+        "자산의 현재 버전이 여러 개: FIXTURE-LOGO0"
+      ]
+    },
+    {
+      "name": "다른가족사CI색연결차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "evidence": [
+        "FIXTURE-COLOR0@0.1.0 CI 소속·종류 불일치"
+      ]
+    },
+    {
+      "name": "로고픽셀을공식선언근거로사용차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "evidence": [
+        "FIXTURE-COLOR0@0.1.0 관측 로고를 공식색 선언 근거로 사용"
+      ]
+    },
+    {
+      "name": "원문색을자동으로어둡게바꾼identity변환차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "evidence": [
+        "FIXTURE-COLOR0@0.1.0 원문 sRGB값 변경 또는 불투명 identity 위반"
+      ]
+    },
+    {
+      "name": "sRGB미확인identity단정차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "evidence": [
+        "FIXTURE-COLOR0@0.1.0 색공간 미확인 sRGB 단정"
+      ]
+    },
+    {
+      "name": "CMYK출력프로필없는HEX자동환산차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "evidence": [
+        "FIXTURE-COLOR0@0.1.0 인쇄/별색 무조건 HEX 변환",
+        "FIXTURE-COLOR0@0.1.0 색공간 미확인 sRGB 단정",
+        "FIXTURE-COLOR0@0.1.0 원문 sRGB값 변경 또는 불투명 identity 위반"
+      ]
+    },
+    {
+      "name": "RGB범위초과차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "evidence": [
+        "FIXTURE-COLOR0@0.1.0 색 채널·범위 오류",
+        "FIXTURE-COLOR0@0.1.0 원문 sRGB값 변경 또는 불투명 identity 위반"
+      ]
+    },
+    {
+      "name": "검수일자형식오류차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "evidence": [
+        "CI색상목록_규격.json: colors/0/verification/checked_at: '어제' is not a 'date-time'"
+      ]
+    },
+    {
+      "name": "체크상태의대조자누락차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "evidence": [
+        "FIXTURE-COLOR0@0.1.0 원문대조자·시각 누락"
+      ]
+    },
+    {
+      "name": "파생프레임을원본으로등록차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "evidence": [
+        "FIXTURE-LOGO0@0.1.0 파생자료의 원본 오인",
+        "회사 CI 대상·소속 불일치",
+        "FIXTURE-COLOR0@0.1.0 CI 소속·종류 불일치"
+      ]
+    },
+    {
+      "name": "이미지추출색은명시조회에만포함",
+      "passed": true,
+      "evidence": "기본0/명시1; 원문종류 라벨 보존"
+    },
+    {
+      "name": "페이지응용색은기본CI색조회에서제외",
+      "passed": true,
+      "evidence": "CI원색과페이지제안분리"
+    },
+    {
+      "name": "실제빈등록목록은수집완료로표시안함",
+      "passed": true,
+      "evidence": {
+        "valid": true,
+        "errors": [],
+        "warnings": [
+          "가족사 명단 확인 전",
+          "회사별 원본 CI·관측색 자료 수집/검토 미완료",
+          "공식 지정색 전체 확인 미완료; 관측색은 공식값 아님"
+        ],
+        "collection_complete": false,
+        "official_values_complete": false,
+        "counts": {
+          "companies": 0,
+          "assets": 0,
+          "colors": 0
+        }
+      }
+    },
+    {
+      "name": "실제 목록에 synthetic source 표지 차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "evidence": [
+        "FIXTURE-LOGO0@0.1.0 설명용 자산을 실제 목록에 등록"
+      ]
+    },
+    {
+      "name": "실제 회사 synthetic 명단 근거 차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "evidence": [
+        "실제 회사 목록에 설명용 명단 근거"
+      ]
+    },
+    {
+      "name": "공식 선언과 픽셀 추출 방법 혼합 차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "evidence": [
+        "FIXTURE-COLOR0@0.1.0 관측 방법을 공식 선언으로 승격",
+        "FIXTURE-COLOR0@0.1.0 래스터 샘플 영역·알파·배경·프로필 가정 누락"
+      ]
+    },
+    {
+      "name": "이미지 샘플 위치·알파·프로필 누락 차단",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "evidence": [
+        "FIXTURE-COLOR0@0.1.0 래스터 샘플 영역·알파·배경·프로필 가정 누락"
+      ]
+    },
+    {
+      "name": "회사별 같은 색ID 허용",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "name": "직접 팔레트 조회의 scope 우회 차단",
+      "passed": true,
+      "evidence": "검증 실패시 값 반환하지 않음"
+    },
+    {
+      "name": "원본 지정 없이 응용색만으로 수집 완료 오인 차단",
+      "passed": true,
+      "evidence": {
+        "valid": true,
+        "errors": [],
+        "warnings": [
+          "회사별 원본 CI·관측색 자료 수집/검토 미완료",
+          "공식 지정색 전체 확인 미완료; 관측색은 공식값 아님"
+        ],
+        "collection_complete": false,
+        "official_values_complete": false,
+        "counts": {
+          "companies": 8,
+          "assets": 9,
+          "colors": 8
+        }
+      }
+    }
+  ],
+  "scope": "가상명단·가상승인상태·임시바이트파일로등록계약을검사. 실제회사CI/공식값/신원·내용을검증한것아님."
+}

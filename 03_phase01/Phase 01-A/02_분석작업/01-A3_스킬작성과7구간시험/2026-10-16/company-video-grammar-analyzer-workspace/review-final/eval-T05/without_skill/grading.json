@@ -1,0 +1,40 @@
+{
+  "case_id": "T05",
+  "condition": "without_skill",
+  "recorded_at": "2026-10-16T06:25:14.611847+00:00",
+  "grader": "root source/meaning review; not independent human",
+  "reference_level": "human_confirmed",
+  "expectations": [
+    {
+      "text": "겹쳐 바뀌는 크로스페이드를 식별",
+      "passed": true,
+      "evidence": "O2/O3 화면 전역 중첩과 이전약화/신규선명화를 식별."
+    },
+    {
+      "text": "슬라이드·카메라 이동으로 잘못 확정하지 않음",
+      "passed": true,
+      "evidence": "이동 경계/슬라이드를 주장하지 않고 크로스디졸브 가설로 기록."
+    },
+    {
+      "text": "혼합 진행량의 감속형을 관측 속성에 연결",
+      "passed": false,
+      "evidence": "혼합의 방향과 종료는 있으나 초기/후반 변화율 비교 또는 감속형 기록이 없다. 정확한 프리셋 미확정과 관측 가능한 혼합 감속 누락은 별개."
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 1,
+    "total": 3
+  },
+  "case_status": "needs_revision",
+  "notes": [],
+  "timing": null,
+  "tokens": null,
+  "telemetry_note": "per-run telemetry unavailable; no synthesized averages",
+  "eval_feedback": {
+    "suggestions": [
+      "Known exposed windows, one run per condition, same agent batches; this is regression evidence, not generalization accuracy."
+    ]
+  },
+  "additional_content_issues": []
+}

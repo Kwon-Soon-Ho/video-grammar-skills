@@ -1,0 +1,113 @@
+{
+  "writes": 1,
+  "validation_faults": 1,
+  "restores": 0,
+  "events": [
+    {
+      "request": {
+        "op": "backup",
+        "path": "a.json",
+        "backup_path": "backup/a.json",
+        "expected_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d"
+      },
+      "sequence": 1,
+      "status": "ok",
+      "before_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d",
+      "after_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d",
+      "response": {
+        "op": "backup",
+        "source_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d",
+        "backup_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d",
+        "backup_path": "backup/a.json",
+        "ok": true,
+        "actual_current_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d"
+      }
+    },
+    {
+      "request": {
+        "op": "backup",
+        "path": "b.json",
+        "backup_path": "backup/b.json",
+        "expected_sha256": "fa1d26a336a6123fda110e20f26c40696f6538d7aef0612c626707559f782654"
+      },
+      "sequence": 2,
+      "status": "ok",
+      "before_sha256": "fa1d26a336a6123fda110e20f26c40696f6538d7aef0612c626707559f782654",
+      "after_sha256": "fa1d26a336a6123fda110e20f26c40696f6538d7aef0612c626707559f782654",
+      "response": {
+        "op": "backup",
+        "source_sha256": "fa1d26a336a6123fda110e20f26c40696f6538d7aef0612c626707559f782654",
+        "backup_sha256": "fa1d26a336a6123fda110e20f26c40696f6538d7aef0612c626707559f782654",
+        "backup_path": "backup/b.json",
+        "ok": true,
+        "actual_current_sha256": "fa1d26a336a6123fda110e20f26c40696f6538d7aef0612c626707559f782654"
+      }
+    },
+    {
+      "request": {
+        "op": "write",
+        "path": "a.json",
+        "candidate_path": "outputs/next.json",
+        "expected_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d"
+      },
+      "sequence": 3,
+      "status": "ok",
+      "before_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d",
+      "requested_sha256": "df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d",
+      "service_owned_written_sha256": "df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d",
+      "external_actor_sha256": "e5aa47f32e9daa5d0dfd2d293192a0286fce798e195ea523f1e9b25cbe336f39",
+      "after_sha256": "e5aa47f32e9daa5d0dfd2d293192a0286fce798e195ea523f1e9b25cbe336f39",
+      "response": {
+        "op": "write",
+        "sha256": "e5aa47f32e9daa5d0dfd2d293192a0286fce798e195ea523f1e9b25cbe336f39",
+        "owned_written_sha256": "df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d",
+        "ok": true,
+        "actual_current_sha256": "e5aa47f32e9daa5d0dfd2d293192a0286fce798e195ea523f1e9b25cbe336f39"
+      }
+    },
+    {
+      "request": {
+        "op": "validate",
+        "paths": [
+          "a.json"
+        ]
+      },
+      "sequence": 4,
+      "status": "error",
+      "error": "TEST_IO_POSTSAVE_VALIDATION_FAILED: test environment rejected saved draft; no content approval",
+      "response": {
+        "op": "validate",
+        "checks": [
+          {
+            "path": "a.json",
+            "json_parse": true,
+            "sha256": "e5aa47f32e9daa5d0dfd2d293192a0286fce798e195ea523f1e9b25cbe336f39"
+          }
+        ],
+        "ok": false,
+        "error_type": "RuntimeError",
+        "error": "TEST_IO_POSTSAVE_VALIDATION_FAILED: test environment rejected saved draft; no content approval"
+      }
+    },
+    {
+      "request": {
+        "op": "restore",
+        "path": "a.json",
+        "backup_path": "backup/a.json",
+        "expected_sha256": "df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d"
+      },
+      "sequence": 5,
+      "status": "error",
+      "before_sha256": "e5aa47f32e9daa5d0dfd2d293192a0286fce798e195ea523f1e9b25cbe336f39",
+      "error": "current bytes changed; write not applied",
+      "after_sha256": "e5aa47f32e9daa5d0dfd2d293192a0286fce798e195ea523f1e9b25cbe336f39",
+      "response": {
+        "op": "restore",
+        "ok": false,
+        "error_type": "AssertionError",
+        "error": "current bytes changed; write not applied",
+        "actual_current_sha256": "e5aa47f32e9daa5d0dfd2d293192a0286fce798e195ea523f1e9b25cbe336f39"
+      }
+    }
+  ]
+}

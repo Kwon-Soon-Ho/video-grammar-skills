@@ -1,0 +1,53 @@
+{
+  "notice": "설계 검토용 합성 예시. 실제 영상 관측이나 현행 스키마의 유효한 파일이 아님.",
+  "schema_version": "proposal-only-0.1",
+  "source_id": "source-example",
+  "objects": [
+    {
+      "object_id": "o1",
+      "shape_description": null,
+      "identity": {
+        "label": null,
+        "candidates": [],
+        "supporting_claim_ids": [],
+        "status": "unreviewed"
+      }
+    }
+  ],
+  "observation_rows": [
+    {
+      "id": "or1",
+      "object_id": "o1",
+      "property": "size",
+      "time_window": null,
+      "review_state": "not_reviewed",
+      "change": null,
+      "direction_order": null,
+      "easing": {
+        "classification": null,
+        "basis_evidence_ids": [],
+        "limitation": null
+      },
+      "evidence_ids": [],
+      "claim_ids": [],
+      "unresolved_id": "u1"
+    }
+  ],
+  "claims": [],
+  "unknowns": [
+    {
+      "id": "u1",
+      "question": "대상 크기의 변화와 가감속은 무엇인가?",
+      "state": "open",
+      "required_evidence": "같은 대상의 진행 중 실제 시각 표본과 원본 ROI",
+      "next_probe": null,
+      "resolution": null
+    }
+  ],
+  "review": {
+    "structure": "not_run",
+    "source_content": "not_reviewed",
+    "claim_denominator_complete": false,
+    "company_approval": null
+  }
+}

@@ -1,0 +1,315 @@
+{
+  "review_scope": "R2 참조·운영자료 구조검사에 대한 메모리 반례. D 변경 없음. 자연어 의미 오류와 중복집계의 미구현은 구조오류 거짓통과와 분리.",
+  "counts": {
+    "guides": 75,
+    "pairs": 20,
+    "cases": 18,
+    "tests": 23,
+    "contract_tests": 20,
+    "contract_expectations_met": 20,
+    "contract_gaps": 0,
+    "scope_limit_probes": 3
+  },
+  "input_sha256": {
+    "01_공통용어/공통용어사전.json": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+    "01_공통용어/분류운영규칙.json": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d",
+    "01_공통용어/용어판정기준.json": "c975dcb7f8b35b07419a5e35f7f11b4581b480b84d879fed46f5adf94062c8f4",
+    "01_공통용어/혼동쌍사례.json": "3d3ecc4401cdf7040376abe6b9f8975373c0b7bf78c4edb68600e30a295a1591",
+    "01_공통용어/설명용분류사례.json": "1a23301c0da9690965dba64b2d787a70fd25cbd4e6f7f678505ae5b83164aa27",
+    "01_공통용어/02_기록단위와분류축.md": "f945ba00b22816209abd0adfd5c292a43bd09524cec151bd53858406cd09a421",
+    "01_공통용어/03_용어별적용예와반례.md": "76d4f24c658046eeca6bd50e940d156e62213eb827487c3565e287046bc3989d",
+    "01_공통용어/04_복합화면과미분류처리.md": "f323bd54464426d6c5cc8e45016a141f307b5dc55170d4aa2763f09ff5ce718e",
+    "01_공통용어/05_범위별분류사례.md": "35682face74c652def9341f88a27b476bcb5c64c395e337e10459902b303f59f",
+    "07_실행도구/R2_운영자료검사.py": "d0832367f4690ec5505ecf415e3eb44e7e372bcb223bb9c5fb0ac60e9b1939ea"
+  },
+  "tests": [
+    {
+      "name": "현재 정본의 구조 정상 대조",
+      "category": "structural_contract",
+      "expected_valid": true,
+      "actual_valid": true,
+      "expected_result_met": true,
+      "errors": [],
+      "exception": null
+    },
+    {
+      "name": "같은 대상·축·주장에 classified/unknown 중복 차단",
+      "category": "structural_contract",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_result_met": true,
+      "errors": [
+        "R2-EX-09 같은 대상/주장/축 판정 중복"
+      ],
+      "exception": null
+    },
+    {
+      "name": "state를asset 바로 아래에 연결 차단",
+      "category": "structural_contract",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_result_met": true,
+      "errors": [
+        "R2-EX-01 단위 계층 연결 오류"
+      ],
+      "exception": null
+    },
+    {
+      "name": "사례 회사승인 승격 차단",
+      "category": "structural_contract",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_result_met": true,
+      "errors": [
+        "연습사례 ['cases', 0, 'company_approved']: False was expected"
+      ],
+      "exception": null
+    },
+    {
+      "name": "용어가이드 회사승인 승격 차단",
+      "category": "structural_contract",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_result_met": true,
+      "errors": [
+        "판정기준 ['guides', 58, 'company_approved']: False was expected"
+      ],
+      "exception": null
+    },
+    {
+      "name": "사례 실제출처 승격 차단",
+      "category": "structural_contract",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_result_met": true,
+      "errors": [
+        "연습사례 ['cases', 0, 'origin']: 'synthetic_example' was expected"
+      ],
+      "exception": null
+    },
+    {
+      "name": "알 수 없는 근거규칙 차단",
+      "category": "structural_contract",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_result_met": true,
+      "errors": [
+        "없는 근거규칙 PROPERTY-SIZE",
+        "항목별 필수근거를 약한/다른 규칙으로 변경 PROPERTY-SIZE"
+      ],
+      "exception": null
+    },
+    {
+      "name": "가이드 없는 출처 차단",
+      "category": "structural_contract",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_result_met": true,
+      "errors": [
+        "가이드 출처 없음 STYLE-PHOTO"
+      ],
+      "exception": null
+    },
+    {
+      "name": "용어가이드 양성예 공백 차단",
+      "category": "structural_contract",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_result_met": true,
+      "errors": [
+        "판정기준 ['guides', 58, 'positive_example']: '  ' does not match '\\\\S'"
+      ],
+      "exception": null
+    },
+    {
+      "name": "사례 필수 claim_scope 키 누락 차단",
+      "category": "structural_contract",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_result_met": true,
+      "errors": [
+        "연습사례 ['cases', 0, 'annotations', 0]: 'claim_scope' is a required property"
+      ],
+      "exception": null
+    },
+    {
+      "name": "운영규칙 company_approval=true 차단 필요",
+      "category": "structural_contract",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_result_met": true,
+      "errors": [
+        "운영규칙 ['company_approval']: False was expected"
+      ],
+      "exception": null
+    },
+    {
+      "name": "혼동쌍 실제출처/승인 승격 차단 필요",
+      "category": "structural_contract",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_result_met": true,
+      "errors": [
+        "혼동쌍 ['origin']: 'synthetic_example' was expected",
+        "혼동쌍 []: Additional properties are not allowed ('company_approved' was unexpected)"
+      ],
+      "exception": null
+    },
+    {
+      "name": "근거규칙 requires 빈배열 차단 필요",
+      "category": "structural_contract",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_result_met": true,
+      "errors": [
+        "운영규칙 ['evidence_rules', 'visible_ui_scope_and_verified_capture_source', 'requires']: [] should be non-empty"
+      ],
+      "exception": null
+    },
+    {
+      "name": "근거규칙 requires 자료형오류 차단 필요",
+      "category": "structural_contract",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_result_met": true,
+      "errors": [
+        "운영규칙 ['evidence_rules', 'visible_scope', 'requires']: '화면없이허용' is not of type 'array'"
+      ],
+      "exception": null
+    },
+    {
+      "name": "실제UI 최소근거를 visible_scope로 약화 차단 필요",
+      "category": "guide_rule_consistency",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_result_met": true,
+      "errors": [
+        "항목별 필수근거를 약한/다른 규칙으로 변경 LAYOUT-UI-ANNOTATION"
+      ],
+      "exception": null
+    },
+    {
+      "name": "PHOTO 촬영출처를 visible_scope로 약화 차단 필요",
+      "category": "guide_rule_consistency",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_result_met": true,
+      "errors": [
+        "항목별 필수근거를 약한/다른 규칙으로 변경 STYLE-PHOTO"
+      ],
+      "exception": null
+    },
+    {
+      "name": "가이드 필수 minimum_evidence 누락은 예외없이 오류 보고 필요",
+      "category": "structural_contract",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_result_met": true,
+      "errors": [
+        "판정기준 ['guides', 58]: 'minimum_evidence' is a required property"
+      ],
+      "exception": null
+    },
+    {
+      "name": "혼동쌍 필수 id 누락은 예외없이 오류 보고 필요",
+      "category": "structural_contract",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_result_met": true,
+      "errors": [
+        "혼동쌍 ['pairs', 0]: 'id' is a required property"
+      ],
+      "exception": null
+    },
+    {
+      "name": "혼동쌍 contrast 공백 차단 필요",
+      "category": "structural_contract",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_result_met": true,
+      "errors": [
+        "혼동쌍 ['pairs', 0, 'contrast']: '  ' does not match '\\\\S'"
+      ],
+      "exception": null
+    },
+    {
+      "name": "가이드 source_refs 빈배열 차단 필요",
+      "category": "structural_contract",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_result_met": true,
+      "errors": [
+        "판정기준 ['guides', 58, 'source_refs']: [] should be non-empty"
+      ],
+      "exception": null
+    },
+    {
+      "name": "상위/하위 함께 저장 시 중복집계 방어는 검사범위 밖",
+      "category": "aggregation_scope_limit",
+      "expected_valid": null,
+      "actual_valid": true,
+      "expected_result_met": null,
+      "errors": [],
+      "exception": null
+    },
+    {
+      "name": "한프레임에 모션을 상상한 의미오류는 구조검사 범위 밖",
+      "category": "semantic_scope_limit",
+      "expected_valid": null,
+      "actual_valid": true,
+      "expected_result_met": null,
+      "errors": [],
+      "exception": null
+    },
+    {
+      "name": "AI이미지의 촬영사실 오분류는 구조검사 범위 밖",
+      "category": "semantic_scope_limit",
+      "expected_valid": null,
+      "actual_valid": true,
+      "expected_result_met": null,
+      "errors": [],
+      "exception": null
+    }
+  ],
+  "reviewed_at": "2026-10-14",
+  "test_harness_sha256": "ac5aa83328d235c94d5c36e14f9c8925b832f72671093a65ad8cd20235daede0",
+  "previous_findings": {
+    "R2-02-F1": "해결: beat에유지/정지사건포함",
+    "R2-02-F2": "해결: 관측classified와구현unknown의별도주장",
+    "R2-03-F1": "해결: 근거규칙9개와항목별출처/시간조건",
+    "R2-03-F2": "해결: 전역분포/국소그룹구분",
+    "R2-03-F3": "해결: 작업패널과최종교육영상의UI시간축문맥구분",
+    "R2-03-F4": "해결: 변화방향과속도크기분리"
+  },
+  "additional_findings_and_repairs": [
+    {
+      "issue": "최소근거를다른유효하지만약한규칙으로바꾸면초기에통과",
+      "repair": "최신검사기는required_evidence대응을검사. UI/PHOTO기존공격으로재검사함"
+    },
+    {
+      "issue": "R2-PAIR-14의다른축표현은둘다timing인현사전과불일치",
+      "repair": "timing축안의서로다른하위개념으로수정,현재JSON/MD읽기확인"
+    },
+    {
+      "issue": "R2-PAIR-18의출처부족기권표현이충분한3D관측까지지울수있음",
+      "repair": "충분한입체외관관측은유지하고제작출처만미확정,PHOTO/정확한등각의별도필수근거구분"
+    }
+  ],
+  "markdown_consistency": {
+    "guide_text_missing": [],
+    "pair_text_missing": []
+  },
+  "final_decision": "pass_with_scope_limits",
+  "stage_coverage": {
+    "R2-2": "4단위·8축·5상태·원인/관측주장구분",
+    "R2-3": "75개가이드와예/반례/기권·9근거규칙·조회MD",
+    "R2-4": "20개혼동쌍·복합/미분류MD",
+    "R2-5": "18개설명용사례·상태/범위구조·23개메모리대조/공격"
+  },
+  "limitations": [
+    "23개중20개는구조/규칙계약의기대검사,3개는기계적검사범위밖임을확인한한계probe다. 23개분류정답을맞혔다는뜻이아니다.",
+    "한프레임모션상상과AI이미지의촬영사실오분류는자연어의미를읽는독립검수가필요. 구조valid를의미정답/실영상성능으로보고하지않는다.",
+    "상위/하위태그동시저장은통과하지만중복집계시스템을구현/검증하지않았다. 조회/집계시자동상속/중복계수하지않는운영규칙을별도준수해야한다.",
+    "실제영상·사람의도·회사승인·R4저장스키마·01-A분석은이검토범위밖이다."
+  ]
+}

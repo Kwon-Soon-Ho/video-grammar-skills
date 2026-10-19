@@ -1,0 +1,98 @@
+{
+  "schema_version": "video-review-ledger-0.1",
+  "revision": 1,
+  "before": {
+    "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analyzer-realuse-20261019\\runs\\H03\\observations.json",
+    "sha256": "b60f89f468e3aae7467f8d712dffb517f84ad2936aa188e10cfe7d50c49990b0"
+  },
+  "after": {
+    "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\analysis-reliability-20261019\\cases-r2\\H03\\observations-reviewed.json",
+    "sha256": "95f9fa0aa630806d60baa0b682b827291f12b622973eeaa4e296230a7ecf1d9c"
+  },
+  "reviewer": {
+    "kind": "same_agent_context",
+    "name": "Codex development review",
+    "method": "기존 노출 자료·지적을 알고 native와 픽셀 동일 ROI 재관찰. 독립 평가 아님."
+  },
+  "findings": [
+    {
+      "id": "F01",
+      "question": "단순 등장으로 축약한 강조의 반복과 이름표 변화",
+      "requirements": [
+        {
+          "object_id": "highlight",
+          "property": "visibility",
+          "dimension": "emphasis"
+        },
+        {
+          "object_id": "receivers",
+          "property": "color",
+          "dimension": "receiver3-label-emphasis"
+        }
+      ],
+      "required_basis_kind": "observed",
+      "before_claim_ids": [
+        "c019"
+      ],
+      "state": "addressed",
+      "resolution_claim_ids": [
+        "c019",
+        "c040"
+      ],
+      "reason": "명시한 native 또는 픽셀 동일 ROI와 개요 시트를 재대조해 해당 관측을 추가·변경함. 자동 진실성 검증·독립 평가 아님.",
+      "next_probe": null
+    },
+    {
+      "id": "F02",
+      "question": "하단 표제와 조건 상자의 선후·중첩",
+      "requirements": [
+        {
+          "object_id": "caption",
+          "property": "visibility",
+          "dimension": "enter"
+        },
+        {
+          "object_id": "caption",
+          "property": "visibility",
+          "dimension": "title-versus-conditions"
+        }
+      ],
+      "required_basis_kind": "observed",
+      "before_claim_ids": [
+        "c039"
+      ],
+      "state": "addressed",
+      "resolution_claim_ids": [
+        "c039",
+        "c041"
+      ],
+      "reason": "명시한 native 또는 픽셀 동일 ROI와 개요 시트를 재대조해 해당 관측을 추가·변경함. 자동 진실성 검증·독립 평가 아님.",
+      "next_probe": null
+    },
+    {
+      "id": "F08",
+      "question": "재관찰에서 추가 발견한 왼쪽 지도 드론 주변 원형 빛",
+      "requirements": [
+        {
+          "object_id": "left-halo",
+          "property": "size",
+          "dimension": "halo-area"
+        },
+        {
+          "object_id": "left-halo",
+          "property": "visibility",
+          "dimension": "halo-visible"
+        }
+      ],
+      "required_basis_kind": "observed",
+      "before_claim_ids": [],
+      "state": "addressed",
+      "resolution_claim_ids": [
+        "c043",
+        "c044"
+      ],
+      "reason": "명시한 native 또는 픽셀 동일 ROI와 개요 시트를 재대조해 해당 관측을 추가·변경함. 자동 진실성 검증·독립 평가 아님.",
+      "next_probe": null
+    }
+  ]
+}

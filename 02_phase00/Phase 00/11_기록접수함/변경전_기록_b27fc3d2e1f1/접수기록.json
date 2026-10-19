@@ -1,0 +1,78 @@
+{
+  "entry_version": "0.1.0",
+  "entry_id": "INTAKE-b2cb5a055a76b27fc3d2e1f1",
+  "source": {
+    "path": "08_검증결과/스킬평가/초안쓰기/변경전_기록.json",
+    "sha256": "a56a429e5b9884d7749adcff5717d3d85b4e2bff12305b423c5fb313d472ef95",
+    "byte_length": 3545,
+    "role": "검사·평가 산출물",
+    "schema_version": "0.1.0",
+    "record_id": "EXAMPLE-PROCESS-001",
+    "record_version": "0.1.0"
+  },
+  "status": "legacy_requires_mapping",
+  "missing_or_review_items": [
+    {
+      "pointer": "/asset/version",
+      "reason": "원본 영상 identity 미확인. JSON/파일명에서 추정 금지",
+      "automatic_fill_allowed": false
+    },
+    {
+      "pointer": "/asset/sha256",
+      "reason": "원본 영상 identity 미확인. JSON/파일명에서 추정 금지",
+      "automatic_fill_allowed": false
+    },
+    {
+      "pointer": "/asset/duration_s",
+      "reason": "재생 길이와 확인 근거 미확인",
+      "automatic_fill_allowed": false
+    },
+    {
+      "pointer": "/time_contract",
+      "reason": "원점·PTS·구간/프레임·근거를 새 시간 계약에 명시 연결해야 함",
+      "automatic_fill_allowed": false
+    },
+    {
+      "pointer": "/targets",
+      "reason": "원본/설명 구간/화면 상태/동작·대상의 범위와 버전 연결 필요",
+      "automatic_fill_allowed": false
+    },
+    {
+      "pointer": "/evidence",
+      "reason": "자료 pin·선택 부분·주장 범위/근거 역할 연결 필요",
+      "automatic_fill_allowed": false
+    },
+    {
+      "pointer": "/segments/*/classification",
+      "reason": "구형 태그는 출처와 범위를 검토할 후보. 상태/관측 사실 자동 생성 금지",
+      "automatic_fill_allowed": false
+    },
+    {
+      "pointer": "/run",
+      "reason": "실제 수행 기록 미작성. 미실행과 구분해 보존",
+      "automatic_fill_allowed": false
+    },
+    {
+      "pointer": "/review",
+      "reason": "구형 검수/승인 상태는 새 통합 context로 자동 이전하지 않음",
+      "automatic_fill_allowed": false
+    }
+  ],
+  "snapshot": {
+    "path": "11_기록접수함/변경전_기록_b27fc3d2e1f1/원문.json",
+    "sha256": "a56a429e5b9884d7749adcff5717d3d85b4e2bff12305b423c5fb313d472ef95"
+  },
+  "source_unchanged": true,
+  "history": [
+    {
+      "event": "copy_only_received",
+      "at_utc": "2026-10-15T02:26:41.229224+00:00",
+      "note": "원문 bytes 보존. 분석/회사 승인 이관 미수행."
+    }
+  ],
+  "analysis_search_allowed": false,
+  "company_rule_search_allowed": false,
+  "fact_verified": false,
+  "company_approved": false,
+  "operational_release": false
+}

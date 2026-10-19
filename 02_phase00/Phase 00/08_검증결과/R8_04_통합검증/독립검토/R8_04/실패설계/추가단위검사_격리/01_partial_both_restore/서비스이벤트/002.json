@@ -1,0 +1,20 @@
+{
+  "request": {
+    "op": "backup",
+    "path": "b.json",
+    "backup_path": "backup/this/b.json",
+    "expected_sha256": "fa1d26a336a6123fda110e20f26c40696f6538d7aef0612c626707559f782654"
+  },
+  "sequence": 2,
+  "status": "ok",
+  "before_sha256": "fa1d26a336a6123fda110e20f26c40696f6538d7aef0612c626707559f782654",
+  "after_sha256": "fa1d26a336a6123fda110e20f26c40696f6538d7aef0612c626707559f782654",
+  "response": {
+    "op": "backup",
+    "source_sha256": "fa1d26a336a6123fda110e20f26c40696f6538d7aef0612c626707559f782654",
+    "backup_sha256": "fa1d26a336a6123fda110e20f26c40696f6538d7aef0612c626707559f782654",
+    "backup_path": "backup/this/b.json",
+    "ok": true,
+    "actual_current_sha256": "fa1d26a336a6123fda110e20f26c40696f6538d7aef0612c626707559f782654"
+  }
+}

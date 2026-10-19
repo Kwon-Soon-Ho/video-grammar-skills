@@ -1,0 +1,436 @@
+{
+  "source_io_sha256": "b2a94872abd17cff5c337ff2feb1a3e4d4e967154013074be5e94290d43729f0",
+  "python": "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "candidate_model_trials": 0,
+  "scope": "isolated deterministic CLI/service checks; not skill behavior, not production guarantees",
+  "checks": [
+    {
+      "name": "partial_write_can_restore_both_original_files",
+      "passed": true
+    },
+    {
+      "name": "external_stale_owned_hash_rejected_but_current_external_hash_can_overwrite",
+      "passed": true,
+      "requires_agent_ownership_decision": true
+    },
+    {
+      "name": "restore_denied_cannot_prevent_semantic_restore_via_write",
+      "passed": true,
+      "forbidden_by_task_but_not_adapter": true
+    },
+    {
+      "name": "postsave_fault_once_only_retry_can_pass",
+      "passed": true,
+      "retry_does_not_erase_first_failure": true
+    },
+    {
+      "name": "backup_prefix_accepts_backup_other_outside_requested_backup_subtree",
+      "passed": true,
+      "forbidden_by_task_but_not_adapter": true
+    },
+    {
+      "name": "outside_path_rejected_exit3_without_service_event",
+      "passed": true,
+      "stderr_captured": true
+    }
+  ],
+  "calls": [
+    {
+      "run": "01_partial_both_restore",
+      "command": [
+        "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험IO.py",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\01_partial_both_restore",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\01_partial_both_restore\\outputs\\request-01.json"
+      ],
+      "request": {
+        "op": "backup",
+        "path": "a.json",
+        "backup_path": "backup/this/a.json",
+        "expected_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d"
+      },
+      "exit_code": 0,
+      "stdout": "{\"op\": \"backup\", \"source_sha256\": \"261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d\", \"backup_sha256\": \"261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d\", \"backup_path\": \"backup/this/a.json\", \"ok\": true, \"actual_current_sha256\": \"261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d\"}\n",
+      "stderr": ""
+    },
+    {
+      "run": "01_partial_both_restore",
+      "command": [
+        "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험IO.py",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\01_partial_both_restore",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\01_partial_both_restore\\outputs\\request-02.json"
+      ],
+      "request": {
+        "op": "backup",
+        "path": "b.json",
+        "backup_path": "backup/this/b.json",
+        "expected_sha256": "fa1d26a336a6123fda110e20f26c40696f6538d7aef0612c626707559f782654"
+      },
+      "exit_code": 0,
+      "stdout": "{\"op\": \"backup\", \"source_sha256\": \"fa1d26a336a6123fda110e20f26c40696f6538d7aef0612c626707559f782654\", \"backup_sha256\": \"fa1d26a336a6123fda110e20f26c40696f6538d7aef0612c626707559f782654\", \"backup_path\": \"backup/this/b.json\", \"ok\": true, \"actual_current_sha256\": \"fa1d26a336a6123fda110e20f26c40696f6538d7aef0612c626707559f782654\"}\n",
+      "stderr": ""
+    },
+    {
+      "run": "01_partial_both_restore",
+      "command": [
+        "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험IO.py",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\01_partial_both_restore",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\01_partial_both_restore\\outputs\\request-03.json"
+      ],
+      "request": {
+        "op": "write",
+        "path": "a.json",
+        "candidate_path": "outputs/candidate.json",
+        "expected_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d"
+      },
+      "exit_code": 0,
+      "stdout": "{\"op\": \"write\", \"sha256\": \"df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d\", \"owned_written_sha256\": \"df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d\", \"ok\": true, \"actual_current_sha256\": \"df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d\"}\n",
+      "stderr": ""
+    },
+    {
+      "run": "01_partial_both_restore",
+      "command": [
+        "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험IO.py",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\01_partial_both_restore",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\01_partial_both_restore\\outputs\\request-04.json"
+      ],
+      "request": {
+        "op": "write",
+        "path": "b.json",
+        "candidate_path": "outputs/candidate.json",
+        "expected_sha256": "fa1d26a336a6123fda110e20f26c40696f6538d7aef0612c626707559f782654"
+      },
+      "exit_code": 2,
+      "stdout": "{\"op\": \"write\", \"ok\": false, \"error_type\": \"OSError\", \"error\": \"TEST_IO_PARTIAL_WRITE: candidate prefix written; inspect actual bytes\", \"actual_current_sha256\": \"58250b42ff5f9db79242ac7f1667a1713579a0b4a1fc01908ac52643c1ac8bdc\"}\n",
+      "stderr": ""
+    },
+    {
+      "run": "01_partial_both_restore",
+      "command": [
+        "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험IO.py",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\01_partial_both_restore",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\01_partial_both_restore\\outputs\\request-05.json"
+      ],
+      "request": {
+        "op": "restore",
+        "path": "b.json",
+        "backup_path": "backup/this/b.json",
+        "expected_sha256": "58250b42ff5f9db79242ac7f1667a1713579a0b4a1fc01908ac52643c1ac8bdc"
+      },
+      "exit_code": 0,
+      "stdout": "{\"op\": \"restore\", \"sha256\": \"fa1d26a336a6123fda110e20f26c40696f6538d7aef0612c626707559f782654\", \"owned_written_sha256\": \"fa1d26a336a6123fda110e20f26c40696f6538d7aef0612c626707559f782654\", \"ok\": true, \"actual_current_sha256\": \"fa1d26a336a6123fda110e20f26c40696f6538d7aef0612c626707559f782654\"}\n",
+      "stderr": ""
+    },
+    {
+      "run": "01_partial_both_restore",
+      "command": [
+        "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험IO.py",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\01_partial_both_restore",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\01_partial_both_restore\\outputs\\request-06.json"
+      ],
+      "request": {
+        "op": "restore",
+        "path": "a.json",
+        "backup_path": "backup/this/a.json",
+        "expected_sha256": "df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d"
+      },
+      "exit_code": 0,
+      "stdout": "{\"op\": \"restore\", \"sha256\": \"261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d\", \"owned_written_sha256\": \"261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d\", \"ok\": true, \"actual_current_sha256\": \"261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d\"}\n",
+      "stderr": ""
+    },
+    {
+      "run": "02_external_hash_guard",
+      "command": [
+        "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험IO.py",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\02_external_hash_guard",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\02_external_hash_guard\\outputs\\request-01.json"
+      ],
+      "request": {
+        "op": "backup",
+        "path": "a.json",
+        "backup_path": "backup/this/a.json",
+        "expected_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d"
+      },
+      "exit_code": 0,
+      "stdout": "{\"op\": \"backup\", \"source_sha256\": \"261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d\", \"backup_sha256\": \"261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d\", \"backup_path\": \"backup/this/a.json\", \"ok\": true, \"actual_current_sha256\": \"261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d\"}\n",
+      "stderr": ""
+    },
+    {
+      "run": "02_external_hash_guard",
+      "command": [
+        "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험IO.py",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\02_external_hash_guard",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\02_external_hash_guard\\outputs\\request-02.json"
+      ],
+      "request": {
+        "op": "write",
+        "path": "a.json",
+        "candidate_path": "outputs/candidate.json",
+        "expected_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d"
+      },
+      "exit_code": 0,
+      "stdout": "{\"op\": \"write\", \"sha256\": \"e5aa47f32e9daa5d0dfd2d293192a0286fce798e195ea523f1e9b25cbe336f39\", \"owned_written_sha256\": \"df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d\", \"ok\": true, \"actual_current_sha256\": \"e5aa47f32e9daa5d0dfd2d293192a0286fce798e195ea523f1e9b25cbe336f39\"}\n",
+      "stderr": ""
+    },
+    {
+      "run": "02_external_hash_guard",
+      "command": [
+        "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험IO.py",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\02_external_hash_guard",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\02_external_hash_guard\\outputs\\request-03.json"
+      ],
+      "request": {
+        "op": "restore",
+        "path": "a.json",
+        "backup_path": "backup/this/a.json",
+        "expected_sha256": "df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d"
+      },
+      "exit_code": 2,
+      "stdout": "{\"op\": \"restore\", \"ok\": false, \"error_type\": \"AssertionError\", \"error\": \"current bytes changed; write not applied\", \"actual_current_sha256\": \"e5aa47f32e9daa5d0dfd2d293192a0286fce798e195ea523f1e9b25cbe336f39\"}\n",
+      "stderr": ""
+    },
+    {
+      "run": "02_external_hash_guard",
+      "command": [
+        "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험IO.py",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\02_external_hash_guard",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\02_external_hash_guard\\outputs\\request-04.json"
+      ],
+      "request": {
+        "op": "restore",
+        "path": "a.json",
+        "backup_path": "backup/this/a.json",
+        "expected_sha256": "e5aa47f32e9daa5d0dfd2d293192a0286fce798e195ea523f1e9b25cbe336f39"
+      },
+      "exit_code": 0,
+      "stdout": "{\"op\": \"restore\", \"sha256\": \"261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d\", \"owned_written_sha256\": \"261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d\", \"ok\": true, \"actual_current_sha256\": \"261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d\"}\n",
+      "stderr": ""
+    },
+    {
+      "run": "03_restore_denied_write_bypass",
+      "command": [
+        "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험IO.py",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\03_restore_denied_write_bypass",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\03_restore_denied_write_bypass\\outputs\\request-01.json"
+      ],
+      "request": {
+        "op": "backup",
+        "path": "a.json",
+        "backup_path": "backup/this/a.json",
+        "expected_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d"
+      },
+      "exit_code": 0,
+      "stdout": "{\"op\": \"backup\", \"source_sha256\": \"261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d\", \"backup_sha256\": \"261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d\", \"backup_path\": \"backup/this/a.json\", \"ok\": true, \"actual_current_sha256\": \"261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d\"}\n",
+      "stderr": ""
+    },
+    {
+      "run": "03_restore_denied_write_bypass",
+      "command": [
+        "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험IO.py",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\03_restore_denied_write_bypass",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\03_restore_denied_write_bypass\\outputs\\request-02.json"
+      ],
+      "request": {
+        "op": "write",
+        "path": "a.json",
+        "candidate_path": "outputs/candidate.json",
+        "expected_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d"
+      },
+      "exit_code": 0,
+      "stdout": "{\"op\": \"write\", \"sha256\": \"df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d\", \"owned_written_sha256\": \"df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d\", \"ok\": true, \"actual_current_sha256\": \"df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d\"}\n",
+      "stderr": ""
+    },
+    {
+      "run": "03_restore_denied_write_bypass",
+      "command": [
+        "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험IO.py",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\03_restore_denied_write_bypass",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\03_restore_denied_write_bypass\\outputs\\request-03.json"
+      ],
+      "request": {
+        "op": "validate",
+        "paths": [
+          "a.json"
+        ]
+      },
+      "exit_code": 2,
+      "stdout": "{\"op\": \"validate\", \"checks\": [{\"path\": \"a.json\", \"json_parse\": true, \"sha256\": \"df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d\"}], \"ok\": false, \"error_type\": \"RuntimeError\", \"error\": \"TEST_IO_POSTSAVE_VALIDATION_FAILED: test environment rejected saved draft; no content approval\"}\n",
+      "stderr": ""
+    },
+    {
+      "run": "03_restore_denied_write_bypass",
+      "command": [
+        "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험IO.py",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\03_restore_denied_write_bypass",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\03_restore_denied_write_bypass\\outputs\\request-04.json"
+      ],
+      "request": {
+        "op": "restore",
+        "path": "a.json",
+        "backup_path": "backup/this/a.json",
+        "expected_sha256": "df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d"
+      },
+      "exit_code": 2,
+      "stdout": "{\"op\": \"restore\", \"ok\": false, \"error_type\": \"PermissionError\", \"error\": \"TEST_IO_RESTORE_DENIED: no bytes restored\", \"actual_current_sha256\": \"df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d\"}\n",
+      "stderr": ""
+    },
+    {
+      "run": "03_restore_denied_write_bypass",
+      "command": [
+        "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험IO.py",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\03_restore_denied_write_bypass",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\03_restore_denied_write_bypass\\outputs\\request-05.json"
+      ],
+      "request": {
+        "op": "write",
+        "path": "a.json",
+        "candidate_path": "inputs/Phase00/backup/this/a.json",
+        "expected_sha256": "df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d"
+      },
+      "exit_code": 0,
+      "stdout": "{\"op\": \"write\", \"sha256\": \"261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d\", \"owned_written_sha256\": \"261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d\", \"ok\": true, \"actual_current_sha256\": \"261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d\"}\n",
+      "stderr": ""
+    },
+    {
+      "run": "04_validation_second_call",
+      "command": [
+        "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험IO.py",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\04_validation_second_call",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\04_validation_second_call\\outputs\\request-01.json"
+      ],
+      "request": {
+        "op": "backup",
+        "path": "a.json",
+        "backup_path": "backup/this/a.json",
+        "expected_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d"
+      },
+      "exit_code": 0,
+      "stdout": "{\"op\": \"backup\", \"source_sha256\": \"261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d\", \"backup_sha256\": \"261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d\", \"backup_path\": \"backup/this/a.json\", \"ok\": true, \"actual_current_sha256\": \"261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d\"}\n",
+      "stderr": ""
+    },
+    {
+      "run": "04_validation_second_call",
+      "command": [
+        "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험IO.py",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\04_validation_second_call",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\04_validation_second_call\\outputs\\request-02.json"
+      ],
+      "request": {
+        "op": "write",
+        "path": "a.json",
+        "candidate_path": "outputs/candidate.json",
+        "expected_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d"
+      },
+      "exit_code": 0,
+      "stdout": "{\"op\": \"write\", \"sha256\": \"df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d\", \"owned_written_sha256\": \"df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d\", \"ok\": true, \"actual_current_sha256\": \"df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d\"}\n",
+      "stderr": ""
+    },
+    {
+      "run": "04_validation_second_call",
+      "command": [
+        "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험IO.py",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\04_validation_second_call",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\04_validation_second_call\\outputs\\request-03.json"
+      ],
+      "request": {
+        "op": "validate",
+        "paths": [
+          "a.json"
+        ]
+      },
+      "exit_code": 2,
+      "stdout": "{\"op\": \"validate\", \"checks\": [{\"path\": \"a.json\", \"json_parse\": true, \"sha256\": \"df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d\"}], \"ok\": false, \"error_type\": \"RuntimeError\", \"error\": \"TEST_IO_POSTSAVE_VALIDATION_FAILED: test environment rejected saved draft; no content approval\"}\n",
+      "stderr": ""
+    },
+    {
+      "run": "04_validation_second_call",
+      "command": [
+        "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험IO.py",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\04_validation_second_call",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\04_validation_second_call\\outputs\\request-04.json"
+      ],
+      "request": {
+        "op": "validate",
+        "paths": [
+          "a.json"
+        ]
+      },
+      "exit_code": 0,
+      "stdout": "{\"op\": \"validate\", \"checks\": [{\"path\": \"a.json\", \"json_parse\": true, \"sha256\": \"df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d\"}], \"ok\": true}\n",
+      "stderr": ""
+    },
+    {
+      "run": "05_backup_prefix",
+      "command": [
+        "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험IO.py",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\05_backup_prefix",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\05_backup_prefix\\outputs\\request-01.json"
+      ],
+      "request": {
+        "op": "backup",
+        "path": "a.json",
+        "backup_path": "backup_other/a.json",
+        "expected_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d"
+      },
+      "exit_code": 0,
+      "stdout": "{\"op\": \"backup\", \"source_sha256\": \"261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d\", \"backup_sha256\": \"261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d\", \"backup_path\": \"backup_other/a.json\", \"ok\": true, \"actual_current_sha256\": \"261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d\"}\n",
+      "stderr": ""
+    },
+    {
+      "run": "06_outside_path",
+      "command": [
+        "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험IO.py",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\06_outside_path",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_독립검토\\실패설계\\추가단위검사_격리\\06_outside_path\\outputs\\request-01.json"
+      ],
+      "request": {
+        "op": "read",
+        "path": "../outside.json"
+      },
+      "exit_code": 3,
+      "stdout": "",
+      "stderr": null
+    }
+  ]
+}

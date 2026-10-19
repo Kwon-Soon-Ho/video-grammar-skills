@@ -1,0 +1,238 @@
+{
+  "stage": "R4-3",
+  "review_date": "2026-10-15",
+  "reviewer": "foundation_redteam",
+  "limited_completion_supported": true,
+  "unresolved_blocking_findings": [],
+  "boundary": [
+    "R4-3 독립 좌표·변환 선언 계약과 합성 구조·기하·의미·미해결 검수만 한정 완료",
+    "R4-4 DB 통합·기존기록 이관·측정표/검수 context 연결은 미완",
+    "R4-2 공간 supported 차단 유지; 실제 사람 콘텐츠 검수·identity·R6/R7 권한/운영 승인 미수행",
+    "01-A 실제 메타획득·영상/픽셀 가공·ROI/OCR/추적·프레임 인덱스 정확성 미검증",
+    "비영/미상 오차 전파·잘림 경계·미지원 변환은 미해결. formula_checked/nominal visibility는 사실·오차승인이 아님"
+  ],
+  "findings_fixed": [
+    {
+      "id": "F1",
+      "independent_case": 12,
+      "finding": "outside 모델 위치가 pad 후 unclipped ROI로 승격",
+      "status": "fixed"
+    },
+    {
+      "id": "F2",
+      "independent_case": 14,
+      "finding": "결과 null일 때 비영 source 오차의 경계 보류 누락",
+      "status": "fixed"
+    },
+    {
+      "id": "F3",
+      "independent_case": 15,
+      "finding": "해상도 미상 normalized geometry의 개별 사람검수 큐 누락",
+      "status": "fixed"
+    },
+    {
+      "id": "F4",
+      "independent_case": 29,
+      "finding": "미상 원본 SAR와 알려진 child SAR를 모순으로 거부",
+      "status": "fixed"
+    },
+    {
+      "id": "F5",
+      "independent_case": 30,
+      "finding": "미상 원본 회전과 알려진 child 상태를 모순으로 거부",
+      "status": "fixed"
+    },
+    {
+      "id": "F6",
+      "independent_case": 31,
+      "finding": "effective 변환 값·순서·근거 내용의 개별 사람검수 인계 누락",
+      "status": "fixed"
+    }
+  ],
+  "actual_human_content_review_performed": false,
+  "media_accessed": false,
+  "D_files_modified_by_reviewer": false,
+  "tests": {
+    "independent_count": 31,
+    "independent_passed": 31,
+    "independent_runtime_exceptions": 0,
+    "builtin": {
+      "count": 53,
+      "passed": 53,
+      "all_passed": true,
+      "runtime_exceptions": 0,
+      "matches_saved": true
+    },
+    "input_all_unchanged": true,
+    "source_unchanged_during_test": true
+  },
+  "static_reference_checks": {
+    "embedded_schema_body_equals_current": true,
+    "embedding_omits_only_resource_metadata": [
+      "$id",
+      "$schema"
+    ],
+    "declared_evidence_schema_hash_matches": true,
+    "local_document_links": [
+      {
+        "document": "04_기록규격/04_좌표와변환_기록규격.md",
+        "target": "좌표변환_적용예와반례.md",
+        "exists": true
+      },
+      {
+        "document": "04_기록규격/04_좌표와변환_기록규격.md",
+        "target": "좌표변환_스키마.json",
+        "exists": true
+      },
+      {
+        "document": "04_기록규격/04_좌표와변환_기록규격.md",
+        "target": "좌표변환_설명용기록.json",
+        "exists": true
+      },
+      {
+        "document": "04_기록규격/04_좌표와변환_기록규격.md",
+        "target": "../07_실행도구/좌표변환_규격검사.py",
+        "exists": true
+      },
+      {
+        "document": "04_기록규격/04_좌표와변환_기록규격.md",
+        "target": "../05_출처와검토/R4_좌표변환_조사기록.json",
+        "exists": true
+      },
+      {
+        "document": "04_기록규격/좌표변환_적용예와반례.md",
+        "target": "04_좌표와변환_기록규격.md",
+        "exists": true
+      }
+    ],
+    "broken_local_links": 0,
+    "all_flags_false": true,
+    "reviewed_sources_still_match_test_snapshot": true
+  },
+  "positive_controls_preserved": [
+    "동치 timebase의 검증된 frame 별칭",
+    "normalized 결과·pixel_center와 마지막 pixel center",
+    "crop/resize 역변환과 pad/역pad",
+    "unclipped 모델 전체좌표 보존",
+    "SAR 역수 회전·정방픽셀 보정·DAR보존",
+    "crop→rotate 및 역순 inverse"
+  ],
+  "evidence": {
+    "final_result_file": "최종_독립반례결과_31건.json",
+    "final_result_sha256": "1a6d8e2fb783410b00a05edc57ea906e63aa23eb3785994dc78c4298639a3f1a",
+    "independent_code_file": "독립반례검사.py",
+    "independent_code_sha256": "09b8a16d008a63389774b1367a0fc259461310ab7bd480f1a8725e7161cd26ce",
+    "initial_result_file": "초기_독립반례결과.json",
+    "initial_result_sha256": "6f3a98964867169e955f3e531f09925dc040eb825b4f21f087689c873b1ea8ba",
+    "checked_source_hashes": {
+      "04_기록규격/좌표변환_스키마.json": "5ad07a85612c90b045aa22eb7750502e47dd26677877b95019c826c2abef0535",
+      "04_기록규격/04_좌표와변환_기록규격.md": "06f8188ed195dc1bd22802de8be22ef9a3303817ac9250762d3adb670e51a61a",
+      "04_기록규격/좌표변환_적용예와반례.md": "e731ecb48b721272ed39990b036ad052fcdb553766e6f2cdd0b43ee023038578",
+      "04_기록규격/좌표변환_설명용기록.json": "e2788694b1de38e6a6cb9c57c1c05a0f4f303b6e4be52bdc7e2b21c522e2a58d",
+      "07_실행도구/좌표변환_규격검사.py": "9f5f8b44c9d40a09fdb6fec05d9d9c089bc2a03c9e4927e8088b7903a847a265",
+      "07_실행도구/좌표변환_규격시험.py": "14b0bec9fb4c84ead93eef50cea7a1029f6842746a11bc88681105376c2cb82d",
+      "08_검증결과/R4_03_좌표계약시험.json": "3c132d6942a91f139ff750f0a89c5aef4831d17c602f4a0043f86160569210c8",
+      "07_실행도구/근거주장_규격검사.py": "854d0353b9a909d5d264baca70250d173f90dc58dc05bee231ca0a8522d11ec3",
+      "04_기록규격/근거주장_스키마.json": "e66c9a6897c72ad0588f027e5699012a091f357d6d11834168352a6a760aeca4",
+      "07_실행도구/시간프레임_규격검사.py": "52834649975027af2097becf61c2fb10034b42e4dda3a3f2fbb68e255bd90e69"
+    }
+  },
+  "independent_tests": {
+    "count": 31,
+    "passed": 31,
+    "runtime_exceptions": 0
+  },
+  "built_in_tests": {
+    "count": 53,
+    "passed": 53,
+    "all_passed": true,
+    "runtime_exceptions": 0,
+    "matches_saved": true
+  },
+  "reviewed_artifacts": {
+    "04_기록규격/좌표변환_스키마.json": "5ad07a85612c90b045aa22eb7750502e47dd26677877b95019c826c2abef0535",
+    "04_기록규격/04_좌표와변환_기록규격.md": "06f8188ed195dc1bd22802de8be22ef9a3303817ac9250762d3adb670e51a61a",
+    "04_기록규격/좌표변환_적용예와반례.md": "e731ecb48b721272ed39990b036ad052fcdb553766e6f2cdd0b43ee023038578",
+    "04_기록규격/좌표변환_설명용기록.json": "e2788694b1de38e6a6cb9c57c1c05a0f4f303b6e4be52bdc7e2b21c522e2a58d",
+    "07_실행도구/좌표변환_규격검사.py": "9f5f8b44c9d40a09fdb6fec05d9d9c089bc2a03c9e4927e8088b7903a847a265",
+    "07_실행도구/좌표변환_규격시험.py": "14b0bec9fb4c84ead93eef50cea7a1029f6842746a11bc88681105376c2cb82d",
+    "08_검증결과/R4_03_좌표계약시험.json": "3c132d6942a91f139ff750f0a89c5aef4831d17c602f4a0043f86160569210c8",
+    "07_실행도구/근거주장_규격검사.py": "854d0353b9a909d5d264baca70250d173f90dc58dc05bee231ca0a8522d11ec3",
+    "04_기록규격/근거주장_스키마.json": "e66c9a6897c72ad0588f027e5699012a091f357d6d11834168352a6a760aeca4",
+    "07_실행도구/시간프레임_규격검사.py": "52834649975027af2097becf61c2fb10034b42e4dda3a3f2fbb68e255bd90e69"
+  },
+  "source_changed_during_review": false,
+  "input_all_unchanged": true,
+  "raw_review_archive": [
+    {
+      "path": "backup\\2026-10-15_R4_03\\독립검토원문\\독립반례검사.py",
+      "sha256": "09b8a16d008a63389774b1367a0fc259461310ab7bd480f1a8725e7161cd26ce",
+      "matches_original": true
+    },
+    {
+      "path": "backup\\2026-10-15_R4_03\\독립검토원문\\초기30건_독립반례검사.py",
+      "sha256": "6e8b1d89492b609a59479f052d8757514abdf2a24bdcd92c4c32ca22ea2434e8",
+      "matches_original": true
+    },
+    {
+      "path": "backup\\2026-10-15_R4_03\\독립검토원문\\초기_독립반례결과.json",
+      "sha256": "6f3a98964867169e955f3e531f09925dc040eb825b4f21f087689c873b1ea8ba",
+      "matches_original": true
+    },
+    {
+      "path": "backup\\2026-10-15_R4_03\\독립검토원문\\초기후보_04_좌표와변환_기록규격.md",
+      "sha256": "6bdcd1c4955425dee55859919ee6c388829dfb48fbf1461a571cfc59829e2c11",
+      "matches_original": true
+    },
+    {
+      "path": "backup\\2026-10-15_R4_03\\독립검토원문\\초기후보_R4_03_좌표계약시험.json",
+      "sha256": "713413f86d466e560a15da743240d01a49c063be93a387d1944931344a2604a6",
+      "matches_original": true
+    },
+    {
+      "path": "backup\\2026-10-15_R4_03\\독립검토원문\\초기후보_좌표변환_규격검사.py",
+      "sha256": "43daee16ce3757ea107b5c11c84468bb5b78573259917648bd29b020fd196812",
+      "matches_original": true
+    },
+    {
+      "path": "backup\\2026-10-15_R4_03\\독립검토원문\\초기후보_좌표변환_규격시험.py",
+      "sha256": "0fd6a024ab7e22b21cb77424e79b0a4bb5a27f93d6fe3a90006ffb2e65ad1efd",
+      "matches_original": true
+    },
+    {
+      "path": "backup\\2026-10-15_R4_03\\독립검토원문\\초기후보_좌표변환_설명용기록.json",
+      "sha256": "e2788694b1de38e6a6cb9c57c1c05a0f4f303b6e4be52bdc7e2b21c522e2a58d",
+      "matches_original": true
+    },
+    {
+      "path": "backup\\2026-10-15_R4_03\\독립검토원문\\초기후보_좌표변환_스키마.json",
+      "sha256": "5ad07a85612c90b045aa22eb7750502e47dd26677877b95019c826c2abef0535",
+      "matches_original": true
+    },
+    {
+      "path": "backup\\2026-10-15_R4_03\\독립검토원문\\초기후보_좌표변환_적용예와반례.md",
+      "sha256": "cc53033b7fcaad74d11d478ce311ddb2ca811cab1dd576ae78ae6ca95dc2fb08",
+      "matches_original": true
+    },
+    {
+      "path": "backup\\2026-10-15_R4_03\\독립검토원문\\최종_독립검토판정.md",
+      "sha256": "c9dbaba018f8a2a7e3d7c10e70a0d777f2038273dc7bd3caa64a07b54033d97a",
+      "matches_original": true
+    },
+    {
+      "path": "backup\\2026-10-15_R4_03\\독립검토원문\\최종_독립반례결과_31건.json",
+      "sha256": "1a6d8e2fb783410b00a05edc57ea906e63aa23eb3785994dc78c4298639a3f1a",
+      "matches_original": true
+    },
+    {
+      "path": "backup\\2026-10-15_R4_03\\독립검토원문\\최종_독립판정.json",
+      "sha256": "8e6c8bf8a634c0e4369b924e8134aca56632305c6536bf66f4c978b1c621ad28",
+      "matches_original": true
+    },
+    {
+      "path": "backup\\2026-10-15_R4_03\\독립검토원문\\판정보존.py",
+      "sha256": "75ceb683d0eeb2fec3eb0de2974380e4535f82377e2dfd8abf24101d3ae5e173",
+      "matches_original": true
+    }
+  ]
+}

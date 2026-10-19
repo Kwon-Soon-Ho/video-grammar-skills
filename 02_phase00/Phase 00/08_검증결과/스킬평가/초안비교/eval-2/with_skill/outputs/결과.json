@@ -1,0 +1,102 @@
+{
+  "case_id": 2,
+  "skill": "video-record-steward",
+  "status": "draft_review_report",
+  "record_id": "EXAMPLE-PROCESS-001",
+  "input_modified": false,
+  "canonical_modified": false,
+  "validator": {
+    "path": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 00/07_실행도구/자료검증.py",
+    "runtime": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 00/.환경/Scripts/python.exe",
+    "arguments": ["-B", "자료검증.py", "--record", "검사입력.json"],
+    "output_argument_used": false,
+    "exit_code": 1,
+    "valid": false,
+    "scope": "Phase 00 데이터·기록 계약. 실영상 정확도/효과 검증 아님.",
+    "errors": [
+      "없는 한맥 토큰: HM-COLOR-NOT-EXIST",
+      "미분류 이유 없음",
+      "주장 수치 추정의 방법·단위·불확실성·근거 부족",
+      "설명용 예의 회사 승인 금지",
+      "이 최소 사례 계약은 회사 문법 승인을 담지 않는다. 01-B 별도 패턴 검수 필요",
+      "승인 검수자·시각·범위 없음",
+      "대상·종류·범위가 일치하는 별도 사람 검수 결정 없음",
+      "승인 근거 버전 미고정"
+    ],
+    "execution_note": "처음 프로젝트 최상위 .환경 경로는 실행 파일을 찾지 못했다. 읽기 검색으로 Phase 00/.환경 경로를 확인한 뒤 위 실제 런타임에서 검사했다."
+  },
+  "critical_issues": [
+    {
+      "fields": ["design.palette_role_bindings.background"],
+      "problem": "HM-COLOR-NOT-EXIST는 한맥 정본의 토큰이 아니다.",
+      "basis": "한맥디자인정본.json hanmac-video@0.1.0 color_tokens와 검증기 오류",
+      "safe_direction": "배경 토큰을 미정으로 남기고 잘못된 역할 바인딩을 초안에서 제거하는 안. HM-COLOR-GREEN-500은 사용 가능한 후보이나 실제 배경이나 선택 확정으로 자동 대입하지 않는다.",
+      "limits": "available는 매 장면 사용 의무가 아니다. 관측 픽셀을 브랜드 값으로 보정하지 않는다."
+    },
+    {
+      "fields": ["segments[0].classification", "segments[0].unclassified_reason"],
+      "problem": "분류 배열은 비었으나 미분류 이유가 없다.",
+      "basis": "최소기록_스키마.json과 자료검증.py의 의미 검사",
+      "safe_direction": "실제 화면·레이아웃 미제공인 구조 설명용 예여서 분류하지 않았다는 이유를 명시. 6단계라는 문구만으로 카드·선형 레이아웃 관측을 생성하지 않는다."
+    },
+    {
+      "fields": ["claims[0].support_mode", "claims[0].measurement", "claims[0].evidence_refs"],
+      "problem": "설명용 요청만 근거인데 numerical_estimate로 표기하고 measurement가 null이다.",
+      "basis": "evidence[0].kind=example_description; frames=[]; 검증기의 수치 추정 근거 부족 오류",
+      "safe_direction": "not_observed_example로 낮춰 구조 설명용 설계 연결임을 유지. 실제 수치 추정이 필요하면 방법·quantity·unit·value·uncertainty·source_frame_refs·limitations·assumptions와 원본 추출 프레임을 별도 확보한다.",
+      "limits": "재구성 프레임은 원본 추출 근거가 아니다. 현재 문장은 수치 자체가 없는 설계 제안이므로 측정값을 만들어 채우지 않는다."
+    },
+    {
+      "fields": ["review.state", "review.reviewer", "review.approval_kind", "review.approved_scope", "review.decision_ref", "review.evidence_versions"],
+      "problem": "synthetic_example를 AI 검수자 문자열만으로 회사 영상 문법 approved로 표시했다. reviewed_at와 실제 결정 연결도 없다.",
+      "basis": "asset.source_type와 notes; 검수결정.json decisions=[]; 검증기의 승인 관련 5개 오류",
+      "safe_direction": "draft 상태 제안, 승인 종류·범위·결정·검수자·시각은 승인 사실처럼 채우지 않고 null로 남긴다.",
+      "limits": "이 기록의 회사 승인은 불가능하다. 실제 회사 문법은 01-B의 별도 패턴 검수와 실제 사람 결정·대상·버전·근거 연결이 필요하다."
+    }
+  ],
+  "safe_draft_proposal": {
+    "applied": false,
+    "patches": [
+      {"op": "remove", "path": "/design/palette_role_bindings/background", "reason": "실존하지 않는 토큰 연결 제거; 배경 선택은 미정"},
+      {"op": "replace", "path": "/segments/0/unclassified_reason", "value": "구조 설명용 요청만 제공되었으며 실제 화면·레이아웃을 관측하지 않아 분류하지 않았다."},
+      {"op": "replace", "path": "/claims/0/support_mode", "value": "not_observed_example"},
+      {"op": "replace", "path": "/review/state", "value": "draft"},
+      {"op": "replace", "path": "/review/reviewer", "value": null},
+      {"op": "replace", "path": "/review/approved_scope", "value": null},
+      {"op": "replace", "path": "/review/approval_kind", "value": null}
+    ],
+    "preserve": ["asset.source_type=synthetic_example", "원본 파일·해시·시간·measurement의 null", "frames=[]", "beats[0].support_mode=not_observed_example", "review.decision_ref=null", "company approval 검색 제외 메모", "현재 taxonomy_ref와 profile_ref"],
+    "revalidation": "수정 기록 파일을 만들거나 검사하지 않았으므로 수정안 통과를 선언하지 않음"
+  },
+  "company_approval": {
+    "allowed_for_this_synthetic_record": false,
+    "status": "승인 불가 / 승인 사실 미확인",
+    "reviewer_string_is_human_approval": false,
+    "schema_or_validator_pass_is_video_truth": false,
+    "route": "01-B 별도 패턴 검수; 현재 설명용 예는 실제 사례로 승격하지 않음"
+  },
+  "unconfirmed_fields": [
+    {"fields": ["asset.path", "asset.sha256", "asset.duration_s", "asset.metadata", "run"], "handling": "설명용 예의 미제공 값. 임의 채움 금지"},
+    {"fields": ["scenario_segments[].period", "segments[].period", "beats[].period", "evidence[].period"], "handling": "null와 time_basis=unknown 유지. 시간·포함 관계를 관측했다고 주장하지 않음"},
+    {"fields": ["segments[].frames", "claims[].measurement"], "handling": "실제 추출 프레임·측정·불확실성·합성 가정 미확보"},
+    {"fields": ["design.palette_role_bindings.background"], "handling": "유효 후보를 고르는 결정 미확정"},
+    {"fields": ["review.reviewed_at", "review.decision_ref", "review.evidence_versions"], "handling": "사람 검수·승인 근거 없음. 가상의 날짜나 결정을 생성하지 않음"}
+  ],
+  "confirmed_connections": {
+    "taxonomy_ref": "company-video-taxonomy@0.1.1와 현재 사전 일치",
+    "profile_ref": "hanmac-video@0.1.0와 현재 프로필 일치",
+    "valid_color_candidates_in_input": ["HM-COLOR-NEUTRAL-GREEN-100", "HM-COLOR-YELLOW"],
+    "past_version_rewrite": false
+  },
+  "review_proposal": {
+    "topic": "근거 등급·승인 상태 정리",
+    "options": [
+      {"id": "A", "text": "위 패치를 설명용 draft 정리안으로만 보관하고 회사 승인 표시를 철회하는 방향 검토", "recommended": true},
+      {"id": "B", "text": "형식 오류만 정리하고 근거·승인 상태는 검토 대상으로 표시", "recommended": false},
+      {"id": "C", "text": "원본·추출 프레임·측정 근거를 확보한 별도 실제 관측 기록 작성", "recommended": false},
+      {"id": "D", "text": "회사 규칙 후보를 이 예와 분리하여 01-B 패턴 검수에 회부", "recommended": false}
+    ],
+    "decision_received": false,
+    "applied": false
+  }
+}

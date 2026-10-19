@@ -1,0 +1,2250 @@
+{
+  "schema_version": "0.1.0",
+  "profile_id": "hanmac-video",
+  "version": "0.1.0",
+  "retrieved_on": "2026-10-14",
+  "timezone": "Asia/Seoul",
+  "status": "curated_seed",
+  "description": "영상 시스템 Phase 00용 디자인 지식 정본. 회사 영상 문법 DB 완성/실영상 검증을 뜻하지 않음.",
+  "source_selection": {
+    "brand_scales": "SB-COLOR",
+    "accent_and_neutral": "VC",
+    "authority": "USER",
+    "ui_mandatory": false
+  },
+  "sources": [
+    {
+      "id": "SB-COLOR",
+      "url": "https://design.hmac.kr/?path=/story/foundation-color--all",
+      "locator": "Foundation / Color / Green, Brown, Orange",
+      "version": "페이지 버전 미표시",
+      "access": "브라우저 렌더링 텍스트 확인",
+      "retrieved_on": "2026-10-14",
+      "source_type": "company_design_reference"
+    },
+    {
+      "id": "SB-TYPE",
+      "url": "https://design.hmac.kr/?path=/story/foundation-typography--all",
+      "locator": "Foundation / Typography",
+      "version": "Current Typography Reference",
+      "access": "브라우저 렌더링 텍스트 확인",
+      "retrieved_on": "2026-10-14",
+      "source_type": "company_design_reference"
+    },
+    {
+      "id": "SB-LAYOUT",
+      "url": "https://design.hmac.kr/?path=/story/foundation-layout--all",
+      "locator": "Foundation / Layout",
+      "version": "CURRENT_STANDARD / CURRENT_USAGE_REFERENCE",
+      "access": "브라우저 렌더링 텍스트 확인",
+      "retrieved_on": "2026-10-14",
+      "source_type": "company_design_reference"
+    },
+    {
+      "id": "VC",
+      "url": "https://hanmac-designsystem.vercel.app/claude_app/index.html",
+      "locator": "개요, 컬러, 그라데이션, 타이포그래피, 간격, 그림자, 모서리 반경, Variables, 버튼, 입력 필드, 카드, 테이블",
+      "version": "헤더 v2.2.0 / 변경 이력 v2.3.0 병기",
+      "access": "각 메뉴 브라우저 렌더링 텍스트 확인",
+      "retrieved_on": "2026-10-14",
+      "source_type": "company_design_reference"
+    },
+    {
+      "id": "SB-TITLE",
+      "url": "https://design.hmac.kr/?path=/story/center-graphic-title--compositions",
+      "locator": "Center Graphic / Title / Overview",
+      "version": "SCOPED_DESIGN_APPROVAL / Resolution B TBD",
+      "access": "브라우저 렌더링 텍스트 확인",
+      "retrieved_on": "2026-10-14",
+      "source_type": "company_design_reference"
+    },
+    {
+      "id": "USER",
+      "url": null,
+      "locator": "2026-10-14 현재 대화: 컬러 전역 활용, UI 참고; Storybook 우선; 강조색·중립색 Vercel 적용",
+      "version": "현재 사용자 지시",
+      "access": "직접 지시",
+      "retrieved_on": "2026-10-14",
+      "source_type": "user_directive"
+    },
+    {
+      "id": "W3C-CONTRAST",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "locator": "SC 1.4.3 / contrast ratio and relative luminance",
+      "version": "WCAG 2.2 Understanding",
+      "retrieved_on": "2026-10-14",
+      "source_type": "external_principle",
+      "access": "공식 웹 문서 확인"
+    },
+    {
+      "id": "W3C-COLOR",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html",
+      "locator": "SC 1.4.1",
+      "version": "WCAG 2.2 Understanding",
+      "retrieved_on": "2026-10-14",
+      "source_type": "external_principle",
+      "access": "공식 웹 문서 확인"
+    }
+  ],
+  "color_tokens": [
+    {
+      "id": "HM-COLOR-GREEN-100",
+      "name": "hm.color.green.100",
+      "type": "color",
+      "value": "#34DAAA",
+      "source_name": "Light 4",
+      "source_css_alias": null,
+      "adapter_css_name": "--hm-green-100",
+      "scope": "global_color_library",
+      "requirement": "available",
+      "selection": "user_selected_source",
+      "selected_source": "SB-COLOR",
+      "observations": [
+        {
+          "source_ref": "SB-COLOR",
+          "locator": "한맥green / Light 4",
+          "value": "#34DAAA"
+        },
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-green-100",
+          "value": "#3EBD9A"
+        }
+      ],
+      "different_between_sources": true,
+      "review_status": "source_selection_confirmed",
+      "notes": "100~800 및 hm.color.*는 영상 DB의 정규화 이름. Storybook 원래 이름은 Light 4~Dark 3."
+    },
+    {
+      "id": "HM-COLOR-GREEN-200",
+      "name": "hm.color.green.200",
+      "type": "color",
+      "value": "#249473",
+      "source_name": "Light 3",
+      "source_css_alias": null,
+      "adapter_css_name": "--hm-green-200",
+      "scope": "global_color_library",
+      "requirement": "available",
+      "selection": "user_selected_source",
+      "selected_source": "SB-COLOR",
+      "observations": [
+        {
+          "source_ref": "SB-COLOR",
+          "locator": "한맥green / Light 3",
+          "value": "#249473"
+        },
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-green-200",
+          "value": "#249473"
+        }
+      ],
+      "different_between_sources": false,
+      "review_status": "source_selection_confirmed",
+      "notes": "100~800 및 hm.color.*는 영상 DB의 정규화 이름. Storybook 원래 이름은 Light 4~Dark 3."
+    },
+    {
+      "id": "HM-COLOR-GREEN-300",
+      "name": "hm.color.green.300",
+      "type": "color",
+      "value": "#266651",
+      "source_name": "Light 2",
+      "source_css_alias": null,
+      "adapter_css_name": "--hm-green-300",
+      "scope": "global_color_library",
+      "requirement": "available",
+      "selection": "user_selected_source",
+      "selected_source": "SB-COLOR",
+      "observations": [
+        {
+          "source_ref": "SB-COLOR",
+          "locator": "한맥green / Light 2",
+          "value": "#266651"
+        },
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-green-300",
+          "value": "#266651"
+        }
+      ],
+      "different_between_sources": false,
+      "review_status": "source_selection_confirmed",
+      "notes": "100~800 및 hm.color.*는 영상 DB의 정규화 이름. Storybook 원래 이름은 Light 4~Dark 3."
+    },
+    {
+      "id": "HM-COLOR-GREEN-400",
+      "name": "hm.color.green.400",
+      "type": "color",
+      "value": "#205241",
+      "source_name": "Light 1",
+      "source_css_alias": null,
+      "adapter_css_name": "--hm-green-400",
+      "scope": "global_color_library",
+      "requirement": "available",
+      "selection": "user_selected_source",
+      "selected_source": "SB-COLOR",
+      "observations": [
+        {
+          "source_ref": "SB-COLOR",
+          "locator": "한맥green / Light 1",
+          "value": "#205241"
+        },
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-green-400",
+          "value": "#205241"
+        }
+      ],
+      "different_between_sources": false,
+      "review_status": "source_selection_confirmed",
+      "notes": "100~800 및 hm.color.*는 영상 DB의 정규화 이름. Storybook 원래 이름은 Light 4~Dark 3."
+    },
+    {
+      "id": "HM-COLOR-GREEN-500",
+      "name": "hm.color.green.500",
+      "type": "color",
+      "value": "#123328",
+      "source_name": "Default",
+      "source_css_alias": "--hm-green",
+      "adapter_css_name": "--hm-green-500",
+      "scope": "global_color_library",
+      "requirement": "available",
+      "selection": "user_selected_source",
+      "selected_source": "SB-COLOR",
+      "observations": [
+        {
+          "source_ref": "SB-COLOR",
+          "locator": "한맥green / Default",
+          "value": "#123328"
+        },
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-green-500",
+          "value": "#123328"
+        }
+      ],
+      "different_between_sources": false,
+      "review_status": "source_selection_confirmed",
+      "notes": "100~800 및 hm.color.*는 영상 DB의 정규화 이름. Storybook 원래 이름은 Light 4~Dark 3."
+    },
+    {
+      "id": "HM-COLOR-GREEN-600",
+      "name": "hm.color.green.600",
+      "type": "color",
+      "value": "#0A221D",
+      "source_name": "Dark 1",
+      "source_css_alias": null,
+      "adapter_css_name": "--hm-green-600",
+      "scope": "global_color_library",
+      "requirement": "available",
+      "selection": "user_selected_source",
+      "selected_source": "SB-COLOR",
+      "observations": [
+        {
+          "source_ref": "SB-COLOR",
+          "locator": "한맥green / Dark 1",
+          "value": "#0A221D"
+        },
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-green-600",
+          "value": "#0A221D"
+        }
+      ],
+      "different_between_sources": false,
+      "review_status": "source_selection_confirmed",
+      "notes": "100~800 및 hm.color.*는 영상 DB의 정규화 이름. Storybook 원래 이름은 Light 4~Dark 3."
+    },
+    {
+      "id": "HM-COLOR-GREEN-700",
+      "name": "hm.color.green.700",
+      "type": "color",
+      "value": "#071E18",
+      "source_name": "Dark 2",
+      "source_css_alias": null,
+      "adapter_css_name": "--hm-green-700",
+      "scope": "global_color_library",
+      "requirement": "available",
+      "selection": "user_selected_source",
+      "selected_source": "SB-COLOR",
+      "observations": [
+        {
+          "source_ref": "SB-COLOR",
+          "locator": "한맥green / Dark 2",
+          "value": "#071E18"
+        },
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-green-700",
+          "value": "#071E18"
+        }
+      ],
+      "different_between_sources": false,
+      "review_status": "source_selection_confirmed",
+      "notes": "100~800 및 hm.color.*는 영상 DB의 정규화 이름. Storybook 원래 이름은 Light 4~Dark 3."
+    },
+    {
+      "id": "HM-COLOR-GREEN-800",
+      "name": "hm.color.green.800",
+      "type": "color",
+      "value": "#020A07",
+      "source_name": "Dark 3",
+      "source_css_alias": null,
+      "adapter_css_name": "--hm-green-800",
+      "scope": "global_color_library",
+      "requirement": "available",
+      "selection": "user_selected_source",
+      "selected_source": "SB-COLOR",
+      "observations": [
+        {
+          "source_ref": "SB-COLOR",
+          "locator": "한맥green / Dark 3",
+          "value": "#020A07"
+        },
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-green-800",
+          "value": "#020A07"
+        }
+      ],
+      "different_between_sources": false,
+      "review_status": "source_selection_confirmed",
+      "notes": "100~800 및 hm.color.*는 영상 DB의 정규화 이름. Storybook 원래 이름은 Light 4~Dark 3."
+    },
+    {
+      "id": "HM-COLOR-BROWN-100",
+      "name": "hm.color.brown.100",
+      "type": "color",
+      "value": "#ECD4A2",
+      "source_name": "Light 4",
+      "source_css_alias": null,
+      "adapter_css_name": "--hm-brown-100",
+      "scope": "global_color_library",
+      "requirement": "available",
+      "selection": "user_selected_source",
+      "selected_source": "SB-COLOR",
+      "observations": [
+        {
+          "source_ref": "SB-COLOR",
+          "locator": "한맥brown / Light 4",
+          "value": "#ECD4A2"
+        },
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-brown-100",
+          "value": "#ECD4A2"
+        }
+      ],
+      "different_between_sources": false,
+      "review_status": "source_selection_confirmed",
+      "notes": "100~800 및 hm.color.*는 영상 DB의 정규화 이름. Storybook 원래 이름은 Light 4~Dark 3."
+    },
+    {
+      "id": "HM-COLOR-BROWN-200",
+      "name": "hm.color.brown.200",
+      "type": "color",
+      "value": "#C1A770",
+      "source_name": "Light 3",
+      "source_css_alias": null,
+      "adapter_css_name": "--hm-brown-200",
+      "scope": "global_color_library",
+      "requirement": "available",
+      "selection": "user_selected_source",
+      "selected_source": "SB-COLOR",
+      "observations": [
+        {
+          "source_ref": "SB-COLOR",
+          "locator": "한맥brown / Light 3",
+          "value": "#C1A770"
+        },
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-brown-200",
+          "value": "#C1A770"
+        }
+      ],
+      "different_between_sources": false,
+      "review_status": "source_selection_confirmed",
+      "notes": "100~800 및 hm.color.*는 영상 DB의 정규화 이름. Storybook 원래 이름은 Light 4~Dark 3."
+    },
+    {
+      "id": "HM-COLOR-BROWN-300",
+      "name": "hm.color.brown.300",
+      "type": "color",
+      "value": "#897445",
+      "source_name": "Light 2",
+      "source_css_alias": null,
+      "adapter_css_name": "--hm-brown-300",
+      "scope": "global_color_library",
+      "requirement": "available",
+      "selection": "user_selected_source",
+      "selected_source": "SB-COLOR",
+      "observations": [
+        {
+          "source_ref": "SB-COLOR",
+          "locator": "한맥brown / Light 2",
+          "value": "#897445"
+        },
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-brown-300",
+          "value": "#897445"
+        }
+      ],
+      "different_between_sources": false,
+      "review_status": "source_selection_confirmed",
+      "notes": "100~800 및 hm.color.*는 영상 DB의 정규화 이름. Storybook 원래 이름은 Light 4~Dark 3."
+    },
+    {
+      "id": "HM-COLOR-BROWN-400",
+      "name": "hm.color.brown.400",
+      "type": "color",
+      "value": "#604F32",
+      "source_name": "Light 1",
+      "source_css_alias": null,
+      "adapter_css_name": "--hm-brown-400",
+      "scope": "global_color_library",
+      "requirement": "available",
+      "selection": "user_selected_source",
+      "selected_source": "SB-COLOR",
+      "observations": [
+        {
+          "source_ref": "SB-COLOR",
+          "locator": "한맥brown / Light 1",
+          "value": "#604F32"
+        },
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-brown-400",
+          "value": "#604F32"
+        }
+      ],
+      "different_between_sources": false,
+      "review_status": "source_selection_confirmed",
+      "notes": "100~800 및 hm.color.*는 영상 DB의 정규화 이름. Storybook 원래 이름은 Light 4~Dark 3."
+    },
+    {
+      "id": "HM-COLOR-BROWN-500",
+      "name": "hm.color.brown.500",
+      "type": "color",
+      "value": "#3E3523",
+      "source_name": "Default",
+      "source_css_alias": "--hm-brown",
+      "adapter_css_name": "--hm-brown-500",
+      "scope": "global_color_library",
+      "requirement": "available",
+      "selection": "user_selected_source",
+      "selected_source": "SB-COLOR",
+      "observations": [
+        {
+          "source_ref": "SB-COLOR",
+          "locator": "한맥brown / Default",
+          "value": "#3E3523"
+        },
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-brown-500",
+          "value": "#3E3523"
+        }
+      ],
+      "different_between_sources": false,
+      "review_status": "source_selection_confirmed",
+      "notes": "100~800 및 hm.color.*는 영상 DB의 정규화 이름. Storybook 원래 이름은 Light 4~Dark 3."
+    },
+    {
+      "id": "HM-COLOR-BROWN-600",
+      "name": "hm.color.brown.600",
+      "type": "color",
+      "value": "#352D1D",
+      "source_name": "Dark 1",
+      "source_css_alias": null,
+      "adapter_css_name": "--hm-brown-600",
+      "scope": "global_color_library",
+      "requirement": "available",
+      "selection": "user_selected_source",
+      "selected_source": "SB-COLOR",
+      "observations": [
+        {
+          "source_ref": "SB-COLOR",
+          "locator": "한맥brown / Dark 1",
+          "value": "#352D1D"
+        },
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-brown-600",
+          "value": "#352D1D"
+        }
+      ],
+      "different_between_sources": false,
+      "review_status": "source_selection_confirmed",
+      "notes": "100~800 및 hm.color.*는 영상 DB의 정규화 이름. Storybook 원래 이름은 Light 4~Dark 3."
+    },
+    {
+      "id": "HM-COLOR-BROWN-700",
+      "name": "hm.color.brown.700",
+      "type": "color",
+      "value": "#2F281C",
+      "source_name": "Dark 2",
+      "source_css_alias": null,
+      "adapter_css_name": "--hm-brown-700",
+      "scope": "global_color_library",
+      "requirement": "available",
+      "selection": "user_selected_source",
+      "selected_source": "SB-COLOR",
+      "observations": [
+        {
+          "source_ref": "SB-COLOR",
+          "locator": "한맥brown / Dark 2",
+          "value": "#2F281C"
+        },
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-brown-700",
+          "value": "#1D1810"
+        }
+      ],
+      "different_between_sources": true,
+      "review_status": "source_selection_confirmed",
+      "notes": "100~800 및 hm.color.*는 영상 DB의 정규화 이름. Storybook 원래 이름은 Light 4~Dark 3."
+    },
+    {
+      "id": "HM-COLOR-BROWN-800",
+      "name": "hm.color.brown.800",
+      "type": "color",
+      "value": "#1D1810",
+      "source_name": "Dark 3",
+      "source_css_alias": null,
+      "adapter_css_name": "--hm-brown-800",
+      "scope": "global_color_library",
+      "requirement": "available",
+      "selection": "user_selected_source",
+      "selected_source": "SB-COLOR",
+      "observations": [
+        {
+          "source_ref": "SB-COLOR",
+          "locator": "한맥brown / Dark 3",
+          "value": "#1D1810"
+        },
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-brown-800",
+          "value": "#1D1810"
+        }
+      ],
+      "different_between_sources": false,
+      "review_status": "source_selection_confirmed",
+      "notes": "100~800 및 hm.color.*는 영상 DB의 정규화 이름. Storybook 원래 이름은 Light 4~Dark 3."
+    },
+    {
+      "id": "HM-COLOR-ORANGE-100",
+      "name": "hm.color.orange.100",
+      "type": "color",
+      "value": "#FEBA88",
+      "source_name": "Light 4",
+      "source_css_alias": null,
+      "adapter_css_name": "--hm-orange-100",
+      "scope": "global_color_library",
+      "requirement": "available",
+      "selection": "user_selected_source",
+      "selected_source": "SB-COLOR",
+      "observations": [
+        {
+          "source_ref": "SB-COLOR",
+          "locator": "한맥orange / Light 4",
+          "value": "#FEBA88"
+        },
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-orange-100",
+          "value": "#F5C8A8"
+        }
+      ],
+      "different_between_sources": true,
+      "review_status": "source_selection_confirmed",
+      "notes": "100~800 및 hm.color.*는 영상 DB의 정규화 이름. Storybook 원래 이름은 Light 4~Dark 3."
+    },
+    {
+      "id": "HM-COLOR-ORANGE-200",
+      "name": "hm.color.orange.200",
+      "type": "color",
+      "value": "#EC8F53",
+      "source_name": "Light 3",
+      "source_css_alias": null,
+      "adapter_css_name": "--hm-orange-200",
+      "scope": "global_color_library",
+      "requirement": "available",
+      "selection": "user_selected_source",
+      "selected_source": "SB-COLOR",
+      "observations": [
+        {
+          "source_ref": "SB-COLOR",
+          "locator": "한맥orange / Light 3",
+          "value": "#EC8F53"
+        },
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-orange-200",
+          "value": "#EBA372"
+        }
+      ],
+      "different_between_sources": true,
+      "review_status": "source_selection_confirmed",
+      "notes": "100~800 및 hm.color.*는 영상 DB의 정규화 이름. Storybook 원래 이름은 Light 4~Dark 3."
+    },
+    {
+      "id": "HM-COLOR-ORANGE-300",
+      "name": "hm.color.orange.300",
+      "type": "color",
+      "value": "#F87725",
+      "source_name": "Light 2",
+      "source_css_alias": null,
+      "adapter_css_name": "--hm-orange-300",
+      "scope": "global_color_library",
+      "requirement": "available",
+      "selection": "user_selected_source",
+      "selected_source": "SB-COLOR",
+      "observations": [
+        {
+          "source_ref": "SB-COLOR",
+          "locator": "한맥orange / Light 2",
+          "value": "#F87725"
+        },
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-orange-300",
+          "value": "#E07F3A"
+        }
+      ],
+      "different_between_sources": true,
+      "review_status": "source_selection_confirmed",
+      "notes": "100~800 및 hm.color.*는 영상 DB의 정규화 이름. Storybook 원래 이름은 Light 4~Dark 3."
+    },
+    {
+      "id": "HM-COLOR-ORANGE-400",
+      "name": "hm.color.orange.400",
+      "type": "color",
+      "value": "#EB5F00",
+      "source_name": "Light 1",
+      "source_css_alias": null,
+      "adapter_css_name": "--hm-orange-400",
+      "scope": "global_color_library",
+      "requirement": "available",
+      "selection": "user_selected_source",
+      "selected_source": "SB-COLOR",
+      "observations": [
+        {
+          "source_ref": "SB-COLOR",
+          "locator": "한맥orange / Light 1",
+          "value": "#EB5F00"
+        },
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-orange-400",
+          "value": "#D9630F"
+        }
+      ],
+      "different_between_sources": true,
+      "review_status": "source_selection_confirmed",
+      "notes": "100~800 및 hm.color.*는 영상 DB의 정규화 이름. Storybook 원래 이름은 Light 4~Dark 3."
+    },
+    {
+      "id": "HM-COLOR-ORANGE-500",
+      "name": "hm.color.orange.500",
+      "type": "color",
+      "value": "#CC5200",
+      "source_name": "Default",
+      "source_css_alias": "--hm-orange",
+      "adapter_css_name": "--hm-orange-500",
+      "scope": "global_color_library",
+      "requirement": "available",
+      "selection": "user_selected_source",
+      "selected_source": "SB-COLOR",
+      "observations": [
+        {
+          "source_ref": "SB-COLOR",
+          "locator": "한맥orange / Default",
+          "value": "#CC5200"
+        },
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-orange-500",
+          "value": "#CC5200"
+        }
+      ],
+      "different_between_sources": false,
+      "review_status": "source_selection_confirmed",
+      "notes": "100~800 및 hm.color.*는 영상 DB의 정규화 이름. Storybook 원래 이름은 Light 4~Dark 3."
+    },
+    {
+      "id": "HM-COLOR-ORANGE-600",
+      "name": "hm.color.orange.600",
+      "type": "color",
+      "value": "#BC4C00",
+      "source_name": "Dark 1",
+      "source_css_alias": null,
+      "adapter_css_name": "--hm-orange-600",
+      "scope": "global_color_library",
+      "requirement": "available",
+      "selection": "user_selected_source",
+      "selected_source": "SB-COLOR",
+      "observations": [
+        {
+          "source_ref": "SB-COLOR",
+          "locator": "한맥orange / Dark 1",
+          "value": "#BC4C00"
+        },
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-orange-600",
+          "value": "#BC4C00"
+        }
+      ],
+      "different_between_sources": false,
+      "review_status": "source_selection_confirmed",
+      "notes": "100~800 및 hm.color.*는 영상 DB의 정규화 이름. Storybook 원래 이름은 Light 4~Dark 3."
+    },
+    {
+      "id": "HM-COLOR-ORANGE-700",
+      "name": "hm.color.orange.700",
+      "type": "color",
+      "value": "#883700",
+      "source_name": "Dark 2",
+      "source_css_alias": null,
+      "adapter_css_name": "--hm-orange-700",
+      "scope": "global_color_library",
+      "requirement": "available",
+      "selection": "user_selected_source",
+      "selected_source": "SB-COLOR",
+      "observations": [
+        {
+          "source_ref": "SB-COLOR",
+          "locator": "한맥orange / Dark 2",
+          "value": "#883700"
+        },
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-orange-700",
+          "value": "#883700"
+        }
+      ],
+      "different_between_sources": false,
+      "review_status": "source_selection_confirmed",
+      "notes": "100~800 및 hm.color.*는 영상 DB의 정규화 이름. Storybook 원래 이름은 Light 4~Dark 3."
+    },
+    {
+      "id": "HM-COLOR-ORANGE-800",
+      "name": "hm.color.orange.800",
+      "type": "color",
+      "value": "#4F2000",
+      "source_name": "Dark 3",
+      "source_css_alias": null,
+      "adapter_css_name": "--hm-orange-800",
+      "scope": "global_color_library",
+      "requirement": "available",
+      "selection": "user_selected_source",
+      "selected_source": "SB-COLOR",
+      "observations": [
+        {
+          "source_ref": "SB-COLOR",
+          "locator": "한맥orange / Dark 3",
+          "value": "#4F2000"
+        },
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-orange-800",
+          "value": "#4F2000"
+        }
+      ],
+      "different_between_sources": false,
+      "review_status": "source_selection_confirmed",
+      "notes": "100~800 및 hm.color.*는 영상 DB의 정규화 이름. Storybook 원래 이름은 Light 4~Dark 3."
+    },
+    {
+      "id": "HM-COLOR-ACCENT-ORANGE",
+      "name": "hm.color.accent-orange",
+      "type": "color",
+      "value": "#FF5C00",
+      "source_name": "--hm-accent-orange",
+      "adapter_css_name": "--hm-accent-orange",
+      "scope": "global_color_library",
+      "requirement": "available",
+      "selection": "user_selected_source",
+      "selected_source": "VC",
+      "observations": [
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-accent-orange",
+          "value": "#FF5C00"
+        }
+      ],
+      "role": "강조 액션 전용. 기본 Orange와 구분",
+      "review_status": "source_selection_confirmed",
+      "notes": "사용자가 강조색·중립색 Vercel 적용 지정. Storybook Color에 없음을 오류/폐기로 해석하지 않음."
+    },
+    {
+      "id": "HM-COLOR-YELLOW",
+      "name": "hm.color.yellow",
+      "type": "color",
+      "value": "#FFC600",
+      "source_name": "--hm-yellow",
+      "adapter_css_name": "--hm-yellow",
+      "scope": "global_color_library",
+      "requirement": "available",
+      "selection": "user_selected_source",
+      "selected_source": "VC",
+      "observations": [
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-yellow",
+          "value": "#FFC600"
+        }
+      ],
+      "role": "Green 배경 강조",
+      "review_status": "source_selection_confirmed",
+      "notes": "사용자가 강조색·중립색 Vercel 적용 지정. Storybook Color에 없음을 오류/폐기로 해석하지 않음."
+    },
+    {
+      "id": "HM-COLOR-NEUTRAL-GREEN-100",
+      "name": "hm.color.neutral-green-100",
+      "type": "color",
+      "value": "#F0F7F5",
+      "source_name": "--hm-neutral-green-100",
+      "adapter_css_name": "--hm-neutral-green-100",
+      "scope": "global_color_library",
+      "requirement": "available",
+      "selection": "user_selected_source",
+      "selected_source": "VC",
+      "observations": [
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-neutral-green-100",
+          "value": "#F0F7F5"
+        }
+      ],
+      "role": "Green 테마 주 텍스트",
+      "review_status": "source_selection_confirmed",
+      "notes": "사용자가 강조색·중립색 Vercel 적용 지정. Storybook Color에 없음을 오류/폐기로 해석하지 않음."
+    },
+    {
+      "id": "HM-COLOR-NEUTRAL-GREEN-200",
+      "name": "hm.color.neutral-green-200",
+      "type": "color",
+      "value": "#B6D0C9",
+      "source_name": "--hm-neutral-green-200",
+      "adapter_css_name": "--hm-neutral-green-200",
+      "scope": "global_color_library",
+      "requirement": "available",
+      "selection": "user_selected_source",
+      "selected_source": "VC",
+      "observations": [
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-neutral-green-200",
+          "value": "#B6D0C9"
+        }
+      ],
+      "role": "Green 테마 보조 텍스트",
+      "review_status": "source_selection_confirmed",
+      "notes": "사용자가 강조색·중립색 Vercel 적용 지정. Storybook Color에 없음을 오류/폐기로 해석하지 않음."
+    },
+    {
+      "id": "HM-COLOR-NEUTRAL-BROWN-100",
+      "name": "hm.color.neutral-brown-100",
+      "type": "color",
+      "value": "#F6F4F2",
+      "source_name": "--hm-neutral-brown-100",
+      "adapter_css_name": "--hm-neutral-brown-100",
+      "scope": "global_color_library",
+      "requirement": "available",
+      "selection": "user_selected_source",
+      "selected_source": "VC",
+      "observations": [
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-neutral-brown-100",
+          "value": "#F6F4F2"
+        }
+      ],
+      "role": "Brown 테마 주 텍스트",
+      "review_status": "source_selection_confirmed",
+      "notes": "사용자가 강조색·중립색 Vercel 적용 지정. Storybook Color에 없음을 오류/폐기로 해석하지 않음."
+    },
+    {
+      "id": "HM-COLOR-NEUTRAL-BROWN-200",
+      "name": "hm.color.neutral-brown-200",
+      "type": "color",
+      "value": "#D4CBBD",
+      "source_name": "--hm-neutral-brown-200",
+      "adapter_css_name": "--hm-neutral-brown-200",
+      "scope": "global_color_library",
+      "requirement": "available",
+      "selection": "user_selected_source",
+      "selected_source": "VC",
+      "observations": [
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-neutral-brown-200",
+          "value": "#D4CBBD"
+        }
+      ],
+      "role": "Brown 테마 보조 텍스트",
+      "review_status": "source_selection_confirmed",
+      "notes": "사용자가 강조색·중립색 Vercel 적용 지정. Storybook Color에 없음을 오류/폐기로 해석하지 않음."
+    },
+    {
+      "id": "HM-COLOR-BLACK-100",
+      "name": "hm.color.black.100",
+      "type": "color_with_alpha",
+      "value": {
+        "rgb": [
+          0,
+          0,
+          0
+        ],
+        "alpha": 0.05
+      },
+      "source_name": "--hm-black-100",
+      "scope": "optional_color_utility",
+      "requirement": "reference_only",
+      "selection": "observed_single_source",
+      "selected_source": "VC",
+      "observations": [
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-black-100",
+          "value": "rgba(0,0,0,0.05)"
+        }
+      ],
+      "review_status": "observed",
+      "notes": "색상 알파. AE 레이어 전체 opacity로 자동 매핑하지 않음."
+    },
+    {
+      "id": "HM-COLOR-BLACK-200",
+      "name": "hm.color.black.200",
+      "type": "color_with_alpha",
+      "value": {
+        "rgb": [
+          0,
+          0,
+          0
+        ],
+        "alpha": 0.1
+      },
+      "source_name": "--hm-black-200",
+      "scope": "optional_color_utility",
+      "requirement": "reference_only",
+      "selection": "observed_single_source",
+      "selected_source": "VC",
+      "observations": [
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-black-200",
+          "value": "rgba(0,0,0,0.1)"
+        }
+      ],
+      "review_status": "observed",
+      "notes": "색상 알파. AE 레이어 전체 opacity로 자동 매핑하지 않음."
+    },
+    {
+      "id": "HM-COLOR-BLACK-300",
+      "name": "hm.color.black.300",
+      "type": "color_with_alpha",
+      "value": {
+        "rgb": [
+          0,
+          0,
+          0
+        ],
+        "alpha": 0.25
+      },
+      "source_name": "--hm-black-300",
+      "scope": "optional_color_utility",
+      "requirement": "reference_only",
+      "selection": "observed_single_source",
+      "selected_source": "VC",
+      "observations": [
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-black-300",
+          "value": "rgba(0,0,0,0.25)"
+        }
+      ],
+      "review_status": "observed",
+      "notes": "색상 알파. AE 레이어 전체 opacity로 자동 매핑하지 않음."
+    },
+    {
+      "id": "HM-COLOR-BLACK-400",
+      "name": "hm.color.black.400",
+      "type": "color_with_alpha",
+      "value": {
+        "rgb": [
+          0,
+          0,
+          0
+        ],
+        "alpha": 0.4
+      },
+      "source_name": "--hm-black-400",
+      "scope": "optional_color_utility",
+      "requirement": "reference_only",
+      "selection": "observed_single_source",
+      "selected_source": "VC",
+      "observations": [
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-black-400",
+          "value": "rgba(0,0,0,0.4)"
+        }
+      ],
+      "review_status": "observed",
+      "notes": "색상 알파. AE 레이어 전체 opacity로 자동 매핑하지 않음."
+    },
+    {
+      "id": "HM-COLOR-BLACK-500",
+      "name": "hm.color.black.500",
+      "type": "color_with_alpha",
+      "value": {
+        "rgb": [
+          0,
+          0,
+          0
+        ],
+        "alpha": 0.55
+      },
+      "source_name": "--hm-black-500",
+      "scope": "optional_color_utility",
+      "requirement": "reference_only",
+      "selection": "observed_single_source",
+      "selected_source": "VC",
+      "observations": [
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-black-500",
+          "value": "rgba(0,0,0,0.55)"
+        }
+      ],
+      "review_status": "observed",
+      "notes": "색상 알파. AE 레이어 전체 opacity로 자동 매핑하지 않음."
+    },
+    {
+      "id": "HM-COLOR-BLACK-600",
+      "name": "hm.color.black.600",
+      "type": "color_with_alpha",
+      "value": {
+        "rgb": [
+          0,
+          0,
+          0
+        ],
+        "alpha": 0.7
+      },
+      "source_name": "--hm-black-600",
+      "scope": "optional_color_utility",
+      "requirement": "reference_only",
+      "selection": "observed_single_source",
+      "selected_source": "VC",
+      "observations": [
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-black-600",
+          "value": "rgba(0,0,0,0.7)"
+        }
+      ],
+      "review_status": "observed",
+      "notes": "색상 알파. AE 레이어 전체 opacity로 자동 매핑하지 않음."
+    },
+    {
+      "id": "HM-COLOR-BLACK-700",
+      "name": "hm.color.black.700",
+      "type": "color_with_alpha",
+      "value": {
+        "rgb": [
+          0,
+          0,
+          0
+        ],
+        "alpha": 0.85
+      },
+      "source_name": "--hm-black-700",
+      "scope": "optional_color_utility",
+      "requirement": "reference_only",
+      "selection": "observed_single_source",
+      "selected_source": "VC",
+      "observations": [
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-black-700",
+          "value": "rgba(0,0,0,0.85)"
+        }
+      ],
+      "review_status": "observed",
+      "notes": "색상 알파. AE 레이어 전체 opacity로 자동 매핑하지 않음."
+    },
+    {
+      "id": "HM-COLOR-BLACK-800",
+      "name": "hm.color.black.800",
+      "type": "color_with_alpha",
+      "value": {
+        "rgb": [
+          0,
+          0,
+          0
+        ],
+        "alpha": 1
+      },
+      "source_name": "--hm-black-800",
+      "scope": "optional_color_utility",
+      "requirement": "reference_only",
+      "selection": "observed_single_source",
+      "selected_source": "VC",
+      "observations": [
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-black-800",
+          "value": "rgba(0,0,0,1)"
+        }
+      ],
+      "review_status": "observed",
+      "notes": "색상 알파. AE 레이어 전체 opacity로 자동 매핑하지 않음."
+    },
+    {
+      "id": "HM-COLOR-WHITE-100",
+      "name": "hm.color.white.100",
+      "type": "color_with_alpha",
+      "value": {
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "alpha": 0.05
+      },
+      "source_name": "--hm-white-100",
+      "scope": "optional_color_utility",
+      "requirement": "reference_only",
+      "selection": "observed_single_source",
+      "selected_source": "VC",
+      "observations": [
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-white-100",
+          "value": "rgba(255,255,255,0.05)"
+        }
+      ],
+      "review_status": "observed",
+      "notes": "색상 알파. AE 레이어 전체 opacity로 자동 매핑하지 않음."
+    },
+    {
+      "id": "HM-COLOR-WHITE-200",
+      "name": "hm.color.white.200",
+      "type": "color_with_alpha",
+      "value": {
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "alpha": 0.1
+      },
+      "source_name": "--hm-white-200",
+      "scope": "optional_color_utility",
+      "requirement": "reference_only",
+      "selection": "observed_single_source",
+      "selected_source": "VC",
+      "observations": [
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-white-200",
+          "value": "rgba(255,255,255,0.1)"
+        }
+      ],
+      "review_status": "observed",
+      "notes": "색상 알파. AE 레이어 전체 opacity로 자동 매핑하지 않음."
+    },
+    {
+      "id": "HM-COLOR-WHITE-300",
+      "name": "hm.color.white.300",
+      "type": "color_with_alpha",
+      "value": {
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "alpha": 0.25
+      },
+      "source_name": "--hm-white-300",
+      "scope": "optional_color_utility",
+      "requirement": "reference_only",
+      "selection": "observed_single_source",
+      "selected_source": "VC",
+      "observations": [
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-white-300",
+          "value": "rgba(255,255,255,0.25)"
+        }
+      ],
+      "review_status": "observed",
+      "notes": "색상 알파. AE 레이어 전체 opacity로 자동 매핑하지 않음."
+    },
+    {
+      "id": "HM-COLOR-WHITE-400",
+      "name": "hm.color.white.400",
+      "type": "color_with_alpha",
+      "value": {
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "alpha": 0.4
+      },
+      "source_name": "--hm-white-400",
+      "scope": "optional_color_utility",
+      "requirement": "reference_only",
+      "selection": "observed_single_source",
+      "selected_source": "VC",
+      "observations": [
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-white-400",
+          "value": "rgba(255,255,255,0.4)"
+        }
+      ],
+      "review_status": "observed",
+      "notes": "색상 알파. AE 레이어 전체 opacity로 자동 매핑하지 않음."
+    },
+    {
+      "id": "HM-COLOR-WHITE-500",
+      "name": "hm.color.white.500",
+      "type": "color_with_alpha",
+      "value": {
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "alpha": 0.55
+      },
+      "source_name": "--hm-white-500",
+      "scope": "optional_color_utility",
+      "requirement": "reference_only",
+      "selection": "observed_single_source",
+      "selected_source": "VC",
+      "observations": [
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-white-500",
+          "value": "rgba(255,255,255,0.55)"
+        }
+      ],
+      "review_status": "observed",
+      "notes": "색상 알파. AE 레이어 전체 opacity로 자동 매핑하지 않음."
+    },
+    {
+      "id": "HM-COLOR-WHITE-600",
+      "name": "hm.color.white.600",
+      "type": "color_with_alpha",
+      "value": {
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "alpha": 0.7
+      },
+      "source_name": "--hm-white-600",
+      "scope": "optional_color_utility",
+      "requirement": "reference_only",
+      "selection": "observed_single_source",
+      "selected_source": "VC",
+      "observations": [
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-white-600",
+          "value": "rgba(255,255,255,0.7)"
+        }
+      ],
+      "review_status": "observed",
+      "notes": "색상 알파. AE 레이어 전체 opacity로 자동 매핑하지 않음."
+    },
+    {
+      "id": "HM-COLOR-WHITE-700",
+      "name": "hm.color.white.700",
+      "type": "color_with_alpha",
+      "value": {
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "alpha": 0.85
+      },
+      "source_name": "--hm-white-700",
+      "scope": "optional_color_utility",
+      "requirement": "reference_only",
+      "selection": "observed_single_source",
+      "selected_source": "VC",
+      "observations": [
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-white-700",
+          "value": "rgba(255,255,255,0.85)"
+        }
+      ],
+      "review_status": "observed",
+      "notes": "색상 알파. AE 레이어 전체 opacity로 자동 매핑하지 않음."
+    },
+    {
+      "id": "HM-COLOR-WHITE-800",
+      "name": "hm.color.white.800",
+      "type": "color_with_alpha",
+      "value": {
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "alpha": 1
+      },
+      "source_name": "--hm-white-800",
+      "scope": "optional_color_utility",
+      "requirement": "reference_only",
+      "selection": "observed_single_source",
+      "selected_source": "VC",
+      "observations": [
+        {
+          "source_ref": "VC",
+          "locator": "컬러 / --hm-white-800",
+          "value": "rgba(255,255,255,1)"
+        }
+      ],
+      "review_status": "observed",
+      "notes": "색상 알파. AE 레이어 전체 opacity로 자동 매핑하지 않음."
+    }
+  ],
+  "gradients": [
+    {
+      "id": "HM-GRAD-BRAND-GREEN-1",
+      "source_name": "--grad-brand-green-1",
+      "source_ref": "VC",
+      "locator": "그라데이션 / CSS 토큰 / --grad-brand-green-1",
+      "value": "linear-gradient(180deg, #124133 0%, #296B55 22%, #123328 58%, #071E18 88.5%, #0F3028 100%)",
+      "scope": "optional_surface_style",
+      "requirement": "reference_only",
+      "review_status": "observed",
+      "video_adaptation": "명시적으로 표면 스타일을 선택한 장면에서만 사용. CSS 방향·보간·좌표는 제작 도구에서 대조."
+    },
+    {
+      "id": "HM-GRAD-BRAND-GREEN-2",
+      "source_name": "--grad-brand-green-2",
+      "source_ref": "VC",
+      "locator": "그라데이션 / CSS 토큰 / --grad-brand-green-2",
+      "value": "linear-gradient(180deg, #124133 0%, #124133 12%, #296B55 50%, #071E18 88.5%, #0F3028 100%)",
+      "scope": "optional_surface_style",
+      "requirement": "reference_only",
+      "review_status": "observed",
+      "video_adaptation": "명시적으로 표면 스타일을 선택한 장면에서만 사용. CSS 방향·보간·좌표는 제작 도구에서 대조."
+    },
+    {
+      "id": "HM-GRAD-BRAND-GREEN-3",
+      "source_name": "--grad-brand-green-3",
+      "source_ref": "VC",
+      "locator": "그라데이션 / CSS 토큰 / --grad-brand-green-3",
+      "value": "linear-gradient(180deg, #0F3028 0%, #071E18 11.5%, #123328 42%, #296B55 78%, #124133 100%)",
+      "scope": "optional_surface_style",
+      "requirement": "reference_only",
+      "review_status": "observed",
+      "video_adaptation": "명시적으로 표면 스타일을 선택한 장면에서만 사용. CSS 방향·보간·좌표는 제작 도구에서 대조."
+    },
+    {
+      "id": "HM-GRAD-BRAND-BROWN-1",
+      "source_name": "--grad-brand-brown-1",
+      "source_ref": "VC",
+      "locator": "그라데이션 / CSS 토큰 / --grad-brand-brown-1",
+      "value": "linear-gradient(180deg, #3E3523 0%, #604F32 22%, #3E3523 58%, #1D1810 88.5%, #352D1D 100%)",
+      "scope": "optional_surface_style",
+      "requirement": "reference_only",
+      "review_status": "observed",
+      "video_adaptation": "명시적으로 표면 스타일을 선택한 장면에서만 사용. CSS 방향·보간·좌표는 제작 도구에서 대조."
+    },
+    {
+      "id": "HM-GRAD-BRAND-BROWN-2",
+      "source_name": "--grad-brand-brown-2",
+      "source_ref": "VC",
+      "locator": "그라데이션 / CSS 토큰 / --grad-brand-brown-2",
+      "value": "linear-gradient(180deg, #3E3523 0%, #352D1D 12%, #604F32 50%, #352D1D 88.5%, #3E3523 100%)",
+      "scope": "optional_surface_style",
+      "requirement": "reference_only",
+      "review_status": "observed",
+      "video_adaptation": "명시적으로 표면 스타일을 선택한 장면에서만 사용. CSS 방향·보간·좌표는 제작 도구에서 대조."
+    },
+    {
+      "id": "HM-GRAD-BRAND-BROWN-3",
+      "source_name": "--grad-brand-brown-3",
+      "source_ref": "VC",
+      "locator": "그라데이션 / CSS 토큰 / --grad-brand-brown-3",
+      "value": "linear-gradient(180deg, #352D1D 0%, #1D1810 11.5%, #3E3523 42%, #604F32 78%, #3E3523 100%)",
+      "scope": "optional_surface_style",
+      "requirement": "reference_only",
+      "review_status": "observed",
+      "video_adaptation": "명시적으로 표면 스타일을 선택한 장면에서만 사용. CSS 방향·보간·좌표는 제작 도구에서 대조."
+    },
+    {
+      "id": "HM-GRAD-BORDER-GREEN",
+      "source_name": "--grad-border-green",
+      "source_ref": "VC",
+      "locator": "그라데이션 / CSS 토큰 / --grad-border-green",
+      "value": "linear-gradient(180deg, #123328 0%, #124133 19.02%, #34DAAA 47.59%, #0D2C24 82.02%, #124133 100%)",
+      "scope": "optional_surface_style",
+      "requirement": "reference_only",
+      "review_status": "observed",
+      "video_adaptation": "명시적으로 표면 스타일을 선택한 장면에서만 사용. CSS 방향·보간·좌표는 제작 도구에서 대조."
+    },
+    {
+      "id": "HM-GRAD-BORDER-BROWN",
+      "source_name": "--grad-border-brown",
+      "source_ref": "VC",
+      "locator": "그라데이션 / CSS 토큰 / --grad-border-brown",
+      "value": "linear-gradient(180deg, #77643C 0%, #423625 19.02%, #F3DBA8 47.59%, #2C2213 82.02%, #685A3B 100%)",
+      "scope": "optional_surface_style",
+      "requirement": "reference_only",
+      "review_status": "observed",
+      "video_adaptation": "명시적으로 표면 스타일을 선택한 장면에서만 사용. CSS 방향·보간·좌표는 제작 도구에서 대조."
+    },
+    {
+      "id": "HM-GRAD-ELEV-Z0-LIGHT",
+      "source_name": "--grad-elev-z0-light",
+      "source_ref": "VC",
+      "locator": "그라데이션 / CSS 토큰 / --grad-elev-z0-light",
+      "value": "#F6F4F2",
+      "scope": "optional_surface_style",
+      "requirement": "reference_only",
+      "review_status": "observed",
+      "video_adaptation": "명시적으로 표면 스타일을 선택한 장면에서만 사용. CSS 방향·보간·좌표는 제작 도구에서 대조."
+    },
+    {
+      "id": "HM-GRAD-ELEV-Z0-DARK",
+      "source_name": "--grad-elev-z0-dark",
+      "source_ref": "VC",
+      "locator": "그라데이션 / CSS 토큰 / --grad-elev-z0-dark",
+      "value": "#1D1810",
+      "scope": "optional_surface_style",
+      "requirement": "reference_only",
+      "review_status": "observed",
+      "video_adaptation": "명시적으로 표면 스타일을 선택한 장면에서만 사용. CSS 방향·보간·좌표는 제작 도구에서 대조."
+    },
+    {
+      "id": "HM-GRAD-ELEV-GREEN-Z1",
+      "source_name": "--grad-elev-green-z1",
+      "source_ref": "VC",
+      "locator": "그라데이션 / CSS 토큰 / --grad-elev-green-z1",
+      "value": "linear-gradient(180deg, #296B55 0%, #123328 6.94%, #0D2C24 100%)",
+      "scope": "optional_surface_style",
+      "requirement": "reference_only",
+      "review_status": "observed",
+      "video_adaptation": "명시적으로 표면 스타일을 선택한 장면에서만 사용. CSS 방향·보간·좌표는 제작 도구에서 대조."
+    },
+    {
+      "id": "HM-GRAD-ELEV-GREEN-Z2",
+      "source_name": "--grad-elev-green-z2",
+      "source_ref": "VC",
+      "locator": "그라데이션 / CSS 토큰 / --grad-elev-green-z2",
+      "value": "linear-gradient(180deg, #071E18 0%, #124133 14%, #124133 49.9%, #123328 88.5%, #071E18 100%)",
+      "scope": "optional_surface_style",
+      "requirement": "reference_only",
+      "review_status": "observed",
+      "video_adaptation": "명시적으로 표면 스타일을 선택한 장면에서만 사용. CSS 방향·보간·좌표는 제작 도구에서 대조."
+    },
+    {
+      "id": "HM-GRAD-ELEV-GREEN-Z3",
+      "source_name": "--grad-elev-green-z3",
+      "source_ref": "VC",
+      "locator": "그라데이션 / CSS 토큰 / --grad-elev-green-z3",
+      "value": "linear-gradient(180deg, #124133 0%, #296B55 32.89%, #123328 65%, #071E18 88.5%, #0F3028 100%)",
+      "scope": "optional_surface_style",
+      "requirement": "reference_only",
+      "review_status": "observed",
+      "video_adaptation": "명시적으로 표면 스타일을 선택한 장면에서만 사용. CSS 방향·보간·좌표는 제작 도구에서 대조."
+    },
+    {
+      "id": "HM-GRAD-ELEV-BROWN-Z1",
+      "source_name": "--grad-elev-brown-z1",
+      "source_ref": "VC",
+      "locator": "그라데이션 / CSS 토큰 / --grad-elev-brown-z1",
+      "value": "linear-gradient(180deg, #604F32 0%, #262218 6.94%, #281F16 10.79%, #282216 100%)",
+      "scope": "optional_surface_style",
+      "requirement": "reference_only",
+      "review_status": "observed",
+      "video_adaptation": "명시적으로 표면 스타일을 선택한 장면에서만 사용. CSS 방향·보간·좌표는 제작 도구에서 대조."
+    },
+    {
+      "id": "HM-GRAD-ELEV-BROWN-Z2",
+      "source_name": "--grad-elev-brown-z2",
+      "source_ref": "VC",
+      "locator": "그라데이션 / CSS 토큰 / --grad-elev-brown-z2",
+      "value": "linear-gradient(180deg, #1D1810 0%, #3E3523 14%, #3E3523 49.9%, #3E3523 88.5%, #1D1810 100%)",
+      "scope": "optional_surface_style",
+      "requirement": "reference_only",
+      "review_status": "observed",
+      "video_adaptation": "명시적으로 표면 스타일을 선택한 장면에서만 사용. CSS 방향·보간·좌표는 제작 도구에서 대조."
+    },
+    {
+      "id": "HM-GRAD-ELEV-BROWN-Z3",
+      "source_name": "--grad-elev-brown-z3",
+      "source_ref": "VC",
+      "locator": "그라데이션 / CSS 토큰 / --grad-elev-brown-z3",
+      "value": "linear-gradient(180deg, #3E3523 0%, #604F32 32.89%, #3E3523 65%, #1D1810 88.5%, #352D1D 100%)",
+      "scope": "optional_surface_style",
+      "requirement": "reference_only",
+      "review_status": "observed",
+      "video_adaptation": "명시적으로 표면 스타일을 선택한 장면에서만 사용. CSS 방향·보간·좌표는 제작 도구에서 대조."
+    },
+    {
+      "id": "HM-GRAD-ACCENT-ORANGE",
+      "source_name": "--grad-accent-orange",
+      "source_ref": "VC",
+      "locator": "그라데이션 / CSS 토큰 / --grad-accent-orange",
+      "value": "linear-gradient(180deg, #DA6813 8.52%, #FFBB89 37.93%, #E5690D 71.85%, #AE3607 92.77%)",
+      "scope": "optional_surface_style",
+      "requirement": "reference_only",
+      "review_status": "observed",
+      "video_adaptation": "명시적으로 표면 스타일을 선택한 장면에서만 사용. CSS 방향·보간·좌표는 제작 도구에서 대조."
+    },
+    {
+      "id": "HM-GRAD-ACCENT-YELLOW",
+      "source_name": "--grad-accent-yellow",
+      "source_ref": "VC",
+      "locator": "그라데이션 / CSS 토큰 / --grad-accent-yellow",
+      "value": "linear-gradient(180deg, #A67D03 0%, #F2CC0F 16.41%, #FADD4F 37.19%, #F2CC0F 62.03%, #926E03 87.88%)",
+      "scope": "optional_surface_style",
+      "requirement": "reference_only",
+      "review_status": "observed",
+      "video_adaptation": "명시적으로 표면 스타일을 선택한 장면에서만 사용. CSS 방향·보간·좌표는 제작 도구에서 대조."
+    }
+  ],
+  "references": [
+    {
+      "id": "HM-REF-FONT",
+      "category": "typography",
+      "source_refs": [
+        "SB-TYPE",
+        "VC"
+      ],
+      "summary": "Noto Sans KR 공통. Storybook fallback은 맑은 고딕 → 시스템 sans-serif.",
+      "data": {
+        "family": "Noto Sans KR",
+        "fallback": [
+          "맑은 고딕",
+          "sans-serif"
+        ]
+      },
+      "video_use": "기본 서체 후보. 영상의 필수 서체로 승격하지 않음. 대체 시 메트릭·줄바꿈 확인.",
+      "scope": "reference",
+      "requirement": "reference_only",
+      "review_status": "observed",
+      "locator": "Vercel / typography 관련 메뉴; 보조 출처는 source_refs 참조"
+    },
+    {
+      "id": "HM-REF-TYPE-VC",
+      "category": "typography",
+      "source_refs": [
+        "VC"
+      ],
+      "summary": "Vercel 디지털 제품 타입 역할 9종",
+      "data": [
+        [
+          "display",
+          42,
+          700,
+          1.15
+        ],
+        [
+          "heading_1",
+          30,
+          700,
+          1.25
+        ],
+        [
+          "heading_2",
+          24,
+          600,
+          1.3
+        ],
+        [
+          "heading_3",
+          20,
+          600,
+          1.35
+        ],
+        [
+          "body_large",
+          18,
+          400,
+          1.6
+        ],
+        [
+          "body",
+          16,
+          400,
+          1.6
+        ],
+        [
+          "caption",
+          14,
+          400,
+          1.5
+        ],
+        [
+          "button",
+          16,
+          600,
+          1
+        ],
+        [
+          "label",
+          14,
+          600,
+          1.4
+        ]
+      ],
+      "video_use": "역할 위계 참고. px·행간을 영상 기본값으로 자동 사용하지 않음.",
+      "scope": "reference",
+      "requirement": "reference_only",
+      "review_status": "observed",
+      "locator": "Vercel / typography 관련 메뉴; 보조 출처는 source_refs 참조"
+    },
+    {
+      "id": "HM-REF-TYPE-SB",
+      "category": "typography",
+      "source_refs": [
+        "SB-TYPE"
+      ],
+      "summary": "Storybook은 신규 Heading/Body/Caption 체계를 정의하지 않는 현재 구현 참고",
+      "data": {
+        "page_header": [
+          28,
+          36,
+          700
+        ],
+        "card_title": [
+          20,
+          28,
+          600
+        ],
+        "description": [
+          14,
+          20,
+          400
+        ],
+        "label": [
+          14,
+          20,
+          500
+        ],
+        "input_sm": [
+          12,
+          18,
+          400
+        ],
+        "input_md": [
+          14,
+          20,
+          400
+        ],
+        "input_lg": [
+          16,
+          24,
+          400
+        ],
+        "button_sm": [
+          12,
+          18,
+          500
+        ],
+        "button_md": [
+          13,
+          20,
+          500
+        ],
+        "button_lg": [
+          15,
+          22,
+          500
+        ]
+      },
+      "video_use": "실제 제품 UI 재현에만 해당 구현값 참고. Vercel과 합쳐 단일 영상 타입 체계를 만들지 않음.",
+      "scope": "reference",
+      "requirement": "reference_only",
+      "review_status": "observed",
+      "locator": "해당 Storybook heading"
+    },
+    {
+      "id": "HM-REF-SPACE-VC",
+      "category": "spacing",
+      "source_refs": [
+        "VC"
+      ],
+      "summary": "Vercel 4px 기반 단계",
+      "data": {
+        "xxs": 4,
+        "xs": 8,
+        "sm": 12,
+        "md": 16,
+        "lg": 24,
+        "xl": 32,
+        "xxl": 48,
+        "xxxl": 64,
+        "xxxxl": 80
+      },
+      "video_use": "간격 리듬 참고. 영상 해상도·밀도·이동 공간으로 다시 결정.",
+      "scope": "reference",
+      "requirement": "reference_only",
+      "review_status": "observed",
+      "locator": "Vercel / spacing 관련 메뉴; 보조 출처는 source_refs 참조"
+    },
+    {
+      "id": "HM-REF-LAYOUT-SB",
+      "category": "spacing",
+      "source_refs": [
+        "SB-LAYOUT"
+      ],
+      "summary": "공식 전역 spacing/grid 미정. 각 컴포넌트 사용값만 표시",
+      "data": {
+        "dashboard_padding_desktop": 34,
+        "dashboard_padding_mobile": 20,
+        "dashboard_gap": 24,
+        "card_padding": 24,
+        "page_header_margin_bottom": 20,
+        "gnb_join": 12,
+        "lnb_join": 18,
+        "desktop_min": 1024,
+        "mobile_max": 1023,
+        "qa_viewports": [
+          [
+            1280,
+            900
+          ],
+          [
+            390,
+            844
+          ]
+        ],
+        "common_column_count": null,
+        "common_max_width": null
+      },
+      "video_use": "웹 breakpoint와 QA viewport를 영상 비율·세이프존으로 옮기지 않음.",
+      "scope": "reference",
+      "requirement": "reference_only",
+      "review_status": "observed",
+      "locator": "해당 Storybook heading"
+    },
+    {
+      "id": "HM-REF-RADIUS",
+      "category": "surface",
+      "source_refs": [
+        "VC",
+        "SB-LAYOUT"
+      ],
+      "summary": "Vercel 단계와 Storybook 역할별 반경을 별도 보존",
+      "data": {
+        "vercel": {
+          "none": 0,
+          "xs": 2,
+          "sm": 4,
+          "md": 6,
+          "lg": 8,
+          "xl": 12,
+          "2xl": 16,
+          "full": 9999
+        },
+        "storybook": {
+          "control_md": 4,
+          "button": 4,
+          "input": 4,
+          "select": 4,
+          "container": 4
+        }
+      },
+      "video_use": "선택형 형태 참고. 화면 전체에 rounded card를 강제하지 않음.",
+      "scope": "reference",
+      "requirement": "reference_only",
+      "review_status": "observed",
+      "locator": "Vercel / surface 관련 메뉴; 보조 출처는 source_refs 참조"
+    },
+    {
+      "id": "HM-REF-SHADOW",
+      "category": "surface",
+      "source_refs": [
+        "VC"
+      ],
+      "summary": "z0~z4",
+      "data": {
+        "z0": "none",
+        "z1": "0 1px 2px #0000001C",
+        "z2": "0 2px 4px #0000001C",
+        "z3": "0 3px 6px #0000001C",
+        "z4": "0 4px 8px #0000001C"
+      },
+      "video_use": "위계·분리감 참고. 영상 px 그림자와 동일하다고 가정하지 않음.",
+      "scope": "reference",
+      "requirement": "reference_only",
+      "review_status": "observed",
+      "locator": "Vercel / surface 관련 메뉴; 보조 출처는 source_refs 참조"
+    },
+    {
+      "id": "HM-REF-UI",
+      "category": "components",
+      "source_refs": [
+        "VC"
+      ],
+      "summary": "버튼·입력·카드·테이블",
+      "data": {
+        "button": {
+          "height_px": 34,
+          "radius_px": 4,
+          "compact_height_px": 31
+        },
+        "input": {
+          "height_px": 44,
+          "radius_px": 8
+        },
+        "card": {
+          "radius_px": 12,
+          "padding_px": 24
+        },
+        "table": {
+          "font_px": 13,
+          "header_font_px": 11
+        }
+      },
+      "video_use": "제품 UI 데모·설명 장면에만 선택적으로 참고. 실제 제품 캡처/구현을 우선하며 원문 설명과 CSS 불일치를 그대로 규칙화하지 않음.",
+      "scope": "reference",
+      "requirement": "reference_only",
+      "review_status": "observed",
+      "locator": "Vercel / components 관련 메뉴; 보조 출처는 source_refs 참조"
+    },
+    {
+      "id": "HM-REF-UTILITY",
+      "category": "components",
+      "source_refs": [
+        "VC"
+      ],
+      "summary": "UI 보조색",
+      "data": {
+        "--hm-surface": "#F5F3EE",
+        "--hm-divider": "#E8E5DF",
+        "--hm-border": "#D0CEC9",
+        "--border-tech": "#CFC6AD"
+      },
+      "video_use": "UI 재현용 참고. 공통 브랜드색·중립색으로 자동 추가하지 않음.",
+      "scope": "reference",
+      "requirement": "reference_only",
+      "review_status": "observed",
+      "locator": "Vercel / components 관련 메뉴; 보조 출처는 source_refs 참조"
+    },
+    {
+      "id": "HM-REF-TITLE",
+      "category": "scoped_graphic",
+      "source_refs": [
+        "SB-TITLE"
+      ],
+      "summary": "사업명/사업노선/노선구분 조합 4종. 제작 대상 7680×2160, Resolution B TBD, palette는 범위 한정 승인",
+      "data": {
+        "type_1": "사업명",
+        "type_2": "사업명+사업노선",
+        "type_3": "노선구분+사업명",
+        "type_4": "노선구분+사업명+사업노선",
+        "target": [
+          7680,
+          2160
+        ],
+        "resolution_b": null
+      },
+      "video_use": "정보 구성 참고. CENTER 전용 크기·팔레트·승인 상태를 전 영상에 일반화하지 않음.",
+      "scope": "reference",
+      "requirement": "reference_only",
+      "review_status": "observed",
+      "locator": "해당 Storybook heading"
+    }
+  ],
+  "rules": [
+    {
+      "id": "HM-RULE-SCOPE",
+      "version": "0.1.0",
+      "scope": "video",
+      "requirement": "required",
+      "source_refs": [
+        "USER"
+      ],
+      "origin": "user_policy",
+      "text": "컬러 라이브러리는 전역 조회 가능. 모든 장면에서 모든 색을 쓰거나 특정 레이아웃을 강제한다는 뜻은 아니다.",
+      "review_status": "user_directed",
+      "case_refs": [],
+      "reviewer": null
+    },
+    {
+      "id": "HM-RULE-PRECEDENCE",
+      "version": "0.1.0",
+      "scope": "video",
+      "requirement": "required",
+      "source_refs": [
+        "USER"
+      ],
+      "origin": "user_policy",
+      "text": "브랜드 기본색·명암 스케일은 Storybook, 강조색·중립색은 Vercel 값을 선택한다.",
+      "review_status": "user_directed",
+      "case_refs": [],
+      "reviewer": null
+    },
+    {
+      "id": "HM-RULE-UI-OPTIONAL",
+      "version": "0.1.0",
+      "scope": "video_system_policy",
+      "requirement": "required",
+      "source_refs": [
+        "USER"
+      ],
+      "origin": "user_policy",
+      "text": "UI 규격은 참고 전용. UI를 사용하지 않았다는 이유로 영상 기획·검수에서 실패 처리하지 않는다.",
+      "review_status": "user_directed",
+      "case_refs": [],
+      "reviewer": null
+    },
+    {
+      "id": "HM-RULE-OBSERVATION",
+      "version": "0.1.0",
+      "scope": "video",
+      "requirement": "required",
+      "source_refs": [],
+      "origin": "video_adaptation",
+      "text": "과거 영상의 관측 색을 선택된 팔레트 값으로 보정해서 기록하지 않는다. 공식 토큰 참조와 관측 픽셀을 분리한다.",
+      "review_status": "draft",
+      "case_refs": [],
+      "reviewer": null
+    },
+    {
+      "id": "HM-RULE-ORANGE-ROLES",
+      "version": "0.1.0",
+      "scope": "video",
+      "requirement": "recommended",
+      "source_refs": [
+        "VC"
+      ],
+      "origin": "source_interpretation",
+      "text": "기본 Orange #CC5200와 강조 액션 Orange #FF5C00를 서로 다른 역할로 관리한다.",
+      "review_status": "draft",
+      "case_refs": [],
+      "reviewer": null
+    },
+    {
+      "id": "HM-RULE-YELLOW",
+      "version": "0.1.0",
+      "scope": "video",
+      "requirement": "recommended",
+      "source_refs": [
+        "VC"
+      ],
+      "origin": "source_interpretation",
+      "text": "Yellow #FFC600는 Green 배경 강조 후보로 사용한다. 범용 차트 시리즈색으로 자동 지정하지 않는다.",
+      "review_status": "draft",
+      "case_refs": [],
+      "reviewer": null
+    },
+    {
+      "id": "HM-RULE-NEUTRAL",
+      "version": "0.1.0",
+      "scope": "video",
+      "requirement": "recommended",
+      "source_refs": [
+        "VC"
+      ],
+      "origin": "source_interpretation",
+      "text": "Green/Brown 테마의 주·보조 텍스트를 대응 중립색으로 선택한다. 최종 합성 배경에서 대비를 재확인한다.",
+      "review_status": "draft",
+      "case_refs": [],
+      "reviewer": null
+    },
+    {
+      "id": "HM-RULE-TRANSITION",
+      "version": "0.1.0",
+      "scope": "video",
+      "requirement": "reference_only",
+      "source_refs": [
+        "VC"
+      ],
+      "origin": "source_interpretation",
+      "text": "Green↔Brown 변경 시 Neutral 경유라는 원문이 있으나 웹 테마 변경인지 영상 시간 전환인지 불명확하다. 영상 컷·디졸브의 의무 규칙으로 확장하지 않는다.",
+      "review_status": "draft",
+      "case_refs": [],
+      "reviewer": null
+    },
+    {
+      "id": "HM-RULE-GRADIENT",
+      "version": "0.1.0",
+      "scope": "video",
+      "requirement": "reference_only",
+      "source_refs": [
+        "VC"
+      ],
+      "origin": "source_interpretation",
+      "text": "브랜드 표면의 transparent/rgba 금지는 해당 표면 레시피의 참고 제약으로 한정한다. 영상 페이드·알파 합성 전체 금지로 확장하지 않는다.",
+      "review_status": "draft",
+      "case_refs": [],
+      "reviewer": null
+    },
+    {
+      "id": "HM-RULE-READABILITY",
+      "version": "0.1.0",
+      "scope": "video",
+      "requirement": "recommended",
+      "source_refs": [
+        "W3C-CONTRAST",
+        "W3C-COLOR"
+      ],
+      "origin": "video_adaptation",
+      "text": "색 이외에 텍스트·번호·형태·위치로도 정보를 구분한다. 정지 색 대비는 보조 지표이며 최종 프레임·움직임·시청 조건을 검수한다.",
+      "review_status": "draft",
+      "case_refs": [],
+      "reviewer": null
+    },
+    {
+      "id": "HM-RULE-TYPE",
+      "version": "0.1.0",
+      "scope": "video",
+      "requirement": "reference_only",
+      "source_refs": [],
+      "origin": "video_adaptation",
+      "text": "폰트와 위계는 참고하되 웹 px·UI 행간을 영상 필수 수치로 사용하지 않는다.",
+      "review_status": "draft",
+      "case_refs": [],
+      "reviewer": null
+    },
+    {
+      "id": "HM-RULE-MOTION",
+      "version": "0.1.0",
+      "scope": "video",
+      "requirement": "reference_only",
+      "source_refs": [],
+      "origin": "video_adaptation",
+      "text": "hover 120/150ms 등을 영상 등장·유지·퇴장 시간으로 사용하지 않는다. 영상 모션 수치는 사례·내레이션·읽기 시간에서 정한다.",
+      "review_status": "draft",
+      "case_refs": [],
+      "reviewer": null
+    }
+  ],
+  "issues": [
+    {
+      "id": "HM-ISSUE-COLOR-6",
+      "status": "resolved_by_user",
+      "title": "6개 명암 단계값 차이",
+      "evidence": "Green 100; Brown 700; Orange 100~400",
+      "handling": "Storybook 선택. Vercel 값은 observations에 보존."
+    },
+    {
+      "id": "HM-ISSUE-VERSION",
+      "status": "open_reference",
+      "title": "Vercel 버전 표기 불일치",
+      "evidence": "헤더/푸터 v2.2.0, 변경 이력 최신 v2.3.0",
+      "handling": "버전 단정 대신 조회일·메뉴 위치로 기록."
+    },
+    {
+      "id": "HM-ISSUE-GRAD-COUNT",
+      "status": "open_reference",
+      "title": "그라데이션 개수 불일치",
+      "evidence": "설명 20개/엘리베이션 10개, 실제 CSS 고유 이름 18개/엘리베이션 8개",
+      "handling": "보이는 18개만 보관. 누락 2개를 추정 생성하지 않음."
+    },
+    {
+      "id": "HM-ISSUE-GRAD-DIRECTION",
+      "status": "open_reference",
+      "title": "그라데이션 방향 불일치",
+      "evidence": "설명 90deg 수평, CSS 180deg",
+      "handling": "CSS 문자열을 관측값으로 보존. 시각 참고, 자동 강제 제외."
+    },
+    {
+      "id": "HM-ISSUE-GRAD-ALIAS",
+      "status": "open_reference",
+      "title": "미정의 보더 예시 이름",
+      "evidence": "예시 --grad-border-green-1, 정의 --grad-border-green",
+      "handling": "서로 다른 원문 이름 기록. 유효 정의 이름만 참조."
+    },
+    {
+      "id": "HM-ISSUE-TYPE-SCOPE",
+      "status": "resolved_by_scope",
+      "title": "타입 체계 차이",
+      "evidence": "Vercel 공통 9역할 vs Storybook 현재 구현 참고",
+      "handling": "필수 영상 타입 규격 미정. 출처별 UI 참고로 분리."
+    },
+    {
+      "id": "HM-ISSUE-SPACE-SCOPE",
+      "status": "resolved_by_scope",
+      "title": "전역 간격 정의 차이",
+      "evidence": "Vercel 전역 4px 그리드 vs Storybook 전역 spacing/grid 미정",
+      "handling": "공식 공통 그리드로 합치지 않음."
+    },
+    {
+      "id": "HM-ISSUE-UI-INTERNAL",
+      "status": "open_reference",
+      "title": "UI 설명과 CSS 값 차이",
+      "evidence": "radius 문서 버튼 8px vs 버튼/Variables 4px; 카드 설명 흰색/HM Brown hover vs CSS alpha white/accent orange",
+      "handling": "제품 재현은 실제 구현/캡처 우선, 영상 강제값 없음."
+    },
+    {
+      "id": "HM-ISSUE-MOTION-UNKNOWN",
+      "status": "not_provided",
+      "title": "영상 전용 기준 미제공",
+      "evidence": "로고 원본·여백·최소 크기, 자막 규격, 영상 타입 크기·세이프존·이징·타이밍·데이터 시리즈 팔레트 미확인",
+      "handling": "null/후속 항목. 웹 수치로 채우지 않음."
+    }
+  ],
+  "semantic_roles": [
+    {
+      "role": "brand.green",
+      "token_id": "HM-COLOR-GREEN-500",
+      "origin": "source",
+      "requirement": "available"
+    },
+    {
+      "role": "brand.brown",
+      "token_id": "HM-COLOR-BROWN-500",
+      "origin": "source",
+      "requirement": "available"
+    },
+    {
+      "role": "brand.orange",
+      "token_id": "HM-COLOR-ORANGE-500",
+      "origin": "source",
+      "requirement": "available"
+    },
+    {
+      "role": "emphasis.action",
+      "token_id": "HM-COLOR-ACCENT-ORANGE",
+      "origin": "source_interpretation",
+      "requirement": "recommended"
+    },
+    {
+      "role": "emphasis.on_green",
+      "token_id": "HM-COLOR-YELLOW",
+      "origin": "source_interpretation",
+      "requirement": "recommended"
+    },
+    {
+      "role": "text.on_green.primary",
+      "token_id": "HM-COLOR-NEUTRAL-GREEN-100",
+      "origin": "source_interpretation",
+      "requirement": "recommended"
+    },
+    {
+      "role": "text.on_green.secondary",
+      "token_id": "HM-COLOR-NEUTRAL-GREEN-200",
+      "origin": "source_interpretation",
+      "requirement": "recommended"
+    },
+    {
+      "role": "text.on_brown.primary",
+      "token_id": "HM-COLOR-NEUTRAL-BROWN-100",
+      "origin": "source_interpretation",
+      "requirement": "recommended"
+    },
+    {
+      "role": "text.on_brown.secondary",
+      "token_id": "HM-COLOR-NEUTRAL-BROWN-200",
+      "origin": "source_interpretation",
+      "requirement": "recommended"
+    }
+  ],
+  "loading_policy": {
+    "default_include": [
+      "color_tokens:global_color_library",
+      "rules:required",
+      "semantic_roles"
+    ],
+    "on_demand": [
+      "optional_color_utility",
+      "gradients",
+      "references"
+    ],
+    "enforce_ui_styles": false,
+    "raw_observation_is_immutable": true
+  },
+  "not_defined": {
+    "video_font_sizes": null,
+    "safe_area": null,
+    "motion_durations": null,
+    "easing": null,
+    "logo_asset": null,
+    "logo_clear_space": null,
+    "data_series_palette": null
+  },
+  "provenance_limit": "수동 전사한 구조화 관측·정제 데이터. 원본 전체 HTML 스냅샷/배포 커밋은 확보하지 않았으며 라이브 페이지가 바뀔 수 있음.",
+  "db_contract": {
+    "authority": "본 파일이 정본. Markdown/CSS/대비표는 build_views.cjs로 재생성. 현재 프로젝트는 JSON 정본이며 SQL/벡터DB/분석기는 아직 구축하지 않음.",
+    "mapping": [
+      {
+        "collection": "color_tokens",
+        "entity": "DesignRule",
+        "natural_key": "profile_id + token.id + profile.version",
+        "scope": "company",
+        "requirement": "available 또는 reference_only",
+        "evidence": "observations[].source_ref + locator + value",
+        "review": "source_selection_confirmed는 사용자 출처 선택 확인. 회사 영상 문법 승인과 별개."
+      },
+      {
+        "collection": "rules",
+        "entity": "DesignRule",
+        "natural_key": "rule.id + rule.version",
+        "scope": "rule.scope",
+        "requirement": "rule.requirement",
+        "evidence": "source_refs + origin",
+        "review": "user_directed 또는 draft. 자동으로 회사 approved로 승격 금지."
+      },
+      {
+        "collection": "gradients/references",
+        "entity": "DesignRule",
+        "natural_key": "profile_id + id + profile.version",
+        "scope": "reference",
+        "requirement": "reference_only",
+        "evidence": "source_ref(s) + locator",
+        "review": "observed. 회사 필수 규칙 검색에서 제외."
+      },
+      {
+        "collection": "sources",
+        "entity": "Evidence",
+        "natural_key": "source.id + retrieved_on",
+        "scope": "company_reference 또는 external_principle 또는 user_directive",
+        "evidence": "url + locator + version",
+        "review": "라이브 원문 전체 해시 미확보. curated JSON 해시는 로컬 기록 무결성용."
+      },
+      {
+        "collection": "issues",
+        "entity": "Review",
+        "natural_key": "issue.id + profile.version",
+        "scope": "각 이슈",
+        "evidence": "evidence",
+        "review": "handling/status. 신규 출처 선택 시 이전 버전 보존."
+      }
+    ],
+    "scene_contract": {
+      "profile_ref": "hanmac-video@0.1.0",
+      "palette_role_bindings": {
+        "background": "HM-COLOR-GREEN-500",
+        "main_text": "HM-COLOR-NEUTRAL-GREEN-100",
+        "secondary_text": "HM-COLOR-NEUTRAL-GREEN-200",
+        "emphasis": "HM-COLOR-YELLOW"
+      },
+      "optional_style_refs": [],
+      "context": "데이터 구조 설명용 기획 예시. 과거 회사 영상 사례/승인된 템플릿 아님.",
+      "project_overrides": [],
+      "observation_storage": "관측 pixel RGB, 원본 색공간, 프레임/PTS 및 토큰 대응 추정은 별도 필드."
+    },
+    "query_policy": [
+      "기본은 global_color_library와 required 정책을 반환. available는 색 선택 가능, 매 장면 사용 의무가 아님.",
+      "UI·표면·CENTER reference_only는 명시 요청 시만 반환, 회사 필수 검수에서 제외.",
+      "관측 분석 시 원본을 기록하고 profile match는 별도 판정. 기획 시 내용·출력 조건을 먼저 확인.",
+      "프로젝트 예외는 원래 토큰 수정 대신 project_overrides에 이유·범위·검수 상태를 기록.",
+      "변경은 profile version 증가, 기존 장면은 과거 버전 유지. 자동 소급 적용 금지."
+    ]
+  }
+}

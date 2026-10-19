@@ -1,0 +1,128 @@
+{
+  "task_kind": "normal_small_copy_knowledge_curation_not_performance_comparison",
+  "status": "draft_saved_bounded_direct_checks_passed",
+  "target": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\inputs\\Phase00\\작업초안\\쉬운말_지식카드.json",
+  "ids": [
+    "시범카드001",
+    "시범카드002",
+    "시범카드003"
+  ],
+  "document_version": {
+    "before": "0.1.0",
+    "after": "0.1.1"
+  },
+  "record_versions": [
+    {
+      "id": "시범카드001",
+      "before": "0.1.0",
+      "after": "0.1.1"
+    },
+    {
+      "id": "시범카드002",
+      "before": "0.1.0",
+      "after": "0.1.1"
+    },
+    {
+      "id": "시범카드003",
+      "before": "0.1.0",
+      "after": "0.1.1"
+    }
+  ],
+  "before_sha256": "9aaaa77ee0ab7f64db58db3276cdc8f0056f8169471ef05711c36679557963a2",
+  "after_sha256": "254bd6423812859452c60b7247bc0cdcfe7e626ff6a62b698a8218957655645f",
+  "before_bytes": 4262,
+  "after_bytes": 6388,
+  "backup": {
+    "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\inputs\\Phase00\\backup\\이번작업\\큐레이터_소량시범_20261016\\쉬운말_지식카드_v0.1.0.json",
+    "sha256": "9aaaa77ee0ab7f64db58db3276cdc8f0056f8169471ef05711c36679557963a2",
+    "byte_identical_to_before": true
+  },
+  "checks": {
+    "json_parse_and_duplicate_keys": "pass",
+    "three_unique_record_ids": "pass",
+    "canonical_term_refs_and_versions": "pass",
+    "source_snapshot_equals_current_three_original_terms": "pass",
+    "source_file_sha_and_locator": "pass",
+    "immediate_prewrite_sha_id_version_recheck": "pass",
+    "actual_saved_bytes_equal_candidate": "pass",
+    "only_allowed_json_paths_changed": "pass",
+    "changed_json_path_count": 19,
+    "all_fifteen_explanatory_fields_one_or_two_sentences": "pass",
+    "three_examples_explicitly_illustrative": "pass",
+    "document_and_record_versions_0_1_1": "pass",
+    "read_only_input_sha_preservation": "pass_for_22_read_inputs_only",
+    "current_guide_and_errata_exists_and_read": "pass",
+    "errata_original_and_basis_pins": {
+      "ST-R4": "confirmed_bounded_current_stage_correction",
+      "ST-R2": "confirmed_bounded_current_stage_correction",
+      "ST-R2-JSON": "confirmed_bounded_current_stage_correction",
+      "ST-HANDOFF": "confirmed_bounded_current_stage_correction",
+      "ST-R7-R8": "confirmed_bounded_current_stage_correction"
+    }
+  },
+  "preserved_fields": [
+    "source_snapshot",
+    "term_ref",
+    "id",
+    "source_file",
+    "state",
+    "example_kind",
+    "company_approved",
+    "human_review",
+    "all_other_non_allowed_fields"
+  ],
+  "human_review": "pending",
+  "company_approved": false,
+  "operational_release_performed": false,
+  "meaning_change_or_taxonomy_merge": "none_requested_or_performed",
+  "source_read_depth": "내용근거_확인절과판본.json and 01/02 stdout; no external works fetched/read",
+  "not_run": [
+    "R4 integrated record validator: target is a separate knowledge draft, not a supported v0.2 video record",
+    "validate_catalogs: source delegates to 구형기록_보존검사.py, which is not supplied in this copy; no forced source execution",
+    "R6/R7 full query: full source archive/context not supplied; direct local source/term/allowed-diff checks only",
+    "R8 candidate full connector query: not supplied; no candidate/default installation or switch",
+    "actual video, API, network, CU, AE, 01-A, company approval, new human reply, performance/time/token/effect measurement"
+  ],
+  "missing_explicit_paths": [
+    {
+      "path": "01_진행현황.md",
+      "exists_in_copy": false
+    },
+    {
+      "path": "08_검증결과/R8_04_통합검증/00_최종보고.md",
+      "exists_in_copy": false
+    },
+    {
+      "path": "07_실행도구/R6_통합조회.py",
+      "exists_in_copy": false
+    },
+    {
+      "path": "07_실행도구/R7_연결확인.py",
+      "exists_in_copy": false
+    },
+    {
+      "path": "07_실행도구/지식조회.py",
+      "exists_in_copy": false
+    }
+  ],
+  "follow_up": {
+    "index": "작업초안/연결목록.json deliberately unchanged and stale at 0.1.0; record steward must update the three draft refs in its authorized follow-up",
+    "registration": "working draft absent from canonical/display generation entries; registration/default adoption not performed",
+    "human": "three v0.1.1 cards remain pending; no new human decision or approval has been received"
+  },
+  "human_review_proposal_not_sent": {
+    "target": "시범카드001/002/003@0.1.1 wording and meaning preservation only",
+    "A_recommended": "세 카드 전체를 원문과 대조해 쉬운말과 의미 보존만 내용 검토한다.",
+    "B": "선형 프로세스의 가로·세로, 분기와 시간축 구분 문구부터 검토하고 나머지는 미검수로 둔다.",
+    "C": "주목 이동의 실제 시선 효과와 가시성 변화의 구현 원인 구분부터 검토하고 나머지는 미검수로 둔다.",
+    "D": "현재 초안을 보류 상태로 두고, 문제되는 카드·문장과 추가로 필요한 원문을 지정한다.",
+    "reason_for_A": "새 의미·정식 분류·승인을 추가하지 않고 이번에 작성한 세 카드의 범위 전체를 확인할 수 있다."
+  },
+  "failure": null,
+  "restore": "not_needed; no failure encountered",
+  "limitations": [
+    "Single-file immediate recheck reduces stale overwrite risk but does not provide a cross-file atomic transaction or complete concurrent-write lock.",
+    "Automated checks establish parsing, identity/version/source pins and allowed changes; readability and content approval remain human review pending."
+  ],
+  "existing_catalog_validator_dependency_exists_in_copy": false
+}

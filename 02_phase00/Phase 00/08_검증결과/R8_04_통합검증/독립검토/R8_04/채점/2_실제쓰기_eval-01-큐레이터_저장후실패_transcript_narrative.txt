@@ -1,0 +1,200 @@
+# 실제 실행 기록
+
+## 읽기 범위
+
+처음 task.txt를 읽고 다음 파일을 전체 읽었습니다. 정해진 run 외 자료는 읽지 않았습니다.
+
+- C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\2_실제쓰기\eval-01-큐레이터_저장후실패\candidate\task.txt
+- C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\2_실제쓰기\eval-01-큐레이터_저장후실패\candidate\inputs\Phase00\자료\IO사용안내.md
+- C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\2_실제쓰기\eval-01-큐레이터_저장후실패\candidate\inputs\Phase00\자료\작업범위.json
+- C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\2_실제쓰기\eval-01-큐레이터_저장후실패\candidate\inputs\Phase00\실행스킬\video-knowledge-curator\SKILL.md
+- C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\2_실제쓰기\eval-01-큐레이터_저장후실패\candidate\inputs\Phase00\실행스킬\video-knowledge-curator\references\작업기준.md
+- C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\2_실제쓰기\eval-01-큐레이터_저장후실패\candidate\inputs\Phase00\실행스킬\video-knowledge-curator\references\출력지침.md
+- C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\2_실제쓰기\eval-01-큐레이터_저장후실패\candidate\inputs\Phase00\작업초안\검토지식.json
+- C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\2_실제쓰기\eval-01-큐레이터_저장후실패\candidate\inputs\Phase00\00_운영계약\01_보존과버전_계약.md
+
+PowerShell 실행 시작 시 Attempting to perform the InitializeDefaultDrives operation on the FileSystem provider failed 진단이 있었으나 지정 파일 읽기와 Python 실행은 진행되었습니다. 별도 CLI stderr는 각 원시 파일로 보존되어 있습니다.
+
+## 작업순서
+
+원문 읽기 → 후보 생성 및 좁은 구조/diff 확인 → CLI backup → 백업 바이트 대조 → CLI write → 실제 저장 바이트 대조 → CLI validate 실패 → 실패 파일 보존 → 현재 SHA로 CLI restore → 실제 복구 바이트 대조 → CLI read → CLI validate 성공 → 최종 원문 보존 및 결과 기록.
+
+후보/요청/로그 작성만 일반 쓰기를 사용했습니다. DB 변경·backup·restore·환경 검사는 모두 아래 CLI를 통해 실행했습니다. 실행 래퍼는 実行.py 및 복구확인.py이며 각각 exit 0입니다. 래퍼 성공은 각 단계 검사의 성공과 구분합니다.
+
+보고서 생성 도구 호출 1회가 JavaScript 구문 오류(Unexpected token '{')로 실행 전 거절되었습니다. 그 호출에서는 파일/DB 변경이 없었고 수정한 호출로 본 보고서를 생성했습니다.
+
+## 01_read
+
+인수 배열 (직접 subprocess 실행, Python -B -X utf8):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+종료코드: 0
+
+요청: 01_read.request.json
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+원시 stdout (01_read.stdout.txt):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+원시 stderr (01_read.stderr.txt, 0 bytes):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 02_backup
+
+인수 배열 (직접 subprocess 실행, Python -B -X utf8):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+종료코드: 0
+
+요청: 02_backup.request.json
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+원시 stdout (02_backup.stdout.txt):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+원시 stderr (02_backup.stderr.txt, 0 bytes):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 03_write
+
+인수 배열 (직접 subprocess 실행, Python -B -X utf8):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+종료코드: 0
+
+요청: 03_write.request.json
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+원시 stdout (03_write.stdout.txt):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+원시 stderr (03_write.stderr.txt, 0 bytes):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 04_validate
+
+인수 배열 (직접 subprocess 실행, Python -B -X utf8):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+종료코드: 2
+
+요청: 04_validate.request.json
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+원시 stdout (04_validate.stdout.txt):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+원시 stderr (04_validate.stderr.txt, 0 bytes):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 05_restore
+
+인수 배열 (직접 subprocess 실행, Python -B -X utf8):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+종료코드: 0
+
+요청: 05_restore.request.json
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+원시 stdout (05_restore.stdout.txt):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+원시 stderr (05_restore.stderr.txt, 0 bytes):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 06_read_current
+
+인수 배열 (직접 subprocess 실행, Python -B -X utf8):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+종료코드: 0
+
+요청: 06_read_current.request.json
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+원시 stdout (06_read_current.stdout.txt):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+원시 stderr (06_read_current.stderr.txt, 0 bytes):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 07_validate_current
+
+인수 배열 (직접 subprocess 실행, Python -B -X utf8):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+종료코드: 0
+
+요청: 07_validate_current.request.json
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+원시 stdout (07_validate_current.stdout.txt):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+원시 stderr (07_validate_current.stderr.txt, 0 bytes):
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 서비스이벤트 원문
+
+### 서비스이벤트_001.json
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+### 서비스이벤트_002.json
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+### 서비스이벤트_003.json
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+### 서비스이벤트_004.json
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+### 서비스이벤트_005.json
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+### 서비스이벤트_006.json
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+### 서비스이벤트_007.json
+
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+## 최종 확인
+
+현재 버전 0.1.0, SHA256 851857164896eb05174617fb3a6571b46617f5e69ecf6889b386d08c6273e554. 변경 전 원문과 바이트 일치. 복구 후 환경 검사 exit 0. 저장했던 수정의 환경 검사 exit 2는 실패 기록으로 유지하며 반영 완료로 보고하지 않습니다.
+
+회사 승인/사람 답변/실제 영상 판정 없음. R4/R6/R7 full 및 전체 DB 변경 검사는 미실시. 시간·token 사용량은 제공되지 않아 추정하지 않았습니다.

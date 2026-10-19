@@ -1,0 +1,41 @@
+{
+  "case_id": "T02",
+  "condition": "without_skill",
+  "recorded_at": "2026-10-16T06:18:08.558201+00:00",
+  "grader": "root source/meaning review; not independent human",
+  "reference_level": "user_provided_correction",
+  "expectations": [
+    {
+      "text": "E 주변의 얇은 발광선/빛 통과를 본체와 별도 식별",
+      "passed": true,
+      "evidence": "O3에서 얇은 사각 선틀과 위/왼쪽 아래 가로 빛띠를 본체 패널 O2와 구분. 원본 0.4~1.4 표본과 일치."
+    },
+    {
+      "text": "가감속을 못 정해도 존재 관측을 지우지 않음",
+      "passed": true,
+      "evidence": "빛띠의 존재를 O3에 유지하고 가감속은 따로 확정하지 않음."
+    },
+    {
+      "text": "측정하지 않은 경로/정확한 이징을 확정하지 않음",
+      "passed": true,
+      "evidence": "광선 오버레이는 가설이며 전체 외곽 경로/정확한 이징을 확정하지 않음."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3
+  },
+  "case_status": "requirements_satisfied",
+  "notes": [
+    "빛 통과 방향/정밀 곡선은 자세히 기록하지 않았지만 고정 필수 기준은 존재와 분리이다. 기준을 사후 강화해 실패로 바꾸지 않음."
+  ],
+  "timing": null,
+  "tokens": null,
+  "telemetry_note": "per-run telemetry unavailable; no synthesized averages",
+  "eval_feedback": {
+    "suggestions": [
+      "Known exposed windows, one run per condition, same agent batches; this is regression evidence, not generalization accuracy."
+    ]
+  }
+}

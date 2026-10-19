@@ -1,0 +1,3668 @@
+{
+  "scope": "합성 contract fixture만 검사. actualdraft 분기도 메모리 가짜자료. 사실/실측/사람정체성/회사승인 검증 아님.",
+  "count": 98,
+  "passed": 98,
+  "all_passed": true,
+  "cases": [
+    {
+      "name": "미관측 예시 구조와 사람대기",
+      "kind": "queue",
+      "expected_error_fragment": null,
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "주장 내용 사람 검수 필요"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "원본정지표본 visual 존재는 내용검수대기",
+      "kind": "queue",
+      "expected_error_fragment": null,
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "화면 내용/동일 대상/가림/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "빈근거 hypothesis 보존",
+      "kind": "queue",
+      "expected_error_fragment": null,
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "주장 내용 사람 검수 필요"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "없던근거ID",
+      "kind": "invalid",
+      "expected_error_fragment": "없는 참조",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 없는 참조 NONE"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "주장 내용 사람 검수 필요"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "근거버전다름",
+      "kind": "invalid",
+      "expected_error_fragment": "버전/hash",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 참조 버전/hash 불일치 EV-FRAME"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "주장 내용 사람 검수 필요"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "재구성이미지 원본frame세탁",
+      "kind": "invalid",
+      "expected_error_fragment": "frame 근거",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-IMAGE: frame 이외 자료에 frame_ref 금지",
+          "EV-FRAME: frame 근거의 원본 파생 연결 필요"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "공통 자료/참조 구조 오류 — 사람 검수 전에 수정 필요"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "자료frame/selector대응다름",
+      "kind": "invalid",
+      "expected_error_fragment": "frame_ref",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EV-FRAME: 없는 원본 frame_ref",
+          "EV-FRAME: 자료와 selector frame_ref 불일치"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "공통 자료/참조 구조 오류 — 사람 검수 전에 수정 필요"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "자료hashpin 불일치",
+      "kind": "invalid",
+      "expected_error_fragment": "버전/hash",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EV-FRAME: 참조 버전/hash 불일치 EX-IMAGE",
+          "EV-FRAME: frame 근거의 원본 파생 연결 필요"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "공통 자료/참조 구조 오류 — 사람 검수 전에 수정 필요"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "파일변경후 검수receipt 무효",
+      "kind": "stale",
+      "expected_error_fragment": null,
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "화면 내용/동일 대상/가림/표본 충분성 사람 검수",
+              "검수 뒤 근거/대상/시간/주장 변경 — 재검수 필요"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "stale",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "자료파생부모없음",
+      "kind": "invalid",
+      "expected_error_fragment": "원본 참조",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-IMAGE: 파생 자료의 원본 참조 필요",
+          "EV-FRAME: frame 근거의 원본 파생 연결 필요"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "공통 자료/참조 구조 오류 — 사람 검수 전에 수정 필요"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "자료파생순환",
+      "kind": "invalid",
+      "expected_error_fragment": "파생 순환",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-IMAGE: 자료 파생 순환",
+          "EV-FRAME: frame 근거의 원본 파생 연결 필요"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "공통 자료/참조 구조 오류 — 사람 검수 전에 수정 필요"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "대상참조없음",
+      "kind": "invalid",
+      "expected_error_fragment": "없는 참조",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 없는 참조 NONE"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "주장 내용 사람 검수 필요"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "다른object지지근거",
+      "kind": "invalid",
+      "expected_error_fragment": "대상 불일치",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 근거와 주장 대상 불일치"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "주장 내용 사람 검수 필요"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "상위화면을통한object지지 내용대기",
+      "kind": "queue",
+      "expected_error_fragment": null,
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "주장 내용 사람 검수 필요"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "대상부모순환",
+      "kind": "invalid",
+      "expected_error_fragment": "부모 순환",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "TG-OBJECT: 대상 부모 순환"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "공통 자료/참조 구조 오류 — 사람 검수 전에 수정 필요"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "단일still로 변화확인금지",
+      "kind": "invalid",
+      "expected_error_fragment": "서로 다른 시각2개",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 변화 주장에는 서로 다른 시각2개 또는 범위 clip 필요"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "화면 내용/동일 대상/가림/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "서로다른2시각변화 표본검수대기",
+      "kind": "queue",
+      "expected_error_fragment": null,
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "화면 내용/동일 대상/가림/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "같은시각2이미지 변화증명금지",
+      "kind": "invalid",
+      "expected_error_fragment": "서로 다른 시각2개",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 변화 주장에는 서로 다른 시각2개 또는 범위 clip 필요"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "화면 내용/동일 대상/가림/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "범위clip 변화검수대기",
+      "kind": "queue",
+      "expected_error_fragment": null,
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "화면 내용/동일 대상/가림/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "support프레임 주장시간밖",
+      "kind": "invalid",
+      "expected_error_fragment": "주장 시간 밖",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: support 프레임이 주장 시간 밖"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "화면 내용/동일 대상/가림/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "전시간 주장 단일frame금지",
+      "kind": "invalid",
+      "expected_error_fragment": "전체 범위 clip",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 연속/전체 주장에는 전체 범위 clip 필요"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "화면 내용/동일 대상/가림/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "구간부재 단일frame금지",
+      "kind": "invalid",
+      "expected_error_fragment": "단일 프레임",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 구간 내 부재는 단일 프레임으로 확인 불가"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "화면 내용/동일 대상/가림/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "순간부재는 가림범위 사람검수",
+      "kind": "queue",
+      "expected_error_fragment": null,
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "화면 내용/동일 대상/가림/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "시나리오 계획 내용검수대기",
+      "kind": "queue",
+      "expected_error_fragment": null,
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "시나리오 원문 의미 검수 — 실제 화면 발생과 구분",
+              "주장 범위 미지정"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "계획을visual실재mode로 승격금지",
+      "kind": "invalid",
+      "expected_error_fragment": "원본 frame/clip",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 렌더/실측 주장은 원본 frame/clip 근거 필요"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "화면 내용/동일 대상/가림/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "자연어실재문장 typedscenario라면 사람검수필수",
+      "kind": "queue",
+      "expected_error_fragment": null,
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "시나리오 원문 의미 검수 — 실제 화면 발생과 구분"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "OCR을원문시나리오로오용",
+      "kind": "invalid",
+      "expected_error_fragment": "원문/전사",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "MAT-TEXT: 파생 자료의 원본 참조 필요",
+          "CL-ONE: 시나리오 주장은 원문/전사 text 근거 필요"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "공통 자료/참조 구조 오류 — 사람 검수 전에 수정 필요",
+              "시나리오 원문 의미 검수 — 실제 화면 발생과 구분"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "인용위치불일치",
+      "kind": "invalid",
+      "expected_error_fragment": "인용 불일치",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EV-TEXT: 텍스트 위치/인용 불일치"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "공통 자료/참조 구조 오류 — 사람 검수 전에 수정 필요",
+              "시나리오 원문 의미 검수 — 실제 화면 발생과 구분"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "emoji Unicode codepoint선택",
+      "kind": "queue",
+      "expected_error_fragment": null,
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "시나리오 원문 의미 검수 — 실제 화면 발생과 구분"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "UTF16 codeunit를문자index로오용",
+      "kind": "invalid",
+      "expected_error_fragment": "인용 불일치",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EV-TEXT: 텍스트 위치/인용 불일치"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "공통 자료/참조 구조 오류 — 사람 검수 전에 수정 필요",
+              "시나리오 원문 의미 검수 — 실제 화면 발생과 구분"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "일반문서로제작의도확인금지",
+      "kind": "invalid",
+      "expected_error_fragment": "제작자/기획",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 의도는 제작자/기획 책임자 확인 부분 필요"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "실제 확인 주체/문장의 의도 내용 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "명시확인진술도 실제주체 내용검수",
+      "kind": "queue",
+      "expected_error_fragment": null,
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "실제 확인 주체/문장의 의도 내용 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "의도확인범위다른대상",
+      "kind": "invalid",
+      "expected_error_fragment": "의도 확인 대상",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 의도 확인 대상 범위 불일치"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "실제 확인 주체/문장의 의도 내용 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "수치추정measurement없음",
+      "kind": "invalid",
+      "expected_error_fragment": "measurement 필요",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 수치 추정에 measurement 필요"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "주장 내용 사람 검수 필요"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "속도1표본금지",
+      "kind": "invalid",
+      "expected_error_fragment": "서로 다른 원본 시각 2개",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 측정에 서로 다른 원본 시각 2개 필요"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "공간 측정 좌표 계약 R4-3 확인 필요",
+              "측정량/단위/계산법/오차/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "속도2표본 내용좌표검수대기",
+      "kind": "queue",
+      "expected_error_fragment": null,
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "공간 측정 좌표 계약 R4-3 확인 필요",
+              "측정량/단위/계산법/오차/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "가속도2표본금지",
+      "kind": "invalid",
+      "expected_error_fragment": "시각 3개",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 측정에 서로 다른 원본 시각 3개 필요"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "공간 측정 좌표 계약 R4-3 확인 필요",
+              "측정량/단위/계산법/오차/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "가속도3표본도 순간곡선단정금지",
+      "kind": "queue",
+      "expected_error_fragment": null,
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "공간 측정 좌표 계약 R4-3 확인 필요",
+              "측정량/단위/계산법/오차/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "정적위치1표본허용",
+      "kind": "queue",
+      "expected_error_fragment": null,
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "공간 측정 좌표 계약 R4-3 확인 필요",
+              "측정량/단위/계산법/오차/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "표본근거 frameref다름",
+      "kind": "invalid",
+      "expected_error_fragment": "프레임 없음",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 측정 표본 근거/프레임 없음",
+          "CL-ONE: 측정에 서로 다른 원본 시각 2개 필요"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "공간 측정 좌표 계약 R4-3 확인 필요",
+              "측정량/단위/계산법/오차/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "측정표본대상다름",
+      "kind": "invalid",
+      "expected_error_fragment": "표본 대상",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 측정 표본 대상 불일치"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "공간 측정 좌표 계약 R4-3 확인 필요",
+              "측정량/단위/계산법/오차/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "opacity가정없음",
+      "kind": "invalid",
+      "expected_error_fragment": "합성 조건",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: opacity 합성 조건 가정 필요"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "측정량/단위/계산법/오차/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "NaN수치금지",
+      "kind": "invalid",
+      "expected_error_fragment": "NaN",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "record.claims[0].measurement.value: NaN/Infinity 금지"
+        ],
+        "unresolved": [],
+        "human_review_queue": [],
+        "claim_states": [],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "Infinity수치금지",
+      "kind": "invalid",
+      "expected_error_fragment": "Infinity",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "record.claims[0].measurement.value: NaN/Infinity 금지"
+        ],
+        "unresolved": [],
+        "human_review_queue": [],
+        "claim_states": [],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "음수불확실성금지",
+      "kind": "invalid",
+      "expected_error_fragment": "schema",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "['claims', 0, 'measurement']: {'method': '가상 위치표본의 구간 평균 추정. 실제 측정/계산 검증은 사람 대상.', 'quantity': 'average_speed', 'unit': 'px/s', 'sample_unit': 'px', 'value': 100, 'uncertainty': -1, 'uncertainty_kind': 'absolut … rsion': '0.1.0'}, 'value': 100, 'coordinate_space_ref': None}], 'assumptions': ['가상 동일대상을 추적했다는 전제.'], 'limitations': '좌표 규격과 실측은 미확인.'} is not valid under any of the given schemas"
+        ],
+        "unresolved": [],
+        "human_review_queue": [],
+        "claim_states": [],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "문맥을지지로세탁금지",
+      "kind": "invalid",
+      "expected_error_fragment": "support 근거 필요",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 확인 성격 주장에 support 근거 필요"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "화면 내용/동일 대상/가림/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "같은근거지원반대중복금지",
+      "kind": "invalid",
+      "expected_error_fragment": "중복 role",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 동일 근거를 중복 role로 등록 금지"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "반대 근거의 충돌 판정 필요"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "반대근거검수목록유지",
+      "kind": "queue",
+      "expected_error_fragment": null,
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "화면 내용/동일 대상/가림/표본 충분성 사람 검수",
+              "반대 근거의 충돌 판정 필요"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "specimen검수는사실승인아님",
+      "kind": "queue",
+      "expected_error_fragment": null,
+      "expected_content_state": "example_only",
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "화면 내용/동일 대상/가림/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "example_only",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "합성에humanreceipt금지",
+      "kind": "invalid",
+      "expected_error_fragment": "합성 시험",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 합성 시험에 실제 사람 검수 선언 금지"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "화면 내용/동일 대상/가림/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "example_only",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "검수주장버전다름",
+      "kind": "invalid",
+      "expected_error_fragment": "검수 주장 버전",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 검수 주장 버전 불일치"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "화면 내용/동일 대상/가림/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "example_only",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "검수후주장내용수정",
+      "kind": "stale",
+      "expected_error_fragment": null,
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "화면 내용/동일 대상/가림/표본 충분성 사람 검수",
+              "검수 뒤 근거/대상/시간/주장 변경 — 재검수 필요"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "stale",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "검수후대상label수정같은version",
+      "kind": "stale",
+      "expected_error_fragment": null,
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "화면 내용/동일 대상/가림/표본 충분성 사람 검수",
+              "검수 뒤 근거/대상/시간/주장 변경 — 재검수 필요"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "stale",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "검수후근거selector수정",
+      "kind": "stale",
+      "expected_error_fragment": null,
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "화면 내용/동일 대상/가림/표본 충분성 사람 검수",
+              "검수 뒤 근거/대상/시간/주장 변경 — 재검수 필요"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "stale",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "실제draft분기humanreceipt 자기일관성",
+      "kind": "valid",
+      "expected_error_fragment": null,
+      "expected_content_state": "declared_supported",
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "declared_supported",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": false,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "실제draft 미검토 내용사람에게대기",
+      "kind": "queue",
+      "expected_error_fragment": null,
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "화면 내용/동일 대상/가림/표본 충분성 사람 검수"
+            ],
+            "status": "awaiting_human",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "실제draft 접근불명확supported금지",
+      "kind": "invalid",
+      "expected_error_fragment": "미해결 근거",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 미해결 근거/좌표/범위를 supported로 통과 금지"
+        ],
+        "unresolved": [
+          "EX-IMAGE: 자료 접근/내용 확인 필요"
+        ],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "근거 자료 접근 미확인",
+              "지지 근거의 원본/파생 자료 접근 미확인",
+              "화면 내용/동일 대상/가림/표본 충분성 사람 검수"
+            ],
+            "status": "awaiting_human",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "declared_supported",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "실제draft 좌표미해결 수치supported금지",
+      "kind": "invalid",
+      "expected_error_fragment": "미해결 근거",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 미해결 근거/좌표/범위를 supported로 통과 금지"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "공간 측정 좌표 계약 R4-3 확인 필요",
+              "측정량/단위/계산법/오차/표본 충분성 사람 검수"
+            ],
+            "status": "awaiting_human",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "declared_supported",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "실제draft 가설supported승격금지",
+      "kind": "invalid",
+      "expected_error_fragment": "가설/미관측",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 가설/미관측 예시는 확인된 주장으로 승격 금지"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "주장 내용 사람 검수 필요"
+            ],
+            "status": "awaiting_human",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "declared_supported",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "검수ref만있고receipt없음",
+      "kind": "invalid",
+      "expected_error_fragment": "없는 사람 검수",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 없는 사람 검수 기록"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "주장 내용 사람 검수 필요"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "검수datetime무효",
+      "kind": "invalid",
+      "expected_error_fragment": "schema",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "['review_records', 0, 'reviewed_at']: 'yesterday' is not a 'date-time'"
+        ],
+        "unresolved": [],
+        "human_review_queue": [],
+        "claim_states": [],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "미관측예시actualdraft혼합금지",
+      "kind": "invalid",
+      "expected_error_fragment": "미관측 설명 예시",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 미관측 설명 예시는 실제 draft에 혼합 금지"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "주장 내용 사람 검수 필요"
+            ],
+            "status": "awaiting_human",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "metadataevidenceID실재",
+      "kind": "invalid",
+      "expected_error_fragment": "메타 근거 ID 없음",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-TIME: 시간 메타 근거 ID 없음 NONE"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "공통 자료/참조 구조 오류 — 사람 검수 전에 수정 필요"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "시간원점대응불일치",
+      "kind": "invalid",
+      "expected_error_fragment": "PTS 변환",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "time: EX-FRAME: PTS 변환과 actual 불일치"
+        ],
+        "unresolved": [],
+        "human_review_queue": [],
+        "claim_states": [],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "속도단위kg오용",
+      "kind": "invalid",
+      "expected_error_fragment": "단위 차원",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 측정량/결과 단위 차원 불일치"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "공간 측정 좌표 계약 R4-3 확인 필요",
+              "측정량/단위/계산법/오차/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "속도표본에시간단위오용",
+      "kind": "invalid",
+      "expected_error_fragment": "위치 단위",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 공간 속도 표본 단위는 위치 단위"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "공간 측정 좌표 계약 R4-3 확인 필요",
+              "측정량/단위/계산법/오차/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "standard불확실성은절대상한과구분",
+      "kind": "queue",
+      "expected_error_fragment": null,
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "공간 측정 좌표 계약 R4-3 확인 필요",
+              "측정량/단위/계산법/오차/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "불확실성미상보존",
+      "kind": "queue",
+      "expected_error_fragment": null,
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "측정 불확실성 미확인",
+              "공간 측정 좌표 계약 R4-3 확인 필요",
+              "측정량/단위/계산법/오차/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "미상불확실성을0으로채움",
+      "kind": "invalid",
+      "expected_error_fragment": "미상 불확실성",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 미상 불확실성은 null"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "측정 불확실성 미확인",
+              "공간 측정 좌표 계약 R4-3 확인 필요",
+              "측정량/단위/계산법/오차/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "알려진불확실성인데값없음",
+      "kind": "invalid",
+      "expected_error_fragment": "값 필요",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 알려진 불확실성 종류에는 값 필요"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "공간 측정 좌표 계약 R4-3 확인 필요",
+              "측정량/단위/계산법/오차/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "clipselector instant로runtime예외금지",
+      "kind": "invalid",
+      "expected_error_fragment": "range 필요",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EV-CLIP: clip selector에는 range 필요"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "공통 자료/참조 구조 오류 — 사람 검수 전에 수정 필요",
+              "화면 내용/동일 대상/가림/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "변화주장을순간으로기록금지",
+      "kind": "invalid",
+      "expected_error_fragment": "range 범위",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 시간 변화 주장은 range 범위가 필요"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "화면 내용/동일 대상/가림/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "다른시간반대근거는문맥",
+      "kind": "invalid",
+      "expected_error_fragment": "반대 프레임",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 반대 프레임이 주장 시간 밖 — 문맥으로 기록"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "화면 내용/동일 대상/가림/표본 충분성 사람 검수",
+              "반대 근거의 충돌 판정 필요"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "원본영상접근불명확supported우회금지",
+      "kind": "invalid",
+      "expected_error_fragment": "미해결 근거",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 미해결 근거/좌표/범위를 supported로 통과 금지"
+        ],
+        "unresolved": [
+          "EX-ASSET: 자료 접근/내용 확인 필요"
+        ],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "지지 근거의 원본/파생 자료 접근 미확인",
+              "화면 내용/동일 대상/가림/표본 충분성 사람 검수"
+            ],
+            "status": "awaiting_human",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "declared_supported",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "메타근거를화살표frame으로대체금지",
+      "kind": "invalid",
+      "expected_error_fragment": "시간 메타 근거는",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-TIME: 시간 메타 근거는 해당 영상의 확인 문서 부분이어야 함"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "공통 자료/참조 구조 오류 — 사람 검수 전에 수정 필요"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "음수폭금지",
+      "kind": "invalid",
+      "expected_error_fragment": "음수 결과",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 이 측정량은 음수 결과 불가"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "공간 측정 좌표 계약 R4-3 확인 필요",
+              "측정량/단위/계산법/오차/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "가속도는signed음수허용",
+      "kind": "queue",
+      "expected_error_fragment": null,
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "공간 측정 좌표 계약 R4-3 확인 필요",
+              "측정량/단위/계산법/오차/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "시간메타원문없음supported금지",
+      "kind": "invalid",
+      "expected_error_fragment": "미해결 근거",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 미해결 근거/좌표/범위를 supported로 통과 금지"
+        ],
+        "unresolved": [
+          "EX-META: 텍스트 표현 미확보",
+          "EX-DURATION: 원문 없음 — 인용 검사 미해결",
+          "EX-ORIGIN: 원문 없음 — 인용 검사 미해결"
+        ],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "시간 메타 근거 내용/접근 미확인",
+              "화면 내용/동일 대상/가림/표본 충분성 사람 검수"
+            ],
+            "status": "awaiting_human",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "declared_supported",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "시나리오원문없음supported금지",
+      "kind": "invalid",
+      "expected_error_fragment": "미해결 근거",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 미해결 근거/좌표/범위를 supported로 통과 금지"
+        ],
+        "unresolved": [
+          "MAT-TEXT: 텍스트 표현 미확보",
+          "EV-TEXT: 원문 없음 — 인용 검사 미해결"
+        ],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "지지 원문 내용 미확인",
+              "시나리오 원문 의미 검수 — 실제 화면 발생과 구분"
+            ],
+            "status": "awaiting_human",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "declared_supported",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "other량으로좌표미검증우회금지",
+      "kind": "invalid",
+      "expected_error_fragment": "미해결 근거",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 미해결 근거/좌표/범위를 supported로 통과 금지"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "사용자 정의 측정량/단위 계약 미확인 — 사람 검수 및 계약 확장 필요",
+              "측정량/단위/계산법/오차/표본 충분성 사람 검수"
+            ],
+            "status": "awaiting_human",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "declared_supported",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "other량초안은사람에게대기",
+      "kind": "queue",
+      "expected_error_fragment": null,
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "사용자 정의 측정량/단위 계약 미확인 — 사람 검수 및 계약 확장 필요",
+              "측정량/단위/계산법/오차/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "frame은부모clip끝점소속이아님",
+      "kind": "invalid",
+      "expected_error_fragment": "부모 clip 시간 밖",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "EX-IMAGE: 파생 frame이 부모 clip 시간 밖"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "공통 자료/참조 구조 오류 — 사람 검수 전에 수정 필요"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "자식clip범위는부모clip안",
+      "kind": "invalid",
+      "expected_error_fragment": "부모 clip 범위 밖",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "MAT-CHILD: 파생 clip이 부모 clip 범위 밖"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "공통 자료/참조 구조 오류 — 사람 검수 전에 수정 필요"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "부모frame사본은같은sourceidentity필수",
+      "kind": "invalid",
+      "expected_error_fragment": "같은 원본 frame identity",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "MAT-EX-FRAME-2: frame 사본은 같은 원본 frame identity 유지"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "공통 자료/참조 구조 오류 — 사람 검수 전에 수정 필요"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "같은frameref사본은보존",
+      "kind": "queue",
+      "expected_error_fragment": null,
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "주장 내용 사람 검수 필요"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "다른시간opposeclip을해결문구로우회금지",
+      "kind": "invalid",
+      "expected_error_fragment": "겹치지 않음",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 지지/반대 timed 근거가 주장 시간과 겹치지 않음"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "high",
+            "reasons": [
+              "화면 내용/동일 대상/가림/표본 충분성 사람 검수",
+              "반대 근거의 충돌 판정 필요"
+            ],
+            "status": "awaiting_human",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "declared_supported",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "다른시간clip문맥은대기보존",
+      "kind": "queue",
+      "expected_error_fragment": null,
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "화면 내용/동일 대상/가림/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "명시시간transcript다른시점으로세탁금지",
+      "kind": "invalid",
+      "expected_error_fragment": "겹치지 않음",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 지지/반대 timed 근거가 주장 시간과 겹치지 않음",
+          "CL-ONE: 지지/반대 timed 근거가 주장 시간과 겹치지 않음"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "시나리오 원문 의미 검수 — 실제 화면 발생과 구분"
+            ],
+            "status": "awaiting_human",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "declared_supported",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "stale라도draft의specimenreceipt금지",
+      "kind": "invalid",
+      "expected_error_fragment": "specimen 검수",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 실제 기록에 specimen 검수 금지"
+        ],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "화면 내용/동일 대상/가림/표본 충분성 사람 검수",
+              "검수 뒤 근거/대상/시간/주장 변경 — 재검수 필요"
+            ],
+            "status": "awaiting_human",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "stale",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "같은원본identity의다른frameID별칭보존",
+      "kind": "queue",
+      "expected_error_fragment": null,
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "화면 내용/동일 대상/가림/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "별칭ordinal미상은검수대기",
+      "kind": "queue",
+      "expected_error_fragment": null,
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [
+          "time: EX-FRAME-2: 표시 순서 프레임 번호 미확인",
+          "MAT-EX-FRAME-2: 파생 프레임 별칭 identity 미확인"
+        ],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "시간 검사 미해결 — 사람이 시간 근거 확인 필요",
+              "파생 프레임 별칭 identity 미확인",
+              "화면 내용/동일 대상/가림/표본 충분성 사람 검수"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "별칭identity미확인supported우회금지",
+      "kind": "invalid",
+      "expected_error_fragment": "미해결 근거",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "CL-ONE: 미해결 근거/좌표/범위를 supported로 통과 금지"
+        ],
+        "unresolved": [
+          "time: EX-FRAME-2: 표시 순서 프레임 번호 미확인",
+          "MAT-EX-FRAME-2: 파생 프레임 별칭 identity 미확인"
+        ],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "시간 검사 미해결 — 사람이 시간 근거 확인 필요",
+              "파생 프레임 별칭 identity 미확인",
+              "화면 내용/동일 대상/가림/표본 충분성 사람 검수"
+            ],
+            "status": "awaiting_human",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "declared_supported",
+            "structure_status": "invalid",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "unpaired highsurrogate 구조오류",
+      "kind": "invalid",
+      "expected_error_fragment": "surrogate",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "record.claims[0].statement: UTF-8로 표현 불가능한 surrogate 문자열 금지"
+        ],
+        "unresolved": [],
+        "human_review_queue": [],
+        "claim_states": [],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "unpaired lowsurrogate 원문거부",
+      "kind": "invalid",
+      "expected_error_fragment": "surrogate",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "record.materials[1].text: UTF-8로 표현 불가능한 surrogate 문자열 금지"
+        ],
+        "unresolved": [],
+        "human_review_queue": [],
+        "claim_states": [],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "surrogate JSONkey 안전한오류표시",
+      "kind": "invalid",
+      "expected_error_fragment": "surrogate key",
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": false,
+        "errors": [
+          "record: UTF-8로 표현 불가능한 surrogate key 금지"
+        ],
+        "unresolved": [],
+        "human_review_queue": [],
+        "claim_states": [],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "정상emoji문장은유지",
+      "kind": "queue",
+      "expected_error_fragment": null,
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "주장 내용 사람 검수 필요"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "NFC한글인용보존",
+      "kind": "queue",
+      "expected_error_fragment": null,
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "시나리오 원문 의미 검수 — 실제 화면 발생과 구분"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "NFD한글인용정규화없이보존",
+      "kind": "queue",
+      "expected_error_fragment": null,
+      "expected_content_state": null,
+      "passed": true,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "unresolved": [],
+        "human_review_queue": [
+          {
+            "claim_id": "CL-ONE",
+            "claim_version": "0.1.0",
+            "priority": "normal",
+            "reasons": [
+              "시나리오 원문 의미 검수 — 실제 화면 발생과 구분"
+            ],
+            "status": "specimen_only",
+            "routing": "실제 자료 확보 후 사용자 또는 지정 제작자/디자이너 검수. 이 검사기는 대신 승인하지 않음."
+          }
+        ],
+        "claim_states": [
+          {
+            "claim_id": "CL-ONE",
+            "content_review_state": "not_reviewed",
+            "structure_status": "draft_structure_pass",
+            "human_review_required": true,
+            "verified_fact": false
+          }
+        ],
+        "fact_verified": false,
+        "human_identity_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    }
+  ]
+}

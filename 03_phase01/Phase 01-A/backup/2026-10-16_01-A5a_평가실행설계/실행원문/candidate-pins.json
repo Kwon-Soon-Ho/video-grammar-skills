@@ -1,0 +1,337 @@
+{
+  "version": "0.1.0-draft.3",
+  "snapshot_files": [
+    {
+      "relative": "agents\\openai.yaml",
+      "sha256": "38256f18ecb1eb10175fafa10dcd37400a42a8934bdf88ff70d79c12b9445b53",
+      "bytes": 368
+    },
+    {
+      "relative": "references\\evidence-and-records.md",
+      "sha256": "1182f6c33902dee49d7592910150cdc836fe10bf8c2496be963e7f2d81debb6b",
+      "bytes": 2970
+    },
+    {
+      "relative": "references\\motion-review.md",
+      "sha256": "b312a9903374d06cbcccdf99e3654e5b826c7034f222dc13a3cd03c9e9d9d806",
+      "bytes": 5714
+    },
+    {
+      "relative": "references\\output-contract.md",
+      "sha256": "9b808ba9b03f29965febb84168e18c4217b53f287c85573a05c5e781e92c0076",
+      "bytes": 3197
+    },
+    {
+      "relative": "scripts\\check_observations.py",
+      "sha256": "ae281bf5e91d98e91c59a03d7d8053ab4bee936a6b6f122391a456a54690cf2e",
+      "bytes": 4961
+    },
+    {
+      "relative": "scripts\\evidence_catalog.py",
+      "sha256": "3f82f0273f0db79a63d120c1c2d54c155110f37eb6e4861450bc65d9bf285785",
+      "bytes": 3187
+    },
+    {
+      "relative": "SKILL.md",
+      "sha256": "f36cb1bfeeb00dcd1c49df764d830e080f4e8562f83a5cfb275f5e203cef031f",
+      "bytes": 4544
+    }
+  ],
+  "tool_files": [
+    {
+      "path": "candidate\\tool\\boards.py",
+      "sha256": "021c9d59956ca56ea2415060527c99caf8904266d49cbb69abc5bac21c00489c"
+    },
+    {
+      "path": "candidate\\tool\\extract.py",
+      "sha256": "f9e75e5e95f18b702f5273051772ea837bed829245f7eb1aa57be6524d603ecd"
+    },
+    {
+      "path": "candidate\\tool\\prepare.py",
+      "sha256": "c12004d231c0266e615398d9c133fe13cb5c46a1aa08b8e33bb2df29f4892beb"
+    }
+  ],
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "python_exe_sha256": "b847bb9f4e48c19f585c8bf7d8b355f3f8c6d2125717ece9c9d7e16fb9f09de8",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "av": "19.0.1",
+    "av_libraries": {
+      "libavutil": [
+        61,
+        1,
+        102
+      ],
+      "libavcodec": [
+        63,
+        1,
+        102
+      ],
+      "libavformat": [
+        63,
+        1,
+        102
+      ],
+      "libavdevice": [
+        63,
+        1,
+        102
+      ],
+      "libavfilter": [
+        12,
+        1,
+        102
+      ],
+      "libswscale": [
+        10,
+        1,
+        102
+      ],
+      "libswresample": [
+        7,
+        1,
+        102
+      ]
+    },
+    "Pillow": "12.3.0",
+    "numpy": "2.3.5",
+    "AI_model_id": null,
+    "AI_model_reason": "exact checkpoint/version not exposed by current host tools; record visible setting at execution",
+    "runtime_binary_pins": [
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\_core.pyd",
+        "sha256": "3b55bb08de07a2abb94263903184ebb44a58c36525627e54e9870912f26c25cc"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\_cyutil.pyd",
+        "sha256": "4a9094eff7e9d00a53638fd2859a77476b1979c7220c873eb44460daf862a39b"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\audio\\codeccontext.pyd",
+        "sha256": "fff7ab73fb4d92fbc685bc8b8e9d45dbc343c5baad6b6a6cc55f4a95877e4e4c"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\audio\\fifo.pyd",
+        "sha256": "c553a43fdd64a393a7dd92095943c2434fbe8f7ddbe79e67bd7949046990d97d"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\audio\\format.pyd",
+        "sha256": "ae6c199151f468a937748aabaaa4bdf9c77f6cf40d3478d31147063b805fd761"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\audio\\frame.pyd",
+        "sha256": "5aeb3a8224fc2b7e26fdda0c974c7c8c3abc1ac2776a2b6e9490bbb043d88663"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\audio\\layout.pyd",
+        "sha256": "45cbea01f84b39efd3857fe91113577054aa5b78743342842cc6c11aa0e76d80"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\audio\\plane.pyd",
+        "sha256": "41c922fdf9c065aad2336d2dc358c4839e9b412f2558794e84d94ec63a22e223"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\audio\\resampler.pyd",
+        "sha256": "96c31f11daea781cf06e4e1aeb3ba7eb4c3adcc7a5d3b000f22c6b79923ac28c"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\audio\\stream.pyd",
+        "sha256": "a89abafab5accb286f0925138033b9fb7e590a79f414f5ff38c7ea7832a4f312"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\bitstream.pyd",
+        "sha256": "2fa8e6891382dba591f9774ecaf2669ab47ed048baf565885beb2095f0df496a"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\buffer.pyd",
+        "sha256": "33fa3c86b5961b3542e053f3815cc9289a25305d456eca91266fc0552b20f6b1"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\codec\\codec.pyd",
+        "sha256": "4d581622dd9b32c4a8fae2a0f7538f55c470403465691e172549f5ca0dc7b473"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\codec\\context.pyd",
+        "sha256": "7940420aa3afdb892e2dd9cf761659350149ae8ff598c342ed6de5d911655dd4"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\codec\\hwaccel.pyd",
+        "sha256": "ad23ca77230578a74e613f41f15055ea20e17c6eb76ac1fc51a78c6e25eeba4a"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\container\\core.pyd",
+        "sha256": "76f5a2ab99e77dd65624ade1925fdec4b6e43c5c429d7426c8d84d7877e58d38"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\container\\input.pyd",
+        "sha256": "a50696827e98496fa57a651fc90715e0915dd66fc076d38b040a1b4970febc26"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\container\\output.pyd",
+        "sha256": "615a67a130f5df8e5cf0c8d5d8b760b98a3d69b18409da9e85be5addfd10c355"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\container\\pyio.pyd",
+        "sha256": "128336790725b382f1b13bb044dfa595d4b269414363411b4ff71fced00a00a7"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\container\\streams.pyd",
+        "sha256": "4005ec60c48f389f86fefeec798623ecf736a04bedf8c9cb86a6c31397360204"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\device.pyd",
+        "sha256": "06cf9c887d66c888b20b681c4485187f28b47af95863ce5ff70219f10b7795a1"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\dictionary.pyd",
+        "sha256": "3d3e040021bd30eda424834facce9115d23fff73ed36a18bdb3b2339d1e975c0"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\error.pyd",
+        "sha256": "dcac905a55798802326c5bee3585ffcd2287df1cf1d41f7b104c19d3259e9531"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\filter\\context.pyd",
+        "sha256": "57585c8d763b74d9a2d045e68bfc1f25f691a543dd57045e737bd15153564b0a"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\filter\\filter.pyd",
+        "sha256": "f6d6e9534d5ef5d4eadf04da7bb0e091a1ab7d924dde05e9d91821683a2058c8"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\filter\\graph.pyd",
+        "sha256": "09567a53db79990d7dc9e5e9c326ee0e571c3c95022dad455faa33e2fdfdca48"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\filter\\link.pyd",
+        "sha256": "64cecff7637fa9b8c681ae7f62467cd8388d47a641343b7bc6dabf992e85678e"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\filter\\loudnorm.pyd",
+        "sha256": "97aca245c5140dc4e70e17ff79405b7cab1c2b02d7286b08a582ba07d6f4c86f"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\format.pyd",
+        "sha256": "f7619c1c1e24afa1a353bb1f1c8d3b282cb87bc23915c8f2db1e69202b54379f"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\frame.pyd",
+        "sha256": "1b8bfcf51b97d9dd10dedfa42634b1a45c12143b3763bc8f3deacaad05a4709f"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\index.pyd",
+        "sha256": "bc8f772d6d4d0a05cae7b915fa289b63ff3043b95859e7d44560039402e86f9c"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\logging.pyd",
+        "sha256": "617723da212856f7c5d2617b641435aee5867e360f4d495a5062f9ac97381b2f"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\opaque.pyd",
+        "sha256": "4cac6b9e1a1a8fd0afeb285e980637a959ff9a2758c3142928fc6d408b62d92f"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\packet.pyd",
+        "sha256": "307bb2894b297fef4f96de3c548ecc81909c86dca264745cbfa5c5cb88c9c21d"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\plane.pyd",
+        "sha256": "5783024b12c2def07bf22d2d11c8e978db5ecac3a222dd3e17b8f930f45ca775"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\rational.pyd",
+        "sha256": "557a31dba8765745f2bf6b206bebaed1e229107c6d1fee268fc1ff76b55cb3db"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\sidedata\\encparams.pyd",
+        "sha256": "c1b8adb3161ec595bfab0c1c79171d714aad73416bf9557b72281293b9921299"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\sidedata\\motionvectors.pyd",
+        "sha256": "af993be63fa9ef9791f7ec5fa98ab515447b72064e07e901d9ba7f1be371fc6b"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\sidedata\\sidedata.pyd",
+        "sha256": "3f296558c946b1e8db96b9a6062377a6db43266d474aad1a5d1853f4ba870c3c"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\stream.pyd",
+        "sha256": "48d32354dc6203a8239e8d7cb17692a7cc76f4786940a64ed1b5404d2a7da091"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\subtitles\\codeccontext.pyd",
+        "sha256": "13e24d708c5a755980e6708dca551e5d550d8b926e9e3e2231f94f0b51680fa1"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\subtitles\\stream.pyd",
+        "sha256": "b91fd8b95f8777ce220995538bab96c9380aeb511241793ba8eee13e6dd5b962"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\subtitles\\subtitle.pyd",
+        "sha256": "f9b55374a6e4257de52b33ac32c8232ceb63f8c5f5dbcbebc5d883271a4a0fee"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\utils.pyd",
+        "sha256": "347d99fbed00ddd5189a5ae1c6dc8028bb20593a9110af7491f4c4e95a2d815d"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\video\\codeccontext.pyd",
+        "sha256": "70301f4e60528aba3b3569bab34270b6bb93a7e5e1e6d4e90364e7ed28899200"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\video\\format.pyd",
+        "sha256": "155d3701b36379c483f904189af7bf0c09678080685ceb0832cf65f3ff783962"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\video\\frame.pyd",
+        "sha256": "8aed81d676a0ee15324af3dd72e0bd5e8fb31772498ae44d56b2418580187e2f"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\video\\plane.pyd",
+        "sha256": "f9c492d6d42a0628c1ada0108e22b27b63933e0ea576843a6ca9cc7902344de4"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\video\\reformatter.pyd",
+        "sha256": "255b83a8aef5caceedf36f321e7de7954413a0bed264b2e4b49585fda0b2f642"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a1\\후보런타임\\av\\video\\stream.pyd",
+        "sha256": "b366b99e53b20e6c9f471651a2d34617ada091e2cfa4bb04b925452d46e06109"
+      },
+      {
+        "path": "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\site-packages\\PIL\\_avif.cp312-win_amd64.pyd",
+        "sha256": "fc1a8eee5d661ec89d2b26381ff7bae85eada84295d0c7feb4aee55680e5daf8"
+      },
+      {
+        "path": "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\site-packages\\PIL\\_imaging.cp312-win_amd64.pyd",
+        "sha256": "f791f26ad9ee887309d59ffd8f1fa741ae43ece5bb5aaa5d4d0dc91f5e13b0ef"
+      },
+      {
+        "path": "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\site-packages\\PIL\\_imagingcms.cp312-win_amd64.pyd",
+        "sha256": "0577416aab0bd6fd6cd7e1f738bdcd3f096a99e42133528310b4ad841fd3fc94"
+      },
+      {
+        "path": "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\site-packages\\PIL\\_imagingft.cp312-win_amd64.pyd",
+        "sha256": "64f302c5d4b9b7ee282705dfc04844f250b09f1888cdd39e259a46c2cf214f26"
+      },
+      {
+        "path": "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\site-packages\\PIL\\_imagingmath.cp312-win_amd64.pyd",
+        "sha256": "9b0df6aed0119b06197f57b3de11ec9b1cf048ed021c0619bd3844c18d1af25d"
+      },
+      {
+        "path": "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\site-packages\\PIL\\_imagingmorph.cp312-win_amd64.pyd",
+        "sha256": "84437b6f739d4be7bc508a0132bbb8542e0dd32d3882646b87e93a5e9a0c1000"
+      },
+      {
+        "path": "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\site-packages\\PIL\\_imagingtk.cp312-win_amd64.pyd",
+        "sha256": "cf40f8cceb3d77f576c96ea46c7ef4f8c0da110361ab6f0226e2d8075b67d8e4"
+      },
+      {
+        "path": "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\site-packages\\PIL\\_webp.cp312-win_amd64.pyd",
+        "sha256": "a4be15c1c22433cc77236355faf1bc9a5d766cf2a22b7253ef58eec857e0035e"
+      }
+    ]
+  },
+  "tool_scope": "A4 code snapshot; A5b uses separate allowlist/requests configuration. Unsupported media gate fails rather than silently changing code. No A5 decoder run in A5a."
+}

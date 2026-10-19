@@ -1,0 +1,56 @@
+{
+  "case_id": "T01",
+  "graded_at": "2026-10-16T14:56:31+09:00",
+  "grader": "parent Codex, source-aware content review; no independent human adjudication",
+  "frozen_reference_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\06_도구와계약\\01-A2_모션검수절차\\스킬작성전_재발시험\\채점전용\\실패사례와_내용대조기준.json",
+  "frozen_reference_sha256": "5e1385bdc9bddd8c547983d0332fb72b48963ddfd58e1d8d91b1e3c5c03d991c",
+  "raw_output_sha256": "42d410371e092154fe0b575898ab09e6de1555efdc0b41c9147f6c51894e88bb",
+  "expectations": [
+    {
+      "text": "E를 한 덩어리 색 전환으로만 쓰지 않고 조각별 진입을 식별",
+      "passed": true,
+      "evidence": "원출력 observations[T01-E-pieces]는 상단 가로·상부 세로·중간 가로·하부 세로·하단 가로 구간을 관측 분류로 나누고 3.5~3.8초 경계가 계단처럼 어긋나 보인 뒤 정렬된다고 기록했다. T01_left_sequence.png의 실제 원본 연속 표본과 일치한다."
+    },
+    {
+      "text": "좌→우 이동",
+      "passed": true,
+      "evidence": "T01-E-pieces.position_direction에 높이별 구간이 서로 다른 수평 위치에서 오른쪽으로 진행한다고 명시. 3.7초 상단 오른쪽 경계 약x1084에서 4.0초1772,4.8초2153으로 증가하며 좌→우 관측과 일치."
+    },
+    {
+      "text": "초반 빠르고 끝에서 느려짐을 관측 곡선군으로 기록",
+      "passed": true,
+      "evidence": "T01-E-pieces.easing은 3.7→3.8초 약329px,3.9→4.0초155px,4.7→4.8초6px의 후반 감소와 정착을 기록했다. 초반 한 간격의 소폭 증가·구간 이전 시작 한계를 함께 남겨 정확한 AE 곡선으로 단정하지 않았다."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3
+  },
+  "claims": [
+    {
+      "claim": "외곽 정착 후 E 내부가 완전 정지는 아님",
+      "type": "factual",
+      "verified": true,
+      "evidence": "T01-E-inside와 T01_held_texture_sequence.png/hold_diff 자료는 5.1~5.5초 도면·격자·바탕 밝기 변화를 기록한다. 독립 기하 이동이나 흐름 방향은 미분류로 남겼다.",
+      "critical_error": false
+    },
+    {
+      "claim": "실제 다섯 레이어 또는 특정 AE 효과를 확정하지 않음",
+      "type": "factual",
+      "verified": true,
+      "evidence": "원출력 uncertainty에 다섯 기하 구간은 실제 레이어 수가 아니라고 명시하며 구현 가설을 별도 보존했다.",
+      "critical_error": false
+    }
+  ],
+  "notes": [
+    "필수 사건 충족. 추가 미세 관측은 AI 관측이며 기존 사용자 승인에 포함시키지 않는다.",
+    "시작 전 전체 궤적·정밀 보간 함수는 이번 허용 구간으로 결정하지 않음."
+  ],
+  "source_review": "selected raw temporal PNGs/native crops and measurements; no audio or full realtime playback claim",
+  "scope": "known-case baseline regression, not new skill effectiveness or unseen-source accuracy",
+  "case_status": "충족",
+  "executor_tokens": null,
+  "executor_duration_seconds": null,
+  "telemetry_status": "not reported by collaboration tool; not estimated from output length"
+}

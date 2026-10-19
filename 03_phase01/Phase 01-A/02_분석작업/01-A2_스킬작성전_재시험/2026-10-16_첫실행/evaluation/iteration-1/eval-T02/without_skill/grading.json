@@ -1,0 +1,56 @@
+{
+  "case_id": "T02",
+  "graded_at": "2026-10-16T14:56:31+09:00",
+  "grader": "parent Codex, source-aware content review; no independent human adjudication",
+  "frozen_reference_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 01-A\\06_도구와계약\\01-A2_모션검수절차\\스킬작성전_재발시험\\채점전용\\실패사례와_내용대조기준.json",
+  "frozen_reference_sha256": "5e1385bdc9bddd8c547983d0332fb72b48963ddfd58e1d8d91b1e3c5c03d991c",
+  "raw_output_sha256": "7e6aff89862a9d2a30a30593744ed96d328dcb4bf0d628094d263a709aa966c8",
+  "expectations": [
+    {
+      "text": "E 주변의 얇은 발광선/빛 통과를 본체와 별도 식별",
+      "passed": true,
+      "evidence": "objects_events.horizontal_glints가 상단/하단 청록 광선의 중심·꼬리 분포 변화와 우향 통과를 패널 본체와 별도 항목으로 기록했다. grid_and_frame 및 middle_left_panels의 얇은 가장자리도 구분. T02_top_progress/lower_progress의 원본 시점과 대조해 존재 관측을 확인했다."
+    },
+    {
+      "text": "가감속을 못 정해도 존재 관측을 지우지 않음",
+      "passed": true,
+      "evidence": "horizontal_glints.observable_acceleration을 단일 중심점 속도곡선 미분리로 남기면서 direction/visibility/internal_changes는 긍정 관측으로 유지했다. 미분류라는 이유로 빛의 존재를 삭제하지 않았다."
+    },
+    {
+      "text": "측정하지 않은 경로/정확한 이징을 확정하지 않음",
+      "passed": true,
+      "evidence": "정확한 광선 개수/효과 종류·전체 경로·이징은 불확실성으로 남겼다. 관측 창 안의 좌측→우향 퍼짐만 기록했고 E 외곽 전체를 따라 도는 경로나 AE preset을 확정하지 않았다."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3
+  },
+  "claims": [
+    {
+      "claim": "배경 격자가 약하게 축소된다",
+      "type": "factual",
+      "verified": true,
+      "evidence": "grid_and_frame에 0.6→1.35초 격자 주기 약120→107px와 상단선 y264→347을 기록. 원본 크롭의 간격 감소와 일치하며 카메라 줌으로 단정하지 않는다.",
+      "critical_error": false
+    },
+    {
+      "claim": "패널 후반의 작은 경계 후퇴는 확정된 스프링이 아님",
+      "type": "factual",
+      "verified": true,
+      "evidence": "lower_bright_panel은 약7px 후퇴를 보고하나 위치 overshoot 대 크기/상위 변환 결합을 미분리 가설로 남겼다.",
+      "critical_error": false
+    }
+  ],
+  "notes": [
+    "명칭이 E가 아닌 초기 패널/광선으로 쓰였지만 의미 단위에서 본체와 얇은 빛 통과를 분리해 충족으로 판정했다.",
+    "필수 기준은 빛의 존재·분리이며, 외곽 전체 경로/정확한 이징 복원까지 검증한 결과는 아니다."
+  ],
+  "source_review": "selected raw temporal PNGs/native crops and measurements; no audio or full realtime playback claim",
+  "scope": "known-case baseline regression, not new skill effectiveness or unseen-source accuracy",
+  "case_status": "충족",
+  "executor_tokens": null,
+  "executor_duration_seconds": null,
+  "telemetry_status": "not reported by collaboration tool; not estimated from output length"
+}

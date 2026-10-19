@@ -1,0 +1,577 @@
+{
+  "id": "R3-03-MOTION-LOCAL-INDEPENDENT-REVIEW",
+  "reviewed_on": "2026-10-14",
+  "reviewer": "foundation_redteam",
+  "state": "source_read_review_complete_conditional_transfer",
+  "scope": "LottieFiles 원문 19개와 로컬 5개 스킬의 SKILL·참조·README를 읽고 현재 R3-1/2 관련 항목 및 Phase 00 맞춤 스킬 3개와 비교했다. 파일 수·해시는 내용 이해나 실제 효과의 증명이 아니다.",
+  "actions_not_performed": [
+    "원문 코드 실행",
+    "설치",
+    "외부 통신",
+    "영상 분석",
+    "D 정본 수정",
+    "실제 영상 효과·스킬 성능 평가"
+  ],
+  "depth_definitions": {
+    "full_text_static_review": "전문을 읽고 의미·적용 조건·반례·예제 및 실행 의존성을 검토. 실행 검증은 하지 않음.",
+    "empty_file_verified": "0바이트 파일임을 확인. 내용·사용법·출처 근거로 계산하지 않음.",
+    "metadata_full_read": "확보 트리 전문과 고정 커밋·경로 확인. 원문 내용 이해 검토와 별도.",
+    "selected_fields_comparison": "지정 ID·메타데이터·충돌 관련 필드만 비교. 파일 전체 심층 검토로 세지 않음."
+  },
+  "provenance_and_license": [
+    {
+      "package": "LottieFiles/motion-design-skill",
+      "commit": "f9a8a041b85185ee4881b3471d3415e939aac772",
+      "license_file_present": true,
+      "license_observed": "MIT; Copyright (c) 2025 LottieFiles; substantial reuse 시 copyright·permission notice 보존",
+      "remote_verification_in_this_review": false,
+      "provenance_basis": "보관 확보트리·확보목록의 고정 커밋과 로컬 파일 해시. 공식 UI 시간/MD3/Apple의 1차 근거가 모두 확인됐다는 뜻은 아님.",
+      "runtime": "보관된 검토 파일에는 독립 실행 프로그램 없음. README의 npx skills add는 설치 명령이고 실행하지 않음. CSS·Framer Motion·GSAP·Lottie·Spring은 향후 구현 선택지이며 이 검토의 의존성이 아님."
+    },
+    {
+      "package": "animation-principles / brand-motion-guidelines / accessible-animation / shot-composition",
+      "commit": null,
+      "license_file_present": false,
+      "license_observed": "검토한 로컬 패키지에 LICENSE 없음. iart.ai footer는 상류 주소·저작권·라이선스 확정 근거가 아님.",
+      "runtime": "독립 실행 파일 없음. Markdown 안의 JS/CSS/JSX/Swift/AE expression/Three.js 및 Bash 예제가 있음. 웹 DOM·matchMedia·GSAP/ScrollTrigger·Framer Motion·Lenis·react-spring·SwiftUI·AE·Three.js·Playwright는 해당 예제를 실행할 때만 의존. 실행하지 않음.",
+      "provenance_basis": "로컬 설치 경로·보관 SHA256만 확인. 원격 저장소·커밋·원문 작성자·복사 범위별 이용 조건은 미확보.",
+      "reuse_policy": "개념을 프로젝트 언어로 독립 정리하고 원문 provenance 부족을 표시. 문장·코드의 상당량 복제나 배포는 이용 조건 확인 후 검토."
+    },
+    {
+      "package": "design-tokens",
+      "commit": null,
+      "license_file_present": false,
+      "license_observed": "README에 MIT 표기 있으나 별도 LICENSE·copyright notice·고정 상류 커밋 없음.",
+      "runtime": "독립 실행 코드·references 폴더 없음. CSS·Tailwind JS·JSON 예제와 산술 설명이 있으며 이 예제를 실행하지 않음.",
+      "reuse_policy": "토큰 값/역할 구분·실제 조합 대비 검토만 선별. 기존 한맥 CI 값·스케일을 새 HSL 계산으로 교체하지 않음."
+    }
+  ],
+  "material_findings": [
+    {
+      "id": "ML-01",
+      "priority": "high",
+      "source_paths": [
+        "lottiefiles/skills/motion-design/SKILL.md",
+        "lottiefiles/skills/motion-design/reference/quality-checklist.md",
+        "로컬스킬/animation-principles/SKILL.md"
+      ],
+      "finding": "선형 공간 모션 금지, 항상 3개 모션 층, 1/3 이동/동시성, 항상 stagger는 저자의 UI 휴리스틱이다. 기술 정보·동등 비교·정지 읽기·실측 등속에 일반화하면 내용을 왜곡한다.",
+      "internal_conflicts": [
+        "R3-1 MC-01 등속 운동",
+        "MC-02 동시 비교",
+        "AP-08/MP-09 층 수 비고정",
+        "R3-2 SCREEN-CHOICE 내용 기반 구도"
+      ],
+      "resolution": "원문 절대명령을 그대로 채택하지 않는다. 읽기 순서·주목 경쟁·시간 관계를 관측하고 목적·데이터·시청 조건에 맞을 때만 후보로 사용한다."
+    },
+    {
+      "id": "ML-02",
+      "priority": "high",
+      "source_paths": [
+        "로컬스킬/shot-composition/SKILL.md",
+        "로컬스킬/shot-composition/references/camera-and-grids.md"
+      ],
+      "finding": "삼분할 구성과 모션 이동 1/3을 같은 원칙으로 혼용하고 bg/mid/fg 깊이를 Primary/Secondary/Ambient 역할과 직접 동일시한다. 예제는 폰 화면을 초점으로 둔 뒤 흐린 전경 칩을 Primary라고 불러 역할이 모순된다.",
+      "resolution": "화면의 정보 역할·깊이 층·모션 역할을 별도 축으로 기록한다. 중앙·삼분할·동등 두 초점은 목적에 따른 후보. 깊이만으로 중요도를 결정하지 않는다.",
+      "positive_example": "전경의 흐린 나뭇가지는 공간 단서이고 중경의 구조물이 핵심 설명 대상인 장면.",
+      "counterexample": "전경이라는 이유로 움직이는 장식을 Primary로 승격해 구조물 설명을 가린다."
+    },
+    {
+      "id": "ML-03",
+      "priority": "high",
+      "source_paths": [
+        "로컬스킬/design-tokens/SKILL.md"
+      ],
+      "finding": "WCAG large text를 18px regular/14px bold로 표기하여 pt/px가 뒤섞인다. shade 번호별 대비 추정·모든 border 대비 강제·대비 실패 시 CI 자동 변경·W3C Format 표기는 그대로 이식할 수 없다.",
+      "resolution": "R1_design-tokens_선별검토의 제외 결정 유지. 웹 large text의 공식 pt 조건과 CSS px 환산을 구분하고 이를 영상 픽셀 크기로 자동 전용하지 않는다. 실제 색 조합·알파 합성·출력 색공간·표시 환경을 검토한다. DTCG는 형식 참조와 실제 준수 검증을 구분한다.",
+      "counterexample": "neutral-500이라는 이름만으로 4.5:1을 통과시키거나 한맥 공식 Orange를 어둡게 덮어쓴다."
+    },
+    {
+      "id": "ML-04",
+      "priority": "medium",
+      "source_paths": [
+        "로컬스킬/accessible-animation/SKILL.md",
+        "로컬스킬/accessible-animation/references/patterns.md"
+      ],
+      "finding": "전역 0.01ms !important 규칙 뒤의 일반 transition override는 해당 longhand 우선순위를 이기지 못해 설명한 Tier 3 유지와 다를 수 있다. useState(get) 예제는 client matchMedia를 바로 읽으나 본문은 SSR 초기값 false를 권고해 불일치한다. scripts/seek-shot.sh·contact-sheet.sh·scripts/README.md는 보관 패키지에 없다.",
+      "resolution": "Tier 분류의 판단 개념만 채택한다. 코드와 screenshot harness는 미검증 후속 구현 참고로 표시하고 그대로 복사·실행하지 않는다. 웹에서 full/reduced 상태·live toggle·fallback·정리 동작을 각각 시험할 때 검증한다."
+    },
+    {
+      "id": "ML-05",
+      "priority": "high",
+      "source_paths": [
+        "로컬스킬/brand-motion-guidelines/SKILL.md",
+        "로컬스킬/accessible-animation/SKILL.md",
+        "lottiefiles/skills/motion-design/director/context-adaptation.md"
+      ],
+      "finding": "모든 5초 초과 자동 모션에 pause를 요구하거나 3회 이하 flash를 안전 증명처럼 사용하는 단순화가 있다. opacity/color/loading은 항상 유지·항상 안전이라는 분류도 시청 조건과 실제 내용 검사를 대신하지 못한다.",
+      "resolution": "현재 R3-1 MC-08와 ACC-01~03의 조건부 구분 유지. MP4 콘텐츠 플래시 검토, 웹 자동 시작/병렬 정보/필수성/제어, 상호작용 모션을 분리한다. paused나 reduced라는 이유만으로 광과민성 안전·WCAG 전체 적합을 승인하지 않는다."
+    },
+    {
+      "id": "ML-06",
+      "priority": "medium",
+      "source_paths": [
+        "lottiefiles/skills/motion-design/reference/timing-easing-tables.md",
+        "로컬스킬/animation-principles/references/easing-curves.md",
+        "로컬스킬/animation-principles/references/easing-graph-editor.md"
+      ],
+      "finding": "Spring raw damping 계수와 damping ratio(<1/1/>1)를 혼용하기 쉬우며 서로 다른 라이브러리 수치가 동일 곡선을 뜻하지 않는다. AE speed graph의 음수 dip/핸들 80~90%와 Bézier 예제를 렌더 원본 설정으로 단정할 수 없다. Lottie stagger dramatic <600ms와 MUST <500ms도 원문 내부 상한 충돌이다.",
+      "resolution": "구현 환경·버전·단위·질량/강성/감쇠 모델을 포함한 후속 제작 참고로 남긴다. 관측 시간·경로·가속·정착과 원본 AE influence/표현식/제작 방식 추정을 분리한다. 모순되는 상한을 하나의 회사 기본값으로 합치지 않는다."
+    },
+    {
+      "id": "ML-07",
+      "priority": "medium",
+      "source_paths": [
+        "lottiefiles/skills/motion-design/director/emotion-mapping.md",
+        "lottiefiles/skills/motion-design/director/decision-framework.md",
+        "로컬스킬/shot-composition/SKILL.md"
+      ],
+      "finding": "색/이동 방향=정서/의미 표와 archetype default, 12열·8px·모바일 안전영역·고정 위계 순서는 상황·문화·플랫폼·내용을 생략한 제안이다. screen zoom을 dolly와 동일시하거나 느리면 고급이라고 단정해서도 안 된다.",
+      "resolution": "값·도구·방향은 프로젝트 제안으로 표시하고 실제 의미·회사 톤·관계에서 확인한다. 안전영역은 배포처·UI 버전·출력 화면비의 근거를 요구하고 수치 미제공 시 unknown. 실제 카메라와 전역 transform은 구분한다."
+    }
+  ],
+  "conditional_transfer_to_custom_skills": [
+    {
+      "skill": "video-knowledge-curator",
+      "include": [
+        "원문 체계·명칭·본문 확인 범위·고정 파일 해시",
+        "원문 휴리스틱과 프로젝트 적용 해석의 분리",
+        "모션 역할/깊이/화면 관계 분리",
+        "원칙별 좋은 예·반례·기권 및 대체 후보"
+      ],
+      "do_not_include": [
+        "3개 층·1/3·stagger·px/ms 값의 의무화",
+        "원문 마케팅 주장을 원칙의 실험적 효과로 기록",
+        "MIT 미확인 로컬 코드/문장 상당량 통째 복제"
+      ],
+      "example": "동시 비교는 유효한 예외로 기록하고 가시성 변화는 opacity 구현과 분리한다.",
+      "counterexample": "새 source_ref 하나를 붙였다는 이유로 Lottie 규칙 전부를 회사 필수로 등록한다.",
+      "review": "의미 병합·회사 필수화·범위 확대는 최소 4지선다·추천안 포함 사용자 검토. 현재 요청 내 draft 정리는 재승인 없이 가능."
+    },
+    {
+      "skill": "video-record-steward",
+      "include": [
+        "원본 관측·수치 추정·가설·설명용 예의 지위 검사",
+        "시간 단위·FPS/PTS·원본/변환 좌표 구분",
+        "토큰 값/역할/출처/버전과 기존 한맥 프로필 연결",
+        "라이브러리 설정값에는 환경·단위·불확실성 필요"
+      ],
+      "do_not_include": [
+        "프레임 추출·OCR·AE 조작·브라우저 실행",
+        "기존 픽셀/CI를 새 색으로 수정",
+        "원문 표에서 숫자를 추출해 실제 측정값으로 채움"
+      ],
+      "example": "같이 움직이는 부품과 라벨은 공동 변화로 관측하고 AE parenting은 미확인으로 남긴다.",
+      "counterexample": "가시성 공개가 300ms처럼 보인다는 이유로 opacity 핸들·layer Scale·spring 수치를 채운다.",
+      "review": "승인은 실제 결정 근거·대상·버전·범위의 일치를 검사할 뿐 신원 인증이나 영상 내용의 참을 증명하지 않는다."
+    },
+    {
+      "skill": "video-guidance-reviewer",
+      "include": [
+        "내용·시청 조건·주목 경쟁·읽기 유지의 검토 질문",
+        "정보 역할과 정서·브랜드 목표의 동시 검토",
+        "full/reduced/정지 대안이 전달 의미를 유지하는지 조건부 판단",
+        "한국어 문구·단위·실측 형태·데이터 관계 보존"
+      ],
+      "do_not_include": [
+        "코드 품질표를 실제 영상 합격표로 사용",
+        "배경 모션·선형·중앙·동시 등장 일괄 감점",
+        "대비 계산 하나로 영상 가독성·접근성 전부 통과"
+      ],
+      "example": "장식 패널은 이징 후보로 두고 실측 기구의 등속 이동·도면 형상은 보존한다.",
+      "counterexample": "순호님의 자료가 심심해 보인다는 이유로 ambient drift와 부품 squash를 의무 추가한다.",
+      "review": "부족한 근거에서는 해당 판단만 보류하고 관측은 유지. 새 화면 창작·실영상 효과 판정은 후속 단계."
+    }
+  ],
+  "internal_comparison_conclusion": "현재 R3-1의 원칙 미사용 허용·실측/장식 분리·무음 자막·관측/구현 구분과 R3-2의 중앙/삼분할 후보·동등 비교·원문 문구 보존·숫자 기본값 null 정책을 우선 유지한다. 원문 절대규칙은 기존 정본을 덮어쓰는 근거가 아니다. 추가 원문은 프로젝트 적용 후보와 반례 보강에 사용한다.",
+  "evaluation_limits": {
+    "source_reading": "complete_for_listed_files",
+    "code_static_review": "embedded_example_reading_only",
+    "code_execution": "not_performed",
+    "actual_company_video_effect": "not_tested",
+    "custom_skill_performance": "not_tested_in_this_review",
+    "company_rule_approval": "not_created"
+  },
+  "file_reviews": [
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\lottiefiles\\확보트리.json",
+      "relative_path": "lottiefiles/확보트리.json",
+      "sha256": "b939cdc102a132a93424d08124d3315d1f21501bd00b63c13ac843e92e8419df",
+      "bytes": 8103,
+      "review_depth": "metadata_full_read",
+      "finding": "고정 commit 및 tree의 blob/path/size/truncated=false 확인. 원문 지침 심층 검토와 별도."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\lottiefiles\\LICENSE",
+      "relative_path": "lottiefiles/LICENSE",
+      "sha256": "9fc2e8685daa09e28d54b6afa8a38f168417c5735a3cd676c80c159785e93a80",
+      "bytes": 1068,
+      "review_depth": "full_text_static_review",
+      "finding": "MIT와 Copyright 2025 LottieFiles, notice 보존·AS IS 조건 확인."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\lottiefiles\\README.md",
+      "relative_path": "lottiefiles/README.md",
+      "sha256": "9d43476646e1d0ae0f082d40877e19ce14dbe0215dd32c3887e8aad731959b03",
+      "bytes": 3589,
+      "review_depth": "full_text_static_review",
+      "finding": "UI·마이크로인터랙션 중심 적용 범위, 철학/패턴/참조 구조, npx 설치 명령 확인. 설치 안 함."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\lottiefiles\\skills\\motion-design\\SKILL.md",
+      "relative_path": "lottiefiles/skills/motion-design/SKILL.md",
+      "sha256": "8729ecbc7e5736c1295baaa8ba0384bb4b1aac9cf91b83fcdc64d9548a57bb19",
+      "bytes": 12580,
+      "review_depth": "full_text_static_review",
+      "finding": "8단계 의사결정은 조건부 후보. always3layers·선형/opacity-only 금지·1/3·stagger상한은 제외. ms/px/archetype은 회사 기본값 아님."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\lottiefiles\\skills\\motion-design\\director\\choreography.md",
+      "relative_path": "lottiefiles/skills/motion-design/director/choreography.md",
+      "sha256": "c81257b56160b9b2f3d99f78d4b8172b425c22d9ca73be06d3ffaa7305a34deb",
+      "bytes": 3035,
+      "review_depth": "full_text_static_review",
+      "finding": "순서·공동 이벤트·주목 방향은 의미 관계와 연결. 모든 같은 방향·hero최대변위·1/3·50ms 동시는 휴리스틱."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\lottiefiles\\skills\\motion-design\\director\\context-adaptation.md",
+      "relative_path": "lottiefiles/skills/motion-design/director/context-adaptation.md",
+      "sha256": "550e96a1c8c369513304ee74c0e89b63168bc7287b83e9ed5685bb65609986b3",
+      "bytes": 3066,
+      "review_depth": "full_text_static_review",
+      "finding": "플랫폼·시청자·reduced-motion·성능 분리. unlimited GPU와 요소 수·배율 표는 성능 검증 아님. 웹 조건을 MP4에 자동 대입하지 않음."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\lottiefiles\\skills\\motion-design\\director\\core-philosophy.md",
+      "relative_path": "lottiefiles/skills/motion-design/director/core-philosophy.md",
+      "sha256": "7aaa8a065d9940dad0198cf9cfe74979008495e6daf87f46f9022fff1b6a85e9",
+      "bytes": 1864,
+      "review_depth": "full_text_static_review",
+      "finding": "감정/서사/기교·역할 분리 질문은 선별. 항상 secondary+ambient, ambient는 attention budget 미포함이라는 절대규칙은 제외."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\lottiefiles\\skills\\motion-design\\director\\decision-framework.md",
+      "relative_path": "lottiefiles/skills/motion-design/director/decision-framework.md",
+      "sha256": "4b6758da6742475c928b4f8be8c662f4b5ed0964468ba7760df8f7635c779358",
+      "bytes": 2866,
+      "review_depth": "full_text_static_review",
+      "finding": "목적·시청자·맥락 먼저 검토. 방향 의미와 two-properties sweet spot은 정서/문화/내용별 제안이지 관측 사실 아님."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\lottiefiles\\skills\\motion-design\\director\\disney-principles.md",
+      "relative_path": "lottiefiles/skills/motion-design/director/disney-principles.md",
+      "sha256": "39024711890c2684a3434659a4d95a52ca8231facea74e87e79503054aaca671",
+      "bytes": 3197,
+      "review_depth": "full_text_static_review",
+      "finding": "12원칙 UI 변형과 예제 숫자 확인. primary-first와 hero delayed 진입 규칙 충돌, never-linear 예외, scale/프레임 숫자 일반화 금지."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\lottiefiles\\skills\\motion-design\\director\\emotion-mapping.md",
+      "relative_path": "lottiefiles/skills/motion-design/director/emotion-mapping.md",
+      "sha256": "a279e55a3f52a9f5830d38dc54679c652d9a5c26f0dd360700c16e23766d468b",
+      "bytes": 2877,
+      "review_depth": "full_text_static_review",
+      "finding": "감정-경로-색 표와 successgreen/errorredflash는 맥락 제안. 브랜드·실제 의미·접근성·시청 결과 확인 없이 법칙화 금지."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\lottiefiles\\skills\\motion-design\\director\\motion-personality.md",
+      "relative_path": "lottiefiles/skills/motion-design/director/motion-personality.md",
+      "sha256": "66a3623b6654869482c02157ca791034a614ca6dcb02a8112049e28d292ee18a",
+      "bytes": 2998,
+      "review_depth": "full_text_static_review",
+      "finding": "4archetype·기본 UI corporate와 90%혼합/80%signature 읽음. 회사 표현을 자동 archetype으로 정하거나 숫자로 제한하지 않음."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\lottiefiles\\skills\\motion-design\\director\\narrative-structure.md",
+      "relative_path": "lottiefiles/skills/motion-design/director/narrative-structure.md",
+      "sha256": "d49db19db40425dec027c3012d553b50fd74ed79e27ace9dec1226796469061b",
+      "bytes": 2407,
+      "review_depth": "full_text_static_review",
+      "finding": "준비/동작/반응/정착 및 짧은 상호작용의 생략 예는 개념 참고. 비율·ms는 회사 영상 타이밍 정답 아님."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\lottiefiles\\skills\\motion-design\\patterns\\ambient-continuous.md",
+      "relative_path": "lottiefiles/skills/motion-design/patterns/ambient-continuous.md",
+      "sha256": "f9cfa00d3325dceadcb9ffd77dcb5dcbc51d34121f3b1f162979939006056773",
+      "bytes": 2823,
+      "review_depth": "full_text_static_review",
+      "finding": "호흡·float·parallax·shimmer·particle 레시피 확인. 가독성 중 모션 억제/정지 대안과 대조; 항상 ambient 강제 금지."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\lottiefiles\\skills\\motion-design\\patterns\\entrance-exit.md",
+      "relative_path": "lottiefiles/skills/motion-design/patterns/entrance-exit.md",
+      "sha256": "70b3fc3a8d58ebe58e293e643b78fd13750d9c8ef1c8fc5fe85e52f7378cbd91",
+      "bytes": 2822,
+      "review_depth": "full_text_static_review",
+      "finding": "직접/크기/마스크/조립 진입과 출구 유형·연속성 참고. exit65~75%·UI px·방향의미가 모든 영상에 적용되는 수치 아님."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\lottiefiles\\skills\\motion-design\\patterns\\multi-element.md",
+      "relative_path": "lottiefiles/skills/motion-design/patterns/multi-element.md",
+      "sha256": "46c8da91843c593deb763a4a7fa32849bdaeb7a7ecd4d559e3b21bcc976f2c46",
+      "bytes": 2362,
+      "review_depth": "full_text_static_review",
+      "finding": "상호작용 예와 타임라인·중첩·공동원점·반대움직임 확인. 동등 비교·일괄 상태 변화는 동시가 적합할 수 있음."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\lottiefiles\\skills\\motion-design\\patterns\\state-feedback.md",
+      "relative_path": "lottiefiles/skills/motion-design/patterns/state-feedback.md",
+      "sha256": "dac86388c2d8fcdfc2f194b4f8877caedcdc010df9ce29d27dfc99d08cf8c60e",
+      "bytes": 3062,
+      "review_depth": "full_text_static_review",
+      "finding": "버튼/hover/토글/성공/오류/로딩/포커스 UI 레시피. 실제 제품 UI를 설명할 때만 참고, 초록/빨강·흔들림이 실제 의미 확정 근거 아님."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\lottiefiles\\skills\\motion-design\\reference\\property-selection.md",
+      "relative_path": "lottiefiles/skills/motion-design/reference/property-selection.md",
+      "sha256": "053d830795fc824fed27618fbd18084207af6aeed55b73c0a6e1d5665de894ae",
+      "bytes": 2922,
+      "review_depth": "full_text_static_review",
+      "finding": "화면 효과 목표와 제작 속성 매핑 참고. rendered 위치/크기/가시성에서 실제 Position/Scale/Opacity 설정 단정 금지. GPU우선은 웹 구현 조건."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\lottiefiles\\skills\\motion-design\\reference\\quality-checklist.md",
+      "relative_path": "lottiefiles/skills/motion-design/reference/quality-checklist.md",
+      "sha256": "c11bf193b700d9c9ebc5d871f1d5f193bccc441c4eccc0509b53a40d6e8dc558",
+      "bytes": 2080,
+      "review_depth": "full_text_static_review",
+      "finding": "severity표의 선형/opacity-only/1/3/stagger를 영상치명실패로 이식하지 않음. 접근성·의미·순서 체크 질문만 조건부 선별."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\lottiefiles\\skills\\motion-design\\reference\\timing-easing-tables.md",
+      "relative_path": "lottiefiles/skills/motion-design/reference/timing-easing-tables.md",
+      "sha256": "e478f3b99c4cac3f96eca008e20f8808d4cfae165f5799f260092baf9b6ebcff",
+      "bytes": 2900,
+      "review_depth": "full_text_static_review",
+      "finding": "UI시간/거리/curve/material/spring/stagger 표 읽음. raw damping과 ratio 혼동, dramatic600과총500 상한 충돌. 브랜드 공식 토큰·물리값 아님."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\lottiefiles\\skills\\motion-design\\reference\\troubleshooting.md",
+      "relative_path": "lottiefiles/skills/motion-design/reference/troubleshooting.md",
+      "sha256": "69e5aaeee108231d51187143ae3fce4db7a42936f10682908ca9462a008a047a",
+      "bytes": 2709,
+      "review_depth": "full_text_static_review",
+      "finding": "증상-가설-수정 예. flat=>ambient, synced=>stagger, robotic=>nonlinear는 단일 진단 아님. 내용·가독성 반례를 같이 봄."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\로컬스킬\\animation-principles\\README.md",
+      "relative_path": "로컬스킬/animation-principles/README.md",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "review_depth": "empty_file_verified",
+      "finding": "README 0바이트. 내용 또는 provenance 근거 없음."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\로컬스킬\\animation-principles\\SKILL.md",
+      "relative_path": "로컬스킬/animation-principles/SKILL.md",
+      "sha256": "54dc9687195ee1c452d4218e607963888baf722f768996a5216692a40b68db64",
+      "bytes": 8654,
+      "review_depth": "full_text_static_review",
+      "finding": "타이밍·spacing·가속·역할 판단과 구현수치 출력 확인. universal1/3, nevergroup simultaneous·linearonlyloops·음악양자화는 조건부 전환."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\로컬스킬\\animation-principles\\references\\easing-curves.md",
+      "relative_path": "로컬스킬/animation-principles/references/easing-curves.md",
+      "sha256": "0eb670fbd2b456f0bc90d52a2ba7365452b3061857cd52dc6ab579422d21b11b",
+      "bytes": 5317,
+      "review_depth": "full_text_static_review",
+      "finding": "곡선/Framer/react-spring/SwiftUI 예제·sqrt거리·stagger수식 확인. 플랫폼모델·버전·단위와 출처 확인 전 그대로 복사 금지."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\로컬스킬\\animation-principles\\references\\easing-graph-editor.md",
+      "relative_path": "로컬스킬/animation-principles/references/easing-graph-editor.md",
+      "sha256": "97f8cb0a5488a449850dda02bc6aff9327a97273ac39ca46d7e275673405184d",
+      "bytes": 9406,
+      "review_depth": "full_text_static_review",
+      "finding": "Speed/Value·spatial/temporal·influence/velocity·표현식 읽음. 그래프별 속도/음수 표현 및 AE수치 recipe는 별도 도구검증, MP4 역공학 정답 아님."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\로컬스킬\\animation-principles\\references\\twelve-principles.md",
+      "relative_path": "로컬스킬/animation-principles/references/twelve-principles.md",
+      "sha256": "5198dde91aa694e411de476ea811d555c7a665b7d72233fa7d80c3bd9f88b9b8",
+      "bytes": 4534,
+      "review_depth": "full_text_static_review",
+      "finding": "UI에서 자주 쓰는 순서로 재배열된 12원칙. 이 배열을 AP01~12 공식 ID 순서로 덮어쓰지 않음. 숫자예제는 합성설명/제작후보."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\로컬스킬\\brand-motion-guidelines\\README.md",
+      "relative_path": "로컬스킬/brand-motion-guidelines/README.md",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "review_depth": "empty_file_verified",
+      "finding": "README 0바이트. 내용 또는 provenance 근거 없음."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\로컬스킬\\brand-motion-guidelines\\SKILL.md",
+      "relative_path": "로컬스킬/brand-motion-guidelines/SKILL.md",
+      "sha256": "44f8b0681dd06d62a5e25eb2f052524e06f243e57e57b443154af76219cead53",
+      "bytes": 13293,
+      "review_depth": "full_text_static_review",
+      "finding": "규모별 모션문서·namedtoken·library·logo·accessibility 구조 읽음. 한맥 승인없는 token값/CI로고금지목록/7파트완성 강제는 제외."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\로컬스킬\\brand-motion-guidelines\\references\\dos-and-donts.md",
+      "relative_path": "로컬스킬/brand-motion-guidelines/references/dos-and-donts.md",
+      "sha256": "e2401ed6245dfe670d7e2df124a0ac8edaabf9723b42291877f4afb4507e78ff",
+      "bytes": 3268,
+      "review_depth": "full_text_static_review",
+      "finding": "역할/일관성·구체예/반례 구성 참고. neverdecorates·늘 exitshorter·항상 stagger·flash간이기준은 콘텐츠 목적과 대조."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\로컬스킬\\brand-motion-guidelines\\references\\full-template.md",
+      "relative_path": "로컬스킬/brand-motion-guidelines/references/full-template.md",
+      "sha256": "3f38636aa87a5de19dabf52418c750825bd8f6b2b74d1b35f7d15ad6454e2744",
+      "bytes": 6165,
+      "review_depth": "full_text_static_review",
+      "finding": "문서 version/owner/library·logo·피드백 template. 빈칸을 숫자로 임의 채우면 안 되며 회사 의무 규칙 대신 프로젝트 초안으로 작성."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\로컬스킬\\brand-motion-guidelines\\references\\token-reference.md",
+      "relative_path": "로컬스킬/brand-motion-guidelines/references/token-reference.md",
+      "sha256": "64172c264eb61739d67c34f5512e2af33d649e82f183294059bc2e6a0154a90f",
+      "bytes": 2712,
+      "review_depth": "full_text_static_review",
+      "finding": "semantic naming과 값/플랫폼wiring 분리 채택. 100/150/250/400/600ms·8/16/32px·40ms는 UI샘플 값."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\로컬스킬\\accessible-animation\\README.md",
+      "relative_path": "로컬스킬/accessible-animation/README.md",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "review_depth": "empty_file_verified",
+      "finding": "README 0바이트. 내용 또는 provenance 근거 없음."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\로컬스킬\\accessible-animation\\SKILL.md",
+      "relative_path": "로컬스킬/accessible-animation/SKILL.md",
+      "sha256": "fb9c162a5bf25004f967598241adb3f70d3589b0061b1c70dee925476c40eb03",
+      "bytes": 12019,
+      "review_depth": "full_text_static_review",
+      "finding": "3Tier·CSS/JS/SSR·liveupdates·WCAG·스크린샷 예제 읽음. 전역!important/override 및 SSR설명/코드 불일치, scripts미확보 확인."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\로컬스킬\\accessible-animation\\references\\patterns.md",
+      "relative_path": "로컬스킬/accessible-animation/references/patterns.md",
+      "sha256": "baebceae2c8e1eef8f6095abb05384b5caf3500380bba3d8dff6bec019445f17",
+      "bytes": 6846,
+      "review_depth": "full_text_static_review",
+      "finding": "controller·GSAP teardown·FramerMotionConfig·Lenis RAF 정리·marquee pause 코드 읽음. motion essential·5초의 정확한 맥락과 코드 런타임 검증 필요."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\로컬스킬\\shot-composition\\README.md",
+      "relative_path": "로컬스킬/shot-composition/README.md",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "review_depth": "empty_file_verified",
+      "finding": "README 0바이트. 내용 또는 provenance 근거 없음."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\로컬스킬\\shot-composition\\SKILL.md",
+      "relative_path": "로컬스킬/shot-composition/SKILL.md",
+      "sha256": "efdd254f4e769ee883420017003be685b95ad0eda5eab6e11b3f14b7871dcb27",
+      "bytes": 13193,
+      "review_depth": "full_text_static_review",
+      "finding": "grid·초점·여백·카메라·safearea·aspect reflow 읽음. 깊이=정보역할·삼분할=이동1/3 혼용 및 hero폰/FGprimary칩 예제 모순."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\로컬스킬\\shot-composition\\references\\camera-and-grids.md",
+      "relative_path": "로컬스킬/shot-composition/references/camera-and-grids.md",
+      "sha256": "03983f4e2d76226c23ffb60207e6d23bfc021359150d1dae1e5439149db99e88",
+      "bytes": 6264,
+      "review_depth": "full_text_static_review",
+      "finding": "grid 산식·safe퍼센트·CSS/JS/Three.js·orbit/dollyzoom 예제 확인. camera/globaltransform 구분과 플랫폼근거/색공간 필요."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\로컬스킬\\design-tokens\\README.md",
+      "relative_path": "로컬스킬/design-tokens/README.md",
+      "sha256": "62c2ba6e7baa50858ca4450dfcfcf24697e263c6b9f92f7e4fa9a7fbdeb7b0a3",
+      "bytes": 1085,
+      "review_depth": "full_text_static_review",
+      "finding": "웹 scales/format 설치 안내와 MIT 표기 확인. 별도 LICENSE와 상류 provenance 확정 근거 아님."
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_원본확보\\스킬원본\\로컬스킬\\design-tokens\\SKILL.md",
+      "relative_path": "로컬스킬/design-tokens/SKILL.md",
+      "sha256": "ae21a8e8d705c8e5b4df621383fd74fa073a6ba0ee465a649953fb7819de47ec",
+      "bytes": 12155,
+      "review_depth": "full_text_static_review",
+      "finding": "type/HSL/shade/대비/spacing/dark/출력format 전문. WCAG px/pt오류·shade대비근사·CI자동색변경·DTCG준수단정 금지."
+    }
+  ],
+  "comparison_reads": [
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\02_원칙과레이아웃\\모션원칙_심화카드.json",
+      "sha256": "76b77be793d1ac56c5486a00e81133f68767c132846d8123c57a337b6c7fa066",
+      "review_depth": "selected_fields_comparison",
+      "reviewed_selection": "AP-01/04/06/08、MP-03/09、ACC-01/02/03·outermeta·source/numeric/예·반례·관측"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\02_원칙과레이아웃\\모션원칙_충돌판단사례.json",
+      "sha256": "eef6f53023334cb88276eb4c4a9b7258bc88717dc022198b2bd0f22f46064920",
+      "review_depth": "selected_fields_comparison",
+      "reviewed_selection": "outermeta·MC-01 first case; 전체판단은 대응MD전문으로 비교"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\02_원칙과레이아웃\\레이아웃_심화지식.json",
+      "sha256": "5d6378eb954b6b75f94be2a0988254a1406f6dacc8a6c44060c6a05ff56aa14c",
+      "review_depth": "selected_fields_comparison",
+      "reviewed_selection": "outermeta·core_ref·LAYOUT-SINGLE-FOCUS·SCREEN-HIERARCHY"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\02_원칙과레이아웃\\레이아웃_문구와화면비사례.json",
+      "sha256": "43ca618fa2e7a8105e7b1aaf8ece4500cfc3edc57954e2530b634d76baf24888",
+      "review_depth": "selected_fields_comparison",
+      "reviewed_selection": "outermeta·LS-01 긴한글·기권·numeric role"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\02_원칙과레이아웃\\04_모션원칙_충돌과예외.md",
+      "sha256": "a21649e3c6c16e778464ee0d76ebfe1bd9ffddd55cb076fa449efbf5371c353f",
+      "review_depth": "full_text_static_review",
+      "reviewed_selection": "8개 판단사례 전문"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\02_원칙과레이아웃\\08_화면설계_적용기준과반례.md",
+      "sha256": "1c6216125725542785ac8773d4cc6d41adbc178044aa2016f2c0af5630431c0e",
+      "review_depth": "full_text_static_review",
+      "reviewed_selection": "화면8개 전문·출처·프로젝트해석"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\05_출처와검토\\R1_design-tokens_선별검토.md",
+      "sha256": "adfa4e4537eebd79a2f42200d028b75088adb9a665d57eb6493cabecc7ca4336",
+      "review_depth": "full_text_static_review",
+      "reviewed_selection": "선별채택·제외·WCAG단위·DTCG·CI범위 전문"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\05_출처와검토\\R3_스킬_원본확보목록.json",
+      "sha256": "7e13e302be5c59a100a9fe295c99ecf9530a7cc7bc818545d66ed7969a9c4df4",
+      "review_depth": "selected_fields_comparison",
+      "reviewed_selection": "local_packages의5개metadata·animation원본entry·lottiefiles commit/status/execution/tree"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\06_맞춤스킬\\video-knowledge-curator\\SKILL.md",
+      "sha256": "233db126b7240f2ce95ed0c66d28963747d29033aae170b0da2be7458d68eb6e",
+      "review_depth": "full_text_static_review",
+      "reviewed_selection": "현재 목적/권한/출력/경계 전문"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\06_맞춤스킬\\video-record-steward\\SKILL.md",
+      "sha256": "a1f4b2a75d4b97b84e208bdf81f8d7261af3e4cff59a10d49fdee5fe3bab6bcc",
+      "review_depth": "full_text_static_review",
+      "reviewed_selection": "현재 목적/권한/출력/경계 전문"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\06_맞춤스킬\\video-guidance-reviewer\\SKILL.md",
+      "sha256": "73741029082b93694d450703f8c910ed61329d0dc46434a5b0b7be55a76e4fad",
+      "review_depth": "full_text_static_review",
+      "reviewed_selection": "현재 목적/권한/출력/경계 전문"
+    }
+  ],
+  "coverage": {
+    "lottiefiles_source_files": 19,
+    "lottiefiles_acquisition_metadata": 1,
+    "local_package_files": 18,
+    "empty_local_readmes": 4,
+    "mandatory_skill_and_reference_files": 30,
+    "depth_is_static_reading_only": true
+  }
+}

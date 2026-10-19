@@ -1,0 +1,762 @@
+{
+  "expectations": [
+    {
+      "text": "H01-C01: 푸른/청록 사선 띠 배경이 처음부터 있고 초반 띠 위치·밝기/흐림이 변한 뒤 대체로 유지된다",
+      "passed": true,
+      "evidence": "title/layout/bg_upper/bg_lower: '어두운 남색·청록색 대각 띠 배경', 0.8초 정착. evidence-001/002"
+    },
+    {
+      "text": "H01-C02: 영문이 왼쪽 V부터 오른쪽 of까지 순차로 풀려 드러난다",
+      "passed": true,
+      "evidence": "title: 'V와 a가 먼저 읽히고 이어 l,u,e,o,f가 왼쪽에서 오른쪽으로 완성' ; reference C02"
+    },
+    {
+      "text": "H01-C03: 완성되는 문구는 Value of",
+      "passed": true,
+      "evidence": "title.text='Value of'; reference C03/full_7p2"
+    },
+    {
+      "text": "H01-C04: Value of 뒤 우측에서 흰 가로 조각→TOVA 로고의 아래쪽/후속 획까지 단계적으로 완성된다",
+      "passed": true,
+      "evidence": "logo: '3.4초 T의 윗부분이 먼저… O,V,A… 위로'; H01-c05, C04"
+    },
+    {
+      "text": "H01-C05: 3.2~4.6초에 완성된 Value of가 어두운 회색으로 약해진 뒤 유지되며 후반에는 큰 T에 일부 가려진다",
+      "passed": true,
+      "evidence": "title: '밝은 흰색 계열에서 회색으로… 남는다'; map_T '제목 일부를 가리고'; full_7p2/7p4"
+    },
+    {
+      "text": "H01-C06: 로고 완성 뒤 설명 두 줄이 부분 문구에서 완전한 두 줄로 드러나고 진해진다",
+      "passed": true,
+      "evidence": "description: '첫 줄 왼쪽→오른쪽, 이어 둘째 줄…밝기'; H01-c08/c09"
+    },
+    {
+      "text": "H01-C07: 우상단 흰 사선/지도 조각이 들어와 좌하 방향으로 점유를 넓혀 거대한 T 형태가 된다",
+      "passed": true,
+      "evidence": "map_T: '오른쪽 상부…흰 가로획과 세로획…오른쪽에서 왼쪽'; C07 및 full_7p2/7p4. 좌하 점유 확대로 인정; 수직 이동 확정 요구 아님"
+    },
+    {
+      "text": "H01-C08: 큰 T 뒤에 놓인 회색 Value of는 오른쪽 일부가 가려진 채 남으며 TOVA 로고/설명은 앞에 유지된다",
+      "passed": true,
+      "evidence": "map_T: '제목 일부를 가리고… 작은 로고와 설명보다 뒤'; full_7p2/7p4"
+    },
+    {
+      "text": "H01-D01: 등장 중 글자에 말림/접힘처럼 휘어진 어두운 면과 밝은 앞면이 따로 보여 단순 전체 페이드에 그치지 않는다",
+      "passed": true,
+      "evidence": "title: '접히거나 비틀린 듯…얇은 면/어두운 면'; H01-c01/c03"
+    },
+    {
+      "text": "H01-D02: 흰 로고 획 안/오른쪽 끝에 노란 사선 작은 획들이 추가된다",
+      "passed": true,
+      "evidence": "logo: 'O 안의 노란 사선과 A 오른쪽 노란 사선'; full_7p4"
+    },
+    {
+      "text": "H01-D03: 작은 풀네임은 TOtal Vehicle Assignment (표시 대소문자는 이 형태)",
+      "passed": true,
+      "evidence": "tagline.text='TOtal Vehicle Assignment'; H01-c08/c09"
+    },
+    {
+      "text": "H01-D04: TO/V/A 등 대응 첫 부분이 노란색이며 나머지 문자는 흰색",
+      "passed": true,
+      "evidence": "tagline.color_relation='TO, V, A는 노랑, 나머지…흰색'; H01-c09"
+    },
+    {
+      "text": "H01-D05: 도로, 버스, 도시철도, 지역간 철도, 항공 및 해운 여객교통수요를 통합적으로 분석하는 한국형 통합 교통 수요분석 프로그램이라는 문구",
+      "passed": true,
+      "evidence": "description.text_lines 두 줄의 교통수단 및 통합 분석 문구; H01-c09와 일치"
+    },
+    {
+      "text": "H01-D06: 둘째 줄 한국형 통합 교통 수요분석 프로그램이 노란색으로 강조된다",
+      "passed": true,
+      "evidence": "description.emphasis='한국형 통합 교통 수요분석 프로그램: 노랑'; H01-c09"
+    },
+    {
+      "text": "H01-D07: 흰 면의 흐린 내부가 선명한 도로 지도 선으로 드러난다",
+      "passed": true,
+      "evidence": "map_texture: '흐린…7.3–7.4초 또렷한 지도 선'; full_7p2/7p4"
+    },
+    {
+      "text": "H01-D08: 첫 줄 뒤 둘째 줄은 한국형부터 더 긴 강조 구절과 입니다까지 이어진다",
+      "passed": true,
+      "evidence": "description: 5.6초 '분석하는 한국형'→5.8초 더 긴 구절→6.4초 전체. H01-c08/c09와 일치"
+    }
+  ],
+  "summary": {
+    "passed": 16,
+    "failed": 0,
+    "total": 16,
+    "pass_rate": 1.0
+  },
+  "A5b_gate": {
+    "run_id": "H01-r1-with_skill",
+    "case_id": "H01",
+    "configuration": "with_skill",
+    "repeat": 1,
+    "blind_label": "sample-A",
+    "metrics": {
+      "core_correct": 8,
+      "core_total": 8,
+      "detail_correct": 8,
+      "detail_total": 8,
+      "core_coverage": 1.0,
+      "detail_coverage": 1.0,
+      "supported_enumerated_claims": 105,
+      "total_asserted_claims": null,
+      "enumerated_asserted_claims": 105,
+      "unresolved_enumerated_claims": 0,
+      "unsupported_enumerated_claims": 0,
+      "asserted_claim_precision": null,
+      "avoidable_abstention_count": 0,
+      "avoidable_abstention_fraction": 0.0
+    },
+    "gates_passed": false,
+    "scope_incomplete": true,
+    "critical_errors": [],
+    "missing_reference_atoms": [],
+    "wrong_reference_atoms": [],
+    "avoidable_unknown_reference_atoms": [],
+    "appropriate_unknowns": [
+      "정확한 AE 속성·효과·함수/핸들값",
+      "Value of 실제3D 여부·회전축",
+      "복합 변형·명암의 정밀 곡선",
+      "지도 실제 지역/축척·독립 줌"
+    ],
+    "grading_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H01-r1\\grading.json",
+    "review_seconds": 62,
+    "assertion_count_unit": "deduplicated factual atoms supplied by blinded AI reviewer; not event count",
+    "structure_provenance_passed": true
+  },
+  "content_grader": "fresh blinded AI; not human gold",
+  "claim_details": [
+    {
+      "id": "A-001",
+      "claim": "남색 청록 대각 띠 배경",
+      "supported": true,
+      "evidence": "full_0p0/full_0p8"
+    },
+    {
+      "id": "A-002",
+      "claim": "Value of는 하단 왼쪽",
+      "supported": true,
+      "evidence": "full_7p2"
+    },
+    {
+      "id": "A-003",
+      "claim": "흰 TOVA는 하단 오른쪽",
+      "supported": true,
+      "evidence": "full_7p2"
+    },
+    {
+      "id": "A-004",
+      "claim": "영어 풀이가 로고 오른쪽 아래",
+      "supported": true,
+      "evidence": "H01-c09"
+    },
+    {
+      "id": "A-005",
+      "claim": "한글 설명 두 줄이 영어 아래",
+      "supported": true,
+      "evidence": "H01-c09"
+    },
+    {
+      "id": "A-006",
+      "claim": "지도 T가 제목 일부 가림",
+      "supported": true,
+      "evidence": "full_7p4"
+    },
+    {
+      "id": "A-007",
+      "claim": "지도 등장시 로고 자리 유지",
+      "supported": true,
+      "evidence": "full_7p2/full_7p4"
+    },
+    {
+      "id": "A-008",
+      "claim": "지도 등장시 설명 자리 유지",
+      "supported": true,
+      "evidence": "full_7p2/full_7p4"
+    },
+    {
+      "id": "A-009",
+      "claim": "등장순서 배경→Value of→TOVA→영어→한글→지도",
+      "supported": true,
+      "evidence": "reference atoms C01-C08"
+    },
+    {
+      "id": "A-010",
+      "claim": "표본에서 UI 커서 그래프 수치 식별 안됨",
+      "supported": true,
+      "evidence": "열람 full PNG"
+    },
+    {
+      "id": "A-011",
+      "claim": "상부 배경 면 좌하향",
+      "supported": true,
+      "evidence": "full_0p0/full_0p8"
+    },
+    {
+      "id": "A-012",
+      "claim": "하부 배경 면 우상향",
+      "supported": true,
+      "evidence": "full_0p0/full_0p8"
+    },
+    {
+      "id": "A-013",
+      "claim": "0.8초 배경 대체로 정착",
+      "supported": true,
+      "evidence": "full_0p8; C01"
+    },
+    {
+      "id": "A-014",
+      "claim": "상부 넓고 흐린 빛 영역 유지",
+      "supported": true,
+      "evidence": "full_0p8/full_7p2"
+    },
+    {
+      "id": "A-015",
+      "claim": "1.2초 작은 밝은 제목 조각",
+      "supported": true,
+      "evidence": "root visually reopened listed sample-A/B native/crop evidence; same-source reference frames and pixel positions. Cropped partial strings interpreted with the output qualifiers; no full AE implementation inference."
+    },
+    {
+      "id": "A-016",
+      "claim": "글자가 비틀림 접힘 면에서 정자로 전개",
+      "supported": true,
+      "evidence": "H01-c01/c03"
+    },
+    {
+      "id": "A-017",
+      "claim": "V a 다음 l u e o f 순서",
+      "supported": true,
+      "evidence": "C02; H01-c01/c03"
+    },
+    {
+      "id": "A-018",
+      "claim": "완성문구 Value of",
+      "supported": true,
+      "evidence": "full_7p2; C03"
+    },
+    {
+      "id": "A-019",
+      "claim": "어두운 면과 밝은 가장자리가 제목 위 오른쪽에 존재",
+      "supported": true,
+      "evidence": "H01-c01/c03"
+    },
+    {
+      "id": "A-020",
+      "claim": "어두운 면이 전개와 함께 오른쪽으로 진행",
+      "supported": true,
+      "evidence": "H01-c01/c03; D01"
+    },
+    {
+      "id": "A-021",
+      "claim": "3.0초 잔존 3.2초 소실",
+      "supported": true,
+      "evidence": "root visually reopened listed sample-A/B native/crop evidence; same-source reference frames and pixel positions. Cropped partial strings interpreted with the output qualifiers; no full AE implementation inference."
+    },
+    {
+      "id": "A-022",
+      "claim": "제목 위치 유지",
+      "supported": true,
+      "evidence": "full_7p2/full_7p4; C05"
+    },
+    {
+      "id": "A-023",
+      "claim": "제목 크기 유지",
+      "supported": true,
+      "evidence": "full_7p2/full_7p4"
+    },
+    {
+      "id": "A-024",
+      "claim": "제목 흰색에서 회색으로 약화 후 남음",
+      "supported": true,
+      "evidence": "C05; H01-c03/full_7p2"
+    },
+    {
+      "id": "A-025",
+      "claim": "7.2초 지도 위 of 희미하게 보임",
+      "supported": true,
+      "evidence": "full_7p2"
+    },
+    {
+      "id": "A-026",
+      "claim": "7.4초 of 가려짐",
+      "supported": true,
+      "evidence": "full_7p4"
+    },
+    {
+      "id": "A-027",
+      "claim": "7.4초 왼쪽 Valu 일부 남음",
+      "supported": true,
+      "evidence": "full_7p4"
+    },
+    {
+      "id": "A-028",
+      "claim": "흰 로고 T→O→V→A 순차 등장",
+      "supported": true,
+      "evidence": "C04"
+    },
+    {
+      "id": "A-029",
+      "claim": "로고 각 글자 아래 가림에서 위로 등장",
+      "supported": true,
+      "evidence": "H01-c05; C04"
+    },
+    {
+      "id": "A-030",
+      "claim": "4.2초 로고 네 글자 정착",
+      "supported": true,
+      "evidence": "C04"
+    },
+    {
+      "id": "A-031",
+      "claim": "O 내부 노란 사선",
+      "supported": true,
+      "evidence": "full_7p4"
+    },
+    {
+      "id": "A-032",
+      "claim": "A 오른쪽 노란 사선",
+      "supported": true,
+      "evidence": "full_7p4"
+    },
+    {
+      "id": "A-033",
+      "claim": "각 T/O/V/A 상향 이동 감속",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-034",
+      "claim": "4.2초 영어 미검출",
+      "supported": true,
+      "evidence": "root visually reopened listed sample-A/B native/crop evidence; same-source reference frames and pixel positions. Cropped partial strings interpreted with the output qualifiers; no full AE implementation inference."
+    },
+    {
+      "id": "A-035",
+      "claim": "4.3초 마지막 t 조각 첫 관측",
+      "supported": true,
+      "evidence": "root visually reopened listed sample-A/B native/crop evidence; same-source reference frames and pixel positions. Cropped partial strings interpreted with the output qualifiers; no full AE implementation inference."
+    },
+    {
+      "id": "A-036",
+      "claim": "4.4초 nment 부분 보임",
+      "supported": true,
+      "evidence": "root visually reopened listed sample-A/B native/crop evidence; same-source reference frames and pixel positions. Cropped partial strings interpreted with the output qualifiers; no full AE implementation inference."
+    },
+    {
+      "id": "A-037",
+      "claim": "4.5초 hicle Assignment 부분 보임",
+      "supported": true,
+      "evidence": "root visually reopened listed sample-A/B native/crop evidence; same-source reference frames and pixel positions. Cropped partial strings interpreted with the output qualifiers; no full AE implementation inference."
+    },
+    {
+      "id": "A-038",
+      "claim": "4.6초 Otal Vehicle Assignment 부분 보임",
+      "supported": true,
+      "evidence": "H01-c07"
+    },
+    {
+      "id": "A-039",
+      "claim": "4.8초 TOtal Vehicle Assignment 완성",
+      "supported": true,
+      "evidence": "H01-c08/c09; D03"
+    },
+    {
+      "id": "A-040",
+      "claim": "영문 가림 뒤에서 오른쪽 이동",
+      "supported": true,
+      "evidence": "H01-c07/c08; 오른쪽 끝과 드러난 글자 비교"
+    },
+    {
+      "id": "A-041",
+      "claim": "영문 뒤쪽 글자부터 드러남",
+      "supported": true,
+      "evidence": "H01-c07/c08"
+    },
+    {
+      "id": "A-042",
+      "claim": "영문 가속 후 감속",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-043",
+      "claim": "TO V A 노랑",
+      "supported": true,
+      "evidence": "H01-c09"
+    },
+    {
+      "id": "A-044",
+      "claim": "나머지 영문 흰색",
+      "supported": true,
+      "evidence": "H01-c09"
+    },
+    {
+      "id": "A-045",
+      "claim": "5.0초 한글 안보임",
+      "supported": true,
+      "evidence": "root visually reopened listed sample-A/B native/crop evidence; same-source reference frames and pixel positions. Cropped partial strings interpreted with the output qualifiers; no full AE implementation inference."
+    },
+    {
+      "id": "A-046",
+      "claim": "5.2~5.4초 첫줄 왼쪽부터 흐리게 나타남",
+      "supported": true,
+      "evidence": "C06 reference"
+    },
+    {
+      "id": "A-047",
+      "claim": "5.6초 첫줄 전체와 분석하는 한국형 관측",
+      "supported": true,
+      "evidence": "H01-c08"
+    },
+    {
+      "id": "A-048",
+      "claim": "5.8초 한국형 통합 교통 수 관측",
+      "supported": true,
+      "evidence": "root visually reopened listed sample-A/B native/crop evidence; same-source reference frames and pixel positions. Cropped partial strings interpreted with the output qualifiers; no full AE implementation inference."
+    },
+    {
+      "id": "A-049",
+      "claim": "6.4초 둘째줄 전체 선명",
+      "supported": true,
+      "evidence": "H01-c09"
+    },
+    {
+      "id": "A-050",
+      "claim": "한글 첫줄 왼쪽에서 오른쪽 이어 둘째줄",
+      "supported": true,
+      "evidence": "C06/D08; H01-c08/c09"
+    },
+    {
+      "id": "A-051",
+      "claim": "한글 위치 유지하며 밝기 가시성 증가",
+      "supported": true,
+      "evidence": "H01-c08/c09"
+    },
+    {
+      "id": "A-052",
+      "claim": "한글 첫줄 TOVA는 도로 버스 도시철도 지역간 철도 항공 및 해운 여객교통수요를 통합적으로",
+      "supported": true,
+      "evidence": "H01-c09"
+    },
+    {
+      "id": "A-053",
+      "claim": "한글 둘째줄 분석하는 한국형 통합 교통 수요분석 프로그램 입니다",
+      "supported": true,
+      "evidence": "H01-c09"
+    },
+    {
+      "id": "A-054",
+      "claim": "한국형 통합 교통 수요분석 프로그램 노랑",
+      "supported": true,
+      "evidence": "H01-c09"
+    },
+    {
+      "id": "A-055",
+      "claim": "그외 한글 회백색",
+      "supported": true,
+      "evidence": "H01-c09"
+    },
+    {
+      "id": "A-056",
+      "claim": "6.5초 지도 없음 6.6초 우상부 얇은 흰 사선",
+      "supported": true,
+      "evidence": "root visually reopened listed sample-A/B native/crop evidence; same-source reference frames and pixel positions. Cropped partial strings interpreted with the output qualifiers; no full AE implementation inference."
+    },
+    {
+      "id": "A-057",
+      "claim": "지도 T 우측에서 좌측으로 점유 확대",
+      "supported": true,
+      "evidence": "C07; full_7p2/full_7p4"
+    },
+    {
+      "id": "A-058",
+      "claim": "지도 T 가로획 및 세로획",
+      "supported": true,
+      "evidence": "full_7p2/full_7p4"
+    },
+    {
+      "id": "A-059",
+      "claim": "지도 T 가속후 감속",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-060",
+      "claim": "7.4~7.6초 남은 왼쪽 이동",
+      "supported": true,
+      "evidence": "root visually reopened listed sample-A/B native/crop evidence; same-source reference frames and pixel positions. Cropped partial strings interpreted with the output qualifiers; no full AE implementation inference."
+    },
+    {
+      "id": "A-061",
+      "claim": "7.6초와8초 위치 거의 같음",
+      "supported": true,
+      "evidence": "root visually reopened listed sample-A/B native/crop evidence; same-source reference frames and pixel positions. Cropped partial strings interpreted with the output qualifiers; no full AE implementation inference."
+    },
+    {
+      "id": "A-062",
+      "claim": "지도 T가 작은 로고 설명 뒤에 보임",
+      "supported": true,
+      "evidence": "full_7p2/full_7p4"
+    },
+    {
+      "id": "A-063",
+      "claim": "지도 내부 흐림에서 또렷한 회색 도로 구획 선",
+      "supported": true,
+      "evidence": "full_7p2/full_7p4; D07"
+    },
+    {
+      "id": "A-064",
+      "claim": "7.3~7.4초 지도 선명",
+      "supported": true,
+      "evidence": "full_7p4; D07"
+    },
+    {
+      "id": "A-065",
+      "claim": "7.4~8초 별도 경로 강조 UI교체 미식별",
+      "supported": true,
+      "evidence": "root visually reopened listed sample-A/B native/crop evidence; same-source reference frames and pixel positions. Cropped partial strings interpreted with the output qualifiers; no full AE implementation inference."
+    },
+    {
+      "id": "A-066",
+      "claim": "logo_T 3.4초 native_top_y_at_x2050=1482",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-067",
+      "claim": "logo_T 3.5초 native_top_y_at_x2050=1388",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-068",
+      "claim": "logo_T 3.6초 native_top_y_at_x2050=1320",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-069",
+      "claim": "logo_T 3.7초 native_top_y_at_x2050=1293",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-070",
+      "claim": "logo_T 3.8초 native_top_y_at_x2050=1286",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-071",
+      "claim": "logo_T 3.9초 native_top_y_at_x2050=1286",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-072",
+      "claim": "logo_T 4초 native_top_y_at_x2050=1286",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-073",
+      "claim": "logo_T 4.1초 native_top_y_at_x2050=1286",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-074",
+      "claim": "logo_O 3.5초 native_top_y=1510",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-075",
+      "claim": "logo_O 3.6초 native_top_y=1424",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-076",
+      "claim": "logo_O 3.7초 native_top_y=1339",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-077",
+      "claim": "logo_O 3.8초 native_top_y=1300",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-078",
+      "claim": "logo_O 3.9초 native_top_y=1287",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-079",
+      "claim": "logo_O 4초 native_top_y=1286",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-080",
+      "claim": "logo_V 3.8초 native_top_y=1522",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-081",
+      "claim": "logo_V 3.9초 native_top_y=1485",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-082",
+      "claim": "logo_V 4초 native_top_y=1473",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-083",
+      "claim": "logo_V 4.1초 native_top_y=1472",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-084",
+      "claim": "logo_A 3.7초 native_top_y=1511",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-085",
+      "claim": "logo_A 3.8초 native_top_y=1428",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-086",
+      "claim": "logo_A 3.9초 native_top_y=1344",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-087",
+      "claim": "logo_A 4초 native_top_y=1306",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-088",
+      "claim": "logo_A 4.1초 native_top_y=1293",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-089",
+      "claim": "logo_A 4.2초 native_top_y=1292",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-090",
+      "claim": "tagline 4.3초 native_rightmost_text_x=2821",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-091",
+      "claim": "tagline 4.4초 native_rightmost_text_x=2918",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-092",
+      "claim": "tagline 4.5초 native_rightmost_text_x=3094",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-093",
+      "claim": "tagline 4.6초 native_rightmost_text_x=3220",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-094",
+      "claim": "tagline 4.8초 native_rightmost_text_x=3284",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-095",
+      "claim": "map_T 6.6초 native_left_white_boundary_x_at_y820=3266",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-096",
+      "claim": "map_T 6.7초 native_left_white_boundary_x_at_y820=3130",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-097",
+      "claim": "map_T 6.8초 native_left_white_boundary_x_at_y820=2766",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-098",
+      "claim": "map_T 6.9초 native_left_white_boundary_x_at_y820=2151",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-099",
+      "claim": "map_T 7초 native_left_white_boundary_x_at_y820=1431",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-100",
+      "claim": "map_T 7.1초 native_left_white_boundary_x_at_y820=750",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-101",
+      "claim": "map_T 7.2초 native_left_white_boundary_x_at_y820=266",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-102",
+      "claim": "map_T 7.3초 native_left_white_boundary_x_at_y820=28",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-103",
+      "claim": "map_T 7.4초 native_left_white_boundary_x_at_y820=0",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-104",
+      "claim": "map_T 7.6초 native_left_white_boundary_x_at_y820=0",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    },
+    {
+      "id": "A-105",
+      "claim": "map_T 8초 native_left_white_boundary_x_at_y820=0",
+      "supported": true,
+      "evidence": "numeric-audit.json:80/80 original RGB statistics match; logo delta decreases across multiple moving intervals; English/map increase then decrease. This supports qualitative motion only, not AE parameters."
+    }
+  ]
+}

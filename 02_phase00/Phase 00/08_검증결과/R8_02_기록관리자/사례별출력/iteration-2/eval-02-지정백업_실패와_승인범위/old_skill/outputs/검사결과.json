@@ -1,0 +1,168 @@
+{
+  "status": "blocked_backup_unapplied_proposal_saved",
+  "applied": false,
+  "target": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-02-지정백업_실패와_승인범위\\old_skill\\run-1\\inputs\\Phase00\\작업초안\\디자인적용_초안.json",
+  "source_application_id": "R8-DEV-APPLY-02",
+  "source_version": "0.1.0",
+  "source_sha256": "fba42ca7fd978f4d61e299d806b6f6a9e56f9b0c2212faf4ef23ef15b09af9c7",
+  "proposed_version": "0.1.1",
+  "proposal_file": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-02-지정백업_실패와_승인범위\\old_skill\\run-1\\outputs\\디자인적용_초안_v0.1.1_미적용수정안.json",
+  "changes": [
+    {
+      "path": "/version",
+      "before": "0.1.0",
+      "after": "0.1.1"
+    },
+    {
+      "path": "/purpose",
+      "before": "삼안 관측색을 강조 후보로 비교하는 설명용 초안. 실제 회사 영상/디자이너 검수 아님.",
+      "after": "삼안 강조색 후보를 비교하는 검토용 초안."
+    }
+  ],
+  "all_other_values_unchanged": true,
+  "backup": {
+    "requested_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-2\\eval-02-지정백업_실패와_승인범위\\old_skill\\run-1\\inputs\\Phase00\\backup\\사용자지정백업",
+    "is_existing_file": true,
+    "succeeded": false,
+    "error": {
+      "type": "FileExistsError",
+      "errno": 17,
+      "winerror": 183,
+      "message": "[WinError 183] 파일이 이미 있으므로 만들 수 없습니다: 'C:\\\\Users\\\\User\\\\Documents\\\\ChatGPT\\\\업무@사내 영상 생성기\\\\phase00-build\\\\R8_시험\\\\video-record-steward-workspace\\\\iteration-2\\\\eval-02-지정백업_실패와_승인범위\\\\old_skill\\\\run-1\\\\inputs\\\\Phase00\\\\backup\\\\사용자지정백업'"
+    },
+    "alternate_location_used": false,
+    "existing_file_sha256_before": "6551178fe2cfdb163299a12265c08d1f8b3051cdff5637e657bc4d27d56ed0ad",
+    "existing_file_sha256_after": "6551178fe2cfdb163299a12265c08d1f8b3051cdff5637e657bc4d27d56ed0ad"
+  },
+  "input_files_byte_identical": true,
+  "input_file_count": 269,
+  "validation": {
+    "before": {
+      "valid": true,
+      "scope": "구조/현재 참조·정책 검수. 실제 디자인 품질·선택자 인증/회사 승인 아님.",
+      "errors": [],
+      "human_review_queue": [
+        "로고 필요 여부·선택 미정",
+        "saman emphasis: 관측색의 가정·역할 적합성·선택자/실제 선택 확인",
+        "출력 해상도·최종 표시 크기 미정",
+        "로고/글자의 최종 배경 미정",
+        "최종 프레임·한국어/숫자·단위·자막·시청환경·움직이는 배경 검수",
+        "로컬 해시는 원문 무결성이다. 최신성/공식성/디자이너 identity·회사/운영 승인 증명 안 됨"
+      ],
+      "resolved_draft_candidates": [
+        {
+          "company_id": "saman",
+          "role": "emphasis",
+          "hex": "#F5821F",
+          "origin": "ci_color",
+          "use": "project_draft_candidate",
+          "review_status": "pending"
+        }
+      ],
+      "company_approved": false,
+      "fact_verified": false,
+      "human_selection_verified": false,
+      "operational_release": false
+    },
+    "unapplied_proposal": {
+      "valid": true,
+      "scope": "구조/현재 참조·정책 검수. 실제 디자인 품질·선택자 인증/회사 승인 아님.",
+      "errors": [],
+      "human_review_queue": [
+        "로고 필요 여부·선택 미정",
+        "saman emphasis: 관측색의 가정·역할 적합성·선택자/실제 선택 확인",
+        "출력 해상도·최종 표시 크기 미정",
+        "로고/글자의 최종 배경 미정",
+        "최종 프레임·한국어/숫자·단위·자막·시청환경·움직이는 배경 검수",
+        "로컬 해시는 원문 무결성이다. 최신성/공식성/디자이너 identity·회사/운영 승인 증명 안 됨"
+      ],
+      "resolved_draft_candidates": [
+        {
+          "company_id": "saman",
+          "role": "emphasis",
+          "hex": "#F5821F",
+          "origin": "ci_color",
+          "use": "project_draft_candidate",
+          "review_status": "pending"
+        }
+      ],
+      "company_approved": false,
+      "fact_verified": false,
+      "human_selection_verified": false,
+      "operational_release": false
+    }
+  },
+  "reply_evidence_integrity": {
+    "path": "05_출처와검토/검수와사용범위/사람답변원문/2026-10-15_8회사CI_최신자료와산하AI부재.json",
+    "version_matches": true,
+    "sha256_matches": true,
+    "event_id": "HUMAN-R6-CI-20261015-001",
+    "scope_coverage": "partial",
+    "covered_scope_ids": [
+      "hanmac:latest_material",
+      "saman:latest_material",
+      "jangheon-industry:latest_material",
+      "ptc:latest_material",
+      "halla:latest_material",
+      "baron:latest_material",
+      "sanha:latest_material",
+      "jangheon:latest_material"
+    ],
+    "unresolved_scope_ids": [
+      "hanmac:usage_guide",
+      "saman:usage_guide",
+      "jangheon-industry:usage_guide",
+      "ptc:usage_guide",
+      "halla:usage_guide",
+      "baron:usage_guide",
+      "sanha:usage_guide",
+      "jangheon:usage_guide"
+    ],
+    "authority_scope": "content_statement_only",
+    "identity_authenticated": false,
+    "company_approved": false,
+    "permission_granted": false
+  },
+  "confirmed_scope": [
+    "사본의 R6 회신은 제공 CI 8회사 자료의 최신성 진술만 일부 확인으로 기록됨",
+    "산하종합기술은 원래 Illustrator 원본이 없다는 추가 진술",
+    "위 회신 원문 파일의 버전과 SHA256이 접수대장 pin과 일치"
+  ],
+  "not_confirmed": [
+    "CI 사용 가이드 전체·보호공간·최소크기·허용형",
+    "관측색의 공식 sRGB 자격·프로필",
+    "실제 시안의 선택자 신원·내용 품질·회사 승인·운영 배포",
+    "R6/R7 전체 문맥·고정 목록 연결 완전 검사"
+  ],
+  "memo_decision": "참고 의견은 실제 사용자 결정/검수 답변이 아니다. 최신성 진술을 새 시안 승인으로 전용하거나 검수 대기를 삭제하지 않았다. 대장에 검수자나 통과 이벤트를 생성하지 않았다.",
+  "review_proposal": {
+    "question": "이번 시안의 대상 ID/버전과 실제 시안 근거에 연결해 별도 내용 검수를 어떻게 진행할지 검토가 필요하다. 실제 질문/접수는 수행하지 않았다.",
+    "options": [
+      {
+        "key": "A",
+        "label": "기존 pending 유지, 지정 백업 경로 문제 해결 후 좁은 수정만 적용하고 실제 시안 근거로 별도 검수",
+        "recommended": true
+      },
+      {
+        "key": "B",
+        "label": "시안과 출력 조건을 확보한 뒤 대상 버전별 부분 검수",
+        "recommended": false
+      },
+      {
+        "key": "C",
+        "label": "담당자가 확인 가능한 항목만 별도 질문하고 나머지는 미확인 유지",
+        "recommended": false
+      },
+      {
+        "key": "D",
+        "label": "근거가 확보되지 않으면 후보 비교/적용 판단을 보류",
+        "recommended": false
+      }
+    ],
+    "reason": "CI 최신성 확인은 개별 시안과 회사 권한 검수가 아니며 기존 선택/검수 상태 유지 요청을 따른다."
+  },
+  "scope": "합성 수행사본 한정. 자산은 구조/파일 존재·해시/참조 무결성만 검사. 미디어 해석 없음.",
+  "full_R6_R7_validation_performed": false,
+  "company_approved": false,
+  "operational_release": false
+}

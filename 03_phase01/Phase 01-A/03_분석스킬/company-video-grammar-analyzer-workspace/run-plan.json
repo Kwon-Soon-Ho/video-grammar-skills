@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-10-16T06:12:07.740900+00:00",
+  "user_authorization": "A3 스킬 작성, 기존6항목+UI선택변경 시험과 문제 보완",
+  "cases": [
+    "T01",
+    "T02",
+    "T03",
+    "T04",
+    "T05",
+    "T06",
+    "T07"
+  ],
+  "paired_runs": true,
+  "historical_baseline_reused_as_current": false,
+  "concurrency": 3,
+  "scheduling": "four clean-context batches queued within same user turn; withA T01-03, withoutA T01-03, withB T04-07, withoutB T04-07",
+  "human_gold": "T01-T06 existing receipts only; T07 AI reference, not user-confirmed",
+  "no_unseen_generalization": true,
+  "audio_reviewed": false
+}

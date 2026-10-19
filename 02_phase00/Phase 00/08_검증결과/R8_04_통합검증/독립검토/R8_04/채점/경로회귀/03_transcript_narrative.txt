@@ -1,0 +1,61 @@
+# 실제 실행 transcript
+
+지정 task 및 스킬/참조/자료를 읽은 후 실행. 실제 Python은 위 지정 경로이며 -B, PYTHONUTF8=1, PYTHONIOENCODING=utf-8 사용.
+초기 안내 조회: 14_스킬재구성/R8_현재사용안내.md 및 현재상태_정정표.json 둘 다 읽기 성공. 01_진행현황.md Test-Path=False.
+선행 셸 조회 1회는 foreach 뒤 파이프 구문 오류(exit 1), DB 변경 없음. 스크립트 작성 도구 1회 JS 구문 오류로 미실행, DB 변경 없음. 이 스크립트의 경로 조회로 대체한다.
+허용/필수 선정: 지정 guidance/version 최소 변경, 다른 필드 유지, 원문 bytes/SHA, 변경 전 backup, 저장 후 검사, 실패 시 외부변경 보호. 영상 가독성/동기화/효과·회사 승인은 이 문서 변경의 대상이 아니며 실행하지 않는다.
+
+## 01_read
+명령: "D:\00작업\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\Phase 00\.환경\Scripts\python.exe" -B "C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\5_경로보완회귀\eval-03-검토자_외부변경\candidate\시험IO.py" "C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\5_경로보완회귀\eval-03-검토자_외부변경\candidate" "C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\5_경로보완회귀\eval-03-검토자_외부변경\candidate\outputs\01_read.request.json"
+exit: 0
+stdout:
+[원문기계블록은개별CLI로직접대조]
+stderr:
+[원문기계블록은개별CLI로직접대조]
+
+## 02_backup
+명령: "D:\00작업\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\Phase 00\.환경\Scripts\python.exe" -B "C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\5_경로보완회귀\eval-03-검토자_외부변경\candidate\시험IO.py" "C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\5_경로보완회귀\eval-03-검토자_외부변경\candidate" "C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\5_경로보완회귀\eval-03-검토자_외부변경\candidate\outputs\02_backup.request.json"
+exit: 0
+stdout:
+[원문기계블록은개별CLI로직접대조]
+stderr:
+[원문기계블록은개별CLI로직접대조]
+변경 전 backup 실제 bytes/SHA 원문과 일치 확인.
+
+## 03_write
+명령: "D:\00작업\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\Phase 00\.환경\Scripts\python.exe" -B "C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\5_경로보완회귀\eval-03-검토자_외부변경\candidate\시험IO.py" "C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\5_경로보완회귀\eval-03-검토자_외부변경\candidate" "C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\5_경로보완회귀\eval-03-검토자_외부변경\candidate\outputs\03_write.request.json"
+exit: 0
+stdout:
+[원문기계블록은개별CLI로직접대조]
+stderr:
+[원문기계블록은개별CLI로직접대조]
+
+## 04_validate
+명령: "D:\00작업\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\Phase 00\.환경\Scripts\python.exe" -B "C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\5_경로보완회귀\eval-03-검토자_외부변경\candidate\시험IO.py" "C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\5_경로보완회귀\eval-03-검토자_외부변경\candidate" "C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\5_경로보완회귀\eval-03-검토자_외부변경\candidate\outputs\04_validate.request.json"
+exit: 2
+stdout:
+[원문기계블록은개별CLI로직접대조]
+stderr:
+[원문기계블록은개별CLI로직접대조]
+
+## 05_read_after_validate
+명령: "D:\00작업\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\Phase 00\.환경\Scripts\python.exe" -B "C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\5_경로보완회귀\eval-03-검토자_외부변경\candidate\시험IO.py" "C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\5_경로보완회귀\eval-03-검토자_외부변경\candidate" "C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\5_경로보완회귀\eval-03-검토자_외부변경\candidate\outputs\05_read_after_validate.request.json"
+exit: 0
+stdout:
+[원문기계블록은개별CLI로직접대조]
+stderr:
+[원문기계블록은개별CLI로직접대조]
+
+## 06_final_read
+명령: "D:\00작업\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\Phase 00\.환경\Scripts\python.exe" -B "C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\5_경로보완회귀\eval-03-검토자_외부변경\candidate\시험IO.py" "C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\5_경로보완회귀\eval-03-검토자_외부변경\candidate" "C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\5_경로보완회귀\eval-03-검토자_외부변경\candidate\outputs\06_final_read.request.json"
+exit: 0
+stdout:
+[원문기계블록은개별CLI로직접대조]
+stderr:
+[원문기계블록은개별CLI로직접대조]
+
+## 최종 확인 및 미복구 결정
+서비스 이벤트 001~006을 실제 읽고 사본 보존. 최종 실제 SHA: 5e895932a8d41333928147b25e78b24d5bb9ee9b54f86780a296b6ac87160d46
+후보 SHA와 다르고 외부 notes가 추가되어 restore/write 재시도 없음. 환경 validate exit 2 그대로 기록. 요청 guidance/version은 남아 있으나 부분 실패이며 미복구.
+기존 다른 필드 값 비교: {"id": true, "status": true, "purpose": true, "counterexample": true, "source_scope": true}
+실행 코드·후보·원문관측·backup 확인·요청·실제 CLI stdout/stderr/exit·서비스 이벤트·diff·현재경로 확인·결과 md/json 보존 완료.

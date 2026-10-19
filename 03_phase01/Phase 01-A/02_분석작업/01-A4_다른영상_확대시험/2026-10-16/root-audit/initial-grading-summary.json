@@ -1,0 +1,47 @@
+{
+  "type": "diagnostic-only",
+  "initial_runs": 14,
+  "frozen_checks_per_mode": 35,
+  "post_hoc_caption_checks_per_mode": 2,
+  "issues": [
+    {
+      "id": "A4-C01",
+      "case": "V05",
+      "kind": "exit motion omission",
+      "affected": "with_skill and without_skill",
+      "retest": "iteration-2/eval-V05"
+    },
+    {
+      "id": "A4-C02",
+      "case": [
+        "V06S",
+        "V06W"
+      ],
+      "kind": "wrong prior subtitle state",
+      "affected": "with_skill; baseline correct",
+      "retest": "iteration-2/eval-V06S and V06W"
+    },
+    {
+      "id": "A4-T01",
+      "kind": "validator accepted cross-source/wrong-time fixtures",
+      "scope": "helper gap, not an observed agent provenance error",
+      "fix": "catalog join and pixel-exact crop validation"
+    }
+  ],
+  "quantitative_general_accuracy": null,
+  "followup_issues": [
+    {
+      "id": "A4-C03",
+      "phase": "targeted retest root review",
+      "case": [
+        "V06S",
+        "V06W"
+      ],
+      "kind": "easing overclaim from stop-only or sub-uncertainty differences",
+      "resolution": "analysis author changed schedule document easing to unknown after evidence review; no fresh independent rerun",
+      "before_snapshot": "root-audit/retest-variant-before-root-review",
+      "change_record": "retest-variant/final-review-changes.json",
+      "skill_change": "Compare at least two ongoing motion intervals; retain stop as stop rather than infer deceleration"
+    }
+  ]
+}

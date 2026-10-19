@@ -1,0 +1,323 @@
+{
+  "review_id": "REV-C-review-01",
+  "target": {
+    "id": "REV-C",
+    "version": "0.1.0",
+    "path": "검토자료/기준안.md",
+    "type": "지식·규칙 초안",
+    "scope": "C1~C6 문서 적용성",
+    "sha256": "331c151e1e6df89052c0936f334456c6196741f447d3fe59f3584b28ed850599"
+  },
+  "context": {
+    "purpose": "Phase 00 기준 채택 가능성 검토",
+    "example": "균일 유동 가정 등속 화살표·정지 정의·동일 구성 공법 비교",
+    "audience_topic_knowledge": "unknown",
+    "medium": "미제공",
+    "silent": "미제공",
+    "aspect_ratio": "미제공",
+    "actual_media_available": false
+  },
+  "criteria": {
+    "id": "r7-quality-criteria",
+    "version": "0.1.1",
+    "company_mandatory": false,
+    "selection_basis": "C1~C6의 목적·숙련도·문구·구도·읽기 유지·이징·출처·일반화 주장에 필요한 문서 검토 항목만 선정",
+    "selection_changes": [],
+    "selected": [
+      {
+        "id": "Q-INFO-01",
+        "required": true,
+        "reason": "C2 숙련도 추정·설명 수준"
+      },
+      {
+        "id": "Q-TEXT-03",
+        "required": true,
+        "reason": "C4 32자·2줄 보편화"
+      },
+      {
+        "id": "Q-SCREEN-02",
+        "required": true,
+        "reason": "C4 구도·밀도와 대칭 비교"
+      },
+      {
+        "id": "Q-MOTION-01",
+        "required": true,
+        "reason": "C4 수량보다 정보 완성·읽기 유지"
+      },
+      {
+        "id": "Q-MOTION-03",
+        "required": true,
+        "reason": "C1 등속 금지·C4 장식 강제"
+      },
+      {
+        "id": "Q-TRUST-01",
+        "required": true,
+        "reason": "C5 문서 출처와 판본·해시 연결에 한정 적용"
+      },
+      {
+        "id": "Q-TRUST-02",
+        "required": true,
+        "reason": "C2 효과 보장·C3 회사 의무화·C6 전체 통과"
+      }
+    ],
+    "unselected_detail_status": "미검수",
+    "non_applicable_scopes": [
+      "CI/색/실제 UI 사용 규칙: 해당 안에 없음",
+      "실제 영상 품질 검사: 지식 초안이 대상이며 영상 판정 요청이 아님",
+      "PTS/공간 좌표: 비공간 문서 주장 검토"
+    ]
+  },
+  "readiness": {
+    "recommendation": "현재 판본 채택 수정필요",
+    "overall_ready": false,
+    "actual_video_pass": false,
+    "human_content_review_complete": false,
+    "company_approved": false,
+    "score": null,
+    "reason": "필수 지침 오류와 설명 수준·실제 적용 조건의 판단보류가 남음"
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "location": "C1",
+      "criteria": [
+        "Q-MOTION-03"
+      ],
+      "progress": "문서 검토 완료",
+      "verdict": "수정필요",
+      "cause_group": "무조건 이징·중복 감점",
+      "evidence": [
+        "02_원칙과레이아웃/모션과정보전달원칙.json v0.1.2 principles[id=AP-06] v0.1.1 consider_when; overlap_policy",
+        "02_원칙과레이아웃/모션원칙_심화카드.json v0.1.2 AP-06 counterexample; MP-02 positive_example; duplicate_failure_policy",
+        "02_원칙과레이아웃/04_모션원칙_충돌과예외.md MC-01"
+      ],
+      "impact": "등속 가정 설명의 의미를 이징으로 왜곡; 같은 실패 이중 집계",
+      "minimal_change": "목적에 맞는 등속 허용, AP/MP 연결은 유지하되 같은 원인·대상·범위 중복 감점 금지",
+      "keep": "제공된 등속 화살표의 조건부 유지",
+      "limits": "실측 유동 검증·실제 곡선 관측 없음",
+      "recheck": "새 문구와 목적·실측/가정 구분 대조"
+    },
+    {
+      "id": "F2",
+      "location": "C2",
+      "criteria": [
+        "Q-INFO-01",
+        "Q-TRUST-02"
+      ],
+      "progress": "문서 검토 완료",
+      "verdict": "수정필요",
+      "cause_group": "조사 범위·효과·숙련도 과잉 일반화",
+      "evidence": [
+        "02_원칙과레이아웃/모션과정보전달원칙.json IP-10 v0.1.2 scope/interpretation_origin/unknown_policy",
+        "02_원칙과레이아웃/모션원칙_심화카드.json v0.1.2 IP-10 source_read_depth=publisher_summary",
+        "05_출처와검토/출처목록.json v0.1.1 SRC-R3-EXPERTISE-SUMMARY locator/verification",
+        "02_원칙과레이아웃/04_모션원칙_충돌과예외.md MC-07"
+      ],
+      "impact": "필수 정보 삭제·사전지식 오판·효과 과장",
+      "minimal_change": "공식 Summary 조건부 참고로 한정; 부서 기반 초보 확정·항상 최대 단순화 삭제",
+      "keep": "근거가 있을 때 입문 설명과 숙련자 요약 비교",
+      "limits": "실제 사전지식 unknown; 학술 장 전체·효과 시험 미검토",
+      "related_holds": [
+        "H1"
+      ],
+      "recheck": "주제 사전지식 근거와 수정 문구 연결"
+    },
+    {
+      "id": "F3",
+      "location": "C3",
+      "criteria": [
+        "Q-TRUST-02"
+      ],
+      "progress": "문서 검토 완료",
+      "verdict": "수정필요",
+      "cause_group": "연결 후보의 정식 분류·회사 의무화",
+      "evidence": [
+        "02_원칙과레이아웃/추가모션체계_연결후보.json v0.1.2 status/company_approved/rows",
+        "02_원칙과레이아웃/05_추가모션체계_연결검토.md 도입·출처 범위",
+        "05_출처와검토/사용자결정.json DECISION-R3-MOTION-SCOPE-A"
+      ],
+      "impact": "새 ID·미승인 회사 규칙 생성",
+      "minimal_change": "기존 원칙 연결 후보로 유지; 신규 정식 UX-01~12·회사 필수화 삭제",
+      "keep": "Easing→AP-06/MP-02 등 조건부 연결",
+      "limits": "UX-CAND 식별자는 정식 분류 승인 아님; 임베드/사용성 독립 시험 없음",
+      "recheck": "새 기준안의 후보·회사 규칙 구분"
+    },
+    {
+      "id": "F4",
+      "location": "C4",
+      "criteria": [
+        "Q-TEXT-03",
+        "Q-SCREEN-02",
+        "Q-MOTION-01",
+        "Q-MOTION-03"
+      ],
+      "progress": "문서 검토 완료",
+      "verdict": "수정필요",
+      "cause_group": "외부 미적 취향의 무조건 이식",
+      "evidence": [
+        "05_출처와검토/스킬심층검토/02_원문과참조_검토결과.md Taste/Impeccable/LottieFiles 절의 제외·수정 및 반례",
+        "02_원칙과레이아웃/화면설계원칙.json v0.1.1 SCREEN-TYPE-KO/SCREEN-TIME-READ/SCREEN-CHOICE",
+        "02_원칙과레이아웃/08_화면설계_적용기준과반례.md 한국어 타이포·시간적 가독성·내용 기반 구도"
+      ],
+      "impact_by_location": [
+        "사진4장/모션8개: 과정·읽기 유지 손상",
+        "32자/2줄: 필수 문구·수치 관계 손실",
+        "항상 비대칭·정지 탈락: 동일 구성 비교와 정의 읽기 손상"
+      ],
+      "minimal_change": "수량·글자·줄·구도 일률 강제 제거; 정보 관계·실제 언어·시청 조건을 기준으로 조건화",
+      "keep": "정지 정의·대칭/반복 비교; 목적에 맞는 비대칭·장식도 선택 가능",
+      "limits": "웹 px/ms·hover/scroll을 영상 규칙으로 전용 불가; 실제 조판·시간 미검수",
+      "related_holds": [
+        "H2"
+      ],
+      "recheck": "수정 지침의 의미 보존과 실제 적용 자료 확보 후 가독성 검수"
+    },
+    {
+      "id": "F5",
+      "location": "C5 및 검토자료/출처참조.json",
+      "criteria": [
+        "Q-TRUST-01"
+      ],
+      "progress": "경로·판본·실제 바이트 SHA·내용 대조 완료",
+      "verdict": "수정필요",
+      "cause_group": "참조 무결성과 의미 지지 혼동",
+      "evidence": [
+        "검토자료/출처참조.json 전체",
+        "02_원칙과레이아웃/모션과정보전달원칙.json 최상위 version; AP-06.version/consider_when",
+        "02_원칙과레이아웃/모션원칙_심화카드.json core_ref"
+      ],
+      "path_exists": true,
+      "claimed_record_version": "0.1.1",
+      "actual_record_version": "0.1.1",
+      "record_version_match": true,
+      "actual_file_version": "0.1.2",
+      "claimed_file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "actual_file_sha256": "249ef6b9e7b14ff62f41352922be2f00e748c8b10debb4d4992b580364e0daa5",
+      "sha_match": false,
+      "supports_C1": false,
+      "impact": "잘못된 검증 완료와 반대 문장 인용",
+      "minimal_change": "실제 파일/레코드 판본·SHA 정정 제안과 문장별 지지 대조를 분리",
+      "input_modified": false,
+      "limits": "해시 일치만으로 주장 지지·최신 원격 원문 확인 불가",
+      "recheck": "정정된 인용과 기준안 주장 내용 모두 재대조"
+    },
+    {
+      "id": "F6",
+      "location": "C6",
+      "criteria": [
+        "Q-TRUST-02"
+      ],
+      "progress": "운영 기준 대조 완료",
+      "verdict": "수정필요",
+      "cause_group": "미관 총점의 전체 품질 대체",
+      "evidence": [
+        "13_품질검수/03_판정운영기준.md 네 가지 항목 판정/준비상태는 목적과 범위를 붙인 제안",
+        "13_품질검수/품질항목_정본.json v0.1.1 scope/selection_rule/actual_media_review/company_approved"
+      ],
+      "impact": "핵심 오류·미검수·사람 대기를 미관으로 상쇄",
+      "minimal_change": "단일 총점/전체 통과 삭제, 항목별 판정·진행·보류·재검수 조건 기록",
+      "limits": "현재 회사 승인·실제 영상 검수 없음",
+      "recheck": "필수 오류/보류 해소와 항목별 기록 확인"
+    }
+  ],
+  "holds": [
+    {
+      "id": "H1",
+      "location": "C2",
+      "verdict": "판단보류",
+      "confirmed": "주제 사전지식에 따른 조건부 조정 근거의 DB 범위",
+      "missing": "실제 시청자와 사전지식·필수 전달 내용",
+      "owner": "기획 책임자·주제 내용 담당자",
+      "resolution": "자유 답변과 근거를 해당 판본에 연결",
+      "question": "Q1"
+    },
+    {
+      "id": "H2",
+      "location": "C1·C4 및 제공 사례 실제 적용",
+      "verdict": "판단보류",
+      "confirmed": "등속·정지 정의·동등 비교를 일괄 탈락시킬 근거가 없음",
+      "missing": "실측/가정 구분·원문·비교 항목·매체·무음·화면비·실제 표시/재생 조건",
+      "owner": "기술·기획·디자인 검수자, 필요시 실제 시청자",
+      "resolution": "해당 적용 자료로 기술 의미와 실제 가독성·유지시간을 검수",
+      "question": "Q2"
+    }
+  ],
+  "human_questions": [
+    {
+      "id": "Q1",
+      "type": "사실 확인",
+      "target": "REV-C v0.1.0 C2",
+      "status": "제안만/미발송/회신 없음",
+      "role": "기획 책임자·주제 내용 담당자",
+      "prompt": "실제 시청자와 해당 주제 사전지식을 확인할 자료·필수 전달 내용은 무엇인가? 자유 답변과 근거를 제시해 달라.",
+      "confirmed_scope": "IP-10 요약 기반 조건부 적용",
+      "missing_scope": "실제 대상 지식"
+    },
+    {
+      "id": "Q2",
+      "type": "사실 확인",
+      "target": "검토요청의 제공 사례 및 REV-C v0.1.0 C1·C4",
+      "status": "제안만/미발송/회신 없음",
+      "role": "기술·기획 담당자",
+      "prompt": "화살표는 가정 설명인가 실측 표현인가? 정의 원문·비교 공통항목과 관계 근거는 무엇인가? 실제 적용 시 매체·화면비·무음/음성과 시청 조건을 제시해 달라.",
+      "confirmed_scope": "제공 사례 설명과 지침 대조",
+      "missing_scope": "기술 사실·실제 적용 조건"
+    },
+    {
+      "id": "Q3",
+      "type": "운영 선택",
+      "target": "REV-C v0.1.0 C3·C6의 새 회사 필수화 추진 시만",
+      "status": "조건부 제안만/미발송/회신 없음",
+      "role": "품질 운영 책임자·회사 규칙 권한 담당",
+      "prompt": "새 회사 필수화 추진의 후속 경로를 선택할 때 검토할 안",
+      "options": [
+        {
+          "id": "A",
+          "text": "기존 결정대로 연결 후보와 항목별 조건부 검토 유지",
+          "recommended": true,
+          "reason": "현재 근거 범위와 일치"
+        },
+        {
+          "id": "B",
+          "text": "목적/대상/매체를 정한 소규모 시범 후 재검토"
+        },
+        {
+          "id": "C",
+          "text": "필요한 원문·표본·실제 시청 검토 확보 후 별도 회사 규칙 제안"
+        },
+        {
+          "id": "D",
+          "text": "회사 공통화 중단, 프로젝트별 제안만 보존"
+        }
+      ],
+      "not_required_for_current_review": true
+    }
+  ],
+  "source_limits": {
+    "remote_opened": false,
+    "remote_latest_verified": false,
+    "AP06": "DB 심화카드의 공개 기사 6. Ease In, Ease Out 절 기록",
+    "MP02": "공개 강의 개요 Lesson 2 / Eases; 본문 요약 null, 상세는 프로젝트 해석",
+    "IP10": "2021 Chapter 13 publisher Summary/DOI 10.1017/9781108894333.017; 장 전체·실험·진단도구 미검토",
+    "old_expertise_entry": "SRC-CAM-EXPERTISE는 목차 명칭 확인 이력; 현재 IP-10의 요약 출처와 구분",
+    "UX12": "저자 12개 설명 기록; 임베드 움직임·효과 독립 시험 없음",
+    "R3_transfer": "제공 다섯 분야 발췌만; 원문/코드·전수·라이선스/최신성 미확인",
+    "R7": "조사기록 v0.1.1 WEB-MOTION은 Carbon v10 보존 UI 지정 절; WEB-KO는 2026-03-21 Group Note Draft 지정 절"
+  },
+  "execution": {
+    "input_modified": false,
+    "baseline_modified": false,
+    "new_screen_created": false,
+    "network": false,
+    "CU": false,
+    "AE": false,
+    "API": false,
+    "Claude_CLI": false,
+    "additional_agents": false,
+    "actual_human_question": false,
+    "R4_R5_checker_run": false,
+    "full_R6_R7_check": false,
+    "video_measurements": false,
+    "transcript": "../transcript.md"
+  }
+}

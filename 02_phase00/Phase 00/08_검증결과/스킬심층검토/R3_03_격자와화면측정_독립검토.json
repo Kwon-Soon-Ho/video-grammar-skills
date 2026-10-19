@@ -1,0 +1,1394 @@
+{
+  "id": "R3-03-grid-screen-independent-static-review",
+  "version": "0.1.0",
+  "date": "2026-10-14",
+  "state": "selected_source_static_review_complete_knowledge_candidates_only",
+  "overall_R3_3_complete": false,
+  "source_base": "D:/00작업/2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증/Phase 00/backup/2026-10-14_R3_03_편집화면확장/스킬원본",
+  "scope": {
+    "selected_packages": [
+      "swiss-design",
+      "로컬스킬/pixel",
+      "로컬스킬/drawio-reconstruction"
+    ],
+    "authorization": "사용자 A: Phase00 지식 후보의 선택·설계. 설치, 원문 코드 실행, 정본 자동 변경, 새 화면 제작은 승인 범위에 포함하지 않음.",
+    "method": "선택 entry와 보존 upstream entry, 모든 확보된 내부 참조 본문, 메타데이터·LICENSE·README·agents와 Draw.io Python 5개 전체 정적 독해. 코드 실행 없음. 외부 URL과 다른 스킬은 미검토. acquisition 목록은 선택 패키지 레코드만 추출 대조.",
+    "D_modified": false,
+    "upstream_code_executed": false,
+    "installed_or_downloaded": false,
+    "new_agents": false,
+    "rendered_or_visually_compared": false,
+    "claimed_effectiveness": false
+  },
+  "read_summary": {
+    "selected_files": 50,
+    "package_counts": {
+      "swiss-design": 4,
+      "pixel": 18,
+      "drawio-reconstruction": 28
+    },
+    "full_static_text_files": 37,
+    "tree_metadata_files": 1,
+    "example_xml_structure_only": 3,
+    "png_hash_inventory_only": 9,
+    "full_text_includes": "Swiss SKILL/README/LICENSE 3; Pixel 18(로컬 및 upstream SKILL, source, LICENSE, pointer 2, reference 12); Drawio 16(로컬/upstream SKILL, source, LICENSE 2, README 2, agents 2, requirements, gitignore, scripts 5). source.json은 출처·원본 해시 메타데이터 독해이지 원 repo 전체 독해가 아님.",
+    "extra_outside_package": "Draw.io source.json의 original_path/agents/openai.yaml 302bytes를 개행 불일치 판별을 위해 전체 읽음. acquisition 목록 전체는 읽었다고 주장하지 않음.",
+    "partial_read_warning": "사례 .drawio는 XML 루트/셀 수/이미지 style 셀 수만 조사. 거대한 embedded payload와 도형의 시각·의미 정확성은 검토하지 않음. PNG 9개는 열지 않았음.",
+    "files": [
+      {
+        "package": "swiss-design",
+        "relative_path": "확보트리.json",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\swiss-design\\확보트리.json",
+        "bytes": 1082,
+        "sha256": "e918d93308c781ec99d7b59e6d1d80e67a9fa395fb57387355e4b02195cee22c",
+        "depth": "tree_metadata_only",
+        "executed": false
+      },
+      {
+        "package": "swiss-design",
+        "relative_path": "LICENSE",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\swiss-design\\LICENSE",
+        "bytes": 1069,
+        "sha256": "ae064428c6b8e2bea01f84903056b708f64efc2c895d995247544d91ec642185",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "swiss-design",
+        "relative_path": "README.md",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\swiss-design\\README.md",
+        "bytes": 2998,
+        "sha256": "cfdd37e1477585c162484e8349c7d69398ac518643754d4a03f8f78c0c7fdccd",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "swiss-design",
+        "relative_path": "SKILL.md",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\swiss-design\\SKILL.md",
+        "bytes": 44749,
+        "sha256": "b1947b84f85d2a02094be59bb49c5ceae382a71bf4482552cc2063cead8ef97f",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "relative_path": "_common",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\pixel\\_common",
+        "bytes": 10,
+        "sha256": "52e8b1d35c84766217d30a32c76ad5b0d8417c5c587cf59af0d4cb502080a229",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "relative_path": "reference/_common",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\pixel\\reference\\_common",
+        "bytes": 13,
+        "sha256": "725f2da8f8f89c674c600a8cb5e16c2a7726f2194448a239314a2eb58310268d",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "relative_path": "reference/animation-extraction.md",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\pixel\\reference\\animation-extraction.md",
+        "bytes": 9551,
+        "sha256": "77fe286583c470868ea80465de0b9558e346fd87b4ff68b214b334523a3423fe",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "relative_path": "reference/autorun-schema.md",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\pixel\\reference\\autorun-schema.md",
+        "bytes": 1049,
+        "sha256": "a333250cff744a3602ec960594b172fefd2554dbbf797bcb135b344fb429d3e2",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "relative_path": "reference/dark-mode-derivation.md",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\pixel\\reference\\dark-mode-derivation.md",
+        "bytes": 9565,
+        "sha256": "3926d54a542f28679ddd1098f6e9a5a875c627be8e1126b3323f5c68b713eaeb",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "relative_path": "reference/design-extraction.md",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\pixel\\reference\\design-extraction.md",
+        "bytes": 14066,
+        "sha256": "9936987defc1197e8a7e6e33b49525d4a65cef92dd9ba2222c348b54346a249f",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "relative_path": "reference/gap-analysis-report.md",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\pixel\\reference\\gap-analysis-report.md",
+        "bytes": 17710,
+        "sha256": "116d332629e3774fdee94ca003505270c069ea0e957f91558ee63e845307e0bb",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "relative_path": "reference/handoffs.md",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\pixel\\reference\\handoffs.md",
+        "bytes": 11073,
+        "sha256": "6725dd830d67ee6c636bd243e1ded912984be6a2118f4b4bca311d0e6f427aec",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "relative_path": "reference/lp-section-patterns.md",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\pixel\\reference\\lp-section-patterns.md",
+        "bytes": 18968,
+        "sha256": "8a8e6baaf638bb94c4bcbf2a1c7def7a9990e1eddd02470332fda64abbf0ba0f",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "relative_path": "reference/modern-css-baseline.md",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\pixel\\reference\\modern-css-baseline.md",
+        "bytes": 4261,
+        "sha256": "12d5ea92901cbcee6d32ae968218f7204a39d99703146dc005132a9993564939",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "relative_path": "reference/precision-spec.md",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\pixel\\reference\\precision-spec.md",
+        "bytes": 24124,
+        "sha256": "cddf1ff909cb4d744c6fc24b70b3d89cf41d9bb88812099a03bb625a3fe37c98",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "relative_path": "reference/recipe-dispatch.md",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\pixel\\reference\\recipe-dispatch.md",
+        "bytes": 4239,
+        "sha256": "21f64cad35300011bdc1430e5c17f2e8d6e047fa8c1858bd79accf378738e92d",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "relative_path": "reference/responsive-design.md",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\pixel\\reference\\responsive-design.md",
+        "bytes": 21694,
+        "sha256": "362c179636f45a2753aaacc249df4788eb94cbff0140f9f426a5811cda3f6354",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "relative_path": "reference/visual-verification.md",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\pixel\\reference\\visual-verification.md",
+        "bytes": 16141,
+        "sha256": "159d108b00c35fa5bf2367b1e713e02d597ac9cf9bc02032d48701aadfa3f290",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "relative_path": "SKILL.md",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\pixel\\SKILL.md",
+        "bytes": 2676,
+        "sha256": "dc744f4ee7de2dee6e1d3d0b43a7cc2897cb7df42e9b2b3eb492dfffc361afec",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "relative_path": "source.json",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\pixel\\source.json",
+        "bytes": 2307,
+        "sha256": "ea079e70cb55abc17d84aef93c242531ab809d48bd23491062be7b6da75ec46c",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "relative_path": "UPSTREAM_LICENSE",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\pixel\\UPSTREAM_LICENSE",
+        "bytes": 1056,
+        "sha256": "06dcddbb6908a0c6dd4a9e8ec822eea41d5a460a53089fecccc8a68049e99241",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "relative_path": "UPSTREAM_SKILL.md",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\pixel\\UPSTREAM_SKILL.md",
+        "bytes": 23869,
+        "sha256": "2b9ee88eded264caa7a378919855c432023adebe2c9a5a518aa387bda2787b6e",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "relative_path": ".gitignore",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\drawio-reconstruction\\.gitignore",
+        "bytes": 262,
+        "sha256": "73b943349cdedc959577ff6ac1089c54a6f69e7a246686967af8d195fe9142e2",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "relative_path": "agents/openai.yaml",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\drawio-reconstruction\\agents\\openai.yaml",
+        "bytes": 308,
+        "sha256": "04787a5ab39945079be8900a295f275a9e033703e9c5a8ea692364fdafcb7332",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "relative_path": "agents/UPSTREAM_openai.yaml",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\drawio-reconstruction\\agents\\UPSTREAM_openai.yaml",
+        "bytes": 306,
+        "sha256": "513b1641ea4d8bbe697c95de078949baba10f89286c4ce2e5d6f070e1049c653",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "relative_path": "assets/cases/data_lake_drawio.png",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\drawio-reconstruction\\assets\\cases\\data_lake_drawio.png",
+        "bytes": 492829,
+        "sha256": "a58af6e03d40bb5f61920f48369506684e8d889ab27f34b93278ef47e5fb0dfc",
+        "depth": "hash_inventory_only_not_viewed",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "relative_path": "assets/cases/data_lake_original.png",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\drawio-reconstruction\\assets\\cases\\data_lake_original.png",
+        "bytes": 1289583,
+        "sha256": "b51a8071730abd81ba2a977f882ee9678c3b981ba52261e56caf045e5713c629",
+        "depth": "hash_inventory_only_not_viewed",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "relative_path": "assets/cases/data_man_drawio.png",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\drawio-reconstruction\\assets\\cases\\data_man_drawio.png",
+        "bytes": 651847,
+        "sha256": "92a73390088852977d4d606770d451fd34073e1d0cec6a26bba591b124ebd636",
+        "depth": "hash_inventory_only_not_viewed",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "relative_path": "assets/cases/data_man_original.png",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\drawio-reconstruction\\assets\\cases\\data_man_original.png",
+        "bytes": 1875717,
+        "sha256": "2a8a1d41a5fba35be07f8968916cf44d607a886fd1f1ac6fcdf6d4e0ece872ed",
+        "depth": "hash_inventory_only_not_viewed",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "relative_path": "assets/cases/data_sci2_drawio.png",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\drawio-reconstruction\\assets\\cases\\data_sci2_drawio.png",
+        "bytes": 778923,
+        "sha256": "d0390e3a8b5007b628f7137dee30cd38d0a970e9a69823b7e0c0e76ff0e8bbc7",
+        "depth": "hash_inventory_only_not_viewed",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "relative_path": "assets/cases/data_sci2_original.png",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\drawio-reconstruction\\assets\\cases\\data_sci2_original.png",
+        "bytes": 1799262,
+        "sha256": "31e76e8db719ed22fec208746f00c24905d9dccc2b92cad8d65d6bba1e6ab77e",
+        "depth": "hash_inventory_only_not_viewed",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "relative_path": "examples/data_lake.drawio",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\drawio-reconstruction\\examples\\data_lake.drawio",
+        "bytes": 380343,
+        "sha256": "52ca629c2ea9f31a623b61f567fc5acfe318e858b84a4ebee824cf7c24f70218",
+        "depth": "xml_structure_only_not_full_content",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "relative_path": "examples/data_lake.png",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\drawio-reconstruction\\examples\\data_lake.png",
+        "bytes": 1289583,
+        "sha256": "b51a8071730abd81ba2a977f882ee9678c3b981ba52261e56caf045e5713c629",
+        "depth": "hash_inventory_only_not_viewed",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "relative_path": "examples/data_man.drawio",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\drawio-reconstruction\\examples\\data_man.drawio",
+        "bytes": 490095,
+        "sha256": "7b0bff7f8e573474cd79ada21ad692d3982270b984397e46d451f6c79c235289",
+        "depth": "xml_structure_only_not_full_content",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "relative_path": "examples/data_man.png",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\drawio-reconstruction\\examples\\data_man.png",
+        "bytes": 1875717,
+        "sha256": "2a8a1d41a5fba35be07f8968916cf44d607a886fd1f1ac6fcdf6d4e0ece872ed",
+        "depth": "hash_inventory_only_not_viewed",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "relative_path": "examples/data_sci2.drawio",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\drawio-reconstruction\\examples\\data_sci2.drawio",
+        "bytes": 416876,
+        "sha256": "fe00c2b1b0df5f8541a084bea99c6a4855c1bd7c87ac36b16999ed74cf30a895",
+        "depth": "xml_structure_only_not_full_content",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "relative_path": "examples/data_sci2.png",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\drawio-reconstruction\\examples\\data_sci2.png",
+        "bytes": 1799262,
+        "sha256": "31e76e8db719ed22fec208746f00c24905d9dccc2b92cad8d65d6bba1e6ab77e",
+        "depth": "hash_inventory_only_not_viewed",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "relative_path": "LICENSE",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\drawio-reconstruction\\LICENSE",
+        "bytes": 1074,
+        "sha256": "bfbb06eedaf5ab909b115b901bdc15942969f2bd51c71aee6ab9b6b84f22f0b8",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "relative_path": "README.md",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\drawio-reconstruction\\README.md",
+        "bytes": 8964,
+        "sha256": "370f90a35b2f973e5636d933c159b86c034652063818ef739e893693eb2cd86f",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "relative_path": "README.zh-CN.md",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\drawio-reconstruction\\README.zh-CN.md",
+        "bytes": 8623,
+        "sha256": "25b1999581518292cb1c99906c128918ef2ff37fdf188194511b1c81dcb5a525",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "relative_path": "requirements.txt",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\drawio-reconstruction\\requirements.txt",
+        "bytes": 13,
+        "sha256": "dce978a554b00caca70d59f539d25c61fcc89681e02d7fec42948cd5c3c0a127",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "relative_path": "scripts/batch_manifest.py",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\drawio-reconstruction\\scripts\\batch_manifest.py",
+        "bytes": 4172,
+        "sha256": "96df731d152de0a6b7a6fd594978ad02077e9deacfde1f3dc9f9d5b7af02adb9",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "relative_path": "scripts/batch_verify.py",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\drawio-reconstruction\\scripts\\batch_verify.py",
+        "bytes": 2853,
+        "sha256": "0c60633507a77560aeb892c724f76ee19e5ed086fa53a32ba642735972d41402",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "relative_path": "scripts/check_drawio.py",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\drawio-reconstruction\\scripts\\check_drawio.py",
+        "bytes": 11872,
+        "sha256": "4d8b8dfccc627eef2c9e9fb308bf5c64ef9377c669570a737f6fcaf41ddad732",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "relative_path": "scripts/crop_assist.py",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\drawio-reconstruction\\scripts\\crop_assist.py",
+        "bytes": 13347,
+        "sha256": "38102f26b6f376d377fda1c08df0c4ac57965c12d714bdd5774e260f4f4b51e4",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "relative_path": "scripts/export_drawio.py",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\drawio-reconstruction\\scripts\\export_drawio.py",
+        "bytes": 3378,
+        "sha256": "5a277807711fe2759e2b4d6f80a5cce60272b5038871b224989c972cb2386faa",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "relative_path": "SKILL.md",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\drawio-reconstruction\\SKILL.md",
+        "bytes": 2319,
+        "sha256": "2f1ecda4e96fc8623b8e9b3db2b850b2ddb59e3441536a5f3708d2f9f070d646",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "relative_path": "source.json",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\drawio-reconstruction\\source.json",
+        "bytes": 3307,
+        "sha256": "70c01cabb65f938b2b38db385e4b4e24f4905841ab063f5c7eb5f57ee9dfacd4",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "relative_path": "UPSTREAM_LICENSE",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\drawio-reconstruction\\UPSTREAM_LICENSE",
+        "bytes": 1028,
+        "sha256": "b35c958b79726c115cf817635abcbc2aa1121cae5e9a1c22819f7c44f58fcaf0",
+        "depth": "full_static_text",
+        "executed": false
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "relative_path": "UPSTREAM_SKILL.md",
+        "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\로컬스킬\\drawio-reconstruction\\UPSTREAM_SKILL.md",
+        "bytes": 21671,
+        "sha256": "ccc4e5fa5ccd4d7f8a33f88c241d8df2e951f015d2dadfbaa5506d323ea38441",
+        "depth": "full_static_text",
+        "executed": false
+      }
+    ]
+  },
+  "findings": [
+    {
+      "id": "GRID-01",
+      "priority": "high",
+      "topic": "Swiss의 웹 스타일 취향을 회사 영상의 금지·필수 규칙으로 이식하면 안 됨",
+      "evidence": [
+        "swiss-design/SKILL.md:22,39,55,104,275-279,487-494,724,741-755",
+        "swiss-design/SKILL.md:131-156,658",
+        "swiss-design/README.md"
+      ],
+      "finding": "원문은 International Typographic Style for web이며 비대칭·특정 폰트군·단일 accent·3동등카드 및50:50 금지·Lenis 설치·ambient/grain를 강하게 요구한다. 브랜드 3색 중 하나 삭제까지 권한다. 이는 저자 스타일 처방이며 회사 CI, 동등 비교, 3개 병렬 분류, 한글 글꼴·프레임 안전영역의 정답을 입증하지 않는다. 문서의 every premium site 주장과 코드/문서만으로 성능·품질 효과도 확인되지 않았다.",
+      "phase00_fix": "출처 성격=웹 스타일 처방. 일관된 정렬·공백·정보 위계만 선택 후보로 재서술하고 한국어/회사 CI/동등 비교 예외를 같은 카드에 붙임. 12열·rem·clamp·65~75ch·768px·특정 폰트는 원문 예시로 보존하고 회사 기본값으로 승격하지 않음. 상용 폰트는 실제 사용권 별도 확인.",
+      "example": "동일 중요도의 공법 3개를 3동등패널로 비교하며 레이블·수치·단위를 보존.",
+      "counterexample": "Swiss 분위기를 이유로 승인된 3색 CI를 1색으로 줄이거나 Poppins/회사 한글 폰트를 금지하고 수치 그래프의 축을 비대칭 미학에 맞추어 왜곡.",
+      "execution_gate": "웹 구현 검토·설치·새 화면 제작은 별도 단계. 이 패키지에는 수치 그래프 축 정확성 검증 코드가 없음."
+    },
+    {
+      "id": "GRID-02",
+      "priority": "high",
+      "topic": "Swiss starter의 접근성·커서 완성 주장과 실제 포함 코드 간 차이",
+      "evidence": [
+        "swiss-design/SKILL.md:375-383,506-550,821-887"
+      ],
+      "finding": "완성 skeleton은 body cursor:none와 opacity:0인 cursor 요소를 포함하나 마우스 이벤트/표시 제어 코드를 포함하지 않는다. 별도 앞절의 cursor JS를 합치지 않은 skeleton에서는 포인터 가시성을 보장하지 않는다. skeleton의 reduced-motion 절은 duration만 줄이고 앞절의 iteration-count:1 및 ambient animation:none를 누락하며 ambient는 infinite이다. Lenis rAF는 조건 없이 계속 호출하고 CDN import도 버전 고정이 없다. skeleton ships custom cursor/reduced-motion이라는 주장을 그대로 완료 증거로 쓸 수 없다.",
+      "phase00_fix": "원문 예제의 포함/누락을 기록하고 runtime 도입 보류 유지. 모션 감소 조건은 장식 루프 중지, 의미 상태 유지, JS 모션 조건 적용을 구분해 후보화. 고정 버전/실제 환경 검증 전 실행 안전·호환성·60fps 주장 금지.",
+      "example": "영상용 지식 카드에는 장식 모션을 생략해도 전달 내용·현재 상태가 유지되는 정적 대안을 함께 기록.",
+      "counterexample": "duration:0.01ms만 복사하고 모든 장식 루프가 중지되었다고 판정하거나 MP4에 prefers-reduced-motion이 자동 반영된다고 주장."
+    },
+    {
+      "id": "GRID-03",
+      "priority": "high",
+      "topic": "관측·측정 추정·설계/구현 가설 분리 및 좌표·시간 계약 보강",
+      "evidence": [
+        "로컬스킬/pixel/SKILL.md",
+        "로컬스킬/pixel/UPSTREAM_SKILL.md:69-72,194-218",
+        "로컬스킬/pixel/reference/design-extraction.md:37-38,154-179,249-257,316",
+        "로컬스킬/pixel/reference/precision-spec.md:73,249",
+        "로컬스킬/pixel/reference/animation-extraction.md:3-14",
+        "로컬스킬/pixel/reference/responsive-design.md:5,Derivation Methodology"
+      ],
+      "finding": "로컬 entry는 측정/추정/AE 구현 가설을 분리하고 웹 격자 snapping과 점수 합격으로 필수 결함을 덮지 못하도록 적절히 축약했다. 반면 upstream refs는 16px 기준을 HIGH로 쓰고 4/8px snapping, HIGH>=90% 확률형 라벨, CSS 구현 추정 등을 제공한다. 정지화면의 ghost/blur는 실제 속도·hold·loop·자막 타이밍의 관측 근거가 아니다. refs의 breakpoint와 touch target/scroll 조건도 MP4 화면비·시간 계약이 아니다.",
+      "phase00_fix": "관측 문자열과 원본 bbox를 immutable로 기록하고 정규화/격자/타이포 제안을 별도 필드로 저장. source image width/height, crop offset, scale/DPR, 좌표계 원점·단위, 원본 bbox와 comp bbox 변환, 시점/frame/fps, 근거 종류 및 추정 범위를 명시. 한글 줄바꿈·글꼴·자막 안전영역·노출 시간은 한국어 실제 렌더/영상 자료 없으면 pending. CSS 대응은 AE 관측 결과로 증명하지 않음.",
+      "example": "1536x864 원본에서 관측 bbox와 crop offset를 기록하고 1920x1080 적용안은 독립 변환식·검수 조건으로 제안.",
+      "counterexample": "관측 19px 간격을 16px로 반올림한 뒤 이를 실측값으로 저장하거나 정지 ghost를 보고 400ms ease/자막2초를 확정.",
+      "stage_boundary": "Phase00는 기록 필드·후보 원칙까지. 실제 영상 관측과 fps/시간 추출은 01A, 새 화면·배치 결정은02, AE 구현 검증은 해당 실행 단계."
+    },
+    {
+      "id": "GRID-04",
+      "priority": "high",
+      "topic": "Pixel 점수·회귀·자동 검증 예시는 효과와 필수 통과의 증거가 아님",
+      "evidence": [
+        "로컬스킬/pixel/reference/gap-analysis-report.md:169-198,229-237",
+        "로컬스킬/pixel/reference/precision-spec.md:466-514",
+        "로컬스킬/pixel/reference/visual-verification.md",
+        "로컬스킬/pixel/reference/animation-extraction.md"
+      ],
+      "finding": "점수식과 예시가 불일치한다: Layout MAJOR1/MINOR2/COSMETIC1이면89.5이나92로 표기; Accessibility BLOCKING2/MAJOR1이면34이나70; Adjusted식은 최대5% 상대 할인인데 Color78→70은 그 식으로 나오지 않는다. verifyDesignSpec 함수는 designSpec 인자를 비교에 사용하지 않고 computedVars도 활용하지 않으며 일부 selector의 computed style을 반환한다. threshold·마스킹·정지 캡처·3회/90% 기준은 작성자 예시이고 전체 화면·숫자/자막·CI·실제 시간 품질의 검증이 아니다.",
+      "phase00_fix": "점수식/예시를 참고 대상으로 보류하고 90% 합격 규칙을 들이지 않음. feature별 required/observed/estimated/unverified/failed와 직접 근거를 우선. 마스킹한 영역은 별도 검수하며 동영상 시간 검수는 따로 설계. computed style 수집을 기대값 대조 테스트라고 부르지 않음.",
+      "example": "배경은 맞아도 로고 비율이나 도표 수치가 틀리면 해당 required feature 실패 유지.",
+      "counterexample": "대부분 배경 픽셀이 같다는90% 점수로 사라진 자막·틀린 공법명·왜곡된 CI를 통과."
+    },
+    {
+      "id": "GRID-05",
+      "priority": "medium",
+      "topic": "선택 참조 독해와 원본 호출·실행 폐쇄의 구분",
+      "evidence": [
+        "로컬스킬/pixel/_common",
+        "로컬스킬/pixel/reference/_common",
+        "로컬스킬/pixel/UPSTREAM_SKILL.md:266-275",
+        "로컬스킬/pixel/reference/handoffs.md",
+        "로컬스킬/pixel/reference/autorun-schema.md",
+        "swiss-design/SKILL.md",
+        "로컬스킬/drawio-reconstruction/requirements.txt",
+        "로컬스킬/drawio-reconstruction/scripts/batch_verify.py:8-10,43-61"
+      ],
+      "finding": "Pixel _common 두 파일은 상대경로 문자열만 담은 작은 일반 파일이며 참조된 공유 계약 본문은 이 사본에 없다. 최소14개 shared contract, Frame/Vision/Muse/Artisan/Canon/Judge 등 연계 스킬과 Swiss arrange/typeset/quieter/polish/redesign은 미검토. Draw.io의 확보 내부 실행 연결은 batch_verify→check_drawio/export_drawio 및 crop_assist→Pillow까지 정적 확인했으나 Pillow/Draw.io CLI/OS·폰트·렌더러는 미검토·미실행. 선택 entry의 독해 완료가 upstream 전체 호출 폐쇄나 설치 가능성 증명이 아니다.",
+      "phase00_fix": "local adapter를 지식 참고 entry로 유지. 원문 handoff/autorum/agents/설치 지침은 실행권한·회사 승인으로 들이지 않음. 공유 계약 부재와 외부 엔진·crossskill 미검토를 명시. 지식 후보에 필요한 선택 본문은 이미 확보되어 있으므로 Phase00 완료를 이유로 생태계 전체 조사를 무한 확장하지 않음.",
+      "example": "관측 항목을 인수인계하는 필드만 독립 초안에 사용하고 실제 agent 호출은 없음.",
+      "counterexample": "NextAgent가 쓰여 있다는 이유로 다른 스킬을 호출·설치하거나 CI 계약 검토가 끝났다고 기록."
+    },
+    {
+      "id": "GRID-06",
+      "priority": "high",
+      "topic": "Draw.io 기술 검사·crop 휴리스틱의 좁은 범위와 한국어/좌표/CI 조건",
+      "evidence": [
+        "로컬스킬/drawio-reconstruction/SKILL.md",
+        "로컬스킬/drawio-reconstruction/UPSTREAM_SKILL.md:Mandatory Reference Inventory,Medium Decision Rules,Mandatory Visual Audit",
+        "로컬스킬/drawio-reconstruction/scripts/check_drawio.py:39-121,125-178,225-242,286-319",
+        "로컬스킬/drawio-reconstruction/scripts/crop_assist.py:76-92,140-160,205-208,280-355"
+      ],
+      "finding": "로컬 adapter가 기술 검사와 시각 검수를 구분하고 native editability 우선순위를 사용자 요구에 맞춘 점은 타당하다. 원 checker는 특정 ID 정규식·평균0.58font 폭/공백 분리·절대 좌표를 쓰며 이름 변경/한국어/그룹 상대 좌표를 일반적으로 해결하지 않는다. page metadata보다 content가 크면 page containment를 경고만 하고 생략한다. complex SVG 키워드 규칙에는 실제 사용자 vector 예외 인자가 없다. crop은 RGB변환·밝기/채도/면적/장선 제거로 얇은 화살표·옅은 CI색/그림자·투명도·다색 배경을 놓칠 수 있다. 자동후보는 측정 대상의 참된 foreground 보증이 아니다. XML을 parse한 뒤 mxfile/mxGraphModel/mxCell 필수 존재를 요구하지 않아 빈 유효 XML은 성공 종료에 도달할 수 있고, duplicate ID는 dict에서 덮여 일반 무결성 검사가 아니다(정적 분석; 실행 미재현).",
+      "phase00_fix": "확인 항목을 text/도형/연결/CI/재질/crop별로 기록하고 원본 대조를 필수 근거로 설계. 복잡도를 이유로 회사 벡터 로고를 generic icon이나 생성 이미지로 대체하지 않음. 원점·group 좌표·화면 crop/frame 범위·폰트와 한글 줄바꿈을 따로 검수. script pass를 국소 기술 상태로만 기록.",
+      "example": "특징 곡선·로고 비율·arrowhead·의미 있는 그림자를 보존하며 bbox 후보 경계는 직접 확인.",
+      "counterexample": "검사기 ID 밖 한글 자막 넘침이나 page 검사가 생략된 화면을 합격 처리; crop가 흰 로고 부분을 배경으로 판단한 것을 원본 도형이라고 저장."
+    },
+    {
+      "id": "GRID-07",
+      "priority": "medium",
+      "topic": "Draw.io helper를 실제 도입할 경우 출력 경계 계약 부족",
+      "evidence": [
+        "로컬스킬/drawio-reconstruction/scripts/batch_manifest.py:17-58,109-125",
+        "로컬스킬/drawio-reconstruction/scripts/batch_verify.py:13-35,43-63",
+        "로컬스킬/drawio-reconstruction/scripts/export_drawio.py:69-104",
+        "로컬스킬/drawio-reconstruction/scripts/crop_assist.py:367-400"
+      ],
+      "finding": "manifest는 디스크에 존재하는 출력만 충돌 확인하고 현재 manifest에서 예약된 stem은 비교하지 않아 recursive 하위폴더의 동일 basename이 같은 출력에 배정될 수 있다. audit.md는 manifest 계약에 없다. export/crop은 기존 출력 덮어쓰기 방지나 정본 경로 보호를 제공하지 않는다. batch --no-export는 preview 존재/신선도·audit 승인 검사를 하지 않으며 일반 export 성공 검사는 기존 nonempty PNG를 새로 생성한 것과 구분하지 않는다. 이는 정적 경로 분석이며 재현 실행 결과가 아니다.",
+      "phase00_fix": "현재는 archival code/실행 미도입 유지. 향후 도입 시 source/output 분리·명시 target·정본 제외·basename 예약·revision/overwrite 권한·fresh preview 해시/시점·audit 항목·원본 시각 비교를 별도 wrapper 계약으로 설계.",
+      "example": "서로 다른 두 폴더의 figure.png를 독립 output ID로 예약.",
+      "counterexample": "batch check 성공으로 모든 preview/audit가 새로 작성되고 원본은 보존되었다고 보고."
+    },
+    {
+      "id": "GRID-08",
+      "priority": "medium",
+      "topic": "원본성·로컬 변형 및 파일 명시 라이선스 범위",
+      "evidence": [
+        "swiss-design/LICENSE",
+        "로컬스킬/pixel/source.json",
+        "로컬스킬/pixel/UPSTREAM_LICENSE",
+        "로컬스킬/drawio-reconstruction/source.json",
+        "로컬스킬/drawio-reconstruction/LICENSE",
+        "로컬스킬/drawio-reconstruction/UPSTREAM_LICENSE",
+        "로컬스킬/drawio-reconstruction/README.md:License",
+        "로컬스킬/drawio-reconstruction/agents/UPSTREAM_openai.yaml"
+      ],
+      "finding": "Swiss MIT, Pixel upstream MIT 명시. Draw.io README/root LICENSE는 MIT이나 UPSTREAM_LICENSE는 CC BY-NC-SA4.0(methodology)이며 source.json license는NOASSERTION. 어느 부분에 어느 고지가 적용되는지 파일만으로 단일 MIT라고 판정할 수 없다. SOURCE의 SKILL hash는 두 패키지의 보존 UPSTREAM_SKILL과 일치하고 현재 SKILL은 AE reference 변형본이다. Draw.io agents 원본 map hash와 UPSTREAM_openai hash는 다르나 original_path 파일과 LF 정규화 본문은 동일: 원본302bytes LF, 보존306bytes CRLF. 의미 변경으로 단정하지 않지만 byte-exact 원문이라고 할 수 없다.",
+      "phase00_fix": "원본 파일→보존명→실제sha→local adapter의 sha/변경 목적을 분리. SOURCE 파일 count는 원다운로드 범위이며 현재 사본 개수와 구분. agents newline 변형을 명시하거나 향후 별도 원바이트 사본을 보존하되 이번 D 수정 없음. Draw.io는 2고지와NOASSERTION을 함께 유지하고 회사 customskill에 원문/방법론을 통째로 복사할 권한이 확인되었다고 쓰지 않음.",
+      "license_limit": "파일에 명시된 고지 검토만 수행. 라이선스 법률보증·권리 완결성·이미지/상용폰트 사용권을 판단하지 않음."
+    }
+  ],
+  "knowledge_candidates": [
+    {
+      "id": "GRID-K01",
+      "topic": "정렬·공백·타이포 역할",
+      "source": "swiss-design/SKILL.md §Grid/Spacing/Typography",
+      "take": "관계와 정보 위계를 일관되게 드러내는 조건부 grid/공백 계획",
+      "exclude": "비대칭/폰트/색/동등카드 금지,12열고정,ambient설치",
+      "example": "같은 범주의 레이블 정렬",
+      "counterexample": "시간축 tick 간격을 분위기에 맞추어 불균등 배치"
+    },
+    {
+      "id": "GRID-K02",
+      "topic": "관측/추정/제안 분리",
+      "source": "로컬스킬/pixel/SKILL.md + refs design/precision/responsive",
+      "take": "원문값·추정근거·불확실성·설계제안을 독립 필드로 기록",
+      "exclude": "16px/HIGH/4px rounding을 원관측으로 저장",
+      "example": "폰트 unknown+시각 크기 추정+추가 확인 조건",
+      "counterexample": "형상 추정으로 정확한 AE path나 폰트명 단정"
+    },
+    {
+      "id": "GRID-K03",
+      "topic": "feature별 gap와 증거",
+      "source": "로컬스킬/pixel/SKILL.md + gap/visual refs",
+      "take": "기능ID·관측차이·확인상태·검수근거·남은 차이를 기록",
+      "exclude": "90%합격/3회종료/예시예상점수를 효과 증거로 사용",
+      "example": "CI 비율 실패를 전체점수와 독립 유지",
+      "counterexample": "미검증 영역을 마스킹하고 전체 정확성 주장"
+    },
+    {
+      "id": "GRID-K04",
+      "topic": "전체 요소 목록과 보존 계약",
+      "source": "로컬스킬/drawio-reconstruction/SKILL.md + UPSTREAM_SKILL Mandatory Inventory",
+      "take": "문자열·도형·연결·curve·crop·편집성의 관측 inventory",
+      "exclude": "semantic match만으로 faithful판정/자동텍스트압축/다른파일수정",
+      "example": "원문 공법명·단위·곡선경로 그대로 기록",
+      "counterexample": "비슷한 아이콘이나 짧게 고친 설명으로 대체"
+    },
+    {
+      "id": "GRID-K05",
+      "topic": "매체 선택의 조건과 편집성",
+      "source": "로컬스킬/drawio-reconstruction/SKILL.md + Medium Decision Rules",
+      "take": "native/path/replaceable bitmap 선택 이유와 실제 확인 기준",
+      "exclude": "crop우선이 회사 CI벡터 요구보다 우선/천개path=유지보수가능",
+      "example": "편집해야 하는 회사 로고는 승인 벡터를 보존",
+      "counterexample": "편집불가한crop를 완전 editable이라고 보고"
+    },
+    {
+      "id": "GRID-K06",
+      "topic": "좌표·화면비·시간·원본 대조",
+      "source": "자체 프로젝트 연결 후보: Pixel/Drawio의 bbox·uncertainty/visual audit에서 확장",
+      "take": "원본 origin/crop/scale/frame/fps와 적용 comp 변환·시간 pending를 연결",
+      "exclude": "웹 responsive를 MP4시청시간/한글안전영역 규칙으로 승격",
+      "example": "같은 관측 문자열을16:9/9:16 적용안에서 비교",
+      "counterexample": "정지 스크린샷만으로 자막 읽기시간이나 loop확정",
+      "origin": "project_interpretation_not_source_quote"
+    }
+  ],
+  "unreviewed": [
+    "Swiss가 링크/언급한 외부 사이트·타이포 이론·브라우저 호환성 문서·Lenis 코드/의존성과 다른 스킬",
+    "Pixel 공유 _common 계약 본문 및 Frame/Vision/Artisan/Muse/Growth/Flow/Voyager/Canon/Judge/Nexus 등 crossskill 실제 구현",
+    "Draw.io Desktop/CLI renderer 및 시스템 fonts/Pillow 전체 구현과 transitive dependencies",
+    "Draw.io 사례 PNG9개의 실제 시각 대조·XML3개의 embedded payload/도형별 의미 품질",
+    "외부 CC legalcode 전문, benchmark 논문/데이터/모델성능 주장의 독립 재현",
+    "실제 회사 CI 승인값·한국어 렌더·frame safety·subtitle timing·01A 영상 실측·Phase02 화면 제작"
+  ],
+  "phase00_completion_contract": {
+    "can_finish_now": "이 선택 묶음의 원문 목록/깊이/해시/변형/명시 라이선스와 조건부 지식 후보·예/반례·적용 제외·pending 검수 필드를 draft에 반영. 조사 파일수로 실행/효과/회사 승인 선언 금지.",
+    "does_not_require_unbounded_research": "미도입 외부 engine/crossskill를 전수 조사할 필요 없음. 지식only 경계와 미검토 표시로 한정.",
+    "later": "실자료 관측01A, 신규 화면 기획02, 도구 도입/실행·편집성·렌더 품질 검증은 각각 별도 승인/검증 단계.",
+    "verdict": "지식 후보로 조건부 활용 가능. Swiss 규범과 Pixel 점수·Drawio checker를 회사 규칙이나 자동 품질판정으로 채택하면 안 됨. selected static read 완료이며 R3-3 전체 종료·customskill 적용·효과 증명 아님."
+  },
+  "integrity_checks": {
+    "manifest_files": 50,
+    "depth_counts": [
+      {
+        "depth": "full_static_text",
+        "count": 37
+      },
+      {
+        "depth": "hash_inventory_only_not_viewed",
+        "count": 9
+      },
+      {
+        "depth": "tree_metadata_only",
+        "count": 1
+      },
+      {
+        "depth": "xml_structure_only_not_full_content",
+        "count": 3
+      }
+    ],
+    "source_map_records": 41,
+    "source_map_exact_matches": 40,
+    "source_map_byte_differences": 1,
+    "source_map": [
+      {
+        "package": "로컬스킬/pixel",
+        "source_path": "_common",
+        "preserved_path": "_common",
+        "expected_sha256": "52e8b1d35c84766217d30a32c76ad5b0d8417c5c587cf59af0d4cb502080a229",
+        "actual_sha256": "52e8b1d35c84766217d30a32c76ad5b0d8417c5c587cf59af0d4cb502080a229",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "source_path": "reference/_common",
+        "preserved_path": "reference/_common",
+        "expected_sha256": "725f2da8f8f89c674c600a8cb5e16c2a7726f2194448a239314a2eb58310268d",
+        "actual_sha256": "725f2da8f8f89c674c600a8cb5e16c2a7726f2194448a239314a2eb58310268d",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "source_path": "reference/animation-extraction.md",
+        "preserved_path": "reference/animation-extraction.md",
+        "expected_sha256": "77fe286583c470868ea80465de0b9558e346fd87b4ff68b214b334523a3423fe",
+        "actual_sha256": "77fe286583c470868ea80465de0b9558e346fd87b4ff68b214b334523a3423fe",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "source_path": "reference/autorun-schema.md",
+        "preserved_path": "reference/autorun-schema.md",
+        "expected_sha256": "a333250cff744a3602ec960594b172fefd2554dbbf797bcb135b344fb429d3e2",
+        "actual_sha256": "a333250cff744a3602ec960594b172fefd2554dbbf797bcb135b344fb429d3e2",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "source_path": "reference/dark-mode-derivation.md",
+        "preserved_path": "reference/dark-mode-derivation.md",
+        "expected_sha256": "3926d54a542f28679ddd1098f6e9a5a875c627be8e1126b3323f5c68b713eaeb",
+        "actual_sha256": "3926d54a542f28679ddd1098f6e9a5a875c627be8e1126b3323f5c68b713eaeb",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "source_path": "reference/design-extraction.md",
+        "preserved_path": "reference/design-extraction.md",
+        "expected_sha256": "9936987defc1197e8a7e6e33b49525d4a65cef92dd9ba2222c348b54346a249f",
+        "actual_sha256": "9936987defc1197e8a7e6e33b49525d4a65cef92dd9ba2222c348b54346a249f",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "source_path": "reference/gap-analysis-report.md",
+        "preserved_path": "reference/gap-analysis-report.md",
+        "expected_sha256": "116d332629e3774fdee94ca003505270c069ea0e957f91558ee63e845307e0bb",
+        "actual_sha256": "116d332629e3774fdee94ca003505270c069ea0e957f91558ee63e845307e0bb",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "source_path": "reference/handoffs.md",
+        "preserved_path": "reference/handoffs.md",
+        "expected_sha256": "6725dd830d67ee6c636bd243e1ded912984be6a2118f4b4bca311d0e6f427aec",
+        "actual_sha256": "6725dd830d67ee6c636bd243e1ded912984be6a2118f4b4bca311d0e6f427aec",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "source_path": "reference/lp-section-patterns.md",
+        "preserved_path": "reference/lp-section-patterns.md",
+        "expected_sha256": "8a8e6baaf638bb94c4bcbf2a1c7def7a9990e1eddd02470332fda64abbf0ba0f",
+        "actual_sha256": "8a8e6baaf638bb94c4bcbf2a1c7def7a9990e1eddd02470332fda64abbf0ba0f",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "source_path": "reference/modern-css-baseline.md",
+        "preserved_path": "reference/modern-css-baseline.md",
+        "expected_sha256": "12d5ea92901cbcee6d32ae968218f7204a39d99703146dc005132a9993564939",
+        "actual_sha256": "12d5ea92901cbcee6d32ae968218f7204a39d99703146dc005132a9993564939",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "source_path": "reference/precision-spec.md",
+        "preserved_path": "reference/precision-spec.md",
+        "expected_sha256": "cddf1ff909cb4d744c6fc24b70b3d89cf41d9bb88812099a03bb625a3fe37c98",
+        "actual_sha256": "cddf1ff909cb4d744c6fc24b70b3d89cf41d9bb88812099a03bb625a3fe37c98",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "source_path": "reference/recipe-dispatch.md",
+        "preserved_path": "reference/recipe-dispatch.md",
+        "expected_sha256": "21f64cad35300011bdc1430e5c17f2e8d6e047fa8c1858bd79accf378738e92d",
+        "actual_sha256": "21f64cad35300011bdc1430e5c17f2e8d6e047fa8c1858bd79accf378738e92d",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "source_path": "reference/responsive-design.md",
+        "preserved_path": "reference/responsive-design.md",
+        "expected_sha256": "362c179636f45a2753aaacc249df4788eb94cbff0140f9f426a5811cda3f6354",
+        "actual_sha256": "362c179636f45a2753aaacc249df4788eb94cbff0140f9f426a5811cda3f6354",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "source_path": "reference/visual-verification.md",
+        "preserved_path": "reference/visual-verification.md",
+        "expected_sha256": "159d108b00c35fa5bf2367b1e713e02d597ac9cf9bc02032d48701aadfa3f290",
+        "actual_sha256": "159d108b00c35fa5bf2367b1e713e02d597ac9cf9bc02032d48701aadfa3f290",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "source_path": "SKILL.md",
+        "preserved_path": "UPSTREAM_SKILL.md",
+        "expected_sha256": "2b9ee88eded264caa7a378919855c432023adebe2c9a5a518aa387bda2787b6e",
+        "actual_sha256": "2b9ee88eded264caa7a378919855c432023adebe2c9a5a518aa387bda2787b6e",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/pixel",
+        "source_path": "UPSTREAM_LICENSE",
+        "preserved_path": "UPSTREAM_LICENSE",
+        "expected_sha256": "06dcddbb6908a0c6dd4a9e8ec822eea41d5a460a53089fecccc8a68049e99241",
+        "actual_sha256": "06dcddbb6908a0c6dd4a9e8ec822eea41d5a460a53089fecccc8a68049e99241",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "source_path": ".gitignore",
+        "preserved_path": ".gitignore",
+        "expected_sha256": "73b943349cdedc959577ff6ac1089c54a6f69e7a246686967af8d195fe9142e2",
+        "actual_sha256": "73b943349cdedc959577ff6ac1089c54a6f69e7a246686967af8d195fe9142e2",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "source_path": "agents/openai.yaml",
+        "preserved_path": "agents/UPSTREAM_openai.yaml",
+        "expected_sha256": "c6d8775d6a5e744179378ef50de84727275624e5c6574b97731288c50adda206",
+        "actual_sha256": "513b1641ea4d8bbe697c95de078949baba10f89286c4ce2e5d6f070e1049c653",
+        "byte_match": false,
+        "note": "LF to CRLF only: original file full-read; normalized LF text identical"
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "source_path": "assets/cases/data_lake_drawio.png",
+        "preserved_path": "assets/cases/data_lake_drawio.png",
+        "expected_sha256": "a58af6e03d40bb5f61920f48369506684e8d889ab27f34b93278ef47e5fb0dfc",
+        "actual_sha256": "a58af6e03d40bb5f61920f48369506684e8d889ab27f34b93278ef47e5fb0dfc",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "source_path": "assets/cases/data_lake_original.png",
+        "preserved_path": "assets/cases/data_lake_original.png",
+        "expected_sha256": "b51a8071730abd81ba2a977f882ee9678c3b981ba52261e56caf045e5713c629",
+        "actual_sha256": "b51a8071730abd81ba2a977f882ee9678c3b981ba52261e56caf045e5713c629",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "source_path": "assets/cases/data_man_drawio.png",
+        "preserved_path": "assets/cases/data_man_drawio.png",
+        "expected_sha256": "92a73390088852977d4d606770d451fd34073e1d0cec6a26bba591b124ebd636",
+        "actual_sha256": "92a73390088852977d4d606770d451fd34073e1d0cec6a26bba591b124ebd636",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "source_path": "assets/cases/data_man_original.png",
+        "preserved_path": "assets/cases/data_man_original.png",
+        "expected_sha256": "2a8a1d41a5fba35be07f8968916cf44d607a886fd1f1ac6fcdf6d4e0ece872ed",
+        "actual_sha256": "2a8a1d41a5fba35be07f8968916cf44d607a886fd1f1ac6fcdf6d4e0ece872ed",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "source_path": "assets/cases/data_sci2_drawio.png",
+        "preserved_path": "assets/cases/data_sci2_drawio.png",
+        "expected_sha256": "d0390e3a8b5007b628f7137dee30cd38d0a970e9a69823b7e0c0e76ff0e8bbc7",
+        "actual_sha256": "d0390e3a8b5007b628f7137dee30cd38d0a970e9a69823b7e0c0e76ff0e8bbc7",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "source_path": "assets/cases/data_sci2_original.png",
+        "preserved_path": "assets/cases/data_sci2_original.png",
+        "expected_sha256": "31e76e8db719ed22fec208746f00c24905d9dccc2b92cad8d65d6bba1e6ab77e",
+        "actual_sha256": "31e76e8db719ed22fec208746f00c24905d9dccc2b92cad8d65d6bba1e6ab77e",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "source_path": "examples/data_lake.drawio",
+        "preserved_path": "examples/data_lake.drawio",
+        "expected_sha256": "52ca629c2ea9f31a623b61f567fc5acfe318e858b84a4ebee824cf7c24f70218",
+        "actual_sha256": "52ca629c2ea9f31a623b61f567fc5acfe318e858b84a4ebee824cf7c24f70218",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "source_path": "examples/data_lake.png",
+        "preserved_path": "examples/data_lake.png",
+        "expected_sha256": "b51a8071730abd81ba2a977f882ee9678c3b981ba52261e56caf045e5713c629",
+        "actual_sha256": "b51a8071730abd81ba2a977f882ee9678c3b981ba52261e56caf045e5713c629",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "source_path": "examples/data_man.drawio",
+        "preserved_path": "examples/data_man.drawio",
+        "expected_sha256": "7b0bff7f8e573474cd79ada21ad692d3982270b984397e46d451f6c79c235289",
+        "actual_sha256": "7b0bff7f8e573474cd79ada21ad692d3982270b984397e46d451f6c79c235289",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "source_path": "examples/data_man.png",
+        "preserved_path": "examples/data_man.png",
+        "expected_sha256": "2a8a1d41a5fba35be07f8968916cf44d607a886fd1f1ac6fcdf6d4e0ece872ed",
+        "actual_sha256": "2a8a1d41a5fba35be07f8968916cf44d607a886fd1f1ac6fcdf6d4e0ece872ed",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "source_path": "examples/data_sci2.drawio",
+        "preserved_path": "examples/data_sci2.drawio",
+        "expected_sha256": "fe00c2b1b0df5f8541a084bea99c6a4855c1bd7c87ac36b16999ed74cf30a895",
+        "actual_sha256": "fe00c2b1b0df5f8541a084bea99c6a4855c1bd7c87ac36b16999ed74cf30a895",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "source_path": "examples/data_sci2.png",
+        "preserved_path": "examples/data_sci2.png",
+        "expected_sha256": "31e76e8db719ed22fec208746f00c24905d9dccc2b92cad8d65d6bba1e6ab77e",
+        "actual_sha256": "31e76e8db719ed22fec208746f00c24905d9dccc2b92cad8d65d6bba1e6ab77e",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "source_path": "LICENSE",
+        "preserved_path": "LICENSE",
+        "expected_sha256": "bfbb06eedaf5ab909b115b901bdc15942969f2bd51c71aee6ab9b6b84f22f0b8",
+        "actual_sha256": "bfbb06eedaf5ab909b115b901bdc15942969f2bd51c71aee6ab9b6b84f22f0b8",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "source_path": "README.md",
+        "preserved_path": "README.md",
+        "expected_sha256": "370f90a35b2f973e5636d933c159b86c034652063818ef739e893693eb2cd86f",
+        "actual_sha256": "370f90a35b2f973e5636d933c159b86c034652063818ef739e893693eb2cd86f",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "source_path": "README.zh-CN.md",
+        "preserved_path": "README.zh-CN.md",
+        "expected_sha256": "25b1999581518292cb1c99906c128918ef2ff37fdf188194511b1c81dcb5a525",
+        "actual_sha256": "25b1999581518292cb1c99906c128918ef2ff37fdf188194511b1c81dcb5a525",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "source_path": "requirements.txt",
+        "preserved_path": "requirements.txt",
+        "expected_sha256": "dce978a554b00caca70d59f539d25c61fcc89681e02d7fec42948cd5c3c0a127",
+        "actual_sha256": "dce978a554b00caca70d59f539d25c61fcc89681e02d7fec42948cd5c3c0a127",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "source_path": "scripts/batch_manifest.py",
+        "preserved_path": "scripts/batch_manifest.py",
+        "expected_sha256": "96df731d152de0a6b7a6fd594978ad02077e9deacfde1f3dc9f9d5b7af02adb9",
+        "actual_sha256": "96df731d152de0a6b7a6fd594978ad02077e9deacfde1f3dc9f9d5b7af02adb9",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "source_path": "scripts/batch_verify.py",
+        "preserved_path": "scripts/batch_verify.py",
+        "expected_sha256": "0c60633507a77560aeb892c724f76ee19e5ed086fa53a32ba642735972d41402",
+        "actual_sha256": "0c60633507a77560aeb892c724f76ee19e5ed086fa53a32ba642735972d41402",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "source_path": "scripts/check_drawio.py",
+        "preserved_path": "scripts/check_drawio.py",
+        "expected_sha256": "4d8b8dfccc627eef2c9e9fb308bf5c64ef9377c669570a737f6fcaf41ddad732",
+        "actual_sha256": "4d8b8dfccc627eef2c9e9fb308bf5c64ef9377c669570a737f6fcaf41ddad732",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "source_path": "scripts/crop_assist.py",
+        "preserved_path": "scripts/crop_assist.py",
+        "expected_sha256": "38102f26b6f376d377fda1c08df0c4ac57965c12d714bdd5774e260f4f4b51e4",
+        "actual_sha256": "38102f26b6f376d377fda1c08df0c4ac57965c12d714bdd5774e260f4f4b51e4",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "source_path": "scripts/export_drawio.py",
+        "preserved_path": "scripts/export_drawio.py",
+        "expected_sha256": "5a277807711fe2759e2b4d6f80a5cce60272b5038871b224989c972cb2386faa",
+        "actual_sha256": "5a277807711fe2759e2b4d6f80a5cce60272b5038871b224989c972cb2386faa",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "source_path": "SKILL.md",
+        "preserved_path": "UPSTREAM_SKILL.md",
+        "expected_sha256": "ccc4e5fa5ccd4d7f8a33f88c241d8df2e951f015d2dadfbaa5506d323ea38441",
+        "actual_sha256": "ccc4e5fa5ccd4d7f8a33f88c241d8df2e951f015d2dadfbaa5506d323ea38441",
+        "byte_match": true,
+        "note": ""
+      },
+      {
+        "package": "로컬스킬/drawio-reconstruction",
+        "source_path": "UPSTREAM_LICENSE",
+        "preserved_path": "UPSTREAM_LICENSE",
+        "expected_sha256": "b35c958b79726c115cf817635abcbc2aa1121cae5e9a1c22819f7c44f58fcaf0",
+        "actual_sha256": "b35c958b79726c115cf817635abcbc2aa1121cae5e9a1c22819f7c44f58fcaf0",
+        "byte_match": true,
+        "note": ""
+      }
+    ],
+    "swiss_git_blob_checks": [
+      {
+        "path": "LICENSE",
+        "expected": "62d8361a7dc4412bdf21703ba6fa2d65307eb667",
+        "actual": "62d8361a7dc4412bdf21703ba6fa2d65307eb667",
+        "match": true
+      },
+      {
+        "path": "README.md",
+        "expected": "9bf55fef3756aa24d3503df26dfd4c253dea037c",
+        "actual": "9bf55fef3756aa24d3503df26dfd4c253dea037c",
+        "match": true
+      },
+      {
+        "path": "SKILL.md",
+        "expected": "e0cd898b2673abc77fca26d8abfa4af133252f35",
+        "actual": "e0cd898b2673abc77fca26d8abfa4af133252f35",
+        "match": true
+      }
+    ],
+    "acquisition_selected_records": 3,
+    "acquisition_file_records": 49,
+    "acquisition_hash_mismatch": 0,
+    "acquisition_checks": [
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/swiss-design/LICENSE",
+        "sha256": "ae064428c6b8e2bea01f84903056b708f64efc2c895d995247544d91ec642185",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/swiss-design/README.md",
+        "sha256": "cfdd37e1477585c162484e8349c7d69398ac518643754d4a03f8f78c0c7fdccd",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/swiss-design/SKILL.md",
+        "sha256": "b1947b84f85d2a02094be59bb49c5ceae382a71bf4482552cc2063cead8ef97f",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/pixel/SKILL.md",
+        "sha256": "dc744f4ee7de2dee6e1d3d0b43a7cc2897cb7df42e9b2b3eb492dfffc361afec",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/pixel/source.json",
+        "sha256": "ea079e70cb55abc17d84aef93c242531ab809d48bd23491062be7b6da75ec46c",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/pixel/UPSTREAM_LICENSE",
+        "sha256": "06dcddbb6908a0c6dd4a9e8ec822eea41d5a460a53089fecccc8a68049e99241",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/pixel/UPSTREAM_SKILL.md",
+        "sha256": "2b9ee88eded264caa7a378919855c432023adebe2c9a5a518aa387bda2787b6e",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/pixel/_common",
+        "sha256": "52e8b1d35c84766217d30a32c76ad5b0d8417c5c587cf59af0d4cb502080a229",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/pixel/reference/animation-extraction.md",
+        "sha256": "77fe286583c470868ea80465de0b9558e346fd87b4ff68b214b334523a3423fe",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/pixel/reference/autorun-schema.md",
+        "sha256": "a333250cff744a3602ec960594b172fefd2554dbbf797bcb135b344fb429d3e2",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/pixel/reference/dark-mode-derivation.md",
+        "sha256": "3926d54a542f28679ddd1098f6e9a5a875c627be8e1126b3323f5c68b713eaeb",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/pixel/reference/design-extraction.md",
+        "sha256": "9936987defc1197e8a7e6e33b49525d4a65cef92dd9ba2222c348b54346a249f",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/pixel/reference/gap-analysis-report.md",
+        "sha256": "116d332629e3774fdee94ca003505270c069ea0e957f91558ee63e845307e0bb",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/pixel/reference/handoffs.md",
+        "sha256": "6725dd830d67ee6c636bd243e1ded912984be6a2118f4b4bca311d0e6f427aec",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/pixel/reference/lp-section-patterns.md",
+        "sha256": "8a8e6baaf638bb94c4bcbf2a1c7def7a9990e1eddd02470332fda64abbf0ba0f",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/pixel/reference/modern-css-baseline.md",
+        "sha256": "12d5ea92901cbcee6d32ae968218f7204a39d99703146dc005132a9993564939",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/pixel/reference/precision-spec.md",
+        "sha256": "cddf1ff909cb4d744c6fc24b70b3d89cf41d9bb88812099a03bb625a3fe37c98",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/pixel/reference/recipe-dispatch.md",
+        "sha256": "21f64cad35300011bdc1430e5c17f2e8d6e047fa8c1858bd79accf378738e92d",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/pixel/reference/responsive-design.md",
+        "sha256": "362c179636f45a2753aaacc249df4788eb94cbff0140f9f426a5811cda3f6354",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/pixel/reference/visual-verification.md",
+        "sha256": "159d108b00c35fa5bf2367b1e713e02d597ac9cf9bc02032d48701aadfa3f290",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/pixel/reference/_common",
+        "sha256": "725f2da8f8f89c674c600a8cb5e16c2a7726f2194448a239314a2eb58310268d",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/drawio-reconstruction/.gitignore",
+        "sha256": "73b943349cdedc959577ff6ac1089c54a6f69e7a246686967af8d195fe9142e2",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/drawio-reconstruction/LICENSE",
+        "sha256": "bfbb06eedaf5ab909b115b901bdc15942969f2bd51c71aee6ab9b6b84f22f0b8",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/drawio-reconstruction/README.md",
+        "sha256": "370f90a35b2f973e5636d933c159b86c034652063818ef739e893693eb2cd86f",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/drawio-reconstruction/README.zh-CN.md",
+        "sha256": "25b1999581518292cb1c99906c128918ef2ff37fdf188194511b1c81dcb5a525",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/drawio-reconstruction/requirements.txt",
+        "sha256": "dce978a554b00caca70d59f539d25c61fcc89681e02d7fec42948cd5c3c0a127",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/drawio-reconstruction/SKILL.md",
+        "sha256": "2f1ecda4e96fc8623b8e9b3db2b850b2ddb59e3441536a5f3708d2f9f070d646",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/drawio-reconstruction/source.json",
+        "sha256": "70c01cabb65f938b2b38db385e4b4e24f4905841ab063f5c7eb5f57ee9dfacd4",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/drawio-reconstruction/UPSTREAM_LICENSE",
+        "sha256": "b35c958b79726c115cf817635abcbc2aa1121cae5e9a1c22819f7c44f58fcaf0",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/drawio-reconstruction/UPSTREAM_SKILL.md",
+        "sha256": "ccc4e5fa5ccd4d7f8a33f88c241d8df2e951f015d2dadfbaa5506d323ea38441",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/drawio-reconstruction/agents/openai.yaml",
+        "sha256": "04787a5ab39945079be8900a295f275a9e033703e9c5a8ea692364fdafcb7332",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/drawio-reconstruction/agents/UPSTREAM_openai.yaml",
+        "sha256": "513b1641ea4d8bbe697c95de078949baba10f89286c4ce2e5d6f070e1049c653",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/drawio-reconstruction/examples/data_lake.drawio",
+        "sha256": "52ca629c2ea9f31a623b61f567fc5acfe318e858b84a4ebee824cf7c24f70218",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/drawio-reconstruction/examples/data_lake.png",
+        "sha256": "b51a8071730abd81ba2a977f882ee9678c3b981ba52261e56caf045e5713c629",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/drawio-reconstruction/examples/data_man.drawio",
+        "sha256": "7b0bff7f8e573474cd79ada21ad692d3982270b984397e46d451f6c79c235289",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/drawio-reconstruction/examples/data_man.png",
+        "sha256": "2a8a1d41a5fba35be07f8968916cf44d607a886fd1f1ac6fcdf6d4e0ece872ed",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/drawio-reconstruction/examples/data_sci2.drawio",
+        "sha256": "fe00c2b1b0df5f8541a084bea99c6a4855c1bd7c87ac36b16999ed74cf30a895",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/drawio-reconstruction/examples/data_sci2.png",
+        "sha256": "31e76e8db719ed22fec208746f00c24905d9dccc2b92cad8d65d6bba1e6ab77e",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/drawio-reconstruction/scripts/batch_manifest.py",
+        "sha256": "96df731d152de0a6b7a6fd594978ad02077e9deacfde1f3dc9f9d5b7af02adb9",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/drawio-reconstruction/scripts/batch_verify.py",
+        "sha256": "0c60633507a77560aeb892c724f76ee19e5ed086fa53a32ba642735972d41402",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/drawio-reconstruction/scripts/check_drawio.py",
+        "sha256": "4d8b8dfccc627eef2c9e9fb308bf5c64ef9377c669570a737f6fcaf41ddad732",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/drawio-reconstruction/scripts/crop_assist.py",
+        "sha256": "38102f26b6f376d377fda1c08df0c4ac57965c12d714bdd5774e260f4f4b51e4",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/drawio-reconstruction/scripts/export_drawio.py",
+        "sha256": "5a277807711fe2759e2b4d6f80a5cce60272b5038871b224989c972cb2386faa",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/drawio-reconstruction/assets/cases/data_lake_drawio.png",
+        "sha256": "a58af6e03d40bb5f61920f48369506684e8d889ab27f34b93278ef47e5fb0dfc",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/drawio-reconstruction/assets/cases/data_lake_original.png",
+        "sha256": "b51a8071730abd81ba2a977f882ee9678c3b981ba52261e56caf045e5713c629",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/drawio-reconstruction/assets/cases/data_man_drawio.png",
+        "sha256": "92a73390088852977d4d606770d451fd34073e1d0cec6a26bba591b124ebd636",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/drawio-reconstruction/assets/cases/data_man_original.png",
+        "sha256": "2a8a1d41a5fba35be07f8968916cf44d607a886fd1f1ac6fcdf6d4e0ece872ed",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/drawio-reconstruction/assets/cases/data_sci2_drawio.png",
+        "sha256": "d0390e3a8b5007b628f7137dee30cd38d0a970e9a69823b7e0c0e76ff0e8bbc7",
+        "match": true
+      },
+      {
+        "path": "backup/2026-10-14_R3_03_편집화면확장/스킬원본/로컬스킬/drawio-reconstruction/assets/cases/data_sci2_original.png",
+        "sha256": "31e76e8db719ed22fec208746f00c24905d9dccc2b92cad8d65d6bba1e6ab77e",
+        "match": true
+      }
+    ],
+    "acquisition_depth": "selected records metadata only; other branches not read",
+    "acquisition_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\05_출처와검토\\R3_편집화면스킬_원본확보목록.json",
+    "acquisition_sha256": "f9093304d563584af405d1f7040bfdd74a37b2db9387212f022ae10418cd4a2c",
+    "examples_structure": [
+      {
+        "file": "data_lake.drawio",
+        "cells": 81,
+        "image_style_cells": 17
+      },
+      {
+        "file": "data_man.drawio",
+        "cells": 117,
+        "image_style_cells": 22
+      },
+      {
+        "file": "data_sci2.drawio",
+        "cells": 108,
+        "image_style_cells": 13
+      }
+    ],
+    "no_upstream_test_execution": true,
+    "no_visual_effect_validation": true,
+    "missing_pixel_shared_contracts": [
+      "CODE_QUALITY.md",
+      "BOUNDARIES.md",
+      "INTERACTION.md",
+      "ASSET_PROVENANCE.md",
+      "OPUS_5_AUTHORING.md",
+      "IMAGE_INPUT.md",
+      "CANDIDATE_SELECTION.md",
+      "OPERATIONAL.md",
+      "VALUES.md",
+      "HANDOFF.md",
+      "AUTORUN.md",
+      "GIT_GUIDELINES.md",
+      "OUTPUT_STYLE.md",
+      "WORK_GATE.md"
+    ],
+    "packaging_limits": "선택 Swiss/Pixel/Drawio 사본에는 LICENSE 고지를 위와 같이 읽었으나 별도 TERMS/DISCLAIMER/package.json이 없음. 이것은 선택 디렉터리 범위이며 원 저장소 루트/생태계 전체 부재를 뜻하지 않음. Python 표준 라이브러리/Pillow/Drawio CLI 전체는 미검토. 외부 소스/성능/현재 브라우저 호환성 사실은 재확인하지 않음."
+  }
+}

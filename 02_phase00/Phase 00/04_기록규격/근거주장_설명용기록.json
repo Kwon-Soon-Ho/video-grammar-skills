@@ -1,0 +1,339 @@
+{
+  "contract_version": "0.1.0",
+  "record_purpose": "spec_test",
+  "time_contract": {
+    "contract_version": "0.1.0",
+    "source_type": "synthetic_example",
+    "asset": {
+      "id": "EX-ASSET",
+      "version": "0.1.0",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "timelines": [
+      {
+        "id": "EX-TIME",
+        "asset_ref": "EX-ASSET",
+        "stream_index": 0,
+        "duration": {
+          "num": 10,
+          "den": 1
+        },
+        "duration_evidence_refs": [
+          "EX-DURATION"
+        ],
+        "origin": {
+          "method": "verified_offset",
+          "pts": "90000",
+          "time_base": {
+            "num": 1,
+            "den": 90000
+          },
+          "evidence_refs": [
+            "EX-ORIGIN"
+          ],
+          "limitations": "가상 값. 파일 존재·원점·회사 사실을 증명하지 않음."
+        },
+        "frame_rate_mode": "vfr",
+        "nominal_fps": null,
+        "frame_count": null,
+        "limitations": "전체프레임인덱스 미제공·가상시험용"
+      }
+    ],
+    "periods": [
+      {
+        "id": "EX-SEGMENT",
+        "timeline_ref": "EX-TIME",
+        "parent_ref": null,
+        "kind": "range",
+        "start": {
+          "num": 0,
+          "den": 1
+        },
+        "end": {
+          "num": 3,
+          "den": 1
+        },
+        "uncertainty": {
+          "num": 0,
+          "den": 1
+        },
+        "unknown_reason": null
+      },
+      {
+        "id": "EX-WHOLE",
+        "timeline_ref": "EX-TIME",
+        "parent_ref": null,
+        "kind": "range",
+        "start": {
+          "num": 0,
+          "den": 1
+        },
+        "end": {
+          "num": 10,
+          "den": 1
+        },
+        "uncertainty": {
+          "num": 0,
+          "den": 1
+        },
+        "unknown_reason": null
+      },
+      {
+        "id": "EX-INSTANT",
+        "timeline_ref": "EX-TIME",
+        "parent_ref": "EX-SEGMENT",
+        "kind": "instant",
+        "start": {
+          "num": 1,
+          "den": 1
+        },
+        "end": null,
+        "uncertainty": {
+          "num": 0,
+          "den": 1
+        },
+        "unknown_reason": null
+      }
+    ],
+    "frames": [
+      {
+        "id": "EX-FRAME",
+        "timeline_ref": "EX-TIME",
+        "period_ref": "EX-SEGMENT",
+        "role": "within_period",
+        "source_pts": "180000",
+        "pts_kind": "original_pts",
+        "time_base": {
+          "num": 1,
+          "den": 90000
+        },
+        "source_frame_ordinal": 25,
+        "requested": {
+          "num": 1,
+          "den": 1
+        },
+        "actual": {
+          "num": 1,
+          "den": 1
+        },
+        "mapping_state": "mapped",
+        "selection_policy": "manual",
+        "limitations": "가상 프레임. 25는 인위적 값이며 FPS 환산이 아님."
+      }
+    ],
+    "notes": "합성 규격 fixture만 사용. 실제 분석/승인/파일 내용 검증 없음."
+  },
+  "materials": [
+    {
+      "id": "EX-ASSET",
+      "version": "0.1.0",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "kind": "video",
+      "locator": "fixture-only://EX-ASSET",
+      "availability": "present",
+      "source_type": "synthetic_example",
+      "parent_ref": null,
+      "frame_ref": null,
+      "period_ref": null,
+      "method_note": "인위적 형식 검사 자료. 파일/내용/원본 정확성 검증 아님.",
+      "text": null,
+      "authority": null
+    },
+    {
+      "id": "EX-META",
+      "version": "0.1.0",
+      "sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+      "kind": "project_document",
+      "locator": "fixture-only://EX-META",
+      "availability": "present",
+      "source_type": "synthetic_example",
+      "parent_ref": null,
+      "frame_ref": null,
+      "period_ref": null,
+      "method_note": "인위적 형식 검사 자료. 파일/내용/원본 정확성 검증 아님.",
+      "text": "길이10초와 원점90000을 설명하는 가상 자료다.",
+      "authority": null
+    },
+    {
+      "id": "EX-IMAGE",
+      "version": "0.1.0",
+      "sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+      "kind": "frame",
+      "locator": "fixture-only://EX-IMAGE",
+      "availability": "present",
+      "source_type": "synthetic_example",
+      "parent_ref": {
+        "id": "EX-ASSET",
+        "version": "0.1.0",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "frame_ref": "EX-FRAME",
+      "period_ref": null,
+      "method_note": "인위적 형식 검사 자료. 파일/내용/원본 정확성 검증 아님.",
+      "text": null,
+      "authority": null
+    }
+  ],
+  "targets": [
+    {
+      "id": "TG-ASSET",
+      "version": "0.1.0",
+      "unit": "asset",
+      "asset_ref": {
+        "id": "EX-ASSET",
+        "version": "0.1.0",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "parent_ref": null,
+      "period_ref": "EX-WHOLE",
+      "label": "가상 영상의 asset 대상"
+    },
+    {
+      "id": "TG-SEGMENT",
+      "version": "0.1.0",
+      "unit": "segment",
+      "asset_ref": {
+        "id": "EX-ASSET",
+        "version": "0.1.0",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "parent_ref": {
+        "id": "TG-ASSET",
+        "version": "0.1.0"
+      },
+      "period_ref": "EX-SEGMENT",
+      "label": "가상 영상의 segment 대상"
+    },
+    {
+      "id": "TG-STATE",
+      "version": "0.1.0",
+      "unit": "screen_state",
+      "asset_ref": {
+        "id": "EX-ASSET",
+        "version": "0.1.0",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "parent_ref": {
+        "id": "TG-SEGMENT",
+        "version": "0.1.0"
+      },
+      "period_ref": "EX-SEGMENT",
+      "label": "가상 영상의 screen_state 대상"
+    },
+    {
+      "id": "TG-OBJECT",
+      "version": "0.1.0",
+      "unit": "object",
+      "asset_ref": {
+        "id": "EX-ASSET",
+        "version": "0.1.0",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "parent_ref": {
+        "id": "TG-STATE",
+        "version": "0.1.0"
+      },
+      "period_ref": "EX-SEGMENT",
+      "label": "가상 영상의 object 대상"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "EX-DURATION",
+      "version": "0.1.0",
+      "material_ref": {
+        "id": "EX-META",
+        "version": "0.1.0",
+        "sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+      },
+      "target_ref": {
+        "id": "TG-ASSET",
+        "version": "0.1.0"
+      },
+      "selector": {
+        "kind": "text",
+        "frame_ref": null,
+        "period_ref": null,
+        "exact": "길이10초와 원점90000을 설명하는 가상 자료다.",
+        "start": 0,
+        "end": 28
+      },
+      "limitations": "시간 메타의 가상 확인 근거. 실제 원본 정확성 아님."
+    },
+    {
+      "id": "EX-ORIGIN",
+      "version": "0.1.0",
+      "material_ref": {
+        "id": "EX-META",
+        "version": "0.1.0",
+        "sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+      },
+      "target_ref": {
+        "id": "TG-ASSET",
+        "version": "0.1.0"
+      },
+      "selector": {
+        "kind": "text",
+        "frame_ref": null,
+        "period_ref": null,
+        "exact": "길이10초와 원점90000을 설명하는 가상 자료다.",
+        "start": 0,
+        "end": 28
+      },
+      "limitations": "시간 메타의 가상 확인 근거. 실제 원본 정확성 아님."
+    },
+    {
+      "id": "EV-FRAME",
+      "version": "0.1.0",
+      "material_ref": {
+        "id": "EX-IMAGE",
+        "version": "0.1.0",
+        "sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+      },
+      "target_ref": {
+        "id": "TG-OBJECT",
+        "version": "0.1.0"
+      },
+      "selector": {
+        "kind": "frame",
+        "frame_ref": "EX-FRAME",
+        "period_ref": null,
+        "exact": null,
+        "start": null,
+        "end": null
+      },
+      "limitations": "프레임이 대상에 해당한다는 내용은 사람 검수 필요."
+    }
+  ],
+  "claims": [
+    {
+      "id": "CL-ONE",
+      "version": "0.1.0",
+      "statement": "화살표가 있다는 주장에 근거를 연결하는 미관측 설명 예시다.",
+      "support_mode": "not_observed_example",
+      "aspect": "visual_presence",
+      "scope": {
+        "target_ref": {
+          "id": "TG-OBJECT",
+          "version": "0.1.0"
+        },
+        "period_ref": "EX-INSTANT",
+        "extent": "instant"
+      },
+      "evidence_links": [
+        {
+          "ref": {
+            "id": "EV-FRAME",
+            "version": "0.1.0"
+          },
+          "role": "support"
+        }
+      ],
+      "measurement": null,
+      "review_ref": null,
+      "limitations": "실영상·회사 문법·사람 승인으로 사용하지 않는 합성 구조 예."
+    }
+  ],
+  "review_records": [],
+  "notes": "모든 값은 인위적 fixture. 테스트 전용·운영DB 등록 금지."
+}

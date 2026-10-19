@@ -1,0 +1,1310 @@
+{
+  "mode": "lookup",
+  "filters": {
+    "id": "RC-COMP-002@v1"
+  },
+  "result_count": 1,
+  "matched_knowledge": [],
+  "matched_reviews": [],
+  "results": [
+    {
+      "definition": {
+        "id": "RC-COMP-002@v1",
+        "name": "회사 로고 타일",
+        "kind": "component",
+        "definition": "흰 유광 둥근 판 위 고유색 도상과 회사명. 타일과 그 배치 컨테이너를 구분한다.",
+        "aliases": [
+          "로고",
+          "8회사",
+          "HALLA",
+          "피티씨",
+          "2열 4행",
+          "원근 가로열"
+        ],
+        "conditions": "명칭·정체 보존, 배치/문구/타일 비율을 변형 조건으로 관리.",
+        "unverified": "동일 편집 자산·정식 법인명·사용 권한·E2 작은 부속문구 일부 미확정",
+        "subcomponents": [],
+        "status": "local_candidate_not_canonical",
+        "definition_source": "preserved/01_부품과조합.md",
+        "detail_source": "preserved/02_전체상세.md"
+      },
+      "occurrences": [
+        {
+          "id": "USE-005",
+          "definition_id": "RC-COMP-002@v1",
+          "case_id": "RC-CASE-001",
+          "evidence_ids": [
+            "E1",
+            "e1_logos"
+          ],
+          "scope": "왼쪽 역할판",
+          "current_difference": "2열×4행, 행 우선 5번째 피티씨·6번째 HALLA. 가로형 타일.",
+          "spatial_relations": [
+            "anchors_to 왼쪽 정보판 내부"
+          ],
+          "knowledge_ids": [
+            "LAYOUT-CARD-GROUP",
+            "KNOW-LAYOUT-CARD-GROUP",
+            "REL-PARALLEL",
+            "SCREEN-GROUP"
+          ],
+          "temporal_relation": "unobserved",
+          "same_asset": "unverified"
+        },
+        {
+          "id": "USE-006",
+          "definition_id": "RC-COMP-002@v1",
+          "case_id": "RC-CASE-002",
+          "evidence_ids": [
+            "E2",
+            "e2_logos"
+          ],
+          "scope": "중앙 회사열",
+          "current_difference": "왼쪽→오른쪽 5번째 HALLA·6번째 피티씨로 교환. 세로형 타일·원근 가로열·금색 받침. 작은 부속문구는 일부 흐림.",
+          "spatial_relations": [
+            "anchors_to 곡선 받침",
+            "overlaps 잎·투명판"
+          ],
+          "knowledge_ids": [
+            "KNOW-LAYOUT-CARD-GROUP",
+            "SCREEN-GROUP",
+            "MR-03",
+            "Q-BRAND-01"
+          ],
+          "temporal_relation": "unobserved",
+          "same_asset": "unverified"
+        }
+      ],
+      "cases": [
+        {
+          "id": "RC-CASE-001",
+          "time_seconds": 134,
+          "title": "역할판 사이의 프로젝트 요청·전문인력 지원",
+          "evidence_ids": [
+            "E1"
+          ],
+          "information_relation": "가족사 사업 → 기술개발센터 전문인력 참여: 프로젝트 요청. 반대 방향: 전문인력 지원. 화살촉·문구로 확인되는 도식 관계이며 움직임 방향이 아니다.",
+          "composition": "크림 공간의 좌우 흰 유광 역할판과 중앙 관계 여백. 좌 2열×4행 회사 타일, 우 역할 헤더→BIM 두 항목→모니터 업무 묶음. 청색/녹색 모서리와 도상, 가는 구분선, 바닥 반사로 묶인다.",
+          "inferred_function": "두 주체의 다른 역할과 요청·지원의 상호 관계를 읽게 하는 구성이라는 기능 해석. 원제작 의도 확인 없음.",
+          "unknowns": [
+            "U-MOTION",
+            "U-INTENT",
+            "U-IMPLEMENTATION",
+            "U-DISPLAY"
+          ],
+          "layout_id": "RC-LAYOUT-001@v1"
+        },
+        {
+          "id": "RC-CASE-002",
+          "time_seconds": 172,
+          "title": "23.7억원 성과값·회사열·센터 건물 무대",
+          "evidence_ids": [
+            "E2"
+          ],
+          "information_relation": "실제 투입한 인력과 비용을 기준으로 23.7억 원을 가치창출성과로 산정했다는 화면 설명. 회사별 배분액·매출액이나 산정 타당성의 근거는 아니다.",
+          "composition": "왼쪽 금색 대형 수치와 설명, 중앙 원근 8회사열/투명판/곡선 받침, 오른쪽 건물/원형 기단과 위·좌·우·앞 명찰. 크림·금색 실내, 짙은 녹색 유리와 따뜻한 창빛, 바닥 반사·금빛 곡선.",
+          "inferred_function": "성과 규모·관련 회사 집단·센터 지원 범위를 함께 읽게 한다는 추론. 회사열과 수치의 산술 관계는 미확정.",
+          "unknowns": [
+            "U-MOTION",
+            "U-INTENT",
+            "U-IMPLEMENTATION",
+            "U-DISPLAY",
+            "U-ASSET",
+            "U-LOGO"
+          ],
+          "layout_id": "RC-LAYOUT-002@v1"
+        }
+      ],
+      "knowledge_links": [
+        {
+          "id": "KL-002",
+          "target_id": "RC-COMP-002@v1",
+          "knowledge_ids": [
+            "REL-PARALLEL",
+            "LAYOUT-CARD-GROUP",
+            "KNOW-LAYOUT-CARD-GROUP"
+          ],
+          "axis": "information_relation_and_layout_separate",
+          "classification_reason": "회사들을 같은 역할의 타일로 나열하며 순위·정량척도는 표시하지 않음.",
+          "current_result": "회사 목록의 병렬 관계 후보와 카드 외형 분류를 별도 축으로 연결. 2×4는 격자 형태 설명이며 별도 정보관계 ID가 아님.",
+          "limits": "병렬 정보가 동시 등장함을 뜻하지 않으며 순서 교환이 이동 모션의 증거가 아님.",
+          "basis_kind": "analyst_classification_or_review_link_not_source_intent"
+        }
+      ],
+      "knowledge": [
+        {
+          "id": "REL-PARALLEL",
+          "source_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\01_공통용어\\공통용어사전.json",
+          "source_sha256": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+          "source_version": "0.1.1",
+          "json_pointer": "/terms/17",
+          "source_kind": "conditional_knowledge_not_observation",
+          "content": {
+            "id": "REL-PARALLEL",
+            "axis": "information_relation",
+            "name_ko": "병렬 관계",
+            "name_en": "Parallel items",
+            "definition": "동등한 여러 항목의 관계",
+            "aliases": [
+              "병렬 정보"
+            ],
+            "include_when": "동등 항목",
+            "exclude_or_limit": "동시 등장 여부와 별개",
+            "parent_id": null,
+            "related_ids": [],
+            "source_refs": [
+              "SRC-PROJECT-TAXONOMY"
+            ],
+            "status": "draft",
+            "version": "0.1.0",
+            "replaced_by": null
+          }
+        },
+        {
+          "id": "LAYOUT-CARD-GROUP",
+          "source_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\01_공통용어\\공통용어사전.json",
+          "source_sha256": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+          "source_version": "0.1.1",
+          "json_pointer": "/terms/35",
+          "source_kind": "conditional_knowledge_not_observation",
+          "content": {
+            "id": "LAYOUT-CARD-GROUP",
+            "axis": "layout",
+            "name_ko": "카드 그룹",
+            "name_en": "Card group",
+            "definition": "독립 항목들을 카드 형상으로 묶음",
+            "aliases": [
+              "카드형"
+            ],
+            "include_when": "병렬·단계·비교",
+            "exclude_or_limit": "카드와 다른 레이아웃 복합 가능",
+            "parent_id": null,
+            "related_ids": [],
+            "source_refs": [
+              "SRC-PROJECT-TAXONOMY"
+            ],
+            "status": "draft",
+            "version": "0.1.0",
+            "replaced_by": null
+          }
+        },
+        {
+          "id": "KNOW-LAYOUT-CARD-GROUP",
+          "source_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\02_원칙과레이아웃\\레이아웃지식.json",
+          "source_sha256": "0225b8ff97c7ab9441cbe6d1fd7539da8d97ce90bf2e9003d63f4f4ae6175306",
+          "source_version": "0.1.1",
+          "json_pointer": "/layouts/11",
+          "source_kind": "conditional_knowledge_not_observation",
+          "content": {
+            "id": "KNOW-LAYOUT-CARD-GROUP",
+            "term_id": "LAYOUT-CARD-GROUP",
+            "name_ko": "카드 그룹",
+            "definition": "독립 항목들을 카드 형상으로 묶음",
+            "fit_conditions": "병렬·단계·비교",
+            "limits": "카드와 다른 레이아웃 복합 가능",
+            "variant_dimensions": [
+              "요소 수",
+              "문구 길이",
+              "출력 비율",
+              "정보 관계",
+              "읽기·유지 시간"
+            ],
+            "source_refs": [
+              "SRC-PROJECT-TAXONOMY"
+            ],
+            "related_ids": [
+              "SCREEN-HIERARCHY",
+              "SCREEN-TYPE-KO",
+              "SCREEN-TIME-READ"
+            ],
+            "company_examples": [],
+            "status": "reference",
+            "version": "0.1.1",
+            "application_reference_refs": [
+              "SRC-IMPECCABLE"
+            ]
+          }
+        },
+        {
+          "id": "MR-03",
+          "source_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\02_원칙과레이아웃\\모션과정보전달원칙.json",
+          "source_sha256": "249ef6b9e7b14ff62f41352922be2f00e748c8b10debb4d4992b580364e0daa5",
+          "source_version": "0.1.2",
+          "json_pointer": "/principles/34",
+          "source_kind": "conditional_knowledge_not_observation",
+          "content": {
+            "id": "MR-03",
+            "family": "motion_relationship",
+            "name_ko": "대상 연속성",
+            "definition": "전환 전후 같은 대상을 식별하게 한다",
+            "consider_when": "전체에서상세·전후상태추적",
+            "avoid_or_adjust_when": "다른대상의연속변형은사실오인주의",
+            "analysis_observables": "전환 전후 동일 대상의 식별 표식·위치·형태와 연결.",
+            "planning_decisions": "전체에서상세·전후상태추적를 검토하되 사실·회사 필수조건을 우선.",
+            "review_questions": [
+              "같은 대상을 따라갈 수 있는가? 서로 다른 대상을 같은 것처럼 변형하지 않는가?"
+            ],
+            "source_refs": [
+              "SRC-CARBON-CHOREO"
+            ],
+            "related_ids": [],
+            "case_refs": [],
+            "scope": "범용 참고 / 프로젝트 적용 해석",
+            "status": "reference",
+            "version": "0.1.1",
+            "numeric_defaults": null,
+            "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+            "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+            "interpretation_source_refs": [
+              "SRC-PROJECT-GUIDANCE"
+            ]
+          }
+        },
+        {
+          "id": "SCREEN-GROUP",
+          "source_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\02_원칙과레이아웃\\화면설계원칙.json",
+          "source_sha256": "281fe61151dfc96649a070b6fd3ae653c0353b7513f3209534140ce1f54e6b96",
+          "source_version": "0.1.1",
+          "json_pointer": "/principles/1",
+          "source_kind": "conditional_knowledge_not_observation",
+          "content": {
+            "id": "SCREEN-GROUP",
+            "family": "screen",
+            "name_ko": "근접·정렬",
+            "definition": "관계 있는 정보를 배치로 묶음",
+            "consider_when": "그룹·축·여백",
+            "avoid_or_adjust_when": "카드·컨테이너가관계를대신하지않음",
+            "analysis_observables": "그룹 간 거리·정렬축·반복·영역과 관계.",
+            "planning_decisions": "그룹·축·여백를 검토하되 사실·회사 필수조건을 우선.",
+            "review_questions": [
+              "배치가 실제 정보 그룹을 표현하는가?"
+            ],
+            "source_refs": [
+              "SRC-PROJECT-GUIDANCE"
+            ],
+            "related_ids": [],
+            "case_refs": [],
+            "scope": "범용 참고 / 프로젝트 적용 해석",
+            "status": "reference",
+            "version": "0.1.1",
+            "numeric_defaults": null,
+            "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+            "application_reference_refs": [
+              "SRC-IMPECCABLE"
+            ]
+          }
+        },
+        {
+          "id": "Q-INFO-02",
+          "source_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\13_품질검수\\품질항목_정본.json",
+          "source_sha256": "c5b9e91e902747a1d657fbbaee19c4b2b97e96dcf58f0ae2bb032384f29ce60f",
+          "source_version": "0.1.1",
+          "json_pointer": "/cards/1",
+          "source_kind": "conditional_knowledge_not_observation",
+          "content": {
+            "id": "Q-INFO-02",
+            "group": "정보·데이터",
+            "title": "원문·부정어·수치 일치",
+            "question": "표시문구·음성·시나리오의 부정어·소수점·이름·단위가 필요한 의미를 보존하는가?",
+            "applies_when": "수치·기술문구·고유명사·중요 지시가 있는 기록/기획/영상.",
+            "required_evidence": "원문과 정정 이력, 실제 화면·청취 가능한 음성, 동기화된 시나리오, 값의 출처.",
+            "review_method": "원문 전사와 제작용 수정 제안을 분리하고 차이 위치를 적는다. 원문끼리 다르면 권위 있는 버전을 내용 담당자에게 확인.",
+            "positive_example": "가상 원문 0.25 m가 화면·음성에서 같은 의미로 유지됐는지 대조하고 수정 제안은 별도 표시한다.",
+            "counterexample": "0.25를25로 옮기거나 ‘하지 않는다’의 부정을 삭제하고 글자가 예쁘다는 이유로 통과시킨다.",
+            "valid_exception": "의미가 같은 요약/정정은 담당자 확인 근거와 버전을 남겼을 때 허용. 분석 원문을 몰래 고치지 않음.",
+            "hold_when": "음성만 없으면 음성 일치성만 보류. 시나리오와 원본 충돌/판독 불가이면 해당 내용 보류.",
+            "human_review": {
+              "role": "기술/업무 내용 담당자·자막 검수자",
+              "question": "표시문구·음성·시나리오의 부정어·소수점·이름·단위가 필요한 의미를 보존하는가?",
+              "required_for": "실제 내용·의도·시청 품질의 최종 판단. 자료가 없으면 이 질문을 완료로 만들지 않음"
+            },
+            "impact": "핵심 수치·부정 반전은 우선 수정/확인. 관측과 사실 정확도는 별도.",
+            "source_refs": [
+              "WEB-CAP",
+              "LOCAL-EVIDENCE"
+            ],
+            "knowledge_refs": [],
+            "interpretation_origin": "원문 참고 + 프로젝트의 조건부 검수 설계",
+            "example_kind": "가상 설명용; 실제 검사 결과 아님",
+            "company_mandatory": false,
+            "universal_numeric_default": null
+          }
+        },
+        {
+          "id": "Q-INFO-03",
+          "source_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\13_품질검수\\품질항목_정본.json",
+          "source_sha256": "c5b9e91e902747a1d657fbbaee19c4b2b97e96dcf58f0ae2bb032384f29ce60f",
+          "source_version": "0.1.1",
+          "json_pointer": "/cards/2",
+          "source_kind": "conditional_knowledge_not_observation",
+          "content": {
+            "id": "Q-INFO-03",
+            "group": "정보·데이터",
+            "title": "비교 조건·전후·인과",
+            "question": "두 대상의 조건이 대응하며, 전후 차이를 입증되지 않은 개선·인과로 확대하지 않았는가?",
+            "applies_when": "공법/성과/비용/전후 사진·도표를 비교하거나 인과 화살표를 사용하는 경우.",
+            "required_evidence": "비교 데이터·대상·기간·분모·단위·촬영조건, 관계의 출처, 원본 화면.",
+            "review_method": "동일 항목 대응과 조건 차이 표기를 확인. 좌우 배치나 시간 순서만으로 실제 인과를 인정하지 않음.",
+            "positive_example": "같은 부위 사진의 촬영각 차이를 밝히고 관측 가능한 외관 차이와 성능 주장을 분리한다.",
+            "counterexample": "조명·배율이 다른 사진을 효과 입증으로 쓰거나 단위가 다른 값을 같은 크기의 성과로 비교한다.",
+            "valid_exception": "조건이 다른 비교도 차이를 밝혀 설명용으로 쓸 수 있으나 동등성/인과를 주장하지 않음.",
+            "hold_when": "원자료·조건·관계 근거가 없으면 우열/개선/인과 판정 보류. 비교 배치 관측은 남김.",
+            "human_review": {
+              "role": "기술/데이터 담당자·기획 책임자",
+              "question": "두 대상의 조건이 대응하며, 전후 차이를 입증되지 않은 개선·인과로 확대하지 않았는가?",
+              "required_for": "실제 내용·의도·시청 품질의 최종 판단. 자료가 없으면 이 질문을 완료로 만들지 않음"
+            },
+            "impact": "과장된 개선·잘못된 의사결정 위험. 외형 대칭 여부로 대체 불가.",
+            "source_refs": [
+              "LOCAL-CASES",
+              "LOCAL-EVIDENCE",
+              "WEB-CHART"
+            ],
+            "knowledge_refs": [],
+            "interpretation_origin": "원문 참고 + 프로젝트의 조건부 검수 설계",
+            "example_kind": "가상 설명용; 실제 검사 결과 아님",
+            "company_mandatory": false,
+            "universal_numeric_default": null
+          }
+        },
+        {
+          "id": "Q-INFO-04",
+          "source_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\13_품질검수\\품질항목_정본.json",
+          "source_sha256": "c5b9e91e902747a1d657fbbaee19c4b2b97e96dcf58f0ae2bb032384f29ce60f",
+          "source_version": "0.1.1",
+          "json_pointer": "/cards/3",
+          "source_kind": "conditional_knowledge_not_observation",
+          "content": {
+            "id": "Q-INFO-04",
+            "group": "정보·데이터",
+            "title": "결측·추정·카운트 값",
+            "question": "실측·예측·결측·연출 중간값을 구분했는가?",
+            "applies_when": "시계열·수치 카운트·보간·효과 시뮬레이션이 있는 화면/분석.",
+            "required_evidence": "데이터 버전·실측/추정 표기·결측 구간, 실제 재생과 최종값, 연출 목적.",
+            "review_method": "값의 종류와 시간 대응을 확인. 화면 카운트 중간값을 실제 연도 값으로 저장하지 않음.",
+            "positive_example": "가상 최종 실적100만 제공됐다면 등장 카운트의37은 연출값으로 구분하고 최종100과 단위를 확인한다.",
+            "counterexample": "결측을0으로 채우거나 움직이는 숫자를 전부 실제 중간 실적으로 기록한다.",
+            "valid_exception": "검토된 예측/보간 모델을 명시하고 실측과 시각적으로 구분하면 추정 표시 자체는 금지하지 않음.",
+            "hold_when": "종류/모델/최종값 출처가 없으면 실측 주장 보류. 보이는 숫자 관측은 유지.",
+            "human_review": {
+              "role": "데이터 담당자·디자인 검수자",
+              "question": "실측·예측·결측·연출 중간값을 구분했는가?",
+              "required_for": "실제 내용·의도·시청 품질의 최종 판단. 자료가 없으면 이 질문을 완료로 만들지 않음"
+            },
+            "impact": "허위 시계열·실적 과장 위험. 연출을 금지하는 항목은 아님.",
+            "source_refs": [
+              "WEB-CHART",
+              "LOCAL-CONFLICT",
+              "LOCAL-EVIDENCE"
+            ],
+            "knowledge_refs": [
+              "MR-08"
+            ],
+            "interpretation_origin": "원문 참고 + 프로젝트의 조건부 검수 설계",
+            "example_kind": "가상 설명용; 실제 검사 결과 아님",
+            "company_mandatory": false,
+            "universal_numeric_default": null
+          }
+        },
+        {
+          "id": "Q-TEXT-01",
+          "source_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\13_품질검수\\품질항목_정본.json",
+          "source_sha256": "c5b9e91e902747a1d657fbbaee19c4b2b97e96dcf58f0ae2bb032384f29ce60f",
+          "source_version": "0.1.1",
+          "json_pointer": "/cards/4",
+          "source_kind": "conditional_knowledge_not_observation",
+          "content": {
+            "id": "Q-TEXT-01",
+            "group": "한국어·단위",
+            "title": "명칭·글리프·첨자",
+            "question": "필수 기술명·한글/영문·기호·첨자가 실제 출력에서 의미를 보존하는가?",
+            "applies_when": "텍스트가 있는 시안/출력. 분석 전사와 제작 수정은 구분.",
+            "required_evidence": "필수 명칭 원문, 실제 글꼴/대체글꼴과 출력 문자열, 최종 크기·해상도.",
+            "review_method": "긴 명칭·부호·지수·대체 글리프의 잘림/오인을 실제 표시로 확인. 미관을 이유로 임의 축약하지 않음.",
+            "positive_example": "m²와 m³의 첨자, 긴 기술명을 실제 글꼴로 표시해 잘림과 의미를 확인한다.",
+            "counterexample": "㎥/m³를m으로 바꾸거나 필수 기술명을 허락 없이 짧은 별칭으로 바꾼다.",
+            "valid_exception": "검토된 짧은 표기와 원명 대응을 제공하면 요약 가능. 모든 기호를 같은 폭으로 맞출 필요는 없음.",
+            "hold_when": "글꼴·원문·실출력이 없으면 최종 표시 보류. 글꼴 이름만으로 설치/라이선스까지 통과시키지 않음.",
+            "human_review": {
+              "role": "디자인 검수자·기술명 담당자",
+              "question": "필수 기술명·한글/영문·기호·첨자가 실제 출력에서 의미를 보존하는가?",
+              "required_for": "실제 내용·의도·시청 품질의 최종 판단. 자료가 없으면 이 질문을 완료로 만들지 않음"
+            },
+            "impact": "단위 차원·회사명 변화는 내용 오류, 단순 조판 개선과 구분.",
+            "source_refs": [
+              "WEB-KO",
+              "LOCAL-CASES",
+              "LOCAL-BRAND"
+            ],
+            "knowledge_refs": [
+              "SCREEN-TYPE-KO"
+            ],
+            "interpretation_origin": "원문 참고 + 프로젝트의 조건부 검수 설계",
+            "example_kind": "가상 설명용; 실제 검사 결과 아님",
+            "company_mandatory": false,
+            "universal_numeric_default": null
+          }
+        },
+        {
+          "id": "Q-SCREEN-01",
+          "source_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\13_품질검수\\품질항목_정본.json",
+          "source_sha256": "c5b9e91e902747a1d657fbbaee19c4b2b97e96dcf58f0ae2bb032384f29ce60f",
+          "source_version": "0.1.1",
+          "json_pointer": "/cards/11",
+          "source_kind": "conditional_knowledge_not_observation",
+          "content": {
+            "id": "Q-SCREEN-01",
+            "group": "화면·도표",
+            "title": "정보 위계·그룹 대응",
+            "question": "크기·위치·근접·정렬이 제목/본문/대상/라벨의 의미 관계와 맞는가?",
+            "applies_when": "복수 정보가 있는 화면/시안.",
+            "required_evidence": "필수 메시지·관계·실제 화면 상태·해상도/표시 환경.",
+            "review_method": "강조 대상·그룹 경계·레이블 대응을 대조. 시선이 실제로 갔다는 효과 주장은 별도 검증.",
+            "positive_example": "부품 명칭과 그 부품 주석을 묶고 다른 부품과 구분한다.",
+            "counterexample": "정렬만 맞추다 제목이 이전 그룹 본문과 가까워져 대응을 바꾸거나 모든 것을 동일 강조한다.",
+            "valid_exception": "비교 과제에서는 두 초점이 동등하게 유지될 수 있다. 무조건 단일 초점/거대 제목을 강제하지 않음.",
+            "hold_when": "정보 역할·원본/최종 크기가 없으면 의미/최종 읽기 판정 보류. 위치 관측은 유지.",
+            "human_review": {
+              "role": "디자인 검수자·관계가 모호하면 내용 담당자",
+              "question": "크기·위치·근접·정렬이 제목/본문/대상/라벨의 의미 관계와 맞는가?",
+              "required_for": "실제 내용·의도·시청 품질의 최종 판단. 자료가 없으면 이 질문을 완료로 만들지 않음"
+            },
+            "impact": "잘못된 대응은 정보 오류. 미세 간격 취향과 구분.",
+            "source_refs": [
+              "WEB-VISUAL",
+              "LOCAL-SCREEN"
+            ],
+            "knowledge_refs": [
+              "SCREEN-HIERARCHY",
+              "SCREEN-GROUP",
+              "AP-03"
+            ],
+            "interpretation_origin": "원문 참고 + 프로젝트의 조건부 검수 설계",
+            "example_kind": "가상 설명용; 실제 검사 결과 아님",
+            "company_mandatory": false,
+            "universal_numeric_default": null
+          }
+        },
+        {
+          "id": "Q-SCREEN-06",
+          "source_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\13_품질검수\\품질항목_정본.json",
+          "source_sha256": "c5b9e91e902747a1d657fbbaee19c4b2b97e96dcf58f0ae2bb032384f29ce60f",
+          "source_version": "0.1.1",
+          "json_pointer": "/cards/16",
+          "source_kind": "conditional_knowledge_not_observation",
+          "content": {
+            "id": "Q-SCREEN-06",
+            "group": "화면·도표",
+            "title": "공간 주석·실제 UI",
+            "question": "주석·리더라인·확대가 실제 위치·기능·버전을 보존하는가?",
+            "applies_when": "도면/지도/제품 UI/부품을 주석·확대해 설명할 때.",
+            "required_evidence": "버전이 정해진 원도면/제품 UI·대상 대응, 크롭/회전/리사이즈 경로, 실제 화면.",
+            "review_method": "R4 좌표/변환 문맥에서 대응을 확인하고 실제 기능과 설명용 합성을 구분한다. 깔끔함 때문에 원래 위치를 변경하지 않음.",
+            "positive_example": "원도면 부품 위치는 유지하고 확대 인셋의 대응 위치·원본 영역을 표시한다.",
+            "counterexample": "리더라인이 옆 부품을 가리키거나 버튼을 옮기고 실제 제품 사용법이라고 소개한다.",
+            "valid_exception": "명시된 설명도/개념 UI는 재구성 가능하지만 실제 위치/기능의 증거로 쓰지 않음.",
+            "hold_when": "원본 버전·대상 대응·변환이 없으면 공간/기능 정확성 보류. 읽히는 주석 관측은 유지.",
+            "human_review": {
+              "role": "도면/제품 담당자·디자인 검수자",
+              "question": "주석·리더라인·확대가 실제 위치·기능·버전을 보존하는가?",
+              "required_for": "실제 내용·의도·시청 품질의 최종 판단. 자료가 없으면 이 질문을 완료로 만들지 않음"
+            },
+            "impact": "잘못된 조작·대상 오인. 좌표 구조 일치와 의미 정확도 별도.",
+            "source_refs": [
+              "LOCAL-CASES",
+              "LOCAL-INTEGRATED"
+            ],
+            "knowledge_refs": [
+              "SCREEN-GROUP"
+            ],
+            "interpretation_origin": "원문 참고 + 프로젝트의 조건부 검수 설계",
+            "example_kind": "가상 설명용; 실제 검사 결과 아님",
+            "company_mandatory": false,
+            "universal_numeric_default": null
+          }
+        },
+        {
+          "id": "Q-SCREEN-07",
+          "source_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\13_품질검수\\품질항목_정본.json",
+          "source_sha256": "c5b9e91e902747a1d657fbbaee19c4b2b97e96dcf58f0ae2bb032384f29ce60f",
+          "source_version": "0.1.1",
+          "json_pointer": "/cards/17",
+          "source_kind": "conditional_knowledge_not_observation",
+          "content": {
+            "id": "Q-SCREEN-07",
+            "group": "화면·도표",
+            "title": "화면비·크롭·오버레이",
+            "question": "변환된 화면에서 필수 글자·도표·로고·자막이 잘리거나 가려지지 않는가?",
+            "applies_when": "출력 화면비/해상도·플레이어 UI·PIP·자막/수어 오버레이가 있는 조건.",
+            "required_evidence": "원본/출력 버전과 크기·회전/크롭/리사이즈·실제 오버레이·플레이어 상태·필수 정보.",
+            "review_method": "화면 상태별 핵심정보의 잘림/가림을 확인. 공통 안전영역 비율을 추정하지 않고 실제 제공 조건에 맞춰 재배치 검토.",
+            "positive_example": "가로 비교 화면을 세로형에서 상하 재배치하고 단위·양쪽 비교·로고가 최종 표시에서 남는지 확인한다.",
+            "counterexample": "중앙 크롭으로 한쪽 비교가 사라지거나 자막/PIP가 핵심 조작 버튼을 가린다.",
+            "valid_exception": "의도적 상세 크롭은 원래 위치/필수 정보 접근을 별도로 보존하고 설명 목적에 맞을 때 가능.",
+            "hold_when": "최종 출력/플레이어 UI·오버레이가 없으면 해당 환경 최종 판정 보류. 확보한 버전만 한정 검수.",
+            "human_review": {
+              "role": "디자인/영상 검수자·필요시 배포 담당자",
+              "question": "변환된 화면에서 필수 글자·도표·로고·자막이 잘리거나 가려지지 않는가?",
+              "required_for": "실제 내용·의도·시청 품질의 최종 판단. 자료가 없으면 이 질문을 완료로 만들지 않음"
+            },
+            "impact": "필수 정보 손실. 모든 플랫폼 하단19% 같은 고정값 없음.",
+            "source_refs": [
+              "WEB-AV",
+              "LOCAL-CASES",
+              "LOCAL-INTEGRATED"
+            ],
+            "knowledge_refs": [
+              "SCREEN-DENSITY"
+            ],
+            "interpretation_origin": "원문 참고 + 프로젝트의 조건부 검수 설계",
+            "example_kind": "가상 설명용; 실제 검사 결과 아님",
+            "company_mandatory": false,
+            "universal_numeric_default": null
+          }
+        },
+        {
+          "id": "Q-MOTION-01",
+          "source_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\13_품질검수\\품질항목_정본.json",
+          "source_sha256": "c5b9e91e902747a1d657fbbaee19c4b2b97e96dcf58f0ae2bb032384f29ce60f",
+          "source_version": "0.1.1",
+          "json_pointer": "/cards/18",
+          "source_kind": "conditional_knowledge_not_observation",
+          "content": {
+            "id": "Q-MOTION-01",
+            "group": "모션·시간",
+            "title": "정보 완성과 읽기 유지",
+            "question": "비교/설명에 필요한 정보가 완성된 뒤 읽고 연결할 시간이 있는가?",
+            "applies_when": "시간에 따라 정보가 나타나고 사라지는 영상/모션 기획.",
+            "required_evidence": "대상별 등장·완성·유지·퇴장 시간과 발화, 필수 관계, 실제 시청 조건/필요시 시청자 확인.",
+            "review_method": "전체 클립 길이 대신 실제 읽을 수 있는 구간을 확인. 비교할 값의 동시 유지·누적/요약과 과밀을 함께 검토.",
+            "positive_example": "A/B 수치·단위가 공개된 뒤 둘을 함께 읽을 상태를 유지하고 다음 설명으로 넘어간다.",
+            "counterexample": "제목만5초 보였는데 뒤늦게 나온 단위까지 충분히 읽었다고 하거나 모든 이전 문구를 끝까지 쌓는다.",
+            "valid_exception": "순차 공개·빠른 리듬도 목적·대상에 맞으면 가능. 정지/동시 공개 미사용 자체는 오류가 아님.",
+            "hold_when": "실제 시간·완성시점·시청 조건이 없으면 충분성 보류. 관측 유지시간은 근거가 있을 때 기록.",
+            "human_review": {
+              "role": "디자인/영상 검수자·필요시 실제 대상 시청자",
+              "question": "비교/설명에 필요한 정보가 완성된 뒤 읽고 연결할 시간이 있는가?",
+              "required_for": "실제 내용·의도·시청 품질의 최종 판단. 자료가 없으면 이 질문을 완료로 만들지 않음"
+            },
+            "impact": "관계/수치 읽기 실패. 고정 초수는 아직 없음.",
+            "source_refs": [
+              "WEB-TRANSIENT",
+              "WEB-AV",
+              "LOCAL-CONFLICT"
+            ],
+            "knowledge_refs": [
+              "SCREEN-TIME-READ",
+              "AP-09",
+              "IP-09",
+              "MR-04"
+            ],
+            "interpretation_origin": "원문 참고 + 프로젝트의 조건부 검수 설계",
+            "example_kind": "가상 설명용; 실제 검사 결과 아님",
+            "company_mandatory": false,
+            "universal_numeric_default": null
+          }
+        },
+        {
+          "id": "Q-BRAND-01",
+          "source_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\13_품질검수\\품질항목_정본.json",
+          "source_sha256": "c5b9e91e902747a1d657fbbaee19c4b2b97e96dcf58f0ae2bb032384f29ce60f",
+          "source_version": "0.1.1",
+          "json_pointer": "/cards/22",
+          "source_kind": "conditional_knowledge_not_observation",
+          "content": {
+            "id": "Q-BRAND-01",
+            "group": "브랜드·출처",
+            "title": "회사·CI 원형·사용형",
+            "question": "올바른 회사의 제공 자산/허용 사용형을 참조하며 원형·법인명을 보존하는가?",
+            "applies_when": "회사명/로고/심볼을 사용하는 화면.",
+            "required_evidence": "회사ID·제공 자산/버전·사용형·최종 표시, 해당 보호공간/반전형 등의 근거.",
+            "review_method": "R6 현재 최신성 확인과 R5 세부 미정을 구분. ㈜장헌/장헌산업 병합 금지. 원형 변형·재생성 없이 자산 대조.",
+            "positive_example": "8회사 자료를 별도 참조하고 산하는 제공된 원본 형식을 보존해 프로젝트 배치 검수한다.",
+            "counterexample": "산하에 AI원본이 없으니 가짜 원본을 만들거나 로고를 흰색으로 바꿔 공식 반전형으로 등록한다.",
+            "valid_exception": "로고 미사용이면 해당 적용 항목 비적용. 제공/허용된 변형형은 근거 연결 후 가능.",
+            "hold_when": "실제 적용 버전·사용형/보호공간·법인 대응이 없으면 해당 적용만 보류. 최신 자료인지 반복 질문하지 않음.",
+            "human_review": {
+              "role": "디자인 검수자·해당 사용규칙 확인 담당자",
+              "question": "올바른 회사의 제공 자산/허용 사용형을 참조하며 원형·법인명을 보존하는가?",
+              "required_for": "실제 내용·의도·시청 품질의 최종 판단. 자료가 없으면 이 질문을 완료로 만들지 않음"
+            },
+            "impact": "회사 혼동/원형 훼손 우선 수정. 최신성 확인은 배포·세부가이드 승인 아님.",
+            "source_refs": [
+              "LOCAL-BRAND",
+              "LOCAL-CI"
+            ],
+            "knowledge_refs": [],
+            "interpretation_origin": "원문 참고 + 프로젝트의 조건부 검수 설계",
+            "example_kind": "가상 설명용; 실제 검사 결과 아님",
+            "company_mandatory": false,
+            "universal_numeric_default": null
+          }
+        },
+        {
+          "id": "Q-TRUST-01",
+          "source_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\13_품질검수\\품질항목_정본.json",
+          "source_sha256": "c5b9e91e902747a1d657fbbaee19c4b2b97e96dcf58f0ae2bb032384f29ce60f",
+          "source_version": "0.1.1",
+          "json_pointer": "/cards/24",
+          "source_kind": "conditional_knowledge_not_observation",
+          "content": {
+            "id": "Q-TRUST-01",
+            "group": "분석 신뢰도",
+            "title": "원본·시간·좌표·근거",
+            "question": "관측/수치 주장에 올바른 버전·실제 위치·시간·변환 근거가 연결되는가?",
+            "applies_when": "영상 분석 기록 및 그 기록을 근거로 한 품질 판단.",
+            "required_evidence": "해당 주장에 필요한 원본/파생 버전·실제 접근 가능 근거·반대 근거. 영상 시점/변화 주장은 R4 시간/프레임, 공간·변환 주장은 좌표/변환 근거를 추가. 문서 전사·비공간 주장에는 불필요한 좌표를 요구하지 않음.",
+            "review_method": "기존 R4 통합 계약과 R6 조회를 사용하고 원본 부분을 내용 대조. 주장에 필요한 근거 종류와 비적용 이유를 구분하며 구조 통과만으로 관측 정확성 통과 불가.",
+            "positive_example": "관측 대상을 원본 프레임/PTS와 출력 좌표 공간에 연결하고 크롭된 부분의 누락을 명시한다.",
+            "counterexample": "시나리오에 있다는 이유로 실제 등장했다고 쓰거나 미상 오차를0으로 채운다.",
+            "valid_exception": "시나리오 내용 관측은 그 종류로 기록 가능. 비공간적 주장은 좌표 비적용 이유를 남길 수 있고 R4의 적법한 spaces=[] 기록도 허용. 렌더 화면 관측이나 실제 구현 근거로 바꾸지 않음.",
+            "hold_when": "버전·원본 접근·내용 대조 또는 해당 주장에 필요한 시간/좌표·변환 근거가 없으면 해당 주장 보류. 공간 주장 누락을 비공간 예외로 우회하지 않음. 구조 오류는 원정보 보완 후 재검사.",
+            "human_review": {
+              "role": "분석 내용 검수자·기술/디자인 담당자",
+              "question": "관측/수치 주장에 올바른 버전·실제 위치·시간·변환 근거가 연결되는가?",
+              "required_for": "실제 내용·의도·시청 품질의 최종 판단. 자료가 없으면 이 질문을 완료로 만들지 않음"
+            },
+            "impact": "분석 신뢰도의 필수 조건. 보기 좋은 원본이 근거 부족을 상쇄하지 않음.",
+            "source_refs": [
+              "LOCAL-EVIDENCE",
+              "LOCAL-INTEGRATED",
+              "LOCAL-DECISION"
+            ],
+            "knowledge_refs": [],
+            "interpretation_origin": "원문 참고 + 프로젝트의 조건부 검수 설계",
+            "example_kind": "가상 설명용; 실제 검사 결과 아님",
+            "company_mandatory": false,
+            "universal_numeric_default": null
+          }
+        },
+        {
+          "id": "Q-TRUST-02",
+          "source_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\13_품질검수\\품질항목_정본.json",
+          "source_sha256": "c5b9e91e902747a1d657fbbaee19c4b2b97e96dcf58f0ae2bb032384f29ce60f",
+          "source_version": "0.1.1",
+          "json_pointer": "/cards/25",
+          "source_kind": "conditional_knowledge_not_observation",
+          "content": {
+            "id": "Q-TRUST-02",
+            "group": "분석 신뢰도",
+            "title": "의도·구현·부재·일반화",
+            "question": "관측을 넘어선 제작 의도·구현 방식·부재·회사 공통 규칙 주장에 별도 근거가 있는가?",
+            "applies_when": "의도/효과/AE구현/미등장/회사 일반 규칙을 진술하는 분석·보고.",
+            "required_evidence": "원본 프로젝트/제작자 확인 또는 충분한 관측 범위, 반대 근거·표본 한계, 구체 사람 회신.",
+            "review_method": "가설과 확인을 구분. 부분 표본의 부재를 전 구간 부재로, 한 영상 관측을 회사 규칙으로 승격하지 않음.",
+            "positive_example": "함께 움직임은 관측하되 AE parent 여부는 원본이 없어 미확인으로 남긴다.",
+            "counterexample": "같이 움직였으니 parent 사용, 화면이 세련됐으니 이해도가 상승, 영상1개이니 회사 규칙이라고 확정한다.",
+            "valid_exception": "근거 범위를 밝힌 후보/추정은 가능. 확인 못한 구현을 모른다고 해도 충분한 화면 관측을 삭제하지 않음.",
+            "hold_when": "제작자/원본/전 구간·대표 표본 근거가 없거나 반대 근거가 미해결이면 해당 확대 주장 보류.",
+            "human_review": {
+              "role": "제작자·내용 담당자·회사 규칙 확인 담당자",
+              "question": "관측을 넘어선 제작 의도·구현 방식·부재·회사 공통 규칙 주장에 별도 근거가 있는가?",
+              "required_for": "실제 내용·의도·시청 품질의 최종 판단. 자료가 없으면 이 질문을 완료로 만들지 않음"
+            },
+            "impact": "근거 없는 확정/잘못된 DB 일반화 방지. 회사 문법 승격은01-B의 별도 검수.",
+            "source_refs": [
+              "LOCAL-EVIDENCE",
+              "LOCAL-CONFLICT",
+              "LOCAL-CI",
+              "LOCAL-DECISION"
+            ],
+            "knowledge_refs": [
+              "AP-04",
+              "MR-07"
+            ],
+            "interpretation_origin": "원문 참고 + 프로젝트의 조건부 검수 설계",
+            "example_kind": "가상 설명용; 실제 검사 결과 아님",
+            "company_mandatory": false,
+            "universal_numeric_default": null
+          }
+        }
+      ],
+      "reviews": [
+        {
+          "id": "REV-01",
+          "target_ids": [
+            "RC-CASE-001",
+            "RC-COMP-004@v1"
+          ],
+          "criteria_ids": [
+            "Q-INFO-02"
+          ],
+          "evidence_ids": [
+            "E1",
+            "e1_arrows"
+          ],
+          "review_object": "analysis_record",
+          "reviewer": "this execution analysis agent; self review",
+          "method": "provided PNG full view plus crop readback where listed",
+          "progress": "reviewed_with_scope",
+          "verdict": "통과",
+          "confirmed": "파랑 프로젝트 요청의 오른쪽 화살촉과 녹색 전문인력 지원의 왼쪽 화살촉·문구가 기록과 대응한다.",
+          "remaining": "정적 도식 귀속에 한정. 이동·순환·이징은 미관측.",
+          "company_approval": false,
+          "association": "case_context_only"
+        },
+        {
+          "id": "REV-02",
+          "target_ids": [
+            "RC-CASE-002",
+            "RC-COMP-006@v1"
+          ],
+          "criteria_ids": [
+            "Q-INFO-02"
+          ],
+          "evidence_ids": [
+            "e2_value",
+            "e2_number"
+          ],
+          "review_object": "analysis_record",
+          "reviewer": "this execution analysis agent; self review",
+          "method": "provided PNG full view plus crop readback where listed",
+          "progress": "reviewed_with_scope",
+          "verdict": "통과",
+          "confirmed": "실제 투입한 인력과 비용 기준, 23.7억 원, 가치창출성과로 산정했다는 화면 문구와 큰 수치 대응 확인.",
+          "remaining": "실제 산정의 타당성·최종 확정액·시나리오/음성 일치는 미검수.",
+          "company_approval": false,
+          "association": "case_context_only"
+        },
+        {
+          "id": "REV-03",
+          "target_ids": [
+            "RC-CASE-001",
+            "RC-COMP-003@v1"
+          ],
+          "criteria_ids": [
+            "Q-INFO-02",
+            "Q-TEXT-01"
+          ],
+          "evidence_ids": [
+            "E1",
+            "e1_roles"
+          ],
+          "review_object": "analysis_record",
+          "reviewer": "this execution analysis agent; self review",
+          "method": "provided PNG full view plus crop readback where listed",
+          "progress": "reviewed_with_scope",
+          "verdict": "통과",
+          "confirmed": "우 역할명/설명, 3명 도상, 큐브 BIM 설계/모니터 BIM 지원이 기존 기록과 대응한다. 좌 헤더는 전체 PNG에서 확인.",
+          "remaining": "전체 영상의 모든 문자·법인 등기명·폰트명 검수 아님.",
+          "company_approval": false,
+          "association": "case_context_only"
+        },
+        {
+          "id": "REV-04",
+          "target_ids": [
+            "RC-CASE-002",
+            "RC-COMP-005@v1",
+            "RC-COMP-008@v1"
+          ],
+          "criteria_ids": [
+            "Q-INFO-02",
+            "Q-SCREEN-01"
+          ],
+          "evidence_ids": [
+            "e2_building"
+          ],
+          "review_object": "analysis_record",
+          "reviewer": "this execution analysis agent; self review",
+          "method": "provided PNG full view plus crop readback where listed",
+          "progress": "reviewed_with_scope",
+          "verdict": "통과",
+          "confirmed": "정면 TDC/기술개발센터 및 위 BIM 지원·좌 BIM 설계·우 디자인 지원·앞 해외사업 지원과 주변 배치가 기록에 대응한다.",
+          "remaining": "서비스의 실제 범위·우선순위·건물 업무 위치는 미확인.",
+          "company_approval": false,
+          "association": "case_context_only"
+        },
+        {
+          "id": "REV-05",
+          "target_ids": [
+            "RC-CASE-001",
+            "RC-CASE-002",
+            "RC-COMP-002@v1"
+          ],
+          "criteria_ids": [
+            "Q-TEXT-01"
+          ],
+          "evidence_ids": [
+            "e1_logos",
+            "e2_logos"
+          ],
+          "review_object": "analysis_record",
+          "reviewer": "this execution analysis agent; self review",
+          "method": "provided PNG full view plus crop readback where listed",
+          "progress": "reviewed_with_scope",
+          "verdict": "통과",
+          "confirmed": "8개 핵심 도상/이름 대응과 피티씨/HALLA 5·6번째 순서 교환, 격자→원근 가로열 차이를 확인. 장헌과 장헌산업을 구별한다.",
+          "remaining": "E2 작은 부속문구는 일부 흐림. E1 전체 전사를 E2 독립 판독으로 옮기지 않음.",
+          "company_approval": false,
+          "association": "direct_target"
+        },
+        {
+          "id": "REV-06",
+          "target_ids": [
+            "RC-CASE-001",
+            "RC-CASE-002",
+            "RC-COMP-002@v1"
+          ],
+          "criteria_ids": [
+            "Q-BRAND-01"
+          ],
+          "evidence_ids": [
+            "e1_logos",
+            "e2_logos"
+          ],
+          "review_object": "analysis_record",
+          "reviewer": "this execution analysis agent; self review",
+          "method": "provided PNG full view plus crop readback where listed",
+          "progress": "reviewed_with_scope",
+          "verdict": "판단보류",
+          "confirmed": "화면상의 고유색 로고·명칭은 수집했다.",
+          "remaining": "편집 원본 자산ID/허용 사용형/보호공간과 현재 적용 버전 대조가 없어 회사 CI 준수 확정 불가. 기존 자료 최신성 재질문은 하지 않음.",
+          "company_approval": false,
+          "association": "direct_target"
+        },
+        {
+          "id": "REV-07",
+          "target_ids": [
+            "RC-CASE-001",
+            "RC-COMP-007@v1"
+          ],
+          "criteria_ids": [
+            "Q-SCREEN-01"
+          ],
+          "evidence_ids": [
+            "E1",
+            "e1_work"
+          ],
+          "review_object": "analysis_record",
+          "reviewer": "this execution analysis agent; self review",
+          "method": "provided PNG full view plus crop readback where listed",
+          "progress": "reviewed_with_scope",
+          "verdict": "통과",
+          "confirmed": "3모니터·큰 중앙 화면·선반·2화분·책 2묶음·판 하부 겹침이 기존 묶음 정의와 대응한다.",
+          "remaining": "수집 기록의 관계 정확성에 한정. 실제 대상 시선·전달 성공이나 교체 가독성 검증은 아님.",
+          "company_approval": false,
+          "association": "case_context_only"
+        },
+        {
+          "id": "REV-08",
+          "target_ids": [
+            "RC-CASE-001",
+            "RC-COMP-007@v1"
+          ],
+          "criteria_ids": [
+            "Q-SCREEN-06"
+          ],
+          "evidence_ids": [
+            "e1_work"
+          ],
+          "review_object": "analysis_record",
+          "reviewer": "this execution analysis agent; self review",
+          "method": "provided PNG full view plus crop readback where listed",
+          "progress": "reviewed_with_scope",
+          "verdict": "판단보류",
+          "confirmed": "왼쪽 도면·중앙 건물 와이어프레임·오른쪽 지도/건축 이미지의 형태 관측은 유지.",
+          "remaining": "제품 버전/실제 UI/프로젝트 출처가 없어 특정 소프트웨어 조작·기능 데모로 확정하지 않음.",
+          "company_approval": false,
+          "association": "case_context_only"
+        },
+        {
+          "id": "REV-09",
+          "target_ids": [
+            "RC-CASE-001",
+            "RC-LAYOUT-001@v1"
+          ],
+          "criteria_ids": [
+            "Q-INFO-03"
+          ],
+          "evidence_ids": [
+            "E1"
+          ],
+          "review_object": "analysis_record",
+          "reviewer": "this execution analysis agent; self review",
+          "method": "provided PNG full view plus crop readback where listed",
+          "progress": "reviewed_with_scope",
+          "verdict": "통과",
+          "confirmed": "두 판은 다른 주체의 요청·지원 관계. 공통 항목·척도의 우열 비교 또는 단방향 절차로 기록하지 않았다.",
+          "remaining": "공간 도식의 의미 분류에 한정. 현실 업무 인과·실제 절차 전체는 미확인.",
+          "company_approval": false,
+          "association": "case_context_only"
+        },
+        {
+          "id": "REV-10",
+          "target_ids": [
+            "RC-CASE-002",
+            "RC-LAYOUT-002@v1",
+            "RC-COMP-006@v1"
+          ],
+          "criteria_ids": [
+            "Q-INFO-03"
+          ],
+          "evidence_ids": [
+            "E2",
+            "e2_value"
+          ],
+          "review_object": "analysis_record",
+          "reviewer": "this execution analysis agent; self review",
+          "method": "provided PNG full view plus crop readback where listed",
+          "progress": "reviewed_with_scope",
+          "verdict": "판단보류",
+          "confirmed": "성과액·회사열·기관이 동반하며 산정 기준 설명이 보임.",
+          "remaining": "회사별 금액 분배·순위·금액의 실증 근거는 미제공. 금빛 선만으로 재정/업무 인과를 확정할 수 없음.",
+          "company_approval": false,
+          "association": "case_context_only"
+        },
+        {
+          "id": "REV-11",
+          "target_ids": [
+            "RC-CASE-001",
+            "RC-CASE-002"
+          ],
+          "criteria_ids": [
+            "Q-TRUST-01"
+          ],
+          "evidence_ids": [
+            "E1",
+            "E2"
+          ],
+          "review_object": "analysis_record",
+          "reviewer": "this execution analysis agent; self review",
+          "method": "provided PNG full view plus crop readback where listed",
+          "progress": "reviewed_with_scope",
+          "verdict": "통과",
+          "confirmed": "두 PNG 7680×2160과 SHA 확인, 8개 ROI의 원본 좌표와 crop-only 변환 보존. 제공된 PNG/기록 대조 범위의 출처 연결 확인.",
+          "remaining": "MP4 해시·PTS 매핑·오디오/시나리오 독립 확인은 보류. 입력의 시각 메타데이터를 신뢰한 정적 사례이다.",
+          "company_approval": false,
+          "association": "case_context_only"
+        },
+        {
+          "id": "REV-12",
+          "target_ids": [
+            "RC-CASE-001",
+            "RC-CASE-002"
+          ],
+          "criteria_ids": [
+            "Q-TRUST-02"
+          ],
+          "evidence_ids": [
+            "E1",
+            "E2"
+          ],
+          "review_object": "analysis_record",
+          "reviewer": "this execution analysis agent; self review",
+          "method": "provided PNG full view plus crop readback where listed",
+          "progress": "reviewed_with_scope",
+          "verdict": "통과",
+          "confirmed": "관측·기능 추론·미관측을 구분하고 단일 사례 후보·반복 외형·동일 자산·정본 등록을 분리한다.",
+          "remaining": "제작 의도/AE 구현/회사 공통 규칙은 현재 확정하지 않음. 사람 검수·독립 검수 아님.",
+          "company_approval": false,
+          "association": "case_context_only"
+        },
+        {
+          "id": "REV-13",
+          "target_ids": [
+            "RC-CASE-001",
+            "RC-CASE-002",
+            "RC-LAYOUT-001@v1",
+            "RC-LAYOUT-002@v1"
+          ],
+          "criteria_ids": [
+            "Q-MOTION-01"
+          ],
+          "evidence_ids": [
+            "E1",
+            "E2"
+          ],
+          "review_object": "analysis_record",
+          "reviewer": "this execution analysis agent; self review",
+          "method": "provided PNG full view plus crop readback where listed",
+          "progress": "reviewed_with_scope",
+          "verdict": "판단보류",
+          "confirmed": "38초 떨어진 두 표본의 정적 구도를 보존함.",
+          "remaining": "등장/완성/유지/퇴장 시간·음성·실제 시청 환경이 없어 충분한 읽기 시간과 전체 흐름을 판정할 수 없음.",
+          "company_approval": false,
+          "association": "case_context_only"
+        },
+        {
+          "id": "REV-14",
+          "target_ids": [
+            "RC-CASE-002",
+            "RC-COMP-006@v1"
+          ],
+          "criteria_ids": [
+            "Q-INFO-04"
+          ],
+          "evidence_ids": [
+            "e2_number"
+          ],
+          "review_object": "analysis_record",
+          "reviewer": "this execution analysis agent; self review",
+          "method": "provided PNG full view plus crop readback where listed",
+          "progress": "reviewed_with_scope",
+          "verdict": "판단보류",
+          "confirmed": "23.7억원과 큰 옅은 윤곽의 동시 가시성 확인.",
+          "remaining": "수치 시간 변화·실측/연출 중간값·잔상/카운트업 여부가 미관측.",
+          "company_approval": false,
+          "association": "case_context_only"
+        },
+        {
+          "id": "REV-15",
+          "target_ids": [
+            "RC-CASE-001",
+            "RC-CASE-002",
+            "RC-LAYOUT-001@v1",
+            "RC-LAYOUT-002@v1"
+          ],
+          "criteria_ids": [
+            "Q-SCREEN-07"
+          ],
+          "evidence_ids": [
+            "E1",
+            "E2"
+          ],
+          "review_object": "analysis_record",
+          "reviewer": "this execution analysis agent; self review",
+          "method": "provided PNG full view plus crop readback where listed",
+          "progress": "reviewed_with_scope",
+          "verdict": "판단보류",
+          "confirmed": "제공 PNG 32:9의 전체 구도를 유지하며 ROI는 보조로 연결함.",
+          "remaining": "최종 출력/재생 환경·오버레이·다른 화면비가 없어 해당 환경의 잘림/가림·최종 가독성 판정 보류.",
+          "company_approval": false,
+          "association": "case_context_only"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "E1",
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\static\\evidence\\134.png",
+          "sha256": "e1fe065b8d9f9ad8ce819266389a8326d58ecb886fe85b53eb6e18a701f3f2f8",
+          "size": [
+            7680,
+            2160
+          ],
+          "time_seconds": 134,
+          "time_basis": "provided input; MP4/PTS not independently inspected",
+          "type": "provided_png"
+        },
+        {
+          "id": "E2",
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\static\\evidence\\172.png",
+          "sha256": "44a26a91328863dd335f9b950780afb96929888f8475b45b2298035250a1771a",
+          "size": [
+            7680,
+            2160
+          ],
+          "time_seconds": 172,
+          "time_basis": "provided input; MP4/PTS not independently inspected",
+          "type": "provided_png"
+        },
+        {
+          "id": "e1_logos",
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-1-static-knowledge-use-review\\old_skill\\outputs\\evidence\\e1_logos.png",
+          "sha256": "28e5f0d5a8519701c2165d86d93f1b2484f9eb2055bdf8e8567099a9b0137de3",
+          "parent": "E1",
+          "bbox_ltrb_exclusive": [
+            1000,
+            1000,
+            2750,
+            1910
+          ],
+          "coordinate_system": "parent PNG, top-left, x right/y down, px",
+          "transform": "crop only; no resize/color/rotation",
+          "size": [
+            1750,
+            910
+          ]
+        },
+        {
+          "id": "e1_roles",
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-1-static-knowledge-use-review\\old_skill\\outputs\\evidence\\e1_roles.png",
+          "sha256": "867c8a0da1fd764274349a013e6ee9895e53ab0acea3cccba5f02767284b0400",
+          "parent": "E1",
+          "bbox_ltrb_exclusive": [
+            4750,
+            660,
+            6700,
+            1380
+          ],
+          "coordinate_system": "parent PNG, top-left, x right/y down, px",
+          "transform": "crop only; no resize/color/rotation",
+          "size": [
+            1950,
+            720
+          ]
+        },
+        {
+          "id": "e1_arrows",
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-1-static-knowledge-use-review\\old_skill\\outputs\\evidence\\e1_arrows.png",
+          "sha256": "4b8a06cb9b54972b85246d345313191ff43bc1fc520ea8d4724727d13b9cd1c3",
+          "parent": "E1",
+          "bbox_ltrb_exclusive": [
+            2900,
+            930,
+            4700,
+            1740
+          ],
+          "coordinate_system": "parent PNG, top-left, x right/y down, px",
+          "transform": "crop only; no resize/color/rotation",
+          "size": [
+            1800,
+            810
+          ]
+        },
+        {
+          "id": "e1_work",
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-1-static-knowledge-use-review\\old_skill\\outputs\\evidence\\e1_work.png",
+          "sha256": "3434f46fc04c72b547d5d9c0b128093806ae9d13fa28cb4cac2eff280aab7b0e",
+          "parent": "E1",
+          "bbox_ltrb_exclusive": [
+            4550,
+            1320,
+            7110,
+            2000
+          ],
+          "coordinate_system": "parent PNG, top-left, x right/y down, px",
+          "transform": "crop only; no resize/color/rotation",
+          "size": [
+            2560,
+            680
+          ]
+        },
+        {
+          "id": "e2_logos",
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-1-static-knowledge-use-review\\old_skill\\outputs\\evidence\\e2_logos.png",
+          "sha256": "be46708f5dc7d67266003952f8d28bcd1f4bdc0c45138a05f55c7e5ac6eeff64",
+          "parent": "E2",
+          "bbox_ltrb_exclusive": [
+            2500,
+            910,
+            4800,
+            1510
+          ],
+          "coordinate_system": "parent PNG, top-left, x right/y down, px",
+          "transform": "crop only; no resize/color/rotation",
+          "size": [
+            2300,
+            600
+          ]
+        },
+        {
+          "id": "e2_value",
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-1-static-knowledge-use-review\\old_skill\\outputs\\evidence\\e2_value.png",
+          "sha256": "ec05cfe020b527c3d372a6981fec1287c178c235f0b0cff2e4684f1c35fe89f7",
+          "parent": "E2",
+          "bbox_ltrb_exclusive": [
+            350,
+            540,
+            2470,
+            840
+          ],
+          "coordinate_system": "parent PNG, top-left, x right/y down, px",
+          "transform": "crop only; no resize/color/rotation",
+          "size": [
+            2120,
+            300
+          ]
+        },
+        {
+          "id": "e2_building",
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-1-static-knowledge-use-review\\old_skill\\outputs\\evidence\\e2_building.png",
+          "sha256": "c54ba9bc56e3a65bbc8d0b433eb23f40e7f502d69da1b55cdc538f80918cf2f7",
+          "parent": "E2",
+          "bbox_ltrb_exclusive": [
+            4790,
+            640,
+            7440,
+            1790
+          ],
+          "coordinate_system": "parent PNG, top-left, x right/y down, px",
+          "transform": "crop only; no resize/color/rotation",
+          "size": [
+            2650,
+            1150
+          ]
+        },
+        {
+          "id": "e2_number",
+          "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-1-static-knowledge-use-review\\old_skill\\outputs\\evidence\\e2_number.png",
+          "sha256": "d698290c30b12d96ebdb4ae735873dc3c999a7f70ff35bef5bf4dece708f1932",
+          "parent": "E2",
+          "bbox_ltrb_exclusive": [
+            0,
+            850,
+            2450,
+            1640
+          ],
+          "coordinate_system": "parent PNG, top-left, x right/y down, px",
+          "transform": "crop only; no resize/color/rotation",
+          "size": [
+            2450,
+            790
+          ]
+        }
+      ],
+      "unknowns": [
+        {
+          "id": "U-MOTION",
+          "kind": "미관측",
+          "scope": "두 시각 사이/앞뒤와 모든 대상의 등장·내부·주변·정착·퇴장",
+          "blocks": "FLOW/동작 패턴·시간 가독성·이징 판정",
+          "next": "MP4·시간 매핑을 확보할 때 기존 Q 조사 범위의 인접·경계 표본과 연속 재생 대조"
+        },
+        {
+          "id": "U-INTENT",
+          "kind": "미확인",
+          "scope": "원제작 의도·회사 문법",
+          "blocks": "공식 의도/회사 규칙 확정",
+          "next": "필요 시 제작자/권한 있는 담당자의 해당 버전/주장 확인"
+        },
+        {
+          "id": "U-IMPLEMENTATION",
+          "kind": "정밀 원값 미상",
+          "scope": "폰트·정확 색/효과·AE 키프레임·카메라/자산 분리",
+          "blocks": "원본 구현 복원/정확 자산 재활용",
+          "next": "편집 프로젝트·자산·선언된 디자인 자료 확보. 현재 외형 관측은 유지"
+        },
+        {
+          "id": "U-DISPLAY",
+          "kind": "미제공",
+          "scope": "실제 시청 환경·화면비 변환·오버레이·읽기 유지·오디오",
+          "blocks": "최종 가독성·자막/음향 싱크·새 화면비 적합성",
+          "next": "후속 제작/실영상 검수 요청 시 해당 출력 조건 확보"
+        },
+        {
+          "id": "U-ASSET",
+          "kind": "미확인",
+          "scope": "건물 실재 정체·업무묶음 소프트웨어·동일 원본 자산·지원 완전 목록",
+          "blocks": "실제 기관/기능 사실·자산 동일성",
+          "next": "원자산 또는 내용 담당 근거 필요"
+        },
+        {
+          "id": "U-LOGO",
+          "kind": "부분 판독 제한",
+          "scope": "E2 작은 로고 부속 글자",
+          "blocks": "E2 부속문구의 정밀 전사",
+          "next": "원자산/다른 선명 표본 확보. 8개 핵심 정체·배치는 현재 유지"
+        }
+      ],
+      "investigations": [
+        {
+          "id": "Q-MOTION-002",
+          "source": "preserved/04_모션조사.md",
+          "status": "investigation_not_registered_motion",
+          "case_ids": [
+            "RC-CASE-001",
+            "RC-CASE-002"
+          ],
+          "targets": [
+            "RC-COMP-002@v1"
+          ]
+        }
+      ],
+      "detail_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-1-static-knowledge-use-review\\old_skill\\outputs\\01_수집기록.md",
+      "preserved_detail_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-1-static-knowledge-use-review\\old_skill\\outputs\\preserved\\02_전체상세.md",
+      "preserved_definition_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-1-static-knowledge-use-review\\old_skill\\outputs\\preserved\\01_부품과조합.md"
+    }
+  ],
+  "scope": "provided PNG at 134/172 seconds; prior records; no MP4/audio/continuous interval",
+  "status": "draft_local_collection_not_R4_registration"
+}

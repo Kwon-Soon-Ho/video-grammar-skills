@@ -1,0 +1,83 @@
+{
+  "id": "r8-tool-and-transfer-basis",
+  "version": "0.1.1",
+  "creator_source": {
+    "repo": "anthropics/skills",
+    "commit": "683bc88e56f3e09ba94f7055977f3d3aa499f202",
+    "path": "skills/skill-creator",
+    "original_name": "skill-creator",
+    "installed_name": "anthropic-skill-creator",
+    "stars_snapshot": 179865,
+    "downloaded_date": "2026-10-06",
+    "license_spdx": null,
+    "source_url": "https://github.com/anthropics/skills/tree/683bc88e56f3e09ba94f7055977f3d3aa499f202/skills/skill-creator",
+    "adaptations": [
+      "Frontmatter name changed to avoid built-in skill-creator collision"
+    ]
+  },
+  "license_text_observed": "Apache License Version 2.0",
+  "files": {
+    "SKILL.md": {
+      "original_path": "C:\\Users\\User\\.codex\\skills\\anthropic-skill-creator\\SKILL.md",
+      "sha256": "127509d15e662fa862ed430b68bfcd4b68ff873528700b9f6447bcb992ecbe94",
+      "saved_path": "backup/2026-10-15_R8_00_현행대조/Anthropic_Skill_Creator_참조본/SKILL.md"
+    },
+    "SOURCE.json": {
+      "original_path": "C:\\Users\\User\\.codex\\skills\\anthropic-skill-creator\\SOURCE.json",
+      "sha256": "ccc5bed16185e3ae96a2d7f738213d3aa2bea1dcd623fcba375d02df18fe0cac",
+      "saved_path": "backup/2026-10-15_R8_00_현행대조/Anthropic_Skill_Creator_참조본/SOURCE.json"
+    },
+    "LICENSE.txt": {
+      "original_path": "C:\\Users\\User\\.codex\\skills\\anthropic-skill-creator\\LICENSE.txt",
+      "sha256": "52b223c318576d65c32f70cb745f31352730e9f4c2c2c2570a66ce700f4f5a64",
+      "saved_path": "backup/2026-10-15_R8_00_현행대조/Anthropic_Skill_Creator_참조본/LICENSE.txt"
+    },
+    "references/schemas.md": {
+      "original_path": "C:\\Users\\User\\.codex\\skills\\anthropic-skill-creator\\references\\schemas.md",
+      "sha256": "5ef5fd3c1ac7baae965b5bda6b4f2cf6a191a2d712c7fef2a12dde84573b4833",
+      "saved_path": "backup/2026-10-15_R8_00_현행대조/Anthropic_Skill_Creator_참조본/references/schemas.md"
+    },
+    "agents/grader.md": {
+      "original_path": "C:\\Users\\User\\.codex\\skills\\anthropic-skill-creator\\agents\\grader.md",
+      "sha256": "6ec1c6950fcafa3e00d5e845b2498c5ea3e8f7f012bd9c6abad25425f3ee619c",
+      "saved_path": "backup/2026-10-15_R8_00_현행대조/Anthropic_Skill_Creator_참조본/agents/grader.md"
+    },
+    "agents/analyzer.md": {
+      "original_path": "C:\\Users\\User\\.codex\\skills\\anthropic-skill-creator\\agents\\analyzer.md",
+      "sha256": "8ccce0d9755f7684277870e791ffb643b026d5dd4508e5c1bdc8dfec9e8532b5",
+      "saved_path": "backup/2026-10-15_R8_00_현행대조/Anthropic_Skill_Creator_참조본/agents/analyzer.md"
+    },
+    "scripts/aggregate_benchmark.py": {
+      "original_path": "C:\\Users\\User\\.codex\\skills\\anthropic-skill-creator\\scripts\\aggregate_benchmark.py",
+      "sha256": "16c5a53e4cbf55a679a42c244cba39cee463d99ce507ecc9fafc4cb4e0a133e0",
+      "saved_path": "backup/2026-10-15_R8_00_현행대조/Anthropic_Skill_Creator_참조본/scripts/aggregate_benchmark.py"
+    },
+    "eval-viewer/generate_review.py": {
+      "original_path": "C:\\Users\\User\\.codex\\skills\\anthropic-skill-creator\\eval-viewer\\generate_review.py",
+      "sha256": "44d97a35be977331b13b04932927b3beb285862a173f0f15dd052d4f31de5c76",
+      "saved_path": "backup/2026-10-15_R8_00_현행대조/Anthropic_Skill_Creator_참조본/eval-viewer/generate_review.py"
+    },
+    "eval-viewer/viewer.html": {
+      "original_path": "C:\\Users\\User\\.codex\\skills\\anthropic-skill-creator\\eval-viewer\\viewer.html",
+      "sha256": "46abd4e19e482b4aeebea24b135c2d88fb122a63346dbeab7fcecd83828a826d",
+      "saved_path": "backup/2026-10-15_R8_00_현행대조/Anthropic_Skill_Creator_참조본/eval-viewer/viewer.html"
+    }
+  },
+  "mode": "installed_snapshot_workflow_and_local_helpers; Codex_subagent_execution",
+  "not_performed": [
+    "Claude_CLI/SDK_API_execution",
+    "global_skill_installation",
+    "blocked_license_skill_copying",
+    "video_analysis"
+  ],
+  "transfer_basis": [
+    "05_출처와검토/스킬심층검토/05_세스킬_이식설계안.md",
+    "05_출처와검토/스킬심층검토/08_기능별_연결표.md",
+    "09_다음단계인계/R7_R8_스킬재구성_인계.md"
+  ],
+  "helper_limits": [
+    "aggregate: unknown tokens replaced by output_chars; missing metrics become zero; runs_per_configuration=3; discovery-order delta",
+    "use project observed-count/null-safe summary; do not publish fallback metrics as measurements",
+    "viewer: static only, UTF8 forced, embedded text compared with original"
+  ]
+}

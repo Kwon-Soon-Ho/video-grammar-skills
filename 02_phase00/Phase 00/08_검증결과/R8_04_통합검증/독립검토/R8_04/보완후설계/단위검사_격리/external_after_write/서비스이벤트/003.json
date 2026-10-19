@@ -1,0 +1,24 @@
+{
+  "request": {
+    "op": "validate",
+    "paths": [
+      "a.json"
+    ]
+  },
+  "sequence": 3,
+  "status": "error",
+  "error": "TEST_IO_POSTSAVE_VALIDATION_FAILED: test environment rejected saved draft; no content approval",
+  "response": {
+    "op": "validate",
+    "checks": [
+      {
+        "path": "a.json",
+        "json_parse": true,
+        "sha256": "e5aa47f32e9daa5d0dfd2d293192a0286fce798e195ea523f1e9b25cbe336f39"
+      }
+    ],
+    "ok": false,
+    "error_type": "RuntimeError",
+    "error": "TEST_IO_POSTSAVE_VALIDATION_FAILED: test environment rejected saved draft; no content approval"
+  }
+}

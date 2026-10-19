@@ -1,0 +1,43 @@
+{
+  "recovery_status": "restored_exact_checkpoint",
+  "target_path": "12_통합기록/통합기록_작업초안.json",
+  "expected_sha256": "4f309bf8061d4973956f82fa36b74b587403995cdf93545c54411209139b4ec2",
+  "actual_sha256": "4f309bf8061d4973956f82fa36b74b587403995cdf93545c54411209139b4ec2",
+  "byte_equal_to_checkpoint": true,
+  "restored_byte_length": 29376,
+  "failed_current_backup_path": "backup/복구_20261015T073438Z_2882f959/실패한_통합기록_작업초안.json",
+  "failed_current_backup_sha256": "f94804859022f09c248c5c73ef9e014649fdbab06dcec16f83aa6afe94ec14b9",
+  "preservation": {
+    "changed_existing_paths": [
+      "12_통합기록/통합기록_작업초안.json"
+    ],
+    "added_paths": [
+      "backup/복구_20261015T073438Z_2882f959/실패한_통합기록_작업초안.json"
+    ],
+    "existing_non_target_files_unchanged": true,
+    "legacy_bytes_unchanged": true,
+    "existing_backup_unchanged": true
+  },
+  "restored_structure_check": {
+    "exit_code": 0,
+    "result_file": "복구후_초안검사.json",
+    "status": "draft_structure_pass",
+    "valid": true
+  },
+  "legacy_inspection": {
+    "exit_code": 2,
+    "status": "needs_migration",
+    "valid": false,
+    "result_file": "구형_추가자료_읽기검사.json",
+    "intake_performed": false,
+    "migration_performed": false,
+    "modified": false
+  },
+  "limits": [
+    "R6/R7 전체 연결/운영 검증 미수행",
+    "합성 자료이며 실제 영상 관측·사람 신원·회사 승인·운영 반영 확인 아님"
+  ],
+  "fact_verified": false,
+  "company_approved": false,
+  "operational_release": false
+}

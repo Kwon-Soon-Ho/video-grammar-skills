@@ -1,0 +1,1206 @@
+{
+  "version": "0.1.2",
+  "principles": [
+    {
+      "id": "AP-01",
+      "family": "animation12",
+      "name_ko": "Squash and Stretch · 압축과 신장",
+      "definition": "형태 변형으로 탄성과 무게 표현",
+      "consider_when": "아이콘 반응에는 후보. 구조물·실측 도형·정확한 데이터는 왜곡 주의. 부피·의미가 유지되는가?",
+      "avoid_or_adjust_when": "정보 정확성·읽기 시간·원본 형태를 해치거나 해당맥락에무관한효과는제외",
+      "analysis_observables": "시간에 따른 형상·비율 변화와 원래 형태로의 복귀. 물체 부피·원본 설정은 별도 근거 없으면 미확정.",
+      "planning_decisions": "아이콘 반응에는 후보. 구조물·실측 도형·정확한 데이터는 왜곡 주의. 부피·의미가 유지되는가?를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "형태 변형이 전달을 돕는가, 기술 형상·문자를 왜곡하는가?"
+      ],
+      "source_refs": [
+        "SRC-ADOBE-12"
+      ],
+      "related_ids": [
+        "MP-06"
+      ],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "AP-02",
+      "family": "animation12",
+      "name_ko": "Anticipation · 예비 동작",
+      "definition": "본 동작 전 준비 신호",
+      "consider_when": "큰 변화의 예고로 후보. 모든 등장에 반대 움직임을 넣지 않음. 이해에 도움인가 지연인가?",
+      "avoid_or_adjust_when": "정보 정확성·읽기 시간·원본 형태를 해치거나 해당맥락에무관한효과는제외",
+      "analysis_observables": "본 동작 전 반대 움직임·정지·표식 등 예고 상태의 존재와 순서.",
+      "planning_decisions": "큰 변화의 예고로 후보. 모든 등장에 반대 움직임을 넣지 않음. 이해에 도움인가 지연인가?를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "준비 동작이 다음 변화를 이해하게 하는가, 불필요하게 지연하는가?"
+      ],
+      "source_refs": [
+        "SRC-ADOBE-12"
+      ],
+      "related_ids": [
+        "MP-04"
+      ],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "AP-03",
+      "family": "animation12",
+      "name_ko": "Staging · 주목 대상 연출",
+      "definition": "중요한 대상이 읽히는 배치",
+      "consider_when": "대표 화면과 강조 상태의 초점 확인. 비교 장면은 동등한 두 대상도 의도일 수 있음. 관찰해야 할 정보가 보이는가?",
+      "avoid_or_adjust_when": "정보 정확성·읽기 시간·원본 형태를 해치거나 해당맥락에무관한효과는제외",
+      "analysis_observables": "대표 상태의 핵심 대상, 크기·대비·위치·가림과 정보 그룹. 실제 시선 효과는 추정으로 분리.",
+      "planning_decisions": "대표 화면과 강조 상태의 초점 확인. 비교 장면은 동등한 두 대상도 의도일 수 있음. 관찰해야 할 정보가 보이는가?를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "중요한 정보가 읽히며 보조 정보와 구분되는가?"
+      ],
+      "source_refs": [
+        "SRC-ADOBE-12"
+      ],
+      "related_ids": [],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "AP-04",
+      "family": "animation12",
+      "name_ko": "Straight Ahead / Pose to Pose · 순차/주요 상태 설계",
+      "definition": "동작을 만드는 두 접근",
+      "consider_when": "상태→변화→결과의 설계에 참고. MP4만으로 제작 방식을 확정하지 않음. 주요 상태가 먼저 정의됐는가?",
+      "avoid_or_adjust_when": "정보 정확성·읽기 시간·원본 형태를 해치거나 해당맥락에무관한효과는제외",
+      "analysis_observables": "시작·주요 상태·종료의 화면. 렌더 영상만으로 straight-ahead/pose-to-pose 제작 방식은 확정하지 않음.",
+      "planning_decisions": "상태→변화→결과의 설계에 참고. MP4만으로 제작 방식을 확정하지 않음. 주요 상태가 먼저 정의됐는가?를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "주요 상태와 관계를 계획할 수 있는가? 원본 제작 방식을 추측해 확정하지 않았는가?"
+      ],
+      "source_refs": [
+        "SRC-ADOBE-12"
+      ],
+      "related_ids": [],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "AP-05",
+      "family": "animation12",
+      "name_ko": "Follow Through / Overlapping Action · 후속·겹침 동작",
+      "definition": "부분 동작의 시간 차와 잔여 움직임",
+      "consider_when": "그룹의 자연스러운 연동에 후보. 데이터 표시·정렬이 늦게 흔들리면 부적합. 핵심 정보의 안정된 시간이 충분한가?",
+      "avoid_or_adjust_when": "정보 정확성·읽기 시간·원본 형태를 해치거나 해당맥락에무관한효과는제외",
+      "analysis_observables": "대상·부속 요소의 시작·정착 차이와 잔여 움직임, 중첩 구간.",
+      "planning_decisions": "그룹의 자연스러운 연동에 후보. 데이터 표시·정렬이 늦게 흔들리면 부적합. 핵심 정보의 안정된 시간이 충분한가?를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "겹침과 후속 움직임이 역할을 돕는가? 정보가 안정된 채 읽힐 시간이 있는가?"
+      ],
+      "source_refs": [
+        "SRC-ADOBE-12"
+      ],
+      "related_ids": [
+        "MP-07"
+      ],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "AP-06",
+      "family": "animation12",
+      "name_ko": "Slow In / Slow Out · 가속과 감속",
+      "definition": "시간에 따른 이동 간격 변화",
+      "consider_when": "도착·이동의 속도 성격을 관찰. 등속 전달·기계 시뮬레이션은 선형도 적합. 목적에 맞는 속도 변화인가?",
+      "avoid_or_adjust_when": "정보 정확성·읽기 시간·원본 형태를 해치거나 해당맥락에무관한효과는제외",
+      "analysis_observables": "추적 가능한 대상의 시간별 위치·간격 변화. 관측 부족이면 곡선 미확정.",
+      "planning_decisions": "도착·이동의 속도 성격을 관찰. 등속 전달·기계 시뮬레이션은 선형도 적합. 목적에 맞는 속도 변화인가?를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "속도 변화가 전달 목적에 맞는가? 등속이 필요한 상황을 배제하지 않았는가?"
+      ],
+      "source_refs": [
+        "SRC-ADOBE-12"
+      ],
+      "related_ids": [
+        "MP-02"
+      ],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "AP-07",
+      "family": "animation12",
+      "name_ko": "Arcs · 호",
+      "definition": "곡선 운동 경로",
+      "consider_when": "유기적 대상에 후보. 공정·지도·정밀 축 이동을 무조건 곡선화하지 않음. 경로가 관계를 왜곡하지 않는가?",
+      "avoid_or_adjust_when": "정보 정확성·읽기 시간·원본 형태를 해치거나 해당맥락에무관한효과는제외",
+      "analysis_observables": "대상의 화면상 경로와 곡률. 원본 경로 핸들은 미확정.",
+      "planning_decisions": "유기적 대상에 후보. 공정·지도·정밀 축 이동을 무조건 곡선화하지 않음. 경로가 관계를 왜곡하지 않는가?를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "곡선 경로가 대상 성격에 맞는가? 공간·공정 관계를 왜곡하지 않는가?"
+      ],
+      "source_refs": [
+        "SRC-ADOBE-12"
+      ],
+      "related_ids": [
+        "MP-05"
+      ],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "AP-08",
+      "family": "animation12",
+      "name_ko": "Secondary Action · 보조 동작",
+      "definition": "주동작을 뒷받침하는 동작",
+      "consider_when": "주제 이해를 지원할 때만 추가. 정보 읽는 중 반복 장식은 제한. 시선을 뺏지 않는가?",
+      "avoid_or_adjust_when": "정보 정확성·읽기 시간·원본 형태를 해치거나 해당맥락에무관한효과는제외",
+      "analysis_observables": "주요 동작과 보조 대상의 변화·주목 경쟁·정보 가림.",
+      "planning_decisions": "주제 이해를 지원할 때만 추가. 정보 읽는 중 반복 장식은 제한. 시선을 뺏지 않는가?를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "보조 동작이 이해를 지원하는가? 읽는 동안 시선을 빼앗지 않는가?"
+      ],
+      "source_refs": [
+        "SRC-ADOBE-12"
+      ],
+      "related_ids": [
+        "MP-09"
+      ],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "AP-09",
+      "family": "animation12",
+      "name_ko": "Timing · 타이밍",
+      "definition": "동작의 시간 배분",
+      "consider_when": "등장·정착·읽기·전환의 관계 기록. UI ms를 영상 기준으로 쓰지 않음. 내용과 내레이션을 따라갈 수 있는가?",
+      "avoid_or_adjust_when": "정보 정확성·읽기 시간·원본 형태를 해치거나 해당맥락에무관한효과는제외",
+      "analysis_observables": "등장·완성·유지·퇴장 상태의 시간 관계와 내레이션 대응.",
+      "planning_decisions": "등장·정착·읽기·전환의 관계 기록. UI ms를 영상 기준으로 쓰지 않음. 내용과 내레이션을 따라갈 수 있는가?를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "장면을 이해하고 읽을 시간이 확보되는가?"
+      ],
+      "source_refs": [
+        "SRC-ADOBE-12"
+      ],
+      "related_ids": [
+        "MP-01"
+      ],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "AP-10",
+      "family": "animation12",
+      "name_ko": "Exaggeration · 과장",
+      "definition": "특징을 더 명확하게 표현",
+      "consider_when": "설명을 돕는 강조로 후보. 수치·변형·공간 규모의 사실성은 보존. 무엇이 사실이고 무엇이 강조인지 구분되는가?",
+      "avoid_or_adjust_when": "정보 정확성·읽기 시간·원본 형태를 해치거나 해당맥락에무관한효과는제외",
+      "analysis_observables": "형상·크기·속도·표식의 강조와 실제 데이터/대상의 차이.",
+      "planning_decisions": "설명을 돕는 강조로 후보. 수치·변형·공간 규모의 사실성은 보존. 무엇이 사실이고 무엇이 강조인지 구분되는가?를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "강조가 사실·규모·수치의 오인을 만들지 않는가?"
+      ],
+      "source_refs": [
+        "SRC-ADOBE-12"
+      ],
+      "related_ids": [
+        "MP-08"
+      ],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "AP-11",
+      "family": "animation12",
+      "name_ko": "Solid Drawing · 입체·구조 표현",
+      "definition": "형태와 공간의 일관성",
+      "consider_when": "도표·3D 대상의 축·깊이·구조에 해석 적용. 2D 화면에 사실주의를 강요하지 않음. 구조가 일관적인가?",
+      "avoid_or_adjust_when": "정보 정확성·읽기 시간·원본 형태를 해치거나 해당맥락에무관한효과는제외",
+      "analysis_observables": "형태·깊이·투영·축·부분 연결의 일관성. 실제 제작 기법은 미확정.",
+      "planning_decisions": "도표·3D 대상의 축·깊이·구조에 해석 적용. 2D 화면에 사실주의를 강요하지 않음. 구조가 일관적인가?를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "구조와 공간이 일관되며 설명하려는 관계가 보이는가?"
+      ],
+      "source_refs": [
+        "SRC-ADOBE-12"
+      ],
+      "related_ids": [],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "AP-12",
+      "family": "animation12",
+      "name_ko": "Appeal · 매력",
+      "definition": "표현의 설득력과 개성",
+      "consider_when": "주제·회사 톤·읽기 쉬움을 함께 확인. 장식 수·독특함만 점수화하지 않음. 보고 이해하고 기억할 이유가 있는가?",
+      "avoid_or_adjust_when": "정보 정확성·읽기 시간·원본 형태를 해치거나 해당맥락에무관한효과는제외",
+      "analysis_observables": "주제·시청 목적·형태·리듬·브랜드의 관계. 매력은 관측 사실이 아닌 별도 평가.",
+      "planning_decisions": "주제·회사 톤·읽기 쉬움을 함께 확인. 장식 수·독특함만 점수화하지 않음. 보고 이해하고 기억할 이유가 있는가?를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "주제에 맞고 이해·기억에 도움이 되는가? 독특함만으로 통과시키지 않았는가?"
+      ],
+      "source_refs": [
+        "SRC-ADOBE-12"
+      ],
+      "related_ids": [
+        "MP-10"
+      ],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "MP-01",
+      "family": "motion10",
+      "name_ko": "Timing, Spacing and Rhythm · 시간·간격·리듬",
+      "definition": "변화 간격과 시간적 질서",
+      "consider_when": "등장·읽기·강조·휴지의 리듬 확인. 모든 동작을 음악 박자에 고정하지 않음. 전달 순서가 자연스러운가?",
+      "avoid_or_adjust_when": "정보 정확성·읽기 시간·원본 형태를 해치거나 해당맥락에무관한효과는제외",
+      "analysis_observables": "사건 간 간격·움직임·읽기 유지·휴지와 음성/음악의 관계.",
+      "planning_decisions": "등장·읽기·강조·휴지의 리듬 확인. 모든 동작을 음악 박자에 고정하지 않음. 전달 순서가 자연스러운가?를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "리듬이 정보 순서와 읽기 시간을 돕는가?"
+      ],
+      "source_refs": [
+        "SRC-JORGE-10"
+      ],
+      "related_ids": [
+        "AP-09"
+      ],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "MP-02",
+      "family": "motion10",
+      "name_ko": "Eases · 이징",
+      "definition": "속도 변화의 설계",
+      "consider_when": "가속/감속을 목적과 연결. Bézier 피팅 결과를 원본 AE 핸들로 단정하지 않음. 출발·도착의 성격이 맞는가?",
+      "avoid_or_adjust_when": "정보 정확성·읽기 시간·원본 형태를 해치거나 해당맥락에무관한효과는제외",
+      "analysis_observables": "관측 변화율의 가속·감속·정착. 추적 오차와 피팅 근거.",
+      "planning_decisions": "가속/감속을 목적과 연결. Bézier 피팅 결과를 원본 AE 핸들로 단정하지 않음. 출발·도착의 성격이 맞는가?를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "이징 성격이 동작 역할에 맞는가? 원본 핸들값을 복원한 것처럼 쓰지 않았는가?"
+      ],
+      "source_refs": [
+        "SRC-JORGE-10"
+      ],
+      "related_ids": [
+        "AP-06"
+      ],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "MP-03",
+      "family": "motion10",
+      "name_ko": "Mass and Weight · 질량·무게감",
+      "definition": "관성·무게의 인상",
+      "consider_when": "움직임에서 느껴지는 성격. 화면만 보고 실제 질량을 계산하지 않음. 정보 성격에 맞는 무게감인가?",
+      "avoid_or_adjust_when": "정보 정확성·읽기 시간·원본 형태를 해치거나 해당맥락에무관한효과는제외",
+      "analysis_observables": "출발·정지·지연·정착으로 보이는 무게감. 실제 질량은 측정하지 않음.",
+      "planning_decisions": "움직임에서 느껴지는 성격. 화면만 보고 실제 질량을 계산하지 않음. 정보 성격에 맞는 무게감인가?를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "무게감의 인상이 대상과 내용에 맞는가?"
+      ],
+      "source_refs": [
+        "SRC-JORGE-10"
+      ],
+      "related_ids": [
+        "AP-01"
+      ],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "MP-04",
+      "family": "motion10",
+      "name_ko": "Anticipation · 예비 동작",
+      "definition": "본 동작의 준비",
+      "consider_when": "큰 변화 예고에 후보. 과한 준비 동작이 시간을 소모하지 않는가?",
+      "avoid_or_adjust_when": "정보 정확성·읽기 시간·원본 형태를 해치거나 해당맥락에무관한효과는제외",
+      "analysis_observables": "주요 변화 앞의 준비 신호와 시간 범위.",
+      "planning_decisions": "큰 변화 예고에 후보. 과한 준비 동작이 시간을 소모하지 않는가?를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "예고가 이해를 돕는가? 모든 동작에 불필요한 반동을 넣지 않았는가?"
+      ],
+      "source_refs": [
+        "SRC-JORGE-10"
+      ],
+      "related_ids": [
+        "AP-02"
+      ],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "MP-05",
+      "family": "motion10",
+      "name_ko": "Arcs · 호",
+      "definition": "이동 경로의 곡률",
+      "consider_when": "자유·유기적 이동에서 검토. 경로 의미가 직선이어야 할 때 유지하는가?",
+      "avoid_or_adjust_when": "정보 정확성·읽기 시간·원본 형태를 해치거나 해당맥락에무관한효과는제외",
+      "analysis_observables": "위치 변화 경로와 곡선/직선의 관측 형태.",
+      "planning_decisions": "자유·유기적 이동에서 검토. 경로 의미가 직선이어야 할 때 유지하는가?를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "경로가 정보 관계와 대상 성격에 맞는가?"
+      ],
+      "source_refs": [
+        "SRC-JORGE-10"
+      ],
+      "related_ids": [
+        "AP-07"
+      ],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "MP-06",
+      "family": "motion10",
+      "name_ko": "Squash, Stretch and Smears · 변형·잔상",
+      "definition": "탄성·빠른 움직임 표현",
+      "consider_when": "기술 자료의 형상·문자 왜곡은 제한. 순간 효과 때문에 정보를 잃지 않는가?",
+      "avoid_or_adjust_when": "정보 정확성·읽기 시간·원본 형태를 해치거나 해당맥락에무관한효과는제외",
+      "analysis_observables": "형상 변형·잔상·블러와 문자/데이터의 식별성.",
+      "planning_decisions": "기술 자료의 형상·문자 왜곡은 제한. 순간 효과 때문에 정보를 잃지 않는가?를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "잔상·변형이 설명 내용을 지우거나 정확한 형상을 왜곡하지 않는가?"
+      ],
+      "source_refs": [
+        "SRC-JORGE-10"
+      ],
+      "related_ids": [
+        "AP-01"
+      ],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "MP-07",
+      "family": "motion10",
+      "name_ko": "Follow Through / Overlapping Action · 후속·겹침",
+      "definition": "동작 간 잔여·지연",
+      "consider_when": "부속 요소나 그룹 반응의 시간 차. 정지해야 할 정보가 남아 흔들리지 않는가?",
+      "avoid_or_adjust_when": "정보 정확성·읽기 시간·원본 형태를 해치거나 해당맥락에무관한효과는제외",
+      "analysis_observables": "대상별 시작·종료 차이, 잔여 동작과 겹침.",
+      "planning_decisions": "부속 요소나 그룹 반응의 시간 차. 정지해야 할 정보가 남아 흔들리지 않는가?를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "동작 연결이 자연스럽고 정보의 안정된 시간이 있는가?"
+      ],
+      "source_refs": [
+        "SRC-JORGE-10"
+      ],
+      "related_ids": [
+        "AP-05"
+      ],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "MP-08",
+      "family": "motion10",
+      "name_ko": "Exaggeration · 과장",
+      "definition": "강조를 위한 증폭",
+      "consider_when": "핵심 인상 증폭. 차트·비교·공간이 사실보다 달라 보이지 않는가?",
+      "avoid_or_adjust_when": "정보 정확성·읽기 시간·원본 형태를 해치거나 해당맥락에무관한효과는제외",
+      "analysis_observables": "강조 폭과 사실·데이터·공간 관계의 차이.",
+      "planning_decisions": "핵심 인상 증폭. 차트·비교·공간이 사실보다 달라 보이지 않는가?를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "과장이 의미를 명료하게 하고 사실 오인을 피하는가?"
+      ],
+      "source_refs": [
+        "SRC-JORGE-10"
+      ],
+      "related_ids": [
+        "AP-10"
+      ],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "MP-09",
+      "family": "motion10",
+      "name_ko": "Secondary or Layered Animation · 보조·겹층",
+      "definition": "주동작과 보조 층의 관계",
+      "consider_when": "여러 동작의 역할을 분리. 모든 장면에 배경 모션을 채우지 않음. 중심을 유지하는가?",
+      "avoid_or_adjust_when": "정보 정확성·읽기 시간·원본 형태를 해치거나 해당맥락에무관한효과는제외",
+      "analysis_observables": "주·보조·배경 변화의 시간 관계와 주목 경쟁. 층 수는 고정하지 않음.",
+      "planning_decisions": "여러 동작의 역할을 분리. 모든 장면에 배경 모션을 채우지 않음. 중심을 유지하는가?를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "각 움직임의 역할이 있고 핵심 읽기를 방해하지 않는가?"
+      ],
+      "source_refs": [
+        "SRC-JORGE-10"
+      ],
+      "related_ids": [
+        "AP-08"
+      ],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "MP-10",
+      "family": "motion10",
+      "name_ko": "Appeal · 매력",
+      "definition": "표현의 흡인력",
+      "consider_when": "내용·리듬·형태·톤을 함께 판단. 낯섦 자체를 품질로 판정하지 않는가?",
+      "avoid_or_adjust_when": "정보 정확성·읽기 시간·원본 형태를 해치거나 해당맥락에무관한효과는제외",
+      "analysis_observables": "주제·톤·형태·리듬·이해의 관계를 별도 품질 평가로 기록.",
+      "planning_decisions": "내용·리듬·형태·톤을 함께 판단. 낯섦 자체를 품질로 판정하지 않는가?를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "보는 이유와 전달 효과가 있는가? 효과의 개수나 낯섦만으로 평가하지 않았는가?"
+      ],
+      "source_refs": [
+        "SRC-JORGE-10"
+      ],
+      "related_ids": [
+        "AP-12"
+      ],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "IP-01",
+      "family": "information",
+      "name_ko": "정보 관련성",
+      "definition": "목적과 무관한 처리 부담을 줄인다",
+      "consider_when": "설명에 기여하는 정보 중심",
+      "avoid_or_adjust_when": "브랜드·분위기 목적까지일괄삭제하지않음",
+      "analysis_observables": "텍스트·영상·음향 요소가 현재 주장에 기여하는지와 추가 정보량.",
+      "planning_decisions": "설명에 기여하는 정보 중심를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "각 요소의 전달·브랜드 목적이 있는가? 목적 없이 부담만 늘리지 않는가?"
+      ],
+      "source_refs": [
+        "SRC-CAM-EXTRANEOUS"
+      ],
+      "related_ids": [],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "IP-02",
+      "family": "information",
+      "name_ko": "정보 표식",
+      "definition": "핵심과 구조를 식별하도록 돕는다",
+      "consider_when": "강조·표식·단계번호의대상과순서",
+      "avoid_or_adjust_when": "전부강조하면위계소실",
+      "analysis_observables": "강조색·단계 번호·표식의 대상과 공개 순서.",
+      "planning_decisions": "강조·표식·단계번호의대상과순서를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "중요한 정보와 구조를 구분하게 하는가? 모든 항목을 강조하지 않았는가?"
+      ],
+      "source_refs": [
+        "SRC-CAM-EXTRANEOUS"
+      ],
+      "related_ids": [],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "IP-03",
+      "family": "information",
+      "name_ko": "중복 조절",
+      "definition": "같은 설명의 경쟁 경로를 조절한다",
+      "consider_when": "화면본문·음성·그림설명의역할분담",
+      "avoid_or_adjust_when": "접근성자막·무음시청·기술용어는삭제의무아님",
+      "analysis_observables": "내레이션·본문·자막·도표 설명의 중복과 읽기 경쟁.",
+      "planning_decisions": "화면본문·음성·그림설명의역할분담를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "경로가 역할을 분담하는가? 무음·접근성·기술 용어를 위한 문구를 지우지 않았는가?"
+      ],
+      "source_refs": [
+        "SRC-CAM-EXTRANEOUS"
+      ],
+      "related_ids": [],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "IP-04",
+      "family": "information",
+      "name_ko": "공간 근접",
+      "definition": "설명과 대응 대상을 가까이 연결한다",
+      "consider_when": "지도·부품·차트의라벨관계",
+      "avoid_or_adjust_when": "근접이혼잡·가림을만들면조정",
+      "analysis_observables": "라벨·명칭·설명과 해당 대상의 거리·리더라인·가림.",
+      "planning_decisions": "지도·부품·차트의라벨관계를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "대응 대상을 쉽게 식별하는가? 가까움 때문에 혼잡해지지 않는가?"
+      ],
+      "source_refs": [
+        "SRC-CAM-EXTRANEOUS"
+      ],
+      "related_ids": [],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "IP-05",
+      "family": "information",
+      "name_ko": "시간 근접",
+      "definition": "설명과 대응 화면의 시간을 맞춘다",
+      "consider_when": "내레이션·표식·동작대응",
+      "avoid_or_adjust_when": "의도적인문제-답순서는허용",
+      "analysis_observables": "발화·문구·해당 동작의 시작과 유지가 겹치는지.",
+      "planning_decisions": "내레이션·표식·동작대응를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "설명 시점에 필요한 화면이 보이는가? 의도적인 예고·문답 순서를 허용하는가?"
+      ],
+      "source_refs": [
+        "SRC-CAM-EXTRANEOUS"
+      ],
+      "related_ids": [],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "IP-06",
+      "family": "information",
+      "name_ko": "분절",
+      "definition": "설명을 처리 가능한 단위로 나눈다",
+      "consider_when": "단계경계·휴지·챕터·재생제어",
+      "avoid_or_adjust_when": "고정MP4장면분할은학습자속도제어와같지않음",
+      "analysis_observables": "장면·단계·휴지와 챕터·재생 제어의 존재를 별도 기록.",
+      "planning_decisions": "단계경계·휴지·챕터·재생제어를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "복잡한 설명을 나눠 처리할 수 있는가? MP4 분할을 학습자 제어와 혼동하지 않는가?"
+      ],
+      "source_refs": [
+        "SRC-CAM-ESSENTIAL"
+      ],
+      "related_ids": [],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "IP-07",
+      "family": "information",
+      "name_ko": "사전 개념 소개",
+      "definition": "본 설명 전 핵심 명칭·역할을 소개한다",
+      "consider_when": "낯선기술·구조의짧은전체도·범례",
+      "avoid_or_adjust_when": "전문가에게불필요한반복은줄임",
+      "analysis_observables": "핵심 명칭·구성 요소·역할이 본 설명 전에 소개되는지.",
+      "planning_decisions": "낯선기술·구조의짧은전체도·범례를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "시청자가 모를 개념을 준비하는가? 전문가에게 불필요한 반복은 없는가?"
+      ],
+      "source_refs": [
+        "SRC-CAM-ESSENTIAL"
+      ],
+      "related_ids": [],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "IP-08",
+      "family": "information",
+      "name_ko": "전달 경로 분담",
+      "definition": "그림·언어의 역할을 분담한다",
+      "consider_when": "텍스트·내레이션·도형역할",
+      "avoid_or_adjust_when": "무음·난청·긴수치에서는텍스트필요",
+      "analysis_observables": "그림·화면 본문·음성에 분담된 내용과 시청 환경.",
+      "planning_decisions": "텍스트·내레이션·도형역할를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "그림과 언어가 서로 지원하는가? 무음·난청·긴 수치 조건을 고려하는가?"
+      ],
+      "source_refs": [
+        "SRC-CAM-ESSENTIAL"
+      ],
+      "related_ids": [],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "IP-09",
+      "family": "information",
+      "name_ko": "일시 정보 보완",
+      "definition": "사라지는 정보를 다시 참조하도록 돕는다",
+      "consider_when": "다단계도표·요약·유지·재생제어",
+      "avoid_or_adjust_when": "모든동작을정지로대체하지않음",
+      "analysis_observables": "앞 정보가 다음 설명에 필요한데 사라지는지, 다시 볼 수 있는 표식·누적·요약이 있는지.",
+      "planning_decisions": "다단계도표·요약·유지·재생제어를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "앞 정보를 기억만 해야 하는 부담을 줄이는가? 모든 정보를 계속 남겨 과밀하게 하지 않는가?"
+      ],
+      "source_refs": [
+        "SRC-CAM-TRANSIENT"
+      ],
+      "related_ids": [],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "IP-10",
+      "family": "information",
+      "name_ko": "숙련도별 설명 조정",
+      "definition": "시청자의 지식에 따라 지원을 조정한다",
+      "consider_when": "입력·인터뷰·검토 자료 등으로 시청자의 해당 주제 사전 지식이 확인될 때 설명 지원의 깊이를 비교한다.",
+      "avoid_or_adjust_when": "직급·부서명만으로 숙련도를 결정하지 않는다. 정보 정확성·필수 고지·접근성 정보를 숙련도 이유로 삭제하지 않는다.",
+      "analysis_observables": "시청자의 사전 지식은 제공 근거가 있을 때만 기록. 화면에는 개념 소개·요약의 분량과 순서를 관측하며 학습 효과는 별도 평가한다.",
+      "planning_decisions": "초보자 개념 소개와 숙련자 요약을 조건부 후보로 비교한다. 숙련도 근거가 없으면 조정 판단을 보류한다.",
+      "review_questions": [
+        "시청자의 해당 주제 사전 지식 근거가 있는가? 공식 요약 수준의 참고를 효과 보장·회사 의무 규칙으로 확장하지 않았는가?"
+      ],
+      "source_refs": [
+        "SRC-R3-EXPERTISE-SUMMARY"
+      ],
+      "related_ids": [],
+      "case_refs": [],
+      "scope": "공개 학술 Summary에 근거한 조건부 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.2",
+      "numeric_defaults": null,
+      "interpretation_origin": "2021 공식 Summary 정의를 짧게 확인하고 프로젝트 적용·기권 조건을 자체 작성. 학술 장 전체·진단도구·회사 영상 효과 미검토.",
+      "unknown_policy": "해당 주제 사전 지식 근거가 없으면 숙련도 unknown과 설명 조정 보류를 기록한다. 직무만으로 낮거나 높다고 단정하지 않는다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "MR-01",
+      "family": "motion_relationship",
+      "name_ko": "의미 일관성",
+      "definition": "같은 의미에 일관된 움직임을 쓴다",
+      "consider_when": "동일역할의등장·강조관계",
+      "avoid_or_adjust_when": "의미가달라지면차이허용",
+      "analysis_observables": "같은 역할이 여러 구간에서 보이는 등장·강조·변형 방식.",
+      "planning_decisions": "동일역할의등장·강조관계를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "같은 의미에 익숙한 표현을 유지하는가? 다른 의미에는 필요한 차이가 있는가?"
+      ],
+      "source_refs": [
+        "SRC-CARBON-CHOREO"
+      ],
+      "related_ids": [],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "MR-02",
+      "family": "motion_relationship",
+      "name_ko": "공간 일관성",
+      "definition": "이동으로 위치·계층 관계를 설명한다",
+      "consider_when": "같은층이동·전체상세변화",
+      "avoid_or_adjust_when": "제품UI슬라이드규칙을전체영상에강제하지않음",
+      "analysis_observables": "같은 층 이동·층 변화·전체/상세 전환의 화면상 관계.",
+      "planning_decisions": "같은층이동·전체상세변화를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "이동이 공간·계층 관계를 설명하는가? 제품 UI 규약을 영상 전역에 강제하지 않는가?"
+      ],
+      "source_refs": [
+        "SRC-CARBON-CHOREO"
+      ],
+      "related_ids": [],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "MR-03",
+      "family": "motion_relationship",
+      "name_ko": "대상 연속성",
+      "definition": "전환 전후 같은 대상을 식별하게 한다",
+      "consider_when": "전체에서상세·전후상태추적",
+      "avoid_or_adjust_when": "다른대상의연속변형은사실오인주의",
+      "analysis_observables": "전환 전후 동일 대상의 식별 표식·위치·형태와 연결.",
+      "planning_decisions": "전체에서상세·전후상태추적를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "같은 대상을 따라갈 수 있는가? 서로 다른 대상을 같은 것처럼 변형하지 않는가?"
+      ],
+      "source_refs": [
+        "SRC-CARBON-CHOREO"
+      ],
+      "related_ids": [],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "MR-04",
+      "family": "motion_relationship",
+      "name_ko": "순차·동시 등장 선택",
+      "definition": "시간으로 관계와 읽는 순서를 드러낸다",
+      "consider_when": "단계공개·동시비교",
+      "avoid_or_adjust_when": "항상stagger나UI시간값을강제하지않음",
+      "analysis_observables": "사건별 시작·완료, 그룹·순서·중첩·누적 상태.",
+      "planning_decisions": "단계공개·동시비교를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "순차 공개와 동시 비교 중 정보 관계에 맞는 방식을 골랐는가?"
+      ],
+      "source_refs": [
+        "SRC-CARBON-CHOREO"
+      ],
+      "related_ids": [],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "MR-05",
+      "family": "motion_relationship",
+      "name_ko": "기능·표현 모션 구분",
+      "definition": "읽기 지원과 강한 표현의 역할을 나눈다",
+      "consider_when": "본문·핵심전환의움직임역할",
+      "avoid_or_adjust_when": "움직임크기만으로자동분류하지않음",
+      "analysis_observables": "동작이 읽기·상태 안내를 돕는지 강한 인상을 만드는지 별도 해석.",
+      "planning_decisions": "본문·핵심전환의움직임역할를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "기능과 표현의 역할이 분명한가? 크기만으로 역할을 단정하지 않는가?"
+      ],
+      "source_refs": [
+        "SRC-CARBON-OVERVIEW"
+      ],
+      "related_ids": [],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "MR-06",
+      "family": "motion_relationship",
+      "name_ko": "모션의 목적",
+      "definition": "각 움직임의 전달 역할을 판단한다",
+      "consider_when": "변화안내·강조·순서·인상",
+      "avoid_or_adjust_when": "분위기·즐거움도목적이면자동장식판정금지",
+      "analysis_observables": "각 변화가 안내·순서·강조·맥락·인상과 연결되는지.",
+      "planning_decisions": "변화안내·강조·순서·인상를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "움직임의 목적이 있는가? 분위기 형성도 해당 장면의 목적이면 허용하는가?"
+      ],
+      "source_refs": [
+        "SRC-FLUENT"
+      ],
+      "related_ids": [],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "MR-07",
+      "family": "motion_relationship",
+      "name_ko": "연동 관계 표현",
+      "definition": "요소 간 변화를 연결해 관계를 표현한다",
+      "consider_when": "동시·지연·반대변화와관계",
+      "avoid_or_adjust_when": "관측연동을AEparenting·실제인과로확정금지",
+      "analysis_observables": "요소 간 동시·지연·반대 변화와 표현된 관계.",
+      "planning_decisions": "동시·지연·반대변화와관계를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "연동이 관계를 설명하는가? 실제 인과·AE parent 구조로 단정하지 않았는가?"
+      ],
+      "source_refs": [
+        "SRC-UX-MOTION"
+      ],
+      "related_ids": [],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "MR-08",
+      "family": "motion_relationship",
+      "name_ko": "값 변화의 의미",
+      "definition": "숫자 변화의 실제 의미를 구분한다",
+      "consider_when": "기준값·최종값·시간대응",
+      "avoid_or_adjust_when": "장식중간값을실제측정데이터로보이게하지않음",
+      "analysis_observables": "표시 기준값·최종값·중간값의 데이터 출처와 실제 시간 대응.",
+      "planning_decisions": "기준값·최종값·시간대응를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "변화의 의미가 정확한가? 장식 카운트의 중간값을 실측으로 보이게 하지 않는가?"
+      ],
+      "source_refs": [
+        "SRC-UX-MOTION"
+      ],
+      "related_ids": [],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "ACC-01",
+      "family": "accessibility_policy",
+      "name_ko": "플래시 검토",
+      "definition": "빠른 밝기 변화를 시청 안전 관점에서 검토한다",
+      "consider_when": "플래시·고대비반복구간",
+      "avoid_or_adjust_when": "실제수치검사없이기준충족선언금지",
+      "analysis_observables": "밝기·대비의 반복 변화 후보 구간. 수치 판정은 별도 검사 필요.",
+      "planning_decisions": "플래시·고대비반복구간를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "플래시 후보를 실제 조건으로 검사했는가? 확인 없이 안전하다고 확정하지 않았는가?"
+      ],
+      "source_refs": [
+        "SRC-W3C-FLASH"
+      ],
+      "related_ids": [],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "ACC-02",
+      "family": "accessibility_policy",
+      "name_ko": "재생 제어 조건",
+      "definition": "움직이는 콘텐츠의 정지·숨김 조건을 검토한다",
+      "consider_when": "웹·플레이어·교육인터랙션",
+      "avoid_or_adjust_when": "고정MP4컷에웹규칙직접대입금지",
+      "analysis_observables": "웹·플레이어의 자동 재생·정지·숨김 조건과 제어 방식.",
+      "planning_decisions": "웹·플레이어·교육인터랙션를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "해당 재생 환경에 제어가 필요한가? MP4 내부 컷에 웹 규칙을 기계 적용하지 않았는가?"
+      ],
+      "source_refs": [
+        "SRC-W3C-PAUSE"
+      ],
+      "related_ids": [],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "ACC-03",
+      "family": "accessibility_policy",
+      "name_ko": "상호작용 모션 조절",
+      "definition": "상호작용으로 발생한 모션의 감소를 검토한다",
+      "consider_when": "웹기반도구·인터랙티브영상",
+      "avoid_or_adjust_when": "웹사용자설정을MP4자체기능으로오인금지",
+      "analysis_observables": "사용자 상호작용으로 생기는 움직임과 대체·감소 옵션.",
+      "planning_decisions": "웹기반도구·인터랙티브영상를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "인터랙티브 환경에서 모션 조절이 필요한가? 일반 MP4 기능으로 오인하지 않았는가?"
+      ],
+      "source_refs": [
+        "SRC-W3C-INTERACTION"
+      ],
+      "related_ids": [],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    }
+  ],
+  "default_company_requirement": false,
+  "overlap_policy": "관련 원칙은 근거를 공유할 수 있다. 같은 실패를 AP/MP 양쪽에서 중복 감점하지 않는다. 체계와 출처는 유지한다."
+}

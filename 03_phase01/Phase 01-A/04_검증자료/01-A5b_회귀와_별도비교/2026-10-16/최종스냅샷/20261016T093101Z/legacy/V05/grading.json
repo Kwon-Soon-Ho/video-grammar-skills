@@ -1,0 +1,55 @@
+{
+  "case_id": "V05",
+  "scope": "pre-frozen targeted known-case regression, not held-out core/detail metrics",
+  "expectations": [
+    {
+      "text": "한글 타이틀 조각별 등장→영문 리빌→본문→큰 G→왼 UI→오른 UI 순서",
+      "passed": true,
+      "evidence": "ko/en/paragraph/g/left_panel/right_panel 및 layout 사건이 원본 순서를 연결한다."
+    },
+    {
+      "text": "영문 주변 십자 커서와 점선 사각형의 확장/수축 및 영문 연해짐을 분리",
+      "passed": true,
+      "evidence": "en 사건2: 2.8초 왼 경계가 오른쪽으로 들어옴, 3.2초 사각 면/점선 소실 및 회색 영문 잔류. c8/c9/c10. Markdown은 퇴장 방향을 축약했지만 JSON에 남아 있다."
+    },
+    {
+      "text": "큰 G의 형태가 드러나는 변화와 곡선/십자 가이드 선을 기록; E와 같은 동작으로 답 복사 금지",
+      "passed": true,
+      "evidence": "g/g_guides/g_cross가 면의 가시성, 원호 및 CAD 십자 경로를 분리하며 E 조각 슬라이드를 복사하지 않았다."
+    },
+    {
+      "text": "두 UI의 이동·확대·겹침/빛 강조·하단 설명 순서를 분리",
+      "passed": true,
+      "evidence": "left_panel/right_panel/left_glow 및 두 caption에서 확대·하강, 오른 전개, 가림 해소, 빛, 좌우 반대 리빌을 분리한다. c30~40과 원본 RGB를 대조했다."
+    },
+    {
+      "text": "배경 모니터 UI의 실제 변화/정지 검사 및 가감속별 근거; 문서없음/오디오미검수 유지",
+      "passed": true,
+      "evidence": "bg 사건2는 선택 표본의 주황 선택행 유지 및 가림/사이 변화 한계를 명시. 문서없음, audio_reviewed=false."
+    },
+    {
+      "text": "확정 가감속 주장은 이동 중 같은 대상의 변화율 근거이며 정착만으로 단정하지 않음",
+      "passed": true,
+      "evidence": "g_cross 6.0/.1/.2/.3의 사각 중심을 원본 ROI로 대조했다. 이동량287/228/183px 및 프레임 확대·우측 이동은 둘 이상 진행 구간을 사용. 정확한 AE 곡선은 주장하지 않는다."
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1.0
+  },
+  "content_review": "root AI compared prior frozen observations with supplied native PNG/ROI; no new human gold",
+  "critical_errors_found": 0,
+  "structure_and_provenance_passed": true,
+  "known_limitations": [
+    "selected frames only; no audio or AE project",
+    "no new variant-pair comparison"
+  ],
+  "abstention_event_count_raw": 15,
+  "abstention_count_note": "raw event-level easing unknown count; not unique scored atomic abstentions and not a rate",
+  "non_gating_detail_notes": [
+    "V05 JSON describes contraction of left edge but does not explicitly record the simultaneous downward top edge; Markdown also compresses the exit direction. This is a residual detail omission, not recurrence of the absent contraction/residual-text criterion."
+  ],
+  "created_utc": "2026-10-16T08:28:41.477283+00:00"
+}

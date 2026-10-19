@@ -1,0 +1,101 @@
+{
+  "scope": "메모리 가짜internal fixture만 사용. 실사례등록/내용의기계판정 아님. 자연어의참거짓이아닌주장형태/대상/검수의미누락을검사한다.",
+  "tests": [
+    {
+      "name": "선언된 형식 정상대조",
+      "expected_valid_if_complete_contract": true,
+      "legacy_actual_valid": true,
+      "gap_reproduced": false,
+      "errors": []
+    },
+    {
+      "name": "빈 근거 가설 정상대조",
+      "expected_valid_if_complete_contract": true,
+      "legacy_actual_valid": true,
+      "gap_reproduced": false,
+      "errors": []
+    },
+    {
+      "name": "frame대상유지하고다른locator/hash없음",
+      "expected_valid_if_complete_contract": false,
+      "legacy_actual_valid": true,
+      "gap_reproduced": true,
+      "errors": []
+    },
+    {
+      "name": "단일still/없는대상으로enter동작",
+      "expected_valid_if_complete_contract": false,
+      "legacy_actual_valid": true,
+      "gap_reproduced": true,
+      "errors": []
+    },
+    {
+      "name": "속도100px/s프레임1개",
+      "expected_valid_if_complete_contract": false,
+      "legacy_actual_valid": true,
+      "gap_reproduced": true,
+      "errors": []
+    },
+    {
+      "name": "일반문서로의도확인",
+      "expected_valid_if_complete_contract": false,
+      "legacy_actual_valid": true,
+      "gap_reproduced": true,
+      "errors": []
+    },
+    {
+      "name": "계획근거로실제발생문장",
+      "expected_valid_if_complete_contract": false,
+      "legacy_actual_valid": true,
+      "gap_reproduced": true,
+      "errors": []
+    },
+    {
+      "name": "reviewed검수자시각없고대상버전다름",
+      "expected_valid_if_complete_contract": false,
+      "legacy_actual_valid": true,
+      "gap_reproduced": true,
+      "errors": []
+    },
+    {
+      "name": "draft근거버전교체재검수없음",
+      "expected_valid_if_complete_contract": false,
+      "legacy_actual_valid": true,
+      "gap_reproduced": true,
+      "errors": []
+    },
+    {
+      "name": "measurement누락기존보호",
+      "expected_valid_if_complete_contract": false,
+      "legacy_actual_valid": false,
+      "gap_reproduced": false,
+      "errors": [
+        "claims/0/measurement: 수치 추정 규격: None is not of type 'object'"
+      ]
+    },
+    {
+      "name": "OCR시나리오오용기존보호",
+      "expected_valid_if_complete_contract": false,
+      "legacy_actual_valid": false,
+      "gap_reproduced": false,
+      "errors": [
+        "주장 시나리오 지원의 원문/전사 대상 근거 없음"
+      ]
+    },
+    {
+      "name": "합성승인기존보호",
+      "expected_valid_if_complete_contract": false,
+      "legacy_actual_valid": false,
+      "gap_reproduced": false,
+      "errors": [
+        "설명용 예는 원본 관측이 아님",
+        "설명용 예의 회사 승인 금지",
+        "승인 검수자·시각·범위 없음",
+        "대상·종류·범위가 일치하는 별도 사람 검수 결정 없음",
+        "승인 근거 버전 미고정"
+      ]
+    }
+  ],
+  "gaps": 7,
+  "legacy_validator_sha256": "cf717d628ba322ac5e08cfbe0c9787374987d72c34dab2dafb6ec4642102592d"
+}

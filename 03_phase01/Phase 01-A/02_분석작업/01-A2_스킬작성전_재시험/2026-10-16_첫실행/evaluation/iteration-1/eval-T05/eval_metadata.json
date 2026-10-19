@@ -1,0 +1,13 @@
+{
+  "eval_id": 5,
+  "eval_name": "T05 baseline motion analysis",
+  "prompt": "이 구간에서 보이는 대상과 변화를 스킬 없이 분석하세요. 작은 보조 요소와 화면 내부도 살피고, 위치·크기·형태·가시성·광량·순서·가감속을 근거 시점과 함께 기록하세요. 정지/비적용/미분류에는 이유를 적고 관측과 구현 추정을 구분하세요. 추가로 사용자가 특정 동작을 지적해 주는 것을 기다리지 말고 결과를 먼저 저장하세요. Allowed source window: [5.9, 6.6]",
+  "assertions": [
+    "겹쳐 바뀌는 크로스페이드를 식별",
+    "슬라이드·카메라 이동으로 잘못 확정하지 않음",
+    "혼합 진행량의 감속형을 관측 속성에 연결"
+  ],
+  "new_skill_available": false,
+  "media_sha256": "e866f805853b2d50fe7b03b3dc8567a1bf977274e94aaa46f5bdc34d62986827",
+  "reference_frozen_before_run": true
+}

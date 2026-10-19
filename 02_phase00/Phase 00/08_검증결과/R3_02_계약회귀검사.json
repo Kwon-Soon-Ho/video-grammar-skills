@@ -1,0 +1,374 @@
+{
+  "stage": "R3-2",
+  "passed": 37,
+  "total": 37,
+  "tests": [
+    {
+      "name": "정상 자료·A안 후보·제한된 출처",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": []
+    },
+    {
+      "name": "동일 수준의 두 비교 초점 허용",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": []
+    },
+    {
+      "name": "무손실 크롭 후보 허용",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": []
+    },
+    {
+      "name": "회사 승인 위장",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "상위 참고 권한 위장"
+      ]
+    },
+    {
+      "name": "회사 규칙으로 권위 승격",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "상위 참고 권한 위장"
+      ]
+    },
+    {
+      "name": "자동 레이아웃 선택 위장",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "상위 참고 권한 위장"
+      ]
+    },
+    {
+      "name": "실영상 검사 완료 위장",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "상위 참고 권한 위장"
+      ]
+    },
+    {
+      "name": "보편 숫자 기본값 강제",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "상위 참고 권한 위장"
+      ]
+    },
+    {
+      "name": "카드의 실제 영상 출처 위장",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "KNOW-LAYOUT-SINGLE-FOCUS 형식: 'synthetic_not_company_video' was expected"
+      ]
+    },
+    {
+      "name": "회사 승인된 개별 카드 위장",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "KNOW-LAYOUT-SINGLE-FOCUS 형식: False was expected"
+      ]
+    },
+    {
+      "name": "개별 카드의 고정 12열 강제",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "KNOW-LAYOUT-SINGLE-FOCUS 형식: None was expected"
+      ]
+    },
+    {
+      "name": "모양에서 관계 자동 부여",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "KNOW-LAYOUT-SINGLE-FOCUS 형식: False was expected"
+      ]
+    },
+    {
+      "name": "기존14개 누락",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "기존14개 layout ID 누락·중복·신규"
+      ]
+    },
+    {
+      "name": "새 분류ID 끼워넣기",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "KNOW-LAYOUT-SINGLE-FOCUS 기존 의미·이름 불일치"
+      ]
+    },
+    {
+      "name": "기존 이름 뜻 변경",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "KNOW-LAYOUT-SINGLE-FOCUS 기존 의미·이름 불일치"
+      ]
+    },
+    {
+      "name": "정보 관계와 모션축 혼동",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "KNOW-LAYOUT-SINGLE-FOCUS 없는 관계ID 또는 축 혼동"
+      ]
+    },
+    {
+      "name": "빈 기권 조건",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "KNOW-LAYOUT-SINGLE-FOCUS 형식: '' should be non-empty"
+      ]
+    },
+    {
+      "name": "누락 기권 조건",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "KNOW-LAYOUT-SINGLE-FOCUS 형식: 'abstain_when' is a required property"
+      ]
+    },
+    {
+      "name": "예와 반례 동일",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "KNOW-LAYOUT-SINGLE-FOCUS 예/반례 동일"
+      ]
+    },
+    {
+      "name": "없는 출처",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "KNOW-LAYOUT-SINGLE-FOCUS 없는 출처",
+        "KNOW-LAYOUT-SINGLE-FOCUS 출처 위치 누락·중복·순서 불일치"
+      ]
+    },
+    {
+      "name": "출처 중복",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "KNOW-LAYOUT-SINGLE-FOCUS 형식: ['SRC-L2-CARBON-GRID', 'SRC-L2-NNG-VISUAL', 'SRC-L2-NNG-PROXIMITY', 'SRC-L2-CARBON-GRID'] has non-unique elements"
+      ]
+    },
+    {
+      "name": "출처 절 연결 누락",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "KNOW-LAYOUT-SINGLE-FOCUS 형식: [] should be non-empty"
+      ]
+    },
+    {
+      "name": "원문 뜻 검토 깊이 위장",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "SRC-L2-KLREQ 검토 깊이 무단 변경"
+      ]
+    },
+    {
+      "name": "원격 원문 보존 위장",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "SRC-L2-KLREQ 읽은 절·한계·원격 스냅샷 표기"
+      ]
+    },
+    {
+      "name": "스킬 실행 위장",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "스킬 실행·분류 변경 위장"
+      ]
+    },
+    {
+      "name": "로컬 원문 해시 교체",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "SRC-L2-SHOT-COMPOSITION 로컬 원문 해시 불일치"
+      ]
+    },
+    {
+      "name": "기존 정본 해시 교체",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "정본 참조 버전·해시 불일치"
+      ]
+    },
+    {
+      "name": "한맥 디자인 참조 교체",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "한맥 참조 계약 불일치"
+      ]
+    },
+    {
+      "name": "디자인참조 권위 승격",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "한맥 참조를 회사 영상 의무 규칙으로 승격"
+      ]
+    },
+    {
+      "name": "출처 URL 교체",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "SRC-L2-KLREQ 확인한 출처 URL 교체"
+      ]
+    },
+    {
+      "name": "화면기준 명칭 교체",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "SCREEN-HIERARCHY 기존 화면기준 명칭 불일치"
+      ]
+    },
+    {
+      "name": "스트레스 사례를 실영상으로 위장",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "스트레스 사례 권한 위장"
+      ]
+    },
+    {
+      "name": "후보를 새 분류로 활성화",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "확장후보 권한·결정근거 위장"
+      ]
+    },
+    {
+      "name": "확장 후보 결정근거 삭제",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "확장후보 권한·결정근거 위장",
+        "사용자 A범위 결정 기록 불일치"
+      ]
+    },
+    {
+      "name": "후보를 기존 분류ID로 위장",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "후보3개 누락·중복·분류ID침범"
+      ]
+    },
+    {
+      "name": "임의 승인 권한 필드 삽입",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "KNOW-LAYOUT-SINGLE-FOCUS 형식: Additional properties are not allowed ('approved_by' was unexpected)"
+      ]
+    },
+    {
+      "name": "상위 승인 권한 필드 삽입",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "unhandled_exception": false,
+      "errors": [
+        "심화지식 상위 계약 필드 누락·추가"
+      ]
+    }
+  ],
+  "scope": "자료권한·참조·원문깊이·정본동기화의계약회귀. 양성대조3개포함. 자연어정답·실영상효과성능아님."
+}

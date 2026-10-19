@@ -1,0 +1,884 @@
+{
+  "authority": "Phase00 conditional reference; not company approval or media evidence",
+  "pins": [
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\01_공통용어\\공통용어사전.json",
+      "version": "0.1.1",
+      "sha256": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+      "locator": "terms[id]"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\02_원칙과레이아웃\\모션과정보전달원칙.json",
+      "version": "0.1.2",
+      "sha256": "249ef6b9e7b14ff62f41352922be2f00e748c8b10debb4d4992b580364e0daa5",
+      "locator": "principles[id]"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\02_원칙과레이아웃\\모션원칙_심화카드.json",
+      "version": "0.1.2",
+      "sha256": "76b77be793d1ac56c5486a00e81133f68767c132846d8123c57a337b6c7fa066",
+      "locator": "cards[id]"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\13_품질검수\\품질항목_정본.json",
+      "version": "0.1.1",
+      "sha256": "c5b9e91e902747a1d657fbbaee19c4b2b97e96dcf58f0ae2bb032384f29ce60f",
+      "locator": "cards[id]"
+    }
+  ],
+  "terms": [
+    {
+      "id": "FUNCTION-REVEAL",
+      "axis": "motion_function",
+      "name_ko": "정보 공개",
+      "name_en": "Reveal information",
+      "definition": "내용을 보이게 하거나 읽을 순서를 형성",
+      "aliases": [
+        "등장 기능"
+      ],
+      "include_when": "정보 도입",
+      "exclude_or_limit": "opacity·mask 기법과 별개",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "FUNCTION-FOCUS",
+      "axis": "motion_function",
+      "name_ko": "주목 이동",
+      "name_en": "Shift focus",
+      "definition": "현재 설명 대상으로 주목을 이동",
+      "aliases": [
+        "포커스 전환"
+      ],
+      "include_when": "핵심 단계 설명",
+      "exclude_or_limit": "실제 시선 효과는 검토 필요",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "FUNCTION-CONTEXT",
+      "axis": "motion_function",
+      "name_ko": "맥락 유지",
+      "name_en": "Preserve context",
+      "definition": "전체·기존 대상의 맥락을 유지",
+      "aliases": [
+        "맥락 보존"
+      ],
+      "include_when": "전체에서 상세로",
+      "exclude_or_limit": "남은 대상의 실제 식별성 확인",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "FUNCTION-CHANGE",
+      "axis": "motion_function",
+      "name_ko": "상태 변화 안내",
+      "name_en": "Show state change",
+      "definition": "앞뒤 상태 차이를 표현",
+      "aliases": [
+        "상태 전환 기능"
+      ],
+      "include_when": "변경·완료",
+      "exclude_or_limit": "실제 값·중간 값 분리",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "PROPERTY-POSITION",
+      "axis": "motion_property",
+      "name_ko": "화면 위치 변화",
+      "name_en": "Screen position change",
+      "definition": "렌더 화면에서 위치가 달라짐",
+      "aliases": [
+        "이동",
+        "Position"
+      ],
+      "include_when": "화면 추적",
+      "exclude_or_limit": "레이어·카메라 원인 분리",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "PROPERTY-SIZE",
+      "axis": "motion_property",
+      "name_ko": "겉보기 크기 변화",
+      "name_en": "Apparent size change",
+      "definition": "렌더 화면의 대상 크기가 달라짐",
+      "aliases": [
+        "확대",
+        "축소",
+        "크기 변화"
+      ],
+      "include_when": "바운딩박스 관측",
+      "exclude_or_limit": "원본 Scale 값으로 단정 금지",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "PROPERTY-VISIBILITY",
+      "axis": "motion_property",
+      "name_ko": "가시성 변화",
+      "name_en": "Visibility change",
+      "definition": "보이는 범위·강도가 달라짐",
+      "aliases": [
+        "페이드인",
+        "페이드아웃",
+        "Fade in",
+        "Fade out"
+      ],
+      "include_when": "등장·퇴장 관측",
+      "exclude_or_limit": "오퍼시티·마스크·합성 원인 미확정 가능",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "PROPERTY-VALUE",
+      "axis": "motion_property",
+      "name_ko": "문자·값 변화",
+      "name_en": "Text or value change",
+      "definition": "표시 내용·값이 시간에 따라 변화",
+      "aliases": [
+        "카운트업"
+      ],
+      "include_when": "상태·수치",
+      "exclude_or_limit": "장식 중간값을 실측 데이터로 오인 금지",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.0",
+      "replaced_by": null
+    },
+    {
+      "id": "TIME-SEQUENCE",
+      "axis": "timing",
+      "name_ko": "순차 발생",
+      "name_en": "Sequential events",
+      "definition": "사건이 차례대로 시작 또는 완료",
+      "aliases": [
+        "Sequential events"
+      ],
+      "include_when": "기준 사건·대상·시간 범위를 함께 기록",
+      "exclude_or_limit": "정확한 시각·원본 키프레임을 용어만으로 확정하지 않음",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.1",
+      "replaced_by": null
+    },
+    {
+      "id": "TIME-OVERLAP",
+      "axis": "timing",
+      "name_ko": "중첩",
+      "name_en": "Overlap",
+      "definition": "둘 이상 동작의 시간 범위가 겹침",
+      "aliases": [
+        "Overlap"
+      ],
+      "include_when": "기준 사건·대상·시간 범위를 함께 기록",
+      "exclude_or_limit": "정확한 시각·원본 키프레임을 용어만으로 확정하지 않음",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.1",
+      "replaced_by": null
+    },
+    {
+      "id": "TIME-DELAY",
+      "axis": "timing",
+      "name_ko": "지연",
+      "name_en": "Delay",
+      "definition": "대응 사건 사이 시작·완료 시각 차이",
+      "aliases": [
+        "Delay"
+      ],
+      "include_when": "기준 사건·대상·시간 범위를 함께 기록",
+      "exclude_or_limit": "정확한 시각·원본 키프레임을 용어만으로 확정하지 않음",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.1",
+      "replaced_by": null
+    },
+    {
+      "id": "TIME-HOLD",
+      "axis": "timing",
+      "name_ko": "유지",
+      "name_en": "Hold",
+      "definition": "정보 또는 상태가 식별 가능하게 지속",
+      "aliases": [
+        "Hold"
+      ],
+      "include_when": "기준 사건·대상·시간 범위를 함께 기록",
+      "exclude_or_limit": "정확한 시각·원본 키프레임을 용어만으로 확정하지 않음",
+      "parent_id": null,
+      "related_ids": [],
+      "source_refs": [
+        "SRC-PROJECT-TAXONOMY"
+      ],
+      "status": "draft",
+      "version": "0.1.1",
+      "replaced_by": null
+    }
+  ],
+  "principles": [
+    {
+      "id": "AP-05",
+      "family": "animation12",
+      "name_ko": "Follow Through / Overlapping Action · 후속·겹침 동작",
+      "definition": "부분 동작의 시간 차와 잔여 움직임",
+      "consider_when": "그룹의 자연스러운 연동에 후보. 데이터 표시·정렬이 늦게 흔들리면 부적합. 핵심 정보의 안정된 시간이 충분한가?",
+      "avoid_or_adjust_when": "정보 정확성·읽기 시간·원본 형태를 해치거나 해당맥락에무관한효과는제외",
+      "analysis_observables": "대상·부속 요소의 시작·정착 차이와 잔여 움직임, 중첩 구간.",
+      "planning_decisions": "그룹의 자연스러운 연동에 후보. 데이터 표시·정렬이 늦게 흔들리면 부적합. 핵심 정보의 안정된 시간이 충분한가?를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "겹침과 후속 움직임이 역할을 돕는가? 정보가 안정된 채 읽힐 시간이 있는가?"
+      ],
+      "source_refs": [
+        "SRC-ADOBE-12"
+      ],
+      "related_ids": [
+        "MP-07"
+      ],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "AP-08",
+      "family": "animation12",
+      "name_ko": "Secondary Action · 보조 동작",
+      "definition": "주동작을 뒷받침하는 동작",
+      "consider_when": "주제 이해를 지원할 때만 추가. 정보 읽는 중 반복 장식은 제한. 시선을 뺏지 않는가?",
+      "avoid_or_adjust_when": "정보 정확성·읽기 시간·원본 형태를 해치거나 해당맥락에무관한효과는제외",
+      "analysis_observables": "주요 동작과 보조 대상의 변화·주목 경쟁·정보 가림.",
+      "planning_decisions": "주제 이해를 지원할 때만 추가. 정보 읽는 중 반복 장식은 제한. 시선을 뺏지 않는가?를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "보조 동작이 이해를 지원하는가? 읽는 동안 시선을 빼앗지 않는가?"
+      ],
+      "source_refs": [
+        "SRC-ADOBE-12"
+      ],
+      "related_ids": [
+        "MP-09"
+      ],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "AP-09",
+      "family": "animation12",
+      "name_ko": "Timing · 타이밍",
+      "definition": "동작의 시간 배분",
+      "consider_when": "등장·정착·읽기·전환의 관계 기록. UI ms를 영상 기준으로 쓰지 않음. 내용과 내레이션을 따라갈 수 있는가?",
+      "avoid_or_adjust_when": "정보 정확성·읽기 시간·원본 형태를 해치거나 해당맥락에무관한효과는제외",
+      "analysis_observables": "등장·완성·유지·퇴장 상태의 시간 관계와 내레이션 대응.",
+      "planning_decisions": "등장·정착·읽기·전환의 관계 기록. UI ms를 영상 기준으로 쓰지 않음. 내용과 내레이션을 따라갈 수 있는가?를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "장면을 이해하고 읽을 시간이 확보되는가?"
+      ],
+      "source_refs": [
+        "SRC-ADOBE-12"
+      ],
+      "related_ids": [
+        "MP-01"
+      ],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "MP-07",
+      "family": "motion10",
+      "name_ko": "Follow Through / Overlapping Action · 후속·겹침",
+      "definition": "동작 간 잔여·지연",
+      "consider_when": "부속 요소나 그룹 반응의 시간 차. 정지해야 할 정보가 남아 흔들리지 않는가?",
+      "avoid_or_adjust_when": "정보 정확성·읽기 시간·원본 형태를 해치거나 해당맥락에무관한효과는제외",
+      "analysis_observables": "대상별 시작·종료 차이, 잔여 동작과 겹침.",
+      "planning_decisions": "부속 요소나 그룹 반응의 시간 차. 정지해야 할 정보가 남아 흔들리지 않는가?를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "동작 연결이 자연스럽고 정보의 안정된 시간이 있는가?"
+      ],
+      "source_refs": [
+        "SRC-JORGE-10"
+      ],
+      "related_ids": [
+        "AP-05"
+      ],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "IP-05",
+      "family": "information",
+      "name_ko": "시간 근접",
+      "definition": "설명과 대응 화면의 시간을 맞춘다",
+      "consider_when": "내레이션·표식·동작대응",
+      "avoid_or_adjust_when": "의도적인문제-답순서는허용",
+      "analysis_observables": "발화·문구·해당 동작의 시작과 유지가 겹치는지.",
+      "planning_decisions": "내레이션·표식·동작대응를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "설명 시점에 필요한 화면이 보이는가? 의도적인 예고·문답 순서를 허용하는가?"
+      ],
+      "source_refs": [
+        "SRC-CAM-EXTRANEOUS"
+      ],
+      "related_ids": [],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "MR-04",
+      "family": "motion_relationship",
+      "name_ko": "순차·동시 등장 선택",
+      "definition": "시간으로 관계와 읽는 순서를 드러낸다",
+      "consider_when": "단계공개·동시비교",
+      "avoid_or_adjust_when": "항상stagger나UI시간값을강제하지않음",
+      "analysis_observables": "사건별 시작·완료, 그룹·순서·중첩·누적 상태.",
+      "planning_decisions": "단계공개·동시비교를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "순차 공개와 동시 비교 중 정보 관계에 맞는 방식을 골랐는가?"
+      ],
+      "source_refs": [
+        "SRC-CARBON-CHOREO"
+      ],
+      "related_ids": [],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "MR-07",
+      "family": "motion_relationship",
+      "name_ko": "연동 관계 표현",
+      "definition": "요소 간 변화를 연결해 관계를 표현한다",
+      "consider_when": "동시·지연·반대변화와관계",
+      "avoid_or_adjust_when": "관측연동을AEparenting·실제인과로확정금지",
+      "analysis_observables": "요소 간 동시·지연·반대 변화와 표현된 관계.",
+      "planning_decisions": "동시·지연·반대변화와관계를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "연동이 관계를 설명하는가? 실제 인과·AE parent 구조로 단정하지 않았는가?"
+      ],
+      "source_refs": [
+        "SRC-UX-MOTION"
+      ],
+      "related_ids": [],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    },
+    {
+      "id": "MR-08",
+      "family": "motion_relationship",
+      "name_ko": "값 변화의 의미",
+      "definition": "숫자 변화의 실제 의미를 구분한다",
+      "consider_when": "기준값·최종값·시간대응",
+      "avoid_or_adjust_when": "장식중간값을실제측정데이터로보이게하지않음",
+      "analysis_observables": "표시 기준값·최종값·중간값의 데이터 출처와 실제 시간 대응.",
+      "planning_decisions": "기준값·최종값·시간대응를 검토하되 사실·회사 필수조건을 우선.",
+      "review_questions": [
+        "변화의 의미가 정확한가? 장식 카운트의 중간값을 실측으로 보이게 하지 않는가?"
+      ],
+      "source_refs": [
+        "SRC-UX-MOTION"
+      ],
+      "related_ids": [],
+      "case_refs": [],
+      "scope": "범용 참고 / 프로젝트 적용 해석",
+      "status": "reference",
+      "version": "0.1.1",
+      "numeric_defaults": null,
+      "interpretation_origin": "짧은 개념 정의와 프로젝트용 적용/제외를 자체 정리",
+      "unknown_policy": "대상·시점·효과·의도 근거가 부족하면 확인 불가 또는 추론으로 기록한다.",
+      "interpretation_source_refs": [
+        "SRC-PROJECT-GUIDANCE"
+      ]
+    }
+  ],
+  "deep_cards": [
+    {
+      "id": "AP-05",
+      "name_ko": "Follow Through / Overlapping Action · 후속·겹침 동작",
+      "family": "animation12",
+      "status": "draft",
+      "company_approved": false,
+      "source_refs": [
+        "SRC-ADOBE-12"
+      ],
+      "source_locator": "5. Follow Through and Overlapping Action",
+      "source_read_depth": "public_article_sections",
+      "source_summary_ko": "부속 움직임의 잔여와 시간 차이를 다룬다.",
+      "interpretation_origin": "source_summary_plus_project_transfer",
+      "project_interpretation": "그룹의 자연스러운 연동에 후보. 데이터 표시·정렬이 늦게 흔들리면 부적합. 핵심 정보의 안정된 시간이 충분한가?",
+      "positive_example": "설명 아이콘이 정착한 뒤 보조 선이 정착하고 함께 유지된다.",
+      "counterexample": "숫자 라벨이 계속 튕겨 안정된 읽기 상태가 없다.",
+      "abstain_when": "단순 순차 등장인지 관성에 의한 후속 표현인지 근거가 부족하면 나눠 기록한다.",
+      "case_kind": "synthetic_not_company_video",
+      "observables": "대상·부속 요소의 시작·정착 차이와 잔여 움직임, 중첩 구간.",
+      "review_question": "겹침과 후속 움직임이 역할을 돕는가? 정보가 안정된 채 읽힐 시간이 있는가?",
+      "related_ids": [
+        "MP-07"
+      ],
+      "duplicate_failure_policy": "같은 실패를 여러 체계에서 중복 감점하지 않는다.",
+      "numeric_default": null,
+      "recommendation_enabled": true,
+      "limitations": "사례의 전달 효과는 실제 영상·시청자 시험 전. 원칙 미사용 자체가 실패는 아님."
+    },
+    {
+      "id": "AP-08",
+      "name_ko": "Secondary Action · 보조 동작",
+      "family": "animation12",
+      "status": "draft",
+      "company_approved": false,
+      "source_refs": [
+        "SRC-ADOBE-12"
+      ],
+      "source_locator": "8. Secondary Action",
+      "source_read_depth": "public_article_sections",
+      "source_summary_ko": "보조 행동은 주 행동을 지원한다.",
+      "interpretation_origin": "source_summary_plus_project_transfer",
+      "project_interpretation": "주제 이해를 지원할 때만 추가. 정보 읽는 중 반복 장식은 제한. 시선을 뺏지 않는가?",
+      "positive_example": "핵심 부품 공개에 맞춰 설명선이 나타난 뒤 멈춘다.",
+      "counterexample": "본문을 읽는 동안 보조 캐릭터가 반복 춤을 춘다.",
+      "abstain_when": "보조 요소가 있는 것과 보조 동작이 있는 것을 혼동하지 않는다.",
+      "case_kind": "synthetic_not_company_video",
+      "observables": "주요 동작과 보조 대상의 변화·주목 경쟁·정보 가림.",
+      "review_question": "보조 동작이 이해를 지원하는가? 읽는 동안 시선을 빼앗지 않는가?",
+      "related_ids": [
+        "MP-09"
+      ],
+      "duplicate_failure_policy": "같은 실패를 여러 체계에서 중복 감점하지 않는다.",
+      "numeric_default": null,
+      "recommendation_enabled": true,
+      "limitations": "사례의 전달 효과는 실제 영상·시청자 시험 전. 원칙 미사용 자체가 실패는 아님."
+    },
+    {
+      "id": "AP-09",
+      "name_ko": "Timing · 타이밍",
+      "family": "animation12",
+      "status": "draft",
+      "company_approved": false,
+      "source_refs": [
+        "SRC-ADOBE-12"
+      ],
+      "source_locator": "9. Timing",
+      "source_read_depth": "public_article_sections",
+      "source_summary_ko": "동작의 시간은 성격과 무게 표현에 관여한다.",
+      "interpretation_origin": "source_summary_plus_project_transfer",
+      "project_interpretation": "등장·정착·읽기·전환의 관계 기록. UI ms를 영상 기준으로 쓰지 않음. 내용과 내레이션을 따라갈 수 있는가?",
+      "positive_example": "큰 구조물 공개 뒤 명칭과 관계를 읽을 유지 구간을 둔다.",
+      "counterexample": "모든 대상에 같은 고정 길이를 적용해 긴 설명을 잘라낸다.",
+      "abstain_when": "발화와 대상 시청 환경이 없으면 충분한 읽기 시간을 확정하지 않는다.",
+      "case_kind": "synthetic_not_company_video",
+      "observables": "등장·완성·유지·퇴장 상태의 시간 관계와 내레이션 대응.",
+      "review_question": "장면을 이해하고 읽을 시간이 확보되는가?",
+      "related_ids": [
+        "MP-01"
+      ],
+      "duplicate_failure_policy": "같은 실패를 여러 체계에서 중복 감점하지 않는다.",
+      "numeric_default": null,
+      "recommendation_enabled": true,
+      "limitations": "사례의 전달 효과는 실제 영상·시청자 시험 전. 원칙 미사용 자체가 실패는 아님."
+    },
+    {
+      "id": "MP-07",
+      "name_ko": "Follow Through / Overlapping Action · 후속·겹침",
+      "family": "motion10",
+      "status": "draft",
+      "company_approved": false,
+      "source_refs": [
+        "SRC-JORGE-10"
+      ],
+      "source_locator": "Lesson 2 / Follow Through / Overlapping Action",
+      "source_read_depth": "public_course_outline",
+      "source_summary_ko": null,
+      "interpretation_origin": "public_outline_only_project_interpretation",
+      "project_interpretation": "부속 요소나 그룹 반응의 시간 차. 정지해야 할 정보가 남아 흔들리지 않는가?",
+      "positive_example": "설명선과 아이콘의 정착 차이를 주되 결과 화면은 안정시킨다.",
+      "counterexample": "모든 레이어에 지연을 넣어 관계와 읽기 시간을 분해한다.",
+      "abstain_when": "겹쳐 움직였다는 관측과 물리적 후속이라는 해석을 나눈다.",
+      "case_kind": "synthetic_not_company_video",
+      "observables": "대상별 시작·종료 차이, 잔여 동작과 겹침.",
+      "review_question": "동작 연결이 자연스럽고 정보의 안정된 시간이 있는가?",
+      "related_ids": [
+        "AP-05"
+      ],
+      "duplicate_failure_policy": "같은 실패를 여러 체계에서 중복 감점하지 않는다.",
+      "numeric_default": null,
+      "recommendation_enabled": true,
+      "limitations": "사례의 전달 효과는 실제 영상·시청자 시험 전. 원칙 미사용 자체가 실패는 아님."
+    },
+    {
+      "id": "IP-05",
+      "name_ko": "시간 근접",
+      "family": "information",
+      "status": "draft",
+      "company_approved": false,
+      "source_refs": [
+        "SRC-CAM-EXTRANEOUS"
+      ],
+      "source_locator": "Chapter 14 Summary / temporal contiguity",
+      "source_read_depth": "publisher_summary",
+      "source_summary_ko": "관련 언어와 그림을 같은 시간에 제시한다.",
+      "interpretation_origin": "source_summary_plus_project_transfer",
+      "project_interpretation": "내레이션·표식·동작대응",
+      "positive_example": "압력 원인 발화 시 해당 도표와 표식이 함께 보이게 한다.",
+      "counterexample": "원인 발화가 끝난 뒤 근거 그림이 잠깐 나타난다.",
+      "abstain_when": "음성·시나리오가 없으면 화면/설명 동기 여부를 확정하지 않는다.",
+      "case_kind": "synthetic_not_company_video",
+      "observables": "발화·문구·해당 동작의 시작과 유지가 겹치는지.",
+      "review_question": "설명 시점에 필요한 화면이 보이는가? 의도적인 예고·문답 순서를 허용하는가?",
+      "related_ids": [],
+      "duplicate_failure_policy": "같은 실패를 여러 체계에서 중복 감점하지 않는다.",
+      "numeric_default": null,
+      "recommendation_enabled": true,
+      "limitations": "사례의 전달 효과는 실제 영상·시청자 시험 전. 원칙 미사용 자체가 실패는 아님."
+    },
+    {
+      "id": "MR-04",
+      "name_ko": "순차·동시 등장 선택",
+      "family": "motion_relationship",
+      "status": "draft",
+      "company_approved": false,
+      "source_refs": [
+        "SRC-CARBON-CHOREO"
+      ],
+      "source_locator": "Composition / Sequence and stagger",
+      "source_read_depth": "archived_ui_guideline_sections",
+      "source_summary_ko": "등장 순서를 나눠 관계와 방향을 안내한다.",
+      "interpretation_origin": "source_summary_plus_project_transfer",
+      "project_interpretation": "단계공개·동시비교",
+      "positive_example": "업무 단계는 순차 공개하고 A/B 비교는 필요한 항목을 함께 유지한다.",
+      "counterexample": "비교 항목을 한쪽씩 삭제해 기억만으로 비교하게 한다.",
+      "abstain_when": "순차 등장과 실제 업무 순서의 의미는 별도로 확인한다.",
+      "case_kind": "synthetic_not_company_video",
+      "observables": "사건별 시작·완료, 그룹·순서·중첩·누적 상태.",
+      "review_question": "순차 공개와 동시 비교 중 정보 관계에 맞는 방식을 골랐는가?",
+      "related_ids": [],
+      "duplicate_failure_policy": "같은 실패를 여러 체계에서 중복 감점하지 않는다.",
+      "numeric_default": null,
+      "recommendation_enabled": true,
+      "limitations": "사례의 전달 효과는 실제 영상·시청자 시험 전. 원칙 미사용 자체가 실패는 아님."
+    },
+    {
+      "id": "MR-07",
+      "name_ko": "연동 관계 표현",
+      "family": "motion_relationship",
+      "status": "draft",
+      "company_approved": false,
+      "source_refs": [
+        "SRC-UX-MOTION"
+      ],
+      "source_locator": "Principle 3: Parenting",
+      "source_read_depth": "author_article_sections",
+      "source_summary_ko": "속성 연동으로 대상 관계를 표현한다.",
+      "interpretation_origin": "source_summary_plus_project_transfer",
+      "project_interpretation": "동시·지연·반대변화와관계",
+      "positive_example": "부품 이동 때 연결된 설명선이 따라가 관계를 유지한다.",
+      "counterexample": "같이 움직였으니 실제 인과관계와 AE parent가 있다고 기록한다.",
+      "abstain_when": "공동 이동은 관측하고 원본 parent 구현·실제 인과는 각각 미확인으로 둔다.",
+      "case_kind": "synthetic_not_company_video",
+      "observables": "요소 간 동시·지연·반대 변화와 표현된 관계.",
+      "review_question": "연동이 관계를 설명하는가? 실제 인과·AE parent 구조로 단정하지 않았는가?",
+      "related_ids": [],
+      "duplicate_failure_policy": "같은 실패를 여러 체계에서 중복 감점하지 않는다.",
+      "numeric_default": null,
+      "recommendation_enabled": true,
+      "limitations": "사례의 전달 효과는 실제 영상·시청자 시험 전. 원칙 미사용 자체가 실패는 아님."
+    },
+    {
+      "id": "MR-08",
+      "name_ko": "값 변화의 의미",
+      "family": "motion_relationship",
+      "status": "draft",
+      "company_approved": false,
+      "source_refs": [
+        "SRC-UX-MOTION"
+      ],
+      "source_locator": "Principle 5: Value change",
+      "source_read_depth": "author_article_sections",
+      "source_summary_ko": "변하는 값을 동적인 정보와 연결한다.",
+      "interpretation_origin": "source_summary_plus_project_transfer",
+      "project_interpretation": "기준값·최종값·시간대응",
+      "positive_example": "성과 카운트의 최종값·출처를 고정하고 중간값은 연출값으로 구분한다.",
+      "counterexample": "카운트 중간 숫자를 해당 시각의 실적 데이터로 저장한다.",
+      "abstain_when": "값의 데이터/보간/장식 여부가 없으면 값 변화는 관측하되 의미를 보류한다.",
+      "case_kind": "synthetic_not_company_video",
+      "observables": "표시 기준값·최종값·중간값의 데이터 출처와 실제 시간 대응.",
+      "review_question": "변화의 의미가 정확한가? 장식 카운트의 중간값을 실측으로 보이게 하지 않는가?",
+      "related_ids": [],
+      "duplicate_failure_policy": "같은 실패를 여러 체계에서 중복 감점하지 않는다.",
+      "numeric_default": null,
+      "recommendation_enabled": true,
+      "limitations": "사례의 전달 효과는 실제 영상·시청자 시험 전. 원칙 미사용 자체가 실패는 아님."
+    }
+  ],
+  "quality": [
+    {
+      "id": "Q-INFO-04",
+      "group": "정보·데이터",
+      "title": "결측·추정·카운트 값",
+      "question": "실측·예측·결측·연출 중간값을 구분했는가?",
+      "applies_when": "시계열·수치 카운트·보간·효과 시뮬레이션이 있는 화면/분석.",
+      "required_evidence": "데이터 버전·실측/추정 표기·결측 구간, 실제 재생과 최종값, 연출 목적.",
+      "review_method": "값의 종류와 시간 대응을 확인. 화면 카운트 중간값을 실제 연도 값으로 저장하지 않음.",
+      "positive_example": "가상 최종 실적100만 제공됐다면 등장 카운트의37은 연출값으로 구분하고 최종100과 단위를 확인한다.",
+      "counterexample": "결측을0으로 채우거나 움직이는 숫자를 전부 실제 중간 실적으로 기록한다.",
+      "valid_exception": "검토된 예측/보간 모델을 명시하고 실측과 시각적으로 구분하면 추정 표시 자체는 금지하지 않음.",
+      "hold_when": "종류/모델/최종값 출처가 없으면 실측 주장 보류. 보이는 숫자 관측은 유지.",
+      "human_review": {
+        "role": "데이터 담당자·디자인 검수자",
+        "question": "실측·예측·결측·연출 중간값을 구분했는가?",
+        "required_for": "실제 내용·의도·시청 품질의 최종 판단. 자료가 없으면 이 질문을 완료로 만들지 않음"
+      },
+      "impact": "허위 시계열·실적 과장 위험. 연출을 금지하는 항목은 아님.",
+      "source_refs": [
+        "WEB-CHART",
+        "LOCAL-CONFLICT",
+        "LOCAL-EVIDENCE"
+      ],
+      "knowledge_refs": [
+        "MR-08"
+      ],
+      "interpretation_origin": "원문 참고 + 프로젝트의 조건부 검수 설계",
+      "example_kind": "가상 설명용; 실제 검사 결과 아님",
+      "company_mandatory": false,
+      "universal_numeric_default": null
+    },
+    {
+      "id": "Q-MOTION-01",
+      "group": "모션·시간",
+      "title": "정보 완성과 읽기 유지",
+      "question": "비교/설명에 필요한 정보가 완성된 뒤 읽고 연결할 시간이 있는가?",
+      "applies_when": "시간에 따라 정보가 나타나고 사라지는 영상/모션 기획.",
+      "required_evidence": "대상별 등장·완성·유지·퇴장 시간과 발화, 필수 관계, 실제 시청 조건/필요시 시청자 확인.",
+      "review_method": "전체 클립 길이 대신 실제 읽을 수 있는 구간을 확인. 비교할 값의 동시 유지·누적/요약과 과밀을 함께 검토.",
+      "positive_example": "A/B 수치·단위가 공개된 뒤 둘을 함께 읽을 상태를 유지하고 다음 설명으로 넘어간다.",
+      "counterexample": "제목만5초 보였는데 뒤늦게 나온 단위까지 충분히 읽었다고 하거나 모든 이전 문구를 끝까지 쌓는다.",
+      "valid_exception": "순차 공개·빠른 리듬도 목적·대상에 맞으면 가능. 정지/동시 공개 미사용 자체는 오류가 아님.",
+      "hold_when": "실제 시간·완성시점·시청 조건이 없으면 충분성 보류. 관측 유지시간은 근거가 있을 때 기록.",
+      "human_review": {
+        "role": "디자인/영상 검수자·필요시 실제 대상 시청자",
+        "question": "비교/설명에 필요한 정보가 완성된 뒤 읽고 연결할 시간이 있는가?",
+        "required_for": "실제 내용·의도·시청 품질의 최종 판단. 자료가 없으면 이 질문을 완료로 만들지 않음"
+      },
+      "impact": "관계/수치 읽기 실패. 고정 초수는 아직 없음.",
+      "source_refs": [
+        "WEB-TRANSIENT",
+        "WEB-AV",
+        "LOCAL-CONFLICT"
+      ],
+      "knowledge_refs": [
+        "SCREEN-TIME-READ",
+        "AP-09",
+        "IP-09",
+        "MR-04"
+      ],
+      "interpretation_origin": "원문 참고 + 프로젝트의 조건부 검수 설계",
+      "example_kind": "가상 설명용; 실제 검사 결과 아님",
+      "company_mandatory": false,
+      "universal_numeric_default": null
+    },
+    {
+      "id": "Q-MOTION-02",
+      "group": "모션·시간",
+      "title": "동작 의미·대상 연속성",
+      "question": "움직임·화살표·연동이 대상과 관계를 잘못 전달하지 않는가?",
+      "applies_when": "공정·구조·공동 이동·상태 전환을 표현하는 모션.",
+      "required_evidence": "전후/중간 시계열·동일 대상 대응·기술 관계·실측/설명도 구분·실제 재생.",
+      "review_method": "동일 대상 추적·라벨 연결·공간 관계·의미 일관성을 확인. 공동 이동을 실제 인과나 AE parent 증거로 만들지 않음.",
+      "positive_example": "부품과 라벨이 함께 이동해도 해당 부품을 가리키며 시작/결과 상태의 관계를 유지한다.",
+      "counterexample": "부품이 바뀌었는데 같은 라벨이 붙거나 흐름 화살표가 기술적으로 반대로 움직인다.",
+      "valid_exception": "의도적 모션 차이로 서로 다른 의미를 표현할 수 있다. Carbon의 대각선 금지를 기술 이동 경로에 적용하지 않음.",
+      "hold_when": "중간 표본·동일성·실제 관계 자료가 없으면 해당 연속성/인과 보류. 보이는 연동 관측과 구현 추정은 분리.",
+      "human_review": {
+        "role": "기술 담당자·디자인/모션 검수자",
+        "question": "움직임·화살표·연동이 대상과 관계를 잘못 전달하지 않는가?",
+        "required_for": "실제 내용·의도·시청 품질의 최종 판단. 자료가 없으면 이 질문을 완료로 만들지 않음"
+      },
+      "impact": "동작/방향의 의미 왜곡. 미관 일관성으로 기술 오류 상쇄 불가.",
+      "source_refs": [
+        "WEB-CHOREO",
+        "LOCAL-CONFLICT",
+        "LOCAL-EVIDENCE"
+      ],
+      "knowledge_refs": [
+        "MR-01",
+        "MR-02",
+        "MR-03",
+        "MR-07"
+      ],
+      "interpretation_origin": "원문 참고 + 프로젝트의 조건부 검수 설계",
+      "example_kind": "가상 설명용; 실제 검사 결과 아님",
+      "company_mandatory": false,
+      "universal_numeric_default": null
+    },
+    {
+      "id": "Q-TRUST-01",
+      "group": "분석 신뢰도",
+      "title": "원본·시간·좌표·근거",
+      "question": "관측/수치 주장에 올바른 버전·실제 위치·시간·변환 근거가 연결되는가?",
+      "applies_when": "영상 분석 기록 및 그 기록을 근거로 한 품질 판단.",
+      "required_evidence": "해당 주장에 필요한 원본/파생 버전·실제 접근 가능 근거·반대 근거. 영상 시점/변화 주장은 R4 시간/프레임, 공간·변환 주장은 좌표/변환 근거를 추가. 문서 전사·비공간 주장에는 불필요한 좌표를 요구하지 않음.",
+      "review_method": "기존 R4 통합 계약과 R6 조회를 사용하고 원본 부분을 내용 대조. 주장에 필요한 근거 종류와 비적용 이유를 구분하며 구조 통과만으로 관측 정확성 통과 불가.",
+      "positive_example": "관측 대상을 원본 프레임/PTS와 출력 좌표 공간에 연결하고 크롭된 부분의 누락을 명시한다.",
+      "counterexample": "시나리오에 있다는 이유로 실제 등장했다고 쓰거나 미상 오차를0으로 채운다.",
+      "valid_exception": "시나리오 내용 관측은 그 종류로 기록 가능. 비공간적 주장은 좌표 비적용 이유를 남길 수 있고 R4의 적법한 spaces=[] 기록도 허용. 렌더 화면 관측이나 실제 구현 근거로 바꾸지 않음.",
+      "hold_when": "버전·원본 접근·내용 대조 또는 해당 주장에 필요한 시간/좌표·변환 근거가 없으면 해당 주장 보류. 공간 주장 누락을 비공간 예외로 우회하지 않음. 구조 오류는 원정보 보완 후 재검사.",
+      "human_review": {
+        "role": "분석 내용 검수자·기술/디자인 담당자",
+        "question": "관측/수치 주장에 올바른 버전·실제 위치·시간·변환 근거가 연결되는가?",
+        "required_for": "실제 내용·의도·시청 품질의 최종 판단. 자료가 없으면 이 질문을 완료로 만들지 않음"
+      },
+      "impact": "분석 신뢰도의 필수 조건. 보기 좋은 원본이 근거 부족을 상쇄하지 않음.",
+      "source_refs": [
+        "LOCAL-EVIDENCE",
+        "LOCAL-INTEGRATED",
+        "LOCAL-DECISION"
+      ],
+      "knowledge_refs": [],
+      "interpretation_origin": "원문 참고 + 프로젝트의 조건부 검수 설계",
+      "example_kind": "가상 설명용; 실제 검사 결과 아님",
+      "company_mandatory": false,
+      "universal_numeric_default": null
+    },
+    {
+      "id": "Q-TRUST-02",
+      "group": "분석 신뢰도",
+      "title": "의도·구현·부재·일반화",
+      "question": "관측을 넘어선 제작 의도·구현 방식·부재·회사 공통 규칙 주장에 별도 근거가 있는가?",
+      "applies_when": "의도/효과/AE구현/미등장/회사 일반 규칙을 진술하는 분석·보고.",
+      "required_evidence": "원본 프로젝트/제작자 확인 또는 충분한 관측 범위, 반대 근거·표본 한계, 구체 사람 회신.",
+      "review_method": "가설과 확인을 구분. 부분 표본의 부재를 전 구간 부재로, 한 영상 관측을 회사 규칙으로 승격하지 않음.",
+      "positive_example": "함께 움직임은 관측하되 AE parent 여부는 원본이 없어 미확인으로 남긴다.",
+      "counterexample": "같이 움직였으니 parent 사용, 화면이 세련됐으니 이해도가 상승, 영상1개이니 회사 규칙이라고 확정한다.",
+      "valid_exception": "근거 범위를 밝힌 후보/추정은 가능. 확인 못한 구현을 모른다고 해도 충분한 화면 관측을 삭제하지 않음.",
+      "hold_when": "제작자/원본/전 구간·대표 표본 근거가 없거나 반대 근거가 미해결이면 해당 확대 주장 보류.",
+      "human_review": {
+        "role": "제작자·내용 담당자·회사 규칙 확인 담당자",
+        "question": "관측을 넘어선 제작 의도·구현 방식·부재·회사 공통 규칙 주장에 별도 근거가 있는가?",
+        "required_for": "실제 내용·의도·시청 품질의 최종 판단. 자료가 없으면 이 질문을 완료로 만들지 않음"
+      },
+      "impact": "근거 없는 확정/잘못된 DB 일반화 방지. 회사 문법 승격은01-B의 별도 검수.",
+      "source_refs": [
+        "LOCAL-EVIDENCE",
+        "LOCAL-CONFLICT",
+        "LOCAL-CI",
+        "LOCAL-DECISION"
+      ],
+      "knowledge_refs": [
+        "AP-04",
+        "MR-07"
+      ],
+      "interpretation_origin": "원문 참고 + 프로젝트의 조건부 검수 설계",
+      "example_kind": "가상 설명용; 실제 검사 결과 아님",
+      "company_mandatory": false,
+      "universal_numeric_default": null
+    }
+  ]
+}

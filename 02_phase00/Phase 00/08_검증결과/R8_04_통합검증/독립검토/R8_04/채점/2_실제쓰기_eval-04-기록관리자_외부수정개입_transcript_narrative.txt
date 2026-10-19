@@ -1,0 +1,132 @@
+실제 작업 순서와 원문 로그
+
+초기 PowerShell 읽기: task.txt를 읽은 뒤 자료를 candidate/자료로 찾았으나 두 파일이 없어 Cannot find path 오류를 관측했다. 이후 task의 DB 루트 inputs/Phase00/자료에서 IO사용안내.md와 작업범위.json을 읽었다. 지정 스킬과 references 3종, 보존·버전 계약, R4 사용안내, 현재 검사기 및 판본대조 코드를 읽었다. 초기 PowerShell 호출에는 FileSystem InitializeDefaultDrives 경고가 있었고 exit 0이었다. 초기 PowerShell 출력 스트림은 도구에서 합쳐 제시되어 개별 stderr 원문을 별도 수집하지 못했다. 읽은 자료 원문은 읽은자료원문.txt에 보존한다.
+
+outputs/workflow.py prepare → backup → write 순으로 Python -X utf8 -B 실행. 각 wrapper exit 0이며 내부 CLI 종료는 아래에 별도 기록. prepare는 후보 생성 및 엄격 JSON/허용필드 대조, backup은 CLI 및 byte 동일 확인, write는 CLI 저장과 저장 후 검사·현재성 대조를 수행했다. outputs/report.py는 보고와 원문 로그 보존만 수행.
+
+쓰기 응답 owned_written_sha256와 현재 SHA 불일치 및 환경 검사 exit 2를 확인했다. 내 쓰기 bytes가 아닌 외부 변경이므로 restore CLI는 실행하지 않았다. 일반 파일 쓰기로 DB를 수정·복구하지 않았다.
+
+01_read
+argv JSON: ["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-X", "utf8", "-B", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate\\outputs\\01_read.request.json"]
+cwd: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\2_실제쓰기\eval-04-기록관리자_외부수정개입\candidate
+exit: 0
+stdout 원문:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr 원문:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+02_original_structure
+argv JSON: ["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-X", "utf8", "-B", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate\\inputs\\Phase00\\07_실행도구\\자료검증.py", "--record", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate\\inputs\\Phase00\\12_통합기록\\작업초안.json"]
+cwd: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\2_실제쓰기\eval-04-기록관리자_외부수정개입\candidate
+exit: 0
+stdout 원문:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr 원문:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+03_candidate_structure
+argv JSON: ["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-X", "utf8", "-B", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate\\inputs\\Phase00\\07_실행도구\\자료검증.py", "--record", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate\\outputs\\후보.json"]
+cwd: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\2_실제쓰기\eval-04-기록관리자_외부수정개입\candidate
+exit: 0
+stdout 원문:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr 원문:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+04_candidate_version
+argv JSON: ["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-X", "utf8", "-B", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate\\inputs\\Phase00\\실행스킬\\video-record-steward\\scripts\\판본대조.py", "--before", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate\\outputs\\변경전원문.json", "--after", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate\\outputs\\후보.json"]
+cwd: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\2_실제쓰기\eval-04-기록관리자_외부수정개입\candidate
+exit: 0
+stdout 원문:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr 원문:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+05_backup
+argv JSON: ["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-X", "utf8", "-B", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate\\outputs\\05_backup.request.json"]
+cwd: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\2_실제쓰기\eval-04-기록관리자_외부수정개입\candidate
+exit: 0
+stdout 원문:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr 원문:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+06_prewrite_read
+argv JSON: ["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-X", "utf8", "-B", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate\\outputs\\06_prewrite_read.request.json"]
+cwd: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\2_실제쓰기\eval-04-기록관리자_외부수정개입\candidate
+exit: 0
+stdout 원문:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr 원문:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+07_write
+argv JSON: ["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-X", "utf8", "-B", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate\\outputs\\07_write.request.json"]
+cwd: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\2_실제쓰기\eval-04-기록관리자_외부수정개입\candidate
+exit: 0
+stdout 원문:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr 원문:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+08_postvalidate
+argv JSON: ["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-X", "utf8", "-B", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate\\outputs\\08_postvalidate.request.json"]
+cwd: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\2_실제쓰기\eval-04-기록관리자_외부수정개입\candidate
+exit: 2
+stdout 원문:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr 원문:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+09_current_read
+argv JSON: ["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-X", "utf8", "-B", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate\\outputs\\09_current_read.request.json"]
+cwd: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\2_실제쓰기\eval-04-기록관리자_외부수정개입\candidate
+exit: 0
+stdout 원문:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr 원문:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+10_current_structure
+argv JSON: ["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-X", "utf8", "-B", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate\\inputs\\Phase00\\07_실행도구\\자료검증.py", "--record", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate\\inputs\\Phase00\\12_통합기록\\작업초안.json"]
+cwd: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\2_실제쓰기\eval-04-기록관리자_외부수정개입\candidate
+exit: 0
+stdout 원문:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr 원문:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+11_saved_version
+argv JSON: ["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-X", "utf8", "-B", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate\\inputs\\Phase00\\실행스킬\\video-record-steward\\scripts\\판본대조.py", "--before", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate\\inputs\\Phase00\\backup\\이번작업\\변경전.json", "--after", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\2_실제쓰기\\eval-04-기록관리자_외부수정개입\\candidate\\inputs\\Phase00\\12_통합기록\\작업초안.json"]
+cwd: C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\2_실제쓰기\eval-04-기록관리자_외부수정개입\candidate
+exit: 0
+stdout 원문:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+stderr 원문:
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+서비스이벤트 원문(허용된 결과 관측):
+
+C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\2_실제쓰기\eval-04-기록관리자_외부수정개입\candidate\서비스이벤트\001.json
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\2_실제쓰기\eval-04-기록관리자_외부수정개입\candidate\서비스이벤트\002.json
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\2_실제쓰기\eval-04-기록관리자_외부수정개입\candidate\서비스이벤트\003.json
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\2_실제쓰기\eval-04-기록관리자_외부수정개입\candidate\서비스이벤트\004.json
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\2_실제쓰기\eval-04-기록관리자_외부수정개입\candidate\서비스이벤트\005.json
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+C:\Users\User\Documents\ChatGPT\업무@사내 영상 생성기\phase00-build\R8_04_시험\2_실제쓰기\eval-04-기록관리자_외부수정개입\candidate\서비스이벤트\006.json
+[원문 코드/JSON 블록은 별도 로그와 대조]
+
+보고 스크립트 초기 실패도 보존: 12_report_initial.command.json / stdout / stderr. import workflow 시 sys.argv[1] 없음으로 IndexError, exit1. 보고 스크립트에서 report 모드 인수를 추가해 수정 후 exit0. 이 실패 동안 DB 쓰기 없음.
+[원문 코드/JSON 블록은 별도 로그와 대조]
+최종 직접 읽기 SHA: 7aa5c95c80c38f5b32af2a3775d37f2ad6684d565b83681d5f0be76d0f170123
+backup SHA: 1f0271b62a7f0ee2c4fb2bf788639f75350d7ed62b2a5089f4e90a2afa40bf21
+현재 외부본 보존·미복구·사용 중단. 요청 완료 false. 시간/token 미제공·미수집 null.

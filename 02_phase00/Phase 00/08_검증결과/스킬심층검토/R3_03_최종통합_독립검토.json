@@ -1,0 +1,391 @@
+{
+  "id": "r3-03-final-integrated-independent-review",
+  "version": "0.1.1",
+  "reviewed_on": "2026-10-14",
+  "reviewer": "foundation_redteam",
+  "verdict": "사용자 A의 선택 지식·정적 원문 검토와 세 맞춤스킬 이식 설계 범위 완료. 지적한 2건의 문서/출처 표현 보완을 재확인했으며 남은 차단결함 없음. 실행·맞춤스킬 재구성/평가·전체 Phase00·01-A 완료를 뜻하지 않음.",
+  "review_scope": {
+    "integrated_canonical": "스킬심층검토정본 v0.1.4의 scope/상태/권한/완료/카드·entrypoint 수량/직접복사 정책/편집 후보/근거보고 목록을 선택 확인. 모든 40카드 원문과 모든 외부 자료를 이번 턴에 새로 읽었다는 뜻은 아니다. 최종 후속에서는 v0.1.6 현재버전과 해당 그래픽evidence SHA, completion만 재읽어 동일 경계를 확인.",
+    "ledger": "544 records 전체의 path/hash/depth 메타데이터를 재집계하고 실제 보존 파일 SHA를 대조. 파일 내용 전수 심층 재검토가 아님.",
+    "new_source": "editorial-information: SKILL+8refs+README/LICENSE/agents YAML=12개 전문 독립 정적 읽기. 별도 확보트리는 metadata/path inventory만 확인.",
+    "previous_sources": "앞선 그래픽/모션로컬/설명영상 독립 보고의 내용·한계는 유지. 다른 독립 감사의 원문 전체를 이번에 재검토한 것으로 계산하지 않음.",
+    "actions": "PowerShell 읽기·JSON 집계·Get-FileHash 및 C 보고 작성만. 원문 코드 실행/import·설치·브라우저/CUA·영상분석·API·D쓰기 없음.",
+    "full_external_survey": false,
+    "upstream_runtime_verified": false,
+    "actual_video_effect_verified": false,
+    "company_approval_created": false
+  },
+  "recomputed_counts": {
+    "canonical_candidate_groups": 40,
+    "entrypoint_unique_total": 63,
+    "external_selected_entrypoints": 46,
+    "local_selected_entrypoints": 16,
+    "host_selected_sections": 1,
+    "entrypoint_key": "source_package + entrypoint. local:, expanded-local:, editorial-local:를 로컬로 분류. 같은 upstream/fixture 추가 확보는 별도 count 아님.",
+    "ledger_review_rows": 544,
+    "ledger_unique_absolute_paths": 533,
+    "ledger_duplicate_review_rows": 11,
+    "ledger_missing_files": 0,
+    "ledger_hash_mismatches": 0,
+    "evidence_reports_checked": 9,
+    "evidence_report_hash_mismatches": 0,
+    "ppt_full_review_rows": 16,
+    "ppt_full_unique_files": 14,
+    "ppt_full_unique_documents": 2,
+    "ppt_full_unique_python": 12,
+    "meaning": "내용 이해·정답·실행 안전·성과 점수로 합산하지 않음. PPT SKILL/LICENSE의 복수 검토 2행을 전문 고유파일 수에서 제외."
+  },
+  "prior_four_fixes": [
+    {
+      "id": "DOC-F01",
+      "result": "정본scope/종료판정/07 및 01_후보선정과단계가 기본/PPT/편집 추가,40그룹·외부46/로컬16/호스트1부분으로 일치. 01 안내의 잔존 범위도 최종 재읽기에서 수정 확인.",
+      "status": "fixed"
+    },
+    {
+      "id": "DOC-F02",
+      "result": "review_rows544 / unique_files533 / duplicate_review_rows11 직접 재계산 일치. depth 종류도 전문/부분/구조/메타/해시/미검토로 분리됨.",
+      "status": "fixed"
+    },
+    {
+      "id": "DOC-F03",
+      "result": "03 코드 문서는14파일전문(문서2+Python12),Python2부분·빈init1·XSD39구조로 교정. ledger 중 전문16행의 고유14파일이 이를 뒷받침.",
+      "status": "fixed"
+    },
+    {
+      "id": "DOC-F04",
+      "result": "04 라이선스와 카드들은 audit_source_snapshot_available=true와 direct_upstream_copy_into_custom_skill_or_product_performed=false를 구분. 원문 감사 사본 확보를 부인하지 않음.",
+      "status": "fixed"
+    }
+  ],
+  "final_findings": [
+    {
+      "id": "FINAL-F01",
+      "severity": "medium",
+      "path": "05_출처와검토/스킬심층검토/01_후보선정과단계.md",
+      "finding": "범위 문단이 backup 두 묶음/초기8+발표추가5/로컬14·호스트1로 남아 편집화면추가5저장소와로컬2를 누락. 처음 읽는 사람이 현재 범위를 다르게 이해할 수 있음.",
+      "minimum_fix": "현재 정본과 맞춰 기본/PPT/편집 조사 묶음,40그룹·외부46선택/로컬16선택/호스트1선택절 및 전수조사 아님을 표시.",
+      "status": "fixed_verified_by_reread"
+    },
+    {
+      "id": "FINAL-F02",
+      "severity": "medium",
+      "path": "08_검증결과/스킬심층검토/R3_03_그래픽스킬묶음_독립검토.json provenance",
+      "finding": "D 사본의 tree_commit/commit_evidence가 확보트리의 Git trees response.sha를 commit 근거로 설명. 수치 자체가 다르다는 주장은 아니며 현재 확보명세.commit과 tree.sha는 같은 값.",
+      "minimum_fix": "commit은 원본확보목록.commit(부모 commits API 확보명세) 근거,tree_sha는 tree API 응답sha 근거로 구분. 원격API재검증없음을 명시. C사본정정완료,source SHA변경없음. D반영시 정본 evidence_report hash 갱신.",
+      "status": "fixed_verified_D_copy_and_canonical_evidence_hash",
+      "corrected_C_report_sha256": "34ceedb703aafb46aa210ec86649fd440048b58c852fa77f2b72d3d09a5713a5",
+      "D_final_report_sha256": "d8211f3008107cc92451389b3bea49aca6b2c29227a61ee1497bd94c5f31b05f"
+    }
+  ],
+  "editorial_information_review": {
+    "entrypoint_name": "infographic-editorial-design",
+    "source_understanding": "주장 한계→근거/변환/해석/권리 계약→읽기순서→격자→스타일→색/타입/공간→추적성→검토. 원고/다단/모듈/베이스라인/시간축/공간/네트워크와 optional evidence lane을 서로 다른 구조 도구로 다룸.",
+    "positive_transfer": [
+      "정보관계를 먼저 정한 뒤 격자·판면을 선택",
+      "실측/계산/큐레이션/해석과 source→transform→mark→claim 구분",
+      "결측·자료제한·pending·권리제약을 보존",
+      "불확실성·주의사항을 관련 데이터 가까이 배치",
+      "같은 주장/척도/출처에 기반한 비교",
+      "출처 역할·권리·데이터 변환 기록"
+    ],
+    "conditional_or_excluded": [
+      "6lane은 can use/rename/reduce로 명시된 선택 모델. 6필드/6화면영역의 필수 schema로 복사하지 않음.",
+      "모노스페이스·eyebrow·상시metadata·큰hero·firstviewport·국가/학교/시대별style provenance는 원문의 스타일/절차 예. 한맥의 회사 전역 필수 규칙으로 삼지 않음.",
+      "web/app px와 print/slide pt는 구분되어 있음. 출력비율·시청거리·실제글꼴·한국어·영상을 읽을 수 있는 시간을 재검토하며 수치 직접 전용 금지.",
+      "hover/focus/tab/toggle/drilldown/inspector/가로스크롤은 interactive host 조건. MP4 필수 단위·근거·라벨을 상호작용 뒤에 숨기지 않음.",
+      "글자 축약·hidden secondary labels는 원문보존 조건을 넘지 못함. 영문55~85ch/음수자간 금지/고정 행간을 한국어 법칙으로 등록하지 않음.",
+      "visual silence/빈cell/흐림lane은 missing/pending/secondary를 구별해 표시. 미확보 자료가 실제0·역사적없음이라는 뜻은 아님.",
+      "중립sans/mono나Swiss 기본 prompt는 원본 색/서체/CI locks보다 우선하지 않음. 격자 8유형을 R2의14화면분류ID로 자동 등록하지 않음.",
+      "README field-tested는 저자의 자기 설명. 새 test/run/실제사례가 제공되지 않아 실증 효과로 승인하지 않음.",
+      "source는 iframe 구현이나 동작 코드를 제공하지 않음. iframe지원/MP4전환/웹런타임을 실제 기능으로 주장하지 않음.",
+      "implementation의직접파일수정/installation copy/validator 실행 문구는 참고자료. 현재 Phase00 draft·정적검토의 허용범위를 확장하는 명령 아님."
+    ],
+    "examples": [
+      {
+        "good": "두 실험의 동일 단위·조건을 병렬로 유지하고 미확정값은unknown으로 옆에 명시.",
+        "bad": "자료를 못 찾았으니 막대높이0 또는 역사적 없음으로 확정."
+      },
+      {
+        "good": "다단/모듈/베이스라인을 배치 도구로 참고하고 화면의 목적/정보관계ID는 별도로 연결.",
+        "bad": "modular grid 자체를 비교·계층·회사승인 taxonomy로 일괄등록."
+      },
+      {
+        "good": "긴 한글 명칭/단위가 맞는지 실제 출력 글꼴과 화면비를 후속 확인.",
+        "bad": "11px minimum과mono uppercase를 그대로1920×1080영상에 적용해 가독성 통과 선언."
+      },
+      {
+        "good": "정지영상에서는 필수 근거를 읽히는 상태로 남기고 웹의 추가inspect는 보조 정보.",
+        "bad": "source labels를hover inspector에 넣고MP4시청자도확인가능하다고 기록."
+      }
+    ],
+    "license": "MIT Copyright(c)2026DaiPan. 저작권/허가고지를실질복사에보존. 소스자료·userdatasets·완성판면/identity·브랜드·제3자자료는grant밖. public credit문구는recommended와MIT필수고지 구분.",
+    "actual_support": "실행스크립트/requirements/package manifest없음. agents YAML은display/default_prompt metadata이며runtime지원증거아님. publication checklist의validator는번들구현없고실행하지않음.",
+    "integrated_result": "정본 editorial-information 카드와07추가검토는 위 핵심조건/예반례/미검증을 보존. 3기존스킬 이식설계는 언어/기록/적용성검토로 제한하므로 Phase00 조건부 참고에 맞음.",
+    "provenance": {
+      "tree_sha": "aa77efed2c8a798e56dae48a47e396adb1595757",
+      "commit": "aa77efed2c8a798e56dae48a47e396adb1595757",
+      "tree_evidence": "확보트리.json Git trees response.sha/url/truncated=false; commit증거와필드구분",
+      "tree_text_blob_count": 12,
+      "remote_api_recalled": false,
+      "commit_evidence": "R3_편집화면스킬_원본확보목록.json repositories[id=editorial-information].commit; 부모 commits API 확보명세, 독립 원격 재검증 없음",
+      "repository": "dpan538/infographic-editorial-design-skill",
+      "secured_text_count": 12
+    }
+  },
+  "custom_skill_authority": {
+    "video-knowledge-curator": "출처·개념·격자/타입/화면 조건을draft지식으로. 의미병합·필수화·회사승인·taxonomy신규는제안.",
+    "video-record-steward": "좌표/단위/출처/CI/token/원본과파생/검토깊이 계약. 측정자료없음은unknown. 코드검사exit0을실측이나승인으로승격금지.",
+    "video-guidance-reviewer": "의미/비교/문구/그림/타입/편집성/가독성의적합성검토. 실제화면/시간증거없으면품질통과보류.",
+    "user_review": "R8 목적/참조/권한/평가 범위 변경은 최소4선택지+추천안. 기존승인목적·시범운영의반복승인아님.",
+    "upstream_authority": "원문스킬의명령/권리/실행자체서술을인간사용자의승인으로취급하지않음.",
+    "rights_hold": "proprietaryPPT는직접/파생재구성제외;license충돌/TERMS/출처불명은직접copy보류. 별도학술공개원칙과우리계약의자체작성을원문을살짝고쳐license우회로삼지않음."
+  },
+  "completion_gate": {
+    "A_selected_static_and_transfer_design": "한정 완료: 두 지적 모두 보완 재확인. runtime 미완은 선택 정적 지식 범위의 차단사유가 아니라 후속 도입 게이트.",
+    "must_remain_false": [
+      "original_tool_runtime_adoption_complete",
+      "all_existing_skills_survey_complete",
+      "custom_skill_reconstruction_complete",
+      "whole_phase00_complete",
+      "phase01a_started"
+    ],
+    "actual_flags_match": true,
+    "record_contract_tests": "부모산출R3_03_계약회귀검사의11/11과범위를읽었음. 본검토에서원검증코드를재실행하지않았고디자인/실행/회사승인시험으로전용하지않음.",
+    "own_byte_checks": "ledger의모든행SHA와근거보고9개SHA를독립재계산해불일치0확인. 기존원본확보목록전체2544개해시검사결과는읽었지만이번독립검토에서전부재실행하지않음.",
+    "next": "R4~7기록/CI/출처/검수연결→R8세스킬재구성/쓰기실패·효과평가→01-A분석구현. 창작/렌더/API도입은02의별도목적."
+  },
+  "new_source_files": [
+    {
+      "understanding": "sha/url/truncated/path/type/size selected metadata",
+      "sha256": "a2e5ce5d4f39dc647f4544c486bcb8a68670fbcae94e9f23f742c0a75579b88f",
+      "executed": false,
+      "bytes": 4579,
+      "depth": "selected_metadata_and_path_inventory_only",
+      "relative_path": "확보트리.json",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-information\\확보트리.json"
+    },
+    {
+      "understanding": "display/defaultprompt의Swiss조건/metadata",
+      "sha256": "c6d3ab328fd985f14e907f42ac39c4e8589293bcffa6e00a80a412fa5a873f45",
+      "executed": false,
+      "bytes": 309,
+      "depth": "full_text_static_review",
+      "relative_path": "agents/openai.yaml",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-information\\agents\\openai.yaml"
+    },
+    {
+      "understanding": "MIT필수고지/제3자·사용자identity제외",
+      "sha256": "35024e33cc83a2a5fd03911c5b07d531993a746495f2057da4ff33ddec42cd36",
+      "executed": false,
+      "bytes": 1447,
+      "depth": "full_text_static_review",
+      "relative_path": "LICENSE",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-information\\LICENSE"
+    },
+    {
+      "understanding": "field-tested자기서술/설치copy/공개credit추천/라이선스범위",
+      "sha256": "a66a693fe861ec6c57c6bfd314080982841ab4bbd0ce4dd33f20a07816f9af2b",
+      "executed": false,
+      "bytes": 4285,
+      "depth": "full_text_static_review",
+      "relative_path": "README.md",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-information\\README.md"
+    },
+    {
+      "understanding": "6lane축소허용·관측≠중요도/역사·rights",
+      "sha256": "97ef567e10d64e8e66741af7e3083214e91ee81e231a044eddb34aebcb40af9a",
+      "executed": false,
+      "bytes": 4896,
+      "depth": "full_text_static_review",
+      "relative_path": "references/design-principles.md",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-information\\references\\design-principles.md"
+    },
+    {
+      "understanding": "주장/근거/위계/격자/스타일/가독성/반응형",
+      "sha256": "ebacfa7d2f60a3d1202e7127102ddb41cab598ee534c7b0423866399f2c0b05f",
+      "executed": false,
+      "bytes": 6106,
+      "depth": "full_text_static_review",
+      "relative_path": "references/evaluation-rubric.md",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-information\\references\\evaluation-rubric.md"
+    },
+    {
+      "understanding": "7grid+evidence-lane·레이아웃/정보관계분리·responsive",
+      "sha256": "fdea548fa40be2bcd8ec1a63decf02a82d3341bed0cbb8e280a37132c962218c",
+      "executed": false,
+      "bytes": 4576,
+      "depth": "full_text_static_review",
+      "relative_path": "references/grid-system.md",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-information\\references\\grid-system.md"
+    },
+    {
+      "understanding": "웹px/인쇄slidept/거리·mono·줄길이·inspector조건",
+      "sha256": "c4952ab1b154c044a9d9e76cfa568ad9be63f30b7ad5b925d925beaaed943496",
+      "executed": false,
+      "bytes": 4657,
+      "depth": "full_text_static_review",
+      "relative_path": "references/legibility-standards.md",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-information\\references\\legibility-standards.md"
+    },
+    {
+      "understanding": "page spine/ruler/카드/ledger/transform/inspector",
+      "sha256": "a7989cd7f20c511f1aa41366afe3d94706a45fbd348fe2484a7a61ac0217d1d6",
+      "executed": false,
+      "bytes": 5151,
+      "depth": "full_text_static_review",
+      "relative_path": "references/pattern-library.md",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-information\\references\\pattern-library.md"
+    },
+    {
+      "understanding": "설계·비평·구현·공개프롬프트/목적",
+      "sha256": "3fa7a08f099abaf3d02b1a41fb950c324030ee171476349987930212697c5e34",
+      "executed": false,
+      "bytes": 3360,
+      "depth": "full_text_static_review",
+      "relative_path": "references/prompt-recipes.md",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-information\\references\\prompt-recipes.md"
+    },
+    {
+      "understanding": "방법공유/유저자료제외/credit권고/validator미확보",
+      "sha256": "d2bb7ea48fa8349b2dbd4e997a3d05a5cea94b3437fb7720307bf86680a44caa",
+      "executed": false,
+      "bytes": 2623,
+      "depth": "full_text_static_review",
+      "relative_path": "references/publication-boundaries.md",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-information\\references\\publication-boundaries.md"
+    },
+    {
+      "understanding": "지역/시대구분자기분류·방법과identity구분",
+      "sha256": "49e4d35e05a7fac4fb9a8f60672331f31c17ae48841cef43517fcd9f1712290f",
+      "executed": false,
+      "bytes": 5692,
+      "depth": "full_text_static_review",
+      "relative_path": "references/style-positioning.md",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-information\\references\\style-positioning.md"
+    },
+    {
+      "understanding": "목적/7결정/주장·근거·격자·프로그램·권한/8ref실제호출",
+      "sha256": "96de003e2e7d8ed1dadb8cfd29163d92960e54ae04aa5da9b3df8db3044272c7",
+      "executed": false,
+      "bytes": 9538,
+      "depth": "full_text_static_review",
+      "relative_path": "SKILL.md",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-information\\SKILL.md"
+    }
+  ],
+  "reviewed_report_files": [
+    {
+      "depth": "full_document",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\05_출처와검토\\스킬심층검토\\00_읽는순서.md",
+      "sha256": "4881dab57bae21904ca6822fff75aaf7ef2cef6f7bb90671a20b0d94d2c9f471"
+    },
+    {
+      "depth": "full_document",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\05_출처와검토\\스킬심층검토\\01_후보선정과단계.md",
+      "sha256": "53c40918cc224552192a787ddbc1dc527395eaffefff6e57bea455ee44da62b2"
+    },
+    {
+      "depth": "full_document",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\05_출처와검토\\스킬심층검토\\03_코드와의존성_검토결과.md",
+      "sha256": "7b7ef18e4233d115a9088782114451f55d5bcf5376bf440da03d63552610f64d"
+    },
+    {
+      "depth": "full_document",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\05_출처와검토\\스킬심층검토\\04_라이선스와출처_검토결과.md",
+      "sha256": "9f23cca927df55736aaa4791f2e5ecb57434a0947ebc1925f78bfcfbf691fbc5"
+    },
+    {
+      "depth": "full_document",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\05_출처와검토\\스킬심층검토\\05_세스킬_이식설계안.md",
+      "sha256": "0c42fb415f4e195adc750c319b0bf22fe5d63431151917b015f2651c0e2041d2"
+    },
+    {
+      "depth": "full_document",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\05_출처와검토\\스킬심층검토\\06_단계구분과남은검증.md",
+      "sha256": "84f2718d5377260bfbf4870a9ee7f16454c1d1e1734bd29bb9d506d17791adf4"
+    },
+    {
+      "depth": "full_document",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\05_출처와검토\\스킬심층검토\\07_편집디자인과화면설계_추가검토.md",
+      "sha256": "7ed6a21314676fd4a984bdc062ee00315d6d83edd20fd46f63055574c2833503"
+    },
+    {
+      "depth": "full_document",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\08_검증결과\\R3_03_보완결과와레드팀.md",
+      "sha256": "38cac3fc575905f22930fd9ed6652447e8c1140eb6633136ed5c258c3503e1b2"
+    },
+    {
+      "depth": "full_document",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\08_검증결과\\R3_03_종료판정.json",
+      "sha256": "79d8033ab2c7dbbc3fb26fd810c1646c8a5bce6efcfd75d90d8f95e14c0b6eca"
+    },
+    {
+      "depth": "full_document",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\08_검증결과\\스킬심층검토\\R3_03_계약회귀검사.json",
+      "sha256": "f79bca6066645eb683e50bfa8329717d9340ef989e71572e87c963b63ce774b1"
+    },
+    {
+      "depth": "full_document",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\08_검증결과\\스킬심층검토\\R3_03_원본해시검사.json",
+      "sha256": "8b7e169b15a6703f570f3286a373875098e52c103f301e62eacd6d869e1a0ac9"
+    },
+    {
+      "depth": "selected_fields_only",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\05_출처와검토\\스킬심층검토\\스킬심층검토정본.json",
+      "sha256": "7fee3cd8d103e1abeb9497d276b95f1830f029e7e4c58e35a4a3d039cd3eeecf"
+    },
+    {
+      "depth": "all_record_metadata_counts_and_hashes_no_source_full_reread",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\05_출처와검토\\스킬심층검토\\검토파일목록.json",
+      "sha256": "77e88345246c48e3b4f2191131e18f31a90c4f84acf5dc11a5aa5e7b43723c58"
+    },
+    {
+      "depth": "selected_fields_only",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\08_검증결과\\스킬심층검토\\R3_03_문서_최종레드팀.json",
+      "sha256": "41e7862463cf1c6a6cb9577eafcbdf2434fe7b75d64fd77149c3086b502068c2"
+    },
+    {
+      "depth": "selected_fields_only",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\05_출처와검토\\R3_편집화면스킬_원본확보목록.json",
+      "sha256": "35d746a35f4b6eacedeb948cff64ce96064908d67a336755e7e16b168f10d10a"
+    },
+    {
+      "depth": "selected_fields_only",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\08_검증결과\\스킬심층검토\\R3_03_그래픽스킬묶음_독립검토.json",
+      "sha256": "f56dc64193796edd49c4ef4ac9e22bab7c4071164c287cfe41037ca38e260ba1"
+    }
+  ],
+  "followup_verification": [
+    {
+      "result": "fixed_and_scope_preserved",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\05_출처와검토\\스킬심층검토\\01_후보선정과단계.md",
+      "depth": "full_document_reread",
+      "upstream_code_executed": false,
+      "sha256": "ad89dd0775379f981d3463b30ccb58d39d828add862307574a59b9d5ec0c02a3"
+    },
+    {
+      "result": "fixed_and_scope_preserved",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\08_검증결과\\스킬심층검토\\R3_03_그래픽스킬묶음_독립검토.json",
+      "depth": "provenance_fields_only_reread",
+      "upstream_code_executed": false,
+      "sha256": "d8211f3008107cc92451389b3bea49aca6b2c29227a61ee1497bd94c5f31b05f"
+    },
+    {
+      "result": "fixed_and_scope_preserved",
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\05_출처와검토\\스킬심층검토\\스킬심층검토정본.json",
+      "depth": "version_graphic_evidence_ref_completion_only_reread",
+      "upstream_code_executed": false,
+      "sha256": "6f546221a91cd3b13fb0df02ae904910758c5daa626c1baacbdf041a8c6a1969"
+    }
+  ],
+  "followup_result": {
+    "phase01a_started": false,
+    "original_source_hash_checks_preserved": true,
+    "ledger_counts_not_repeated": true,
+    "canonical_version": "0.1.6",
+    "D_modified_by_independent_reviewer": false,
+    "other_sources_not_reread": true,
+    "graphic_evidence_hash_match": true,
+    "phase00_whole_complete": false
+  }
+}

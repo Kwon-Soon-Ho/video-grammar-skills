@@ -1,0 +1,970 @@
+{
+  "id": "phase00-small-pilot-stage03-independent-review",
+  "version": "0.1.0",
+  "date": "2026-10-16",
+  "stage": "03",
+  "reviewer_role": "independent_redteam_subagent",
+  "ready_for_next_stage": true,
+  "next_stage": "pilot_result_report_only",
+  "decision": "시범 결과 보고 가능. 독자 적합성/사람 실무 출력 피드백은 국소 대기.",
+  "unresolved_blocking_findings": [],
+  "unresolved_nonblocking_for_result_report": [
+    {
+      "id": "H-01",
+      "scope": "Q-INFO-01 실제 독자 사전지식/설명 난이도/이번 출력 피드백",
+      "state": "pending_not_sent",
+      "blocks": "실제 사람 적합성 확정·전체 사용 준비완료 주장",
+      "does_not_block": "문서 의미/연결의 국소 검토 결과와 시범 경과 보고"
+    }
+  ],
+  "findings": [
+    {
+      "id": "S03-I01",
+      "severity": "expected_human_pending",
+      "blocking": false,
+      "scope": "Q-INFO-01/H-01",
+      "finding": "제공 원문 충실성은 문서 범위에서 검토됐으나 실제 독자 적합성과 이번 판본의 실무 피드백은 없다. 부분 판단보류와 자유답변 질문은 정당하다.",
+      "required_action": "결과 보고에서 이 대기 상태를 유지한다. 실제 답변이 오기 전 통과/회사 승인/기본전환/전체 준비완료로 바꾸지 않는다.",
+      "minimum_edit_required": null
+    },
+    {
+      "id": "S03-I02",
+      "severity": "evidence_limit",
+      "blocking": false,
+      "scope": "초기 부트스트랩4조회와 후속 재조회",
+      "finding": "초기 네 조회는 별도의 raw stdout/stderr가 없다. transcript는 이 한계를 명시하고 prepare/review_read/focus의 후속 원문/해시/출력을 초기 raw로 재구성했다고 주장하지 않는다.",
+      "evidence": "transcript의 초기 부트스트랩 절·읽기 범위 한계, read_evidence의 파일/전체bytes와 선택 의미 pointer 구분. 코드/실행목록은 선정 이후 대상 조회를 지원하지만 모든 미기록 초기 행동의 부재를 증명하지는 않는다.",
+      "minimum_edit_required": null
+    },
+    {
+      "id": "S03-I03",
+      "severity": "history_preserved",
+      "blocking": false,
+      "scope": "상류결과/02/결과.json·결과.md 및 focus_targets.stdout.txt",
+      "finding": "2단계 최초 KeyError/exit1·쓰기 전 중단·검사코드 보완·재시도 이력은 원 단계02 report와 byte SHA가 같은 사본에 남아 있다. stage03 자체 Python exit0 기록으로 실패 이력을 지우지 않았다.",
+      "required_action": "종합 시범 보고에서도 최초 실패1건과 이후 정상 인계를 함께 남긴다.",
+      "minimum_edit_required": null
+    },
+    {
+      "id": "S03-I04",
+      "severity": "execution_metadata_limit",
+      "blocking": false,
+      "scope": "write_report.py의 실행 metadata",
+      "finding": "11개 review_execution 단계의 출력/예외 캡처와 달리 write_report.py는 자신의 stdout/exit metadata를 직접 생성한다. 현재 산출물 존재/내용/입력 보존과는 대응하지만 독립 프로세스 감시 증거로 취급하지 않는다.",
+      "minimum_edit_required": null
+    }
+  ],
+  "criteria_source": {
+    "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase00-build/시범운영_20261016/검수기준_고정.json",
+    "sha256": "9d253bd87538326f24d703c7c6f2d6efc55be6d50ea842cd13ab3af28a5fc787",
+    "stage": "03",
+    "changed": false,
+    "expectations": [
+      {
+        "text": "목적상항목선정후실제근거대조",
+        "passed": true,
+        "evidence": "검수항목_사전선정.json과 동일한 preselect.stdout에 Q-INFO-01/02,Q-SCREEN-02,Q-BRAND-02,Q-TRUST-01/02의 적용/필수 이유와 문서 범위가 있다. 실제 정본 v0.1.1의 해당6카드를 직접 읽어 목적 적합성을 확인했다. review_execution.py는 prepare/criteria_details에서 대상 내용을 열지 않으며 review_read는 선정 파일 존재를 요구한다. 실행목록·read_evidence 순서도 이에 대응한다. 초기 독립 raw 부재로 모든 초기 조회 순서를 OS 감사처럼 증명하지는 않으며 그 한계는 transcript에 명시됐다."
+      },
+      {
+        "text": "3카드구분/조건/예외의정확성검토",
+        "passed": true,
+        "evidence": "actual 15 설명 필드와 사전/용어판정기준의 3항목·관련 PROPERTY-OPACITY, 선형 프로세스 지식/심화/선택조건을 대조했다. card_reviews는 원문 JSON pointer·실제 문장·반례·허용 예외·미확인·재검토 조건을 구분한다. 방향/분기/기간, 기능/실제효과, 가시성관측/구현원인의 구분에 확인된 필수 오류가 없어 유지 제안은 정당하다. hash 통과만으로 의미를 판정하지 않았다."
+      },
+      {
+        "text": "실제영상/효과/원인/회사승인확정안함",
+        "passed": true,
+        "evidence": "결과.md/json·사람질문·수정제안은 문서 대조만 완료하며 실제 영상/가독성/모션/시선·학습효과/제작의도·원인/회사 승인·기본전환을 미실시로 둔다. 결과 outcome은 overall_ready=false, human_review=pending, company_approved=false, basic_skill_transition=false, actual_video_effect_verified=false이고 총점은null이다. 실제 사례/수치·효과를 만들지 않았다."
+      },
+      {
+        "text": "연결판본/해시와한맥/CI범위구분",
+        "passed": true,
+        "evidence": "독립 재계산에서 카드·연결목록 SHA가 2단계 실제 판본과 같고 세 ID/term_ref/source_snapshot/원문SHA·draft_ref 문서/record판본·파일SHA가 맞는다. 원문 term0.1.0과 카드/문서0.1.1을 구분했다. design_reference는 actual hanmac-video@0.1.0 profile_id/판본/SHA, reference_only_no_new_color_selected와 맞으며 웹 참고/CI 확인을 새 카드·공식색·회사 승인으로 승격하지 않는다."
+      },
+      {
+        "text": "정당한유지/필요수정/사람대기를국소보고",
+        "passed": true,
+        "evidence": "문서 의미/연결은 유지·필수수정없음으로 근거와 함께 보고하고 Q-INFO-01 실제 독자 적합성·이번 출력피드백만 판단보류한다. H-01은 대상3카드 v0.1.1/SHA·위치·확인/부족 범위를 적고 자유 답변을 요청하는 미발송/미접수 질문이다. A~D 운영범위 선택과 추천안을 사실 확인과 분리했다. 과거 R8 회신 재사용·26전체 강제·총점/전체준비완료가 없다."
+      },
+      {
+        "text": "입력보존/검토보고실제작성",
+        "passed": true,
+        "evidence": "원 입력35파일의 actual SHA가 입력고정과 모두 같고 파일집합·시작/종료 snapshot도 동일하다. 결과md/json·수정제안·사람대기질문·코드2·실행목록·stdout/stderr/metadata·read_evidence가 실제 존재한다. 모든 기존51 output은 이 독립검토 시작/종료에도 변경되지 않았다. 최초 부트스트랩4조회 독립raw 부재는 후속 재조회 증거와 구별해 기록했다. stage02의 최초 inspect exit1/KeyError 이력도 byte 동일한 상류결과와 focus_targets stdout에 보존된다."
+      }
+    ]
+  },
+  "semantic_judgment": [
+    {
+      "card": "시범카드001",
+      "action": "유지",
+      "reason": "선형 프로세스의 순서와 방향, 주요 분기/되돌아감, 기간과 절차선후 근거의 한계를 문서가 유지한다.",
+      "actual_render_or_company_truth": "미검수"
+    },
+    {
+      "card": "시범카드002",
+      "action": "효과 분리 caution과 함께 유지",
+      "reason": "설명대상에 안내하는 기능과 모든 물리 이동·실제 시청자 시선 효과를 구별한다.",
+      "actual_render_or_company_truth": "미검수"
+    },
+    {
+      "card": "시범카드003",
+      "action": "유지",
+      "reason": "관측 가시성은 보존하되 opacity/마스크/합성/배경 원인을 별도 미확정으로 두며 PROPERTY-OPACITY의 근거 경계와도 충돌하지 않는다.",
+      "actual_render_or_company_truth": "미검수"
+    }
+  ],
+  "independent_file_checks": {
+    "input_count": 35,
+    "input_count_actual": 35,
+    "all_initial_inputs_match_freeze": true,
+    "added_inputs": [],
+    "removed_inputs": [],
+    "before_after_snapshot_equal": true,
+    "recorded_start_snapshot_matches_current": true,
+    "card_sha256": "254bd6423812859452c60b7247bc0cdcfe7e626ff6a62b698a8218957655645f",
+    "index_sha256": "f3c5ea305279706e9127cd123df032bbf34cb8c6d25b4b30a529947609a27c83",
+    "actual_card_links": [
+      {
+        "card": "시범카드001",
+        "unique_source": true,
+        "source_snapshot_equal": true,
+        "term_version_matches": true,
+        "source_file_sha_matches": true,
+        "index_id_matches": true,
+        "index_term_ref_matches": true,
+        "index_document_version_matches": true,
+        "index_record_version_matches": true,
+        "index_file_sha_matches": true
+      },
+      {
+        "card": "시범카드002",
+        "unique_source": true,
+        "source_snapshot_equal": true,
+        "term_version_matches": true,
+        "source_file_sha_matches": true,
+        "index_id_matches": true,
+        "index_term_ref_matches": true,
+        "index_document_version_matches": true,
+        "index_record_version_matches": true,
+        "index_file_sha_matches": true
+      },
+      {
+        "card": "시범카드003",
+        "unique_source": true,
+        "source_snapshot_equal": true,
+        "term_version_matches": true,
+        "source_file_sha_matches": true,
+        "index_id_matches": true,
+        "index_term_ref_matches": true,
+        "index_document_version_matches": true,
+        "index_record_version_matches": true,
+        "index_file_sha_matches": true
+      }
+    ],
+    "card_matches_stage02": true,
+    "index_matches_stage02": true,
+    "selection": [
+      {
+        "id": "Q-INFO-01",
+        "unique_source": true,
+        "reason_present": true,
+        "scope_present": true,
+        "required": true,
+        "source_hash_matches": true,
+        "review_count": 1,
+        "reason_unchanged": true,
+        "scope_unchanged": true,
+        "verdict": "판단보류",
+        "human_question_ref": "H-01"
+      },
+      {
+        "id": "Q-INFO-02",
+        "unique_source": true,
+        "reason_present": true,
+        "scope_present": true,
+        "required": true,
+        "source_hash_matches": true,
+        "review_count": 1,
+        "reason_unchanged": true,
+        "scope_unchanged": true,
+        "verdict": "통과",
+        "human_question_ref": null
+      },
+      {
+        "id": "Q-SCREEN-02",
+        "unique_source": true,
+        "reason_present": true,
+        "scope_present": true,
+        "required": true,
+        "source_hash_matches": true,
+        "review_count": 1,
+        "reason_unchanged": true,
+        "scope_unchanged": true,
+        "verdict": "통과",
+        "human_question_ref": null
+      },
+      {
+        "id": "Q-BRAND-02",
+        "unique_source": true,
+        "reason_present": true,
+        "scope_present": true,
+        "required": true,
+        "source_hash_matches": true,
+        "review_count": 1,
+        "reason_unchanged": true,
+        "scope_unchanged": true,
+        "verdict": "통과",
+        "human_question_ref": null
+      },
+      {
+        "id": "Q-TRUST-01",
+        "unique_source": true,
+        "reason_present": true,
+        "scope_present": true,
+        "required": true,
+        "source_hash_matches": true,
+        "review_count": 1,
+        "reason_unchanged": true,
+        "scope_unchanged": true,
+        "verdict": "통과",
+        "human_question_ref": null
+      },
+      {
+        "id": "Q-TRUST-02",
+        "unique_source": true,
+        "reason_present": true,
+        "scope_present": true,
+        "required": true,
+        "source_hash_matches": true,
+        "review_count": 1,
+        "reason_unchanged": true,
+        "scope_unchanged": true,
+        "verdict": "통과",
+        "human_question_ref": null
+      }
+    ],
+    "selection_source_version": "0.1.1",
+    "result_order_matches_selection": true,
+    "selection_changes": [],
+    "all_26_forced": false,
+    "single_total": null,
+    "source_file_checks": [
+      {
+        "path": "01_공통용어/공통용어사전.json",
+        "sha_matches": true
+      },
+      {
+        "path": "01_공통용어/용어판정기준.json",
+        "sha_matches": true
+      },
+      {
+        "path": "01_공통용어/분류운영규칙.json",
+        "sha_matches": true
+      },
+      {
+        "path": "02_원칙과레이아웃/레이아웃지식.json",
+        "sha_matches": true
+      },
+      {
+        "path": "02_원칙과레이아웃/레이아웃_심화지식.json",
+        "sha_matches": true
+      },
+      {
+        "path": "02_원칙과레이아웃/07_레이아웃별_선택조건과반례.md",
+        "sha_matches": true
+      },
+      {
+        "path": "13_품질검수/품질항목_정본.json",
+        "sha_matches": true
+      },
+      {
+        "path": "13_품질검수/03_판정운영기준.md",
+        "sha_matches": true
+      },
+      {
+        "path": "03_한맥디자인/한맥디자인정본.json",
+        "sha_matches": true
+      },
+      {
+        "path": "14_스킬재구성/R8_현재사용안내.md",
+        "sha_matches": true
+      },
+      {
+        "path": "14_스킬재구성/현재상태_정정표.json",
+        "sha_matches": true
+      }
+    ],
+    "source_pointer_actual_ids": {
+      "terms": [
+        "LAYOUT-PROCESS-LINE",
+        "FUNCTION-FOCUS",
+        "PROPERTY-VISIBILITY",
+        "PROPERTY-OPACITY"
+      ],
+      "guides": [
+        "LAYOUT-PROCESS-LINE",
+        "FUNCTION-FOCUS",
+        "PROPERTY-VISIBILITY",
+        "PROPERTY-OPACITY"
+      ],
+      "layout3": "LAYOUT-PROCESS-LINE",
+      "layout_card3": "LAYOUT-PROCESS-LINE"
+    },
+    "full_skill_source_checks": [
+      {
+        "path": "실행스킬/video-guidance-reviewer/SKILL.md",
+        "source_embedded_in_prepare": true
+      },
+      {
+        "path": "실행스킬/video-guidance-reviewer/references/근거찾기와적용조건.md",
+        "source_embedded_in_prepare": true
+      },
+      {
+        "path": "실행스킬/video-guidance-reviewer/references/판정과사람검수.md",
+        "source_embedded_in_prepare": true
+      }
+    ],
+    "command_order": [
+      "prepare",
+      "criteria_details",
+      "preselect",
+      "review_read",
+      "focus_targets",
+      "focus_sources",
+      "errata_check",
+      "focus_exact",
+      "local_audit",
+      "context_excerpt",
+      "verify_unchanged",
+      "write_report.py"
+    ],
+    "execution_records": [
+      {
+        "stage": "context_excerpt",
+        "executable": "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "argv": [
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\review_execution.py",
+          "context_excerpt"
+        ],
+        "python_flags": [
+          "-B",
+          "-X",
+          "utf8"
+        ],
+        "exit_code": 0,
+        "stdout_file": "context_excerpt.stdout.txt",
+        "stderr_file": "context_excerpt.stderr.txt",
+        "elapsed_seconds": null,
+        "tokens": null
+      },
+      {
+        "stage": "criteria_details",
+        "executable": "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "argv": [
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\review_execution.py",
+          "criteria_details"
+        ],
+        "python_flags": [
+          "-B",
+          "-X",
+          "utf8"
+        ],
+        "exit_code": 0,
+        "stdout_file": "criteria_details.stdout.txt",
+        "stderr_file": "criteria_details.stderr.txt",
+        "elapsed_seconds": null,
+        "tokens": null
+      },
+      {
+        "stage": "errata_check",
+        "executable": "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "argv": [
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\review_execution.py",
+          "errata_check"
+        ],
+        "python_flags": [
+          "-B",
+          "-X",
+          "utf8"
+        ],
+        "exit_code": 0,
+        "stdout_file": "errata_check.stdout.txt",
+        "stderr_file": "errata_check.stderr.txt",
+        "elapsed_seconds": null,
+        "tokens": null
+      },
+      {
+        "stage": "focus_exact",
+        "executable": "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "argv": [
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\review_execution.py",
+          "focus_exact"
+        ],
+        "python_flags": [
+          "-B",
+          "-X",
+          "utf8"
+        ],
+        "exit_code": 0,
+        "stdout_file": "focus_exact.stdout.txt",
+        "stderr_file": "focus_exact.stderr.txt",
+        "elapsed_seconds": null,
+        "tokens": null
+      },
+      {
+        "stage": "focus_sources",
+        "executable": "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "argv": [
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\review_execution.py",
+          "focus_sources"
+        ],
+        "python_flags": [
+          "-B",
+          "-X",
+          "utf8"
+        ],
+        "exit_code": 0,
+        "stdout_file": "focus_sources.stdout.txt",
+        "stderr_file": "focus_sources.stderr.txt",
+        "elapsed_seconds": null,
+        "tokens": null
+      },
+      {
+        "stage": "focus_targets",
+        "executable": "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "argv": [
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\review_execution.py",
+          "focus_targets"
+        ],
+        "python_flags": [
+          "-B",
+          "-X",
+          "utf8"
+        ],
+        "exit_code": 0,
+        "stdout_file": "focus_targets.stdout.txt",
+        "stderr_file": "focus_targets.stderr.txt",
+        "elapsed_seconds": null,
+        "tokens": null
+      },
+      {
+        "stage": "local_audit",
+        "executable": "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "argv": [
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\review_execution.py",
+          "local_audit"
+        ],
+        "python_flags": [
+          "-B",
+          "-X",
+          "utf8"
+        ],
+        "exit_code": 0,
+        "stdout_file": "local_audit.stdout.txt",
+        "stderr_file": "local_audit.stderr.txt",
+        "elapsed_seconds": null,
+        "tokens": null
+      },
+      {
+        "stage": "prepare",
+        "executable": "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "argv": [
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\review_execution.py",
+          "prepare"
+        ],
+        "python_flags": [
+          "-B",
+          "-X",
+          "utf8"
+        ],
+        "exit_code": 0,
+        "stdout_file": "prepare.stdout.txt",
+        "stderr_file": "prepare.stderr.txt",
+        "elapsed_seconds": null,
+        "tokens": null
+      },
+      {
+        "stage": "preselect",
+        "executable": "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "argv": [
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\review_execution.py",
+          "preselect"
+        ],
+        "python_flags": [
+          "-B",
+          "-X",
+          "utf8"
+        ],
+        "exit_code": 0,
+        "stdout_file": "preselect.stdout.txt",
+        "stderr_file": "preselect.stderr.txt",
+        "elapsed_seconds": null,
+        "tokens": null
+      },
+      {
+        "stage": "review_read",
+        "executable": "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "argv": [
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\review_execution.py",
+          "review_read"
+        ],
+        "python_flags": [
+          "-B",
+          "-X",
+          "utf8"
+        ],
+        "exit_code": 0,
+        "stdout_file": "review_read.stdout.txt",
+        "stderr_file": "review_read.stderr.txt",
+        "elapsed_seconds": null,
+        "tokens": null
+      },
+      {
+        "stage": "verify_unchanged",
+        "executable": "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "argv": [
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\review_execution.py",
+          "verify_unchanged"
+        ],
+        "python_flags": [
+          "-B",
+          "-X",
+          "utf8"
+        ],
+        "exit_code": 0,
+        "stdout_file": "verify_unchanged.stdout.txt",
+        "stderr_file": "verify_unchanged.stderr.txt",
+        "elapsed_seconds": null,
+        "tokens": null
+      },
+      {
+        "executable": "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "argv": [
+          "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\write_report.py"
+        ],
+        "python_flags": [
+          "-B",
+          "-X",
+          "utf8"
+        ],
+        "exit_code": 0,
+        "stdout_file": "write_report.stdout.txt",
+        "stderr_file": "write_report.stderr.txt",
+        "elapsed_seconds": null,
+        "tokens": null
+      }
+    ],
+    "stderr_nonempty": [],
+    "read_evidence_entries": 64,
+    "first_target_entry_index": 18,
+    "earlier_read_paths": [
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\task.txt",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\실행스킬\\video-guidance-reviewer\\SKILL.md",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\실행스킬\\video-guidance-reviewer\\references\\근거찾기와적용조건.md",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\실행스킬\\video-guidance-reviewer\\references\\판정과사람검수.md",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\13_품질검수\\03_판정운영기준.md",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\13_품질검수\\품질항목_정본.json",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\13_품질검수\\품질항목_정본.json",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\00_운영계약\\01_보존과버전_계약.md",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\00_운영계약\\정본과표시_연결목록.json",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\01_공통용어\\공통용어사전.json",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\01_공통용어\\분류운영규칙.json",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\01_공통용어\\용어판정기준.json",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\01_공통용어\\02_기록단위와분류축.md",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\02_원칙과레이아웃\\레이아웃지식.json",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\02_원칙과레이아웃\\레이아웃_심화지식.json",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\02_원칙과레이아웃\\07_레이아웃별_선택조건과반례.md",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\14_스킬재구성\\R8_현재사용안내.md",
+      "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\14_스킬재구성\\현재상태_정정표.json"
+    ],
+    "upstream_stage02_report_preservation": {
+      "copied_report_byte_sha_matches_root": true,
+      "failure_history": [
+        {
+          "phase": "first inspection before any target or backup write",
+          "exception": "KeyError: 'id'",
+          "cause": "Authored checker assumed top-level id in design JSON; actual key is profile_id.",
+          "correction": "Read the actual design source and change only output checker code to compare profile_id; no input source, reference pin, schema, or skill changed.",
+          "original_target_preserved": true,
+          "evidence_of_preservation": "Initial 34-file byte-SHA baseline was reused byte-identically and all original files matched it in retry update before any write.",
+          "failed_code": "01_기록관리_실행_실패당시.py",
+          "failed_command": "01_inspect.command.json",
+          "failed_stdout": "01_inspect.stdout.txt",
+          "failed_stderr": "01_inspect.stderr.txt",
+          "exit_code": 1,
+          "retry_inspect_update_verify_exit_codes": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "focus_targets_stdout_contains_failure": true,
+      "stage03_all_self_python_zero_claim_scope": "stage03 only; stage02 retained initial exit1"
+    },
+    "design": {
+      "id_matches": true,
+      "version_matches": true,
+      "sha_matches": true,
+      "usage": "reference_only_no_new_color_selected"
+    },
+    "outcome": {
+      "local_document_review_completed": true,
+      "confirmed_required_errors": [],
+      "required_edits": [],
+      "recommendation": "3카드/연결목록 유지. 지정 소량 사본의 문서 대조 결과를 부모의 별도 레드팀 검토로 넘길 수 있음. 사람 실무피드백은 대기. 전체 준비완료·회사 승인·기본전환 제안 없음.",
+      "overall_ready": false,
+      "human_review": "pending",
+      "company_approved": false,
+      "basic_skill_transition": false,
+      "actual_video_effect_verified": false,
+      "single_total_score": null
+    },
+    "human_questions": [
+      {
+        "id": "H-01",
+        "status": "pending_not_sent",
+        "role": "이번 설명카드를 사용할 내용 담당자·필요시 실제 독자",
+        "target_file": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\inputs\\Phase00\\작업초안\\쉬운말_지식카드.json",
+        "document_version": "0.1.1",
+        "sha256": "254bd6423812859452c60b7247bc0cdcfe7e626ff6a62b698a8218957655645f",
+        "target_ids": [
+          "시범카드001",
+          "시범카드002",
+          "시범카드003"
+        ],
+        "locations": [
+          "/records/0/plain_explanation,/use_when,/counterexample,/caution",
+          "/records/1/plain_explanation,/use_when,/counterexample,/caution",
+          "/records/2/plain_explanation,/use_when,/counterexample,/caution"
+        ],
+        "confirmed": "제공 원문과 축·조건·반례·추론범위는 문서 대조에서 유지됨.",
+        "missing": "이번 카드 판본을 읽은 실제 사람의 실무 용이성/사전지식/내용 확인 회신",
+        "question": "이 세 설명을 사용할 독자는 관련 용어를 어느 정도 알고 있나요? 각 카드에서 이해하기 어렵거나 실제 업무 의미와 다르게 읽히는 문장·위치를 자유롭게 알려 주시고, 수정이 필요하면 근거 또는 원하는 의미를 함께 적어 주세요.",
+        "answer": null,
+        "resolution": "해당 v0.1.1/이 SHA·카드 위치/범위의 실제 답변을 확인한 부분만 기록. 다른 판본/옛 R8 회신으로 완료하지 않음."
+      }
+    ],
+    "criteria_sha": "9d253bd87538326f24d703c7c6f2d6efc55be6d50ea842cd13ab3af28a5fc787"
+  },
+  "actual_read_scope": {
+    "direct_text": [
+      "실제 task.txt",
+      "검수항목_사전선정.json",
+      "결과.md",
+      "결과.json의 전 필드(분할 조회·파싱)",
+      "사람대기질문.md",
+      "수정제안.md",
+      "transcript.md",
+      "review_execution.py",
+      "write_report.py",
+      "실제 카드15설명 필드",
+      "품질항목 정본의 선택6카드",
+      "PROPERTY-OPACITY 사전/용어판정기준 항목",
+      "root 검증/03_파일사실검사.json"
+    ],
+    "input_preservation": "입력고정35파일과 현재 actual bytes SHA·파일 집합을 대조했다. inputs_before/after의 전체 레코드를 actual 파일에 연결했다. 카드·연결목록은 단계02 actual 파일과 SHA가 같음을 직접 대조했다.",
+    "source_semantic_scope": "이 대화의 단계00/01에서 읽은 사전3·용어판정기준3·선형 프로세스 지식/심화/선택조건 절을 같은SHA actual source와 연결하고 current 카드 문장을 다시 읽었다. 기준6항목은 이번에 actual 정본에서 전체 읽었다. source pointer /terms와 /guides의27/37/47/48 및 layouts/3,layout_cards/3의 실제 ID도 확인했다.",
+    "source_and_current_context": "report source11파일 actual SHA 및 정정5건 원문/근거13참조 actual SHA를 재계산했다. prepare stdout에 실행스킬3 원문이 포함됨을 current 파일과 대조했다. 정정의 과거 상태 안내를 전체 최신 종료/권한 확인으로 승격하지 않는다.",
+    "logs_and_metadata": "51 output 전체 목록/bytes/SHA,20 JSON 파싱,read_evidence64 entry 파싱,실행순서와12 execution metadata·stderr 크기를 확인했다. 대용량 stdout는 전체byte/hash·선택 원문/스킬·상류실패 포함을 기계 대조했고 관련 의미는 명시한 대상/절에 한정했다. 모든 큰 stdout의 모든 항목을 전수 의미검수했다고 주장하지 않는다.",
+    "preselection_evidence_limit": "prepare/criteria_details는 대상 내용을 읽지 않고 preselect 다음 review_read가 선정 파일을 요구하는 코드/기록 흐름을 확인했다. 최초4조회 독립raw는 제공되지 않아 그대로 미확인으로 남긴다.",
+    "stage02_failure_link": "상류02 결과JSON을 원 단계02 output와 actual SHA 비교했고 failure_history의 exit1/KeyError·원문 보존·retry0 정보를 읽었다. focus_targets stdout에도 실패 문구가 남는다.",
+    "facts_file_use": "root 파일사실검사는 구조 사실의 보조 자료로 읽었다. 의미·사람 질문·기준선정은 실제 문장/기준과 별도로 검토했다.",
+    "prior_output_files": [
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\검수항목_사전선정.json",
+        "bytes": 2942,
+        "sha256": "673b4b29d62cab8dee836b8fdf41689a6d458effb2668ef03fe5df31d4e04624"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\결과.json",
+        "bytes": 49825,
+        "sha256": "baf255dc7e0865fcbc34083c1c55bcaba6fafcf69d903a9cdbbf551a6378eb41"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\결과.md",
+        "bytes": 8904,
+        "sha256": "67255ef23e1450add14f600dbfb4085d533f1d6ecd6dd6f51f57586d1e15f202"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\사람대기질문.md",
+        "bytes": 1899,
+        "sha256": "8bc33f591d219fa0d4784e0e3b0606d2cce45dfcb7c6d9b063ecf75d66d07226"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\수정제안.md",
+        "bytes": 1009,
+        "sha256": "15aafdabb293cb13d0698559ff3913456859cd650acc8043d2523edf596bac5c"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\실행명령.json",
+        "bytes": 11071,
+        "sha256": "f4fcbeda148a82ca109ddec11a99a6b1a513c82218203a099b24b0b54403134c"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\context_excerpt.execution.json",
+        "bytes": 609,
+        "sha256": "7b2c211d7d3d7bb2b1a03e698883cf59e5dbe0c53e2253243f383f0e81a902c7"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\context_excerpt.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\context_excerpt.stdout.txt",
+        "bytes": 14993,
+        "sha256": "a181b515eca960f9cab4d4491275a2abc452d3b089a4c10972f1aa26d8aa8531"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\criteria_details.execution.json",
+        "bytes": 613,
+        "sha256": "75fe4bdedf01dad54870a7aba3889da1be32c83231b1813c1fb9a8b99c3beeb2"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\criteria_details.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\criteria_details.stdout.txt",
+        "bytes": 14683,
+        "sha256": "66f13ce56eff62c8373cae0ab6e054e38fd72d882094db9a1d968c570cb61ebb"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\errata_check.execution.json",
+        "bytes": 597,
+        "sha256": "2dcd15aeda120a5061f017fb955fefef5063f99751a53afc0c58f9d7c7b550fe"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\errata_check.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\errata_check.stdout.txt",
+        "bytes": 152275,
+        "sha256": "bf3d6989e58e5e4e26b1af49644f2c691f61869ca83be12078d6c8f60f24d2b0"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\errata_hash_checks.json",
+        "bytes": 5072,
+        "sha256": "49ba496436ae3928558c49ae30c9e9467caf2530760206734bb5a19588bd1eac"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\focus_exact.execution.json",
+        "bytes": 593,
+        "sha256": "3cb98d7d84159ec0a68f9a48c6aec22d24bd8e9beb86381a0a6131c9eefd1d0b"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\focus_exact.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\focus_exact.stdout.txt",
+        "bytes": 62996,
+        "sha256": "3710f39da0d666d40fbde8a1d5377e64393f28f7ab8f4c1d52f68a6092394914"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\focus_sources.execution.json",
+        "bytes": 601,
+        "sha256": "998a2778a0a876ca0550787539373bf82c75b9e330ff88baed36d38051fa933d"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\focus_sources.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\focus_sources.stdout.txt",
+        "bytes": 72049,
+        "sha256": "c68ff2d69de73a1fa14b3610c3aa8bfe548cec016e4924f6cd65c57e5e084071"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\focus_targets.execution.json",
+        "bytes": 601,
+        "sha256": "d52f590104dc37da454190a610ea7cbda6269d3098b8e4e3d731f072ed12547e"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\focus_targets.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\focus_targets.stdout.txt",
+        "bytes": 19805,
+        "sha256": "d1be5bcc5ae382f137ee83357d8e3c328b42bdfbf03865e0f322ac09b95804e1"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\inputs_after.json",
+        "bytes": 6951,
+        "sha256": "e4a0d06b174f939e2187ecaee915dba20049a4f5120ab62a94fbcc1ae86a6e18"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\inputs_before.json",
+        "bytes": 6951,
+        "sha256": "e4a0d06b174f939e2187ecaee915dba20049a4f5120ab62a94fbcc1ae86a6e18"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\local_audit.execution.json",
+        "bytes": 593,
+        "sha256": "19ff91ba856539f3f12bb89ba0cd81a1cef23e396ecbeb2728fa5917aaef63e0"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\local_audit.json",
+        "bytes": 15561,
+        "sha256": "e0a7a94da549f071cc2b12cfabb0aba92f76fe2926f20ac6b2fb392e5b8bc6e7"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\local_audit.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\local_audit.stdout.txt",
+        "bytes": 15561,
+        "sha256": "e0a7a94da549f071cc2b12cfabb0aba92f76fe2926f20ac6b2fb392e5b8bc6e7"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\prepare.execution.json",
+        "bytes": 577,
+        "sha256": "48110d78d78b6a5d484f3fffe5261cbfc0e4c26b8537c1e80f539865dbc9c946"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\prepare.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\prepare.stdout.txt",
+        "bytes": 85773,
+        "sha256": "c77f3a969e2c5f3cd22dd9386861edd09092f3997c6bf5db1e34749909bebfe0"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\preselect.execution.json",
+        "bytes": 585,
+        "sha256": "59284f748077e7d447d0ef2449705a328a26cb3a6b28f08fa8f3ff78e544aac5"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\preselect.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\preselect.stdout.txt",
+        "bytes": 2942,
+        "sha256": "673b4b29d62cab8dee836b8fdf41689a6d458effb2668ef03fe5df31d4e04624"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\read_evidence.jsonl",
+        "bytes": 27244,
+        "sha256": "09382e28778f9e92e97e2a71a179c56a0b7ba642d469ed90b4a698197b989511"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\readonly_verification.json",
+        "bytes": 103,
+        "sha256": "fa83a887b47fce20266cb4f912870e97ddb16af8f2437016e8d2736a54fe53d8"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\review_execution.py",
+        "bytes": 18276,
+        "sha256": "357e7860d9df1b368cfa6bb685d33d06b6499ad267def1991b9c7e4dbe9bff0d"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\review_read.execution.json",
+        "bytes": 593,
+        "sha256": "918709f2696a2c1ec8c009fde950b957c25c237125e80b494e615729b87195a8"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\review_read.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\review_read.stdout.txt",
+        "bytes": 406613,
+        "sha256": "018d3081ba980ed02ded293c2c9df2fcb8542350a195b6de3f7e2742a0864311"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\transcript.md",
+        "bytes": 4745,
+        "sha256": "0ff38022ca91b296cdce079f9f94003410e089bb3cf73b30e275141d5aff1aef"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\verify_unchanged.execution.json",
+        "bytes": 613,
+        "sha256": "84cb2518ee9857b812567d9433a457c8489a17115c8dcb59997627454a49ed7e"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\verify_unchanged.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\verify_unchanged.stdout.txt",
+        "bytes": 103,
+        "sha256": "fa83a887b47fce20266cb4f912870e97ddb16af8f2437016e8d2736a54fe53d8"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\write_report.execution.json",
+        "bytes": 544,
+        "sha256": "327fe11f1547cdca1c9f91db6b2dc5a45461dcfc21083080b8df4dd6ffe8ed3e"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\write_report.py",
+        "bytes": 30586,
+        "sha256": "6f6c5e758dcb2f4999172a920e22a36b44761d6a7eea46ed066c0f6d722020e9"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\write_report.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-03-적용성검토자\\candidate\\outputs\\write_report.stdout.txt",
+        "bytes": 285,
+        "sha256": "2a0dad698ccb19f4ac743d79f4393e6894eed06205cef44b4c4d68451a2be1a6"
+      }
+    ],
+    "not_performed": [
+      "역할/제공 검사코드 재실행",
+      "새 실패/복구/동시성 시험",
+      "전체 R4/R6/R7/원문조사/현재 프로젝트 종료 재검수",
+      "운영 D 읽기/수정·네트워크/API/CU/AE·실영상/PTS/OCR/좌표/시청효과",
+      "사람 질문 발송·답변·내용/회사/사용권한 승인",
+      "기본전환·스킬변경·26항목 총점/일반성능/우위비교"
+    ]
+  },
+  "prior_outputs_unchanged": true,
+  "preservation_check": {
+    "existing_files_checked": 105,
+    "existing_outputs_checked": 51,
+    "differences": [],
+    "scope": "stage03 모든 기존 파일, 기존 독립검토6파일, criteria/권한/root facts의 검토 시작·종료 byte크기/SHA 대조"
+  },
+  "human_approval": false,
+  "company_approved": false,
+  "overall_usage_ready": false,
+  "quality_total": null,
+  "comparative_superiority_claim": false,
+  "actual_video_performance_verified": false,
+  "report_handoff": {
+    "card_document_version": "0.1.1",
+    "card_record_versions": [
+      "0.1.1",
+      "0.1.1",
+      "0.1.1"
+    ],
+    "card_sha256": "254bd6423812859452c60b7247bc0cdcfe7e626ff6a62b698a8218957655645f",
+    "index_version": "0.1.1",
+    "index_sha256": "f3c5ea305279706e9127cd123df032bbf34cb8c6d25b4b30a529947609a27c83",
+    "remaining_human_question": "H-01",
+    "stage02_initial_failure_retained": true
+  },
+  "files_written_by_this_review": [
+    "독립검토/03_단계검토.md",
+    "독립검토/03_단계검토.json",
+    "실행/eval-03-적용성검토자/candidate/run/grading.json"
+  ]
+}
+

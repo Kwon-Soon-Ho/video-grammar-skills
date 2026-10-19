@@ -1,0 +1,246 @@
+{
+  "script_sha256": "b5eadb2d9f42ebb3e6d02dbd5a87448e558e78ef9bc7ffeb1807b79f507d03e7",
+  "conditions": 12,
+  "passed": 12,
+  "scope": "새 읽기전용 helper의 좁은 단위검사. 스킬/실영상/동시성 성능 아님.",
+  "cases": [
+    {
+      "name": "unchanged",
+      "expected_valid": true,
+      "observed": {
+        "valid": true,
+        "mode": "content_edit",
+        "before_sha256": "0402f495773604f726fa38cc6de321f385a61e4c8819a4d673d38c921b0c028e",
+        "after_sha256": "0402f495773604f726fa38cc6de321f385a61e4c8819a4d673d38c921b0c028e",
+        "bytes_changed": false,
+        "errors": [],
+        "scope": "R4/R5 초안 전후 식별/규격판본·소유기록 판본 또는 요청 checkpoint byte 대조만. 허용 필드·R4/R5 전체 구조·내용·권한 검사는 별도.",
+        "writes_performed": false,
+        "content_verified": false,
+        "company_approved": false,
+        "operational_release": false,
+        "after_record_version": "0.1.0",
+        "before_record_version": "0.1.0"
+      }
+    },
+    {
+      "name": "changed_link_same_owner_version_rejected",
+      "expected_valid": false,
+      "observed": {
+        "valid": false,
+        "mode": "content_edit",
+        "before_sha256": "0402f495773604f726fa38cc6de321f385a61e4c8819a4d673d38c921b0c028e",
+        "after_sha256": "fc21f67a421751155c9bd2396dc6de82366a54103fd0c9543c9cb9f04ac9c806",
+        "bytes_changed": true,
+        "errors": [
+          "참조 메타데이터를 포함한 bytes 변경은 소유 기록의 새 version 필요"
+        ],
+        "scope": "R4/R5 초안 전후 식별/규격판본·소유기록 판본 또는 요청 checkpoint byte 대조만. 허용 필드·R4/R5 전체 구조·내용·권한 검사는 별도.",
+        "writes_performed": false,
+        "content_verified": false,
+        "company_approved": false,
+        "operational_release": false,
+        "after_record_version": "0.1.0",
+        "before_record_version": "0.1.0"
+      }
+    },
+    {
+      "name": "changed_link_new_owner_version_allowed",
+      "expected_valid": true,
+      "observed": {
+        "valid": true,
+        "mode": "content_edit",
+        "before_sha256": "0402f495773604f726fa38cc6de321f385a61e4c8819a4d673d38c921b0c028e",
+        "after_sha256": "1c80fdc13530315d94d838c735b15ed0fc26cda15c8e7b4df588f38dba8c63f7",
+        "bytes_changed": true,
+        "errors": [],
+        "scope": "R4/R5 초안 전후 식별/규격판본·소유기록 판본 또는 요청 checkpoint byte 대조만. 허용 필드·R4/R5 전체 구조·내용·권한 검사는 별도.",
+        "writes_performed": false,
+        "content_verified": false,
+        "company_approved": false,
+        "operational_release": false,
+        "after_record_version": "0.1.1",
+        "before_record_version": "0.1.0"
+      }
+    },
+    {
+      "name": "identity_change_rejected",
+      "expected_valid": false,
+      "observed": {
+        "valid": false,
+        "mode": "content_edit",
+        "before_sha256": "0402f495773604f726fa38cc6de321f385a61e4c8819a4d673d38c921b0c028e",
+        "after_sha256": "a201be37f96ca2f9a8084fb24542cfa8e4edf33a3a0875ffae43a7a1cf9d0809",
+        "bytes_changed": true,
+        "errors": [
+          "동일 논리 기록의 ID 보존 필요"
+        ],
+        "scope": "R4/R5 초안 전후 식별/규격판본·소유기록 판본 또는 요청 checkpoint byte 대조만. 허용 필드·R4/R5 전체 구조·내용·권한 검사는 별도.",
+        "writes_performed": false,
+        "content_verified": false,
+        "company_approved": false,
+        "operational_release": false,
+        "after_record_version": "0.1.1",
+        "before_record_version": "0.1.0"
+      }
+    },
+    {
+      "name": "schema_relabel_rejected",
+      "expected_valid": false,
+      "observed": {
+        "valid": false,
+        "mode": "content_edit",
+        "before_sha256": "0402f495773604f726fa38cc6de321f385a61e4c8819a4d673d38c921b0c028e",
+        "after_sha256": "de258278bbe2913ee154f6a88126bde606992da3ff1348db608dc33cca130cc3",
+        "bytes_changed": true,
+        "errors": [
+          "내용 수정으로 schema_version을 변경하지 않음"
+        ],
+        "scope": "R4/R5 초안 전후 식별/규격판본·소유기록 판본 또는 요청 checkpoint byte 대조만. 허용 필드·R4/R5 전체 구조·내용·권한 검사는 별도.",
+        "writes_performed": false,
+        "content_verified": false,
+        "company_approved": false,
+        "operational_release": false,
+        "after_record_version": "0.1.1",
+        "before_record_version": "0.1.0"
+      }
+    },
+    {
+      "name": "whitespace_only_hash_change_without_version_rejected",
+      "expected_valid": false,
+      "observed": {
+        "valid": false,
+        "mode": "content_edit",
+        "before_sha256": "0402f495773604f726fa38cc6de321f385a61e4c8819a4d673d38c921b0c028e",
+        "after_sha256": "39f380d0aea2b4f2d1e1127f0bfb0bb16b400b79ccb6b2793e37c45e38568a0e",
+        "bytes_changed": true,
+        "errors": [
+          "참조 메타데이터를 포함한 bytes 변경은 소유 기록의 새 version 필요"
+        ],
+        "scope": "R4/R5 초안 전후 식별/규격판본·소유기록 판본 또는 요청 checkpoint byte 대조만. 허용 필드·R4/R5 전체 구조·내용·권한 검사는 별도.",
+        "writes_performed": false,
+        "content_verified": false,
+        "company_approved": false,
+        "operational_release": false,
+        "after_record_version": "0.1.0",
+        "before_record_version": "0.1.0"
+      }
+    },
+    {
+      "name": "duplicate_key_rejected",
+      "expected_valid": false,
+      "observed": {
+        "valid": false,
+        "mode": "content_edit",
+        "before_sha256": "917c6f470743c97a63bdb7bfb6de3764dff641f0861db8d094c6af477aef83bd",
+        "after_sha256": "1c80fdc13530315d94d838c735b15ed0fc26cda15c8e7b4df588f38dba8c63f7",
+        "bytes_changed": true,
+        "errors": [
+          "ValueError: 중복 JSON 키: version"
+        ],
+        "scope": "R4/R5 초안 전후 식별/규격판본·소유기록 판본 또는 요청 checkpoint byte 대조만. 허용 필드·R4/R5 전체 구조·내용·권한 검사는 별도.",
+        "writes_performed": false,
+        "content_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "nonfinite_rejected",
+      "expected_valid": false,
+      "observed": {
+        "valid": false,
+        "mode": "content_edit",
+        "before_sha256": "2a7c1f1ea21a962a5f94e67e1c0b3a1e3bc689e79582e4ac87bd746a666fb47f",
+        "after_sha256": "1c80fdc13530315d94d838c735b15ed0fc26cda15c8e7b4df588f38dba8c63f7",
+        "bytes_changed": true,
+        "errors": [
+          "ValueError: 비유한 JSON 수: NaN"
+        ],
+        "scope": "R4/R5 초안 전후 식별/규격판본·소유기록 판본 또는 요청 checkpoint byte 대조만. 허용 필드·R4/R5 전체 구조·내용·권한 검사는 별도.",
+        "writes_performed": false,
+        "content_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    },
+    {
+      "name": "exact_restore_allows_broken_before_json",
+      "expected_valid": true,
+      "observed": {
+        "valid": true,
+        "mode": "exact_restore",
+        "before_sha256": "22144b92e64f464f369fcfe12ade3c1cf3b87dfbf82bfe7c42c34de7fbcc542b",
+        "after_sha256": "0402f495773604f726fa38cc6de321f385a61e4c8819a4d673d38c921b0c028e",
+        "bytes_changed": true,
+        "errors": [],
+        "scope": "R4/R5 초안 전후 식별/규격판본·소유기록 판본 또는 요청 checkpoint byte 대조만. 허용 필드·R4/R5 전체 구조·내용·권한 검사는 별도.",
+        "writes_performed": false,
+        "content_verified": false,
+        "company_approved": false,
+        "operational_release": false,
+        "after_record_version": "0.1.0"
+      }
+    },
+    {
+      "name": "restore_changed_bytes_rejected",
+      "expected_valid": false,
+      "observed": {
+        "valid": false,
+        "mode": "exact_restore",
+        "before_sha256": "22144b92e64f464f369fcfe12ade3c1cf3b87dfbf82bfe7c42c34de7fbcc542b",
+        "after_sha256": "1c80fdc13530315d94d838c735b15ed0fc26cda15c8e7b4df588f38dba8c63f7",
+        "bytes_changed": true,
+        "errors": [
+          "복원 후 bytes가 checkpoint와 다름"
+        ],
+        "scope": "R4/R5 초안 전후 식별/규격판본·소유기록 판본 또는 요청 checkpoint byte 대조만. 허용 필드·R4/R5 전체 구조·내용·권한 검사는 별도.",
+        "writes_performed": false,
+        "content_verified": false,
+        "company_approved": false,
+        "operational_release": false,
+        "after_record_version": "0.1.1"
+      }
+    },
+    {
+      "name": "restore_wrong_checkpoint_sha_rejected",
+      "expected_valid": false,
+      "observed": {
+        "valid": false,
+        "mode": "exact_restore",
+        "before_sha256": "22144b92e64f464f369fcfe12ade3c1cf3b87dfbf82bfe7c42c34de7fbcc542b",
+        "after_sha256": "0402f495773604f726fa38cc6de321f385a61e4c8819a4d673d38c921b0c028e",
+        "bytes_changed": true,
+        "errors": [
+          "checkpoint SHA 불일치"
+        ],
+        "scope": "R4/R5 초안 전후 식별/규격판본·소유기록 판본 또는 요청 checkpoint byte 대조만. 허용 필드·R4/R5 전체 구조·내용·권한 검사는 별도.",
+        "writes_performed": false,
+        "content_verified": false,
+        "company_approved": false,
+        "operational_release": false,
+        "after_record_version": "0.1.0"
+      }
+    },
+    {
+      "name": "unsupported_mode_returns_error",
+      "expected_valid": false,
+      "observed": {
+        "valid": false,
+        "mode": "other",
+        "before_sha256": "0402f495773604f726fa38cc6de321f385a61e4c8819a4d673d38c921b0c028e",
+        "after_sha256": "1c80fdc13530315d94d838c735b15ed0fc26cda15c8e7b4df588f38dba8c63f7",
+        "bytes_changed": true,
+        "errors": [
+          "지원하지 않는 대조 mode",
+          "복원/수정 결과는 기록 객체 필요"
+        ],
+        "scope": "R4/R5 초안 전후 식별/규격판본·소유기록 판본 또는 요청 checkpoint byte 대조만. 허용 필드·R4/R5 전체 구조·내용·권한 검사는 별도.",
+        "writes_performed": false,
+        "content_verified": false,
+        "company_approved": false,
+        "operational_release": false
+      }
+    }
+  ]
+}

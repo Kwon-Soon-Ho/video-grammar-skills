@@ -1,0 +1,51 @@
+{
+  "stage": "R2-3 재검토",
+  "reviewed_at": "2026-10-14",
+  "decision": "previous_findings_resolved",
+  "scope": "용어판정기준0.1.2(개별record_version0.1.1)과75개MD 읽기. 사전ID/정의/해시유지.",
+  "resolved": [
+    {
+      "id": "R2-03-F1",
+      "status": "resolved_in_guides_and_policy",
+      "evidence": "UI는visible_ui_scope_and_verified_capture_source,PHOTO는visible_material_and_verified_photo_source,기능8개는temporal_change_plus_message_context,기타레이아웃은visible_scope. evidence_rules에범주별필수근거/한계명시. 새검사기의규칙매핑약화방어는최종레드팀에별도기록."
+    },
+    {
+      "id": "R2-03-F2",
+      "status": "resolved",
+      "evidence": "PROPERTY-CAMERA 양성에명시한전역에분포한배경/대상의일관변화와국소구분. 우하단3아이콘만확대되는반례추가."
+    },
+    {
+      "id": "R2-03-F3",
+      "status": "resolved",
+      "evidence": "LAYOUT-TIMELINE 반례는작업창/이름만으로의태그로한정. 최종영상속UI시간/사건관계의범위별복합후보허용."
+    },
+    {
+      "id": "R2-03-F4",
+      "status": "resolved",
+      "evidence": "속도크기와변화방향을분리. CURVE-DECEL에10→6→4의속도4→2예추가. 반전/시점/표본부족은후보."
+    }
+  ],
+  "coverage": {
+    "guides_read": 75,
+    "markdown_examples": 75,
+    "first_findings_rechecked": 4
+  },
+  "open_findings": [],
+  "limitations": [
+    "가이드내용의보완과그내용변조를검사기로차단하는것은별개",
+    "영상정답/실제촬영/사람의도는검증하지않음"
+  ],
+  "final_snapshot_sha256": {
+    "01_공통용어/공통용어사전.json": "c71ec597b924bd6da69fdfeb4635e290de75823186fbf7236b9615d613c6c7b2",
+    "01_공통용어/분류운영규칙.json": "3ab8c07c3ed63494e74be05b92d924b0cb2408aed4b639c1ddd2d0db2523455d",
+    "01_공통용어/용어판정기준.json": "c975dcb7f8b35b07419a5e35f7f11b4581b480b84d879fed46f5adf94062c8f4",
+    "01_공통용어/혼동쌍사례.json": "3d3ecc4401cdf7040376abe6b9f8975373c0b7bf78c4edb68600e30a295a1591",
+    "01_공통용어/설명용분류사례.json": "1a23301c0da9690965dba64b2d787a70fd25cbd4e6f7f678505ae5b83164aa27",
+    "01_공통용어/02_기록단위와분류축.md": "f945ba00b22816209abd0adfd5c292a43bd09524cec151bd53858406cd09a421",
+    "01_공통용어/03_용어별적용예와반례.md": "76d4f24c658046eeca6bd50e940d156e62213eb827487c3565e287046bc3989d",
+    "01_공통용어/04_복합화면과미분류처리.md": "f323bd54464426d6c5cc8e45016a141f307b5dc55170d4aa2763f09ff5ce718e",
+    "01_공통용어/05_범위별분류사례.md": "35682face74c652def9341f88a27b476bcb5c64c395e337e10459902b303f59f",
+    "07_실행도구/R2_운영자료검사.py": "d0832367f4690ec5505ecf415e3eb44e7e372bcb223bb9c5fb0ac60e9b1939ea"
+  },
+  "final_check_result": "pass_with_scope_limits"
+}

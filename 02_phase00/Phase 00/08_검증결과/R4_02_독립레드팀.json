@@ -1,0 +1,125 @@
+{
+  "version": "0.1.0",
+  "date": "2026-10-15",
+  "reviewer": "foundation_redteam",
+  "review_authority": "독립 기술 검수. 사용자/회사 승인 또는 실제 콘텐츠 검수 아님.",
+  "limited_completion_supported": true,
+  "currently_reproduced_blocking_defects": 0,
+  "verdict": "R4-2 독립 근거·주장 선언 계약/적용 예·반례/형식·의미 검사/사람 검수 대기·stale 통제 범위 한정 완료 가능",
+  "final_report_sha256": "a88d063277d4d83d65921d2954aeda4dab16c64bc54d2a54430584b7774a28ef",
+  "final_test_script_sha256": "a68d023314a002ff1d6d6a4df6fd59917fa6a22eac18ad614c40bd9577646462",
+  "findings_corrected": [
+    "사용자 정의 quantity=other의 미확인 측정량·좌표 계약을 supported로 우회",
+    "프레임이 부모 clip의 제외 끝점/범위 밖인데 파생 관계로 통과",
+    "자식 clip이 부모 clip 범위 밖인데 통과",
+    "원본 시각/identity가 다른 frame을 사본으로 통과",
+    "다른 시각의 반대 clip을 해결 문구로 통과",
+    "명시 시간이 다른 transcript를 주장 근거로 통과",
+    "stale receipt로 specimen/human 구분 우회",
+    "unpaired surrogate 문자열/key에서 검사 반환 예외"
+  ],
+  "positive_controls_preserved": [
+    "정적 원본 선언 receipt",
+    "미검토 사람 대기",
+    "원문 시나리오",
+    "유효 clip 파생",
+    "동일 frame 사본/동치 identity 별칭",
+    "시간 일부가 겹치는 관련 반대 자료",
+    "범위 밖 문맥 자료",
+    "정상 emoji/NFC/NFD/JSON 정상 surrogate pair"
+  ],
+  "not_verified": [
+    "실제 영상 내용 진실성",
+    "실제 사람 내용 검수·identity",
+    "파일 존재/hash 정확성",
+    "미디어/프레임 추출",
+    "회사 문법·효과"
+  ],
+  "remaining": [
+    "R4-3 좌표·공간량",
+    "R4-4 기존 DB 통합·legacy 시간4건/근거7유형",
+    "R6/R7 권한·운영 검수",
+    "01-A 실제 추출/인덱스 정확성",
+    "실제 콘텐츠 사람 검수"
+  ],
+  "final_reviewer_message": "최신 내장98/98·독립27/27·예외0. 입력 변경없음·검토전후원문hash동일·저장내장결과일치. 고립high/low/key surrogate는schema/context_hash전에구조오류, 정상emoji/NFC/NFD/JSON정상pair유지. 모든시험에서사실·사람인증·회사·운영승인flags는false. 초기7우회와추가Unicode예외보완후현재재현되는차단결함없음. 단계한정완료가능하며실자료/사람검수/통합/01-A는남음. D수정없음.",
+  "independent_tests": {
+    "passed": 27,
+    "count": 27,
+    "runtime_exceptions": 0
+  },
+  "built_in_tests": {
+    "count": 98,
+    "passed": 98,
+    "all_passed": true
+  },
+  "reviewed_artifacts": {
+    "04_기록규격/03_근거와주장_기록규격.md": "6943272574c2e8fa008e5b89b1fbb1977c0529933d4652f5688acb474cf2a422",
+    "04_기록규격/근거주장_스키마.json": "e66c9a6897c72ad0588f027e5699012a091f357d6d11834168352a6a760aeca4",
+    "04_기록규격/근거주장_적용예와반례.md": "eb2344566d037f598e5305cd96b3df78943bf5db56387e63299b41ad67f61a3a",
+    "04_기록규격/근거주장_설명용기록.json": "c8526d5c82f3c90f0e6f79a4fa3c6ca00d3f497b05a58f723c625523b497bc00",
+    "07_실행도구/근거주장_규격검사.py": "854d0353b9a909d5d264baca70250d173f90dc58dc05bee231ca0a8522d11ec3",
+    "07_실행도구/근거주장_규격시험.py": "8300c70f10c01dc832b0168136fc3c70000337bb914c15b221595de2f06e1f97",
+    "08_검증결과/R4_02_근거계약시험.json": "212dec613d43f30d7ded626faf4a44aa17af32f52df0508860a6e97f03e1726f",
+    "08_검증결과/R4_02_사람검수대기_설명용.json": "1810d2c6f120e0b08291c59b1347eafef31f986cfd5789cccb59c22f65efc22b",
+    "07_실행도구/시간프레임_규격검사.py": "52834649975027af2097becf61c2fb10034b42e4dda3a3f2fbb68e255bd90e69"
+  },
+  "source_changed_during_review": false,
+  "raw_review_archive": [
+    {
+      "path": "backup\\2026-10-15_R4_02\\독립검토원문\\20건_독립반례검사.py",
+      "sha256": "4fc7dbe08e662f5bdcd8d03a5be3a3b5dfcb81efae5daa1482f6f498f6073324",
+      "matches_original": true
+    },
+    {
+      "path": "backup\\2026-10-15_R4_02\\독립검토원문\\20건_최종독립결과.json",
+      "sha256": "2b0873defdf36f724ce2725ff3ee4109bf23485df2ad0620707a0fc05b7f5e1d",
+      "matches_original": true
+    },
+    {
+      "path": "backup\\2026-10-15_R4_02\\독립검토원문\\21건_독립반례검사.py",
+      "sha256": "ff880f4bced04b6e030eeefb205f0bf3988d1331d454dc938b60dc91a6ef3555",
+      "matches_original": true
+    },
+    {
+      "path": "backup\\2026-10-15_R4_02\\독립검토원문\\독립반례검사.py",
+      "sha256": "a68d023314a002ff1d6d6a4df6fd59917fa6a22eac18ad614c40bd9577646462",
+      "matches_original": true
+    },
+    {
+      "path": "backup\\2026-10-15_R4_02\\독립검토원문\\독립반례결과.json",
+      "sha256": "e7e12361e176860a6c83f90dc8157664fb356d292df9e4a5102752ea1bef0d9e",
+      "matches_original": true
+    },
+    {
+      "path": "backup\\2026-10-15_R4_02\\독립검토원문\\유니코드_보완전_독립결과.json",
+      "sha256": "e1a4df94fc270a93643da5976c56645b2f443e9f3fa7853ca4c0e32302ab8fb8",
+      "matches_original": true
+    },
+    {
+      "path": "backup\\2026-10-15_R4_02\\독립검토원문\\재검토전_독립반례검사.py",
+      "sha256": "201f2917148d71d0549bfc2434fabe6687057058f7d8ec520568625c4adc04c3",
+      "matches_original": true
+    },
+    {
+      "path": "backup\\2026-10-15_R4_02\\독립검토원문\\초기_독립반례결과.json",
+      "sha256": "e7e12361e176860a6c83f90dc8157664fb356d292df9e4a5102752ea1bef0d9e",
+      "matches_original": true
+    },
+    {
+      "path": "backup\\2026-10-15_R4_02\\독립검토원문\\최종_독립반례결과.json",
+      "sha256": "2b0873defdf36f724ce2725ff3ee4109bf23485df2ad0620707a0fc05b7f5e1d",
+      "matches_original": true
+    },
+    {
+      "path": "backup\\2026-10-15_R4_02\\독립검토원문\\최종_독립반례결과_21건.json",
+      "sha256": "e1a4df94fc270a93643da5976c56645b2f443e9f3fa7853ca4c0e32302ab8fb8",
+      "matches_original": true
+    },
+    {
+      "path": "backup\\2026-10-15_R4_02\\독립검토원문\\최종_독립반례결과_27건.json",
+      "sha256": "a88d063277d4d83d65921d2954aeda4dab16c64bc54d2a54430584b7774a28ef",
+      "matches_original": true
+    }
+  ]
+}

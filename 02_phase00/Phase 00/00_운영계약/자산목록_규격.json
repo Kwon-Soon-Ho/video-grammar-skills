@@ -1,0 +1,324 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "자산목록 등록 계약",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.2.0"
+    },
+    "record_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "scope": {
+      "enum": [
+        "actual_registry",
+        "synthetic_example"
+      ]
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "asset_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "record_version": {
+            "type": "string",
+            "pattern": "^\\d+\\.\\d+\\.\\d+$"
+          },
+          "revision_state": {
+            "enum": [
+              "current",
+              "historical"
+            ]
+          },
+          "kind": {
+            "enum": [
+              "video",
+              "scenario",
+              "transcript",
+              "logo",
+              "ci_guide",
+              "font",
+              "image",
+              "chart",
+              "reference_document",
+              "proxy",
+              "extracted_frame",
+              "reconstructed_image",
+              "analysis_output"
+            ]
+          },
+          "role": {
+            "enum": [
+              "original",
+              "reference",
+              "derived",
+              "generated_output"
+            ]
+          },
+          "source_origin": {
+            "enum": [
+              "internal",
+              "official_external",
+              "external",
+              "synthetic_example"
+            ]
+          },
+          "registration_state": {
+            "enum": [
+              "awaiting_file",
+              "registered"
+            ]
+          },
+          "file": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sha256": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "original_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "path",
+              "sha256",
+              "original_name"
+            ],
+            "additionalProperties": false
+          },
+          "source": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "enum": [
+                  "provided_file",
+                  "official_page",
+                  "project_record",
+                  "user_declaration",
+                  "synthetic_example"
+                ]
+              },
+              "locator": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "url": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "retrieved_on": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "format": "date"
+              },
+              "notes": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              }
+            },
+            "required": [
+              "kind",
+              "locator",
+              "url",
+              "retrieved_on",
+              "notes"
+            ],
+            "additionalProperties": false
+          },
+          "relationships": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "relation": {
+                  "enum": [
+                    "derived_from",
+                    "variant_of",
+                    "scenario_for",
+                    "supersedes"
+                  ]
+                },
+                "target": {
+                  "type": "object",
+                  "properties": {
+                    "asset_id": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "record_version": {
+                      "type": "string",
+                      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+                    },
+                    "sha256": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "pattern": "^[0-9a-f]{64}$"
+                    }
+                  },
+                  "required": [
+                    "asset_id",
+                    "record_version",
+                    "sha256"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "relation",
+                "target"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "generation": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "method": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  },
+                  "tool_or_process": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  },
+                  "run_ref": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "changes_from_source": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  }
+                },
+                "required": [
+                  "method",
+                  "tool_or_process",
+                  "run_ref",
+                  "changes_from_source"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          },
+          "usage": {
+            "type": "object",
+            "properties": {
+              "state": {
+                "enum": [
+                  "unknown",
+                  "reference_only",
+                  "permitted_for_context",
+                  "restricted"
+                ]
+              },
+              "contexts": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                }
+              },
+              "evidence": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "state",
+              "contexts",
+              "evidence"
+            ],
+            "additionalProperties": false
+          },
+          "notes": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "company_ids": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            }
+          }
+        },
+        "required": [
+          "asset_id",
+          "record_version",
+          "revision_state",
+          "kind",
+          "role",
+          "source_origin",
+          "registration_state",
+          "file",
+          "source",
+          "relationships",
+          "generation",
+          "usage",
+          "notes",
+          "company_ids"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "notes": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    }
+  },
+  "required": [
+    "schema_version",
+    "record_version",
+    "scope",
+    "records",
+    "notes"
+  ],
+  "additionalProperties": false,
+  "x-contract-version": "0.2.0",
+  "$id": "urn:hanmac:phase00:r1:assets:0.2.0"
+}

@@ -1,0 +1,52 @@
+{
+  "case_id": "T07",
+  "condition": "without_skill",
+  "recorded_at": "2026-10-16T06:25:14.614847+00:00",
+  "grader": "root source/meaning review; not independent human",
+  "reference_level": "AI_source_observation_not_human_gold",
+  "expectations": [
+    {
+      "text": "외곽이 거의 고정인 동안 내부 선택 상태 변화를 식별",
+      "passed": true,
+      "evidence": "O1외곽고정, O2~5내부선택 변화 분리."
+    },
+    {
+      "text": "표 선택행의 위→아래 순차 변경",
+      "passed": true,
+      "evidence": "O2~5표행1→2→3→4 아래방향."
+    },
+    {
+      "text": "썸네일 선택 테두리의 왼쪽→오른쪽 1→2→3→4 변경",
+      "passed": true,
+      "evidence": "동일단계 썸네일첫줄1→2→3→4 오른쪽대응."
+    },
+    {
+      "text": "상태 중첩/연해짐을 연속 위치 이동이나 스크롤로 단정하지 않음",
+      "passed": true,
+      "evidence": "두강조동시노출/선택제자리 기록. 스크롤·연속이동 확정 없음."
+    },
+    {
+      "text": "선택 교체와 위치 가감속을 구분하고 AE 보간값을 만들지 않음",
+      "passed": true,
+      "evidence": "상태교체/디졸브 가능성과 구현미상을 구분. 위치보간값 확정 없음."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5
+  },
+  "case_status": "requirements_satisfied",
+  "notes": [
+    "UI 사건 자체는 스킬 없는 실행에서도 발견."
+  ],
+  "timing": null,
+  "tokens": null,
+  "telemetry_note": "per-run telemetry unavailable; no synthesized averages",
+  "eval_feedback": {
+    "suggestions": [
+      "Known exposed windows, one run per condition, same agent batches; this is regression evidence, not generalization accuracy."
+    ]
+  },
+  "additional_content_issues": []
+}

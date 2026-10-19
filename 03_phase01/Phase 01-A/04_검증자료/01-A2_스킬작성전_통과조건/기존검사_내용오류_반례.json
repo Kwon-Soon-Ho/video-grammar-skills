@@ -1,0 +1,31 @@
+{
+  "kind": "isolated diagnostic of existing validator; not actual model/video replay",
+  "original_files_modified": false,
+  "counterexamples": [
+    {
+      "case": "cursor_false_static",
+      "changed_subject": "E-cursor",
+      "changed_axis": "이동",
+      "false_text": "커서는 제자리에 머물며 독립 이동이 전혀 없는 정지 요소다.",
+      "old_structure_validator_errors": [],
+      "old_structure_validator_missed_content_error": true
+    },
+    {
+      "case": "fragment_wrong_direction",
+      "changed_subject": "E-hero-middle",
+      "changed_axis": "이동",
+      "false_text": "오른쪽에서 왼쪽으로 들어와서 정착하는 조각이다.",
+      "old_structure_validator_errors": [],
+      "old_structure_validator_missed_content_error": true
+    },
+    {
+      "case": "UI_selection_denied",
+      "changed_subject": "E-ui1-thumb",
+      "changed_axis": "내부변화",
+      "false_text": "미리보기 선택 대상은 처음부터 끝까지 바뀌지 않고 유지된다.",
+      "old_structure_validator_errors": [],
+      "old_structure_validator_missed_content_error": true
+    }
+  ],
+  "conclusion": "A populated object/axis/evidence record can still describe the wrong motion. Structural success is not a pre-skill content acceptance result."
+}

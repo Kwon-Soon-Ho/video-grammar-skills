@@ -1,0 +1,22 @@
+{
+  "request": {
+    "op": "write",
+    "path": "b.json",
+    "candidate_path": "outputs/candidate.json",
+    "expected_sha256": "fa1d26a336a6123fda110e20f26c40696f6538d7aef0612c626707559f782654"
+  },
+  "sequence": 4,
+  "status": "error",
+  "before_sha256": "fa1d26a336a6123fda110e20f26c40696f6538d7aef0612c626707559f782654",
+  "requested_sha256": "df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d",
+  "service_owned_written_sha256": "58250b42ff5f9db79242ac7f1667a1713579a0b4a1fc01908ac52643c1ac8bdc",
+  "error": "TEST_IO_PARTIAL_WRITE: candidate prefix written; inspect actual bytes",
+  "after_sha256": "58250b42ff5f9db79242ac7f1667a1713579a0b4a1fc01908ac52643c1ac8bdc",
+  "response": {
+    "op": "write",
+    "ok": false,
+    "error_type": "OSError",
+    "error": "TEST_IO_PARTIAL_WRITE: candidate prefix written; inspect actual bytes",
+    "actual_current_sha256": "58250b42ff5f9db79242ac7f1667a1713579a0b4a1fc01908ac52643c1ac8bdc"
+  }
+}

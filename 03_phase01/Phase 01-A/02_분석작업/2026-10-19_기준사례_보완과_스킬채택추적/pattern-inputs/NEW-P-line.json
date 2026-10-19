@@ -1,0 +1,83 @@
+{
+  "definition_version": "video-pattern-definition-0.2",
+  "category": "DETAIL",
+  "name": "기관 카드에서 접점까지 세로 무늬 채움",
+  "source": {
+    "case_id": "DEV-NEW-P-REFERENCE-20261019",
+    "source_sha256": "8d5bf71b3d739c6bf3e758da1c1d7db51becbab4dd77eab4389ee9d0a48a04c3",
+    "observation_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\records\\NEW-P\\observations.json",
+    "observation_sha256": "0b7effd009cc209db069706e1a549721cbf11a1308f6d313708cf918989e383c",
+    "claim_ids": [
+      "c030",
+      "c043",
+      "c048",
+      "c049",
+      "c058"
+    ],
+    "unknown_ids": []
+  },
+  "definition": {
+    "summary": "유색 세로 무늬의 노출 경계가 위로 자란 뒤 정착한다.",
+    "target_role": "카드와 설명의 연결",
+    "phases": [
+      {
+        "name": "생성",
+        "property": "internal_state",
+        "observed_change": "카드 위에서 위쪽 접점까지 노출 영역 성장",
+        "claim_ids": [
+          "c048"
+        ]
+      },
+      {
+        "name": "진행과 정착",
+        "property": "internal_state",
+        "observed_change": "생성 전반 가속 경향, 정착 후 무늬 위치 유지",
+        "claim_ids": [
+          "c049",
+          "c043"
+        ]
+      },
+      {
+        "name": "후속 유지",
+        "property": "visibility",
+        "observed_change": "기관 재배치 때도 연결선 유지, 최종 퇴장은 미관측",
+        "claim_ids": [
+          "c058"
+        ]
+      }
+    ],
+    "parameters": [
+      {
+        "name": "fill_direction",
+        "status": "observed",
+        "value": "upward visible extent growth",
+        "unit_or_type": "screen direction, not perpetual glyph flow"
+      },
+      {
+        "name": "final_exit",
+        "status": "unknown",
+        "value": null,
+        "unit_or_type": "outside inspected window"
+      },
+      {
+        "name": "original_AE_implementation",
+        "status": "unknown",
+        "value": null,
+        "unit_or_type": "source controls/curves/effects"
+      }
+    ],
+    "preserve_constraints": [
+      "문구·색·배치를 먼저 동작 원리와 분리한다.",
+      "관측된 중간 상태·순서·중첩·유지 차이를 보존한다.",
+      "미확인 구현값을 원본 값으로 채우지 않는다."
+    ]
+  },
+  "applicability": "관측한 동작 구조의 초안. 새 목적·문구 길이·화면비·대상 형태에서 근거·차이·가독성·성공 여부를 다시 확인. 수치·문구는 이 사례의 변형값이며 보편 기준 아님.",
+  "counterexamples": [
+    "새 영상·새 문구로 재제작/렌더 검증하지 않음.",
+    "원본 구현 설정·원제작 의도는 영상만으로 확정하지 않음."
+  ],
+  "status": "draft",
+  "supersedes": null,
+  "derived_from": []
+}

@@ -1,0 +1,582 @@
+{
+  "expectations": [
+    {
+      "text": "H02-C01: 열차 사진과 거대한 반투명 A 위에 Public Transport/대중교통 분석 주제 및 UI 예시 창들이 중첩된다",
+      "passed": true,
+      "evidence": "열차·큰 반투명 각진 도형·Public/Transport·대중교통 분석·UI 중첩 기록. A 도형을 일반 형태로 기술한 의미상 표현으로 인정."
+    },
+    {
+      "text": "H02-C02: 12초 전경의 노란 테두리 표/지도 창은 오른쪽 아래로 움직이며 작아진다",
+      "passed": true,
+      "evidence": "old 사건의 오른쪽 아래 이동·축소. reference C02 및 evidence-001."
+    },
+    {
+      "text": "H02-C03: 처음 좌상단 작은 지도창이 아래·오른쪽으로 와 왼 중앙의 큰 창으로 확대 정착한다",
+      "passed": true,
+      "evidence": "main 진입: 좌상단→오른쪽 아래 확대→왼 중앙 정착. evidence-001,029,032."
+    },
+    {
+      "text": "H02-C04: 전경 예시의 소제목은 대중교통 요금 설정기능",
+      "passed": true,
+      "evidence": "subhead 문구 일치. reference H02-c10, evidence-032."
+    },
+    {
+      "text": "H02-C05: UI 전개 뒤 노란 소제목과 아래 흰 본문이 등장해 기능 설명을 이룬다",
+      "passed": true,
+      "evidence": "UI 뒤 노란 소제목·흰본문 선명화. evidence-029,032."
+    },
+    {
+      "text": "H02-C06: 후반 전경 UI는 오른쪽 아래로 작아지며 이동하고, 다른 작은 예시와 함께 사라진다",
+      "passed": true,
+      "evidence": "main/old 퇴장 방향·축소·소실 기록. evidence-011,015,018 및 reference."
+    },
+    {
+      "text": "H02-C07: 예시 퇴장 뒤에도 열차/A/대중교통 분석 제목과 주제 설명은 남는다",
+      "passed": true,
+      "evidence": "18.6초 이후 배경/주제 문구 유지 기록. reference C07."
+    },
+    {
+      "text": "H02-D01: 검은 외곽의 지도창이 정착할 무렵 노란 강조 테두리가 왼/상부터 추가되어 전체 둘레를 이룬다",
+      "passed": false,
+      "evidence": "검정→노랑 강조는 기록하지만 왼/상에서 전체 둘레로 그려지는 순서는 누락."
+    },
+    {
+      "text": "H02-D02: 다색 노선 지도 왼쪽에 요금/노선 표 대화상자가 있고 메뉴/도구막대도 보인다",
+      "passed": true,
+      "evidence": "다색 지도·왼 요금표·메뉴/도구줄. evidence-032."
+    },
+    {
+      "text": "H02-D03: 후반 소제목은 오른쪽 끝부터 없어져 폭이 줄고 왼 작은 노란 조각만 남은 뒤 소실된다",
+      "passed": true,
+      "evidence": "소제목 오른쪽 절삭→왼 조각→소실 기록. evidence-011 및 reference."
+    },
+    {
+      "text": "H02-D04: 흰 기능 설명은 제목 축소와 겹쳐 약해져 사라진다",
+      "passed": true,
+      "evidence": "본문 약화가 제목 폭 감소와 겹침. reference D04."
+    },
+    {
+      "text": "H02-D05: 얇은 흰 곡선 위 검은 점·노란 점이 있고 화면 하단/좌측 점 위치가 시간에 따라 달라진다",
+      "passed": true,
+      "evidence": "흰 곡선·검정/노랑 점·위치 변화 기록. evidence-001,011."
+    },
+    {
+      "text": "H02-D06: 현실적으로 이용가능한 모든 대중교통 경로를 탐색하여, 대중교통 분석 결과의 현실적 설명력을 향상시킵니다.",
+      "passed": true,
+      "evidence": "주제 본문 원문 두 줄 일치. reference D06."
+    },
+    {
+      "text": "H02-D07: 대중교통 수단&노선에 따라 기본 요금·거리·추가거리 및 요금·통합환승요금제를 쉽게 적용하도록 설계한다는 설명",
+      "passed": true,
+      "evidence": "수단&노선·기본 요금/거리/추가거리/요금/통합환승 설명 일치. reference H02-c10."
+    },
+    {
+      "text": "H02-D08: 같은 외곽의 진행 중 확대 증가량이 후반에 작아져 정착하는 감속/ease-out 성격. 정성 관찰이며 정확한 함수·원본 AE 곡선 미상",
+      "passed": false,
+      "evidence": "진입 감속을 position에만 명시하고 컨테이너 확대 이징은 미확정으로 보류. reference D08의 관찰 가능한 정성 크기 감속과 정확 AE 함수 미상은 구별해야 함."
+    }
+  ],
+  "summary": {
+    "passed": 13,
+    "failed": 2,
+    "total": 15,
+    "pass_rate": 0.8666666666666667
+  },
+  "A5b_gate": {
+    "run_id": "H02-r1-without_skill",
+    "case_id": "H02",
+    "configuration": "without_skill",
+    "repeat": 1,
+    "blind_label": "sample-B",
+    "metrics": {
+      "core_correct": 7,
+      "core_total": 7,
+      "detail_correct": 6,
+      "detail_total": 8,
+      "core_coverage": 1.0,
+      "detail_coverage": 0.75,
+      "supported_enumerated_claims": 59,
+      "total_asserted_claims": null,
+      "enumerated_asserted_claims": 75,
+      "unresolved_enumerated_claims": 16,
+      "unsupported_enumerated_claims": 0,
+      "asserted_claim_precision": null,
+      "avoidable_abstention_count": 1,
+      "avoidable_abstention_fraction": 0.06666666666666667
+    },
+    "gates_passed": false,
+    "scope_incomplete": true,
+    "critical_errors": [],
+    "missing_reference_atoms": [
+      "H02-D01"
+    ],
+    "wrong_reference_atoms": [],
+    "avoidable_unknown_reference_atoms": [
+      "H02-D08"
+    ],
+    "appropriate_unknowns": [
+      "정확 AE 곡선/제어점 미상",
+      "선 trim/마스크/opacity 구현 미상",
+      "표 전체 열/단위 미확정",
+      "구간 밖 최초 등장 미확정",
+      "frame 단위 정확 경계 미확정"
+    ],
+    "grading_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a5b\\blind\\H02-r1\\grading.json",
+    "review_seconds": 38,
+    "assertion_count_unit": "deduplicated factual atoms supplied by blinded AI reviewer; not event count",
+    "structure_provenance_passed": true
+  },
+  "content_grader": "fresh blinded AI; not human gold",
+  "claim_details": [
+    {
+      "id": "B-001",
+      "claim": "열차 사진이 배경이다",
+      "supported": true,
+      "evidence": "A/evidence-001,018; B/evidence-007,016"
+    },
+    {
+      "id": "B-002",
+      "claim": "열차 전면은 화면 오른쪽에 있다",
+      "supported": true,
+      "evidence": "A/evidence-001; B/evidence-007"
+    },
+    {
+      "id": "B-003",
+      "claim": "승강장은 왼쪽에 보인다",
+      "supported": true,
+      "evidence": "A/evidence-001; B/evidence-007"
+    },
+    {
+      "id": "B-004",
+      "claim": "Public 영문이 Transport 위에 놓인다",
+      "supported": true,
+      "evidence": "A/evidence-001; B/evidence-035"
+    },
+    {
+      "id": "B-005",
+      "claim": "영문 주제는 반투명하다",
+      "supported": true,
+      "evidence": "A/evidence-001; B/evidence-035"
+    },
+    {
+      "id": "B-006",
+      "claim": "대중교통 분석은 굵은 흰색 제목이다",
+      "supported": true,
+      "evidence": "A/evidence-001; B/evidence-035"
+    },
+    {
+      "id": "B-007",
+      "claim": "주제 설명 첫 줄은 현실적으로 이용가능한 모든 대중교통 경로를 탐색하여,",
+      "supported": true,
+      "evidence": "reference H02-D06; B/evidence-035"
+    },
+    {
+      "id": "B-008",
+      "claim": "주제 설명 둘째 줄은 대중교통 분석 결과의 현실적 설명력을 향상시킵니다.",
+      "supported": true,
+      "evidence": "reference H02-D06; B/evidence-035"
+    },
+    {
+      "id": "B-009",
+      "claim": "주제 설명 둘째 줄이 굵게 강조된다",
+      "supported": true,
+      "evidence": "A/evidence-018; B/evidence-035"
+    },
+    {
+      "id": "B-010",
+      "claim": "12초 노란 테두리 기존 전경 UI가 오른쪽 아래로 움직인다",
+      "supported": true,
+      "evidence": "reference H02-C02; A/evidence-001,011; B/evidence-007,009"
+    },
+    {
+      "id": "B-011",
+      "claim": "기존 전경 UI가 작아진다",
+      "supported": true,
+      "evidence": "reference H02-C02; A/evidence-001; B/evidence-007,009"
+    },
+    {
+      "id": "B-012",
+      "claim": "새 지도 UI는 좌상단에서 시작한다",
+      "supported": true,
+      "evidence": "A/evidence-001; reference H02-C03"
+    },
+    {
+      "id": "B-013",
+      "claim": "새 지도 UI가 오른쪽 아래로 온다",
+      "supported": true,
+      "evidence": "reference H02-C03; B/evidence-007,009"
+    },
+    {
+      "id": "B-014",
+      "claim": "새 지도 UI가 커진다",
+      "supported": true,
+      "evidence": "reference H02-C03; A/evidence-001,029; B/evidence-007,009"
+    },
+    {
+      "id": "B-015",
+      "claim": "새 지도 UI가 왼 중앙에 정착한다",
+      "supported": true,
+      "evidence": "A/evidence-011; B/evidence-028"
+    },
+    {
+      "id": "B-016",
+      "claim": "전경 지도 UI 외곽은 검정이다",
+      "supported": true,
+      "evidence": "A/evidence-029; B/evidence-007,009"
+    },
+    {
+      "id": "B-017",
+      "claim": "전경 UI에 노란 강조 테두리가 추가된다",
+      "supported": true,
+      "evidence": "A/evidence-029,032; B/evidence-028"
+    },
+    {
+      "id": "B-018",
+      "claim": "다색 노선 지도가 UI 내부에 있다",
+      "supported": true,
+      "evidence": "A/evidence-032; B/evidence-028"
+    },
+    {
+      "id": "B-019",
+      "claim": "요금표는 내부 지도의 왼쪽에 있다",
+      "supported": true,
+      "evidence": "A/evidence-032; B/evidence-028"
+    },
+    {
+      "id": "B-020",
+      "claim": "위쪽 메뉴와 도구막대가 보인다",
+      "supported": true,
+      "evidence": "A/evidence-032; B/evidence-028"
+    },
+    {
+      "id": "B-021",
+      "claim": "하단 명령과 상태줄이 보인다",
+      "supported": true,
+      "evidence": "A/evidence-032; B/evidence-028"
+    },
+    {
+      "id": "B-022",
+      "claim": "UI 아래 소제목은 대중교통 요금 설정기능이다",
+      "supported": true,
+      "evidence": "reference H02-c10; A/evidence-032; B/evidence-028"
+    },
+    {
+      "id": "B-023",
+      "claim": "소제목 글자는 검정이다",
+      "supported": true,
+      "evidence": "A/evidence-032; B/evidence-028"
+    },
+    {
+      "id": "B-024",
+      "claim": "소제목 바는 노랗다",
+      "supported": true,
+      "evidence": "A/evidence-032; B/evidence-028"
+    },
+    {
+      "id": "B-025",
+      "claim": "흰 설명문은 소제목 아래에 있다",
+      "supported": true,
+      "evidence": "A/evidence-032; B/evidence-028"
+    },
+    {
+      "id": "B-026",
+      "claim": "흰 기능 설명은 세 줄이다",
+      "supported": true,
+      "evidence": "reference H02-c10; A/evidence-032; B/evidence-028"
+    },
+    {
+      "id": "B-027",
+      "claim": "기능 설명 첫 줄은 대중교통 수단&노선에 따라",
+      "supported": true,
+      "evidence": "reference H02-c10"
+    },
+    {
+      "id": "B-028",
+      "claim": "기능 설명 둘째 줄은 기본 요금, 거리, 추가거리 및 요금,",
+      "supported": true,
+      "evidence": "reference H02-c10"
+    },
+    {
+      "id": "B-029",
+      "claim": "기능 설명 셋째 줄은 통합환승요금제를 쉽게 적용하도록 설계",
+      "supported": true,
+      "evidence": "reference H02-c10"
+    },
+    {
+      "id": "B-030",
+      "claim": "UI 전개 뒤 소제목과 설명문이 선명해진다",
+      "supported": true,
+      "evidence": "reference H02-C05; A/evidence-029,032"
+    },
+    {
+      "id": "B-031",
+      "claim": "소제목은 오른쪽부터 잘린다",
+      "supported": true,
+      "evidence": "reference H02-D03; A/evidence-011; B/evidence-031,033"
+    },
+    {
+      "id": "B-032",
+      "claim": "소제목의 왼쪽 기준점은 유지된다",
+      "supported": true,
+      "evidence": "reference H02-D03; B/evidence-028,031,033"
+    },
+    {
+      "id": "B-033",
+      "claim": "소제목은 마지막에 작은 노란 조각만 남는다",
+      "supported": true,
+      "evidence": "A/evidence-011; B/evidence-033"
+    },
+    {
+      "id": "B-034",
+      "claim": "기능 흰 본문은 약해져 사라진다",
+      "supported": true,
+      "evidence": "reference H02-D04; B/evidence-031,033"
+    },
+    {
+      "id": "B-035",
+      "claim": "소제목 절삭과 본문 약화가 겹친다",
+      "supported": true,
+      "evidence": "reference H02-D04; B/evidence-031,033"
+    },
+    {
+      "id": "B-036",
+      "claim": "후반 전경 UI는 오른쪽 아래로 이동한다",
+      "supported": true,
+      "evidence": "A/evidence-011,015; B/evidence-013,016"
+    },
+    {
+      "id": "B-037",
+      "claim": "후반 전경 UI는 작아진다",
+      "supported": true,
+      "evidence": "A/evidence-011,015; B/evidence-013,016"
+    },
+    {
+      "id": "B-038",
+      "claim": "보조 UI는 주 UI보다 먼저 사라진다",
+      "supported": true,
+      "evidence": "reference H02-C06; A/evidence-015"
+    },
+    {
+      "id": "B-039",
+      "claim": "예시 퇴장 뒤 주제 문구가 남는다",
+      "supported": true,
+      "evidence": "A/evidence-018; reference H02-C07"
+    },
+    {
+      "id": "B-040",
+      "claim": "얇은 흰 곡선이 있다",
+      "supported": true,
+      "evidence": "A/evidence-001,011; B/evidence-007"
+    },
+    {
+      "id": "B-041",
+      "claim": "곡선에 검정 점과 노란 점이 있다",
+      "supported": true,
+      "evidence": "A/evidence-001; B/evidence-007"
+    },
+    {
+      "id": "B-042",
+      "claim": "좌하단 노란 점 위치가 시간에 따라 왼쪽 아래로 바뀐다",
+      "supported": true,
+      "evidence": "reference H02-D05; A/evidence-001,011; B/evidence-007,009"
+    },
+    {
+      "id": "B-043",
+      "claim": "상단 검정 점 위치가 왼쪽 아래로 바뀐다",
+      "supported": true,
+      "evidence": "reference H02-D05; A/evidence-001; B/evidence-007,009"
+    },
+    {
+      "id": "B-044",
+      "claim": "흰 곡선 상단 구간이 먼저 줄어든다",
+      "supported": true,
+      "evidence": "A/evidence-011,015; B/evidence-013,016"
+    },
+    {
+      "id": "B-045",
+      "claim": "후반 곡선의 우하단 선분이 더 늦게 남는다",
+      "supported": true,
+      "evidence": "A/evidence-015; B/evidence-016"
+    },
+    {
+      "id": "B-046",
+      "claim": "UI 표에 1050.00이 보인다",
+      "supported": true,
+      "evidence": "A/evidence-032; B/evidence-028"
+    },
+    {
+      "id": "B-047",
+      "claim": "UI 표에 2300.00이 보인다",
+      "supported": true,
+      "evidence": "A/evidence-032; B/evidence-028"
+    },
+    {
+      "id": "B-048",
+      "claim": "UI 표에 10.00이 보인다",
+      "supported": true,
+      "evidence": "A/evidence-032; B/evidence-028"
+    },
+    {
+      "id": "B-049",
+      "claim": "UI 표에 100.00이 보인다",
+      "supported": true,
+      "evidence": "A/evidence-032; B/evidence-028"
+    },
+    {
+      "id": "B-050",
+      "claim": "UI 표에 5.00이 보인다",
+      "supported": true,
+      "evidence": "A/evidence-032; B/evidence-028"
+    },
+    {
+      "id": "B-051",
+      "claim": "거대한 반투명 각진 도형이 배경에 겹친다",
+      "supported": true,
+      "evidence": "A/evidence-001 및 B/evidence-007,009. A형 도형의 모양 기술로 인정; 숫자로 오인하지 않음."
+    },
+    {
+      "id": "B-052",
+      "claim": "진입 윗변 중심x는12.5초1091.5px다",
+      "supported": null,
+      "evidence": "해당 native 좌표 미검증."
+    },
+    {
+      "id": "B-053",
+      "claim": "진입 윗변 중심x는12.6초1141px다",
+      "supported": null,
+      "evidence": "evidence-007 열람했으나 정확 native 경계 미측정."
+    },
+    {
+      "id": "B-054",
+      "claim": "진입 윗변 중심x는12.7초1183px다",
+      "supported": null,
+      "evidence": "해당 native 좌표 미검증."
+    },
+    {
+      "id": "B-055",
+      "claim": "진입 윗변 중심x는12.8초1217px다",
+      "supported": null,
+      "evidence": "evidence-009 열람했으나 정확 native 경계 미측정."
+    },
+    {
+      "id": "B-056",
+      "claim": "진입 윗변 중심x는13초1241px다",
+      "supported": null,
+      "evidence": "해당 native 좌표 미검증."
+    },
+    {
+      "id": "B-057",
+      "claim": "진입 후반의 위치 이동은 감속한다",
+      "supported": null,
+      "evidence": "제시 수치 차49.5→42→34는 산술 일관; 원본 좌표 전수확인 미완료."
+    },
+    {
+      "id": "B-058",
+      "claim": "기존 우하단 어두운 카드는12.4초 식별되지 않는다",
+      "supported": null,
+      "evidence": "해당 세부 프레임 미열람."
+    },
+    {
+      "id": "B-059",
+      "claim": "큰 기존 카드는12.8초 우하단 보조 카드로 정착한다",
+      "supported": true,
+      "evidence": "evidence-009에 해당 큰 구성과 작은 보조 카드 분리 관찰."
+    },
+    {
+      "id": "B-060",
+      "claim": "내부 화면은외곽 정착 뒤에도 보기 범위를 넓힌다",
+      "supported": true,
+      "evidence": "evidence-009,028의 표·상단메뉴와 지도 배치 비교."
+    },
+    {
+      "id": "B-061",
+      "claim": "14.4~16.8초 내부 구조가 유지된다",
+      "supported": null,
+      "evidence": "16.8 crop 직접 미열람."
+    },
+    {
+      "id": "B-062",
+      "claim": "노란 테두리는13.6초 추가된다",
+      "supported": null,
+      "evidence": "13.6 해당 근거 직접 미열람."
+    },
+    {
+      "id": "B-063",
+      "claim": "17.3초 소제목은 첫 글자 부근만 남는다",
+      "supported": true,
+      "evidence": "evidence-031."
+    },
+    {
+      "id": "B-064",
+      "claim": "17.5초 소제목은 얇은 노란 세로 조각이다",
+      "supported": true,
+      "evidence": "evidence-033."
+    },
+    {
+      "id": "B-065",
+      "claim": "17.5초 흰 본문은 희미하다",
+      "supported": true,
+      "evidence": "evidence-033."
+    },
+    {
+      "id": "B-066",
+      "claim": "17.8초 기능명과 본문이 없다",
+      "supported": true,
+      "evidence": "evidence-013."
+    },
+    {
+      "id": "B-067",
+      "claim": "퇴장 중심x는17.8초1256.5px다",
+      "supported": null,
+      "evidence": "evidence-013 열람; native 정확 경계 미측정."
+    },
+    {
+      "id": "B-068",
+      "claim": "퇴장 중심x는17.9초1300px다",
+      "supported": null,
+      "evidence": "해당 native 좌표 미검증."
+    },
+    {
+      "id": "B-069",
+      "claim": "퇴장 중심x는18초1381px다",
+      "supported": null,
+      "evidence": "해당 native 좌표 미검증."
+    },
+    {
+      "id": "B-070",
+      "claim": "퇴장 중심x는18.1초1518.5px다",
+      "supported": null,
+      "evidence": "evidence-016 열람; native 정확 경계 미측정."
+    },
+    {
+      "id": "B-071",
+      "claim": "퇴장 수평 위치 이동이 가속한다",
+      "supported": null,
+      "evidence": "43.5→81→137.5 산술은 일관; 원본 좌표 전수검증 미완료."
+    },
+    {
+      "id": "B-072",
+      "claim": "18.5초 작은 밝은 흔적이 남는다",
+      "supported": null,
+      "evidence": "해당 B 근거 미열람."
+    },
+    {
+      "id": "B-073",
+      "claim": "18.6초 UI가 식별되지 않는다",
+      "supported": true,
+      "evidence": "reference H02-C06/C07; A/evidence-018."
+    },
+    {
+      "id": "B-074",
+      "claim": "17.8초 상단 줄과 노란 점들이 보이지 않는다",
+      "supported": true,
+      "evidence": "evidence-013."
+    },
+    {
+      "id": "B-075",
+      "claim": "18.4초 하단 짧은 선만 남는다",
+      "supported": null,
+      "evidence": "해당 B 근거 미열람."
+    }
+  ]
+}

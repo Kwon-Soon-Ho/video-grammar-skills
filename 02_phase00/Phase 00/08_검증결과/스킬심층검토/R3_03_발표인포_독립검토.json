@@ -1,0 +1,649 @@
+{
+  "id": "R3_03_발표인포_독립검토",
+  "version": "0.1.0",
+  "reviewed_on": "2026-10-14",
+  "reviewer": "/root/r_audit_knowledge",
+  "verdict": "조건부 발표·설명 지식 후보 활용 가능. 기술 호출 폐쇄와 엔진 실행 도입은 미완료이며 별도 보류.",
+  "scope": {
+    "root": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본",
+    "selected": [
+      "academic-presentation",
+      "antv-infographic"
+    ],
+    "read_full_text": "academic 5개 + AntV 12개 = 17개, 코드 예제 포함",
+    "tree_depth": "2개 tree의 선택 경로·license/package·참조 존재를 metadata로 조회. 전체 엔진 코드 읽기 아님.",
+    "cross_package_metadata_only": "anthropic-pptx 확보트리에서 academic이 부른 pptxgenjs.md/editing.md의 경로 존재만 확인",
+    "upstream_code_executed": false,
+    "engine_rendered": false,
+    "code_installed": false,
+    "d_source_modified": false,
+    "new_agent_spawned": false,
+    "external_primary_sources_opened": false,
+    "limitations": [
+      "문서의 공개/다운로드 가능 여부와 라이선스 내용은 읽었으나, 공개됐다는 이유로 표준·회사규칙·배포허가라고 판정하지 않음.",
+      "academic의 Minto/Naegle/consulting norm 인용은 저자가 열거한 근거이며 이번 감사에서 책·논문·실험을 직접 읽지 않음.",
+      "AntV src renderer/parser/resource/text-measurement/template registry, build artifacts와 전체 dependencies는 확보·검토하지 않음. API/안전성/렌더 품질 완료를 주장하지 않음.",
+      "예제 정적 반례는 실행 재현이나 엔진 결함 판정이 아님. 실제 PPTX·SVG·MP4·한국어 렌더·시청·스킬 효용 시험 없음.",
+      "라이선스 파일 명시만 기록하며 법적 유효성·저작권 완전성·표현물 사용 허가를 보증하지 않음."
+    ]
+  },
+  "reference_closure": {
+    "academic_local": {
+      "entry": "SKILL.md",
+      "references_read": [
+        "content_guidelines.md",
+        "slide_patterns.md"
+      ],
+      "license_read": "LICENSE",
+      "missing_named_license": "frontmatter LICENSE.txt는 고정tree와 로컬 사본에 없음",
+      "cross_package_unclosed": [
+        "PPTX skill",
+        "pptxgenjs.md",
+        "editing.md",
+        "markitdown",
+        "PptxGenJS",
+        "LibreOffice",
+        "Poppler"
+      ],
+      "cross_package_path_check": "pptxgenjs.md/editing.md는 academic tree에도, 별도 확보 anthropic-pptx 고정tree에도 존재하지 않음. 해당 기술 실행 계약/버전 재대조 필요.",
+      "not_read": [
+        "Academic_Presentation_Best_Practices_DH_built_with_Claude_2_2026.pdf",
+        "PPTX SKILL 본문과 기술 코드(다른 검토 범위)",
+        "README의 외부 책/논문"
+      ]
+    },
+    "antv_local": {
+      "skill_count": 5,
+      "references_read": [
+        "skills/infographic-item-creator/references/item-prompt.md",
+        "skills/infographic-structure-creator/references/structure-prompt.md",
+        "skills/infographic-syntax-creator/references/prompt.md"
+      ],
+      "local_document_reference_missing_count": 0,
+      "runtime_paths_exist_but_not_acquired": [
+        "src/jsx/index.ts",
+        "src/designs/components/index.ts",
+        "src/designs/layouts/index.tsx",
+        "src/designs/items/registry.ts",
+        "src/designs/items/types.ts",
+        "src/designs/structures/registry.ts",
+        "src/designs/structures/types.ts",
+        "src/designs/utils/index.ts",
+        "src/utils/index.ts",
+        "src/templates/built-in.ts",
+        "site/src/components/AIPlayground/Prompt.ts",
+        "src/renderer/**"
+      ],
+      "stale_path": {
+        "caller": "skills/infographic-template-updater/SKILL.md:27",
+        "called": "site/src/components/Gallery/datasets.ts",
+        "in_fixed_tree": false,
+        "tree_candidate": "shared/datasets.ts",
+        "candidate_same_role_confirmed": false,
+        "note": "이름 비슷한 실제 파일 존재만 확인했으며 내용/대체 동일성 미검토"
+      },
+      "unclosed_external": [
+        "@latest CDN binary",
+        "AntV live docs/gallery",
+        "resource/icon/font resolver and remote resources",
+        "dependencies/devDependencies actual implementation and licenses",
+        "src/templates registry and template availability",
+        "build/SSR/client export behavior"
+      ]
+    },
+    "knowledge_vs_runtime": "로컬 선택 텍스트 읽기는 완료. 소스 문서의 패키지 코드/배포/웹 참조 호출망이 모두 닫힌 것은 아님. 실행 도입을 보류한 상태에서 조건부 지식 카드 기록은 가능."
+  },
+  "adoptable_candidates": [
+    {
+      "id": "PI-K01",
+      "source": "academic-presentation/content_guidelines.md :: 1 Argument Structure / 2 Action Titles",
+      "source_rule": "한 발표의 중심 질문/주장을 정하고 action title과 ghost deck test로 순서를 점검",
+      "project_interpretation": "무엇을 이해시킬지와 근거가 연결된 제목·핵심 메시지를 우선 검토하되 제목의 확실성은 실제 근거 수준을 따른다. 탐색·관측·불확실·비교 화면은 질문형/조건형/주제형 제목도 허용한다.",
+      "example": "표본 A에서 관측 평균은 12%, B는 10%라는 근거에 '이번 표본에서 A의 관측 평균이 2%p 높다'를 검토.",
+      "counterexample": "평균만 보고 'A가 성능을 개선시켰다' 또는 '유의하다'를 제목으로 만들어 인과·통계 검증을 위장.",
+      "phase00_scope": "적용 질문·예/반례·근거-주장 연결 지식 카드",
+      "phase02_work": "실제 청중·브리프·근거를 받은 뒤 화면별 메시지/발표 outline 결정",
+      "evidence_level": "저자 실무 지침 읽기 + 프로젝트 해석; 효과 실증 없음"
+    },
+    {
+      "id": "PI-K02",
+      "source": "academic-presentation/content_guidelines.md :: 3 Exhibit Discipline",
+      "source_rule": "exhibit가 action title을 뒷받침하고 핵심 찾기를 돕는 주석 제공; 두 그래프가 하나 비교라면 통합 고려",
+      "project_interpretation": "핵심 메시지와 증거의 역할을 구분하고 필요한 비교·전체 범례·불확실성을 함께 보여준다. '하나 메시지'는 개체/차트/도형 하나만 쓰라는 뜻이 아니다.",
+      "example": "같은 단위·기간·기준을 가진 두 패널을 하나 비교 exhibit로 놓고 대응 항목을 표기.",
+      "counterexample": "one-exhibit 규칙 때문에 필수 before/after 한쪽을 삭제하거나 전체 그림 없이 강조된 수치만 남김.",
+      "phase00_scope": "메시지·exhibit의 목적과 필수 정보 보존 검수",
+      "phase01A_work": "실영상에서 실제 비교/증거 역할을 관측, 제작 의도는 별도 가설",
+      "evidence_level": "발표 휴리스틱 조건부 차용"
+    },
+    {
+      "id": "PI-K03",
+      "source": "academic-presentation/content_guidelines.md :: 5 Citations and Attribution / 6 Deck Architecture",
+      "source_rule": "빌린 주장·그림·데이터의 표시 위치에 출처와 전체 참고자료 연결",
+      "project_interpretation": "출처 locator·버전·관측 원문과 재구성 여부·예시 여부를 드러낸다. 출처 표시와 사용 권한은 별개 상태다. 발표본/배포본/MP4의 end card와 reference 위치는 목적에 맞게 결정한다.",
+      "example": "정본 관측표 옆에 원본 파일/프레임 위치를 연결하고 도표 재작성은 '재구성'으로 표시.",
+      "counterexample": "논문에 attribution을 붙였으니 권한 확인이 완료됐다고 하거나 데모 수치를 실제 회사 성과로 보고.",
+      "phase00_scope": "출처·저작권/라이선스 상태 기록틀",
+      "phase02_work": "실제 최종 화면에서 출처 노출과 배포 동선 선택",
+      "evidence_level": "원문 기록 방식; 법률보증 없음"
+    },
+    {
+      "id": "PI-K04",
+      "source": "antv-infographic/skills/infographic-creator/SKILL.md :: data selection / template selection; skills/infographic-structure-creator/references/structure-prompt.md :: structure categories",
+      "source_rule": "list/compare/sequence/hierarchy/relation/geo/chart의 정보 구조를 선택하고 데이터필드를 맞춤",
+      "project_interpretation": "관계의 의미와 표현의 모양을 나눠 기록한다. 외부 구조명/템플릿 ID는 source vocabulary로만 남기고 기존 14 layout·8 screen·관계 계약과의 연결은 정의가 맞을 때만 후보로 기록한다.",
+      "example": "sequence-circular은 순환 관계가 실제 존재할 때 순환 지원후보에 연결하고 단순 원형 배치는 별도 관측.",
+      "counterexample": "AntV template ID를 새 회사 taxonomy ID로 등록하거나 화살표가 있다는 이유로 인과/시간축이라고 판정.",
+      "phase00_scope": "목적/관계/형태의 비혼동 설명과 외부 연결 후보",
+      "phase01A_work": "실제 화면의 관계와 관측정보 분류",
+      "phase02_work": "주어진 정보 구조에 맞는 화면 계획",
+      "evidence_level": "출처 분류법 읽기; 실제 템플릿 registry/렌더 검증 없음"
+    },
+    {
+      "id": "PI-K05",
+      "source": "antv-infographic/skills/infographic-syntax-creator/SKILL.md:23; references/prompt.md :: language and syntax rules; infographic-item-creator/references/item-prompt.md :: optional elements",
+      "source_rule": "사용자 언어 유지, chart-only/명시 text-only는 icon 생략, optional value를 구분",
+      "project_interpretation": "한국어·고유명사·원문 표기·숫자/단위를 보존한다. 텍스트만으로 충분한 설명은 허용하며, 아이콘이 의미를 보조할 때만 추가한다. language lock은 한국어 폰트·줄바꿈·읽기시간 검증과 다르다.",
+      "example": "'보고 → 검토 → 승인' 텍스트 순서만으로 의미가 명확하면 icon 없는 계획 후보를 허용.",
+      "counterexample": "중국어 예시 때문에 한국어를 번역하거나 unknown value를 0%, source label의 단위를 삭제하고 뜻을 바꿈.",
+      "phase00_scope": "원문 보존·text-only 예외·검수 질문",
+      "later_work": "실제 폰트/줄바꿈/프레임비/노출시간 렌더 검수",
+      "evidence_level": "문서의 명시 예외 + 프로젝트 적용 해석"
+    },
+    {
+      "id": "PI-K06",
+      "source": "academic-presentation/slide_patterns.md :: Results; antv-infographic/skills/infographic-item-creator/references/item-prompt.md :: responsive sizing / numeric handling",
+      "source_rule": "정량 값을 시각화하고 핵심 값·단위를 표시하는 예시",
+      "project_interpretation": "예시 코드에 없는 축/척도/분모/결측/오차 검수는 프로젝트 보완안으로 구분한다. 수치에 연결된 길이·면적·각도·축 눈금은 동일한 명시 척도를 써야 한다. 0/미검토/결측은 구분한다.",
+      "example": "bar98/100은 같은 0–100기준으로 계산; 시간1/2/12는 정량 간격과 단계목록 균등간격을 구분.",
+      "counterexample": "null을 0으로 간주하거나 단계를 같은 간격으로 놓고 실제 경과시간이라고 주장. 기간이 다른 before/after를 모양만 같게 비교.",
+      "phase00_scope": "정량 검수 질문과 합성 예/반례, 출처가 제공한 것과 자체 보완을 분리",
+      "phase02_work": "실데이터 domain·축·결측·단위·정렬·정확도에 맞춰 계획/검수",
+      "evidence_level": "source example 정적 확인 + 프로젝트 자체 검수 제안; 엔진 자동 보장 아님"
+    }
+  ],
+  "material_findings": [
+    {
+      "id": "PI-F01",
+      "severity": "medium_for_reuse_or_distribution",
+      "title": "academic 라이선스 명시가 서로 충돌한다",
+      "evidence": [
+        "academic-presentation/SKILL.md:4",
+        "academic-presentation/LICENSE",
+        "academic-presentation/README.md :: License",
+        "academic-presentation/확보트리.json",
+        "academic-presentation/content_guidelines.md:125"
+      ],
+      "finding": "SKILL frontmatter는 Proprietary / LICENSE.txt complete terms, 루트 LICENSE와 README는 MIT. LICENSE.txt는 고정tree에 없음. figure fair-use의 일반 문장도 관할·배포형태를 판단한 프로젝트 허가가 아님.",
+      "fix": "license conflict/pointed file absent를 출처에 그대로 기록. 원문 notice 보존; 텍스트/코드 복제·배포의 최종 이용허가를 단정하지 않음. 실무 아이디어 적용과 원문 복제 상태를 구분. figure 사용권은 출처 표시와 별도 확인 항목.",
+      "closed_by_current_read": false,
+      "blocks_knowledge_draft": false,
+      "legal_warranty": false
+    },
+    {
+      "id": "PI-F02",
+      "severity": "medium",
+      "title": "발표 hard-rule와 코드 예제의 기준 불일치",
+      "evidence": [
+        "academic-presentation/SKILL.md:71",
+        "academic-presentation/SKILL.md:90",
+        "academic-presentation/SKILL.md:98",
+        "academic-presentation/SKILL.md:121",
+        "academic-presentation/content_guidelines.md:128",
+        "academic-presentation/slide_patterns.md:91",
+        "academic-presentation/slide_patterns.md:144",
+        "academic-presentation/slide_patterns.md:291",
+        "academic-presentation/slide_patterns.md:488"
+      ],
+      "finding": "max3 colors에 비해 global example 색이 여러 개, no title accent line에 비해 divider 코드 다수, body20 minimum에 비해 질문/결과 예19, edge0.5in minimum에 비해 title y0.2와 citation bottom여백 부족. conclusions last non-appendix와 references last-before-appendix가 동시에 명시됨. 예제는 스스로 QA 완료된 정본이 아님.",
+      "fix": "문구·코드 예를 author rule/예시/프로젝트 채택조건으로 분리. 복제 전 단일 검수 계약으로 일치시킨다. 20pt/0.5in/3색/한 font/left figure/1slide-minute/40word를 회사 MP4 수치로 승격하지 않음. reference는 배포본/부록, conclusions Q&A 표시동선은 별도 목적 결정.",
+      "static_counterexample": "20pt rule을 통과했다고 보고하면서 FONTS.body - 1 = 19pt 예제를 그대로 제공하는 경우.",
+      "blocks_knowledge_draft": false
+    },
+    {
+      "id": "PI-F03",
+      "severity": "high_if_claims_promoted",
+      "title": "주장형 제목·하나 메시지·도표 재구성은 증거 삭제나 인과 단정의 권한이 아니다",
+      "evidence": [
+        "academic-presentation/content_guidelines.md :: Action Titles",
+        "academic-presentation/content_guidelines.md:60",
+        "academic-presentation/content_guidelines.md :: Rebuild figures / Self-sufficient slide test",
+        "academic-presentation/slide_patterns.md :: Methods / Results / Discussion"
+      ],
+      "finding": "제목만 이해된다고 exhibit 불필요라는 원문 test는 증거 필요성을 판정하지 못한다. 연구 demo의 significant/fully-mediated/as-good-as-random 등의 단정과 가상 표본/수치/인용은 실제 사실이 아님. paper figure rebuild가 축·범위·uncertainty·주석·원문 단위를 변경하는 근거가 될 수 없다. 발표 speech-support와 배포본 self-sufficient는 전달 조건이 다름.",
+      "fix": "test를 '주장을 평가할 근거가 남아 있는가'로 보완하고 관측/추정/인과·통계 주장을 별도 판정. 재구성은 raw+mapping+출처·축·오차를 보존. 한 comparison의 다중패널, 표/식, 정의·불확실·질문형 제목 허용. 발표/핸드아웃/무음MP4 목적과 검수 조건 기록.",
+      "static_counterexample": "'A 평균이 높다' 제목은 그래프 없이도 읽히지만 이를 근거로 그래프를 삭제하면 분산/표본/축 정보가 없어 주장 검토가 어려워짐.",
+      "blocks_knowledge_draft": false
+    },
+    {
+      "id": "PI-F04",
+      "severity": "high_for_runtime_adoption",
+      "title": "선택 문서 읽기는 기술 호출 폐쇄나 템플릿 실제 등록 검증이 아니다",
+      "evidence": [
+        "academic-presentation/SKILL.md:26",
+        "academic-presentation/SKILL.md:27",
+        "antv-infographic/skills/infographic-template-updater/SKILL.md:15",
+        "antv-infographic/skills/infographic-template-updater/SKILL.md:18",
+        "antv-infographic/skills/infographic-template-updater/SKILL.md:27",
+        "antv-infographic/확보트리.json"
+      ],
+      "finding": "academic은 별도 PPTX 및 현재 사본에 없는 pptxgenjs.md/editing.md를 호출. AntV selected 3 MD reference는 모두 확보/읽음. Item/Structure 생성은 src JSX/registry/utils/layout에 의존하며 template-updater는 미확보 src/templates/built-in.ts·AIPlayground Prompt.ts를 호출. Gallery/datasets.ts는 고정tree에 없음. common template list는 representative이며 실제 등록 확인을 하지 않았음.",
+      "fix": "로컬 지식문서읽기 완료와 runtime closure open을 별도 상태로 기록. updater의 자동catalog 수정·등록·배포 지침은 Phase00 적용 제외. 실행 필요 시 정확 commit의 실제 source/export/등록/데이터 경로를 좁게 대조. shared/datasets.ts를 내용 읽기 없이 대체한다고 단정하지 않음.",
+      "blocks_knowledge_draft": false,
+      "blocks_engine_adoption_now": true
+    },
+    {
+      "id": "PI-F05",
+      "severity": "high_for_untrusted_html_generation",
+      "title": "HTML 예시는 raw interpolation·latest CDN·내보내기/높이 조건을 해결하지 않는다",
+      "evidence": [
+        "antv-infographic/skills/infographic-creator/SKILL.md:450",
+        "antv-infographic/skills/infographic-creator/SKILL.md:455",
+        "antv-infographic/skills/infographic-creator/SKILL.md:461",
+        "antv-infographic/skills/infographic-creator/SKILL.md:468",
+        "antv-infographic/package.json :: jsdelivr/unpkg/exports"
+      ],
+      "finding": "{title}/{syntax}를 HTML/JS template literal에 대입하지만 escaping/허용입력 계약 없음. backtick·${...}·script종료문자·줄바꿈은 문자 보존/코드 경계를 바꿀 잠재 경로. @latest는 고정 source snapshot과 달라지고 skill CDN infographic.min.js는 package의 infographic.umd.min.js 선언과 다름. 샘플에는 export button/listener와 container CSS parent height 정의가 없으며 font-ready re-render가 모든 resource/export 완료를 보증하지 않음.",
+      "static_counterexample_not_executed": "사용자 원문에 literal ${1+1}가 있을 때 raw JS template literal 대입은 같은 원문을 유지하지 못할 수 있다. percent100 height도 부모 확정 높이가 없으면 고정 프레임 크기 보장이 안 됨.",
+      "fix": "현재 실행 보류 유지. 후속 구현에는 data/code 분리·HTML/script context escape·DSL 값 검증·파일명/경로 제한, exactversion+binaryhash·필요 offline 리소스, explicit frame size·font/resource readiness·실제 SVG export/한국어 렌더를 검증. 엔진의 취약성이 확정됐다고 쓰지 않음.",
+      "blocks_knowledge_draft": false,
+      "blocks_engine_adoption_now": true
+    },
+    {
+      "id": "PI-F06",
+      "severity": "high_if_quantitative_examples_used_unchecked",
+      "title": "수치 예시는 계량척도·결측·단위의 안전 계약을 제공하지 않는다",
+      "evidence": [
+        "antv-infographic/skills/infographic-item-creator/references/item-prompt.md:458",
+        "antv-infographic/skills/infographic-item-creator/references/item-prompt.md:466",
+        "antv-infographic/skills/infographic-item-creator/references/item-prompt.md:494",
+        "antv-infographic/skills/infographic-item-creator/references/item-prompt.md:718",
+        "academic-presentation/slide_patterns.md:262",
+        "antv-infographic/skills/infographic-creator/SKILL.md :: values / step"
+      ],
+      "finding": "Item example formatter 기본은 %이고 data.item.value??0·value/maxValue*height는 입력 domain guard 없이 제시된다. 모든 값0이면0/0, 빈 배열이면 max=-Infinity, missing→0은 결측 왜곡 위험; undefined만 검사하는 example을 null 입력에도 안전하다고 할 수 없다. API type에는 null을 선언하지 않으므로 입력 계약을 먼저 확인해야 함. ordinal values/step 순서가 실제 시간 간격이나 x척도 증명이 아니며 axis baseline·negative/log·CI·pie denominator·sample population은 명시되지 않음.",
+      "fix": "raw string+parsed number+unit+missing state를 보존하고 unknown은 기권. chart 종류별 common domain/축·tick·length/area·분모·결측·오차·시간 간격·비교 동일성을 자체 검수 항목으로 추가하되 원문이 보증했다고 쓰지 않음. default %를 회사 기본값으로 가져오지 않음.",
+      "static_counterexample_not_executed": "value가 전부0인 자료에서 maxValue=0이므로 barHeight 연산0/0. 설비 수12는12개이며 formatter의12%가 아님.",
+      "blocks_knowledge_draft": false,
+      "engine_bug_confirmed": false
+    },
+    {
+      "id": "PI-F07",
+      "severity": "medium",
+      "title": "text-only·언어 보존 예외와 한국어 실렌더 경계를 유지해야 한다",
+      "evidence": [
+        "antv-infographic/skills/infographic-syntax-creator/SKILL.md:16",
+        "antv-infographic/skills/infographic-syntax-creator/SKILL.md:23",
+        "antv-infographic/skills/infographic-syntax-creator/references/prompt.md :: language lock",
+        "antv-infographic/skills/infographic-item-creator/references/item-prompt.md :: Text",
+        "academic-presentation/SKILL.md :: Typography / Avoid"
+      ],
+      "finding": "AntV default icon 규칙에는 explicit text-only/chart-only 예외가 있다. academic decorative icon 금지와 함께 적용하려면 목적 선택이 필요함. syntax infer missing pieces는 내용·수치·관계의 근거 없는 보충을 허용하는 프로젝트 지침이 아님. English/Chinese 예시와 language lock만으로 한국어 글리프·줄바꿈·읽기시간·fallback·clip이 검수됐다고 할 수 없고 Text wordWrap false/행간1.2는 framework default 예시임.",
+      "fix": "언어/원문 보존·meaningful icon optional·근거없음 abstain을 프로젝트 계약으로 명시. 코드블록 only 요구는 DSL 산출물 형식에만 적용하고 감사/근거·기권 metadata 기록을 지우지 않음. 한국어/프레임비/폰트 파일·납품 크기·노출시간은 후속 실자료 렌더 검수.",
+      "blocks_knowledge_draft": false
+    },
+    {
+      "id": "PI-F08",
+      "severity": "medium",
+      "title": "도구 구조/템플릿/애니메이션 이름을 회사 분류와 품질 증거로 대체하면 안 된다",
+      "evidence": [
+        "antv-infographic/skills/infographic-structure-creator/references/structure-prompt.md :: structure categories / coordinates / parameter defaults",
+        "antv-infographic/skills/infographic-creator/SKILL.md :: Available Templates",
+        "antv-infographic/README.md :: Features / Streaming Rendering",
+        "academic-presentation/SKILL.md :: Step 4"
+      ],
+      "finding": "AntV7 structure families·~200 templates·애니메이션 template 명칭·x/y/width/height 규칙·forEach/noReact·기본 gap/radius·자동 중앙정렬은 도구 계약 또는 marketing/author guidance. 실제 taxonomy14/모션43·회사 AE 구현·정량효과·한국어 전달력 검증이 아님. academic subagent QA나 fix-until-pass도 현재 작업의 위임/실행 명령으로 적용하지 않음.",
+      "fix": "source template name을 외부 이름으로 유지하고 source meaning/프로젝트 적용/검수 상태를 분리. R3-2 승인된 기존14+표/순환/분기 지원후보 경계를 유지. streamingSVG는 완성영상 타이밍·프레임/음성 동기·정보유지시험과 별개로 기록. 새 회사필수/미정R5 값 채우기/엔진 설치/자동src수정/무한회귀 제외.",
+      "blocks_knowledge_draft": false
+    }
+  ],
+  "license_inventory": [
+    {
+      "repository": "academic-presentation",
+      "root_license": "MIT; Copyright(c)2026 Gabberflast",
+      "frontmatter_license": "Proprietary. LICENSE.txt has complete terms",
+      "readme_license": "MIT",
+      "named_license_file_present": false,
+      "status": "inconsistent_declarations_recorded; no_legal_determination",
+      "notices": "permission/copyright 포함과 AS IS 명시",
+      "package_json_in_tree": false
+    },
+    {
+      "repository": "antv-infographic",
+      "root_license": "MIT; Copyright(c)2025 AntV",
+      "package_license": "MIT",
+      "package_version": "0.2.20",
+      "root_terms_or_disclaimer_in_fixed_tree": false,
+      "dependency_license_reviewed": false,
+      "resource_font_icon_license_reviewed": false,
+      "status": "root_file_explicit_only; dependencies_and_assets_unknown"
+    }
+  ],
+  "phase_boundary": {
+    "phase00_finishable": [
+      "발표 주장/근거/한 메시지의 조건부 적용 카드와 공개 근거/해석 표시",
+      "외부 구조명·단위·원문·text-only 예외·한국어검수 질문",
+      "라이선스충돌·자료깊이·참조누락·codeexample한계와 runtime보류 기록",
+      "프로젝트 자체 계량검수 질문/합성반례를 원문 주장과 분리"
+    ],
+    "phase01A": "실제 영상/발표 화면의 요소·문구·수치·시간/관계를 관측하고 원문 위치 연결. 이 출처의 예제는 회사 분석자료가 아님.",
+    "phase01B": "실제 사례·회사 결정으로 타입/레이아웃/모션 문법과 값 채택 여부 검토.",
+    "phase02": "브리프·청중·근거·매체·프레임비·길이에 맞춰 실제 주장/순서/그래픽·도표·발표/무음전달 계획. 조건부 카드가 실제 기획 완료를 뜻하지 않음.",
+    "engine_future_only_if_needed": "정확 source/binary/dependencies 확보와 code/input/resource/security/license/한국어/render/export 검증을 좁게 수행. 현재 fullengine reviewed/installed/rendered 금지.",
+    "no_unbounded_expansion": "PPTX 기술 구현·외부primary 연구·전체 AntV engine·전체dependency까지 모두 읽어야 Phase00 지식후보를 기록할 수 있다고 확대하지 않음. 해당 실행 또는 규범 주장이 필요할 때만 재확인."
+  },
+  "file_manifest": [
+    {
+      "repository": "academic-presentation",
+      "repository_origin": "Gabberflast/academic-pptx-skill",
+      "commit": "9f2b703ffe8d1449851617665ab1ffb3516d54ac",
+      "path": "확보트리.json",
+      "local_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\academic-presentation\\확보트리.json",
+      "bytes": 2038,
+      "sha256": "5bcf2fffd79052f42aa8dc4af64768a350e8f5efaaf0df31ea7557e90b65c065",
+      "acquisition_sha256": null,
+      "acquisition_hash_match": null,
+      "source_url": null,
+      "git_blob": null,
+      "depth": "metadata_selected_path_and_license_only",
+      "executed": false
+    },
+    {
+      "repository": "academic-presentation",
+      "repository_origin": "Gabberflast/academic-pptx-skill",
+      "commit": "9f2b703ffe8d1449851617665ab1ffb3516d54ac",
+      "path": "content_guidelines.md",
+      "local_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\academic-presentation\\content_guidelines.md",
+      "bytes": 12160,
+      "sha256": "d9b0351b31995d2aa34ac31550fb430310bf1ba6bfc19e1767eba8f24f807bf1",
+      "acquisition_sha256": "d9b0351b31995d2aa34ac31550fb430310bf1ba6bfc19e1767eba8f24f807bf1",
+      "acquisition_hash_match": true,
+      "source_url": "https://github.com/Gabberflast/academic-pptx-skill/blob/9f2b703ffe8d1449851617665ab1ffb3516d54ac/content_guidelines.md",
+      "git_blob": "b81a8de7862d41630d0a0206a9eb43df49f9bbaa",
+      "depth": "full_text_read_static_review",
+      "executed": false
+    },
+    {
+      "repository": "academic-presentation",
+      "repository_origin": "Gabberflast/academic-pptx-skill",
+      "commit": "9f2b703ffe8d1449851617665ab1ffb3516d54ac",
+      "path": "LICENSE",
+      "local_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\academic-presentation\\LICENSE",
+      "bytes": 1068,
+      "sha256": "20d9c009d0e5d7150da5e081c8d5a81463731dcf338323992a74a0648e6fb542",
+      "acquisition_sha256": "20d9c009d0e5d7150da5e081c8d5a81463731dcf338323992a74a0648e6fb542",
+      "acquisition_hash_match": true,
+      "source_url": "https://github.com/Gabberflast/academic-pptx-skill/blob/9f2b703ffe8d1449851617665ab1ffb3516d54ac/LICENSE",
+      "git_blob": "cdef61bab184da8f8d1e114dfd2bdd1ede990ddb",
+      "depth": "full_text_read_static_review",
+      "executed": false
+    },
+    {
+      "repository": "academic-presentation",
+      "repository_origin": "Gabberflast/academic-pptx-skill",
+      "commit": "9f2b703ffe8d1449851617665ab1ffb3516d54ac",
+      "path": "README.md",
+      "local_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\academic-presentation\\README.md",
+      "bytes": 3033,
+      "sha256": "c27a1813d8af720fb1bfbbad7582df6d515fd7c9202f2e50be94aae65532fa3e",
+      "acquisition_sha256": "c27a1813d8af720fb1bfbbad7582df6d515fd7c9202f2e50be94aae65532fa3e",
+      "acquisition_hash_match": true,
+      "source_url": "https://github.com/Gabberflast/academic-pptx-skill/blob/9f2b703ffe8d1449851617665ab1ffb3516d54ac/README.md",
+      "git_blob": "0ae6648153aae53e8b4117fd9e513904cf28fcde",
+      "depth": "full_text_read_static_review",
+      "executed": false
+    },
+    {
+      "repository": "academic-presentation",
+      "repository_origin": "Gabberflast/academic-pptx-skill",
+      "commit": "9f2b703ffe8d1449851617665ab1ffb3516d54ac",
+      "path": "SKILL.md",
+      "local_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\academic-presentation\\SKILL.md",
+      "bytes": 7557,
+      "sha256": "c321851cd9d9b98d429de4798766207525024f3f28c3fe6dd5932ae79a2efb28",
+      "acquisition_sha256": "c321851cd9d9b98d429de4798766207525024f3f28c3fe6dd5932ae79a2efb28",
+      "acquisition_hash_match": true,
+      "source_url": "https://github.com/Gabberflast/academic-pptx-skill/blob/9f2b703ffe8d1449851617665ab1ffb3516d54ac/SKILL.md",
+      "git_blob": "0963891fb34074893f16e71bf9e857cf1e2ed696",
+      "depth": "full_text_read_static_review",
+      "executed": false
+    },
+    {
+      "repository": "academic-presentation",
+      "repository_origin": "Gabberflast/academic-pptx-skill",
+      "commit": "9f2b703ffe8d1449851617665ab1ffb3516d54ac",
+      "path": "slide_patterns.md",
+      "local_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\academic-presentation\\slide_patterns.md",
+      "bytes": 20082,
+      "sha256": "f367318f3a9e4b0031e10c179cc673b7a59abeeb3bc0249680e64d3277f18764",
+      "acquisition_sha256": "f367318f3a9e4b0031e10c179cc673b7a59abeeb3bc0249680e64d3277f18764",
+      "acquisition_hash_match": true,
+      "source_url": "https://github.com/Gabberflast/academic-pptx-skill/blob/9f2b703ffe8d1449851617665ab1ffb3516d54ac/slide_patterns.md",
+      "git_blob": "61622ad819e5a756b49a705805ee2a179f5d87d6",
+      "depth": "full_text_read_static_review",
+      "executed": false
+    },
+    {
+      "repository": "antv-infographic",
+      "repository_origin": "antvis/Infographic",
+      "commit": "2ea1894255e4002c7735586778be86d13ec30346",
+      "path": "확보트리.json",
+      "local_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\antv-infographic\\확보트리.json",
+      "bytes": 272240,
+      "sha256": "433fceb6bbecc5e0de835e68ea3e11078f7e64e8bb9deadb045721dfccd51f4a",
+      "acquisition_sha256": null,
+      "acquisition_hash_match": null,
+      "source_url": null,
+      "git_blob": null,
+      "depth": "metadata_selected_path_and_license_only",
+      "executed": false
+    },
+    {
+      "repository": "antv-infographic",
+      "repository_origin": "antvis/Infographic",
+      "commit": "2ea1894255e4002c7735586778be86d13ec30346",
+      "path": "LICENSE",
+      "local_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\antv-infographic\\LICENSE",
+      "bytes": 1061,
+      "sha256": "cacec99fa5f02241b33906689924718962f4991cd6eada3624f56c6bd4f3ff28",
+      "acquisition_sha256": "cacec99fa5f02241b33906689924718962f4991cd6eada3624f56c6bd4f3ff28",
+      "acquisition_hash_match": true,
+      "source_url": "https://github.com/antvis/Infographic/blob/2ea1894255e4002c7735586778be86d13ec30346/LICENSE",
+      "git_blob": "d52dc4b1325f6fef156f544eff1d12cf5cd863bc",
+      "depth": "full_text_read_static_review",
+      "executed": false
+    },
+    {
+      "repository": "antv-infographic",
+      "repository_origin": "antvis/Infographic",
+      "commit": "2ea1894255e4002c7735586778be86d13ec30346",
+      "path": "package.json",
+      "local_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\antv-infographic\\package.json",
+      "bytes": 4669,
+      "sha256": "41e6d94ac4ff3d22dd4b18604c0a9d2495ce3c43061b31a6f613138fd0c8bf50",
+      "acquisition_sha256": "41e6d94ac4ff3d22dd4b18604c0a9d2495ce3c43061b31a6f613138fd0c8bf50",
+      "acquisition_hash_match": true,
+      "source_url": "https://github.com/antvis/Infographic/blob/2ea1894255e4002c7735586778be86d13ec30346/package.json",
+      "git_blob": "9df48e35f709ca8dca0f00e30d1ae417f2e8f619",
+      "depth": "full_text_read_static_review",
+      "executed": false
+    },
+    {
+      "repository": "antv-infographic",
+      "repository_origin": "antvis/Infographic",
+      "commit": "2ea1894255e4002c7735586778be86d13ec30346",
+      "path": "README.md",
+      "local_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\antv-infographic\\README.md",
+      "bytes": 9244,
+      "sha256": "7ebe3d1d001ff66171cc4ce8778de0f5f0a03b856c02e0500181a35c8cda8687",
+      "acquisition_sha256": "7ebe3d1d001ff66171cc4ce8778de0f5f0a03b856c02e0500181a35c8cda8687",
+      "acquisition_hash_match": true,
+      "source_url": "https://github.com/antvis/Infographic/blob/2ea1894255e4002c7735586778be86d13ec30346/README.md",
+      "git_blob": "796b569b29cc4bea0c2473db8a966d345188f386",
+      "depth": "full_text_read_static_review",
+      "executed": false
+    },
+    {
+      "repository": "antv-infographic",
+      "repository_origin": "antvis/Infographic",
+      "commit": "2ea1894255e4002c7735586778be86d13ec30346",
+      "path": "README.zh-CN.md",
+      "local_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\antv-infographic\\README.zh-CN.md",
+      "bytes": 9049,
+      "sha256": "2a777b989201e19ff031e646574c64e82ed5f4b1c28c0f09a41940a4345b48ea",
+      "acquisition_sha256": "2a777b989201e19ff031e646574c64e82ed5f4b1c28c0f09a41940a4345b48ea",
+      "acquisition_hash_match": true,
+      "source_url": "https://github.com/antvis/Infographic/blob/2ea1894255e4002c7735586778be86d13ec30346/README.zh-CN.md",
+      "git_blob": "1a189bd6e1407639d3945590a32377f8eaa33905",
+      "depth": "full_text_read_static_review",
+      "executed": false
+    },
+    {
+      "repository": "antv-infographic",
+      "repository_origin": "antvis/Infographic",
+      "commit": "2ea1894255e4002c7735586778be86d13ec30346",
+      "path": "skills/infographic-creator/SKILL.md",
+      "local_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\antv-infographic\\skills\\infographic-creator\\SKILL.md",
+      "bytes": 15565,
+      "sha256": "00d0f5da0d7f17e8d23e9e06ce67f31d187b0c190f118aed50fa7cc736dcbc8b",
+      "acquisition_sha256": "00d0f5da0d7f17e8d23e9e06ce67f31d187b0c190f118aed50fa7cc736dcbc8b",
+      "acquisition_hash_match": true,
+      "source_url": "https://github.com/antvis/Infographic/blob/2ea1894255e4002c7735586778be86d13ec30346/skills/infographic-creator/SKILL.md",
+      "git_blob": "cadecd788fc891869eeeec0de9d5a3ea1b3a551d",
+      "depth": "full_text_read_static_review",
+      "executed": false
+    },
+    {
+      "repository": "antv-infographic",
+      "repository_origin": "antvis/Infographic",
+      "commit": "2ea1894255e4002c7735586778be86d13ec30346",
+      "path": "skills/infographic-item-creator/SKILL.md",
+      "local_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\antv-infographic\\skills\\infographic-item-creator\\SKILL.md",
+      "bytes": 1285,
+      "sha256": "d4be2e284c1cf5308c3e17f42e3ad0cd7786f77ada26d3d35bf4f83a2d76608c",
+      "acquisition_sha256": "d4be2e284c1cf5308c3e17f42e3ad0cd7786f77ada26d3d35bf4f83a2d76608c",
+      "acquisition_hash_match": true,
+      "source_url": "https://github.com/antvis/Infographic/blob/2ea1894255e4002c7735586778be86d13ec30346/skills/infographic-item-creator/SKILL.md",
+      "git_blob": "a6e2f0da34cf3942c66c456170d6ce5941cbd4c3",
+      "depth": "full_text_read_static_review",
+      "executed": false
+    },
+    {
+      "repository": "antv-infographic",
+      "repository_origin": "antvis/Infographic",
+      "commit": "2ea1894255e4002c7735586778be86d13ec30346",
+      "path": "skills/infographic-item-creator/references/item-prompt.md",
+      "local_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\antv-infographic\\skills\\infographic-item-creator\\references\\item-prompt.md",
+      "bytes": 23478,
+      "sha256": "dd80b14e556c12739c337271afb18458015346006110469af4becd38e08b3f47",
+      "acquisition_sha256": "dd80b14e556c12739c337271afb18458015346006110469af4becd38e08b3f47",
+      "acquisition_hash_match": true,
+      "source_url": "https://github.com/antvis/Infographic/blob/2ea1894255e4002c7735586778be86d13ec30346/skills/infographic-item-creator/references/item-prompt.md",
+      "git_blob": "5c722e98062c7a4825d776591165b5bb3ee66399",
+      "depth": "full_text_read_static_review",
+      "executed": false
+    },
+    {
+      "repository": "antv-infographic",
+      "repository_origin": "antvis/Infographic",
+      "commit": "2ea1894255e4002c7735586778be86d13ec30346",
+      "path": "skills/infographic-structure-creator/SKILL.md",
+      "local_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\antv-infographic\\skills\\infographic-structure-creator\\SKILL.md",
+      "bytes": 1427,
+      "sha256": "54faddf33e39eb00545f2a25c406b60670bf2dbc21857a04fcc78eeb13c2edc5",
+      "acquisition_sha256": "54faddf33e39eb00545f2a25c406b60670bf2dbc21857a04fcc78eeb13c2edc5",
+      "acquisition_hash_match": true,
+      "source_url": "https://github.com/antvis/Infographic/blob/2ea1894255e4002c7735586778be86d13ec30346/skills/infographic-structure-creator/SKILL.md",
+      "git_blob": "6cb8b4a795321eb18baa1ffe0027a9671752f8f6",
+      "depth": "full_text_read_static_review",
+      "executed": false
+    },
+    {
+      "repository": "antv-infographic",
+      "repository_origin": "antvis/Infographic",
+      "commit": "2ea1894255e4002c7735586778be86d13ec30346",
+      "path": "skills/infographic-structure-creator/references/structure-prompt.md",
+      "local_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\antv-infographic\\skills\\infographic-structure-creator\\references\\structure-prompt.md",
+      "bytes": 29600,
+      "sha256": "a541f70c3c52189391947f453d6dfd42d561ffe88519681d7433fa163075657a",
+      "acquisition_sha256": "a541f70c3c52189391947f453d6dfd42d561ffe88519681d7433fa163075657a",
+      "acquisition_hash_match": true,
+      "source_url": "https://github.com/antvis/Infographic/blob/2ea1894255e4002c7735586778be86d13ec30346/skills/infographic-structure-creator/references/structure-prompt.md",
+      "git_blob": "224412262b7f18d01251f9e16405fa45a68a6b1f",
+      "depth": "full_text_read_static_review",
+      "executed": false
+    },
+    {
+      "repository": "antv-infographic",
+      "repository_origin": "antvis/Infographic",
+      "commit": "2ea1894255e4002c7735586778be86d13ec30346",
+      "path": "skills/infographic-syntax-creator/SKILL.md",
+      "local_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\antv-infographic\\skills\\infographic-syntax-creator\\SKILL.md",
+      "bytes": 2460,
+      "sha256": "5d954cc22ea77bbd142c6cd257fd346b1bd50b06369f40d50c39c76cef2f4b4a",
+      "acquisition_sha256": "5d954cc22ea77bbd142c6cd257fd346b1bd50b06369f40d50c39c76cef2f4b4a",
+      "acquisition_hash_match": true,
+      "source_url": "https://github.com/antvis/Infographic/blob/2ea1894255e4002c7735586778be86d13ec30346/skills/infographic-syntax-creator/SKILL.md",
+      "git_blob": "53b8ec47699dfc11cb994af3514bd353c7386e79",
+      "depth": "full_text_read_static_review",
+      "executed": false
+    },
+    {
+      "repository": "antv-infographic",
+      "repository_origin": "antvis/Infographic",
+      "commit": "2ea1894255e4002c7735586778be86d13ec30346",
+      "path": "skills/infographic-syntax-creator/references/prompt.md",
+      "local_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\antv-infographic\\skills\\infographic-syntax-creator\\references\\prompt.md",
+      "bytes": 14790,
+      "sha256": "0c6865b19dc5bc515ff9ed3c9d19c7e13ace9ebb1de6a1bfbb73a61f728af81f",
+      "acquisition_sha256": "0c6865b19dc5bc515ff9ed3c9d19c7e13ace9ebb1de6a1bfbb73a61f728af81f",
+      "acquisition_hash_match": true,
+      "source_url": "https://github.com/antvis/Infographic/blob/2ea1894255e4002c7735586778be86d13ec30346/skills/infographic-syntax-creator/references/prompt.md",
+      "git_blob": "819e6f8514aa04a7473a8ee3c738e8c2fb327bc3",
+      "depth": "full_text_read_static_review",
+      "executed": false
+    },
+    {
+      "repository": "antv-infographic",
+      "repository_origin": "antvis/Infographic",
+      "commit": "2ea1894255e4002c7735586778be86d13ec30346",
+      "path": "skills/infographic-template-updater/SKILL.md",
+      "local_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\antv-infographic\\skills\\infographic-template-updater\\SKILL.md",
+      "bytes": 1295,
+      "sha256": "dd83f1dab4eb4e3493f0c043bf5f6cbebb5c68c14ab4a75b8d6f76b7f6726787",
+      "acquisition_sha256": "dd83f1dab4eb4e3493f0c043bf5f6cbebb5c68c14ab4a75b8d6f76b7f6726787",
+      "acquisition_hash_match": true,
+      "source_url": "https://github.com/antvis/Infographic/blob/2ea1894255e4002c7735586778be86d13ec30346/skills/infographic-template-updater/SKILL.md",
+      "git_blob": "c139f55d99f14a6c428253f4384f1ff95f47ddc8",
+      "depth": "full_text_read_static_review",
+      "executed": false
+    }
+  ],
+  "supporting_records": [
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\05_출처와검토\\R3_발표설명스킬_원본확보목록.json",
+      "sha256": "453688c4e34bb37fc009678405514a5b21a30582ec348bb0d4951bafd9736ff6",
+      "version": "0.1.1",
+      "depth": "selected_two_repo_metadata_read"
+    },
+    {
+      "path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\확보트리.json",
+      "sha256": "e27539a41b5cf43dcdca2d5ae04961c18f04ffe6227ba05562eeed26fb86d5b3",
+      "depth": "named_cross_package_path_presence_only",
+      "content_reviewed": false
+    }
+  ],
+  "read_depth_summary": {
+    "acquired_files_in_selected_two_copies": 19,
+    "full_text_read_static_review": 17,
+    "metadata_tree_reads": 2,
+    "academic_full_text_files": 5,
+    "antv_full_text_files": 12,
+    "skill_bodies": 6,
+    "local_called_reference_bodies": 5,
+    "hashes_compared_with_acquisition": 17,
+    "hash_mismatches": 0,
+    "executed_code_or_render_count": 0,
+    "note": "실제읽은파일sha+depth 분모. Engine/source/packagecode와 전체 deps에 대한 완료 주장 아님"
+  }
+}

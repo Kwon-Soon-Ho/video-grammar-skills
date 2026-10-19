@@ -1,0 +1,42 @@
+{
+  "case_id": "T02",
+  "condition": "with_skill",
+  "recorded_at": "2026-10-16T06:25:14.599848+00:00",
+  "grader": "root source/meaning review; not independent human",
+  "reference_level": "user_provided_correction",
+  "expectations": [
+    {
+      "text": "E 주변의 얇은 발광선/빛 통과를 본체와 별도 식별",
+      "passed": true,
+      "evidence": "상하 수평빛띠를 패널/격자와 별도 object로 식별; native upperlight crop와 원본0.4~1.4 일치."
+    },
+    {
+      "text": "가감속을 못 정해도 존재 관측을 지우지 않음",
+      "passed": true,
+      "evidence": "위치 진행/밝아짐은 기록하고 정확한 빛 가감속은 unknown으로 보존."
+    },
+    {
+      "text": "측정하지 않은 경로/정확한 이징을 확정하지 않음",
+      "passed": true,
+      "evidence": "전체 E 외곽 경로/정확한 AE 곡선을 단정하지 않음."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3
+  },
+  "case_status": "requirements_satisfied",
+  "notes": [
+    "십자 좌표 가속과 격자 수축 후보도 추가 기록; 관측 성격과 정밀 곡선을 구분."
+  ],
+  "timing": null,
+  "tokens": null,
+  "telemetry_note": "per-run telemetry unavailable; no synthesized averages",
+  "eval_feedback": {
+    "suggestions": [
+      "Known exposed windows, one run per condition, same agent batches; this is regression evidence, not generalization accuracy."
+    ]
+  },
+  "additional_content_issues": []
+}

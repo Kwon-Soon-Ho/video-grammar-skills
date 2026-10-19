@@ -1,0 +1,94 @@
+{
+  "definition_version": "video-pattern-definition-0.2",
+  "category": "FLOW",
+  "name": "조립·기울임 설명과 후반 마감",
+  "source": {
+    "case_id": "DEV-NEW-N-REFERENCE-20261019",
+    "source_sha256": "42d87e0cc8c507ccb2a8924ae3252d689ef103d4ca3b1219ec1e588f6f474a03",
+    "observation_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\records\\NEW-N\\observations.json",
+    "observation_sha256": "4a843b1bc4fb5a9a072a8970b221fbf055d06647d2f5482b1a384d954b40cd79",
+    "claim_ids": [
+      "c006",
+      "c007",
+      "c009",
+      "c017",
+      "c024",
+      "c025",
+      "c037",
+      "c038",
+      "c051",
+      "c040",
+      "c041",
+      "c042",
+      "c044",
+      "c046",
+      "c049",
+      "c050",
+      "c053",
+      "c055"
+    ],
+    "unknown_ids": [
+      "u02"
+    ]
+  },
+  "definition": {
+    "summary": "전체 사례의 전개·유지·겹침을 연결한다. 세부 정의를 전체 CARD 하나로 합치지 않는다.",
+    "stages": [
+      {
+        "name": "초기 구도와 판 조립",
+        "timing": "166~168.5",
+        "claim_ids": [
+          "c006",
+          "c007",
+          "c009"
+        ]
+      },
+      {
+        "name": "단면·오른쪽 설명과 회전 강조",
+        "timing": "167.3~174",
+        "claim_ids": [
+          "c017",
+          "c024",
+          "c025",
+          "c037",
+          "c038",
+          "c051"
+        ]
+      },
+      {
+        "name": "왼쪽 설명과 두 번째 조립",
+        "timing": "173~176",
+        "claim_ids": [
+          "c040",
+          "c041",
+          "c042",
+          "c044"
+        ]
+      },
+      {
+        "name": "외곽 강조와 상부 마감",
+        "timing": "176~181",
+        "claim_ids": [
+          "c046",
+          "c049",
+          "c050",
+          "c053",
+          "c055"
+        ]
+      }
+    ],
+    "overlap_notes": [
+      "새 설명/세부 효과가 생겨도 기존 맥락은 유지될 수 있다.",
+      "동시에 진행되는 배경·문구·도형 변화를 직렬 단계로 압축하지 않는다."
+    ],
+    "stable_context": "32:9 전체 배경 위에 왼쪽 길이 방향 CG, 오른쪽 단면 CG, 좌상단 로고 리본, 각 도해 위 설명, 중앙 하단 공통 자막을 배치한다. 후반 상부 판 조립·청록 외곽 강조·마감 판을 순차 추가하며 오른쪽 단면과 설명은 유지한다. 이 상태의 시간 구간: [166, 168.8]초. 출현·퇴장·유지의 정확 범위는 개별 주장과 흐름에 따름."
+  },
+  "applicability": "관측한 동작 구조의 초안. 새 목적·문구 길이·화면비·대상 형태에서 근거·차이·가독성·성공 여부를 다시 확인. 수치·문구는 이 사례의 변형값이며 보편 기준 아님.",
+  "counterexamples": [
+    "새 영상·새 문구로 재제작/렌더 검증하지 않음.",
+    "원본 구현 설정·원제작 의도는 영상만으로 확정하지 않음."
+  ],
+  "status": "draft",
+  "supersedes": null,
+  "derived_from": []
+}

@@ -1,0 +1,54 @@
+{
+  "scope": "execution log presence and final artifact identity, not a broader content test",
+  "executions": [
+    {
+      "log_name": "01_자료확인",
+      "command": [
+        "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+        "-B",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\01_자료확인.py"
+      ],
+      "exit_code": 0,
+      "stdout_path": "01_자료확인.stdout.txt",
+      "stdout_bytes": 194682,
+      "stdout_sha256": "020d0fd2da03273487395b4493dc53e9f4094f9d23c52c37fe8c15a7ae9f51b4",
+      "stderr_path": "01_자료확인.stderr.txt",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "log_name": "02_근거발췌",
+      "command": [
+        "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+        "-B",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\02_근거발췌.py"
+      ],
+      "exit_code": 0,
+      "stdout_path": "02_근거발췌.stdout.txt",
+      "stdout_bytes": 32202,
+      "stdout_sha256": "5a52db42cc9c06c85facd622575bc29306ebd6330ec129dcae634f4e8c3f56db",
+      "stderr_path": "02_근거발췌.stderr.txt",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "log_name": "03_카드작성과검사",
+      "command": [
+        "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+        "-B",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\시범운영_20261016\\실행\\eval-01-큐레이터\\candidate\\outputs\\03_카드작성과검사.py"
+      ],
+      "exit_code": 0,
+      "stdout_path": "03_카드작성과검사.stdout.txt",
+      "stdout_bytes": 2495,
+      "stdout_sha256": "e0a2dc4ec43887395c1d870b2366911c0aec7a998e69d8d07db0d980fcaf5c46",
+      "stderr_path": "03_카드작성과검사.stderr.txt",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "target_still_matches_saved_result_sha": true,
+  "backup_still_matches_before_sha": true,
+  "shell_combined_output_notice": "Attempting to perform the InitializeDefaultDrives operation on the 'FileSystem' provider failed.",
+  "shell_notice_observed_in": "exec_command combined output at PowerShell entry; the logged Python runs each returned exit 0. Do not interpret empty Python stderr as no shell notice."
+}

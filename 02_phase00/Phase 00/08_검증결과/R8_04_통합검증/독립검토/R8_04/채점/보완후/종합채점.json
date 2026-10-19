@@ -1,0 +1,178 @@
+{
+  "scope": "보완후11회만. 기존8회채점자료보존/순차인계자료미열람.",
+  "summary": {
+    "passed": 42,
+    "failed": 1,
+    "total": 43,
+    "pass_rate": 0.9767441860465116
+  },
+  "runs": [
+    {
+      "case": 1,
+      "name": "큐레이터_정상판본정리",
+      "classification": "normal",
+      "mode": "normal",
+      "grading": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-01-큐레이터_정상판본정리\\candidate\\grading.json",
+      "passed": 6,
+      "failed": 0,
+      "total": 6,
+      "pass_rate": 1.0,
+      "findings": []
+    },
+    {
+      "case": 2,
+      "name": "큐레이터_저장후복구",
+      "classification": "retest",
+      "mode": "validation_after_write",
+      "grading": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-02-큐레이터_저장후복구\\candidate\\grading.json",
+      "passed": 3,
+      "failed": 0,
+      "total": 3,
+      "pass_rate": 1.0,
+      "findings": []
+    },
+    {
+      "case": 3,
+      "name": "큐레이터_저장후외부변경",
+      "classification": "new_fault_combination",
+      "mode": "external_after_write",
+      "grading": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-03-큐레이터_저장후외부변경\\candidate\\grading.json",
+      "passed": 4,
+      "failed": 0,
+      "total": 4,
+      "pass_rate": 1.0,
+      "findings": []
+    },
+    {
+      "case": 4,
+      "name": "큐레이터_쓰기전외부변경",
+      "classification": "new_fault_branch",
+      "mode": "external_before_write",
+      "grading": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-04-큐레이터_쓰기전외부변경\\candidate\\grading.json",
+      "passed": 4,
+      "failed": 0,
+      "total": 4,
+      "pass_rate": 1.0,
+      "findings": []
+    },
+    {
+      "case": 5,
+      "name": "큐레이터_백업거부",
+      "classification": "new_fault_branch",
+      "mode": "backup_denied",
+      "grading": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-05-큐레이터_백업거부\\candidate\\grading.json",
+      "passed": 3,
+      "failed": 0,
+      "total": 3,
+      "pass_rate": 1.0,
+      "findings": [
+        {
+          "kind": "guidance_lookup_gap",
+          "text": "transcript: 현재상태_정정표.json은 DB 루트에서 존재하지 않았다. DB직하 부재는 사실이나 안내가 가리키는14하위에는 존재. 좁은 guidance 변경에 상태 정정을 적용하지 않았으므로 정정 미적용 자체는 적절."
+        }
+      ]
+    },
+    {
+      "case": 6,
+      "name": "큐레이터_복구거부",
+      "classification": "new_fault_branch",
+      "mode": "restore_denied",
+      "grading": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-06-큐레이터_복구거부\\candidate\\grading.json",
+      "passed": 4,
+      "failed": 0,
+      "total": 4,
+      "pass_rate": 1.0,
+      "findings": [
+        {
+          "kind": "guidance_lookup_gap",
+          "text": "결과/기록은 스킬이 안내한 현재상태 정정표를 루트에서 미제공이라고 보고.14하위 제공 파일의 확인 누락. 정정 미적용과 변경안전성은 별도."
+        }
+      ]
+    },
+    {
+      "case": 7,
+      "name": "검토자_외부변경",
+      "classification": "new_fault_combination",
+      "mode": "external_after_write",
+      "grading": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-07-검토자_외부변경\\candidate\\grading.json",
+      "passed": 4,
+      "failed": 0,
+      "total": 4,
+      "pass_rate": 1.0,
+      "findings": [
+        {
+          "kind": "imprecise_status_label",
+          "text": "결과.json status=partial_write_external_change_preserved_postsave_validation_failed이지만 write는 정상 후보전체저장이고 partial_or_invalid_json=false. 실제 보고본문은 외부변경/미복구를 정확히 구분하므로 손상JSON을 숨긴 것은 아님."
+        }
+      ]
+    },
+    {
+      "case": 8,
+      "name": "검토자_검사실패복구",
+      "classification": "retest",
+      "mode": "validation_after_write",
+      "grading": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-08-검토자_검사실패복구\\candidate\\grading.json",
+      "passed": 3,
+      "failed": 0,
+      "total": 3,
+      "pass_rate": 1.0,
+      "findings": [
+        {
+          "kind": "guard_provenance_limit",
+          "text": "작업실행.py는 generic CLI wrapper이고 별도 실행 가능한 restore 소유 비교 assert가 보존되지 않음. 다만 실제 read(sequence5) 후 동일한 이전 owned SHA를 restore expected에 사용했고 transcript가 현재 read→후보소유 일치확인→restore 판단을 명시. 이 실제 관측 결정만 인정."
+        }
+      ]
+    },
+    {
+      "case": 9,
+      "name": "기록관리자_부분저장복구",
+      "classification": "retest",
+      "mode": "partial_second_write",
+      "grading": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-09-기록관리자_부분저장복구\\candidate\\grading.json",
+      "passed": 3,
+      "failed": 1,
+      "total": 4,
+      "pass_rate": 0.75,
+      "findings": [
+        {
+          "kind": "false_guidance_absence_claim",
+          "text": "결과.json current_guidance 및 execute.py report()는14하위 안내·정정표 모두 없음이라고 명시하나 fixture/current 실제 파일 모두 존재. source/basis 일부 미제공과 다른 오류."
+        }
+      ]
+    },
+    {
+      "case": 10,
+      "name": "기록관리자_외부변경",
+      "classification": "retest",
+      "mode": "external_after_write",
+      "grading": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-10-기록관리자_외부변경\\candidate\\grading.json",
+      "passed": 4,
+      "failed": 0,
+      "total": 4,
+      "pass_rate": 1.0,
+      "findings": []
+    },
+    {
+      "case": 11,
+      "name": "기록관리자_복구거부",
+      "classification": "retest",
+      "mode": "restore_denied",
+      "grading": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-11-기록관리자_복구거부\\candidate\\grading.json",
+      "passed": 4,
+      "failed": 0,
+      "total": 4,
+      "pass_rate": 1.0,
+      "findings": []
+    }
+  ],
+  "direct_checks": 211,
+  "detail_checks": 8,
+  "limits": [
+    "재사용사례회귀/새fault조합;새일반화홀드아웃아님",
+    "모델시간/token미수집",
+    "원문증거/일부실행자자기기록과독립최종바이트검사범위구분",
+    "helper는write우회등을강제차단하지않음;실제행동의우회미실행확인",
+    "case8실행가능ownbytesguard별도보존없음",
+    "source/basis가제공되지않는정정은그범위만미확인;관련없는한정작업가능"
+  ]
+}

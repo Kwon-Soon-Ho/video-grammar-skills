@@ -1,0 +1,47 @@
+{
+  "stage": "R8-2 fixture pre-dispatch review",
+  "date": "2026-10-15",
+  "verdict": "수정 후 정적 fixture 검토 통과 — 역할별 합성 개발 시행 가능",
+  "candidate_version": "0.2.0-draft.2",
+  "active_run_count": 6,
+  "case_count": 3,
+  "arms": ["old_skill", "new_skill"],
+  "initial_finding": {
+    "id": "FIXTURE-01",
+    "priority": 2,
+    "problem": "R6 출처와사용범위_연결목록.json original_record 안에 R3/R8 Skill Creator 평가/이식 설계 문단이 간접 복제돼 있었음.",
+    "offending_sha256": "605c3d82be42e53499f72fcc7dff4fa99ce8c4904d1027727167b71ab45ec4d5",
+    "status": "보완 확인",
+    "resolution": "R6 자료를 CI 회신·요청/접수 문맥과 안내 7파일 whitelist로 축소. 문제 파일 및 불필요한 R6 자료는 active 수행DB에서 제외하고 원래 준비6run은 별도 이력에 보존."
+  },
+  "independent_static_checks": {
+    "all_six_fixture_before_hashes_match_actual_files": true,
+    "included_source_files": 262,
+    "excluded_source_files_in_preserved_list": 568,
+    "included_source_hash_mismatches": 0,
+    "excluded_file_paths_present_inside_six_performer_dbs": 0,
+    "old_new_non_skill_input_sha_maps_equal_each_case": true,
+    "non_skill_file_counts_by_case": [265, 267, 268],
+    "normalized_task_text_equal_each_case": true,
+    "task_sha_match_dispatch_all_six": true,
+    "loaded_skill_sha_match_independent_D_review_all_six": true,
+    "initial_offending_marker_in_active_dbs": false,
+    "historical_initial_runs_preserved": 6,
+    "historical_offending_marker_preserved_all_six": true,
+    "all_six_dispatch_status": "prepared_not_executed",
+    "criteria_count": 22,
+    "criteria_sha_matches_fixed_record": true,
+    "criteria_sha256": "c8ee5024c94d73e995b3a72406b35538407906c8bf20edc9e0792dde3b90f4ed"
+  },
+  "evidence": ["R8_02_fixture정적근거.json", "R8_02_fixture정적감사.py", "R8_02_fixture초기지적.md"],
+  "limitations": [
+    "수행자·채점기·R4/R5 검사기를 실행하지 않았다. preflight 유효 결과는 제작자의 저장 보고를 읽었고 독립 재실행으로 세지 않는다.",
+    "R6/R7 전체 문맥이 없는 역할별 개발시험이다. D 정상 결과를 수행사본 정상으로 전용할 수 없다.",
+    "비교는 동일 요청·입력에서의 행동 진단이다. 맹검·잠금·미사용 평가·스킬 독자효과 증명이 아니다.",
+    "운영규격/한계 안내에 남은 과거 점수 언급은 과거 점수 재사용 금지 안내이며 이번 채점 기준/정답이 아니다.",
+    "수행자는 raw task·해당 loaded skill·허용된 DB 자료만 읽고 workspace 평가기준/분리목록·이전준비/다른run 결과를 읽지 않아야 한다. 실제 열람 준수는 추후 실행 흔적으로 확인한다.",
+    "R8-4의 평가설계 분리·새 미사용 사례 확인은 계속 필수 잔여다."
+  ],
+  "D_write_performed_by_reviewer": false,
+  "executor_or_grader_run_performed_by_reviewer": false
+}

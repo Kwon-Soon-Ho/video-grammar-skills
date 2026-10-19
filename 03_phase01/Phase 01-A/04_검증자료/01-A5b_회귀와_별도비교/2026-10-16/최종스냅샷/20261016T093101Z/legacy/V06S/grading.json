@@ -1,0 +1,53 @@
+{
+  "case_id": "V06S",
+  "scope": "pre-frozen targeted known-case regression, not held-out core/detail metrics",
+  "expectations": [
+    {
+      "text": "전경 시점 이동·주야 변화 및 녹색 배경으로 전환",
+      "passed": true,
+      "evidence": "scene 두 사건은 주간 시점 이동→주야 중첩→야간 확대 조망→녹색 배경을 기록한다."
+    },
+    {
+      "text": "상단 가로 공사목표 제목→안전→품질→공기→효율 순차 등장",
+      "passed": true,
+      "evidence": "title_panel/title_text가 가로판 선행 및 공사/CONSTRUCTION→목표/TARGETS 중간 상태를 연결. safety/quality/schedule/efficiency의 왼→오른 순서."
+    },
+    {
+      "text": "카드 이미지/아이콘/라벨·주변 선·광량을 별도 검사; 종료부 이미지 퇴장과 아이콘 잔류",
+      "passed": true,
+      "evidence": "safety_detail/quality_drone/icon_lights와 각 퇴장 사건은 내부 선·드론·빛을 분리하고 245.8~245.967 사진 소실/배지 잔류를 기록한다."
+    },
+    {
+      "text": "각 파일에서 장면 앵커 시각과 동작 근거/가감속을 따로 기록; 자료022 한 그룹",
+      "passed": true,
+      "evidence": "해시·[232,246) 창·각 native 시각 연결 및 자료022 단일 원본 입력 범위 유지. pair 비교는 시험 전 제외."
+    },
+    {
+      "text": "후반 자막의 직전 상태를 4대 핵심가치 문구로 연결하고 초기 경관 문구와 혼입하지 않음",
+      "passed": true,
+      "evidence": "construction_caption은244.0의4대 핵심가치→244.2의BIM 프레임워크를 c27~c30에서 연결. 초기 경관 문구를 직전으로 혼입하지 않았다."
+    },
+    {
+      "text": "작업보고 문서의 정착을 근거 없는 감속으로 확정하지 않음; 위치·가시성·리빌 속성을 구분",
+      "passed": true,
+      "evidence": "감속은 title_panel 위치에 한정. c03/c04/c05에서 판 상변의 상승량 감소를 직접 대조. 작업보고 UI의 감속을 확정하지 않았다."
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1.0
+  },
+  "content_review": "root AI compared prior frozen observations with supplied native PNG/ROI; no new human gold",
+  "critical_errors_found": 0,
+  "structure_and_provenance_passed": true,
+  "known_limitations": [
+    "selected frames only; no audio or AE project",
+    "no new variant-pair comparison"
+  ],
+  "abstention_event_count_raw": 18,
+  "abstention_count_note": "raw event-level easing unknown count; not unique scored atomic abstentions and not a rate",
+  "non_gating_detail_notes": [],
+  "created_utc": "2026-10-16T08:28:41.489918+00:00"
+}

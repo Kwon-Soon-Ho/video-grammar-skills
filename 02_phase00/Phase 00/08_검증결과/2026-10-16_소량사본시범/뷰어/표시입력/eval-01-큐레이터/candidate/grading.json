@@ -1,0 +1,39 @@
+{
+  "stage": "01",
+  "source_criteria": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase00-build/시범운영_20261016/검수기준_고정.json",
+  "source_sha256": "9d253bd87538326f24d703c7c6f2d6efc55be6d50ea842cd13ab3af28a5fc787",
+  "scope": "candidate-only bounded six fixed expectations; no total quality score, comparison, human approval or actual-video claim",
+  "expectations": [
+    {
+      "text": "최신curator3와현재자료를실제조회",
+      "passed": true,
+      "evidence": "outputs/01_자료확인.py는 지정 inputs/Phase00의 curator SKILL.md·작업기준·출력지침과 현재 안내/정정표를 실제 read_bytes한다. 01 stdout에 세 스킬·안내·정정표의 원문 전체가 포함되는 것을 현재 파일과 대조했다. 시작 SHA 23개와 정정 원문/근거 13참조, 01 실행.json exit0가 있다. 선택된 curator는 0.2.0-draft.3이며 운영 D live/full 현재성 확인으로 확대하지 않는다."
+    },
+    {
+      "text": "3카드모두짧고충실한설명저장",
+      "passed": true,
+      "evidence": "실제 작업초안과 저장후보의 bytes가 같고 6388 bytes/SHA 254bd6423812859452c60b7247bc0cdcfe7e626ff6a62b698a8218957655645f다. 세 카드의 다섯 설명 필드 15개를 직접 읽었다. 각 1~2문장, 가상 예 표시, 사용 조건·반례·주의가 있고 원문/관련 기준을 충실히 요약했다. 사실검사 pass만으로 내용 판정을 대신하지 않았다."
+    },
+    {
+      "text": "가로/세로·기능/속성·관측/원인구분유지",
+      "passed": true,
+      "evidence": "시범카드001 caution은 가로/세로를 별도 방향 속성으로 두고 선 길이≠소요시간·선후/분기 근거 조건을 유지한다. 시범카드002는 움직임의 역할로 설명하고 모든 이동과 구별하며 실제 시선 효과를 별도 검토한다. 시범카드003은 보이는 범위/정도의 변화와 불투명도·마스크·합성·배경 원인을 분리하고 관측이 충분하면 태그는 유지한다. 사전 3항목·용어판정기준 guides 3항목·선형 프로세스 관련 지식과 직접 대조했다."
+    },
+    {
+      "text": "원문/ID/상태/승인/미검수및다른입력보존",
+      "passed": true,
+      "evidence": "독립 재계산에서 원입력 29파일 중 작업초안/쉬운말_지식카드.json만 변경됐다. backup→실제 JSON diff는 설명15필드+문서/카드 판본4필드만이다. source_snapshot/term_ref/source_file/ID/state/example_kind와 human_review=pending, company_approved=false가 보존됐다. 연결목록 SHA 2a2471e8e26c1e85953ede0bd6c514912dfc3e0e81b7996624b0118b81681147의 옛 참조는 task의 정상 후속 인계이며 이번 위반이 아니다."
+    },
+    {
+      "text": "쓰기전bytebackup/전후SHA/허용diff",
+      "passed": true,
+      "evidence": "4262 bytes backup의 SHA 9aaaa77ee0ab7f64db58db3276cdc8f0056f8169471ef05711c36679557963a2가 원래 입력고정값과 일치한다. 03 코드는 backup xb 생성→byte/SHA 동일성 확인→직전 target/ID/판본·읽은 source 재대조→target 저장→실제 bytes/허용diff 순서다. 실제 backup·작업전_snapshot·쓰기직전 재대조·감사로그·03 stdout/exit0·실제 저장후 bytes가 대응한다. 독립 JSON 경로 비교도 정확히 허용19경로이며 전체 원자성/동시성 보장은 주장하지 않는다."
+    },
+    {
+      "text": "실행과미실시범위정직보고",
+      "passed": true,
+      "evidence": "01~04 실행 코드/runner/실행.json/stdout/stderr/transcript가 있고 네 Python 종료는0, stderr는 빈 파일이다. 바깥 PowerShell InitializeDefaultDrives 메시지는 transcript에 구분 보존했다. 결과.md/json은 실제 카드 저장과 미실시 R4/full R6R7/영상/API/회사 승인/성능·효과 측정, 사본의 생략 경로를 구분한다. 사람 선택지는 제안만 있고 회신/승인을 만들지 않았다. 로그의 선언과 실제 bytes 확인 범위도 구분했다."
+    }
+  ]
+}
+

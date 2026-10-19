@@ -1,0 +1,422 @@
+{
+  "scope": "고정 합성 자료 기술 진단. 실제 회사 영상/정답/성능 평가가 아님",
+  "company_media_opened": 0,
+  "api_calls": 0,
+  "analyzer_skill_created": false,
+  "runtime_version": "19.0.1",
+  "checks": [
+    {
+      "id": "CFR_PTS",
+      "pass": true,
+      "details": {
+        "expected": [
+          {
+            "num": 0,
+            "den": 1
+          },
+          {
+            "num": 1,
+            "den": 25
+          },
+          {
+            "num": 2,
+            "den": 25
+          },
+          {
+            "num": 3,
+            "den": 25
+          }
+        ],
+        "actual": [
+          {
+            "num": 0,
+            "den": 1
+          },
+          {
+            "num": 1,
+            "den": 25
+          },
+          {
+            "num": 2,
+            "den": 25
+          },
+          {
+            "num": 3,
+            "den": 25
+          }
+        ]
+      }
+    },
+    {
+      "id": "CFR_no_audio",
+      "pass": true,
+      "details": {
+        "audio_streams": 0
+      }
+    },
+    {
+      "id": "CFR_genpts_flag_disabled",
+      "pass": true,
+      "details": {
+        "does_not_prove_native_timestamp_provenance": true
+      }
+    },
+    {
+      "id": "CFR_known_rectangle",
+      "pass": true,
+      "details": "미리 정한 사각형과 배경을 손실 없이 읽는지 확인"
+    },
+    {
+      "id": "VFR_offset_PTS",
+      "pass": true,
+      "details": {
+        "expected": [
+          {
+            "num": 1,
+            "den": 1
+          },
+          {
+            "num": 103,
+            "den": 100
+          },
+          {
+            "num": 109,
+            "den": 100
+          },
+          {
+            "num": 57,
+            "den": 50
+          }
+        ],
+        "actual": [
+          {
+            "num": 1,
+            "den": 1
+          },
+          {
+            "num": 103,
+            "den": 100
+          },
+          {
+            "num": 109,
+            "den": 100
+          },
+          {
+            "num": 57,
+            "den": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "VFR_offset_no_audio",
+      "pass": true,
+      "details": {
+        "audio_streams": 0
+      }
+    },
+    {
+      "id": "VFR_offset_genpts_flag_disabled",
+      "pass": true,
+      "details": {
+        "does_not_prove_native_timestamp_provenance": true
+      }
+    },
+    {
+      "id": "VFR_offset_known_rectangle",
+      "pass": true,
+      "details": "미리 정한 사각형과 배경을 손실 없이 읽는지 확인"
+    },
+    {
+      "id": "VFR_origin_not_zero",
+      "pass": true,
+      "details": {
+        "explicit_synthetic_origin": {
+          "num": 1,
+          "den": 1
+        },
+        "elapsed": [
+          {
+            "num": 0,
+            "den": 1
+          },
+          {
+            "num": 3,
+            "den": 100
+          },
+          {
+            "num": 9,
+            "den": 100
+          },
+          {
+            "num": 7,
+            "den": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "nearest_tie_lower",
+      "pass": true,
+      "details": {
+        "requested": {
+          "num": 3,
+          "den": 50
+        },
+        "actual": {
+          "num": 3,
+          "den": 100
+        },
+        "policy": "nearest, equal-distance earlier"
+      }
+    },
+    {
+      "id": "VFR_not_fps_times_seconds",
+      "pass": true,
+      "details": {
+        "second_frame_elapsed": {
+          "num": 3,
+          "den": 100
+        },
+        "nominal_rate_reciprocal": {
+          "num": 1,
+          "den": 25
+        }
+      }
+    },
+    {
+      "id": "unset_time_base",
+      "pass": true,
+      "details": {
+        "repr": "None",
+        "actual_type": "NoneType",
+        "rule": "None 또는 falsy는 unknown"
+      }
+    },
+    {
+      "id": "zero_rational_time_base",
+      "pass": true,
+      "details": {
+        "input": "AVRational(0,1)",
+        "rule": "0/1도 unknown"
+      }
+    },
+    {
+      "id": "unset_pts",
+      "pass": true,
+      "details": {
+        "reported_pts": null
+      }
+    },
+    {
+      "id": "rotation_absent_zero_is_not_proof",
+      "pass": true,
+      "details": {
+        "value": 0,
+        "presence": false,
+        "decision": "unknown metadata, no official unrotated claim"
+      }
+    },
+    {
+      "id": "crop_rotate_resize_pad_bbox",
+      "pass": true,
+      "details": {
+        "expected_edge_bbox": [
+          56,
+          26,
+          88,
+          74
+        ],
+        "observed": [
+          56,
+          26,
+          88,
+          74
+        ],
+        "dimensions": [
+          120,
+          150
+        ],
+        "convention": "top-left edge; clockwise90"
+      }
+    },
+    {
+      "id": "crop_cannot_restore",
+      "pass": true,
+      "details": {
+        "deleted_pixel": [
+          0,
+          0
+        ],
+        "padding_did_not_restore": true
+      }
+    },
+    {
+      "id": "damaged_file_explicit_error",
+      "pass": true,
+      "details": {
+        "error_type": "InvalidDataError"
+      }
+    }
+  ],
+  "passed": 18,
+  "total": 18,
+  "observations": {
+    "CFR": [
+      {
+        "display_order": 0,
+        "reported_pts": "0",
+        "time_base": {
+          "num": 1,
+          "den": 1000
+        },
+        "reported_time": {
+          "num": 0,
+          "den": 1
+        },
+        "rotation_value": 0,
+        "display_matrix_present_on_frame": false,
+        "width": 96,
+        "height": 64
+      },
+      {
+        "display_order": 1,
+        "reported_pts": "40",
+        "time_base": {
+          "num": 1,
+          "den": 1000
+        },
+        "reported_time": {
+          "num": 1,
+          "den": 25
+        },
+        "rotation_value": 0,
+        "display_matrix_present_on_frame": false,
+        "width": 96,
+        "height": 64
+      },
+      {
+        "display_order": 2,
+        "reported_pts": "80",
+        "time_base": {
+          "num": 1,
+          "den": 1000
+        },
+        "reported_time": {
+          "num": 2,
+          "den": 25
+        },
+        "rotation_value": 0,
+        "display_matrix_present_on_frame": false,
+        "width": 96,
+        "height": 64
+      },
+      {
+        "display_order": 3,
+        "reported_pts": "120",
+        "time_base": {
+          "num": 1,
+          "den": 1000
+        },
+        "reported_time": {
+          "num": 3,
+          "den": 25
+        },
+        "rotation_value": 0,
+        "display_matrix_present_on_frame": false,
+        "width": 96,
+        "height": 64
+      }
+    ],
+    "VFR_offset": [
+      {
+        "display_order": 0,
+        "reported_pts": "1000",
+        "time_base": {
+          "num": 1,
+          "den": 1000
+        },
+        "reported_time": {
+          "num": 1,
+          "den": 1
+        },
+        "rotation_value": 0,
+        "display_matrix_present_on_frame": false,
+        "width": 96,
+        "height": 64
+      },
+      {
+        "display_order": 1,
+        "reported_pts": "1030",
+        "time_base": {
+          "num": 1,
+          "den": 1000
+        },
+        "reported_time": {
+          "num": 103,
+          "den": 100
+        },
+        "rotation_value": 0,
+        "display_matrix_present_on_frame": false,
+        "width": 96,
+        "height": 64
+      },
+      {
+        "display_order": 2,
+        "reported_pts": "1090",
+        "time_base": {
+          "num": 1,
+          "den": 1000
+        },
+        "reported_time": {
+          "num": 109,
+          "den": 100
+        },
+        "rotation_value": 0,
+        "display_matrix_present_on_frame": false,
+        "width": 96,
+        "height": 64
+      },
+      {
+        "display_order": 3,
+        "reported_pts": "1140",
+        "time_base": {
+          "num": 1,
+          "den": 1000
+        },
+        "reported_time": {
+          "num": 57,
+          "den": 50
+        },
+        "rotation_value": 0,
+        "display_matrix_present_on_frame": false,
+        "width": 96,
+        "height": 64
+      }
+    ]
+  },
+  "assets": [
+    {
+      "file": "CFR.mkv",
+      "sha256": "fd0192c46b7302655fa09c79689fa3ca8179032212dbd42306b66032b19b42bd"
+    },
+    {
+      "file": "VFR_offset.mkv",
+      "sha256": "ae6cdd56ed9678dafcb3d36d0da2b91af0168f418ca1e7e456c10187ab7d7d52"
+    },
+    {
+      "file": "좌표변환_정답도형.png",
+      "sha256": "23047d42035be45438731a24e0d0c0c3dc806d794c17fc8fa7d026a1cc9106cd"
+    },
+    {
+      "file": "이것은_영상이_아님.bin",
+      "sha256": "f12730d8b855199c94f3d1425e95e26167c7c2a3d7366a01b594ff2ae8f8e66c"
+    }
+  ],
+  "limits": [
+    "같은 FFmpeg 기반 생성/디코딩으로 독립 코덱 교차검증 아님",
+    "실제 MP4 edit list, B-frame, 음성 동기, 비정방 SAR, 비영 회전 메타데이터 미시험",
+    "GENPTS 비트 해제는 네이티브 추론/입력 PTS 진위를 전부 증명하지 않음",
+    "픽셀 변환은 Pillow 합성 검증. 모델의 좌표 인식 정확성 검증 아님"
+  ]
+}

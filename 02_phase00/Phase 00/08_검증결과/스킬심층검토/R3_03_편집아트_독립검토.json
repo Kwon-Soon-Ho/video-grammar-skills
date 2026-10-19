@@ -1,0 +1,3469 @@
+{
+  "review_id": "R3-03-editorial-graphic-independent",
+  "reviewed_at_utc": "2026-10-14T08:30:10.021162+00:00",
+  "source_root": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본",
+  "report_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R3_03_편집아트_독립검토.json",
+  "verdict": "Editorial78text 및 graphic role4문서/라이선스/manifest의 정적 판단 완료. 선별 지식 후보는 있으나 문서계약의 정합성·실제editable판면·runtime·효과 검증 완료 아님.",
+  "actions": {
+    "D_read_only": true,
+    "skill_activated_or_run": false,
+    "source_code_run": false,
+    "source_module_imported": false,
+    "browser_server_office_ae_run": false,
+    "new_download_or_network": false,
+    "installation": false,
+    "spawned_agents": false,
+    "performed": [
+      "문서 전문읽기 및 local tree/존재 확인",
+      "자체 Python 해시/링크 참조 읽기",
+      "원본코드가 아닌 독립 일반 대비산식 계산",
+      "C 감사 JSON 저장"
+    ]
+  },
+  "coverage": {
+    "editorial_full_text": 78,
+    "editorial_initial_text": 36,
+    "editorial_added_text": 42,
+    "graphic_full_text": 6,
+    "graphic_partial_text": 1,
+    "depth_counts": {
+      "full_text_static_review": 84,
+      "selected_blocks": 1
+    },
+    "excluded": [
+      "인접 editorial-information/swiss-design/graphic-design-suite/local pixel·drawio sources는 이 위임 감사에 미포함",
+      "실제 그림/원사진/회사영상/편집 산출물 생성·열기·실행",
+      "폰트별 license/언어 coverage/외부 모델 약관·바이너리·API 연동",
+      "graphic domain-experts installer/router/eval source 실행/전수검토"
+    ],
+    "warning": "전수독해는 현재 file_review_manifest의 full_text_static_review만 뜻한다. 고정 commit source tree/선택파일 snapshot이며 full source clone 아님."
+  },
+  "repositories": {
+    "editorial-vision": {
+      "commit": "efd81c23eef663f6b145ef1386a2c3f2ec4065c8",
+      "tree_truncated": false,
+      "tree_blob_count": 87,
+      "tree_sha256": "f1a274635ecf35650e61703dbf219e2a9413450a0192d71de06f6286305618da",
+      "code_paths_in_tree": [],
+      "dependency_manifest_paths_in_tree": [],
+      "scope_note": "고정 tree와 선택 text snapshot. full clone 또는 모든 upstream 파일 전수 독해 아님."
+    },
+    "graphic-designer-role": {
+      "commit": "0101c5456f7e4d718a5dd7657c4514448039a303",
+      "tree_truncated": false,
+      "tree_blob_count": 5076,
+      "tree_sha256": "cb6aa32b0fbaa196866ff78bd71fbfd1663f2c82a40ba45850d097adfc4ecbe2",
+      "code_paths_in_tree": [
+        ".claude/workflows/audit-roles.js",
+        ".claude/workflows/generate-role.js",
+        ".claude/workflows/scan-project.js",
+        "bin/cli.js",
+        "docs/app.js",
+        "docs/to-top.js",
+        "evals/parity/harvest_stackexchange.py",
+        "evals/parity/run_parity.py",
+        "evals/run_evals.py",
+        "scripts/build_pages.py",
+        "scripts/check_links.py",
+        "scripts/generate_roadmap.py",
+        "scripts/lint_roles.py",
+        "scripts/suggest_role_requests.py",
+        "scripts/test_build_pages.py"
+      ],
+      "dependency_manifest_paths_in_tree": [
+        "package.json"
+      ],
+      "scope_note": "고정 tree와 선택 text snapshot. full clone 또는 모든 upstream 파일 전수 독해 아님."
+    }
+  },
+  "file_review_manifest": [
+    {
+      "path": "editorial-vision/LICENSE",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\LICENSE",
+      "sha256": "cbdd1791f829f3d8745fd5d0872b940258689ffc454a620d7c1392498fcbb88d",
+      "bytes": 1093,
+      "lines": 21,
+      "upstream_git_blob_sha": "c4bf614de86fe35305b350434cdfdf1a19fef21b",
+      "computed_git_blob_sha": "c4bf614de86fe35305b350434cdfdf1a19fef21b",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/README.en.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\README.en.md",
+      "sha256": "39e9e78fb2967af6ef377b08e30070e31c8d9bbdfd89afaae679d7cbcd036114",
+      "bytes": 11855,
+      "lines": 217,
+      "upstream_git_blob_sha": "a9899a741427373620f0115dcc40740af046ec74",
+      "computed_git_blob_sha": "a9899a741427373620f0115dcc40740af046ec74",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/README.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\README.md",
+      "sha256": "660285e60e43e52998ed778434ec1ac6ce6935d7b777464032a355eed3f0b76f",
+      "bytes": 11525,
+      "lines": 207,
+      "upstream_git_blob_sha": "a835cc60e5831d8d7e06504ee1e1ddc20eb04b90",
+      "computed_git_blob_sha": "a835cc60e5831d8d7e06504ee1e1ddc20eb04b90",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/SKILL.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\SKILL.md",
+      "sha256": "8681cb1168e9e5ac67c56b6b98c957ad29eb2788614dcfaa3fab11647e84bb80",
+      "bytes": 31000,
+      "lines": 510,
+      "upstream_git_blob_sha": "1a244d4cbfcd7b07f7236dd5160597283bc3fb5c",
+      "computed_git_blob_sha": "1a244d4cbfcd7b07f7236dd5160597283bc3fb5c",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/adapters/_template.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\adapters\\_template.md",
+      "sha256": "41b3575337659fc4b16899c786ada7937a111902ea74be5cba7830eeb66dd57b",
+      "bytes": 1974,
+      "lines": 74,
+      "upstream_git_blob_sha": "c5adc0f7c119613a15bf4ec3bd1958016cf0a2b8",
+      "computed_git_blob_sha": "c5adc0f7c119613a15bf4ec3bd1958016cf0a2b8",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/adapters/flux.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\adapters\\flux.md",
+      "sha256": "37e72686c0f2b910a5e34ecd75d57b4f6340afb0735d33eab76da1e7fce2bd40",
+      "bytes": 3901,
+      "lines": 93,
+      "upstream_git_blob_sha": "2555b7ec0789dc4c2c467d5371f2bd09bf4d576a",
+      "computed_git_blob_sha": "2555b7ec0789dc4c2c467d5371f2bd09bf4d576a",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/adapters/generic.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\adapters\\generic.md",
+      "sha256": "6e043b4641dde32ea039e0475bfc22b49ada5b0ddc4a2d3f4c2bae9c9e34c51f",
+      "bytes": 1628,
+      "lines": 62,
+      "upstream_git_blob_sha": "31d601e961090b88cb6ae779f99627e3f4fd2068",
+      "computed_git_blob_sha": "31d601e961090b88cb6ae779f99627e3f4fd2068",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/adapters/gpt-image.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\adapters\\gpt-image.md",
+      "sha256": "45e50e52ccf5aeac8a2be0df32551afe552c894d0aae8ee95436a6f49c1b053c",
+      "bytes": 3550,
+      "lines": 89,
+      "upstream_git_blob_sha": "e9e4326f14acf81350fb4b92efe0c39b766ef4bc",
+      "computed_git_blob_sha": "e9e4326f14acf81350fb4b92efe0c39b766ef4bc",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/adapters/ideogram.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\adapters\\ideogram.md",
+      "sha256": "c80bb6f96d972b64cb585180d03413c4a490321ebb2c153243599dbfdda6a4f1",
+      "bytes": 3663,
+      "lines": 99,
+      "upstream_git_blob_sha": "8d2e25f6a90c382a1c77729bb00da7008b75efda",
+      "computed_git_blob_sha": "8d2e25f6a90c382a1c77729bb00da7008b75efda",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/adapters/registry.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\adapters\\registry.md",
+      "sha256": "c176f612cb29a2ba59eb03e5a30f137d8a407dc9c8590972c88c2ee38745b47f",
+      "bytes": 2669,
+      "lines": 65,
+      "upstream_git_blob_sha": "a9993654511e5e6c40f63021d08a827f4519b203",
+      "computed_git_blob_sha": "a9993654511e5e6c40f63021d08a827f4519b203",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/agents/openai.yaml",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\agents\\openai.yaml",
+      "sha256": "bba91009235740bede920e9999d41910e4b5723ed609fd2f152d56ec7904d160",
+      "bytes": 235,
+      "lines": 4,
+      "upstream_git_blob_sha": "1efc4cdc08b75b64b644e6d98f50fc99c4668ccd",
+      "computed_git_blob_sha": "1efc4cdc08b75b64b644e6d98f50fc99c4668ccd",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/assets/ground.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\assets\\ground.md",
+      "sha256": "6a6a0fdf51a45adcd361a0d60ea463e70311d39441e138fcab5e66f29cf028d2",
+      "bytes": 6340,
+      "lines": 66,
+      "upstream_git_blob_sha": "32a01f52e0952fb8048a78388bc6773d7b185736",
+      "computed_git_blob_sha": "32a01f52e0952fb8048a78388bc6773d7b185736",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/assets/palette.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\assets\\palette.md",
+      "sha256": "28547ffe0c5374ded575a3f1ac45da18eb268fc93b8451e67f8e759adc134243",
+      "bytes": 1300,
+      "lines": 31,
+      "upstream_git_blob_sha": "5d4edfc8856a92316556b3732157bae162deb981",
+      "computed_git_blob_sha": "5d4edfc8856a92316556b3732157bae162deb981",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/assets/scene-construction.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\assets\\scene-construction.md",
+      "sha256": "b39411aa984289649b625980146cb4b0096bfdcadf4015705c29b569d98b6f02",
+      "bytes": 5769,
+      "lines": 99,
+      "upstream_git_blob_sha": "dffd434bdbcfb0f72da83d34383a335e3392bea9",
+      "computed_git_blob_sha": "dffd434bdbcfb0f72da83d34383a335e3392bea9",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/assets/texture.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\assets\\texture.md",
+      "sha256": "3a9874504aecd658a287b14dc1c9aa03433398cb282c4b689deed711b874c41c",
+      "bytes": 4071,
+      "lines": 57,
+      "upstream_git_blob_sha": "bd801284ffcb82c0db101d7ee6d7b7e1d20fcd97",
+      "computed_git_blob_sha": "bd801284ffcb82c0db101d7ee6d7b7e1d20fcd97",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/assets/typography.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\assets\\typography.md",
+      "sha256": "a16fd4af042138079b758bf43e2baf95e7a37972c135081ae35af5ec699bc5dd",
+      "bytes": 531,
+      "lines": 24,
+      "upstream_git_blob_sha": "1d0c6b1fd36a97cffba8ed519822e44c23b2be47",
+      "computed_git_blob_sha": "1d0c6b1fd36a97cffba8ed519822e44c23b2be47",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/assets/variation-engine.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\assets\\variation-engine.md",
+      "sha256": "52a120cd6a80efca525101e5a8454962b79a4cf93e09c4fd67d4e14a64e4fab4",
+      "bytes": 1945,
+      "lines": 53,
+      "upstream_git_blob_sha": "db32d31459a45d4bdc6580109819f24973137b07",
+      "computed_git_blob_sha": "db32d31459a45d4bdc6580109819f24973137b07",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/layouts/brand-key-visual.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\layouts\\brand-key-visual.md",
+      "sha256": "5c6ddde0c2878565fde7f2bed236802fc7d4e00163f1bc680ca70b9831b0c5a9",
+      "bytes": 754,
+      "lines": 26,
+      "upstream_git_blob_sha": "94dca89b6d6f4fb6a7b1d16d99fcb07d3d01d767",
+      "computed_git_blob_sha": "94dca89b6d6f4fb6a7b1d16d99fcb07d3d01d767",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/layouts/campaign-poster.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\layouts\\campaign-poster.md",
+      "sha256": "ba783234c000a3a74669891a90827df003c38b2cdd3b6a746c7b764fcc87a476",
+      "bytes": 870,
+      "lines": 33,
+      "upstream_git_blob_sha": "9e04952e0a86feb9f999b22c37ba3b2a4de8d9e4",
+      "computed_git_blob_sha": "9e04952e0a86feb9f999b22c37ba3b2a4de8d9e4",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/layouts/editorial-spread.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\layouts\\editorial-spread.md",
+      "sha256": "dba905d744959303b0c1ea068db1250ea0a751635248fb915283ce62ea864126",
+      "bytes": 551,
+      "lines": 26,
+      "upstream_git_blob_sha": "4b7f2d9a3a18d4c0a00c4dc5fa23847c255cc449",
+      "computed_git_blob_sha": "4b7f2d9a3a18d4c0a00c4dc5fa23847c255cc449",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/layouts/gallery-print.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\layouts\\gallery-print.md",
+      "sha256": "f4632413575de53468e922ac686e060f5432d0bb8bc023520da79fcf197120f1",
+      "bytes": 457,
+      "lines": 26,
+      "upstream_git_blob_sha": "0fd4e7fa3ed69825c9b2cd71fbe7aa54363a27ce",
+      "computed_git_blob_sha": "0fd4e7fa3ed69825c9b2cd71fbe7aa54363a27ce",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/layouts/interface-asset.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\layouts\\interface-asset.md",
+      "sha256": "46af7a9a41a6141fa30e3facedd4706b95cf07475f15c875b9822b166eab662a",
+      "bytes": 739,
+      "lines": 26,
+      "upstream_git_blob_sha": "b02a3a299c4f510cb0647cbe351aa46bc3f1929c",
+      "computed_git_blob_sha": "b02a3a299c4f510cb0647cbe351aa46bc3f1929c",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/layouts/magazine-cover.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\layouts\\magazine-cover.md",
+      "sha256": "d0ec621e9d933d3d6ab49057073f87e74f198a38463f2dbd8c8f95398b6256a0",
+      "bytes": 539,
+      "lines": 27,
+      "upstream_git_blob_sha": "3751df0bfdc7617daf970e03eec81f603b965015",
+      "computed_git_blob_sha": "3751df0bfdc7617daf970e03eec81f603b965015",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/layouts/moodboard.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\layouts\\moodboard.md",
+      "sha256": "8c334516429a73e01ee81a57d4221a3ce9e674afac048c60582d8f90e2488974",
+      "bytes": 756,
+      "lines": 26,
+      "upstream_git_blob_sha": "466392510b8a52dba35ab737a01a94c1f4256994",
+      "computed_git_blob_sha": "466392510b8a52dba35ab737a01a94c1f4256994",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/layouts/photo-abstract-diptych.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\layouts\\photo-abstract-diptych.md",
+      "sha256": "a5cd991569b855ac57e76ba810591c66ea67a739eb21eecc6585bec5785d44ae",
+      "bytes": 6634,
+      "lines": 119,
+      "upstream_git_blob_sha": "21bf9f65f4d41193275bf8c39a9a9bfd292d88a2",
+      "computed_git_blob_sha": "21bf9f65f4d41193275bf8c39a9a9bfd292d88a2",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/layouts/poster.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\layouts\\poster.md",
+      "sha256": "7c84e2fdd6006e3981b4a28d8c7ca55d8434f19467be19607f6278e9d51b0637",
+      "bytes": 608,
+      "lines": 28,
+      "upstream_git_blob_sha": "85abbac04ae59d1da0da69b652a9688ce90d28e4",
+      "computed_git_blob_sha": "85abbac04ae59d1da0da69b652a9688ce90d28e4",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/layouts/presentation-deck.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\layouts\\presentation-deck.md",
+      "sha256": "54c409a94296ea4251047ea7b032bc188a9640efd4683187bbbaa8963a9d8d94",
+      "bytes": 2095,
+      "lines": 40,
+      "upstream_git_blob_sha": "8e371822f4619da6bfd89145fc587da5d3069ebf",
+      "computed_git_blob_sha": "8e371822f4619da6bfd89145fc587da5d3069ebf",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/layouts/product-editorial.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\layouts\\product-editorial.md",
+      "sha256": "c230b2acaad09c53d7565e5006d23088a0362a628afb20276c0c2ebdb26aae10",
+      "bytes": 753,
+      "lines": 26,
+      "upstream_git_blob_sha": "6a2c52ed1c13b6a96ec771dd2a77bcb54b1ebb55",
+      "computed_git_blob_sha": "6a2c52ed1c13b6a96ec771dd2a77bcb54b1ebb55",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/layouts/social-asset.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\layouts\\social-asset.md",
+      "sha256": "55552cecb316e6b7dd1ad766c05d77fb0dfd1b878feb2cfb81e90ff70e8ec7ca",
+      "bytes": 680,
+      "lines": 25,
+      "upstream_git_blob_sha": "1249b4265777d9607729bef3ba7f369a0fd1c612",
+      "computed_git_blob_sha": "1249b4265777d9607729bef3ba7f369a0fd1c612",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/layouts/website-hero.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\layouts\\website-hero.md",
+      "sha256": "8341b87136f878a3cff5ee9be48df51559093c402b50b92c1efc7af922c8621b",
+      "bytes": 810,
+      "lines": 26,
+      "upstream_git_blob_sha": "b77e4ac1ab357c15d138c43e9a0b161de7acb110",
+      "computed_git_blob_sha": "b77e4ac1ab357c15d138c43e9a0b161de7acb110",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/layouts/zine.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\layouts\\zine.md",
+      "sha256": "8d92bd5323791e623af6925c3f38436831bbf7dda119af4ca3ecaed81cd92fe0",
+      "bytes": 640,
+      "lines": 27,
+      "upstream_git_blob_sha": "8b15fdf9e7fded580fc812255d7fe19e6b1d8401",
+      "computed_git_blob_sha": "8b15fdf9e7fded580fc812255d7fe19e6b1d8401",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/presets/_template.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\presets\\_template.md",
+      "sha256": "c3b7f4cd0587cbdbbb20fdd0b4221212c59a8568c3948b96c023880a0224c174",
+      "bytes": 2127,
+      "lines": 55,
+      "upstream_git_blob_sha": "e81497b0562ca35c20f7d827b9bb1cf4e3be1865",
+      "computed_git_blob_sha": "e81497b0562ca35c20f7d827b9bb1cf4e3be1865",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/presets/ivory-postcard.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\presets\\ivory-postcard.md",
+      "sha256": "23460f5b9f4e2212b03b2f33543b4433da9536b4736d55f31683c684f4168513",
+      "bytes": 7174,
+      "lines": 118,
+      "upstream_git_blob_sha": "acae5d90234b64bdc0fb8f70fc7216caadf7904b",
+      "computed_git_blob_sha": "acae5d90234b64bdc0fb8f70fc7216caadf7904b",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/presets/papercraft-diorama-postcard.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\presets\\papercraft-diorama-postcard.md",
+      "sha256": "14b48cfe99aa6632c4e43da137c5ce2fb42b6b7c9fc1a703c290bd88e730db94",
+      "bytes": 7866,
+      "lines": 137,
+      "upstream_git_blob_sha": "d93f2d23459bdbb65f9766489064ab7f8ef1b04d",
+      "computed_git_blob_sha": "d93f2d23459bdbb65f9766489064ab7f8ef1b04d",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/presets/registry.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\presets\\registry.md",
+      "sha256": "8431da45e4ede4a41afa9e3524d4d0b4b0cb3092cdbde473bfb4630f8b047296",
+      "bytes": 3927,
+      "lines": 58,
+      "upstream_git_blob_sha": "bff51065e1363cf7059c0826525c0acf4c5a6672",
+      "computed_git_blob_sha": "bff51065e1363cf7059c0826525c0acf4c5a6672",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/presets/vintage-travel-poster.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\presets\\vintage-travel-poster.md",
+      "sha256": "f93c73b137d41d7c849d699b02993b97ed36742fd561a7ea973ffd62e45996b0",
+      "bytes": 3384,
+      "lines": 76,
+      "upstream_git_blob_sha": "0d26bc2859b14ec6095d05431b1079d58dd23c17",
+      "computed_git_blob_sha": "0d26bc2859b14ec6095d05431b1079d58dd23c17",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/prompts/analyzer.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\prompts\\analyzer.md",
+      "sha256": "822acd2912199c37386c2c38a355c35ec5c0b2daed1b3cdd5b1d0e54dc8e049e",
+      "bytes": 4380,
+      "lines": 90,
+      "upstream_git_blob_sha": "20e07d1a2269c07ae90d36b86131aa3678a59647",
+      "computed_git_blob_sha": "20e07d1a2269c07ae90d36b86131aa3678a59647",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/prompts/art-direction.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\prompts\\art-direction.md",
+      "sha256": "1f47a986e1687f96843cf4a3f52ea4dfc9471a09303e5a5c142e4d343b4003e8",
+      "bytes": 8076,
+      "lines": 143,
+      "upstream_git_blob_sha": "6a232f615d3d8c5eb9d166c336ea9d651e5dc1a1",
+      "computed_git_blob_sha": "6a232f615d3d8c5eb9d166c336ea9d651e5dc1a1",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/prompts/compiler.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\prompts\\compiler.md",
+      "sha256": "369484d08c1e7a889d9869c32830d91368d1c2f32f3c1d797dc5485c30a6f26c",
+      "bytes": 6299,
+      "lines": 106,
+      "upstream_git_blob_sha": "df69cdb22d8b597d67b3ec33ffb60c171e1e6f65",
+      "computed_git_blob_sha": "df69cdb22d8b597d67b3ec33ffb60c171e1e6f65",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/prompts/evaluator.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\prompts\\evaluator.md",
+      "sha256": "28cb993f59c54bd6ead06eb766f9b797f927929345132917cb7969f0866960f9",
+      "bytes": 8130,
+      "lines": 135,
+      "upstream_git_blob_sha": "e2ef0141f49f078b5ba7e011c583dad9fbc61382",
+      "computed_git_blob_sha": "e2ef0141f49f078b5ba7e011c583dad9fbc61382",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/prompts/intent.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\prompts\\intent.md",
+      "sha256": "af452a962654ce72a047cb6c442de7ca8853ca4f29a08facc4ea41549710b126",
+      "bytes": 6553,
+      "lines": 114,
+      "upstream_git_blob_sha": "66a63bdd620167ebc39e1f9c376a49f162166de8",
+      "computed_git_blob_sha": "66a63bdd620167ebc39e1f9c376a49f162166de8",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/prompts/iteration.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\prompts\\iteration.md",
+      "sha256": "3068adc05d6538db6471a254f158a317bf850d3fc03913868a76d85399989d5a",
+      "bytes": 6170,
+      "lines": 105,
+      "upstream_git_blob_sha": "2262ccba81063b3ed1f91ec7605da7d04fa4defc",
+      "computed_git_blob_sha": "2262ccba81063b3ed1f91ec7605da7d04fa4defc",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/prompts/optimizer.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\prompts\\optimizer.md",
+      "sha256": "8fa1e79e4a8b7ba4e5006248d79079f404d887e440ed1ed89f4c4674e7a7399b",
+      "bytes": 10976,
+      "lines": 165,
+      "upstream_git_blob_sha": "d4775d0ae0aa93a85f359a60c8e65fd206861d8f",
+      "computed_git_blob_sha": "d4775d0ae0aa93a85f359a60c8e65fd206861d8f",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/prompts/planner.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\prompts\\planner.md",
+      "sha256": "f658c2427b3db756b5662903a6fc9b3d62d5965659d2e8a36a36f81b32ad557a",
+      "bytes": 5279,
+      "lines": 78,
+      "upstream_git_blob_sha": "571864211f5e64cb52abe2d1ee26a428a1319068",
+      "computed_git_blob_sha": "571864211f5e64cb52abe2d1ee26a428a1319068",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/prompts/recovery.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\prompts\\recovery.md",
+      "sha256": "6bec8886531321db6e88968b3ef13dd8ce802899b266c00931cde71224b97baa",
+      "bytes": 2741,
+      "lines": 46,
+      "upstream_git_blob_sha": "fcefab1c4189993bdd809b334f93aed48a5325c1",
+      "computed_git_blob_sha": "fcefab1c4189993bdd809b334f93aed48a5325c1",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/prompts/reviewer.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\prompts\\reviewer.md",
+      "sha256": "1b0ea3a96fe560f4f8823cc26e2c5119536be17685e664b0d58b864100bd4596",
+      "bytes": 8193,
+      "lines": 99,
+      "upstream_git_blob_sha": "7ba4d28d59a24e8730792cc0ea1c69356584553a",
+      "computed_git_blob_sha": "7ba4d28d59a24e8730792cc0ea1c69356584553a",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/prompts/series.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\prompts\\series.md",
+      "sha256": "fa71e836ef295313362bad677dbbd665ea332581ee034a69520a107b0421a101",
+      "bytes": 5121,
+      "lines": 123,
+      "upstream_git_blob_sha": "eb75cf6c194493d7a37b030a7e144bab723dc10d",
+      "computed_git_blob_sha": "eb75cf6c194493d7a37b030a7e144bab723dc10d",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/prompts/style-brief.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\prompts\\style-brief.md",
+      "sha256": "064c2cdc91d20ba95400c959de13c74e498aa129a2e51706f31cf68c71546b25",
+      "bytes": 7048,
+      "lines": 161,
+      "upstream_git_blob_sha": "0e6fd2b7598b7c05b719b1c17fa91f616ece5506",
+      "computed_git_blob_sha": "0e6fd2b7598b7c05b719b1c17fa91f616ece5506",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/prompts/style-gate.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\prompts\\style-gate.md",
+      "sha256": "d70abbe425bfb91b53a9691e5ed5fb42f1db00d4ca0a3f6144e602bf705de050",
+      "bytes": 9323,
+      "lines": 151,
+      "upstream_git_blob_sha": "a5d0349bd7dea67b9491628402b852c4781cb924",
+      "computed_git_blob_sha": "a5d0349bd7dea67b9491628402b852c4781cb924",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/prompts/visual-language.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\prompts\\visual-language.md",
+      "sha256": "6b3a2af1e73eba665fb27d88a8b49ccd63182e39197bfabe6b5743470666f3b7",
+      "bytes": 4370,
+      "lines": 63,
+      "upstream_git_blob_sha": "2fefe6a20c55466cddb4ef068d8e1e1f24bac197",
+      "computed_git_blob_sha": "2fefe6a20c55466cddb4ef068d8e1e1f24bac197",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/prompts/visual-memory.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\prompts\\visual-memory.md",
+      "sha256": "34a0b0514351f54049241f70c6a058509527a8e12550ffac7026fa62c6981adb",
+      "bytes": 6205,
+      "lines": 123,
+      "upstream_git_blob_sha": "43e0032b8141a65e7319281f25d797cf49c298ed",
+      "computed_git_blob_sha": "43e0032b8141a65e7319281f25d797cf49c298ed",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/recovery/background.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\recovery\\background.md",
+      "sha256": "21e830bd423cb88f5d35c906841de4e9f39a1a63a0a3ed85acb163227ddb52f2",
+      "bytes": 399,
+      "lines": 16,
+      "upstream_git_blob_sha": "71d4cccdfc525f5596cad2e60eabe65b0df985ef",
+      "computed_git_blob_sha": "71d4cccdfc525f5596cad2e60eabe65b0df985ef",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/recovery/composition.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\recovery\\composition.md",
+      "sha256": "e47aae47ce16d3a5df8f0cc1f1f406ed5afc8ec5eca0fd7159d5e34b167ac896",
+      "bytes": 396,
+      "lines": 16,
+      "upstream_git_blob_sha": "6ea6d1f85ecc4a22fab433d5ab2706d022fe968b",
+      "computed_git_blob_sha": "6ea6d1f85ecc4a22fab433d5ab2706d022fe968b",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/recovery/contrast.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\recovery\\contrast.md",
+      "sha256": "023ff4aa288756f7de4588b5b4472fe32d2ae419c321b9a01b19638dfbeb2036",
+      "bytes": 1563,
+      "lines": 39,
+      "upstream_git_blob_sha": "181c2e3b443233ab7b7d1e138416121f3ce3bbd5",
+      "computed_git_blob_sha": "181c2e3b443233ab7b7d1e138416121f3ce3bbd5",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/recovery/focus.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\recovery\\focus.md",
+      "sha256": "9559233374b51f73d4aba3f7b1f1a490ccfd520292c2efc6d45af07b72790082",
+      "bytes": 400,
+      "lines": 16,
+      "upstream_git_blob_sha": "196e5fa72c136df3b3e396ed0e68b85deb33519f",
+      "computed_git_blob_sha": "196e5fa72c136df3b3e396ed0e68b85deb33519f",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/recovery/geometry.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\recovery\\geometry.md",
+      "sha256": "5a2567e70abe40bbbdcfb2d657903a50b27a72b9d9d6bd839bfbe0d7523df8c1",
+      "bytes": 418,
+      "lines": 16,
+      "upstream_git_blob_sha": "3d88d8a7d546db525416a6513ffc00a0311b0f77",
+      "computed_git_blob_sha": "3d88d8a7d546db525416a6513ffc00a0311b0f77",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/recovery/lighting.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\recovery\\lighting.md",
+      "sha256": "bdaa583382225eab7a313f7fb863e8e3124aa9065ddb5f12cecaec513490f39e",
+      "bytes": 421,
+      "lines": 16,
+      "upstream_git_blob_sha": "883d6f07f71aee004c7179b2b6265174826e20d6",
+      "computed_git_blob_sha": "883d6f07f71aee004c7179b2b6265174826e20d6",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/recovery/palette.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\recovery\\palette.md",
+      "sha256": "a26489bbc7aa976f3fba674375145907ad84627dc10c85e41027b2e5f2e20397",
+      "bytes": 392,
+      "lines": 16,
+      "upstream_git_blob_sha": "a9b850b5528868c709a81af464408085d1977c68",
+      "computed_git_blob_sha": "a9b850b5528868c709a81af464408085d1977c68",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/recovery/subject.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\recovery\\subject.md",
+      "sha256": "cd21ea83dd032433eb70820982e2b46b7e70618460cb5077c821e965aa700c33",
+      "bytes": 452,
+      "lines": 16,
+      "upstream_git_blob_sha": "51aa7d27594c1b83b96a6d38f6715db91eb8e508",
+      "computed_git_blob_sha": "51aa7d27594c1b83b96a6d38f6715db91eb8e508",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/recovery/texture.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\recovery\\texture.md",
+      "sha256": "208b4341606ce8ded83cc0873d7c0bf1905a4debd0986bd50d66676edc31a128",
+      "bytes": 1549,
+      "lines": 43,
+      "upstream_git_blob_sha": "d0828ae73f17e3c32037c72839ac6591a36f6ab0",
+      "computed_git_blob_sha": "d0828ae73f17e3c32037c72839ac6591a36f6ab0",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/recovery/typography.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\recovery\\typography.md",
+      "sha256": "eb6fbc0615ca79cfe88cc28859affa1a4198d16ce786d01923da5a6fd7b2e230",
+      "bytes": 394,
+      "lines": 16,
+      "upstream_git_blob_sha": "17c9f96a941f1fae61b58356e3e35cf22a5328d2",
+      "computed_git_blob_sha": "17c9f96a941f1fae61b58356e3e35cf22a5328d2",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/reference/architecture.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\reference\\architecture.md",
+      "sha256": "a3b3a2797e2b2959d3d60fb97b3b5ee1068d992691837714d74d8574f21a5f3d",
+      "bytes": 8416,
+      "lines": 127,
+      "upstream_git_blob_sha": "d24123edadd00cbf5b85aa2062bfc2cb5073462d",
+      "computed_git_blob_sha": "d24123edadd00cbf5b85aa2062bfc2cb5073462d",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/reference/decision-tree.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\reference\\decision-tree.md",
+      "sha256": "ab5ff6ea1c56eeaf16ae7ea84867702f13eb34ac7cd0765e7ca949d10ca81cf7",
+      "bytes": 5607,
+      "lines": 123,
+      "upstream_git_blob_sha": "c5bd90c129296ad7d4ab22736074a4affb0051aa",
+      "computed_git_blob_sha": "c5bd90c129296ad7d4ab22736074a4affb0051aa",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/spec/editorial-spec.schema.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\spec\\editorial-spec.schema.md",
+      "sha256": "544d9fd7f52beac8a5fb2a31ffb8a2cecc1b5355d9a88c6317d5138efd861c29",
+      "bytes": 16071,
+      "lines": 255,
+      "upstream_git_blob_sha": "9ac1d86e13d07cf558c52ab5f8d6e84a174dddaa",
+      "computed_git_blob_sha": "9ac1d86e13d07cf558c52ab5f8d6e84a174dddaa",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/spec/visual-manifest.schema.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\spec\\visual-manifest.schema.md",
+      "sha256": "3d4c49d209d4fc58c1fdc79a6512d71223d262ba70626888580a98c911aa85d4",
+      "bytes": 7397,
+      "lines": 150,
+      "upstream_git_blob_sha": "de47c5a9a5a236e1787c8b58006685f74dabc669",
+      "computed_git_blob_sha": "de47c5a9a5a236e1787c8b58006685f74dabc669",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/spec/visual-memory.schema.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\spec\\visual-memory.schema.md",
+      "sha256": "38aa20d9ecbeb9f2502c789bb194b076f85d12943571c9fe3bf8c8f215c47135",
+      "bytes": 6187,
+      "lines": 102,
+      "upstream_git_blob_sha": "5efa5fc05269110589c26e9d717451369c837310",
+      "computed_git_blob_sha": "5efa5fc05269110589c26e9d717451369c837310",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/styles/_template.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\styles\\_template.md",
+      "sha256": "a601fa824441e7e2e8086b88b272dfb9bcf887b134f70256a60e314c9deac97d",
+      "bytes": 652,
+      "lines": 43,
+      "upstream_git_blob_sha": "89121d6e985b4d0e8acc6325ac874b7dd72832ab",
+      "computed_git_blob_sha": "89121d6e985b4d0e8acc6325ac874b7dd72832ab",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/styles/apartamento.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\styles\\apartamento.md",
+      "sha256": "320cef1050bc32f1294aef6e6d7f32432310660b4ae116912a769ac57c2d100e",
+      "bytes": 612,
+      "lines": 30,
+      "upstream_git_blob_sha": "6fc8213b9979bdfaf1475b3acb80b3be9c8f8684",
+      "computed_git_blob_sha": "6fc8213b9979bdfaf1475b3acb80b3be9c8f8684",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/styles/brutalist.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\styles\\brutalist.md",
+      "sha256": "63b46c0046e682d2810321f6a47bfd4c5dc5a33cc2f66317955534ecc5374eb4",
+      "bytes": 752,
+      "lines": 34,
+      "upstream_git_blob_sha": "d812cb3a292ff1e788e0ebc5ff54822d2638362f",
+      "computed_git_blob_sha": "d812cb3a292ff1e788e0ebc5ff54822d2638362f",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/styles/cos.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\styles\\cos.md",
+      "sha256": "c8fb4eba959488814ae8b2f8d0a384ca0f2276fec959920f2989aa24a68ac243",
+      "bytes": 642,
+      "lines": 30,
+      "upstream_git_blob_sha": "2d225e987b6c73c8309e8ef7ca4642e5978095bb",
+      "computed_git_blob_sha": "2d225e987b6c73c8309e8ef7ca4642e5978095bb",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/styles/kinfolk.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\styles\\kinfolk.md",
+      "sha256": "a0e968d83a9db42b5f97d7aee86fedccc5ab8213d2c8dc31f5c0e12cc71f4e62",
+      "bytes": 707,
+      "lines": 35,
+      "upstream_git_blob_sha": "b2b2fe54bf2d850293fa1c0e41de394e7743e165",
+      "computed_git_blob_sha": "b2b2fe54bf2d850293fa1c0e41de394e7743e165",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/styles/monocle.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\styles\\monocle.md",
+      "sha256": "a08666d7b4d53fc2c14aa7d8b2fc7808ffa8a02a04844dc55b55c5f0299b2e10",
+      "bytes": 672,
+      "lines": 31,
+      "upstream_git_blob_sha": "217a7933daa466cead79ab7950e115f7bf3af1bb",
+      "computed_git_blob_sha": "217a7933daa466cead79ab7950e115f7bf3af1bb",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/styles/muji.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\styles\\muji.md",
+      "sha256": "57d565d875be6fc695babc2b3125ddbff501438c5d7dd955d13da72cd0332ec8",
+      "bytes": 887,
+      "lines": 37,
+      "upstream_git_blob_sha": "538a2adbf3df8eae39a7846178af7a39ed88ed11",
+      "computed_git_blob_sha": "538a2adbf3df8eae39a7846178af7a39ed88ed11",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/styles/popeye.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\styles\\popeye.md",
+      "sha256": "5fb7935791662a9e7d1a396561e61377c3625e221a7e452db0a427bdeba1054b",
+      "bytes": 635,
+      "lines": 30,
+      "upstream_git_blob_sha": "b7cafcd30f95762a49b5a82803259893faadb75f",
+      "computed_git_blob_sha": "b7cafcd30f95762a49b5a82803259893faadb75f",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/styles/purple.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\styles\\purple.md",
+      "sha256": "c60e4a037f28814cfec253d4aa4bb450c8c9602107a006a58bc4275641e9a356",
+      "bytes": 639,
+      "lines": 30,
+      "upstream_git_blob_sha": "3c5384371c6420550f2bdb37373641a751669db2",
+      "computed_git_blob_sha": "3c5384371c6420550f2bdb37373641a751669db2",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/styles/swiss.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\styles\\swiss.md",
+      "sha256": "c00efe81dd0a2a5a41fb94967b9168a77d76f80e13ded7a54e44229dcc9ff823",
+      "bytes": 937,
+      "lines": 39,
+      "upstream_git_blob_sha": "ea3c46ac8783c58d293b9409ab1cf4bb4a93f6a1",
+      "computed_git_blob_sha": "ea3c46ac8783c58d293b9409ab1cf4bb4a93f6a1",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/styles/travel-poster.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\styles\\travel-poster.md",
+      "sha256": "d84cd923ebfe9d16f6a12eef94f0418f5d583e352606480fb0b2ac18b43b6b85",
+      "bytes": 1625,
+      "lines": 44,
+      "upstream_git_blob_sha": "d3526feef19fa569004a6d3d2a982133e7df8567",
+      "computed_git_blob_sha": "d3526feef19fa569004a6d3d2a982133e7df8567",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "editorial-vision/styles/wallpaper.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\editorial-vision\\styles\\wallpaper.md",
+      "sha256": "5bc30bbc17498f372eee2431a485aa9ebe6802ecef10fe0025b68148a29b4e7b",
+      "bytes": 637,
+      "lines": 30,
+      "upstream_git_blob_sha": "c85b852a21eafa294599d643992a452dc99ea49f",
+      "computed_git_blob_sha": "c85b852a21eafa294599d643992a452dc99ea49f",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "graphic-designer-role/LICENSE",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\graphic-designer-role\\LICENSE",
+      "sha256": "f7cb14446ec035b188d38be0c2c0ef7b2c990a17e2e4e9426f7e43b2469acae3",
+      "bytes": 1100,
+      "lines": 21,
+      "upstream_git_blob_sha": "31d90fc37a7dbf7eaa2c606ebc41c94161c58a39",
+      "computed_git_blob_sha": "31d90fc37a7dbf7eaa2c606ebc41c94161c58a39",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "graphic-designer-role/README.ko.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\graphic-designer-role\\README.ko.md",
+      "sha256": "4c9ae7ac22ddce1a469ddd34fb09ddd6663783fd9b5adb4bbd6e9699f5bc9958",
+      "bytes": 33629,
+      "lines": 335,
+      "upstream_git_blob_sha": "9b7ddb4d6ef0cab25e815ab3d46264d51b1ff775",
+      "computed_git_blob_sha": "9b7ddb4d6ef0cab25e815ab3d46264d51b1ff775",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "selected_blocks",
+      "detail": "설치/CLI/효과 주장/검증방식/주의 부분 읽기. 중간 일부 본문 출력이 잘려 전수독해로 계산하지 않음."
+    },
+    {
+      "path": "graphic-designer-role/package.json",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\graphic-designer-role\\package.json",
+      "sha256": "48f24ab2f2219a087b9b51f6a928d3082f4a09769f5df4f2fdc0b98aca1f89a2",
+      "bytes": 717,
+      "lines": 33,
+      "upstream_git_blob_sha": "6bc6933c5200343f2ecdc7b84de2d6fc5171b367",
+      "computed_git_blob_sha": "6bc6933c5200343f2ecdc7b84de2d6fc5171b367",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "graphic-designer-role/roles/graphic-designer/SKILL.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\graphic-designer-role\\roles\\graphic-designer\\SKILL.md",
+      "sha256": "6cbbbf6e88de8821e29a1c1113252fcbba787bf84b41c7aa10aeb42c74f16b75",
+      "bytes": 16014,
+      "lines": 101,
+      "upstream_git_blob_sha": "d5a637250e74a1b6ea2d481b74966e8553461c23",
+      "computed_git_blob_sha": "d5a637250e74a1b6ea2d481b74966e8553461c23",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "graphic-designer-role/roles/graphic-designer/references/artifacts.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\graphic-designer-role\\roles\\graphic-designer\\references\\artifacts.md",
+      "sha256": "5fd176102735e0feecef80dfe2e378cbb977365b64f06cf108f349eec8d3e59e",
+      "bytes": 6157,
+      "lines": 69,
+      "upstream_git_blob_sha": "3c2b58d8469c628dd990749ff6c0c821b8e2a698",
+      "computed_git_blob_sha": "3c2b58d8469c628dd990749ff6c0c821b8e2a698",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "graphic-designer-role/roles/graphic-designer/references/red-flags.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\graphic-designer-role\\roles\\graphic-designer\\references\\red-flags.md",
+      "sha256": "2b68b885230aa9b1ef620739780d177c2df4773665668854d4b00f2301e88c15",
+      "bytes": 5706,
+      "lines": 63,
+      "upstream_git_blob_sha": "2900709c6df53711d56bc6703e1d0a7ddf8df099",
+      "computed_git_blob_sha": "2900709c6df53711d56bc6703e1d0a7ddf8df099",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    },
+    {
+      "path": "graphic-designer-role/roles/graphic-designer/references/vocabulary.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_편집화면확장\\스킬원본\\graphic-designer-role\\roles\\graphic-designer\\references\\vocabulary.md",
+      "sha256": "44f3c6422c059db53ae587e53a3b703570a39adc01b9ece2ff777ae1980b8779",
+      "bytes": 6885,
+      "lines": 55,
+      "upstream_git_blob_sha": "451495a2d5fd82b00c9ce7b39de9b1008c6f0d9d",
+      "computed_git_blob_sha": "451495a2d5fd82b00c9ce7b39de9b1008c6f0d9d",
+      "matches_pinned_tree_blob": true,
+      "review_depth": "full_text_static_review",
+      "detail": "본문 전수 독해; SKILL은 감사 대상으로 읽음, 활성화/실행 아님."
+    }
+  ],
+  "local_reference_inventory": [
+    {
+      "from": "editorial-vision/README.en.md",
+      "reference": "README.md",
+      "target": "editorial-vision/README.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/README.en.md",
+      "reference": "presets/ivory-postcard.md",
+      "target": "editorial-vision/presets/ivory-postcard.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/README.en.md",
+      "reference": "presets/papercraft-diorama-postcard.md",
+      "target": "editorial-vision/presets/papercraft-diorama-postcard.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/README.en.md",
+      "reference": "presets/registry.md",
+      "target": "editorial-vision/presets/registry.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/README.en.md",
+      "reference": "presets/vintage-travel-poster.md",
+      "target": "editorial-vision/presets/vintage-travel-poster.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/README.md",
+      "reference": "README.en.md",
+      "target": "editorial-vision/README.en.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/README.md",
+      "reference": "presets/ivory-postcard.md",
+      "target": "editorial-vision/presets/ivory-postcard.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/README.md",
+      "reference": "presets/papercraft-diorama-postcard.md",
+      "target": "editorial-vision/presets/papercraft-diorama-postcard.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/README.md",
+      "reference": "presets/registry.md",
+      "target": "editorial-vision/presets/registry.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/README.md",
+      "reference": "presets/vintage-travel-poster.md",
+      "target": "editorial-vision/presets/vintage-travel-poster.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "adapters/_template.md",
+      "target": "editorial-vision/adapters/_template.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "adapters/flux.md",
+      "target": "editorial-vision/adapters/flux.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "adapters/generic.md",
+      "target": "editorial-vision/adapters/generic.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "adapters/gpt-image.md",
+      "target": "editorial-vision/adapters/gpt-image.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "adapters/ideogram.md",
+      "target": "editorial-vision/adapters/ideogram.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "adapters/registry.md",
+      "target": "editorial-vision/adapters/registry.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "agents/openai.yaml",
+      "target": "editorial-vision/agents/openai.yaml",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "assets/ground.md",
+      "target": "editorial-vision/assets/ground.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "assets/palette.md",
+      "target": "editorial-vision/assets/palette.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "assets/scene-construction.md",
+      "target": "editorial-vision/assets/scene-construction.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "assets/texture.md",
+      "target": "editorial-vision/assets/texture.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "assets/typography.md",
+      "target": "editorial-vision/assets/typography.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "layouts/brand-key-visual.md",
+      "target": "editorial-vision/layouts/brand-key-visual.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "layouts/campaign-poster.md",
+      "target": "editorial-vision/layouts/campaign-poster.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "layouts/editorial-spread.md",
+      "target": "editorial-vision/layouts/editorial-spread.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "layouts/gallery-print.md",
+      "target": "editorial-vision/layouts/gallery-print.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "layouts/interface-asset.md",
+      "target": "editorial-vision/layouts/interface-asset.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "layouts/magazine-cover.md",
+      "target": "editorial-vision/layouts/magazine-cover.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "layouts/moodboard.md",
+      "target": "editorial-vision/layouts/moodboard.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "layouts/photo-abstract-diptych.md",
+      "target": "editorial-vision/layouts/photo-abstract-diptych.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "layouts/poster.md",
+      "target": "editorial-vision/layouts/poster.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "layouts/presentation-deck.md",
+      "target": "editorial-vision/layouts/presentation-deck.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "layouts/product-editorial.md",
+      "target": "editorial-vision/layouts/product-editorial.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "layouts/social-asset.md",
+      "target": "editorial-vision/layouts/social-asset.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "layouts/website-hero.md",
+      "target": "editorial-vision/layouts/website-hero.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "layouts/zine.md",
+      "target": "editorial-vision/layouts/zine.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "presets/ivory-postcard.md",
+      "target": "editorial-vision/presets/ivory-postcard.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "presets/papercraft-diorama-postcard.md",
+      "target": "editorial-vision/presets/papercraft-diorama-postcard.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "presets/registry.md",
+      "target": "editorial-vision/presets/registry.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "presets/vintage-travel-poster.md",
+      "target": "editorial-vision/presets/vintage-travel-poster.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "prompts/analyzer.md",
+      "target": "editorial-vision/prompts/analyzer.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "prompts/art-direction.md",
+      "target": "editorial-vision/prompts/art-direction.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "prompts/compiler.md",
+      "target": "editorial-vision/prompts/compiler.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "prompts/evaluator.md",
+      "target": "editorial-vision/prompts/evaluator.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "prompts/intent.md",
+      "target": "editorial-vision/prompts/intent.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "prompts/iteration.md",
+      "target": "editorial-vision/prompts/iteration.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "prompts/optimizer.md",
+      "target": "editorial-vision/prompts/optimizer.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "prompts/planner.md",
+      "target": "editorial-vision/prompts/planner.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "prompts/recovery.md",
+      "target": "editorial-vision/prompts/recovery.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "prompts/reviewer.md",
+      "target": "editorial-vision/prompts/reviewer.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "prompts/series.md",
+      "target": "editorial-vision/prompts/series.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "prompts/style-brief.md",
+      "target": "editorial-vision/prompts/style-brief.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "prompts/style-gate.md",
+      "target": "editorial-vision/prompts/style-gate.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "prompts/visual-language.md",
+      "target": "editorial-vision/prompts/visual-language.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "prompts/visual-memory.md",
+      "target": "editorial-vision/prompts/visual-memory.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "recovery/",
+      "target": "editorial-vision/recovery",
+      "acquired": true,
+      "is_directory_reference": true
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "recovery/contrast.md",
+      "target": "editorial-vision/recovery/contrast.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "reference/architecture.md",
+      "target": "editorial-vision/reference/architecture.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "reference/decision-tree.md",
+      "target": "editorial-vision/reference/decision-tree.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "spec/editorial-spec.schema.md",
+      "target": "editorial-vision/spec/editorial-spec.schema.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "spec/visual-manifest.schema.md",
+      "target": "editorial-vision/spec/visual-manifest.schema.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "spec/visual-memory.schema.md",
+      "target": "editorial-vision/spec/visual-memory.schema.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "styles/apartamento.md",
+      "target": "editorial-vision/styles/apartamento.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "styles/brutalist.md",
+      "target": "editorial-vision/styles/brutalist.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "styles/cos.md",
+      "target": "editorial-vision/styles/cos.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "styles/kinfolk.md",
+      "target": "editorial-vision/styles/kinfolk.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "styles/monocle.md",
+      "target": "editorial-vision/styles/monocle.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "styles/muji.md",
+      "target": "editorial-vision/styles/muji.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "styles/popeye.md",
+      "target": "editorial-vision/styles/popeye.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "styles/purple.md",
+      "target": "editorial-vision/styles/purple.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "styles/swiss.md",
+      "target": "editorial-vision/styles/swiss.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "styles/travel-poster.md",
+      "target": "editorial-vision/styles/travel-poster.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/SKILL.md",
+      "reference": "styles/wallpaper.md",
+      "target": "editorial-vision/styles/wallpaper.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/adapters/_template.md",
+      "reference": "../prompts/optimizer.md",
+      "target": "editorial-vision/prompts/optimizer.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/adapters/_template.md",
+      "reference": "registry.md",
+      "target": "editorial-vision/adapters/registry.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/adapters/flux.md",
+      "reference": "../assets/ground.md",
+      "target": "editorial-vision/assets/ground.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/adapters/flux.md",
+      "reference": "../assets/texture.md",
+      "target": "editorial-vision/assets/texture.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/adapters/flux.md",
+      "reference": "../prompts/optimizer.md",
+      "target": "editorial-vision/prompts/optimizer.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/adapters/generic.md",
+      "reference": "../prompts/compiler.md",
+      "target": "editorial-vision/prompts/compiler.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/adapters/generic.md",
+      "reference": "../prompts/optimizer.md",
+      "target": "editorial-vision/prompts/optimizer.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/adapters/gpt-image.md",
+      "reference": "../prompts/compiler.md",
+      "target": "editorial-vision/prompts/compiler.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/adapters/gpt-image.md",
+      "reference": "../recovery/contrast.md",
+      "target": "editorial-vision/recovery/contrast.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/adapters/ideogram.md",
+      "reference": "../prompts/optimizer.md",
+      "target": "editorial-vision/prompts/optimizer.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/adapters/registry.md",
+      "reference": "../prompts/optimizer.md",
+      "target": "editorial-vision/prompts/optimizer.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/adapters/registry.md",
+      "reference": "_template.md",
+      "target": "editorial-vision/adapters/_template.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/adapters/registry.md",
+      "reference": "flux.md",
+      "target": "editorial-vision/adapters/flux.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/adapters/registry.md",
+      "reference": "generic.md",
+      "target": "editorial-vision/adapters/generic.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/adapters/registry.md",
+      "reference": "gpt-image.md",
+      "target": "editorial-vision/adapters/gpt-image.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/adapters/registry.md",
+      "reference": "ideogram.md",
+      "target": "editorial-vision/adapters/ideogram.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/assets/ground.md",
+      "reference": "../presets/registry.md",
+      "target": "editorial-vision/presets/registry.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/assets/ground.md",
+      "reference": "../prompts/compiler.md",
+      "target": "editorial-vision/prompts/compiler.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/assets/ground.md",
+      "reference": "../prompts/reviewer.md",
+      "target": "editorial-vision/prompts/reviewer.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/assets/ground.md",
+      "reference": "../recovery/contrast.md",
+      "target": "editorial-vision/recovery/contrast.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/assets/ground.md",
+      "reference": "../spec/editorial-spec.schema.md",
+      "target": "editorial-vision/spec/editorial-spec.schema.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/assets/ground.md",
+      "reference": "scene-construction.md",
+      "target": "editorial-vision/assets/scene-construction.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/assets/ground.md",
+      "reference": "texture.md",
+      "target": "editorial-vision/assets/texture.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/assets/palette.md",
+      "reference": "../presets/ivory-postcard.md",
+      "target": "editorial-vision/presets/ivory-postcard.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/assets/palette.md",
+      "reference": "ground.md",
+      "target": "editorial-vision/assets/ground.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/assets/palette.md",
+      "reference": "texture.md",
+      "target": "editorial-vision/assets/texture.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/assets/scene-construction.md",
+      "reference": "../prompts/compiler.md",
+      "target": "editorial-vision/prompts/compiler.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/assets/texture.md",
+      "reference": "../prompts/series.md",
+      "target": "editorial-vision/prompts/series.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/assets/texture.md",
+      "reference": "../spec/visual-memory.schema.md",
+      "target": "editorial-vision/spec/visual-memory.schema.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/layouts/photo-abstract-diptych.md",
+      "reference": "../assets/palette.md",
+      "target": "editorial-vision/assets/palette.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/layouts/photo-abstract-diptych.md",
+      "reference": "../assets/scene-construction.md",
+      "target": "editorial-vision/assets/scene-construction.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/layouts/photo-abstract-diptych.md",
+      "reference": "../assets/texture.md",
+      "target": "editorial-vision/assets/texture.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/layouts/photo-abstract-diptych.md",
+      "reference": "../assets/typography.md",
+      "target": "editorial-vision/assets/typography.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/layouts/photo-abstract-diptych.md",
+      "reference": "../prompts/analyzer.md",
+      "target": "editorial-vision/prompts/analyzer.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/layouts/photo-abstract-diptych.md",
+      "reference": "../recovery/contrast.md",
+      "target": "editorial-vision/recovery/contrast.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/layouts/photo-abstract-diptych.md",
+      "reference": "../spec/editorial-spec.schema.md",
+      "target": "editorial-vision/spec/editorial-spec.schema.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/layouts/poster.md",
+      "reference": "photo-abstract-diptych.md",
+      "target": "editorial-vision/layouts/photo-abstract-diptych.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/layouts/presentation-deck.md",
+      "reference": "../assets/texture.md",
+      "target": "editorial-vision/assets/texture.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/layouts/presentation-deck.md",
+      "reference": "../prompts/series.md",
+      "target": "editorial-vision/prompts/series.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/layouts/presentation-deck.md",
+      "reference": "../prompts/visual-memory.md",
+      "target": "editorial-vision/prompts/visual-memory.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/layouts/zine.md",
+      "reference": "../assets/variation-engine.md",
+      "target": "editorial-vision/assets/variation-engine.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/presets/ivory-postcard.md",
+      "reference": "../assets/scene-construction.md",
+      "target": "editorial-vision/assets/scene-construction.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/presets/papercraft-diorama-postcard.md",
+      "reference": "../assets/texture.md",
+      "target": "editorial-vision/assets/texture.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/presets/papercraft-diorama-postcard.md",
+      "reference": "../prompts/compiler.md",
+      "target": "editorial-vision/prompts/compiler.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/presets/papercraft-diorama-postcard.md",
+      "reference": "../prompts/reviewer.md",
+      "target": "editorial-vision/prompts/reviewer.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/presets/papercraft-diorama-postcard.md",
+      "reference": "../spec/editorial-spec.schema.md",
+      "target": "editorial-vision/spec/editorial-spec.schema.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/presets/registry.md",
+      "reference": "../prompts/art-direction.md",
+      "target": "editorial-vision/prompts/art-direction.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/presets/registry.md",
+      "reference": "../prompts/compiler.md",
+      "target": "editorial-vision/prompts/compiler.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/presets/registry.md",
+      "reference": "../prompts/planner.md",
+      "target": "editorial-vision/prompts/planner.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/presets/registry.md",
+      "reference": "../prompts/reviewer.md",
+      "target": "editorial-vision/prompts/reviewer.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/presets/registry.md",
+      "reference": "../prompts/style-gate.md",
+      "target": "editorial-vision/prompts/style-gate.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/presets/registry.md",
+      "reference": "../spec/visual-memory.schema.md",
+      "target": "editorial-vision/spec/visual-memory.schema.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/presets/registry.md",
+      "reference": "_template.md",
+      "target": "editorial-vision/presets/_template.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/presets/registry.md",
+      "reference": "ivory-postcard.md",
+      "target": "editorial-vision/presets/ivory-postcard.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/presets/registry.md",
+      "reference": "papercraft-diorama-postcard.md",
+      "target": "editorial-vision/presets/papercraft-diorama-postcard.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/presets/registry.md",
+      "reference": "vintage-travel-poster.md",
+      "target": "editorial-vision/presets/vintage-travel-poster.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/presets/vintage-travel-poster.md",
+      "reference": "../assets/texture.md",
+      "target": "editorial-vision/assets/texture.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/presets/vintage-travel-poster.md",
+      "reference": "../styles/travel-poster.md",
+      "target": "editorial-vision/styles/travel-poster.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/presets/vintage-travel-poster.md",
+      "reference": "ivory-postcard.md",
+      "target": "editorial-vision/presets/ivory-postcard.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/analyzer.md",
+      "reference": "../assets/scene-construction.md",
+      "target": "editorial-vision/assets/scene-construction.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/analyzer.md",
+      "reference": "../spec/editorial-spec.schema.md",
+      "target": "editorial-vision/spec/editorial-spec.schema.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/analyzer.md",
+      "reference": "recovery.md",
+      "target": "editorial-vision/prompts/recovery.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/art-direction.md",
+      "reference": "../spec/editorial-spec.schema.md",
+      "target": "editorial-vision/spec/editorial-spec.schema.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/art-direction.md",
+      "reference": "../spec/visual-manifest.schema.md",
+      "target": "editorial-vision/spec/visual-manifest.schema.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/art-direction.md",
+      "reference": "style-brief.md",
+      "target": "editorial-vision/prompts/style-brief.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/art-direction.md",
+      "reference": "style-gate.md",
+      "target": "editorial-vision/prompts/style-gate.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/compiler.md",
+      "reference": "../adapters/flux.md",
+      "target": "editorial-vision/adapters/flux.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/compiler.md",
+      "reference": "../adapters/generic.md",
+      "target": "editorial-vision/adapters/generic.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/compiler.md",
+      "reference": "../adapters/gpt-image.md",
+      "target": "editorial-vision/adapters/gpt-image.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/compiler.md",
+      "reference": "../adapters/ideogram.md",
+      "target": "editorial-vision/adapters/ideogram.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/compiler.md",
+      "reference": "../adapters/registry.md",
+      "target": "editorial-vision/adapters/registry.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/compiler.md",
+      "reference": "../assets/ground.md",
+      "target": "editorial-vision/assets/ground.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/compiler.md",
+      "reference": "../assets/palette.md",
+      "target": "editorial-vision/assets/palette.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/compiler.md",
+      "reference": "../assets/scene-construction.md",
+      "target": "editorial-vision/assets/scene-construction.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/compiler.md",
+      "reference": "../assets/texture.md",
+      "target": "editorial-vision/assets/texture.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/compiler.md",
+      "reference": "../assets/typography.md",
+      "target": "editorial-vision/assets/typography.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/compiler.md",
+      "reference": "../assets/variation-engine.md",
+      "target": "editorial-vision/assets/variation-engine.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/compiler.md",
+      "reference": "../layouts/",
+      "target": "editorial-vision/layouts",
+      "acquired": true,
+      "is_directory_reference": true
+    },
+    {
+      "from": "editorial-vision/prompts/compiler.md",
+      "reference": "../layouts/brand-key-visual.md",
+      "target": "editorial-vision/layouts/brand-key-visual.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/compiler.md",
+      "reference": "../layouts/campaign-poster.md",
+      "target": "editorial-vision/layouts/campaign-poster.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/compiler.md",
+      "reference": "../layouts/interface-asset.md",
+      "target": "editorial-vision/layouts/interface-asset.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/compiler.md",
+      "reference": "../layouts/moodboard.md",
+      "target": "editorial-vision/layouts/moodboard.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/compiler.md",
+      "reference": "../layouts/photo-abstract-diptych.md",
+      "target": "editorial-vision/layouts/photo-abstract-diptych.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/compiler.md",
+      "reference": "../layouts/presentation-deck.md",
+      "target": "editorial-vision/layouts/presentation-deck.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/compiler.md",
+      "reference": "../layouts/product-editorial.md",
+      "target": "editorial-vision/layouts/product-editorial.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/compiler.md",
+      "reference": "../layouts/social-asset.md",
+      "target": "editorial-vision/layouts/social-asset.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/compiler.md",
+      "reference": "../layouts/website-hero.md",
+      "target": "editorial-vision/layouts/website-hero.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/compiler.md",
+      "reference": "../presets/registry.md",
+      "target": "editorial-vision/presets/registry.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/compiler.md",
+      "reference": "../recovery/",
+      "target": "editorial-vision/recovery",
+      "acquired": true,
+      "is_directory_reference": true
+    },
+    {
+      "from": "editorial-vision/prompts/compiler.md",
+      "reference": "../reference/architecture.md",
+      "target": "editorial-vision/reference/architecture.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/compiler.md",
+      "reference": "../spec/editorial-spec.schema.md",
+      "target": "editorial-vision/spec/editorial-spec.schema.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/compiler.md",
+      "reference": "../spec/visual-manifest.schema.md",
+      "target": "editorial-vision/spec/visual-manifest.schema.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/compiler.md",
+      "reference": "../spec/visual-memory.schema.md",
+      "target": "editorial-vision/spec/visual-memory.schema.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/compiler.md",
+      "reference": "../styles/",
+      "target": "editorial-vision/styles",
+      "acquired": true,
+      "is_directory_reference": true
+    },
+    {
+      "from": "editorial-vision/prompts/compiler.md",
+      "reference": "iteration.md",
+      "target": "editorial-vision/prompts/iteration.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/compiler.md",
+      "reference": "series.md",
+      "target": "editorial-vision/prompts/series.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/compiler.md",
+      "reference": "style-brief.md",
+      "target": "editorial-vision/prompts/style-brief.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/compiler.md",
+      "reference": "visual-memory.md",
+      "target": "editorial-vision/prompts/visual-memory.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/evaluator.md",
+      "reference": "../assets/scene-construction.md",
+      "target": "editorial-vision/assets/scene-construction.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/evaluator.md",
+      "reference": "../assets/texture.md",
+      "target": "editorial-vision/assets/texture.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/evaluator.md",
+      "reference": "../layouts/interface-asset.md",
+      "target": "editorial-vision/layouts/interface-asset.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/evaluator.md",
+      "reference": "../layouts/website-hero.md",
+      "target": "editorial-vision/layouts/website-hero.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/evaluator.md",
+      "reference": "../recovery/focus.md",
+      "target": "editorial-vision/recovery/focus.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/evaluator.md",
+      "reference": "../spec/visual-manifest.schema.md",
+      "target": "editorial-vision/spec/visual-manifest.schema.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/evaluator.md",
+      "reference": "analyzer.md",
+      "target": "editorial-vision/prompts/analyzer.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/evaluator.md",
+      "reference": "iteration.md",
+      "target": "editorial-vision/prompts/iteration.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/evaluator.md",
+      "reference": "optimizer.md",
+      "target": "editorial-vision/prompts/optimizer.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/evaluator.md",
+      "reference": "series.md",
+      "target": "editorial-vision/prompts/series.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/evaluator.md",
+      "reference": "visual-memory.md",
+      "target": "editorial-vision/prompts/visual-memory.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/intent.md",
+      "reference": "../presets/registry.md",
+      "target": "editorial-vision/presets/registry.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/intent.md",
+      "reference": "../spec/editorial-spec.schema.md",
+      "target": "editorial-vision/spec/editorial-spec.schema.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/intent.md",
+      "reference": "series.md",
+      "target": "editorial-vision/prompts/series.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/intent.md",
+      "reference": "style-brief.md",
+      "target": "editorial-vision/prompts/style-brief.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/intent.md",
+      "reference": "style-gate.md",
+      "target": "editorial-vision/prompts/style-gate.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/intent.md",
+      "reference": "visual-memory.md",
+      "target": "editorial-vision/prompts/visual-memory.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/iteration.md",
+      "reference": "../assets/texture.md",
+      "target": "editorial-vision/assets/texture.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/iteration.md",
+      "reference": "../layouts/",
+      "target": "editorial-vision/layouts",
+      "acquired": true,
+      "is_directory_reference": true
+    },
+    {
+      "from": "editorial-vision/prompts/iteration.md",
+      "reference": "../recovery/contrast.md",
+      "target": "editorial-vision/recovery/contrast.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/iteration.md",
+      "reference": "../recovery/focus.md",
+      "target": "editorial-vision/recovery/focus.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/iteration.md",
+      "reference": "../recovery/palette.md",
+      "target": "editorial-vision/recovery/palette.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/iteration.md",
+      "reference": "../recovery/subject.md",
+      "target": "editorial-vision/recovery/subject.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/iteration.md",
+      "reference": "../spec/visual-manifest.schema.md",
+      "target": "editorial-vision/spec/visual-manifest.schema.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/iteration.md",
+      "reference": "art-direction.md",
+      "target": "editorial-vision/prompts/art-direction.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/iteration.md",
+      "reference": "compiler.md",
+      "target": "editorial-vision/prompts/compiler.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/iteration.md",
+      "reference": "evaluator.md",
+      "target": "editorial-vision/prompts/evaluator.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/iteration.md",
+      "reference": "optimizer.md",
+      "target": "editorial-vision/prompts/optimizer.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/iteration.md",
+      "reference": "style-gate.md",
+      "target": "editorial-vision/prompts/style-gate.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/optimizer.md",
+      "reference": "../adapters/_template.md",
+      "target": "editorial-vision/adapters/_template.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/optimizer.md",
+      "reference": "../adapters/ideogram.md",
+      "target": "editorial-vision/adapters/ideogram.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/optimizer.md",
+      "reference": "../spec/visual-manifest.schema.md",
+      "target": "editorial-vision/spec/visual-manifest.schema.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/optimizer.md",
+      "reference": "art-direction.md",
+      "target": "editorial-vision/prompts/art-direction.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/optimizer.md",
+      "reference": "compiler.md",
+      "target": "editorial-vision/prompts/compiler.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/optimizer.md",
+      "reference": "evaluator.md",
+      "target": "editorial-vision/prompts/evaluator.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/optimizer.md",
+      "reference": "iteration.md",
+      "target": "editorial-vision/prompts/iteration.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/optimizer.md",
+      "reference": "reviewer.md",
+      "target": "editorial-vision/prompts/reviewer.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/optimizer.md",
+      "reference": "style-brief.md",
+      "target": "editorial-vision/prompts/style-brief.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/optimizer.md",
+      "reference": "style-gate.md",
+      "target": "editorial-vision/prompts/style-gate.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/planner.md",
+      "reference": "../assets/scene-construction.md",
+      "target": "editorial-vision/assets/scene-construction.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/planner.md",
+      "reference": "../layouts/",
+      "target": "editorial-vision/layouts",
+      "acquired": true,
+      "is_directory_reference": true
+    },
+    {
+      "from": "editorial-vision/prompts/planner.md",
+      "reference": "../layouts/photo-abstract-diptych.md",
+      "target": "editorial-vision/layouts/photo-abstract-diptych.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/planner.md",
+      "reference": "../layouts/presentation-deck.md",
+      "target": "editorial-vision/layouts/presentation-deck.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/planner.md",
+      "reference": "../presets/registry.md",
+      "target": "editorial-vision/presets/registry.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/planner.md",
+      "reference": "../spec/visual-memory.schema.md",
+      "target": "editorial-vision/spec/visual-memory.schema.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/planner.md",
+      "reference": "art-direction.md",
+      "target": "editorial-vision/prompts/art-direction.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/planner.md",
+      "reference": "iteration.md",
+      "target": "editorial-vision/prompts/iteration.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/planner.md",
+      "reference": "visual-language.md",
+      "target": "editorial-vision/prompts/visual-language.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/planner.md",
+      "reference": "visual-memory.md",
+      "target": "editorial-vision/prompts/visual-memory.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/recovery.md",
+      "reference": "../assets/texture.md",
+      "target": "editorial-vision/assets/texture.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/recovery.md",
+      "reference": "../recovery/",
+      "target": "editorial-vision/recovery",
+      "acquired": true,
+      "is_directory_reference": true
+    },
+    {
+      "from": "editorial-vision/prompts/recovery.md",
+      "reference": "../recovery/background.md",
+      "target": "editorial-vision/recovery/background.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/recovery.md",
+      "reference": "../recovery/composition.md",
+      "target": "editorial-vision/recovery/composition.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/recovery.md",
+      "reference": "../recovery/contrast.md",
+      "target": "editorial-vision/recovery/contrast.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/recovery.md",
+      "reference": "../recovery/focus.md",
+      "target": "editorial-vision/recovery/focus.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/recovery.md",
+      "reference": "../recovery/geometry.md",
+      "target": "editorial-vision/recovery/geometry.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/recovery.md",
+      "reference": "../recovery/lighting.md",
+      "target": "editorial-vision/recovery/lighting.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/recovery.md",
+      "reference": "../recovery/palette.md",
+      "target": "editorial-vision/recovery/palette.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/recovery.md",
+      "reference": "../recovery/subject.md",
+      "target": "editorial-vision/recovery/subject.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/recovery.md",
+      "reference": "../recovery/texture.md",
+      "target": "editorial-vision/recovery/texture.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/recovery.md",
+      "reference": "../recovery/typography.md",
+      "target": "editorial-vision/recovery/typography.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/recovery.md",
+      "reference": "analyzer.md",
+      "target": "editorial-vision/prompts/analyzer.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/reviewer.md",
+      "reference": "../assets/scene-construction.md",
+      "target": "editorial-vision/assets/scene-construction.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/reviewer.md",
+      "reference": "../assets/texture.md",
+      "target": "editorial-vision/assets/texture.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/reviewer.md",
+      "reference": "../layouts/campaign-poster.md",
+      "target": "editorial-vision/layouts/campaign-poster.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/reviewer.md",
+      "reference": "../layouts/presentation-deck.md",
+      "target": "editorial-vision/layouts/presentation-deck.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/reviewer.md",
+      "reference": "optimizer.md",
+      "target": "editorial-vision/prompts/optimizer.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/reviewer.md",
+      "reference": "series.md",
+      "target": "editorial-vision/prompts/series.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/reviewer.md",
+      "reference": "style-brief.md",
+      "target": "editorial-vision/prompts/style-brief.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/reviewer.md",
+      "reference": "style-gate.md",
+      "target": "editorial-vision/prompts/style-gate.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/reviewer.md",
+      "reference": "visual-memory.md",
+      "target": "editorial-vision/prompts/visual-memory.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/series.md",
+      "reference": "../layouts/presentation-deck.md",
+      "target": "editorial-vision/layouts/presentation-deck.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/series.md",
+      "reference": "../spec/visual-manifest.schema.md",
+      "target": "editorial-vision/spec/visual-manifest.schema.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/series.md",
+      "reference": "evaluator.md",
+      "target": "editorial-vision/prompts/evaluator.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/series.md",
+      "reference": "iteration.md",
+      "target": "editorial-vision/prompts/iteration.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/series.md",
+      "reference": "visual-memory.md",
+      "target": "editorial-vision/prompts/visual-memory.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/style-brief.md",
+      "reference": "../assets/ground.md",
+      "target": "editorial-vision/assets/ground.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/style-brief.md",
+      "reference": "../presets/_template.md",
+      "target": "editorial-vision/presets/_template.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/style-brief.md",
+      "reference": "../styles/",
+      "target": "editorial-vision/styles",
+      "acquired": true,
+      "is_directory_reference": true
+    },
+    {
+      "from": "editorial-vision/prompts/style-brief.md",
+      "reference": "art-direction.md",
+      "target": "editorial-vision/prompts/art-direction.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/style-brief.md",
+      "reference": "style-gate.md",
+      "target": "editorial-vision/prompts/style-gate.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/style-gate.md",
+      "reference": "../assets/ground.md",
+      "target": "editorial-vision/assets/ground.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/style-gate.md",
+      "reference": "../presets/registry.md",
+      "target": "editorial-vision/presets/registry.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/style-gate.md",
+      "reference": "art-direction.md",
+      "target": "editorial-vision/prompts/art-direction.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/style-gate.md",
+      "reference": "style-brief.md",
+      "target": "editorial-vision/prompts/style-brief.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/style-gate.md",
+      "reference": "visual-memory.md",
+      "target": "editorial-vision/prompts/visual-memory.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/visual-language.md",
+      "reference": "../assets/texture.md",
+      "target": "editorial-vision/assets/texture.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/visual-memory.md",
+      "reference": "../presets/registry.md",
+      "target": "editorial-vision/presets/registry.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/visual-memory.md",
+      "reference": "../spec/visual-memory.schema.md",
+      "target": "editorial-vision/spec/visual-memory.schema.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/visual-memory.md",
+      "reference": "art-direction.md",
+      "target": "editorial-vision/prompts/art-direction.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/visual-memory.md",
+      "reference": "iteration.md",
+      "target": "editorial-vision/prompts/iteration.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/prompts/visual-memory.md",
+      "reference": "reviewer.md",
+      "target": "editorial-vision/prompts/reviewer.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/recovery/contrast.md",
+      "reference": "../assets/texture.md",
+      "target": "editorial-vision/assets/texture.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/recovery/texture.md",
+      "reference": "../assets/texture.md",
+      "target": "editorial-vision/assets/texture.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/reference/architecture.md",
+      "reference": "../adapters/",
+      "target": "editorial-vision/adapters",
+      "acquired": true,
+      "is_directory_reference": true
+    },
+    {
+      "from": "editorial-vision/reference/architecture.md",
+      "reference": "../adapters/_template.md",
+      "target": "editorial-vision/adapters/_template.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/reference/architecture.md",
+      "reference": "../adapters/registry.md",
+      "target": "editorial-vision/adapters/registry.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/reference/architecture.md",
+      "reference": "../presets/_template.md",
+      "target": "editorial-vision/presets/_template.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/reference/architecture.md",
+      "reference": "../presets/registry.md",
+      "target": "editorial-vision/presets/registry.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/reference/architecture.md",
+      "reference": "../prompts/optimizer.md",
+      "target": "editorial-vision/prompts/optimizer.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/reference/architecture.md",
+      "reference": "../spec/editorial-spec.schema.md",
+      "target": "editorial-vision/spec/editorial-spec.schema.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/reference/architecture.md",
+      "reference": "../spec/visual-manifest.schema.md",
+      "target": "editorial-vision/spec/visual-manifest.schema.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/reference/architecture.md",
+      "reference": "../spec/visual-memory.schema.md",
+      "target": "editorial-vision/spec/visual-memory.schema.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/spec/editorial-spec.schema.md",
+      "reference": "../assets/ground.md",
+      "target": "editorial-vision/assets/ground.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/spec/editorial-spec.schema.md",
+      "reference": "../assets/scene-construction.md",
+      "target": "editorial-vision/assets/scene-construction.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/spec/editorial-spec.schema.md",
+      "reference": "../layouts/photo-abstract-diptych.md",
+      "target": "editorial-vision/layouts/photo-abstract-diptych.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/spec/editorial-spec.schema.md",
+      "reference": "../presets/registry.md",
+      "target": "editorial-vision/presets/registry.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/spec/editorial-spec.schema.md",
+      "reference": "../prompts/analyzer.md",
+      "target": "editorial-vision/prompts/analyzer.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/spec/editorial-spec.schema.md",
+      "reference": "../prompts/optimizer.md",
+      "target": "editorial-vision/prompts/optimizer.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/spec/editorial-spec.schema.md",
+      "reference": "../prompts/planner.md",
+      "target": "editorial-vision/prompts/planner.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/spec/editorial-spec.schema.md",
+      "reference": "../prompts/reviewer.md",
+      "target": "editorial-vision/prompts/reviewer.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/spec/editorial-spec.schema.md",
+      "reference": "../prompts/style-brief.md",
+      "target": "editorial-vision/prompts/style-brief.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/spec/editorial-spec.schema.md",
+      "reference": "visual-memory.schema.md",
+      "target": "editorial-vision/spec/visual-memory.schema.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/spec/visual-manifest.schema.md",
+      "reference": "../prompts/evaluator.md",
+      "target": "editorial-vision/prompts/evaluator.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/spec/visual-manifest.schema.md",
+      "reference": "../prompts/iteration.md",
+      "target": "editorial-vision/prompts/iteration.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/spec/visual-manifest.schema.md",
+      "reference": "../prompts/optimizer.md",
+      "target": "editorial-vision/prompts/optimizer.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/spec/visual-manifest.schema.md",
+      "reference": "editorial-spec.schema.md",
+      "target": "editorial-vision/spec/editorial-spec.schema.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/spec/visual-memory.schema.md",
+      "reference": "../assets/texture.md",
+      "target": "editorial-vision/assets/texture.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/spec/visual-memory.schema.md",
+      "reference": "../presets/registry.md",
+      "target": "editorial-vision/presets/registry.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/spec/visual-memory.schema.md",
+      "reference": "../prompts/art-direction.md",
+      "target": "editorial-vision/prompts/art-direction.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/spec/visual-memory.schema.md",
+      "reference": "../prompts/compiler.md",
+      "target": "editorial-vision/prompts/compiler.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/spec/visual-memory.schema.md",
+      "reference": "../prompts/planner.md",
+      "target": "editorial-vision/prompts/planner.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/spec/visual-memory.schema.md",
+      "reference": "../prompts/reviewer.md",
+      "target": "editorial-vision/prompts/reviewer.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/spec/visual-memory.schema.md",
+      "reference": "../prompts/series.md",
+      "target": "editorial-vision/prompts/series.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/spec/visual-memory.schema.md",
+      "reference": "../prompts/visual-language.md",
+      "target": "editorial-vision/prompts/visual-language.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/spec/visual-memory.schema.md",
+      "reference": "../prompts/visual-memory.md",
+      "target": "editorial-vision/prompts/visual-memory.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/styles/muji.md",
+      "reference": "../assets/texture.md",
+      "target": "editorial-vision/assets/texture.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "editorial-vision/styles/travel-poster.md",
+      "reference": "../assets/texture.md",
+      "target": "editorial-vision/assets/texture.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "graphic-designer-role/roles/graphic-designer/SKILL.md",
+      "reference": "references/artifacts.md",
+      "target": "graphic-designer-role/roles/graphic-designer/references/artifacts.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "graphic-designer-role/roles/graphic-designer/SKILL.md",
+      "reference": "references/red-flags.md",
+      "target": "graphic-designer-role/roles/graphic-designer/references/red-flags.md",
+      "acquired": true,
+      "is_directory_reference": false
+    },
+    {
+      "from": "graphic-designer-role/roles/graphic-designer/SKILL.md",
+      "reference": "references/vocabulary.md",
+      "target": "graphic-designer-role/roles/graphic-designer/references/vocabulary.md",
+      "acquired": true,
+      "is_directory_reference": false
+    }
+  ],
+  "unacquired_text_or_runtime_inventory": [
+    {
+      "path": "graphic-designer-role/bin/cli.js",
+      "present_in_tree": true,
+      "acquired": false,
+      "sha256": null,
+      "upstream_git_blob_sha": "2345111f3881733694d2aeb7ccfa9b55d939b560",
+      "review_depth": "not_read",
+      "scope_note": "역할 내용 감사의 범위 밖인 installer/router/eval. CLI/runtime 효과는 검증하지 않음."
+    },
+    {
+      "path": "graphic-designer-role/commands/domain-expert.md",
+      "present_in_tree": true,
+      "acquired": false,
+      "sha256": null,
+      "upstream_git_blob_sha": "a0aa8972f15aa38bab6b9a7dcdc06421e500dd4c",
+      "review_depth": "not_read",
+      "scope_note": "역할 내용 감사의 범위 밖인 installer/router/eval. CLI/runtime 효과는 검증하지 않음."
+    },
+    {
+      "path": "graphic-designer-role/data/roles.json",
+      "present_in_tree": true,
+      "acquired": false,
+      "sha256": null,
+      "upstream_git_blob_sha": "06506fe599f9491b9eacfbfcb8d9cf74bd612908",
+      "review_depth": "not_read",
+      "scope_note": "역할 내용 감사의 범위 밖인 installer/router/eval. CLI/runtime 효과는 검증하지 않음."
+    },
+    {
+      "path": "graphic-designer-role/evals/parity/run_parity.py",
+      "present_in_tree": true,
+      "acquired": false,
+      "sha256": null,
+      "upstream_git_blob_sha": "5c829f85486032c99ff960db12cfca37768300f0",
+      "review_depth": "not_read",
+      "scope_note": "역할 내용 감사의 범위 밖인 installer/router/eval. CLI/runtime 효과는 검증하지 않음."
+    },
+    {
+      "path": "graphic-designer-role/evals/run_evals.py",
+      "present_in_tree": true,
+      "acquired": false,
+      "sha256": null,
+      "upstream_git_blob_sha": "52159a0fda4a8bff54ebf052e8829b08c9b556b2",
+      "review_depth": "not_read",
+      "scope_note": "역할 내용 감사의 범위 밖인 installer/router/eval. CLI/runtime 효과는 검증하지 않음."
+    },
+    {
+      "path": "graphic-designer-role/skills/domain-expert-router/SKILL.md",
+      "present_in_tree": true,
+      "acquired": false,
+      "sha256": null,
+      "upstream_git_blob_sha": "41b3b411869bb02cb7166c4a90c53e49c82c8e5d",
+      "review_depth": "not_read",
+      "scope_note": "역할 내용 감사의 범위 밖인 installer/router/eval. CLI/runtime 효과는 검증하지 않음."
+    }
+  ],
+  "observations": [
+    {
+      "id": "EDIT-01",
+      "title": "추가42 참조 확보 후에도 문서 계약의 실제 필드 정합성 결함이 남는다",
+      "evidence": [
+        "prompts/analyzer.md Spatial Report + spec/editorial-spec.schema.md image_report.spatial에는 projection 없음",
+        "같은 schema 및 Planner/Compiler는 spatial을 verbatim copy하되 direction.spatial_plan.projection 필수",
+        "image_report.spatial.element_kinds는 diptych에서 필요하나 target spatial_plan schema에는 없음",
+        "presets/papercraft-diorama-postcard.md reference_image:none/source_region:full-bleed 및 palette:derived-from-destination 문자열",
+        "공통schema none reference→source_region null, memory palette array"
+      ],
+      "impact": "처음36개 snapshot의 핵심 참조 미확보는 추가42개 확보/전수읽기로 해소했다. 현재78개 text의 지식 참조를 읽었으나 원사진 spatial copy 경로가 필수 projection을 공급하지 못하고 element_kinds의 이동 계약도 맞지 않는다. papercraft의 no-source photo policy와 palette 타입도 공통 계약에 어긋난다. 이들은 실제 문서 내 부정합이며 원본 실행으로 재현한 오류는 아니다. Editorial tree에는 실행 코드/package/requirements/lock이 없어 이 Markdown 계약을 구현된 자동검증으로 볼 수 없다.",
+      "selection_decision": "78text 정적 독해 완료와 문서 계약 정합성/실행 검증 완료를 분리. 관련 필드 계약은 원본 전체 도입에 앞서 정리할 대상이며 이번에는 source/R4schema를 수정하지 않음.",
+      "validation_kind": "정적 본문 판정; 이미지/스킬/원본코드 실행 반례 아님"
+    },
+    {
+      "id": "EDIT-02",
+      "title": "출력은 모델용 이미지 방향/프롬프트이며 편집 가능한 판면 구현과 다르다",
+      "evidence": [
+        "SKILL.md Output Contract: GenerationRequest/image prompt 또는 image tool available이면 생성",
+        "layouts/editorial-spread.md·presentation-deck.md·interface-asset.md·website-hero.md 비율/형태 지침",
+        "presentation-deck title/content/data 역할 및 동일계열 memory lock"
+      ],
+      "impact": "페이지 비율·여백·주요상 개념은 있으나 실제 좌표/column·baseline 계산, 텍스트 상자 fitting, 읽기순서·한국어 줄바꿈, 원본 chart/data binding, 객체별 layer/editability, AE/PPT/Figma 문서 생성·render 검증 구현은 확인되지 않는다. interface-asset은 UI를 보조하는 이미지이며 실제 화면/상태 설계 산출물로 승격하면 안 된다. 입력/키보드 조작/loading/error 상태 동작 구현 또는 실제 인터랙션 검증도 이 문서의 제공물로 확인되지 않았다. 생성 그림 안의 chart/text가 실제 값과 편집성을 보장하지 않는다.",
+      "selection_decision": "시각 방향/그래픽 자산 프롬프트 참고는 조건부 선택. 화면/판면/영상 layout 규격 또는 editable artifact 구현의 대체로 제외.",
+      "validation_kind": "정적 본문 판정; 이미지/스킬/원본코드 실행 반례 아님"
+    },
+    {
+      "id": "EDIT-03",
+      "title": "매거진/브랜드 이름은 저자의 스타일 라벨이며 정본·권리·판면 근거가 아니다",
+      "evidence": [
+        "styles/kinfolk.md·monocle.md·popeye.md·cos.md·muji.md·apartamento.md·purple.md·wallpaper.md",
+        "SKILL.md fixed look reproduced exactly/새 magazine brand 추가",
+        "layouts/moodboard.md no copied brand marks; brand-key-visual no fake logo",
+        "editorial-vision/LICENSE MIT"
+      ],
+      "impact": "이름 붙은 style DNA는 별점·짧은 특징·prompt clauses이며 원출판물 grid 측정/편집원칙 검증/브랜드 사용 승인 자료가 없다. Wallpaper*는 여기서 매거진식 현대 편집 스타일 라벨이고, 벽지나 texture 권한이 아니다. MIT 문서 재사용 허가가 타사 로고/사진/폰트/각 모델 서비스 약관의 허가를 포함하지 않는다. 이름을 넣는 것과 원작 구도·제호·문구·signature assets를 복제하는 것은 별도로 판단해야 한다.",
+      "selection_decision": "여백·위계·구조·인쇄/표면 같은 설명 가능한 방법만 조건부 선택. 사내 기본 디자인을 특정 타 브랜드 그대로의 look으로 고정하거나 권리 확보 완료로 표기하지 않음.",
+      "validation_kind": "정적 본문 판정; 이미지/스킬/원본코드 실행 반례 아님"
+    },
+    {
+      "id": "EDIT-04",
+      "title": "서체·제목·가독성 기본값은 한글 정보 영상에 적합한 보편 규격이 아니다",
+      "evidence": [
+        "assets/typography.md small serif/2–5 words/English poetic title 기본",
+        "spec/editorial-spec.schema.md intent.language en|zh; intent.md에서는 title/copy언어로 설명하나 schema에서는 summary언어",
+        "zine mono/typewriter fragmented semi-legible 허용",
+        "presets/papercraft-diorama-postcard.md garbled body는 illegible handwriting으로 낮추기",
+        "styles/brutalist.md oversized type·travel-poster.md large destination typography vs 기본 type supports image",
+        "named fonts Garamond/Caslon/Helvetica/Neue Haas/Gill Sans 등"
+      ],
+      "impact": "사용자가 언어를 지정하면 기본값을 바꾸는 경로는 있으나 schema 언어 enum은 한글을 담지 못하고 언어 field 의미도 다르다. 영어 시적 제목·작은 caption 중심·부분 가독 허용과 생성 실패 글자를 읽을 수 없는 필기로 낮추는 경로는 한글 사내 설명/통계/필수 문구에 적용할 수 없다. named font는 한글 coverage/fallback/font license/최소 크기/자간/line-height/표 읽기를 보장하지 않는다. 큰 구조적 타이포 스타일과 작은 type 기본을 조합할 때 적용조건도 필요하다.",
+      "selection_decision": "기본 영어 재작성·자동 번역·문구 생성·small/semi-legible을 공통 원칙에서 제외. 승인 문구와 언어를 고정하고 실제 서체/폰트권리·한글 줄바꿈·출력 크기 확인은 후속 실자료 규격으로 남김.",
+      "validation_kind": "정적 본문 판정; 이미지/스킬/원본코드 실행 반례 아님"
+    },
+    {
+      "id": "EDIT-05",
+      "title": "palette/texture/space 정책은 적용조건과 우선순위를 닫아야 한다",
+      "evidence": [
+        "assets/palette.md one high-chroma anchor/cobalt default/0.8–2.5% canvas/never muted",
+        "styles/muji.md saturated accents reject; styles/cos.md zero chroma unless user insists",
+        "presets/ivory-postcard.md 명시적으로 muted focus만 허용; brand memory no logo/hue 변경 및 explicit instruction",
+        "recovery/contrast.md·focus.md 8%는 abstract panel scope이며 처음 canvas scope 의심을 해소",
+        "assets/texture.md PRINT/SURFACE/FLAT와 사진 속 종이 subject vscanvas 설명",
+        "reviewer.md MUJI/COS는 multiple chroma anchors reject이나 style의 saturated accent 금지 전체를 직접 반복하지는 않음"
+      ],
+      "impact": "추가 본문에는 preset/brand lock이 일반 palette보다 우선하고 종이 subject와 canvas texture를 나누는 명시적 설명이 있어 최초의 무조건 CI변형/8% 비율 충돌 판단은 완화한다. 8% panel을 전체canvas 8%와 동일하게 비교하면 잘못이다. 여전히 일반 palette/Panter·style·brand locks의 각 적용 범위를 빠뜨리면 모순된 지시를 만든다. saturation/brightness 수치의 색공간·정량 측정 방식도 없다. 실제공간/접촉그림자 규칙은 source field에 따라 authored/observed로 구분하며 2D차트/다중뷰 정보 설명의 전역 의미로 승격하면 안 된다.",
+      "selection_decision": "브랜드 고정값→정보목적/자료 보존→출력 기능→선택 스타일 범위로 우선순위를 명시. 자료상 온전한 조건이 없는 수치·금지·효과 단정은 전역 규칙으로 이식하지 않음. texture permission은 자산 표현 옵션이며 taxonomy/실제 mask/3D 구현 증거로 오인하지 않음.",
+      "validation_kind": "정적 본문 판정; 이미지/스킬/원본코드 실행 반례 아님"
+    },
+    {
+      "id": "EDIT-06",
+      "title": "photo fidelity·deterministic replay·QC 점수는 프롬프트만으로 증명되지 않는다",
+      "evidence": [
+        "layouts/photo-abstract-diptych.md photo reproduced exactly/scale crop only/no retouch/outpaint",
+        "prompts/evaluator.md prompt-only 점수는 생성image quality vector와 명시적으로 구분",
+        "adapters/flux.md required fidelity는 warning과 low-strength img2img fallback; gpt/ideogram도 preservation clause 수준",
+        "spec/visual-manifest.schema.md prompt hash/seed:null/schema sketch이나 실제 prompt bytes/source image hash/model exact version/compiler 구현 저장 필드가 필수로 닫히지 않음",
+        "SKILL.md deterministic string/quality0.85/0.60/3iterations; README8examples한preset이며 벤치마크원자료 없음"
+      ],
+      "impact": "프롬프트 점수와 실제 image 평가는 원문에서 구분하며 image가 없으면 quality vector를 만들지 않는 장점이 있다. 그러나 원사진 무변형 요청만으로 pixel 동일성이 보장되지 않으며 글자/표값도 유지됐다고 증명할 수 없다. Flux strict fidelity warning도 구현 보증은 아니다. adapter의 negative field/temperature/guidance/steps 같은 model-host별 특성은 문서 주장이고 실제 backend parameter/API가 검증되지 않았다. manifest는 방향 기록에 유용하지만 hash만으로 prompt bytes와 source 자산·complete spec·compiler version을 재구성할 수 없고 seed:null 상태의 동일이미지 재생성을 보장하지 않는다. 결정적 optimizer·one mutation attribution 및 QC수치의 효과는 실행구현/통제표본/실측 없이 확인되지 않았다.",
+      "selection_decision": "원사진/CI/데이터 원본 보존은 실제 편집 산출물의 별도 객체/검증 계약으로 판단. 이 소스 점수는 제안 rubric이며 구조검사 통과·회사 영상 효과 향상으로 집계하지 않음.",
+      "validation_kind": "정적 본문 판정; 이미지/스킬/원본코드 실행 반례 아님"
+    },
+    {
+      "id": "EDIT-07",
+      "title": "Graphic Designer 역할은 인쇄·화면 조건과 CI 승인 권한을 분리해 선택",
+      "evidence": [
+        "graphic-designer-role/roles/graphic-designer/SKILL.md print vs screen physical difference",
+        "refs/artifacts.md CMYK SWOP/kraft proof/300dpi/bleed 및 screen px값",
+        "SKILL locked vector master/production place never redraw; refs incorrect usage recolor/stretch",
+        "single-color minimum-size test는 new mark design decision framework"
+      ],
+      "impact": "측정형 가이드·clear space·최소크기·실제 배경 대비·취향/기능결함 분리는 유용하다. CMYK/bleed/stock proof/300dpi/Pantone은 print 조건이며 RGB 영상에 그대로 강제할 수 없다. 이 원문이 기존 CI를 임의 흑백으로 자동 변형하라고 직접 지시한다고 단정할 근거는 없고 원본 master 잠금도 강조한다. 새 CI 설계의 single-color 시험을 사내 승인 variant 제작/사용 권한으로 승격하면 안 된다.",
+      "selection_decision": "기존 CI master/승인된 변형을 우선하고 미확인 권한은 unknown. 새 CI 설계·물성인쇄 규격은 현재 회사 영상 적용과 별도. print px/pt/ICC 예시는 사내정본값으로 복사하지 않음.",
+      "validation_kind": "정적 본문 판정; 이미지/스킬/원본코드 실행 반례 아님"
+    },
+    {
+      "id": "EDIT-08",
+      "title": "역할 자료의 draft·예시·CLI·수치 표현을 실제 검증과 구분",
+      "evidence": [
+        "SKILL metadata maturity draft/spec2; No direct practitioner review yet",
+        "README.ko global benchmark13/15 및 parity5/8 주장, 관련eval raw results 미검토",
+        "package.json CLI0.5.0 Node>=16/bin/cli.js; installer/router/runtime 미확보",
+        "worked example/ref table 5개 대비 독립산식 확인; deliverable 28px/18pt 표현"
+      ],
+      "impact": "role 원문은 참고 출처를 제시하지만 출처 원문과 practitioner review/역할별 실제 결과는 이번에 검증하지 않았다. 전repo benchmark를 graphic designer 회사 영상 효과로 확대할 수 없다. 독립 대비 계산은 예시 수치를 뒷받침했고 기능/경쟁진열 테스트는 원문 설명이지 실제 회사 증거가 아니다. 96dpi에서28px는21pt이므로 28px/18pt 예시 표현은 동등 단위로 복사하면 불일치한다. CLI의 Node 선언은 installer의 최소값이며 이 MD 역할을 읽는 것 자체의 JS runtime 의존성은 아니다.",
+      "selection_decision": "역할 판단 지식만 조건부 선택; installer/router/eval 원본실행 도입은 미검토로 보류. 숫자 예시는 예시 status와 측정조건/단위를 보존; company/actual evidence 승격 금지.",
+      "validation_kind": "정적 본문 판정; 이미지/스킬/원본코드 실행 반례 아님"
+    }
+  ],
+  "reasoned_counterexamples": [
+    {
+      "id": "EDIT-CE01",
+      "scenario": "한글 사내 안전수칙/수치12개가 확정된 설명 화면",
+      "failure_if_wholesale": "영어2–5단어 poetic caption/생성이미지 내부텍스트로 대체하면 정보누락·편집불가",
+      "required_outcome": "승인 문구/표값/언어와 editable text/data 객체 유지"
+    },
+    {
+      "id": "EDIT-CE02",
+      "scenario": "회사 CI가 저채도·무채도이고 신규 accent 사용 승인 없음",
+      "failure_if_wholesale": "cobalt 고채도 anchor 기본/Panter색보정으로 CI 임의변형",
+      "required_outcome": "확정 CI값 우선; 새 style 요청/변형 권한은 별도"
+    },
+    {
+      "id": "EDIT-CE03",
+      "scenario": "원본 사진이 변경 없이 유지되어야 하는 diptych",
+      "failure_if_wholesale": "image generation prompt exact만 믿고 redraw crop 외변경/얼굴·문구왜곡을 통과시킴",
+      "required_outcome": "원본 보존의 실제 산출물 검수; 프롬프트 기재는 완료증거 아님"
+    },
+    {
+      "id": "EDIT-CE04",
+      "scenario": "16:9 RGB 동영상용 도표를 인쇄 guideline으로 검사",
+      "failure_if_wholesale": "CMYK/300dpi/print bleed/px→pt표를 전역 적용",
+      "required_outcome": "영상 output pixel/color/timing/readability 조건으로 별도판정"
+    },
+    {
+      "id": "EDIT-CE05",
+      "scenario": "기존 회사 CI에 승인되지 않은 single-color variant가 없음",
+      "failure_if_wholesale": "새로고테스트절차를 기존CI 흑백변형승인으로 간주",
+      "required_outcome": "승인된 variant만 사용하고 부재/권한미확인은 unknown"
+    }
+  ],
+  "counterexample_execution": "미실행. 독립 정적 적용 반례 시나리오이며 생성 결과 실패를 실제 재현했다고 주장하지 않음.",
+  "independent_example_arithmetic": {
+    "results": {
+      "green_white": 12.331650638485177,
+      "green_cream": 10.857234426740607,
+      "copper_white": 4.317331345912448,
+      "copper_cream": 3.8011357842233715,
+      "brown_cream": 6.554525603585095,
+      "28px_at96dpi_to_pt": 21.0
+    },
+    "conclusion": "출처 worked example 대비5개는 소수 반올림 범위에서 맞는다. 28px/18pt는 96dpi 동등 단위로 불일치;28px=21pt. 이 계산은 사내 실자료나 원본스킬 runtime 실행 검증 아님."
+  },
+  "license_assessment": {
+    "editorial": "root LICENSE MIT, copyright2026Editorial Vision Studio contributors 확인",
+    "graphic_role": "root LICENSE MIT, copyright2026Wonsuk Choi/Domain Experts contributors 확인",
+    "conditions": "원문 이식 시 원저작권/허가 고지·출처/commit/hash/변경 사실 보존. 특정 폰트/이미지/외부서비스/타사브랜드권리를 root MIT에서 추론하지 않음.",
+    "no_primary_external_verification": "인용 도서/WCAG/모듈시스템/모델 서비스/폰트 라이선스 원문은 이번 네트워크 금지 범위에서 조회하지 않음."
+  },
+  "selection_recommendation": {
+    "conditional_knowledge": [
+      "목적→형식→정보위계/주요상→실자료에 추적 가능한 그래픽 선택",
+      "ground/medium/space/texture의 독립 변수 분리",
+      "브랜드 시스템 고정과 페이지별 정보구조 변화 구분",
+      "텍스트/주요상 safe area, 배경과 실적용 크기의 대비 확인",
+      "원CI master/승인variant/측정형 사용규칙과 취향vs기능결함 evidence"
+    ],
+    "exclude_as_company_defaults": [
+      "특정 매거진/브랜드 named DNA 그대로의 복제",
+      "영어 시적 제목/작은서체/반가독·고정60/30/10·고채도cobalt·Panter수치",
+      "모든2D정보화면에 실제공간/접촉shadow·질감금지 자동적용",
+      "print CMYK/300dpi/bleed/spot-color 규칙을 RGB영상에 강제",
+      "prompt fidelity/QC점수/manifest 선언만으로 실제 검증 완료 표기"
+    ],
+    "runtime": "Editorial은 문서 기반으로 실제 API 구현/쓰는경로 없음. graphic role installer/router/eval runtime은 미검토; A안 upstream 실행 보류를 유지."
+  },
+  "acquisition_reinspection": {
+    "version": "0.1.1",
+    "initial_state": "editorial36text; SKILL32파일 직접참조+recovery디렉터리 미확보 확인",
+    "updated_state": "parent가 fixed commit42text 추가확보; 현재78text 전수독해 및 hash 기록. 본 agent 새다운로드 없음.",
+    "resolved_or_revised": [
+      "핵심 참조 미확보 상태는 해소",
+      "Panter8%는 panel scope로 확인해 단순canvas비율충돌 주장을 철회",
+      "preset muted override/brand no-logo/hue-change/명시적 fork승인 및 source geometry 설명 확인",
+      "prompt-only 평가와 generated-image QC는 원문에서 구분",
+      "사진 속 종이재질은 canvas texture가 아닌 content라 FLAT와 충돌하지 않음"
+    ]
+  },
+  "limits": [
+    "현재 원문 및 local tree 감사만 수행. 이미지 생성·원본스킬·CLI 실행·외부출처 재조회 없음",
+    "editorial78text 전수읽기와 그림예시·full clone·runtime 검증을 구분. 자산/그림 예시 미관측",
+    "한국어/영상/PPT/인포그래픽의 실제 제작 성공·가독성·회사효과 검증 아님",
+    "이 기록은 자연어 source의 내용검토이며 새로운 R3 실제규격·R4schema·01-A 구현을 변경하지 않음"
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "name": "조건을 갖춘 반투명 sRGB 래스터 픽셀",
+  "expected_valid": true,
+  "tool_sha256": "ee9978bc3eceb8129f94601ef55d5b27af0d1dcc1e9a821a74da3b6c53198181",
+  "schema_sha256": {
+    "회사목록_규격.json": "861b4b2fa8b8f4da06eeaf8340deef4b4249ccbf3aa05219090cb5cd93e49cd3",
+    "자산목록_규격.json": "cc6e5be499cd4734ba8b86b93dcb004e355582520fa449e411e239e07264e7bc",
+    "CI색상목록_규격.json": "07c5a227f3ed67dcabeac2d68c2a12a9df916649b769943422c92e1f3b58a8fd"
+  },
+  "passed": true,
+  "actual_result": {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "공식 지정색 전체 확인 미완료; 관측색은 공식값 아님"
+    ],
+    "collection_complete": true,
+    "official_values_complete": false,
+    "counts": {
+      "companies": 7,
+      "assets": 14,
+      "colors": 7
+    }
+  },
+  "color_input": {
+    "color_id": "fixture_color_0",
+    "record_version": "1.0.0",
+    "revision_state": "current",
+    "company_id": "fixture_company_0",
+    "ci_asset_ref": {
+      "asset_id": "fixture_logo_0",
+      "record_version": "1.0.0",
+      "sha256": "8e105eca49cb38075b19fc658dc952b2cdee640a638faed7d2edfe0505441052"
+    },
+    "evidence_asset_ref": {
+      "asset_id": "fixture_logo_0",
+      "record_version": "1.0.0",
+      "sha256": "8e105eca49cb38075b19fc658dc952b2cdee640a638faed7d2edfe0505441052"
+    },
+    "source_level": "raster_sample",
+    "label_in_source": "observed pixel",
+    "raw_value": {
+      "notation": "HEX",
+      "value": "#112233",
+      "declared_color_space": "srgb"
+    },
+    "screen_value": {
+      "color_space": "srgb",
+      "hex": "#112233",
+      "alpha": 0.25
+    },
+    "normalization": {
+      "method": "raster_sample",
+      "source_profile": "srgb",
+      "notes": "원시 RGBA 관측"
+    },
+    "evidence_locator": "raw pixel (1,1)",
+    "verification": {
+      "state": "source_checked",
+      "checked_by": "FIXTURE PERSON",
+      "checked_at": "2026-10-14T00:00:00Z",
+      "notes": "fixture state only; no identity/authenticity assertion"
+    },
+    "notes": "SYNTHETIC REDTEAM FIXTURE",
+    "observation": {
+      "region": "pixel(1,1)",
+      "alpha_handling": "원시 RGBA 픽셀 alpha 0.25 그대로 기록",
+      "background_handling": "배경에 합성하지 않은 straight alpha",
+      "profile_assumption": "확인된 sRGB 프로필"
+    }
+  },
+  "limit": "원문진위 판단 없이 alpha 측정치와 조건의 계약상 보존 가능 여부만 검사"
+}

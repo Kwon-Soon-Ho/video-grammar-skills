@@ -1,0 +1,200 @@
+{
+  "utc": "2026-10-19T02:46:23.268708+00:00",
+  "scope": "synthetic structure/provenance/registry/renderer adversarial checks; not vision accuracy or independent trial",
+  "tests": [
+    {
+      "name": "valid_declared_record_and_provenance",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "structure_only_does_not_require_catalog",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "missing_declared_size_row",
+      "passed": true,
+      "detail": "['orphan claim outside observation rows']"
+    },
+    {
+      "name": "coverage_gap",
+      "passed": true,
+      "detail": "['cross-object/property/time claim in row']"
+    },
+    {
+      "name": "dangling_claim",
+      "passed": true,
+      "detail": "['dangling row claims']"
+    },
+    {
+      "name": "cross_property_claim",
+      "passed": true,
+      "detail": "['cross-object/property/time claim in row']"
+    },
+    {
+      "name": "unreviewed_identity_as_confirmed",
+      "passed": true,
+      "detail": "['identity needs supported observed identification']"
+    },
+    {
+      "name": "inferred_identity_as_observed",
+      "passed": true,
+      "detail": "['identity needs supported observed identification']"
+    },
+    {
+      "name": "unresolved_identity_with_label",
+      "passed": true,
+      "detail": "['unresolved identity cannot carry a confirmed label']"
+    },
+    {
+      "name": "false_review_completion",
+      "passed": true,
+      "detail": "['review index differs from claim review states']"
+    },
+    {
+      "name": "duplicate_claim",
+      "passed": true,
+      "detail": "['duplicate semantic claim key']"
+    },
+    {
+      "name": "insufficient_curve_samples",
+      "passed": true,
+      "detail": "['curve needs three distinct actual times']"
+    },
+    {
+      "name": "unlinked_easing_evidence",
+      "passed": true,
+      "detail": "['dangling easing evidence']"
+    },
+    {
+      "name": "unfinished_row_without_unknown",
+      "passed": true,
+      "detail": "['unfinished row requires open unknown']"
+    },
+    {
+      "name": "unscreened_property",
+      "passed": true,
+      "detail": "['property screening incomplete']"
+    },
+    {
+      "name": "missing_full_design_dimension",
+      "passed": true,
+      "detail": "['full design dimensions missing']"
+    },
+    {
+      "name": "layout_missing_discovered_object",
+      "passed": true,
+      "detail": "['discovered objects missing from full layout']"
+    },
+    {
+      "name": "missing_motion_detail",
+      "passed": true,
+      "detail": "['changing objects need detail motion record']"
+    },
+    {
+      "name": "missing_motion_flow",
+      "passed": true,
+      "detail": "['missing overall motion flow']"
+    },
+    {
+      "name": "confirmed_implementation",
+      "passed": true,
+      "detail": "['implementation must remain a proposal']"
+    },
+    {
+      "name": "cross_source_evidence",
+      "passed": true,
+      "detail": "['cross-source evidence']"
+    },
+    {
+      "name": "wrong_evidence_time",
+      "passed": true,
+      "detail": "['evidence time mismatch']"
+    },
+    {
+      "name": "parent_cycle",
+      "passed": true,
+      "detail": "['parent cycle']"
+    },
+    {
+      "name": "historical_schema_cannot_be_new_pass",
+      "passed": true,
+      "detail": "['unsupported observation schema']"
+    },
+    {
+      "name": "malformed_list",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "null",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "missing_keys",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "malformed_interval",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "partial_facts_preserved_with_open_question",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "inferred_evidence_cannot_resolve_observed_question",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "markdown_contains_flow_detail_layout_and_unknown_scope",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "category_number_assigned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "append_preserves_number_and_snapshot",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "repeat_reuses_pinned_first_pattern",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "unreviewed_repeat_not_confirmed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "changed_pattern_pin_rejected",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "tampered_pattern_rejected",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "registration_cannot_grant_approval",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "passed": 38,
+  "total": 38,
+  "all_passed": true,
+  "real_video_accuracy_proven": false
+}

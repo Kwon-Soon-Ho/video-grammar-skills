@@ -1,0 +1,133 @@
+{
+  "id": "r7-evaluation-research",
+  "version": "0.1.0",
+  "state": "draft_pending_integrated_review",
+  "external_sources": [
+    {
+      "id": "EV-GOOGLE",
+      "title": "Google Classification metrics",
+      "url": "https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall",
+      "locator": "Accuracy; Recall; FPR; Precision; What does NaN mean; metric tradeoffs",
+      "read_depth": "지정 공개 본문 절",
+      "summary": "정밀도·재현율·불균형·0분모의 해석을 확인.",
+      "limit": "영상/실패/보류의 분모·N_A/H/U/N 설계와 null정책은 프로젝트 해석. 예제·F1을 영상 총점/고정 합격선으로 채택하지 않음.",
+      "checked_on": "2026-10-15",
+      "full_document_archived": false,
+      "remote_sha256": null
+    },
+    {
+      "id": "EV-LEAK",
+      "title": "scikit-learn Common pitfalls",
+      "url": "https://scikit-learn.org/stable/common_pitfalls.html#data-leakage",
+      "locator": "12.2 / 12.2.1",
+      "read_depth": "지정 공개 본문 절; 표시 stable1.9.1",
+      "summary": "test를 개발 선택/전처리 적합에 쓰면 낙관적 결과가 생기는 조건.",
+      "limit": "라이브러리 설치/학습/실험 미실행. 스킬/검색/대화 노출 관리로 옮긴 것은 프로젝트 설계.",
+      "checked_on": "2026-10-15",
+      "full_document_archived": false,
+      "remote_sha256": null
+    },
+    {
+      "id": "EV-GROUP",
+      "title": "scikit-learn Cross-validation grouped data",
+      "url": "https://scikit-learn.org/stable/modules/cross_validation.html#cross-validation-iterators-for-grouped-data",
+      "locator": "3.1.2.4; GroupKFold/StratifiedGroupKFold; 3.1.2.5의 그룹 분할",
+      "read_depth": "지정 공개 본문 절; 다른 교차검증 전체 검토 아님",
+      "summary": "종속 표본의 그룹과 그룹별 분리의 이유.",
+      "limit": "영상 source_family 규칙은 우리 과제에 맞춘 제안. 알고리즘 실행/대표성·모델 사전학습 미노출 증명 아님.",
+      "checked_on": "2026-10-15",
+      "full_document_archived": false,
+      "remote_sha256": null
+    },
+    {
+      "id": "EV-AGENT",
+      "title": "Anthropic Demystifying evals for AI agents",
+      "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+      "locator": "structure of an evaluation; types of graders; capability vs regression; research evals; task ambiguity; multiple trials / pass@k vs pass^k",
+      "read_depth": "공개 엔지니어링 설명의 해당 부분. Jan09 2026 표시",
+      "summary": "과제·시행·평가자·실행 결과/상태를 구분하고 평가자를 과제에 맞추는 방법.",
+      "limit": "벤더의 실무 지침. 단일총점/고정회귀목표/사람 검수 대체를 채택하지 않음. 스킬 제작·평가기반/모델/API 실행 없음.",
+      "checked_on": "2026-10-15",
+      "full_document_archived": false,
+      "remote_sha256": null
+    },
+    {
+      "id": "EV-ALPHA",
+      "title": "Klaus Krippendorff Computing Alpha-Reliability",
+      "url": "https://www.asc.upenn.edu/sites/default/files/2021-03/Computing%20Krippendorff%27s%20Alpha-Reliability.pdf",
+      "locator": "p1 일반 정의/특성; p2 단위별 복제판정; sectionC pp4–5 명목/복수검수자·결측의 해당 부분",
+      "read_depth": "저자PDF10쪽 중 지정 부분만. 문서2011.1.25 / literature updated2013.9.13 표시. 전체 계수/변형·신뢰구간 알고리즘 미검토",
+      "summary": "판정 변수·척도·검수자·결측을 구분해야 하는 합의 지표의 근거.",
+      "limit": "alpha는 선택 후보이며 미산출. 원문 표의 모든 계산을 재현하지 않음. 고정0.8/작은표본충분/합의=사실성을 채택하지 않음.",
+      "checked_on": "2026-10-15",
+      "full_document_archived": false,
+      "remote_sha256": null
+    },
+    {
+      "id": "EV-BINOMIAL",
+      "title": "NIST/SEMATECH confidence intervals for proportion defective",
+      "url": "https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm",
+      "locator": "7.2.4.1 binomial confidence limits / example",
+      "read_depth": "해당 공개 페이지의 설명·식/예 열람. 통계 핸드북 전체 아님",
+      "summary": "이항 비율의 불확실성을 점추정과 구분하는 참고.",
+      "limit": "같은 영상의 종속 프레임/반복시행에 그대로 적용하지 않음. 구간 계산/신뢰수준/표본수 확정 없음.",
+      "checked_on": "2026-10-15",
+      "full_document_archived": false,
+      "remote_sha256": null
+    },
+    {
+      "id": "EV-SELECTIVE",
+      "title": "Geifman & El-Yaniv Selective Classification for Deep Neural Networks",
+      "url": "https://proceedings.neurips.cc/paper/7073-selective-classification-for-deep-neural-networks.pdf",
+      "locator": "section2 Problem Setting, PDFp2: selector/coverage/selective risk",
+      "read_depth": "학회 원문 초록과2절 정의만. 전체 증명/실험/알고리즘/데이터셋은 미검토",
+      "summary": "답하지 않는 선택과 답한 범위의 오류를 함께 보는 risk/coverage 개념.",
+      "limit": "확률 보장·ImageNet/CIFAR 성적/알고리즘을 우리 과제에 전용하지 않음. R_A/H/U/N·실패/누락 분류는 프로젝트 설계.",
+      "checked_on": "2026-10-15",
+      "full_document_archived": false,
+      "remote_sha256": null
+    }
+  ],
+  "local_contexts": [
+    {
+      "path": "13_품질검수/품질항목_정본.json",
+      "sha256": "c5b9e91e902747a1d657fbbaee19c4b2b97e96dcf58f0ae2bb032384f29ce60f",
+      "read_scope": "해당 기존 계약/정책/참조 범위. 과거 후보 도입부와 현재 진행상태는 구분."
+    },
+    {
+      "path": "13_품질검수/03_판정운영기준.md",
+      "sha256": "2a8e21f028e18398ab2a6544cc429e585ab6a0a59abd370dbacd7991e141b7c1",
+      "read_scope": "해당 기존 계약/정책/참조 범위. 과거 후보 도입부와 현재 진행상태는 구분."
+    },
+    {
+      "path": "13_품질검수/판정방식_사용자결정.json",
+      "sha256": "ff26f9c19bf0ef81dc51c95a8071ec5e5d462b5658e88a2cdd1d38b00cb4c8b7",
+      "read_scope": "해당 기존 계약/정책/참조 범위. 과거 후보 도입부와 현재 진행상태는 구분."
+    },
+    {
+      "path": "13_품질검수/평가계획/진행방식_사용자결정.json",
+      "sha256": "ef5007e8eb667d5d0ef01488bed2293b9c237d1e1667768070f62f7935a00e1c",
+      "read_scope": "해당 기존 계약/정책/참조 범위. 과거 후보 도입부와 현재 진행상태는 구분."
+    },
+    {
+      "path": "04_기록규격/06_통합최소기록_규격_v0.2.md",
+      "sha256": "3c301c7f874921a3bd7bc3e5922ca8cb7c16ddc950f78ecc9850251b9474df74",
+      "read_scope": "해당 기존 계약/정책/참조 범위. 과거 후보 도입부와 현재 진행상태는 구분."
+    },
+    {
+      "path": "06_맞춤스킬/평가계획.json",
+      "sha256": "1d0c0a2c2d5521ffac06388d51751c05efecaece5e9e039bfce736b211746e25",
+      "read_scope": "해당 기존 계약/정책/참조 범위. 과거 후보 도입부와 현재 진행상태는 구분."
+    },
+    {
+      "path": "05_출처와검토/검수와사용범위/07_한맥디자인과_CI_확인현황.md",
+      "sha256": "872b4cf10790af7142a6438252f0da6206cd25233823050d3fafd8f412bbc226",
+      "read_scope": "해당 기존 계약/정책/참조 범위. 과거 후보 도입부와 현재 진행상태는 구분."
+    }
+  ],
+  "not_used_as_substantive_evidence": [
+    "NIST AI RMF 허브/목록의 열람만으로 MEASURE 세부를 검토했다고 하지 않음.",
+    "ACL J08-4004는 서지/초록 확인 수준. 이번 합의 정책의 전문 근거로 세지 않음."
+  ],
+  "scope": "7개 외부 자료의 지정 부분과 기존 참조7개. 전수 문헌/전체 증명/실험 재현/우리 영상 성능 입증 아님. 같은 출처 재열람을 신규 연구로 중복 계수하지 않음. 향후 실제 입력과 평가 목적에 적용성 재검토."
+}

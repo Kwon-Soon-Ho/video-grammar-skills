@@ -1,0 +1,13 @@
+{
+  "eval_id": 1,
+  "eval_name": "T01 baseline motion analysis",
+  "prompt": "이 구간에서 보이는 대상과 변화를 스킬 없이 분석하세요. 작은 보조 요소와 화면 내부도 살피고, 위치·크기·형태·가시성·광량·순서·가감속을 근거 시점과 함께 기록하세요. 정지/비적용/미분류에는 이유를 적고 관측과 구현 추정을 구분하세요. 추가로 사용자가 특정 동작을 지적해 주는 것을 기다리지 말고 결과를 먼저 저장하세요. Allowed source window: [3.5, 5.5]",
+  "assertions": [
+    "E를 한 덩어리 색 전환으로만 쓰지 않고 조각별 진입을 식별",
+    "좌→우 이동",
+    "초반 빠르고 끝에서 느려짐을 관측 곡선군으로 기록"
+  ],
+  "new_skill_available": false,
+  "media_sha256": "31c4c47744b8cdfef935b167a1b04df80e13523cfc8550205a8495b4267cc192",
+  "reference_frozen_before_run": true
+}

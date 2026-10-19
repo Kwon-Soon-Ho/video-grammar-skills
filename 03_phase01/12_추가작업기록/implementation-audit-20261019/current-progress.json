@@ -1,0 +1,66 @@
+{
+  "baseline_audit": "implementation-audit.json / draft.5의 41개 조사 포인트 상태 보존",
+  "latest_candidate": {
+    "scope": "조사 전체의 구현 현황 정정 및 분석 신뢰성 일부의 개발 후보 보완",
+    "candidate_version": "0.1.0-draft.6",
+    "whole_research_implemented": false,
+    "default_installed_or_replaced": false,
+    "fresh_holdout": false,
+    "actual_cases": 2,
+    "first_pass_claims": 62,
+    "record_and_provenance_checks_passed": true,
+    "content_review_complete": false,
+    "content_gaps_recorded": 7,
+    "tests": [
+      {
+        "scope": "record semantics and literal keyword search; not image recognition, independent content review, matching quality or reconstruction",
+        "passed": 18,
+        "total": 18
+      },
+      {
+        "scope": "synthetic structure/provenance/registry/renderer adversarial checks; not vision accuracy or independent trial",
+        "passed": 38,
+        "total": 38
+      },
+      {
+        "scope": "separation, composition graph, selective export, backward source references; no fresh video comparison",
+        "passed": 34,
+        "total": 34
+      }
+    ],
+    "basic_skill_format_check": "passed",
+    "relative_markdown_links_checked": 10,
+    "protected_files_unchanged": 223,
+    "remaining_large_categories": [
+      "분석 신뢰성의 내용 누락 보완과 새 자료 확인",
+      "조건 기반 패턴 검색·실제 반복 장면 매칭 검증",
+      "목적·제약에 따른 대안·선택·비평·재평가",
+      "편집 가능한 재제작·렌더 대조·내용 변경 재사용 시험"
+    ],
+    "interpretation": "서로 다른 표 셀의 구분과 키워드 검색을 추가했으며, 의미 정확도·재사용 적합성·제작 품질을 입증한 것은 아니다."
+  },
+  "scope_correction": "조사는 채택 완료가 아니다. 코드 일부·지침·미구현·적용 제외를 구분해 보고한다. 원본 스킬 통째 설치 수를 목표나 완성률로 삼지 않는다.",
+  "four_categories": [
+    {
+      "name": "분석 신뢰성·근거·기록",
+      "state": "일부 구현·실제 내용 보완 중",
+      "exit_result": "실제 기록의 잘못된 식별·속성 누락·시간 범위를 확인하고, 이미 본 자료와 새 자료를 구분한 검증 결과"
+    },
+    {
+      "name": "사례 검색·패턴 재사용",
+      "state": "등록·번호·스냅샷·관계 연결, 단순 키워드 검색까지 일부",
+      "exit_result": "조건에 맞는 후보를 찾고 현재 장면의 근거·차이·미확정을 기록한 반복 사례"
+    },
+    {
+      "name": "전문가 판단·기획",
+      "state": "지침·인계 형식 중심",
+      "exit_result": "목적·제약에서 복수 대안을 만들고 선택 근거·비평·수정 후 재평가를 남긴 기획 사례"
+    },
+    {
+      "name": "역설계·제작 검증",
+      "state": "이번 후보에서 미구현",
+      "exit_result": "관측 명세에 연결한 편집 가능한 결과물·렌더 대조·내용 변경 재사용 결과"
+    }
+  ],
+  "next_category": "사용자가 이미 선택한 분석 정확도·근거 기록 우선 유지. 전체 반영이나 기본 승격으로 보고하지 않음."
+}

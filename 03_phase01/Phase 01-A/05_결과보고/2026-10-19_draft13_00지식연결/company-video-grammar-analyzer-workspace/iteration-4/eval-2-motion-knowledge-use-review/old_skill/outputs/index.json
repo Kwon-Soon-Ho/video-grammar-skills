@@ -1,0 +1,1454 @@
+{
+  "schema": "local-motion-use-index-v1; not R4/video-observation schema",
+  "source": {
+    "filename": "가치창출성과 영상_260923_v3.mp4",
+    "sha256_reported": "be78fc4f2f94c6b3cbd31339a1a1ccc84b91613d56c0e485d5dd1296839f56fa",
+    "raster_reported": [
+      7680,
+      2160
+    ],
+    "fps_reported": 30,
+    "duration_reported": 434.4,
+    "path": "MP4 absolute path not provided; filename only",
+    "verified_this_run": false,
+    "audio": "미검수"
+  },
+  "flows": [
+    {
+      "id": "LOCAL-FLOW-A-REVIEW-v1",
+      "case": "VC-CASE-A",
+      "region": "A-02",
+      "sequence": [
+        "A-M1",
+        "A-M2",
+        "A-M3"
+      ],
+      "stable_context": "수주 구성→비용→실제 매출 누적",
+      "gaps": [
+        "100~103",
+        "106~108"
+      ]
+    },
+    {
+      "id": "LOCAL-FLOW-B-REVIEW-v1",
+      "case": "VC-CASE-B",
+      "region": "B-02→B-03→B-04→B-05",
+      "sequence": [
+        "B-M1",
+        "B-M2",
+        "B-M3"
+      ],
+      "stable_context": "요청↔지원→총량→업무 영상→핵심 차트",
+      "gaps": [
+        "140~143",
+        "146~147"
+      ]
+    }
+  ],
+  "uses": [
+    {
+      "id": "A-M1",
+      "case": "VC-CASE-A",
+      "region": "A-02",
+      "sheet": "contract-reflow",
+      "window": [
+        96,
+        100
+      ],
+      "title": "수주 재배치와 비용 정보판 누적",
+      "content": "수주 총량/구성 다음에 계약 수행 투입비용을 구별해 설명",
+      "role": "CARD 후보; VC-MOTION-02 변형 검토",
+      "stages": [
+        [
+          96,
+          "수주 정보판 중심"
+        ],
+        [
+          96.5,
+          "수주 판 왼쪽 재배치 중"
+        ],
+        [
+          97,
+          "비용 판 외형·제목"
+        ],
+        [
+          97.5,
+          "동전 일부"
+        ],
+        [
+          98,
+          "문서 포함 도상"
+        ],
+        [
+          99,
+          "현재까지 투입 캡슐"
+        ],
+        [
+          100,
+          "비용 숫자 가시; 모음에서는0.7억원으로 읽히며 최종8.7과 구별"
+        ]
+      ],
+      "properties": [
+        "PROPERTY-POSITION",
+        "PROPERTY-VISIBILITY",
+        "PROPERTY-VALUE"
+      ],
+      "timing": [
+        "TIME-SEQUENCE",
+        "TIME-OVERLAP"
+      ],
+      "functions": [
+        "FUNCTION-REVEAL",
+        "FUNCTION-CONTEXT"
+      ],
+      "reason": "기존 구역을 남기며 공간·새 내부 정보가 단계별 변화",
+      "relations": [
+        {
+          "from": "수주 판 재배치",
+          "to": "비용 판 추가",
+          "type": "overlaps",
+          "basis": "96.5~97.5 표본; 두 시작 미상"
+        },
+        {
+          "from": "비용 도상",
+          "to": "캡슐 및 숫자",
+          "type": "precedes",
+          "basis": "98→99→100 표본"
+        }
+      ],
+      "principles": [
+        "MR-04",
+        "MR-07",
+        "AP-09"
+      ],
+      "condition": "관련 지표 누적 설명; 과밀하거나 기간/집계가 바뀌면 그대로 유지하지 않음",
+      "difference": "A-M2와 달리 기존 수주 판 위치도 변함. 동일 패턴 확정 아님",
+      "definition_version": {
+        "source_sha256": "08c97ec66a4e4efe3d7e7f0bc5c5195aee1f4a3d753cfc1c8b174c1457950003",
+        "source_locator": "§4 / A-M1",
+        "status": "unversioned local candidate pinned by source hash"
+      },
+      "definition_source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-2-motion-knowledge-use-review\\old_skill\\outputs\\preserved-input\\01_계약_수집기록.md",
+      "original_record": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\motion\\01_계약_수집기록.md",
+      "detail_link": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-2-motion-knowledge-use-review\\old_skill\\outputs\\collection.md#a-m1",
+      "basis_kind": "existing-record reuse + provided sheet visual readback",
+      "status": "local candidate; not registered/approved",
+      "unverified_dimensions": [
+        "100초는 최종 비용 정착 아님",
+        "정확 AE 키프레임·원본 곡선·마스크/parent/3D 구현 미상",
+        "음성·시나리오·연속 원본 미검수",
+        "표본 사이 정확 시작/완료와 이후 퇴장 미관측"
+      ],
+      "evidence": {
+        "sheet_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\motion\\evidence\\contract-reflow.jpg",
+        "sheet_sha256": "cfa87b47a9f817b497ebb360165c30ec6f777c7acd547daeaf1c418a65609784",
+        "sheet_viewed_this_run": true,
+        "original_frames": [
+          {
+            "seconds": 96.0,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-contract-detail/f_02880_096.000.png",
+            "sha256_reported": "21c933d3700c7c181e66527587b937a06348eb5a6164b093a374c62d7239dd1c",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 96.5,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-contract-detail/f_02895_096.500.png",
+            "sha256_reported": "162728ccf4b8447eaaaf0330d0363ecf5ce3aa5a39eff311ce86488ff08e71c4",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 97.0,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-contract-detail/f_02910_097.000.png",
+            "sha256_reported": "5a993eeeb434ae7d54fd0c85e02e3713e49e90249ed7d6220dbdb488052221b4",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 97.5,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-contract-detail/f_02925_097.500.png",
+            "sha256_reported": "8d49c44c81aa988606094fdeaf640fb340514746dc120aa1e14f1a33616c532b",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 98.0,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-contract-detail/f_02940_098.000.png",
+            "sha256_reported": "45c6b39e94954f0b73711a1c7d2320bf402a05c82c3e94262e2d0cc95f3ed0e3",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 98.5,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-contract-detail/f_02955_098.500.png",
+            "sha256_reported": "cf69f4505b20585a141f80d7bc74ef65d743ee1ea98b11c6ac028c7370ff24f7",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 99.0,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-contract-detail/f_02970_099.000.png",
+            "sha256_reported": "cb21a38235253ccd2d7e8dc31f6169fa9011fb2ad3652f15040d7fa236c4133c",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 99.5,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-contract-detail/f_02985_099.500.png",
+            "sha256_reported": "11baaad7dd0c028f6991911e9dba7884f27ad0f0be5825e6aca63c9207be1795",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 100.0,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-contract-detail/f_03000_100.000.png",
+            "sha256_reported": "1d00fa004e1b24f224c19ce87f894e180fc01690d2f1a048120a4ffff26e19fe",
+            "hash_verified_this_run": false
+          }
+        ],
+        "source_record": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-2-motion-knowledge-use-review\\old_skill\\outputs\\preserved-input\\05_근거와_실행기록.md#contract-reflow",
+        "time_basis": "provided sample labels and prior extraction record; PTS not independently audited"
+      },
+      "concept_assignments": {
+        "observed_properties": [
+          "PROPERTY-POSITION",
+          "PROPERTY-VISIBILITY",
+          "PROPERTY-VALUE"
+        ],
+        "observed_time_relations": [
+          "TIME-SEQUENCE",
+          "TIME-OVERLAP"
+        ],
+        "inferred_functions": [
+          "FUNCTION-REVEAL",
+          "FUNCTION-CONTEXT"
+        ],
+        "reason": "기존 구역을 남기며 공간·새 내부 정보가 단계별 변화",
+        "unclassified": [
+          {
+            "axis": "timing/curve",
+            "reason": "진행 변화율 미측정; 정착만으로 가감속 확정 불가"
+          },
+          {
+            "axis": "implementation",
+            "reason": "AE 원본 없음; 실제 opacity/mask/camera 원값 미지정"
+          }
+        ]
+      },
+      "principle_refs": [
+        {
+          "id": "MR-04",
+          "role": "related_review_question",
+          "core_pin": 1,
+          "deep_pin": 2,
+          "outcome": "not an adoption/effect pass"
+        },
+        {
+          "id": "MR-07",
+          "role": "related_review_question",
+          "core_pin": 1,
+          "deep_pin": 2,
+          "outcome": "not an adoption/effect pass"
+        },
+        {
+          "id": "AP-09",
+          "role": "related_review_question",
+          "core_pin": 1,
+          "deep_pin": 2,
+          "outcome": "not an adoption/effect pass"
+        }
+      ]
+    },
+    {
+      "id": "A-M2",
+      "case": "VC-CASE-A",
+      "region": "A-02",
+      "sheet": "contract-panel",
+      "window": [
+        103,
+        106
+      ],
+      "title": "수주·비용을 유지하며 매출 판 진입",
+      "content": "수주17.5억원·비용8.7억원을 남기고 중복 제외 실제 매출 구역 추가",
+      "role": "CARD 후보; VC-MOTION-02의 다른 변형 검토",
+      "stages": [
+        [
+          103.5,
+          "매출 판 미가시; 수주·비용 가시"
+        ],
+        [
+          104,
+          "오른쪽 매출 판 가시"
+        ],
+        [
+          104.5,
+          "더 안쪽 위치"
+        ],
+        [
+          105,
+          "실제 발생 매출 제목"
+        ],
+        [
+          106,
+          "중복 제외 설명"
+        ]
+      ],
+      "boundary": "판 첫 가시성 (103.5,104]초",
+      "properties": [
+        "PROPERTY-POSITION",
+        "PROPERTY-VISIBILITY"
+      ],
+      "timing": [
+        "TIME-SEQUENCE",
+        "TIME-HOLD"
+      ],
+      "functions": [
+        "FUNCTION-REVEAL",
+        "FUNCTION-CONTEXT"
+      ],
+      "reason": "기존 비교 구역 유지와 새 구역 진입 구별",
+      "relations": [
+        {
+          "from": "수주·비용",
+          "to": "매출 판 진입",
+          "type": "accompanies",
+          "basis": "103.5~106 표본"
+        },
+        {
+          "from": "판 진입",
+          "to": "제목·설명",
+          "type": "precedes",
+          "basis": "104→105→106"
+        }
+      ],
+      "principles": [
+        "MR-04",
+        "MR-07",
+        "AP-09"
+      ],
+      "condition": "비교 맥락을 남기는 추가 정보; 기간이 바뀌면 과거 값 유지 금지",
+      "difference": "A-M1처럼 모든 판을 다시 정렬한다고 확정하지 않음",
+      "definition_version": {
+        "source_sha256": "08c97ec66a4e4efe3d7e7f0bc5c5195aee1f4a3d753cfc1c8b174c1457950003",
+        "source_locator": "§4 / A-M2",
+        "status": "unversioned local candidate pinned by source hash"
+      },
+      "definition_source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-2-motion-knowledge-use-review\\old_skill\\outputs\\preserved-input\\01_계약_수집기록.md",
+      "original_record": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\motion\\01_계약_수집기록.md",
+      "detail_link": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-2-motion-knowledge-use-review\\old_skill\\outputs\\collection.md#a-m2",
+      "basis_kind": "existing-record reuse + provided sheet visual readback",
+      "status": "local candidate; not registered/approved",
+      "unverified_dimensions": [
+        "기존 판 미세 이동 미측정",
+        "정확 AE 키프레임·원본 곡선·마스크/parent/3D 구현 미상",
+        "음성·시나리오·연속 원본 미검수",
+        "표본 사이 정확 시작/완료와 이후 퇴장 미관측"
+      ],
+      "evidence": {
+        "sheet_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\motion\\evidence\\contract-panel.jpg",
+        "sheet_sha256": "34f2d6f7fc9c5a0278c9397f19e74de29453ba9a1bcaf36683335ec173acaf5b",
+        "sheet_viewed_this_run": true,
+        "original_frames": [
+          {
+            "seconds": 103.0,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-contract-detail/f_03090_103.000.png",
+            "sha256_reported": "e1c53ee78f98132a69644df3b93b4df217d738beb4998237140578dabbf3f2fa",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 103.5,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-contract-detail/f_03105_103.500.png",
+            "sha256_reported": "993e9ff3ab5f18c72287483915c614aaf18c442c3cb14dc652660ce7e0104be1",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 104.0,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-contract-detail/f_03120_104.000.png",
+            "sha256_reported": "2d4792230ae6b6dfddbac2c375cb846fdbe773ba898ba829bbc388c07d00f69a",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 104.5,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-contract-detail/f_03135_104.500.png",
+            "sha256_reported": "f3bd0e2e63e35c92aa6e557f34be4c924a1a45b563ca7d231aa4448f842dda73",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 105.0,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-contract-detail/f_03150_105.000.png",
+            "sha256_reported": "af4ab37e309256e64bcb959978d16f54b79981e530a118a441e20b525f6834e1",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 105.5,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-contract-detail/f_03165_105.500.png",
+            "sha256_reported": "4cad4efa227cc767d6e9a04765f2cd6b5ece1166f2f7aca4410a33264cbb2f6f",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 106.0,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-contract-detail/f_03180_106.000.png",
+            "sha256_reported": "7ea828ed6d4cd2e5c6b453757a5ad30e824777e745da8e8d0b5d402722463f51",
+            "hash_verified_this_run": false
+          }
+        ],
+        "source_record": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-2-motion-knowledge-use-review\\old_skill\\outputs\\preserved-input\\05_근거와_실행기록.md#contract-panel",
+        "time_basis": "provided sample labels and prior extraction record; PTS not independently audited"
+      },
+      "concept_assignments": {
+        "observed_properties": [
+          "PROPERTY-POSITION",
+          "PROPERTY-VISIBILITY"
+        ],
+        "observed_time_relations": [
+          "TIME-SEQUENCE",
+          "TIME-HOLD"
+        ],
+        "inferred_functions": [
+          "FUNCTION-REVEAL",
+          "FUNCTION-CONTEXT"
+        ],
+        "reason": "기존 비교 구역 유지와 새 구역 진입 구별",
+        "unclassified": [
+          {
+            "axis": "timing/curve",
+            "reason": "진행 변화율 미측정; 정착만으로 가감속 확정 불가"
+          },
+          {
+            "axis": "implementation",
+            "reason": "AE 원본 없음; 실제 opacity/mask/camera 원값 미지정"
+          }
+        ]
+      },
+      "principle_refs": [
+        {
+          "id": "MR-04",
+          "role": "related_review_question",
+          "core_pin": 1,
+          "deep_pin": 2,
+          "outcome": "not an adoption/effect pass"
+        },
+        {
+          "id": "MR-07",
+          "role": "related_review_question",
+          "core_pin": 1,
+          "deep_pin": 2,
+          "outcome": "not an adoption/effect pass"
+        },
+        {
+          "id": "AP-09",
+          "role": "related_review_question",
+          "core_pin": 1,
+          "deep_pin": 2,
+          "outcome": "not an adoption/effect pass"
+        }
+      ]
+    },
+    {
+      "id": "A-M3",
+      "case": "VC-CASE-A",
+      "region": "A-02",
+      "sheet": "contract-number",
+      "window": [
+        108,
+        111
+      ],
+      "context_after": [
+        112
+      ],
+      "title": "매출 숫자 정착 후 상승 도상 후속",
+      "content": "중복 제외 실제 발생 매출12.9억원을 주황 금액·입체 막대·상승 화살표로 제시",
+      "role": "DETAIL 후보; 수치 증가와 도상 단계 조립",
+      "stages": [
+        [
+          108,
+          "받침"
+        ],
+        [
+          109,
+          "낮은 막대"
+        ],
+        [
+          109.5,
+          "0.8억원"
+        ],
+        [
+          110,
+          "10.8억원"
+        ],
+        [
+          110.5,
+          "12.9억원"
+        ],
+        [
+          111,
+          "12.9억원 유지; 도상 후속 비교 대상"
+        ],
+        [
+          112,
+          "기존 기록의 상승 화살표 완성 후속. 이번 sheet 바깥/직접 재열람 아님"
+        ]
+      ],
+      "boundary": "금액 끝값 가시경계 (110,110.5]초",
+      "properties": [
+        "PROPERTY-VALUE",
+        "PROPERTY-SIZE",
+        "PROPERTY-VISIBILITY"
+      ],
+      "timing": [
+        "TIME-SEQUENCE",
+        "TIME-OVERLAP",
+        "TIME-DELAY",
+        "TIME-HOLD"
+      ],
+      "functions": [
+        "FUNCTION-REVEAL",
+        "FUNCTION-FOCUS"
+      ],
+      "reason": "같은 성과에 속하나 끝값 표시와 도상 완성 시각 분리",
+      "relations": [
+        {
+          "from": "12.9 끝값 가시",
+          "to": "상승 도상 후속 완성",
+          "type": "numeric-before-graphic",
+          "basis": "110.5/111 sheet + 기존112초 기록; 최종 화살표 직접검수 보류"
+        },
+        {
+          "from": "12.9억원",
+          "to": "111/112 표본",
+          "type": "holds",
+          "basis": "110.5/111 sheet;112 prior-only"
+        },
+        {
+          "from": "금액 증가",
+          "to": "막대 성장",
+          "type": "overlaps",
+          "basis": "109.5~110.5"
+        }
+      ],
+      "principles": [
+        "AP-05",
+        "MP-07",
+        "AP-08",
+        "AP-09",
+        "MR-07",
+        "MR-08",
+        "IP-05"
+      ],
+      "condition": "확정 성과 금액 후보; 식별번호·날짜 카운트 제외",
+      "difference": "B-M3는 구성 비중/도넛/보조카드; A-M3는 금액/경제 도상. 동일 자산·곡선 아님",
+      "definition_version": {
+        "source_sha256": "08c97ec66a4e4efe3d7e7f0bc5c5195aee1f4a3d753cfc1c8b174c1457950003",
+        "source_locator": "§4 / A-M3",
+        "status": "unversioned local candidate pinned by source hash"
+      },
+      "definition_source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-2-motion-knowledge-use-review\\old_skill\\outputs\\preserved-input\\01_계약_수집기록.md",
+      "original_record": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\motion\\01_계약_수집기록.md",
+      "detail_link": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-2-motion-knowledge-use-review\\old_skill\\outputs\\collection.md#a-m3",
+      "basis_kind": "existing-record reuse + provided sheet visual readback",
+      "status": "local candidate; not registered/approved",
+      "unverified_dimensions": [
+        "112초 화살표는 제공 기존 기록만 유지; 이번 직접 검수 불가",
+        "110.5 이후 모든 프레임 유지/정확 도상 완성 시각 미상",
+        "정확 AE 키프레임·원본 곡선·마스크/parent/3D 구현 미상",
+        "음성·시나리오·연속 원본 미검수",
+        "표본 사이 정확 시작/완료와 이후 퇴장 미관측"
+      ],
+      "evidence": {
+        "sheet_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\motion\\evidence\\contract-number.jpg",
+        "sheet_sha256": "26dd1da7fc06c12f44f5a981799138b6106b40207b068c8d41c1e4e8bdfb37d5",
+        "sheet_viewed_this_run": true,
+        "original_frames": [
+          {
+            "seconds": 108.0,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-contract-detail/f_03240_108.000.png",
+            "sha256_reported": "a4f2b8a7bd9e5dc40d8c14decfed5c56efddb910154df288edb28c53afd1eb68",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 108.5,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-contract-detail/f_03255_108.500.png",
+            "sha256_reported": "f728072c1f18e99545023d831a9dfa39d8730ef2d4d15b17f402b3202b32767a",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 109.0,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-contract-detail/f_03270_109.000.png",
+            "sha256_reported": "9139388d315aff6353873bea64b67be1d337e69a0e1ba024fc874504f675985a",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 109.5,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-contract-detail/f_03285_109.500.png",
+            "sha256_reported": "75f9ce9b9813aead386aa6b661e57272c0243b2197b6c783b8c36b75bd5fac6e",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 110.0,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-contract-detail/f_03300_110.000.png",
+            "sha256_reported": "1de359dde742a05798d4e72e896e69ac64c02e5672cd7155afa8b323c7a58733",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 110.5,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-contract-detail/f_03315_110.500.png",
+            "sha256_reported": "c1889d594e74b423070cf32c6cc4bae5a57627a713a861d5d14f3454cd5d7ff3",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 111.0,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-contract-detail/f_03330_111.000.png",
+            "sha256_reported": "b2571ad72e2adeea545d17822a4695370b0af6a6a5a6145c554d3ca02c21e6ee",
+            "hash_verified_this_run": false
+          }
+        ],
+        "source_record": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-2-motion-knowledge-use-review\\old_skill\\outputs\\preserved-input\\05_근거와_실행기록.md#contract-number",
+        "time_basis": "provided sample labels and prior extraction record; PTS not independently audited"
+      },
+      "concept_assignments": {
+        "observed_properties": [
+          "PROPERTY-VALUE",
+          "PROPERTY-SIZE",
+          "PROPERTY-VISIBILITY"
+        ],
+        "observed_time_relations": [
+          "TIME-SEQUENCE",
+          "TIME-OVERLAP",
+          "TIME-DELAY",
+          "TIME-HOLD"
+        ],
+        "inferred_functions": [
+          "FUNCTION-REVEAL",
+          "FUNCTION-FOCUS"
+        ],
+        "reason": "같은 성과에 속하나 끝값 표시와 도상 완성 시각 분리",
+        "unclassified": [
+          {
+            "axis": "timing/curve",
+            "reason": "진행 변화율 미측정; 정착만으로 가감속 확정 불가"
+          },
+          {
+            "axis": "implementation",
+            "reason": "AE 원본 없음; 실제 opacity/mask/camera 원값 미지정"
+          }
+        ]
+      },
+      "principle_refs": [
+        {
+          "id": "AP-05",
+          "role": "related_review_question",
+          "core_pin": 1,
+          "deep_pin": 2,
+          "outcome": "not an adoption/effect pass"
+        },
+        {
+          "id": "MP-07",
+          "role": "related_review_question",
+          "core_pin": 1,
+          "deep_pin": 2,
+          "outcome": "not an adoption/effect pass"
+        },
+        {
+          "id": "AP-08",
+          "role": "related_review_question",
+          "core_pin": 1,
+          "deep_pin": 2,
+          "outcome": "not an adoption/effect pass"
+        },
+        {
+          "id": "AP-09",
+          "role": "related_review_question",
+          "core_pin": 1,
+          "deep_pin": 2,
+          "outcome": "not an adoption/effect pass"
+        },
+        {
+          "id": "MR-07",
+          "role": "related_review_question",
+          "core_pin": 1,
+          "deep_pin": 2,
+          "outcome": "not an adoption/effect pass"
+        },
+        {
+          "id": "MR-08",
+          "role": "related_review_question",
+          "core_pin": 1,
+          "deep_pin": 2,
+          "outcome": "not an adoption/effect pass"
+        },
+        {
+          "id": "IP-05",
+          "role": "related_review_question",
+          "core_pin": 1,
+          "deep_pin": 2,
+          "outcome": "not an adoption/effect pass"
+        }
+      ]
+    },
+    {
+      "id": "B-M1",
+      "case": "VC-CASE-B",
+      "region": "B-02→B-03",
+      "sheet": "project-reflow",
+      "window": [
+        136,
+        140
+      ],
+      "title": "관계도 분산 퇴장과 총액 중첩",
+      "content": "가족사 요청↔전문인력 지원에서 지원 총량23.7억원·26건 요약으로 전환",
+      "role": "TRANSITION 후보",
+      "stages": [
+        [
+          136,
+          "두 판·반대 방향 화살표"
+        ],
+        [
+          137,
+          "두 판·화살표 가시"
+        ],
+        [
+          137.5,
+          "화살표/일부 요소 약화"
+        ],
+        [
+          138,
+          "옛 판 좌우 바깥 상태와 새 건수·금액 함께 가시"
+        ],
+        [
+          138.5,
+          "제목+새 수치 구도"
+        ],
+        [
+          140,
+          "23.7억원·26건"
+        ]
+      ],
+      "properties": [
+        "PROPERTY-POSITION",
+        "PROPERTY-VISIBILITY",
+        "PROPERTY-VALUE"
+      ],
+      "timing": [
+        "TIME-SEQUENCE",
+        "TIME-OVERLAP"
+      ],
+      "functions": [
+        "FUNCTION-CHANGE",
+        "FUNCTION-FOCUS"
+      ],
+      "reason": "관계도에서 총량 요약; 완전 직렬 교체 아님",
+      "relations": [
+        {
+          "from": "관계도 퇴장·약화",
+          "to": "새 총량 등장",
+          "type": "overlaps",
+          "basis": "138초 함께 가시"
+        }
+      ],
+      "principles": [
+        "MR-04",
+        "MR-07",
+        "AP-05",
+        "AP-09"
+      ],
+      "condition": "관계 맥락→요약; 양자 관계를 계속 읽어야 하면 퇴장 재검토",
+      "difference": "B-M2 대각 전개와 다르게 양판 외곽 이동/약화와 새 수치 중첩",
+      "definition_version": {
+        "source_sha256": "ce5da90fd1093198f9905933b2ba00d405b27eeee6c6bb08bf6b947839cee633",
+        "source_locator": "§4 / B-M1",
+        "status": "unversioned local candidate pinned by source hash"
+      },
+      "definition_source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-2-motion-knowledge-use-review\\old_skill\\outputs\\preserved-input\\02_프로젝트지원_수집기록.md",
+      "original_record": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\motion\\02_프로젝트지원_수집기록.md",
+      "detail_link": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-2-motion-knowledge-use-review\\old_skill\\outputs\\collection.md#b-m1",
+      "basis_kind": "existing-record reuse + provided sheet visual readback",
+      "status": "local candidate; not registered/approved",
+      "unverified_dimensions": [
+        "실제 opacity 속성 미상",
+        "정확 AE 키프레임·원본 곡선·마스크/parent/3D 구현 미상",
+        "음성·시나리오·연속 원본 미검수",
+        "표본 사이 정확 시작/완료와 이후 퇴장 미관측"
+      ],
+      "evidence": {
+        "sheet_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\motion\\evidence\\project-reflow.jpg",
+        "sheet_sha256": "2e6f89cfd0c346c2ea2f5da3e018d75839a2622754338871a50080f4cefaabcf",
+        "sheet_viewed_this_run": true,
+        "original_frames": [
+          {
+            "seconds": 136.0,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-project-detail/f_04080_136.000.png",
+            "sha256_reported": "cea962203729aa460bb5647efeba721b582b3e73b87d7d35f5af6e274ea3953a",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 136.5,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-project-detail/f_04095_136.500.png",
+            "sha256_reported": "23cd861efab4e8778d5b15fe1ee624e9a0915f77d26afd308c009a814c3f9ca8",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 137.0,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-project-detail/f_04110_137.000.png",
+            "sha256_reported": "e0943b11051370f4969083263e5f7e2ab4b529a7817768e3b0ba78ed81120464",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 137.5,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-project-detail/f_04125_137.500.png",
+            "sha256_reported": "9a0ecb213b39144c84fa57d0656eb87df035013e3051cca2d43025737bbb9538",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 138.0,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-project-detail/f_04140_138.000.png",
+            "sha256_reported": "1d6be705f2f90899cda3e33b67cb6050a9f79766c3d0d5de854de00c92f53f6c",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 138.5,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-project-detail/f_04155_138.500.png",
+            "sha256_reported": "920431c354dab228c2fc9795c267d9b12ab6dc9a7dc27fa9ff1f36ce3c188683",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 139.0,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-project-detail/f_04170_139.000.png",
+            "sha256_reported": "3d42cf2b3a84456bde61e50cbaddb72ef7beec777cc56483955c20a82bd6ae2c",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 139.5,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-project-detail/f_04185_139.500.png",
+            "sha256_reported": "5fa45841323636174242deb2c6f96f3af2d2b15a627abd6caf3b2290611f58a0",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 140.0,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-project-detail/f_04200_140.000.png",
+            "sha256_reported": "13b1f3128d2c64c5f695c94474a75551e4cb8001f8bfe8dbb07e4c793aa4c84a",
+            "hash_verified_this_run": false
+          }
+        ],
+        "source_record": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-2-motion-knowledge-use-review\\old_skill\\outputs\\preserved-input\\05_근거와_실행기록.md#project-reflow",
+        "time_basis": "provided sample labels and prior extraction record; PTS not independently audited"
+      },
+      "concept_assignments": {
+        "observed_properties": [
+          "PROPERTY-POSITION",
+          "PROPERTY-VISIBILITY",
+          "PROPERTY-VALUE"
+        ],
+        "observed_time_relations": [
+          "TIME-SEQUENCE",
+          "TIME-OVERLAP"
+        ],
+        "inferred_functions": [
+          "FUNCTION-CHANGE",
+          "FUNCTION-FOCUS"
+        ],
+        "reason": "관계도에서 총량 요약; 완전 직렬 교체 아님",
+        "unclassified": [
+          {
+            "axis": "timing/curve",
+            "reason": "진행 변화율 미측정; 정착만으로 가감속 확정 불가"
+          },
+          {
+            "axis": "implementation",
+            "reason": "AE 원본 없음; 실제 opacity/mask/camera 원값 미지정"
+          }
+        ]
+      },
+      "principle_refs": [
+        {
+          "id": "MR-04",
+          "role": "related_review_question",
+          "core_pin": 1,
+          "deep_pin": 2,
+          "outcome": "not an adoption/effect pass"
+        },
+        {
+          "id": "MR-07",
+          "role": "related_review_question",
+          "core_pin": 1,
+          "deep_pin": 2,
+          "outcome": "not an adoption/effect pass"
+        },
+        {
+          "id": "AP-05",
+          "role": "related_review_question",
+          "core_pin": 1,
+          "deep_pin": 2,
+          "outcome": "not an adoption/effect pass"
+        },
+        {
+          "id": "AP-09",
+          "role": "related_review_question",
+          "core_pin": 1,
+          "deep_pin": 2,
+          "outcome": "not an adoption/effect pass"
+        }
+      ]
+    },
+    {
+      "id": "B-M2",
+      "case": "VC-CASE-B",
+      "region": "B-03→B-04",
+      "sheet": "project-wipe",
+      "window": [
+        143,
+        146
+      ],
+      "title": "총액에서 대각 분할 업무 영상 전개",
+      "content": "총량23.7억원·26건 뒤 지도/도로 업무 사례 영상 구획으로 전환",
+      "role": "TRANSITION 후보",
+      "stages": [
+        [
+          143.5,
+          "총액 화면"
+        ],
+        [
+          144,
+          "왼쪽 지도·도로 대각 경계; 옛 총량 오른쪽 가시"
+        ],
+        [
+          144.5,
+          "업무 영상 중심 중간 구성"
+        ],
+        [
+          145,
+          "여러 도로 영상 분할"
+        ],
+        [
+          145.5,
+          "여러 영상·하단 라벨"
+        ],
+        [
+          146,
+          "세 구획·하단 라벨"
+        ]
+      ],
+      "boundary": "첫 영상층 가시경계 (143.5,144]초",
+      "properties": [
+        "PROPERTY-POSITION",
+        "PROPERTY-VISIBILITY"
+      ],
+      "timing": [
+        "TIME-SEQUENCE",
+        "TIME-OVERLAP"
+      ],
+      "functions": [
+        "FUNCTION-CHANGE",
+        "FUNCTION-REVEAL"
+      ],
+      "reason": "대각 경계·복수 구획이 전개. 내부 도로 시점/차량 변화와 외곽 경계 구별",
+      "relations": [
+        {
+          "from": "첫 영상층 공개",
+          "to": "옛 총량 잔존",
+          "type": "overlaps",
+          "basis": "144초"
+        },
+        {
+          "from": "첫 영상층",
+          "to": "복수 구획·라벨",
+          "type": "precedes",
+          "basis": "144→145.5/146"
+        }
+      ],
+      "principles": [
+        "MR-04",
+        "MR-07",
+        "AP-09"
+      ],
+      "condition": "복수 업무 소개; 다른 시기·범위 자료의 비교가능성 별도 확인",
+      "difference": "정지화면 한 장 일괄 교체가 아니며 도로 내부 움직임 포함",
+      "definition_version": {
+        "source_sha256": "ce5da90fd1093198f9905933b2ba00d405b27eeee6c6bb08bf6b947839cee633",
+        "source_locator": "§4 / B-M2",
+        "status": "unversioned local candidate pinned by source hash"
+      },
+      "definition_source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-2-motion-knowledge-use-review\\old_skill\\outputs\\preserved-input\\02_프로젝트지원_수집기록.md",
+      "original_record": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\motion\\02_프로젝트지원_수집기록.md",
+      "detail_link": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-2-motion-knowledge-use-review\\old_skill\\outputs\\collection.md#b-m2",
+      "basis_kind": "existing-record reuse + provided sheet visual readback",
+      "status": "local candidate; not registered/approved",
+      "unverified_dimensions": [
+        "실제 마스크/트랙매트 미상",
+        "내부 영상 연속 카메라 궤적 미관측",
+        "정확 AE 키프레임·원본 곡선·마스크/parent/3D 구현 미상",
+        "음성·시나리오·연속 원본 미검수",
+        "표본 사이 정확 시작/완료와 이후 퇴장 미관측"
+      ],
+      "evidence": {
+        "sheet_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\motion\\evidence\\project-wipe.jpg",
+        "sheet_sha256": "b6d7ff1915ca99d11e4b901e230da8b8506ca74503a5cbc9d6c170d9d8057f19",
+        "sheet_viewed_this_run": true,
+        "original_frames": [
+          {
+            "seconds": 143.0,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-project-detail/f_04290_143.000.png",
+            "sha256_reported": "d35057efb5ff909833f85b106d67128af02bc8e42ad2b4f39aec9415f5358157",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 143.5,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-project-detail/f_04305_143.500.png",
+            "sha256_reported": "1037d779b7b2fa370057c7f82610c22c0e7cc14a15dd68441ad08c9350dc5fac",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 144.0,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-project-detail/f_04320_144.000.png",
+            "sha256_reported": "b9dbcc32debe237ab1a06fd9418d921049e29c310fffb8ab796bd0132210722d",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 144.5,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-project-detail/f_04335_144.500.png",
+            "sha256_reported": "0c3a0076da885fdf433f029ba570da3f1771b8ef61079fcde6d026d9ab33a6bd",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 145.0,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-project-detail/f_04350_145.000.png",
+            "sha256_reported": "ac35a2787f91a2e7686766504e7542f06e764876954e12be0391da94552a46d5",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 145.5,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-project-detail/f_04365_145.500.png",
+            "sha256_reported": "528124780117314aed7c114581a0acdb5cf2531af62b6836727cecc7b630e160",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 146.0,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-project-detail/f_04380_146.000.png",
+            "sha256_reported": "52e4c19d32ca7886883cdfdde95bc0e1483658840fbfddfb13c523eb1dc88df6",
+            "hash_verified_this_run": false
+          }
+        ],
+        "source_record": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-2-motion-knowledge-use-review\\old_skill\\outputs\\preserved-input\\05_근거와_실행기록.md#project-wipe",
+        "time_basis": "provided sample labels and prior extraction record; PTS not independently audited"
+      },
+      "concept_assignments": {
+        "observed_properties": [
+          "PROPERTY-POSITION",
+          "PROPERTY-VISIBILITY"
+        ],
+        "observed_time_relations": [
+          "TIME-SEQUENCE",
+          "TIME-OVERLAP"
+        ],
+        "inferred_functions": [
+          "FUNCTION-CHANGE",
+          "FUNCTION-REVEAL"
+        ],
+        "reason": "대각 경계·복수 구획이 전개. 내부 도로 시점/차량 변화와 외곽 경계 구별",
+        "unclassified": [
+          {
+            "axis": "timing/curve",
+            "reason": "진행 변화율 미측정; 정착만으로 가감속 확정 불가"
+          },
+          {
+            "axis": "implementation",
+            "reason": "AE 원본 없음; 실제 opacity/mask/camera 원값 미지정"
+          }
+        ]
+      },
+      "principle_refs": [
+        {
+          "id": "MR-04",
+          "role": "related_review_question",
+          "core_pin": 1,
+          "deep_pin": 2,
+          "outcome": "not an adoption/effect pass"
+        },
+        {
+          "id": "MR-07",
+          "role": "related_review_question",
+          "core_pin": 1,
+          "deep_pin": 2,
+          "outcome": "not an adoption/effect pass"
+        },
+        {
+          "id": "AP-09",
+          "role": "related_review_question",
+          "core_pin": 1,
+          "deep_pin": 2,
+          "outcome": "not an adoption/effect pass"
+        }
+      ]
+    },
+    {
+      "id": "B-M3",
+      "case": "VC-CASE-B",
+      "region": "B-04→B-05",
+      "sheet": "project-panel",
+      "window": [
+        147,
+        150
+      ],
+      "title": "비중 숫자 이후 카드·도넛·막대 후속",
+      "content": "프로젝트 지원 주요 활동: BIM 설계19.4억원·3건·약82% 주행 + BIM 지원/해외사업 지원/디자인 지원 보조3카드",
+      "role": "CARD+DETAIL 복합 후보; 기존 B-M3 유지",
+      "stages": [
+        [
+          147.5,
+          "영상3구획"
+        ],
+        [
+          148,
+          "오른쪽 정보판·불완전 제목·약44%"
+        ],
+        [
+          148.5,
+          "약64%·첫 보조카드"
+        ],
+        [
+          149,
+          "약82%·추가 항목; 디자인 지원 카드 작게 가시"
+        ],
+        [
+          149.5,
+          "3카드 더 채움·디자인 지원 겉보기 크기 증가·도넛 다른 분할색 보강"
+        ],
+        [
+          150,
+          "대표구성; BIM 행·작은 카드 막대 후속 채움 비교"
+        ]
+      ],
+      "boundary": "비중 끝값 가시경계 (148.5,149]초",
+      "properties": [
+        "PROPERTY-VALUE",
+        "PROPERTY-SIZE",
+        "PROPERTY-VISIBILITY"
+      ],
+      "timing": [
+        "TIME-SEQUENCE",
+        "TIME-OVERLAP",
+        "TIME-DELAY",
+        "TIME-HOLD"
+      ],
+      "functions": [
+        "FUNCTION-REVEAL",
+        "FUNCTION-FOCUS",
+        "FUNCTION-CHANGE"
+      ],
+      "reason": "주비중/보조3개 위계·배경 재구성, 숫자 이후 시각 요소 진행",
+      "relations": [
+        {
+          "from": "82% 끝값 가시",
+          "to": "카드/도넛 분할색/막대 후속",
+          "type": "numeric-before-graphic",
+          "basis": "149→149.5→150 sheet"
+        },
+        {
+          "from": "82%",
+          "to": "149.5/150 표본",
+          "type": "holds",
+          "basis": "149/149.5/150"
+        },
+        {
+          "from": "오른쪽 판 등장",
+          "to": "다중영상→지도띠+주도로 재구성",
+          "type": "overlaps",
+          "basis": "148~149.5"
+        }
+      ],
+      "principles": [
+        "AP-05",
+        "MP-07",
+        "AP-08",
+        "AP-09",
+        "MR-04",
+        "MR-07",
+        "MR-08",
+        "IP-05"
+      ],
+      "condition": "우세 항목·나머지 구성 설명; 우세가 없으면 같은 강조 부적합",
+      "difference": "A-M3 금액/경제도상과 달리 비중/구성 도넛/업무 카드. VC-MOTION-03 교체 제안과 구별",
+      "definition_version": {
+        "source_sha256": "ce5da90fd1093198f9905933b2ba00d405b27eeee6c6bb08bf6b947839cee633",
+        "source_locator": "§4 / B-M3",
+        "status": "unversioned local candidate pinned by source hash"
+      },
+      "definition_source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-2-motion-knowledge-use-review\\old_skill\\outputs\\preserved-input\\02_프로젝트지원_수집기록.md",
+      "original_record": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\motion\\02_프로젝트지원_수집기록.md",
+      "detail_link": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-2-motion-knowledge-use-review\\old_skill\\outputs\\collection.md#b-m3",
+      "basis_kind": "existing-record reuse + provided sheet visual readback",
+      "status": "local candidate; not registered/approved",
+      "unverified_dimensions": [
+        "모든 도상의 정확 완성시각·동기화 미확인",
+        "막대 실제 분모/스케일·AE Scale·도넛 제작법 미상",
+        "정확 AE 키프레임·원본 곡선·마스크/parent/3D 구현 미상",
+        "음성·시나리오·연속 원본 미검수",
+        "표본 사이 정확 시작/완료와 이후 퇴장 미관측"
+      ],
+      "evidence": {
+        "sheet_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\eval-inputs\\motion\\evidence\\project-panel.jpg",
+        "sheet_sha256": "7c8c4034b590f8f649dd296c60539a97e76d83d0075b7ad9f9369aaec494e66a",
+        "sheet_viewed_this_run": true,
+        "original_frames": [
+          {
+            "seconds": 147.0,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-project-detail/f_04410_147.000.png",
+            "sha256_reported": "14dd1b42b0aefbbba735252a4d032e9346f97c71ed10f734e7773d44c7256f4a",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 147.5,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-project-detail/f_04425_147.500.png",
+            "sha256_reported": "f9235e8c68792c8437802ee839414397292c3159d30ab0be7d67f5fa058cac51",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 148.0,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-project-detail/f_04440_148.000.png",
+            "sha256_reported": "b52c37fd195a70c4efacef3ac3ac796718d055a2e7633fd9805c0115743a1bf2",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 148.5,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-project-detail/f_04455_148.500.png",
+            "sha256_reported": "2dd8271c54ea28f05730c8b1054160b73df43ecda63ae6e7b1c600a2ac4cc8c0",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 149.0,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-project-detail/f_04470_149.000.png",
+            "sha256_reported": "88c9c170189b94842ecec01012cadf33c4df0e0ad21a80d7d60e5d07f57090d1",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 149.5,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-project-detail/f_04485_149.500.png",
+            "sha256_reported": "5fc83289d3a03048b17f4a6495a3f27da8a00fef4bf8b77e7bf3a13c206c9b2d",
+            "hash_verified_this_run": false
+          },
+          {
+            "seconds": 150.0,
+            "path": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/value-creation-pilot-20261019/extraction/cases/VALUE/collection-project-detail/f_04500_150.000.png",
+            "sha256_reported": "104badec06b82828c80821ca03d0d95e0b3860c3f3b3627a7232a13149233bf4",
+            "hash_verified_this_run": false
+          }
+        ],
+        "source_record": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-2-motion-knowledge-use-review\\old_skill\\outputs\\preserved-input\\05_근거와_실행기록.md#project-panel",
+        "time_basis": "provided sample labels and prior extraction record; PTS not independently audited"
+      },
+      "concept_assignments": {
+        "observed_properties": [
+          "PROPERTY-VALUE",
+          "PROPERTY-SIZE",
+          "PROPERTY-VISIBILITY"
+        ],
+        "observed_time_relations": [
+          "TIME-SEQUENCE",
+          "TIME-OVERLAP",
+          "TIME-DELAY",
+          "TIME-HOLD"
+        ],
+        "inferred_functions": [
+          "FUNCTION-REVEAL",
+          "FUNCTION-FOCUS",
+          "FUNCTION-CHANGE"
+        ],
+        "reason": "주비중/보조3개 위계·배경 재구성, 숫자 이후 시각 요소 진행",
+        "unclassified": [
+          {
+            "axis": "timing/curve",
+            "reason": "진행 변화율 미측정; 정착만으로 가감속 확정 불가"
+          },
+          {
+            "axis": "implementation",
+            "reason": "AE 원본 없음; 실제 opacity/mask/camera 원값 미지정"
+          }
+        ]
+      },
+      "principle_refs": [
+        {
+          "id": "AP-05",
+          "role": "related_review_question",
+          "core_pin": 1,
+          "deep_pin": 2,
+          "outcome": "not an adoption/effect pass"
+        },
+        {
+          "id": "MP-07",
+          "role": "related_review_question",
+          "core_pin": 1,
+          "deep_pin": 2,
+          "outcome": "not an adoption/effect pass"
+        },
+        {
+          "id": "AP-08",
+          "role": "related_review_question",
+          "core_pin": 1,
+          "deep_pin": 2,
+          "outcome": "not an adoption/effect pass"
+        },
+        {
+          "id": "AP-09",
+          "role": "related_review_question",
+          "core_pin": 1,
+          "deep_pin": 2,
+          "outcome": "not an adoption/effect pass"
+        },
+        {
+          "id": "MR-04",
+          "role": "related_review_question",
+          "core_pin": 1,
+          "deep_pin": 2,
+          "outcome": "not an adoption/effect pass"
+        },
+        {
+          "id": "MR-07",
+          "role": "related_review_question",
+          "core_pin": 1,
+          "deep_pin": 2,
+          "outcome": "not an adoption/effect pass"
+        },
+        {
+          "id": "MR-08",
+          "role": "related_review_question",
+          "core_pin": 1,
+          "deep_pin": 2,
+          "outcome": "not an adoption/effect pass"
+        },
+        {
+          "id": "IP-05",
+          "role": "related_review_question",
+          "core_pin": 1,
+          "deep_pin": 2,
+          "outcome": "not an adoption/effect pass"
+        }
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "id": "RV-01",
+      "targets": [
+        "A-M3",
+        "B-M3"
+      ],
+      "criterion": "Q-INFO-04",
+      "judgment": "통과(분석 기록의 표시 중간값/끝값 분리만)",
+      "reason": "0.8/10.8/44/64를 시간별 표시값으로 보존; 실제 실적 시계열로 쓰지 않음",
+      "evidence": [
+        "contract-number109.5/110/110.5",
+        "project-panel148/148.5/149"
+      ],
+      "limit": "실측/연출 의도와 최종 데이터 출처 사실 검증은 판단보류",
+      "next": "데이터 담당자에게 원자료/집계 판본 확인",
+      "reviewer": "이번 실행 AI, old skill draft.12; 사람 검수/회사 승인 없음",
+      "scope": "기존 기록 재사용/제공6모음 대조; 새 원본 연속 관측 아님",
+      "criterion_version": "Q*:0.1.1; IP-05:core0.1.2/entry0.1.1"
+    },
+    {
+      "id": "RV-02",
+      "targets": [
+        "A-M3",
+        "B-M3"
+      ],
+      "criterion": "Q-MOTION-01",
+      "judgment": "판단보류",
+      "reason": "숫자 이후 도상 진행은 기록했으나 읽기 유지·발화·시청조건 근거 없음",
+      "evidence": [
+        "110.5/111 +112 prior-only",
+        "149/149.5/150"
+      ],
+      "limit": "창 길이를 읽기시간으로 쓰지 않음",
+      "next": "별도 재검수에서 완성→퇴장·발화/시청조건을 디자인 검수자·대상 시청자와 확인",
+      "reviewer": "이번 실행 AI, old skill draft.12; 사람 검수/회사 승인 없음",
+      "scope": "기존 기록 재사용/제공6모음 대조; 새 원본 연속 관측 아님",
+      "criterion_version": "Q*:0.1.1; IP-05:core0.1.2/entry0.1.1"
+    },
+    {
+      "id": "RV-03",
+      "targets": [
+        "B-M1",
+        "B-M2",
+        "B-M3"
+      ],
+      "criterion": "Q-MOTION-02",
+      "judgment": "통과(기록의 중첩·대상 구분만)",
+      "reason": "138 옛판+새값,144 옛총량+영상층,148~149.5 배경/정보판을 따로 보존",
+      "evidence": [
+        "project-reflow138",
+        "project-wipe144",
+        "project-panel148~150"
+      ],
+      "limit": "실제 업무 인과·parenting·시청효과 판정 아님",
+      "next": "기술 관계 적합성은 내용/모션 담당자 별도 확인",
+      "reviewer": "이번 실행 AI, old skill draft.12; 사람 검수/회사 승인 없음",
+      "scope": "기존 기록 재사용/제공6모음 대조; 새 원본 연속 관측 아님",
+      "criterion_version": "Q*:0.1.1; IP-05:core0.1.2/entry0.1.1"
+    },
+    {
+      "id": "RV-04",
+      "targets": [
+        "A-M1",
+        "A-M2",
+        "A-M3",
+        "B-M1",
+        "B-M2",
+        "B-M3"
+      ],
+      "criterion": "Q-TRUST-01",
+      "judgment": "통과(제공자료 참조 왕복만); 원본 시간/해시 검증 판단보류",
+      "reason": "6모음 직접 열람/원문 해시표 연결; 원본 해시는 제공값",
+      "evidence": [
+        "evidence-manifest.json",
+        "preserved-input/05_근거와_실행기록.md"
+      ],
+      "limit": "112 prior-only; MP4/PTS/개별 원본 프레임 직접검수 아님",
+      "next": "별도 검수에서112초·추출 로그·시간 매핑·원본 해시 확인",
+      "reviewer": "이번 실행 AI, old skill draft.12; 사람 검수/회사 승인 없음",
+      "scope": "기존 기록 재사용/제공6모음 대조; 새 원본 연속 관측 아님",
+      "criterion_version": "Q*:0.1.1; IP-05:core0.1.2/entry0.1.1"
+    },
+    {
+      "id": "RV-05",
+      "targets": [
+        "A-M3",
+        "B-M3"
+      ],
+      "criterion": "Q-TRUST-02",
+      "judgment": "통과(확대 주장 제한만)",
+      "reason": "정확 키프레임/마스크·회사규칙/시청효과 미상 유지",
+      "evidence": [
+        "collection.md",
+        "knowledge-pins.json"
+      ],
+      "limit": "제작법/의도 자체는 판단보류",
+      "next": "필요 시 원본 프로젝트·제작자·회사규칙 담당자의 근거 확인",
+      "reviewer": "이번 실행 AI, old skill draft.12; 사람 검수/회사 승인 없음",
+      "scope": "기존 기록 재사용/제공6모음 대조; 새 원본 연속 관측 아님",
+      "criterion_version": "Q*:0.1.1; IP-05:core0.1.2/entry0.1.1"
+    },
+    {
+      "id": "RV-06",
+      "targets": [
+        "A-M1",
+        "A-M2",
+        "A-M3",
+        "B-M1",
+        "B-M2",
+        "B-M3"
+      ],
+      "criterion": "IP-05 / Q-MOTION-01",
+      "judgment": "미검수(음성 동기), 완료 판정 없음",
+      "reason": "MP4/오디오/시나리오 없음",
+      "evidence": [
+        "공통 input.md"
+      ],
+      "limit": "비적용/통과로 바꾸지 않음",
+      "next": "음성 검수 요청·실제 음성/시나리오 제공 시 대응 확인",
+      "reviewer": "이번 실행 AI, old skill draft.12; 사람 검수/회사 승인 없음",
+      "scope": "기존 기록 재사용/제공6모음 대조; 새 원본 연속 관측 아님",
+      "criterion_version": "Q*:0.1.1; IP-05:core0.1.2/entry0.1.1"
+    }
+  ],
+  "excluded_proposals": [
+    {
+      "id": "VC-MOTION-03",
+      "name": "가족사별→유형별 교체",
+      "status": "prior new-design proposal; NOT observed; excluded from observed searches",
+      "source": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\knowledge-linked-skill-20261019\\company-video-grammar-analyzer-workspace\\iteration-4\\eval-2-motion-knowledge-use-review\\old_skill\\outputs\\preserved-input\\03_재사용단위_색인.md §4"
+    }
+  ],
+  "knowledge_file": "knowledge-pins.json"
+}

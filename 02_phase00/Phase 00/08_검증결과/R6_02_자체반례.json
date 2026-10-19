@@ -1,0 +1,402 @@
+{
+  "scope": "R6-2 연결·사용요청 계약의 정방향/반례. 실제사람검수/법률판정/신원인증 아님. 마지막 자산변경은 digest 결함주입이며 실제원본수정 아님.",
+  "total": 41,
+  "passed": 41,
+  "cases": [
+    {
+      "name": "현재원기록과원문파일_정상연결",
+      "pass": true,
+      "details": {
+        "structural_valid": true,
+        "errors": [],
+        "identity_authenticated": false,
+        "content_verified": false,
+        "company_approved": false,
+        "permission_granted": false,
+        "operational_release": false,
+        "artifact_identity_checked": true,
+        "artifact_rows_checked": 544
+      }
+    },
+    {
+      "name": "정상통과에도_내용신원권한승인없음",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "회사승인조작",
+      "pass": true,
+      "details": [
+        "schema: False was expected"
+      ]
+    },
+    {
+      "name": "신원인증조작",
+      "pass": true,
+      "details": [
+        "schema: False was expected"
+      ]
+    },
+    {
+      "name": "운영배포조작",
+      "pass": true,
+      "details": [
+        "schema: False was expected"
+      ]
+    },
+    {
+      "name": "해시일치가_본문재검토로승격",
+      "pass": true,
+      "details": [
+        "schema: False was expected"
+      ]
+    },
+    {
+      "name": "출처가사용허가생성으로승격",
+      "pass": true,
+      "details": [
+        "schema: False was expected"
+      ]
+    },
+    {
+      "name": "원문읽기깊이_전체읽기로변경",
+      "pass": true,
+      "details": [
+        "derived_index_differs_from_pinned_originals"
+      ]
+    },
+    {
+      "name": "원문정적검토가_실행으로변경",
+      "pass": true,
+      "details": [
+        "derived_index_differs_from_pinned_originals"
+      ]
+    },
+    {
+      "name": "정적읽기를_효과검증으로승격",
+      "pass": true,
+      "details": [
+        "schema: False was expected"
+      ]
+    },
+    {
+      "name": "외부사용확인조작",
+      "pass": true,
+      "details": [
+        "schema: False was expected"
+      ]
+    },
+    {
+      "name": "허가맥락_외부API확대",
+      "pass": true,
+      "details": [
+        "derived_index_differs_from_pinned_originals"
+      ]
+    },
+    {
+      "name": "원출처대상바꿔치기",
+      "pass": true,
+      "details": [
+        "derived_index_differs_from_pinned_originals"
+      ]
+    },
+    {
+      "name": "정책을내용검수로재분류",
+      "pass": true,
+      "details": [
+        "derived_index_differs_from_pinned_originals"
+      ]
+    },
+    {
+      "name": "연결ID중복",
+      "pass": true,
+      "details": [
+        "derived_index_differs_from_pinned_originals"
+      ]
+    },
+    {
+      "name": "출처행삭제",
+      "pass": true,
+      "details": [
+        "derived_index_differs_from_pinned_originals"
+      ]
+    },
+    {
+      "name": "원문pin_오래됨",
+      "pass": true,
+      "details": [
+        "stale_source: legacy_sources"
+      ]
+    },
+    {
+      "name": "외부입력경로교체",
+      "pass": true,
+      "details": [
+        "stale_source: assets"
+      ]
+    },
+    {
+      "name": "복구원문_다른파일로교체",
+      "pass": true,
+      "details": [
+        "derived_index_differs_from_pinned_originals"
+      ]
+    },
+    {
+      "name": "출처원기록안에_가짜승인추가",
+      "pass": true,
+      "details": [
+        "derived_index_differs_from_pinned_originals"
+      ]
+    },
+    {
+      "name": "리스트입력",
+      "pass": true,
+      "details": [
+        "schema: [] is not of type 'object'"
+      ]
+    },
+    {
+      "name": "문자입력",
+      "pass": true,
+      "details": [
+        "schema: 'untrusted' is not of type 'object'"
+      ]
+    },
+    {
+      "name": "정수입력",
+      "pass": true,
+      "details": [
+        "schema: 123 is not of type 'object'"
+      ]
+    },
+    {
+      "name": "사용요청_internal_reference",
+      "pass": true,
+      "details": {
+        "recorded_context_match": true,
+        "state": "documented_reference_context",
+        "permission_granted": false,
+        "company_approved": false,
+        "performed": false,
+        "recorded_usage": {
+          "state": "reference_only",
+          "contexts": [
+            "사내 Phase00 자료 정리·검토"
+          ],
+          "evidence": "사용자 직접 지시: CI 사본 재정리·원형 보존 재구성·MD화"
+        },
+        "next": "일치는 기존 작업 맥락의 기록만 뜻함. 새 용도는 구체 대상·행위·근거·범위의 사람 검토 필요. R5 초안 선택 정책을 확대하지 않음."
+      }
+    },
+    {
+      "name": "사용요청_external_api_upload",
+      "pass": true,
+      "details": {
+        "recorded_context_match": false,
+        "state": "needs_scope_review",
+        "permission_granted": false,
+        "company_approved": false,
+        "performed": false,
+        "recorded_usage": {
+          "state": "reference_only",
+          "contexts": [
+            "사내 Phase00 자료 정리·검토"
+          ],
+          "evidence": "사용자 직접 지시: CI 사본 재정리·원형 보존 재구성·MD화"
+        },
+        "next": "일치는 기존 작업 맥락의 기록만 뜻함. 새 용도는 구체 대상·행위·근거·범위의 사람 검토 필요. R5 초안 선택 정책을 확대하지 않음."
+      }
+    },
+    {
+      "name": "사용요청_distribute",
+      "pass": true,
+      "details": {
+        "recorded_context_match": false,
+        "state": "needs_scope_review",
+        "permission_granted": false,
+        "company_approved": false,
+        "performed": false,
+        "recorded_usage": {
+          "state": "reference_only",
+          "contexts": [
+            "사내 Phase00 자료 정리·검토"
+          ],
+          "evidence": "사용자 직접 지시: CI 사본 재정리·원형 보존 재구성·MD화"
+        },
+        "next": "일치는 기존 작업 맥락의 기록만 뜻함. 새 용도는 구체 대상·행위·근거·범위의 사람 검토 필요. R5 초안 선택 정책을 확대하지 않음."
+      }
+    },
+    {
+      "name": "사용요청_design_draft",
+      "pass": true,
+      "details": {
+        "recorded_context_match": false,
+        "state": "needs_scope_review",
+        "permission_granted": false,
+        "company_approved": false,
+        "performed": false,
+        "recorded_usage": {
+          "state": "reference_only",
+          "contexts": [
+            "사내 Phase00 자료 정리·검토"
+          ],
+          "evidence": "사용자 직접 지시: CI 사본 재정리·원형 보존 재구성·MD화"
+        },
+        "next": "일치는 기존 작업 맥락의 기록만 뜻함. 새 용도는 구체 대상·행위·근거·범위의 사람 검토 필요. R5 초안 선택 정책을 확대하지 않음."
+      }
+    },
+    {
+      "name": "사용요청_copy_code",
+      "pass": true,
+      "details": {
+        "recorded_context_match": false,
+        "state": "needs_scope_review",
+        "permission_granted": false,
+        "company_approved": false,
+        "performed": false,
+        "recorded_usage": {
+          "state": "reference_only",
+          "contexts": [
+            "사내 Phase00 자료 정리·검토"
+          ],
+          "evidence": "사용자 직접 지시: CI 사본 재정리·원형 보존 재구성·MD화"
+        },
+        "next": "일치는 기존 작업 맥락의 기록만 뜻함. 새 용도는 구체 대상·행위·근거·범위의 사람 검토 필요. R5 초안 선택 정책을 확대하지 않음."
+      }
+    },
+    {
+      "name": "사용요청_execute_code",
+      "pass": true,
+      "details": {
+        "recorded_context_match": false,
+        "state": "needs_scope_review",
+        "permission_granted": false,
+        "company_approved": false,
+        "performed": false,
+        "recorded_usage": {
+          "state": "reference_only",
+          "contexts": [
+            "사내 Phase00 자료 정리·검토"
+          ],
+          "evidence": "사용자 직접 지시: CI 사본 재정리·원형 보존 재구성·MD화"
+        },
+        "next": "일치는 기존 작업 맥락의 기록만 뜻함. 새 용도는 구체 대상·행위·근거·범위의 사람 검토 필요. R5 초안 선택 정책을 확대하지 않음."
+      }
+    },
+    {
+      "name": "미등록자산",
+      "pass": true,
+      "details": {
+        "recorded_context_match": false,
+        "state": "unknown_asset",
+        "permission_granted": false,
+        "company_approved": false,
+        "performed": false
+      }
+    },
+    {
+      "name": "미지원행위",
+      "pass": true,
+      "details": {
+        "recorded_context_match": false,
+        "state": "unknown_action",
+        "permission_granted": false,
+        "company_approved": false,
+        "performed": false
+      }
+    },
+    {
+      "name": "미기재맥락",
+      "pass": true,
+      "details": {
+        "recorded_context_match": false,
+        "state": "needs_scope_review",
+        "permission_granted": false,
+        "company_approved": false,
+        "performed": false,
+        "recorded_usage": {
+          "state": "reference_only",
+          "contexts": [
+            "사내 Phase00 자료 정리·검토"
+          ],
+          "evidence": "사용자 직접 지시: CI 사본 재정리·원형 보존 재구성·MD화"
+        },
+        "next": "일치는 기존 작업 맥락의 기록만 뜻함. 새 용도는 구체 대상·행위·근거·범위의 사람 검토 필요. R5 초안 선택 정책을 확대하지 않음."
+      }
+    },
+    {
+      "name": "공백행위",
+      "pass": true,
+      "details": {
+        "recorded_context_match": false,
+        "state": "invalid_request",
+        "permission_granted": false,
+        "company_approved": false,
+        "performed": false
+      }
+    },
+    {
+      "name": "자산내용변경_실패경로",
+      "pass": true,
+      "details": [
+        "asset_file_changed: CI-SOURCE-001"
+      ]
+    },
+    {
+      "name": "검사전후_연결목록불변",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "파일확인옵션_비boolean거절_0",
+      "pass": true,
+      "details": [
+        "verify_artifacts requires boolean"
+      ]
+    },
+    {
+      "name": "파일확인옵션_비boolean거절_1",
+      "pass": true,
+      "details": [
+        "verify_artifacts requires boolean"
+      ]
+    },
+    {
+      "name": "파일확인옵션_비boolean거절_'false'",
+      "pass": true,
+      "details": [
+        "verify_artifacts requires boolean"
+      ]
+    },
+    {
+      "name": "파일확인옵션_비boolean거절_[]",
+      "pass": true,
+      "details": [
+        "verify_artifacts requires boolean"
+      ]
+    },
+    {
+      "name": "파일확인옵션_비boolean거절_{}",
+      "pass": true,
+      "details": [
+        "verify_artifacts requires boolean"
+      ]
+    },
+    {
+      "name": "명시메타데이터확인_파일확인과구분",
+      "pass": true,
+      "details": {
+        "structural_valid": true,
+        "errors": [],
+        "identity_authenticated": false,
+        "content_verified": false,
+        "company_approved": false,
+        "permission_granted": false,
+        "operational_release": false,
+        "artifact_identity_checked": false,
+        "artifact_rows_checked": 0
+      }
+    }
+  ]
+}

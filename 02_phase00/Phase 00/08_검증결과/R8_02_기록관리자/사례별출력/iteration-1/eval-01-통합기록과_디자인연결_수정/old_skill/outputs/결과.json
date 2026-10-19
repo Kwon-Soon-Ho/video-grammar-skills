@@ -1,0 +1,140 @@
+{
+  "task_completed": true,
+  "scope": "합성 사본의 두 초안 참조/판본 정리 및 구조/연결 검사",
+  "record_id": "R8-DEV-STEW-01",
+  "old_version": "0.1.0",
+  "new_version": "0.1.1",
+  "saved_record_sha256": "015d061abd10150f9453fa345fb88bdac147d1de86fcb5528a9b1acf237d64f3",
+  "checks": {
+    "before_integrated": false,
+    "before_design": true,
+    "after_integrated": true,
+    "after_design": true
+  },
+  "backups": {
+    "12_통합기록/통합기록_작업초안.json": {
+      "backup_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-1\\eval-01-통합기록과_디자인연결_수정\\old_skill\\run-1\\backup\\requested-draft-fix\\12_통합기록\\통합기록_작업초안.json",
+      "sha256": "8418459bae850424724d12ad0cc4cc1471b94bcee6c4613578e3e3613908c27d",
+      "byte_identical": true
+    },
+    "작업초안/디자인적용_초안.json": {
+      "backup_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-1\\eval-01-통합기록과_디자인연결_수정\\old_skill\\run-1\\backup\\requested-draft-fix\\작업초안\\디자인적용_초안.json",
+      "sha256": "8e9ccad2d9af6c3732f74bce8dde7e0daf9ad9d256d5f7ee5a9340bd752dd580",
+      "byte_identical": true
+    }
+  },
+  "changes": {
+    "12_통합기록/통합기록_작업초안.json": [
+      {
+        "path": "/version",
+        "before": "0.1.0",
+        "after": "0.1.1"
+      },
+      {
+        "path": "/units/2/target_ref/version",
+        "before": "0.9.9",
+        "after": "0.1.0"
+      }
+    ],
+    "작업초안/디자인적용_초안.json": [
+      {
+        "path": "/linked_r4_record/version",
+        "before": "0.1.0",
+        "after": "0.1.1"
+      },
+      {
+        "path": "/linked_r4_record/sha256",
+        "before": "8418459bae850424724d12ad0cc4cc1471b94bcee6c4613578e3e3613908c27d",
+        "after": "015d061abd10150f9453fa345fb88bdac147d1de86fcb5528a9b1acf237d64f3"
+      }
+    ]
+  },
+  "preservation": {
+    "changed_files": [
+      "12_통합기록/통합기록_작업초안.json",
+      "작업초안/디자인적용_초안.json"
+    ],
+    "added_files": [],
+    "deleted_files": [],
+    "other_db_files_byte_hash_unchanged": true,
+    "json_diff_allowlist_pass": true,
+    "record_id_preserved": true,
+    "linked_record_id_preserved": true,
+    "linked_actual_saved_sha256_matches": true,
+    "linked_version_matches": true,
+    "times_coordinates_numbers_company_colors_review_state_preserved": true
+  },
+  "commands": [
+    {
+      "label": "수정전_통합기록_검사",
+      "argv": [
+        "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-1\\eval-01-통합기록과_디자인연결_수정\\old_skill\\run-1\\inputs\\Phase00\\07_실행도구\\자료검증.py",
+        "--record",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-1\\eval-01-통합기록과_디자인연결_수정\\old_skill\\run-1\\inputs\\Phase00\\12_통합기록\\통합기록_작업초안.json"
+      ],
+      "exit_code": 1,
+      "stdout": "수정전_통합기록_검사.stdout.txt",
+      "stderr": "수정전_통합기록_검사.stderr.txt",
+      "valid": false
+    },
+    {
+      "label": "수정전_디자인연결_검사",
+      "argv": [
+        "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-1\\eval-01-통합기록과_디자인연결_수정\\old_skill\\run-1\\inputs\\Phase00\\07_실행도구\\R5_디자인적용검사.py",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-1\\eval-01-통합기록과_디자인연결_수정\\old_skill\\run-1\\inputs\\Phase00\\작업초안\\디자인적용_초안.json"
+      ],
+      "exit_code": 0,
+      "stdout": "수정전_디자인연결_검사.stdout.txt",
+      "stderr": "수정전_디자인연결_검사.stderr.txt",
+      "valid": true
+    },
+    {
+      "label": "수정후_통합기록_검사",
+      "argv": [
+        "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-1\\eval-01-통합기록과_디자인연결_수정\\old_skill\\run-1\\inputs\\Phase00\\07_실행도구\\자료검증.py",
+        "--record",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-1\\eval-01-통합기록과_디자인연결_수정\\old_skill\\run-1\\inputs\\Phase00\\12_통합기록\\통합기록_작업초안.json"
+      ],
+      "exit_code": 0,
+      "stdout": "수정후_통합기록_검사.stdout.txt",
+      "stderr": "수정후_통합기록_검사.stderr.txt",
+      "valid": true
+    },
+    {
+      "label": "수정후_디자인연결_검사",
+      "argv": [
+        "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-1\\eval-01-통합기록과_디자인연결_수정\\old_skill\\run-1\\inputs\\Phase00\\07_실행도구\\R5_디자인적용검사.py",
+        "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_시험\\video-record-steward-workspace\\iteration-1\\eval-01-통합기록과_디자인연결_수정\\old_skill\\run-1\\inputs\\Phase00\\작업초안\\디자인적용_초안.json"
+      ],
+      "exit_code": 0,
+      "stdout": "수정후_디자인연결_검사.stdout.txt",
+      "stderr": "수정후_디자인연결_검사.stderr.txt",
+      "valid": true
+    }
+  ],
+  "limitations": [
+    "실제 영상·프레임·미디어 해석/생성 미수행",
+    "합성 값을 원본 관측/회사 승인으로 승격하지 않음",
+    "R6/R7 일부 자료 생략: full 연결 통과를 주장하지 않음. 해당 도구 미실행.",
+    "검사 통과는 구조와 참조만 뜻하며 사람 검수/사실성/회사 승인/운영 배포가 아님"
+  ],
+  "fact_verified": false,
+  "company_approved": false,
+  "operational_release": false
+}

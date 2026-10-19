@@ -1,0 +1,39 @@
+{
+  "stage": "03",
+  "source_criteria": "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase00-build/시범운영_20261016/검수기준_고정.json",
+  "source_sha256": "9d253bd87538326f24d703c7c6f2d6efc55be6d50ea842cd13ab3af28a5fc787",
+  "scope": "candidate-only six fixed expectations; result-report readiness only, no quality total/comparison/human approval/actual-video claim",
+  "expectations": [
+    {
+      "text": "목적상항목선정후실제근거대조",
+      "passed": true,
+      "evidence": "검수항목_사전선정.json과 동일한 preselect.stdout에 Q-INFO-01/02,Q-SCREEN-02,Q-BRAND-02,Q-TRUST-01/02의 적용/필수 이유와 문서 범위가 있다. 실제 정본 v0.1.1의 해당6카드를 직접 읽어 목적 적합성을 확인했다. review_execution.py는 prepare/criteria_details에서 대상 내용을 열지 않으며 review_read는 선정 파일 존재를 요구한다. 실행목록·read_evidence 순서도 이에 대응한다. 초기 독립 raw 부재로 모든 초기 조회 순서를 OS 감사처럼 증명하지는 않으며 그 한계는 transcript에 명시됐다."
+    },
+    {
+      "text": "3카드구분/조건/예외의정확성검토",
+      "passed": true,
+      "evidence": "actual 15 설명 필드와 사전/용어판정기준의 3항목·관련 PROPERTY-OPACITY, 선형 프로세스 지식/심화/선택조건을 대조했다. card_reviews는 원문 JSON pointer·실제 문장·반례·허용 예외·미확인·재검토 조건을 구분한다. 방향/분기/기간, 기능/실제효과, 가시성관측/구현원인의 구분에 확인된 필수 오류가 없어 유지 제안은 정당하다. hash 통과만으로 의미를 판정하지 않았다."
+    },
+    {
+      "text": "실제영상/효과/원인/회사승인확정안함",
+      "passed": true,
+      "evidence": "결과.md/json·사람질문·수정제안은 문서 대조만 완료하며 실제 영상/가독성/모션/시선·학습효과/제작의도·원인/회사 승인·기본전환을 미실시로 둔다. 결과 outcome은 overall_ready=false, human_review=pending, company_approved=false, basic_skill_transition=false, actual_video_effect_verified=false이고 총점은null이다. 실제 사례/수치·효과를 만들지 않았다."
+    },
+    {
+      "text": "연결판본/해시와한맥/CI범위구분",
+      "passed": true,
+      "evidence": "독립 재계산에서 카드·연결목록 SHA가 2단계 실제 판본과 같고 세 ID/term_ref/source_snapshot/원문SHA·draft_ref 문서/record판본·파일SHA가 맞는다. 원문 term0.1.0과 카드/문서0.1.1을 구분했다. design_reference는 actual hanmac-video@0.1.0 profile_id/판본/SHA, reference_only_no_new_color_selected와 맞으며 웹 참고/CI 확인을 새 카드·공식색·회사 승인으로 승격하지 않는다."
+    },
+    {
+      "text": "정당한유지/필요수정/사람대기를국소보고",
+      "passed": true,
+      "evidence": "문서 의미/연결은 유지·필수수정없음으로 근거와 함께 보고하고 Q-INFO-01 실제 독자 적합성·이번 출력피드백만 판단보류한다. H-01은 대상3카드 v0.1.1/SHA·위치·확인/부족 범위를 적고 자유 답변을 요청하는 미발송/미접수 질문이다. A~D 운영범위 선택과 추천안을 사실 확인과 분리했다. 과거 R8 회신 재사용·26전체 강제·총점/전체준비완료가 없다."
+    },
+    {
+      "text": "입력보존/검토보고실제작성",
+      "passed": true,
+      "evidence": "원 입력35파일의 actual SHA가 입력고정과 모두 같고 파일집합·시작/종료 snapshot도 동일하다. 결과md/json·수정제안·사람대기질문·코드2·실행목록·stdout/stderr/metadata·read_evidence가 실제 존재한다. 모든 기존51 output은 이 독립검토 시작/종료에도 변경되지 않았다. 최초 부트스트랩4조회 독립raw 부재는 후속 재조회 증거와 구별해 기록했다. stage02의 최초 inspect exit1/KeyError 이력도 byte 동일한 상류결과와 focus_targets stdout에 보존된다."
+    }
+  ]
+}
+

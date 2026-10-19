@@ -1,0 +1,15 @@
+[project]
+name = "agent-skills"
+version = "0.0.0"
+description = "Skill packages. This file exists to make the repo-root test suite runnable."
+requires-python = ">=3.11"
+
+[dependency-groups]
+dev = ["pytest>=8", "pyyaml>=6", "jsonschema>=4"]
+
+[tool.pytest.ini_options]
+# Includes skills/ deliberately. The per-skill scripts/test_*.py suites predate this file and had
+# no runner at all, which is exactly why a shadowed constant survived in one of them. Measured
+# before including them: all six are green and root collection resolves their imports. Running the
+# new guard while still skipping those suites would fix the symptom and not the defect.
+testpaths = ["tests", "skills"]

@@ -1,0 +1,256 @@
+{
+  "metadata": {
+    "skill_name": "Phase 00 세 관리 스킬",
+    "evals": 3,
+    "runs_per_eval": 1,
+    "measured_time_tokens": false
+  },
+  "runs": [
+    {
+      "eval_id": 1,
+      "eval_name": "용어와웹규칙구분",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "expectations": [
+        {
+          "text": "페이드인의 가시성 변화와 Opacity 구현을 구분하고, 확대 100→115를 원본 키프레임 확인으로 쓰지 않는다.",
+          "passed": true,
+          "evidence": "items[0]는 PROPERTY-VISIBILITY(가시성 변화), items[1]은 PROPERTY-OPACITY(오퍼시티 변화 추정)로 나누며 '페이드인과 동일 의미로 자동 병합하지 않음'이라고 기록한다. items[2].input_claim.measured=false, original_scale=null이고 '입력값을 실제 원본 Scale 키프레임으로 쓰지 않음'을 명시한다."
+        },
+        {
+          "text": "카드 번호 항상 삭제와 모든 리스트 60ms 순차 등장을 회사 필수 규칙으로 채택하지 않고 목적·조건에 따라 수정/보류한다.",
+          "passed": true,
+          "evidence": "카드·번호 항목 decision=보류이며 '순서·현재 단계·참조 관계를 돕는 번호는 유지 가능'이다. 리스트 항목 decision=수정이며 '단계 공개에는 순차, 비교·전체 맥락에는 동시 등장도 가능', 60ms는 '미검증 후보'로 남긴다."
+        },
+        {
+          "text": "실제 영상·키프레임·시간 측정이 없음을 밝히며 요청 수치를 측정 사실로 승격하지 않는다.",
+          "passed": true,
+          "evidence": "scope는 '실제 영상·키프레임·제작 의도·효과를 관측 또는 검증하지 않음'이다. 각 observation=null이며 100→115와 60ms는 input_claim의 measured=false로 보존하고 기간·키프레임·실제 비율은 null이다."
+        },
+        {
+          "text": "실존 정본의 개념/ID 또는 검토 근거를 사용하고 의미 병합·회사 승인은 자동 생성하지 않는다.",
+          "passed": true,
+          "evidence": "PROPERTY-VISIBILITY·PROPERTY-OPACITY·PROPERTY-SIZE·TIME-SEQUENCE와 IP-02·MR-04를 근거로 사용한다. 현재 D 정본 읽기 확인에서 앞 네 ID 및 fade/Opacity 별칭과 원본 Scale 단정 금지, MR-04의 항상 stagger 금지를 확인했다. new_alias_merge='실행하지 않음', company_approval='없음', review_proposal.applied=false로 자동 병합·승인을 만들지 않았다."
+        }
+      ],
+      "result": {
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "pass_rate": 1,
+        "time_seconds": null,
+        "tokens": null
+      }
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "기록근거승인오류",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "expectations": [
+        {
+          "text": "없는 한맥 토큰, 미분류 이유 누락, 근거 없는 수치 추정, 설명용 예의 회사 승인 오류를 모두 지적한다.",
+          "passed": true,
+          "evidence": "critical_issues 4개가 HM-COLOR-NOT-EXIST, 빈 classification와 null unclassified_reason, example_description만 근거인 numerical_estimate/measurement=null, synthetic_example의 AI 회사 approved 표기를 각각 지적한다. validator.errors에도 이 4개 오류와 승인 관련 오류가 명시돼 있다."
+        },
+        {
+          "text": "수정 방향에서 숫자·단위·시간·승인자를 만들어 채우지 않고 미확정/초안으로 남긴다.",
+          "passed": true,
+          "evidence": "safe_draft_proposal은 applied=false, 미확정 배경 바인딩 제거와 support_mode=not_observed_example, review.state=draft 및 reviewer/approved_scope/approval_kind=null을 제안한다. 원본 파일·해시·시간·measurement null와 frames=[]를 보존하며 '측정값을 만들어 채우지 않는다'고 한다."
+        },
+        {
+          "text": "구조 검사 통과와 영상 진실성·실제 사람 승인·회사 문법 승인을 구분한다.",
+          "passed": true,
+          "evidence": "company_approval.allowed_for_this_synthetic_record=false, reviewer_string_is_human_approval=false, schema_or_validator_pass_is_video_truth=false이다. revalidation에는 수정 기록 파일을 만들거나 검사하지 않았으므로 수정안 통과를 선언하지 않는다고 한다."
+        },
+        {
+          "text": "실제 실행한 검증 결과를 구체적으로 보고하고 입력·정본을 수정했다는 거짓 주장을 하지 않는다.",
+          "passed": false,
+          "evidence": "validator에 실제 명령·런타임·exit_code=1·valid=false·8개 오류를 구체적으로 보고하고 input_modified/canonical_modified=false, applied=false이다. 그러나 평가 폴더에 실행 transcript·원시 도구 출력·불변성 비교 기록이 없어 '실제 실행'과 입력/정본 무변경은 JSON 자기보고만으로 독립 입증되지 않는다. 복합 기대조건의 실제 실행 부분을 검증할 수 없어 fail이며 거짓 실행/수정이 있었다는 판정은 아니다."
+        }
+      ],
+      "result": {
+        "passed": 3,
+        "failed": 1,
+        "total": 4,
+        "pass_rate": 0.75,
+        "time_seconds": null,
+        "tokens": null
+      }
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "디자인지침과잉이식",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "expectations": [
+        {
+          "text": "카드·번호·연결선·선형모션 일괄 금지와 무작위 비대칭을 내용·정보 관계에 따라 수정/보류한다.",
+          "passed": true,
+          "evidence": "items의 카드·번호·연결선, 무작위 비대칭, 선형 모션은 모두 수정이다. 순서·현재 단계 표식/실제 의존 관계면 유지, 내용의 위계에 기여하면 비대칭 사용, 등속·기계 이동이면 선형 후보라는 목적과 예외를 제시한다."
+        },
+        {
+          "text": "영문 폰트·웹 px·사진/모션 개수·한맥 UI 필수화를 영상 전역 기준으로 채택하지 않는다.",
+          "passed": true,
+          "evidence": "영문 폰트=수정, 웹 42px=보류, 모든 장면 동작=수정, 사진 4장=보류, 한맥 UI 필수=수정이다. 한국어 지원·실제 출력 조건·전달 역할로 선택하며 모든 장면 전역 강제를 채택하지 않는다."
+        },
+        {
+          "text": "자막 제거를 중복 조절 원칙으로 정당화하지 않고 무음·접근성·한국어·초보 시청자를 고려한다.",
+          "passed": true,
+          "evidence": "자막 삭제=수정이며 '무음·접근성·기술 용어에 필요한 자막과 표식은 유지'한다. SCREEN-TYPE-KO와 실제 한국어 기술명·숫자·단위 확인, 초보 기획실 인원 조건, IP-06·IP-07·IP-08에 따른 단계·용어·전체 맥락 지원을 제시한다."
+        },
+        {
+          "text": "실제 프레임이 없어 결과 영상 품질 통과를 선언하지 않으며 최소 수정안과 근거/예외를 제시한다.",
+          "passed": true,
+          "evidence": "video_pass=null 및 실제 결과 프레임·영상·시간 근거가 없어 통과 판정하지 않는다는 이유를 명시한다. 각 items에 basis/exceptions/minimal_revision이 있으며 정지 유지·관계에 따른 번호/연결선·선택적 UI 등의 최소 수정안을 제시한다."
+        }
+      ],
+      "result": {
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "pass_rate": 1,
+        "time_seconds": null,
+        "tokens": null
+      }
+    },
+    {
+      "eval_id": 1,
+      "eval_name": "용어와웹규칙구분",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "expectations": [
+        {
+          "text": "페이드인의 가시성 변화와 Opacity 구현을 구분하고, 확대 100→115를 원본 키프레임 확인으로 쓰지 않는다.",
+          "passed": true,
+          "evidence": "항목[0] PROPERTY-VISIBILITY와 항목[1] PROPERTY-OPACITY를 분리하고 '페이드인과 의미 병합하지 않는다'고 한다. 확대 항목은 '제공 수치는 요청값으로 보존하고 측정값은 null'이며 '원본 Scale 100%→115% 확인 또는 실제 15% 확대 관측으로 표현하지 않는다'고 명시한다."
+        },
+        {
+          "text": "카드 번호 항상 삭제와 모든 리스트 60ms 순차 등장을 회사 필수 규칙으로 채택하지 않고 목적·조건에 따라 수정/보류한다.",
+          "passed": true,
+          "evidence": "카드·번호 결정=보류이고 단계 순서·현재 위치를 돕는 번호는 유지 후보다. 리스트 결정=수정이고 '순차·동시 등장은 정보 관계로 선택', '60ms를 영상 기본값으로 채택하지 않음'을 명시한다."
+        },
+        {
+          "text": "실제 영상·키프레임·시간 측정이 없음을 밝히며 요청 수치를 측정 사실로 승격하지 않는다.",
+          "passed": true,
+          "evidence": "판정범위는 '실제 관측·측정·의도 확인·회사 승인 아님'. 확대는 바운딩박스·원본 Scale 미관측, 리스트는 실제 시작 시각 차이 미측정이며 공통미확정에 원본 키프레임·시작/종료 시각이 있다."
+        },
+        {
+          "text": "실존 정본의 개념/ID 또는 검토 근거를 사용하고 의미 병합·회사 승인은 자동 생성하지 않는다.",
+          "passed": true,
+          "evidence": "정규화에 PROPERTY-VISIBILITY·PROPERTY-OPACITY·PROPERTY-SIZE·TIME-SEQUENCE 등을 참조한다. 현재 D 정본 읽기 확인에서 해당 ID·별칭과 원본 Scale 단정 금지 및 MR-04를 확인했다. Opacity 항목은 의미 병합 금지, 회사승인은 '승인하지 않음'이다."
+        }
+      ],
+      "result": {
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "pass_rate": 1,
+        "time_seconds": null,
+        "tokens": null
+      }
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "기록근거승인오류",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "expectations": [
+        {
+          "text": "없는 한맥 토큰, 미분류 이유 누락, 근거 없는 수치 추정, 설명용 예의 회사 승인 오류를 모두 지적한다.",
+          "passed": true,
+          "evidence": "핵심오류는 없는 배경 토큰 HM-COLOR-NOT-EXIST, 빈 layout와 null 미분류 이유, measurement=null/example_description뿐인 numerical_estimate, AI reviewer가 있는 synthetic_example 회사 approved를 모두 지적한다. 검증근거.오류원문도 이에 대응한다."
+        },
+        {
+          "text": "수정 방향에서 숫자·단위·시간·승인자를 만들어 채우지 않고 미확정/초안으로 남긴다.",
+          "passed": true,
+          "evidence": "안전한수정초안은 방향 및 제안만 작성하고 입력 미적용이다. measurement=null·time_basis=unknown·원본/기간 null를 유지하며 review.state=draft, reviewer/reviewed_at/approval_kind/decision_ref=null을 제안한다. HM-COLOR-GREEN-500은 조건부 설계 후보로 표시해 실제 관측이나 선택 확정으로 쓰지 않는다."
+        },
+        {
+          "text": "구조 검사 통과와 영상 진실성·실제 사람 승인·회사 문법 승인을 구분한다.",
+          "passed": true,
+          "evidence": "회사승인가능여부는 현재=false, 구조수정으로회사승인가능=false이고 '데이터 정합성 검증과 실영상 사실 검수 및 회사 표현 패턴 승인은 별도'라고 한다. '검증기는 사람 신원을 인증하지 않는다', 수정본 미생성·미검증으로 수정 후 통과 선언하지 않음을 명시한다."
+        },
+        {
+          "text": "실제 실행한 검증 결과를 구체적으로 보고하고 입력·정본을 수정했다는 거짓 주장을 하지 않는다.",
+          "passed": false,
+          "evidence": "검증근거에 실행명령·작업디렉터리·종료코드=1·valid=false·8개 오류원문을 구체적으로 보고하고 '결과 파일만 저장. 입력·정본 변경 없음'이라고 한다. 그러나 실행 transcript·원시 도구 출력·불변성 비교 기록이 없어 실제 실행과 무변경은 JSON 자기보고만으로 독립 입증되지 않는다. 복합 기대조건의 실제 실행 부분을 검증할 수 없어 fail이며 거짓 실행/수정이 있었다는 판정은 아니다."
+        }
+      ],
+      "result": {
+        "passed": 3,
+        "failed": 1,
+        "total": 4,
+        "pass_rate": 0.75,
+        "time_seconds": null,
+        "tokens": null
+      }
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "디자인지침과잉이식",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "expectations": [
+        {
+          "text": "카드·번호·연결선·선형모션 일괄 금지와 무작위 비대칭을 내용·정보 관계에 따라 수정/보류한다.",
+          "passed": true,
+          "evidence": "카드·번호·연결선=수정, 무작위 비대칭=수정, 선형 모션=수정이다. 전체 6단계와 현재 위치 식별, 실제 공정 관계의 일관된 배치, 등속 전달·기계 시뮬레이션의 선형 허용을 근거와 예외로 제시한다."
+        },
+        {
+          "text": "영문 폰트·웹 px·사진/모션 개수·한맥 UI 필수화를 영상 전역 기준으로 채택하지 않는다.",
+          "passed": true,
+          "evidence": "영문 폰트=수정, 웹 42px=보류, 모든 장면 동작=수정, 사진 4장=보류, 한맥 UI 필수=보류이다. 한글·출력/시청 조건·정보량·전달 목적·실제 제품 UI 장면 조건에 따라 선택한다."
+        },
+        {
+          "text": "자막 제거를 중복 조절 원칙으로 정당화하지 않고 무음·접근성·한국어·초보 시청자를 고려한다.",
+          "passed": true,
+          "evidence": "자막 삭제=수정이며 접근성 자막·무음 시청·기술 용어를 삭제 의무로 삼지 않고 본문 중복과 기능을 구분한다. 한글 지원 서체·무음 핵심 텍스트, 초보자의 전체도·용어·현재 위치 지원을 제시한다."
+        },
+        {
+          "text": "실제 프레임이 없어 결과 영상 품질 통과를 선언하지 않으며 최소 수정안과 근거/예외를 제시한다.",
+          "passed": true,
+          "evidence": "판정범위에서 실제 프레임 없어 영상 품질·가독성·효과 통과 판정하지 않는다고 하고 영상통과판정='하지 않음'이다. 항목별 근거·예외·최소수정안과 종합 최소수정초안을 제공한다."
+        }
+      ],
+      "result": {
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "pass_rate": 1,
+        "time_seconds": null,
+        "tokens": null
+      }
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 0.9166666666666666,
+        "stddev": 0.14433756729740643,
+        "min": 0.75,
+        "max": 1
+      },
+      "passed": 11,
+      "total": 12
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.9166666666666666,
+        "stddev": 0.14433756729740643,
+        "min": 0.75,
+        "max": 1
+      },
+      "passed": 11,
+      "total": 12
+    },
+    "delta": {
+      "pass_rate": 0.0
+    }
+  },
+  "notes": [
+    "각 조건 11/12 동률. 내용 검토는 충족했지만 사례2 과거 실행 입증의 원시 transcript가 없어 1조건 미확인.",
+    "시간·토큰은 미측정. 서로 다른 3개 스킬의 요청별 단회 비교이며 통계적 우월성·업무효과 증명 아님.",
+    "별도 기록 초안 쓰기 시범은 backup·승인철회·미정 보존·실제 재검증 8개 검사 통과."
+  ]
+}

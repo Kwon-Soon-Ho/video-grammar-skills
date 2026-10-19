@@ -1,0 +1,242 @@
+{
+  "taxonomy": {
+    "path": "01_공통용어/공통용어사전.json",
+    "version": "0.1.1",
+    "read_depth": "three full term records, axes and source metadata",
+    "records": [
+      {
+        "id": "LAYOUT-PROCESS-LINE",
+        "axis": "layout",
+        "name_ko": "선형 프로세스",
+        "name_en": "Linear process",
+        "definition": "단계를 선·방향으로 연결한 구성",
+        "aliases": [
+          "수평 프로세스",
+          "수직 프로세스"
+        ],
+        "include_when": "순서 있는 단계",
+        "exclude_or_limit": "행태별 방향 속성은 별도",
+        "parent_id": null,
+        "related_ids": [],
+        "source_refs": [
+          "SRC-PROJECT-TAXONOMY"
+        ],
+        "status": "draft",
+        "version": "0.1.0",
+        "replaced_by": null
+      },
+      {
+        "id": "FUNCTION-FOCUS",
+        "axis": "motion_function",
+        "name_ko": "주목 이동",
+        "name_en": "Shift focus",
+        "definition": "현재 설명 대상으로 주목을 이동",
+        "aliases": [
+          "포커스 전환"
+        ],
+        "include_when": "핵심 단계 설명",
+        "exclude_or_limit": "실제 시선 효과는 검토 필요",
+        "parent_id": null,
+        "related_ids": [],
+        "source_refs": [
+          "SRC-PROJECT-TAXONOMY"
+        ],
+        "status": "draft",
+        "version": "0.1.0",
+        "replaced_by": null
+      },
+      {
+        "id": "PROPERTY-VISIBILITY",
+        "axis": "motion_property",
+        "name_ko": "가시성 변화",
+        "name_en": "Visibility change",
+        "definition": "보이는 범위·강도가 달라짐",
+        "aliases": [
+          "페이드인",
+          "페이드아웃",
+          "Fade in",
+          "Fade out"
+        ],
+        "include_when": "등장·퇴장 관측",
+        "exclude_or_limit": "오퍼시티·마스크·합성 원인 미확정 가능",
+        "parent_id": null,
+        "related_ids": [],
+        "source_refs": [
+          "SRC-PROJECT-TAXONOMY"
+        ],
+        "status": "draft",
+        "version": "0.1.0",
+        "replaced_by": null
+      }
+    ]
+  },
+  "criteria": {
+    "path": "01_공통용어/용어판정기준.json",
+    "version": "0.1.2",
+    "interpretation": "기존용어의의미를병합/승격하지않고적용조건을보완한프로젝트초안. 모든예는설명용합성상황. 원문사실·실영상검증아님.",
+    "read_depth": "three full guide records",
+    "records": [
+      {
+        "term_id": "LAYOUT-PROCESS-LINE",
+        "axis": "layout",
+        "name_ko": "선형 프로세스",
+        "record_version": "0.1.1",
+        "status": "project_draft",
+        "units": [
+          "state"
+        ],
+        "minimum_evidence": "visible_scope",
+        "positive_example": "실행단계를 방향 있는 선으로 연결한 구성.",
+        "negative_example": "가로 카드나 연도축을 무조건 프로세스로 분류.",
+        "abstain_when": "순서/연결 의미와 실제시간축 여부를 구분.",
+        "source_refs": [
+          "R2-PROJECT"
+        ],
+        "example_origin": "synthetic_example",
+        "company_approved": false,
+        "claim_scope_note": "관측태그와구현/원인/의도/출처주장을분리한다. 구현만불명이어도충분한관측태그는유지; 이항목의정의에필수인증거가부족하면기권."
+      },
+      {
+        "term_id": "FUNCTION-FOCUS",
+        "axis": "motion_function",
+        "name_ko": "주목 이동",
+        "record_version": "0.1.1",
+        "status": "project_draft",
+        "units": [
+          "beat"
+        ],
+        "minimum_evidence": "temporal_change_plus_message_context",
+        "positive_example": "기존정보 사이 강조표식이 다음 설명대상으로 이동.",
+        "negative_example": "모든이동을 주목이동 기능으로 기록.",
+        "abstain_when": "어떤대상으로 초점이 바뀌었는지 근거 부족 시 후보.",
+        "source_refs": [
+          "R2-PROJECT"
+        ],
+        "example_origin": "synthetic_example",
+        "company_approved": false,
+        "claim_scope_note": "관측태그와구현/원인/의도/출처주장을분리한다. 구현만불명이어도충분한관측태그는유지; 이항목의정의에필수인증거가부족하면기권."
+      },
+      {
+        "term_id": "PROPERTY-VISIBILITY",
+        "axis": "motion_property",
+        "name_ko": "가시성 변화",
+        "record_version": "0.1.1",
+        "status": "project_draft",
+        "units": [
+          "beat"
+        ],
+        "minimum_evidence": "tracked_target_and_temporal_scope",
+        "positive_example": "문자가 서서히 보이거나 가려졌다가 드러남.",
+        "negative_example": "흰배경과 섞여보이므로 Opacity0→100 확정.",
+        "abstain_when": "밝기/가림/합성/배경변화의 원인은 미확정.",
+        "source_refs": [
+          "R2-PROJECT",
+          "R2-W3C-OPACITY"
+        ],
+        "example_origin": "synthetic_example",
+        "company_approved": false,
+        "claim_scope_note": "관측태그와구현/원인/의도/출처주장을분리한다. 구현만불명이어도충분한관측태그는유지; 이항목의정의에필수인증거가부족하면기권."
+      }
+    ]
+  },
+  "layout": {
+    "path": "02_원칙과레이아웃/레이아웃지식.json",
+    "version": "0.1.1",
+    "read_depth": "linear process full record",
+    "records": [
+      {
+        "id": "KNOW-LAYOUT-PROCESS-LINE",
+        "term_id": "LAYOUT-PROCESS-LINE",
+        "name_ko": "선형 프로세스",
+        "definition": "단계를 선·방향으로 연결한 구성",
+        "fit_conditions": "순서 있는 단계",
+        "limits": "행태별 방향 속성은 별도",
+        "variant_dimensions": [
+          "요소 수",
+          "문구 길이",
+          "출력 비율",
+          "정보 관계",
+          "읽기·유지 시간"
+        ],
+        "source_refs": [
+          "SRC-PROJECT-TAXONOMY"
+        ],
+        "related_ids": [
+          "SCREEN-HIERARCHY",
+          "SCREEN-TYPE-KO",
+          "SCREEN-TIME-READ"
+        ],
+        "company_examples": [],
+        "status": "reference",
+        "version": "0.1.1",
+        "application_reference_refs": [
+          "SRC-IMPECCABLE"
+        ]
+      }
+    ]
+  },
+  "layout_deep": {
+    "path": "02_원칙과레이아웃/레이아웃_심화지식.json",
+    "version": "0.1.2",
+    "authority": "project_draft_not_company_rule",
+    "read_depth": "linear process full card and root authority/approval metadata",
+    "records": [
+      {
+        "id": "KNOW-LAYOUT-PROCESS-LINE",
+        "term_id": "LAYOUT-PROCESS-LINE",
+        "name_ko": "선형 프로세스",
+        "status": "draft",
+        "company_approved": false,
+        "definition_origin": "SRC-PROJECT-TAXONOMY",
+        "definition": "단계를 선·방향으로 연결한 구성",
+        "application_origin": "project_synthetic_transfer_not_source_example",
+        "fit_relation_ids": [
+          "REL-ORDER"
+        ],
+        "relation_policy": "조건부 선택 후보. 모양만으로 정보 관계를 자동 부여하지 않음.",
+        "fit_when": "업무·공정 단계의 순서가 의미를 가지며 분기가 주요 내용이 아닐 때",
+        "reading_order": "시작 조건→단계와 연결 방향→종료·산출물",
+        "composition_decisions": "단계 이름과 화살표가 실제 절차를 표현하게 하고 현재 단계와 전체 진행 위치를 구분한다.",
+        "positive_example": "접수→검토→승인 흐름을 단계 이름·방향과 함께 표현한다.",
+        "counterexample": "자료 공개 순서만 보고 실제 업무가 그 순서라고 연결하거나 분기·회귀를 숨긴다.",
+        "acceptable_variation": "한 방향 선은 순서일 수 있으나 반드시 시간 길이를 나타내지는 않는다.",
+        "alternative_when": "실제 기간이면 시간축, 조건 분기가 중요하면 연결 구성·확장 후보를 검토한다.",
+        "korean_text_adjustment": "긴 단계명을 축약할 때 의미를 검토하고 작은 단위 설명은 현재 단계에 가까이 둔다.",
+        "landscape_adjustment": "내용 역할을 나눈 영역의 폭을 조절한다. 화면 전체를 꽉 채울 의무는 없다. 핵심·단위·출처가 읽히는 완성 상태를 확인한다.",
+        "portrait_adjustment": "수직 재배열 시 단계 번호·방향을 유지한다. 폭이 좁다고 순서를 뒤집지 않는다.",
+        "square_adjustment": "필수 내용·관계·비례를 잃는 중앙 크롭만으로 해결하지 않는다. 손실 없는 크롭·영역 재배치·구간 분절도 후보로 비교하고 실제 문구와 표시 조건을 확인한다.",
+        "temporal_conditions": "정보가 완성된 상태와 유지 시간을 별도로 확인한다. 읽기 가능한 대비·가림·배치가 유지되는 구간인지 보고 모션 자체의 길이로 대체하지 않는다.",
+        "abstain_when": "시나리오의 선후·분기 근거가 없으면 절차 순서를 확정하지 않는다.",
+        "minimum_inputs": [
+          "설명 목적·핵심 주장",
+          "정보 항목·대응 관계와 출처",
+          "대상 시청자·시청 환경",
+          "출력 화면비·해상도·배포 UI",
+          "실제 문구·숫자·단위·자산"
+        ],
+        "source_refs": [
+          "SRC-L2-CARBON-GRID",
+          "SRC-L2-NNG-VISUAL",
+          "SRC-L2-NNG-PROXIMITY"
+        ],
+        "source_locator_refs": [
+          {
+            "source_id": "SRC-L2-CARBON-GRID",
+            "locator": "Contrast / Style models / Adaptive aspect ratios"
+          },
+          {
+            "source_id": "SRC-L2-NNG-VISUAL",
+            "locator": "2. Visual Hierarchy / 3. Balance"
+          },
+          {
+            "source_id": "SRC-L2-NNG-PROXIMITY",
+            "locator": "Place Related Elements near Each Other / Proximity May Shift in Responsive Designs"
+          }
+        ],
+        "numeric_default": null,
+        "case_kind": "synthetic_not_company_video",
+        "auto_relation_assignment": false
+      }
+    ]
+  }
+}

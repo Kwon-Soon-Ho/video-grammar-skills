@@ -1,0 +1,99 @@
+{
+  "eval_id": 2,
+  "condition": "without_skill",
+  "grading_method": "grader.md의 이진 기대조건 채점. 두 조건에 같은 근거 기준 적용. 실행 없는 문서 분석·초안 결과의 내용 평가이며 예상 스킬 우월성을 전제하지 않음.",
+  "evidence_sources": {
+    "output_file": "eval-2/without_skill/outputs/결과.json",
+    "metadata_file": "eval-2/eval_metadata.json",
+    "transcript_available": false,
+    "raw_tool_log_available": false,
+    "agent_completion_report": "부모가 전달한 두 실행 에이전트의 완료보고는 명령·exit 1·8개 오류의 자기보고로 한정됨. 독립 원시 도구 transcript는 미제공.",
+    "canonical_read_check": "현재 D 정본의 주요 ID·별칭·적용 제한을 읽기 확인했으나 당시 실행 버전·읽기 행위의 독립 증명으로 소급하지 않음"
+  },
+  "expectations": [
+    {
+      "text": "없는 한맥 토큰, 미분류 이유 누락, 근거 없는 수치 추정, 설명용 예의 회사 승인 오류를 모두 지적한다.",
+      "passed": true,
+      "evidence": "핵심오류는 없는 배경 토큰 HM-COLOR-NOT-EXIST, 빈 layout와 null 미분류 이유, measurement=null/example_description뿐인 numerical_estimate, AI reviewer가 있는 synthetic_example 회사 approved를 모두 지적한다. 검증근거.오류원문도 이에 대응한다."
+    },
+    {
+      "text": "수정 방향에서 숫자·단위·시간·승인자를 만들어 채우지 않고 미확정/초안으로 남긴다.",
+      "passed": true,
+      "evidence": "안전한수정초안은 방향 및 제안만 작성하고 입력 미적용이다. measurement=null·time_basis=unknown·원본/기간 null를 유지하며 review.state=draft, reviewer/reviewed_at/approval_kind/decision_ref=null을 제안한다. HM-COLOR-GREEN-500은 조건부 설계 후보로 표시해 실제 관측이나 선택 확정으로 쓰지 않는다."
+    },
+    {
+      "text": "구조 검사 통과와 영상 진실성·실제 사람 승인·회사 문법 승인을 구분한다.",
+      "passed": true,
+      "evidence": "회사승인가능여부는 현재=false, 구조수정으로회사승인가능=false이고 '데이터 정합성 검증과 실영상 사실 검수 및 회사 표현 패턴 승인은 별도'라고 한다. '검증기는 사람 신원을 인증하지 않는다', 수정본 미생성·미검증으로 수정 후 통과 선언하지 않음을 명시한다."
+    },
+    {
+      "text": "실제 실행한 검증 결과를 구체적으로 보고하고 입력·정본을 수정했다는 거짓 주장을 하지 않는다.",
+      "passed": false,
+      "evidence": "검증근거에 실행명령·작업디렉터리·종료코드=1·valid=false·8개 오류원문을 구체적으로 보고하고 '결과 파일만 저장. 입력·정본 변경 없음'이라고 한다. 그러나 실행 transcript·원시 도구 출력·불변성 비교 기록이 없어 실제 실행과 무변경은 JSON 자기보고만으로 독립 입증되지 않는다. 복합 기대조건의 실제 실행 부분을 검증할 수 없어 fail이며 거짓 실행/수정이 있었다는 판정은 아니다."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 1,
+    "total": 4,
+    "pass_rate": 0.75
+  },
+  "execution_metrics": null,
+  "timing": null,
+  "claims": [
+    {
+      "claim": "설명용 예의 토큰·분류·근거등급·회사 승인 표기에 오류가 있다.",
+      "type": "quality",
+      "verified": true,
+      "evidence": "핵심오류는 없는 배경 토큰 HM-COLOR-NOT-EXIST, 빈 layout와 null 미분류 이유, measurement=null/example_description뿐인 numerical_estimate, AI reviewer가 있는 synthetic_example 회사 approved를 모두 지적한다. 검증근거.오류원문도 이에 대응한다."
+    },
+    {
+      "claim": "입력·정본을 수정하지 않았다.",
+      "type": "process",
+      "verified": false,
+      "evidence": "JSON에 무변경이 명시되지만 실행 transcript와 전후 hash/diff가 없어 독립 검증할 수 없음. 무변경 주장과 거짓 주장 여부의 미확인을 구분함."
+    },
+    {
+      "claim": "기반 자료검증.py를 실제 실행해 exit_code=1과 8개 오류를 얻었다.",
+      "type": "process",
+      "verified": false,
+      "evidence": "결과 JSON 및 에이전트 완료보고에 명령·종료코드·오류가 일치하는 자기보고로 존재한다. 평가자에게 원시 stdout/stderr·tool transcript가 없어 과거 실행 사실은 독립 입증되지 않음. 평가자가 새로 실행한 결과로 과거 실행을 대체하지 않음."
+    },
+    {
+      "claim": "불필요한 신규 수치나 승인된 추가 규칙을 생성하지 않았다.",
+      "type": "quality",
+      "verified": true,
+      "evidence": "측정·기간·승인자·승인시각은 null/미확정으로 유지. Green-500은 기존 토큰의 조건부 후보일 뿐 측정값이나 자동 선택 아님."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": [],
+    "note": "outputs/user_notes.md 없음"
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "assertion": "실제 실행한 검증 결과를 구체적으로 보고하고 입력·정본을 수정했다는 거짓 주장을 하지 않는다.",
+        "reason": "내용상 구체 검증결과 보고와 실제 실행 증명을 한 기대조건에 합쳐 놓았다. 다음 평가에서는 raw stdout/stderr·exit code·명령을 저장하고 입력·정본 전후 hash를 고정해 각각 별도 채점하면 프로세스 증거 누락과 검토 내용 실패를 구분할 수 있다."
+      },
+      {
+        "reason": "현재 수정 초안은 실제 파일에 적용하거나 재검증하지 않는다. 격리 복사본에 쓰기한 뒤 최소 diff·필수 null 보존·수정본 검증·정본 불변성을 별도 평가해야 쓰기 안전성을 확인할 수 있다."
+      },
+      {
+        "reason": "세 가지 단회 결과는 통계적 성능 증명이 아니다. 동일 정본 스냅샷·해시와 평가 입력을 고정하고 여러 긍정/부정 사례·반복 실행·실제 자동 트리거 적합성 테스트를 추가해 우월성 여부를 판단해야 한다."
+      }
+    ],
+    "overall": "검토 내용은 3/3 조건 충족. 실제 도구 실행이라는 복합 기대조건은 증거가 부족해 fail이다. 두 실행 조건에 같은 기준을 적용하며 내용상 검증결과보고는 충족했다고 별도로 기록한다."
+  },
+  "limitations": [
+    "방어적 문서 검토의 단회 비교이며 실제 영상 제작·렌더·프레임 검사·영상 품질·이해도 효과를 평가하지 않았다.",
+    "결과 JSON 저장 외 실제 기록 쓰기/수정 안전성 및 정본 불변성의 실행 증거를 확인하지 않았다.",
+    "스킬 자동 트리거의 precision/recall과 경계 작업 적합성을 평가하지 않았다.",
+    "실행 transcript는 없으며 없는 transcript를 생성하거나 자기보고를 원시 실행기록으로 바꾸지 않았다.",
+    "시간·토큰·도구 호출량은 미측정이며 수치를 발명하지 않았다.",
+    "현재 정본 내용 확인은 실행 당시 정본 스냅샷 검증이나 후속 변경의 소급 반영이 아니다.",
+    "세 가지 단회는 통계적 성능 증명이 아니며 동률을 허용한다."
+  ]
+}

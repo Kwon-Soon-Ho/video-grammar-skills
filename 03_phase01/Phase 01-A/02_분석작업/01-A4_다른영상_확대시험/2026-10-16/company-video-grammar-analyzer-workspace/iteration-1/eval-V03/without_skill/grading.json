@@ -1,0 +1,41 @@
+{
+  "grader": "root inline AI visual review",
+  "human_approved": false,
+  "expectations": [
+    {
+      "text": "기능별 그룹화→정보전달 방식의 이미지화 제목의 위/아래 행별 순차 교체",
+      "passed": false,
+      "evidence": "전체 문구의 교체·혼재만 기록; 상·하 행 순서와 하향 리빌은 미해결로 남김. 보강 시점 확인한 with보다 덜 구체적.; outputs/observations.json 및 원본 ROI 대조"
+    },
+    {
+      "text": "기존 빈 UI에서 원·호·십자·사선/화살표 및 오른쪽 속성 패널/노란 주석이 나타나는 변화",
+      "passed": true,
+      "evidence": "app: 원·호·십자·속성패널·사선 등장; outputs/observations.json 및 원본 ROI 대조"
+    },
+    {
+      "text": "본문/불릿이 순차 선명해짐; UI 외곽 정지와 내부 전환 구별",
+      "passed": true,
+      "evidence": "copy/app: 본문·불릿 순차, 외곽 고정/내부 전환 분리; outputs/observations.json 및 원본 ROI 대조"
+    },
+    {
+      "text": "그룹화/이미지화 문서 내용 대응과 실제 시간 차이를 분리",
+      "passed": true,
+      "evidence": "DOC066 slide12–14와 시간차 기록; outputs/observations.json 및 원본 ROI 대조"
+    },
+    {
+      "text": "가감속은 실제 위치/가시성별 근거; 실제 소프트웨어 입력을 했다고 추정하지 않음",
+      "passed": true,
+      "evidence": "실제 입력 행위/정확 곡선 유보; outputs/observations.json 및 원본 ROI 대조"
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 1,
+    "total": 5,
+    "pass_rate": 0.8
+  },
+  "interpretation": "이 기준에 한정된 진단. 일반 정확도·독립표본 합격률 아님. JSON/카탈로그 통과와 내용판정 별개.",
+  "eval_feedback": {
+    "overall": "자막 전환 기준은 최초 동결 목록에 없던 실제 오류로 양쪽 결과에 동일하게 사후 추가. V04 기준의 필터 오기는 폴더로 해석. 세밀한 이징 유보는 근거가 부족하면 실패로 강제하지 않음."
+  }
+}

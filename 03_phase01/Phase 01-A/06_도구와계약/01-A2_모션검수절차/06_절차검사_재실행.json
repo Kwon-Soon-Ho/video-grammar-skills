@@ -1,0 +1,53 @@
+{
+  "structure_gate_passed": true,
+  "subjects": 49,
+  "axis_cells": 441,
+  "negative_controls": [
+    {
+      "name": "delete_cursor",
+      "expected_failure_detected": true,
+      "errors": [
+        "missing_or_extra_subject",
+        "past_omission_not_covered:E-cursor"
+      ]
+    },
+    {
+      "name": "delete_new_connector",
+      "expected_failure_detected": true,
+      "errors": [
+        "missing_or_extra_subject"
+      ]
+    },
+    {
+      "name": "delete_new_UI_internal_state",
+      "expected_failure_detected": true,
+      "errors": [
+        "missing_or_extra_subject"
+      ]
+    },
+    {
+      "name": "blank_curve",
+      "expected_failure_detected": true,
+      "errors": [
+        "empty_or_unexplained_axis:E-outline-light"
+      ]
+    },
+    {
+      "name": "remove_evidence",
+      "expected_failure_detected": true,
+      "errors": [
+        "missing_evidence:E-selection",
+        "critical_native_check_missing:E-selection"
+      ]
+    },
+    {
+      "name": "reuse_old_human_approval",
+      "expected_failure_detected": true,
+      "errors": [
+        "unearned_human_approval:E-connector"
+      ]
+    }
+  ],
+  "source_redecode_performed": false,
+  "scope": "saved records/evidence pins only, no recognition accuracy or omission guarantee"
+}

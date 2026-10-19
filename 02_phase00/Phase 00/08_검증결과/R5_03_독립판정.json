@@ -1,0 +1,112 @@
+{
+  "stage": "R5-3",
+  "date": "2026-10-15",
+  "reviewer": "foundation_redteam",
+  "limited_completion_supported": true,
+  "unresolved_blocking_findings": [],
+  "completion_scope": "조건부 적용 예·반례/미정 항목·사람 검수 경계·근거판본 고정의 설명용 지식 정적 검토 범위",
+  "findings_fixed": [
+    {
+      "id": "R5-3-F1",
+      "initial": "basis 경로/URL만 있어 판본이 고정되지 않음",
+      "fix": "basis_pins 로컬11개 path/version_if_declared/SHA/depth, 외부3URL 연구항목ID/depth/연구기록 버전/hash 연결. 누락/중복/다른값 없음"
+    },
+    {
+      "id": "R5-3-F2",
+      "initial": "미정 block_scope의 프로젝트 적용/승인 문구가 미사용 항목까지 일괄차단으로 소비될 우려",
+      "fix": "applicability_policy와 각 block_scope에 실제 사용 항목만 그 판단 보류, 비적용은 이유기록·미상/통과와 구분. human_review_required_when_applicable=true"
+    },
+    {
+      "id": "R5-3-F3",
+      "initial": "MD에서 JSON condition이 보이지 않음",
+      "fix": "조건 열 추가, 24행 조건/예/반례/검수문장 전량 일치"
+    }
+  ],
+  "semantic_challenges": [
+    {
+      "misread": "출처선택/관측색을 회사 CI 공식값으로 승격",
+      "finding": "01~03·23·24에서 분리. 실제 프로젝트 적용/공식성은 사람검수 대기"
+    },
+    {
+      "misread": "로고 대비예외를 모든 본문/UI/차트 면제로 확대",
+      "finding": "10~12·18 및 외부기준 설명에서 명시 제외. 로고 자체 식별/배경형 검수는 유지"
+    },
+    {
+      "misread": "18px 또는 웹caption14px/hover120ms/4px grid를 영상 표준으로 사용",
+      "finding": "11·14·16·21에서 반례로 분리. 최종 표시조건/시청환경·읽기 검수 유지"
+    },
+    {
+      "misread": "자막을 쓰지 않는데 미정 자막 규격 때문에 모든 프로젝트 차단",
+      "finding": "applicability_policy/조건열/비적용 이유·항목별 보류로 분리"
+    },
+    {
+      "misread": "위치·수치·인과의 원문을 디자인 명목으로 수정",
+      "finding": "18·23 및 연결된R3 데이터/단위/전후/가림 사례에서 관측·제안·내용검수를 분리"
+    },
+    {
+      "misread": "24사례가 실영상 성공이나 승인된 회사 문법의 증거",
+      "finding": "24모두 project_guidance_draft·actual_video_validated=false·company_rule_approved=false. 설명용 지식만"
+    }
+  ],
+  "verification": {
+    "cases_reviewed": 24,
+    "undetermined_items": 9,
+    "static_consistency_checks": 18,
+    "all_static_checks_passed": true,
+    "json_md_case_texts_match": true,
+    "condition_visible": true,
+    "local_pins": 11,
+    "external_research_pins": 3,
+    "taxonomy_unchanged": true,
+    "baseline190_originals_unchanged": true,
+    "R5_2_core14_unchanged": true,
+    "sources_unchanged_during_final_review": true
+  },
+  "deferred": [
+    "R5-4의 조회/검사/생성기 변경 반영 시험·스킬/소비자 인계와 종료 검수",
+    "실제 프로젝트의 CI 최신판·허용형·최소크기·보호공간·사용권·색공간/폰트·화면/모션·가독성·시청환경 내용검수",
+    "R6/R7 출처/권한/검수 행위·품질 평가, R8 스킬 재구성/평가, 실제 사내자료/01-A/01-B",
+    "외부 전체표준 심층검토·한맥 라이브 최신성 재검증. 기존 조사기록의 부분확인/실패 상태 유지"
+  ],
+  "boundary": [
+    "원문JSON·MD·로컬근거 관련내용과 버전/hash 연결의 정적 검토. 실영상/시안·사람 내용검수·실제 효과/회사승인은 미수행",
+    "W3C/DTCG 외부 원문을 독립 라이브 재조회하지 않음. root 조사기록의 관련본문/구조개요/미검토/실패 구분을 검토",
+    "로컬11파일 SHA는 해당 로컬판본 무결성. 외부3의 hash는 조사기록의 hash이며 원격전체HTML/배포판 해시가 아님",
+    "R3 본문의 관련 범위만 재대조. R3 전체자료/모든레이아웃·모션 사례를 새로 전수 감사한 것으로 주장하지 않음",
+    "초기/중간 결과 보존. 중간1조건 실패는 MD의 실제 표현을 좁은 문자열로 검사한 감사코드 문제여서 의미에 맞춰 보완했으며 D 결함으로 집계하지 않음",
+    "24사례·9미정·정적검사 수는 실제영상 테스트나 품질효과 성적이 아님. 전체Phase00/01-A 완료아님"
+  ],
+  "after_hashes": {
+    "03_한맥디자인/영상적용_예와반례.json": "6e7f4179b43af9b6d45799070e2fe86476de4617122ae152e82aa0a56f56bd30",
+    "03_한맥디자인/08_영상적용_예와반례.md": "587357eac06331e102d113dfe1f287c76600acf1bd925c5820b354825ae82723",
+    "03_한맥디자인/영상전용_미정항목.json": "1fc6d247124789b040db6710e8683fabe705eeee37c32a39932d5bae7cc69ad4",
+    "03_한맥디자인/09_적용시_필요자료와_검수대기.md": "be50b0d2201d5ad5da5eef29ecd71b60262c12f56eef14ad55384ac1592e42ac",
+    "05_출처와검토/R5_조사기록.json": "c748d098222dd6d2c2b6de708a9927b8fd0258aee3737d041a2d77f0f2f1d281"
+  },
+  "local_basis_hashes": {
+    "03_한맥디자인/한맥디자인정본.json": "dda98ef71f49894e9e5b417f2ce0acf1d864bbf50326e6a47ae8a057dc4108ed",
+    "00_운영계약/03_CI와색상_기록절차.md": "7c1d6a1338bb0c077331f8ec069a4262c9077ca8908bf915107583a83fe34d17",
+    "10_공용자산/CI색상목록.json": "c95a79a81a422fc23f4275a8dd878016f209fdaff171d73f44d3cff7387b7097",
+    "10_공용자산/문서명시_검토목록.json": "b178ad0165188d602fc75d46a1f6bb68066c3e010b41df2599e0f916666b2653",
+    "10_공용자산/회사목록.json": "0b011a9c2962459a3b42067c3f7120602cde9e541c466647fa880a0a298dda2a",
+    "02_원칙과레이아웃/03_모션원칙_적용예와반례.md": "4593c3e98d23f4191c943b8aa81a43a6866b190a44441400f1aa23544e0c1cb6",
+    "02_원칙과레이아웃/08_화면설계_적용기준과반례.md": "1c6216125725542785ac8773d4cc6d41adbc178044aa2016f2c0af5630431c0e",
+    "02_원칙과레이아웃/09_문구와화면비_검토사례.md": "1a4067d5455af7b4208c7578064448acc33a360b6f730f932e5f2367ccd3c2dd",
+    "02_원칙과레이아웃/07_레이아웃별_선택조건과반례.md": "945fa1ec974bd73899d71de9b4019edf0d465d3c32443a9fe8ee610d56c471dd",
+    "04_기록규격/06_통합최소기록_규격_v0.2.md": "3c301c7f874921a3bd7bc3e5922ca8cb7c16ddc950f78ecc9850251b9474df74",
+    "03_한맥디자인/07_회사CI와_화면역할_연결규칙.md": "be1baa8a5535d9f43f189bd7bab3f46320c81c5e7697a972f2a6a93320def83b"
+  },
+  "evidence": {
+    "code_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R5_독립검토\\R5_03_독립대조.py",
+    "code_sha256": "8c0f9e8d69f0945d5f1e88381290d4ecce1b783d789737fb0c8b059aabbead7e",
+    "final_report_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R5_독립검토\\R5_03_최종_원문대조.json",
+    "final_report_sha256": "e796972996e2c8c0be22f0702c064ca81758173531efde2ff0c593ab29af6015",
+    "initial_report_sha256": "7eea0b5e74687b22e02fdc4b0d45ff07c0ed19e9a512f3d17f9967bb1e641350",
+    "intermediate_report_sha256": "cece753479bc828ff35290a2f20da4a2077b5bf40640c371dc39c57c36a63c36"
+  },
+  "actual_human_content_review_performed": false,
+  "actual_media_accessed": false,
+  "D_mutations": false,
+  "company_approved": false,
+  "operational_release": false
+}

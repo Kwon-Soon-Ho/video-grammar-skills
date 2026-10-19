@@ -1,0 +1,103 @@
+# 실제 실행 transcript
+
+지정 Python은 모든 실행에서 -B -X utf8를 사용했다. CLI subprocess의 종료값을 기록한다. cli_runner의 바깥 PowerShell 종료 0은 CLI 종료 2를 성공으로 바꾸지 않는다. PowerShell 시작 시 InitializeDefaultDrives 경고가 있었으며 CLI stderr는 아래와 같이 빈 값이다.
+
+1. task.txt를 읽고 자료/IO사용안내.md·자료/작업범위.json·지정 SKILL.md 및 두 references를 읽었다. 01_자료읽기.json에 원문과 SHA를 저장했다.
+
+2. 관련 보존 계약/연결목록/원칙과 현재 사용 안내를 읽었다(02_관련근거읽기.json). 안내의 다른 평가/과거결과 참조는 따라가지 않았다.
+
+3. CLI 시작 읽기 후 원문 바이트 snapshot을 outputs에 보존했다. 후보는 UTF-8 원문에서 guidance/version만 치환했고 04_후보검사.json·변경.diff를 저장했다.
+
+4. 아래 CLI를 순서대로 실제 실행했다. write 실패 후 새 SHA로 재시도하지 않았다.
+
+## 03_initial_read
+
+argv JSON: ["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-B", "-X", "utf8", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-04-큐레이터_쓰기전외부변경\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-04-큐레이터_쓰기전외부변경\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-04-큐레이터_쓰기전외부변경\\candidate\\outputs\\03_initial_read.request.json"]
+
+exit_code: 0
+
+stdout:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stderr:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 05_backup
+
+argv JSON: ["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-B", "-X", "utf8", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-04-큐레이터_쓰기전외부변경\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-04-큐레이터_쓰기전외부변경\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-04-큐레이터_쓰기전외부변경\\candidate\\outputs\\05_backup.request.json"]
+
+exit_code: 0
+
+stdout:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stderr:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 06_prewrite_read
+
+argv JSON: ["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-B", "-X", "utf8", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-04-큐레이터_쓰기전외부변경\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-04-큐레이터_쓰기전외부변경\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-04-큐레이터_쓰기전외부변경\\candidate\\outputs\\06_prewrite_read.request.json"]
+
+exit_code: 0
+
+stdout:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stderr:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 07_write
+
+argv JSON: ["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-B", "-X", "utf8", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-04-큐레이터_쓰기전외부변경\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-04-큐레이터_쓰기전외부변경\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-04-큐레이터_쓰기전외부변경\\candidate\\outputs\\07_write.request.json"]
+
+exit_code: 2
+
+stdout:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stderr:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 08_after_failure_read
+
+argv JSON: ["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-B", "-X", "utf8", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-04-큐레이터_쓰기전외부변경\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-04-큐레이터_쓰기전외부변경\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-04-큐레이터_쓰기전외부변경\\candidate\\outputs\\08_after_failure_read.request.json"]
+
+exit_code: 0
+
+stdout:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stderr:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 09_current_validate
+
+argv JSON: ["D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\.환경\\Scripts\\python.exe", "-B", "-X", "utf8", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-04-큐레이터_쓰기전외부변경\\candidate\\시험IO.py", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-04-큐레이터_쓰기전외부변경\\candidate", "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\4_보완후재시험\\eval-04-큐레이터_쓰기전외부변경\\candidate\\outputs\\09_current_validate.request.json"]
+
+exit_code: 0
+
+stdout:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+stderr:
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 최종 상태
+
+현재 바이트는 외부 변경 SHA 2731d43d9f7f2d1ca36ff069a1c54f4f037946335b1943d4e62287db07f978e7이며 version 0.1.0이다. 후보 SHA와 다르다. notes를 그대로 보존했고 복구/재시도는 미실시다.
+
+실제 서비스이벤트 001~006을 outputs/서비스이벤트에 바이트 그대로 보존했다. 원문/후보/현재 SHA·외부 diff·현재 검사는 결과.json에 기록했다. 후보 저장 성공을 주장하지 않는다.
+
+이 환경의 관측/서비스 로그 범위이며 전체 OS 파일 감사 결과는 아니다. 시간/token 수치는 제공되지 않아 추정하지 않았다.

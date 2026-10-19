@@ -1,0 +1,1270 @@
+{
+  "review_id": "R3-03-PPT-separate-static-observation",
+  "reviewed_at_utc": "2026-10-14T07:52:09.586359+00:00",
+  "source_root": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx",
+  "report_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R3_03_PPT도구_독립검토.json",
+  "repository_commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+  "repository_tree_truncated": false,
+  "tree_sha256": "e27539a41b5cf43dcdca2d5ae04961c18f04ffe6227ba05562eeed26fb86d5b3",
+  "verdict": "PPTX proprietary 원본은 직접 실행·이식·파생 재구성 후보에서 제외. 선정 도구의 공개 동작범위 정적 관찰만 완료; runtime verified/전체 PPT 분야 검토 완료 아님.",
+  "actions": {
+    "original_code_run": false,
+    "original_module_import": false,
+    "compiled_c_shim": false,
+    "browser_or_office_started": false,
+    "network_or_download": false,
+    "install_or_port": false,
+    "D_modified": false,
+    "credential_access": false,
+    "source_text_copied_to_C": false,
+    "performed": [
+      "원본 읽기/키워드 검색",
+      "자체 Python metadata/hash/schemaLocation 읽기",
+      "C 감사 JSON 작성"
+    ]
+  },
+  "scope": {
+    "read_full": [
+      "SKILL.md",
+      "LICENSE.txt",
+      "선택5 script(add/clean/thumbnail/office soffice/validate)",
+      "office helpers4개",
+      "PPTX/base/validators __init__3개"
+    ],
+    "partial": [
+      "DOCX/Redlining Python2개는 import·구조·전체 효과 키워드 검색만"
+    ],
+    "not_semantically_reviewed": [
+      "XSD39개",
+      "빈 scripts/__init__.py는 목록/hash만",
+      "외부 library/binary source·전이 dependencies·개별 라이선스·실제 실행/실자료"
+    ],
+    "file_counts": {
+      "full_text_static_review": 14,
+      "inventory_and_hash_only": 1,
+      "xsd_reference_structure_only": 39,
+      "structure_and_wholefile_effect_scan": 2
+    },
+    "folder_files": 56,
+    "python_files": 15,
+    "xsd_files": 39,
+    "coverage_note": "full_text_static_review만 전수 본문 독해. 이 PPTX 폴더에 실제 56파일(15py/39xsd/SKILL/LICENSE)이며 repository README/tree는 이 숫자에서 제외."
+  },
+  "file_review_manifest": [
+    {
+      "path": "skills/pptx/LICENSE.txt",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\LICENSE.txt",
+      "sha256": "79f6d8f5b427252fa3b1c11ecdbdb6bf610b944f7530b4de78f770f38741cfaa",
+      "bytes": 1467,
+      "lines": 30,
+      "review_depth": "full_text_static_review",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/__init__.py",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "lines": 0,
+      "review_depth": "inventory_and_hash_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/add_slide.py",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\add_slide.py",
+      "sha256": "3922f819ee1f6b8bdc6aa146d1a86de70640f5f919321fe3f01a764482ff69c9",
+      "bytes": 14537,
+      "lines": 367,
+      "review_depth": "full_text_static_review",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/clean.py",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\clean.py",
+      "sha256": "5c808cd4dff7e02661ef3c68b5917f4e25097cc6610c92a3a7df4a6366a5c3c1",
+      "bytes": 10415,
+      "lines": 309,
+      "review_depth": "full_text_static_review",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/helpers/__init__.py",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\helpers\\__init__.py",
+      "sha256": "678e42456d9e10923c8b9a93691cdd993de3433448a184fa72a0c31f4ae086d5",
+      "bytes": 3358,
+      "lines": 111,
+      "review_depth": "full_text_static_review",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/helpers/pptx_chart.py",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\helpers\\pptx_chart.py",
+      "sha256": "47ac266f7d39d11ede6bb0d1f3a19d801394fd2964636f1b48beb701f1832964",
+      "bytes": 5862,
+      "lines": 170,
+      "review_depth": "full_text_static_review",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/helpers/pptx_slide.py",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\helpers\\pptx_slide.py",
+      "sha256": "7b9f69b4a5bd6a2d9eabf9e0e3e796d7a421373145f6a8cd11f60b7ba2d6a5d0",
+      "bytes": 1675,
+      "lines": 60,
+      "review_depth": "full_text_static_review",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/helpers/pptx_theme.py",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\helpers\\pptx_theme.py",
+      "sha256": "ebb54c56e9c13807f5f98f0cae22d47cdd0162da8525eaa664e3f2c8c8d6bb03",
+      "bytes": 3510,
+      "lines": 114,
+      "review_depth": "full_text_static_review",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\ecma\\fouth-edition\\opc-contentTypes.xsd",
+      "sha256": "9e0b7209fc69ab11987900404540969976000c5ebe4d4f58c43dc3842886bf3a",
+      "bytes": 1963,
+      "lines": 42,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\ecma\\fouth-edition\\opc-coreProperties.xsd",
+      "sha256": "451958454e8588dfc7cd945981ada142ca06ff3307937f5700df059c2b307fa8",
+      "bytes": 2515,
+      "lines": 50,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/ecma/fouth-edition/opc-digSig.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\ecma\\fouth-edition\\opc-digSig.xsd",
+      "sha256": "6de111e11403f7cd49027400755bae0ea1cabef2815f09bd40a24f0017613b24",
+      "bytes": 2856,
+      "lines": 49,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\ecma\\fouth-edition\\opc-relationships.xsd",
+      "sha256": "f565adfef5a502044abc3a9153e157edc25af78304d335994afb958874b15e26",
+      "bytes": 1344,
+      "lines": 33,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\ISO-IEC29500-4_2016\\dml-chart.xsd",
+      "sha256": "41b93bd8857cc68b1e43be2806a872d736a9bdd6566900062d8fdb57d7bbb354",
+      "bytes": 74984,
+      "lines": 1499,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\ISO-IEC29500-4_2016\\dml-chartDrawing.xsd",
+      "sha256": "3fd0586f2637b98bb9886f0e0b67d89e1cc987c2d158cc7deb5f5b9890ced412",
+      "bytes": 6956,
+      "lines": 146,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\ISO-IEC29500-4_2016\\dml-diagram.xsd",
+      "sha256": "29b254ee0d10414a8504b5a08149c7baec35a60d5ff607d6b3f492aa36815f40",
+      "bytes": 51302,
+      "lines": 1085,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\ISO-IEC29500-4_2016\\dml-lockedCanvas.xsd",
+      "sha256": "5cb76dabd8b97d1e9308a1700b90c20139be4d50792d21a7f09789f5cccd6026",
+      "bytes": 624,
+      "lines": 11,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\ISO-IEC29500-4_2016\\dml-main.xsd",
+      "sha256": "5375417f0f5394b8dd1a7035b9679151f19a6b65df309dec10cfb4a420cb00e9",
+      "bytes": 152039,
+      "lines": 3081,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-picture.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\ISO-IEC29500-4_2016\\dml-picture.xsd",
+      "sha256": "5d389d42befbebd91945d620242347caecd3367f9a3a7cf8d97949507ae1f53c",
+      "bytes": 1231,
+      "lines": 23,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\ISO-IEC29500-4_2016\\dml-spreadsheetDrawing.xsd",
+      "sha256": "b4532b6d258832953fbb3ee4c711f4fe25d3faf46a10644b2505f17010d01e88",
+      "bytes": 8862,
+      "lines": 185,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\ISO-IEC29500-4_2016\\dml-wordprocessingDrawing.xsd",
+      "sha256": "bdad416b096b61d37b71603b2c949484f9070c830bdaeba93bf35e15c8900614",
+      "bytes": 14795,
+      "lines": 287,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/pml.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\ISO-IEC29500-4_2016\\pml.xsd",
+      "sha256": "d173c3e5d61e42e2e3a97226c632fd2ab7cc481fc4e492365b87024ab546daff",
+      "bytes": 83612,
+      "lines": 1676,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\ISO-IEC29500-4_2016\\shared-additionalCharacteristics.xsd",
+      "sha256": "3c6709101c6aaa82888df5d8795c33f9e857196790eb320d9194e64be2b6bdd8",
+      "bytes": 1269,
+      "lines": 28,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\ISO-IEC29500-4_2016\\shared-bibliography.xsd",
+      "sha256": "0b364451dc36a48dd6dae0f3b6ada05fd9b71e5208211f8ee5537d7e51a587e2",
+      "bytes": 7328,
+      "lines": 144,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\ISO-IEC29500-4_2016\\shared-commonSimpleTypes.xsd",
+      "sha256": "e2abacbb9a55ce1365f8961bc1b1395bbc811e512b111000d8c333f98458dece",
+      "bytes": 6382,
+      "lines": 174,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\ISO-IEC29500-4_2016\\shared-customXmlDataProperties.xsd",
+      "sha256": "0ef4bb354ff44b923564c4ddbdda5987919d220225129ec94614a618ceafc281",
+      "bytes": 1248,
+      "lines": 25,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\ISO-IEC29500-4_2016\\shared-customXmlSchemaProperties.xsd",
+      "sha256": "0d103b99a4a8652f8871552a69d42d2a3760ac6a5e3ef02d979c4273257ff6a4",
+      "bytes": 880,
+      "lines": 18,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\ISO-IEC29500-4_2016\\shared-documentPropertiesCustom.xsd",
+      "sha256": "9c085407751b9061c1f996f6c39ce58451be22a8d334f09175f0e89e42736285",
+      "bytes": 2608,
+      "lines": 59,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\ISO-IEC29500-4_2016\\shared-documentPropertiesExtended.xsd",
+      "sha256": "bc92e36ccd233722d4c5869bec71ddc7b12e2df56059942cce5a39065cc9c368",
+      "bytes": 3507,
+      "lines": 56,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\ISO-IEC29500-4_2016\\shared-documentPropertiesVariantTypes.xsd",
+      "sha256": "7b5b7413e2c895b1e148e82e292a117d53c7ec65b0696c992edca57b61b4a74b",
+      "bytes": 7507,
+      "lines": 195,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-math.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\ISO-IEC29500-4_2016\\shared-math.xsd",
+      "sha256": "3213ef1631606250f5010b42cad7ef716f7c59426367798e33c374c0ec391d3a",
+      "bytes": 23313,
+      "lines": 582,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\ISO-IEC29500-4_2016\\shared-relationshipReference.xsd",
+      "sha256": "12264f3c03d738311cd9237d212f1c07479e70f0cbe1ae725d29b36539aef637",
+      "bytes": 1367,
+      "lines": 25,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/sml.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\ISO-IEC29500-4_2016\\sml.xsd",
+      "sha256": "beffeed56945c22a77440122c8bdc426f3fcbe7f3b12ea0976c770d1f8d54578",
+      "bytes": 242277,
+      "lines": 4439,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\ISO-IEC29500-4_2016\\vml-main.xsd",
+      "sha256": "f5ee623b08b6a66935e5aced2f5d8ad0fc71bf9e8e833cd490150c0fa94b8763",
+      "bytes": 26148,
+      "lines": 570,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\ISO-IEC29500-4_2016\\vml-officeDrawing.xsd",
+      "sha256": "585bedc1313b40888dcc544cb74cd939a105ee674f3b1d3aa1cc6d34f70ff155",
+      "bytes": 25279,
+      "lines": 509,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\ISO-IEC29500-4_2016\\vml-presentationDrawing.xsd",
+      "sha256": "133c9f64a5c5d573b78d0a474122b22506d8eadb5e063f67cdbbb8fa2f161d0e",
+      "bytes": 535,
+      "lines": 12,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\ISO-IEC29500-4_2016\\vml-spreadsheetDrawing.xsd",
+      "sha256": "6bdeb169c3717eb01108853bd9fc5a3750fb1fa5b82abbdd854d49855a40f519",
+      "bytes": 5712,
+      "lines": 108,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\ISO-IEC29500-4_2016\\vml-wordprocessingDrawing.xsd",
+      "sha256": "475dcae1e7d1ea46232db6f8481040c15e53a52a3c256831d3df204212b0e831",
+      "bytes": 4010,
+      "lines": 96,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\ISO-IEC29500-4_2016\\wml.xsd",
+      "sha256": "c2dd9f61f892deae6acd8d20771ea79b12018af25f3bf8d06639c8542d218cfd",
+      "bytes": 171367,
+      "lines": 3646,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/xml.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\ISO-IEC29500-4_2016\\xml.xsd",
+      "sha256": "a539aa2fb154fa50e0f5cc97e6ad7cbc66f8ec3e3746f61ec6a8b0d5d15ecdf2",
+      "bytes": 4646,
+      "lines": 116,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/mce/mc.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\mce\\mc.xsd",
+      "sha256": "3a37e461ecf5a8670fdec34029703401f8728ab9c96ec1739a6ae58d55212413",
+      "bytes": 3127,
+      "lines": 75,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/microsoft/wml-2010.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\microsoft\\wml-2010.xsd",
+      "sha256": "568b26ee156cb9549aa439ca2158965f77b7c1602b7e0316f40ac6cf586e35f2",
+      "bytes": 26549,
+      "lines": 560,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/microsoft/wml-2012.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\microsoft\\wml-2012.xsd",
+      "sha256": "0fa75578a000439a7988ba0c59fdc69f774bbd416cbacc14d07125b3f686cb74",
+      "bytes": 3745,
+      "lines": 67,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/microsoft/wml-2018.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\microsoft\\wml-2018.xsd",
+      "sha256": "be0ff793a22dd31384650c3a4da14c2fa8062751c2e97b0e5ee852bda13c60ad",
+      "bytes": 901,
+      "lines": 14,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/microsoft/wml-cex-2018.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\microsoft\\wml-cex-2018.xsd",
+      "sha256": "fddc2b880cabb9005aebbc7e783e53c19fec1c03df7d0e2f2076a33a0fdfd081",
+      "bytes": 1778,
+      "lines": 20,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/microsoft/wml-cid-2016.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\microsoft\\wml-cid-2016.xsd",
+      "sha256": "127ca209fa73d7cb708449cb355c871867948a96e4a74f7bf5811ef62d17991d",
+      "bytes": 1002,
+      "lines": 13,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/microsoft/wml-sdtdatahash-2020.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\microsoft\\wml-sdtdatahash-2020.xsd",
+      "sha256": "842e7163409c8d74f4d7088a8bc99500d80bc75332681a0980055b08f374a604",
+      "bytes": 600,
+      "lines": 4,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/schemas/microsoft/wml-symex-2015.xsd",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\schemas\\microsoft\\wml-symex-2015.xsd",
+      "sha256": "16f6f8072249f431370723c2cd8974672e0d9c897e00e97dd918079df934871b",
+      "bytes": 745,
+      "lines": 8,
+      "review_depth": "xsd_reference_structure_only",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/soffice.py",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\soffice.py",
+      "sha256": "df2c8d7249c132a4512d744482e4b5ed0ecbe885f0bcfb1295e7e6a7ced0432c",
+      "bytes": 5927,
+      "lines": 192,
+      "review_depth": "full_text_static_review",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/validate.py",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\validate.py",
+      "sha256": "346a4c89d92fff55e610f11efda48c30228815b29bdb10b987e48f7af70acf1e",
+      "bytes": 6142,
+      "lines": 173,
+      "review_depth": "full_text_static_review",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/validators/__init__.py",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\validators\\__init__.py",
+      "sha256": "83e0f035c5abea238d3f2c3968afbd511ed022b527b7c9cb60a9434cc34ff987",
+      "bytes": 336,
+      "lines": 15,
+      "review_depth": "full_text_static_review",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/validators/base.py",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\validators\\base.py",
+      "sha256": "f818ea28c793ba42960fa4498265e2632a62c86f7b5d6aff6fa89dacc02d59ea",
+      "bytes": 33756,
+      "lines": 875,
+      "review_depth": "full_text_static_review",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/validators/docx.py",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\validators\\docx.py",
+      "sha256": "93d3444c0ef3f043d21a2285c46d2cda478426b930dc33dcf3b11265935517b5",
+      "bytes": 17482,
+      "lines": 466,
+      "review_depth": "structure_and_wholefile_effect_scan",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/validators/pptx.py",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\validators\\pptx.py",
+      "sha256": "17eadad2b7a8374ccbe4cda45693bcd6a36f9d61a7d60f9c9ceef9464dec8299",
+      "bytes": 15966,
+      "lines": 441,
+      "review_depth": "full_text_static_review",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/validators/redlining.py",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\office\\validators\\redlining.py",
+      "sha256": "ed50d0885eee4b9c387f546b059bcaed64086815880a5167336244f93e305123",
+      "bytes": 11231,
+      "lines": 299,
+      "review_depth": "structure_and_wholefile_effect_scan",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/scripts/thumbnail.py",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\scripts\\thumbnail.py",
+      "sha256": "94ef83a84346aa2d63913de0d42bb2fe902ccdc17bfac6130096ca758381793c",
+      "bytes": 9802,
+      "lines": 311,
+      "review_depth": "full_text_static_review",
+      "runtime_executed": false
+    },
+    {
+      "path": "skills/pptx/SKILL.md",
+      "absolute_path": "D:\\00작업\\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\\Phase 00\\backup\\2026-10-14_R3_03_발표설명확장\\스킬원본\\anthropic-pptx\\skills\\pptx\\SKILL.md",
+      "sha256": "a7ff03e2c85b636f55232a6b1555f5dd90216b7a1a359ab289d8364e6acbc6a0",
+      "bytes": 20796,
+      "lines": 238,
+      "review_depth": "full_text_static_review",
+      "runtime_executed": false
+    }
+  ],
+  "python_import_inventory": [
+    {
+      "path": "skills/pptx/scripts/__init__.py",
+      "imports": [],
+      "ctypes_or_cdll_reference": false
+    },
+    {
+      "path": "skills/pptx/scripts/add_slide.py",
+      "imports": [
+        "argparse",
+        "office.helpers",
+        "pathlib",
+        "re",
+        "shutil",
+        "sys",
+        "tempfile",
+        "typing",
+        "zipfile"
+      ],
+      "ctypes_or_cdll_reference": false
+    },
+    {
+      "path": "skills/pptx/scripts/clean.py",
+      "imports": [
+        "defusedxml.minidom",
+        "office.helpers",
+        "pathlib",
+        "posixpath",
+        "re",
+        "sys"
+      ],
+      "ctypes_or_cdll_reference": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/helpers/__init__.py",
+      "imports": [
+        "os",
+        "pathlib",
+        "posixpath",
+        "re",
+        "stat",
+        "tempfile",
+        "urllib.parse",
+        "zipfile"
+      ],
+      "ctypes_or_cdll_reference": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/helpers/pptx_chart.py",
+      "imports": [
+        ".",
+        "__future__",
+        "re",
+        "typing"
+      ],
+      "ctypes_or_cdll_reference": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/helpers/pptx_slide.py",
+      "imports": [
+        "__future__",
+        "re"
+      ],
+      "ctypes_or_cdll_reference": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/helpers/pptx_theme.py",
+      "imports": [
+        ".",
+        "__future__",
+        "posixpath",
+        "re",
+        "typing"
+      ],
+      "ctypes_or_cdll_reference": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/soffice.py",
+      "imports": [
+        "collections.abc",
+        "contextlib",
+        "office.soffice",
+        "os",
+        "pathlib",
+        "socket",
+        "subprocess",
+        "sys",
+        "tempfile"
+      ],
+      "ctypes_or_cdll_reference": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/validate.py",
+      "imports": [
+        "argparse",
+        "defusedxml.ElementTree",
+        "defusedxml.common",
+        "helpers",
+        "pathlib",
+        "sys",
+        "tempfile",
+        "validators",
+        "zipfile"
+      ],
+      "ctypes_or_cdll_reference": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/validators/__init__.py",
+      "imports": [
+        ".base",
+        ".docx",
+        ".pptx",
+        ".redlining"
+      ],
+      "ctypes_or_cdll_reference": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/validators/base.py",
+      "imports": [
+        "defusedxml.minidom",
+        "functools",
+        "helpers",
+        "lxml.etree",
+        "pathlib",
+        "re",
+        "tempfile",
+        "zipfile"
+      ],
+      "ctypes_or_cdll_reference": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/validators/docx.py",
+      "imports": [
+        ".base",
+        "defusedxml.minidom",
+        "helpers",
+        "lxml.etree",
+        "pathlib",
+        "random",
+        "re",
+        "tempfile",
+        "zipfile"
+      ],
+      "ctypes_or_cdll_reference": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/validators/pptx.py",
+      "imports": [
+        ".base",
+        "helpers",
+        "helpers.pptx_chart",
+        "helpers.pptx_slide",
+        "helpers.pptx_theme",
+        "lxml.etree",
+        "pathlib",
+        "re",
+        "tempfile",
+        "zipfile"
+      ],
+      "ctypes_or_cdll_reference": false
+    },
+    {
+      "path": "skills/pptx/scripts/office/validators/redlining.py",
+      "imports": [
+        "defusedxml.ElementTree",
+        "defusedxml.common",
+        "helpers",
+        "pathlib",
+        "subprocess",
+        "tempfile",
+        "zipfile"
+      ],
+      "ctypes_or_cdll_reference": false
+    },
+    {
+      "path": "skills/pptx/scripts/thumbnail.py",
+      "imports": [
+        "PIL",
+        "argparse",
+        "defusedxml",
+        "defusedxml.minidom",
+        "office.helpers",
+        "office.soffice",
+        "pathlib",
+        "posixpath",
+        "subprocess",
+        "sys",
+        "tempfile",
+        "zipfile"
+      ],
+      "ctypes_or_cdll_reference": false
+    }
+  ],
+  "xsd_reference_inventory": [
+    {
+      "from": "skills/pptx/scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd",
+      "schema_location": "http://dublincore.org/schemas/xmls/qdc/2003/04/02/dc.xsd",
+      "external_uri": true,
+      "acquired_local_target": null
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd",
+      "schema_location": "http://dublincore.org/schemas/xmls/qdc/2003/04/02/dcterms.xsd",
+      "external_uri": true,
+      "acquired_local_target": null
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd",
+      "schema_location": "shared-relationshipReference.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd",
+      "schema_location": "dml-main.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd",
+      "schema_location": "dml-chartDrawing.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd",
+      "schema_location": "shared-commonSimpleTypes.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd",
+      "schema_location": "dml-main.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd",
+      "schema_location": "shared-relationshipReference.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd",
+      "schema_location": "dml-main.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd",
+      "schema_location": "shared-commonSimpleTypes.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd",
+      "schema_location": "dml-main.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd",
+      "schema_location": "shared-relationshipReference.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd",
+      "schema_location": "shared-commonSimpleTypes.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd",
+      "schema_location": "dml-diagram.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd",
+      "schema_location": "dml-chart.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd",
+      "schema_location": "dml-picture.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd",
+      "schema_location": "dml-lockedCanvas.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-picture.xsd",
+      "schema_location": "dml-main.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd",
+      "schema_location": "dml-main.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd",
+      "schema_location": "shared-relationshipReference.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd",
+      "schema_location": "dml-main.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd",
+      "schema_location": "wml.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd",
+      "schema_location": "dml-picture.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd",
+      "schema_location": "shared-relationshipReference.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/pml.xsd",
+      "schema_location": "shared-relationshipReference.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/pml.xsd",
+      "schema_location": "dml-main.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/pml.xsd",
+      "schema_location": "shared-commonSimpleTypes.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd",
+      "schema_location": "shared-commonSimpleTypes.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd",
+      "schema_location": "shared-commonSimpleTypes.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd",
+      "schema_location": "shared-documentPropertiesVariantTypes.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd",
+      "schema_location": "shared-commonSimpleTypes.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd",
+      "schema_location": "shared-documentPropertiesVariantTypes.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd",
+      "schema_location": "shared-commonSimpleTypes.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-math.xsd",
+      "schema_location": "wml.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-math.xsd",
+      "schema_location": "shared-commonSimpleTypes.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-math.xsd",
+      "schema_location": "xml.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/sml.xsd",
+      "schema_location": "shared-relationshipReference.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/sml.xsd",
+      "schema_location": "shared-commonSimpleTypes.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/sml.xsd",
+      "schema_location": "dml-spreadsheetDrawing.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd",
+      "schema_location": "vml-officeDrawing.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd",
+      "schema_location": "wml.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd",
+      "schema_location": "vml-wordprocessingDrawing.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd",
+      "schema_location": "shared-relationshipReference.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd",
+      "schema_location": "vml-spreadsheetDrawing.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd",
+      "schema_location": "vml-presentationDrawing.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd",
+      "schema_location": "shared-commonSimpleTypes.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd",
+      "schema_location": "vml-main.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd",
+      "schema_location": "shared-relationshipReference.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd",
+      "schema_location": "shared-commonSimpleTypes.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd",
+      "schema_location": "shared-commonSimpleTypes.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd",
+      "schema_location": "../mce/mc.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd",
+      "schema_location": "dml-wordprocessingDrawing.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd",
+      "schema_location": "shared-math.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd",
+      "schema_location": "shared-relationshipReference.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd",
+      "schema_location": "shared-commonSimpleTypes.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd",
+      "schema_location": "shared-customXmlSchemaProperties.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/microsoft/wml-2010.xsd",
+      "schema_location": "../ISO-IEC29500-4_2016/wml.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/microsoft/wml-2012.xsd",
+      "schema_location": "../ISO-IEC29500-4_2016/wml.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/microsoft/wml-2012.xsd",
+      "schema_location": "../ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/microsoft/wml-2018.xsd",
+      "schema_location": "../ISO-IEC29500-4_2016/wml.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/microsoft/wml-cex-2018.xsd",
+      "schema_location": "wml-2018.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/microsoft/wml-cex-2018.xsd",
+      "schema_location": "../ISO-IEC29500-4_2016/wml.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/microsoft/wml-cex-2018.xsd",
+      "schema_location": "../ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/microsoft/wml-cid-2016.xsd",
+      "schema_location": "../ISO-IEC29500-4_2016/wml.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/microsoft/wml-sdtdatahash-2020.xsd",
+      "schema_location": "../ISO-IEC29500-4_2016/wml.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    },
+    {
+      "from": "skills/pptx/scripts/office/schemas/microsoft/wml-symex-2015.xsd",
+      "schema_location": "../ISO-IEC29500-4_2016/wml.xsd",
+      "external_uri": false,
+      "acquired_local_target": true
+    }
+  ],
+  "xsd_structure_parse_errors": [],
+  "runtime_inventory": {
+    "external_python": [
+      "Pillow(PIL)",
+      "defusedxml",
+      "lxml(+native libxml2/libxslt closure 미검토)"
+    ],
+    "external_binaries": [
+      "soffice/LibreOffice",
+      "pdftoppm/Poppler",
+      "conditional gcc + dynamic loader/libdl + OS socket API"
+    ],
+    "skill_document_only_dependencies": [
+      "pptxgenjs",
+      "markitdown[pptx]",
+      "react-icons",
+      "react",
+      "react-dom",
+      "sharp",
+      "zip/rm CLI examples"
+    ],
+    "direct_http_calls_in_selected_python": "없음. XML namespace URI와 urllib.parse는 HTTP fetch가 아님; 외부 renderer/parser 실제 네트워크 여부 미검토.",
+    "minimum_version": "Python match/union syntax 및 TemporaryDirectory 옵션으로 3.10+ 필요. 나머지 라이브러리/바이너리 정확한 최소·installed version/lock은 미확정.",
+    "permissions": "caller input/output paths와 inherited environment, filesystem writes/deletes, subprocess execution. 독립적인 path allowlist/네트워크 제한/secret 전달 필터/프로세스 그룹 종료는 확인하지 못함.",
+    "locks": "atomic rezip replace는 있으나 동시 deck edit/clean/thumbnail output 및 fixed shim cache의 interprocess lock 없음.",
+    "separation": "validate PPTX branch에서는 DOCX/Redlining methods를 호출하지 않는다. 다만 validator package import에는 해당 모듈들이 포함되며 그 branch의 git subprocess 등은 PPTX의 즉시 실행 의존성과 구분."
+  },
+  "observations": [
+    {
+      "id": "PPTSTATIC-01",
+      "severity": "exclusion",
+      "title": "라이선스에 명시된 제한 때문에 직접 이용·파생 재구성 후보에서 제외",
+      "evidence": [
+        "skills/pptx/LICENSE.txt 전체",
+        "skills/pptx/SKILL.md license: Proprietary"
+      ],
+      "impact": "별도 Anthropic 서비스 계약을 전제로 하며 서비스 밖 사본 유지/추출·복제·파생작업·배포 등의 제한이 명시되어 있다. 공개 GitHub 열람 가능성과 재사용 허가는 다르다. 이번 기록은 경로/해시/정적 감사 판단만 남기며 코드/프롬프트/자산을 이식하거나 재구성하지 않는다. 실제 계약의 예외나 허용 범위는 이번 감사에서 확정하지 않았다.",
+      "status": "직접 도입/파생 재구성 후보 제외; 동작 관찰만 기록",
+      "verification": "static_only_no_runtime_reproduction"
+    },
+    {
+      "id": "PPTSTATIC-02",
+      "severity": "high",
+      "title": "슬라이드/패키지 수정·삭제와 출력 덮어쓰기가 기본 동작에 포함",
+      "evidence": [
+        "scripts/add_slide.py:318 기본 output=package; helpers/__init__.py:108 os.replace",
+        "scripts/clean.py:97–227 unlink 반복 및 관계/content-types XML 변경",
+        "scripts/office/validate.py --auto-repair; base.py repair_whitespace_preservation",
+        "scripts/thumbnail.py 기본 thumbnails prefix로 JPEG 저장"
+      ],
+      "impact": "add는 입력 PPTX/POTX를 기본 덮어쓰고 unpacked 디렉터리는 제자리 변경한다. 복제된 chart/SmartArt/OLE/package는 공유 참조라 개별 편집의 독립성이 없다. clean은 slide·media·embedding·chart·diagram·theme·notes·rels 등을 실제 삭제하며 preview/transaction rollback 구현이 없다. validate는 기본 동작과 --auto-repair 쓰기 동작을 분리해야 한다. thumbnail 출력은 deck 간 동일 prefix이면 기존 결과를 덮어쓴다.",
+      "status": "직접 도입/파생 재구성 후보 제외; 동작 관찰만 기록",
+      "verification": "static_only_no_runtime_reproduction"
+    },
+    {
+      "id": "PPTSTATIC-03",
+      "severity": "high",
+      "title": "LibreOffice wrapper는 조건부 native compiler/shared-library 주입까지 수행",
+      "evidence": [
+        "scripts/office/soffice.py:50–74 고정 temp .so/.c 경로; gcc -shared -fPIC -ldl",
+        "soffice.py:33 LD_PRELOAD 설정; run_soffice subprocess",
+        "thumbnail.py convert_to_images → run_soffice 및 pdftoppm"
+      ],
+      "impact": "AF_UNIX 소켓 실패 시 embedded C를 gcc로 컴파일하고 LD_PRELOAD로 주입한다. 기존 고정 경로 .so는 hash/소유자/버전 검사 없이 재사용하며 잠금도 없다. C shim은 listener close에서 프로세스 종료를 호출한다. 기본 LibreOffice user profile은 신규 temporary directory로 격리하지만 caller가 프로필 인자를 직접 주면 그 경계가 달라진다. 실제 Windows 호환성/프로세스 종료·문서 변환 성공·외부 resource 접근·gcc/soffice/Poppler 바이너리는 검증하지 않았다. ctypes/CDLL 호출은 현재 snapshot Python15개 검색에서 없음.",
+      "status": "직접 도입/파생 재구성 후보 제외; 동작 관찰만 기록",
+      "verification": "static_only_no_runtime_reproduction"
+    },
+    {
+      "id": "PPTSTATIC-04",
+      "severity": "medium",
+      "title": "검증 통과는 전체 PowerPoint 정상성/새 오류 없음의 증명이 아니다",
+      "evidence": [
+        "validators/pptx.py:123–150 original slide fatal 메시지를 전체 deck set으로 모음; :183 message in inherited는 무시",
+        "helpers/pptx_slide.py fatal error denylist7개",
+        "validators/pptx.py _get_schema_path는 chart XSD 제외; helpers/pptx_chart.py 일부 c: 접두사 regex 기반 chart 검사",
+        "validators/base.py no-schema skip/ignored errors/확장 namespace 제거",
+        "validators/base.py:420 관계 파일 없으면 해당 XML의 r:id 검사 skip"
+      ],
+      "impact": "XSD 적용 전 일부 확장·template 내용·PresentationML 순서를 메모리에서 정규화하고 알려진 오류만 추가로 검사한다. --original의 fatal slide baseline은 파일/발생 위치·개수 없이 메시지 set이므로 다른 슬라이드에서 같은 새 오류가 생겨도 기존 오류로 숨겨질 가능성이 있다. 특정 regex namespace prefix/파일명/오류 메시지에 기대므로 모든 변형 OOXML을 검증하는 도구가 아니다. 시각적 넘침/폰트/모션/내용 정확성/실제 Office의 열기 성공은 별도 확인 대상이며 이번에는 확인하지 않았다.",
+      "status": "직접 도입/파생 재구성 후보 제외; 동작 관찰만 기록",
+      "verification": "static_only_no_runtime_reproduction"
+    },
+    {
+      "id": "PPTSTATIC-05",
+      "severity": "medium",
+      "title": "ZIP/관계 경계 보호가 있는 부분과 없는 부분을 구분해야 한다",
+      "evidence": [
+        "helpers/__init__.py safe_extract는 symlink entry와 dest 밖 경로를 거부",
+        "같은 helper에는 전체 ZIP 크기/항목수/압축비 quota 없음",
+        "validators/base.py:364 관계 target resolve 이후 package 내부인지 검사 없음",
+        "add_slide.py source/layout CLI 문자열은 basename whitelist가 없음",
+        "helpers rezip는 src_dir.rglob is_file로 수집"
+      ],
+      "impact": "packed ZIP의 경로 탈출·symlink entry에 대한 보호는 확인했다. 반면 자원 소진 quota, 기존 unpacked 디렉터리의 symlink/외부 참조, caller가 주는 source/output 범위 계약은 전체적으로 닫혀 있지 않다. Base 관계 검사와 clean/thumbnail의 opc_target helper가 서로 다른 경계 로직이다. clean의 참조 집계는 모든 .rels의 집합이며 presentation/root에서의 도달성 증명이 아니므로 서로 참조하는 미사용 부분의 완전 제거도 증명하지 않는다. 악성 fixture나 실제 문서를 실행하지 않아 exploit 성공을 주장하지 않는다.",
+      "status": "직접 도입/파생 재구성 후보 제외; 동작 관찰만 기록",
+      "verification": "static_only_no_runtime_reproduction"
+    },
+    {
+      "id": "PPTSTATIC-06",
+      "severity": "scope_gap",
+      "title": "외부 런타임·라이선스·XSD 의미 검토는 완료되지 않았다",
+      "evidence": [
+        "SKILL.md Dependencies; selected Python imports",
+        "schemas XSD39개 확보: 목록/hash/schemaLocation 구조만",
+        "전체 repository tree에 package/requirements/lock 확인 안 됨",
+        "DOCX/Redlining은 validators/__init__에서 import되지만 PPTX branch 실행 대상은 아님"
+      ],
+      "impact": "Python3.10+ 구문 요구는 확인했으나 Pillow/defusedxml/lxml 및 libxml2/libxslt, LibreOffice, Poppler, gcc, pptxgenjs, markitdown, react-icons/react/react-dom/sharp의 실제 설치 버전·전이 의존성·별도 라이선스·취약성·네트워크 동작은 검토하지 않았다. XSD 전수 의미·standards licensing도 확인하지 않았으며 Python DOCX/Redlining은 구조/효과 검색 수준이다. 도입 제외 상태라 추가 다운로드나 runtime closure 완료 작업은 하지 않는다.",
+      "status": "직접 도입/파생 재구성 후보 제외; 동작 관찰만 기록",
+      "verification": "static_only_no_runtime_reproduction"
+    }
+  ],
+  "next_step": "직접 도입/파생 재구성 작업으로 이어가지 않음. PPT/인포그래픽/설명영상의 별도 검토는 적합한 이용권한을 가진 다른 자료 및 사용자의 실제 요구를 기준으로 진행.",
+  "limitations": [
+    "정적 관찰이며 반례 runtime/실문서 변환/Office 렌더 확인 없음",
+    "라이선스는 확보한 로컬 문구를 확인한 기록이며 외부 계약/현재 서비스 약관의 법적 허용 여부를 확정한 법률 의견 아님",
+    "JSON에는 원문 코드·embedded C·SKILL 본문·XSD 본문을 복제하지 않음",
+    "목록/hash/schemaLocation 구조는 schema 전체 의미/라이선스/validator completeness 검수와 구분",
+    "이 추가 감사는 초기 Taste/Skill Creator/Impeccable 감사와 별개이며 전체 R3-3 완료 범위 확대 주장 없음"
+  ]
+}

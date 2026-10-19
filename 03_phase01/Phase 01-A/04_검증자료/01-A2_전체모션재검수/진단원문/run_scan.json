@@ -1,0 +1,16 @@
+[
+  {
+    "id": "자료005",
+    "exit": 0,
+    "stdout": "{\"id\": \"자료005\", \"phase\": \"scan\", \"images\": 33, \"decoded\": 721, \"result\": \"C:\\\\Users\\\\User\\\\Documents\\\\ChatGPT\\\\업무@사내 영상 생성기\\\\phase01a-a2-fullmotion\\\\cases\\\\자료005\\\\scan\\\\실행기록.json\"}\n",
+    "stderr": "",
+    "elapsed_seconds": 12.295999999998457
+  },
+  {
+    "id": "자료013",
+    "exit": 1,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-fullmotion\\scan.py\", line 154, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-fullmotion\\scan.py\", line 141, in main\n    if len(sys.argv)==4 and sys.argv[1]=='worker':worker(sys.argv[2],sys.argv[3]);return\n                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase01a-a2-fullmotion\\scan.py\", line 131, in worker\n    data=np.stack(track_frames)\n         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\site-packages\\numpy\\_core\\shape_base.py\", line 467, in stack\n    return _nx.concatenate(expanded_arrays, axis=axis, out=out,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nnumpy._core._exceptions._ArrayMemoryError: Unable to allocate 345. MiB for an array with shape (931, 270, 480, 3) and data type uint8\n",
+    "elapsed_seconds": 16.25
+  }
+]

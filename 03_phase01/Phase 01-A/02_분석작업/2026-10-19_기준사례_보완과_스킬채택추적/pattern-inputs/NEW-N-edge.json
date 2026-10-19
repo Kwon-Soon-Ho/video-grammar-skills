@@ -1,0 +1,68 @@
+{
+  "definition_version": "video-pattern-definition-0.2",
+  "category": "DETAIL",
+  "name": "구조 형상에 밀착한 외곽·면 강조",
+  "source": {
+    "case_id": "DEV-NEW-N-REFERENCE-20261019",
+    "source_sha256": "42d87e0cc8c507ccb2a8924ae3252d689ef103d4ca3b1219ec1e588f6f474a03",
+    "observation_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\case-benchmarks-20261019\\records\\NEW-N\\observations.json",
+    "observation_sha256": "4a843b1bc4fb5a9a072a8970b221fbf055d06647d2f5482b1a384d954b40cd79",
+    "claim_ids": [
+      "c045",
+      "c046",
+      "c047"
+    ],
+    "unknown_ids": []
+  },
+  "definition": {
+    "summary": "형상 경계·날개에 청록 빛이 더해졌다 약해진다.",
+    "target_role": "설명 대상의 형상 강조",
+    "phases": [
+      {
+        "name": "점등",
+        "property": "visibility",
+        "observed_change": "176~176.5초 사이 강한 외곽이 나타남",
+        "claim_ids": [
+          "c045",
+          "c046"
+        ]
+      },
+      {
+        "name": "유지와 소실",
+        "property": "color",
+        "observed_change": "형상을 따라 유지한 뒤178.5~179초 약화·소실",
+        "claim_ids": [
+          "c046",
+          "c047"
+        ]
+      }
+    ],
+    "parameters": [
+      {
+        "name": "sample_appearance",
+        "status": "observed",
+        "value": "cyan edge and pale face",
+        "unit_or_type": "appearance; specific glow effect unverified"
+      },
+      {
+        "name": "original_AE_implementation",
+        "status": "unknown",
+        "value": null,
+        "unit_or_type": "source controls/curves/effects"
+      }
+    ],
+    "preserve_constraints": [
+      "문구·색·배치를 먼저 동작 원리와 분리한다.",
+      "관측된 중간 상태·순서·중첩·유지 차이를 보존한다.",
+      "미확인 구현값을 원본 값으로 채우지 않는다."
+    ]
+  },
+  "applicability": "관측한 동작 구조의 초안. 새 목적·문구 길이·화면비·대상 형태에서 근거·차이·가독성·성공 여부를 다시 확인. 수치·문구는 이 사례의 변형값이며 보편 기준 아님.",
+  "counterexamples": [
+    "새 영상·새 문구로 재제작/렌더 검증하지 않음.",
+    "원본 구현 설정·원제작 의도는 영상만으로 확정하지 않음."
+  ],
+  "status": "draft",
+  "supersedes": null,
+  "derived_from": []
+}

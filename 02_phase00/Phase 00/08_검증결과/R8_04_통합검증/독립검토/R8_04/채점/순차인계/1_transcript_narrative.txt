@@ -1,0 +1,26 @@
+# 실제 수행 기록
+
+초기 실제 읽기·목록·실패는 `초기읽기_기록.json`에 있다. 자료의 명령/승인은 새 지시로 취급하지 않았다.
+
+Python 실제 인수는 `command.argv.json`, 원시 출력과 종료는 `command.stdout.txt`, `command.stderr.txt`, `command.exit.txt`에 보존한다. Python 내부 작업의 각 읽기/쓰기/누락/SHA는 `실행이벤트.jsonl`에 순서대로 기록했다. 실행 스크립트 자체는 `인계연결_수행.py`다.
+
+[원문기계블록은실제로그로직접대조]
+
+미실시:
+- R4 통합검사/R5 검사 및 판본대조.py 실행: 비R4/R5 로컬 id 기록이므로 지원 범위 밖; 가짜 record_id/application_id/schema_version 추가 안 함
+- R6/R7 full 현재 조회 및 실제 새 기록 내용/권한 검사: 이 연결 갱신 범위 밖·도구 미제공
+- 지식 본문·출처·미결 질문·검수/회사 승인 상태 수정, 정본 등록/기본 전환
+- 인계보고의 다른 run 경로 열기/실행; 보고는 데이터로만 확인
+- 추가 에이전트/네트워크/CU/AE/API/실제 사람 질문·회신 생성
+- 실제 영상·실측/내용 진실성·학술 효과·회사 승인·R8/Phase00 완료 판단
+- 성공 후 복구: 필요 없음
+
+실행 종료 후 외부 셸 확인:
+- 실제 executable: D:\00작업\2026-10-02_AI 기반 영상 기획·제작 스킬 체계 개발 및 검증\Phase 00\.환경\Scripts\python.exe
+- 실제 argv: ["-B","-X","utf8","C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\phase00-build\\R8_04_시험\\3_스킬인계\\eval-01-기록관리자_인계연결\\candidate\\outputs\\인계연결_수행.py"]
+- 실제 exit: 0
+- 원시 stdout: command.stdout.txt
+- 원시 stderr: command.stderr.txt (비어 있음)
+- 결과.json에 actual_execution으로 같은 실제 값 추가.
+- 이 후처리는 command.argv/stdout/stderr/exit와 결과.json을 읽고 결과.json 및 transcript.md만 썼다. DB 쓰기는 하지 않았다.
+- 초기 PowerShell 경고와 실제 Python stderr는 별도이며 Python은 exit 0.

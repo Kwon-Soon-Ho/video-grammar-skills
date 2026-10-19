@@ -1,0 +1,689 @@
+{
+  "utc": "2026-10-19T01:28:59.819475+00:00",
+  "scope": "draft.5의 2026-10-19 조사 반영 감사. 과거 Phase 00 자산의 전체 완료 판정은 재평가하지 않음. 저장소 수·조사 파일 수는 스킬 구현 수가 아님.",
+  "survey_history": {
+    "prior_repository_count": 11,
+    "new_repository_count": 10,
+    "overlapping_repositories": [
+      "anthropics/skills",
+      "vercel-labs/agent-skills"
+    ],
+    "unique_repository_count": 19,
+    "prior_selected_files": 379,
+    "new_source_review_records": 41,
+    "prior_consulted_local_skill_names": [
+      "shot-composition",
+      "design-tokens",
+      "animation-principles",
+      "motion-design",
+      "motion-art-direction",
+      "skill-creator",
+      "anthropic-skill-creator"
+    ]
+  },
+  "status_counts": {
+    "지침·형식 반영": 10,
+    "코드 일부 반영": 21,
+    "직접 이식 제외·평가 참고": 6,
+    "미구현": 4
+  },
+  "fully_adopted_upstream_skill_count": 0,
+  "whole_pipeline_implemented": false,
+  "default_installed": false,
+  "note": "상태는 조사 포인트별 증거 분류이며 서로 크기가 다른 기능을 합산한 완성률이 아니다. 코드 일부 반영도 원본 기능 전체나 영상 성능을 입증하지 않는다.",
+  "records": [
+    {
+      "id": "P1",
+      "repository": "DietrichGebert/ponytail",
+      "commit": "09c434ab73ca43761c5d8b0c5d341926c2fba710",
+      "path": "skills/ponytail/SKILL.md",
+      "url": "https://github.com/DietrichGebert/ponytail/blob/09c434ab73ca43761c5d8b0c5d341926c2fba710/skills/ponytail/SKILL.md#L19",
+      "finding": "판단 사다리와 생략 금지 조건",
+      "implementation_status": "지침·형식 반영",
+      "current_evidence": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\candidate\\company-video-grammar-analyzer\\references\\judgment-handoff.md",
+        "sha256": "afe495b0a2524f18e55293270161514cf33a822369f3dc47c4237ad12ac1cf5b"
+      },
+      "remaining_or_exclusion": "선택 순서는 지침으로만 존재. 실제 후보 조회·대안 평가·선택 실행기는 없음.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "P2",
+      "repository": "DietrichGebert/ponytail",
+      "commit": "09c434ab73ca43761c5d8b0c5d341926c2fba710",
+      "path": "hooks/ponytail-map.js",
+      "url": "https://github.com/DietrichGebert/ponytail/blob/09c434ab73ca43761c5d8b0c5d341926c2fba710/hooks/ponytail-map.js#L22",
+      "finding": "색인의 범위·한글 경로·길이 제한",
+      "implementation_status": "코드 일부 반영",
+      "current_evidence": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\pattern_library.py",
+        "sha256": "3225f967d86198e1571fb1801b3c1b01ae5022a7b70e9e2aacb19d3d2bcd0967"
+      },
+      "remaining_or_exclusion": "번호 등록·단일 항목 추출만 구현. 내용/조건 기반 후보 검색과 재사용 판별은 없음.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "P3",
+      "repository": "DietrichGebert/ponytail",
+      "commit": "09c434ab73ca43761c5d8b0c5d341926c2fba710",
+      "path": "hooks/ponytail-activate.js",
+      "url": "https://github.com/DietrichGebert/ponytail/blob/09c434ab73ca43761c5d8b0c5d341926c2fba710/hooks/ponytail-activate.js#L68",
+      "finding": "활성화와 색인 실패 처리",
+      "implementation_status": "직접 이식 제외·평가 참고",
+      "current_evidence": null,
+      "remaining_or_exclusion": "전역 활성화 훅·원본 코드 색인기는 의도적으로 설치하지 않음.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "P4",
+      "repository": "DietrichGebert/ponytail",
+      "commit": "09c434ab73ca43761c5d8b0c5d341926c2fba710",
+      "path": "skills/ponytail-review/SKILL.md",
+      "url": "https://github.com/DietrichGebert/ponytail/blob/09c434ab73ca43761c5d8b0c5d341926c2fba710/skills/ponytail-review/SKILL.md#L59",
+      "finding": "구체 사례를 요구하는 리뷰",
+      "implementation_status": "지침·형식 반영",
+      "current_evidence": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\candidate\\company-video-grammar-analyzer\\SKILL.md",
+        "sha256": "24743ba1a96b5ab2b7d1f8067284b4c8e42ef2503ee1325d962a3e2608881f35"
+      },
+      "remaining_or_exclusion": "구체 주장·근거 대조 지침. 자동 의미 검수와 전문가 리뷰 실행기는 없음.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "P5",
+      "repository": "DietrichGebert/ponytail",
+      "commit": "09c434ab73ca43761c5d8b0c5d341926c2fba710",
+      "path": "skills/ponytail-debt/SKILL.md",
+      "url": "https://github.com/DietrichGebert/ponytail/blob/09c434ab73ca43761c5d8b0c5d341926c2fba710/skills/ponytail-debt/SKILL.md#L10",
+      "finding": "생략의 한계와 재검토 조건",
+      "implementation_status": "코드 일부 반영",
+      "current_evidence": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\check_record.py",
+        "sha256": "e5dfa34e7639d615a8e5842a5d125a414e683004949927d0a354fa906b78253f"
+      },
+      "remaining_or_exclusion": "미해결·한계 기록 검사 일부. 재검토 조건을 실행하는 비용/부채 관리기는 없음.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "P6",
+      "repository": "DietrichGebert/ponytail",
+      "commit": "09c434ab73ca43761c5d8b0c5d341926c2fba710",
+      "path": "benchmarks/results/2026-10-07-agentic.md",
+      "url": "https://github.com/DietrichGebert/ponytail/blob/09c434ab73ca43761c5d8b0c5d341926c2fba710/benchmarks/results/2026-10-07-agentic.md#L61",
+      "finding": "제작자 실험의 품질 분모와 한계",
+      "implementation_status": "직접 이식 제외·평가 참고",
+      "current_evidence": null,
+      "remaining_or_exclusion": "원본 실험의 효과 수치를 영상 효과로 채택하지 않음. 우리 효과 비교는 미실행.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "P7",
+      "repository": "DietrichGebert/ponytail",
+      "commit": "09c434ab73ca43761c5d8b0c5d341926c2fba710",
+      "path": "benchmarks/agentic/README.md",
+      "url": "https://github.com/DietrichGebert/ponytail/blob/09c434ab73ca43761c5d8b0c5d341926c2fba710/benchmarks/agentic/README.md#L197",
+      "finding": "기준선 오염·평가기 자체 검사",
+      "implementation_status": "코드 일부 반영",
+      "current_evidence": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\check_record.py",
+        "sha256": "e5dfa34e7639d615a8e5842a5d125a414e683004949927d0a354fa906b78253f"
+      },
+      "remaining_or_exclusion": "일부 오류 주입 시험만 구현. 독립 문맥·조건 오염을 통제한 새 비교 시험은 없음.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "R1",
+      "repository": "morluto/rea",
+      "commit": "95c8f57aa2eafab4c8d7d43482b33ceefaf96b16",
+      "path": "src/domain/evidence.ts",
+      "url": "https://github.com/morluto/rea/blob/95c8f57aa2eafab4c8d7d43482b33ceefaf96b16/src/domain/evidence.ts#L127",
+      "finding": "증거·분석기·관측 유형·의미 해시",
+      "implementation_status": "코드 일부 반영",
+      "current_evidence": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\check_record.py",
+        "sha256": "e5dfa34e7639d615a8e5842a5d125a414e683004949927d0a354fa906b78253f"
+      },
+      "remaining_or_exclusion": "원본/프레임/시각/유형 연결 일부. provider/profile/authority/semantic evidence hash 전체 모델은 없음.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "R2",
+      "repository": "morluto/rea",
+      "commit": "95c8f57aa2eafab4c8d7d43482b33ceefaf96b16",
+      "path": "src/domain/residualUnknown.ts",
+      "url": "https://github.com/morluto/rea/blob/95c8f57aa2eafab4c8d7d43482b33ceefaf96b16/src/domain/residualUnknown.ts#L81",
+      "finding": "미해결 질문과 판본",
+      "implementation_status": "코드 일부 반영",
+      "current_evidence": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\check_record.py",
+        "sha256": "e5dfa34e7639d615a8e5842a5d125a414e683004949927d0a354fa906b78253f"
+      },
+      "remaining_or_exclusion": "미해결 질문·다음 확인·해소 주장 검사. revision 기반 갱신 도구는 없음.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "R3",
+      "repository": "morluto/rea",
+      "commit": "95c8f57aa2eafab4c8d7d43482b33ceefaf96b16",
+      "path": "src/application/investigation/EvidenceLedger.ts",
+      "url": "https://github.com/morluto/rea/blob/95c8f57aa2eafab4c8d7d43482b33ceefaf96b16/src/application/investigation/EvidenceLedger.ts#L302",
+      "finding": "상태 변경 충돌과 종료/입증의 분리",
+      "implementation_status": "코드 일부 반영",
+      "current_evidence": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\check_record.py",
+        "sha256": "e5dfa34e7639d615a8e5842a5d125a414e683004949927d0a354fa906b78253f"
+      },
+      "remaining_or_exclusion": "open/resolved/withdrawn/out_of_scope 구분만 일부. expected_revision 충돌 제어 없음.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "R4",
+      "repository": "morluto/rea",
+      "commit": "95c8f57aa2eafab4c8d7d43482b33ceefaf96b16",
+      "path": "src/domain/evidenceBundle.ts",
+      "url": "https://github.com/morluto/rea/blob/95c8f57aa2eafab4c8d7d43482b33ceefaf96b16/src/domain/evidenceBundle.ts#L489",
+      "finding": "증거 유형과 환경의 자격 검사",
+      "implementation_status": "코드 일부 반영",
+      "current_evidence": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\check_record.py",
+        "sha256": "e5dfa34e7639d615a8e5842a5d125a414e683004949927d0a354fa906b78253f"
+      },
+      "remaining_or_exclusion": "관측/계산/추론과 supported 해소 주장 자격 일부. 환경·authority 자격 모델 없음.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "R5",
+      "repository": "morluto/rea",
+      "commit": "95c8f57aa2eafab4c8d7d43482b33ceefaf96b16",
+      "path": "src/application/investigation/EvidenceLedger.residualUnknown.test.ts",
+      "url": "https://github.com/morluto/rea/blob/95c8f57aa2eafab4c8d7d43482b33ceefaf96b16/src/application/investigation/EvidenceLedger.residualUnknown.test.ts#L289",
+      "finding": "추론만으로 관측 요구를 닫지 않는 테스트",
+      "implementation_status": "코드 일부 반영",
+      "current_evidence": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\check_record.py",
+        "sha256": "e5dfa34e7639d615a8e5842a5d125a414e683004949927d0a354fa906b78253f"
+      },
+      "remaining_or_exclusion": "추론만으로 관측 요구를 닫는 오류를 거부하는 자체 합성 검사. 시각 진실성 판정 아님.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "R6",
+      "repository": "morluto/rea",
+      "commit": "95c8f57aa2eafab4c8d7d43482b33ceefaf96b16",
+      "path": "src/domain/reconstructionCoverage.ts",
+      "url": "https://github.com/morluto/rea/blob/95c8f57aa2eafab4c8d7d43482b33ceefaf96b16/src/domain/reconstructionCoverage.ts#L164",
+      "finding": "요구 목록·판정 경계·검증 계약",
+      "implementation_status": "코드 일부 반영",
+      "current_evidence": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\check_record.py",
+        "sha256": "e5dfa34e7639d615a8e5842a5d125a414e683004949927d0a354fa906b78253f"
+      },
+      "remaining_or_exclusion": "선언한 대상×속성의 구간 공백·참조 검사. 전체 재구성 의무/구현 담당/검증 차원 관리 없음.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "R7",
+      "repository": "morluto/rea",
+      "commit": "95c8f57aa2eafab4c8d7d43482b33ceefaf96b16",
+      "path": "src/domain/reconstructionCoverage.test.ts",
+      "url": "https://github.com/morluto/rea/blob/95c8f57aa2eafab4c8d7d43482b33ceefaf96b16/src/domain/reconstructionCoverage.test.ts#L63",
+      "finding": "등록 검사 통과와 완전성의 구분",
+      "implementation_status": "코드 일부 반영",
+      "current_evidence": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\check_record.py",
+        "sha256": "e5dfa34e7639d615a8e5842a5d125a414e683004949927d0a354fa906b78253f"
+      },
+      "remaining_or_exclusion": "등록된 누락 검사와 한계 표시는 있음. 처음 발견하지 못한 대상 탐지는 없음.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "R8",
+      "repository": "morluto/rea",
+      "commit": "95c8f57aa2eafab4c8d7d43482b33ceefaf96b16",
+      "path": "src/domain/reconstructionCoverageEvidence.ts",
+      "url": "https://github.com/morluto/rea/blob/95c8f57aa2eafab4c8d7d43482b33ceefaf96b16/src/domain/reconstructionCoverageEvidence.ts#L36",
+      "finding": "해당 판정이 인용한 증거의 자격",
+      "implementation_status": "코드 일부 반영",
+      "current_evidence": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\check_record.py",
+        "sha256": "e5dfa34e7639d615a8e5842a5d125a414e683004949927d0a354fa906b78253f"
+      },
+      "remaining_or_exclusion": "해소 주장 유형·동일 대상·검수 상태 검사 일부. 완전한 근거 권위/환경 검증 아님.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "R9",
+      "repository": "morluto/rea",
+      "commit": "95c8f57aa2eafab4c8d7d43482b33ceefaf96b16",
+      "path": "src/domain/reconstructionCoverageVerifierResults.ts",
+      "url": "https://github.com/morluto/rea/blob/95c8f57aa2eafab4c8d7d43482b33ceefaf96b16/src/domain/reconstructionCoverageVerifierResults.ts#L17",
+      "finding": "최신 판정 묶음과 충돌",
+      "implementation_status": "미구현",
+      "current_evidence": null,
+      "remaining_or_exclusion": "최신 검수 판정 묶음 선택·상충 판정 유지 실행기는 없음.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "R10",
+      "repository": "morluto/rea",
+      "commit": "95c8f57aa2eafab4c8d7d43482b33ceefaf96b16",
+      "path": "src/domain/reconstructionVerificationSchemas.ts",
+      "url": "https://github.com/morluto/rea/blob/95c8f57aa2eafab4c8d7d43482b33ceefaf96b16/src/domain/reconstructionVerificationSchemas.ts#L45",
+      "finding": "기존 재현 검사 유형의 범위",
+      "implementation_status": "미구현",
+      "current_evidence": null,
+      "remaining_or_exclusion": "영상 명세→편집 가능한 구현→렌더→원본 대조의 역설계 실행 없음.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "R11",
+      "repository": "morluto/rea",
+      "commit": "95c8f57aa2eafab4c8d7d43482b33ceefaf96b16",
+      "path": "src/application/binary/AnalysisSnapshotCache.ts",
+      "url": "https://github.com/morluto/rea/blob/95c8f57aa2eafab4c8d7d43482b33ceefaf96b16/src/application/binary/AnalysisSnapshotCache.ts#L71",
+      "finding": "재사용 조건과 상태성 작업 제외",
+      "implementation_status": "코드 일부 반영",
+      "current_evidence": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\pattern_library.py",
+        "sha256": "3225f967d86198e1571fb1801b3c1b01ae5022a7b70e9e2aacb19d3d2bcd0967"
+      },
+      "remaining_or_exclusion": "파일 해시와 고정 스냅샷만 일부. 분석 설정·시간 매핑·검수 판본에 따른 캐시 재사용 관리 없음.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "R12",
+      "repository": "morluto/rea",
+      "commit": "95c8f57aa2eafab4c8d7d43482b33ceefaf96b16",
+      "path": "src/browser/PngVisualDiff.ts",
+      "url": "https://github.com/morluto/rea/blob/95c8f57aa2eafab4c8d7d43482b33ceefaf96b16/src/browser/PngVisualDiff.ts#L490",
+      "finding": "정지 픽셀 비교의 한계",
+      "implementation_status": "직접 이식 제외·평가 참고",
+      "current_evidence": null,
+      "remaining_or_exclusion": "정지 PNG 차이를 영상 의미·모션 성공 판정으로 이식하지 않음.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "R13",
+      "repository": "morluto/rea",
+      "commit": "95c8f57aa2eafab4c8d7d43482b33ceefaf96b16",
+      "path": "src/browser/PlaywrightScenarioArtifacts.ts",
+      "url": "https://github.com/morluto/rea/blob/95c8f57aa2eafab4c8d7d43482b33ceefaf96b16/src/browser/PlaywrightScenarioArtifacts.ts#L50",
+      "finding": "브라우저 캡처의 모션 제한",
+      "implementation_status": "직접 이식 제외·평가 참고",
+      "current_evidence": null,
+      "remaining_or_exclusion": "애니메이션을 비활성화하는 브라우저 캡처를 모션 검증으로 이식하지 않음.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "R14",
+      "repository": "morluto/rea",
+      "commit": "95c8f57aa2eafab4c8d7d43482b33ceefaf96b16",
+      "path": "scripts/generate-skill-metadata.mjs",
+      "url": "https://github.com/morluto/rea/blob/95c8f57aa2eafab4c8d7d43482b33ceefaf96b16/scripts/generate-skill-metadata.mjs#L35",
+      "finding": "배포 지침과 실제 도구 판본 동기화",
+      "implementation_status": "코드 일부 반영",
+      "current_evidence": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\check_record.py",
+        "sha256": "e5dfa34e7639d615a8e5842a5d125a414e683004949927d0a354fa906b78253f"
+      },
+      "remaining_or_exclusion": "기록의 스킬 판본 검사·후보 사본 해시 확인. 실제 기본 호출 경로 반영은 안 됨.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "R15",
+      "repository": "morluto/rea",
+      "commit": "95c8f57aa2eafab4c8d7d43482b33ceefaf96b16",
+      "path": "docs/reconstruction-obligation-ledgers.md",
+      "url": "https://github.com/morluto/rea/blob/95c8f57aa2eafab4c8d7d43482b33ceefaf96b16/docs/reconstruction-obligation-ledgers.md#L11",
+      "finding": "의무·구현 담당·사례·검증 연결",
+      "implementation_status": "코드 일부 반영",
+      "current_evidence": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\reuse_map.py",
+        "sha256": "fb70d389041a4391b2c1a0a9a9b3dda7661c4f3b9a44d6e21c48959555c95ba9"
+      },
+      "remaining_or_exclusion": "사례와 패턴의 역할·관계 연결 일부. 요구→담당 구현→렌더 검증의 의무 장부 없음.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "T1",
+      "repository": "trailofbits/skills",
+      "commit": "5c99c03fb8a9ea568432ecbcba5d86e9f4ac2bf0",
+      "path": "plugins/audit-context-building/skills/audit-context-building/SKILL.md",
+      "url": "https://github.com/trailofbits/skills/blob/5c99c03fb8a9ea568432ecbcba5d86e9f4ac2bf0/plugins/audit-context-building/skills/audit-context-building/SKILL.md#L68",
+      "finding": "이해 단계와 평가 단계 분리",
+      "implementation_status": "지침·형식 반영",
+      "current_evidence": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\candidate\\company-video-grammar-analyzer\\references\\judgment-handoff.md",
+        "sha256": "afe495b0a2524f18e55293270161514cf33a822369f3dc47c4237ad12ac1cf5b"
+      },
+      "remaining_or_exclusion": "관측과 추론, 분석과 판단의 분리 지침. 별도 이해/평가 실행 흐름은 없음.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "T2",
+      "repository": "trailofbits/skills",
+      "commit": "5c99c03fb8a9ea568432ecbcba5d86e9f4ac2bf0",
+      "path": "plugins/audit-context-building/workflows/audit-context.js",
+      "url": "https://github.com/trailofbits/skills/blob/5c99c03fb8a9ea568432ecbcba5d86e9f4ac2bf0/plugins/audit-context-building/workflows/audit-context.js#L84",
+      "finding": "구조화 반환·예산·실패 필터링",
+      "implementation_status": "미구현",
+      "current_evidence": null,
+      "remaining_or_exclusion": "예산·재시도·실패 보존을 포함한 새 분석 배치 실행기는 없음.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "T3",
+      "repository": "trailofbits/skills",
+      "commit": "5c99c03fb8a9ea568432ecbcba5d86e9f4ac2bf0",
+      "path": "plugins/audit-context-building/evals/continuity-across-calls/graders/unbounded-length-path.md",
+      "url": "https://github.com/trailofbits/skills/blob/5c99c03fb8a9ea568432ecbcba5d86e9f4ac2bf0/plugins/audit-context-building/evals/continuity-across-calls/graders/unbounded-length-path.md#L9",
+      "finding": "핵심 실패를 분별하는 평가 조건",
+      "implementation_status": "코드 일부 반영",
+      "current_evidence": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\check_record.py",
+        "sha256": "e5dfa34e7639d615a8e5842a5d125a414e683004949927d0a354fa906b78253f"
+      },
+      "remaining_or_exclusion": "형식/근거/조합 오류를 분별하는 합성 시험. A/4 의미 오답을 자동 판별하지 못함.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "S1",
+      "repository": "obra/superpowers",
+      "commit": "bb92a77741419a4ab5f06e711a283343f1ada0c3",
+      "path": "skills/writing-skills/SKILL.md",
+      "url": "https://github.com/obra/superpowers/blob/bb92a77741419a4ab5f06e711a283343f1ada0c3/skills/writing-skills/SKILL.md#L461",
+      "finding": "실패 종류에 맞는 지침 형태",
+      "implementation_status": "코드 일부 반영",
+      "current_evidence": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\candidate\\company-video-grammar-analyzer\\references\\output-contract.md",
+        "sha256": "38bd655501d277f418cb1200a4928bffd0a193d5fc9f5c9a929d8a87f6db15da"
+      },
+      "remaining_or_exclusion": "식별·속성·원자 주장 슬롯 추가. 실제 새 자료 행동 개선은 미입증.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "S2",
+      "repository": "obra/superpowers",
+      "commit": "bb92a77741419a4ab5f06e711a283343f1ada0c3",
+      "path": "skills/verification-before-completion/SKILL.md",
+      "url": "https://github.com/obra/superpowers/blob/bb92a77741419a4ab5f06e711a283343f1ada0c3/skills/verification-before-completion/SKILL.md#L22",
+      "finding": "완료 주장과 검증 근거 연결",
+      "implementation_status": "코드 일부 반영",
+      "current_evidence": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\check_record.py",
+        "sha256": "e5dfa34e7639d615a8e5842a5d125a414e683004949927d0a354fa906b78253f"
+      },
+      "remaining_or_exclusion": "형식 통과와 content_verified=false를 구분. 전체 품질 합격 판정기는 없음.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "I1",
+      "repository": "pbakaus/impeccable",
+      "commit": "2f46b7a8b059af00d20dd13b64dbe165e7c6a742",
+      "path": "skill/SKILL.src.md",
+      "url": "https://github.com/pbakaus/impeccable/blob/2f46b7a8b059af00d20dd13b64dbe165e7c6a742/skill/SKILL.src.md#L34",
+      "finding": "장면 목적별 판단과 기존 맥락",
+      "implementation_status": "지침·형식 반영",
+      "current_evidence": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\candidate\\company-video-grammar-analyzer\\references\\judgment-handoff.md",
+        "sha256": "afe495b0a2524f18e55293270161514cf33a822369f3dc47c4237ad12ac1cf5b"
+      },
+      "remaining_or_exclusion": "목적·조건 후보 필드만 존재. 목적별 설계 대안 생성/평가/선택 없음.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "I2",
+      "repository": "pbakaus/impeccable",
+      "commit": "2f46b7a8b059af00d20dd13b64dbe165e7c6a742",
+      "path": "skill/reference/critique.md",
+      "url": "https://github.com/pbakaus/impeccable/blob/2f46b7a8b059af00d20dd13b64dbe165e7c6a742/skill/reference/critique.md#L5",
+      "finding": "판단·검출의 격리와 한계 공개",
+      "implementation_status": "지침·형식 반영",
+      "current_evidence": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\candidate\\company-video-grammar-analyzer\\references\\output-contract.md",
+        "sha256": "38bd655501d277f418cb1200a4928bffd0a193d5fc9f5c9a929d8a87f6db15da"
+      },
+      "remaining_or_exclusion": "내용 검수 상태와 한계 필드. 독립 시각 비평 실행기 없음.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "I3",
+      "repository": "pbakaus/impeccable",
+      "commit": "2f46b7a8b059af00d20dd13b64dbe165e7c6a742",
+      "path": "skill/reference/animate.md",
+      "url": "https://github.com/pbakaus/impeccable/blob/2f46b7a8b059af00d20dd13b64dbe165e7c6a742/skill/reference/animate.md#L25",
+      "finding": "모션 목적의 사전 명세",
+      "implementation_status": "지침·형식 반영",
+      "current_evidence": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\candidate\\company-video-grammar-analyzer\\references\\judgment-handoff.md",
+        "sha256": "afe495b0a2524f18e55293270161514cf33a822369f3dc47c4237ad12ac1cf5b"
+      },
+      "remaining_or_exclusion": "목적·구현 제안 인계 형식. 모션 의도 명세와 결과 효과 대조 없음.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "I4",
+      "repository": "pbakaus/impeccable",
+      "commit": "2f46b7a8b059af00d20dd13b64dbe165e7c6a742",
+      "path": "crates/context/src/critique_storage.rs",
+      "url": "https://github.com/pbakaus/impeccable/blob/2f46b7a8b059af00d20dd13b64dbe165e7c6a742/crates/context/src/critique_storage.rs#L230",
+      "finding": "검수 대상의 실제 파일 지문",
+      "implementation_status": "코드 일부 반영",
+      "current_evidence": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\pattern_library.py",
+        "sha256": "3225f967d86198e1571fb1801b3c1b01ae5022a7b70e9e2aacb19d3d2bcd0967"
+      },
+      "remaining_or_exclusion": "소스 파일 지문과 스냅샷 일부. 실제 생성 디자인/렌더별 비평 대상 고정은 미구현.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "I5",
+      "repository": "pbakaus/impeccable",
+      "commit": "2f46b7a8b059af00d20dd13b64dbe165e7c6a742",
+      "path": "crates/detect/tests/regex_only_note.rs",
+      "url": "https://github.com/pbakaus/impeccable/blob/2f46b7a8b059af00d20dd13b64dbe165e7c6a742/crates/detect/tests/regex_only_note.rs#L38",
+      "finding": "미실행 검사와 무결점의 구분",
+      "implementation_status": "코드 일부 반영",
+      "current_evidence": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\check_record.py",
+        "sha256": "e5dfa34e7639d615a8e5842a5d125a414e683004949927d0a354fa906b78253f"
+      },
+      "remaining_or_exclusion": "미실행 내용 검사와 형식 통과의 구분. 시각 무결점 검사는 없음.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "G1",
+      "repository": "garrytan/gstack",
+      "commit": "8640ab4ff43accda6676105868935903232d8c93",
+      "path": "plan-design-review/SKILL.md",
+      "url": "https://github.com/garrytan/gstack/blob/8640ab4ff43accda6676105868935903232d8c93/plan-design-review/SKILL.md#L1136",
+      "finding": "설계 결함·대안·재평가",
+      "implementation_status": "지침·형식 반영",
+      "current_evidence": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\candidate\\company-video-grammar-analyzer\\references\\judgment-handoff.md",
+        "sha256": "afe495b0a2524f18e55293270161514cf33a822369f3dc47c4237ad12ac1cf5b"
+      },
+      "remaining_or_exclusion": "조건·반례·구현 제안 칸만 있음. 설계 결함 진단→대안→재평가 과정 없음.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "G2",
+      "repository": "garrytan/gstack",
+      "commit": "8640ab4ff43accda6676105868935903232d8c93",
+      "path": "plan-design-review/sections/review-sections.md",
+      "url": "https://github.com/garrytan/gstack/blob/8640ab4ff43accda6676105868935903232d8c93/plan-design-review/sections/review-sections.md#L85",
+      "finding": "상태 표와 검수 차원",
+      "implementation_status": "지침·형식 반영",
+      "current_evidence": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\candidate\\company-video-grammar-analyzer\\references\\design-and-patterns.md",
+        "sha256": "a97d4920a5eb5b6d5c94583ce3c9332eea7354c181ef0dd1b4a7bf5a79a25cf7"
+      },
+      "remaining_or_exclusion": "디자인 차원과 검수 상태만 일부. 실제 다차원 전문가 리뷰와 변경 판정 없음.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "A1",
+      "repository": "anthropics/skills",
+      "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "path": "skills/skill-creator/agents/grader.md",
+      "url": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/skill-creator/agents/grader.md#L43",
+      "finding": "사전 기준 밖 주장과 평가기 검토",
+      "implementation_status": "코드 일부 반영",
+      "current_evidence": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\check_record.py",
+        "sha256": "e5dfa34e7639d615a8e5842a5d125a414e683004949927d0a354fa906b78253f"
+      },
+      "remaining_or_exclusion": "고유 주장과 검사기 오류 시험 일부. 기준 밖 의미 주장 전수 채점·독립 평가 없음.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "A2",
+      "repository": "anthropics/skills",
+      "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "path": "skills/skill-creator/scripts/aggregate_benchmark.py",
+      "url": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/skill-creator/scripts/aggregate_benchmark.py#L153",
+      "finding": "누락값과 지표 대체 경로",
+      "implementation_status": "미구현",
+      "current_evidence": null,
+      "remaining_or_exclusion": "null 보존은 결과 파일에 사용했으나 새 비교의 시간/토큰/품질 집계기는 구현하지 않음.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "M1",
+      "repository": "mattpocock/skills",
+      "commit": "49dd158d1076134a641b33efb035946536778336",
+      "path": "skills/engineering/domain-modeling/SKILL.md",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/domain-modeling/SKILL.md#L66",
+      "finding": "용어와 중요한 결정의 기록",
+      "implementation_status": "지침·형식 반영",
+      "current_evidence": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\candidate\\company-video-grammar-analyzer\\references\\design-and-patterns.md",
+        "sha256": "a97d4920a5eb5b6d5c94583ce3c9332eea7354c181ef0dd1b4a7bf5a79a25cf7"
+      },
+      "remaining_or_exclusion": "카테고리·ID·사용자 결정 기록. 공통 용어/별칭/개정 이력의 새 통합은 없음.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "E1",
+      "repository": "affaan-m/ECC",
+      "commit": "76aaa77df6adc5b889e689007bf99b9a4f74af34",
+      "path": "skills/continuous-learning-v2/SKILL.md",
+      "url": "https://github.com/affaan-m/ECC/blob/76aaa77df6adc5b889e689007bf99b9a4f74af34/skills/continuous-learning-v2/SKILL.md#L48",
+      "finding": "작은 규칙 후보·프로젝트 범위",
+      "implementation_status": "코드 일부 반영",
+      "current_evidence": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\candidate\\company-video-grammar-analyzer\\scripts\\pattern_library.py",
+        "sha256": "3225f967d86198e1571fb1801b3c1b01ae5022a7b70e9e2aacb19d3d2bcd0967"
+      },
+      "remaining_or_exclusion": "draft 등록 제한과 프로젝트 파일 축적만 구현. 실제 반복 사례에서 규칙 후보 자동 추출 없음.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "E2",
+      "repository": "affaan-m/ECC",
+      "commit": "76aaa77df6adc5b889e689007bf99b9a4f74af34",
+      "path": "skills/continuous-learning-v2/scripts/instinct-cli.py",
+      "url": "https://github.com/affaan-m/ECC/blob/76aaa77df6adc5b889e689007bf99b9a4f74af34/skills/continuous-learning-v2/scripts/instinct-cli.py#L128",
+      "finding": "점수·프로젝트 수 기반 승격 경로",
+      "implementation_status": "직접 이식 제외·평가 참고",
+      "current_evidence": null,
+      "remaining_or_exclusion": "점수·프로젝트 수만으로 회사 규칙을 자동 승인/전역 승격하는 경로는 의도적으로 제외.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "V1",
+      "repository": "vercel-labs/agent-skills",
+      "commit": "063bee94c3f4df8453406c830b0a7df0f2860278",
+      "path": "skills/react-best-practices/rules/async-defer-await.md",
+      "url": "https://github.com/vercel-labs/agent-skills/blob/063bee94c3f4df8453406c830b0a7df0f2860278/skills/react-best-practices/rules/async-defer-await.md#L4",
+      "finding": "조건·영향·예/반례를 묶은 규칙",
+      "implementation_status": "지침·형식 반영",
+      "current_evidence": {
+        "path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\candidate\\company-video-grammar-analyzer\\references\\pattern-composition.md",
+        "sha256": "265765d7f1ce80f5d379bc73ea3e6e2879c25cd6f5d23165384d372da423adf3"
+      },
+      "remaining_or_exclusion": "조건·반례·변형 기록 형식. 조건 검색·반례 시험으로 채택하는 실행 흐름은 없음.",
+      "behavioral_effect_proven": false
+    },
+    {
+      "id": "V2",
+      "repository": "vercel-labs/agent-skills",
+      "commit": "063bee94c3f4df8453406c830b0a7df0f2860278",
+      "path": "packages/react-best-practices-build/src/validate.ts",
+      "url": "https://github.com/vercel-labs/agent-skills/blob/063bee94c3f4df8453406c830b0a7df0f2860278/packages/react-best-practices-build/src/validate.ts#L55",
+      "finding": "문서 요구와 검사 조건의 차이",
+      "implementation_status": "직접 이식 제외·평가 참고",
+      "current_evidence": null,
+      "remaining_or_exclusion": "원본 검사 조건의 한계 참고. 원본 검증기를 그대로 가져오지 않음.",
+      "behavioral_effect_proven": false
+    }
+  ],
+  "prior_repository_scope": [
+    {
+      "repository": "Leonxlnx/taste-skill",
+      "reviewed_file_count": 33,
+      "source_review_status": "downloaded_for_review",
+      "new_candidate_adoption_status": "이번 감사에서 기존 Phase 00 구현 상태를 재판정하지 않음; 기존 소스 검토의 채택/변형/보류와 분리해 후속 연결 필요"
+    },
+    {
+      "repository": "anthropics/skills",
+      "reviewed_file_count": 19,
+      "source_review_status": "downloaded_for_review",
+      "new_candidate_adoption_status": "이번 감사에서 기존 Phase 00 구현 상태를 재판정하지 않음; 기존 소스 검토의 채택/변형/보류와 분리해 후속 연결 필요"
+    },
+    {
+      "repository": "google-labs-code/stitch-skills",
+      "reviewed_file_count": 12,
+      "source_review_status": "downloaded_for_review",
+      "new_candidate_adoption_status": "이번 감사에서 기존 Phase 00 구현 상태를 재판정하지 않음; 기존 소스 검토의 채택/변형/보류와 분리해 후속 연결 필요"
+    },
+    {
+      "repository": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "reviewed_file_count": 174,
+      "source_review_status": "downloaded_for_review",
+      "new_candidate_adoption_status": "이번 감사에서 기존 Phase 00 구현 상태를 재판정하지 않음; 기존 소스 검토의 채택/변형/보류와 분리해 후속 연결 필요"
+    },
+    {
+      "repository": "bsisduck/video-analyzer-skill",
+      "reviewed_file_count": 9,
+      "source_review_status": "downloaded_for_review",
+      "new_candidate_adoption_status": "이번 감사에서 기존 Phase 00 구현 상태를 재판정하지 않음; 기존 소스 검토의 채택/변형/보류와 분리해 후속 연결 필요"
+    },
+    {
+      "repository": "stevederico/video-understanding",
+      "reviewed_file_count": 4,
+      "source_review_status": "downloaded_for_review",
+      "new_candidate_adoption_status": "이번 감사에서 기존 Phase 00 구현 상태를 재판정하지 않음; 기존 소스 검토의 채택/변형/보류와 분리해 후속 연결 필요"
+    },
+    {
+      "repository": "fabriqaai/ffmpeg-analyse-video-skill",
+      "reviewed_file_count": 2,
+      "source_review_status": "downloaded_for_review",
+      "new_candidate_adoption_status": "이번 감사에서 기존 Phase 00 구현 상태를 재판정하지 않음; 기존 소스 검토의 채택/변형/보류와 분리해 후속 연결 필요"
+    },
+    {
+      "repository": "mrzhangguoguo/gemini-video-analysis-skill",
+      "reviewed_file_count": 3,
+      "source_review_status": "downloaded_for_review",
+      "new_candidate_adoption_status": "이번 감사에서 기존 Phase 00 구현 상태를 재판정하지 않음; 기존 소스 검토의 채택/변형/보류와 분리해 후속 연결 필요"
+    },
+    {
+      "repository": "remotion-dev/skills",
+      "reviewed_file_count": 117,
+      "source_review_status": "downloaded_for_review",
+      "new_candidate_adoption_status": "이번 감사에서 기존 Phase 00 구현 상태를 재판정하지 않음; 기존 소스 검토의 채택/변형/보류와 분리해 후속 연결 필요"
+    },
+    {
+      "repository": "vercel-labs/agent-skills",
+      "reviewed_file_count": 2,
+      "source_review_status": "downloaded_for_review",
+      "new_candidate_adoption_status": "이번 감사에서 기존 Phase 00 구현 상태를 재판정하지 않음; 기존 소스 검토의 채택/변형/보류와 분리해 후속 연결 필요"
+    },
+    {
+      "repository": "Financial-Times/chart-doctor",
+      "reviewed_file_count": 4,
+      "source_review_status": "downloaded_for_review",
+      "new_candidate_adoption_status": "이번 감사에서 기존 Phase 00 구현 상태를 재판정하지 않음; 기존 소스 검토의 채택/변형/보류와 분리해 후속 연결 필요"
+    }
+  ]
+}

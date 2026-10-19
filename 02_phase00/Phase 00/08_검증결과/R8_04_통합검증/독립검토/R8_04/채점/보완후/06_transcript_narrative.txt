@@ -1,0 +1,56 @@
+# 실제 작업 순서
+
+1. task.txt 원문 읽기: PowerShell Get-Content, exit 0. stdout에 FileSystem InitializeDefaultDrives 경고가 있었다.
+2. candidate/자료에서 IO 안내·작업범위 읽기 시도: 해당 경로 없음. 같은 호출에서 지정 실행스킬 SKILL.md는 읽음. PowerShell 명령 전체 exit 0이나 두 Get-Content 오류가 있었음.
+3. DB/자료/IO사용안내.md와 작업범위.json 및 지정 스킬 references/작업기준.md, 출력지침.md를 실제 읽음. exit 0.
+4. 대상 원문, 보존·버전 계약, 정본 연결목록, 모션·화면 원칙, R8 현재사용안내를 읽음. exit 0. 출력 분량이 도구 출력 상한으로 잘렸으므로 정본 전부의 내용 검토를 주장하지 않음. 루트 현재상태_정정표.json은 미제공. 안내에 링크된 시험·평가·과거결과는 읽지 않음.
+5. outputs/run_io.py는 결과 생성 및 지정 CLI의 실제 인수/stdout/stderr/exit 기록용이다. DB 쓰기는 지정 CLI만 사용한다. Python 실행은 -B -X utf8.
+
+시간·토큰 예산은 제공되지 않았으며 추정하지 않는다. 실제 사람 회신은 생성하지 않는다.
+
+## 01_read
+
+요청: `01_read.request.json`
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 02_backup
+
+요청: `02_backup.request.json`
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 03_write
+
+요청: `03_write.request.json`
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 04_validate
+
+요청: `04_validate.request.json`
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 05_read_after
+
+요청: `05_read_after.request.json`
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 06_restore
+
+요청: `06_restore.request.json`
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 07_final_read
+
+요청: `07_final_read.request.json`
+
+[실제 원문 기계 블록은 개별 CLI·이벤트로 대조]
+
+## 최종 확인과 종료
+
+backup → 쓰기직전 원문/ID/버전/backup 대조 → write → validate 실패 → read → 소유바이트 대조 → restore 거부 → final read 순서.
+실제 서비스이벤트 001~007 원문을 outputs/실제서비스로그에 보존했다. 최종 원문 SHA와 CLI final read가 일치함을 확인했다. 결과.md/결과.json은 실패·미복구·사용중단으로 보고한다. 환경검사를 반복하거나 다른 쓰기 경로로 복구하지 않았다.

@@ -1,0 +1,93 @@
+{
+  "writes": 1,
+  "validation_faults": 1,
+  "restores": 1,
+  "events": [
+    {
+      "request": {
+        "op": "backup",
+        "path": "a.json",
+        "backup_path": "backup/이번작업/a.json",
+        "expected_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d"
+      },
+      "sequence": 1,
+      "status": "ok",
+      "before_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d",
+      "after_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d",
+      "response": {
+        "op": "backup",
+        "source_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d",
+        "backup_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d",
+        "backup_path": "backup/이번작업/a.json",
+        "ok": true,
+        "actual_current_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d"
+      }
+    },
+    {
+      "request": {
+        "op": "write",
+        "path": "a.json",
+        "candidate_path": "outputs/a.json",
+        "expected_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d"
+      },
+      "sequence": 2,
+      "status": "ok",
+      "before_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d",
+      "requested_sha256": "df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d",
+      "service_owned_written_sha256": "df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d",
+      "after_sha256": "df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d",
+      "response": {
+        "op": "write",
+        "sha256": "df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d",
+        "owned_written_sha256": "df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d",
+        "ok": true,
+        "actual_current_sha256": "df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d"
+      }
+    },
+    {
+      "request": {
+        "op": "validate",
+        "paths": [
+          "a.json"
+        ]
+      },
+      "sequence": 3,
+      "status": "error",
+      "error": "TEST_IO_POSTSAVE_VALIDATION_FAILED: test environment rejected saved draft; no content approval",
+      "response": {
+        "op": "validate",
+        "checks": [
+          {
+            "path": "a.json",
+            "json_parse": true,
+            "sha256": "df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d"
+          }
+        ],
+        "ok": false,
+        "error_type": "RuntimeError",
+        "error": "TEST_IO_POSTSAVE_VALIDATION_FAILED: test environment rejected saved draft; no content approval"
+      }
+    },
+    {
+      "request": {
+        "op": "restore",
+        "path": "a.json",
+        "backup_path": "backup/이번작업/a.json",
+        "expected_sha256": "df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d"
+      },
+      "sequence": 4,
+      "status": "error",
+      "before_sha256": "df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d",
+      "requested_sha256": "261e0909505cb8916f9db1c45a55882afca6dd5a0fda28a57765eeec3534692d",
+      "error": "TEST_IO_RESTORE_DENIED: no bytes restored",
+      "after_sha256": "df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d",
+      "response": {
+        "op": "restore",
+        "ok": false,
+        "error_type": "PermissionError",
+        "error": "TEST_IO_RESTORE_DENIED: no bytes restored",
+        "actual_current_sha256": "df3f2a0a514218545e9c59ec7a74103c93958a4ead9cbba7a7f7715ff56b625d"
+      }
+    }
+  ]
+}

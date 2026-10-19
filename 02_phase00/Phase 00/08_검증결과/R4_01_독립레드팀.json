@@ -1,0 +1,98 @@
+{
+  "version": "0.1.0",
+  "date": "2026-10-15",
+  "reviewer": "foundation_redteam",
+  "review_authority": "독립 에이전트의 기술 검수. 사용자/회사 승인 아님.",
+  "current_candidate_recheck_passed": true,
+  "built_in_tests": {
+    "passed": 75,
+    "count": 75,
+    "matches_saved_result": true
+  },
+  "independent_memory_probes": {
+    "passed": 20,
+    "count": 20,
+    "runtime_exceptions": 0,
+    "reporting_mode": "독립 검토자가 읽기 전용으로 실행하고 메시지로 보고. 개별 입력 전체 원문은 별도 저장하지 않았으므로 원문 보존된 재실행 시험은 내장75건을 이용."
+  },
+  "confirmed_checker_sha256": "52834649975027af2097becf61c2fb10034b42e4dda3a3f2fbb68e255bd90e69",
+  "confirmed_result_sha256": "bfd1a72e56b06cd824509a45571bee07b875952bb4547f759fb6c8baafa4a728",
+  "findings_before_correction": [
+    {
+      "severity": "P1",
+      "finding": "duration=0에 unmapped/unassigned 프레임 허용",
+      "correction": "프레임 존재 자체 거부",
+      "recheck": "fixed"
+    },
+    {
+      "severity": "P1",
+      "finding": "frame_count=0에 ordinal=null 프레임 허용",
+      "correction": "프레임 존재 자체 거부",
+      "recheck": "fixed"
+    },
+    {
+      "severity": "P1",
+      "finding": "같은 asset/stream 시간축ID만 다르게 상충duration/origin 허용",
+      "correction": "자산 버전의 스트림당 단일 시간축 계약",
+      "recheck": "fixed"
+    },
+    {
+      "severity": "P1",
+      "finding": "PTS 문자열 종단 개행 허용",
+      "correction": "정규 정수 문자열의 엄격한 종단",
+      "recheck": "fixed"
+    },
+    {
+      "severity": "P1",
+      "finding": "동일 ordinal 다른 시각 및 증가 ordinal의 시각 역전 허용",
+      "correction": "original_pts/mapped 프레임 내부 일관성 검사",
+      "recheck": "fixed"
+    },
+    {
+      "severity": "P2",
+      "finding": "unknown 자식과 instant 부모 허용 정책 불명확",
+      "correction": "instant 부모 항상 거부",
+      "recheck": "fixed"
+    }
+  ],
+  "self_review_followup_confirmed": [
+    "AV_NOPTS_VALUE 거부",
+    "instant 오차가 제외 끝점과 같을 때 미해결"
+  ],
+  "positive_controls_confirmed": [
+    "정확한 1/3초",
+    "동치 time_base 분수",
+    "다른 ordinal의 동일 PTS",
+    "같은 ordinal의 같은 PTS 공유",
+    "유효 음수 PTS",
+    "int64 미정 sentinel 이웃 및 상한 이웃"
+  ],
+  "currently_found_blocking_defects": 0,
+  "verdict": "R4-1 문서 및 합성 입력 형식·의미 검수 범위 한정 완료 타당",
+  "not_completed": [
+    "R4-2 근거ID의 대상/버전/실재 확인",
+    "R4-3 좌표/변환",
+    "R4-4 기존DB 통합·기존시간누락4건",
+    "01-A 전체 인덱스/프레임 추출 정확성",
+    "회사 승인"
+  ],
+  "reviewer_final_report": "R4-1 독립 시간 계약은 한정 완료로 판정할 수 있습니다. 현재 발견한 차단결함은 없습니다. 내장75/75·독자20/20·예외0. 완료 범위는 시간 계약 문서와 합성 입력의 형식·의미 검사입니다. 기존 검증기의 시간 누락4건도 통합 전까지 남아 있습니다. 파일 수정·실제 영상 분석·회사 승인 검증은 하지 않았습니다.",
+  "reviewed_artifacts": [
+    {
+      "path": "04_기록규격/시간프레임_스키마.json",
+      "sha256": "aa440e4e69ed9287c25ba51f0b8051bc92da7162af553b2535d381b7ca0a6efb"
+    },
+    {
+      "path": "04_기록규격/02_시간과프레임_기록규격.md",
+      "sha256": "a2e65ce237fee6c4e1cc3bcd381f55a98400fc5c907ae4f8d62f566eaa0b827e"
+    },
+    {
+      "path": "07_실행도구/시간프레임_규격검사.py",
+      "sha256": "52834649975027af2097becf61c2fb10034b42e4dda3a3f2fbb68e255bd90e69"
+    },
+    {
+      "path": "07_실행도구/시간프레임_규격시험.py",
+      "sha256": "a0876e121be38b5bc2fc6c3a49f41e7e8b3e725e7bdc0f5dbc3f7a3913284682"
+    }
+  ]
+}

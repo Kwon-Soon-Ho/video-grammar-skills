@@ -1,0 +1,1524 @@
+{
+  "samples": {
+    "sample-A": {
+      "atom_results": [
+        {
+          "atom_id": "H01-C01",
+          "tier": "core",
+          "result": "correct",
+          "evidence": "배경의 초반 형성과 이후 유지 기록; A background.events, B bg.events; reference C01"
+        },
+        {
+          "atom_id": "H01-C02",
+          "tier": "core",
+          "result": "correct",
+          "evidence": "V부터 of까지 좌→우 순차; A title, B headline; reference C02"
+        },
+        {
+          "atom_id": "H01-C03",
+          "tier": "core",
+          "result": "correct",
+          "evidence": "완성 문구 Value of; A title, B headline; reference C03"
+        },
+        {
+          "atom_id": "H01-C04",
+          "tier": "core",
+          "result": "correct",
+          "evidence": "우측 흰 윗획부터 TOVA 단계 완성; A logo, B logo/개별 글자; reference C04"
+        },
+        {
+          "atom_id": "H01-C05",
+          "tier": "core",
+          "result": "correct",
+          "evidence": "완성 후 회청색 약화 및 후반 가림; A title events2/3, B headline events2/3; reference C05"
+        },
+        {
+          "atom_id": "H01-C06",
+          "tier": "core",
+          "result": "correct",
+          "evidence": "로고 뒤 두 줄 설명 노출 및 밝아짐; A description, B definition; reference C06"
+        },
+        {
+          "atom_id": "H01-C07",
+          "tier": "core",
+          "result": "correct",
+          "evidence": "우상단 사선 조각에서 큰 지도 T가 좌측으로 점유 확장. 기준의 좌하 방향 점유와 부합하며 별도 수직 이동 단정은 요구하지 않음; reference C07"
+        },
+        {
+          "atom_id": "H01-C08",
+          "tier": "core",
+          "result": "correct",
+          "evidence": "Value of 일부 가림, 작은 로고/설명 앞 유지; A map_T/logo/title, B map_t/definition; reference C08"
+        },
+        {
+          "atom_id": "H01-D01",
+          "tier": "detail",
+          "result": "correct",
+          "evidence": "어두운 말린 면과 밝은 문자 면을 구별; A title, B headline; reference D01"
+        },
+        {
+          "atom_id": "H01-D02",
+          "tier": "detail",
+          "result": "correct",
+          "evidence": "O 안과 A 오른쪽 노란 사선; A logo, B logo_accents; reference D02"
+        },
+        {
+          "atom_id": "H01-D03",
+          "tier": "detail",
+          "result": "correct",
+          "evidence": "TOtal Vehicle Assignment 판독; A tagline, B tagline; reference D03"
+        },
+        {
+          "atom_id": "H01-D04",
+          "tier": "detail",
+          "result": "correct",
+          "evidence": "TO/V/A 노랑, 나머지 흰색; A/B tagline; reference D04"
+        },
+        {
+          "atom_id": "H01-D05",
+          "tier": "detail",
+          "result": "correct",
+          "evidence": "교통수단 열거와 통합 분석 프로그램 전체 문구; A description, B definition.text_lines; reference D05"
+        },
+        {
+          "atom_id": "H01-D06",
+          "tier": "detail",
+          "result": "correct",
+          "evidence": "둘째 줄 핵심구절 노란 강조; A description, B definition; reference D06"
+        },
+        {
+          "atom_id": "H01-D07",
+          "tier": "detail",
+          "result": "correct",
+          "evidence": "큰 T 내부 흐림→선명 도로망; A map_T, B map_t; reference D07"
+        },
+        {
+          "atom_id": "H01-D08",
+          "tier": "detail",
+          "result": "correct",
+          "evidence": "첫 줄 뒤 둘째 줄 한국형→프로그램→입니다까지; A description, B definition; reference D08"
+        }
+      ],
+      "claims": [
+        {
+          "id": "A-001",
+          "claim": "남색 배경이다",
+          "supported": true,
+          "evidence": "reference C01"
+        },
+        {
+          "id": "A-002",
+          "claim": "청록 사선 띠가 있다",
+          "supported": true,
+          "evidence": "reference C01"
+        },
+        {
+          "id": "A-003",
+          "claim": "초반 띠의 가시 위치가 변한다",
+          "supported": true,
+          "evidence": "reference C01"
+        },
+        {
+          "id": "A-004",
+          "claim": "초반 배경의 밝기/흐린 광택이 변한다",
+          "supported": true,
+          "evidence": "reference C01"
+        },
+        {
+          "id": "A-005",
+          "claim": "형성 후 큰 사선 구성이 유지된다",
+          "supported": true,
+          "evidence": "reference C01"
+        },
+        {
+          "id": "A-006",
+          "claim": "Value of는 왼쪽 하단에 있다",
+          "supported": true,
+          "evidence": "A 009/B 014,023"
+        },
+        {
+          "id": "A-007",
+          "claim": "완성 제목 문구는 Value of이다",
+          "supported": true,
+          "evidence": "reference C03"
+        },
+        {
+          "id": "A-008",
+          "claim": "제목은 흰 밝은 면으로 나타난다",
+          "supported": true,
+          "evidence": "reference D01; A023/B028"
+        },
+        {
+          "id": "A-009",
+          "claim": "제목은 V부터 드러난다",
+          "supported": true,
+          "evidence": "reference C02"
+        },
+        {
+          "id": "A-010",
+          "claim": "제목은 오른쪽 of로 진행한다",
+          "supported": true,
+          "evidence": "reference C02"
+        },
+        {
+          "id": "A-011",
+          "claim": "제목 등장에는 휘어진 어두운 면이 보인다",
+          "supported": true,
+          "evidence": "reference D01; A023/B025"
+        },
+        {
+          "id": "A-012",
+          "claim": "제목 등장에는 밝은 앞면이 보인다",
+          "supported": true,
+          "evidence": "reference D01; A023/B025"
+        },
+        {
+          "id": "A-013",
+          "claim": "제목 완성 뒤 밝기가 낮아진다",
+          "supported": true,
+          "evidence": "reference C05"
+        },
+        {
+          "id": "A-014",
+          "claim": "낮은 대비의 제목이 후반까지 남는다",
+          "supported": true,
+          "evidence": "reference C05; A009/B023"
+        },
+        {
+          "id": "A-015",
+          "claim": "TOVA 로고는 제목 오른쪽에 있다",
+          "supported": true,
+          "evidence": "reference C04; A009/B023"
+        },
+        {
+          "id": "A-016",
+          "claim": "TOVA 로고는 흰색이다",
+          "supported": true,
+          "evidence": "reference C04; A032/B032"
+        },
+        {
+          "id": "A-017",
+          "claim": "로고는 가로 획 조각에서 완성된다",
+          "supported": true,
+          "evidence": "reference C04; A029,032/B030,032"
+        },
+        {
+          "id": "A-018",
+          "claim": "로고 글자는 T→O→V→A 순서로 나타난다",
+          "supported": true,
+          "evidence": "A029,031,032/B030,032; reference C04"
+        },
+        {
+          "id": "A-019",
+          "claim": "로고의 가시 윗경계가 위로 올라온다",
+          "supported": true,
+          "evidence": "A029,031,032/B030,032"
+        },
+        {
+          "id": "A-020",
+          "claim": "O 내부에 노란 사선이 있다",
+          "supported": true,
+          "evidence": "reference D02; A032/B032"
+        },
+        {
+          "id": "A-021",
+          "claim": "A 오른쪽에 노란 사선이 있다",
+          "supported": true,
+          "evidence": "reference D02; A032,009/B037"
+        },
+        {
+          "id": "A-022",
+          "claim": "작은 영문 풀네임은 로고 오른쪽 아래에 있다",
+          "supported": true,
+          "evidence": "A033/B037"
+        },
+        {
+          "id": "A-023",
+          "claim": "영문 풀네임은 TOtal Vehicle Assignment이다",
+          "supported": true,
+          "evidence": "reference D03; A033/B037"
+        },
+        {
+          "id": "A-024",
+          "claim": "영문 TO는 노란색이다",
+          "supported": true,
+          "evidence": "reference D04; A033/B037"
+        },
+        {
+          "id": "A-025",
+          "claim": "영문 V는 노란색이다",
+          "supported": true,
+          "evidence": "reference D04; A033/B037"
+        },
+        {
+          "id": "A-026",
+          "claim": "영문 A는 노란색이다",
+          "supported": true,
+          "evidence": "reference D04; A033/B037"
+        },
+        {
+          "id": "A-027",
+          "claim": "영문 나머지 문자는 흰색이다",
+          "supported": true,
+          "evidence": "reference D04; A033/B037"
+        },
+        {
+          "id": "A-028",
+          "claim": "한국어 설명은 로고 아래에 있다",
+          "supported": true,
+          "evidence": "reference C06; A033/B037"
+        },
+        {
+          "id": "A-029",
+          "claim": "한국어 설명은 두 줄이다",
+          "supported": true,
+          "evidence": "reference C06; A033/B037"
+        },
+        {
+          "id": "A-030",
+          "claim": "한국어 설명은 부분 문구에서 완성 문구로 드러난다",
+          "supported": true,
+          "evidence": "reference C06; A039,040,042,033/B050,051,037"
+        },
+        {
+          "id": "A-031",
+          "claim": "한국어 설명은 노출 중 밝아진다",
+          "supported": true,
+          "evidence": "reference C06; A039,033/B050,037"
+        },
+        {
+          "id": "A-032",
+          "claim": "설명 첫 줄이 둘째 줄보다 먼저 나타난다",
+          "supported": true,
+          "evidence": "reference D08; A039,040/B050"
+        },
+        {
+          "id": "A-033",
+          "claim": "설명 둘째 줄은 좌→우로 길어진다",
+          "supported": true,
+          "evidence": "reference D08; A040,042,033/B050,051,037"
+        },
+        {
+          "id": "A-034",
+          "claim": "설명에는 도로, 버스, 도시철도가 열거된다",
+          "supported": true,
+          "evidence": "reference D05; A033/B037"
+        },
+        {
+          "id": "A-035",
+          "claim": "설명에는 지역간 철도, 항공, 해운이 열거된다",
+          "supported": true,
+          "evidence": "reference D05; A033/B037"
+        },
+        {
+          "id": "A-036",
+          "claim": "설명은 여객교통수요의 통합 분석을 말한다",
+          "supported": true,
+          "evidence": "reference D05; A033/B037"
+        },
+        {
+          "id": "A-037",
+          "claim": "설명 핵심 문구는 한국형 통합 교통 수요분석 프로그램이다",
+          "supported": true,
+          "evidence": "reference D05; A033/B037"
+        },
+        {
+          "id": "A-038",
+          "claim": "핵심 구절은 노랑이다",
+          "supported": true,
+          "evidence": "reference D06; A033/B037"
+        },
+        {
+          "id": "A-039",
+          "claim": "핵심 구절은 굵게 보인다",
+          "supported": true,
+          "evidence": "A033/B037"
+        },
+        {
+          "id": "A-040",
+          "claim": "분석하는/입니다 부분은 회백색이다",
+          "supported": true,
+          "evidence": "A033/B037"
+        },
+        {
+          "id": "A-041",
+          "claim": "설명은 입니다.로 끝난다",
+          "supported": true,
+          "evidence": "reference D08; A033/B037"
+        },
+        {
+          "id": "A-042",
+          "claim": "큰 지도 T는 우상단 흰 사선 면으로 시작한다",
+          "supported": true,
+          "evidence": "reference C07; A006/B014"
+        },
+        {
+          "id": "A-043",
+          "claim": "큰 지도 T는 왼쪽으로 점유를 넓힌다",
+          "supported": true,
+          "evidence": "reference C07; A006,016,009/B014,022,023"
+        },
+        {
+          "id": "A-044",
+          "claim": "큰 T 형태가 나타난다",
+          "supported": true,
+          "evidence": "reference C07; A009/B023"
+        },
+        {
+          "id": "A-045",
+          "claim": "T 안에는 회색 도로망이 있다",
+          "supported": true,
+          "evidence": "reference D07; A009/B023"
+        },
+        {
+          "id": "A-046",
+          "claim": "T 내부 지도는 처음 흐리다",
+          "supported": true,
+          "evidence": "reference D07; A006/B014"
+        },
+        {
+          "id": "A-047",
+          "claim": "T 내부 지도는 나중에 선명해진다",
+          "supported": true,
+          "evidence": "reference D07; A009/B023"
+        },
+        {
+          "id": "A-048",
+          "claim": "T의 아래쪽은 어두운 그라데이션이다",
+          "supported": true,
+          "evidence": "A009/B023"
+        },
+        {
+          "id": "A-049",
+          "claim": "큰 T가 Value of 오른쪽 일부를 가린다",
+          "supported": true,
+          "evidence": "reference C08; A009/B023"
+        },
+        {
+          "id": "A-050",
+          "claim": "가려진 뒤에도 Value of 왼쪽 일부는 남는다",
+          "supported": true,
+          "evidence": "reference C08; A009/B023"
+        },
+        {
+          "id": "A-051",
+          "claim": "작은 TOVA 로고는 지도보다 앞에 보인다",
+          "supported": true,
+          "evidence": "reference C08; A009/B023"
+        },
+        {
+          "id": "A-052",
+          "claim": "한국어 설명은 지도보다 앞에 보인다",
+          "supported": true,
+          "evidence": "reference C08; A009/B023"
+        },
+        {
+          "id": "A-053",
+          "claim": "지도 진입 동안 풀네임이 유지된다",
+          "supported": true,
+          "evidence": "A009/B023"
+        },
+        {
+          "id": "sample-A-54",
+          "claim": "상부 파랑 띠 끝 하향",
+          "supported": true,
+          "evidence": "A002,003,004,005"
+        },
+        {
+          "id": "sample-A-55",
+          "claim": "하부 청록 띠 시작 상향",
+          "supported": true,
+          "evidence": "A002,003,004,005"
+        },
+        {
+          "id": "sample-A-56",
+          "claim": "우상단 넓은 청록 광택",
+          "supported": true,
+          "evidence": "A004,005,009"
+        },
+        {
+          "id": "sample-A-57",
+          "claim": "1.4초 V 일부",
+          "supported": null,
+          "evidence": "A021 미열람; reference C02는 순서만 확인"
+        },
+        {
+          "id": "sample-A-58",
+          "claim": "1.8초 Va 어두운 변형",
+          "supported": null,
+          "evidence": "A022 미열람"
+        },
+        {
+          "id": "sample-A-59",
+          "claim": "2.2초 Va와 뒤따르는 문자",
+          "supported": true,
+          "evidence": "A023"
+        },
+        {
+          "id": "sample-A-60",
+          "claim": "2.4초 Valu",
+          "supported": null,
+          "evidence": "A024 미열람"
+        },
+        {
+          "id": "sample-A-61",
+          "claim": "2.6초 Value",
+          "supported": null,
+          "evidence": "A025 미열람"
+        },
+        {
+          "id": "sample-A-62",
+          "claim": "2.8초 of까지",
+          "supported": null,
+          "evidence": "A026 미열람"
+        },
+        {
+          "id": "sample-A-63",
+          "claim": "3.0~3.2초 정면 완성",
+          "supported": true,
+          "evidence": "reference C03"
+        },
+        {
+          "id": "sample-A-64",
+          "claim": "3.6초 T/O 일부와 작은 후속 조각",
+          "supported": null,
+          "evidence": "A030 미열람"
+        },
+        {
+          "id": "sample-A-65",
+          "claim": "T 상단 y 3.4=1482px",
+          "supported": null,
+          "evidence": "이미지 정밀 좌표 재측정 안 함"
+        },
+        {
+          "id": "sample-A-66",
+          "claim": "T 상단 y 3.6=1320px",
+          "supported": null,
+          "evidence": "이미지 정밀 좌표 재측정 안 함"
+        },
+        {
+          "id": "sample-A-67",
+          "claim": "T 상단 y 3.8=1286px",
+          "supported": null,
+          "evidence": "이미지 정밀 좌표 재측정 안 함"
+        },
+        {
+          "id": "sample-A-68",
+          "claim": "T 상단 y 4.0=1286px",
+          "supported": null,
+          "evidence": "이미지 정밀 좌표 재측정 안 함"
+        },
+        {
+          "id": "sample-A-69",
+          "claim": "T 상향 후반 정성 감속",
+          "supported": true,
+          "evidence": "A029,031,032에서 큰 상승 후 정착"
+        },
+        {
+          "id": "sample-A-70",
+          "claim": "풀네임은 우측으로 밀려 나온다",
+          "supported": null,
+          "evidence": "A034~038 연속 대조 미완료"
+        },
+        {
+          "id": "sample-A-71",
+          "claim": "4.167초 풀네임 없음",
+          "supported": null,
+          "evidence": "A034 미열람"
+        },
+        {
+          "id": "sample-A-72",
+          "claim": "4.333초 nt",
+          "supported": null,
+          "evidence": "A035 미열람"
+        },
+        {
+          "id": "sample-A-73",
+          "claim": "4.4초 nment",
+          "supported": null,
+          "evidence": "A036 미열람"
+        },
+        {
+          "id": "sample-A-74",
+          "claim": "5.333초 첫 줄 희미하며 끝 미완성",
+          "supported": true,
+          "evidence": "A039"
+        },
+        {
+          "id": "sample-A-75",
+          "claim": "5.667초 한국형 통합까지",
+          "supported": true,
+          "evidence": "A040"
+        },
+        {
+          "id": "sample-A-76",
+          "claim": "5.867초 수요분석까지",
+          "supported": null,
+          "evidence": "A041 미열람"
+        },
+        {
+          "id": "sample-A-77",
+          "claim": "6.0초 프로그램까지",
+          "supported": true,
+          "evidence": "A042"
+        },
+        {
+          "id": "sample-A-78",
+          "claim": "6.4초 입니다까지",
+          "supported": true,
+          "evidence": "A033"
+        },
+        {
+          "id": "sample-A-79",
+          "claim": "지도 T 수평 아래 경계 높이 유지",
+          "supported": true,
+          "evidence": "A006,016,009"
+        },
+        {
+          "id": "sample-A-80",
+          "claim": "6.733초 우상단 사선 조각",
+          "supported": null,
+          "evidence": "A014 미열람"
+        },
+        {
+          "id": "sample-A-81",
+          "claim": "지도 T 후반 감속",
+          "supported": true,
+          "evidence": "A006→016→009 변화가 후반에 감소하는 정성 관측; 정확한 경계값은 별도 미검수"
+        },
+        {
+          "id": "sample-A-82",
+          "claim": "7.0초 지도 경계 x2558",
+          "supported": null,
+          "evidence": "정밀 측정 미검수"
+        },
+        {
+          "id": "sample-A-83",
+          "claim": "7.1초 지도 경계 x1876",
+          "supported": null,
+          "evidence": "정밀 측정 미검수"
+        },
+        {
+          "id": "sample-A-84",
+          "claim": "7.1667초 지도 경계 x1525",
+          "supported": null,
+          "evidence": "정밀 측정 미검수"
+        },
+        {
+          "id": "sample-A-85",
+          "claim": "7.3333초 지도 경계 x1114",
+          "supported": null,
+          "evidence": "정밀 측정 미검수"
+        },
+        {
+          "id": "sample-A-86",
+          "claim": "7.6초 지도 경계 x1035",
+          "supported": null,
+          "evidence": "정밀 측정 미검수"
+        },
+        {
+          "id": "sample-A-87",
+          "claim": "7.9333초 지도 경계 x1032",
+          "supported": null,
+          "evidence": "정밀 측정 미검수"
+        },
+        {
+          "id": "sample-A-88",
+          "claim": "지도 핀 없음",
+          "supported": null,
+          "evidence": "전체 구간 부재 검증 미완료"
+        },
+        {
+          "id": "sample-A-89",
+          "claim": "수치/통계 없음",
+          "supported": null,
+          "evidence": "전체 표본 부재 검증 미완료"
+        },
+        {
+          "id": "sample-A-90",
+          "claim": "커서/클릭/버튼/패널 조작 없음",
+          "supported": null,
+          "evidence": "여러 원자적 부재 주장을 모두 검증하지 못함; 분모 완결 아님"
+        }
+      ],
+      "missing_count": 0,
+      "wrong_count": 0,
+      "avoidable_abstention_count": 0,
+      "appropriate_unknowns": [
+        "정확한 AE 속성/키프레임/함수 및 Influence",
+        "Value of의 실제 3D 축과 합성 구현",
+        "지도 지명·출처",
+        "국문 밝기/노출 및 내부 지도 흐림의 정확한 이징",
+        "음성 미검수, 범위 밖 상태 제외"
+      ],
+      "critical_errors": [],
+      "metrics": {
+        "core_correct": 8,
+        "core_total": 8,
+        "detail_correct": 8,
+        "detail_total": 8,
+        "supported_asserted_claims": 65,
+        "total_asserted_claims": null,
+        "core_coverage": 1,
+        "detail_coverage": 1,
+        "asserted_claim_precision": null,
+        "avoidable_abstention_fraction": 0,
+        "enumerated_asserted_claims": 90,
+        "precision_denominator_complete": false,
+        "enumeration_note": "검토한 중복 제거 원자 주장 목록과 미검수 묶음. 모든 좌표/부재 주장을 완전히 원자화하지 못하여 전체 분모 null. JSON/Markdown 중복은 한 번만 취급."
+      },
+      "scope_incomplete": true,
+      "gates_passed": null,
+      "gate_details": {
+        "core": true,
+        "detail": true,
+        "precision": null,
+        "avoidable_unknown": true,
+        "critical_errors": null,
+        "validation_errors_zero": true
+      }
+    },
+    "sample-B": {
+      "atom_results": [
+        {
+          "atom_id": "H01-C01",
+          "tier": "core",
+          "result": "correct",
+          "evidence": "배경의 초반 형성과 이후 유지 기록; A background.events, B bg.events; reference C01"
+        },
+        {
+          "atom_id": "H01-C02",
+          "tier": "core",
+          "result": "correct",
+          "evidence": "V부터 of까지 좌→우 순차; A title, B headline; reference C02"
+        },
+        {
+          "atom_id": "H01-C03",
+          "tier": "core",
+          "result": "correct",
+          "evidence": "완성 문구 Value of; A title, B headline; reference C03"
+        },
+        {
+          "atom_id": "H01-C04",
+          "tier": "core",
+          "result": "correct",
+          "evidence": "우측 흰 윗획부터 TOVA 단계 완성; A logo, B logo/개별 글자; reference C04"
+        },
+        {
+          "atom_id": "H01-C05",
+          "tier": "core",
+          "result": "correct",
+          "evidence": "완성 후 회청색 약화 및 후반 가림; A title events2/3, B headline events2/3; reference C05"
+        },
+        {
+          "atom_id": "H01-C06",
+          "tier": "core",
+          "result": "correct",
+          "evidence": "로고 뒤 두 줄 설명 노출 및 밝아짐; A description, B definition; reference C06"
+        },
+        {
+          "atom_id": "H01-C07",
+          "tier": "core",
+          "result": "correct",
+          "evidence": "우상단 사선 조각에서 큰 지도 T가 좌측으로 점유 확장. 기준의 좌하 방향 점유와 부합하며 별도 수직 이동 단정은 요구하지 않음; reference C07"
+        },
+        {
+          "atom_id": "H01-C08",
+          "tier": "core",
+          "result": "correct",
+          "evidence": "Value of 일부 가림, 작은 로고/설명 앞 유지; A map_T/logo/title, B map_t/definition; reference C08"
+        },
+        {
+          "atom_id": "H01-D01",
+          "tier": "detail",
+          "result": "correct",
+          "evidence": "어두운 말린 면과 밝은 문자 면을 구별; A title, B headline; reference D01"
+        },
+        {
+          "atom_id": "H01-D02",
+          "tier": "detail",
+          "result": "correct",
+          "evidence": "O 안과 A 오른쪽 노란 사선; A logo, B logo_accents; reference D02"
+        },
+        {
+          "atom_id": "H01-D03",
+          "tier": "detail",
+          "result": "correct",
+          "evidence": "TOtal Vehicle Assignment 판독; A tagline, B tagline; reference D03"
+        },
+        {
+          "atom_id": "H01-D04",
+          "tier": "detail",
+          "result": "correct",
+          "evidence": "TO/V/A 노랑, 나머지 흰색; A/B tagline; reference D04"
+        },
+        {
+          "atom_id": "H01-D05",
+          "tier": "detail",
+          "result": "correct",
+          "evidence": "교통수단 열거와 통합 분석 프로그램 전체 문구; A description, B definition.text_lines; reference D05"
+        },
+        {
+          "atom_id": "H01-D06",
+          "tier": "detail",
+          "result": "correct",
+          "evidence": "둘째 줄 핵심구절 노란 강조; A description, B definition; reference D06"
+        },
+        {
+          "atom_id": "H01-D07",
+          "tier": "detail",
+          "result": "correct",
+          "evidence": "큰 T 내부 흐림→선명 도로망; A map_T, B map_t; reference D07"
+        },
+        {
+          "atom_id": "H01-D08",
+          "tier": "detail",
+          "result": "correct",
+          "evidence": "첫 줄 뒤 둘째 줄 한국형→프로그램→입니다까지; A description, B definition; reference D08"
+        }
+      ],
+      "claims": [
+        {
+          "id": "B-001",
+          "claim": "남색 배경이다",
+          "supported": true,
+          "evidence": "reference C01"
+        },
+        {
+          "id": "B-002",
+          "claim": "청록 사선 띠가 있다",
+          "supported": true,
+          "evidence": "reference C01"
+        },
+        {
+          "id": "B-003",
+          "claim": "초반 띠의 가시 위치가 변한다",
+          "supported": true,
+          "evidence": "reference C01"
+        },
+        {
+          "id": "B-004",
+          "claim": "초반 배경의 밝기/흐린 광택이 변한다",
+          "supported": true,
+          "evidence": "reference C01"
+        },
+        {
+          "id": "B-005",
+          "claim": "형성 후 큰 사선 구성이 유지된다",
+          "supported": true,
+          "evidence": "reference C01"
+        },
+        {
+          "id": "B-006",
+          "claim": "Value of는 왼쪽 하단에 있다",
+          "supported": true,
+          "evidence": "A 009/B 014,023"
+        },
+        {
+          "id": "B-007",
+          "claim": "완성 제목 문구는 Value of이다",
+          "supported": true,
+          "evidence": "reference C03"
+        },
+        {
+          "id": "B-008",
+          "claim": "제목은 흰 밝은 면으로 나타난다",
+          "supported": true,
+          "evidence": "reference D01; A023/B028"
+        },
+        {
+          "id": "B-009",
+          "claim": "제목은 V부터 드러난다",
+          "supported": true,
+          "evidence": "reference C02"
+        },
+        {
+          "id": "B-010",
+          "claim": "제목은 오른쪽 of로 진행한다",
+          "supported": true,
+          "evidence": "reference C02"
+        },
+        {
+          "id": "B-011",
+          "claim": "제목 등장에는 휘어진 어두운 면이 보인다",
+          "supported": true,
+          "evidence": "reference D01; A023/B025"
+        },
+        {
+          "id": "B-012",
+          "claim": "제목 등장에는 밝은 앞면이 보인다",
+          "supported": true,
+          "evidence": "reference D01; A023/B025"
+        },
+        {
+          "id": "B-013",
+          "claim": "제목 완성 뒤 밝기가 낮아진다",
+          "supported": true,
+          "evidence": "reference C05"
+        },
+        {
+          "id": "B-014",
+          "claim": "낮은 대비의 제목이 후반까지 남는다",
+          "supported": true,
+          "evidence": "reference C05; A009/B023"
+        },
+        {
+          "id": "B-015",
+          "claim": "TOVA 로고는 제목 오른쪽에 있다",
+          "supported": true,
+          "evidence": "reference C04; A009/B023"
+        },
+        {
+          "id": "B-016",
+          "claim": "TOVA 로고는 흰색이다",
+          "supported": true,
+          "evidence": "reference C04; A032/B032"
+        },
+        {
+          "id": "B-017",
+          "claim": "로고는 가로 획 조각에서 완성된다",
+          "supported": true,
+          "evidence": "reference C04; A029,032/B030,032"
+        },
+        {
+          "id": "B-018",
+          "claim": "로고 글자는 T→O→V→A 순서로 나타난다",
+          "supported": true,
+          "evidence": "A029,031,032/B030,032; reference C04"
+        },
+        {
+          "id": "B-019",
+          "claim": "로고의 가시 윗경계가 위로 올라온다",
+          "supported": true,
+          "evidence": "A029,031,032/B030,032"
+        },
+        {
+          "id": "B-020",
+          "claim": "O 내부에 노란 사선이 있다",
+          "supported": true,
+          "evidence": "reference D02; A032/B032"
+        },
+        {
+          "id": "B-021",
+          "claim": "A 오른쪽에 노란 사선이 있다",
+          "supported": true,
+          "evidence": "reference D02; A032,009/B037"
+        },
+        {
+          "id": "B-022",
+          "claim": "작은 영문 풀네임은 로고 오른쪽 아래에 있다",
+          "supported": true,
+          "evidence": "A033/B037"
+        },
+        {
+          "id": "B-023",
+          "claim": "영문 풀네임은 TOtal Vehicle Assignment이다",
+          "supported": true,
+          "evidence": "reference D03; A033/B037"
+        },
+        {
+          "id": "B-024",
+          "claim": "영문 TO는 노란색이다",
+          "supported": true,
+          "evidence": "reference D04; A033/B037"
+        },
+        {
+          "id": "B-025",
+          "claim": "영문 V는 노란색이다",
+          "supported": true,
+          "evidence": "reference D04; A033/B037"
+        },
+        {
+          "id": "B-026",
+          "claim": "영문 A는 노란색이다",
+          "supported": true,
+          "evidence": "reference D04; A033/B037"
+        },
+        {
+          "id": "B-027",
+          "claim": "영문 나머지 문자는 흰색이다",
+          "supported": true,
+          "evidence": "reference D04; A033/B037"
+        },
+        {
+          "id": "B-028",
+          "claim": "한국어 설명은 로고 아래에 있다",
+          "supported": true,
+          "evidence": "reference C06; A033/B037"
+        },
+        {
+          "id": "B-029",
+          "claim": "한국어 설명은 두 줄이다",
+          "supported": true,
+          "evidence": "reference C06; A033/B037"
+        },
+        {
+          "id": "B-030",
+          "claim": "한국어 설명은 부분 문구에서 완성 문구로 드러난다",
+          "supported": true,
+          "evidence": "reference C06; A039,040,042,033/B050,051,037"
+        },
+        {
+          "id": "B-031",
+          "claim": "한국어 설명은 노출 중 밝아진다",
+          "supported": true,
+          "evidence": "reference C06; A039,033/B050,037"
+        },
+        {
+          "id": "B-032",
+          "claim": "설명 첫 줄이 둘째 줄보다 먼저 나타난다",
+          "supported": true,
+          "evidence": "reference D08; A039,040/B050"
+        },
+        {
+          "id": "B-033",
+          "claim": "설명 둘째 줄은 좌→우로 길어진다",
+          "supported": true,
+          "evidence": "reference D08; A040,042,033/B050,051,037"
+        },
+        {
+          "id": "B-034",
+          "claim": "설명에는 도로, 버스, 도시철도가 열거된다",
+          "supported": true,
+          "evidence": "reference D05; A033/B037"
+        },
+        {
+          "id": "B-035",
+          "claim": "설명에는 지역간 철도, 항공, 해운이 열거된다",
+          "supported": true,
+          "evidence": "reference D05; A033/B037"
+        },
+        {
+          "id": "B-036",
+          "claim": "설명은 여객교통수요의 통합 분석을 말한다",
+          "supported": true,
+          "evidence": "reference D05; A033/B037"
+        },
+        {
+          "id": "B-037",
+          "claim": "설명 핵심 문구는 한국형 통합 교통 수요분석 프로그램이다",
+          "supported": true,
+          "evidence": "reference D05; A033/B037"
+        },
+        {
+          "id": "B-038",
+          "claim": "핵심 구절은 노랑이다",
+          "supported": true,
+          "evidence": "reference D06; A033/B037"
+        },
+        {
+          "id": "B-039",
+          "claim": "핵심 구절은 굵게 보인다",
+          "supported": true,
+          "evidence": "A033/B037"
+        },
+        {
+          "id": "B-040",
+          "claim": "분석하는/입니다 부분은 회백색이다",
+          "supported": true,
+          "evidence": "A033/B037"
+        },
+        {
+          "id": "B-041",
+          "claim": "설명은 입니다.로 끝난다",
+          "supported": true,
+          "evidence": "reference D08; A033/B037"
+        },
+        {
+          "id": "B-042",
+          "claim": "큰 지도 T는 우상단 흰 사선 면으로 시작한다",
+          "supported": true,
+          "evidence": "reference C07; A006/B014"
+        },
+        {
+          "id": "B-043",
+          "claim": "큰 지도 T는 왼쪽으로 점유를 넓힌다",
+          "supported": true,
+          "evidence": "reference C07; A006,016,009/B014,022,023"
+        },
+        {
+          "id": "B-044",
+          "claim": "큰 T 형태가 나타난다",
+          "supported": true,
+          "evidence": "reference C07; A009/B023"
+        },
+        {
+          "id": "B-045",
+          "claim": "T 안에는 회색 도로망이 있다",
+          "supported": true,
+          "evidence": "reference D07; A009/B023"
+        },
+        {
+          "id": "B-046",
+          "claim": "T 내부 지도는 처음 흐리다",
+          "supported": true,
+          "evidence": "reference D07; A006/B014"
+        },
+        {
+          "id": "B-047",
+          "claim": "T 내부 지도는 나중에 선명해진다",
+          "supported": true,
+          "evidence": "reference D07; A009/B023"
+        },
+        {
+          "id": "B-048",
+          "claim": "T의 아래쪽은 어두운 그라데이션이다",
+          "supported": true,
+          "evidence": "A009/B023"
+        },
+        {
+          "id": "B-049",
+          "claim": "큰 T가 Value of 오른쪽 일부를 가린다",
+          "supported": true,
+          "evidence": "reference C08; A009/B023"
+        },
+        {
+          "id": "B-050",
+          "claim": "가려진 뒤에도 Value of 왼쪽 일부는 남는다",
+          "supported": true,
+          "evidence": "reference C08; A009/B023"
+        },
+        {
+          "id": "B-051",
+          "claim": "작은 TOVA 로고는 지도보다 앞에 보인다",
+          "supported": true,
+          "evidence": "reference C08; A009/B023"
+        },
+        {
+          "id": "B-052",
+          "claim": "한국어 설명은 지도보다 앞에 보인다",
+          "supported": true,
+          "evidence": "reference C08; A009/B023"
+        },
+        {
+          "id": "B-053",
+          "claim": "지도 진입 동안 풀네임이 유지된다",
+          "supported": true,
+          "evidence": "A009/B023"
+        },
+        {
+          "id": "sample-B-54",
+          "claim": "상부 파랑 띠 경계 하향",
+          "supported": true,
+          "evidence": "reference C01, 관측 기록"
+        },
+        {
+          "id": "sample-B-55",
+          "claim": "하부 청록 띠 경계 상향",
+          "supported": true,
+          "evidence": "reference C01, 관측 기록"
+        },
+        {
+          "id": "sample-B-56",
+          "claim": "좌상단 청록 면 끝 하향",
+          "supported": null,
+          "evidence": "B001~003 미열람"
+        },
+        {
+          "id": "sample-B-57",
+          "claim": "1.2초 작은 꺾인 획",
+          "supported": null,
+          "evidence": "B020 미열람"
+        },
+        {
+          "id": "sample-B-58",
+          "claim": "1.4초 V 하부 조각",
+          "supported": null,
+          "evidence": "B024 미열람"
+        },
+        {
+          "id": "sample-B-59",
+          "claim": "1.8초 V/다음 글자의 어두운 면",
+          "supported": true,
+          "evidence": "B025"
+        },
+        {
+          "id": "sample-B-60",
+          "claim": "2.2초 Val 밝고 평평",
+          "supported": null,
+          "evidence": "B026 미열람"
+        },
+        {
+          "id": "sample-B-61",
+          "claim": "2.6초 Value 거의 펴짐",
+          "supported": null,
+          "evidence": "B027 미열람"
+        },
+        {
+          "id": "sample-B-62",
+          "claim": "3.0초 Value of 정면",
+          "supported": true,
+          "evidence": "B028"
+        },
+        {
+          "id": "sample-B-63",
+          "claim": "3.2초 위쪽 어두운 면 잔존",
+          "supported": null,
+          "evidence": "B004 미열람"
+        },
+        {
+          "id": "sample-B-64",
+          "claim": "3.5초 어두운 면 소실",
+          "supported": null,
+          "evidence": "B007 미열람"
+        },
+        {
+          "id": "sample-B-65",
+          "claim": "T 글자 상향 정성 감속",
+          "supported": true,
+          "evidence": "B030,032의 가시 상단 변화 및 reference C04"
+        },
+        {
+          "id": "sample-B-66",
+          "claim": "T 3.4초 y1482",
+          "supported": null,
+          "evidence": "정밀 좌표 검증 안 함"
+        },
+        {
+          "id": "sample-B-67",
+          "claim": "T 3.5초 y1388",
+          "supported": null,
+          "evidence": "정밀 좌표 검증 안 함"
+        },
+        {
+          "id": "sample-B-68",
+          "claim": "T 3.6초 y1320",
+          "supported": null,
+          "evidence": "정밀 좌표 검증 안 함"
+        },
+        {
+          "id": "sample-B-69",
+          "claim": "T 3.7초 y1293",
+          "supported": null,
+          "evidence": "정밀 좌표 검증 안 함"
+        },
+        {
+          "id": "sample-B-70",
+          "claim": "T 3.8초 y1286",
+          "supported": null,
+          "evidence": "정밀 좌표 검증 안 함"
+        },
+        {
+          "id": "sample-B-71",
+          "claim": "T 4.0초 y1286",
+          "supported": null,
+          "evidence": "정밀 좌표 검증 안 함"
+        },
+        {
+          "id": "sample-B-72",
+          "claim": "O가 T 뒤에 시작",
+          "supported": true,
+          "evidence": "reference C04"
+        },
+        {
+          "id": "sample-B-73",
+          "claim": "O는 열린 원형 외곽",
+          "supported": true,
+          "evidence": "B032"
+        },
+        {
+          "id": "sample-B-74",
+          "claim": "V에 두 팔이 보임",
+          "supported": true,
+          "evidence": "B032"
+        },
+        {
+          "id": "sample-B-75",
+          "claim": "A가 마지막으로 조립",
+          "supported": true,
+          "evidence": "reference C04"
+        },
+        {
+          "id": "sample-B-76",
+          "claim": "4.0초 A 아래 경계 부드러움",
+          "supported": null,
+          "evidence": "B033 미열람"
+        },
+        {
+          "id": "sample-B-77",
+          "claim": "4.3초 A 단단한 외곽 정착",
+          "supported": null,
+          "evidence": "B040 미열람"
+        },
+        {
+          "id": "sample-B-78",
+          "claim": "O 내부 노란 세 줄",
+          "supported": true,
+          "evidence": "B032"
+        },
+        {
+          "id": "sample-B-79",
+          "claim": "A 오른쪽 노란 세 줄",
+          "supported": true,
+          "evidence": "B037"
+        },
+        {
+          "id": "sample-B-80",
+          "claim": "O 악센트가 A 악센트보다 먼저",
+          "supported": true,
+          "evidence": "B032에서는 O 밝음/A 옅음; B037 완성"
+        },
+        {
+          "id": "sample-B-81",
+          "claim": "풀네임 우향 이동",
+          "supported": null,
+          "evidence": "B040~043 이동 연속 대조 미완료"
+        },
+        {
+          "id": "sample-B-82",
+          "claim": "풀네임 끝 글자부터 전체로 노출",
+          "supported": null,
+          "evidence": "연속 대조 미완료"
+        },
+        {
+          "id": "sample-B-83",
+          "claim": "4.7초 전체 풀네임",
+          "supported": null,
+          "evidence": "B042 미열람"
+        },
+        {
+          "id": "sample-B-84",
+          "claim": "4.8~4.9초 풀네임 정착",
+          "supported": null,
+          "evidence": "B010,043 미열람"
+        },
+        {
+          "id": "sample-B-85",
+          "claim": "풀네임 끝 x 2821,2918,3094,3220,3272,3284,3284",
+          "supported": null,
+          "evidence": "7개 독립 좌표 전수 검증 미완료; 이 행은 미검수 묶음이며 분모 계산 제외"
+        },
+        {
+          "id": "sample-B-86",
+          "claim": "풀네임 관측 구간 가속 후 감속",
+          "supported": null,
+          "evidence": "좌표/연속 증거 검증 미완료, 오류로 단정하지 않음"
+        },
+        {
+          "id": "sample-B-87",
+          "claim": "5.4초 첫 줄 전체 낮은 대비",
+          "supported": null,
+          "evidence": "B035 미열람"
+        },
+        {
+          "id": "sample-B-88",
+          "claim": "5.6초 분석하는 한국형",
+          "supported": true,
+          "evidence": "B050"
+        },
+        {
+          "id": "sample-B-89",
+          "claim": "5.8초 통합 교통 수 부근",
+          "supported": null,
+          "evidence": "B036 미열람"
+        },
+        {
+          "id": "sample-B-90",
+          "claim": "6.0초 프로그램까지",
+          "supported": true,
+          "evidence": "B051"
+        },
+        {
+          "id": "sample-B-91",
+          "claim": "6.4초 입니다까지",
+          "supported": true,
+          "evidence": "B037"
+        },
+        {
+          "id": "sample-B-92",
+          "claim": "6.6초 우상단 가는 사선",
+          "supported": null,
+          "evidence": "B011 미열람"
+        },
+        {
+          "id": "sample-B-93",
+          "claim": "6.7~6.9초 흰 면 진입",
+          "supported": true,
+          "evidence": "reference C07; B014"
+        },
+        {
+          "id": "sample-B-94",
+          "claim": "7.0~7.1초 중앙 기둥",
+          "supported": null,
+          "evidence": "B015~016 미열람"
+        },
+        {
+          "id": "sample-B-95",
+          "claim": "큰 T 상부 아래선 높이는 일정",
+          "supported": true,
+          "evidence": "B014,022,023"
+        },
+        {
+          "id": "sample-B-96",
+          "claim": "큰 T가 7.6초 무렵 정착",
+          "supported": true,
+          "evidence": "B022,023 변화가 작음"
+        },
+        {
+          "id": "sample-B-97",
+          "claim": "큰 T 처음 가속 후 감속",
+          "supported": null,
+          "evidence": "초반 연속 표본/정밀 측정 미검수"
+        },
+        {
+          "id": "sample-B-98",
+          "claim": "y700 경계x 3366,3226,2866,2246,1526,848,362,128,34",
+          "supported": null,
+          "evidence": "9개 독립 좌표 전수 검증 미완료; 분모 완결 아님"
+        },
+        {
+          "id": "sample-B-99",
+          "claim": "y1000 기둥x 2558,1876,1392,1154,1066,1038,1034",
+          "supported": null,
+          "evidence": "7개 독립 좌표 전수 검증 미완료; 분모 완결 아님"
+        },
+        {
+          "id": "sample-B-100",
+          "claim": "7.3초 도로망 선명",
+          "supported": true,
+          "evidence": "B022"
+        },
+        {
+          "id": "sample-B-101",
+          "claim": "7.2초 of 옅은 형상 투과",
+          "supported": null,
+          "evidence": "B021 미열람"
+        },
+        {
+          "id": "sample-B-102",
+          "claim": "7.3초 지도 쪽 우세",
+          "supported": true,
+          "evidence": "B022"
+        },
+        {
+          "id": "sample-B-103",
+          "claim": "7.4~7.7초 Valu 부근 잔존",
+          "supported": true,
+          "evidence": "B023의 7.6초 상태"
+        },
+        {
+          "id": "sample-B-104",
+          "claim": "8초 문맥의 상태 유지",
+          "supported": null,
+          "evidence": "B006 미열람; 창 안 근거로 대체하지 않음"
+        },
+        {
+          "id": "sample-B-105",
+          "claim": "소프트웨어 창/버튼/선택/커서/수치 그래프 없음",
+          "supported": null,
+          "evidence": "원자적 부재 주장 전수 검증 미완료; 분모 완결 아님"
+        }
+      ],
+      "missing_count": 0,
+      "wrong_count": 0,
+      "avoidable_abstention_count": 0,
+      "appropriate_unknowns": [
+        "정확한 AE 속성/키프레임/함수 및 Influence",
+        "Value of의 실제 3D 축과 합성 구현",
+        "지도 지명·출처",
+        "국문 밝기/노출 및 내부 지도 흐림의 정확한 이징",
+        "음성 미검수, 범위 밖 상태 제외"
+      ],
+      "critical_errors": [],
+      "metrics": {
+        "core_correct": 8,
+        "core_total": 8,
+        "detail_correct": 8,
+        "detail_total": 8,
+        "supported_asserted_claims": 74,
+        "total_asserted_claims": null,
+        "core_coverage": 1,
+        "detail_coverage": 1,
+        "asserted_claim_precision": null,
+        "avoidable_abstention_fraction": 0,
+        "enumerated_asserted_claims": 105,
+        "precision_denominator_complete": false,
+        "enumeration_note": "검토한 중복 제거 원자 주장 목록과 미검수 묶음. 모든 좌표/부재 주장을 완전히 원자화하지 못하여 전체 분모 null. JSON/Markdown 중복은 한 번만 취급."
+      },
+      "scope_incomplete": true,
+      "gates_passed": null,
+      "gate_details": {
+        "core": true,
+        "detail": true,
+        "precision": null,
+        "avoidable_unknown": true,
+        "critical_errors": null,
+        "validation_errors_zero": true
+      }
+    }
+  },
+  "timing": {
+    "start_utc": "2026-10-16T09:12:44Z",
+    "end_utc": "2026-10-16 09:15:53 UTC",
+    "total_review_seconds": 189,
+    "shared_review_seconds": 9,
+    "sample_review_seconds": {
+      "sample-A": 26,
+      "sample-B": 32
+    },
+    "sample_review_intervals": {
+      "sample-A": {
+        "start_utc": "2026-10-16T09:12:53Z",
+        "end_utc": "2026-10-16T09:13:19Z"
+      },
+      "sample-B": {
+        "start_utc": "2026-10-16T09:13:19Z",
+        "end_utc": "2026-10-16T09:13:51Z"
+      }
+    },
+    "shared_review_interval": {
+      "start_utc": "2026-10-16T09:12:44Z",
+      "end_utc": "2026-10-16T09:12:53Z"
+    },
+    "recording_seconds": 122,
+    "recording_interval": {
+      "start_utc": "2026-10-16T09:13:51Z",
+      "end_utc": "2026-10-16 09:15:53 UTC"
+    },
+    "note": "AI review elapsed; human review time not measured. Sample-specific prose/claims transcription after review is recording time, not arbitrarily split sample time. Final file write follows end clock."
+  },
+  "files_read": [
+    "phase01a-a5b/grader-instructions.md",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/metadata.json",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/reference.json",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/sample-A/observations.json",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/sample-A/observations.md",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/sample-A/validation.json",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/sample-B/observations.json",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/sample-B/observations.md",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/sample-B/validation.json",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/sample-A/evidence/evidence-023.png",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/sample-A/evidence/evidence-032.png",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/sample-A/evidence/evidence-033.png",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/sample-A/evidence/evidence-009.png",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/sample-A/evidence/evidence-002.png",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/sample-A/evidence/evidence-003.png",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/sample-A/evidence/evidence-004.png",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/sample-A/evidence/evidence-005.png",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/sample-A/evidence/evidence-029.png",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/sample-A/evidence/evidence-031.png",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/sample-A/evidence/evidence-039.png",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/sample-A/evidence/evidence-040.png",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/sample-A/evidence/evidence-042.png",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/sample-A/evidence/evidence-006.png",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/sample-A/evidence/evidence-016.png",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/sample-B/evidence/evidence-025.png",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/sample-B/evidence/evidence-028.png",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/sample-B/evidence/evidence-030.png",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/sample-B/evidence/evidence-032.png",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/sample-B/evidence/evidence-037.png",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/sample-B/evidence/evidence-014.png",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/sample-B/evidence/evidence-022.png",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/sample-B/evidence/evidence-023.png",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/sample-B/evidence/evidence-044.png",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/sample-B/evidence/evidence-050.png",
+    "C:/Users/User/Documents/ChatGPT/업무@사내 영상 생성기/phase01a-a5b/blind/H01-r2/sample-B/evidence/evidence-051.png"
+  ],
+  "tokens": null,
+  "unresolved": [
+    "두 sample 모두 전체 중복제거 원자 주장 분모 전수 확정 미완료. 미열람 이미지와 모든 정밀 좌표/부재 주장의 전수 대조는 하지 않음.",
+    "null claims는 검증되지 않았다는 뜻이며 false나 supported로 간주하지 않음. 중대 오류 목록은 발견된 오류만이며 전체 부재 증명은 미완료.",
+    "reference atom 매칭은 16/16이나 추가 주장 정확도 gate는 null. 최초 판정 보존; 조건 추측 및 우승자 판단 없음.",
+    "관측 event span을 onset bracket으로 채점하지 않음. 별도 boundary_seconds 없음. 새 crop/decode 없음."
+  ]
+}

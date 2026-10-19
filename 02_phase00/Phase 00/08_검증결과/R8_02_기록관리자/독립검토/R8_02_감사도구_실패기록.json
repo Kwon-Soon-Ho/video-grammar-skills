@@ -1,0 +1,11 @@
+{
+  "scope": "독립 검토자의 뷰어 읽기 감사 도구",
+  "episodes": 1,
+  "initial_script": "R8_02_집계뷰어감사_초기키가정.py",
+  "error": "KeyError: configuration",
+  "cause": "공식 뷰어의 embedded run 객체에 configuration 키가 있다고 잘못 가정함.",
+  "correction": "이미 실제 run ID와 매칭한 run 경로의 부모 arm 이름을 사용함.",
+  "D_or_performer_or_grading_or_viewer_outputs_modified": false,
+  "model_trial_failure_or_exclusion": false,
+  "initial_script_preserved": true
+}

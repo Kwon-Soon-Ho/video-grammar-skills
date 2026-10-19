@@ -1,0 +1,153 @@
+{
+  "definition_version": "video-pattern-definition-0.2",
+  "category": "LAYOUT",
+  "name": "상위 주제와 기능 UI를 나누는 전체 배치",
+  "source": {
+    "case_id": "DEV-H02-PARTS-20261019",
+    "source_sha256": "786e900ac768e43e546d6b979c31d3e33fbf5046902fe0174ef30156045fd8cc",
+    "observation_path": "C:\\Users\\User\\Documents\\ChatGPT\\업무@사내 영상 생성기\\skill-pattern-linking-20261019\\development\\H02\\observations-first-detail.json",
+    "observation_sha256": "4ef3bffb62a8996daaaa8139c68f87367251abf938d3b080e48541c9cdc9741d",
+    "claim_ids": [
+      "c001",
+      "c002",
+      "c003",
+      "c004",
+      "c005",
+      "c006",
+      "c008",
+      "c010",
+      "c011",
+      "c013",
+      "c014",
+      "c019",
+      "c022",
+      "c023",
+      "c025",
+      "c026",
+      "c029"
+    ],
+    "unknown_ids": [
+      "u02",
+      "u04"
+    ]
+  },
+  "definition": {
+    "summary": "전체 디자인과 정보 덩어리의 관계. 개별 등장 동작은 포함하지 않는다.",
+    "canvas": "16:9; 정성 관계 중심, 정확 좌표·비율 미측정",
+    "groups": [
+      {
+        "name": "배경·상징·영문",
+        "claim_ids": [
+          "c001",
+          "c003",
+          "c005"
+        ]
+      },
+      {
+        "name": "상위 주제와 설명",
+        "claim_ids": [
+          "c008",
+          "c010"
+        ]
+      },
+      {
+        "name": "기능 UI와 표제·본문",
+        "claim_ids": [
+          "c013",
+          "c026",
+          "c029"
+        ]
+      }
+    ],
+    "design_dimensions": {
+      "hierarchy": {
+        "description": "열차 배경·큰 A·연한 영문 위에 흰 주제 제목을 두고, 왼쪽 전경 UI와 노란 기능 표제로 예시를 강조한다.",
+        "basis_kind": "observed",
+        "precision": "qualitative",
+        "claim_ids": [
+          "c004",
+          "c006",
+          "c008",
+          "c010",
+          "c026",
+          "c029"
+        ]
+      },
+      "alignment": {
+        "description": "주제 제목과 설명은 오른쪽에서 왼쪽 정렬, 기능 표제·본문은 왼쪽 지도 UI의 왼쪽 변에 맞춘다.",
+        "basis_kind": "observed",
+        "precision": "qualitative",
+        "claim_ids": [
+          "c004",
+          "c008",
+          "c026",
+          "c029"
+        ]
+      },
+      "spacing": {
+        "description": "화면을 좌측 UI와 우측 설명 두 덩어리로 나누고 UI 바로 아래 표제·세 줄 설명을 붙인다. 정확한 간격은 미측정.",
+        "basis_kind": "observed",
+        "precision": "qualitative",
+        "claim_ids": [
+          "c014",
+          "c026",
+          "c029"
+        ]
+      },
+      "typography": {
+        "description": "굵은 흰 한글 주제 제목, 더 큰 연한 영문 두 줄, 작은 흰 설명, 노란 바탕의 굵은 검정 기능 표제. 정확한 서체·pt는 미상.",
+        "basis_kind": "observed",
+        "precision": "qualitative",
+        "claim_ids": [
+          "c006",
+          "c008",
+          "c010",
+          "c026",
+          "c029"
+        ]
+      },
+      "color": {
+        "description": "청회색·검정의 어두운 배경, 흰 주요 문구와 가는 궤적, 노란 표제·테두리·노드, 지도 내부의 다색 노선.",
+        "basis_kind": "observed",
+        "precision": "qualitative",
+        "claim_ids": [
+          "c002",
+          "c023",
+          "c026"
+        ]
+      },
+      "background": {
+        "description": "열차 사진이 화면을 채우고 대형 A와 영문이 겹친다. 정확한 레이어 불투명도·합성 방식은 미상.",
+        "basis_kind": "observed",
+        "precision": "qualitative",
+        "claim_ids": [
+          "c001",
+          "c003",
+          "c005"
+        ]
+      },
+      "shapes": {
+        "description": "지도/표 직사각형 UI, 검정과 노란 외곽, 노란 직사각형 표제, 흰 곡선/타원과 원형 노드가 함께 보인다.",
+        "basis_kind": "observed",
+        "precision": "qualitative",
+        "claim_ids": [
+          "c003",
+          "c011",
+          "c013",
+          "c019",
+          "c022",
+          "c025"
+        ]
+      }
+    }
+  },
+  "applicability": "원본 한 사례에서 정리한 재사용 후보. 새 문구·화면비·정보 관계·시간 조건에서 재검증한다.",
+  "counterexamples": [
+    "다른 장면의 실제 적용·가독성·제작 결과는 미시험"
+  ],
+  "status": "draft",
+  "supersedes": null,
+  "derived_from": [
+    "PAT-CARD-0001"
+  ]
+}
